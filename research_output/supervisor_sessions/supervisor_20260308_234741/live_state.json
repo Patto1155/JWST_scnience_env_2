@@ -1,0 +1,552 @@
+{
+  "session_id": "supervisor_20260308_234741",
+  "objective": "Triaging JWST high-z candidates with cheap workers before expensive review.",
+  "worker_model": "qwen/qwen3-next-80b-a3b-thinking",
+  "judge_model": null,
+  "base_url": "http://localhost:8000",
+  "status": "completed_with_errors",
+  "created_at": "2026-03-08T23:47:41.156360+00:00",
+  "updated_at": "2026-03-08T23:49:54.582747+00:00",
+  "latest_event_at": "2026-03-08T23:49:54.502205+00:00",
+  "supervisor_thread": [
+    {
+      "ts": "2026-03-08T23:47:41.302979+00:00",
+      "event_type": "supervisor_message",
+      "agent": "supervisor",
+      "role": "assistant",
+      "content": "Loaded 5 candidates from research_output\\highz_shortlist.json and preparing cheap worker runs with model qwen/qwen3-next-80b-a3b-thinking.",
+      "payload": {
+        "candidate_source": "research_output\\highz_shortlist.json"
+      }
+    },
+    {
+      "ts": "2026-03-08T23:47:45.759066+00:00",
+      "event_type": "worker_submitted",
+      "agent": "supervisor",
+      "role": "assistant",
+      "content": "Dispatched worker for SMACS-J0723.3-7327:source:1063 as run 108.",
+      "payload": {
+        "task_id": "SMACS-J0723.3-7327:source:1063",
+        "run_id": 108
+      }
+    },
+    {
+      "ts": "2026-03-08T23:47:50.126246+00:00",
+      "event_type": "worker_submitted",
+      "agent": "supervisor",
+      "role": "assistant",
+      "content": "Dispatched worker for SMACS-J0723.3-7327:source:451 as run 109.",
+      "payload": {
+        "task_id": "SMACS-J0723.3-7327:source:451",
+        "run_id": 109
+      }
+    },
+    {
+      "ts": "2026-03-08T23:47:54.515066+00:00",
+      "event_type": "worker_submitted",
+      "agent": "supervisor",
+      "role": "assistant",
+      "content": "Dispatched worker for SMACS-J0723.3-7327:source:16 as run 110.",
+      "payload": {
+        "task_id": "SMACS-J0723.3-7327:source:16",
+        "run_id": 110
+      }
+    },
+    {
+      "ts": "2026-03-08T23:47:58.895263+00:00",
+      "event_type": "worker_submitted",
+      "agent": "supervisor",
+      "role": "assistant",
+      "content": "Dispatched worker for SMACS-J0723.3-7327:source:15 as run 111.",
+      "payload": {
+        "task_id": "SMACS-J0723.3-7327:source:15",
+        "run_id": 111
+      }
+    },
+    {
+      "ts": "2026-03-08T23:48:46.775870+00:00",
+      "event_type": "worker_completed",
+      "agent": "worker",
+      "role": "assistant",
+      "content": "Worker SMACS-J0723.3-7327:source:1063 finished with verdict=reject confidence=0.0 tool_calls=0.",
+      "payload": {
+        "task_id": "SMACS-J0723.3-7327:source:1063",
+        "run_id": 108,
+        "verdict": "reject",
+        "confidence": 0.0,
+        "tool_call_count": 0
+      }
+    },
+    {
+      "ts": "2026-03-08T23:48:57.448443+00:00",
+      "event_type": "worker_submitted",
+      "agent": "supervisor",
+      "role": "assistant",
+      "content": "Dispatched worker for SMACS-J0723.3-7327:source:143 as run 112.",
+      "payload": {
+        "task_id": "SMACS-J0723.3-7327:source:143",
+        "run_id": 112
+      }
+    },
+    {
+      "ts": "2026-03-08T23:49:04.762866+00:00",
+      "event_type": "worker_completed",
+      "agent": "worker",
+      "role": "assistant",
+      "content": "Worker SMACS-J0723.3-7327:source:451 finished with verdict=reject confidence=0.0 tool_calls=0.",
+      "payload": {
+        "task_id": "SMACS-J0723.3-7327:source:451",
+        "run_id": 109,
+        "verdict": "reject",
+        "confidence": 0.0,
+        "tool_call_count": 0
+      }
+    },
+    {
+      "ts": "2026-03-08T23:49:07.012325+00:00",
+      "event_type": "worker_completed",
+      "agent": "worker",
+      "role": "assistant",
+      "content": "Worker SMACS-J0723.3-7327:source:16 finished with verdict=reject confidence=0.0 tool_calls=0.",
+      "payload": {
+        "task_id": "SMACS-J0723.3-7327:source:16",
+        "run_id": 110,
+        "verdict": "reject",
+        "confidence": 0.0,
+        "tool_call_count": 0
+      }
+    },
+    {
+      "ts": "2026-03-08T23:49:09.346222+00:00",
+      "event_type": "worker_completed",
+      "agent": "worker",
+      "role": "assistant",
+      "content": "Worker SMACS-J0723.3-7327:source:15 finished with verdict=reject confidence=0.0 tool_calls=0.",
+      "payload": {
+        "task_id": "SMACS-J0723.3-7327:source:15",
+        "run_id": 111,
+        "verdict": "reject",
+        "confidence": 0.0,
+        "tool_call_count": 0
+      }
+    },
+    {
+      "ts": "2026-03-08T23:49:54.427013+00:00",
+      "event_type": "worker_completed",
+      "agent": "worker",
+      "role": "assistant",
+      "content": "Worker SMACS-J0723.3-7327:source:143 finished with verdict=reject confidence=0.0 tool_calls=0.",
+      "payload": {
+        "task_id": "SMACS-J0723.3-7327:source:143",
+        "run_id": 112,
+        "verdict": "reject",
+        "confidence": 0.0,
+        "tool_call_count": 0
+      }
+    },
+    {
+      "ts": "2026-03-08T23:49:54.502205+00:00",
+      "event_type": "supervisor_message",
+      "agent": "supervisor",
+      "role": "assistant",
+      "content": "Worker phase completed; judge phase was skipped by configuration.",
+      "payload": {
+        "worker_count": 5
+      }
+    }
+  ],
+  "workers": {
+    "SMACS-J0723.3-7327:source:1063": {
+      "task_id": "SMACS-J0723.3-7327:source:1063",
+      "run_id": 108,
+      "status": "failed",
+      "candidate": {
+        "candidate_id": "SMACS-J0723.3-7327:source:1063",
+        "target": "SMACS-J0723.3-7327",
+        "source_id": 1063,
+        "position": {
+          "x": 846.1350343682557,
+          "y": 734.8161755575095
+        },
+        "datasets": [
+          "jwst_SMACS-J0723.3-7327_F444W_jw02736001001_02105_00004_nrcalong_i2d",
+          "jwst_SMACS-J0723.3-7327_F090W_jw02736001001_02101_00004_nrca1_i2d",
+          "jwst_SMACS-J0723.3-7327_F200W_jw02736001001_02105_00004_nrca4_i2d"
+        ],
+        "reference_dataset": "jwst_SMACS-J0723.3-7327_F444W_jw02736001001_02105_00004_nrcalong_i2d",
+        "blue_dataset": "jwst_SMACS-J0723.3-7327_F090W_jw02736001001_02101_00004_nrca1_i2d",
+        "mid_dataset": "jwst_SMACS-J0723.3-7327_F200W_jw02736001001_02105_00004_nrca4_i2d",
+        "ratio_f090_f444": 0.0,
+        "validation_score": 0.9567615225349555,
+        "validation_status": "keep",
+        "red_snr_r3": 68.36274950651129,
+        "coverage_fraction_r3": 1.0,
+        "edge_distance_px": 734.8161755575095,
+        "artifacts": [
+          "research_output\\visuals\\SMACS-J0723.3-7327_source_1063_rank_1_evidence.png",
+          "research_output\\visuals\\SMACS-J0723.3-7327_source_1063_rank_1_evidence.json"
+        ],
+        "primary_channel": "dropout_strict",
+        "proposal_channels": [
+          "dropout_strict",
+          "dropout_loose",
+          "morphology_extended_red",
+          "anomaly_context"
+        ],
+        "channel_scores": {
+          "dropout_strict": 1.0,
+          "dropout_loose": 1.0,
+          "morphology_extended_red": 1.0,
+          "anomaly_context": 0.9166666666666666
+        },
+        "measurement_status_by_filter": {
+          "F090W": "measured_nondetection",
+          "F200W": "unmeasured_offchip",
+          "F444W": "measured_detection"
+        },
+        "completeness_score": 0.6666666666666666,
+        "novelty_score": 1.0,
+        "falsification_flags": [
+          "mid_unmeasured_offchip"
+        ],
+        "disqualifying_flags": [],
+        "portfolio_bucket": "conservative"
+      },
+      "submitted_at": null,
+      "completed_at": "2026-03-08T23:48:46.740454+00:00",
+      "status_reason": "failed_strict_validation",
+      "status_hints": [
+        "Strict real-data integrity failed. Re-run POST /runs/validate and fix dataset metadata.file_path."
+      ],
+      "summary": {
+        "run_status": "failed",
+        "result_status": "failed",
+        "verdict": "reject",
+        "confidence": 0.0,
+        "interestingness": 0.0,
+        "successful_tool_calls": 0,
+        "reflection_count": 0,
+        "artifact_count": 0
+      },
+      "schema_errors": [
+        "worker_report_missing_or_malformed"
+      ]
+    },
+    "SMACS-J0723.3-7327:source:451": {
+      "task_id": "SMACS-J0723.3-7327:source:451",
+      "run_id": 109,
+      "status": "failed",
+      "candidate": {
+        "candidate_id": "SMACS-J0723.3-7327:source:451",
+        "target": "SMACS-J0723.3-7327",
+        "source_id": 451,
+        "position": {
+          "x": 565.8595061381326,
+          "y": 987.5733491479871
+        },
+        "datasets": [
+          "jwst_SMACS-J0723.3-7327_F444W_jw02736001001_02105_00004_nrcalong_i2d",
+          "jwst_SMACS-J0723.3-7327_F090W_jw02736001001_02101_00004_nrca1_i2d",
+          "jwst_SMACS-J0723.3-7327_F200W_jw02736001001_02105_00004_nrca4_i2d"
+        ],
+        "reference_dataset": "jwst_SMACS-J0723.3-7327_F444W_jw02736001001_02105_00004_nrcalong_i2d",
+        "blue_dataset": "jwst_SMACS-J0723.3-7327_F090W_jw02736001001_02101_00004_nrca1_i2d",
+        "mid_dataset": "jwst_SMACS-J0723.3-7327_F200W_jw02736001001_02105_00004_nrca4_i2d",
+        "ratio_f090_f444": 0.0,
+        "validation_score": 0.9401170695531675,
+        "validation_status": "keep",
+        "red_snr_r3": 323.40702455935303,
+        "coverage_fraction_r3": 1.0,
+        "edge_distance_px": 565.8595061381326,
+        "artifacts": [
+          "research_output\\visuals\\SMACS-J0723.3-7327_source_451_rank_2_evidence.png",
+          "research_output\\visuals\\SMACS-J0723.3-7327_source_451_rank_2_evidence.json"
+        ],
+        "primary_channel": "dropout_strict",
+        "proposal_channels": [
+          "dropout_strict",
+          "dropout_loose",
+          "anomaly_context"
+        ],
+        "channel_scores": {
+          "dropout_strict": 1.0,
+          "dropout_loose": 1.0,
+          "anomaly_context": 0.9166666666666666
+        },
+        "measurement_status_by_filter": {
+          "F090W": "measured_nondetection",
+          "F200W": "unmeasured_offchip",
+          "F444W": "measured_detection"
+        },
+        "completeness_score": 0.6666666666666666,
+        "novelty_score": 0.9166666666666666,
+        "falsification_flags": [
+          "mid_unmeasured_offchip"
+        ],
+        "disqualifying_flags": [],
+        "portfolio_bucket": "conservative"
+      },
+      "submitted_at": null,
+      "completed_at": "2026-03-08T23:49:04.728847+00:00",
+      "status_reason": "failed_strict_validation",
+      "status_hints": [
+        "Strict real-data integrity failed. Re-run POST /runs/validate and fix dataset metadata.file_path."
+      ],
+      "summary": {
+        "run_status": "failed",
+        "result_status": "failed",
+        "verdict": "reject",
+        "confidence": 0.0,
+        "interestingness": 0.0,
+        "successful_tool_calls": 0,
+        "reflection_count": 0,
+        "artifact_count": 0
+      },
+      "schema_errors": [
+        "worker_report_missing_or_malformed"
+      ]
+    },
+    "SMACS-J0723.3-7327:source:16": {
+      "task_id": "SMACS-J0723.3-7327:source:16",
+      "run_id": 110,
+      "status": "failed",
+      "candidate": {
+        "candidate_id": "SMACS-J0723.3-7327:source:16",
+        "target": "SMACS-J0723.3-7327",
+        "source_id": 16,
+        "position": {
+          "x": 654.0101873414867,
+          "y": 41.86302744474725
+        },
+        "datasets": [
+          "jwst_SMACS-J0723.3-7327_F444W_jw02736001001_02105_00004_nrcalong_i2d",
+          "jwst_SMACS-J0723.3-7327_F090W_jw02736001001_02101_00004_nrca1_i2d",
+          "jwst_SMACS-J0723.3-7327_F200W_jw02736001001_02105_00004_nrca4_i2d"
+        ],
+        "reference_dataset": "jwst_SMACS-J0723.3-7327_F444W_jw02736001001_02105_00004_nrcalong_i2d",
+        "blue_dataset": "jwst_SMACS-J0723.3-7327_F090W_jw02736001001_02101_00004_nrca1_i2d",
+        "mid_dataset": "jwst_SMACS-J0723.3-7327_F200W_jw02736001001_02105_00004_nrca4_i2d",
+        "ratio_f090_f444": 0.0,
+        "validation_score": 0.9394162372115181,
+        "validation_status": "keep",
+        "red_snr_r3": 380.0166988499148,
+        "coverage_fraction_r3": 1.0,
+        "edge_distance_px": 41.86302744474725,
+        "artifacts": [
+          "research_output\\visuals\\SMACS-J0723.3-7327_source_16_rank_3_evidence.png",
+          "research_output\\visuals\\SMACS-J0723.3-7327_source_16_rank_3_evidence.json"
+        ],
+        "primary_channel": "dropout_loose",
+        "proposal_channels": [
+          "dropout_loose",
+          "dropout_strict",
+          "anomaly_context"
+        ],
+        "channel_scores": {
+          "dropout_strict": 0.9872146405098902,
+          "dropout_loose": 1.0,
+          "anomaly_context": 0.9166666666666666
+        },
+        "measurement_status_by_filter": {
+          "F090W": "measured_nondetection",
+          "F200W": "unmeasured_offchip",
+          "F444W": "measured_detection"
+        },
+        "completeness_score": 0.6666666666666666,
+        "novelty_score": 0.9166666666666666,
+        "falsification_flags": [
+          "mid_unmeasured_offchip"
+        ],
+        "disqualifying_flags": [],
+        "portfolio_bucket": "alternative"
+      },
+      "submitted_at": null,
+      "completed_at": "2026-03-08T23:49:06.978334+00:00",
+      "status_reason": "failed_strict_validation",
+      "status_hints": [
+        "Strict real-data integrity failed. Re-run POST /runs/validate and fix dataset metadata.file_path."
+      ],
+      "summary": {
+        "run_status": "failed",
+        "result_status": "failed",
+        "verdict": "reject",
+        "confidence": 0.0,
+        "interestingness": 0.0,
+        "successful_tool_calls": 0,
+        "reflection_count": 0,
+        "artifact_count": 0
+      },
+      "schema_errors": [
+        "worker_report_missing_or_malformed"
+      ]
+    },
+    "SMACS-J0723.3-7327:source:15": {
+      "task_id": "SMACS-J0723.3-7327:source:15",
+      "run_id": 111,
+      "status": "failed",
+      "candidate": {
+        "candidate_id": "SMACS-J0723.3-7327:source:15",
+        "target": "SMACS-J0723.3-7327",
+        "source_id": 15,
+        "position": {
+          "x": 486.4285238575927,
+          "y": 40.200598411790246
+        },
+        "datasets": [
+          "jwst_SMACS-J0723.3-7327_F444W_jw02736001001_02105_00004_nrcalong_i2d",
+          "jwst_SMACS-J0723.3-7327_F090W_jw02736001001_02101_00004_nrca1_i2d",
+          "jwst_SMACS-J0723.3-7327_F200W_jw02736001001_02105_00004_nrca4_i2d"
+        ],
+        "reference_dataset": "jwst_SMACS-J0723.3-7327_F444W_jw02736001001_02105_00004_nrcalong_i2d",
+        "blue_dataset": "jwst_SMACS-J0723.3-7327_F090W_jw02736001001_02101_00004_nrca1_i2d",
+        "mid_dataset": "jwst_SMACS-J0723.3-7327_F200W_jw02736001001_02105_00004_nrca4_i2d",
+        "ratio_f090_f444": 0.0025091862263011207,
+        "validation_score": 0.9138169956452428,
+        "validation_status": "keep",
+        "red_snr_r3": 200.00643058069033,
+        "coverage_fraction_r3": 1.0,
+        "edge_distance_px": 40.200598411790246,
+        "artifacts": [
+          "research_output\\visuals\\SMACS-J0723.3-7327_source_15_rank_4_evidence.png",
+          "research_output\\visuals\\SMACS-J0723.3-7327_source_15_rank_4_evidence.json"
+        ],
+        "primary_channel": "dropout_loose",
+        "proposal_channels": [
+          "dropout_loose",
+          "dropout_strict",
+          "anomaly_context"
+        ],
+        "channel_scores": {
+          "dropout_strict": 0.9636777568808206,
+          "dropout_loose": 0.9941452321386306,
+          "anomaly_context": 0.9166666666666666
+        },
+        "measurement_status_by_filter": {
+          "F090W": "measured_nondetection",
+          "F200W": "unmeasured_offchip",
+          "F444W": "measured_detection"
+        },
+        "completeness_score": 0.6666666666666666,
+        "novelty_score": 0.9166666666666666,
+        "falsification_flags": [
+          "mid_unmeasured_offchip"
+        ],
+        "disqualifying_flags": [],
+        "portfolio_bucket": "alternative"
+      },
+      "submitted_at": null,
+      "completed_at": "2026-03-08T23:49:09.305297+00:00",
+      "status_reason": "failed_strict_validation",
+      "status_hints": [
+        "Strict real-data integrity failed. Re-run POST /runs/validate and fix dataset metadata.file_path."
+      ],
+      "summary": {
+        "run_status": "failed",
+        "result_status": "failed",
+        "verdict": "reject",
+        "confidence": 0.0,
+        "interestingness": 0.0,
+        "successful_tool_calls": 0,
+        "reflection_count": 0,
+        "artifact_count": 0
+      },
+      "schema_errors": [
+        "worker_report_missing_or_malformed"
+      ]
+    },
+    "SMACS-J0723.3-7327:source:143": {
+      "task_id": "SMACS-J0723.3-7327:source:143",
+      "run_id": 112,
+      "status": "failed",
+      "candidate": {
+        "candidate_id": "SMACS-J0723.3-7327:source:143",
+        "target": "SMACS-J0723.3-7327",
+        "source_id": 143,
+        "position": {
+          "x": 92.41496272579748,
+          "y": 349.02208083192636
+        },
+        "datasets": [
+          "jwst_SMACS-J0723.3-7327_F444W_jw02736001001_02105_00004_nrcalong_i2d",
+          "jwst_SMACS-J0723.3-7327_F090W_jw02736001001_02101_00004_nrca1_i2d",
+          "jwst_SMACS-J0723.3-7327_F200W_jw02736001001_02105_00004_nrca4_i2d"
+        ],
+        "reference_dataset": "jwst_SMACS-J0723.3-7327_F444W_jw02736001001_02105_00004_nrcalong_i2d",
+        "blue_dataset": "jwst_SMACS-J0723.3-7327_F090W_jw02736001001_02101_00004_nrca1_i2d",
+        "mid_dataset": "jwst_SMACS-J0723.3-7327_F200W_jw02736001001_02105_00004_nrca4_i2d",
+        "ratio_f090_f444": 0.0,
+        "validation_score": 0.8905937833048575,
+        "validation_status": "keep",
+        "red_snr_r3": 30.531158186509444,
+        "coverage_fraction_r3": 1.0,
+        "edge_distance_px": 92.41496272579748,
+        "artifacts": [
+          "research_output\\visuals\\SMACS-J0723.3-7327_source_143_rank_5_evidence.png",
+          "research_output\\visuals\\SMACS-J0723.3-7327_source_143_rank_5_evidence.json"
+        ],
+        "primary_channel": "morphology_extended_red",
+        "proposal_channels": [
+          "morphology_extended_red",
+          "dropout_strict",
+          "anomaly_context",
+          "dropout_loose"
+        ],
+        "channel_scores": {
+          "dropout_strict": 0.9166666666666666,
+          "dropout_loose": 0.9166666666666665,
+          "morphology_extended_red": 1.0,
+          "anomaly_context": 0.9166666666666666
+        },
+        "measurement_status_by_filter": {
+          "F090W": "measured_nondetection",
+          "F200W": "unmeasured_offchip",
+          "F444W": "measured_detection"
+        },
+        "completeness_score": 0.6666666666666666,
+        "novelty_score": 1.0,
+        "falsification_flags": [
+          "mid_unmeasured_offchip"
+        ],
+        "disqualifying_flags": [],
+        "portfolio_bucket": "alternative"
+      },
+      "submitted_at": null,
+      "completed_at": "2026-03-08T23:49:54.399649+00:00",
+      "status_reason": "failed_strict_validation",
+      "status_hints": [
+        "Strict real-data integrity failed. Re-run POST /runs/validate and fix dataset metadata.file_path."
+      ],
+      "summary": {
+        "run_status": "failed",
+        "result_status": "failed",
+        "verdict": "reject",
+        "confidence": 0.0,
+        "interestingness": 0.0,
+        "successful_tool_calls": 0,
+        "reflection_count": 0,
+        "artifact_count": 0
+      },
+      "schema_errors": [
+        "worker_report_missing_or_malformed"
+      ]
+    }
+  },
+  "artifacts": {
+    "candidate_source": "research_output\\highz_shortlist.json",
+    "worker_results": "research_output\\supervisor_sessions\\supervisor_20260308_234741\\worker_results.json",
+    "summary": "research_output\\supervisor_sessions\\supervisor_20260308_234741\\campaign_summary.json"
+  },
+  "operator_state": {
+    "inbox_count": 0,
+    "outbox_count": 7,
+    "latest_operator_message": null
+  },
+  "manifest_path": "research_output\\supervisor_sessions\\supervisor_20260308_234741\\session_manifest.json",
+  "session_errors": [
+    "worker_schema_issue:SMACS-J0723.3-7327:source:1063:worker_report_missing_or_malformed",
+    "worker_schema_issue:SMACS-J0723.3-7327:source:451:worker_report_missing_or_malformed",
+    "worker_schema_issue:SMACS-J0723.3-7327:source:16:worker_report_missing_or_malformed",
+    "worker_schema_issue:SMACS-J0723.3-7327:source:15:worker_report_missing_or_malformed",
+    "worker_schema_issue:SMACS-J0723.3-7327:source:143:worker_report_missing_or_malformed"
+  ]
+}

@@ -1,0 +1,617 @@
+[
+  {
+    "name": "jwst_GS-MEDIUM-HST_F150W_jw01180026001_05201_00002_nrca2_cal",
+    "target": "GS-MEDIUM-HST",
+    "filter": "F150W",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 0.21051546264146478,
+    "std": 0.23743760775760603,
+    "max": 283.90362548828125
+  },
+  {
+    "name": "jwst_GS-MEDIUM-HST_F150W_jw01180026001_05201_00002_nrca2_i2d",
+    "target": "GS-MEDIUM-HST",
+    "filter": "F150W",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 0.21067721968076072,
+    "std": 0.25993005017203874,
+    "max": 279.66357421875
+  },
+  {
+    "name": "jwst_GS-MEDIUM-HST_F150W_jw01180026001_05201_00002_nrca2_o026_crf",
+    "target": "GS-MEDIUM-HST",
+    "filter": "F150W",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 0.20998734575221553,
+    "std": 0.2144014225485597,
+    "max": 283.90362548828125
+  },
+  {
+    "name": "jwst_GS-MEDIUM-HST_F410M_jw01180026001_17201_00003_nrcalong_cal",
+    "target": "GS-MEDIUM-HST",
+    "filter": "F410M",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 0.141213600130491,
+    "std": 0.26914531265169456,
+    "max": 161.15087890625
+  },
+  {
+    "name": "jwst_CEERS-NIRSPEC-P5-MR-MSATA_F356W_jw01345064001_03201_00001_nrcalong_cal",
+    "target": "CEERS-NIRSPEC-P5-MR-MSATA",
+    "filter": "F356W",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 0.10589041171542773,
+    "std": 0.1794985999207854,
+    "max": 116.4724349975586
+  },
+  {
+    "name": "jwst_CEERS-NIRSPEC-P5-MR-MSATA_F356W_jw01345064001_03201_00001_nrcalong_i2d",
+    "target": "CEERS-NIRSPEC-P5-MR-MSATA",
+    "filter": "F356W",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 0.10603506666415684,
+    "std": 0.1743510654115287,
+    "max": 116.41472625732422
+  },
+  {
+    "name": "jwst_CEERS-NIRSPEC-P7-PRISM-MSATA_F277W_jw01345065001_03201_00002_nrcalong_cal",
+    "target": "CEERS-NIRSPEC-P7-PRISM-MSATA",
+    "filter": "F277W",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 0.09817458114661357,
+    "std": 0.24032562758174011,
+    "max": 168.90451049804688
+  },
+  {
+    "name": "jwst_CEERS-NIRSPEC-P7-PRISM-MSATA_F277W_jw01345065001_03201_00002_nrcalong_i2d",
+    "target": "CEERS-NIRSPEC-P7-PRISM-MSATA",
+    "filter": "F277W",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 0.0982579558897987,
+    "std": 0.2185635683617186,
+    "max": 131.9167022705078
+  },
+  {
+    "name": "jwst_CEERS-NIRSPEC-P8-MR-MSATA_F410M_jw01345068001_05201_00002_nrcalong_cal",
+    "target": "CEERS-NIRSPEC-P8-MR-MSATA",
+    "filter": "F410M",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 0.18130490285476678,
+    "std": 0.347890402895072,
+    "max": 262.6158447265625
+  },
+  {
+    "name": "jwst_CEERS-NIRSPEC-P8-MR-MSATA_F200W_jw01345068001_07201_00001_nrcb2_cal",
+    "target": "CEERS-NIRSPEC-P8-MR-MSATA",
+    "filter": "F200W",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 0.15570304062152923,
+    "std": 0.21554635635029765,
+    "max": 157.9893341064453
+  },
+  {
+    "name": "jwst_CEERS-NIRSPEC-P8-MR-MSATA_F200W_jw01345068001_07201_00001_nrcb2_i2d",
+    "target": "CEERS-NIRSPEC-P8-MR-MSATA",
+    "filter": "F200W",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 0.15611228875746277,
+    "std": 0.26832228679248304,
+    "max": 157.9893341064453
+  },
+  {
+    "name": "jwst_CEERS-NIRSPEC-P8-MR-MSATA_F200W_jw01345068001_07201_00001_nrcb2_o068_crf",
+    "target": "CEERS-NIRSPEC-P8-MR-MSATA",
+    "filter": "F200W",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 0.1556245806130782,
+    "std": 0.2129048123561877,
+    "max": 157.9893341064453
+  },
+  {
+    "name": "jwst_CEERS-NIRSPEC-P9-PRISM-MSATA_F115W_jw01345070001_03201_00001_nrca1_cal",
+    "target": "CEERS-NIRSPEC-P9-PRISM-MSATA",
+    "filter": "F115W",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 0.18826855468517062,
+    "std": 0.1746393664274147,
+    "max": 214.9630584716797
+  },
+  {
+    "name": "jwst_CEERS-NIRSPEC-P9-PRISM-MSATA_F115W_jw01345070001_03201_00001_nrca1_o070_crf",
+    "target": "CEERS-NIRSPEC-P9-PRISM-MSATA",
+    "filter": "F115W",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 0.18825816969234221,
+    "std": 0.17004561857053102,
+    "max": 214.9630584716797
+  },
+  {
+    "name": "jwst_CEERS-NIRSPEC-P9-PRISM-MSATA_F277W_jw01345070001_03201_00001_nrcalong_cal",
+    "target": "CEERS-NIRSPEC-P9-PRISM-MSATA",
+    "filter": "F277W",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 0.10690339507473329,
+    "std": 0.2123500887597319,
+    "max": 151.0844268798828
+  },
+  {
+    "name": "jwst_CEERS-NIRSPEC-P9-PRISM-MSATA_F277W_jw01345070001_03201_00001_nrcalong_o070_crf",
+    "target": "CEERS-NIRSPEC-P9-PRISM-MSATA",
+    "filter": "F277W",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 0.10660647263184928,
+    "std": 0.1647598972874391,
+    "max": 138.8383331298828
+  },
+  {
+    "name": "jwst_SMACS-J0723.3-7327_F090W_jw02736001001_02101_00004_nrca1_cal",
+    "target": "SMACS-J0723.3-7327",
+    "filter": "F090W",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 0.20504505772390944,
+    "std": 1.057369089201108,
+    "max": 704.6788330078125
+  },
+  {
+    "name": "jwst_SMACS-J0723.3-7327_F090W_jw02736001001_02101_00004_nrca1_i2d",
+    "target": "SMACS-J0723.3-7327",
+    "filter": "F090W",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 0.20601942522177416,
+    "std": 1.0414318374348015,
+    "max": 572.3692016601562
+  },
+  {
+    "name": "jwst_SMACS-J0723.3-7327_F090W_jw02736001001_02101_00004_nrca1_o001_crf",
+    "target": "SMACS-J0723.3-7327",
+    "filter": "F090W",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 0.2046697801559412,
+    "std": 1.0373203824626616,
+    "max": 704.6788330078125
+  },
+  {
+    "name": "jwst_SMACS-J0723.3-7327_F277W_jw02736001001_02101_00006_nrcalong_cal",
+    "target": "SMACS-J0723.3-7327",
+    "filter": "F277W",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 0.10426959453948272,
+    "std": 0.33070619622967157,
+    "max": 162.65725708007812
+  },
+  {
+    "name": "jwst_SMACS-J0723.3-7327_F277W_jw02736001001_02101_00006_nrcalong_i2d",
+    "target": "SMACS-J0723.3-7327",
+    "filter": "F277W",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 0.10465124651489766,
+    "std": 0.31087359449625906,
+    "max": 119.27164459228516
+  },
+  {
+    "name": "jwst_SMACS-J0723.3-7327_F277W_jw02736001001_02101_00006_nrcalong_o001_crf",
+    "target": "SMACS-J0723.3-7327",
+    "filter": "F277W",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 0.10354697478939137,
+    "std": 0.26467573423806734,
+    "max": 123.97589874267578
+  },
+  {
+    "name": "jwst_SMACS-J0723.3-7327_F150W_jw02736001001_02103_00005_nrca1_cal",
+    "target": "SMACS-J0723.3-7327",
+    "filter": "F150W",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 0.22607769063157876,
+    "std": 1.0363004128484667,
+    "max": 452.9266357421875
+  },
+  {
+    "name": "jwst_SMACS-J0723.3-7327_F150W_jw02736001001_02103_00005_nrca1_i2d",
+    "target": "SMACS-J0723.3-7327",
+    "filter": "F150W",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 0.22751644052595368,
+    "std": 1.0631397122039556,
+    "max": 392.9984130859375
+  },
+  {
+    "name": "jwst_SMACS-J0723.3-7327_F150W_jw02736001001_02103_00005_nrca1_o001_crf",
+    "target": "SMACS-J0723.3-7327",
+    "filter": "F150W",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 0.2254410607688857,
+    "std": 1.0211776598171505,
+    "max": 452.9266357421875
+  },
+  {
+    "name": "jwst_SMACS-J0723.3-7327_F200W_jw02736001001_02105_00004_nrca4_cal",
+    "target": "SMACS-J0723.3-7327",
+    "filter": "F200W",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 0.1727899968462941,
+    "std": 0.5785972636230496,
+    "max": 267.7513427734375
+  },
+  {
+    "name": "jwst_SMACS-J0723.3-7327_F200W_jw02736001001_02105_00004_nrca4_i2d",
+    "target": "SMACS-J0723.3-7327",
+    "filter": "F200W",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 0.17341910196677787,
+    "std": 0.5790899732039893,
+    "max": 259.5500183105469
+  },
+  {
+    "name": "jwst_SMACS-J0723.3-7327_F200W_jw02736001001_02105_00004_nrca4_o001_crf",
+    "target": "SMACS-J0723.3-7327",
+    "filter": "F200W",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 0.17271647294746537,
+    "std": 0.5745855618740056,
+    "max": 267.7513427734375
+  },
+  {
+    "name": "jwst_MPTCAT-NIRCAM-ACS_CLEAR_jw02736005001_02101_00001_nrs1_cal",
+    "target": "MPTCAT-NIRCAM-ACS",
+    "filter": "CLEAR",
+    "flags": [
+      "mean_outlier | mean=1.6079e+02 vs median 1.8864e-01",
+      "std_outlier | std=3.0468e+05 vs median 1.7257e-01",
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 160.79251264731556,
+    "std": 304678.90630470146,
+    "max": 615382400.0
+  },
+  {
+    "name": "jwst_MPTCAT-NIRCAM-ACS_CLEAR_jw02736005001_02101_00001_nrs1_rate",
+    "target": "MPTCAT-NIRCAM-ACS",
+    "filter": "CLEAR",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 77.81344952046967,
+    "std": 132835.92212278914,
+    "max": 264255616.0
+  },
+  {
+    "name": "jwst_MPTCAT-NIRCAM-ACS_CLEAR_jw02736005001_02101_00001_nrs1_rateints",
+    "target": "MPTCAT-NIRCAM-ACS",
+    "filter": "CLEAR",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 77.81344952046967,
+    "std": 132835.92212278914,
+    "max": 264255616.0
+  },
+  {
+    "name": "jwst_MPTCAT-NIRCAM-ACS_CLEAR_jw02736005001_02101_00001_nrs2_cal",
+    "target": "MPTCAT-NIRCAM-ACS",
+    "filter": "CLEAR",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": -0.11094924136880364,
+    "std": 113.38139628536264,
+    "max": 74918.9296875
+  },
+  {
+    "name": "jwst_MPTCAT-NIRCAM-ACS_CLEAR_jw02736005001_02101_00001_nrs2_rate",
+    "target": "MPTCAT-NIRCAM-ACS",
+    "filter": "CLEAR",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": -0.0635364006603169,
+    "std": 17.970605857088707,
+    "max": 36073.9296875
+  },
+  {
+    "name": "jwst_MPTCAT-NIRCAM-ACS_CLEAR_jw02736005001_02101_00001_nrs2_rateints",
+    "target": "MPTCAT-NIRCAM-ACS",
+    "filter": "CLEAR",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": -0.0635364006603169,
+    "std": 17.970605857088707,
+    "max": 36073.9296875
+  },
+  {
+    "name": "jwst_MPTCAT-NIRCAM-ACS_CLEAR_jw02736005001_02101_00002_nrs1_cal",
+    "target": "MPTCAT-NIRCAM-ACS",
+    "filter": "CLEAR",
+    "flags": [
+      "mean_outlier | mean=1.6296e+02 vs median 1.8864e-01",
+      "std_outlier | std=3.0605e+05 vs median 1.7257e-01",
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 162.95889796172935,
+    "std": 306045.3321998341,
+    "max": 618023616.0
+  },
+  {
+    "name": "jwst_MPTCAT-NIRCAM-ACS_CLEAR_jw02736005001_02101_00002_nrs1_rate",
+    "target": "MPTCAT-NIRCAM-ACS",
+    "filter": "CLEAR",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 79.00952547521159,
+    "std": 133563.74783658359,
+    "max": 265389792.0
+  },
+  {
+    "name": "jwst_MPTCAT-NIRCAM-ACS_CLEAR_jw02736005001_02101_00002_nrs1_rateints",
+    "target": "MPTCAT-NIRCAM-ACS",
+    "filter": "CLEAR",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 79.00952547521159,
+    "std": 133563.74783658359,
+    "max": 265389792.0
+  },
+  {
+    "name": "jwst_MPTCAT-NIRCAM-ACS_CLEAR_jw02736005001_02101_00002_nrs2_cal",
+    "target": "MPTCAT-NIRCAM-ACS",
+    "filter": "CLEAR",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": -0.0027617907606955396,
+    "std": 108.96094234829204,
+    "max": 27100.21484375
+  },
+  {
+    "name": "jwst_MPTCAT-NIRCAM-ACS_CLEAR_jw02736005001_02101_00002_nrs2_rate",
+    "target": "MPTCAT-NIRCAM-ACS",
+    "filter": "CLEAR",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 0.05240957941771738,
+    "std": 7.0820101598522704,
+    "max": 13048.921875
+  },
+  {
+    "name": "jwst_MPTCAT-NIRCAM-ACS_CLEAR_jw02736005001_02101_00002_nrs2_rateints",
+    "target": "MPTCAT-NIRCAM-ACS",
+    "filter": "CLEAR",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 0.05240957941771738,
+    "std": 7.0820101598522704,
+    "max": 13048.921875
+  },
+  {
+    "name": "jwst_MPTCAT-NIRCAM-ACS_CLEAR_jw02736005001_02101_00004_nrs1_cal",
+    "target": "MPTCAT-NIRCAM-ACS",
+    "filter": "CLEAR",
+    "flags": [
+      "mean_outlier | mean=1.6645e+02 vs median 1.8864e-01",
+      "std_outlier | std=3.1582e+05 vs median 1.7257e-01",
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 166.45218068148972,
+    "std": 315818.97274932795,
+    "max": 638491392.0
+  },
+  {
+    "name": "jwst_MPTCAT-NIRCAM-ACS_CLEAR_jw02736005001_02101_00004_nrs1_rate",
+    "target": "MPTCAT-NIRCAM-ACS",
+    "filter": "CLEAR",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 80.18704013881872,
+    "std": 137452.38839492027,
+    "max": 274179008.0
+  },
+  {
+    "name": "jwst_MPTCAT-NIRCAM-ACS_CLEAR_jw02736005001_02101_00004_nrs1_rateints",
+    "target": "MPTCAT-NIRCAM-ACS",
+    "filter": "CLEAR",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 80.18704013881872,
+    "std": 137452.38839492027,
+    "max": 274179008.0
+  },
+  {
+    "name": "jwst_MPTCAT-NIRCAM-ACS_CLEAR_jw02736005001_02101_00004_nrs2_cal",
+    "target": "MPTCAT-NIRCAM-ACS",
+    "filter": "CLEAR",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": -0.03249494847124324,
+    "std": 100.84960830621242,
+    "max": 21904.921875
+  },
+  {
+    "name": "jwst_MPTCAT-NIRCAM-ACS_CLEAR_jw02736005001_02101_00004_nrs2_rate",
+    "target": "MPTCAT-NIRCAM-ACS",
+    "filter": "CLEAR",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 0.017574412013648625,
+    "std": 5.969294486277536,
+    "max": 10547.3564453125
+  },
+  {
+    "name": "jwst_MPTCAT-NIRCAM-ACS_CLEAR_jw02736005001_02101_00004_nrs2_rateints",
+    "target": "MPTCAT-NIRCAM-ACS",
+    "filter": "CLEAR",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 0.017574412013648625,
+    "std": 5.969294486277536,
+    "max": 10547.3564453125
+  },
+  {
+    "name": "jwst_MPTCAT-NIRCAM-ACS_CLEAR_jw02736005001_02101_00005_nrs1_cal",
+    "target": "MPTCAT-NIRCAM-ACS",
+    "filter": "CLEAR",
+    "flags": [
+      "mean_outlier | mean=1.6127e+02 vs median 1.8864e-01",
+      "std_outlier | std=3.0689e+05 vs median 1.7257e-01",
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 161.27493665895193,
+    "std": 306891.1634898404,
+    "max": 620147456.0
+  },
+  {
+    "name": "jwst_MPTCAT-NIRCAM-ACS_CLEAR_jw02736005001_02101_00005_nrs1_rate",
+    "target": "MPTCAT-NIRCAM-ACS",
+    "filter": "CLEAR",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 77.655638458109,
+    "std": 133622.4347683588,
+    "max": 266301808.0
+  },
+  {
+    "name": "jwst_MPTCAT-NIRCAM-ACS_CLEAR_jw02736005001_02101_00005_nrs1_rateints",
+    "target": "MPTCAT-NIRCAM-ACS",
+    "filter": "CLEAR",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 77.655638458109,
+    "std": 133622.4347683588,
+    "max": 266301808.0
+  },
+  {
+    "name": "jwst_MPTCAT-NIRCAM-ACS_CLEAR_jw02736005001_02101_00005_nrs2_cal",
+    "target": "MPTCAT-NIRCAM-ACS",
+    "filter": "CLEAR",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 0.012942509514981373,
+    "std": 105.7766453799512,
+    "max": 27314.779296875
+  },
+  {
+    "name": "jwst_MPTCAT-NIRCAM-ACS_CLEAR_jw02736005001_02101_00005_nrs2_rate",
+    "target": "MPTCAT-NIRCAM-ACS",
+    "filter": "CLEAR",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 0.06433886166754108,
+    "std": 7.112979277626978,
+    "max": 13152.236328125
+  },
+  {
+    "name": "jwst_MPTCAT-NIRCAM-ACS_CLEAR_jw02736005001_02101_00005_nrs2_rateints",
+    "target": "MPTCAT-NIRCAM-ACS",
+    "filter": "CLEAR",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 0.06433886166754108,
+    "std": 7.112979277626978,
+    "max": 13152.236328125
+  },
+  {
+    "name": "jwst_MPTCAT-MORESTARS_F110W_jw02736006001_02101_00001_nrs1_cal",
+    "target": "MPTCAT-MORESTARS",
+    "filter": "F110W",
+    "flags": [
+      "mean_outlier | mean=1.2739e+02 vs median 1.8864e-01",
+      "std_outlier | std=3.1581e+05 vs median 1.7257e-01",
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 127.39274261663329,
+    "std": 315812.9114555166,
+    "max": 634184896.0
+  },
+  {
+    "name": "jwst_MPTCAT-MORESTARS_F110W_jw02736006001_02101_00001_nrs1_rate",
+    "target": "MPTCAT-MORESTARS",
+    "filter": "F110W",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 52.91716403664761,
+    "std": 142585.92872042969,
+    "max": 284826560.0
+  },
+  {
+    "name": "jwst_MPTCAT-MORESTARS_F110W_jw02736006001_02101_00001_nrs1_rateints",
+    "target": "MPTCAT-MORESTARS",
+    "filter": "F110W",
+    "flags": [
+      "heavy_tail / potential cosmic ray"
+    ],
+    "mean": 52.91716403664761,
+    "std": 142585.92872042969,
+    "max": 284826560.0
+  }
+]

@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: ..
+      dockerfile: infra/Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://scienceos:scienceos@db:5432/scienceos
+      - API_HOST=0.0.0.0
+      - API_PORT=8000
+    volumes:
+      - ../artifacts:/app/artifacts
+      - ../runner_work:/app/runner_work
+    depends_on:
+      - db
+    command: uvicorn core-api.app:app --host 0.0.0.0 --port 8000
+
+  db:
+    image: postgres:15-alpine
+    environment:
+      - POSTGRES_USER=scienceos
+      - POSTGRES_PASSWORD=scienceos
+      - POSTGRES_DB=scienceos
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
+

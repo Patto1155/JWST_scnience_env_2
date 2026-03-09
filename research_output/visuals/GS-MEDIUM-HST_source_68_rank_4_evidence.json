@@ -1,0 +1,292 @@
+{
+  "source_id": 68,
+  "reference_dataset": "jwst_GS-MEDIUM-HST_F444W_jw01180030001_09201_00003_nrcalong_i2d",
+  "comparison_datasets": [
+    "jwst_GS-MEDIUM-HST_F090W_jw01180030001_03201_00001_nrcb1_i2d",
+    "jwst_GS-MEDIUM-HST_F200W_jw01180030001_07201_00001_nrca3_i2d"
+  ],
+  "reference_pixel_center": {
+    "x": 1402.2188052636798,
+    "y": 272.40277332192187
+  },
+  "sky_center": {
+    "ra": 53.13897115790389,
+    "dec": -27.88697757284428
+  },
+  "aperture_radii": [
+    2,
+    3,
+    5
+  ],
+  "background_annulus_inner_radius": 6.0,
+  "background_annulus_outer_radius": 10.0,
+  "quality_flags": [],
+  "ratio_f090_f444": 0.0,
+  "color_indices": {
+    "F200W_F444W": {
+      "color_index": -0.4019736763733044,
+      "flux_ratio": 1.448069714239017,
+      "band1_flux": 61.53146518575083,
+      "band2_flux": 42.492060002847694
+    }
+  },
+  "source_entry": {
+    "source_id": 68,
+    "x": 1402.2188052636798,
+    "y": 272.40277332192187,
+    "ra": 53.13897115790389,
+    "dec": -27.88697757284428,
+    "flux_proxy": 118.67129501700401,
+    "area": 403.0,
+    "coverage_fraction": 1.0,
+    "edge_distance_px": 272.40277332192187
+  },
+  "datasets": [
+    {
+      "dataset_name": "jwst_GS-MEDIUM-HST_F444W_jw01180030001_09201_00003_nrcalong_i2d",
+      "file_path": "data\\jwst\\mastDownload\\JWST\\jw01180030001_09201_00003_nrcalong\\jw01180030001_09201_00003_nrcalong_i2d.fits",
+      "filter": "F444W",
+      "target": "GS-MEDIUM-HST",
+      "instrument": "NIRCAM",
+      "dataset_x": 1402.2188052636645,
+      "dataset_y": 272.4027733219814,
+      "off_chip": false
+    },
+    {
+      "dataset_name": "jwst_GS-MEDIUM-HST_F090W_jw01180030001_03201_00001_nrcb1_i2d",
+      "file_path": "data\\jwst\\mastDownload\\JWST\\jw01180030001_03201_00001_nrcb1\\jw01180030001_03201_00001_nrcb1_i2d.fits",
+      "filter": "F090W",
+      "target": "GS-MEDIUM-HST",
+      "instrument": "NIRCAM",
+      "dataset_x": -5031.872238591759,
+      "dataset_y": -1678.8890320731527,
+      "off_chip": true
+    },
+    {
+      "dataset_name": "jwst_GS-MEDIUM-HST_F200W_jw01180030001_07201_00001_nrca3_i2d",
+      "file_path": "data\\jwst\\mastDownload\\JWST\\jw01180030001_07201_00001_nrca3\\jw01180030001_07201_00001_nrca3_i2d.fits",
+      "filter": "F200W",
+      "target": "GS-MEDIUM-HST",
+      "instrument": "NIRCAM",
+      "dataset_x": 663.839891763829,
+      "dataset_y": 593.4024172083233,
+      "off_chip": false
+    }
+  ],
+  "photometry": {
+    "jwst_GS-MEDIUM-HST_F444W_jw01180030001_09201_00003_nrcalong_i2d": {
+      "2": {
+        "flux": 32.786783933639526,
+        "magnitude": 21.210752953323073,
+        "background_subtracted_flux": 25.331256782978922,
+        "background_subtracted_magnitude": 21.490858156556744,
+        "flux_error": 0.4117468042573168,
+        "snr": 61.52144114067834,
+        "background_mean": 0.5735020885123542,
+        "background_std": 0.11203331737300853,
+        "coverage_fraction": 1.0,
+        "x": 1402.2188052636645,
+        "y": 272.4027733219814,
+        "aperture_radius": 2.0,
+        "background_annulus_inner_radius": 6.0,
+        "background_annulus_outer_radius": 10.0,
+        "pixels_in_aperture": 13,
+        "valid_pixel_count": 13,
+        "annulus_pixel_count": 201,
+        "dataset_name": "jwst_GS-MEDIUM-HST_F444W_jw01180030001_09201_00003_nrcalong_i2d",
+        "file_path": "data\\jwst\\mastDownload\\JWST\\jw01180030001_09201_00003_nrcalong\\jw01180030001_09201_00003_nrcalong_i2d.fits",
+        "mean_weight": 1045.7154353215144
+      },
+      "3": {
+        "flux": 59.12362056970596,
+        "magnitude": 20.570597446965287,
+        "background_subtracted_flux": 42.492060002847694,
+        "background_subtracted_magnitude": 20.929230534821343,
+        "flux_error": 0.6127655458629742,
+        "snr": 69.34472783224942,
+        "background_mean": 0.5735020885123542,
+        "background_std": 0.11203331737300853,
+        "coverage_fraction": 1.0,
+        "x": 1402.2188052636645,
+        "y": 272.4027733219814,
+        "aperture_radius": 3.0,
+        "background_annulus_inner_radius": 6.0,
+        "background_annulus_outer_radius": 10.0,
+        "pixels_in_aperture": 29,
+        "valid_pixel_count": 29,
+        "annulus_pixel_count": 201,
+        "dataset_name": "jwst_GS-MEDIUM-HST_F444W_jw01180030001_09201_00003_nrcalong_i2d",
+        "file_path": "data\\jwst\\mastDownload\\JWST\\jw01180030001_09201_00003_nrcalong\\jw01180030001_09201_00003_nrcalong_i2d.fits",
+        "mean_weight": 1045.7178912984914
+      },
+      "5": {
+        "flux": 115.1261402964592,
+        "magnitude": 19.847065137981062,
+        "background_subtracted_flux": 69.24597321547085,
+        "background_subtracted_magnitude": 20.399013691440306,
+        "flux_error": 1.01324619490864,
+        "snr": 68.34071873491168,
+        "background_mean": 0.5735020885123542,
+        "background_std": 0.11203331737300853,
+        "coverage_fraction": 1.0,
+        "x": 1402.2188052636645,
+        "y": 272.4027733219814,
+        "aperture_radius": 5.0,
+        "background_annulus_inner_radius": 6.0,
+        "background_annulus_outer_radius": 10.0,
+        "pixels_in_aperture": 80,
+        "valid_pixel_count": 80,
+        "annulus_pixel_count": 201,
+        "dataset_name": "jwst_GS-MEDIUM-HST_F444W_jw01180030001_09201_00003_nrcalong_i2d",
+        "file_path": "data\\jwst\\mastDownload\\JWST\\jw01180030001_09201_00003_nrcalong\\jw01180030001_09201_00003_nrcalong_i2d.fits",
+        "mean_weight": 1045.719058227539
+      }
+    },
+    "jwst_GS-MEDIUM-HST_F090W_jw01180030001_03201_00001_nrcb1_i2d": {
+      "2": {
+        "flux": 0.0,
+        "magnitude": null,
+        "background_subtracted_flux": 0.0,
+        "background_subtracted_magnitude": null,
+        "flux_error": 0.0,
+        "snr": null,
+        "background_mean": 0.0,
+        "background_std": 0.0,
+        "coverage_fraction": 0.0,
+        "x": -5031.872238591759,
+        "y": -1678.8890320731527,
+        "aperture_radius": 2.0,
+        "background_annulus_inner_radius": 6.0,
+        "background_annulus_outer_radius": 10.0,
+        "pixels_in_aperture": 0,
+        "valid_pixel_count": 0,
+        "annulus_pixel_count": 0,
+        "dataset_name": "jwst_GS-MEDIUM-HST_F090W_jw01180030001_03201_00001_nrcb1_i2d",
+        "file_path": "data\\jwst\\mastDownload\\JWST\\jw01180030001_03201_00001_nrcb1\\jw01180030001_03201_00001_nrcb1_i2d.fits",
+        "mean_weight": 0.0
+      },
+      "3": {
+        "flux": 0.0,
+        "magnitude": null,
+        "background_subtracted_flux": 0.0,
+        "background_subtracted_magnitude": null,
+        "flux_error": 0.0,
+        "snr": null,
+        "background_mean": 0.0,
+        "background_std": 0.0,
+        "coverage_fraction": 0.0,
+        "x": -5031.872238591759,
+        "y": -1678.8890320731527,
+        "aperture_radius": 3.0,
+        "background_annulus_inner_radius": 6.0,
+        "background_annulus_outer_radius": 10.0,
+        "pixels_in_aperture": 0,
+        "valid_pixel_count": 0,
+        "annulus_pixel_count": 0,
+        "dataset_name": "jwst_GS-MEDIUM-HST_F090W_jw01180030001_03201_00001_nrcb1_i2d",
+        "file_path": "data\\jwst\\mastDownload\\JWST\\jw01180030001_03201_00001_nrcb1\\jw01180030001_03201_00001_nrcb1_i2d.fits",
+        "mean_weight": 0.0
+      },
+      "5": {
+        "flux": 0.0,
+        "magnitude": null,
+        "background_subtracted_flux": 0.0,
+        "background_subtracted_magnitude": null,
+        "flux_error": 0.0,
+        "snr": null,
+        "background_mean": 0.0,
+        "background_std": 0.0,
+        "coverage_fraction": 0.0,
+        "x": -5031.872238591759,
+        "y": -1678.8890320731527,
+        "aperture_radius": 5.0,
+        "background_annulus_inner_radius": 6.0,
+        "background_annulus_outer_radius": 10.0,
+        "pixels_in_aperture": 0,
+        "valid_pixel_count": 0,
+        "annulus_pixel_count": 0,
+        "dataset_name": "jwst_GS-MEDIUM-HST_F090W_jw01180030001_03201_00001_nrcb1_i2d",
+        "file_path": "data\\jwst\\mastDownload\\JWST\\jw01180030001_03201_00001_nrcb1\\jw01180030001_03201_00001_nrcb1_i2d.fits",
+        "mean_weight": 0.0
+      }
+    },
+    "jwst_GS-MEDIUM-HST_F200W_jw01180030001_07201_00001_nrca3_i2d": {
+      "2": {
+        "flux": 49.61633491516113,
+        "magnitude": 20.76093829891552,
+        "background_subtracted_flux": 37.993971592719014,
+        "background_subtracted_magnitude": 21.050713265807303,
+        "flux_error": 1.7711133778944987,
+        "snr": 21.45202676854391,
+        "background_mean": 0.8301688087458657,
+        "background_std": 0.46827282966283823,
+        "coverage_fraction": 1.0,
+        "x": 663.839891763829,
+        "y": 593.4024172083233,
+        "aperture_radius": 2.0,
+        "background_annulus_inner_radius": 6.0,
+        "background_annulus_outer_radius": 10.0,
+        "pixels_in_aperture": 14,
+        "valid_pixel_count": 14,
+        "annulus_pixel_count": 202,
+        "dataset_name": "jwst_GS-MEDIUM-HST_F200W_jw01180030001_07201_00001_nrca3_i2d",
+        "file_path": "data\\jwst\\mastDownload\\JWST\\jw01180030001_07201_00001_nrca3\\jw01180030001_07201_00001_nrca3_i2d.fits",
+        "mean_weight": 854.4735804966518
+      },
+      "3": {
+        "flux": 84.77619183063507,
+        "magnitude": 20.17931523988679,
+        "background_subtracted_flux": 61.53146518575083,
+        "background_subtracted_magnitude": 20.52725685844804,
+        "flux_error": 2.500795859074716,
+        "snr": 24.604753307819863,
+        "background_mean": 0.8301688087458657,
+        "background_std": 0.46827282966283823,
+        "coverage_fraction": 1.0,
+        "x": 663.839891763829,
+        "y": 593.4024172083233,
+        "aperture_radius": 3.0,
+        "background_annulus_inner_radius": 6.0,
+        "background_annulus_outer_radius": 10.0,
+        "pixels_in_aperture": 28,
+        "valid_pixel_count": 28,
+        "annulus_pixel_count": 202,
+        "dataset_name": "jwst_GS-MEDIUM-HST_F200W_jw01180030001_07201_00001_nrca3_i2d",
+        "file_path": "data\\jwst\\mastDownload\\JWST\\jw01180030001_07201_00001_nrca3\\jw01180030001_07201_00001_nrca3_i2d.fits",
+        "mean_weight": 854.4732186453683
+      },
+      "5": {
+        "flux": 177.36196887493134,
+        "magnitude": 19.377848747033593,
+        "background_subtracted_flux": 111.77863298400794,
+        "background_subtracted_magnitude": 19.879103014916502,
+        "flux_error": 4.1896074931950515,
+        "snr": 26.679977340494023,
+        "background_mean": 0.8301688087458657,
+        "background_std": 0.46827282966283823,
+        "coverage_fraction": 1.0,
+        "x": 663.839891763829,
+        "y": 593.4024172083233,
+        "aperture_radius": 5.0,
+        "background_annulus_inner_radius": 6.0,
+        "background_annulus_outer_radius": 10.0,
+        "pixels_in_aperture": 79,
+        "valid_pixel_count": 79,
+        "annulus_pixel_count": 202,
+        "dataset_name": "jwst_GS-MEDIUM-HST_F200W_jw01180030001_07201_00001_nrca3_i2d",
+        "file_path": "data\\jwst\\mastDownload\\JWST\\jw01180030001_07201_00001_nrca3\\jw01180030001_07201_00001_nrca3_i2d.fits",
+        "mean_weight": 854.4720644407635
+      }
+    }
+  },
+  "artifacts": [
+    {
+      "path": "research_output\\visuals\\GS-MEDIUM-HST_source_68_rank_4_evidence.png",
+      "kind": "evidence_panel"
+    },
+    {
+      "path": "research_output\\visuals\\GS-MEDIUM-HST_source_68_rank_4_evidence.json",
+      "kind": "evidence_sidecar"
+    }
+  ]
+}

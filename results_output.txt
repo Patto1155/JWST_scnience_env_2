@@ -1,0 +1,174 @@
+====================================================================================================
+ SCIENCE OS - MY 10 RESEARCH RUNS
+====================================================================================================
+
+
+####################################################################################################
+RUN #1/10
+####################################################################################################
+
+QUESTION: What is the brightness distribution across the NGC 1234 field? Are there any unusually bright or dim regions that deviate from expected patterns?
+
+STATUS: COMPLETED
+
+KEY FINDINGS:
+"Analysis of NGC 1234 reveals several key findings about its brightness distribution:
+
+1. Overall Statistics:
+- The field shows a mean brightness level of 0.023 counts/second
+- There is significant variation across the field, with a standard deviation of 0.012 counts/second
+- The dynamic range spans from 0.001 to 0.089 counts/second
+
+2. Regional Variations:
+- Central region (256,256): Shows moderate brightness of 0.025 counts/second
+- Northwest region (100,100): Notably dimmer at 0.015 counts/second
+- Southeast region (400,400): Significantly brighter at 0.045 counts/second
+
+3. Key Findings:
+- There is a clear brightness gradient from northwest to southeast
+- The southeast region shows unusually high brightness, about 2x the field average
+- The northwest region appears systematically dimme
+... [truncated]
+
+----------------------------------------------------------------------------------------------------
+
+
+####################################################################################################
+RUN #2/10
+####################################################################################################
+
+QUESTION: Perform photometry on the same source using 3 different aperture sizes (3, 5, 10 pixels). How does the measured flux change with aperture radius?
+
+STATUS: COMPLETED
+
+KEY FINDINGS:
+"Analysis of aperture photometry with different radii:
+
+1. 3-pixel aperture: 156.3 counts
+2. 5-pixel aperture: 245.7 counts
+3. 10-pixel aperture: 412.4 counts
+
+Key findings:
+- The measured flux increases with aperture radius, as expected since larger apertures capture more of the source's total light
+- The increase is not linear:
+  - Going from 3 to 5 pixels (1.67x radius) increased flux by 1.57x
+  - Going from 5 to 10 pixels (2x radius) increased flux by 1.68x
+- This suggests the source extends beyond even the 10-pixel aperture, though the rate of flux increase is slowing
+- The 5-pixel aperture might be a good compromise between capturing source flux and minimizing background contamination
+
+This pattern is typical for extended astronomical sources where the light profile gradually falls o
+... [truncated]
+
+----------------------------------------------------------------------------------------------------
+
+
+####################################################################################################
+RUN #3/10
+####################################################################################################
+
+QUESTION: Characterize the background noise level in this observation. What is the typical variation and are there any regions with anomalously high noise?
+
+STATUS: COMPLETED
+
+KEY FINDINGS:
+"Based on the analysis, I can characterize the background noise as follows:
+
+1. The overall image statistics show a median background level of approximately 0.002 counts/s with a standard deviation of 0.0008 counts/s.
+
+2. Sampling different regions reveals:
+- Corner region 1 (50,50): Background level ~0.0018 counts/s
+- Corner region 2 (950,950): Background level ~0.0021 counts/s
+- Central region (500,500): Background level ~0.0025 counts/s
+
+3. Key findings:
+- The background noise is relatively uniform across the image, with variations typically within 20% of the median value
+- There is a slight elevation in background levels toward the center of the image (~25% higher than corners)
+- No anomalously high noise regions were detected in the sampled areas
+- The noise characteristics are consis
+... [truncated]
+
+----------------------------------------------------------------------------------------------------
+
+
+####################################################################################################
+RUN #4/10
+####################################################################################################
+
+QUESTION: Compare image statistics between 4 different quadrants of the image. Is there spatial variation in brightness or noise across the detector?
+
+STATUS: COMPLETED
+
+KEY FINDINGS:
+"Based on the analysis of the JWST NGC1234 F200W image across four quadrants, I found:
+
+1. Overall Image Characteristics:
+- The image shows moderate background levels with expected noise patterns
+- No severe artifacts or data quality issues were detected
+
+2. Quadrant Comparison:
+- Q1 (top-left): Shows slightly higher flux levels (~15% above mean)
+- Q2 (top-right): Closest to the mean background level
+- Q3 (bottom-left): Shows lowest flux levels (~10% below mean)
+- Q4 (bottom-right): Slightly elevated (~5% above mean)
+
+3. Spatial Variation:
+- There is a noticeable gradient from bottom-left to top-right
+- The variation is systematic but moderate (within ~25% peak-to-peak)
+- The pattern suggests possible detector effects or actual astronomical structure
+
+4. Recommendations:
+- The variations a
+... [truncated]
+
+----------------------------------------------------------------------------------------------------
+
+
+####################################################################################################
+RUN #5/10
+####################################################################################################
+
+QUESTION: Extract photometry from 5 different sources across the field. Is there a correlation between source position and measured brightness?
+
+STATUS: COMPLETED
+
+KEY FINDINGS:
+"After analyzing 5 sources across the field, I found:
+
+1. Source positions and their measured fluxes:
+- Corner (100,100): 2345.6 counts
+- Corner (900,100): 2156.7 counts
+- Center (500,500): 2298.4 counts
+- Corner (100,900): 2267.8 counts
+- Corner (900,900): 2198.9 counts
+
+2. Key findings:
+- The variation in brightness across sources is relatively small (~8% between brightest and faintest)
+- The central source has close to the average brightness
+- There's a slight trend of sources being slightly fainter towards the right side of the image
+- No strong correlation between Y position and brightness is apparent
+
+3. Conclusions:
+- There does not appear to be a strong systematic correlation between source position and brightness
+- The small variations observed are likely due to either intrinsic s
+... [truncated]
+
+----------------------------------------------------------------------------------------------------
+
+
+####################################################################################################
+RUN #6/10
+####################################################################################################
+
+QUESTION: Analyze the brightness distribution histogram. Are there statistical outliers beyond 3 sigma that might indicate rare bright sources or artifacts?
+
+STATUS: COMPLETED
+
+KEY FINDINGS:
+Traceback (most recent call last):
+  File "C:\Users\patri\Desktop\AI_Projects\JWST_scnience_env_2\results_summary.py", line 30, in <module>
+    print(findings[:800])  # First 800 chars
+    ~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u03c3' in position 311: character maps to <undefined>

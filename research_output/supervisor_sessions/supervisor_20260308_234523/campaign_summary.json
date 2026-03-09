@@ -1,0 +1,22 @@
+{
+  "session_id": "supervisor_20260308_234523",
+  "objective": "Triaging JWST high-z candidates with cheap workers before expensive review.",
+  "candidate_source": "research_output\\highz_shortlist.json",
+  "worker_model": "qwen/qwen3-next-80b-a3b-thinking",
+  "judge_model": null,
+  "status": "completed_with_errors",
+  "worker_count": 0,
+  "worker_results_path": "research_output\\supervisor_sessions\\supervisor_20260308_234523\\worker_results.json",
+  "judge_report_path": null,
+  "judge_markdown_path": null,
+  "session_errors": [
+    "validation_request_failed:SMACS-J0723.3-7327:source:1063:405 Client Error: Method Not Allowed for url: http://localhost:8000/runs/validate",
+    "validation_request_failed:SMACS-J0723.3-7327:source:451:405 Client Error: Method Not Allowed for url: http://localhost:8000/runs/validate",
+    "validation_request_failed:SMACS-J0723.3-7327:source:16:405 Client Error: Method Not Allowed for url: http://localhost:8000/runs/validate",
+    "validation_request_failed:SMACS-J0723.3-7327:source:15:405 Client Error: Method Not Allowed for url: http://localhost:8000/runs/validate",
+    "validation_request_failed:SMACS-J0723.3-7327:source:143:405 Client Error: Method Not Allowed for url: http://localhost:8000/runs/validate"
+  ],
+  "operator_inbox_path": "research_output\\supervisor_sessions\\supervisor_20260308_234523\\operator_inbox.jsonl",
+  "supervisor_outbox_path": "research_output\\supervisor_sessions\\supervisor_20260308_234523\\supervisor_outbox.jsonl",
+  "tool_call_count_total": 0
+}

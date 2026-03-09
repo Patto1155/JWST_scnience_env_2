@@ -1,0 +1,21 @@
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["core_api", "runner", "tools", "discovery"]
+
+[tool.mypy]
+python_version = "3.13"
+ignore_missing_imports = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+check_untyped_defs = true
+exclude = "(^research_output/|^data/)"
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["core_api/tests", "runner/tests"]

@@ -1,0 +1,288 @@
+[
+  {
+    "candidate_id": "SMACS-J0723.3-7327:source:16",
+    "target": "SMACS-J0723.3-7327",
+    "source_id": 16,
+    "verdict": "promote",
+    "confidence": 0.85,
+    "interestingness": 0.9,
+    "key_metrics": {
+      "ratio_f090_f444": 0.0001,
+      "red_snr_r3": 380.0343,
+      "coverage_fraction_r3": 1.0,
+      "validation_score": 0.9394
+    },
+    "evidence_summary": [
+      "F444W detected with SNR 380.0",
+      "F090W non-detection (flux -0.022 \u00b1 0.165 MJy/sr)",
+      "F200W data unavailable (off-chip)"
+    ],
+    "artifact_paths": [
+      "temp_evidence\\candidate_16_evidence.png"
+    ],
+    "next_checks": [
+      "Verify F444W PSF shape",
+      "Check F090W background subtraction consistency"
+    ],
+    "task_id": "SMACS-J0723.3-7327:source:16",
+    "run_id": 115,
+    "candidate": {
+      "candidate_id": "SMACS-J0723.3-7327:source:16",
+      "target": "SMACS-J0723.3-7327",
+      "source_id": 16,
+      "position": {
+        "x": 654.0101873414867,
+        "y": 41.86302744474725
+      },
+      "datasets": [
+        "jwst_SMACS-J0723.3-7327_F444W_jw02736001001_02105_00004_nrcalong_i2d",
+        "jwst_SMACS-J0723.3-7327_F090W_jw02736001001_02101_00004_nrca1_i2d",
+        "jwst_SMACS-J0723.3-7327_F200W_jw02736001001_02105_00004_nrca4_i2d"
+      ],
+      "reference_dataset": "jwst_SMACS-J0723.3-7327_F444W_jw02736001001_02105_00004_nrcalong_i2d",
+      "blue_dataset": "jwst_SMACS-J0723.3-7327_F090W_jw02736001001_02101_00004_nrca1_i2d",
+      "mid_dataset": "jwst_SMACS-J0723.3-7327_F200W_jw02736001001_02105_00004_nrca4_i2d",
+      "ratio_f090_f444": 0.0,
+      "validation_score": 0.9394162372115181,
+      "validation_status": "keep",
+      "red_snr_r3": 380.0166988499148,
+      "coverage_fraction_r3": 1.0,
+      "edge_distance_px": 41.86302744474725,
+      "artifacts": [
+        "research_output\\visuals\\SMACS-J0723.3-7327_source_16_rank_3_evidence.png",
+        "research_output\\visuals\\SMACS-J0723.3-7327_source_16_rank_3_evidence.json"
+      ],
+      "primary_channel": "dropout_loose",
+      "proposal_channels": [
+        "dropout_loose",
+        "dropout_strict",
+        "anomaly_context"
+      ],
+      "channel_scores": {
+        "dropout_strict": 0.9872146405098902,
+        "dropout_loose": 1.0,
+        "anomaly_context": 0.9166666666666666
+      },
+      "measurement_status_by_filter": {
+        "F090W": "measured_nondetection",
+        "F200W": "unmeasured_offchip",
+        "F444W": "measured_detection"
+      },
+      "completeness_score": 0.6666666666666666,
+      "novelty_score": 0.9166666666666666,
+      "falsification_flags": [
+        "mid_unmeasured_offchip"
+      ],
+      "disqualifying_flags": [],
+      "portfolio_bucket": "alternative"
+    },
+    "final_findings_text": "WORKER_REPORT_JSON: {\"candidate_id\": \"SMACS-J0723.3-7327:source:16\", \"target\": \"SMACS-J0723.3-7327\", \"source_id\": 16, \"verdict\": \"promote\", \"confidence\": 0.85, \"interestingness\": 0.9, \"key_metrics\": {\"ratio_f090_f444\": 0.0001, \"red_snr_r3\": 380.0343, \"coverage_fraction_r3\": 1.0, \"validation_score\": 0.9394}, \"evidence_summary\": [\"F444W detected with SNR 380.0\", \"F090W non-detection (flux -0.022 \u00b1 0.165 MJy/sr)\", \"F200W data unavailable (off-chip)\"], \"artifact_paths\": [\"temp_evidence\\\\candidate_16_evidence.png\"], \"next_checks\": [\"Verify F444W PSF shape\", \"Check F090W background subtraction consistency\"]}",
+    "run_status": "completed",
+    "status_reason": "completed_successfully",
+    "status_hints": [],
+    "result_metrics": {
+      "successful_tool_calls": 3,
+      "reflection_count": 1,
+      "blocked_finish_attempts": 1,
+      "min_successful_tool_calls": 3,
+      "min_reflections": 1,
+      "artifact_count": 2
+    },
+    "tool_call_count": 3,
+    "reflection_count": 1,
+    "artifact_count": 2,
+    "supervisor_rank_score": 1.8692457689150612,
+    "schema_errors": []
+  },
+  {
+    "candidate_id": "SMACS-J0723.3-7327:source:1063",
+    "target": "SMACS-J0723.3-7327",
+    "source_id": 1063,
+    "verdict": "hold",
+    "confidence": 0.2,
+    "interestingness": 0.2,
+    "key_metrics": {
+      "ratio_f090_f444": 0.0,
+      "red_snr_r3": 68.36274950651129,
+      "coverage_fraction_r3": 1.0,
+      "validation_score": 0.9567615225349555
+    },
+    "evidence_summary": [
+      "Worker did not return a structured report."
+    ],
+    "artifact_paths": [
+      "research_output\\visuals\\SMACS-J0723.3-7327_source_1063_rank_1_evidence.png",
+      "research_output\\visuals\\SMACS-J0723.3-7327_source_1063_rank_1_evidence.json"
+    ],
+    "next_checks": [
+      "Re-run candidate with a larger model before escalation."
+    ],
+    "task_id": "SMACS-J0723.3-7327:source:1063",
+    "run_id": 113,
+    "candidate": {
+      "candidate_id": "SMACS-J0723.3-7327:source:1063",
+      "target": "SMACS-J0723.3-7327",
+      "source_id": 1063,
+      "position": {
+        "x": 846.1350343682557,
+        "y": 734.8161755575095
+      },
+      "datasets": [
+        "jwst_SMACS-J0723.3-7327_F444W_jw02736001001_02105_00004_nrcalong_i2d",
+        "jwst_SMACS-J0723.3-7327_F090W_jw02736001001_02101_00004_nrca1_i2d",
+        "jwst_SMACS-J0723.3-7327_F200W_jw02736001001_02105_00004_nrca4_i2d"
+      ],
+      "reference_dataset": "jwst_SMACS-J0723.3-7327_F444W_jw02736001001_02105_00004_nrcalong_i2d",
+      "blue_dataset": "jwst_SMACS-J0723.3-7327_F090W_jw02736001001_02101_00004_nrca1_i2d",
+      "mid_dataset": "jwst_SMACS-J0723.3-7327_F200W_jw02736001001_02105_00004_nrca4_i2d",
+      "ratio_f090_f444": 0.0,
+      "validation_score": 0.9567615225349555,
+      "validation_status": "keep",
+      "red_snr_r3": 68.36274950651129,
+      "coverage_fraction_r3": 1.0,
+      "edge_distance_px": 734.8161755575095,
+      "artifacts": [
+        "research_output\\visuals\\SMACS-J0723.3-7327_source_1063_rank_1_evidence.png",
+        "research_output\\visuals\\SMACS-J0723.3-7327_source_1063_rank_1_evidence.json"
+      ],
+      "primary_channel": "dropout_strict",
+      "proposal_channels": [
+        "dropout_strict",
+        "dropout_loose",
+        "morphology_extended_red",
+        "anomaly_context"
+      ],
+      "channel_scores": {
+        "dropout_strict": 1.0,
+        "dropout_loose": 1.0,
+        "morphology_extended_red": 1.0,
+        "anomaly_context": 0.9166666666666666
+      },
+      "measurement_status_by_filter": {
+        "F090W": "measured_nondetection",
+        "F200W": "unmeasured_offchip",
+        "F444W": "measured_detection"
+      },
+      "completeness_score": 0.6666666666666666,
+      "novelty_score": 1.0,
+      "falsification_flags": [
+        "mid_unmeasured_offchip"
+      ],
+      "disqualifying_flags": [],
+      "portfolio_bucket": "conservative"
+    },
+    "final_findings_text": null,
+    "run_status": "completed",
+    "status_reason": "completed_successfully",
+    "status_hints": [],
+    "result_metrics": {
+      "successful_tool_calls": 3,
+      "reflection_count": 1,
+      "blocked_finish_attempts": 1,
+      "min_successful_tool_calls": 3,
+      "min_reflections": 1,
+      "artifact_count": 2
+    },
+    "tool_call_count": 3,
+    "reflection_count": 1,
+    "artifact_count": 2,
+    "supervisor_rank_score": 0.8901808950469099,
+    "schema_errors": [
+      "worker_report_missing_or_malformed"
+    ]
+  },
+  {
+    "candidate_id": "SMACS-J0723.3-7327:source:451",
+    "target": "SMACS-J0723.3-7327",
+    "source_id": 451,
+    "verdict": "reject",
+    "confidence": 0.85,
+    "interestingness": 0.0,
+    "key_metrics": {
+      "ratio_f090_f444": 0.0,
+      "red_snr_r3": 283.1,
+      "coverage_fraction_r3": 1.0,
+      "validation_score": 0.9401
+    },
+    "evidence_summary": [
+      "F090W non-detection (SNR=0.32, flux=0.048\u00b10.15 nJy)",
+      "F444W strong detection (SNR=283.1)",
+      "F200W data completely off-chip (missing)",
+      "Missing F200W prevents dropout analysis confirmation"
+    ],
+    "artifact_paths": [
+      "research_output\\visuals\\jwst_SMACS-J0723.3-7327_F444W_jw02736001001_02105_00004_nrcalong_i2d_x565_y987_evidence.png",
+      "research_output\\visuals\\jwst_SMACS-J0723.3-7327_F444W_jw02736001001_02105_00004_nrcalong_i2d_x565_y987_evidence.json"
+    ],
+    "next_checks": [],
+    "task_id": "SMACS-J0723.3-7327:source:451",
+    "run_id": 114,
+    "candidate": {
+      "candidate_id": "SMACS-J0723.3-7327:source:451",
+      "target": "SMACS-J0723.3-7327",
+      "source_id": 451,
+      "position": {
+        "x": 565.8595061381326,
+        "y": 987.5733491479871
+      },
+      "datasets": [
+        "jwst_SMACS-J0723.3-7327_F444W_jw02736001001_02105_00004_nrcalong_i2d",
+        "jwst_SMACS-J0723.3-7327_F090W_jw02736001001_02101_00004_nrca1_i2d",
+        "jwst_SMACS-J0723.3-7327_F200W_jw02736001001_02105_00004_nrca4_i2d"
+      ],
+      "reference_dataset": "jwst_SMACS-J0723.3-7327_F444W_jw02736001001_02105_00004_nrcalong_i2d",
+      "blue_dataset": "jwst_SMACS-J0723.3-7327_F090W_jw02736001001_02101_00004_nrca1_i2d",
+      "mid_dataset": "jwst_SMACS-J0723.3-7327_F200W_jw02736001001_02105_00004_nrca4_i2d",
+      "ratio_f090_f444": 0.0,
+      "validation_score": 0.9401170695531675,
+      "validation_status": "keep",
+      "red_snr_r3": 323.40702455935303,
+      "coverage_fraction_r3": 1.0,
+      "edge_distance_px": 565.8595061381326,
+      "artifacts": [
+        "research_output\\visuals\\SMACS-J0723.3-7327_source_451_rank_2_evidence.png",
+        "research_output\\visuals\\SMACS-J0723.3-7327_source_451_rank_2_evidence.json"
+      ],
+      "primary_channel": "dropout_strict",
+      "proposal_channels": [
+        "dropout_strict",
+        "dropout_loose",
+        "anomaly_context"
+      ],
+      "channel_scores": {
+        "dropout_strict": 1.0,
+        "dropout_loose": 1.0,
+        "anomaly_context": 0.9166666666666666
+      },
+      "measurement_status_by_filter": {
+        "F090W": "measured_nondetection",
+        "F200W": "unmeasured_offchip",
+        "F444W": "measured_detection"
+      },
+      "completeness_score": 0.6666666666666666,
+      "novelty_score": 0.9166666666666666,
+      "falsification_flags": [
+        "mid_unmeasured_offchip"
+      ],
+      "disqualifying_flags": [],
+      "portfolio_bucket": "conservative"
+    },
+    "final_findings_text": "WORKER_REPORT_JSON:{\"candidate_id\": \"SMACS-J0723.3-7327:source:451\", \"target\": \"SMACS-J0723.3-7327\", \"source_id\": 451, \"verdict\": \"reject\", \"confidence\": 0.85, \"interestingness\": 0.0, \"key_metrics\": {\"ratio_f090_f444\": 0.0, \"red_snr_r3\": 283.1, \"coverage_fraction_r3\": 1.0, \"validation_score\": 0.9401}, \"evidence_summary\": [\"F090W non-detection (SNR=0.32, flux=0.048\u00b10.15 nJy)\", \"F444W strong detection (SNR=283.1)\", \"F200W data completely off-chip (missing)\", \"Missing F200W prevents dropout analysis confirmation\"], \"artifact_paths\": [\"research_output\\\\visuals\\\\jwst_SMACS-J0723.3-7327_F444W_jw02736001001_02105_00004_nrcalong_i2d_x565_y987_evidence.png\", \"research_output\\\\visuals\\\\jwst_SMACS-J0723.3-7327_F444W_jw02736001001_02105_00004_nrcalong_i2d_x565_y987_evidence.json\"], \"next_checks\": []}",
+    "run_status": "completed",
+    "status_reason": "completed_successfully",
+    "status_hints": [],
+    "result_metrics": {
+      "successful_tool_calls": 3,
+      "reflection_count": 1,
+      "blocked_finish_attempts": 1,
+      "min_successful_tool_calls": 3,
+      "min_reflections": 1,
+      "artifact_count": 2
+    },
+    "tool_call_count": 3,
+    "reflection_count": 1,
+    "artifact_count": 2,
+    "supervisor_rank_score": 0.5543508937663084,
+    "schema_errors": []
+  }
+]

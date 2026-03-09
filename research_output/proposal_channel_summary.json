@@ -1,0 +1,166 @@
+{
+  "candidate_count": 1732,
+  "shortlist_count": 25,
+  "candidate_channel_counts": {
+    "morphology_extended_red": 1373,
+    "dropout_strict": 50,
+    "dropout_loose": 61,
+    "anomaly_context": 1177,
+    "novel_high_snr_outlier": 116
+  },
+  "shortlist_channel_counts": {
+    "dropout_strict": 12,
+    "dropout_loose": 14,
+    "morphology_extended_red": 22,
+    "anomaly_context": 15,
+    "novel_high_snr_outlier": 2
+  },
+  "portfolio_bucket_counts": {
+    "edge_exploration": 1505,
+    "conservative": 2,
+    "alternative": 53,
+    "novelty": 172
+  },
+  "shortlist_bucket_counts": {
+    "conservative": 2,
+    "alternative": 7,
+    "novelty": 5,
+    "edge_exploration": 11
+  },
+  "measurement_status_counts": {
+    "F200W:measured_detection": 319,
+    "F090W:unmeasured_offchip": 1414,
+    "F444W:measured_detection": 1656,
+    "F200W:measured_nondetection": 44,
+    "F200W:unmeasured_offchip": 1367,
+    "F444W:measured_nondetection": 76,
+    "F090W:measured_nondetection": 97,
+    "F090W:measured_detection": 214,
+    "F200W:unmeasured_low_coverage": 2,
+    "F090W:unmeasured_low_coverage": 7
+  },
+  "falsification_flag_counts": {
+    "blue_unmeasured_offchip": 1414,
+    "mid_unmeasured_offchip": 1367,
+    "reference_low_snr": 239,
+    "mid_unmeasured_low_coverage": 2,
+    "aperture_instability": 265,
+    "blue_unmeasured_low_coverage": 7
+  },
+  "disqualifying_flag_counts": {
+    "blue_unmeasured": 1421,
+    "reference_low_snr": 239
+  },
+  "top_candidates_by_bucket": {
+    "conservative": [
+      {
+        "target": "SMACS-J0723.3-7327",
+        "source_id": 1063,
+        "primary_channel": "dropout_strict",
+        "validation_score": 0.9567615225349555
+      },
+      {
+        "target": "SMACS-J0723.3-7327",
+        "source_id": 451,
+        "primary_channel": "dropout_strict",
+        "validation_score": 0.9401170695531675
+      }
+    ],
+    "alternative": [
+      {
+        "target": "SMACS-J0723.3-7327",
+        "source_id": 16,
+        "primary_channel": "dropout_loose",
+        "validation_score": 0.9394162372115181
+      },
+      {
+        "target": "SMACS-J0723.3-7327",
+        "source_id": 15,
+        "primary_channel": "dropout_loose",
+        "validation_score": 0.9138169956452428
+      },
+      {
+        "target": "SMACS-J0723.3-7327",
+        "source_id": 143,
+        "primary_channel": "morphology_extended_red",
+        "validation_score": 0.8905937833048575
+      },
+      {
+        "target": "SMACS-J0723.3-7327",
+        "source_id": 26,
+        "primary_channel": "dropout_loose",
+        "validation_score": 0.8889939275549993
+      },
+      {
+        "target": "SMACS-J0723.3-7327",
+        "source_id": 955,
+        "primary_channel": "dropout_loose",
+        "validation_score": 0.8645274694796706
+      }
+    ],
+    "novelty": [
+      {
+        "target": "SMACS-J0723.3-7327",
+        "source_id": 159,
+        "primary_channel": "anomaly_context",
+        "validation_score": 0.8822131019936508
+      },
+      {
+        "target": "SMACS-J0723.3-7327",
+        "source_id": 965,
+        "primary_channel": "anomaly_context",
+        "validation_score": 0.789492865944659
+      },
+      {
+        "target": "SMACS-J0723.3-7327",
+        "source_id": 56,
+        "primary_channel": "anomaly_context",
+        "validation_score": 0.7188212681714485
+      },
+      {
+        "target": "SMACS-J0723.3-7327",
+        "source_id": 383,
+        "primary_channel": "anomaly_context",
+        "validation_score": 0.6943114399620322
+      },
+      {
+        "target": "SMACS-J0723.3-7327",
+        "source_id": 130,
+        "primary_channel": "anomaly_context",
+        "validation_score": 0.6410806617136087
+      }
+    ],
+    "edge_exploration": [
+      {
+        "target": "SMACS-J0723.3-7327",
+        "source_id": 1207,
+        "primary_channel": "morphology_extended_red",
+        "validation_score": 0.8466666666666668
+      },
+      {
+        "target": "GS-MEDIUM-HST",
+        "source_id": 610,
+        "primary_channel": "morphology_extended_red",
+        "validation_score": 0.8466666666666668
+      },
+      {
+        "target": "GS-MEDIUM-HST",
+        "source_id": 207,
+        "primary_channel": "morphology_extended_red",
+        "validation_score": 0.8466666666666668
+      },
+      {
+        "target": "GS-MEDIUM-HST",
+        "source_id": 220,
+        "primary_channel": "morphology_extended_red",
+        "validation_score": 0.8466666666666668
+      },
+      {
+        "target": "GS-MEDIUM-HST",
+        "source_id": 68,
+        "primary_channel": "morphology_extended_red",
+        "validation_score": 0.8466666666666668
+      }
+    ]
+  }
+}

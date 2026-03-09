@@ -1,0 +1,26 @@
+{
+  "session_id": "supervisor_20260309_001545",
+  "objective": "Triaging JWST high-z candidates with cheap workers before expensive review.",
+  "worker_model": "qwen/qwen3-next-80b-a3b-thinking",
+  "judge_model": null,
+  "base_url": "http://localhost:8000",
+  "created_at": "2026-03-09T00:15:45.894482+00:00",
+  "updated_at": "2026-03-09T00:19:20.889622+00:00",
+  "status": "completed_with_errors",
+  "candidate_source": "research_output\\highz_shortlist.json",
+  "worker_results_path": "research_output\\supervisor_sessions\\supervisor_20260309_001545\\worker_results.json",
+  "judge_report_path": null,
+  "judge_markdown_path": null,
+  "summary_path": "research_output\\supervisor_sessions\\supervisor_20260309_001545\\campaign_summary.json",
+  "event_stream_path": "research_output\\supervisor_sessions\\supervisor_20260309_001545\\event_stream.jsonl",
+  "live_state_path": "research_output\\supervisor_sessions\\supervisor_20260309_001545\\live_state.json",
+  "operator_inbox_path": "research_output\\supervisor_sessions\\supervisor_20260309_001545\\operator_inbox.jsonl",
+  "supervisor_outbox_path": "research_output\\supervisor_sessions\\supervisor_20260309_001545\\supervisor_outbox.jsonl",
+  "worker_count": 3,
+  "completed_workers": 3,
+  "failed_workers": 0,
+  "completed_with_errors": true,
+  "session_errors": [
+    "worker_schema_issue:SMACS-J0723.3-7327:source:1063:worker_report_missing_or_malformed"
+  ]
+}

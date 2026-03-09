@@ -1,0 +1,30 @@
+{
+  "session_id": "supervisor_20260308_234523",
+  "objective": "Triaging JWST high-z candidates with cheap workers before expensive review.",
+  "worker_model": "qwen/qwen3-next-80b-a3b-thinking",
+  "judge_model": null,
+  "base_url": "http://localhost:8000",
+  "created_at": "2026-03-08T23:45:23.151320+00:00",
+  "updated_at": "2026-03-08T23:45:34.674016+00:00",
+  "status": "completed_with_errors",
+  "candidate_source": "research_output\\highz_shortlist.json",
+  "worker_results_path": "research_output\\supervisor_sessions\\supervisor_20260308_234523\\worker_results.json",
+  "judge_report_path": null,
+  "judge_markdown_path": null,
+  "summary_path": "research_output\\supervisor_sessions\\supervisor_20260308_234523\\campaign_summary.json",
+  "event_stream_path": "research_output\\supervisor_sessions\\supervisor_20260308_234523\\event_stream.jsonl",
+  "live_state_path": "research_output\\supervisor_sessions\\supervisor_20260308_234523\\live_state.json",
+  "operator_inbox_path": "research_output\\supervisor_sessions\\supervisor_20260308_234523\\operator_inbox.jsonl",
+  "supervisor_outbox_path": "research_output\\supervisor_sessions\\supervisor_20260308_234523\\supervisor_outbox.jsonl",
+  "worker_count": 5,
+  "completed_workers": 5,
+  "failed_workers": 5,
+  "completed_with_errors": true,
+  "session_errors": [
+    "validation_request_failed:SMACS-J0723.3-7327:source:1063:405 Client Error: Method Not Allowed for url: http://localhost:8000/runs/validate",
+    "validation_request_failed:SMACS-J0723.3-7327:source:451:405 Client Error: Method Not Allowed for url: http://localhost:8000/runs/validate",
+    "validation_request_failed:SMACS-J0723.3-7327:source:16:405 Client Error: Method Not Allowed for url: http://localhost:8000/runs/validate",
+    "validation_request_failed:SMACS-J0723.3-7327:source:15:405 Client Error: Method Not Allowed for url: http://localhost:8000/runs/validate",
+    "validation_request_failed:SMACS-J0723.3-7327:source:143:405 Client Error: Method Not Allowed for url: http://localhost:8000/runs/validate"
+  ]
+}

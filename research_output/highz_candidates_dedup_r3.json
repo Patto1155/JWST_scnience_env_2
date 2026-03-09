@@ -1,0 +1,422 @@
+[
+  {
+    "target": "SMACS-J0723.3-7327",
+    "cluster_size": 3,
+    "centroid": {
+      "x": 1030.3333333333333,
+      "y": 1616.3333333333333
+    },
+    "representative": {
+      "position": {
+        "x": 1031.0,
+        "y": 1616.0
+      },
+      "f444_flux": 708.7814643383026,
+      "f090_flux": 5.440649822354317,
+      "ratio_f090_f444": 0.007676061093716025,
+      "f444_dataset": "jwst_SMACS-J0723.3-7327_F444W_jw02736001001_02105_00004_nrcalong_i2d",
+      "f090_dataset": "jwst_SMACS-J0723.3-7327_F090W_jw02736001001_02101_00004_nrca1_i2d"
+    },
+    "cluster_ratio_min": 0.007676061093716025,
+    "cluster_ratio_max": 0.009627486209881143
+  },
+  {
+    "target": "SMACS-J0723.3-7327",
+    "cluster_size": 4,
+    "centroid": {
+      "x": 1515.25,
+      "y": 555.0
+    },
+    "representative": {
+      "position": {
+        "x": 1515.0,
+        "y": 555.0
+      },
+      "f444_flux": 622.0699646472931,
+      "f090_flux": 5.428033605217934,
+      "ratio_f090_f444": 0.008725760627738345,
+      "f444_dataset": "jwst_SMACS-J0723.3-7327_F444W_jw02736001001_02105_00004_nrcalong_i2d",
+      "f090_dataset": "jwst_SMACS-J0723.3-7327_F090W_jw02736001001_02101_00004_nrca1_i2d"
+    },
+    "cluster_ratio_min": 0.008725760627738345,
+    "cluster_ratio_max": 0.009190806836158041
+  },
+  {
+    "target": "SMACS-J0723.3-7327",
+    "cluster_size": 4,
+    "centroid": {
+      "x": 1260.5,
+      "y": 670.5
+    },
+    "representative": {
+      "position": {
+        "x": 1260.0,
+        "y": 670.0
+      },
+      "f444_flux": 571.313481092453,
+      "f090_flux": 5.714383780956268,
+      "ratio_f090_f444": 0.010002186137861389,
+      "f444_dataset": "jwst_SMACS-J0723.3-7327_F444W_jw02736001001_02105_00004_nrcalong_i2d",
+      "f090_dataset": "jwst_SMACS-J0723.3-7327_F090W_jw02736001001_02101_00004_nrca1_i2d"
+    },
+    "cluster_ratio_min": 0.010002186137861389,
+    "cluster_ratio_max": 0.010695125619768011
+  },
+  {
+    "target": "SMACS-J0723.3-7327",
+    "cluster_size": 2,
+    "centroid": {
+      "x": 1643.0,
+      "y": 551.5
+    },
+    "representative": {
+      "position": {
+        "x": 1643.0,
+        "y": 552.0
+      },
+      "f444_flux": 507.40568804740906,
+      "f090_flux": 5.297429293394089,
+      "ratio_f090_f444": 0.010440224495274337,
+      "f444_dataset": "jwst_SMACS-J0723.3-7327_F444W_jw02736001001_02105_00004_nrcalong_i2d",
+      "f090_dataset": "jwst_SMACS-J0723.3-7327_F090W_jw02736001001_02101_00004_nrca1_i2d"
+    },
+    "cluster_ratio_min": 0.010440224495274337,
+    "cluster_ratio_max": 0.010663477997844062
+  },
+  {
+    "target": "SMACS-J0723.3-7327",
+    "cluster_size": 3,
+    "centroid": {
+      "x": 1261.6666666666667,
+      "y": 988.3333333333334
+    },
+    "representative": {
+      "position": {
+        "x": 1262.0,
+        "y": 988.0
+      },
+      "f444_flux": 483.0769680440426,
+      "f090_flux": 5.455425500869751,
+      "ratio_f090_f444": 0.0112930772149178,
+      "f444_dataset": "jwst_SMACS-J0723.3-7327_F444W_jw02736001001_02105_00004_nrcalong_i2d",
+      "f090_dataset": "jwst_SMACS-J0723.3-7327_F090W_jw02736001001_02101_00004_nrca1_i2d"
+    },
+    "cluster_ratio_min": 0.0112930772149178,
+    "cluster_ratio_max": 0.011630025854766125
+  },
+  {
+    "target": "SMACS-J0723.3-7327",
+    "cluster_size": 2,
+    "centroid": {
+      "x": 468.0,
+      "y": 538.5
+    },
+    "representative": {
+      "position": {
+        "x": 468.0,
+        "y": 538.0
+      },
+      "f444_flux": 453.14111065864563,
+      "f090_flux": 5.47396594285965,
+      "ratio_f090_f444": 0.012080047062830338,
+      "f444_dataset": "jwst_SMACS-J0723.3-7327_F444W_jw02736001001_02105_00004_nrcalong_i2d",
+      "f090_dataset": "jwst_SMACS-J0723.3-7327_F090W_jw02736001001_02101_00004_nrca1_i2d"
+    },
+    "cluster_ratio_min": 0.012031301148454611,
+    "cluster_ratio_max": 0.012080047062830338
+  },
+  {
+    "target": "SMACS-J0723.3-7327",
+    "cluster_size": 3,
+    "centroid": {
+      "x": 226.66666666666666,
+      "y": 496.3333333333333
+    },
+    "representative": {
+      "position": {
+        "x": 226.0,
+        "y": 496.0
+      },
+      "f444_flux": 422.4296851158142,
+      "f090_flux": 5.4223411828279495,
+      "ratio_f090_f444": 0.012836079882362787,
+      "f444_dataset": "jwst_SMACS-J0723.3-7327_F444W_jw02736001001_02105_00004_nrcalong_i2d",
+      "f090_dataset": "jwst_SMACS-J0723.3-7327_F090W_jw02736001001_02101_00004_nrca1_i2d"
+    },
+    "cluster_ratio_min": 0.012824489468215128,
+    "cluster_ratio_max": 0.012985336515054206
+  },
+  {
+    "target": "SMACS-J0723.3-7327",
+    "cluster_size": 1,
+    "centroid": {
+      "x": 213.0,
+      "y": 299.0
+    },
+    "representative": {
+      "position": {
+        "x": 213.0,
+        "y": 299.0
+      },
+      "f444_flux": 369.1473571062088,
+      "f090_flux": 5.251635983586311,
+      "ratio_f090_f444": 0.01422639464292668,
+      "f444_dataset": "jwst_SMACS-J0723.3-7327_F444W_jw02736001001_02105_00004_nrcalong_i2d",
+      "f090_dataset": "jwst_SMACS-J0723.3-7327_F090W_jw02736001001_02101_00004_nrca1_i2d"
+    },
+    "cluster_ratio_min": 0.01422639464292668,
+    "cluster_ratio_max": 0.01422639464292668
+  },
+  {
+    "target": "GS-MEDIUM-HST",
+    "cluster_size": 6,
+    "centroid": {
+      "x": 1099.8333333333333,
+      "y": 658.8333333333334
+    },
+    "representative": {
+      "position": {
+        "x": 1099.0,
+        "y": 659.0
+      },
+      "f444_flux": 355.3523005247116,
+      "f090_flux": 5.064765185117722,
+      "ratio_f090_f444": 0.014252799764175192,
+      "f444_dataset": "jwst_GS-MEDIUM-HST_F444W_jw01180026001_09201_00003_nrcalong_i2d",
+      "f090_dataset": "jwst_GS-MEDIUM-HST_F090W_jw01180026001_03201_00003_nrca1_i2d"
+    },
+    "cluster_ratio_min": 0.014252799764175192,
+    "cluster_ratio_max": 0.016603457355094137
+  },
+  {
+    "target": "SMACS-J0723.3-7327",
+    "cluster_size": 3,
+    "centroid": {
+      "x": 527.6666666666666,
+      "y": 1762.6666666666667
+    },
+    "representative": {
+      "position": {
+        "x": 527.0,
+        "y": 1763.0
+      },
+      "f444_flux": 260.09401796758175,
+      "f090_flux": 5.353448808193207,
+      "ratio_f090_f444": 0.020582744847520727,
+      "f444_dataset": "jwst_SMACS-J0723.3-7327_F444W_jw02736001001_02105_00004_nrcalong_i2d",
+      "f090_dataset": "jwst_SMACS-J0723.3-7327_F090W_jw02736001001_02101_00004_nrca1_i2d"
+    },
+    "cluster_ratio_min": 0.02023971352755526,
+    "cluster_ratio_max": 0.020582744847520727
+  },
+  {
+    "target": "GS-MEDIUM-HST",
+    "cluster_size": 4,
+    "centroid": {
+      "x": 1362.0,
+      "y": 807.75
+    },
+    "representative": {
+      "position": {
+        "x": 1362.0,
+        "y": 808.0
+      },
+      "f444_flux": 259.7382724881172,
+      "f090_flux": 5.636451467871666,
+      "ratio_f090_f444": 0.021700504180143604,
+      "f444_dataset": "jwst_GS-MEDIUM-HST_F444W_jw01180026001_09201_00003_nrcalong_i2d",
+      "f090_dataset": "jwst_GS-MEDIUM-HST_F090W_jw01180026001_03201_00003_nrca1_i2d"
+    },
+    "cluster_ratio_min": 0.021211653019938506,
+    "cluster_ratio_max": 0.021847265943560838
+  },
+  {
+    "target": "GS-MEDIUM-HST",
+    "cluster_size": 5,
+    "centroid": {
+      "x": 405.8,
+      "y": 1844.6
+    },
+    "representative": {
+      "position": {
+        "x": 405.0,
+        "y": 1845.0
+      },
+      "f444_flux": 258.74534022808075,
+      "f090_flux": 5.295253053307533,
+      "ratio_f090_f444": 0.020465114651494146,
+      "f444_dataset": "jwst_GS-MEDIUM-HST_F444W_jw01180026001_09201_00003_nrcalong_i2d",
+      "f090_dataset": "jwst_GS-MEDIUM-HST_F090W_jw01180026001_03201_00003_nrca1_i2d"
+    },
+    "cluster_ratio_min": 0.020421191210813042,
+    "cluster_ratio_max": 0.02229737330935421
+  },
+  {
+    "target": "SMACS-J0723.3-7327",
+    "cluster_size": 1,
+    "centroid": {
+      "x": 654.0,
+      "y": 42.0
+    },
+    "representative": {
+      "position": {
+        "x": 654.0,
+        "y": 42.0
+      },
+      "f444_flux": 254.21681374311447,
+      "f090_flux": 5.540386602282524,
+      "ratio_f090_f444": 0.021793942425386043,
+      "f444_dataset": "jwst_SMACS-J0723.3-7327_F444W_jw02736001001_02105_00004_nrcalong_i2d",
+      "f090_dataset": "jwst_SMACS-J0723.3-7327_F090W_jw02736001001_02101_00004_nrca1_i2d"
+    },
+    "cluster_ratio_min": 0.021793942425386043,
+    "cluster_ratio_max": 0.021793942425386043
+  },
+  {
+    "target": "SMACS-J0723.3-7327",
+    "cluster_size": 1,
+    "centroid": {
+      "x": 628.0,
+      "y": 1921.0
+    },
+    "representative": {
+      "position": {
+        "x": 628.0,
+        "y": 1921.0
+      },
+      "f444_flux": 244.35209380090237,
+      "f090_flux": 5.361923918128014,
+      "ratio_f090_f444": 0.021943433488631776,
+      "f444_dataset": "jwst_SMACS-J0723.3-7327_F444W_jw02736001001_02105_00004_nrcalong_i2d",
+      "f090_dataset": "jwst_SMACS-J0723.3-7327_F090W_jw02736001001_02101_00004_nrca1_i2d"
+    },
+    "cluster_ratio_min": 0.021943433488631776,
+    "cluster_ratio_max": 0.021943433488631776
+  },
+  {
+    "target": "GS-MEDIUM-HST",
+    "cluster_size": 4,
+    "centroid": {
+      "x": 1155.5,
+      "y": 1143.5
+    },
+    "representative": {
+      "position": {
+        "x": 1156.0,
+        "y": 1143.0
+      },
+      "f444_flux": 199.85376477241516,
+      "f090_flux": 5.556641593575478,
+      "ratio_f090_f444": 0.027803537250865106,
+      "f444_dataset": "jwst_GS-MEDIUM-HST_F444W_jw01180026001_09201_00003_nrcalong_i2d",
+      "f090_dataset": "jwst_GS-MEDIUM-HST_F090W_jw01180026001_03201_00003_nrca1_i2d"
+    },
+    "cluster_ratio_min": 0.027803537250865106,
+    "cluster_ratio_max": 0.02831296753452088
+  },
+  {
+    "target": "SMACS-J0723.3-7327",
+    "cluster_size": 1,
+    "centroid": {
+      "x": 566.0,
+      "y": 988.0
+    },
+    "representative": {
+      "position": {
+        "x": 566.0,
+        "y": 988.0
+      },
+      "f444_flux": 188.56887459754944,
+      "f090_flux": 5.660449177026749,
+      "ratio_f090_f444": 0.03001794007153877,
+      "f444_dataset": "jwst_SMACS-J0723.3-7327_F444W_jw02736001001_02105_00004_nrcalong_i2d",
+      "f090_dataset": "jwst_SMACS-J0723.3-7327_F090W_jw02736001001_02101_00004_nrca1_i2d"
+    },
+    "cluster_ratio_min": 0.03001794007153877,
+    "cluster_ratio_max": 0.03001794007153877
+  },
+  {
+    "target": "GS-MEDIUM-HST",
+    "cluster_size": 3,
+    "centroid": {
+      "x": 1441.6666666666667,
+      "y": 751.6666666666666
+    },
+    "representative": {
+      "position": {
+        "x": 1442.0,
+        "y": 752.0
+      },
+      "f444_flux": 170.0512067079544,
+      "f090_flux": 5.493393167853355,
+      "ratio_f090_f444": 0.03230434687410186,
+      "f444_dataset": "jwst_GS-MEDIUM-HST_F444W_jw01180026001_09201_00003_nrcalong_i2d",
+      "f090_dataset": "jwst_GS-MEDIUM-HST_F090W_jw01180026001_03201_00003_nrca1_i2d"
+    },
+    "cluster_ratio_min": 0.03222531864078163,
+    "cluster_ratio_max": 0.03242313246365638
+  },
+  {
+    "target": "SMACS-J0723.3-7327",
+    "cluster_size": 1,
+    "centroid": {
+      "x": 1392.0,
+      "y": 580.0
+    },
+    "representative": {
+      "position": {
+        "x": 1392.0,
+        "y": 580.0
+      },
+      "f444_flux": 166.84716556966305,
+      "f090_flux": 5.55824376642704,
+      "ratio_f090_f444": 0.03331338442250209,
+      "f444_dataset": "jwst_SMACS-J0723.3-7327_F444W_jw02736001001_02105_00004_nrcalong_i2d",
+      "f090_dataset": "jwst_SMACS-J0723.3-7327_F090W_jw02736001001_02101_00004_nrca1_i2d"
+    },
+    "cluster_ratio_min": 0.03331338442250209,
+    "cluster_ratio_max": 0.03331338442250209
+  },
+  {
+    "target": "GS-MEDIUM-HST",
+    "cluster_size": 2,
+    "centroid": {
+      "x": 364.5,
+      "y": 1279.0
+    },
+    "representative": {
+      "position": {
+        "x": 364.0,
+        "y": 1279.0
+      },
+      "f444_flux": 150.08203354477882,
+      "f090_flux": 5.582056149840355,
+      "ratio_f090_f444": 0.03719336697403477,
+      "f444_dataset": "jwst_GS-MEDIUM-HST_F444W_jw01180026001_09201_00003_nrcalong_i2d",
+      "f090_dataset": "jwst_GS-MEDIUM-HST_F090W_jw01180026001_03201_00003_nrca1_i2d"
+    },
+    "cluster_ratio_min": 0.03713572622373428,
+    "cluster_ratio_max": 0.03719336697403477
+  },
+  {
+    "target": "GS-MEDIUM-HST",
+    "cluster_size": 3,
+    "centroid": {
+      "x": 998.3333333333334,
+      "y": 719.6666666666666
+    },
+    "representative": {
+      "position": {
+        "x": 998.0,
+        "y": 719.0
+      },
+      "f444_flux": 139.03488931059837,
+      "f090_flux": 5.251171484589577,
+      "ratio_f090_f444": 0.03776873208320158,
+      "f444_dataset": "jwst_GS-MEDIUM-HST_F444W_jw01180026001_09201_00003_nrcalong_i2d",
+      "f090_dataset": "jwst_GS-MEDIUM-HST_F090W_jw01180026001_03201_00003_nrca1_i2d"
+    },
+    "cluster_ratio_min": 0.03776873208320158,
+    "cluster_ratio_max": 0.03818946366519792
+  }
+]

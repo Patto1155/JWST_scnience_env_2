@@ -1,0 +1,68 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Artifacts
+artifacts/
+runner_work/
+data/
+
+# Environment
+.env
+.env.local
+.playwright-cli/
+.claude/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# OS
+.DS_Store
+Thumbs.db
+nul
+
+# Tool caches
+.mypy_cache/
+.ruff_cache/
+
+# Logs and temp outputs
+*.log
+tmp_*/
+temp_evidence/
+
+
