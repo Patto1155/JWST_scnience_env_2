@@ -5,145 +5,178 @@
     "log_area",
     "ellipticity"
   ],
-  "n_sky_groups": 1901,
+  "n_injected_point_sources": 1320,
+  "n_sky_groups": 2165,
   "held_out_visit": [
+    {
+      "held_out_visit": "injected",
+      "n_test": 1320,
+      "roc_auc": NaN,
+      "at_threshold_0.5": {
+        "threshold": 0.5,
+        "n_flagged": 327,
+        "artifact_purity": 0.0,
+        "artifact_completeness": NaN,
+        "real_sources_lost": 327,
+        "real_source_loss_fraction": 0.24772727272727274
+      }
+    },
     {
       "held_out_visit": "jw01180025001_",
       "n_test": 1024,
-      "roc_auc": 0.9734659786926018,
+      "roc_auc": 0.9785812390957348,
       "at_threshold_0.5": {
         "threshold": 0.5,
-        "n_flagged": 119,
-        "artifact_purity": 0.957983193277311,
-        "artifact_completeness": 0.7354838709677419,
-        "real_sources_lost": 5,
-        "real_source_loss_fraction": 0.005753739930955121
+        "n_flagged": 93,
+        "artifact_purity": 0.978494623655914,
+        "artifact_completeness": 0.5870967741935483,
+        "real_sources_lost": 2,
+        "real_source_loss_fraction": 0.0023014959723820483
       }
     },
     {
       "held_out_visit": "jw01180026001_",
       "n_test": 4089,
-      "roc_auc": 0.9846176940847438,
+      "roc_auc": 0.9646679475180063,
       "at_threshold_0.5": {
         "threshold": 0.5,
-        "n_flagged": 532,
-        "artifact_purity": 0.9116541353383458,
-        "artifact_completeness": 0.8614564831261101,
-        "real_sources_lost": 47,
-        "real_source_loss_fraction": 0.013329551900170164
+        "n_flagged": 379,
+        "artifact_purity": 0.9129287598944591,
+        "artifact_completeness": 0.6145648312611013,
+        "real_sources_lost": 33,
+        "real_source_loss_fraction": 0.00935904707884288
       }
     }
   ],
   "standardization": {
     "mean": [
-      2.227658979544102,
-      0.14455579786947564,
-      1.4049331418586612,
-      0.3447997611625215
+      2.508330216214627,
+      0.14879721951909688,
+      1.4404307006471773,
+      0.29098700364318225
     ],
     "scale": [
-      2.0474512591489966,
-      0.13272889893491904,
-      0.6035980818257447,
-      0.17231385514402756
+      2.5014850873661754,
+      0.13205480990924062,
+      0.6729134066672118,
+      0.19389017262456557
     ]
   },
   "weights": [
-    -4.067666622500174,
-    -3.657151473980915,
-    3.5834427550264385,
-    2.361702370960774,
-    -0.1586283547139669
+    -4.804761053993615,
+    -5.913875070063723,
+    3.265662323259786,
+    3.7502026162497497,
+    0.9325381347366878
   ],
-  "n_training_rows": 5113,
+  "n_training_rows": 6433,
   "n_artifacts": 718,
-  "n_real": 4395,
+  "n_real": 5715,
   "trained_on_filters": [
     "F277W",
-    "F356W"
+    "F356W",
+    "F444W"
   ],
   "cross_validation": {
-    "roc_auc": 0.9809463146586556,
+    "roc_auc": 0.9714651615623257,
     "operating_points": [
       {
         "threshold": 0.5,
-        "n_flagged": 629,
-        "artifact_purity": 0.9300476947535771,
-        "artifact_completeness": 0.8147632311977716,
-        "real_sources_lost": 44,
-        "real_source_loss_fraction": 0.010011376564277589
+        "n_flagged": 539,
+        "artifact_purity": 0.9165120593692022,
+        "artifact_completeness": 0.6880222841225627,
+        "real_sources_lost": 45,
+        "real_source_loss_fraction": 0.007874015748031496
       },
       {
         "threshold": 0.7,
-        "n_flagged": 548,
-        "artifact_purity": 0.9361313868613139,
-        "artifact_completeness": 0.7144846796657381,
-        "real_sources_lost": 35,
-        "real_source_loss_fraction": 0.007963594994311717
+        "n_flagged": 437,
+        "artifact_purity": 0.9359267734553776,
+        "artifact_completeness": 0.5696378830083565,
+        "real_sources_lost": 28,
+        "real_source_loss_fraction": 0.004899387576552931
       },
       {
         "threshold": 0.9,
-        "n_flagged": 422,
-        "artifact_purity": 0.9478672985781991,
-        "artifact_completeness": 0.5571030640668524,
+        "n_flagged": 328,
+        "artifact_purity": 0.9329268292682927,
+        "artifact_completeness": 0.42618384401114207,
         "real_sources_lost": 22,
-        "real_source_loss_fraction": 0.005005688282138794
+        "real_source_loss_fraction": 0.003849518810148731
       },
       {
         "threshold": 0.95,
-        "n_flagged": 351,
-        "artifact_purity": 0.9487179487179487,
-        "artifact_completeness": 0.4637883008356546,
+        "n_flagged": 274,
+        "artifact_purity": 0.9343065693430657,
+        "artifact_completeness": 0.3565459610027855,
         "real_sources_lost": 18,
-        "real_source_loss_fraction": 0.004095563139931741
+        "real_source_loss_fraction": 0.0031496062992125984
       }
     ]
   },
   "cross_filter_transfer": [
     {
       "trained_on": [
-        "F356W"
+        "F356W",
+        "F444W"
       ],
       "tested_on": "F277W",
-      "roc_auc": 0.9814956923895471,
+      "roc_auc": 0.9637690454811078,
       "at_threshold_0.9": {
         "threshold": 0.9,
-        "n_flagged": 111,
-        "artifact_purity": 0.963963963963964,
-        "artifact_completeness": 0.5879120879120879,
-        "real_sources_lost": 4,
-        "real_source_loss_fraction": 0.0037243947858473
+        "n_flagged": 90,
+        "artifact_purity": 0.9444444444444444,
+        "artifact_completeness": 0.46703296703296704,
+        "real_sources_lost": 5,
+        "real_source_loss_fraction": 0.00324254215304799
       }
     },
     {
       "trained_on": [
-        "F277W"
+        "F277W",
+        "F444W"
       ],
       "tested_on": "F356W",
-      "roc_auc": 0.9804062344106028,
+      "roc_auc": 0.9694464118959814,
       "at_threshold_0.9": {
         "threshold": 0.9,
-        "n_flagged": 286,
-        "artifact_purity": 0.9370629370629371,
-        "artifact_completeness": 0.5,
-        "real_sources_lost": 18,
-        "real_source_loss_fraction": 0.005420054200542005
+        "n_flagged": 205,
+        "artifact_purity": 0.9219512195121952,
+        "artifact_completeness": 0.35261194029850745,
+        "real_sources_lost": 16,
+        "real_source_loss_fraction": 0.0042417815482502655
+      }
+    },
+    {
+      "trained_on": [
+        "F277W",
+        "F356W"
+      ],
+      "tested_on": "F444W",
+      "roc_auc": NaN,
+      "at_threshold_0.9": {
+        "threshold": 0.9,
+        "n_flagged": 0,
+        "artifact_purity": NaN,
+        "artifact_completeness": NaN,
+        "real_sources_lost": 0,
+        "real_source_loss_fraction": 0.0
       }
     }
   ],
   "coefficient_interpretation": {
-    "psf_ratio": -3.657151473980915,
-    "sharpness": 3.5834427550264385,
-    "log_area": 2.361702370960774,
-    "ellipticity": -0.1586283547139669
+    "psf_ratio": -5.913875070063723,
+    "sharpness": 3.265662323259786,
+    "log_area": 3.7502026162497497,
+    "ellipticity": 0.9325381347366878
   },
   "residual_contamination": {
     "threshold": 0.5,
     "artifact_fraction_before": 0.14779670238139206,
-    "artifact_fraction_after": 0.0314303616252252,
-    "improvement_factor": 4.702354498612393,
-    "real_source_loss_fraction": 0.010011376564277589,
-    "artifact_density_after_per_arcmin2": 6.359364507025565,
-    "artifacts_per_highz_source_after": 211.97881690085217
+    "artifact_fraction_after": 0.051715071784788486,
+    "improvement_factor": 2.8579038427413552,
+    "real_source_loss_fraction": 0.007874015748031496,
+    "artifact_density_after_per_arcmin2": 10.710508643411478,
+    "artifacts_per_highz_source_after": 357.0169547803826
   }
 }

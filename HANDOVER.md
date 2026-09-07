@@ -458,94 +458,129 @@ was the proposed mitigation, and it does not work for that purpose. Deep mosaics
 with cross-dither rejection are not merely preferable; on this evidence they are
 the only route.
 
-## Part 7 — The ramp test: better motivated, still not safe
+## Part 7 — The ramp test, and Part 8 — the fixes applied
+
+### The ramp statistic
 
 Since any shape-based discriminator inherits the "compact = artifact" shortcut,
-the natural fix is a statistic that never sees the shape. JWST reads each
-exposure non-destructively, so the accumulation history is recorded: an optical
-source gains charge steadily across every group, a cosmic ray deposits it
-between two reads and stops.
+the natural alternative is one that never sees the shape. JWST reads each
+exposure non-destructively, so accumulation history is recorded: an optical
+source gains charge steadily, a cosmic ray deposits it between two reads.
 
 ```bash
-python discovery/ramp_diagnostics.py --exposure <dir>/<root>_ --sweep
+python discovery/ramp_diagnostics.py --exposure <dir>/<root>_ --statistic jump_evidence
 ```
 
-The statistic is the fraction of a pixel's total signal arriving in its largest
-single group-to-group increment — near `1/(n_groups-1)` = 0.25 for steady
-accumulation, approaching 1 for an instantaneous deposition. Scored against the
-repeat-exposure consensus labels by cross-matching through the cal frame's
-TAN-SIP WCS.
+Real sources land at 0.281 against a linear-accumulation expectation of 0.25;
+artifacts at 0.694. It also settles the streak independently, and corrects an
+earlier error of mine: in the **detector frame** the track is 0.50 px wide, far
+*below* the PSF. My i2d measurement of 3.58 px, which I had said matched real
+point sources and pointed at a moving object, was drizzle broadening.
 
-### It separates
+But the first version over-rejected compact real sources 4x, so three fixes
+were applied.
 
-| | value |
-| --- | ---: |
-| labelled sources with usable unsaturated ramps | 349 (316 real, 33 artifact) |
-| median statistic, real sources | **0.281** (linear expectation 0.25) |
-| median statistic, artifacts | **0.694** |
-| ROC AUC against repeat-exposure truth | **0.893** |
+---
 
-Real sources land almost exactly on the linear prediction. That is a clean
-physical result and it confirms the streak independently: its pixels put ~100%
-of their signal into a single increment.
+## Part 8 — The three fixes
 
-### It still fails the test that matters
+### Fix 1 — real detector calibration (`tools/jwst/ramp_calibration.py`)
 
-| population | false rejection of real sources |
-| --- | ---: |
-| PSF-scale (FWHM 2 - 3.5 px) | **45.0%** |
-| extended (FWHM >= 3.5 px) | 11.6% |
+The CRDS reference files the exposure header names were downloaded and applied
+directly, without needing the `jwst` package: superbias, the per-pixel linearity
+polynomial, per-pixel saturation limits, read noise and gain. Per-pixel
+saturation limits keep **99.5%** of pixels usable where the earlier global
+18000 DN ceiling kept a small fraction.
 
-Compact real sources are still rejected about four times as often as extended
-ones — by a statistic that never sees their shape.
+### Fix 2 — a noise-normalized, null-calibrated statistic
 
-The mechanism is **detector non-linearity**. Raw `_uncal` ramps are not
-linearity-corrected, and a pixel's response flattens well before hard
-saturation, which makes the first increment the largest and mimics a jump.
-Compact sources concentrate their flux into fewer pixels, reach higher DN, and
-are hit hardest. The diagnosis is visible directly: among real sources, false
-rejection rises from 12% to 58% to 100% across increasing ramp amplitude.
+The raw increment fraction grows with brightness, so it inherited a compactness
+bias through surface brightness. It was replaced by a chi-squared comparison of
+a linear ramp against linear-plus-one-jump, weighted by the per-pixel read-noise
+and Poisson budget. On synthetic ramps that statistic is brightness-independent
+by construction (1.29 sigma faint, 1.34 sigma bright, 43.9 sigma for a jump).
 
-Tightening the DN ceiling confirms it and partly fixes it:
+Two things were then learned by measurement rather than assumption:
 
-| DN ceiling | ROC AUC | false rej. compact | false rej. extended |
-| ---: | ---: | ---: | ---: |
-| 50000 | 0.867 | 54.0% | 14.9% |
-| 30000 | 0.863 | 54.0% | 14.5% |
-| 22000 | 0.865 | 53.1% | 13.2% |
-| 18000 | 0.893 | 46.3% | 11.6% |
-| 16000 | 0.933 | 33.3% | 10.3% |
+- **A model-error floor does not help.** Adding a signal-proportional variance
+  term was expected to stop bright sources over-flagging. Swept from 0 to 10%,
+  it only lowered discrimination. The residual bias is statistical, not
+  systematic, so the floor is set to zero and the finding kept reproducible.
+- **The bias reverses once noise is handled.** The significance statistic
+  over-rejects *faint* sources instead, because searching four jump positions on
+  a five-point ramp buys apparent significance by chance. That look-elsewhere
+  effect scales with noise, and since faint sources here are mostly compact, it
+  reappears as a compactness bias.
 
-Discrimination improves and the compact false-rejection rate roughly halves, so
-non-linearity is a real part of the problem. It does not go away: compact
-sources are still rejected ~3x more often at every ceiling.
+So the statistic is now calibrated against its own null by parametric bootstrap
+(`jump_pvalue`): take each pixel's fitted linear ramp, add noise from its own
+variance, and measure how often the statistic exceeds the observed value.
 
-### Verdict
+| statistic | ROC AUC | false rej. compact | false rej. extended | ratio |
+| --- | ---: | ---: | ---: | ---: |
+| raw increment fraction | 0.873 | 50.0% | 14.5% | 3.5x |
+| noise-normalized significance | 0.896 | 40.4% | 8.6% | 4.7x |
+| **null-calibrated evidence** | 0.791 | 59.6% | 39.3% | **1.5x** |
 
-**The ramp statistic is better motivated than morphology but is not yet a safe
-cut either.** Used as implemented it would still preferentially delete compact
-sources — the same failure, reached by a different route.
+Compared at matched 70% artifact completeness.
 
-What it needs is not a different statistic but proper calibration: the
-pipeline's non-linearity correction applied before the increments are measured,
-and a per-pixel noise model (`VAR_RNOISE` and `VAR_POISSON` are already in the
-cal file) so the quantity becomes a significance rather than a raw fraction.
-With five groups the statistic is coarse; deeper readout patterns would sharpen
-it considerably.
+**The calibration works and the result is negative.** It cuts the compactness
+bias from 4.7x to 1.5x — and most of the apparent discriminating power goes with
+it. That is the finding: the uncalibrated statistic's performance was
+substantially *made of* the bias. With five groups there is not much honest
+information left once the look-elsewhere effect is paid for. Deeper readout
+patterns would change this; NGROUPS=5 will not.
 
-The general lesson is the one injection-recovery taught: **a discriminator that
-separates the classes is not the same as a cut that preserves the science
-sample**, and only a test with injected ground truth distinguishes them. Both
-candidate cuts in this repository passed the first bar and failed the second.
+### Fix 3 — retrain the classifier with injected point sources
 
-### What still stands
+This one worked. The diagnosis was that the truth set contains almost no real
+point sources, so `discovery/injection_recovery.py --harvest-training` injects
+PSF and near-PSF sources into the exposures, labels them real by construction,
+and adds 1320 such rows to the fit.
 
-Neither failure touches the measurements. The 15% artifact rate, the 31-38 per
+| | before | after |
+| --- | ---: | ---: |
+| training rows | 5113 | 6433 (1320 injected) |
+| cross-validated ROC AUC | 0.981 | 0.971 |
+| held-out visit AUC | 0.973 / 0.985 | 0.979 / 0.965 |
+| **F444W false rejection, all** | **28.8%** | **1.4%** |
+| **F444W false rejection, unresolved** | **77.2%** | **5.0%** |
+| **F444W false rejection, faint + unresolved** | **88.9%** | **0.0%** |
+| F277W false rejection, faint + unresolved | 80.0% | 0.0% |
+| near a bright neighbour (F444W) | 37.4% | 1.2% |
+| artifact completeness @0.5 | 0.815 | 0.688 |
+| residual contamination | 3.1% (4.7x) | 5.2% (2.9x) |
+
+The classifier no longer destroys the science sample. It pays for that by
+catching fewer artifacts — 69% instead of 82% — which is the correct direction
+for the trade and was the whole point.
+
+**Caveat, stated plainly: this validation is partly circular.** The training
+rows and the test injections come from the same generator, so "0% rejection of
+injected point sources" partly reflects that the model was shown that
+population. The evidence that is *not* circular: held-out-visit AUC stays at
+0.965-0.979; near-bright-neighbour placements were never in the training
+harvest yet drop from 37.4% to 1.2%; and r_e = 3.0 px sources were not trained
+on either. Breaking the circularity properly needs real point sources — a
+stellar field, or an independently generated PSF model.
+
+---
+
+## Where this leaves the three cuts
+
+| approach | preserves science sample? | usable? |
+| --- | --- | --- |
+| morphology classifier, original | no (89% of faint unresolved deleted) | no |
+| ramp statistic, uncalibrated | no (4.7x compactness bias) | no |
+| ramp statistic, null-calibrated | mostly (1.5x) | too weak (AUC 0.791) |
+| **morphology classifier, retrained** | **yes (0-5%)** | **yes, at 2.9x mitigation** |
+
+The measurements are untouched throughout: the 15% artifact rate, the 31-38 per
 arcmin² per exposure density, and the ~1000-1250 artifacts per genuine
-high-redshift source all come from repeat-exposure vetting, which uses no
-classifier at all. What has failed is every attempt to *mitigate* that rate
-without repeat coverage. On this evidence deep mosaics with cross-dither
-rejection are not the preferable route; they are the only one.
+high-redshift source all come from repeat-exposure vetting and use no classifier
+at all. With the retrained cut applied that last number falls to roughly 360 per
+genuine source — better, and still hopeless for a single-exposure dropout
+search. Deep mosaics with cross-dither rejection remain the only real route.
 
 ---
 

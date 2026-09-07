@@ -50,6 +50,15 @@ from astropy.stats import sigma_clipped_stats
 from astropy.wcs import WCS
 from photutils.segmentation import SourceCatalog, detect_sources
 
+from tools.jwst.ramp_calibration import (
+    apply_linearity,
+    group_variance,
+    jump_pvalue,
+    jump_significance,
+    load_references,
+    saturation_mask,
+)
+
 RESEARCH_DIR = Path("research_output")
 DEFAULT_OUTPUT = RESEARCH_DIR / "ramp_diagnostics.json"
 DEFAULT_REPORT = RESEARCH_DIR / "RAMP_DIAGNOSTICS.md"
@@ -70,8 +79,18 @@ DETECTION_MIN_PIXELS = 5
 MATCH_RADIUS_ARCSEC = 0.35
 
 
-def load_exposure(prefix: Path) -> Tuple[np.ndarray, np.ndarray, WCS, fits.Header]:
-    """Load the calibrated frame, the raw ramp, and the detector-frame WCS."""
+def load_exposure(
+    prefix: Path,
+    *,
+    crds_dir: Path = Path("data/crds"),
+    calibrate: bool = True,
+) -> Tuple[np.ndarray, np.ndarray, WCS, fits.Header, Dict[str, Any]]:
+    """Load the calibrated frame, the ramp, the detector WCS, and CRDS references.
+
+    When references are available the ramp is superbias-subtracted and
+    linearity-corrected before it is returned, so downstream statistics are
+    measured on a ramp that is genuinely expected to be linear.
+    """
     cal_path = Path(str(prefix) + "cal.fits")
     uncal_path = Path(str(prefix) + "uncal.fits")
 
@@ -83,7 +102,18 @@ def load_exposure(prefix: Path) -> Tuple[np.ndarray, np.ndarray, WCS, fits.Heade
         raw = np.array(handle["SCI"].data, dtype=float)
 
     ramp = raw[0] if raw.ndim == 4 else raw
-    return cal, ramp, WCS(header), primary
+    references = load_references(primary, crds_dir) if calibrate else {"available": {}, "missing": ["all"]}
+
+    if calibrate and "linearity_coeffs" in references:
+        ramp = apply_linearity(
+            ramp, references["linearity_coeffs"], references.get("superbias")
+        )
+        references["linearity_applied"] = True
+    else:
+        references["linearity_applied"] = False
+
+    references["n_frames"] = int(primary.get("NFRAMES") or 1)
+    return cal, ramp, WCS(header), primary, references
 
 
 def segment_calibrated_frame(cal: np.ndarray):
@@ -110,6 +140,9 @@ def ramp_statistics(
     ramp: np.ndarray,
     pixels: np.ndarray,
     background: np.ndarray,
+    *,
+    usable: Optional[np.ndarray] = None,
+    references: Optional[Dict[str, Any]] = None,
 ) -> Optional[Dict[str, Any]]:
     """Summarize the accumulation history of one source's unsaturated pixels.
 
@@ -120,15 +153,19 @@ def ramp_statistics(
     if n_groups < 3:
         return None
 
-    values = ramp[:, pixels[:, 0], pixels[:, 1]]
-    unsaturated = np.all(values < SATURATION_DN, axis=0)
+    rows, cols = pixels[:, 0], pixels[:, 1]
+    values = ramp[:, rows, cols]
+    if usable is not None:
+        unsaturated = usable[rows, cols]
+    else:
+        unsaturated = np.all(values < SATURATION_DN, axis=0)
     signal = values - background[:, None]
     amplitude = signal[-1] - signal[0]
-    usable = unsaturated & (amplitude > MIN_PIXEL_AMPLITUDE_DN)
-    if int(np.sum(usable)) < MIN_PIXELS_PER_SOURCE:
+    usable_mask = unsaturated & (amplitude > MIN_PIXEL_AMPLITUDE_DN)
+    if int(np.sum(usable_mask)) < MIN_PIXELS_PER_SOURCE:
         return None
 
-    increments = np.diff(signal[:, usable], axis=0)
+    increments = np.diff(signal[:, usable_mask], axis=0)
     totals = np.sum(increments, axis=0)
     positive = totals > 0
     if int(np.sum(positive)) < MIN_PIXELS_PER_SOURCE:
@@ -139,7 +176,32 @@ def ramp_statistics(
     fractions = np.max(increments, axis=0) / totals
     jump_groups = np.argmax(increments, axis=0)
 
+    # Noise-normalized statistic: how significant is the best single jump over a
+    # straight line? Unlike the raw fraction this does not grow simply because a
+    # source is bright, which is what made the fraction inherit a compactness
+    # bias through surface brightness.
+    significance = None
+    jump_evidence = None
+    if references and references.get("readnoise") is not None and references.get("gain") is not None:
+        selected = np.flatnonzero(usable_mask)[positive] if usable is not None else None
+        keep_rows = rows[usable_mask][positive]
+        keep_cols = cols[usable_mask][positive]
+        sub_signal = signal[:, usable_mask][:, positive]
+        variance = group_variance(
+            sub_signal,
+            references["readnoise"][keep_rows, keep_cols][None, :],
+            references["gain"][keep_rows, keep_cols][None, :],
+            references.get("n_frames", 1),
+            references.get("model_error_fraction", 0.02),
+        )
+        result = jump_pvalue(sub_signal, variance, n_trials=120)
+        significance = float(np.median(result["significance"]))
+        jump_evidence = float(np.median(result["neg_log10_p"]))
+        del selected
+
     return {
+        "jump_significance": significance,
+        "jump_evidence": jump_evidence,
         "n_pixels_used": int(np.sum(positive)),
         "n_pixels_saturated": int(np.sum(~unsaturated)),
         "max_increment_fraction": float(np.median(fractions)),
@@ -152,12 +214,18 @@ def ramp_statistics(
     }
 
 
-def measure_exposure(prefix: Path) -> List[Dict[str, Any]]:
+def measure_exposure(prefix: Path, *, calibrate: bool = True) -> List[Dict[str, Any]]:
     """Measure ramp statistics and sky positions for every source in an exposure."""
-    cal, ramp, wcs, primary = load_exposure(prefix)
+    cal, ramp, wcs, primary, references = load_exposure(prefix, calibrate=calibrate)
     segmentation, detection_image = segment_calibrated_frame(cal)
     background = sky_ramp(ramp, segmentation)
     catalog = SourceCatalog(detection_image, segmentation)
+    usable = saturation_mask(ramp, references.get("saturation")) if calibrate else None
+    if references.get("missing"):
+        print(f"  references missing (uncorrected): {', '.join(references['missing'])}")
+    else:
+        print(f"  linearity applied: {references.get('linearity_applied')}; "
+              f"per-pixel saturation limits in use")
 
     def _scalar(value: Any) -> Optional[float]:
         try:
@@ -170,7 +238,9 @@ def measure_exposure(prefix: Path) -> List[Dict[str, Any]]:
     for row in catalog:
         label = int(row.label)
         pixels = np.argwhere(segmentation.data == label)
-        stats = ramp_statistics(ramp, pixels, background)
+        stats = ramp_statistics(
+            ramp, pixels, background, usable=usable, references=references
+        )
         if stats is None:
             continue
         x, y = _scalar(row.xcentroid), _scalar(row.ycentroid)
@@ -238,18 +308,25 @@ def _roc_auc(labels: np.ndarray, scores: np.ndarray) -> float:
     return float((np.sum(ranks[labels == 1]) - n_pos * (n_pos + 1) / 2.0) / (n_pos * n_neg))
 
 
-def evaluate(records: List[Dict[str, Any]], threshold: float = 0.6) -> Dict[str, Any]:
+def evaluate(
+    records: List[Dict[str, Any]],
+    threshold: float = 0.6,
+    statistic: str = "max_increment_fraction",
+) -> Dict[str, Any]:
     """Score the ramp statistic against the repeat-exposure truth labels.
 
     The compactness breakdown is the point of the exercise: a morphology-based
     cut rejects compact real sources preferentially, and a ramp-based one should
     not, because it never sees the shape.
     """
-    labelled = [r for r in records if r.get("truth") in ("artifact", "real")]
+    labelled = [
+        r for r in records
+        if r.get("truth") in ("artifact", "real") and r.get(statistic) is not None
+    ]
     if not labelled:
-        return {"n_labelled": 0}
+        return {"n_labelled": 0, "statistic": statistic}
 
-    scores = np.array([r["max_increment_fraction"] for r in labelled])
+    scores = np.array([float(r[statistic]) for r in labelled])
     labels = np.array([1.0 if r["truth"] == "artifact" else 0.0 for r in labelled])
     flagged = scores >= threshold
 
@@ -271,6 +348,7 @@ def evaluate(records: List[Dict[str, Any]], threshold: float = 0.6) -> Dict[str,
     everything = np.ones(len(labelled), dtype=bool)
 
     return {
+        "statistic": statistic,
         "n_labelled": len(labelled),
         "n_real": int(np.sum(labels == 0)),
         "n_artifact": int(np.sum(labels == 1)),
@@ -363,8 +441,11 @@ def render_report(evaluation: Dict[str, Any], exposure: str,
         "shape. An optical source accumulates charge steadily across every group;",
         "a cosmic ray deposits it between two reads and stops. The statistic is the",
         "fraction of total signal arriving in the largest single increment, which",
-        f"sits near **{evaluation['linear_expectation']:.2f}** for steady accumulation",
-        "and approaches 1 for an instantaneous deposition.",
+        f"Statistic: `{evaluation['statistic']}`. The raw increment fraction sits near",
+        f"**{evaluation['linear_expectation']:.2f}** for steady accumulation and approaches 1",
+        "for an instantaneous deposition; the jump significance is that deviation",
+        "expressed in sigma against the per-pixel read-noise and Poisson budget, so it",
+        "does not grow simply because a source is bright.",
         "",
         f"Exposure: `{exposure}`",
         "",
@@ -471,6 +552,17 @@ def main() -> int:
     )
     parser.add_argument("--threshold", type=float, default=0.6)
     parser.add_argument(
+        "--statistic",
+        default="jump_evidence",
+        choices=["jump_evidence", "jump_significance", "max_increment_fraction"],
+        help="Noise-normalized jump significance (default) or the raw increment fraction.",
+    )
+    parser.add_argument(
+        "--uncorrected",
+        action="store_true",
+        help="Skip CRDS linearity/saturation correction, to reproduce the biased result.",
+    )
+    parser.add_argument(
         "--sweep",
         action="store_true",
         help="Also re-evaluate across DN ceilings to expose the non-linearity bias.",
@@ -479,12 +571,12 @@ def main() -> int:
     parser.add_argument("--report", type=Path, default=DEFAULT_REPORT)
     args = parser.parse_args()
 
-    records = measure_exposure(args.exposure)
+    records = measure_exposure(args.exposure, calibrate=not args.uncorrected)
     print(f"Measured usable ramps for {len(records)} sources")
 
     truth = _load_truth(args.truth) if args.truth.exists() else []
     records = match_to_truth(records, truth)
-    evaluation = evaluate(records, threshold=args.threshold)
+    evaluation = evaluate(records, threshold=args.threshold, statistic=args.statistic)
 
     sweep = None
     if args.sweep:
@@ -506,6 +598,7 @@ def main() -> int:
     )
 
     if evaluation.get("n_labelled"):
+        print(f"  statistic: {evaluation['statistic']} (threshold {args.threshold})")
         print(
             f"  labelled={evaluation['n_labelled']} "
             f"(real={evaluation['n_real']}, artifact={evaluation['n_artifact']})"

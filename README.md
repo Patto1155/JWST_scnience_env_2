@@ -124,11 +124,12 @@ repeat-exposure truth set and rejects artifacts in a single image:
 python discovery/artifact_classifier.py --train
 ```
 
-Cross-validated ROC AUC **0.981** (sky-grouped folds, held-out visits 0.973 /
-0.985). **It fails injection-recovery and must not be used on a high-redshift
-search**: on F444W it falsely rejects 77% of unresolved sources and 89% of faint
-unresolved sources. It is retained as a documented negative result. See
-`research_output/ARTIFACT_CLASSIFIER.md` and `INJECTION_RECOVERY.md`.
+Cross-validated ROC AUC **0.971**, held-out visits 0.965 / 0.979. Trained with
+1320 injected point sources so it must separate cosmic rays from point sources
+rather than compact from extended. On F444W it now falsely rejects **1.4%** of
+real sources and **0%** of faint unresolved ones, against 28.8% and 88.9% before
+that fix. See `research_output/ARTIFACT_CLASSIFIER.md` and
+`INJECTION_RECOVERY.md`.
 
 ## Injection-recovery
 
@@ -148,9 +149,11 @@ python discovery/ramp_diagnostics.py --exposure <dir>/<root>_ --sweep
 ```
 
 Real sources sit at the linear-accumulation prediction (0.281 vs 0.25 expected),
-artifacts at 0.694; ROC AUC 0.893. **Also not a safe cut**: uncorrected detector
-non-linearity still makes it reject compact real sources ~4x more often than
-extended ones. See `research_output/RAMP_DIAGNOSTICS.md`.
+artifacts at 0.694. Uses the CRDS linearity, saturation, read-noise and gain
+references via `tools/jwst/ramp_calibration.py`. Calibrating the statistic
+against its own null removes most of the compactness bias (4.7x to 1.5x) and
+most of the discriminating power with it (AUC 0.896 to 0.791) — five groups is
+not enough. See `research_output/RAMP_DIAGNOSTICS.md`.
 
 See `HANDOVER.md` for the measured footprint and epoch coverage of the current
 archive, and for what this pipeline can realistically be used to discover.

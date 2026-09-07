@@ -382,6 +382,104 @@ def run_injection(
     return results
 
 
+def harvest_training_rows(
+    bundle: Dict[str, Any],
+    filter_name: str,
+    *,
+    batches: int = 4,
+    per_batch: int = 150,
+    seed: int = 7,
+) -> List[Dict[str, Any]]:
+    """Inject point and near-point sources and return their measured morphology.
+
+    The morphology classifier failed because a deep extragalactic field contains
+    almost no real *point* sources, so "compact" separated the classes as well as
+    "cosmic ray" did and the model took the shortcut. These rows supply the
+    missing class by construction: real sources, known truth, at and near the PSF
+    width, across the full brightness range.
+    """
+    rng = np.random.default_rng(seed)
+    base_image = np.asarray(bundle["sci"], dtype=float)
+    valid_mask = np.asarray(bundle["validity_mask"], dtype=bool)
+
+    baseline = detect_with_morphology(bundle)
+    psf = build_empirical_psf(base_image, baseline)
+    if psf is None:
+        return []
+
+    aperture_sigma = aperture_noise(bundle)
+    # Weighted toward the unresolved end: that is the population the model has
+    # never seen and the one a high-redshift search depends on.
+    radii = [0.0, 0.0, 0.0, 0.4, 0.8, 1.5]
+    stamps = {r: render_source(psf, r) for r in set(radii)}
+    existing = (
+        np.asarray([[s["x"], s["y"]] for s in baseline]) if baseline else np.empty((0, 2))
+    )
+
+    def _clear(x: float, y: float, radius: float = 7.0) -> bool:
+        if len(existing) == 0:
+            return True
+        return bool(np.min(np.hypot(existing[:, 0] - x, existing[:, 1] - y)) > radius)
+
+    calibration_positions: List[Tuple[float, float]] = []
+    attempts = 0
+    while len(calibration_positions) < 8 and attempts < 2000:
+        attempts += 1
+        x = float(rng.uniform(60, base_image.shape[1] - 60))
+        y = float(rng.uniform(60, base_image.shape[0] - 60))
+        if _clear(x, y, 20.0) and valid_mask[int(round(y)), int(round(x))]:
+            calibration_positions.append((x, y))
+
+    snr_per_flux = {}
+    for radius, stamp in stamps.items():
+        slope = calibrate_flux_scale(bundle, stamp, calibration_positions, aperture_sigma)
+        if slope is None:
+            return []
+        snr_per_flux[radius] = slope
+
+    rows: List[Dict[str, Any]] = []
+    for _ in range(batches):
+        image = base_image.copy()
+        placed: List[Dict[str, Any]] = []
+        tries = 0
+        while len(placed) < per_batch and tries < per_batch * 60:
+            tries += 1
+            x = float(rng.uniform(40, base_image.shape[1] - 40))
+            y = float(rng.uniform(40, base_image.shape[0] - 40))
+            if not _clear(x, y) or not valid_mask[int(round(y)), int(round(x))]:
+                continue
+            radius = float(radii[rng.integers(len(radii))])
+            target_snr = float(INJECTED_TARGET_SNR[rng.integers(len(INJECTED_TARGET_SNR))])
+            _add_stamp(image, stamps[radius] * flux_for_target_snr(
+                target_snr, snr_per_flux[radius]), x, y)
+            placed.append({"x": x, "y": y})
+
+        probe = dict(bundle)
+        probe["sci"] = image
+        detections = detect_with_morphology(probe)
+        if not detections:
+            continue
+        xy = np.asarray([[d["x"], d["y"]] for d in detections])
+        for record in placed:
+            distance = np.hypot(xy[:, 0] - record["x"], xy[:, 1] - record["y"])
+            nearest = int(np.argmin(distance))
+            if distance[nearest] > MATCH_RADIUS_PIXELS:
+                continue
+            detection = detections[nearest]
+            rows.append(
+                {
+                    "fwhm_pixels": detection.get("fwhm_pixels"),
+                    "sharpness": detection.get("sharpness"),
+                    "area_pixels": detection.get("area_pixels"),
+                    "ellipticity": detection.get("ellipticity"),
+                    "filter": filter_name,
+                    "consensus": "real",
+                    "source": "injected_point_source",
+                }
+            )
+    return rows
+
+
 def _rate(subset: List[Dict[str, Any]]) -> Dict[str, Any]:
     """Recovery and false-rejection rates for one slice of the injected grid."""
     total = len(subset)
@@ -545,12 +643,20 @@ def main() -> int:
     parser.add_argument("--report", type=Path, default=DEFAULT_REPORT)
     parser.add_argument("--batches", type=int, default=6)
     parser.add_argument("--per-batch", type=int, default=120)
+    parser.add_argument(
+        "--harvest-training",
+        type=Path,
+        default=None,
+        help="Instead of evaluating, write injected point-source training rows here.",
+    )
     args = parser.parse_args()
 
-    if not args.model.exists():
-        print(f"No model at {args.model}. Run artifact_classifier.py --train first.")
-        return 1
-    model = json.loads(args.model.read_text(encoding="utf-8"))
+    model = None
+    if args.harvest_training is None:
+        if not args.model.exists():
+            print(f"No model at {args.model}. Run artifact_classifier.py --train first.")
+            return 1
+        model = json.loads(args.model.read_text(encoding="utf-8"))
 
     targets: List[Tuple[str, Path]] = []
     if args.image and args.filter and len(args.image) == len(args.filter):
@@ -569,6 +675,21 @@ def main() -> int:
     if not targets:
         print("No target images. Use --auto or matching --filter/--image pairs.")
         return 1
+
+    if args.harvest_training is not None:
+        harvested: List[Dict[str, Any]] = []
+        for filter_name, path in targets:
+            print(f"Harvesting injected point sources from {filter_name}: {path.name}")
+            bundle = _load_fits_bundle_from_path(str(path))
+            rows = harvest_training_rows(
+                bundle, filter_name, batches=args.batches, per_batch=args.per_batch
+            )
+            print(f"  recovered {len(rows)} labelled real point-like sources")
+            harvested += rows
+        args.harvest_training.parent.mkdir(parents=True, exist_ok=True)
+        args.harvest_training.write_text(json.dumps(harvested, indent=2), encoding="utf-8")
+        print(f"\nWritten {len(harvested)} rows to {args.harvest_training}")
+        return 0
 
     summaries: List[Dict[str, Any]] = []
     everything: Dict[str, List[Dict[str, Any]]] = {}

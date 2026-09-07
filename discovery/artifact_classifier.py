@@ -47,6 +47,7 @@ if str(ROOT) not in sys.path:
 
 RESEARCH_DIR = Path("research_output")
 DEFAULT_TRUTH = RESEARCH_DIR / "artifact_characterization.json"
+DEFAULT_POINT_SOURCES = RESEARCH_DIR / "injected_point_sources.json"
 DEFAULT_MODEL = RESEARCH_DIR / "artifact_classifier.json"
 DEFAULT_REPORT = RESEARCH_DIR / "ARTIFACT_CLASSIFIER.md"
 
@@ -283,6 +284,7 @@ def _filter_of_detection(
 
 def load_training_set(
     path: Path,
+    point_sources: Optional[Path] = None,
 ) -> Tuple[np.ndarray, np.ndarray, List[str], np.ndarray, List[str]]:
     """Build the feature matrix and labels from the characterization output.
 
@@ -317,6 +319,26 @@ def load_training_set(
         coordinates.append([float(record["ra"]), float(record["dec"])])
         # jw<program><obs><visit>_... - the observation id identifies the visit.
         visits.append(str(record["epoch_a"])[:14])
+    # Injected point sources supply the class the repeat-exposure truth set lacks.
+    # A deep extragalactic field contains almost no real unresolved sources, so
+    # without these "compact" separates the classes as well as "cosmic ray" does
+    # and the fit takes the shortcut. Each carries a unique sky group so it never
+    # shares a fold with anything else.
+    n_injected = 0
+    if point_sources and point_sources.exists():
+        injected = json.loads(point_sources.read_text(encoding="utf-8"))
+        for index, record in enumerate(injected):
+            features = build_features(record, str(record.get("filter") or ""))
+            if features is None:
+                continue
+            rows.append(features)
+            labels.append(0)
+            filters.append(str(record["filter"]))
+            # Off-sky sentinel coordinates keep each injection in its own group.
+            coordinates.append([-999.0 - index * 1e-3, -89.0])
+            visits.append("injected")
+            n_injected += 1
+
     return (
         np.asarray(rows, dtype=float),
         np.asarray(labels, dtype=float),
@@ -326,9 +348,9 @@ def load_training_set(
     )
 
 
-def train(path: Path) -> Dict[str, Any]:
+def train(path: Path, point_sources: Optional[Path] = None) -> Dict[str, Any]:
     """Fit the classifier and cross-validate it."""
-    features, labels, filters, coordinates, visits = load_training_set(path)
+    features, labels, filters, coordinates, visits = load_training_set(path, point_sources)
     if len(labels) == 0:
         raise ValueError(f"No usable training rows in {path}")
 
@@ -363,6 +385,7 @@ def train(path: Path) -> Dict[str, Any]:
                 }
             )
 
+    visits = list(visits)
     # Held-out visit: train on one visit, score another. Detector state, background
     # and pointing all change between visits, so this is a harder and more honest
     # test than a random split.
@@ -387,8 +410,10 @@ def train(path: Path) -> Dict[str, Any]:
             }
         )
 
+    n_injected = int(sum(1 for v in visits if v == "injected"))
     return {
         "feature_names": FEATURE_NAMES,
+        "n_injected_point_sources": n_injected,
         "n_sky_groups": int(len(np.unique(groups))),
         "held_out_visit": visit_transfer,
         "standardization": {"mean": mean.tolist(), "scale": scale.tolist()},
@@ -501,7 +526,8 @@ def render_report(model: Dict[str, Any]) -> str:
         "pipeline actually selects candidates in.",
         "",
         f"- Training rows: **{model['n_training_rows']}** "
-        f"({model['n_artifacts']} artifacts, {model['n_real']} real sources)",
+        f"({model['n_artifacts']} artifacts, {model['n_real']} real sources, "
+        f"of which {model.get('n_injected_point_sources', 0)} are injected point sources)",
         f"- Filters: {', '.join(model['trained_on_filters'])}",
         f"- Cross-validated ROC AUC: **{model['cross_validation']['roc_auc']:.3f}**",
         "",
@@ -595,6 +621,12 @@ def main() -> int:
     """Train the classifier and write the model plus its report card."""
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--truth", type=Path, default=DEFAULT_TRUTH)
+    parser.add_argument(
+        "--point-sources",
+        type=Path,
+        default=DEFAULT_POINT_SOURCES,
+        help="Injected point-source rows to add as known-real training examples.",
+    )
     parser.add_argument("--model", type=Path, default=DEFAULT_MODEL)
     parser.add_argument("--report", type=Path, default=DEFAULT_REPORT)
     parser.add_argument("--train", action="store_true", help="Fit and persist the model.")
@@ -604,7 +636,7 @@ def main() -> int:
         print(f"No truth set at {args.truth}. Run artifact_characterization.py first.")
         return 1
 
-    model = train(args.truth)
+    model = train(args.truth, args.point_sources)
     truth_summaries = json.loads(args.truth.read_text(encoding="utf-8")).get("summaries", [])
     model["residual_contamination"] = residual_contamination(model, truth_summaries)
     if args.train:
@@ -613,7 +645,8 @@ def main() -> int:
         args.report.write_text(render_report(model), encoding="utf-8")
 
     print(f"Trained on {model['n_training_rows']} rows "
-          f"({model['n_artifacts']} artifacts, {model['n_real']} real)")
+          f"({model['n_artifacts']} artifacts, {model['n_real']} real, "
+          f"{model.get('n_injected_point_sources', 0)} of them injected point sources)")
     print(f"Cross-validated ROC AUC: {model['cross_validation']['roc_auc']:.3f}")
     for point in model["cross_validation"]["operating_points"]:
         print(

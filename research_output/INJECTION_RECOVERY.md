@@ -13,21 +13,21 @@ sources that the classifier flags as artifacts at threshold 0.5.
 
 - Injected: **1600**
 - Detected: **1069** (66.8%)
-- Falsely rejected by the classifier: **144** (13.5% of detected)
+- Falsely rejected by the classifier: **5** (0.5% of detected)
 
 | injected S/N | detected | false rejection | net completeness |
 | ---: | ---: | ---: | ---: |
-| 5 | 7% | 63.2% | 3% |
-| 8 | 55% | 57.1% | 24% |
-| 12 | 86% | 15.6% | 73% |
-| 20 | 90% | 2.0% | 89% |
+| 5 | 7% | 5.3% | 7% |
+| 8 | 55% | 0.6% | 55% |
+| 12 | 86% | 0.9% | 85% |
+| 20 | 90% | 0.4% | 90% |
 | 40 | 83% | 0.0% | 83% |
-| 100 | 79% | 1.4% | 78% |
+| 100 | 79% | 0.0% | 79% |
 
 | half-light radius (px) | detected | false rejection | net completeness |
 | ---: | ---: | ---: | ---: |
-| 0.00 | 79% | 33.7% | 52% |
-| 0.75 | 75% | 11.1% | 67% |
+| 0.00 | 79% | 0.3% | 79% |
+| 0.75 | 75% | 0.7% | 75% |
 | 1.50 | 59% | 0.4% | 59% |
 | 3.00 | 54% | 0.5% | 54% |
 
@@ -44,9 +44,9 @@ Calibration check - injected target versus median measured aperture S/N:
 
 | population | detected | false rejection |
 | --- | ---: | ---: |
-| isolated | 73% | 14.4% |
-| within 8-20 px of a bright source | 53% | 10.6% |
-| **unresolved and faint (S/N <= 8, r_e = 0)** | 63% | 80.0% |
+| isolated | 73% | 0.5% |
+| within 8-20 px of a bright source | 53% | 0.4% |
+| **unresolved and faint (S/N <= 8, r_e = 0)** | 63% | 0.0% |
 
 ## F356W
 
@@ -91,22 +91,22 @@ Calibration check - injected target versus median measured aperture S/N:
 
 - Injected: **1600**
 - Detected: **851** (53.2%)
-- Falsely rejected by the classifier: **245** (28.8% of detected)
+- Falsely rejected by the classifier: **12** (1.4% of detected)
 
 | injected S/N | detected | false rejection | net completeness |
 | ---: | ---: | ---: | ---: |
-| 5 | 2% | 60.0% | 1% |
-| 8 | 16% | 79.1% | 3% |
-| 12 | 70% | 52.1% | 34% |
-| 20 | 85% | 23.8% | 65% |
-| 40 | 77% | 26.5% | 57% |
-| 100 | 68% | 0.5% | 68% |
+| 5 | 2% | 0.0% | 2% |
+| 8 | 16% | 0.0% | 16% |
+| 12 | 70% | 2.1% | 69% |
+| 20 | 85% | 3.5% | 82% |
+| 40 | 77% | 0.0% | 77% |
+| 100 | 68% | 0.0% | 68% |
 
 | half-light radius (px) | detected | false rejection | net completeness |
 | ---: | ---: | ---: | ---: |
-| 0.00 | 61% | 77.2% | 14% |
-| 0.75 | 61% | 23.5% | 47% |
-| 1.50 | 49% | 1.0% | 48% |
+| 0.00 | 61% | 5.0% | 58% |
+| 0.75 | 61% | 0.0% | 61% |
+| 1.50 | 49% | 0.0% | 49% |
 | 3.00 | 41% | 0.0% | 41% |
 
 Calibration check - injected target versus median measured aperture S/N:
@@ -122,6 +122,6 @@ Calibration check - injected target versus median measured aperture S/N:
 
 | population | detected | false rejection |
 | --- | ---: | ---: |
-| isolated | 61% | 26.6% |
-| within 8-20 px of a bright source | 36% | 37.4% |
-| **unresolved and faint (S/N <= 8, r_e = 0)** | 23% | 88.9% |
+| isolated | 61% | 1.5% |
+| within 8-20 px of a bright source | 36% | 1.2% |
+| **unresolved and faint (S/N <= 8, r_e = 0)** | 23% | 0.0% |
