@@ -458,15 +458,94 @@ was the proposed mitigation, and it does not work for that purpose. Deep mosaics
 with cross-dither rejection are not merely preferable; on this evidence they are
 the only route.
 
-### Also worth doing: resolve artifacts from the ramps
+## Part 7 — The ramp test: better motivated, still not safe
 
-An independent line of evidence is available in the up-the-ramp reads. A cosmic
-ray shows a discrete jump between groups; an optical source accumulates
-steadily. `_uncal`/`_rate` products carry the group-level data, and comparing
-those competing profiles would classify events without needing repeat coverage
-or morphology at all. STScI documents that showers and snowballs produce both
-jumps and slower charge release, so this needs a model comparison rather than a
-jump/no-jump rule. Not attempted here.
+Since any shape-based discriminator inherits the "compact = artifact" shortcut,
+the natural fix is a statistic that never sees the shape. JWST reads each
+exposure non-destructively, so the accumulation history is recorded: an optical
+source gains charge steadily across every group, a cosmic ray deposits it
+between two reads and stops.
+
+```bash
+python discovery/ramp_diagnostics.py --exposure <dir>/<root>_ --sweep
+```
+
+The statistic is the fraction of a pixel's total signal arriving in its largest
+single group-to-group increment — near `1/(n_groups-1)` = 0.25 for steady
+accumulation, approaching 1 for an instantaneous deposition. Scored against the
+repeat-exposure consensus labels by cross-matching through the cal frame's
+TAN-SIP WCS.
+
+### It separates
+
+| | value |
+| --- | ---: |
+| labelled sources with usable unsaturated ramps | 349 (316 real, 33 artifact) |
+| median statistic, real sources | **0.281** (linear expectation 0.25) |
+| median statistic, artifacts | **0.694** |
+| ROC AUC against repeat-exposure truth | **0.893** |
+
+Real sources land almost exactly on the linear prediction. That is a clean
+physical result and it confirms the streak independently: its pixels put ~100%
+of their signal into a single increment.
+
+### It still fails the test that matters
+
+| population | false rejection of real sources |
+| --- | ---: |
+| PSF-scale (FWHM 2 - 3.5 px) | **45.0%** |
+| extended (FWHM >= 3.5 px) | 11.6% |
+
+Compact real sources are still rejected about four times as often as extended
+ones — by a statistic that never sees their shape.
+
+The mechanism is **detector non-linearity**. Raw `_uncal` ramps are not
+linearity-corrected, and a pixel's response flattens well before hard
+saturation, which makes the first increment the largest and mimics a jump.
+Compact sources concentrate their flux into fewer pixels, reach higher DN, and
+are hit hardest. The diagnosis is visible directly: among real sources, false
+rejection rises from 12% to 58% to 100% across increasing ramp amplitude.
+
+Tightening the DN ceiling confirms it and partly fixes it:
+
+| DN ceiling | ROC AUC | false rej. compact | false rej. extended |
+| ---: | ---: | ---: | ---: |
+| 50000 | 0.867 | 54.0% | 14.9% |
+| 30000 | 0.863 | 54.0% | 14.5% |
+| 22000 | 0.865 | 53.1% | 13.2% |
+| 18000 | 0.893 | 46.3% | 11.6% |
+| 16000 | 0.933 | 33.3% | 10.3% |
+
+Discrimination improves and the compact false-rejection rate roughly halves, so
+non-linearity is a real part of the problem. It does not go away: compact
+sources are still rejected ~3x more often at every ceiling.
+
+### Verdict
+
+**The ramp statistic is better motivated than morphology but is not yet a safe
+cut either.** Used as implemented it would still preferentially delete compact
+sources — the same failure, reached by a different route.
+
+What it needs is not a different statistic but proper calibration: the
+pipeline's non-linearity correction applied before the increments are measured,
+and a per-pixel noise model (`VAR_RNOISE` and `VAR_POISSON` are already in the
+cal file) so the quantity becomes a significance rather than a raw fraction.
+With five groups the statistic is coarse; deeper readout patterns would sharpen
+it considerably.
+
+The general lesson is the one injection-recovery taught: **a discriminator that
+separates the classes is not the same as a cut that preserves the science
+sample**, and only a test with injected ground truth distinguishes them. Both
+candidate cuts in this repository passed the first bar and failed the second.
+
+### What still stands
+
+Neither failure touches the measurements. The 15% artifact rate, the 31-38 per
+arcmin² per exposure density, and the ~1000-1250 artifacts per genuine
+high-redshift source all come from repeat-exposure vetting, which uses no
+classifier at all. What has failed is every attempt to *mitigate* that rate
+without repeat coverage. On this evidence deep mosaics with cross-dither
+rejection are not the preferable route; they are the only one.
 
 ---
 

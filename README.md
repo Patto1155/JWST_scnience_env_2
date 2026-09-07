@@ -139,6 +139,19 @@ metric cannot:
 python discovery/injection_recovery.py --auto
 ```
 
+## Ramp diagnostics
+
+Classifies detector events from the up-the-ramp reads rather than from shape:
+
+```bash
+python discovery/ramp_diagnostics.py --exposure <dir>/<root>_ --sweep
+```
+
+Real sources sit at the linear-accumulation prediction (0.281 vs 0.25 expected),
+artifacts at 0.694; ROC AUC 0.893. **Also not a safe cut**: uncorrected detector
+non-linearity still makes it reject compact real sources ~4x more often than
+extended ones. See `research_output/RAMP_DIAGNOSTICS.md`.
+
 See `HANDOVER.md` for the measured footprint and epoch coverage of the current
 archive, and for what this pipeline can realistically be used to discover.
 
