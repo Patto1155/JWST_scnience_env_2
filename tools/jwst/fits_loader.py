@@ -171,6 +171,9 @@ def _load_fits_bundle_from_path(fits_path_str: str) -> Dict[str, Any]:
             wht = np.array(wht_hdu.data, dtype=float)
 
         header = sci_hdu.header.copy()
+        # Exposure metadata (FILTER, EFFEXPTM, DETECTOR) lives in the primary
+        # header, not the SCI header, so keep both.
+        primary_header = hdul[0].header.copy()
 
     if sci.ndim > 2:
         collapse_axes = tuple(range(sci.ndim - 2))
@@ -193,6 +196,7 @@ def _load_fits_bundle_from_path(fits_path_str: str) -> Dict[str, Any]:
         "err": _freeze_array(err),
         "wht": _freeze_array(wht),
         "header": header,
+        "primary_header": primary_header,
         "wcs": wcs,
         "validity_mask": _freeze_array(validity_mask),
     }
@@ -213,13 +217,20 @@ def load_fits_bundle(dataset_name: str, db_session=None) -> Dict[str, Any]:
         "err": raw_bundle["err"],
         "wht": raw_bundle["wht"],
         "header": raw_bundle["header"].copy(),
+        "primary_header": raw_bundle["primary_header"].copy(),
         "wcs": raw_bundle["wcs"],
         "validity_mask": raw_bundle["validity_mask"],
         "dataset_name": dataset_name,
         "file_path": str(fits_path),
-        "filter": metadata.get("filter") or raw_bundle["header"].get("FILTER"),
-        "target": metadata.get("target") or raw_bundle["header"].get("TARGPROP"),
-        "instrument": metadata.get("instrument") or raw_bundle["header"].get("INSTRUME"),
+        "filter": metadata.get("filter")
+        or raw_bundle["primary_header"].get("FILTER")
+        or raw_bundle["header"].get("FILTER"),
+        "target": metadata.get("target")
+        or raw_bundle["primary_header"].get("TARGPROP")
+        or raw_bundle["header"].get("TARGPROP"),
+        "instrument": metadata.get("instrument")
+        or raw_bundle["primary_header"].get("INSTRUME")
+        or raw_bundle["header"].get("INSTRUME"),
         "metadata": metadata,
     }
 

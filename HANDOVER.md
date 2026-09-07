@@ -222,6 +222,99 @@ exist in this repo yet, all of which are well-trodden.
 
 ---
 
+## Part 5 — Results: Stage-2b artifact characterization (done)
+
+Recommendation #1 from Part 3 has been carried out. Four exposures were pulled
+from MAST, the two same-filter pairs were compared, and the results are in
+`research_output/ARTIFACT_CHARACTERIZATION.md` and
+`research_output/visuals/artifact_diagnostics.png`.
+
+```bash
+python discovery/artifact_characterization.py --auto
+```
+
+### Headline
+
+**About 15% of all 5-sigma detections in a single Stage-2b exposure are not real
+sources.** The surviving-artifact surface density is 32-39 per square
+arcminute per exposure.
+
+| | F277W | F356W |
+| --- | ---: | ---: |
+| epochs | obs025 x obs026 | obs025 x obs026 |
+| time baseline | 5.65 h | 9.55 h |
+| exposure time | 944.8 s | 944.8 s |
+| shared sky | 2.465 arcmin² | 2.415 arcmin² |
+| sources compared | 1256 | 981 |
+| persistent | 1066 | 828 |
+| single-epoch | **190 (15.1%)** | **153 (15.6%)** |
+| artifact density | 38.5 / arcmin² / exposure | 31.7 / arcmin² / exposure |
+
+### Why the measurement is trustworthy
+
+Three independent checks, all of which had to pass and did:
+
+1. **Cross-epoch photometry is sound.** Persistent sources have a flux ratio
+   between epochs of **0.993 ± 0.078** (F277W) and **0.991 ± 0.079** (F356W).
+   Centred on unity, so the single-epoch population is a genuine absence rather
+   than a measurement failure. This is the check the original pipeline never had.
+2. **The process is stochastic and symmetric.** Searching each of the four
+   exposures in turn gives single-epoch fractions of 14.5%, 15.0%, 15.7%, 16.0%.
+   A depth or calibration difference between epochs would show up as an
+   asymmetry. It does not.
+3. **The rate is physically plausible.** 38.5 / arcmin² / exposure works out to
+   ~178 events per long-wave detector per 945 s, or **0.16-0.19 events per
+   second per detector**. With NGROUPS=5, up-the-ramp jump detection removes the
+   great majority of incident cosmic rays, so a surviving rate around 1% of the
+   incident flux is the right order of magnitude.
+
+### Morphology: the artifacts are separable
+
+| median | persistent | single-epoch |
+| --- | ---: | ---: |
+| FWHM (px) | 3.0-3.1 | 1.3-1.4 |
+| area (px) | 23-25 | 7 |
+| peak / total flux | 0.08-0.09 | 0.34-0.40 |
+
+The single-epoch population sits **below the PSF width** (NIRCam long-wave PSF
+FWHM is ~1.5 px at 0.063"/px) and is four times more concentrated. That is the
+cosmic-ray signature: charge deposited in a few pixels with no optical
+convolution. The separation is clean enough in the FWHM/sharpness plane to build
+a single-image classifier from, which is the practical payoff — it would let you
+flag artifacts in exposures that have *no* repeat coverage.
+
+### The number that matters for this repo
+
+An artifact appears in exactly one exposure, so it is absent from every other
+band **by construction** and passes any dropout cut with full efficiency. A
+dropout search does not suppress artifacts, it enriches them.
+
+Against a genuine z > 10 surface density of order 0.03 per arcmin² (JWST deep
+surveys find a few such objects per hundred square arcminutes), the measured
+artifact density implies roughly **1000-1300 artifacts per real high-redshift
+source** in a single-exposure dropout search.
+
+That is the quantitative answer to why the shipped catalog had 1732 candidates.
+Even with the cross-filter pairing bug fixed, a single-exposure search of this
+kind is contaminated by three orders of magnitude. Deep mosaics with
+cross-dither rejection are not an optimization — they are the whole ballgame.
+
+### One loose end worth pulling
+
+20 of the 343 single-epoch sources (5.8%) are **not** cosmic-ray-like: FWHM
+>= 2.4 px with normal sharpness (median 0.12, matching real sources). Something
+PSF-shaped that appears in one exposure and not the other. The most likely
+explanations are detector persistence (an afterimage of a bright source from a
+preceding exposure, which is PSF-shaped by construction) or moving objects.
+GOODS-S sits at high ecliptic latitude so the asteroid density is low, but not
+zero, and this machinery is exactly what would find them.
+
+This is a small, well-defined, checkable sample — the honest kind of loose end.
+It is not a discovery, and it should not be described as one until each object
+has been checked against the preceding exposure in the visit sequence.
+
+---
+
 ## Part 4 — Immediate next steps
 
 1. **Download the deep mosaics**, not single exposures. `_i2d` products at the

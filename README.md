@@ -101,6 +101,20 @@ python discovery/multi_epoch.py                # apply the veto to candidates
 Verdicts are interpreted against the measured time baseline: a few hours rejects
 cosmic rays but says nothing about astrophysical variability.
 
+## Stage-2b artifact characterization
+
+Two independent exposures of the same sky in the same filter form a labelled
+truth set for detector artifacts that survived calibration:
+
+```bash
+python discovery/artifact_characterization.py --auto
+```
+
+Measured on JADES GOODS-S: **~15% of all 5-sigma detections in a single
+Stage-2b exposure are not real sources** (32-39 per arcmin² per exposure), and
+they separate cleanly from real sources in FWHM and peak-to-total flux. Results
+in `research_output/ARTIFACT_CHARACTERIZATION.md`.
+
 See `HANDOVER.md` for the measured footprint and epoch coverage of the current
 archive, and for what this pipeline can realistically be used to discover.
 
