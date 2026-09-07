@@ -44,6 +44,11 @@ from discovery.proposal_channels import (
     summarize_proposal_channels,
 )
 from tools.jwst.fits_loader import load_fits_bundle
+from tools.jwst.footprints import (
+    MIN_USEFUL_OVERLAP,
+    modules_are_disjoint,
+    overlap_fraction,
+)
 from tools.jwst.photometry import compute_color_index, extract_photometry
 from tools.jwst.source_detection import detect_sources
 from tools.jwst.visualization import (
@@ -181,21 +186,7 @@ def _group_entries_by_target(entries: List[Dict[str, Any]]) -> Dict[str, Dict[st
     return grouped
 
 
-DETECTOR_PATTERN = re.compile(r"_(nrc[ab](?:long|[1-4]))_", re.IGNORECASE)
-MIN_FOOTPRINT_OVERLAP = 0.05
-FOOTPRINT_SAMPLE_GRID = 24
-
-
-def _detector_token(dataset_name: str) -> Optional[str]:
-    """Extract the NIRCam detector token (e.g. ``nrca1``) from a dataset name."""
-    match = DETECTOR_PATTERN.search(str(dataset_name))
-    return match.group(1).lower() if match else None
-
-
-def _module_letter(dataset_name: str) -> Optional[str]:
-    """Return the NIRCam module letter for a dataset name, when identifiable."""
-    detector = _detector_token(dataset_name)
-    return detector[3] if detector else None
+MIN_FOOTPRINT_OVERLAP = MIN_USEFUL_OVERLAP
 
 
 def _product_rank(dataset_name: str) -> int:
@@ -210,59 +201,13 @@ def _product_rank(dataset_name: str) -> int:
     return 0
 
 
-def _pick_best_dataset(entries: Dict[str, List[Dict[str, Any]]], filter_name: str) -> Optional[str]:
-    """Choose the preferred dataset for one filter, favoring i2d products."""
-    candidates = entries.get(filter_name, [])
-    if not candidates:
-        return None
-    return max(candidates, key=lambda item: (_product_rank(item["name"]), item["name"]))["name"]
-
-
-def _sky_footprint_overlap(reference_bundle: Dict[str, Any], candidate_name: str) -> float:
-    """Estimate the fraction of the reference footprint covered by another dataset.
-
-    Cross-filter photometry is only meaningful where the two exposures see the
-    same sky. NIRCam module A and module B footprints are disjoint, and a
-    short-wave detector covers roughly one quadrant of the long-wave field, so
-    picking datasets per filter independently can silently pair images that
-    never overlap. Every aperture then lands off the detector, and the resulting
-    zero flux reads as a perfect dropout.
-    """
-    reference_wcs = reference_bundle.get("wcs")
-    if reference_wcs is None:
-        return 0.0
-
+def _overlap_with_reference(reference_bundle: Dict[str, Any], candidate_name: str) -> float:
+    """Measure how much of the reference footprint a candidate dataset covers."""
     try:
         candidate_bundle = load_fits_bundle(candidate_name)
     except Exception:
         return 0.0
-
-    candidate_wcs = candidate_bundle.get("wcs")
-    if candidate_wcs is None:
-        return 0.0
-
-    ref_height, ref_width = np.asarray(reference_bundle["sci"]).shape[-2:]
-    cand_height, cand_width = np.asarray(candidate_bundle["sci"]).shape[-2:]
-
-    xs = np.linspace(0, ref_width - 1, FOOTPRINT_SAMPLE_GRID)
-    ys = np.linspace(0, ref_height - 1, FOOTPRINT_SAMPLE_GRID)
-    grid_x, grid_y = np.meshgrid(xs, ys)
-
-    try:
-        ra, dec = reference_wcs.pixel_to_world_values(grid_x.ravel(), grid_y.ravel())
-        cand_x, cand_y = candidate_wcs.world_to_pixel_values(ra, dec)
-    except Exception:
-        return 0.0
-
-    inside = (
-        np.isfinite(cand_x)
-        & np.isfinite(cand_y)
-        & (cand_x >= 0)
-        & (cand_y >= 0)
-        & (cand_x < cand_width)
-        & (cand_y < cand_height)
-    )
-    return float(np.mean(inside))
+    return overlap_fraction(reference_bundle, candidate_bundle)
 
 
 def _pick_overlapping_dataset(
@@ -277,18 +222,13 @@ def _pick_overlapping_dataset(
     quality second, so a lexicographic accident can never select an exposure on
     a different NIRCam module.
     """
-    candidates = entries.get(filter_name, [])
-    if not candidates:
-        return None, 0.0
-
-    reference_module = _module_letter(reference_name)
     scored: List[Tuple[float, int, str]] = []
-    for item in candidates:
+    for item in entries.get(filter_name, []):
         name = item["name"]
-        if reference_module and _module_letter(name) not in (None, reference_module):
-            # Disjoint NIRCam module: no possible overlap, skip the FITS read.
+        if modules_are_disjoint(reference_name, name):
+            # Disjoint NIRCam modules cannot share sky; skip the FITS read.
             continue
-        overlap = _sky_footprint_overlap(reference_bundle, name)
+        overlap = _overlap_with_reference(reference_bundle, name)
         if overlap < MIN_FOOTPRINT_OVERLAP:
             continue
         scored.append((overlap, _product_rank(name), name))
@@ -306,25 +246,13 @@ def _load_catalog_sources(catalog_path: str) -> List[Dict[str, Any]]:
     return json.loads(path.read_text(encoding="utf-8")).get("sources", [])
 
 
-def _build_target_dataset_map(
+def _map_for_reference(
     grouped_entries: Dict[str, List[Dict[str, Any]]],
+    reference_name: str,
 ) -> Tuple[Dict[str, str], Dict[str, float]]:
-    """Resolve one dataset per filter that shares sky with the reference filter.
-
-    The reference filter anchors the selection; every other filter is chosen by
-    measured footprint overlap against it. A filter with no overlapping exposure
-    is left out of the map entirely rather than paired with disjoint sky, so
-    downstream code sees a missing band instead of a fabricated non-detection.
-    """
-    dataset_map: Dict[str, str] = {}
-    overlap_by_filter: Dict[str, float] = {}
-
-    reference_name = _pick_best_dataset(grouped_entries, REFERENCE_FILTER)
-    if not reference_name:
-        return dataset_map, overlap_by_filter
-
-    dataset_map[REFERENCE_FILTER] = reference_name
-    overlap_by_filter[REFERENCE_FILTER] = 1.0
+    """Resolve every filter against one candidate reference dataset."""
+    dataset_map: Dict[str, str] = {REFERENCE_FILTER: reference_name}
+    overlap_by_filter: Dict[str, float] = {REFERENCE_FILTER: 1.0}
 
     try:
         reference_bundle = load_fits_bundle(reference_name)
@@ -341,6 +269,49 @@ def _build_target_dataset_map(
             dataset_map[filter_name] = chosen
             overlap_by_filter[filter_name] = overlap
     return dataset_map, overlap_by_filter
+
+
+def _build_target_dataset_map(
+    grouped_entries: Dict[str, List[Dict[str, Any]]],
+) -> Tuple[Dict[str, str], Dict[str, float]]:
+    """Resolve one dataset per filter that shares sky with the reference filter.
+
+    The reference filter anchors the selection and every other band is chosen by
+    measured WCS footprint overlap against it. Which reference to anchor on is
+    itself a choice: two exposures of the same field in the reference filter can
+    differ in whether any blue exposure overlaps them at all. So each candidate
+    reference is scored by how much of the required-band coverage it actually
+    buys, and the best one wins.
+
+    A filter with no overlapping exposure is left out of the map entirely rather
+    than paired with disjoint sky, so downstream code sees a missing band
+    instead of a fabricated non-detection.
+    """
+    reference_options = [item["name"] for item in grouped_entries.get(REFERENCE_FILTER, [])]
+    if not reference_options:
+        return {}, {}
+
+    required = [BLUE_FILTER, MID_FILTER]
+    best_map: Dict[str, str] = {}
+    best_overlap: Dict[str, float] = {}
+    best_key: Tuple[int, float, int, str] = (-1, -1.0, -1, "")
+
+    for reference_name in reference_options:
+        dataset_map, overlap_by_filter = _map_for_reference(grouped_entries, reference_name)
+        required_bands = sum(1 for filt in required if filt in dataset_map)
+        required_overlap = sum(overlap_by_filter.get(filt, 0.0) for filt in required)
+        key = (
+            required_bands,
+            required_overlap,
+            _product_rank(reference_name),
+            reference_name,
+        )
+        if key > best_key:
+            best_key = key
+            best_map = dataset_map
+            best_overlap = overlap_by_filter
+
+    return best_map, best_overlap
 
 
 def _dataset_position_from_source(

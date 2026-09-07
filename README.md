@@ -87,6 +87,23 @@ short-wave/long-wave pixel solid angle correction).
 See `FINDINGS.md` for what the audit found in the shipped catalog and for an
 honest assessment of what this pipeline can and cannot establish.
 
+## Repeat-exposure vetting
+
+A source present in one exposure and absent from an independent exposure of the
+same sky in the same filter is a detector artifact, not an object. Single
+exposures carry no cross-dither cosmic-ray rejection, so this check matters:
+
+```bash
+python discovery/multi_epoch.py --pairs-only   # what repeat coverage exists
+python discovery/multi_epoch.py                # apply the veto to candidates
+```
+
+Verdicts are interpreted against the measured time baseline: a few hours rejects
+cosmic rays but says nothing about astrophysical variability.
+
+See `HANDOVER.md` for the measured footprint and epoch coverage of the current
+archive, and for what this pipeline can realistically be used to discover.
+
 ## Notes
 - Strict mode treats missing/invalid `metadata.file_path` as data-integrity failure.
 - Startup audits catalog integrity and quarantines invalid datasets (including legacy invalid samples).
