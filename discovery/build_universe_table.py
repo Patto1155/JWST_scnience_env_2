@@ -13,6 +13,7 @@ This script:
 from __future__ import annotations
 
 import json
+import re
 import sys
 from collections import defaultdict
 from pathlib import Path
@@ -26,6 +27,10 @@ if str(ROOT) not in sys.path:
 
 from core_api.db import SessionLocal
 from core_api.models.datasets import Dataset
+from discovery.audit_candidates import (
+    ab_magnitude,
+    surface_brightness_sum_to_jansky,
+)
 from discovery.proposal_channels import (
     BLUE_FILTER,
     MID_FILTER,
@@ -176,23 +181,123 @@ def _group_entries_by_target(entries: List[Dict[str, Any]]) -> Dict[str, Dict[st
     return grouped
 
 
+DETECTOR_PATTERN = re.compile(r"_(nrc[ab](?:long|[1-4]))_", re.IGNORECASE)
+MIN_FOOTPRINT_OVERLAP = 0.05
+FOOTPRINT_SAMPLE_GRID = 24
+
+
+def _detector_token(dataset_name: str) -> Optional[str]:
+    """Extract the NIRCam detector token (e.g. ``nrca1``) from a dataset name."""
+    match = DETECTOR_PATTERN.search(str(dataset_name))
+    return match.group(1).lower() if match else None
+
+
+def _module_letter(dataset_name: str) -> Optional[str]:
+    """Return the NIRCam module letter for a dataset name, when identifiable."""
+    detector = _detector_token(dataset_name)
+    return detector[3] if detector else None
+
+
+def _product_rank(dataset_name: str) -> int:
+    """Rank calibration product flavors, preferring resampled i2d mosaics."""
+    name = dataset_name.lower()
+    if "i2d" in name:
+        return 3
+    if "_crf" in name:
+        return 2
+    if "_cal" in name:
+        return 1
+    return 0
+
+
 def _pick_best_dataset(entries: Dict[str, List[Dict[str, Any]]], filter_name: str) -> Optional[str]:
     """Choose the preferred dataset for one filter, favoring i2d products."""
     candidates = entries.get(filter_name, [])
     if not candidates:
         return None
+    return max(candidates, key=lambda item: (_product_rank(item["name"]), item["name"]))["name"]
 
-    def score(item: Dict[str, Any]) -> Tuple[int, str]:
-        name = item["name"].lower()
-        if "i2d" in name:
-            return (3, item["name"])
-        if "_cal" in name:
-            return (2, item["name"])
-        if "_crf" in name:
-            return (1, item["name"])
-        return (0, item["name"])
 
-    return max(candidates, key=score)["name"]
+def _sky_footprint_overlap(reference_bundle: Dict[str, Any], candidate_name: str) -> float:
+    """Estimate the fraction of the reference footprint covered by another dataset.
+
+    Cross-filter photometry is only meaningful where the two exposures see the
+    same sky. NIRCam module A and module B footprints are disjoint, and a
+    short-wave detector covers roughly one quadrant of the long-wave field, so
+    picking datasets per filter independently can silently pair images that
+    never overlap. Every aperture then lands off the detector, and the resulting
+    zero flux reads as a perfect dropout.
+    """
+    reference_wcs = reference_bundle.get("wcs")
+    if reference_wcs is None:
+        return 0.0
+
+    try:
+        candidate_bundle = load_fits_bundle(candidate_name)
+    except Exception:
+        return 0.0
+
+    candidate_wcs = candidate_bundle.get("wcs")
+    if candidate_wcs is None:
+        return 0.0
+
+    ref_height, ref_width = np.asarray(reference_bundle["sci"]).shape[-2:]
+    cand_height, cand_width = np.asarray(candidate_bundle["sci"]).shape[-2:]
+
+    xs = np.linspace(0, ref_width - 1, FOOTPRINT_SAMPLE_GRID)
+    ys = np.linspace(0, ref_height - 1, FOOTPRINT_SAMPLE_GRID)
+    grid_x, grid_y = np.meshgrid(xs, ys)
+
+    try:
+        ra, dec = reference_wcs.pixel_to_world_values(grid_x.ravel(), grid_y.ravel())
+        cand_x, cand_y = candidate_wcs.world_to_pixel_values(ra, dec)
+    except Exception:
+        return 0.0
+
+    inside = (
+        np.isfinite(cand_x)
+        & np.isfinite(cand_y)
+        & (cand_x >= 0)
+        & (cand_y >= 0)
+        & (cand_x < cand_width)
+        & (cand_y < cand_height)
+    )
+    return float(np.mean(inside))
+
+
+def _pick_overlapping_dataset(
+    entries: Dict[str, List[Dict[str, Any]]],
+    filter_name: str,
+    reference_name: str,
+    reference_bundle: Dict[str, Any],
+) -> Tuple[Optional[str], float]:
+    """Pick the dataset for one filter that actually overlaps the reference sky.
+
+    Candidates are ranked by measured footprint overlap first and product
+    quality second, so a lexicographic accident can never select an exposure on
+    a different NIRCam module.
+    """
+    candidates = entries.get(filter_name, [])
+    if not candidates:
+        return None, 0.0
+
+    reference_module = _module_letter(reference_name)
+    scored: List[Tuple[float, int, str]] = []
+    for item in candidates:
+        name = item["name"]
+        if reference_module and _module_letter(name) not in (None, reference_module):
+            # Disjoint NIRCam module: no possible overlap, skip the FITS read.
+            continue
+        overlap = _sky_footprint_overlap(reference_bundle, name)
+        if overlap < MIN_FOOTPRINT_OVERLAP:
+            continue
+        scored.append((overlap, _product_rank(name), name))
+
+    if not scored:
+        return None, 0.0
+
+    best = max(scored)
+    return best[2], best[0]
 
 
 def _load_catalog_sources(catalog_path: str) -> List[Dict[str, Any]]:
@@ -203,14 +308,39 @@ def _load_catalog_sources(catalog_path: str) -> List[Dict[str, Any]]:
 
 def _build_target_dataset_map(
     grouped_entries: Dict[str, List[Dict[str, Any]]],
-) -> Dict[str, str]:
-    """Resolve one preferred dataset name per filter for a target."""
+) -> Tuple[Dict[str, str], Dict[str, float]]:
+    """Resolve one dataset per filter that shares sky with the reference filter.
+
+    The reference filter anchors the selection; every other filter is chosen by
+    measured footprint overlap against it. A filter with no overlapping exposure
+    is left out of the map entirely rather than paired with disjoint sky, so
+    downstream code sees a missing band instead of a fabricated non-detection.
+    """
     dataset_map: Dict[str, str] = {}
+    overlap_by_filter: Dict[str, float] = {}
+
+    reference_name = _pick_best_dataset(grouped_entries, REFERENCE_FILTER)
+    if not reference_name:
+        return dataset_map, overlap_by_filter
+
+    dataset_map[REFERENCE_FILTER] = reference_name
+    overlap_by_filter[REFERENCE_FILTER] = 1.0
+
+    try:
+        reference_bundle = load_fits_bundle(reference_name)
+    except Exception:
+        return dataset_map, overlap_by_filter
+
     for filter_name in grouped_entries.keys():
-        chosen = _pick_best_dataset(grouped_entries, filter_name)
+        if filter_name == REFERENCE_FILTER:
+            continue
+        chosen, overlap = _pick_overlapping_dataset(
+            grouped_entries, filter_name, reference_name, reference_bundle
+        )
         if chosen:
             dataset_map[filter_name] = chosen
-    return dataset_map
+            overlap_by_filter[filter_name] = overlap
+    return dataset_map, overlap_by_filter
 
 
 def _dataset_position_from_source(
@@ -332,8 +462,18 @@ def _validation_summary(candidate: Dict[str, Any]) -> Dict[str, Any]:
         else 0.0
     )
 
-    ratio_score = 0.0 if ratio is None else _clip_unit_interval((0.2 - float(ratio)) / 0.2)
-    aperture_score = dropout_fraction
+    # An unmeasured blue band cannot supply evidence for a dropout. Zeroing the
+    # ratio and aperture-consistency terms here stops an off-detector aperture
+    # from scoring a perfect break on 55% of the total weight.
+    blue_evidence_available = is_measured_status(
+        str(measurement_status_by_filter.get(BLUE_FILTER) or "")
+    )
+    if not blue_evidence_available:
+        ratio_score = 0.0
+        aperture_score = 0.0
+    else:
+        ratio_score = 0.0 if ratio is None else _clip_unit_interval((0.2 - float(ratio)) / 0.2)
+        aperture_score = dropout_fraction
     snr_score = 0.0 if red_snr is None else _clip_unit_interval((float(red_snr) - 5.0) / 10.0)
     coverage_score = _clip_unit_interval((coverage - 0.8) / 0.2)
     edge_score = _clip_unit_interval((edge_distance - 16.0) / 24.0)
@@ -363,12 +503,16 @@ def _validation_summary(candidate: Dict[str, Any]) -> Dict[str, Any]:
     keep_reasons: List[str] = []
     reject_reasons: List[str] = []
 
-    if ratio is not None and float(ratio) < 0.05:
+    if not blue_evidence_available:
+        reject_reasons.append("f090_f444_ratio_undefined_blue_unmeasured")
+    elif ratio is not None and float(ratio) < 0.05:
         keep_reasons.append("f090_f444_ratio_below_0p05")
     else:
         reject_reasons.append("f090_f444_ratio_not_dropout_like")
 
-    if dropout_fraction >= 1.0:
+    if not blue_evidence_available:
+        reject_reasons.append("dropout_undefined_blue_unmeasured")
+    elif dropout_fraction >= 1.0:
         keep_reasons.append("dropout_stable_across_all_apertures")
     elif dropout_fraction >= 0.67:
         keep_reasons.append("dropout_stable_across_most_apertures")
@@ -471,12 +615,13 @@ def _analyze_target_sources(
     anomalous_dataset_names: set[str],
 ) -> Tuple[List[Dict[str, Any]], List[Dict[str, Any]], Dict[str, Any]]:
     """Detect red sources, measure colors, and generate target-level artifacts."""
-    dataset_map = _build_target_dataset_map(grouped_entries)
+    dataset_map, footprint_overlap = _build_target_dataset_map(grouped_entries)
     reference_dataset = dataset_map.get(REFERENCE_FILTER)
     blue_dataset = dataset_map.get(BLUE_FILTER)
     mid_dataset = dataset_map.get(MID_FILTER)
 
     if not reference_dataset or not blue_dataset:
+        # Without an overlapping blue exposure there is no dropout test to run.
         return [], [], {}
 
     bundle_by_filter: Dict[str, Dict[str, Any]] = {}
@@ -578,6 +723,21 @@ def _analyze_target_sources(
             mid_r3,
             float(source.get("edge_distance_px") or 0.0),
         )
+        # i2d pixels are surface brightness; convert to flux density before any
+        # cross-filter comparison, because short-wave pixels subtend a quarter
+        # of the solid angle of long-wave pixels.
+        reference_flux_jy = surface_brightness_sum_to_jansky(
+            float(reference_r3.get("background_subtracted_flux") or 0.0), REFERENCE_FILTER
+        )
+        blue_limit_jy = surface_brightness_sum_to_jansky(
+            max(float(blue_r3.get("background_subtracted_flux") or 0.0), 0.0)
+            + 2.0 * float(blue_r3.get("flux_error") or 0.0),
+            BLUE_FILTER,
+        )
+        physical_ratio = (
+            float(blue_limit_jy / reference_flux_jy) if reference_flux_jy > 0 else None
+        )
+
         measurement_status_by_filter = build_measurement_status_by_filter(per_filter, radius_key="3")
         completeness_score = compute_completeness_score(
             measurement_status_by_filter,
@@ -614,6 +774,10 @@ def _analyze_target_sources(
                 if not is_measured_status(status)
             ],
             "completeness_score": float(completeness_score),
+            "footprint_overlap_by_filter": dict(footprint_overlap),
+            "f444_flux_jy": reference_flux_jy,
+            "f444_ab_magnitude": ab_magnitude(reference_flux_jy),
+            "physical_ratio_f090_f444": physical_ratio,
             "photometry_by_filter": per_filter,
             "photometry_by_dataset": per_dataset,
             "note": "Source-level JWST proposal candidate",
@@ -638,10 +802,15 @@ def _analyze_target_sources(
             f"{source.get('primary_channel') or 'no_primary_channel'}"
         )
 
-        reference_status = (source.get("measurement_status_by_filter") or {}).get(REFERENCE_FILTER)
+        statuses = source.get("measurement_status_by_filter") or {}
+        reference_status = statuses.get(REFERENCE_FILTER)
+        blue_status = statuses.get(BLUE_FILTER)
         if (
             source.get("proposal_channels")
             and is_measured_status(str(reference_status or ""))
+            # A dropout requires an actual blue measurement. Without one the
+            # ratio is a division by an off-detector zero, not a non-detection.
+            and is_measured_status(str(blue_status or ""))
             and float(source.get("f444_flux") or 0.0) > 0.0
         ):
             candidates.append(dict(source))

@@ -69,6 +69,24 @@ Run lint/type/tests:
 python scripts/quality_gate.py
 ```
 
+## Candidate Audit (read before trusting any result)
+
+Independent falsification pass over the committed candidate catalog. Pure
+stdlib, no FITS access, no pipeline rerun:
+
+```bash
+python discovery/audit_candidates.py
+```
+
+It writes `research_output/CANDIDATE_AUDIT.md` and
+`research_output/candidate_audit.json`, checking that the blue band was actually
+measured at each source position, that the compared filters share sky, and what
+each candidate's brightness is in physical units (AB mag from MJy/sr, with the
+short-wave/long-wave pixel solid angle correction).
+
+See `FINDINGS.md` for what the audit found in the shipped catalog and for an
+honest assessment of what this pipeline can and cannot establish.
+
 ## Notes
 - Strict mode treats missing/invalid `metadata.file_path` as data-integrity failure.
 - Startup audits catalog integrity and quarantines invalid datasets (including legacy invalid samples).
