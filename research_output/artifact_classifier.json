@@ -1,0 +1,149 @@
+{
+  "feature_names": [
+    "psf_ratio",
+    "sharpness",
+    "log_area",
+    "ellipticity"
+  ],
+  "n_sky_groups": 1901,
+  "held_out_visit": [
+    {
+      "held_out_visit": "jw01180025001_",
+      "n_test": 1024,
+      "roc_auc": 0.9734659786926018,
+      "at_threshold_0.5": {
+        "threshold": 0.5,
+        "n_flagged": 119,
+        "artifact_purity": 0.957983193277311,
+        "artifact_completeness": 0.7354838709677419,
+        "real_sources_lost": 5,
+        "real_source_loss_fraction": 0.005753739930955121
+      }
+    },
+    {
+      "held_out_visit": "jw01180026001_",
+      "n_test": 4089,
+      "roc_auc": 0.9846176940847438,
+      "at_threshold_0.5": {
+        "threshold": 0.5,
+        "n_flagged": 532,
+        "artifact_purity": 0.9116541353383458,
+        "artifact_completeness": 0.8614564831261101,
+        "real_sources_lost": 47,
+        "real_source_loss_fraction": 0.013329551900170164
+      }
+    }
+  ],
+  "standardization": {
+    "mean": [
+      2.227658979544102,
+      0.14455579786947564,
+      1.4049331418586612,
+      0.3447997611625215
+    ],
+    "scale": [
+      2.0474512591489966,
+      0.13272889893491904,
+      0.6035980818257447,
+      0.17231385514402756
+    ]
+  },
+  "weights": [
+    -4.067666622500174,
+    -3.657151473980915,
+    3.5834427550264385,
+    2.361702370960774,
+    -0.1586283547139669
+  ],
+  "n_training_rows": 5113,
+  "n_artifacts": 718,
+  "n_real": 4395,
+  "trained_on_filters": [
+    "F277W",
+    "F356W"
+  ],
+  "cross_validation": {
+    "roc_auc": 0.9809463146586556,
+    "operating_points": [
+      {
+        "threshold": 0.5,
+        "n_flagged": 629,
+        "artifact_purity": 0.9300476947535771,
+        "artifact_completeness": 0.8147632311977716,
+        "real_sources_lost": 44,
+        "real_source_loss_fraction": 0.010011376564277589
+      },
+      {
+        "threshold": 0.7,
+        "n_flagged": 548,
+        "artifact_purity": 0.9361313868613139,
+        "artifact_completeness": 0.7144846796657381,
+        "real_sources_lost": 35,
+        "real_source_loss_fraction": 0.007963594994311717
+      },
+      {
+        "threshold": 0.9,
+        "n_flagged": 422,
+        "artifact_purity": 0.9478672985781991,
+        "artifact_completeness": 0.5571030640668524,
+        "real_sources_lost": 22,
+        "real_source_loss_fraction": 0.005005688282138794
+      },
+      {
+        "threshold": 0.95,
+        "n_flagged": 351,
+        "artifact_purity": 0.9487179487179487,
+        "artifact_completeness": 0.4637883008356546,
+        "real_sources_lost": 18,
+        "real_source_loss_fraction": 0.004095563139931741
+      }
+    ]
+  },
+  "cross_filter_transfer": [
+    {
+      "trained_on": [
+        "F356W"
+      ],
+      "tested_on": "F277W",
+      "roc_auc": 0.9814956923895471,
+      "at_threshold_0.9": {
+        "threshold": 0.9,
+        "n_flagged": 111,
+        "artifact_purity": 0.963963963963964,
+        "artifact_completeness": 0.5879120879120879,
+        "real_sources_lost": 4,
+        "real_source_loss_fraction": 0.0037243947858473
+      }
+    },
+    {
+      "trained_on": [
+        "F277W"
+      ],
+      "tested_on": "F356W",
+      "roc_auc": 0.9804062344106028,
+      "at_threshold_0.9": {
+        "threshold": 0.9,
+        "n_flagged": 286,
+        "artifact_purity": 0.9370629370629371,
+        "artifact_completeness": 0.5,
+        "real_sources_lost": 18,
+        "real_source_loss_fraction": 0.005420054200542005
+      }
+    }
+  ],
+  "coefficient_interpretation": {
+    "psf_ratio": -3.657151473980915,
+    "sharpness": 3.5834427550264385,
+    "log_area": 2.361702370960774,
+    "ellipticity": -0.1586283547139669
+  },
+  "residual_contamination": {
+    "threshold": 0.5,
+    "artifact_fraction_before": 0.14779670238139206,
+    "artifact_fraction_after": 0.0314303616252252,
+    "improvement_factor": 4.702354498612393,
+    "real_source_loss_fraction": 0.010011376564277589,
+    "artifact_density_after_per_arcmin2": 6.359364507025565,
+    "artifacts_per_highz_source_after": 211.97881690085217
+  }
+}

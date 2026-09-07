@@ -115,6 +115,30 @@ Stage-2b exposure are not real sources** (32-39 per arcmin² per exposure), and
 they separate cleanly from real sources in FWHM and peak-to-total flux. Results
 in `research_output/ARTIFACT_CHARACTERIZATION.md`.
 
+## Single-image artifact classifier
+
+Repeat coverage does not exist for every band. The classifier is fitted to the
+repeat-exposure truth set and rejects artifacts in a single image:
+
+```bash
+python discovery/artifact_classifier.py --train
+```
+
+Cross-validated ROC AUC **0.981** (sky-grouped folds, held-out visits 0.973 /
+0.985). **It fails injection-recovery and must not be used on a high-redshift
+search**: on F444W it falsely rejects 77% of unresolved sources and 89% of faint
+unresolved sources. It is retained as a documented negative result. See
+`research_output/ARTIFACT_CLASSIFIER.md` and `INJECTION_RECOVERY.md`.
+
+## Injection-recovery
+
+Measures what a cut actually costs the science sample, which a discrimination
+metric cannot:
+
+```bash
+python discovery/injection_recovery.py --auto
+```
+
 See `HANDOVER.md` for the measured footprint and epoch coverage of the current
 archive, and for what this pipeline can realistically be used to discover.
 

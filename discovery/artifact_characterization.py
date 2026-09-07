@@ -74,6 +74,13 @@ MIN_COVERAGE = 0.9
 # would be truncated.
 BORDER_MARGIN_PIXELS = 16
 
+# For an extended source the 6-10 px annulus sits on the source itself and
+# over-subtracts it to nothing, which fakes an absence. Every apparent
+# single-epoch source is therefore re-measured with an annulus placed well
+# outside the light profile before the classification is allowed to stand.
+WIDE_BACKGROUND_INNER_RADIUS = 15.0
+WIDE_BACKGROUND_OUTER_RADIUS = 25.0
+
 # Significance bins for the contamination curve.
 SNR_BINS = [(5, 8), (8, 12), (12, 20), (20, 50), (50, 1e9)]
 
@@ -280,6 +287,27 @@ def compare_epochs(
         flux_b = float(measurement_b.get("background_subtracted_flux") or 0.0)
         persistent = snr_b is not None and float(snr_b) >= PERSISTENCE_SNR
 
+        recovered_by_wide_annulus = False
+        if not persistent:
+            wide = extract_photometry(
+                image_data=bundle_b,
+                x=position_b[0],
+                y=position_b[1],
+                aperture_radius=APERTURE_RADIUS,
+                background_annulus_inner_radius=WIDE_BACKGROUND_INNER_RADIUS,
+                background_annulus_outer_radius=WIDE_BACKGROUND_OUTER_RADIUS,
+            )
+            wide_snr = wide.get("snr")
+            if (
+                wide_snr is not None
+                and float(wide_snr) >= PERSISTENCE_SNR
+                and float(wide.get("coverage_fraction") or 0.0) >= MIN_COVERAGE
+            ):
+                persistent = True
+                recovered_by_wide_annulus = True
+                snr_b = float(wide_snr)
+                flux_b = float(wide.get("background_subtracted_flux") or 0.0)
+
         records.append(
             {
                 "epoch_a": epoch_a_name,
@@ -299,10 +327,48 @@ def compare_epochs(
                 "ellipticity": source["ellipticity"],
                 "area_pixels": source["area_pixels"],
                 "sharpness": source["sharpness"],
+                "recovered_by_wide_annulus": recovered_by_wide_annulus,
                 "classification": "persistent" if persistent else "single_epoch",
             }
         )
     return records
+
+
+def consolidate_detections(records: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """Collapse per-pair comparisons into one consensus row per detection.
+
+    With more than two exposures of a field, the same detection is compared
+    against several others. Those rows are not independent - they are one
+    detection judged repeatedly - so they must be collapsed before any fit, or a
+    single source leaks across cross-validation folds.
+
+    The consensus is asymmetric on purpose: present in even one comparison means
+    real, because a detector event cannot reappear at the same sky position in an
+    independent exposure. Absent in every comparison is what earns the artifact
+    label, and more comparisons make that label stronger.
+    """
+    grouped: Dict[Tuple[str, int, int], List[Dict[str, Any]]] = defaultdict(list)
+    for record in records:
+        grouped[(record["epoch_a"], round(record["x_a"]), round(record["y_a"]))].append(record)
+
+    consolidated: List[Dict[str, Any]] = []
+    for (epoch, _, _), group in grouped.items():
+        primary = max(group, key=lambda r: r["snr_a"])
+        n_persistent = sum(1 for r in group if r["classification"] == "persistent")
+        consolidated.append(
+            {
+                **{k: primary[k] for k in (
+                    "epoch_a", "ra", "dec", "x_a", "y_a", "snr_a", "flux_a",
+                    "fwhm_pixels", "ellipticity", "area_pixels", "sharpness",
+                )},
+                "n_comparisons": len(group),
+                "n_persistent_comparisons": n_persistent,
+                "compared_against": [r["epoch_b"] for r in group],
+                "consensus": "real" if n_persistent > 0 else "artifact",
+                "unanimous": n_persistent in (0, len(group)),
+            }
+        )
+    return consolidated
 
 
 def _median(values: Iterable[Optional[float]]) -> Optional[float]:
@@ -382,6 +448,7 @@ def summarize_pair(
     """Aggregate per-source outcomes into rates, contamination, and morphology."""
     persistent = [r for r in records if r["classification"] == "persistent"]
     single = [r for r in records if r["classification"] == "single_epoch"]
+    recovered = [r for r in records if r.get("recovered_by_wide_annulus")]
     total = len(records)
 
     by_snr: List[Dict[str, Any]] = []
@@ -421,6 +488,7 @@ def summarize_pair(
         "n_compared": total,
         "n_persistent": len(persistent),
         "n_single_epoch": len(single),
+        "n_recovered_by_wide_annulus": len(recovered),
         "single_epoch_fraction": float(len(single) / total) if total else None,
         "artifact_density_per_arcmin2_per_exposure": density_per_arcmin2,
         "artifact_density_per_arcmin2_per_kilosecond": density_per_arcmin2_per_ks,
@@ -616,7 +684,13 @@ def render_report(summaries: List[Dict[str, Any]]) -> str:
             else "- Exposure time: unknown",
             f"- Shared sky area: {area:.3f} arcmin^2" if area else "- Shared sky area: unknown",
             f"- Sources compared (both directions): **{summary['n_compared']}**",
-            f"- Persistent: **{summary['n_persistent']}**",
+            f"- Persistent: **{summary['n_persistent']}**"
+            + (
+                f" (of which {summary['n_recovered_by_wide_annulus']} recovered by the"
+                f" wide-annulus recheck)"
+                if summary.get("n_recovered_by_wide_annulus")
+                else ""
+            ),
             f"- Single-epoch (artifacts): **{summary['n_single_epoch']}**"
             f" ({100.0 * summary['single_epoch_fraction']:.1f}%)"
             if summary["single_epoch_fraction"] is not None
@@ -776,10 +850,34 @@ def main() -> int:
         print("No pair produced comparable sources.")
         return 1
 
+    consolidated = consolidate_detections(all_records)
+    n_artifact = sum(1 for r in consolidated if r["consensus"] == "artifact")
+    n_multi = sum(1 for r in consolidated if r["n_comparisons"] > 1)
+    n_mixed = sum(1 for r in consolidated if not r["unanimous"])
+
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(
-        json.dumps({"summaries": summaries, "sources": all_records}, indent=2),
+        json.dumps(
+            {
+                "summaries": summaries,
+                "sources": all_records,
+                "detections": consolidated,
+                "detection_summary": {
+                    "n_detections": len(consolidated),
+                    "n_artifact": n_artifact,
+                    "n_real": len(consolidated) - n_artifact,
+                    "n_with_multiple_comparisons": n_multi,
+                    "n_mixed_verdicts": n_mixed,
+                },
+            },
+            indent=2,
+        ),
         encoding="utf-8",
+    )
+    print(
+        f"\nConsolidated to {len(consolidated)} unique detections "
+        f"({n_artifact} artifact, {len(consolidated) - n_artifact} real); "
+        f"{n_multi} have >1 comparison, {n_mixed} give mixed verdicts"
     )
     args.report.write_text(render_report(summaries), encoding="utf-8")
     figure_path = render_diagnostic_figure(all_records, summaries, args.figure)

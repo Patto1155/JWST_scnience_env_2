@@ -224,8 +224,8 @@ exist in this repo yet, all of which are well-trodden.
 
 ## Part 5 — Results: Stage-2b artifact characterization (done)
 
-Recommendation #1 from Part 3 has been carried out. Four exposures were pulled
-from MAST, the two same-filter pairs were compared, and the results are in
+Recommendation #1 from Part 3 has been carried out. Nine exposures were pulled
+from MAST and every same-filter pair that shares sky was compared. Results in
 `research_output/ARTIFACT_CHARACTERIZATION.md` and
 `research_output/visuals/artifact_diagnostics.png`.
 
@@ -236,52 +236,55 @@ python discovery/artifact_characterization.py --auto
 ### Headline
 
 **About 15% of all 5-sigma detections in a single Stage-2b exposure are not real
-sources.** The surviving-artifact surface density is 32-39 per square
-arcminute per exposure.
+sources**, at 31-38 per square arcminute per exposure.
 
-| | F277W | F356W |
-| --- | ---: | ---: |
-| epochs | obs025 x obs026 | obs025 x obs026 |
-| time baseline | 5.65 h | 9.55 h |
-| exposure time | 944.8 s | 944.8 s |
-| shared sky | 2.465 arcmin² | 2.415 arcmin² |
-| sources compared | 1256 | 981 |
-| persistent | 1066 | 828 |
-| single-epoch | **190 (15.1%)** | **153 (15.6%)** |
-| artifact density | 38.5 / arcmin² / exposure | 31.7 / arcmin² / exposure |
+Seven exposure pairs, spanning time baselines from 0.31 to 9.55 hours:
+
+| | value |
+| --- | ---: |
+| pairs compared | 7 (F277W, F356W) |
+| single-epoch fraction, per pair | **14.2% - 15.4%** (mean 14.8%) |
+| artifact density | 30.6 - 37.6 per arcmin² per exposure |
+| consolidated unique detections | 5113 |
+| consensus artifacts | **718 (14.0%)** |
+| detections with >1 independent comparison | 3847 |
+| mixed verdicts | 47 (0.9%) |
+
+Each detection is compared against every other overlapping exposure and the
+verdicts are consolidated: present in even one comparison means real, because a
+detector event cannot reappear at the same sky position in an independent
+exposure. Only 0.9% of detections give mixed verdicts.
 
 ### Why the measurement is trustworthy
 
-Three independent checks, all of which had to pass and did:
+Four checks, all of which had to pass and did:
 
 1. **Cross-epoch photometry is sound.** Persistent sources have a flux ratio
-   between epochs of **0.993 ± 0.078** (F277W) and **0.991 ± 0.079** (F356W).
-   Centred on unity, so the single-epoch population is a genuine absence rather
-   than a measurement failure. This is the check the original pipeline never had.
-2. **The process is stochastic and symmetric.** Searching each of the four
-   exposures in turn gives single-epoch fractions of 14.5%, 15.0%, 15.7%, 16.0%.
-   A depth or calibration difference between epochs would show up as an
-   asymmetry. It does not.
-3. **The rate is physically plausible.** 38.5 / arcmin² / exposure works out to
-   ~178 events per long-wave detector per 945 s, or **0.16-0.19 events per
-   second per detector**. With NGROUPS=5, up-the-ramp jump detection removes the
-   great majority of incident cosmic rays, so a surviving rate around 1% of the
-   incident flux is the right order of magnitude.
+   between epochs of 0.99 +/- 0.08. Centred on unity, so the single-epoch
+   population is a genuine absence rather than a measurement failure. This is
+   the check the original pipeline never had.
+2. **The rate is independent of baseline.** 14.2-15.4% across pairs separated
+   by 19 minutes and by 9.5 hours alike. A per-exposure stochastic process
+   behaves exactly this way; anything astrophysical would not.
+3. **The process is symmetric.** Searching each exposure in turn gives the same
+   fraction whichever is searched. A depth or calibration difference between
+   epochs would show up as an asymmetry. It does not.
+4. **The rate is physically plausible.** ~34 per arcmin² per exposure is ~0.17
+   events per second per long-wave detector. With NGROUPS=5, up-the-ramp jump
+   detection removes the great majority of incident cosmic rays, so a surviving
+   rate around 1% of the incident flux is the right order of magnitude.
 
 ### Morphology: the artifacts are separable
 
-| median | persistent | single-epoch |
+| median | real | artifact |
 | --- | ---: | ---: |
-| FWHM (px) | 3.0-3.1 | 1.3-1.4 |
-| area (px) | 23-25 | 7 |
-| peak / total flux | 0.08-0.09 | 0.34-0.40 |
+| FWHM (px) | 3.05 | **1.32** |
+| peak / total flux | 0.087 | **0.376** |
 
-The single-epoch population sits **below the PSF width** (NIRCam long-wave PSF
-FWHM is ~1.5 px at 0.063"/px) and is four times more concentrated. That is the
+The artifact population sits **below the PSF width** (NIRCam long-wave PSF FWHM
+is ~1.5 px at 0.063"/px) and is four times more concentrated. That is the
 cosmic-ray signature: charge deposited in a few pixels with no optical
-convolution. The separation is clean enough in the FWHM/sharpness plane to build
-a single-image classifier from, which is the practical payoff — it would let you
-flag artifacts in exposures that have *no* repeat coverage.
+convolution.
 
 ### The number that matters for this repo
 
@@ -289,29 +292,181 @@ An artifact appears in exactly one exposure, so it is absent from every other
 band **by construction** and passes any dropout cut with full efficiency. A
 dropout search does not suppress artifacts, it enriches them.
 
-Against a genuine z > 10 surface density of order 0.03 per arcmin² (JWST deep
-surveys find a few such objects per hundred square arcminutes), the measured
-artifact density implies roughly **1000-1300 artifacts per real high-redshift
-source** in a single-exposure dropout search.
+Against a genuine z > 10 surface density of order 0.03 per arcmin², the measured
+artifact density implies roughly **1000-1250 artifacts per real high-redshift
+source** in a single-exposure dropout search. That is the quantitative answer to
+why the shipped catalog had 1732 candidates. Even with the cross-filter pairing
+bug fixed, a single-exposure search of this kind is contaminated by three orders
+of magnitude.
 
-That is the quantitative answer to why the shipped catalog had 1732 candidates.
-Even with the cross-filter pairing bug fixed, a single-exposure search of this
-kind is contaminated by three orders of magnitude. Deep mosaics with
-cross-dither rejection are not an optimization — they are the whole ballgame.
+### A flaw found in this method, and fixed
 
-### One loose end worth pulling
+For an extended source the 6-10 px background annulus sits on the source itself
+and over-subtracts it to nothing, faking an absence. Every apparent single-epoch
+source is now re-measured with a 15-25 px annulus before the classification is
+allowed to stand. That recheck moves only **3.5%** of single-epoch sources
+overall (1.0% of the compact population), so the headline is unaffected — but it
+recovered 30% of the extended tail, which was entirely spurious.
 
-20 of the 343 single-epoch sources (5.8%) are **not** cosmic-ray-like: FWHM
->= 2.4 px with normal sharpness (median 0.12, matching real sources). Something
-PSF-shaped that appears in one exposure and not the other. The most likely
-explanations are detector persistence (an afterimage of a bright source from a
-preceding exposure, which is PSF-shaped by construction) or moving objects.
-GOODS-S sits at high ecliptic latitude so the asteroid density is low, but not
-zero, and this machinery is exactly what would find them.
+### The loose end, resolved
 
-This is a small, well-defined, checkable sample — the honest kind of loose end.
-It is not a discovery, and it should not be described as one until each object
-has been checked against the preceding exposure in the visit sequence.
+The 20 non-cosmic-ray-like single-epoch sources were followed up individually.
+They split three ways, and none of them is a discovery.
+
+**6 of 20 were a flaw in my own method.** Re-measuring them in the comparison
+epoch with a 15-25 px background annulus instead of 6-10 px flips them to
+detected. These are extended galaxies whose background annulus sat on the galaxy
+itself, over-subtracting the flux to nothing. The same recheck across the whole
+sample moves only **3.5%** of single-epoch sources (1.0% of the compact
+cosmic-ray-like population), so the 15% headline is unaffected — but the
+extended tail was contaminated at 30% and had to be cleaned.
+
+**The remaining 14 are detector events.** Visual inspection of 90x90 px stamps in
+both epochs: two sit inside the diffraction/ring halo of a very bright star,
+which moves with the pointing and so does not repeat; one is a perfectly round
+bright compact source (ellipticity 0.02) with the classic snowball signature;
+the rest are small irregular charge clusters or deblending differences beside
+bright neighbours.
+
+**The one real candidate was a streak, and it failed the decisive test.**
+Source idx0 is a 19.6 px linear trail, ellipticity 0.88 — one of only three
+elongated single-epoch events in 95. Its perpendicular width is **PSF-like, not
+track-like**: FWHM 3.58 px, against 3.42 px for real point sources in the same
+exposure and 1.82 px for the unbiased single-epoch population. Its trail length
+over the 944.8 s exposure implies ~4.7 arcsec/hour. A SkyBoT cone search returned
+no known solar-system object closer than 639 arcsec.
+
+That all pointed at a moving object, so it was tested properly. The two sibling
+dithers of the same visit — 19 and 38 minutes earlier, same detector, same
+filter — were downloaded. **A moving object at 4.7 arcsec/hour must appear in
+all three, displaced by ~24 and ~47 px. It appears in exactly one.** Nothing is
+present at the expected offsets. It is a single-integration detector event: a
+long, shallow-angle cosmic-ray track.
+
+Two things are worth keeping from that exercise. The perpendicular-width test
+was suggestive and wrong on its own; only the three-exposure sequence settled
+it. And the sibling dithers were always in the archive — the pipeline collapsed
+each filter to one "best" file and never looked at them.
+
+---
+
+## Part 6 — The solution: a classifier that needs no repeat coverage
+
+Repeat-exposure vetting is the gold standard and it is unavailable exactly where
+it matters: no F444W repeat pair, no SMACS repeat coverage at all. So the
+labelled truth set was used to fit a rejector that works on a **single image**.
+
+```bash
+python discovery/artifact_classifier.py --train
+```
+
+Logistic regression on four interpretable features — FWHM normalized by the
+filter's diffraction-limited PSF width, peak-to-total flux, log segment area,
+and ellipticity. Fitted by Newton-Raphson in numpy; coefficients in
+`research_output/artifact_classifier.json`.
+
+| metric | value |
+| --- | ---: |
+| training rows | 5113 consolidated detections (718 artifact, 4395 real) |
+| distinct sky objects | 1901 |
+| cross-validated ROC AUC | **0.981** |
+| purity @ threshold 0.5 | 0.930 |
+| completeness @ threshold 0.5 | 0.815 |
+| real sources lost | 44 of 4395 (**1.0%**) |
+
+Three validation choices matter here. Training uses the **consolidated
+per-detection rows**, never the raw per-pair comparisons, or one source would
+appear many times. Cross-validation is **grouped by sky position**, so every
+detection of one object lands in the same fold. And the model is tested on a
+**held-out visit** (ROC AUC 0.973 and 0.985), which is harder than a random
+split because detector state, background and pointing all change between visits.
+
+**Cross-filter transfer**: fit on F277W alone and score F356W, and vice versa —
+ROC AUC 0.981 and 0.980, no measurable loss. Normalizing FWHM by lambda/D is
+what makes that work.
+
+### Injection-recovery: the classifier fails the test that matters
+
+Cross-filter transfer and a held-out visit do not establish that the cut
+preserves the science sample, so it was tested directly. Synthetic sources
+spanning brightness, size and surface brightness were injected into real
+exposures — including F444W — and put through the complete detection,
+morphology and classification chain.
+
+```bash
+python discovery/injection_recovery.py --auto --batches 8 --per-batch 200
+```
+
+4799 injected sources across three filters. The result is unambiguous:
+
+| | F277W | F356W | **F444W** |
+| --- | ---: | ---: | ---: |
+| injected | 1600 | 1599 | 1600 |
+| detected | 1069 (67%) | 1028 (64%) | 851 (53%) |
+| false rejection, all detected | 13.5% | 0.1% | **28.8%** |
+| false rejection, **unresolved** (r_e = 0) | 33.7% | 0.0% | **77.2%** |
+| false rejection, **faint + unresolved** (S/N <= 8) | 80.0% | 0.0% | **88.9%** |
+| false rejection, near a bright neighbour | 10.6% | 0.6% | 37.4% |
+
+**On F444W — the band this pipeline actually selects candidates in — the
+classifier throws away 77% of unresolved sources and 89% of faint unresolved
+sources.** Those are real, injected, known-truth galaxies.
+
+F356W looks clean only because it is effectively in-sample: six of the seven
+training pairs are F356W. That contrast is itself the lesson — the apparently
+lossless cross-filter transfer (ROC AUC 0.980) was measured on the filter the
+model had already seen most of.
+
+### Why it fails
+
+The truth set contains almost no real **point** sources. GOODS-S is a deep
+extragalactic field, so nearly every real source in it is a resolved galaxy —
+median FWHM 3.05 px against 1.32 px for artifacts. The model had no reason to
+learn "cosmic ray" when "compact" separated the classes just as well, so it
+learned the shortcut. A genuine unresolved galaxy has FWHM at the PSF width,
+which is exactly where the artifacts live.
+
+Normalizing FWHM by lambda/D did not rescue this. It makes the feature
+comparable across wavelength, but it cannot invent a training example of a real
+point source that was never there.
+
+### Verdict
+
+**The classifier must not be applied to a high-redshift search.** It would
+delete the majority of the target population while reporting a ROC AUC of 0.981.
+The code and the model stay in the repository as a documented negative result,
+because the failure is more instructive than the model would have been: a
+headline discrimination metric certified a cut that destroys the science sample,
+and only injection-recovery exposed it.
+
+It remains defensible for one narrow use — rejecting compact artifacts from a
+sample of **resolved** sources, where the false-rejection rate is 0.4-1.0%.
+That is not the high-redshift use case.
+
+To fix it properly, the training set needs real point sources: inject synthetic
+PSF sources into the repeat-exposure pairs, label them real by construction, and
+refit so the model must separate cosmic rays from point sources rather than
+compact from extended. That is the obvious next experiment and it has not been
+done.
+
+### What this does not change
+
+The 15% artifact rate stands — it comes from repeat-exposure vetting, not from
+the classifier. So does the conclusion that a single-exposure dropout search
+carries ~1000-1250 artifacts per genuine high-redshift source. The classifier
+was the proposed mitigation, and it does not work for that purpose. Deep mosaics
+with cross-dither rejection are not merely preferable; on this evidence they are
+the only route.
+
+### Also worth doing: resolve artifacts from the ramps
+
+An independent line of evidence is available in the up-the-ramp reads. A cosmic
+ray shows a discrete jump between groups; an optical source accumulates
+steadily. `_uncal`/`_rate` products carry the group-level data, and comparing
+those competing profiles would classify events without needing repeat coverage
+or morphology at all. STScI documents that showers and snowballs produce both
+jumps and slower charge release, so this needs a model comparison rather than a
+jump/no-jump rule. Not attempted here.
 
 ---
 
