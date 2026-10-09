@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "aggregate_bytes": 60636277,
+  "aggregate_cap_bytes": 104857600,
+  "inputs": [
+    {
+      "filename": "pyneb-1.1.32-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/14/c4/0557811390e7103d151836be6ffc05af095f801760ad0347541b28a96402/pyneb-1.1.32-py3-none-any.whl",
+      "sha256": "96a63479536b4e53fdb36e1da20d72b9291cf920e042d765dd4a0c4ca3160cbe",
+      "bytes": 28751057
+    },
+    {
+      "filename": "cue-v0.1.zip",
+      "url": "https://zenodo.org/records/11118643/files/yi-jia-li/cue-v0.1.zip?download=1",
+      "sha256": "8c1089f4d7407c57558e14b0f26028379ca14d555a94f873834c767f3cc5abfb",
+      "bytes": 31885220,
+      "publisher_md5": "370380e7e685acfb03861bfb82650301"
+    }
+  ],
+  "scope": "Public atomic/photoionization software weights; no imaging downloads"
+}

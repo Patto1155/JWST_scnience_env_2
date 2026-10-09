@@ -40,6 +40,55 @@ TEMPERATURES = (5000, 7500, 10000, 15000, 20000, 25000, 30000)
 DENSITIES = (100, 1000, 10000, 100000)
 
 
+# Independently frozen members of the publisher-hash-verified PyNeb wheel.
+ATOMIC_MEMBER_PINS = {
+    "n_iv_atom_WFD96.dat": (
+        581,
+        "52c5db33fe42acf6501cddd44eea9d8bef18bc2ea9ba103556a5c17ffca6323f",
+    ),
+    "n_iv_coll_RBHB94.dat": (
+        1470,
+        "90700c6d32c807b6acc0c975892335751ce1de545398e34549fc2563f2973339",
+    ),
+    "n_iii_atom_GMZ98.dat": (
+        1129,
+        "8ae8cbd0c38753c3f5617973bff58b611d3392438e7bdef3fa3d10af328b32bc",
+    ),
+    "n_iii_coll_BP92.dat": (
+        8148,
+        "977024d9a257c2bfdb42cae3e6e7e6a9c974d1b510af9ccab595416869430c5c",
+    ),
+    "c_iv_atom_WFD96.dat": (
+        333,
+        "fa5d2c45bf74d8b38759e88503d265e4be7bdd5350dd27b017c2ac865f64f752",
+    ),
+    "c_iv_coll_AK04.dat": (
+        335,
+        "be270bc39589b41a20f7c9331e38dc6ac9ed35a6e06cb96cb1ab72d070dcd1a3",
+    ),
+    "c_iii_atom_G83-NS78-WFD96.dat": (
+        732,
+        "078f5127fef00ad336cc885650ff3a73ad2755155ab51da0fa3045f54fb61d80",
+    ),
+    "c_iii_coll_Bal85.dat": (
+        1249,
+        "c19b8c06a3ea9257db83c8aef0f4c8415684b2748c9587479a7a428c5cae96ab",
+    ),
+    "o_iii_atom_FFT04-SZ00.dat": (
+        808,
+        "f802375827fa91d68ff6cc6f0cb811397d5358811207ae90b52996820a612ff1",
+    ),
+    "o_iii_coll_TZ17.dat": (
+        1989841,
+        "a2857d2f4cd211ed263039beb9dcc6dbf7dbe0e8fe665529236798c3eb9e53b7",
+    ),
+    "he_ii_rec_SH95.fits": (
+        1480320,
+        "798f38646be61942eb01820c3c6be7f0a3f8eaa1744c7f1acacfb19cd048e7a8",
+    ),
+}
+
+
 def validate_grid(grid: dict[str, Any]) -> None:
     """Reject malformed/silently substituted line-contract or physical inputs."""
     if grid.get("schema_version") != 1 or grid.get("pyneb_version") != "1.1.32":
@@ -53,6 +102,9 @@ def validate_grid(grid: dict[str, Any]) -> None:
     if len(files) != len(expected_files) or {x.get("filename") for x in files} != expected_files:
         raise ValueError("atomic file inventory differs from pinned contract")
     for record in files:
+        expected_size, expected_digest = ATOMIC_MEMBER_PINS[record["filename"]]
+        if record.get("bytes") != expected_size or record.get("sha256") != expected_digest:
+            raise ValueError("atomic provenance differs from independently pinned package member")
         digest = record.get("sha256", "")
         if len(digest) != 64 or any(x not in "0123456789abcdef" for x in digest):
             raise ValueError("missing atomic-file SHA256 provenance")
@@ -272,6 +324,42 @@ def analyze_fit(fit: dict[str, Any], grid: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+def spectral_scenarios(spectrum: dict[str, Any]) -> list[tuple[str, dict[str, Any]]]:
+    """Adapt independent native flux likelihoods without weakening order/units guards."""
+    if "nominal_reference_fit" in spectrum:
+        return [
+            ("nominal_illuminated_slit", spectrum["nominal_reference_fit"]),
+            ("generic_point_source", spectrum["point_source_scenarios"][0]),
+        ]
+    result = []
+    for scenario in spectrum["scenarios"]:
+        fit = scenario["fit"]
+        if fit["line_order"] != list(LINE_NAMES) or len(fit["fluxes"]) != 5:
+            raise ValueError("native fit line order/length differs from atomic contract")
+        converted = {
+            "lines": {
+                name: {
+                    "flux": value,
+                    **(
+                        {"conditional_sigma": fit["lines"][name]["conditional_sigma"]}
+                        if "lines" in fit
+                        else {}
+                    ),
+                }
+                for name, value in zip(LINE_NAMES, fit["fluxes"])
+            },
+            "line_covariance": fit["flux_covariance"],
+            "line_flux_unit": fit["flux_units"],
+            "extraction": "independent_native_nod_reconstruction",
+            "rho_assumed": None,
+        }
+        check_fluxes(converted)
+        result.append((scenario["name"], converted))
+    if not result:
+        raise ValueError("native spectrum has no fit scenarios")
+    return result
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--generate-grid", type=Path)
@@ -286,14 +374,13 @@ def main() -> None:
         return
     grid = json.loads(args.grid.read_text())
     spectrum = json.loads(args.spectrum.read_text())
-    scenarios = [spectrum["nominal_reference_fit"], spectrum["point_source_scenarios"][0]]
     output = {
         "schema_version": 1,
         "grid_sha256": hashlib.sha256(args.grid.read_bytes()).hexdigest(),
         "spectrum_sha256": hashlib.sha256(args.spectrum.read_bytes()).hexdigest(),
         "models": [
             {"resolution_family": label, **analyze_fit(fit, grid)}
-            for label, fit in zip(("nominal_illuminated_slit", "generic_point_source"), scenarios)
+            for label, fit in spectral_scenarios(spectrum)
         ],
         "ion_fraction_correction_available": False,
         "scenarios_are_independent_likelihoods": False,
