@@ -129,6 +129,10 @@ def acquire_batch(spectrum: Path, output: Path, max_bytes: int = TOTAL_CAP) -> d
         receipt = verify(path) if path.exists() else fetch_product(
             product, path, max_bytes=PER_FILE_CAP, timeout=60
         )
+        if receipt["bytes"] != product["expected_bytes"] or receipt["sha256"] != product["sha256"]:
+            raise ValueError("Retrieved native original differs from pinned inventory")
+        if receipt["bytes"] > PER_FILE_CAP:
+            raise ValueError("Retrieved native original exceeds per-file ceiling")
         slit = output / product["filename"].replace("_cal.fits", "_277193_native.fits")
         summary = extract_native_slit(path, slit)
         if abs(summary["source_ra_deg"] - 150.0933255) > 1e-7 or abs(summary["source_dec_deg"] - 2.2731627) > 1e-7:
@@ -139,9 +143,12 @@ def acquire_batch(spectrum: Path, output: Path, max_bytes: int = TOTAL_CAP) -> d
 
     with ThreadPoolExecutor(max_workers=3) as executor:
         results = list(executor.map(retrieve, prepared))
+    actual_total = sum(r["native_exposure_receipt"]["bytes"] for r in results)
+    if actual_total > max_bytes:
+        raise ValueError("Actual native exposure bytes exceed batch ceiling")
     return {"schema_version": 1, "source_spectrum_receipt": spectrum_receipt,
             "budget": {"per_file_max_bytes": PER_FILE_CAP, "batch_max_bytes": max_bytes,
-                       "actual_original_bytes": sum(r["native_exposure_receipt"]["bytes"] for r in results),
+                       "actual_original_bytes": actual_total,
                        "scope": "Nine native originals; first was already acquired under preceding100MiBpilot"},
             "exposures": results,
             "limits": ["Nine actual calibrated exposures, not nine independent abundance measurements",

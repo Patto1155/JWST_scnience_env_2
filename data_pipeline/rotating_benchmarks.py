@@ -82,6 +82,11 @@ def extract(input_html: Path, output_csv: Path) -> dict:
         # Same primary paper Table3 uses solarNO=-.86 and solarCO=-.23.
         row.update(bracket_NC_lower=row["log_NC_lower"]+.63,
                    bracket_NC_upper=row["log_NC_upper"]+.63)
+        # MoM's quoted bracket interval uses a different solarNC=-0.60.
+        # Preserve the source-paper conversion and expose the common basis.
+        row.update(mom_solar_log_NC=-.60,
+                   mom_bracket_NC_lower=row["log_NC_lower"]+.60,
+                   mom_bracket_NC_upper=row["log_NC_upper"]+.60)
         result.append(row)
     output_csv.parent.mkdir(parents=True, exist_ok=True)
     with output_csv.open("w", newline="") as stream:
@@ -92,6 +97,8 @@ def extract(input_html: Path, output_csv: Path) -> dict:
                 "source_receipt": receipt, "rows": len(result),
                 "transform": "ExtractHTMLTable2; NC=NO-CO conservative unpaired endpoint envelope",
                 "solar_log_NC": -.63, "solar_basis": "SamepaperTable3logNO=-.86 minus logCO=-.23",
+                "mom_comparison_solar_log_NC": -.60,
+                "comparison_scope": "Common-solar-basis marginal interval endpoint screen, not joint-posterior model selection",
                 "science_limit": "Table2dilution constrained toGNz11oxygenrange, notMoMfit; modelrangesare notstatistical uncertainty",
                 "bytes": output_csv.stat().st_size,
                 "sha256": hashlib.sha256(output_csv.read_bytes()).hexdigest()}
