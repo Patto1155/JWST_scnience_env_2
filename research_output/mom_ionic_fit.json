@@ -1,0 +1,4139 @@
+{
+  "schema_version": 1,
+  "grid_sha256": "b3923cd0084950e4b73a89a20848785188fc484287140c9f4d2720af43a5dc8d",
+  "spectrum_sha256": "a7e5ba3acbfe74ec41c6eccb040c7e8e2758eeeb523209e3e6e495f52237e98b",
+  "models": [
+    {
+      "resolution_family": "nominal_illuminated_slit",
+      "extraction": "stored_pixel_table_1d",
+      "assumed_rho": 0,
+      "flux_unit": "1e-20 erg s^-1 cm^-2",
+      "records": [
+        {
+          "temperature_K": 5000,
+          "electron_density_cm3": 100,
+          "N2_over_C2": {
+            "value": 5.813757184145329,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.3644568891839883,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -3.1748600693304714,
+                21.36865578680901
+              ]
+            },
+            "scaled_numerator": 160.9535526865091,
+            "scaled_denominator": 27.684945825643496,
+            "scaled_covariance": [
+              [
+                14874.120738489048,
+                69.79155385813004
+              ],
+              [
+                69.79155385813004,
+                79.68111093656142
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 20.164332412920942,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.9045838482536812,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                8.16743166274231,
+                65.86441350615998
+              ]
+            },
+            "scaled_numerator": 4752.24693025576,
+            "scaled_denominator": 235.6758871526342,
+            "scaled_covariance": [
+              [
+                1914395.0182882769,
+                18749.938682191103
+              ],
+              [
+                18749.938682191103,
+                7088.969846502704
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 18.655775148415923,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.8708132987097792,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                7.892748482904352,
+                50.509608619893925
+              ]
+            },
+            "scaled_numerator": 4913.200482942269,
+            "scaled_denominator": 263.3608329782777,
+            "scaled_covariance": [
+              [
+                1951835.8592914985,
+                19516.286710198536
+              ],
+              [
+                19516.286710198536,
+                7188.66051021866
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 5000,
+          "electron_density_cm3": 1000,
+          "N2_over_C2": {
+            "value": 5.727430025521765,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.3579597919312016,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -3.1277172939906013,
+                21.05135747536407
+              ]
+            },
+            "scaled_numerator": 158.56358997673402,
+            "scaled_denominator": 27.684945825643496,
+            "scaled_covariance": [
+              [
+                14435.675400409678,
+                68.75523494255403
+              ],
+              [
+                68.75523494255403,
+                79.68111093656142
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 19.902667187235913,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.8989112807855615,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                8.061445865368281,
+                65.00971490906392
+              ]
+            },
+            "scaled_numerator": 4683.238781950177,
+            "scaled_denominator": 235.30709416442724,
+            "scaled_covariance": [
+              [
+                1859200.214564226,
+                18448.753350479605
+              ],
+              [
+                18448.753350479605,
+                7066.801122441714
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 18.41045216467279,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.8650644550010709,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                7.789074351735371,
+                49.83481080641221
+              ]
+            },
+            "scaled_numerator": 4841.802371926911,
+            "scaled_denominator": 262.99203999007074,
+            "scaled_covariance": [
+              [
+                1895544.6929950805,
+                19202.580815631594
+              ],
+              [
+                19202.580815631594,
+                7166.460474584597
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 5000,
+          "electron_density_cm3": 10000,
+          "N2_over_C2": {
+            "value": 5.614754932196673,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.3493308053138864,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -3.0661860598376744,
+                20.63721646314971
+              ]
+            },
+            "scaled_numerator": 155.4441861221295,
+            "scaled_denominator": 27.684945825643496,
+            "scaled_covariance": [
+              [
+                13873.279461902208,
+                67.40262085923571
+              ],
+              [
+                67.40262085923571,
+                79.68111093656142
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 17.83982061142817,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.8513904830076737,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                7.225903279895139,
+                58.27166987556184
+              ]
+            },
+            "scaled_numerator": 4141.8956213873225,
+            "scaled_denominator": 232.17137165236002,
+            "scaled_covariance": [
+              [
+                1454225.8429001258,
+                16098.800544970054
+              ],
+              [
+                16098.800544970054,
+                6879.710481887295
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 16.53736899382181,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.8184664168033797,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                7.013772155027995,
+                44.663633296188266
+              ]
+            },
+            "scaled_numerator": 4297.339807509452,
+            "scaled_denominator": 259.8563174780035,
+            "scaled_covariance": [
+              [
+                1487094.2629811761,
+                16831.793696319946
+              ],
+              [
+                16831.793696319946,
+                6979.103602274928
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 5000,
+          "electron_density_cm3": 100000,
+          "N2_over_C2": {
+            "value": 5.332498255965269,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.3269307220821256,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -2.9120472779303648,
+                19.59977276419957
+              ]
+            },
+            "scaled_numerator": 147.6299253317369,
+            "scaled_denominator": 27.684945825643496,
+            "scaled_covariance": [
+              [
+                12513.504907887756,
+                64.01425574575244
+              ],
+              [
+                64.01425574575244,
+                79.68111093656142
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 12.142503744980056,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.684308246089807,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                4.918242147613521,
+                39.662056312213494
+              ]
+            },
+            "scaled_numerator": 2679.806974264735,
+            "scaled_denominator": 220.69640912176934,
+            "scaled_covariance": [
+              [
+                608752.2563167549,
+                9901.123608677932
+              ],
+              [
+                9901.123608677932,
+                6216.463124967934
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 11.383450662772555,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.656273929602318,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                4.876510731015385,
+                30.473501338552243
+              ]
+            },
+            "scaled_numerator": 2827.436899596472,
+            "scaled_denominator": 248.38135494741283,
+            "scaled_covariance": [
+              [
+                632937.8019064497,
+                10574.067939801742
+              ],
+              [
+                10574.067939801742,
+                6314.881988416635
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 7500,
+          "electron_density_cm3": 100,
+          "N2_over_C2": {
+            "value": 3.5297217309608233,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.1477404687102686,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -1.9275611664753374,
+                12.973608340199315
+              ]
+            },
+            "scaled_numerator": 97.72015490124699,
+            "scaled_denominator": 27.684945825643496,
+            "scaled_covariance": [
+              [
+                5482.75022688702,
+                42.37273014469369
+              ],
+              [
+                42.37273014469369,
+                79.68111093656142
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 19.28014635424263,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.8851103262783644,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                7.809297851836819,
+                62.976324032498376
+              ]
+            },
+            "scaled_numerator": 1418.7953376221435,
+            "scaled_denominator": 73.58841118495634,
+            "scaled_covariance": [
+              [
+                170636.94342828385,
+                1747.8931542267633
+              ],
+              [
+                1747.8931542267633,
+                691.1489946785348
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 14.974476380442919,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.7753516451474858,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                6.570849872978688,
+                33.64634391456513
+              ]
+            },
+            "scaled_numerator": 1516.5154925233905,
+            "scaled_denominator": 101.27335701059984,
+            "scaled_covariance": [
+              [
+                180210.15957656817,
+                1918.383457795468
+              ],
+              [
+                1918.383457795468,
+                777.0779709158155
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 7500,
+          "electron_density_cm3": 1000,
+          "N2_over_C2": {
+            "value": 3.493957663798752,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.1433176383429682,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -1.908030610734317,
+                12.842156334806527
+              ]
+            },
+            "scaled_numerator": 96.73002863936036,
+            "scaled_denominator": 27.684945825643496,
+            "scaled_covariance": [
+              [
+                5372.207771926539,
+                41.94339851964158
+              ],
+              [
+                41.94339851964158,
+                79.68111093656142
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 19.094789991259294,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.8809148862684468,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                7.734220462865051,
+                62.37087933502306
+              ]
+            },
+            "scaled_numerator": 1403.3489213382406,
+            "scaled_denominator": 73.4938128138947,
+            "scaled_covariance": [
+              [
+                166941.7217034762,
+                1726.6413865101326
+              ],
+              [
+                1726.6413865101326,
+                689.3731839552505
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 14.826026432304998,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.7710247700602388,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                6.505958205561699,
+                33.30614554037863
+              ]
+            },
+            "scaled_numerator": 1500.078949977601,
+            "scaled_denominator": 101.1787586395382,
+            "scaled_covariance": [
+              [
+                176318.8680632918,
+                1895.2356344261534
+              ],
+              [
+                1895.2356344261534,
+                775.2941285219116
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 7500,
+          "electron_density_cm3": 10000,
+          "N2_over_C2": {
+            "value": 3.4380795072599586,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.1363159157381806,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -1.877515864018267,
+                12.636774332211859
+              ]
+            },
+            "scaled_numerator": 95.18304490274704,
+            "scaled_denominator": 27.684945825643496,
+            "scaled_covariance": [
+              [
+                5201.748559737557,
+                41.272606250882
+              ],
+              [
+                41.272606250882,
+                79.68111093656142
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 17.543520638774385,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.8441167521179778,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                7.105888903581278,
+                57.303840962553664
+              ]
+            },
+            "scaled_numerator": 1274.8309052477737,
+            "scaled_denominator": 72.66676578190152,
+            "scaled_covariance": [
+              [
+                137764.945444664,
+                1550.865436077961
+              ],
+              [
+                1550.865436077961,
+                673.945053981219
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 13.652123398835135,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.7352002051260103,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                6.0042886414116,
+                30.599693923264454
+              ]
+            },
+            "scaled_numerator": 1370.0139501505207,
+            "scaled_denominator": 100.35171160754501,
+            "scaled_covariance": [
+              [
+                146546.67776451397,
+                1716.0481611510104
+              ],
+              [
+                1716.0481611510104,
+                759.7957799038021
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 7500,
+          "electron_density_cm3": 100000,
+          "N2_over_C2": {
+            "value": 3.2740605554967597,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.115086707658355,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -1.787946037815941,
+                12.03391727923773
+              ]
+            },
+            "scaled_numerator": 90.64218910880405,
+            "scaled_denominator": 27.684945825643496,
+            "scaled_covariance": [
+              [
+                4717.272226531998,
+                39.30363211880906
+              ],
+              [
+                39.30363211880906,
+                79.68111093656142
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 12.221442335647172,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.6871224629808719,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                4.950215710220221,
+                39.919899908065
+              ]
+            },
+            "scaled_numerator": 846.3103638372942,
+            "scaled_denominator": 69.2479938614773,
+            "scaled_covariance": [
+              [
+                60714.56339440999,
+                981.1209692998455
+              ],
+              [
+                981.1209692998455,
+                612.0222630606289
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 9.665987186299978,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.5852462150814772,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                4.286590281040818,
+                21.46007077495493
+              ]
+            },
+            "scaled_numerator": 936.9525529460982,
+            "scaled_denominator": 96.9329396871208,
+            "scaled_covariance": [
+              [
+                67695.06683577741,
+                1135.229422278245
+              ],
+              [
+                1135.229422278245,
+                697.5827255285628
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 10000,
+          "electron_density_cm3": 100,
+          "N2_over_C2": {
+            "value": 2.7038724910697542,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.031986207339681,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -1.4765695457438417,
+                9.938172290830764
+              ]
+            },
+            "scaled_numerator": 74.85656343471388,
+            "scaled_denominator": 27.684945825643496,
+            "scaled_covariance": [
+              [
+                3217.287997654957,
+                32.45877951363952
+              ],
+              [
+                32.45877951363952,
+                79.68111093656142
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 19.073483472313068,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.8804300173588326,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                7.725590395977603,
+                62.30128410392324
+              ]
+            },
+            "scaled_numerator": 784.2690811601715,
+            "scaled_denominator": 41.11829295884052,
+            "scaled_covariance": [
+              [
+                52139.12583098879,
+                539.8658702445689
+              ],
+              [
+                539.8658702445689,
+                215.7858589979231
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 12.48670352984355,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.6964478004432086,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                5.547171722229172,
+                26.08431536615464
+              ]
+            },
+            "scaled_numerator": 859.1256445948853,
+            "scaled_denominator": 68.80323878448402,
+            "scaled_covariance": [
+              [
+                57088.47752313549,
+                625.8190240451353
+              ],
+              [
+                625.8190240451353,
+                298.95802989441023
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 10000,
+          "electron_density_cm3": 1000,
+          "N2_over_C2": {
+            "value": 2.6828734156833467,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.0286001821139368,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -1.4651020688910115,
+                9.860989498436698
+              ]
+            },
+            "scaled_numerator": 74.27520517025258,
+            "scaled_denominator": 27.684945825643496,
+            "scaled_covariance": [
+              [
+                3167.5092246945082,
+                32.206695008838025
+              ],
+              [
+                32.206695008838025,
+                79.68111093656142
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 18.92485412931199,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.8770325406910522,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                7.665389047518291,
+                61.81580388538157
+              ]
+            },
+            "scaled_numerator": 777.2828439501233,
+            "scaled_denominator": 41.07206526607882,
+            "scaled_covariance": [
+              [
+                51214.35671920514,
+                534.4552234877252
+              ],
+              [
+                534.4552234877252,
+                215.30093249615305
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 12.385035876332548,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.6928972689655124,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                5.502130568936289,
+                25.8693210489825
+              ]
+            },
+            "scaled_numerator": 851.5580491203758,
+            "scaled_denominator": 68.75701109172232,
+            "scaled_covariance": [
+              [
+                56085.16859237355,
+                619.6813206272074
+              ],
+              [
+                619.6813206272074,
+                298.4691785301124
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 10000,
+          "electron_density_cm3": 10000,
+          "N2_over_C2": {
+            "value": 2.6457378465584456,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.0225468098312984,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -1.4448225436490503,
+                9.724496492460922
+              ]
+            },
+            "scaled_numerator": 73.24710895082525,
+            "scaled_denominator": 27.684945825643496,
+            "scaled_covariance": [
+              [
+                3080.428577805178,
+                31.76089911634689
+              ],
+              [
+                31.76089911634689,
+                79.68111093656142
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 17.639627594346962,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.8464894121207793,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                7.144816400702389,
+                57.61776299741329
+              ]
+            },
+            "scaled_numerator": 717.2453489819779,
+            "scaled_denominator": 40.661025588308696,
+            "scaled_covariance": [
+              [
+                43608.28820575191,
+                488.2382178740712
+              ],
+              [
+                488.2382178740712,
+                211.01313272187724
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 11.56604320019119,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.6631848100987892,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                5.14480540319627,
+                24.12723120154663
+              ]
+            },
+            "scaled_numerator": 790.4924579328032,
+            "scaled_denominator": 68.34597141395219,
+            "scaled_covariance": [
+              [
+                48238.70040130467,
+                572.0772042330816
+              ],
+              [
+                572.0772042330816,
+                294.14648031872395
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 10000,
+          "electron_density_cm3": 100000,
+          "N2_over_C2": {
+            "value": 2.524470674396679,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.0021703300635216,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -1.3785992236130904,
+                9.278775011826804
+              ]
+            },
+            "scaled_numerator": 69.88983385909776,
+            "scaled_denominator": 27.684945825643496,
+            "scaled_covariance": [
+              [
+                2804.517693239783,
+                30.30514097078284
+              ],
+              [
+                30.30514097078284,
+                79.68111093656142
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 12.584688630515508,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.6998424747336616,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                5.097346258820995,
+                41.106401086475344
+              ]
+            },
+            "scaled_numerator": 488.53347818636314,
+            "scaled_denominator": 38.8196714698019,
+            "scaled_covariance": [
+              [
+                20231.22679319359,
+                317.4913433594674
+              ],
+              [
+                317.4913433594674,
+                192.33421054309824
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 8.396760025919354,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.5241117415020957,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                3.743271010501415,
+                17.42273449292771
+              ]
+            },
+            "scaled_numerator": 558.4233120454609,
+            "scaled_denominator": 66.5046172954454,
+            "scaled_covariance": [
+              [
+                24043.087126933533,
+                396.4885676895205
+              ],
+              [
+                396.4885676895205,
+                275.3112219408328
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 15000,
+          "electron_density_cm3": 100,
+          "N2_over_C2": {
+            "value": 2.0347658582453723,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 0.9085144419040614,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -1.111174180338573,
+                7.478848850132762
+              ]
+            },
+            "scaled_numerator": 56.33238255339212,
+            "scaled_denominator": 27.684945825643496,
+            "scaled_covariance": [
+              [
+                1821.991757453442,
+                24.42645375209159
+              ],
+              [
+                24.42645375209159,
+                79.68111093656142
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 19.829126278912085,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.897303578521647,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                8.031658598879558,
+                64.76950220594684
+              ]
+            },
+            "scaled_numerator": 453.8040735023084,
+            "scaled_denominator": 22.88573218603791,
+            "scaled_covariance": [
+              [
+                17457.02917451781,
+                173.8676978602774
+              ],
+              [
+                173.8676978602774,
+                66.8470814633059
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 10.087593762097933,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.6037875844262852,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                4.466841802086283,
+                20.64961125639409
+              ]
+            },
+            "scaled_numerator": 510.13645605570053,
+            "scaled_denominator": 50.57067801168141,
+            "scaled_covariance": [
+              [
+                20033.236320625874,
+                219.7490351589443
+              ],
+              [
+                219.7490351589443,
+                148.47125612014958
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 15000,
+          "electron_density_cm3": 1000,
+          "N2_over_C2": {
+            "value": 2.0238069434082075,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 0.9061690815810955,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -1.105189578639934,
+                7.438568998130868
+              ]
+            },
+            "scaled_numerator": 56.02898558981738,
+            "scaled_denominator": 27.684945825643496,
+            "scaled_covariance": [
+              [
+                1802.4187114540766,
+                24.29489688260787
+              ],
+              [
+                24.29489688260787,
+                79.68111093656142
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 19.715309454823544,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.8948035982222025,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                7.985557834729392,
+                64.39773297440402
+              ]
+            },
+            "scaled_numerator": 450.75076599074384,
+            "scaled_denominator": 22.862982040612263,
+            "scaled_covariance": [
+              [
+                17222.90891034865,
+                172.52619770275615
+              ],
+              [
+                172.52619770275615,
+                66.71424543020522
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 10.025727521837185,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.6011158972279032,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                4.439384986102632,
+                20.523222115409457
+              ]
+            },
+            "scaled_numerator": 506.7797515805612,
+            "scaled_denominator": 50.54792786625576,
+            "scaled_covariance": [
+              [
+                19770.433710786758,
+                218.14043109702666
+              ],
+              [
+                218.14043109702666,
+                148.33648853503
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 15000,
+          "electron_density_cm3": 10000,
+          "N2_over_C2": {
+            "value": 1.9999515368957672,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 0.9010194719071051,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -1.0921622754390823,
+                7.350887666717699
+              ]
+            },
+            "scaled_numerator": 55.36854995287177,
+            "scaled_denominator": 27.684945825643496,
+            "scaled_covariance": [
+              [
+                1760.1775111150275,
+                24.008523400591642
+              ],
+              [
+                24.008523400591642,
+                79.68111093656142
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 18.69375444171562,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.8716965335656228,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                7.571783622499856,
+                61.06094401334146
+              ]
+            },
+            "scaled_numerator": 423.5541987168078,
+            "scaled_denominator": 22.657524470934266,
+            "scaled_covariance": [
+              [
+                15207.279931630399,
+                160.65977389055874
+              ],
+              [
+                160.65977389055874,
+                65.5205815282921
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 9.513294557224704,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.5783309438819164,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                4.212553170801583,
+                19.472366556190494
+              ]
+            },
+            "scaled_numerator": 478.92274866967955,
+            "scaled_denominator": 50.34247029657776,
+            "scaled_covariance": [
+              [
+                17659.35376262183,
+                205.68273105258908
+              ],
+              [
+                205.68273105258908,
+                147.12538070139323
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 15000,
+          "electron_density_cm3": 100000,
+          "N2_over_C2": {
+            "value": 1.9111786350166557,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 0.8813012818097185,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -1.0436838934758326,
+                7.024599945478824
+              ]
+            },
+            "scaled_numerator": 52.9108769735634,
+            "scaled_denominator": 27.684945825643496,
+            "scaled_covariance": [
+              [
+                1607.3856533722828,
+                22.942844431484623
+              ],
+              [
+                22.942844431484623,
+                79.68111093656142
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 13.897283951387806,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.74292993117619,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                5.629004454318226,
+                45.393838885546025
+              ]
+            },
+            "scaled_numerator": 301.03309645880285,
+            "scaled_denominator": 21.661289897494047,
+            "scaled_covariance": [
+              [
+                7681.783260108446,
+                109.16521209200926
+              ],
+              [
+                109.16521209200926,
+                59.88546928657536
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 7.172664099815185,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.4556804930391878,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                3.159257004691833,
+                14.687915534830944
+              ]
+            },
+            "scaled_numerator": 353.94397343236625,
+            "scaled_denominator": 49.34623572313754,
+            "scaled_covariance": [
+              [
+                9759.093410321046,
+                151.9589517221824
+              ],
+              [
+                151.9589517221824,
+                141.40568531237724
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 20000,
+          "electron_density_cm3": 100,
+          "N2_over_C2": {
+            "value": 1.7557310068333885,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 0.8444579789980102,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -0.9587948188276734,
+                6.4532470742955
+              ]
+            },
+            "scaled_numerator": 48.60731780858487,
+            "scaled_denominator": 27.684945825643496,
+            "scaled_covariance": [
+              [
+                1356.542742110252,
+                21.07676520408635
+              ],
+              [
+                21.07676520408635,
+                79.68111093656142
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 20.477330022649316,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.9112733296464466,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                8.29420930832507,
+                66.88678328123761
+              ]
+            },
+            "scaled_numerator": 347.857548803338,
+            "scaled_denominator": 16.987446528360092,
+            "scaled_covariance": [
+              [
+                10257.379471684364,
+                98.92709073738831
+              ],
+              [
+                98.92709073738831,
+                36.8306203034969
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 8.874941450866604,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.5481654966398721,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                3.8983720669834545,
+                18.401589315292643
+              ]
+            },
+            "scaled_numerator": 396.46486661192284,
+            "scaled_denominator": 44.67239235400359,
+            "scaled_covariance": [
+              [
+                12112.774502186043,
+                133.31110336225947
+              ],
+              [
+                133.31110336225947,
+                117.95401374083967
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 20000,
+          "electron_density_cm3": 1000,
+          "N2_over_C2": {
+            "value": 1.7481330658372567,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 0.8425744875428638,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -0.9546456260227986,
+                6.425320592213038
+              ]
+            },
+            "scaled_numerator": 48.396969223720525,
+            "scaled_denominator": 27.684945825643496,
+            "scaled_covariance": [
+              [
+                1344.827245823469,
+                20.985555321828365
+              ],
+              [
+                20.985555321828365,
+                79.68111093656142
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 20.37898416724916,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.9091825319003597,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                8.25437495939418,
+                66.5655481441625
+              ]
+            },
+            "scaled_numerator": 345.83058655214785,
+            "scaled_denominator": 16.969961982105485,
+            "scaled_covariance": [
+              [
+                10138.188465750996,
+                98.2494149720245
+              ],
+              [
+                98.2494149720245,
+                36.754842548701156
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 8.828314179330988,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.5458777803031474,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                3.877742450275317,
+                18.306064271146393
+              ]
+            },
+            "scaled_numerator": 394.2275557758684,
+            "scaled_denominator": 44.654907807748984,
+            "scaled_covariance": [
+              [
+                11976.814984641065,
+                132.47224645622612
+              ],
+              [
+                132.47224645622612,
+                117.87675149836328
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 20000,
+          "electron_density_cm3": 10000,
+          "N2_over_C2": {
+            "value": 1.727855204751675,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 0.8375073455432634,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -0.9435720002395253,
+                6.350788646707607
+              ]
+            },
+            "scaled_numerator": 47.835577738106274,
+            "scaled_denominator": 27.684945825643496,
+            "scaled_covariance": [
+              [
+                1313.8089473980763,
+                20.742128672029246
+              ],
+              [
+                20.742128672029246,
+                79.68111093656142
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 19.481053065504593,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.8896124293483734,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                7.890673808214472,
+                63.63256210851033
+              ]
+            },
+            "scaled_numerator": 327.5005482679285,
+            "scaled_denominator": 16.81123433967945,
+            "scaled_covariance": [
+              [
+                9091.962181521347,
+                92.17164443674153
+              ],
+              [
+                92.17164443674153,
+                36.070489164545506
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 8.435243758261842,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.526097637172735,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                3.703030144378588,
+                17.499024802539846
+              ]
+            },
+            "scaled_numerator": 375.33612600603476,
+            "scaled_denominator": 44.49618016532295,
+            "scaled_covariance": [
+              [
+                10867.973250230621,
+                125.95954026541949
+              ],
+              [
+                125.95954026541949,
+                117.1789216861477
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 20000,
+          "electron_density_cm3": 100000,
+          "N2_over_C2": {
+            "value": 1.6459335985992734,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 0.8164123106188907,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -0.8988350723028082,
+                6.04968308830088
+              ]
+            },
+            "scaled_numerator": 45.56758250982733,
+            "scaled_denominator": 27.684945825643496,
+            "scaled_covariance": [
+              [
+                1192.1808606499394,
+                19.758696442777936
+              ],
+              [
+                19.758696442777936,
+                79.68111093656142
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 14.862826544609534,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.772101409424165,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                6.0200912002673395,
+                48.547669883542056
+              ]
+            },
+            "scaled_numerator": 238.10184165154635,
+            "scaled_denominator": 16.019956966927086,
+            "scaled_covariance": [
+              [
+                4805.726677452976,
+                63.85718976108605
+              ],
+              [
+                63.85718976108605,
+                32.754842704138674
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 6.4905629811764465,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.4122823684512604,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                2.824210668090993,
+                13.50914976799131
+              ]
+            },
+            "scaled_numerator": 283.6694241613737,
+            "scaled_denominator": 43.70490279257058,
+            "scaled_covariance": [
+              [
+                6318.008974256225,
+                95.90746054392903
+              ],
+              [
+                95.90746054392903,
+                113.7960935274156
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 25000,
+          "electron_density_cm3": 100,
+          "N2_over_C2": {
+            "value": 1.6195587145159982,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 0.8093966972848066,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -0.8844318965840889,
+                5.952741334192285
+              ]
+            },
+            "scaled_numerator": 44.83739527282423,
+            "scaled_denominator": 27.684945825643496,
+            "scaled_covariance": [
+              [
+                1154.279329979618,
+                19.442077759765215
+              ],
+              [
+                19.442077759765215,
+                79.68111093656142
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 21.43465455483214,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.9311164887265622,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                8.681967382113806,
+                70.01377095214494
+              ]
+            },
+            "scaled_numerator": 302.1829523329054,
+            "scaled_denominator": 14.097869016731252,
+            "scaled_covariance": [
+              [
+                7740.579540670821,
+                71.31963856394455
+              ],
+              [
+                71.31963856394455,
+                25.366454544346837
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 8.305336749447362,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.5193572461145448,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                3.623852065607824,
+                17.476637226174976
+              ]
+            },
+            "scaled_numerator": 347.0203476057296,
+            "scaled_denominator": 41.78281484237475,
+            "scaled_covariance": [
+              [
+                9294.600349382541,
+                100.67645708586592
+              ],
+              [
+                100.67645708586592,
+                106.2445146366977
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 25000,
+          "electron_density_cm3": 1000,
+          "N2_over_C2": {
+            "value": 1.6133738464156175,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 0.8077350125366334,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -0.8810543749325966,
+                5.930008648024334
+              ]
+            },
+            "scaled_numerator": 44.666167534526444,
+            "scaled_denominator": 27.684945825643496,
+            "scaled_covariance": [
+              [
+                1145.480101156165,
+                19.3678311853967
+              ],
+              [
+                19.3678311853967,
+                79.68111093656142
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 21.344666688165308,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.92928937738214,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                8.645518382145603,
+                69.71983619946832
+              ]
+            },
+            "scaled_numerator": 300.56677924729127,
+            "scaled_denominator": 14.08158691997484,
+            "scaled_covariance": [
+              [
+                7658.002663774386,
+                70.85626897376525
+              ],
+              [
+                70.85626897376525,
+                25.307895259669834
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 8.265779419241728,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.5172838115089193,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                3.6063897323016927,
+                17.395142799333026
+              ]
+            },
+            "scaled_numerator": 345.2329467818177,
+            "scaled_denominator": 41.766532745618335,
+            "scaled_covariance": [
+              [
+                9199.567903480898,
+                100.0904399847843
+              ],
+              [
+                100.0904399847843,
+                106.18457295572068
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 25000,
+          "electron_density_cm3": 10000,
+          "N2_over_C2": {
+            "value": 1.5933365834011195,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 0.8023075277617446,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -0.8701121384014788,
+                5.856361028644179
+              ]
+            },
+            "scaled_numerator": 44.11143699347589,
+            "scaled_denominator": 27.684945825643496,
+            "scaled_covariance": [
+              [
+                1117.2042512716396,
+                19.127292807794774
+              ],
+              [
+                19.127292807794774,
+                79.68111093656142
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 20.514155655384293,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.912053646491636,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                8.309125291291476,
+                67.00706986709694
+              ]
+            },
+            "scaled_numerator": 285.83188324614673,
+            "scaled_denominator": 13.933397408492668,
+            "scaled_covariance": [
+              [
+                6925.560049898259,
+                66.67352203479065
+              ],
+              [
+                66.67352203479065,
+                24.778035817258818
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 7.927834089488617,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.4991545528327264,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                3.4560465550891095,
+                16.6980127633413
+              ]
+            },
+            "scaled_numerator": 329.9433202396226,
+            "scaled_denominator": 41.61834323413616,
+            "scaled_covariance": [
+              [
+                8414.753865022185,
+                95.50188035781518
+              ],
+              [
+                95.50188035781518,
+                105.6421318025238
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 25000,
+          "electron_density_cm3": 100000,
+          "N2_over_C2": {
+            "value": 1.5072128335769102,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 0.7781745833839842,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -0.8230804434618342,
+                5.539810352932853
+              ]
+            },
+            "scaled_numerator": 41.72710564529138,
+            "scaled_denominator": 27.684945825643496,
+            "scaled_covariance": [
+              [
+                999.6930915305941,
+                18.093415723847713
+              ],
+              [
+                18.093415723847713,
+                79.68111093656142
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 15.973233922522374,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.8033928518005125,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                6.469854484823025,
+                52.17468461437825
+              ]
+            },
+            "scaled_numerator": 210.5968603354574,
+            "scaled_denominator": 13.184359620409385,
+            "scaled_covariance": [
+              [
+                3759.562788172031,
+                46.483266035874436
+              ],
+              [
+                46.483266035874436,
+                22.18558622307763
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 6.1739235161168615,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.3905612450466034,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                2.663830511813804,
+                13.072721744067643
+              ]
+            },
+            "scaled_numerator": 252.32396598074877,
+            "scaled_denominator": 40.86930544605288,
+            "scaled_covariance": [
+              [
+                5018.517978888829,
+                73.60352996579172
+              ],
+              [
+                73.60352996579172,
+                102.98608677083098
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 30000,
+          "electron_density_cm3": 100,
+          "N2_over_C2": {
+            "value": 1.5418035345813197,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 0.7880290369553966,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -0.8419702305496989,
+                5.666949612412663
+              ]
+            },
+            "scaled_numerator": 42.684747328669495,
+            "scaled_denominator": 27.684945825643496,
+            "scaled_covariance": [
+              [
+                1046.1057711856395,
+                18.50866161315374
+              ],
+              [
+                18.50866161315374,
+                79.68111093656142
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 22.484853805837563,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.9518900681759446,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                9.107343756555723,
+                73.44412293780044
+              ]
+            },
+            "scaled_numerator": 279.29207301007,
+            "scaled_denominator": 12.421342625654948,
+            "scaled_covariance": [
+              [
+                6612.273014933759,
+                58.0781605987267
+              ],
+              [
+                58.0781605987267,
+                19.69200378800246
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 8.028088181974752,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.5046121342109022,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                3.485674639592523,
+                17.10422467378357
+              ]
+            },
+            "scaled_numerator": 321.9768203387395,
+            "scaled_denominator": 40.10628845129844,
+            "scaled_covariance": [
+              [
+                8010.101328668616,
+                84.7070495215592
+              ],
+              [
+                84.7070495215592,
+                100.42772202385886
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 30000,
+          "electron_density_cm3": 1000,
+          "N2_over_C2": {
+            "value": 1.5363664974576638,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 0.7864948282198334,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -0.8390010951846317,
+                5.646965603601227
+              ]
+            },
+            "scaled_numerator": 42.53422325044907,
+            "scaled_denominator": 27.684945825643496,
+            "scaled_covariance": [
+              [
+                1038.7407766630927,
+                18.443392415073177
+              ],
+              [
+                18.443392415073177,
+                79.68111093656142
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 22.400662981222926,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.9502608721210302,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                9.073242810757517,
+                73.1691235392441
+              ]
+            },
+            "scaled_numerator": 277.881351812643,
+            "scaled_denominator": 12.405050334696503,
+            "scaled_covariance": [
+              [
+                6545.643731316178,
+                57.70901160779397
+              ],
+              [
+                57.70901160779397,
+                19.6403801495425
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 7.992407227518544,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.5026776038663896,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                3.469944206840017,
+                17.030462043582425
+              ]
+            },
+            "scaled_numerator": 320.4155750630921,
+            "scaled_denominator": 40.08999616034,
+            "scaled_covariance": [
+              [
+                7933.09642436818,
+                84.23384420852612
+              ],
+              [
+                84.23384420852612,
+                100.37471512358213
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 30000,
+          "electron_density_cm3": 10000,
+          "N2_over_C2": {
+            "value": 1.5154821464829675,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 0.7805508244188495,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -0.8275962686871873,
+                5.570204484556521
+              ]
+            },
+            "scaled_numerator": 41.95604112511088,
+            "scaled_denominator": 27.684945825643496,
+            "scaled_covariance": [
+              [
+                1010.6928025222145,
+                18.192685125505342
+              ],
+              [
+                18.192685125505342,
+                79.68111093656142
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 21.617533529130974,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.9348061412456836,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                8.756041320915811,
+                70.61112355168265
+              ]
+            },
+            "scaled_numerator": 264.9562170555204,
+            "scaled_denominator": 12.256542435725862,
+            "scaled_covariance": [
+              [
+                5950.888138866106,
+                54.36605123551222
+              ],
+              [
+                54.36605123551222,
+                19.172942699744194
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 7.684046627713443,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.4855899915484811,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                3.33283625113801,
+                16.392418169307522
+              ]
+            },
+            "scaled_numerator": 306.9122581806313,
+            "scaled_denominator": 39.94148826136936,
+            "scaled_covariance": [
+              [
+                7289.553491251009,
+                80.47941961572826
+              ],
+              [
+                80.47941961572826,
+                99.89466893099512
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 30000,
+          "electron_density_cm3": 100000,
+          "N2_over_C2": {
+            "value": 1.4215093210465406,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 0.7527497117688501,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -0.776278237742602,
+                5.224804273219677
+              ]
+            },
+            "scaled_numerator": 39.354408543820746,
+            "scaled_denominator": 27.684945825643496,
+            "scaled_covariance": [
+              [
+                889.2358182060572,
+                17.06458340059452
+              ],
+              [
+                17.06458340059452,
+                79.68111093656142
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 17.1309151009083,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.8337805627705235,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                6.938765714715824,
+                55.95611363866125
+              ]
+            },
+            "scaled_numerator": 196.99912854606404,
+            "scaled_denominator": 11.499626691607322,
+            "scaled_covariance": [
+              [
+                3289.7444872371525,
+                37.92571259894276
+              ],
+              [
+                37.92571259894276,
+                16.877973955138025
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 6.031800831458129,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.3804469928042318,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                2.5884783458830993,
+                12.957191809072272
+              ]
+            },
+            "scaled_numerator": 236.35353708988478,
+            "scaled_denominator": 39.184572517250814,
+            "scaled_covariance": [
+              [
+                4407.712119432465,
+                62.23563568908007
+              ],
+              [
+                62.23563568908007,
+                97.53543588801512
+              ]
+            ]
+          }
+        }
+      ],
+      "grid_point_ionic_log_ratio_relative_to_solar_range": [
+        1.3804469928042318,
+        1.8708132987097792
+      ],
+      "grid_range_is_confidence_interval": false,
+      "elemental_abundance_identified": false,
+      "helium_oxygen_ionic_operator": {
+        "observed_groups": 5,
+        "ionic_amplitudes": 6,
+        "rank": 5,
+        "HeII_OIII_separated": false
+      },
+      "interpretation": "Conditional (N2+ + N3+) / (C2+ + C3+) only. Elemental N/C also needs ratio of observed carbon/nitrogen ion fractions; unconstrained here."
+    },
+    {
+      "resolution_family": "generic_point_source",
+      "extraction": "stored_pixel_table_1d",
+      "assumed_rho": 0.0,
+      "flux_unit": "1e-20 erg s^-1 cm^-2",
+      "records": [
+        {
+          "temperature_K": 5000,
+          "electron_density_cm3": 100,
+          "N2_over_C2": {
+            "value": 8.17836397141159,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.5126664345697682,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -1.1283096456302766,
+                28.976463232432753
+              ]
+            },
+            "scaled_numerator": 168.52839496551866,
+            "scaled_denominator": 20.60661466702008,
+            "scaled_covariance": [
+              [
+                9459.212861102451,
+                24.273916258642785
+              ],
+              [
+                24.273916258642785,
+                47.356934050281524
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 17.885848505929694,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.8525095479349254,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                7.804399477663139,
+                44.55662771724886
+              ]
+            },
+            "scaled_numerator": 3570.028015006587,
+            "scaled_denominator": 199.60070744326254,
+            "scaled_covariance": [
+              [
+                913695.5319007256,
+                4498.6063596628555
+              ],
+              [
+                4498.6063596628555,
+                3457.6873682549594
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 16.9774391430081,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.82987218237818,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                7.777719547916664,
+                38.22203053576011
+              ]
+            },
+            "scaled_numerator": 3738.5564099721055,
+            "scaled_denominator": 220.2073221102826,
+            "scaled_covariance": [
+              [
+                929123.3404172114,
+                4697.35989629119
+              ],
+              [
+                4697.35989629119,
+                3509.558162101788
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 5000,
+          "electron_density_cm3": 1000,
+          "N2_over_C2": {
+            "value": 8.056925304216017,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.5061693373169813,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -1.1115556322324605,
+                28.546198317923107
+              ]
+            },
+            "scaled_numerator": 166.025955144943,
+            "scaled_denominator": 20.60661466702008,
+            "scaled_covariance": [
+              [
+                9180.383083277744,
+                23.9134783949856
+              ],
+              [
+                23.9134783949856,
+                47.356934050281524
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 17.653750339224537,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.8468369804668052,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                7.703124617239281,
+                43.978432525429525
+              ]
+            },
+            "scaled_numerator": 3518.187059279692,
+            "scaled_denominator": 199.28836602286702,
+            "scaled_covariance": [
+              [
+                887352.355563015,
+                4426.344030081937
+              ],
+              [
+                4426.344030081937,
+                3446.874440732939
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 16.75442069148635,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.8241294160662291,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                7.675629989127382,
+                37.71565921359932
+              ]
+            },
+            "scaled_numerator": 3684.2130144246353,
+            "scaled_denominator": 219.8949806898871,
+            "scaled_covariance": [
+              [
+                902327.3239935716,
+                4621.828796241461
+              ],
+              [
+                4621.828796241461,
+                3498.738171150994
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 5000,
+          "electron_density_cm3": 10000,
+          "N2_over_C2": {
+            "value": 7.898422309588312,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.497540350699666,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -1.0896881220158845,
+                27.984612136125005
+              ]
+            },
+            "scaled_numerator": 162.75974501108112,
+            "scaled_denominator": 20.60661466702008,
+            "scaled_covariance": [
+              [
+                8822.726789632377,
+                23.443031196525567
+              ],
+              [
+                23.443031196525567,
+                47.356934050281524
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 15.823996663757905,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.799316182688918,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                6.904720861089291,
+                39.42021135381412
+              ]
+            },
+            "scaled_numerator": 3111.5141154481335,
+            "scaled_denominator": 196.63263217026025,
+            "scaled_covariance": [
+              [
+                694067.651837322,
+                3862.528179003247
+              ],
+              [
+                3862.528179003247,
+                3355.6198637533394
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 15.072202229239721,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.7781767125755064,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                6.926166855621957,
+                33.87487152600204
+              ]
+            },
+            "scaled_numerator": 3274.2738604592146,
+            "scaled_denominator": 217.23924683728032,
+            "scaled_covariance": [
+              [
+                707914.3392398764,
+                4054.046475192859
+              ],
+              [
+                4054.046475192859,
+                3407.4235362165846
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 5000,
+          "electron_density_cm3": 100000,
+          "N2_over_C2": {
+            "value": 7.5013644761658025,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.4751402674679055,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -1.0349089284155815,
+                26.577811001871876
+              ]
+            },
+            "scaled_numerator": 154.5777272372216,
+            "scaled_denominator": 20.60661466702008,
+            "scaled_covariance": [
+              [
+                7957.976719650094,
+                22.264537718853575
+              ],
+              [
+                22.264537718853575,
+                47.356934050281524
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 10.770452401698796,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.632233945771051,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                4.699632397654851,
+                26.830990872462248
+              ]
+            },
+            "scaled_numerator": 2013.1500137389232,
+            "scaled_denominator": 186.91415538138344,
+            "scaled_covariance": [
+              [
+                290543.0756544871,
+                2375.5415091630334
+              ],
+              [
+                2375.5415091630334,
+                3032.1170054106783
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 10.445835086630268,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.6189431651414283,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                4.861335908688493,
+                23.328733496946022
+              ]
+            },
+            "scaled_numerator": 2167.727740976145,
+            "scaled_denominator": 207.5207700484035,
+            "scaled_covariance": [
+              [
+                301588.1510081273,
+                2555.332811762275
+              ],
+              [
+                2555.332811762275,
+                3083.700899887047
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 7500,
+          "electron_density_cm3": 100,
+          "N2_over_C2": {
+            "value": 4.965351685536948,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.2959500140960483,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -0.6850336106734681,
+                17.592556537591452
+              ]
+            },
+            "scaled_numerator": 102.31908887009854,
+            "scaled_denominator": 20.60661466702008,
+            "scaled_covariance": [
+              [
+                3486.7608225190743,
+                14.737486792071861
+              ],
+              [
+                14.737486792071861,
+                47.356934050281524
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 17.10157171596556,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.8330360259596086,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                7.462184269482765,
+                42.602863603339166
+              ]
+            },
+            "scaled_numerator": 1065.8408911001563,
+            "scaled_denominator": 62.32414825972495,
+            "scaled_covariance": [
+              [
+                81440.98333844614,
+                419.36581195778143
+              ],
+              [
+                419.36581195778143,
+                337.1120487500824
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 14.08596688061488,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.7487866629301507,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                6.718198832307874,
+                28.532784145500617
+              ]
+            },
+            "scaled_numerator": 1168.1599799702549,
+            "scaled_denominator": 82.93076292674503,
+            "scaled_covariance": [
+              [
+                86009.61768270601,
+                464.3496045590909
+              ],
+              [
+                464.3496045590909,
+                385.8784090032425
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 7500,
+          "electron_density_cm3": 1000,
+          "N2_over_C2": {
+            "value": 4.915041438809224,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.291527183728748,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -0.6780926703025865,
+                17.414304136546882
+              ]
+            },
+            "scaled_numerator": 101.28236500197762,
+            "scaled_denominator": 20.60661466702008,
+            "scaled_covariance": [
+              [
+                3416.461231031003,
+                14.588162707170607
+              ],
+              [
+                14.588162707170607,
+                47.356934050281524
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 16.93715983462771,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.828840585949691,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                7.390443977127647,
+                42.19328622228092
+              ]
+            },
+            "scaled_numerator": 1054.2370877468613,
+            "scaled_denominator": 62.244030170364994,
+            "scaled_covariance": [
+              [
+                79677.34127550444,
+                414.2669506215085
+              ],
+              [
+                414.2669506215085,
+                336.2458864670899
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 13.947018215933412,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.7444813681268263,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                6.652223962724672,
+                28.248159002349684
+              ]
+            },
+            "scaled_numerator": 1155.519452748839,
+            "scaled_denominator": 82.85064483738508,
+            "scaled_covariance": [
+              [
+                84153.0551925852,
+                458.7524531016355
+              ],
+              [
+                458.7524531016355,
+                385.01043489389343
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 7500,
+          "electron_density_cm3": 10000,
+          "N2_over_C2": {
+            "value": 4.836436177572648,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.2845254611239605,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -0.66724807170554,
+                17.135800701133714
+              ]
+            },
+            "scaled_numerator": 99.66257667287506,
+            "scaled_denominator": 20.60661466702008,
+            "scaled_covariance": [
+              [
+                3308.057514227827,
+                14.354857178654731
+              ],
+              [
+                14.354857178654731,
+                47.356934050281524
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 15.5611773293672,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.792042451799222,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                6.790040974621585,
+                38.76548461633452
+              ]
+            },
+            "scaled_numerator": 957.690564679016,
+            "scaled_denominator": 61.54358018089373,
+            "scaled_covariance": [
+              [
+                65751.95500554836,
+                372.0936495834091
+              ],
+              [
+                372.0936495834091,
+                328.7207239565846
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 12.870975453063608,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.7096114620426537,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                6.156950332685834,
+                26.026364980772872
+              ]
+            },
+            "scaled_numerator": 1057.353141351891,
+            "scaled_denominator": 82.15019484791381,
+            "scaled_covariance": [
+              [
+                70006.87033811602,
+                416.0314370203647
+              ],
+              [
+                416.0314370203647,
+                377.46943209360427
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 7500,
+          "electron_density_cm3": 100000,
+          "N2_over_C2": {
+            "value": 4.605706437192884,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.263296253044135,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -0.6354159604771451,
+                16.31831056959717
+              ]
+            },
+            "scaled_numerator": 94.90801782064767,
+            "scaled_denominator": 20.60661466702008,
+            "scaled_covariance": [
+              [
+                2999.9542762260553,
+                13.670036300550658
+              ],
+              [
+                13.670036300550658,
+                47.356934050281524
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 10.840471266942206,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.635048162662116,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                4.730184775147651,
+                27.005419528212098
+              ]
+            },
+            "scaled_numerator": 635.7732989533337,
+            "scaled_denominator": 58.648123619137415,
+            "scaled_covariance": [
+              [
+                28977.627273799237,
+                235.39687819262195
+              ],
+              [
+                235.39687819262195,
+                298.5175129669305
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 9.21940230419764,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.5647027665630846,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                4.461807394134331,
+                18.516618623119786
+              ]
+            },
+            "scaled_numerator": 730.6813167739813,
+            "scaled_denominator": 79.25473828615749,
+            "scaled_covariance": [
+              [
+                32576.17593314908,
+                277.61058083689005
+              ],
+              [
+                277.61058083689005,
+                347.2007419524272
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 10000,
+          "electron_density_cm3": 100,
+          "N2_over_C2": {
+            "value": 3.803608004916465,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.1801957527254607,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -0.5247562489448659,
+                13.476424855914752
+              ]
+            },
+            "scaled_numerator": 78.37948450170661,
+            "scaled_denominator": 20.60661466702008,
+            "scaled_covariance": [
+              [
+                2046.0377147899762,
+                11.289355978138216
+              ],
+              [
+                11.289355978138216,
+                47.356934050281524
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 16.918260861814872,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.8283557170400764,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                7.3821975059859515,
+                42.14620573316794
+              ]
+            },
+            "scaled_numerator": 589.166058106034,
+            "scaled_denominator": 34.82426845869265,
+            "scaled_covariance": [
+              [
+                24884.773442202128,
+                129.5281055800941
+              ],
+              [
+                129.5281055800941,
+                105.2508411039804
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 12.042845160770788,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.68072910250733,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                5.834609566551601,
+                23.49359812330639
+              ]
+            },
+            "scaled_numerator": 667.5455426077407,
+            "scaled_denominator": 55.430883125712725,
+            "scaled_covariance": [
+              [
+                27388.918835933237,
+                152.796430940794
+              ],
+              [
+                152.796430940794,
+                153.3953067585001
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 10000,
+          "electron_density_cm3": 1000,
+          "N2_over_C2": {
+            "value": 3.7740680574894383,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.1768097274997165,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -0.5206808363403596,
+                13.371762945109685
+              ]
+            },
+            "scaled_numerator": 77.77076618779384,
+            "scaled_denominator": 20.60661466702008,
+            "scaled_covariance": [
+              [
+                2014.3808513238264,
+                11.201679492641253
+              ],
+              [
+                11.201679492641253,
+                47.356934050281524
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 16.786426003213265,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.8249582403722964,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                7.324672032633815,
+                41.81778314181474
+              ]
+            },
+            "scaled_numerator": 583.9177907231749,
+            "scaled_denominator": 34.78511689214852,
+            "scaled_covariance": [
+              [
+                24443.402984483306,
+                128.22994827287343
+              ],
+              [
+                128.22994827287343,
+                105.01431530742484
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 11.945619649101655,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.677208682608771,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                5.78770913053316,
+                23.302923828125518
+              ]
+            },
+            "scaled_numerator": 661.6885569109687,
+            "scaled_denominator": 55.391731559168605,
+            "scaled_covariance": [
+              [
+                26908.28460278709,
+                151.3043140385149
+              ],
+              [
+                151.3043140385149,
+                153.15789557088328
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 10000,
+          "electron_density_cm3": 10000,
+          "N2_over_C2": {
+            "value": 3.7218284831540682,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.1707563552170783,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -0.513473720612538,
+                13.186674813755033
+              ]
+            },
+            "scaled_numerator": 76.69428540909571,
+            "scaled_denominator": 20.60661466702008,
+            "scaled_covariance": [
+              [
+                1959.0018215653015,
+                11.046629037900356
+              ],
+              [
+                11.046629037900356,
+                47.356934050281524
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 15.646424607210914,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.794415111802023,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                6.827238192883557,
+                38.9778497843349
+              ]
+            },
+            "scaled_numerator": 538.8158542849603,
+            "scaled_denominator": 34.436995531658916,
+            "scaled_covariance": [
+              [
+                20813.20610782882,
+                117.1412658562405
+              ],
+              [
+                117.1412658562405,
+                102.92291536665148
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 11.182226919207924,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.6485283010830818,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                5.428208801497831,
+                21.795213763955687
+              ]
+            },
+            "scaled_numerator": 615.5101396940561,
+            "scaled_denominator": 55.04361019867899,
+            "scaled_covariance": [
+              [
+                23182.15786355719,
+                140.006463052838
+              ],
+              [
+                140.006463052838,
+                151.058623057745
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 10000,
+          "electron_density_cm3": 100000,
+          "N2_over_C2": {
+            "value": 3.551238786971468,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.1503798754493013,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -0.48993869571993154,
+                12.582264680316841
+              ]
+            },
+            "scaled_numerator": 73.17900927369685,
+            "scaled_denominator": 20.60661466702008,
+            "scaled_covariance": [
+              [
+                1783.5360018583506,
+                10.540307723001844
+              ],
+              [
+                10.540307723001844,
+                47.356934050281524
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 11.162672273517169,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.6477681744149053,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                4.870775553750217,
+                27.808075901787216
+              ]
+            },
+            "scaled_numerator": 367.0007533257666,
+            "scaled_denominator": 32.877499610595564,
+            "scaled_covariance": [
+              [
+                9655.886767998087,
+                76.17457318574533
+              ],
+              [
+                76.17457318574533,
+                93.81215954899984
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 8.230102873437486,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.5154052637769122,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                4.018712306053333,
+                15.99053333121917
+              ]
+            },
+            "scaled_numerator": 440.17976259946346,
+            "scaled_denominator": 53.484114277615646,
+            "scaled_covariance": [
+              [
+                11705.851423955892,
+                98.38198634159609
+              ],
+              [
+                98.38198634159609,
+                141.91260010085756
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 15000,
+          "electron_density_cm3": 100,
+          "N2_over_C2": {
+            "value": 2.8623582406768007,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.0567239872898413,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -0.39489883594010594,
+                10.141517130926434
+              ]
+            },
+            "scaled_numerator": 58.98351330459635,
+            "scaled_denominator": 20.60661466702008,
+            "scaled_covariance": [
+              [
+                1158.6975907980288,
+                8.49566545085329
+              ],
+              [
+                8.49566545085329,
+                47.356934050281524
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 17.588519241148326,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.8452292782028907,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                7.674661357719636,
+                43.81593099514957
+              ]
+            },
+            "scaled_numerator": 340.9110005233162,
+            "scaled_denominator": 19.382586780003354,
+            "scaled_covariance": [
+              [
+                8331.827760019622,
+                41.71546075919118
+              ],
+              [
+                41.71546075919118,
+                32.60506310298563
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 10.000062500814915,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.6000027143674207,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                4.847782099918283,
+                19.61499237217045
+              ]
+            },
+            "scaled_numerator": 399.89451382791253,
+            "scaled_denominator": 39.98920144702343,
+            "scaled_covariance": [
+              [
+                9690.005232658626,
+                54.54364236376193
+              ],
+              [
+                54.54364236376193,
+                80.40032365190554
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 15000,
+          "electron_density_cm3": 1000,
+          "N2_over_C2": {
+            "value": 2.8469420491450226,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.0543786269668753,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -0.39277197564567645,
+                10.086896584730859
+              ]
+            },
+            "scaled_numerator": 58.66583778606802,
+            "scaled_denominator": 20.60661466702008,
+            "scaled_covariance": [
+              [
+                1146.2500914329703,
+                8.449909191584606
+              ],
+              [
+                8.449909191584606,
+                47.356934050281524
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 17.487563234701557,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.8427292979034466,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                7.630609715231503,
+                43.56443276773376
+              ]
+            },
+            "scaled_numerator": 338.6172658932159,
+            "scaled_denominator": 19.36331902556204,
+            "scaled_covariance": [
+              [
+                8220.087686912846,
+                41.393599379140596
+              ],
+              [
+                41.393599379140596,
+                32.54027153472583
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 9.93954873017501,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.5973666672500544,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                4.8184573983001115,
+                19.49724278495218
+              ]
+            },
+            "scaled_numerator": 397.28310367928395,
+            "scaled_denominator": 39.96993369258212,
+            "scaled_covariance": [
+              [
+                9563.408372270795,
+                54.149284064522476
+              ],
+              [
+                54.149284064522476,
+                80.33509635401704
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 15000,
+          "electron_density_cm3": 10000,
+          "N2_over_C2": {
+            "value": 2.8133840261720695,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.0492290172928849,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -0.3881422182588661,
+                9.967998376944069
+              ]
+            },
+            "scaled_numerator": 57.974320537677364,
+            "scaled_denominator": 20.60661466702008,
+            "scaled_covariance": [
+              [
+                1119.3867552707463,
+                8.350306796496964
+              ],
+              [
+                8.350306796496964,
+                47.356934050281524
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 16.581439598631494,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.819622233246867,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                7.235227252403478,
+                41.30712786521328
+              ]
+            },
+            "scaled_numerator": 318.1864026605392,
+            "scaled_denominator": 19.189311082905004,
+            "scaled_covariance": [
+              [
+                7258.075576438808,
+                38.54653035492511
+              ],
+              [
+                38.54653035492511,
+                31.958054839640987
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 9.452242060204485,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.5755348348461777,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                4.584855134778017,
+                18.545504978880093
+              ]
+            },
+            "scaled_numerator": 376.1607231982166,
+            "scaled_denominator": 39.79592574992508,
+            "scaled_covariance": [
+              [
+                8560.4596534446,
+                51.21134240400623
+              ],
+              [
+                51.21134240400623,
+                79.74894456538118
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 15000,
+          "electron_density_cm3": 100000,
+          "N2_over_C2": {
+            "value": 2.688504868104426,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.0295108271954982,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -0.37091354525306097,
+                9.525543584653912
+              ]
+            },
+            "scaled_numerator": 55.40098384743555,
+            "scaled_denominator": 20.60661466702008,
+            "scaled_covariance": [
+              [
+                1022.2186112679886,
+                7.979657332132199
+              ],
+              [
+                7.979657332132199,
+                47.356934050281524
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 12.3269498988786,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.6908556308574338,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                5.378802203322543,
+                30.70848539007922
+              ]
+            },
+            "scaled_numerator": 226.14493808390287,
+            "scaled_denominator": 18.345571283978007,
+            "scaled_covariance": [
+              [
+                3666.333737154531,
+                26.191622580478153
+              ],
+              [
+                26.191622580478153,
+                29.209495198567698
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 7.2279877254006655,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.459017406368794,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                3.5010302456735896,
+                14.211868117380499
+              ]
+            },
+            "scaled_numerator": 281.5459219313384,
+            "scaled_denominator": 38.952185950998086,
+            "scaled_covariance": [
+              [
+                4812.8410920811475,
+                38.58258517249795
+              ],
+              [
+                38.58258517249795,
+                76.98130421459544
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 20000,
+          "electron_density_cm3": 100,
+          "N2_over_C2": {
+            "value": 2.4698326323181785,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 0.9926675243837899,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -0.3407449206073942,
+                8.750773958068018
+              ]
+            },
+            "scaled_numerator": 50.89488934621259,
+            "scaled_denominator": 20.60661466702008,
+            "scaled_covariance": [
+              [
+                862.6947957737214,
+                7.330623911986018
+              ],
+              [
+                7.330623911986018,
+                47.356934050281524
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 18.163478715335117,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.8591990293276908,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                7.92554201448765,
+                45.24825081130772
+              ]
+            },
+            "scaled_numerator": 261.3208473139257,
+            "scaled_denominator": 14.387158506883209,
+            "scaled_covariance": [
+              [
+                4895.604983692524,
+                23.735226396065904
+              ],
+              [
+                23.735226396065904,
+                17.964354955074683
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 8.922036932358417,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.5504640166512005,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                4.298367144727926,
+                17.9084887723405
+              ]
+            },
+            "scaled_numerator": 312.2157366601383,
+            "scaled_denominator": 34.993773173903286,
+            "scaled_covariance": [
+              [
+                5890.239537049197,
+                33.52811268453968
+              ],
+              [
+                33.52811268453968,
+                65.64664665164229
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 20000,
+          "electron_density_cm3": 1000,
+          "N2_over_C2": {
+            "value": 2.459144410410815,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 0.9907840329286435,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -0.33927034403989564,
+                8.712904908683397
+              ]
+            },
+            "scaled_numerator": 50.67464127589194,
+            "scaled_denominator": 20.60661466702008,
+            "scaled_covariance": [
+              [
+                855.2443134831362,
+                7.298900574110613
+              ],
+              [
+                7.298900574110613,
+                47.356934050281524
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 18.076245523833762,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.8571082315816039,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                7.887478252851605,
+                45.03093840160994
+              ]
+            },
+            "scaled_numerator": 259.7981335054241,
+            "scaled_denominator": 14.372350340278182,
+            "scaled_covariance": [
+              [
+                4838.717931373799,
+                23.572634050590633
+              ],
+              [
+                23.572634050590633,
+                17.927393902732042
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 8.875985173275906,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.548216568101449,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                4.276097060903002,
+                17.81777287257857
+              ]
+            },
+            "scaled_numerator": 310.47277478131605,
+            "scaled_denominator": 34.97896500729826,
+            "scaled_covariance": [
+              [
+                5824.565547476092,
+                33.32152060452301
+              ],
+              [
+                33.32152060452301,
+                65.60935072078766
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 20000,
+          "electron_density_cm3": 10000,
+          "N2_over_C2": {
+            "value": 2.430619013964628,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 0.9857168909290431,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -0.3353349016863681,
+                8.61183761647155
+              ]
+            },
+            "scaled_numerator": 50.08682942310139,
+            "scaled_denominator": 20.60661466702008,
+            "scaled_covariance": [
+              [
+                835.5181936973967,
+                7.214235341919949
+              ],
+              [
+                7.214235341919949,
+                47.356934050281524
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 17.279776822282564,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.8375381290296176,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                7.539943165751857,
+                43.04680220523702
+              ]
+            },
+            "scaled_numerator": 246.0280682812914,
+            "scaled_denominator": 14.2379193210432,
+            "scaled_covariance": [
+              [
+                4339.378833577536,
+                22.114416098733287
+              ],
+              [
+                22.114416098733287,
+                17.59359645358858
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 8.498173567361617,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.5293255969085446,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                4.0939090102513855,
+                17.072529192433624
+              ]
+            },
+            "scaled_numerator": 296.1148977043928,
+            "scaled_denominator": 34.844533988063276,
+            "scaled_covariance": [
+              [
+                5297.143305901352,
+                31.788349000965972
+              ],
+              [
+                31.788349000965972,
+                65.27251318836541
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 20000,
+          "electron_density_cm3": 100000,
+          "N2_over_C2": {
+            "value": 2.3153777524162305,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 0.9646218560046707,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -0.31943589946120565,
+                8.203530503974578
+              ]
+            },
+            "scaled_numerator": 47.712097152632275,
+            "scaled_denominator": 20.60661466702008,
+            "scaled_covariance": [
+              [
+                758.1686829150785,
+                6.872191781356412
+              ],
+              [
+                6.872191781356412,
+                47.356934050281524
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 13.183390280575557,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.7200271091054091,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                5.752505629545201,
+                32.8420210306522
+              ]
+            },
+            "scaled_numerator": 178.86912393143155,
+            "scaled_denominator": 13.567763687841191,
+            "scaled_covariance": [
+              [
+                2293.65985116855,
+                15.321029302472873
+              ],
+              [
+                15.321029302472873,
+                15.97637009602354
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 6.630149017819161,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.4215232896248744,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                3.178490329478383,
+                13.386499625448264
+              ]
+            },
+            "scaled_numerator": 226.58122108406383,
+            "scaled_denominator": 34.17437835486127,
+            "scaled_covariance": [
+              [
+                3136.491082238331,
+                24.74948602484097
+              ],
+              [
+                24.74948602484097,
+                63.6401316311576
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 25000,
+          "electron_density_cm3": 100,
+          "N2_over_C2": {
+            "value": 2.2782755145854074,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 0.9576062426705862,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -0.31431717241930335,
+                8.072074917734604
+              ]
+            },
+            "scaled_numerator": 46.947545634368375,
+            "scaled_denominator": 20.60661466702008,
+            "scaled_covariance": [
+              [
+                734.0651642819097,
+                6.76206992602424
+              ],
+              [
+                6.76206992602424,
+                47.356934050281524
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 19.012629641981224,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.8790421884078063,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                8.296064723889831,
+                47.3636272052084
+              ]
+            },
+            "scaled_numerator": 227.00874372027056,
+            "scaled_denominator": 11.939891955767092,
+            "scaled_covariance": [
+              [
+                3694.3958133347437,
+                17.111468205352242
+              ],
+              [
+                17.111468205352242,
+                12.37263965774554
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 8.417379245329842,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.5251768947704818,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                4.031858703306424,
+                17.247675376693415
+              ]
+            },
+            "scaled_numerator": 273.95628935463895,
+            "scaled_denominator": 32.54650662278717,
+            "scaled_covariance": [
+              [
+                4534.187251760514,
+                25.562353790095433
+              ],
+              [
+                25.562353790095433,
+                59.999587772428995
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 25000,
+          "electron_density_cm3": 1000,
+          "N2_over_C2": {
+            "value": 2.2695750992020423,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 0.9559445579224131,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -0.3131168391213044,
+                8.041248793176655
+              ]
+            },
+            "scaled_numerator": 46.76825952712036,
+            "scaled_denominator": 20.60661466702008,
+            "scaled_covariance": [
+              [
+                728.4692853780084,
+                6.736246527216182
+              ],
+              [
+                6.736246527216182,
+                47.356934050281524
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 18.932810021990065,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.8772150770633842,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                8.261235836663168,
+                47.16478323695612
+              ]
+            },
+            "scaled_numerator": 225.79462684515448,
+            "scaled_denominator": 11.92610217832951,
+            "scaled_covariance": [
+              [
+                3654.983820126544,
+                17.000293581232814
+              ],
+              [
+                17.000293581232814,
+                12.344077017008448
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 8.3781163334115,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.523146386415259,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                4.012905003988594,
+                17.169565101547974
+              ]
+            },
+            "scaled_numerator": 272.5628863722748,
+            "scaled_denominator": 32.53271684534959,
+            "scaled_covariance": [
+              [
+                4488.2123265779,
+                25.417589223316025
+              ],
+              [
+                25.417589223316025,
+                59.970713283488685
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 25000,
+          "electron_density_cm3": 10000,
+          "N2_over_C2": {
+            "value": 2.2413881583421174,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 0.9505170731475243,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -0.3092280910337606,
+                7.941380670613579
+              ]
+            },
+            "scaled_numerator": 46.1874220981778,
+            "scaled_denominator": 20.60661466702008,
+            "scaled_covariance": [
+              [
+                710.4872286508372,
+                6.652585853221621
+              ],
+              [
+                6.652585853221621,
+                47.356934050281524
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 18.196143208001917,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.8599793461728797,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                7.939795000552159,
+                45.329623503178894
+              ]
+            },
+            "scaled_numerator": 214.72533850759257,
+            "scaled_denominator": 11.800596206187539,
+            "scaled_covariance": [
+              [
+                3305.4062578788707,
+                15.996741927039746
+              ],
+              [
+                15.996741927039746,
+                12.085634910377252
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 8.051071152854988,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.5058536648184142,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                3.8548638635136414,
+                16.518923356686393
+              ]
+            },
+            "scaled_numerator": 260.91276060577036,
+            "scaled_denominator": 32.40721087320762,
+            "scaled_covariance": [
+              [
+                4114.279750400162,
+                24.33508464533182
+              ],
+              [
+                24.33508464533182,
+                59.709432928591056
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 25000,
+          "electron_density_cm3": 100000,
+          "N2_over_C2": {
+            "value": 2.1202356316136166,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 0.9263841287697638,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -0.2925135543638243,
+                7.512129569961135
+              ]
+            },
+            "scaled_numerator": 43.69087866394773,
+            "scaled_denominator": 20.60661466702008,
+            "scaled_covariance": [
+              [
+                635.7558819656363,
+                6.29299727308375
+              ],
+              [
+                6.29299727308375,
+                47.356934050281524
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 14.168326341661782,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.7513185514817562,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                6.182277495169833,
+                35.29566081098261
+              ]
+            },
+            "scaled_numerator": 158.2065709766368,
+            "scaled_denominator": 11.166214495739869,
+            "scaled_covariance": [
+              [
+                1794.3505330077853,
+                11.15256533641361
+              ],
+              [
+                11.15256533641361,
+                10.821152142255414
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 6.354405791386778,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.4030749453562303,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                3.0230022871175035,
+                13.13153240092788
+              ]
+            },
+            "scaled_numerator": 201.89744964058454,
+            "scaled_denominator": 31.772829162759948,
+            "scaled_covariance": [
+              [
+                2498.6777722931947,
+                19.201776323806378
+              ],
+              [
+                19.201776323806378,
+                58.430603968338275
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 30000,
+          "electron_density_cm3": 100,
+          "N2_over_C2": {
+            "value": 2.168895273542216,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 0.9362385823411764,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -0.29922677274501563,
+                7.684533773317229
+              ]
+            },
+            "scaled_numerator": 44.693589155005554,
+            "scaled_denominator": 20.60661466702008,
+            "scaled_covariance": [
+              [
+                665.272074823691,
+                6.437422255571598
+              ],
+              [
+                6.437422255571598,
+                47.356934050281524
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 19.944160838743667,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.8998157678571888,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                8.702533647241697,
+                49.684226573328225
+              ]
+            },
+            "scaled_numerator": 209.8124402305739,
+            "scaled_denominator": 10.51999339189999,
+            "scaled_covariance": [
+              [
+                3155.8817546729256,
+                13.93448730982307
+              ],
+              [
+                13.93448730982307,
+                9.604892421286863
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 8.17647810849871,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.5125662783155753,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                3.898905919311744,
+                17.0285607256607
+              ]
+            },
+            "scaled_numerator": 254.50602938557947,
+            "scaled_denominator": 31.12660805892007,
+            "scaled_covariance": [
+              [
+                3914.1797373260506,
+                21.647298841216326
+              ],
+              [
+                21.647298841216326,
+                57.199730313893895
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 30000,
+          "electron_density_cm3": 1000,
+          "N2_over_C2": {
+            "value": 2.16124685151238,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 0.9347043736056131,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -0.2981715753509795,
+                7.657434928058155
+              ]
+            },
+            "scaled_numerator": 44.53598106942598,
+            "scaled_denominator": 20.60661466702008,
+            "scaled_covariance": [
+              [
+                660.5882987447898,
+                6.414721241467557
+              ],
+              [
+                6.414721241467557,
+                47.356934050281524
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 19.869483219677942,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.8981865718022743,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                8.669948446095859,
+                49.49819218583923
+              ]
+            },
+            "scaled_numerator": 208.75266487165607,
+            "scaled_denominator": 10.50619498069863,
+            "scaled_covariance": [
+              [
+                3124.081171118564,
+                13.845918700270738
+              ],
+              [
+                13.845918700270738,
+                9.57971268340232
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 8.1409762991191,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.5106764903800012,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                3.881786157512203,
+                16.957552100032796
+              ]
+            },
+            "scaled_numerator": 253.28864594108205,
+            "scaled_denominator": 31.11280964771871,
+            "scaled_covariance": [
+              [
+                3876.899107343814,
+                21.53019691775396
+              ],
+              [
+                21.53019691775396,
+                57.174238532558334
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 30000,
+          "electron_density_cm3": 10000,
+          "N2_over_C2": {
+            "value": 2.1318682899096424,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 0.9287603698046292,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -0.29411842797981985,
+                7.553344817483565
+              ]
+            },
+            "scaled_numerator": 43.930588371007055,
+            "scaled_denominator": 20.60661466702008,
+            "scaled_covariance": [
+              [
+                642.751159838506,
+                6.327523759595013
+              ],
+              [
+                6.327523759595013,
+                47.356934050281524
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 19.174844069032268,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.8827318409269274,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                8.366846168187923,
+                47.76773036162752
+              ]
+            },
+            "scaled_numerator": 199.04292254179367,
+            "scaled_denominator": 10.380419357008057,
+            "scaled_covariance": [
+              [
+                2840.21837258261,
+                13.043854061780403
+              ],
+              [
+                13.043854061780403,
+                9.351717276366658
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 7.841134802523949,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.4943789201856674,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                3.7368247036750044,
+                16.358211469461285
+              ]
+            },
+            "scaled_numerator": 242.97351091280072,
+            "scaled_denominator": 30.987034024028134,
+            "scaled_covariance": [
+              [
+                3569.7138848671684,
+                20.640746322827834
+              ],
+              [
+                20.640746322827834,
+                56.94339877923535
+              ]
+            ]
+          }
+        },
+        {
+          "temperature_K": 30000,
+          "electron_density_cm3": 100000,
+          "N2_over_C2": {
+            "value": 1.9996742636546563,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 0.9009592571546299,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                -0.2758805755878749,
+                7.084972982393457
+              ]
+            },
+            "scaled_numerator": 41.206517010688614,
+            "scaled_denominator": 20.60661466702008,
+            "scaled_covariance": [
+              [
+                565.5104618292991,
+                5.935163290627952
+              ],
+              [
+                5.935163290627952,
+                47.356934050281524
+              ]
+            ]
+          },
+          "N3_over_C3": {
+            "value": 15.195194464581078,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.7817062624517672,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                6.6303462037627385,
+                37.85376034159512
+              ]
+            },
+            "scaled_numerator": 147.99155392446792,
+            "scaled_denominator": 9.739365578336345,
+            "scaled_covariance": [
+              [
+                1570.1173531945544,
+                9.099381858480399
+              ],
+              [
+                9.099381858480399,
+                8.232332568773423
+              ]
+            ]
+          },
+          "observed_two_stage_ionic_N_over_C": {
+            "value": 6.234699601246457,
+            "log_ratio_relative_to_solar_NC_minus_0_60": 1.3948155332493783,
+            "conditional_gaussian_95_fieller_set": {
+              "type": "bounded",
+              "interval": [
+                2.950569364492063,
+                13.124978706533504
+              ]
+            },
+            "scaled_numerator": 189.19807093515655,
+            "scaled_denominator": 30.345980245356422,
+            "scaled_covariance": [
+              [
+                2196.1243202850887,
+                16.34940174487932
+              ],
+              [
+                16.34940174487932,
+                55.80951699437201
+              ]
+            ]
+          }
+        }
+      ],
+      "grid_point_ionic_log_ratio_relative_to_solar_range": [
+        1.3948155332493783,
+        1.82987218237818
+      ],
+      "grid_range_is_confidence_interval": false,
+      "elemental_abundance_identified": false,
+      "helium_oxygen_ionic_operator": {
+        "observed_groups": 5,
+        "ionic_amplitudes": 6,
+        "rank": 5,
+        "HeII_OIII_separated": false
+      },
+      "interpretation": "Conditional (N2+ + N3+) / (C2+ + C3+) only. Elemental N/C also needs ratio of observed carbon/nitrogen ion fractions; unconstrained here."
+    }
+  ],
+  "ion_fraction_correction_available": false,
+  "scenarios_are_independent_likelihoods": false
+}
