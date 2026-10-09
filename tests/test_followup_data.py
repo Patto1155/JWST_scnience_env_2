@@ -8,7 +8,7 @@ import numpy as np
 import pytest
 from astropy.io import fits
 
-from data_pipeline.followup_data import extract_native_slit, point_coefficients, verify
+from data_pipeline.followup_data import acquire, extract_native_slit, point_coefficients, verify
 
 
 def receipt(path):
@@ -43,6 +43,24 @@ def test_input_receipt_detects_corruption(tmp_path):
     path.write_bytes(b"other")
     with pytest.raises(ValueError, match="SHA256"):
         verify(path)
+
+
+def test_coherently_rewritten_cached_input_cannot_change_manifest(monkeypatch, tmp_path):
+    import data_pipeline.followup_data as module
+
+    path = tmp_path / "cached"
+    path.write_bytes(b"altered")
+    receipt(path)
+    product = {"filename": path.name, "expected_bytes": 7,
+               "sha256": hashlib.sha256(b"correct").hexdigest()}
+    monkeypatch.setattr(module, "load_manifest", lambda _: {"sources": [{"products": [product]}]})
+    monkeypatch.setattr(module, "fetch_product", lambda *a, **kw: pytest.fail("Network must not be called"))
+    with pytest.raises(ValueError, match="pinned manifest"):
+        acquire(tmp_path)
+    product["sha256"] = hashlib.sha256(b"altered").hexdigest()
+    product["max_bytes"] = 6
+    with pytest.raises(ValueError, match="per-product ceiling"):
+        acquire(tmp_path)
 
 
 def test_native_slit_identity_dq_units_preserved(tmp_path):

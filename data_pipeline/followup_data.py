@@ -43,6 +43,12 @@ def acquire(output: Path, max_total_bytes: int = 100 * 1024 * 1024) -> list[dict
             receipt = verify(path) if path.exists() else fetch_product(
                 product, path, max_bytes=limit, timeout=45
             )
+            if receipt["bytes"] > limit:
+                raise ValueError("Cached input exceeds selected per-product ceiling")
+            if product.get("expected_bytes") is not None and receipt["bytes"] != product["expected_bytes"]:
+                raise ValueError("Cached input size differs from pinned manifest")
+            if product.get("sha256") and receipt["sha256"] != product["sha256"]:
+                raise ValueError("Cached input SHA256 differs from pinned manifest")
             remaining -= receipt["bytes"]
             if remaining < 0:
                 raise ValueError("Existing inputs exceed total acquisition budget")
