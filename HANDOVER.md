@@ -18,7 +18,8 @@ Sky-footprint geometry from the WCS instead of from file names.
 - `sky_to_pixel(bundle, ra, dec)` — returns `None` off-array rather than an
   out-of-range coordinate. This is the single guard that prevents the failure
   behind the shipped catalog.
-- `modules_are_disjoint(a, b)` — cheap NIRCam module check before any FITS read.
+- `modules_are_disjoint(a, b)` — legacy-named module-name warning only. It must
+  not veto a pair; different visits can place opposite modules on the same sky.
 
 Covered by `tests/test_footprints.py` (9 tests, all passing). The suite encodes
 real NIRCam geometry and asserts the ~0.25 short-wave/long-wave quadrant ratio.
@@ -34,8 +35,9 @@ Repeat-exposure vetting — the capability that was missing.
 - `veto_candidate()` — re-measures a candidate at the same sky position in both
   epochs and returns `persistent`, `single_epoch_only`, or `undetected_in_both`.
   Returns `None` when the position is not on both detectors.
-- The verdict is interpreted **against the baseline**. A single-epoch detection
-  over a few hours is a detector event; calling it a transient requires weeks.
+- The baseline informs interpretation but does not establish identity. A
+  single-epoch detection over hours can be a detector event, moving source or
+  astrophysical variability; depth and background differences also matter.
 
 ```bash
 python discovery/multi_epoch.py --pairs-only   # what repeat coverage exists
@@ -81,8 +83,9 @@ obs030 recovers *both* F090W (0.231) and F200W (0.223) on the same sources. The
 audit found that **zero of 1732 candidates** had both bands measured. With the
 corrected anchor, a genuine two-color Lyman-break test becomes possible on this
 data for the first time — on the ~23% of the long-wave field that the short-wave
-detector actually covers. That is roughly 30 arcsec², not a survey, but it is
-real and it is testable.
+detector actually covers. For a nominal 129″ square long-wave field, 23% is
+about **3827 arcsec² (1.06 arcmin²)**, not 30 arcsec². The usable common-band
+area must still be measured from the joint WCS/validity masks.
 
 ### Multi-epoch coverage: thin, and absent where it is needed
 
@@ -103,11 +106,11 @@ Three consequences, in descending order of how much they hurt:
    feed it where it matters. Fixing that is a download, not a code change.
 2. **SMACS J0723 has zero repeat coverage in any filter.** All six NIRCam
    filters were taken within ~4.7 hours on MJD 59737 as a single observation.
-   Every SMACS candidate is permanently unvettable from this data.
-3. **The 9.5-hour baseline supports artifact rejection only.** It is ample for
-   cosmic rays, which are per-exposure, and useless for astrophysical
-   variability. Nothing astrophysical of interest changes in 9.5 hours at
-   cosmological distance.
+   The currently registered SMACS data cannot supply this repeat-imaging test.
+3. **The 9.5-hour baseline can help investigate artifacts.** It does not rule
+   out rapid astrophysical variability or moving sources. Time dilation makes
+   the rest-frame interval shorter at high redshift; identity still requires
+   independent detector diagnostics, coverage/depth checks and follow-up.
 
 ### One more thing the archive query turned up
 
@@ -127,8 +130,9 @@ combination that would reject cosmic rays for free.
 
 ## Part 3 — What new physics is reachable
 
-The honest answer is: **none from this data**, and the reasons are structural
-rather than fixable by better code.
+The current data and analysis do not establish new physics. Better calibration,
+controls and additional data can improve what is testable; novelty cannot be
+assigned a zero probability from field popularity alone.
 
 I want to concede real ground first, because the pessimistic case is often
 overstated. JWST *photometry* has produced genuine surprises. "Little red dots"
@@ -157,8 +161,8 @@ proposed; it did not dispose.
 The field constraint compounds it. SMACS J0723 is JWST's first-light image and
 GOODS-S/JADES is the most heavily worked extragalactic field in existence. Both
 have been combed with the full mosaics, the calibration pipeline, PSF models,
-and NIRSpec follow-up. A photometric dropout search on single exposures is not
-going to find something those teams missed.
+and NIRSpec follow-up. A single-exposure search needs independent validation before any novelty
+claim; known discoveries are useful blinded recovery controls.
 
 ### The one channel that genuinely touches fundamental physics
 
@@ -204,12 +208,11 @@ is the only path from here to a publishable astronomical claim, and it should
 come before any search.
 
 **3. A methods result on automated falsification.** The finding in `FINDINGS.md`
-is sharp and reproducible: an LLM-driven pipeline produced 1732 candidates, 100%
-of them from a null measurement scored as a maximal detection, and its own
-falsification layer ranked the nulls *above* the real measurements. That is a
+is sharp and reproducible: an LLM-driven pipeline produced 1732 candidates, none with both required
+blue/mid bands covered, and its scoring layer could reward absent blue
+measurements. Missing evidence does not identify all objects as artifacts. That is a
 concrete, quantified result about where automated science fails, and it is more
-interesting than another dropout catalog would have been. It is also the only
-thing here that is genuinely novel.
+interesting than another dropout catalog would have been. Its novelty must be checked against existing automated-science methods.
 
 **4. Archive-scale uniform search — the long game.** If you want a shot at
 physics, this is the shape it takes: apply one selection uniformly across every
@@ -251,9 +254,9 @@ Seven exposure pairs, spanning time baselines from 0.31 to 9.55 hours:
 | mixed verdicts | 47 (0.9%) |
 
 Each detection is compared against every other overlapping exposure and the
-verdicts are consolidated: present in even one comparison means real, because a
-detector event cannot reappear at the same sky position in an independent
-exposure. Only 0.9% of detections give mixed verdicts.
+verdicts are consolidated: present in at least one comparison is an operational
+persistence label, not proof of astrophysical identity. Detector-fixed patterns
+or common processing artifacts can repeat. Only 0.9% give mixed verdicts.
 
 ### Why the measurement is trustworthy
 
@@ -264,8 +267,8 @@ Four checks, all of which had to pass and did:
    population is a genuine absence rather than a measurement failure. This is
    the check the original pipeline never had.
 2. **The rate is independent of baseline.** 14.2-15.4% across pairs separated
-   by 19 minutes and by 9.5 hours alike. A per-exposure stochastic process
-   behaves exactly this way; anything astrophysical would not.
+   by 19 minutes and by 9.5 hours alike. This is consistent with a
+   per-exposure stochastic process, but not a proof excluding astrophysics.
 3. **The process is symmetric.** Searching each exposure in turn gives the same
    fraction whichever is searched. A depth or calibration difference between
    epochs would show up as an asymmetry. It does not.
@@ -288,14 +291,14 @@ convolution.
 
 ### The number that matters for this repo
 
-An artifact appears in exactly one exposure, so it is absent from every other
-band **by construction** and passes any dropout cut with full efficiency. A
-dropout search does not suppress artifacts, it enriches them.
+A residual in the red detection image can be absent in other bands and imitate
+a dropout. It still must pass covered blue upper limits, angular-aperture and
+quality checks; missing blue coverage is not a non-detection.
 
 Against a genuine z > 10 surface density of order 0.03 per arcmin², the measured
 artifact density implies roughly **1000-1250 artifacts per real high-redshift
-source** in a single-exposure dropout search. That is the quantitative answer to
-why the shipped catalog had 1732 candidates. Even with the cross-filter pairing
+source** in a single-exposure dropout search. This order-of-magnitude comparison is not a calibrated contamination estimate
+for the shipped catalog; rates, depths and selection functions differ. Even with the cross-filter pairing
 bug fixed, a single-exposure search of this kind is contaminated by three orders
 of magnitude.
 
@@ -454,9 +457,8 @@ done.
 The 15% artifact rate stands — it comes from repeat-exposure vetting, not from
 the classifier. So does the conclusion that a single-exposure dropout search
 carries ~1000-1250 artifacts per genuine high-redshift source. The classifier
-was the proposed mitigation, and it does not work for that purpose. Deep mosaics
-with cross-dither rejection are not merely preferable; on this evidence they are
-the only route.
+was the proposed mitigation, and it does not work for that purpose. Deep mosaics with cross-dither rejection are a strong practical route;
+properly validated individual-exposure/ramp analyses remain possible.
 
 ## Part 7 — The ramp test, and Part 8 — the fixes applied
 
@@ -580,7 +582,7 @@ arcmin² per exposure density, and the ~1000-1250 artifacts per genuine
 high-redshift source all come from repeat-exposure vetting and use no classifier
 at all. With the retrained cut applied that last number falls to roughly 360 per
 genuine source — better, and still hopeless for a single-exposure dropout
-search. Deep mosaics with cross-dither rejection remain the only real route.
+search. Deep mosaics with cross-dither rejection remain the preferred recovery benchmark.
 
 ---
 
@@ -607,3 +609,23 @@ syntax-checked and logically verified against those same real footprints, but
 have **not** been executed end-to-end — this container has no `data/` directory,
 and the FITS archive is gitignored. Run both on a machine with the archive
 before trusting their output.
+
+
+## Measurement-integrity correction (2026-10-09)
+
+`discovery/audit_candidates.py` now distinguishes absent evidence (`untestable`)
+from valid measurements failing the configured selection (`falsified`). The old
+1732 records are all untestable; they are not all independently identified
+artifacts. Calibration comes from image-specific physical fields, not nominal
+detector scales. Surviving requires matched angular apertures, valid positive
+errors, covered bands, a red detection and a sufficiently deep blue upper limit.
+The science-report terminology and pipeline call sites are being updated in this
+integration round; historical JSON reports remain provenance records until rerun.
+
+The repeat-based 15% single-epoch-only fraction and other historical numbers
+above were not reproduced in this correction (the FITS archive is absent). They
+are operational measurements from the earlier run, not universal contamination
+rates. Spectroscopy, independent detector diagnostics and selection-function
+calibration are required for stronger astrophysical claims. Null-calibrated ramps
+and classifier injections have different targets and denominator populations;
+AUC or conditional rejection rates alone do not establish end-to-end recovery.

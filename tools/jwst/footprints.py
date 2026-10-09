@@ -1,7 +1,7 @@
 """Sky-footprint geometry for JWST exposures.
 
 Cross-filter and multi-epoch photometry is only meaningful where two exposures
-see the same sky. NIRCam modules A and B point at non-overlapping fields, and a
+see the same sky. NIRCam modules A and B in the same pointing view different fields, and a
 short-wave detector covers roughly one quadrant of the long-wave field, so
 selecting exposures per filter independently can silently pair images that never
 overlap. Every aperture then lands off the detector and returns zero flux, which
@@ -50,7 +50,12 @@ def module_letter(dataset_name: str) -> Optional[str]:
 
 
 def modules_are_disjoint(name_a: str, name_b: str) -> bool:
-    """True when two datasets sit on NIRCam modules that cannot share sky."""
+    """Legacy-named advisory: True when dataset module letters differ.
+
+    This does NOT establish disjoint sky: different visits, dithers and rolls
+    can bring opposite modules onto the same position. Never use it to veto a
+    pair before checking the actual WCS with ``overlap_fraction``.
+    """
     module_a = module_letter(name_a)
     module_b = module_letter(name_b)
     return bool(module_a and module_b and module_a != module_b)
