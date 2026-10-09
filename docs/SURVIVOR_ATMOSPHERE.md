@@ -21,9 +21,13 @@ filter-integrated fluxes to nJy directly, avoiding Vega-magnitude conversion.
 Actual filter labels map columns; filenames alone never establish identity.
 The apparently JWST-named C/O=1.5 flux file instead has Y/Z/J/H etc. columns;
 it is explicitly rejected. Three metallicities (-0.5,0,+0.5) at solar-relative
-C/O=1, plus the solar-metallicity C/O=0.5 table, supply **1,053 eligible rows**
+C/O=1, plus the solar-metallicity C/O=0.5 table, supply **1,052 eligible rows**
 at log(g)=3.25–5.5. Author-starred radius fields are preserved as flags, and
 lower-gravity rows outside the declared comparison range are excluded.
+Independent author-table counts are 273/389/351/39 respectively. One solar
+table row at 2401 K lies outside the explicit 200–2400 K selection range;
+the earlier prose count included it before that temperature guard was applied.
+The saved report and grid CSV already contain the correct 1,052 evaluated rows.
 
 Each tabulated spectrum fits one nonnegative normalization by GLS with the
 same complete assumed flux covariance as the preceding 5%/15% floor scenarios.
