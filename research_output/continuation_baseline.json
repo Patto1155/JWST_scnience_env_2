@@ -1,0 +1,441 @@
+{
+  "original_image_rerun": {
+    "total_candidates": 1134,
+    "survivors": 7,
+    "blue_measured": 272,
+    "mid_measured": 254,
+    "blue_and_mid_measured": 246,
+    "module_mismatch_pairs": 0,
+    "untestable": 891,
+    "falsified": 236,
+    "blocker_counts": {
+      "f200w_not_measured_at_source_position": 880,
+      "f090w_not_measured_at_source_position": 862,
+      "blue_2sigma_limit_not_dropout_like": 225,
+      "blue_band_detected_above_snr_2": 203,
+      "reference_snr_below_5": 23,
+      "f444w_invalid_or_uncalibrated_flux_uncertainty": 10,
+      "f444w_not_measured_at_source_position": 7,
+      "f090w_invalid_or_uncalibrated_flux_uncertainty": 1
+    },
+    "pipeline_status_vs_audit": {
+      "None|falsified": 236,
+      "None|survives": 7,
+      "None|untestable": 891
+    },
+    "survivor_ids": [
+      {
+        "target": "GS-MEDIUM-HST",
+        "source_id": 361
+      },
+      {
+        "target": "GS-MEDIUM-HST",
+        "source_id": 107
+      },
+      {
+        "target": "GS-MEDIUM-HST",
+        "source_id": 98
+      },
+      {
+        "target": "GS-MEDIUM-HST",
+        "source_id": 994
+      },
+      {
+        "target": "GS-MEDIUM-HST",
+        "source_id": 138
+      },
+      {
+        "target": "GS-MEDIUM-HST",
+        "source_id": 333
+      },
+      {
+        "target": "GS-MEDIUM-HST",
+        "source_id": 336
+      }
+    ]
+  },
+  "smacs_image_rerun": {
+    "total_candidates": 1267,
+    "survivors": 0,
+    "blue_measured": 330,
+    "mid_measured": 252,
+    "blue_and_mid_measured": 0,
+    "module_mismatch_pairs": 0,
+    "untestable": 1267,
+    "falsified": 0,
+    "blocker_counts": {
+      "f200w_not_measured_at_source_position": 1015,
+      "f090w_not_measured_at_source_position": 937,
+      "f444w_invalid_or_uncalibrated_flux_uncertainty": 7,
+      "f444w_not_measured_at_source_position": 4,
+      "f200w_invalid_or_uncalibrated_flux_uncertainty": 3,
+      "f090w_invalid_or_uncalibrated_flux_uncertainty": 2
+    },
+    "pipeline_status_vs_audit": {
+      "None|untestable": 1267
+    },
+    "survivor_ids": []
+  },
+  "smacs_matched_image_rerun": {
+    "total_candidates": 1267,
+    "survivors": 10,
+    "blue_measured": 330,
+    "mid_measured": 329,
+    "blue_and_mid_measured": 329,
+    "module_mismatch_pairs": 0,
+    "untestable": 940,
+    "falsified": 317,
+    "blocker_counts": {
+      "f200w_not_measured_at_source_position": 938,
+      "f090w_not_measured_at_source_position": 937,
+      "blue_2sigma_limit_not_dropout_like": 286,
+      "blue_band_detected_above_snr_2": 249,
+      "reference_snr_below_5": 76,
+      "f444w_invalid_or_uncalibrated_flux_uncertainty": 7,
+      "f444w_not_measured_at_source_position": 4,
+      "f090w_invalid_or_uncalibrated_flux_uncertainty": 2,
+      "f200w_invalid_or_uncalibrated_flux_uncertainty": 2
+    },
+    "pipeline_status_vs_audit": {
+      "None|falsified": 317,
+      "None|survives": 10,
+      "None|untestable": 940
+    },
+    "survivor_ids": [
+      {
+        "target": "SMACS-J0723.3-7327",
+        "source_id": 354
+      },
+      {
+        "target": "SMACS-J0723.3-7327",
+        "source_id": 1090
+      },
+      {
+        "target": "SMACS-J0723.3-7327",
+        "source_id": 337
+      },
+      {
+        "target": "SMACS-J0723.3-7327",
+        "source_id": 464
+      },
+      {
+        "target": "SMACS-J0723.3-7327",
+        "source_id": 14
+      },
+      {
+        "target": "SMACS-J0723.3-7327",
+        "source_id": 334
+      },
+      {
+        "target": "SMACS-J0723.3-7327",
+        "source_id": 17
+      },
+      {
+        "target": "SMACS-J0723.3-7327",
+        "source_id": 1043
+      },
+      {
+        "target": "SMACS-J0723.3-7327",
+        "source_id": 1070
+      },
+      {
+        "target": "SMACS-J0723.3-7327",
+        "source_id": 152
+      }
+    ]
+  },
+  "photometry_sensitivity.json": {
+    "exact_json_replay": true
+  },
+  "chemistry_resolution_comparison.json": {
+    "exact_json_replay": true
+  },
+  "cached_original_images": {
+    "count": 13,
+    "total_bytes": 1555571520,
+    "all_pins_verified": true
+  },
+  "baseline_master": "1b4012e326664ce2a3ec5a515b5a832138aba46b",
+  "python": "3.12.14",
+  "dependency_lock_sha256": "ff25f0785e7d5a3a1a0515075d28bf9c90272ce6cbf6f8b23cf88f317c6fd31c",
+  "quality_gate": {
+    "passed": true,
+    "tests_passed": 363,
+    "explicit_historical_fixture_skips": 2
+  },
+  "fresh_goods_pixel_rerun": {
+    "all_proposals": 1134,
+    "untestable": 891,
+    "measured_failures": 236,
+    "screen_survivors": 7,
+    "joint_valid_area_arcmin2": 0.9628081786598466,
+    "byte_exact_selection_measurements_csv": true,
+    "byte_exact_selection_metadata": true,
+    "selection_csv_sha256": "aa0724bb51373a23caf87ffe5d84606077fa46213ea51e7741ff357d9dbd199d",
+    "selection_metadata_sha256": "eaf7a2305ea00645450e62d9c4d3327a6a21b28260692efbaad01293dde45fe6"
+  },
+  "native_originals": {
+    "review_date": "2026-10-09",
+    "method": "Direct FITS/array counts and SHA256 independent of acquisition/window_quality implementation",
+    "scope": "Native full-slit UV quality only; not trace quality, line detection, or independent abundance samples",
+    "count": 9,
+    "original_bytes": 464135040,
+    "inventory_sha256": "2ef47329dd583dd00b57dd7d4fed5330c59d2142ff4bea973a0423783e361095",
+    "batch_report_sha256": "38c4306783e442c466eb8ee457d769312266ac84881ef9d9ad4655c80d8287e6",
+    "records": [
+      {
+        "filename": "jw05224004001_03101_00002_nrs2_cal.fits",
+        "original_sha256": "c2d318f836570e3cc77463ec91a8b2a8982deb8df4762873dcad3bdfbd03bc9f",
+        "original_bytes": 51563520,
+        "derivative_sha256": "349e54f05202cb6230fdd6d70990f65872ae3578c62e55b2a8ca024f964aff41",
+        "full_slit_uv_windows": [
+          {
+            "pixels": 59,
+            "usable": 59
+          },
+          {
+            "pixels": 64,
+            "usable": 64
+          },
+          {
+            "pixels": 75,
+            "usable": 75
+          },
+          {
+            "pixels": 85,
+            "usable": 85
+          },
+          {
+            "pixels": 95,
+            "usable": 95
+          }
+        ]
+      },
+      {
+        "filename": "jw05224004001_03101_00003_nrs2_cal.fits",
+        "original_sha256": "7d60c48301e7020e897bc68de72d9103f27a4e3d4dec14f6e910bd76a6a68b39",
+        "original_bytes": 51575040,
+        "derivative_sha256": "f08841d78883cc13fa1dbfe09b07315bae51a97207b24c315d01db7cef6fb02a",
+        "full_slit_uv_windows": [
+          {
+            "pixels": 59,
+            "usable": 59
+          },
+          {
+            "pixels": 64,
+            "usable": 64
+          },
+          {
+            "pixels": 75,
+            "usable": 75
+          },
+          {
+            "pixels": 85,
+            "usable": 85
+          },
+          {
+            "pixels": 95,
+            "usable": 95
+          }
+        ]
+      },
+      {
+        "filename": "jw05224004001_03101_00004_nrs2_cal.fits",
+        "original_sha256": "0180117830dcad9a562c3c462b1dd7d08ba8ac2683c95a06d1b5c5855b0967e0",
+        "original_bytes": 51575040,
+        "derivative_sha256": "0af40a3e786e8aa88225ad18e75ef5d2d0eb22c8a19365f3cbc1c1a28fe7df9b",
+        "full_slit_uv_windows": [
+          {
+            "pixels": 59,
+            "usable": 59
+          },
+          {
+            "pixels": 64,
+            "usable": 64
+          },
+          {
+            "pixels": 75,
+            "usable": 75
+          },
+          {
+            "pixels": 85,
+            "usable": 85
+          },
+          {
+            "pixels": 95,
+            "usable": 95
+          }
+        ]
+      },
+      {
+        "filename": "jw05224004001_05101_00001_nrs2_cal.fits",
+        "original_sha256": "c4f576ff15f6d58b4fccf6ab4f5f97e82bb3472ebab6602d8f99a8b804d97695",
+        "original_bytes": 51560640,
+        "derivative_sha256": "500a0fde650ddefe3c7fc3343da71248c7802b2a2c93ff04be34b8b16d454b8b",
+        "full_slit_uv_windows": [
+          {
+            "pixels": 59,
+            "usable": 59
+          },
+          {
+            "pixels": 64,
+            "usable": 64
+          },
+          {
+            "pixels": 75,
+            "usable": 75
+          },
+          {
+            "pixels": 85,
+            "usable": 85
+          },
+          {
+            "pixels": 95,
+            "usable": 95
+          }
+        ]
+      },
+      {
+        "filename": "jw05224004001_05101_00002_nrs2_cal.fits",
+        "original_sha256": "0078c56d4d50a720b11e5ccb3be84705104c9ae06a3ecd7d8c29f5ffa678f3c5",
+        "original_bytes": 51575040,
+        "derivative_sha256": "05f1b9836677944359a27a8c4b30acc4169d41f34b8c3f9c08fd167f79b10a8c",
+        "full_slit_uv_windows": [
+          {
+            "pixels": 59,
+            "usable": 59
+          },
+          {
+            "pixels": 64,
+            "usable": 64
+          },
+          {
+            "pixels": 75,
+            "usable": 75
+          },
+          {
+            "pixels": 85,
+            "usable": 85
+          },
+          {
+            "pixels": 95,
+            "usable": 95
+          }
+        ]
+      },
+      {
+        "filename": "jw05224004001_05101_00003_nrs2_cal.fits",
+        "original_sha256": "b18c997fea94810da565d1044d02a6615862a8f1d9946e47506f9d60b2bccace",
+        "original_bytes": 51575040,
+        "derivative_sha256": "fc44518d9cdbefcf0ecaa0a33131624942b187e852b29b5e0fb827e8963f0fca",
+        "full_slit_uv_windows": [
+          {
+            "pixels": 59,
+            "usable": 59
+          },
+          {
+            "pixels": 64,
+            "usable": 64
+          },
+          {
+            "pixels": 75,
+            "usable": 75
+          },
+          {
+            "pixels": 85,
+            "usable": 85
+          },
+          {
+            "pixels": 95,
+            "usable": 95
+          }
+        ]
+      },
+      {
+        "filename": "jw05224004001_07101_00001_nrs2_cal.fits",
+        "original_sha256": "43faf1fe96cff76eab3cc3e33c900864fa42c5bf053a12ddf3107cc191a4c5ea",
+        "original_bytes": 51560640,
+        "derivative_sha256": "66fa7c1f3a8622b9b860e41d50440d114e9819616f75279ac46b35d207768427",
+        "full_slit_uv_windows": [
+          {
+            "pixels": 59,
+            "usable": 59
+          },
+          {
+            "pixels": 64,
+            "usable": 64
+          },
+          {
+            "pixels": 75,
+            "usable": 75
+          },
+          {
+            "pixels": 85,
+            "usable": 85
+          },
+          {
+            "pixels": 95,
+            "usable": 95
+          }
+        ]
+      },
+      {
+        "filename": "jw05224004001_07101_00002_nrs2_cal.fits",
+        "original_sha256": "5b73760be206eef6891f37b33c3e8d973eef1522ece3b1a90ef4cc6506950a75",
+        "original_bytes": 51575040,
+        "derivative_sha256": "3636d867708a6ef6883b47d91844154c55ca2848cadaa34d471f3d9aa0cdad49",
+        "full_slit_uv_windows": [
+          {
+            "pixels": 59,
+            "usable": 59
+          },
+          {
+            "pixels": 64,
+            "usable": 64
+          },
+          {
+            "pixels": 75,
+            "usable": 75
+          },
+          {
+            "pixels": 85,
+            "usable": 85
+          },
+          {
+            "pixels": 95,
+            "usable": 95
+          }
+        ]
+      },
+      {
+        "filename": "jw05224004001_07101_00003_nrs2_cal.fits",
+        "original_sha256": "b7b3af35080d1ddafcb1184f07733e56c278f936be0fd662643dde46be8b343c",
+        "original_bytes": 51575040,
+        "derivative_sha256": "c348d11b46624d4fa258f98b8196e74ac88c337557fbbcce942b2dd5a52d83ed",
+        "full_slit_uv_windows": [
+          {
+            "pixels": 59,
+            "usable": 59
+          },
+          {
+            "pixels": 64,
+            "usable": 64
+          },
+          {
+            "pixels": 75,
+            "usable": 75
+          },
+          {
+            "pixels": 85,
+            "usable": 85
+          },
+          {
+            "pixels": 95,
+            "usable": 95
+          }
+        ]
+      }
+    ]
+  },
+  "scope": "Fresh GOODS pixel rerun; saved-record SMACS replays; actual thirteen image and nine native hash audits; exact saved noise/chemistry sensitivity. Numerical reproduction does not establish calibration, identities or abundances."
+}
