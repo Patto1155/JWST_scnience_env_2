@@ -72,9 +72,17 @@ def verify_image(path: str | Path, product: dict[str, Any]) -> dict[str, Any]:
         }
 
 
-def provision(manifest: dict[str, Any], output_dir: str | Path) -> dict[str, Any]:
+def provision(
+    manifest: dict[str, Any],
+    output_dir: str | Path,
+    *,
+    previous_dir: str | Path | None = None,
+    runtime_manifest_name: str = "images_manifest.json",
+) -> dict[str, Any]:
     """Acquire exactly the named products, reuse only checksum-verified inputs."""
     products = manifest["images"]
+    if Path(runtime_manifest_name).name != runtime_manifest_name:
+        raise ValueError("runtime manifest filename must be a basename")
     total = sum(int(p["expected_bytes"]) for p in products)
     if total > MAX_TOTAL_BYTES:
         raise ValueError("selected original-image acquisition exceeds total byte ceiling")
@@ -87,6 +95,10 @@ def provision(manifest: dict[str, Any], output_dir: str | Path) -> dict[str, Any
         if name != Path(name).name:
             raise ValueError("product filename must be a basename")
         destination = output / name
+        if not destination.exists() and previous_dir is not None:
+            previous = Path(previous_dir) / name
+            if previous.exists():
+                destination = previous
         if not destination.exists():
             fetch_product(product, destination, max_bytes=MAX_PRODUCT_BYTES, timeout=45)
         summary = verify_image(destination, product)
@@ -105,7 +117,7 @@ def provision(manifest: dict[str, Any], output_dir: str | Path) -> dict[str, Any
         ],
     }
     output.mkdir(parents=True, exist_ok=True)
-    (output / "images_manifest.json").write_text(json.dumps(payload, indent=2) + "\n")
+    (output / runtime_manifest_name).write_text(json.dumps(payload, indent=2) + "\n")
     return payload
 
 
@@ -150,12 +162,32 @@ def main() -> int:
     parser.add_argument("manifest", type=Path)
     parser.add_argument("--output-dir", type=Path, default=Path("data/original_round2"))
     parser.add_argument(
+        "--previous-dir",
+        type=Path,
+        help="Reuse verified products from the previous round without copying",
+    )
+    parser.add_argument(
+        "--runtime-manifest-name",
+        default="images_manifest.json",
+        help="Preserve prior-round manifests by choosing a new basename",
+    )
+    parser.add_argument(
         "--register",
         action="store_true",
         help="Register verified originals in the configured database",
     )
     args = parser.parse_args()
-    payload = provision(json.loads(args.manifest.read_text()), args.output_dir)
+    manifest = json.loads(args.manifest.read_text())
+    if manifest.get("parent_manifest"):
+        parent = args.manifest.parent / manifest["parent_manifest"]
+        if file_sha256(parent) != manifest.get("parent_manifest_sha256"):
+            raise ValueError("parent acquisition manifest checksum mismatch")
+    payload = provision(
+        manifest,
+        args.output_dir,
+        previous_dir=args.previous_dir,
+        runtime_manifest_name=args.runtime_manifest_name,
+    )
     if args.register:
         payload["registered_new_datasets"] = register_verified_images(payload)
     print(json.dumps(payload, indent=2))

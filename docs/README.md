@@ -216,3 +216,8 @@ MAST acquisition, checksum/SCI/ERR/WHT readiness checks, optional catalog
 registration, external released-source centroid validation and repeat-pair
 reproduction. These are trusted coding/analysis CLIs, not new arbitrary-code
 capabilities exposed to research agents.
+
+The next merged-baseline experiment is documented in
+[ORIGINAL_REPEAT_TEST.md](ORIGINAL_REPEAT_TEST.md): additional original dithers,
+matched-quadrant SMACS acquisition, covered same-filter persistence tests and
+explicit additional conditional proposals.
