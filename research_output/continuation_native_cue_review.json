@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "inputs_sha256": {
+    "model_input": "8c1089f4d7407c57558e14b0f26028379ca14d555a94f873834c767f3cc5abfb",
+    "spectrum": "88e3cdbf5b7759eaad84dc21ead0974c38f392292d71ce605fa0f5b5951637ec",
+    "comparison": "0a52b097a61f0667d13b375b7b608100ee8ef911cf8d0ea8b4030522e0124cde"
+  },
+  "mode": "cue",
+  "independent_NNLS_audit": [
+    {
+      "family": "nominal_shared_formal",
+      "max_best_chi2_error": 1.214306433183765e-16,
+      "independent_NNLS_grid_threshold_count": 124,
+      "models": 2025,
+      "NIV_included": false
+    },
+    {
+      "family": "point_shared_formal",
+      "max_best_chi2_error": 5.551115123125783e-16,
+      "independent_NNLS_grid_threshold_count": 145,
+      "models": 2025,
+      "NIV_included": false
+    },
+    {
+      "family": "nominal_empirical_offtrace_transport",
+      "max_best_chi2_error": 3.469446951953614e-17,
+      "independent_NNLS_grid_threshold_count": 583,
+      "models": 2025,
+      "NIV_included": false
+    },
+    {
+      "family": "point_empirical_offtrace_transport",
+      "max_best_chi2_error": 1.457167719820518e-16,
+      "independent_NNLS_grid_threshold_count": 672,
+      "models": 2025,
+      "NIV_included": false
+    }
+  ]
+}

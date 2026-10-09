@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "inputs_sha256": {
+    "baseline": "88e3cdbf5b7759eaad84dc21ead0974c38f392292d71ce605fa0f5b5951637ec",
+    "comparison": "51619a8f1029c7898eb33dbfbf21d9f1ccb4a7952e8fcd17aca08f220a8e98e4"
+  },
+  "audit": {
+    "actual_groups": 3,
+    "actual_selected_columns": 70,
+    "reconciled_selected_pixels": 43,
+    "source_latent_spatial_block_max_difference_over_scale": 6.215396319095751e-12,
+    "scope": "alternate covariance construction; extraction and separable-kernel assumptions reused"
+  }
+}
