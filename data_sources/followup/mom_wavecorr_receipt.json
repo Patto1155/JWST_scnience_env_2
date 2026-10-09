@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "kind": "pinned_native_wavecorr_reference",
+  "retrieved_utc": "2026-10-09",
+  "url": "https://jwst-crds.stsci.edu/unchecked_get/references/jwst/jwst_nirspec_wavecorr_0004.asdf",
+  "filename": "jwst_nirspec_wavecorr_0004.asdf",
+  "bytes": 16453,
+  "sha256": "869d4279137b1c7dea5e8bb4b4980d72fd0aa8423c87814050bfa710cd2b58f3",
+  "cap_bytes": 26214400,
+  "selection": "Exact R_WAVCOR in nine calibration2.0.1/jwst_1535.pmap CAL headers, not a current CRDS selection",
+  "internal_filename": "jwst_nirspec_wavecorr_0002.asdf",
+  "pedigree": "DUMMY",
+  "description": "wavelength zero-point reference file for MOS computed using a simple toy model",
+  "algorithm_source": {
+    "url": "https://raw.githubusercontent.com/spacetelescope/jwst/2.0.1/jwst/wavecorr/wavecorr.py",
+    "bytes": 9668,
+    "sha256": "cf976176a8df2b8f37d7baa8ab9ae9e702fc628e012d9982aed5c056d9c2d323"
+  },
+  "software_wheels": [
+    {
+      "filename": "asdf-4.2.0-py3-none-any.whl",
+      "package": "asdf",
+      "version": "4.2.0",
+      "bytes": 962184,
+      "sha256": "233247c3e7e33c86b7444be0453890ec3b99ef45bbf36023fb98ce51aba72d95",
+      "source": "https://pypi.org/project/asdf/4.2.0/#files",
+      "used": false
+    },
+    {
+      "filename": "asdf-5.2.0-py3-none-any.whl",
+      "package": "asdf",
+      "version": "5.2.0",
+      "bytes": 967096,
+      "sha256": "1ab17858150b502445bc2c8878f6b3f355b5932923073d89585d4e16edcaf3a1",
+      "source": "https://pypi.org/project/asdf/5.2.0/#files",
+      "used": true
+    },
+    {
+      "filename": "asdf_astropy-0.11.0-py3-none-any.whl",
+      "package": "asdf-astropy",
+      "version": "0.11.0",
+      "bytes": 110852,
+      "sha256": "10ff554382bb10b1bc931159d2c91e4399487c27afc0051c90a062112e9f0b7f",
+      "source": "https://pypi.org/project/asdf-astropy/0.11.0/#files",
+      "used": true
+    },
+    {
+      "filename": "asdf_coordinates_schemas-0.5.1-py3-none-any.whl",
+      "package": "asdf_coordinates_schemas",
+      "version": "0.5.1",
+      "bytes": 49313,
+      "sha256": "6c80cf928fd2de7cbc7c1dd003809fca2678c90c8843586f5670f0cf99bb48a7",
+      "source": "https://pypi.org/project/asdf_coordinates_schemas/0.5.1/#files",
+      "used": true
+    },
+    {
+      "filename": "asdf_standard-1.5.0-py3-none-any.whl",
+      "package": "asdf_standard",
+      "version": "1.5.0",
+      "bytes": 105769,
+      "sha256": "487d192c5eb1335a62c07a88d82503e1fe57911c0876ee183cf572d385f97213",
+      "source": "https://pypi.org/project/asdf_standard/1.5.0/#files",
+      "used": true
+    },
+    {
+      "filename": "asdf_transform_schemas-0.6.0-py3-none-any.whl",
+      "package": "asdf_transform_schemas",
+      "version": "0.6.0",
+      "bytes": 350338,
+      "sha256": "f63a5cc90c421209fd8e3b064c9cca8372220aa1c932676cad558942dc6153b0",
+      "source": "https://pypi.org/project/asdf_transform_schemas/0.6.0/#files",
+      "used": true
+    },
+    {
+      "filename": "asdf_wcs_schemas-0.5.0-py3-none-any.whl",
+      "package": "asdf_wcs_schemas",
+      "version": "0.5.0",
+      "bytes": 59336,
+      "sha256": "7050c7dfd252f2aa9c32e4fe3711c1823336d923f631816f8f3e9f27c95491f7",
+      "source": "https://pypi.org/project/asdf_wcs_schemas/0.5.0/#files",
+      "used": true
+    },
+    {
+      "filename": "attrs-26.1.0-py3-none-any.whl",
+      "package": "attrs",
+      "version": "26.1.0",
+      "bytes": 67548,
+      "sha256": "c647aa4a12dfbad9333ca4e71fe62ddc36f4e63b2d260a37a8b83d2f043ac309",
+      "source": "https://pypi.org/project/attrs/26.1.0/#files",
+      "used": true
+    },
+    {
+      "filename": "gwcs-1.0.3-py3-none-any.whl",
+      "package": "gwcs",
+      "version": "1.0.3",
+      "bytes": 364631,
+      "sha256": "c7bf303695a68e42719e661c91aaf802c46bf62c20a5148522ff3f969778b598",
+      "source": "https://pypi.org/project/gwcs/1.0.3/#files",
+      "used": true
+    },
+    {
+      "filename": "jmespath-1.1.0-py3-none-any.whl",
+      "package": "jmespath",
+      "version": "1.1.0",
+      "bytes": 20419,
+      "sha256": "a5663118de4908c91729bea0acadca56526eb2698e83de10cd116ae0f4e97c64",
+      "source": "https://pypi.org/project/jmespath/1.1.0/#files",
+      "used": true
+    },
+    {
+      "filename": "semantic_version-2.10.0-py2.py3-none-any.whl",
+      "package": "semantic-version",
+      "version": "2.10.0",
+      "bytes": 15552,
+      "sha256": "de78a3b8e0feda74cabc54aab2da702113e33ac9d9eb9d2389bcf1f58b7d9177",
+      "source": "https://pypi.org/project/semantic-version/2.10.0/#files",
+      "used": true
+    },
+    {
+      "filename": "stdatamodels-5.0.2-py3-none-any.whl",
+      "package": "stdatamodels",
+      "version": "5.0.2",
+      "bytes": 326828,
+      "sha256": "67f764fd4a3d90cea79b908f65532143f79c399eadeb18c7d081a8348a389690",
+      "source": "https://pypi.org/project/stdatamodels/5.0.2/#files",
+      "used": true
+    }
+  ],
+  "note": "Software downloads separately accounted below; no raw CAL acquisition repeated.",
+  "software_wheel_total_bytes": 3399866,
+  "bounded_new_payload_bytes": 3425987,
+  "bounded_new_payload_plus_conservative_metadata_allowance_bytes": 4474563,
+  "experiment_new_unique_scientific_bytes": 16453,
+  "continuation_rollup_unique_scientific_bytes": 228790074,
+  "continuation_rollup_scope": "Current autonomous continuation: SMACS120254400 + deep/atmosphere47882944 + atomic/Cue60636277 + this wavecorr16453. Parent ledger; not all-time repository cumulative input.",
+  "historical_native_batch_reported_bytes": 470088034,
+  "historical_native_batch_scope": "Inherited docs/MOM_NATIVE_BATCH.md historical native+literature bundle, including nineCAL464135040 bytes; not this continuation rollup.",
+  "native_cache_recovery_repeated_bytes": 464135040,
+  "native_cache_recovery_scope": "Same previously pinned nineCAL products recovered after older scratch cache disappeared; separate repeated-transfer ledger."
+}
