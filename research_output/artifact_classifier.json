@@ -11,12 +11,14 @@
     {
       "held_out_visit": "injected",
       "n_test": 1320,
-      "roc_auc": NaN,
+      "roc_auc": null,
+      "roc_auc_status": "not_estimable",
+      "roc_auc_reason": "requires both classes",
       "at_threshold_0.5": {
         "threshold": 0.5,
         "n_flagged": 327,
         "artifact_purity": 0.0,
-        "artifact_completeness": NaN,
+        "artifact_completeness": null,
         "real_sources_lost": 327,
         "real_source_loss_fraction": 0.24772727272727274
       }
@@ -25,6 +27,8 @@
       "held_out_visit": "jw01180025001_",
       "n_test": 1024,
       "roc_auc": 0.9785812390957348,
+      "roc_auc_status": "estimable",
+      "roc_auc_reason": null,
       "at_threshold_0.5": {
         "threshold": 0.5,
         "n_flagged": 93,
@@ -38,6 +42,8 @@
       "held_out_visit": "jw01180026001_",
       "n_test": 4089,
       "roc_auc": 0.9646679475180063,
+      "roc_auc_status": "estimable",
+      "roc_auc_reason": null,
       "at_threshold_0.5": {
         "threshold": 0.5,
         "n_flagged": 379,
@@ -79,6 +85,8 @@
   ],
   "cross_validation": {
     "roc_auc": 0.9714651615623257,
+    "roc_auc_status": "estimable",
+    "roc_auc_reason": null,
     "operating_points": [
       {
         "threshold": 0.5,
@@ -122,6 +130,8 @@
       ],
       "tested_on": "F277W",
       "roc_auc": 0.9637690454811078,
+      "roc_auc_status": "estimable",
+      "roc_auc_reason": null,
       "at_threshold_0.9": {
         "threshold": 0.9,
         "n_flagged": 90,
@@ -138,6 +148,8 @@
       ],
       "tested_on": "F356W",
       "roc_auc": 0.9694464118959814,
+      "roc_auc_status": "estimable",
+      "roc_auc_reason": null,
       "at_threshold_0.9": {
         "threshold": 0.9,
         "n_flagged": 205,
@@ -153,12 +165,14 @@
         "F356W"
       ],
       "tested_on": "F444W",
-      "roc_auc": NaN,
+      "roc_auc": null,
+      "roc_auc_status": "not_estimable",
+      "roc_auc_reason": "requires both classes",
       "at_threshold_0.9": {
         "threshold": 0.9,
         "n_flagged": 0,
-        "artifact_purity": NaN,
-        "artifact_completeness": NaN,
+        "artifact_purity": null,
+        "artifact_completeness": null,
         "real_sources_lost": 0,
         "real_source_loss_fraction": 0.0
       }

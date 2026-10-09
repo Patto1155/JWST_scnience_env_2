@@ -27,7 +27,7 @@ available for applying the model to F444W, where no repeat pair exists.
 | --- | --- | ---: | ---: | ---: |
 | F356W, F444W | F277W | 0.964 | 0.944 | 0.467 |
 | F277W, F444W | F356W | 0.969 | 0.922 | 0.353 |
-| F277W, F356W | F444W | nan | nan | nan |
+| F277W, F356W | F444W | not estimable | not estimable | not estimable |
 
 ## Coefficients
 
@@ -59,6 +59,12 @@ single-exposure dropout searching viable.
 
 ## Limits
 
+- Sky-group folds and held-out visits are internal diagnostic checks.
+  Shared fields or injection generators/PSFs are not independent external
+  validation. Legacy training rows lack complete provenance; use the gate
+  in `validation_metrics.py` before claiming independent performance.
+- ROC AUC requires both classes. Real-only synthetic-source tests can
+  estimate rejection, but their AUC is explicitly not estimable.
 - Fitted on NIRCam long-wave imaging only. `psf_ratio` normalizes by the
   diffraction-limited FWHM so the model transfers across wavelength, but
   short-wave detectors sample the PSF differently and should be validated
