@@ -1,0 +1,70 @@
+{
+  "schema_version": "spectrum_reference_v1",
+  "input_filename": "mom_z14_dja_v4.spec.fits",
+  "sha256": "42d95d348ebb55ca37eb31393b4603628ac13a4bca1f4f7f0ffba7b32d3125b1",
+  "hash_verified_against_receipt": true,
+  "metadata": {
+    "GRATING": "PRISM",
+    "FILTER": "CLEAR",
+    "PROGRAM": "05224"
+  },
+  "source_position": {
+    "ra_deg": 150.0933255,
+    "dec_deg": 2.2731627
+  },
+  "source_position_header_keys": [
+    "SRCRA",
+    "SRCDEC"
+  ],
+  "extension_names": [
+    "PRIMARY",
+    "SPEC1D",
+    "SCI",
+    "WHT",
+    "PROFILE",
+    "PROF1D",
+    "BACKGROUND",
+    "SLITS"
+  ],
+  "original_column_units": {
+    "wave": "um",
+    "flux": "uJy",
+    "err": "uJy"
+  },
+  "diagnostic_units": {
+    "wavelength": "um",
+    "flux": "uJy",
+    "error": "uJy"
+  },
+  "samples": {
+    "total": 473,
+    "valid": 467,
+    "excluded": 6,
+    "invalid_wavelength": 0,
+    "nonfinite_flux": 6,
+    "nonfinite_or_nonpositive_error": 6,
+    "note": "Invalid-reason counts can overlap; excluded is the union."
+  },
+  "wavelength_range_um": [
+    0.549125977329285,
+    5.495018544530257
+  ],
+  "valid_wavelengths_strictly_increasing": true,
+  "signed_bin_snr": {
+    "median": 1.0249245247266985,
+    "minimum": -4.299758489436735,
+    "maximum": 6.744101555607423,
+    "bins_ge_3": 55,
+    "bins_le_minus_3": 4
+  },
+  "diagonal_zero_flux_statistic": {
+    "sum_squared_signed_bin_snr": 1704.0524858078502,
+    "interpretation": "Descriptive only; no p-value or independent detection significance."
+  },
+  "limitations": [
+    "Uses stored flux/error; no additional path-loss or slit-loss correction is applied.",
+    "Bin covariance, extraction systematics and continuum uncertainty are not modelled.",
+    "Threshold counts do not identify lines or establish independent detections.",
+    "No redshift or chemical-abundance inference is performed."
+  ]
+}
