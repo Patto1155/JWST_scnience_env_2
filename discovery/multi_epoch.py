@@ -1,8 +1,8 @@
 """Repeat-exposure vetting for JWST candidates.
 
-A source that appears in one exposure and is absent from an independent
-exposure of the same sky in the same filter is not an astronomical source. It is
-a cosmic ray, a snowball, or another detector artifact. Single-exposure Stage-2b
+A source detected in only one independent exposure requires follow-up: detector
+artifacts, unequal depth, genuine variability, and moving objects can all
+produce apparent non-persistence. Single-exposure Stage-2b
 products carry no cross-dither rejection, so this check is the difference
 between a candidate catalog and a list of transient detector events.
 
@@ -17,9 +17,9 @@ The module does three things:
    ``research_output/multi_epoch_veto.json``.
 
 The time baseline matters for interpretation and is reported, not assumed. A
-few hours separates exposures within a visit, which is ample to reject cosmic
-rays and far too short for astrophysical variability. Only a baseline of weeks
-or more supports a transient or microlensing claim.
+few hours can identify suspect detector events, but baseline alone never proves
+an instrumental origin or excludes genuine variability. Depth and calibration
+must be accounted for before making a transient or microlensing claim.
 """
 
 from __future__ import annotations
@@ -42,11 +42,12 @@ from core_api.models.datasets import Dataset
 from tools.jwst.fits_loader import load_fits_bundle
 from tools.jwst.footprints import (
     MIN_USEFUL_OVERLAP,
-    modules_are_disjoint,
     overlap_fraction,
     sky_to_pixel,
 )
 from tools.jwst.photometry import extract_photometry
+from tools.jwst.dropout import physical_flux
+from astropy.wcs.utils import proj_plane_pixel_scales
 
 RESEARCH_DIR = Path("research_output")
 DEFAULT_CANDIDATES = RESEARCH_DIR / "highz_candidates.json"
@@ -101,12 +102,15 @@ def _exposure_key(dataset_name: str) -> str:
 
 def _observation_time(bundle: Dict[str, Any]) -> Optional[float]:
     """Return the exposure mid-time in MJD from the FITS header, if present."""
-    header = bundle.get("header") or {}
+    header = dict(bundle.get("primary_header") or {})
+    header.update(dict(bundle.get("header") or {}))
     for key in ("EXPMID", "EXPSTART", "MJD-BEG", "MJD-AVG"):
         value = header.get(key)
         if value is not None:
             try:
-                return float(value)
+                result = float(value)
+                if np.isfinite(result):
+                    return result
             except (TypeError, ValueError):
                 continue
     return None
@@ -137,9 +141,7 @@ def find_repeat_pairs(datasets: List[Dataset]) -> List[Dict[str, Any]]:
         if len(names) < 2:
             continue
         for index, name_a in enumerate(names):
-            for name_b in names[index + 1:]:
-                if modules_are_disjoint(name_a, name_b):
-                    continue
+            for name_b in names[index + 1 :]:
                 try:
                     bundle_a = load_fits_bundle(name_a)
                     bundle_b = load_fits_bundle(name_b)
@@ -193,6 +195,7 @@ def veto_candidate(
         return None
 
     measurements: Dict[str, Dict[str, Any]] = {}
+    angular_scale = None
     for role, dataset_name in (("epoch_a", pair["epoch_a"]), ("epoch_b", pair["epoch_b"])):
         try:
             bundle = load_fits_bundle(dataset_name)
@@ -201,25 +204,38 @@ def veto_candidate(
         position = sky_to_pixel(bundle, float(ra), float(dec))
         if position is None:
             return None
-        x, y = position
+        if angular_scale is None:
+            wcs = bundle.get("wcs")
+            if wcs is None or not wcs.has_celestial:
+                return None
+            angular_scale = float(np.sqrt(np.prod(proj_plane_pixel_scales(wcs.celestial))) * 3600)
+            if not np.isfinite(angular_scale) or angular_scale <= 0:
+                return None
         photometry = extract_photometry(
             image_data=bundle,
-            x=x,
-            y=y,
-            aperture_radius=APERTURE_RADIUS,
-            background_annulus_inner_radius=BACKGROUND_INNER_RADIUS,
-            background_annulus_outer_radius=BACKGROUND_OUTER_RADIUS,
+            ra_deg=float(ra),
+            dec_deg=float(dec),
+            aperture_radius_arcsec=APERTURE_RADIUS * angular_scale,
+            background_annulus_inner_radius_arcsec=BACKGROUND_INNER_RADIUS * angular_scale,
+            background_annulus_outer_radius_arcsec=BACKGROUND_OUTER_RADIUS * angular_scale,
         )
-        if float(photometry.get("coverage_fraction") or 0.0) < 0.9:
+        if (
+            photometry.get("measurement_status") != "measured"
+            or photometry.get("background_status") != "measured"
+        ):
+            return None
+        flux = physical_flux(photometry)
+        error = physical_flux(photometry, "flux_error_jy")
+        if flux is None or error is None or error <= 0:
             return None
         measurements[role] = photometry
 
     snr_a = measurements["epoch_a"].get("snr")
     snr_b = measurements["epoch_b"].get("snr")
-    flux_a = float(measurements["epoch_a"].get("background_subtracted_flux") or 0.0)
-    flux_b = float(measurements["epoch_b"].get("background_subtracted_flux") or 0.0)
-    error_a = float(measurements["epoch_a"].get("flux_error") or 0.0)
-    error_b = float(measurements["epoch_b"].get("flux_error") or 0.0)
+    flux_a = float(measurements["epoch_a"]["background_subtracted_flux_jy"])
+    flux_b = float(measurements["epoch_b"]["background_subtracted_flux_jy"])
+    error_a = float(measurements["epoch_a"]["flux_error_jy"])
+    error_b = float(measurements["epoch_b"]["flux_error_jy"])
 
     detected_a = snr_a is not None and float(snr_a) >= PERSISTENCE_SNR
     detected_b = snr_b is not None and float(snr_b) >= PERSISTENCE_SNR
@@ -232,7 +248,11 @@ def veto_candidate(
     if detected_a and detected_b:
         verdict = "persistent"
     elif detected_a or detected_b:
-        verdict = "single_epoch_only"
+        verdict = (
+            "single_epoch_only"
+            if difference_significance is not None and difference_significance >= PERSISTENCE_SNR
+            else "inconclusive_depth"
+        )
     else:
         verdict = "undetected_in_both"
 
@@ -243,18 +263,18 @@ def veto_candidate(
         "epoch_a": pair["epoch_a"],
         "epoch_b": pair["epoch_b"],
         "baseline_hours": pair.get("baseline_hours"),
+        "flux_unit": "Jy",
+        "aperture_radius_arcsec": APERTURE_RADIUS * angular_scale,
         "flux_epoch_a": flux_a,
         "flux_epoch_b": flux_b,
         "snr_epoch_a": snr_a,
         "snr_epoch_b": snr_b,
         "difference_significance": difference_significance,
         "verdict": verdict,
-        # A single-epoch detection over a few-hour baseline is a detector event,
-        # not a transient. The baseline is what separates the two readings.
+        # A time baseline alone cannot distinguish artifacts from astrophysics.
         "interpretation": (
-            "likely_detector_artifact"
-            if verdict == "single_epoch_only"
-            and pair.get("supports") == "artifact_rejection_only"
+            "requires_artifact_depth_and_variability_checks"
+            if verdict == "single_epoch_only" and pair.get("supports") == "artifact_rejection_only"
             else verdict
         ),
     }
