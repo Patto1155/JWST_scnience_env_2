@@ -1,0 +1,12 @@
+{
+  "requested_url": "https://jades.herts.ac.uk/DR4/Readme_DR4_spectra.md",
+  "resolved_url": "https://jades.herts.ac.uk/DR4/Readme_DR4_spectra.md",
+  "retrieved_utc": "2026-10-09T06:38:50.506414+00:00",
+  "bytes": 5558,
+  "sha256": "cc8d8f8173ceb8dfa1c0c0c54b8fbed448523cebf48753c5d9cfa476a5b360f2",
+  "content_type": "text/markdown",
+  "etag": "\"15b6-64006b088ca00\"",
+  "last_modified": "Tue, 30 Sep 2025 15:48:56 GMT",
+  "product_id": "spectra-readme",
+  "max_bytes": 5242880
+}

@@ -1,0 +1,12 @@
+{
+  "requested_url": "https://jades.herts.ac.uk/DR4/Readme_DR4_catalogues.md",
+  "resolved_url": "https://jades.herts.ac.uk/DR4/Readme_DR4_catalogues.md",
+  "retrieved_utc": "2026-10-09T06:38:34.953722+00:00",
+  "bytes": 12796,
+  "sha256": "b425bb745bf92f6ae19cafb4df28ca5730c56ac5965b15d9ac0b6a63d8c11b28",
+  "content_type": "text/markdown",
+  "etag": "\"31fc-640065fe3a5c0\"",
+  "last_modified": "Tue, 30 Sep 2025 15:26:23 GMT",
+  "product_id": "catalog-readme",
+  "max_bytes": 5242880
+}

@@ -1,0 +1,58 @@
+{
+  "source_url": "https://jades.herts.ac.uk/DR4/Combined_DR4_external_v1.2.1.fits",
+  "source_sha256": "4b4e7fd4306208ee801406c7ed73fdab895a2e67184af7f639a91e5f9c8ab7d4",
+  "source_bytes": 94124160,
+  "source_version": "JADES DR4 Combined_DR4_external_v1.2.1.fits",
+  "source_receipt": {
+    "requested_url": "https://jades.herts.ac.uk/DR4/Combined_DR4_external_v1.2.1.fits",
+    "resolved_url": "https://jades.herts.ac.uk/DR4/Combined_DR4_external_v1.2.1.fits",
+    "retrieved_utc": "2026-10-09T06:40:17.584831+00:00",
+    "bytes": 94124160,
+    "sha256": "4b4e7fd4306208ee801406c7ed73fdab895a2e67184af7f639a91e5f9c8ab7d4",
+    "content_type": "image/fits",
+    "etag": "\"59c3880-64019e6c08280\"",
+    "last_modified": "Wed, 01 Oct 2025 14:44:10 GMT",
+    "product_id": "full-catalog",
+    "max_bytes": 110000000
+  },
+  "transform": "extract_jades_references: every Obs_info row; selected columns",
+  "columns": [
+    "Unique_ID",
+    "PID",
+    "TIER",
+    "NIRSpec_ID",
+    "NIRCam_DR5_ID",
+    "NIRCam_DR3_ID",
+    "ObsDate",
+    "RA_TARG",
+    "Dec_TARG",
+    "Field",
+    "z_phot",
+    "z_Spec",
+    "z_Spec_flag",
+    "z_R1000",
+    "z_R1000n",
+    "z_PRISM",
+    "MUV"
+  ],
+  "summary": {
+    "rows": 5190,
+    "quality_flags": {
+      "E": 1400,
+      "A": 2651,
+      "D": 493,
+      "B": 207,
+      "C": 439
+    },
+    "robust_ab_z_ge_6": 243,
+    "robust_ab_z_lt_3": 1461
+  },
+  "bytes": 850160,
+  "sha256": "4b588479eb9ebbfd590dd6ea0ea85949f80952e085ea94e874a191d558f4accf",
+  "derived_utc": "2026-10-09T06:42:22.690196+00:00",
+  "caveats": [
+    "Rows are observations, not unique astrophysical objects.",
+    "Only A/B are highly robust; C secure, D tentative, E no redshift.",
+    "Preserve null sentinels; match tier+ID or coordinates."
+  ]
+}

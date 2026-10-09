@@ -1,0 +1,244 @@
+{
+  "schema_version": 1,
+  "verified_utc": "2026-10-09",
+  "sources": [
+    {
+      "id": "jades-dr5-psf",
+      "title": "JADES GOODS-S subregion modeled PSFs",
+      "version": "v5.0 / DR5",
+      "canonical_url": "https://slate.ucsc.edu/~brant/jades-dr5/GOODS-S/hlsp/images/submosaics/",
+      "access": "Direct FITS links in team directory",
+      "science_use": "Independent PSF generator for injection morphology and held-out filters",
+      "caveats": "Model PSFs are not independent real point-source truth. Match channel, pixel scale, normalization and drizzle to science image.",
+      "terms": "Not stated on inspected release page; cite the source and verify redistribution terms.",
+      "papers": [
+        "https://arxiv.org/abs/2601.15954"
+      ],
+      "products": [
+        {
+          "id": "f200w",
+          "url": "https://slate.ucsc.edu/~brant/jades-dr5/GOODS-S/hlsp/images/submosaics/hlsp_jades_jwst_nircam_jw011800-deep_f200w_v5.0_mpsf.fits",
+          "expected_bytes": null,
+          "kind": "modeled_psf",
+          "evidence_url": "https://slate.ucsc.edu/~brant/jades-dr5/GOODS-S/hlsp/images/submosaics/"
+        },
+        {
+          "id": "f277wa",
+          "url": "https://slate.ucsc.edu/~brant/jades-dr5/GOODS-S/hlsp/images/submosaics/hlsp_jades_jwst_nircam_jw011800-deep_f277wa_v5.0_mpsf.fits",
+          "expected_bytes": 1800000,
+          "kind": "modeled_psf",
+          "evidence_url": "https://slate.ucsc.edu/~brant/jades-dr5/GOODS-S/hlsp/images/submosaics/",
+          "sha256": "c90117d6f3261a00a4e6ac1821aca30cc2c29917697fcea90db76fa255f8ec3b",
+          "size_evidence": "HTTP download verified 2026-10-09"
+        },
+        {
+          "id": "f356wa",
+          "url": "https://slate.ucsc.edu/~brant/jades-dr5/GOODS-S/hlsp/images/submosaics/hlsp_jades_jwst_nircam_jw011800-deep_f356wa_v5.0_mpsf.fits",
+          "expected_bytes": 1800000,
+          "kind": "modeled_psf",
+          "evidence_url": "https://slate.ucsc.edu/~brant/jades-dr5/GOODS-S/hlsp/images/submosaics/",
+          "sha256": "7bd8a4854c3b587be258022d05f72ac29aab393d98dff64bc2f69ed7dfbf7203",
+          "size_evidence": "HTTP download verified 2026-10-09"
+        },
+        {
+          "id": "f444wa",
+          "url": "https://slate.ucsc.edu/~brant/jades-dr5/GOODS-S/hlsp/images/submosaics/hlsp_jades_jwst_nircam_jw011800-deep_f444wa_v5.0_mpsf.fits",
+          "expected_bytes": 1800000,
+          "kind": "modeled_psf",
+          "evidence_url": "https://slate.ucsc.edu/~brant/jades-dr5/GOODS-S/hlsp/images/submosaics/",
+          "sha256": "b74abf676cd57f272ada642a27fbb6a8fcb6e0181407357784d812c7f5fd6db2",
+          "size_evidence": "HTTP download verified 2026-10-09"
+        }
+      ]
+    },
+    {
+      "id": "jades-dr5-photometry",
+      "title": "JADES GOODS-S photometry",
+      "version": "v5.0 / DR5",
+      "canonical_url": "https://slate.ucsc.edu/~brant/jades-dr5/GOODS-S/hlsp/catalogs/",
+      "access": "Direct FITS; use bounded table extraction after deliberate large acquisition",
+      "science_use": "Photometric comparison; correlated-noise uncertainty methodology",
+      "caveats": "6.17 GB full file; not fetched by default. Photometric redshifts are not independent spectroscopic labels.",
+      "terms": "Not stated on inspected release page; cite the source and verify redistribution terms.",
+      "papers": [
+        "https://arxiv.org/abs/2601.15956"
+      ],
+      "products": [
+        {
+          "id": "goods-s-full",
+          "url": "https://slate.ucsc.edu/~brant/jades-dr5/GOODS-S/hlsp/catalogs/hlsp_jades_jwst_nircam_goods-s_photometry_v5.0_catalog.fits",
+          "expected_bytes": 6174754560,
+          "kind": "photometric_catalog",
+          "size_evidence": "Web retrieval Content-Length 2026-10-09"
+        }
+      ]
+    },
+    {
+      "id": "jades-dr4-spectroscopy",
+      "title": "JADES released redshifts, fluxes and spectra",
+      "version": "DR4 external catalogue v1.2.1",
+      "canonical_url": "https://jades.herts.ac.uk/DR4/",
+      "access": "Directory; select 1D/2D spectra or catalogue",
+      "science_use": "Spectroscopically confirmed reference set including low-z interlopers",
+      "caveats": "Targeted and heterogeneous spectroscopy; no unbiased survey completeness. Slit loss assumes point morphology; flag redshift quality and extraction.",
+      "terms": "Not stated on inspected release page; cite the source and verify redistribution terms.",
+      "papers": [
+        "https://jades-survey.github.io/scientists/data.html"
+      ],
+      "products": [
+        {
+          "id": "full-catalog",
+          "url": "https://jades.herts.ac.uk/DR4/Combined_DR4_external_v1.2.1.fits",
+          "expected_bytes": 94124160,
+          "kind": "spectroscopic_catalog",
+          "display_size": "90M in directory listing",
+          "sha256": "4b4e7fd4306208ee801406c7ed73fdab895a2e67184af7f639a91e5f9c8ab7d4",
+          "size_evidence": "Verified downloaded bytes 2026-10-09"
+        },
+        {
+          "id": "catalog-readme",
+          "url": "https://jades.herts.ac.uk/DR4/Readme_DR4_catalogues.md",
+          "expected_bytes": null,
+          "kind": "documentation"
+        },
+        {
+          "id": "spectra-readme",
+          "url": "https://jades.herts.ac.uk/DR4/Readme_DR4_spectra.md",
+          "expected_bytes": null,
+          "kind": "documentation"
+        }
+      ]
+    },
+    {
+      "id": "jwststars",
+      "title": "JWSTSTARS real stellar photometry and drizzled references",
+      "version": "DR1 V1 (2024); page includes DR2 WLM RR Lyrae V1 (2026)",
+      "canonical_url": "https://archive.stsci.edu/hlsp/jwststars",
+      "access": "astroquery.mast Observations.query_criteria(provenance_name=\"jwststars\"); filter products before download",
+      "science_use": "Real external stars for morphology/photometry validation. Program 1334 M92 has F090W,F150W,F277W,F444W.",
+      "caveats": "Crowding, saturation, temporal/field PSF shifts; exclude M92 exposure 3 (astrometric jitter). HLSP reference image F150W only; other-filter exposures via MAST.",
+      "terms": "CC BY 4.0 stated on MAST HLSP page; cite 10.17909/cn6n-xg90 and appropriate release papers.",
+      "papers": [],
+      "products": [
+        {
+          "id": "readme",
+          "url": "https://archive.stsci.edu/hlsps/jwststars/hlsp_jwststars_readme.txt",
+          "expected_bytes": null,
+          "kind": "documentation"
+        }
+      ]
+    },
+    {
+      "id": "dja-cosmos-imaging",
+      "title": "DAWN COSMOS reduced imaging used for MoM-z14",
+      "version": "COSMOS v7.4",
+      "canonical_url": "https://dawn-cph.github.io/dja/imaging/v7/",
+      "access": "S3 public products and documented FITS cutout API",
+      "science_use": "Reproduce imaging selection with science + variance/weight images",
+      "caveats": "Use exact footprints; zero/absent coverage is not nondetection. Header units and resampled correlated noise must be checked. Whole mosaics are large.",
+      "terms": "Not stated on inspected release page; cite the source and verify redistribution terms.",
+      "papers": [],
+      "products": [
+        {
+          "id": "f444w-wcs",
+          "url": "https://s3.amazonaws.com/grizli-v2/JwstMosaics/v7/cos-infty-v7.4-f444w-clear_wcs.csv",
+          "expected_bytes": null,
+          "kind": "exposure_wcs_metadata"
+        }
+      ]
+    },
+    {
+      "id": "dja-nirspec",
+      "title": "DAWN public NIRSpec extractions",
+      "version": "public table v4.4 / per-extraction version in metadata",
+      "canonical_url": "https://dawn-cph.github.io/dja/spectroscopy/nirspec/",
+      "access": "Documented nirspec_extractions spatial API; public linked S3 table",
+      "science_use": "Independent spectral reductions and identification of program 5224 targets",
+      "caveats": "Program 5224 listing alone does not verify MoM-z14 target spectrum availability. Match RA/Dec/source ID before downloading.",
+      "terms": "Not stated on inspected release page; cite the source and verify redistribution terms.",
+      "papers": [
+        "https://dawn-cph.github.io/dja/general/api_summary/"
+      ],
+      "products": [
+        {
+          "id": "public-table",
+          "url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/nirspec_public_v4.4.html",
+          "expected_bytes": null,
+          "kind": "spectroscopic_index"
+        }
+      ]
+    },
+    {
+      "id": "mom-z14-paper",
+      "title": "MoM-z14 discovery and preliminary UV abundances",
+      "version": "arXiv:2505.11263v2, 2026-01-28",
+      "canonical_url": "https://arxiv.org/html/2505.11263v2",
+      "access": "Open paper; tables transcribed separately with provenance",
+      "science_use": "Pin line fluxes and model-dependent abundance uncertainties for hypothesis tests",
+      "caveats": "Individual lines only SNR 2.7\u20133.4; [N/C]=0.90 +0.29/-0.63 dex in v2. Published line table is not pixel spectrum or posterior samples.",
+      "terms": "Not stated on inspected release page; cite the source and verify redistribution terms.",
+      "papers": [],
+      "products": []
+    },
+    {
+      "id": "gnz11-wr-bursts",
+      "title": "Rapid Chemical Enrichment by Intermittent Star Formation in GN-z11",
+      "version": "arXiv:2308.15583",
+      "canonical_url": "https://arxiv.org/abs/2308.15583",
+      "access": "Open primary paper",
+      "science_use": "Alternative WR starburst mechanism and element predictions",
+      "caveats": "GN-z11 mechanism not automatically applicable to MoM-z14; ~100 Myr quiescence and brief (<1 Myr) enhancement are model assumptions.",
+      "terms": "Not stated on inspected release page; cite the source and verify redistribution terms.",
+      "papers": [],
+      "products": []
+    },
+    {
+      "id": "gnz11-vms",
+      "title": "Very massive stars and Nitrogen emitting galaxies",
+      "version": "arXiv:2310.10725",
+      "canonical_url": "https://arxiv.org/abs/2310.10725",
+      "access": "Open primary paper",
+      "science_use": "Compare very massive stars with WR and supermassive-star yields",
+      "caveats": "Model mass loss strongly affects predictions; proposals do not establish the stellar population of MoM-z14.",
+      "terms": "Not stated on inspected release page; cite the source and verify redistribution terms.",
+      "papers": [],
+      "products": []
+    },
+    {
+      "id": "gnz11-sms",
+      "title": "Nitrogen enhancement of GN-z11 by metal pollution from supermassive stars",
+      "version": "arXiv:2601.04344",
+      "canonical_url": "https://arxiv.org/abs/2601.04344",
+      "access": "Open primary paper",
+      "science_use": "Cosmological chemical evolution comparison for supermassive-star pollution",
+      "caveats": "Simulation of GN-z11, not a direct fit of MoM-z14; no downloadable yield grid verified here.",
+      "terms": "Not stated on inspected release page; cite the source and verify redistribution terms.",
+      "papers": [],
+      "products": []
+    },
+    {
+      "id": "nitrogen-rotating-popiii",
+      "title": "Fast-rotating massive Population III stars as possible sources of extreme N enrichment",
+      "version": "A&A 2024 / aa48866-23",
+      "canonical_url": "https://www.aanda.org/articles/aa/abs/2024/08/aa48866-23/aa48866-23.html",
+      "access": "Open primary paper",
+      "science_use": "Alternative 9\u2013120 solar-mass rotating stellar yields and dilution",
+      "caveats": "Dilution and rotation are uncertain; verify yield-table availability before numerical implementation.",
+      "terms": "Not stated on inspected release page; cite the source and verify redistribution terms.",
+      "papers": [],
+      "products": []
+    },
+    {
+      "id": "classy",
+      "title": "CLASSY local ultraviolet spectral atlas",
+      "version": "MAST HLSP release, version must be read per product",
+      "canonical_url": "https://archive.stsci.edu/hlsp/classy",
+      "access": "MAST HLSP; select 1D spectra and metadata",
+      "science_use": "Local high-z analogs for testing UV line fitting and ionization diagnostics",
+      "caveats": "Local galaxies are not high-z population truth; resolution and aperture differ.",
+      "terms": "Not stated on inspected release page; cite the source and verify redistribution terms.",
+      "papers": [],
+      "products": []
+    }
+  ]
+}
