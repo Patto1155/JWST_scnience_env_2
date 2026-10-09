@@ -1,0 +1,3724 @@
+{
+  "schema_version": 1,
+  "metadata": {
+    "source_spectrum_sha256": "42d95d348ebb55ca37eb31393b4603628ac13a4bca1f4f7f0ffba7b32d3125b1",
+    "native_inventory_sha256": "2ef47329dd583dd00b57dd7d4fed5330c59d2142ff4bea973a0423783e361095",
+    "calibration": "official 2.0.1 / jwst_1535.pmap; EXTENDED/UNIFORM/barshadow; already nod-subtracted",
+    "native_geometry_seed": "versioned SLITS base polynomial; transformed old/new cutout origins; independently refined off UV lines",
+    "point_lsf_empirically_calibrated": false,
+    "wavelength_unit_contract": "Pinned JWST2.0.1 native WAVELENGTH values in microns; BUNIT absent in exact originals; reject conflicting labels/range and misaligned detector grids"
+  },
+  "exposures": [
+    {
+      "filename": "jw05224004001_03101_00002_nrs2_cal.fits",
+      "sha256": "c2d318f836570e3cc77463ec91a8b2a8982deb8df4762873dcad3bdfbd03bc9f",
+      "group": "03",
+      "nod": 1,
+      "background_contributors": [
+        "jw05224004001_03101_00003_nrs2_rate.fits",
+        "jw05224004001_03101_00004_nrs2_rate.fits"
+      ],
+      "pixel_area_sr": 5.05543205002091e-13,
+      "source_xpos": -0.10699999332427979,
+      "source_ypos": 0.29500001668930054,
+      "detector_origin": [
+        440,
+        1293
+      ],
+      "point_conversion_uv_median": 0.46574962109951645
+    },
+    {
+      "filename": "jw05224004001_03101_00003_nrs2_cal.fits",
+      "sha256": "7d60c48301e7020e897bc68de72d9103f27a4e3d4dec14f6e910bd76a6a68b39",
+      "group": "03",
+      "nod": 2,
+      "background_contributors": [
+        "jw05224004001_03101_00002_nrs2_rate.fits",
+        "jw05224004001_03101_00004_nrs2_rate.fits"
+      ],
+      "pixel_area_sr": 5.05637464232419e-13,
+      "source_xpos": -0.09299999475479126,
+      "source_ypos": 0.30000001192092896,
+      "detector_origin": [
+        440,
+        1293
+      ],
+      "point_conversion_uv_median": 0.4656966265567989
+    },
+    {
+      "filename": "jw05224004001_03101_00004_nrs2_cal.fits",
+      "sha256": "0180117830dcad9a562c3c462b1dd7d08ba8ac2683c95a06d1b5c5855b0967e0",
+      "group": "03",
+      "nod": 3,
+      "background_contributors": [
+        "jw05224004001_03101_00002_nrs2_rate.fits",
+        "jw05224004001_03101_00003_nrs2_rate.fits"
+      ],
+      "pixel_area_sr": 5.05448989552177e-13,
+      "source_xpos": -0.12099999189376831,
+      "source_ypos": 0.2889999747276306,
+      "detector_origin": [
+        440,
+        1293
+      ],
+      "point_conversion_uv_median": 0.4660114469898643
+    },
+    {
+      "filename": "jw05224004001_05101_00001_nrs2_cal.fits",
+      "sha256": "c4f576ff15f6d58b4fccf6ab4f5f97e82bb3472ebab6602d8f99a8b804d97695",
+      "group": "05",
+      "nod": 1,
+      "background_contributors": [
+        "jw05224004001_05101_00002_nrs2_rate.fits",
+        "jw05224004001_05101_00003_nrs2_rate.fits"
+      ],
+      "pixel_area_sr": 5.05543205002091e-13,
+      "source_xpos": -0.10699999332427979,
+      "source_ypos": 0.29500001668930054,
+      "detector_origin": [
+        440,
+        1293
+      ],
+      "point_conversion_uv_median": 0.46574964720778234
+    },
+    {
+      "filename": "jw05224004001_05101_00002_nrs2_cal.fits",
+      "sha256": "0078c56d4d50a720b11e5ccb3be84705104c9ae06a3ecd7d8c29f5ffa678f3c5",
+      "group": "05",
+      "nod": 2,
+      "background_contributors": [
+        "jw05224004001_05101_00001_nrs2_rate.fits",
+        "jw05224004001_05101_00003_nrs2_rate.fits"
+      ],
+      "pixel_area_sr": 5.05637464232419e-13,
+      "source_xpos": -0.09299999475479126,
+      "source_ypos": 0.30000001192092896,
+      "detector_origin": [
+        440,
+        1293
+      ],
+      "point_conversion_uv_median": 0.4656966092786336
+    },
+    {
+      "filename": "jw05224004001_05101_00003_nrs2_cal.fits",
+      "sha256": "b18c997fea94810da565d1044d02a6615862a8f1d9946e47506f9d60b2bccace",
+      "group": "05",
+      "nod": 3,
+      "background_contributors": [
+        "jw05224004001_05101_00001_nrs2_rate.fits",
+        "jw05224004001_05101_00002_nrs2_rate.fits"
+      ],
+      "pixel_area_sr": 5.05448989552177e-13,
+      "source_xpos": -0.12099999189376831,
+      "source_ypos": 0.2889999747276306,
+      "detector_origin": [
+        440,
+        1293
+      ],
+      "point_conversion_uv_median": 0.4660114469898643
+    },
+    {
+      "filename": "jw05224004001_07101_00001_nrs2_cal.fits",
+      "sha256": "43faf1fe96cff76eab3cc3e33c900864fa42c5bf053a12ddf3107cc191a4c5ea",
+      "group": "07",
+      "nod": 1,
+      "background_contributors": [
+        "jw05224004001_07101_00002_nrs2_rate.fits",
+        "jw05224004001_07101_00003_nrs2_rate.fits"
+      ],
+      "pixel_area_sr": 5.05543205002091e-13,
+      "source_xpos": -0.10699999332427979,
+      "source_ypos": 0.29500001668930054,
+      "detector_origin": [
+        440,
+        1293
+      ],
+      "point_conversion_uv_median": 0.4657496299272834
+    },
+    {
+      "filename": "jw05224004001_07101_00002_nrs2_cal.fits",
+      "sha256": "5b73760be206eef6891f37b33c3e8d973eef1522ece3b1a90ef4cc6506950a75",
+      "group": "07",
+      "nod": 2,
+      "background_contributors": [
+        "jw05224004001_07101_00001_nrs2_rate.fits",
+        "jw05224004001_07101_00003_nrs2_rate.fits"
+      ],
+      "pixel_area_sr": 5.05637464232419e-13,
+      "source_xpos": -0.09299999475479126,
+      "source_ypos": 0.30000001192092896,
+      "detector_origin": [
+        440,
+        1293
+      ],
+      "point_conversion_uv_median": 0.4656966092786336
+    },
+    {
+      "filename": "jw05224004001_07101_00003_nrs2_cal.fits",
+      "sha256": "b7b3af35080d1ddafcb1184f07733e56c278f936be0fd662643dde46be8b343c",
+      "group": "07",
+      "nod": 3,
+      "background_contributors": [
+        "jw05224004001_07101_00001_nrs2_rate.fits",
+        "jw05224004001_07101_00002_nrs2_rate.fits"
+      ],
+      "pixel_area_sr": 5.05448989552177e-13,
+      "source_xpos": -0.12099999189376831,
+      "source_ypos": 0.2889999747276306,
+      "detector_origin": [
+        440,
+        1293
+      ],
+      "point_conversion_uv_median": 0.4660114469898643
+    }
+  ],
+  "geometry": {
+    "sigma_pixels": 0.8,
+    "offset_pixels": 0.19999999999999996,
+    "diagonal_spatial_chi2": 31136.690317537046,
+    "continuum_window_um": [
+      3.35,
+      4.45
+    ],
+    "tested_uv_lines_excluded": true,
+    "conditional_delta_chi2_2p3_grid_envelope_sigma": [
+      0.75,
+      0.85
+    ],
+    "conditional_delta_chi2_2p3_grid_envelope_offset": [
+      0.19999999999999996,
+      0.29999999999999993
+    ],
+    "grid_boundary_best": false,
+    "interpretation": "Conditional Gaussian spatial illumination under shared-nod profile model; not spectral LSF calibration or independent confidence region"
+  },
+  "covariance": {
+    "groups": [
+      {
+        "group": "03",
+        "mixing": [
+          [
+            1.0,
+            -0.5,
+            -0.5
+          ],
+          [
+            -0.5,
+            1.0,
+            -0.5
+          ],
+          [
+            -0.5,
+            -0.5,
+            1.0
+          ]
+        ],
+        "common_usable_pixels": 7544,
+        "negative_inferred_raw_pixels": 94,
+        "negative_uv_window_pixels": 13,
+        "variance_reconciliation": "Nonnegative least squares at failed pixels; positive independent diagonal remainder; never silently clip negative raw variances",
+        "assumption": "Linear mean-background variance approximate; independent pre-subtraction rate pixels; flat/reference/clipping terms not separately known"
+      },
+      {
+        "group": "05",
+        "mixing": [
+          [
+            1.0,
+            -0.5,
+            -0.5
+          ],
+          [
+            -0.5,
+            1.0,
+            -0.5
+          ],
+          [
+            -0.5,
+            -0.5,
+            1.0
+          ]
+        ],
+        "common_usable_pixels": 7611,
+        "negative_inferred_raw_pixels": 106,
+        "negative_uv_window_pixels": 19,
+        "variance_reconciliation": "Nonnegative least squares at failed pixels; positive independent diagonal remainder; never silently clip negative raw variances",
+        "assumption": "Linear mean-background variance approximate; independent pre-subtraction rate pixels; flat/reference/clipping terms not separately known"
+      },
+      {
+        "group": "07",
+        "mixing": [
+          [
+            1.0,
+            -0.5,
+            -0.5
+          ],
+          [
+            -0.5,
+            1.0,
+            -0.5
+          ],
+          [
+            -0.5,
+            -0.5,
+            1.0
+          ]
+        ],
+        "common_usable_pixels": 7368,
+        "negative_inferred_raw_pixels": 114,
+        "negative_uv_window_pixels": 11,
+        "variance_reconciliation": "Nonnegative least squares at failed pixels; positive independent diagonal remainder; never silently clip negative raw variances",
+        "assumption": "Linear mean-background variance approximate; independent pre-subtraction rate pixels; flat/reference/clipping terms not separately known"
+      }
+    ],
+    "cross_group_shared_calibration_covariance_measured": false
+  },
+  "empirical_noise": {
+    "controls": [
+      {
+        "filename": "jw05224004001_03101_00002_nrs2_cal.fits",
+        "off_trace_pixels": 305,
+        "off_trace_rows": 6,
+        "normalized_rms": 1.435392763053374
+      },
+      {
+        "filename": "jw05224004001_03101_00003_nrs2_cal.fits",
+        "off_trace_pixels": 305,
+        "off_trace_rows": 6,
+        "normalized_rms": 1.4747590364028091
+      },
+      {
+        "filename": "jw05224004001_03101_00004_nrs2_cal.fits",
+        "off_trace_pixels": 305,
+        "off_trace_rows": 6,
+        "normalized_rms": 1.5285253931824714
+      },
+      {
+        "filename": "jw05224004001_05101_00001_nrs2_cal.fits",
+        "off_trace_pixels": 305,
+        "off_trace_rows": 6,
+        "normalized_rms": 1.4763188181203541
+      },
+      {
+        "filename": "jw05224004001_05101_00002_nrs2_cal.fits",
+        "off_trace_pixels": 305,
+        "off_trace_rows": 6,
+        "normalized_rms": 1.55465377704488
+      },
+      {
+        "filename": "jw05224004001_05101_00003_nrs2_cal.fits",
+        "off_trace_pixels": 305,
+        "off_trace_rows": 6,
+        "normalized_rms": 1.381355512544049
+      },
+      {
+        "filename": "jw05224004001_07101_00001_nrs2_cal.fits",
+        "off_trace_pixels": 305,
+        "off_trace_rows": 6,
+        "normalized_rms": 1.4937131984238552
+      },
+      {
+        "filename": "jw05224004001_07101_00002_nrs2_cal.fits",
+        "off_trace_pixels": 305,
+        "off_trace_rows": 6,
+        "normalized_rms": 1.6275694475102864
+      },
+      {
+        "filename": "jw05224004001_07101_00003_nrs2_cal.fits",
+        "off_trace_pixels": 305,
+        "off_trace_rows": 6,
+        "normalized_rms": 1.4244810917529338
+      }
+    ],
+    "pooled_scale_squared": 2.2206192172121764,
+    "leave_one_group_out_scale_squared_range": [
+      2.179377524755566,
+      2.246827380609594
+    ],
+    "observed_same_pixel_nod_correlations": [
+      {
+        "group": "03",
+        "shared_control_pixels": 305,
+        "measured_same_pixel_nod_correlation": [
+          [
+            1.0,
+            -0.5220419848832596,
+            -0.44060939355276474
+          ],
+          [
+            -0.5220419848832595,
+            1.0,
+            -0.488862754369058
+          ],
+          [
+            -0.44060939355276474,
+            -0.4888627543690581,
+            1.0
+          ]
+        ]
+      },
+      {
+        "group": "05",
+        "shared_control_pixels": 305,
+        "measured_same_pixel_nod_correlation": [
+          [
+            1.0,
+            -0.5736992423781577,
+            -0.38506526711223843
+          ],
+          [
+            -0.5736992423781577,
+            1.0,
+            -0.5008350518625552
+          ],
+          [
+            -0.38506526711223843,
+            -0.5008350518625553,
+            1.0
+          ]
+        ]
+      },
+      {
+        "group": "07",
+        "shared_control_pixels": 305,
+        "measured_same_pixel_nod_correlation": [
+          [
+            1.0,
+            -0.5467441439067143,
+            -0.4074325104681896
+          ],
+          [
+            -0.5467441439067143,
+            1.0,
+            -0.49342357138835113
+          ],
+          [
+            -0.4074325104681896,
+            -0.49342357138835113,
+            1.0
+          ]
+        ]
+      }
+    ],
+    "measured_lag_correlations_0_to_3": [
+      1.0,
+      0.04688190424788796,
+      0.04355782201138974,
+      0.008210250241269684
+    ],
+    "lag_pair_counts": [
+      2691,
+      2637,
+      2583
+    ],
+    "measured_spatial_lag_correlations_0_to_3": [
+      1.0,
+      -0.010384645938583027,
+      0.09085835253036566,
+      0.10946691114389166
+    ],
+    "spatial_lag_pair_counts": [
+      1485,
+      819,
+      189
+    ],
+    "spatial_correlations_in_source_covariance": false,
+    "stationary_kernel_taper": "Bartlett through lag3; zero beyond3",
+    "identity_shrinkage_to_minimum_eigenvalue_0p1": 0.0,
+    "kernel_minimum_eigenvalue": 0.9461845871988933,
+    "scope": "Measured off-source+negative-ghost-union controls, conditional stationary transport to source extraction; correlated nods/rows are not independent draws; no calibrated interval"
+  },
+  "resolution": {
+    "nominal": {
+      "sha256": "58f9330440c50af624313e70f3e5b9f58a6b22d06af094e0085ed66408d0d937",
+      "source_url": "https://jwst-docs.stsci.edu/files/216455634/216455648/1/1762452062676/jwst_nirspec_prism_disp.fits",
+      "interpretation": "STScI/ETC fully illuminated 2.2-pixel resolution; Gaussian FWHM approximation",
+      "source_specific_lsf_calibrated": false
+    },
+    "generic_point": {
+      "sha256": "b066eb2ec1a46bd861a3fc7b31937a4a6793b7fd066de0392ce04747d7c3832e",
+      "source_url": "https://raw.githubusercontent.com/TheSkyentist/unite/156e29eb75f788f90041b5d2bbae27ae9dac78d8/unite/instrument/nirspec/disperser.py",
+      "author_source_sha256": "f9b5c59ee3ad14c54fbe1d7e2f939995766c9a839c9629757f4994cbd557de4e",
+      "author_grid_sha256": "58f9330440c50af624313e70f3e5b9f58a6b22d06af094e0085ed66408d0d937",
+      "coefficients_descending": [
+        0.6588751520824567,
+        -13.160715906787065,
+        105.20050050555237,
+        -429.52868537465565,
+        959.0507565400321,
+        -1043.4918213547285,
+        480.90575759267125
+      ],
+      "transform_replayed": true,
+      "interpretation": "Pinned UNITE generic point-source R(lambda), Gaussian FWHM approximation",
+      "source_specific_lsf_calibrated": false,
+      "exact_published_runtime_reproduced": false,
+      "citation": "UNITE; de Graaff et al. DOI 10.1051/0004-6361/202347755"
+    }
+  },
+  "selected_native_columns": [
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191
+  ],
+  "selected_reference_wave_um": [
+    2.152714490890503,
+    2.1705949306488037,
+    2.188371181488037,
+    2.206044912338257,
+    2.223616123199463,
+    2.241086006164551,
+    2.2584550380706787,
+    2.275724411010742,
+    2.292894124984741,
+    2.309966802597046,
+    2.3269405364990234,
+    2.3438193798065186,
+    2.360602378845215,
+    2.3772902488708496,
+    2.393885850906372,
+    2.410388469696045,
+    2.4267990589141846,
+    2.443119525909424,
+    2.4605287313461304,
+    2.476664662361145,
+    2.49271297454834,
+    2.5086750984191895,
+    2.524551272392273,
+    2.540343165397644,
+    2.55605149269104,
+    2.571677088737488,
+    2.5872209072113037,
+    2.602684259414673,
+    2.6180678606033325,
+    2.6333725452423096,
+    2.64859938621521,
+    2.6637492179870605,
+    2.678822875022888,
+    2.6938213109970093,
+    2.7087453603744507,
+    2.723595976829529,
+    2.738373875617981,
+    2.753080129623413,
+    2.767715334892273,
+    2.782280445098877,
+    2.796776533126831,
+    2.811203956604004,
+    2.825563907623291,
+    2.8398566246032715,
+    2.855114221572876,
+    2.8692705631256104,
+    2.883362054824829,
+    2.8973896503448486,
+    2.9113547801971436,
+    2.925257682800293,
+    2.9390981197357178,
+    2.9528772830963135,
+    2.9665966033935547,
+    2.9802567958831787,
+    2.9938571453094482,
+    3.007398843765259,
+    3.020883560180664,
+    3.034311294555664,
+    3.0476815700531006,
+    3.0609967708587646,
+    3.074256658554077,
+    3.087460994720459,
+    3.1006124019622803,
+    3.1137096881866455,
+    3.126753568649292,
+    3.13974666595459,
+    3.1526856422424316,
+    3.165574789047241,
+    3.178412675857544,
+    3.1912002563476562
+  ],
+  "scenarios": [
+    {
+      "name": "nominal_shared_formal",
+      "fit": {
+        "line_order": [
+          "NIV",
+          "CIV",
+          "HeII_OIII",
+          "NIII",
+          "CIII"
+        ],
+        "flux_units": "1e-20 erg s^-1 cm^-2",
+        "fluxes": [
+          27.299857018149776,
+          21.6842961311432,
+          23.135117568108523,
+          5.392139847775679,
+          17.32610810060911
+        ],
+        "flux_covariance": [
+          [
+            79.61976245696921,
+            8.842658191798105,
+            8.131817130906947,
+            2.9062812844513553,
+            0.03545914697483317
+          ],
+          [
+            8.842658191798105,
+            60.65267512752218,
+            6.727896738814737,
+            2.6494281095977086,
+            0.5100116198103245
+          ],
+          [
+            8.131817130906947,
+            6.727896738814737,
+            68.74213180212438,
+            3.522289502248461,
+            1.7318111126404223
+          ],
+          [
+            2.9062812844513553,
+            2.6494281095977086,
+            3.522289502248461,
+            32.361702151131205,
+            1.5162492345427547
+          ],
+          [
+            0.03545914697483317,
+            0.5100116198103245,
+            1.7318111126404223,
+            1.5162492345427547,
+            23.748998315778223
+          ]
+        ],
+        "lines": {
+          "NIV": {
+            "flux": 27.299857018149776,
+            "conditional_sigma": 8.922990667762082
+          },
+          "CIV": {
+            "flux": 21.6842961311432,
+            "conditional_sigma": 7.787982738008744
+          },
+          "HeII_OIII": {
+            "flux": 23.135117568108523,
+            "conditional_sigma": 8.291087492128181
+          },
+          "NIII": {
+            "flux": 5.392139847775679,
+            "conditional_sigma": 5.68873467048088
+          },
+          "CIII": {
+            "flux": 17.32610810060911,
+            "conditional_sigma": 4.873294400688124
+          }
+        },
+        "conditional_chi2": 1205.588692053727,
+        "dof": 623,
+        "native_columns": 70,
+        "exposure_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "redshift_fixed": 14.44,
+        "intrinsic_width_fixed_kms": 0,
+        "wavelength_offset_pixels_assumed": 0,
+        "nitrogen_carbon_line_flux_ratio": 0.838032763559932,
+        "ratio_fieller_95": {
+          "type": "bounded",
+          "interval": [
+            0.29343505644019674,
+            1.7594324282114133
+          ]
+        },
+        "covariance_dimension": 630,
+        "empirical_stationary_noise_scale_squared": 1,
+        "continuum_coefficients_uJy_times100": [
+          1.7143320787431593,
+          0.09562013579165979
+        ],
+        "interpretation": "Signed UV group fluxes under source/profile/LSF/covariance assumptions; no elemental abundance or independent detection claim",
+        "median_exposure_amplitude_correlation": [
+          [
+            1.0,
+            0.2880292269686424,
+            0.26284520969327285,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.2880292269686424,
+            1.0,
+            0.21034941174014354,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.26284520969327285,
+            0.21034941174014357,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.28078849531264694,
+            0.2666862622194034,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.28078849531264694,
+            1.0,
+            0.23591935765794966,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.2666862622194034,
+            0.23591935765794964,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.27402290343925106,
+            0.26481382480731913
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.27402290343925106,
+            1.0,
+            0.2400037144329153
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.26481382480731913,
+            0.2400037144329153,
+            1.0
+          ]
+        ]
+      }
+    },
+    {
+      "name": "point_shared_formal",
+      "fit": {
+        "line_order": [
+          "NIV",
+          "CIV",
+          "HeII_OIII",
+          "NIII",
+          "CIII"
+        ],
+        "flux_units": "1e-20 erg s^-1 cm^-2",
+        "fluxes": [
+          17.098855775003955,
+          14.444598311283826,
+          16.13698831667639,
+          4.662402120877044,
+          12.71958837209744
+        ],
+        "flux_covariance": [
+          [
+            35.740751242005615,
+            1.7198731834761045,
+            2.0601802860098584,
+            0.6282926333826037,
+            -0.029399375732115273
+          ],
+          [
+            1.7198731834761045,
+            27.687596910735195,
+            1.698111457962008,
+            0.5806081456223888,
+            0.09150512316194047
+          ],
+          [
+            2.0601802860098584,
+            1.698111457962008,
+            41.674960868136,
+            1.0565612619280995,
+            0.5081410383322723
+          ],
+          [
+            0.6282926333826037,
+            0.5806081456223888,
+            1.0565612619280995,
+            17.66616331163532,
+            0.4082218876061253
+          ],
+          [
+            -0.029399375732115273,
+            0.09150512316194047,
+            0.5081410383322723,
+            0.4082218876061253,
+            12.33220923827728
+          ]
+        ],
+        "lines": {
+          "NIV": {
+            "flux": 17.098855775003955,
+            "conditional_sigma": 5.978356901524499
+          },
+          "CIV": {
+            "flux": 14.444598311283826,
+            "conditional_sigma": 5.261900503690201
+          },
+          "HeII_OIII": {
+            "flux": 16.13698831667639,
+            "conditional_sigma": 6.455614677792967
+          },
+          "NIII": {
+            "flux": 4.662402120877044,
+            "conditional_sigma": 4.203113525903782
+          },
+          "CIII": {
+            "flux": 12.71958837209744,
+            "conditional_sigma": 3.5117245390658534
+          }
+        },
+        "conditional_chi2": 1204.5237171378903,
+        "dof": 623,
+        "native_columns": 70,
+        "exposure_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "redshift_fixed": 14.44,
+        "intrinsic_width_fixed_kms": 0,
+        "wavelength_offset_pixels_assumed": 0,
+        "nitrogen_carbon_line_flux_ratio": 0.8011010287009359,
+        "ratio_fieller_95": {
+          "type": "bounded",
+          "interval": [
+            0.26113390822434357,
+            1.7298812159772368
+          ]
+        },
+        "covariance_dimension": 630,
+        "empirical_stationary_noise_scale_squared": 1,
+        "continuum_coefficients_uJy_times100": [
+          1.7738917556717082,
+          0.04981558412972678
+        ],
+        "interpretation": "Signed UV group fluxes under source/profile/LSF/covariance assumptions; no elemental abundance or independent detection claim",
+        "median_exposure_amplitude_correlation": [
+          [
+            1.0,
+            0.2880292269686424,
+            0.26284520969327285,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.2880292269686424,
+            1.0,
+            0.21034941174014354,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.26284520969327285,
+            0.21034941174014357,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.28078849531264694,
+            0.2666862622194034,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.28078849531264694,
+            1.0,
+            0.23591935765794966,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.2666862622194034,
+            0.23591935765794964,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.27402290343925106,
+            0.26481382480731913
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.27402290343925106,
+            1.0,
+            0.2400037144329153
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.26481382480731913,
+            0.2400037144329153,
+            1.0
+          ]
+        ]
+      }
+    },
+    {
+      "name": "nominal_empirical_offtrace_transport",
+      "fit": {
+        "line_order": [
+          "NIV",
+          "CIV",
+          "HeII_OIII",
+          "NIII",
+          "CIII"
+        ],
+        "flux_units": "1e-20 erg s^-1 cm^-2",
+        "fluxes": [
+          27.425473508738573,
+          22.200858097206886,
+          23.722044242080386,
+          5.370138737400712,
+          17.509795230810877
+        ],
+        "flux_covariance": [
+          [
+            185.26892553841972,
+            19.139011058733484,
+            18.05740769208675,
+            6.319983250832521,
+            0.06156015033529966
+          ],
+          [
+            19.139011058733484,
+            141.5244795307764,
+            14.969257191529838,
+            5.782075647717935,
+            1.1111574536791338
+          ],
+          [
+            18.05740769208675,
+            14.969257191529838,
+            164.69771576147497,
+            7.90335494450482,
+            3.8951636854582095
+          ],
+          [
+            6.319983250832521,
+            5.782075647717935,
+            7.90335494450482,
+            76.16813580788568,
+            3.3501741379160883
+          ],
+          [
+            0.06156015033529966,
+            1.1111574536791338,
+            3.8951636854582095,
+            3.3501741379160883,
+            55.67240524179338
+          ]
+        ],
+        "lines": {
+          "NIV": {
+            "flux": 27.425473508738573,
+            "conditional_sigma": 13.611352818086074
+          },
+          "CIV": {
+            "flux": 22.200858097206886,
+            "conditional_sigma": 11.896406160298008
+          },
+          "HeII_OIII": {
+            "flux": 23.722044242080386,
+            "conditional_sigma": 12.833460786610717
+          },
+          "NIII": {
+            "flux": 5.370138737400712,
+            "conditional_sigma": 8.727435809439429
+          },
+          "CIII": {
+            "flux": 17.509795230810877,
+            "conditional_sigma": 7.461394322899265
+          }
+        },
+        "conditional_chi2": 544.0683142592978,
+        "dof": 623,
+        "native_columns": 70,
+        "exposure_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "redshift_fixed": 14.44,
+        "intrinsic_width_fixed_kms": 0,
+        "wavelength_offset_pixels_assumed": 0,
+        "nitrogen_carbon_line_flux_ratio": 0.8258643335641223,
+        "ratio_fieller_95": {
+          "type": "bounded",
+          "interval": [
+            0.009539352809714775,
+            2.934182717732501
+          ]
+        },
+        "covariance_dimension": 630,
+        "empirical_stationary_noise_scale_squared": 2.2206192172121764,
+        "continuum_coefficients_uJy_times100": [
+          1.7092188050659542,
+          0.0962799574888195
+        ],
+        "interpretation": "Signed UV group fluxes under source/profile/LSF/covariance assumptions; no elemental abundance or independent detection claim",
+        "median_exposure_amplitude_correlation": [
+          [
+            1.0,
+            0.2880292269686424,
+            0.26284520969327285,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.2880292269686424,
+            1.0,
+            0.21034941174014354,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.26284520969327285,
+            0.21034941174014357,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.28078849531264694,
+            0.2666862622194034,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.28078849531264694,
+            1.0,
+            0.23591935765794966,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.2666862622194034,
+            0.23591935765794964,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.27402290343925106,
+            0.26481382480731913
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.27402290343925106,
+            1.0,
+            0.2400037144329153
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.26481382480731913,
+            0.2400037144329153,
+            1.0
+          ]
+        ]
+      }
+    },
+    {
+      "name": "point_empirical_offtrace_transport",
+      "fit": {
+        "line_order": [
+          "NIV",
+          "CIV",
+          "HeII_OIII",
+          "NIII",
+          "CIII"
+        ],
+        "flux_units": "1e-20 erg s^-1 cm^-2",
+        "fluxes": [
+          16.763422855142398,
+          14.523433899542653,
+          16.07574552325996,
+          4.768979892749518,
+          12.671080123096823
+        ],
+        "flux_covariance": [
+          [
+            80.00866462703631,
+            3.435576409080863,
+            4.241165572973767,
+            1.2664511133300222,
+            -0.061295762503260506
+          ],
+          [
+            3.435576409080863,
+            62.035287792591724,
+            3.4988036664185715,
+            1.1727690040842158,
+            0.18373150572792238
+          ],
+          [
+            4.241165572973767,
+            3.4988036664185715,
+            96.21198684100153,
+            2.2077039463421855,
+            1.0598915261213961
+          ],
+          [
+            1.2664511133300222,
+            1.1727690040842158,
+            2.2077039463421855,
+            40.15005261614275,
+            0.835602014194149
+          ],
+          [
+            -0.061295762503260506,
+            0.18373150572792238,
+            1.0598915261213961,
+            0.835602014194149,
+            27.8590451364477
+          ]
+        ],
+        "lines": {
+          "NIV": {
+            "flux": 16.763422855142398,
+            "conditional_sigma": 8.944756264260995
+          },
+          "CIV": {
+            "flux": 14.523433899542653,
+            "conditional_sigma": 7.876248332333848
+          },
+          "HeII_OIII": {
+            "flux": 16.07574552325996,
+            "conditional_sigma": 9.808770913881185
+          },
+          "NIII": {
+            "flux": 4.768979892749518,
+            "conditional_sigma": 6.336406916868798
+          },
+          "CIII": {
+            "flux": 12.671080123096823,
+            "conditional_sigma": 5.278166834844054
+          }
+        },
+        "conditional_chi2": 543.6058330535699,
+        "dof": 623,
+        "native_columns": 70,
+        "exposure_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "redshift_fixed": 14.44,
+        "intrinsic_width_fixed_kms": 0,
+        "wavelength_offset_pixels_assumed": 0,
+        "nitrogen_carbon_line_flux_ratio": 0.7917921507979939,
+        "ratio_fieller_95": {
+          "type": "bounded",
+          "interval": [
+            -0.006773414709783054,
+            2.882941178148827
+          ]
+        },
+        "covariance_dimension": 630,
+        "empirical_stationary_noise_scale_squared": 2.2206192172121764,
+        "continuum_coefficients_uJy_times100": [
+          1.7718877957343102,
+          0.04805876210619992
+        ],
+        "interpretation": "Signed UV group fluxes under source/profile/LSF/covariance assumptions; no elemental abundance or independent detection claim",
+        "median_exposure_amplitude_correlation": [
+          [
+            1.0,
+            0.2880292269686424,
+            0.26284520969327285,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.2880292269686424,
+            1.0,
+            0.21034941174014354,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.26284520969327285,
+            0.21034941174014357,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.28078849531264694,
+            0.2666862622194034,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.28078849531264694,
+            1.0,
+            0.23591935765794966,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.2666862622194034,
+            0.23591935765794964,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.27402290343925106,
+            0.26481382480731913
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.27402290343925106,
+            1.0,
+            0.2400037144329153
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.26481382480731913,
+            0.2400037144329153,
+            1.0
+          ]
+        ]
+      }
+    }
+  ],
+  "group_and_nod_splits": [
+    {
+      "kind": "group",
+      "value": "03",
+      "fit": {
+        "line_order": [
+          "NIV",
+          "CIV",
+          "HeII_OIII",
+          "NIII",
+          "CIII"
+        ],
+        "flux_units": "1e-20 erg s^-1 cm^-2",
+        "fluxes": [
+          45.34146375620428,
+          23.617821401411096,
+          21.103787100868523,
+          2.3104550882928168,
+          20.488660601824474
+        ],
+        "flux_covariance": [
+          [
+            248.36049490306644,
+            10.083499278516804,
+            12.285549740931163,
+            3.7984643687164623,
+            -0.12969654321867266
+          ],
+          [
+            10.083499278516804,
+            184.65357478351368,
+            10.256547574168584,
+            3.561391557119054,
+            0.61271044339326
+          ],
+          [
+            12.285549740931163,
+            10.256547574168584,
+            287.66558646650554,
+            6.623563068977125,
+            3.271769104514861
+          ],
+          [
+            3.7984643687164623,
+            3.561391557119054,
+            6.623563068977125,
+            117.57951706393679,
+            2.6191633030199233
+          ],
+          [
+            -0.12969654321867266,
+            0.61271044339326,
+            3.271769104514861,
+            2.6191633030199233,
+            81.3267486632938
+          ]
+        ],
+        "lines": {
+          "NIV": {
+            "flux": 45.34146375620428,
+            "conditional_sigma": 15.759457316261447
+          },
+          "CIV": {
+            "flux": 23.617821401411096,
+            "conditional_sigma": 13.588729697198104
+          },
+          "HeII_OIII": {
+            "flux": 21.103787100868523,
+            "conditional_sigma": 16.960707133445396
+          },
+          "NIII": {
+            "flux": 2.3104550882928168,
+            "conditional_sigma": 10.843408922656048
+          },
+          "CIII": {
+            "flux": 20.488660601824474,
+            "conditional_sigma": 9.01813443364501
+          }
+        },
+        "conditional_chi2": 174.64384563921163,
+        "dof": 203,
+        "native_columns": 70,
+        "exposure_indices": [
+          0,
+          1,
+          2
+        ],
+        "redshift_fixed": 14.44,
+        "intrinsic_width_fixed_kms": 0,
+        "wavelength_offset_pixels_assumed": 0,
+        "nitrogen_carbon_line_flux_ratio": 1.080383578109935,
+        "ratio_fieller_95": {
+          "type": "bounded",
+          "interval": [
+            0.21531235967427248,
+            4.224192347274028
+          ]
+        },
+        "covariance_dimension": 210,
+        "empirical_stationary_noise_scale_squared": 2.2206192172121764,
+        "continuum_coefficients_uJy_times100": [
+          1.5720008368331406,
+          0.30340658013945365
+        ],
+        "interpretation": "Signed UV group fluxes under source/profile/LSF/covariance assumptions; no elemental abundance or independent detection claim",
+        "median_exposure_amplitude_correlation": [
+          [
+            1.0,
+            0.2880292269686424,
+            0.26284520969327285
+          ],
+          [
+            0.2880292269686424,
+            1.0,
+            0.21034941174014354
+          ],
+          [
+            0.26284520969327285,
+            0.21034941174014357,
+            1.0
+          ]
+        ]
+      },
+      "independence": "Disjoint group RATE inputs; shared reference calibration remains"
+    },
+    {
+      "kind": "group",
+      "value": "05",
+      "fit": {
+        "line_order": [
+          "NIV",
+          "CIV",
+          "HeII_OIII",
+          "NIII",
+          "CIII"
+        ],
+        "flux_units": "1e-20 erg s^-1 cm^-2",
+        "fluxes": [
+          5.580785535293378,
+          11.203180773473326,
+          5.786859813065925,
+          -12.130256114762716,
+          9.402313310083093
+        ],
+        "flux_covariance": [
+          [
+            235.0274792257288,
+            10.249324872940738,
+            13.362874611703647,
+            3.8631118756294582,
+            -0.23521541833350004
+          ],
+          [
+            10.249324872940738,
+            183.15967943022704,
+            10.581742167748734,
+            3.4401885381428903,
+            0.48925970338216207
+          ],
+          [
+            13.362874611703647,
+            10.581742167748734,
+            291.5533064163423,
+            6.871098983829125,
+            3.1816021397546965
+          ],
+          [
+            3.8631118756294582,
+            3.4401885381428903,
+            6.871098983829125,
+            124.33786798419592,
+            2.488345712316681
+          ],
+          [
+            -0.23521541833350004,
+            0.48925970338216207,
+            3.1816021397546965,
+            2.488345712316681,
+            91.1944046451371
+          ]
+        ],
+        "lines": {
+          "NIV": {
+            "flux": 5.580785535293378,
+            "conditional_sigma": 15.330605964074897
+          },
+          "CIV": {
+            "flux": 11.203180773473326,
+            "conditional_sigma": 13.533649893145125
+          },
+          "HeII_OIII": {
+            "flux": 5.786859813065925,
+            "conditional_sigma": 17.07493210576084
+          },
+          "NIII": {
+            "flux": -12.130256114762716,
+            "conditional_sigma": 11.150689125977637
+          },
+          "CIII": {
+            "flux": 9.402313310083093,
+            "conditional_sigma": 9.549576150025565
+          }
+        },
+        "conditional_chi2": 202.91267970053997,
+        "dof": 203,
+        "native_columns": 70,
+        "exposure_indices": [
+          3,
+          4,
+          5
+        ],
+        "redshift_fixed": 14.44,
+        "intrinsic_width_fixed_kms": 0,
+        "wavelength_offset_pixels_assumed": 0,
+        "nitrogen_carbon_line_flux_ratio": -0.31785069326223736,
+        "ratio_fieller_95": {
+          "type": "all_real"
+        },
+        "covariance_dimension": 210,
+        "empirical_stationary_noise_scale_squared": 2.2206192172121764,
+        "continuum_coefficients_uJy_times100": [
+          1.9540900660652971,
+          -0.08895398693902355
+        ],
+        "interpretation": "Signed UV group fluxes under source/profile/LSF/covariance assumptions; no elemental abundance or independent detection claim",
+        "median_exposure_amplitude_correlation": [
+          [
+            1.0,
+            0.28078849531264694,
+            0.2666862622194034
+          ],
+          [
+            0.28078849531264694,
+            1.0,
+            0.23591935765794966
+          ],
+          [
+            0.2666862622194034,
+            0.23591935765794964,
+            1.0
+          ]
+        ]
+      },
+      "independence": "Disjoint group RATE inputs; shared reference calibration remains"
+    },
+    {
+      "kind": "group",
+      "value": "07",
+      "fit": {
+        "line_order": [
+          "NIV",
+          "CIV",
+          "HeII_OIII",
+          "NIII",
+          "CIII"
+        ],
+        "flux_units": "1e-20 erg s^-1 cm^-2",
+        "fluxes": [
+          0.38077694890371977,
+          8.542748096865353,
+          20.933793796946347,
+          23.634715852193374,
+          8.005127094883228
+        ],
+        "flux_covariance": [
+          [
+            237.203959043018,
+            10.600627885295713,
+            12.549689475778683,
+            3.7376096916603068,
+            -0.1843679192771261
+          ],
+          [
+            10.600627885295713,
+            190.67673823257837,
+            10.663304987146622,
+            3.5566651406698613,
+            0.5545034964680146
+          ],
+          [
+            12.549689475778683,
+            10.663304987146622,
+            286.76358403987945,
+            6.385167830350832,
+            3.0801733068613952
+          ],
+          [
+            3.7376096916603068,
+            3.5566651406698613,
+            6.385167830350832,
+            119.64222771133333,
+            2.4111056352278997
+          ],
+          [
+            -0.1843679192771261,
+            0.5545034964680146,
+            3.0801733068613952,
+            2.4111056352278997,
+            79.18695745457174
+          ]
+        ],
+        "lines": {
+          "NIV": {
+            "flux": 0.38077694890371977,
+            "conditional_sigma": 15.401427175525585
+          },
+          "CIV": {
+            "flux": 8.542748096865353,
+            "conditional_sigma": 13.808574808160992
+          },
+          "HeII_OIII": {
+            "flux": 20.933793796946347,
+            "conditional_sigma": 16.93409531211749
+          },
+          "NIII": {
+            "flux": 23.634715852193374,
+            "conditional_sigma": 10.93810896413696
+          },
+          "CIII": {
+            "flux": 8.005127094883228,
+            "conditional_sigma": 8.898705380816455
+          }
+        },
+        "conditional_chi2": 152.28758861069227,
+        "dof": 203,
+        "native_columns": 70,
+        "exposure_indices": [
+          6,
+          7,
+          8
+        ],
+        "redshift_fixed": 14.44,
+        "intrinsic_width_fixed_kms": 0,
+        "wavelength_offset_pixels_assumed": 0,
+        "nitrogen_carbon_line_flux_ratio": 1.4512735032635584,
+        "ratio_fieller_95": {
+          "type": "all_real"
+        },
+        "covariance_dimension": 210,
+        "empirical_stationary_noise_scale_squared": 2.2206192172121764,
+        "continuum_coefficients_uJy_times100": [
+          1.7934313614943536,
+          -0.08501503522658152
+        ],
+        "interpretation": "Signed UV group fluxes under source/profile/LSF/covariance assumptions; no elemental abundance or independent detection claim",
+        "median_exposure_amplitude_correlation": [
+          [
+            1.0,
+            0.27402290343925106,
+            0.26481382480731913
+          ],
+          [
+            0.27402290343925106,
+            1.0,
+            0.2400037144329153
+          ],
+          [
+            0.26481382480731913,
+            0.2400037144329153,
+            1.0
+          ]
+        ]
+      },
+      "independence": "Disjoint group RATE inputs; shared reference calibration remains"
+    },
+    {
+      "kind": "nod",
+      "value": 1,
+      "fit": {
+        "line_order": [
+          "NIV",
+          "CIV",
+          "HeII_OIII",
+          "NIII",
+          "CIII"
+        ],
+        "flux_units": "1e-20 erg s^-1 cm^-2",
+        "fluxes": [
+          19.704316215336522,
+          19.90197259283752,
+          6.1125960444773675,
+          4.204981607721101,
+          16.801550667114398
+        ],
+        "flux_covariance": [
+          [
+            207.60521575749263,
+            12.152419924547937,
+            14.396190455748016,
+            4.421282296708551,
+            -0.09083110620570682
+          ],
+          [
+            12.152419924547937,
+            145.06184934593423,
+            11.271800594481594,
+            3.854252501794821,
+            0.7118046482856349
+          ],
+          [
+            14.396190455748016,
+            11.271800594481594,
+            234.4662078138403,
+            6.761567138003338,
+            3.469581951592318
+          ],
+          [
+            4.421282296708551,
+            3.854252501794821,
+            6.761567138003338,
+            99.33095550493425,
+            2.7198986094661195
+          ],
+          [
+            -0.09083110620570682,
+            0.7118046482856349,
+            3.469581951592318,
+            2.7198986094661195,
+            67.23752096746946
+          ]
+        ],
+        "lines": {
+          "NIV": {
+            "flux": 19.704316215336522,
+            "conditional_sigma": 14.40851192030227
+          },
+          "CIV": {
+            "flux": 19.90197259283752,
+            "conditional_sigma": 12.044162459296796
+          },
+          "HeII_OIII": {
+            "flux": 6.1125960444773675,
+            "conditional_sigma": 15.312289437371549
+          },
+          "NIII": {
+            "flux": 4.204981607721101,
+            "conditional_sigma": 9.966491634719524
+          },
+          "CIII": {
+            "flux": 16.801550667114398,
+            "conditional_sigma": 8.199848838086558
+          }
+        },
+        "conditional_chi2": 177.18057385780784,
+        "dof": 203,
+        "native_columns": 70,
+        "exposure_indices": [
+          0,
+          3,
+          6
+        ],
+        "redshift_fixed": 14.44,
+        "intrinsic_width_fixed_kms": 0,
+        "wavelength_offset_pixels_assumed": 0,
+        "nitrogen_carbon_line_flux_ratio": 0.6514169676224414,
+        "ratio_fieller_95": {
+          "type": "bounded",
+          "interval": [
+            -0.3564363854768553,
+            3.420130955674304
+          ]
+        },
+        "covariance_dimension": 210,
+        "empirical_stationary_noise_scale_squared": 2.2206192172121764,
+        "continuum_coefficients_uJy_times100": [
+          1.798721672928604,
+          0.2842454744223403
+        ],
+        "interpretation": "Signed UV group fluxes under source/profile/LSF/covariance assumptions; no elemental abundance or independent detection claim",
+        "median_exposure_amplitude_correlation": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "independence": "Different nod products reuse the same group RATE backgrounds; not independent"
+    },
+    {
+      "kind": "nod",
+      "value": 2,
+      "fit": {
+        "line_order": [
+          "NIV",
+          "CIV",
+          "HeII_OIII",
+          "NIII",
+          "CIII"
+        ],
+        "flux_units": "1e-20 erg s^-1 cm^-2",
+        "fluxes": [
+          6.406289388536422,
+          20.748416958537227,
+          31.312742629085438,
+          5.799645962181374,
+          11.934361353185325
+        ],
+        "flux_covariance": [
+          [
+            239.34330375687398,
+            15.913976783056638,
+            17.575635475552733,
+            5.126815992673127,
+            -0.23079149211808161
+          ],
+          [
+            15.913976783056638,
+            178.76620481121356,
+            13.419866211250374,
+            4.350882167894175,
+            0.6993489724278967
+          ],
+          [
+            17.575635475552733,
+            13.419866211250374,
+            248.48102867542818,
+            7.118754961712939,
+            3.551393079650611
+          ],
+          [
+            5.126815992673127,
+            4.350882167894175,
+            7.118754961712939,
+            98.62441920232398,
+            2.7143953719044465
+          ],
+          [
+            -0.23079149211808161,
+            0.6993489724278967,
+            3.551393079650611,
+            2.7143953719044465,
+            79.60162301881266
+          ]
+        ],
+        "lines": {
+          "NIV": {
+            "flux": 6.406289388536422,
+            "conditional_sigma": 15.470724086379214
+          },
+          "CIV": {
+            "flux": 20.748416958537227,
+            "conditional_sigma": 13.370347968965264
+          },
+          "HeII_OIII": {
+            "flux": 31.312742629085438,
+            "conditional_sigma": 15.763281025073054
+          },
+          "NIII": {
+            "flux": 5.799645962181374,
+            "conditional_sigma": 9.930982791361789
+          },
+          "CIII": {
+            "flux": 11.934361353185325,
+            "conditional_sigma": 8.921974166002313
+          }
+        },
+        "conditional_chi2": 195.145859788662,
+        "dof": 203,
+        "native_columns": 70,
+        "exposure_indices": [
+          1,
+          4,
+          7
+        ],
+        "redshift_fixed": 14.44,
+        "intrinsic_width_fixed_kms": 0,
+        "wavelength_offset_pixels_assumed": 0,
+        "nitrogen_carbon_line_flux_ratio": 0.3734668832098589,
+        "ratio_fieller_95": {
+          "type": "bounded",
+          "interval": [
+            -1.6139644145153171,
+            10.479347563826199
+          ]
+        },
+        "covariance_dimension": 210,
+        "empirical_stationary_noise_scale_squared": 2.2206192172121764,
+        "continuum_coefficients_uJy_times100": [
+          1.8572530173533108,
+          -0.05092580572780842
+        ],
+        "interpretation": "Signed UV group fluxes under source/profile/LSF/covariance assumptions; no elemental abundance or independent detection claim",
+        "median_exposure_amplitude_correlation": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "independence": "Different nod products reuse the same group RATE backgrounds; not independent"
+    },
+    {
+      "kind": "nod",
+      "value": 3,
+      "fit": {
+        "line_order": [
+          "NIV",
+          "CIV",
+          "HeII_OIII",
+          "NIII",
+          "CIII"
+        ],
+        "flux_units": "1e-20 erg s^-1 cm^-2",
+        "fluxes": [
+          33.06630164247348,
+          10.682742766299299,
+          14.91443306692855,
+          0.7310553420203859,
+          7.870516211516113
+        ],
+        "flux_covariance": [
+          [
+            209.44825967855667,
+            12.691249881357981,
+            13.633617200865059,
+            4.209317822277577,
+            -0.18285502678110324
+          ],
+          [
+            12.691249881357981,
+            194.65893746865748,
+            13.060612313210491,
+            4.564936416397559,
+            0.8793296512683503
+          ],
+          [
+            13.633617200865059,
+            13.060612313210491,
+            246.7964675026956,
+            7.6802047389812245,
+            4.21914801749123
+          ],
+          [
+            4.209317822277577,
+            4.564936416397559,
+            7.6802047389812245,
+            109.32225316413317,
+            3.365996383436936
+          ],
+          [
+            -0.18285502678110324,
+            0.8793296512683503,
+            4.21914801749123,
+            3.365996383436936,
+            75.81797653625547
+          ]
+        ],
+        "lines": {
+          "NIV": {
+            "flux": 33.06630164247348,
+            "conditional_sigma": 14.47232737601512
+          },
+          "CIV": {
+            "flux": 10.682742766299299,
+            "conditional_sigma": 13.952022701696606
+          },
+          "HeII_OIII": {
+            "flux": 14.91443306692855,
+            "conditional_sigma": 15.709757079684447
+          },
+          "NIII": {
+            "flux": 0.7310553420203859,
+            "conditional_sigma": 10.455728246474903
+          },
+          "CIII": {
+            "flux": 7.870516211516113,
+            "conditional_sigma": 8.707351867029118
+          }
+        },
+        "conditional_chi2": 179.27903209658768,
+        "dof": 203,
+        "native_columns": 70,
+        "exposure_indices": [
+          2,
+          5,
+          8
+        ],
+        "redshift_fixed": 14.44,
+        "intrinsic_width_fixed_kms": 0,
+        "wavelength_offset_pixels_assumed": 0,
+        "nitrogen_carbon_line_flux_ratio": 1.8216399083797732,
+        "ratio_fieller_95": {
+          "type": "two_unbounded_intervals",
+          "excluded_open_interval": [
+            -1.4511731491800557,
+            -0.11258644515669916
+          ]
+        },
+        "covariance_dimension": 210,
+        "empirical_stationary_noise_scale_squared": 2.2206192172121764,
+        "continuum_coefficients_uJy_times100": [
+          1.7064248999163467,
+          -0.044033721246032144
+        ],
+        "interpretation": "Signed UV group fluxes under source/profile/LSF/covariance assumptions; no elemental abundance or independent detection claim",
+        "median_exposure_amplitude_correlation": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "independence": "Different nod products reuse the same group RATE backgrounds; not independent"
+    }
+  ],
+  "sensitivities": [
+    {
+      "name": "point_wavelength_shift",
+      "assumed_shift_pixels": -0.25,
+      "fit": {
+        "line_order": [
+          "NIV",
+          "CIV",
+          "HeII_OIII",
+          "NIII",
+          "CIII"
+        ],
+        "flux_units": "1e-20 erg s^-1 cm^-2",
+        "fluxes": [
+          19.989818525400345,
+          16.885601586811383,
+          13.33769285662256,
+          6.352584836995884,
+          9.252911220707242
+        ],
+        "flux_covariance": [
+          [
+            83.27375568716351,
+            3.6786149283469376,
+            4.324669630991384,
+            1.2566836982370215,
+            -0.06182875480924689
+          ],
+          [
+            3.6786149283469376,
+            65.79144046901449,
+            3.6251022527754557,
+            1.1863269147562705,
+            0.1855719865301852
+          ],
+          [
+            4.324669630991384,
+            3.6251022527754557,
+            96.37212500271878,
+            2.1391878653315564,
+            1.0151309943518088
+          ],
+          [
+            1.2566836982370215,
+            1.1863269147562705,
+            2.1391878653315564,
+            39.38402522929897,
+            0.7811883608012061
+          ],
+          [
+            -0.06182875480924689,
+            0.1855719865301852,
+            1.0151309943518088,
+            0.7811883608012061,
+            26.615065528806173
+          ]
+        ],
+        "lines": {
+          "NIV": {
+            "flux": 19.989818525400345,
+            "conditional_sigma": 9.125445506229465
+          },
+          "CIV": {
+            "flux": 16.885601586811383,
+            "conditional_sigma": 8.111192296389877
+          },
+          "HeII_OIII": {
+            "flux": 13.33769285662256,
+            "conditional_sigma": 9.816930528567408
+          },
+          "NIII": {
+            "flux": 6.352584836995884,
+            "conditional_sigma": 6.275669305285212
+          },
+          "CIII": {
+            "flux": 9.252911220707242,
+            "conditional_sigma": 5.158979116918983
+          }
+        },
+        "conditional_chi2": 544.3996851896526,
+        "dof": 623,
+        "native_columns": 70,
+        "exposure_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "redshift_fixed": 14.44,
+        "intrinsic_width_fixed_kms": 0,
+        "wavelength_offset_pixels_assumed": -0.25,
+        "nitrogen_carbon_line_flux_ratio": 1.0078003885063789,
+        "ratio_fieller_95": {
+          "type": "bounded",
+          "interval": [
+            0.16649877855004933,
+            3.9158628280334855
+          ]
+        },
+        "covariance_dimension": 630,
+        "empirical_stationary_noise_scale_squared": 2.2206192172121764,
+        "continuum_coefficients_uJy_times100": [
+          1.7747395206094396,
+          0.07168127778072679
+        ],
+        "interpretation": "Signed UV group fluxes under source/profile/LSF/covariance assumptions; no elemental abundance or independent detection claim",
+        "median_exposure_amplitude_correlation": [
+          [
+            1.0,
+            0.2880292269686424,
+            0.26284520969327285,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.2880292269686424,
+            1.0,
+            0.21034941174014354,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.26284520969327285,
+            0.21034941174014357,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.28078849531264694,
+            0.2666862622194034,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.28078849531264694,
+            1.0,
+            0.23591935765794966,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.2666862622194034,
+            0.23591935765794964,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.27402290343925106,
+            0.26481382480731913
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.27402290343925106,
+            1.0,
+            0.2400037144329153
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.26481382480731913,
+            0.2400037144329153,
+            1.0
+          ]
+        ]
+      }
+    },
+    {
+      "name": "point_wavelength_shift",
+      "assumed_shift_pixels": 0.25,
+      "fit": {
+        "line_order": [
+          "NIV",
+          "CIV",
+          "HeII_OIII",
+          "NIII",
+          "CIII"
+        ],
+        "flux_units": "1e-20 erg s^-1 cm^-2",
+        "fluxes": [
+          11.349397879582382,
+          11.498709479937384,
+          18.30265475534132,
+          1.7806501253744251,
+          14.143829613608066
+        ],
+        "flux_covariance": [
+          [
+            76.16806395195987,
+            3.43155179636527,
+            4.242448322234545,
+            1.2670625873327273,
+            -0.056985080531441766
+          ],
+          [
+            3.43155179636527,
+            62.44101531105701,
+            3.7091128613891224,
+            1.2392136875215416,
+            0.19012673556119816
+          ],
+          [
+            4.242448322234545,
+            3.7091128613891224,
+            97.98120435244381,
+            2.316278233072149,
+            1.0914247584697296
+          ],
+          [
+            1.2670625873327273,
+            1.2392136875215416,
+            2.316278233072149,
+            40.554145735548104,
+            0.8565763105041614
+          ],
+          [
+            -0.056985080531441766,
+            0.19012673556119816,
+            1.0914247584697296,
+            0.8565763105041614,
+            27.834456088094427
+          ]
+        ],
+        "lines": {
+          "NIV": {
+            "flux": 11.349397879582382,
+            "conditional_sigma": 8.727431692769635
+          },
+          "CIV": {
+            "flux": 11.498709479937384,
+            "conditional_sigma": 7.901962750548563
+          },
+          "HeII_OIII": {
+            "flux": 18.30265475534132,
+            "conditional_sigma": 9.898545567528787
+          },
+          "NIII": {
+            "flux": 1.7806501253744251,
+            "conditional_sigma": 6.368213700524512
+          },
+          "CIII": {
+            "flux": 14.143829613608066,
+            "conditional_sigma": 5.275837003556348
+          }
+        },
+        "conditional_chi2": 544.6998942212412,
+        "dof": 623,
+        "native_columns": 70,
+        "exposure_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "redshift_fixed": 14.44,
+        "intrinsic_width_fixed_kms": 0,
+        "wavelength_offset_pixels_assumed": 0.25,
+        "nitrogen_carbon_line_flux_ratio": 0.5120416491150755,
+        "ratio_fieller_95": {
+          "type": "bounded",
+          "interval": [
+            -0.3813229712572684,
+            2.4226049443447133
+          ]
+        },
+        "covariance_dimension": 630,
+        "empirical_stationary_noise_scale_squared": 2.2206192172121764,
+        "continuum_coefficients_uJy_times100": [
+          1.782968649645934,
+          0.02221385684554111
+        ],
+        "interpretation": "Signed UV group fluxes under source/profile/LSF/covariance assumptions; no elemental abundance or independent detection claim",
+        "median_exposure_amplitude_correlation": [
+          [
+            1.0,
+            0.2880292269686424,
+            0.26284520969327285,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.2880292269686424,
+            1.0,
+            0.21034941174014354,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.26284520969327285,
+            0.21034941174014357,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.28078849531264694,
+            0.2666862622194034,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.28078849531264694,
+            1.0,
+            0.23591935765794966,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.2666862622194034,
+            0.23591935765794964,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.27402290343925106,
+            0.26481382480731913
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.27402290343925106,
+            1.0,
+            0.2400037144329153
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.26481382480731913,
+            0.2400037144329153,
+            1.0
+          ]
+        ]
+      }
+    },
+    {
+      "name": "point_spatial_extraction_sensitivity",
+      "assumed_spatial_sigma_pixels": 0.65,
+      "assumed_trace_offset_pixels": 0.2,
+      "residual_background_polynomial_order": 1,
+      "noise_controls": "Baseline off-trace transport frozen; alternatives are sensitivities, not posterior draws",
+      "fit": {
+        "line_order": [
+          "NIV",
+          "CIV",
+          "HeII_OIII",
+          "NIII",
+          "CIII"
+        ],
+        "flux_units": "1e-20 erg s^-1 cm^-2",
+        "fluxes": [
+          15.687367031776331,
+          13.314845032976018,
+          14.729100581723822,
+          3.8647559018243514,
+          11.237794565705709
+        ],
+        "flux_covariance": [
+          [
+            68.01020148693608,
+            2.8742730972092807,
+            3.5773059155859466,
+            1.0733863433758348,
+            -0.04925499799845287
+          ],
+          [
+            2.8742730972092807,
+            51.903130570115756,
+            2.926875929204998,
+            0.9845321685595135,
+            0.15290548344375685
+          ],
+          [
+            3.5773059155859466,
+            2.926875929204998,
+            82.34799767810192,
+            1.8642224364700606,
+            0.885538387869468
+          ],
+          [
+            1.0733863433758348,
+            0.9845321685595135,
+            1.8642224364700606,
+            34.303836094658706,
+            0.699670953859958
+          ],
+          [
+            -0.04925499799845287,
+            0.15290548344375685,
+            0.885538387869468,
+            0.699670953859958,
+            23.489863803678038
+          ]
+        ],
+        "lines": {
+          "NIV": {
+            "flux": 15.687367031776331,
+            "conditional_sigma": 8.246829784040415
+          },
+          "CIV": {
+            "flux": 13.314845032976018,
+            "conditional_sigma": 7.204382733455779
+          },
+          "HeII_OIII": {
+            "flux": 14.729100581723822,
+            "conditional_sigma": 9.074579752148411
+          },
+          "NIII": {
+            "flux": 3.8647559018243514,
+            "conditional_sigma": 5.856947677302462
+          },
+          "CIII": {
+            "flux": 11.237794565705709,
+            "conditional_sigma": 4.846634275832873
+          }
+        },
+        "conditional_chi2": 545.4016247574054,
+        "dof": 623,
+        "native_columns": 70,
+        "exposure_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "redshift_fixed": 14.44,
+        "intrinsic_width_fixed_kms": 0,
+        "wavelength_offset_pixels_assumed": 0,
+        "nitrogen_carbon_line_flux_ratio": 0.7963348647308156,
+        "ratio_fieller_95": {
+          "type": "bounded",
+          "interval": [
+            -0.020386116928929894,
+            2.9862674714619595
+          ]
+        },
+        "covariance_dimension": 630,
+        "empirical_stationary_noise_scale_squared": 2.2206192172121764,
+        "continuum_coefficients_uJy_times100": [
+          1.668182814577489,
+          0.01702179625975846
+        ],
+        "interpretation": "Signed UV group fluxes under source/profile/LSF/covariance assumptions; no elemental abundance or independent detection claim",
+        "median_exposure_amplitude_correlation": [
+          [
+            1.0,
+            0.28858654497752934,
+            0.26118277358985953,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.28858654497752934,
+            1.0,
+            0.21385516424414885,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.26118277358985953,
+            0.21385516424414885,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.2810530268863515,
+            0.26434512855953196,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.2810530268863515,
+            1.0,
+            0.2468444246785888,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.26434512855953196,
+            0.2468444246785888,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.2698007781658066,
+            0.26279401739804187
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.2698007781658066,
+            1.0,
+            0.24500312155549192
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.26279401739804187,
+            0.24500312155549195,
+            1.0
+          ]
+        ]
+      }
+    },
+    {
+      "name": "point_spatial_extraction_sensitivity",
+      "assumed_spatial_sigma_pixels": 0.95,
+      "assumed_trace_offset_pixels": 0.2,
+      "residual_background_polynomial_order": 1,
+      "noise_controls": "Baseline off-trace transport frozen; alternatives are sensitivities, not posterior draws",
+      "fit": {
+        "line_order": [
+          "NIV",
+          "CIV",
+          "HeII_OIII",
+          "NIII",
+          "CIII"
+        ],
+        "flux_units": "1e-20 erg s^-1 cm^-2",
+        "fluxes": [
+          17.5587447260664,
+          15.782230631497256,
+          17.14035059297491,
+          5.2680713577250575,
+          13.89835739488984
+        ],
+        "flux_covariance": [
+          [
+            92.12587748996633,
+            4.012599961868389,
+            4.916626788826277,
+            1.4617246723618442,
+            -0.07550042747453559
+          ],
+          [
+            4.012599961868389,
+            72.51863355823077,
+            4.086878815885849,
+            1.366222797222445,
+            0.21635971454550956
+          ],
+          [
+            4.916626788826277,
+            4.086878815885849,
+            110.35437657705603,
+            2.562599076818856,
+            1.2476479136934493
+          ],
+          [
+            1.4617246723618442,
+            1.366222797222445,
+            2.562599076818856,
+            45.99365701984265,
+            0.982460152195781
+          ],
+          [
+            -0.07550042747453559,
+            0.21635971454550956,
+            1.2476479136934493,
+            0.982460152195781,
+            32.44155794533758
+          ]
+        ],
+        "lines": {
+          "NIV": {
+            "flux": 17.5587447260664,
+            "conditional_sigma": 9.598222621400607
+          },
+          "CIV": {
+            "flux": 15.782230631497256,
+            "conditional_sigma": 8.515787312881338
+          },
+          "HeII_OIII": {
+            "flux": 17.14035059297491,
+            "conditional_sigma": 10.504969137368088
+          },
+          "NIII": {
+            "flux": 5.2680713577250575,
+            "conditional_sigma": 6.781862356303219
+          },
+          "CIII": {
+            "flux": 13.89835739488984,
+            "conditional_sigma": 5.695749111867339
+          }
+        },
+        "conditional_chi2": 541.6776822237355,
+        "dof": 623,
+        "native_columns": 70,
+        "exposure_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "redshift_fixed": 14.44,
+        "intrinsic_width_fixed_kms": 0,
+        "wavelength_offset_pixels_assumed": 0,
+        "nitrogen_carbon_line_flux_ratio": 0.7690823397264773,
+        "ratio_fieller_95": {
+          "type": "bounded",
+          "interval": [
+            -0.01578641618486113,
+            2.760593658312578
+          ]
+        },
+        "covariance_dimension": 630,
+        "empirical_stationary_noise_scale_squared": 2.2206192172121764,
+        "continuum_coefficients_uJy_times100": [
+          1.8454404229111725,
+          0.079760086269991
+        ],
+        "interpretation": "Signed UV group fluxes under source/profile/LSF/covariance assumptions; no elemental abundance or independent detection claim",
+        "median_exposure_amplitude_correlation": [
+          [
+            1.0,
+            0.2899052557131794,
+            0.26821551868829796,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.2899052557131794,
+            1.0,
+            0.19938889893841344,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.26821551868829796,
+            0.19938889893841344,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.28174658757540183,
+            0.2694832076822641,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.28174658757540183,
+            1.0,
+            0.22565711801579444,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.2694832076822641,
+            0.22565711801579444,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.2746213998876131,
+            0.2637048231304796
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.27462139988761314,
+            1.0,
+            0.23021586180933623
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.2637048231304796,
+            0.23021586180933623,
+            1.0
+          ]
+        ]
+      }
+    },
+    {
+      "name": "point_spatial_extraction_sensitivity",
+      "assumed_spatial_sigma_pixels": 0.8,
+      "assumed_trace_offset_pixels": 0.1,
+      "residual_background_polynomial_order": 1,
+      "noise_controls": "Baseline off-trace transport frozen; alternatives are sensitivities, not posterior draws",
+      "fit": {
+        "line_order": [
+          "NIV",
+          "CIV",
+          "HeII_OIII",
+          "NIII",
+          "CIII"
+        ],
+        "flux_units": "1e-20 erg s^-1 cm^-2",
+        "fluxes": [
+          15.297687299047643,
+          14.774290273795986,
+          16.07391511947194,
+          5.252133944928499,
+          12.56569299031793
+        ],
+        "flux_covariance": [
+          [
+            78.34007074907139,
+            3.365209236244378,
+            4.128890047867216,
+            1.2358583454860788,
+            -0.06040331908845777
+          ],
+          [
+            3.365209236244378,
+            61.22863610900081,
+            3.417425547416552,
+            1.1485171120927695,
+            0.1791790428303851
+          ],
+          [
+            4.128890047867216,
+            3.417425547416552,
+            94.15914322638328,
+            2.15166709326923,
+            1.0309647318710324
+          ],
+          [
+            1.2358583454860788,
+            1.1485171120927695,
+            2.15166709326923,
+            39.02905438665444,
+            0.8150543602733108
+          ],
+          [
+            -0.06040331908845777,
+            0.1791790428303851,
+            1.0309647318710324,
+            0.8150543602733108,
+            27.145124416965423
+          ]
+        ],
+        "lines": {
+          "NIV": {
+            "flux": 15.297687299047643,
+            "conditional_sigma": 8.850992642018825
+          },
+          "CIV": {
+            "flux": 14.774290273795986,
+            "conditional_sigma": 7.824872913281136
+          },
+          "HeII_OIII": {
+            "flux": 16.07391511947194,
+            "conditional_sigma": 9.703563429296645
+          },
+          "NIII": {
+            "flux": 5.252133944928499,
+            "conditional_sigma": 6.247323777959202
+          },
+          "CIII": {
+            "flux": 12.56569299031793,
+            "conditional_sigma": 5.210098311641098
+          }
+        },
+        "conditional_chi2": 550.0363879877065,
+        "dof": 623,
+        "native_columns": 70,
+        "exposure_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "redshift_fixed": 14.44,
+        "intrinsic_width_fixed_kms": 0,
+        "wavelength_offset_pixels_assumed": 0,
+        "nitrogen_carbon_line_flux_ratio": 0.7516398618630302,
+        "ratio_fieller_95": {
+          "type": "bounded",
+          "interval": [
+            -0.03469308634297102,
+            2.6986133665910526
+          ]
+        },
+        "covariance_dimension": 630,
+        "empirical_stationary_noise_scale_squared": 2.2206192172121764,
+        "continuum_coefficients_uJy_times100": [
+          1.7321793179974387,
+          0.029461085797585423
+        ],
+        "interpretation": "Signed UV group fluxes under source/profile/LSF/covariance assumptions; no elemental abundance or independent detection claim",
+        "median_exposure_amplitude_correlation": [
+          [
+            1.0,
+            0.288530930248703,
+            0.26367261147808263,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.288530930248703,
+            1.0,
+            0.2100993729627948,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.26367261147808263,
+            0.2100993729627948,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.27893864720478095,
+            0.2669700663971324,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.27893864720478095,
+            1.0,
+            0.23550940530693715,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.2669700663971324,
+            0.23550940530693715,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.2723668634886768,
+            0.2640432295937015
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.2723668634886768,
+            1.0,
+            0.23847792642456295
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.2640432295937015,
+            0.23847792642456297,
+            1.0
+          ]
+        ]
+      }
+    },
+    {
+      "name": "point_spatial_extraction_sensitivity",
+      "assumed_spatial_sigma_pixels": 0.8,
+      "assumed_trace_offset_pixels": 0.3,
+      "residual_background_polynomial_order": 1,
+      "noise_controls": "Baseline off-trace transport frozen; alternatives are sensitivities, not posterior draws",
+      "fit": {
+        "line_order": [
+          "NIV",
+          "CIV",
+          "HeII_OIII",
+          "NIII",
+          "CIII"
+        ],
+        "flux_units": "1e-20 erg s^-1 cm^-2",
+        "fluxes": [
+          18.10437563290923,
+          14.208625535635788,
+          15.888303959337374,
+          4.234100358437528,
+          12.665490903510051
+        ],
+        "flux_covariance": [
+          [
+            81.284709425281,
+            3.499638775023266,
+            4.341505416285702,
+            1.291346532341973,
+            -0.06215432919827062
+          ],
+          [
+            3.499638775023266,
+            62.747971050913655,
+            3.576475397449404,
+            1.1940267348475238,
+            0.18819596302114938
+          ],
+          [
+            4.341505416285702,
+            3.576475397449404,
+            97.80112078385706,
+            2.256490769163304,
+            1.0870550298859085
+          ],
+          [
+            1.291346532341973,
+            1.1940267348475238,
+            2.256490769163304,
+            41.06707151464985,
+            0.8535201322989321
+          ],
+          [
+            -0.06215432919827062,
+            0.18819596302114938,
+            1.0870550298859085,
+            0.8535201322989321,
+            28.453460006507534
+          ]
+        ],
+        "lines": {
+          "NIV": {
+            "flux": 18.10437563290923,
+            "conditional_sigma": 9.015803315583199
+          },
+          "CIV": {
+            "flux": 14.208625535635788,
+            "conditional_sigma": 7.921361691711448
+          },
+          "HeII_OIII": {
+            "flux": 15.888303959337374,
+            "conditional_sigma": 9.889444917883766
+          },
+          "NIII": {
+            "flux": 4.234100358437528,
+            "conditional_sigma": 6.40835950260672
+          },
+          "CIII": {
+            "flux": 12.665490903510051,
+            "conditional_sigma": 5.334178475314407
+          }
+        },
+        "conditional_chi2": 537.7293550522338,
+        "dof": 623,
+        "native_columns": 70,
+        "exposure_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "redshift_fixed": 14.44,
+        "intrinsic_width_fixed_kms": 0,
+        "wavelength_offset_pixels_assumed": 0,
+        "nitrogen_carbon_line_flux_ratio": 0.8312264346227101,
+        "ratio_fieller_95": {
+          "type": "bounded",
+          "interval": [
+            0.01655431843193638,
+            3.1109624023722877
+          ]
+        },
+        "covariance_dimension": 630,
+        "empirical_stationary_noise_scale_squared": 2.2206192172121764,
+        "continuum_coefficients_uJy_times100": [
+          1.7888475306054594,
+          0.06995879389424178
+        ],
+        "interpretation": "Signed UV group fluxes under source/profile/LSF/covariance assumptions; no elemental abundance or independent detection claim",
+        "median_exposure_amplitude_correlation": [
+          [
+            1.0,
+            0.2913379734961986,
+            0.2616110661165647,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.2913379734961986,
+            1.0,
+            0.21085925233636982,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.2616110661165647,
+            0.21085925233636987,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.2828003615437981,
+            0.26918234242940187,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.2828003615437982,
+            1.0,
+            0.23982566645701495,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.26918234242940187,
+            0.23982566645701492,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.27302900010421094,
+            0.2628828853551983
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.27302900010421094,
+            1.0,
+            0.23963257639748786
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.2628828853551983,
+            0.23963257639748786,
+            1.0
+          ]
+        ]
+      }
+    },
+    {
+      "name": "point_spatial_extraction_sensitivity",
+      "assumed_spatial_sigma_pixels": 0.8,
+      "assumed_trace_offset_pixels": 0.2,
+      "residual_background_polynomial_order": 0,
+      "noise_controls": "Baseline off-trace transport frozen; alternatives are sensitivities, not posterior draws",
+      "fit": {
+        "line_order": [
+          "NIV",
+          "CIV",
+          "HeII_OIII",
+          "NIII",
+          "CIII"
+        ],
+        "flux_units": "1e-20 erg s^-1 cm^-2",
+        "fluxes": [
+          13.723248131559965,
+          15.58968020460814,
+          16.93368612585412,
+          4.56896306176823,
+          11.265120790174295
+        ],
+        "flux_covariance": [
+          [
+            74.31041127730671,
+            3.15483435843648,
+            3.9028585271275604,
+            1.1684622465472785,
+            -0.048335495019418896
+          ],
+          [
+            3.15483435843648,
+            57.34279484635609,
+            3.2377959912931034,
+            1.084214416543198,
+            0.16572713306288453
+          ],
+          [
+            3.9028585271275604,
+            3.2377959912931034,
+            90.10044433836167,
+            2.0265805738574785,
+            0.9405722489249906
+          ],
+          [
+            1.1684622465472785,
+            1.084214416543198,
+            2.0265805738574785,
+            37.346797933390334,
+            0.7386292443937267
+          ],
+          [
+            -0.048335495019418896,
+            0.16572713306288453,
+            0.9405722489249906,
+            0.7386292443937267,
+            24.786472176722427
+          ]
+        ],
+        "lines": {
+          "NIV": {
+            "flux": 13.723248131559965,
+            "conditional_sigma": 8.620348674926479
+          },
+          "CIV": {
+            "flux": 15.58968020460814,
+            "conditional_sigma": 7.572502548454909
+          },
+          "HeII_OIII": {
+            "flux": 16.93368612585412,
+            "conditional_sigma": 9.492125385726933
+          },
+          "NIII": {
+            "flux": 4.56896306176823,
+            "conditional_sigma": 6.111202658510871
+          },
+          "CIII": {
+            "flux": 11.265120790174295,
+            "conditional_sigma": 4.97860142778295
+          }
+        },
+        "conditional_chi2": 541.2633659680889,
+        "dof": 623,
+        "native_columns": 70,
+        "exposure_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "redshift_fixed": 14.44,
+        "intrinsic_width_fixed_kms": 0,
+        "wavelength_offset_pixels_assumed": 0,
+        "nitrogen_carbon_line_flux_ratio": 0.6811523644089617,
+        "ratio_fieller_95": {
+          "type": "bounded",
+          "interval": [
+            -0.10466738176073193,
+            2.440399967277836
+          ]
+        },
+        "covariance_dimension": 630,
+        "empirical_stationary_noise_scale_squared": 2.2206192172121764,
+        "continuum_coefficients_uJy_times100": [
+          1.7847829038836787,
+          0.03136807777422206
+        ],
+        "interpretation": "Signed UV group fluxes under source/profile/LSF/covariance assumptions; no elemental abundance or independent detection claim",
+        "median_exposure_amplitude_correlation": [
+          [
+            1.0,
+            0.27363806214195985,
+            0.2529056327468844,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.27363806214195985,
+            1.0,
+            0.2332198813581956,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.2529056327468844,
+            0.23321988135819563,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.2708427270543428,
+            0.25668106682297637,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.2708427270543428,
+            1.0,
+            0.2652323738274437,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.2566810668229763,
+            0.2652323738274437,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.2583402033818225,
+            0.25168872478064863
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.25834020338182256,
+            1.0,
+            0.265285173887728
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.25168872478064863,
+            0.265285173887728,
+            1.0
+          ]
+        ]
+      }
+    }
+  ],
+  "conditional_group_line_consistency": {
+    "chi2": 12.445924129499579,
+    "dof": 10,
+    "common_five_fluxes": [
+      16.665893811678096,
+      14.519241826041561,
+      16.03072210474869,
+      4.7890537082033795,
+      12.691240594241002
+    ],
+    "scope": "Three groups with separate continuum fits and disjoint RATE inputs; conditional on covariances; cross-group calibration not measured"
+  },
+  "limitations": [
+    "Independent CAL-column reduction, not exact author PIXTAB reconstruction",
+    "Source spatial geometry refined from continuum; source-specific spectral LSF/wavecorr not calibrated",
+    "Point-source uniform/barshadow restoration and stored pathloss are hypotheses; finite source size remains",
+    "Analytic shared-nod variance plus empirical stationary off-trace transport is not an independently calibrated posterior",
+    "Only three groups; common references and flat/background calibration across groups remain unmeasured",
+    "Unresolved blended groups and multiplet assumptions remain; UV flux ratio is not elemental N/C"
+  ],
+  "compact_native_replay": {
+    "filename": "mom_native_reduction.npz",
+    "sha256": "9412f52afbed589777cf55ad27ca2e93065cb4003be4990debc17503fe097027",
+    "bytes": 314936,
+    "contents": "Source flux amplitudes, native wavelengths/masks, formal shared-column covariance and empirical spectral kernel; no raw SCI pixels"
+  }
+}
