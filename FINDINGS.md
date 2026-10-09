@@ -1,5 +1,8 @@
 # Measurement audit and scientific limits
 
+Current verified results and corrections are in [docs/TAKEOVER_STATUS.md](docs/TAKEOVER_STATUS.md).
+The historical measurements below retain their original scope and reduction version.
+
 Reproduce the recorded-photometry audit with:
 
 ```bash

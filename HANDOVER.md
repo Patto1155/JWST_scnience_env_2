@@ -1,5 +1,8 @@
 # Handover: multi-epoch capability, and what this pipeline can actually discover
 
+Current verified results and corrections are in [docs/TAKEOVER_STATUS.md](docs/TAKEOVER_STATUS.md).
+The historical measurements below retain their original scope and reduction version.
+
 Companion to `FINDINGS.md` (the audit of the shipped candidate catalog). This
 document covers what was built, what was measured against real data, and an
 honest assessment of the physics reachable from here.

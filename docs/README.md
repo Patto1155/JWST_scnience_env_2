@@ -224,3 +224,8 @@ The next merged-baseline experiment is documented in
 [ORIGINAL_REPEAT_TEST.md](ORIGINAL_REPEAT_TEST.md): additional original dithers,
 matched-quadrant SMACS acquisition, covered same-filter persistence tests and
 explicit additional conditional proposals.
+
+
+The [current verified takeover status](TAKEOVER_STATUS.md) and
+[full research report](FINAL_RESEARCH_REPORT.md) index the executed experiments,
+merged PRs, reproducible inputs, uncertainty limits and next work.

@@ -51,7 +51,7 @@ python3.12 -m venv .venv
 .venv/bin/python scripts/quality_gate.py
 ```
 
-The continuation acquisition budgets are 1.5 GiB for selected original GOODS-S
+The continuation acquisition budgets are 1.5 GiB for selected original GOODS-S/SMACS
 imaging and 600 MiB for the real-star catalogue/images. Verify exact public URLs,
 byte counts, SHA256 and data identity. Raw large images stay outside git; commit
 receipts, acquisition instructions, compact derived results and code. Public
@@ -60,3 +60,10 @@ access and published scientific acknowledgements remain part of provenance.
 As executed reports are merged, their documented CLIs and pinned inputs become
 the reproducibility entry points. The dependency lock records an environment,
 not a promise of bitwise output equivalence across CPU/BLAS implementations.
+
+The executed continuation additionally bounds each modeled PSF download at
+5 MiB, follow-up pilot data at 100 MiB, and the nine-exposure native MoM batch
+at 600 MiB (64 MiB per file). Its aggregate includes the exposure acquired in
+the pilot and does not count that shared file as an independent observation.
+Inventories version the exact products; current status and executed reports
+record actual bytes and retained methodological dependencies.
