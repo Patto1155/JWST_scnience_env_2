@@ -1,0 +1,26 @@
+{
+  "replay_sha256": "9412f52afbed589777cf55ad27ca2e93065cb4003be4990debc17503fe097027",
+  "comparisons": [
+    {
+      "scenario": "nominal_shared_formal",
+      "maximum_flux_difference": 0.0,
+      "maximum_covariance_difference": 0.0
+    },
+    {
+      "scenario": "point_shared_formal",
+      "maximum_flux_difference": 0.0,
+      "maximum_covariance_difference": 0.0
+    },
+    {
+      "scenario": "nominal_empirical_offtrace_transport",
+      "maximum_flux_difference": 0.0,
+      "maximum_covariance_difference": 0.0
+    },
+    {
+      "scenario": "point_empirical_offtrace_transport",
+      "maximum_flux_difference": 0.0,
+      "maximum_covariance_difference": 0.0
+    }
+  ],
+  "scope": "Compact numerical replay of derived amplitudes/covariance, not raw-pixel rerun or calibration validation"
+}
