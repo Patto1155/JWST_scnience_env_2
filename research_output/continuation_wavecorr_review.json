@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "wavecorr_report_sha256": "80ca86e7969e82bca424a963b39282f2fec42d589fb055238b4ac18510ab3fe6",
+  "compact_sha256": "6ac87fb9fcb527b951f9dccf6e4a40fcae5ee78c0f85a55bfb2d93ac55281cb0",
+  "actual_asdf_reference_sha256": "869d4279137b1c7dea5e8bb4b4980d72fd0aa8423c87814050bfa710cd2b58f3",
+  "actual_asdf_table_and_axes_audited": true,
+  "independent_mapping_max_difference_um": 1.7763568394002505e-15,
+  "independent_original_GWCS": [
+    {
+      "filename": "jw05224004001_03101_00002_nrs2_cal.fits",
+      "wave_error_um": 2.3841237783983615e-07,
+      "dispersion_error_m_per_pixel": 0.0
+    },
+    {
+      "filename": "jw05224004001_03101_00003_nrs2_cal.fits",
+      "wave_error_um": 2.38353580428452e-07,
+      "dispersion_error_m_per_pixel": 0.0
+    },
+    {
+      "filename": "jw05224004001_03101_00004_nrs2_cal.fits",
+      "wave_error_um": 2.38292193088796e-07,
+      "dispersion_error_m_per_pixel": 0.0
+    },
+    {
+      "filename": "jw05224004001_05101_00001_nrs2_cal.fits",
+      "wave_error_um": 2.382972246195436e-07,
+      "dispersion_error_m_per_pixel": 0.0
+    },
+    {
+      "filename": "jw05224004001_05101_00002_nrs2_cal.fits",
+      "wave_error_um": 2.382993740113193e-07,
+      "dispersion_error_m_per_pixel": 0.0
+    },
+    {
+      "filename": "jw05224004001_05101_00003_nrs2_cal.fits",
+      "wave_error_um": 2.3840926122176143e-07,
+      "dispersion_error_m_per_pixel": 0.0
+    },
+    {
+      "filename": "jw05224004001_07101_00001_nrs2_cal.fits",
+      "wave_error_um": 2.384079840211939e-07,
+      "dispersion_error_m_per_pixel": 0.0
+    },
+    {
+      "filename": "jw05224004001_07101_00002_nrs2_cal.fits",
+      "wave_error_um": 2.3837635776402522e-07,
+      "dispersion_error_m_per_pixel": 0.0
+    },
+    {
+      "filename": "jw05224004001_07101_00003_nrs2_cal.fits",
+      "wave_error_um": 2.3831894413461896e-07,
+      "dispersion_error_m_per_pixel": 0.0
+    }
+  ],
+  "independent_twelve_full_grid_GLS": [
+    {
+      "hypothesis": "native_wave",
+      "scenario": "nominal_formal_shared",
+      "flux_error": 2.6264146413268463e-10,
+      "covariance_error_over_scale": 1.7244232913295546e-11,
+      "chi2_error": 1.3278622645884752e-10
+    },
+    {
+      "hypothesis": "native_wave",
+      "scenario": "point_formal_shared",
+      "flux_error": 1.6440182548649318e-10,
+      "covariance_error_over_scale": 1.0960355766827395e-11,
+      "chi2_error": 5.934452929068357e-11
+    },
+    {
+      "hypothesis": "native_wave",
+      "scenario": "nominal_empirical_spectral_transport",
+      "flux_error": 2.8272140184526506e-10,
+      "covariance_error_over_scale": 1.8065002802704024e-11,
+      "chi2_error": 6.104983185650781e-11
+    },
+    {
+      "hypothesis": "native_wave",
+      "scenario": "point_empirical_spectral_transport",
+      "flux_error": 1.752340494931559e-10,
+      "covariance_error_over_scale": 1.16385988457373e-11,
+      "chi2_error": 2.6830093702301383e-11
+    },
+    {
+      "hypothesis": "native_wave",
+      "scenario": "point_spatial_spectral_transport",
+      "flux_error": 1.7631052173783246e-10,
+      "covariance_error_over_scale": 1.163321522295611e-11,
+      "chi2_error": 2.660272002685815e-11
+    },
+    {
+      "hypothesis": "native_wave",
+      "scenario": "nominal_spatial_spectral_transport",
+      "flux_error": 2.82277312635415e-10,
+      "covariance_error_over_scale": 1.8040820747675807e-11,
+      "chi2_error": 6.184563972055912e-11
+    },
+    {
+      "hypothesis": "corrected_wave",
+      "scenario": "nominal_formal_shared",
+      "flux_error": 2.6852475798477826e-10,
+      "covariance_error_over_scale": 1.7367029359449188e-11,
+      "chi2_error": 6.389200279954821e-11
+    },
+    {
+      "hypothesis": "corrected_wave",
+      "scenario": "point_formal_shared",
+      "flux_error": 1.6860290941167477e-10,
+      "covariance_error_over_scale": 1.1310364727073077e-11,
+      "chi2_error": 1.0550138540565968e-10
+    },
+    {
+      "hypothesis": "corrected_wave",
+      "scenario": "nominal_empirical_spectral_transport",
+      "flux_error": 2.892299733048276e-10,
+      "covariance_error_over_scale": 1.819975400509111e-11,
+      "chi2_error": 2.8421709430404007e-11
+    },
+    {
+      "hypothesis": "corrected_wave",
+      "scenario": "point_empirical_spectral_transport",
+      "flux_error": 1.7771917271147686e-10,
+      "covariance_error_over_scale": 1.212796094849837e-11,
+      "chi2_error": 4.6838977141305804e-11
+    },
+    {
+      "hypothesis": "corrected_wave",
+      "scenario": "point_spatial_spectral_transport",
+      "flux_error": 1.7893242443278723e-10,
+      "covariance_error_over_scale": 1.212863819157449e-11,
+      "chi2_error": 4.672529030358419e-11
+    },
+    {
+      "hypothesis": "corrected_wave",
+      "scenario": "nominal_spatial_spectral_transport",
+      "flux_error": 2.8913760274917877e-10,
+      "covariance_error_over_scale": 1.817819845829507e-11,
+      "chi2_error": 2.887645678129047e-11
+    }
+  ],
+  "scope": "DUMMY reference/planned placement sensitivity; EXTENDED classification is a hypothesis change; no measured source LSF or wavelength calibration"
+}

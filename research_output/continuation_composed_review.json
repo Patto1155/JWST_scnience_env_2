@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "composed_report_sha256": "fd14eb0028016c7c66c09cdae74a6474416e11c6a29003103e274887ab0fdc50",
+  "compact_sha256": "6ac87fb9fcb527b951f9dccf6e4a40fcae5ee78c0f85a55bfb2d93ac55281cb0",
+  "independent_full_grid_GLS_fits": 336,
+  "maximum_flux_difference": 2.857341030448879e-10,
+  "maximum_covariance_difference_over_scale": 1.786284854242764e-11,
+  "maximum_chi2_difference": 1.4597389963455498e-10,
+  "maximum_ionic_ratio_difference": 3.3522518094741827e-11,
+  "signed_95_membership_summaries": [
+    {
+      "name": "original_native_nominal_formal_shared",
+      "zero_accepted": 0,
+      "ambient_ionic_reference_accepted": 0
+    },
+    {
+      "name": "original_native_nominal_empirical_columns",
+      "zero_accepted": 26,
+      "ambient_ionic_reference_accepted": 28
+    },
+    {
+      "name": "original_native_nominal_empirical_rows_and_columns",
+      "zero_accepted": 26,
+      "ambient_ionic_reference_accepted": 28
+    },
+    {
+      "name": "original_native_generic_point_formal_shared",
+      "zero_accepted": 0,
+      "ambient_ionic_reference_accepted": 0
+    },
+    {
+      "name": "original_native_generic_point_empirical_columns",
+      "zero_accepted": 28,
+      "ambient_ionic_reference_accepted": 28
+    },
+    {
+      "name": "original_native_generic_point_empirical_rows_and_columns",
+      "zero_accepted": 28,
+      "ambient_ionic_reference_accepted": 28
+    },
+    {
+      "name": "pinned_toy_prediction_nominal_formal_shared",
+      "zero_accepted": 0,
+      "ambient_ionic_reference_accepted": 0
+    },
+    {
+      "name": "pinned_toy_prediction_nominal_empirical_columns",
+      "zero_accepted": 3,
+      "ambient_ionic_reference_accepted": 16
+    },
+    {
+      "name": "pinned_toy_prediction_nominal_empirical_rows_and_columns",
+      "zero_accepted": 3,
+      "ambient_ionic_reference_accepted": 16
+    },
+    {
+      "name": "pinned_toy_prediction_generic_point_formal_shared",
+      "zero_accepted": 0,
+      "ambient_ionic_reference_accepted": 0
+    },
+    {
+      "name": "pinned_toy_prediction_generic_point_empirical_columns",
+      "zero_accepted": 0,
+      "ambient_ionic_reference_accepted": 18
+    },
+    {
+      "name": "pinned_toy_prediction_generic_point_empirical_rows_and_columns",
+      "zero_accepted": 0,
+      "ambient_ionic_reference_accepted": 18
+    }
+  ],
+  "scope": "Dependent original/DUMMY wavelength and fixed generic-R/noise hypotheses; no likelihood pooling, calibrated source LSF or elemental stage correction"
+}

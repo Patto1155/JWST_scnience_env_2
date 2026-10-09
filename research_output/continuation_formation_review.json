@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "formation_report_sha256": "f40f02fa10f29ac6af5723c0b9b79e5c02ea367ced35af0c492f21e3ae615727",
+  "independently_integrated_histories": 720,
+  "maximum_surviving_mass_relative_error": 2.0635395541393544e-15,
+  "checked_inverse_histories": 80,
+  "checked_closed_baryon_budgets": 216,
+  "scope": "independent quadrature and conservation under stated mass/history/duty/return assumptions; no new SED or cosmology likelihood"
+}

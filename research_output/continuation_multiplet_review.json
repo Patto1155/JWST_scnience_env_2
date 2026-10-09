@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "native_npz_sha256": "9412f52afbed589777cf55ad27ca2e93065cb4003be4990debc17503fe097027",
+  "multiplet_report_sha256": "9248284f52552e88fa002351d9b39aec419cc27e76c631ab6cffae2c5e09e929",
+  "independent_full_native_bin_GLS_fits": 112,
+  "maximum_flux_absolute_difference": 2.829025902428839e-10,
+  "maximum_covariance_difference_over_scale": 1.806335567725121e-11,
+  "maximum_ionic_ratio_absolute_difference": 7.409006741454505e-11,
+  "scope": "independent full-grid Gaussian integration and normal equations with fixed native source amplitudes/noise; no source LSF, elemental or axes inference"
+}

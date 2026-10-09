@@ -105,3 +105,151 @@ multiplet/He-O/line-transfer fits and N IV]-inclusive photoionization; independe
 epoch imaging and joint neighbour modeling; age-dependent stellar histories,
 yield/retention/ionization uncertainties and calibrated population selection.
 No discovery, enrichment mechanism or cosmology is certified by this review.
+
+## Physical multiplet and assembly round
+
+The next two frozen changes, physical multiplets `08303681` and formation
+`ed63ca5`, were independently reviewed after those earlier checks. The actual
+PyNeb1.1.32 component regeneration reproduces SHA256
+`cbd151a8274979f9378b0ce485f23793ca77ccc9eb1df8eae391012691d3fb8e` byte-for-byte.
+Another full-native bin-integrated design and normal-equation solver checks all
+112 fresh flux/covariance fits; maximum flux disagreement is 2.83e-10 in stated
+flux units, covariance difference is 1.81e-11 of scale, and ionic-ratio
+difference is 7.41e-11. Each atomic projection and polynomial Fieller interval
+uses its own cell's refitted covariance. Equal He/O mixture, single-line N IV],
+optically thin C IV, fixed source geometry and the original four noise scenarios
+are accurately distinguished from independently measured physics. Those fits
+do not combine the separate spatial-covariance sensitivity with this new
+template correction. A full N IV]1483+1486 contract is the next version, since
+1483 emissivity is not negligible; v1 must remain reproducible as scoped.
+
+The formation generator is byte-identical on independent replay. Numerical
+quadrature checks all 720 histories, their nested 5/50-Myr means and half-mass
+times, with maximum surviving-mass discrepancy 2.1e-15 relative. Eighty inverse
+histories/asymptotic ceilings and 216 closed-parcel baryon budgets independently
+agree. The primary [paper, Table 1 and §3.2.2](https://arxiv.org/html/2505.11263v2)
+and [official Prospector FAQ](https://prospect.readthedocs.io/en/stable/faq.html)
+were inspected: the paper does not resolve its mass conversion, while the
+software defaults to formed mass. Both quoted-mass interpretations are retained.
+The rising formed-mass histories give a conditional conventional counterexample
+inside published individual marginal ranges; this is not a joint SED fit or a
+cosmological likelihood. Constant effective return, uniformly interleaved duty,
+closed-parcel gas and hypothetical polluted mass remain explicit assumptions.
+
+```bash
+python -m discovery.continuation_physical_review multiplet \
+  --output /tmp/continuation_multiplet_review.json
+python -m discovery.continuation_physical_review formation \
+  --output /tmp/continuation_formation_review.json
+```
+
+These two reviewer receipts pin the exact frozen science reports. The alternate
+solver fails closed for missing scenarios, bad input receipts, nonfinite or
+misordered likelihoods and incomplete fits. Two additional synthetic
+counterexamples reject substituting the active-duration mean for a nested
+50-Myr mean and substituting a last bright phase for half-mass time.
+
+## Full N IV doublet, wavelength and yield follow-ups
+
+The version2 N IV contract `415e91d5` was independently regenerated from the
+actual pinned PyNeb1.1.32 atom: both new grids are byte-identical. At the
+reference cell, the distinct1483(4→1)/1486(3→1) transitions have emissivity
+ratio1.480924; the total response is2.480924 times the single-line response.
+Fresh normalized-doublet fits precede application of that response. The actual
+112-fit CLI result is byte-identical to frozen report SHA256
+`446c1f7a35ed8c8e272ba277576088f7a4dbbd6d75dcceb2dd6c1767b2891b63`.
+The independent full-grid normal-equation check of112 fits gives flux
+disagreement2.84e-10, covariance disagreement1.77e-11 of scale and ionic-ratio
+disagreement3.36e-11. Signed polynomial Fieller roots match every cell. The
+point empirical reference2.7504[−0.5064,9.5916] and all28 zero-inclusive cells
+weaken the earlier conditional ionic enhancement. No elemental stage fraction,
+source-specific LSF or He/O/C IV transfer is calibrated by adding the doublet.
+The older single-line result and its reviewer receipt remain unchanged.
+
+The corrected wavelength experiment `2f714d8` is approved as a **DUMMY-reference
+sensitivity**, not empirical calibration. All nine actual CALs regenerate the
+full science/provenance JSON and NPZ byte-for-byte (only output filenames differ).
+Another actual ASDF reader verifies the reference's meter/source-fraction axes,
+21×21 lookup table, variance metadata, DUMMY pedigree and internal `_0002`
+filename. Its Tabular2D evaluator and an independently written endpoint-linear
+mapping reproduce the corrected native wavelength grids within1.78e-15µm.
+The independently opened nine raw GWCS models have no wavecorr frame; their
+half-pixel dispersion derivatives match the compact arrays exactly. Stored
+float32 wavelengths differ by at most2.3842e-7µm. Target EXTENDED classification
+and WAVECOR=False are preserved facts: the point-source alternative changes a
+classification hypothesis. Twelve full-grid normal-equation GLS fits match
+fluxes within2.90e-10, covariance within1.82e-11 of scale and chi² within1.33e-10.
+Planned source position, toy correction, frozen amplitude/noise/pathloss and
+generic R remain assumptions. A positive lower endpoint under this toy model
+does not justify selecting a detection model. In the legacy generic-point
+row+column comparison, chi² increases1.029; the composed response depends on
+resolution.
+
+The versioned yield bridge `4d25697` regenerates its entire JSON exactly.
+Independent operators project224 fresh five-group fits to their own full2×2
+ionic covariances, with the matched single-line or total-doublet response.
+Benchmark mass yields are independently converted to number ratios before
+profiling. Whitened SciPy NNLS agrees for all5,376 cones and unrestricted
+positive quadrants within1.43e-14 in deviance; every deterministic matched
+threshold count agrees. Version2 point empirical profiles have0/28 cells above
+the illustrative3.841 reference for every one of eight selected benchmarks and
+all three fixed k values. The discrete models, fixed k and equal retention are
+conditional assumptions; this is not a mechanism probability or exclusion.
+
+```bash
+python -m discovery.continuation_physical_review niv_doublet \
+  --output /tmp/continuation_niv_doublet_review.json
+# ASDF/GWCS extras from the experiment receipt are required for the actual audit.
+python -m discovery.continuation_wavecorr_review --root . \
+  --native-dir /path/to/pinned/nine-CAL-cache \
+  --output /tmp/continuation_wavecorr_review.json
+python -m discovery.continuation_yield_version_review --root . \
+  --output /tmp/continuation_niv_yield_review.json
+```
+
+New controls reject unknown atomic versions, endpoint clamping/noninvertible
+wavelength maps, shortened-bin construction across masked columns, endpoint-only
+mixture fitting, and using a signed unrestricted Gaussian as the positive-quadrant
+reference. The consolidated report was also reviewed for inference claims:
+43 reconciliations refer to selected UV pixels, and independently computed
+annulus alternatives reuse the same254 photons. Reproducible numerical agreement
+does not remove those observational/model limitations.
+
+## Final composed spectral round
+
+Frozen change `ab4dabd4` is approved at report SHA256
+`fd14eb0028016c7c66c09cdae74a6474416e11c6a29003103e274887ab0fdc50`.
+It executes336 fresh physical-doublet likelihoods:28 cells × two generic R
+families × three fixed covariance families × original/toy wavelength grids.
+The independent full-native bin integration and normal equations reproduce
+all336 flux vectors and full5×5 covariances (maximum differences2.86e-10 in
+flux units and1.79e-11 of covariance scale). Each cell's independent atomic
+projection and signed Fieller roots agree, with ionic-point differences3.36e-11.
+The actual production CLI agrees in exact structure/lineage and across19,706
+floating values at1e-12 relative/absolute tolerance. Its reference-cell figure
+and literal reproduction commands were inspected; a test filename typo was
+corrected before freeze.
+
+With row+column empirical transport and generic point R, the reference original
+grid gives2.7535[−0.5058,9.5970], and the toy prediction3.7236[0.1077,14.5265].
+Every original empirical cell admits the0.2512 ambient ionic reference. Toy
+families admit it in16/28 nominal and18/28 point cells. These deterministic
+counts and signed intervals retain the model contrast; it would be wrong to
+say every alternative admits zero, or to select an instrumental hypothesis
+from a positive lower endpoint. Equal stage fractions would be needed to
+interpret that ionic reference as elemental solar N/C. All alternatives reuse
+the same observations, amplitudes and frozen source-noise models. No pooling,
+calibrated wavelength/LSF, elemental inference or mechanism odds follows.
+
+```bash
+python -m discovery.continuation_composed_review --root . \
+  --output /tmp/continuation_composed_review.json
+```
+
+The new normal-solver counterexample admits a valid covariance with exact zero
+off-diagonals and a signed negative line, while rejecting nonfinite covariance.
+All20 focused reviewer controls pass in the locked research runtime, with Ruff
+and Mypy passing for the four changed/new numerical modules. Earlier reviewer
+and science output bytes remain untouched. Consolidated-report feedback now
+qualifies zero-inclusive28-cell counts by the original-wavelength family rather
+than extending them to the DUMMY alternatives.
