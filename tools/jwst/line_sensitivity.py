@@ -21,7 +21,6 @@ from scipy.special import ndtr
 
 from .spectroscopy import _column
 
-
 LINE_NAMES = ("NIV", "CIV", "HeII_OIII", "NIII", "CIII")
 SOURCE_HASH = "42d95d348ebb55ca37eb31393b4603628ac13a4bca1f4f7f0ffba7b32d3125b1"
 FWHM_TO_SIGMA = 2.354820045
@@ -257,17 +256,40 @@ def line_matrix(
     intrinsic_fwhm: float = 0,
     lsf_scale: float = 1,
     blend: str = "equal_HeO",
+    components: tuple | list | None = None,
 ) -> np.ndarray:
     """Bin-integrated Gaussian line densities per unit total line flux.
 
     Flux units are 1e-20 erg/s/cm2; model densities are those flux units / um.
     An LSF FWHM multiplier >1 broadens the official illuminated-aperture curve.
+    Explicit components supply five (vacuum Angstrom wavelengths, weights)
+    groups in LINE_NAMES order and are normalized without mutating the caller.
     """
     if lsf_scale <= 0 or intrinsic_fwhm < 0 or redshift <= 0:
         raise ValueError("Invalid line-shape parameters")
+    if components is not None:
+        if blend != "equal_HeO":
+            raise ValueError("Explicit components conflict with named blend rewrite")
+        if len(components) != len(LINE_NAMES):
+            raise ValueError("Five line groups required for explicit components")
+        for group in components:
+            if len(group) != 2:
+                raise ValueError("Components require wavelengths and weights")
+            rests, weights = (np.asarray(value, dtype=float) for value in group)
+            if (
+                rests.ndim != 1
+                or not len(rests)
+                or weights.shape != rests.shape
+                or not np.all(np.isfinite(rests) & (rests > 0))
+                or not np.all(np.isfinite(weights) & (weights >= 0))
+                or not np.isfinite(weights.sum())
+                or weights.sum() <= 0
+            ):
+                raise ValueError("Finite positive wavelengths and nonnegative weights required")
     edges = bin_edges(wave)
     models = []
-    for group, (rests, weights) in enumerate(LINE_COMPONENTS):
+    groups = LINE_COMPONENTS if components is None else components
+    for group, (rests, weights) in enumerate(groups):
         if group == 2 and blend == "HeII_only":
             weights = (1, 0, 0)
         elif group == 2 and blend == "OIII_only":
@@ -279,7 +301,7 @@ def line_matrix(
                 weights = (1, 1)
             elif group == 4:
                 weights = (1.5, 1)
-        weights = np.asarray(weights, dtype=float)
+        weights = np.array(weights, dtype=float, copy=True)
         weights /= weights.sum()
         model = np.zeros(len(wave))
         for rest, amplitude in zip(rests, weights):

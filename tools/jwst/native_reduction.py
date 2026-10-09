@@ -522,6 +522,7 @@ def fit_native(
     noise_scale: float = 1,
     members: list[int] | None = None,
     wavelength_offset_pixels: float = 0,
+    components: tuple | list | None = None,
 ) -> dict:
     if members is None:
         members = list(range(len(data)))
@@ -529,7 +530,9 @@ def fit_native(
     for i in members:
         trace = data[i].get("trace_refined", data[i]["trace_seed"])
         profile = gaussian_profile(
-            trace, data[i].get("sigma_refined", 0.75), data[i]["science"].shape[0]
+            trace,
+            data[i].get("sigma_refined", 0.75),
+            data[i]["science"].shape[0] if "science" in data[i] else data[i]["wave"].shape[0],
         )
         good = data[i]["good"]
         wavelength_weight = np.sum(profile * good, axis=0)
@@ -560,7 +563,9 @@ def fit_native(
             raise ValueError("Native source wavelength grid not strictly ordered")
         conversion = 2.99792458e5 / wave**2
         continuum = np.polynomial.legendre.legvander((wave - 2.675) / 0.525, 1) / 100
-        lines = line_matrix(wave, resolution_wave, resolution) / conversion[:, None]
+        lines = line_matrix(
+            wave, resolution_wave, resolution, components=components
+        ) / conversion[:, None]
         designs.append(np.column_stack([continuum, lines])[selected])
         observed.append(flux[i, selected])
     # Column-major ordering permits a source-exposure covariance block per column.
@@ -859,8 +864,8 @@ def run(native_dir: Path, spectrum: Path, output: Path) -> dict:
     return result
 
 
-def replay_report(report_path: Path) -> dict:
-    """Numerically replay four main fits without raw pixels; not recalibration."""
+def load_native_replay(report_path: Path) -> dict:
+    """Load verified derived amplitudes/covariance and real grids; no SCI pixels."""
     report = json.loads(report_path.read_text())
     receipt = report["compact_native_replay"]
     path = report_path.parent / receipt["filename"]
@@ -876,7 +881,6 @@ def replay_report(report_path: Path) -> dict:
         kernel, scale = replay["spectral_kernel"], float(replay["noise_scale_squared"][0])
         data = [
             {
-                "science": np.empty(wave.shape),
                 "wave": wave,
                 "good": good,
                 "trace_refined": trace,
@@ -885,6 +889,25 @@ def replay_report(report_path: Path) -> dict:
             }
             for wave, good, trace in zip(native_wave, native_good, replay["trace"])
         ]
+    return {
+        "data": data,
+        "flux": flux,
+        "covariance_blocks": blocks,
+        "selected": selected,
+        "spectral_kernel": kernel,
+        "noise_scale_squared": scale,
+    }
+
+
+def replay_report(report_path: Path) -> dict:
+    """Numerically replay four main fits without raw pixels; not recalibration."""
+    report = json.loads(report_path.read_text())
+    receipt = report["compact_native_replay"]
+    replay = load_native_replay(report_path)
+    data, flux, blocks, selected = (
+        replay["data"], replay["flux"], replay["covariance_blocks"], replay["selected"]
+    )
+    kernel, scale = replay["spectral_kernel"], replay["noise_scale_squared"]
     rw, rr, _ = read_resolution(ROOT / "data_sources/pilot/jwst_nirspec_prism_disp.fits")
     pw, pr, _ = read_point_resolution(
         ROOT / "data_sources/followup/unite_point_prism_resolution.csv"

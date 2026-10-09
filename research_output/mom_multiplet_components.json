@@ -1,0 +1,2688 @@
+{
+  "schema_version": 1,
+  "pyneb_version": "1.1.32",
+  "atomic_grid_sha256": "b3923cd0084950e4b73a89a20848785188fc484287140c9f4d2720af43a5dc8d",
+  "atomic_files": [
+    {
+      "ion": "N4",
+      "filename": "n_iv_atom_WFD96.dat",
+      "bytes": 581,
+      "sha256": "52c5db33fe42acf6501cddd44eea9d8bef18bc2ea9ba103556a5c17ffca6323f",
+      "sources": [
+        "N4: All transition probabilities: Wiese, Fuhr & Deters, 1996, JPCRD, Monograph 7, 269: ",
+        "N4: Energy levels: \n    Ref. 7288 of NIST 2014 (try this: http://physics.nist.gov/cgi-bin/ASBib1/get_ASBib_ref.cgi?db=el&db_id=7288&comment_code=&element=N&spectr_charge=4&): ",
+        "N4: All collision strengths: Ramsbotton, Berrington Hibbert & Bell, 1994, Phys Scr., 50: "
+      ]
+    },
+    {
+      "ion": "N4",
+      "filename": "n_iv_coll_RBHB94.dat",
+      "bytes": 1470,
+      "sha256": "90700c6d32c807b6acc0c975892335751ce1de545398e34549fc2563f2973339",
+      "sources": [
+        "N4: All transition probabilities: Wiese, Fuhr & Deters, 1996, JPCRD, Monograph 7, 269: ",
+        "N4: Energy levels: \n    Ref. 7288 of NIST 2014 (try this: http://physics.nist.gov/cgi-bin/ASBib1/get_ASBib_ref.cgi?db=el&db_id=7288&comment_code=&element=N&spectr_charge=4&): ",
+        "N4: All collision strengths: Ramsbotton, Berrington Hibbert & Bell, 1994, Phys Scr., 50: "
+      ]
+    },
+    {
+      "ion": "N3",
+      "filename": "n_iii_atom_GMZ98.dat",
+      "bytes": 1129,
+      "sha256": "8ae8cbd0c38753c3f5617973bff58b611d3392438e7bdef3fa3d10af328b32bc",
+      "sources": [
+        "N3: All A-values: Galavis, Mendoza & Zeippen, 1998, A&A Supp., 131, 499: ",
+        "N3: Energy levels: \n    Ref. 7288 of NIST 2014 (try this: http://physics.nist.gov/cgi-bin/ASBib1/get_ASBib_ref.cgi?db=el&db_id=7288&comment_code=&element=N&spectr_charge=3&): ",
+        "N3: All collision strengths: Blum & Pradhan, 1992, ApJ Suppl., 80, 425: "
+      ]
+    },
+    {
+      "ion": "N3",
+      "filename": "n_iii_coll_BP92.dat",
+      "bytes": 8148,
+      "sha256": "977024d9a257c2bfdb42cae3e6e7e6a9c974d1b510af9ccab595416869430c5c",
+      "sources": [
+        "N3: All A-values: Galavis, Mendoza & Zeippen, 1998, A&A Supp., 131, 499: ",
+        "N3: Energy levels: \n    Ref. 7288 of NIST 2014 (try this: http://physics.nist.gov/cgi-bin/ASBib1/get_ASBib_ref.cgi?db=el&db_id=7288&comment_code=&element=N&spectr_charge=3&): ",
+        "N3: All collision strengths: Blum & Pradhan, 1992, ApJ Suppl., 80, 425: "
+      ]
+    },
+    {
+      "ion": "C4",
+      "filename": "c_iv_atom_WFD96.dat",
+      "bytes": 333,
+      "sha256": "fa5d2c45bf74d8b38759e88503d265e4be7bdd5350dd27b017c2ac865f64f752",
+      "sources": [
+        "C4: All A-values: Wiese, Fuhr and Deters 1996, JPCRD, Monograph 7, p. 127: ",
+        "C4: Energy levels: \n    Ref. 7288 of NIST 2014 (try this: http://physics.nist.gov/cgi-bin/ASBib1/get_ASBib_ref.cgi?db=el&db_id=7288&comment_code=&element=C&spectr_charge=4&): ",
+        "C4: Collision strengths: Aggarwal and Keenan 2004, Phys Scripta, 69, 385: "
+      ]
+    },
+    {
+      "ion": "C4",
+      "filename": "c_iv_coll_AK04.dat",
+      "bytes": 335,
+      "sha256": "be270bc39589b41a20f7c9331e38dc6ac9ed35a6e06cb96cb1ab72d070dcd1a3",
+      "sources": [
+        "C4: All A-values: Wiese, Fuhr and Deters 1996, JPCRD, Monograph 7, p. 127: ",
+        "C4: Energy levels: \n    Ref. 7288 of NIST 2014 (try this: http://physics.nist.gov/cgi-bin/ASBib1/get_ASBib_ref.cgi?db=el&db_id=7288&comment_code=&element=C&spectr_charge=4&): ",
+        "C4: Collision strengths: Aggarwal and Keenan 2004, Phys Scripta, 69, 385: "
+      ]
+    },
+    {
+      "ion": "C3",
+      "filename": "c_iii_atom_G83-NS78-WFD96.dat",
+      "bytes": 732,
+      "sha256": "078f5127fef00ad336cc885650ff3a73ad2755155ab51da0fa3045f54fb61d80",
+      "sources": [
+        "C3: A-value for 4-2: Glass, 1983, Astrophy. Space Sci., 92, 307: ",
+        "C3: A-values of 3-2: Nussbaumer & Storey, 1978, A&A, 64, 139: ",
+        "C3: All other A-values: Wiese, Fuhr & Deters, 1996, JPCRD, Monograph No. 7, 96: ",
+        "C3: Energy levels: \n    Ref.  of NIST 2014 (try this: http://physics.nist.gov/cgi-bin/ASBib1/get_ASBib_ref.cgi?db=el&db_id=&comment_code=&element=C&spectr_charge=3&): ",
+        "C3: All collision strengths: Berrington, Burke, Dufton & Kingston, 1985, ADNDT, 33, 195: "
+      ]
+    },
+    {
+      "ion": "C3",
+      "filename": "c_iii_coll_Bal85.dat",
+      "bytes": 1249,
+      "sha256": "c19b8c06a3ea9257db83c8aef0f4c8415684b2748c9587479a7a428c5cae96ab",
+      "sources": [
+        "C3: A-value for 4-2: Glass, 1983, Astrophy. Space Sci., 92, 307: ",
+        "C3: A-values of 3-2: Nussbaumer & Storey, 1978, A&A, 64, 139: ",
+        "C3: All other A-values: Wiese, Fuhr & Deters, 1996, JPCRD, Monograph No. 7, 96: ",
+        "C3: Energy levels: \n    Ref.  of NIST 2014 (try this: http://physics.nist.gov/cgi-bin/ASBib1/get_ASBib_ref.cgi?db=el&db_id=&comment_code=&element=C&spectr_charge=3&): ",
+        "C3: All collision strengths: Berrington, Burke, Dufton & Kingston, 1985, ADNDT, 33, 195: "
+      ]
+    },
+    {
+      "ion": "O3",
+      "filename": "o_iii_atom_FFT04-SZ00.dat",
+      "bytes": 808,
+      "sha256": "f802375827fa91d68ff6cc6f0cb811397d5358811207ae90b52996820a612ff1",
+      "sources": [
+        "O3: A values for 4-2 and 4-3: Storey and Zeippen 2000, 312, 813: ",
+        "O3: A-values from all levels: Froese Fischer et al 2004, ADNDT 87, 1: ",
+        "O3: Energy levels: \n    Ref. 7288 of NIST 2014 (try this: http://physics.nist.gov/cgi-bin/ASBib1/get_ASBib_ref.cgi?db=el&db_id=7288&comment_code=&element=O&spectr_charge=3&): ",
+        "O3: Collision strengths: Tayal, S. S. & Zatsarinny, O. 2017, Astrophysical Journal, 850, 147: "
+      ]
+    },
+    {
+      "ion": "O3",
+      "filename": "o_iii_coll_TZ17.dat",
+      "bytes": 1989841,
+      "sha256": "a2857d2f4cd211ed263039beb9dcc6dbf7dbe0e8fe665529236798c3eb9e53b7",
+      "sources": [
+        "O3: A values for 4-2 and 4-3: Storey and Zeippen 2000, 312, 813: ",
+        "O3: A-values from all levels: Froese Fischer et al 2004, ADNDT 87, 1: ",
+        "O3: Energy levels: \n    Ref. 7288 of NIST 2014 (try this: http://physics.nist.gov/cgi-bin/ASBib1/get_ASBib_ref.cgi?db=el&db_id=7288&comment_code=&element=O&spectr_charge=3&): ",
+        "O3: Collision strengths: Tayal, S. S. & Zatsarinny, O. 2017, Astrophysical Journal, 850, 147: "
+      ]
+    },
+    {
+      "ion": "He2",
+      "filename": "he_ii_rec_SH95.fits",
+      "bytes": 1480320,
+      "sha256": "798f38646be61942eb01820c3c6be7f0a3f8eaa1744c7f1acacfb19cd048e7a8",
+      "sources": [
+        "He2: Atomic data:Storey and Hummer 1995",
+        "Ref.  of NIST 2014 (try this: http://physics.nist.gov/cgi-bin/ASBib1/get_ASBib_ref.cgi?db=el&db_id=&comment_code=&element=He&spectr_charge=2&",
+        "Ref. 3620c107 of NIST 2014 (try this: http://physics.nist.gov/cgi-bin/ASBib1/get_ASBib_ref.cgi?db=el&db_id=3620c107&comment_code=&element=He&spectr_charge=2&"
+      ]
+    }
+  ],
+  "records": [
+    {
+      "temperature_K": 5000,
+      "electron_density_cm3": 100,
+      "components": [
+        {
+          "group": "NIV",
+          "vacuum_wavelengths_A": [
+            1486.496
+          ],
+          "component_emissivity_erg_cm3_s": [
+            4.175770634611699e-27
+          ],
+          "normalized_weights": [
+            1.0
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIV",
+          "vacuum_wavelengths_A": [
+            1548.204,
+            1550.781
+          ],
+          "component_emissivity_erg_cm3_s": [
+            3.853182129912791e-26,
+            1.9859686701412923e-26
+          ],
+          "normalized_weights": [
+            0.6598874154572446,
+            0.3401125845427554
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "HeII_OIII",
+          "vacuum_wavelengths_A": [
+            1640.42,
+            1660.809,
+            1666.15
+          ],
+          "component_emissivity_erg_cm3_s": null,
+          "normalized_weights": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "assumption": "Fixed equal HeII/OIII blend weights; ionic mixing not identified"
+        },
+        {
+          "group": "NIII",
+          "vacuum_wavelengths_A": [
+            1746.823,
+            1748.646,
+            1749.674,
+            1752.16,
+            1753.995
+          ],
+          "component_emissivity_erg_cm3_s": [
+            1.879667057847541e-27,
+            4.151003465764251e-27,
+            9.914884395925857e-27,
+            1.1186083061705166e-26,
+            4.4207069027346435e-27
+          ],
+          "normalized_weights": [
+            0.05957297515475788,
+            0.13155927019142608,
+            0.3142360554305654,
+            0.35452461941697244,
+            0.1401070798062782
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIII",
+          "vacuum_wavelengths_A": [
+            1906.683,
+            1908.734
+          ],
+          "component_emissivity_erg_cm3_s": [
+            2.2109379419557983e-25,
+            1.478980475647561e-25
+          ],
+          "normalized_weights": [
+            0.5991834213483304,
+            0.40081657865166953
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        }
+      ]
+    },
+    {
+      "temperature_K": 5000,
+      "electron_density_cm3": 1000,
+      "components": [
+        {
+          "group": "NIV",
+          "vacuum_wavelengths_A": [
+            1486.496
+          ],
+          "component_emissivity_erg_cm3_s": [
+            4.230670510853639e-27
+          ],
+          "normalized_weights": [
+            1.0
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIV",
+          "vacuum_wavelengths_A": [
+            1548.204,
+            1550.781
+          ],
+          "component_emissivity_erg_cm3_s": [
+            3.8531821299104727e-26,
+            1.985968670140088e-26
+          ],
+          "normalized_weights": [
+            0.6598874154572457,
+            0.3401125845427544
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "HeII_OIII",
+          "vacuum_wavelengths_A": [
+            1640.42,
+            1660.809,
+            1666.15
+          ],
+          "component_emissivity_erg_cm3_s": null,
+          "normalized_weights": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "assumption": "Fixed equal HeII/OIII blend weights; ionic mixing not identified"
+        },
+        {
+          "group": "NIII",
+          "vacuum_wavelengths_A": [
+            1746.823,
+            1748.646,
+            1749.674,
+            1752.16,
+            1753.995
+          ],
+          "component_emissivity_erg_cm3_s": [
+            1.673565346308431e-27,
+            3.2016349693537534e-27,
+            1.3733395005505202e-26,
+            9.959551557197051e-27,
+            3.409655020958391e-27
+          ],
+          "normalized_weights": [
+            0.05233522152577569,
+            0.1001205454781916,
+            0.4294665108234354,
+            0.31145203752756867,
+            0.10662568464502853
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIII",
+          "vacuum_wavelengths_A": [
+            1906.683,
+            1908.734
+          ],
+          "component_emissivity_erg_cm3_s": [
+            2.17609652837121e-25,
+            1.50804778965653e-25
+          ],
+          "normalized_weights": [
+            0.5906653867284319,
+            0.4093346132715681
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        }
+      ]
+    },
+    {
+      "temperature_K": 5000,
+      "electron_density_cm3": 10000,
+      "components": [
+        {
+          "group": "NIV",
+          "vacuum_wavelengths_A": [
+            1486.496
+          ],
+          "component_emissivity_erg_cm3_s": [
+            4.7198696102317364e-27
+          ],
+          "normalized_weights": [
+            1.0
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIV",
+          "vacuum_wavelengths_A": [
+            1548.204,
+            1550.781
+          ],
+          "component_emissivity_erg_cm3_s": [
+            3.8531821298872985e-26,
+            1.9859686701280533e-26
+          ],
+          "normalized_weights": [
+            0.6598874154572559,
+            0.3401125845427441
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "HeII_OIII",
+          "vacuum_wavelengths_A": [
+            1640.42,
+            1660.809,
+            1666.15
+          ],
+          "component_emissivity_erg_cm3_s": null,
+          "normalized_weights": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "assumption": "Fixed equal HeII/OIII blend weights; ionic mixing not identified"
+        },
+        {
+          "group": "NIII",
+          "vacuum_wavelengths_A": [
+            1746.823,
+            1748.646,
+            1749.674,
+            1752.16,
+            1753.995
+          ],
+          "component_emissivity_erg_cm3_s": [
+            1.5732450841184474e-27,
+            2.7396124170776576e-27,
+            1.5591824796465605e-26,
+            9.362535835213685e-27,
+            2.9176134452499075e-27
+          ],
+          "normalized_weights": [
+            0.04888156957725753,
+            0.08512122893753647,
+            0.48444636904866456,
+            0.29089901596928075,
+            0.09065181646726057
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIII",
+          "vacuum_wavelengths_A": [
+            1906.683,
+            1908.734
+          ],
+          "component_emissivity_erg_cm3_s": [
+            1.879860628188424e-25,
+            1.7551884667567976e-25
+          ],
+          "normalized_weights": [
+            0.5171486214044525,
+            0.48285137859554755
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        }
+      ]
+    },
+    {
+      "temperature_K": 5000,
+      "electron_density_cm3": 100000,
+      "components": [
+        {
+          "group": "NIV",
+          "vacuum_wavelengths_A": [
+            1486.496
+          ],
+          "component_emissivity_erg_cm3_s": [
+            6.934453463569977e-27
+          ],
+          "normalized_weights": [
+            1.0
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIV",
+          "vacuum_wavelengths_A": [
+            1548.204,
+            1550.781
+          ],
+          "component_emissivity_erg_cm3_s": [
+            3.853182129655556e-26,
+            1.985968670007704e-26
+          ],
+          "normalized_weights": [
+            0.6598874154573584,
+            0.34011258454264165
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "HeII_OIII",
+          "vacuum_wavelengths_A": [
+            1640.42,
+            1660.809,
+            1666.15
+          ],
+          "component_emissivity_erg_cm3_s": null,
+          "normalized_weights": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "assumption": "Fixed equal HeII/OIII blend weights; ionic mixing not identified"
+        },
+        {
+          "group": "NIII",
+          "vacuum_wavelengths_A": [
+            1746.823,
+            1748.646,
+            1749.674,
+            1752.16,
+            1753.995
+          ],
+          "component_emissivity_erg_cm3_s": [
+            1.5590413290050956e-27,
+            2.6750649675148272e-27,
+            1.585251442248101e-26,
+            9.278007895107092e-27,
+            2.848872149756003e-27
+          ],
+          "normalized_weights": [
+            0.048397140703005284,
+            0.08304173418232212,
+            0.4921077823452148,
+            0.28801613221481454,
+            0.08843721055464321
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIII",
+          "vacuum_wavelengths_A": [
+            1906.683,
+            1908.734
+          ],
+          "component_emissivity_erg_cm3_s": [
+            7.961824126915669e-26,
+            2.6592060638369055e-25
+          ],
+          "normalized_weights": [
+            0.23041762687461065,
+            0.7695823731253894
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        }
+      ]
+    },
+    {
+      "temperature_K": 7500,
+      "electron_density_cm3": 100,
+      "components": [
+        {
+          "group": "NIV",
+          "vacuum_wavelengths_A": [
+            1486.496
+          ],
+          "component_emissivity_erg_cm3_s": [
+            1.7431357403126136e-24
+          ],
+          "normalized_weights": [
+            1.0
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIV",
+          "vacuum_wavelengths_A": [
+            1548.204,
+            1550.781
+          ],
+          "component_emissivity_erg_cm3_s": [
+            1.5433388473291493e-23,
+            7.87277246101991e-24
+          ],
+          "normalized_weights": [
+            0.6622020896873844,
+            0.3377979103126157
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "HeII_OIII",
+          "vacuum_wavelengths_A": [
+            1640.42,
+            1660.809,
+            1666.15
+          ],
+          "component_emissivity_erg_cm3_s": null,
+          "normalized_weights": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "assumption": "Fixed equal HeII/OIII blend weights; ionic mixing not identified"
+        },
+        {
+          "group": "NIII",
+          "vacuum_wavelengths_A": [
+            1746.823,
+            1748.646,
+            1749.674,
+            1752.16,
+            1753.995
+          ],
+          "component_emissivity_erg_cm3_s": [
+            3.8518882247527654e-25,
+            8.451240912523736e-25,
+            2.054199464362764e-24,
+            2.292296470622261e-24,
+            9.000343976294075e-25
+          ],
+          "normalized_weights": [
+            0.05947169135100175,
+            0.13048395014495265,
+            0.3171605960238286,
+            0.35392186956460275,
+            0.13896189291561417
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIII",
+          "vacuum_wavelengths_A": [
+            1906.683,
+            1908.734
+          ],
+          "component_emissivity_erg_cm3_s": [
+            2.7625767324904225e-23,
+            1.8360916148302587e-23
+          ],
+          "normalized_weights": [
+            0.6007340655692165,
+            0.39926593443078356
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        }
+      ]
+    },
+    {
+      "temperature_K": 7500,
+      "electron_density_cm3": 1000,
+      "components": [
+        {
+          "group": "NIV",
+          "vacuum_wavelengths_A": [
+            1486.496
+          ],
+          "component_emissivity_erg_cm3_s": [
+            1.760056654401848e-24
+          ],
+          "normalized_weights": [
+            1.0
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIV",
+          "vacuum_wavelengths_A": [
+            1548.204,
+            1550.781
+          ],
+          "component_emissivity_erg_cm3_s": [
+            1.5433388473283914e-23,
+            7.872772461016014e-24
+          ],
+          "normalized_weights": [
+            0.6622020896873851,
+            0.3377979103126148
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "HeII_OIII",
+          "vacuum_wavelengths_A": [
+            1640.42,
+            1660.809,
+            1666.15
+          ],
+          "component_emissivity_erg_cm3_s": null,
+          "normalized_weights": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "assumption": "Fixed equal HeII/OIII blend weights; ionic mixing not identified"
+        },
+        {
+          "group": "NIII",
+          "vacuum_wavelengths_A": [
+            1746.823,
+            1748.646,
+            1749.674,
+            1752.16,
+            1753.995
+          ],
+          "component_emissivity_erg_cm3_s": [
+            3.4329435248510592e-25,
+            6.578455487637499e-25,
+            2.7900227464809457e-24,
+            2.0429783697492214e-24,
+            7.0058779337052285e-25
+          ],
+          "normalized_weights": [
+            0.05253383306666647,
+            0.10066914294462158,
+            0.4269531035241583,
+            0.3126339942917424,
+            0.10720992617281132
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIII",
+          "vacuum_wavelengths_A": [
+            1906.683,
+            1908.734
+          ],
+          "component_emissivity_erg_cm3_s": [
+            2.72692268761377e-23,
+            1.8658340422678246e-23
+          ],
+          "normalized_weights": [
+            0.5937442037527801,
+            0.40625579624721975
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        }
+      ]
+    },
+    {
+      "temperature_K": 7500,
+      "electron_density_cm3": 10000,
+      "components": [
+        {
+          "group": "NIV",
+          "vacuum_wavelengths_A": [
+            1486.496
+          ],
+          "component_emissivity_erg_cm3_s": [
+            1.9156880127057637e-24
+          ],
+          "normalized_weights": [
+            1.0
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIV",
+          "vacuum_wavelengths_A": [
+            1548.204,
+            1550.781
+          ],
+          "component_emissivity_erg_cm3_s": [
+            1.5433388473208127e-23,
+            7.872772460977058e-24
+          ],
+          "normalized_weights": [
+            0.6622020896873936,
+            0.3377979103126064
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "HeII_OIII",
+          "vacuum_wavelengths_A": [
+            1640.42,
+            1660.809,
+            1666.15
+          ],
+          "component_emissivity_erg_cm3_s": null,
+          "normalized_weights": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "assumption": "Fixed equal HeII/OIII blend weights; ionic mixing not identified"
+        },
+        {
+          "group": "NIII",
+          "vacuum_wavelengths_A": [
+            1746.823,
+            1748.646,
+            1749.674,
+            1752.16,
+            1753.995
+          ],
+          "component_emissivity_erg_cm3_s": [
+            3.2050808934667164e-25,
+            5.559995677425193e-25,
+            3.1901962832780634e-24,
+            1.9073750824179655e-24,
+            5.92124566338877e-25
+          ],
+          "normalized_weights": [
+            0.04881178065778281,
+            0.08467595623496153,
+            0.4858509548138489,
+            0.29048369526300377,
+            0.09017761303040314
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIII",
+          "vacuum_wavelengths_A": [
+            1906.683,
+            1908.734
+          ],
+          "component_emissivity_erg_cm3_s": [
+            2.4152169925536705e-23,
+            2.1258561237239185e-23
+          ],
+          "normalized_weights": [
+            0.5318604062762754,
+            0.4681395937237246
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        }
+      ]
+    },
+    {
+      "temperature_K": 7500,
+      "electron_density_cm3": 100000,
+      "components": [
+        {
+          "group": "NIV",
+          "vacuum_wavelengths_A": [
+            1486.496
+          ],
+          "component_emissivity_erg_cm3_s": [
+            2.7499137387961952e-24
+          ],
+          "normalized_weights": [
+            1.0
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIV",
+          "vacuum_wavelengths_A": [
+            1548.204,
+            1550.781
+          ],
+          "component_emissivity_erg_cm3_s": [
+            1.5433388472450233e-23,
+            7.872772460587505e-24
+          ],
+          "normalized_weights": [
+            0.6622020896874772,
+            0.3377979103125228
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "HeII_OIII",
+          "vacuum_wavelengths_A": [
+            1640.42,
+            1660.809,
+            1666.15
+          ],
+          "component_emissivity_erg_cm3_s": null,
+          "normalized_weights": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "assumption": "Fixed equal HeII/OIII blend weights; ionic mixing not identified"
+        },
+        {
+          "group": "NIII",
+          "vacuum_wavelengths_A": [
+            1746.823,
+            1748.646,
+            1749.674,
+            1752.16,
+            1753.995
+          ],
+          "component_emissivity_erg_cm3_s": [
+            3.171491990106807e-25,
+            5.411344980907873e-25,
+            3.248786238040739e-24,
+            1.8873859965121992e-24,
+            5.762936674824861e-25
+          ],
+          "normalized_weights": [
+            0.0482668216503548,
+            0.08235506313645989,
+            0.49443160008220166,
+            0.28724059074783775,
+            0.08770592438314583
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIII",
+          "vacuum_wavelengths_A": [
+            1906.683,
+            1908.734
+          ],
+          "component_emissivity_erg_cm3_s": [
+            1.1270718980615498e-23,
+            3.200356189337215e-23
+          ],
+          "normalized_weights": [
+            0.260448440805642,
+            0.739551559194358
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        }
+      ]
+    },
+    {
+      "temperature_K": 10000,
+      "electron_density_cm3": 100,
+      "components": [
+        {
+          "group": "NIV",
+          "vacuum_wavelengths_A": [
+            1486.496
+          ],
+          "component_emissivity_erg_cm3_s": [
+            3.3738780255018644e-23
+          ],
+          "normalized_weights": [
+            1.0
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIV",
+          "vacuum_wavelengths_A": [
+            1548.204,
+            1550.781
+          ],
+          "component_emissivity_erg_cm3_s": [
+            2.960299212486663e-22,
+            1.502307375648525e-22
+          ],
+          "normalized_weights": [
+            0.6633565280787385,
+            0.33664347192126154
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "HeII_OIII",
+          "vacuum_wavelengths_A": [
+            1640.42,
+            1660.809,
+            1666.15
+          ],
+          "component_emissivity_erg_cm3_s": null,
+          "normalized_weights": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "assumption": "Fixed equal HeII/OIII blend weights; ionic mixing not identified"
+        },
+        {
+          "group": "NIII",
+          "vacuum_wavelengths_A": [
+            1746.823,
+            1748.646,
+            1749.674,
+            1752.16,
+            1753.995
+          ],
+          "component_emissivity_erg_cm3_s": [
+            5.3649541654629786e-24,
+            1.1704566725249493e-23,
+            2.8999015263992685e-23,
+            3.1927368555276127e-23,
+            1.246504835338706e-23
+          ],
+          "normalized_weights": [
+            0.05930684990356891,
+            0.12938805450181787,
+            0.3205694200864624,
+            0.35294088193953527,
+            0.13779479356861554
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIII",
+          "vacuum_wavelengths_A": [
+            1906.683,
+            1908.734
+          ],
+          "component_emissivity_erg_cm3_s": [
+            2.9595927592733056e-22,
+            1.9605261738400628e-22
+          ],
+          "normalized_weights": [
+            0.6015287027625824,
+            0.3984712972374176
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        }
+      ]
+    },
+    {
+      "temperature_K": 10000,
+      "electron_density_cm3": 1000,
+      "components": [
+        {
+          "group": "NIV",
+          "vacuum_wavelengths_A": [
+            1486.496
+          ],
+          "component_emissivity_erg_cm3_s": [
+            3.4003753116020516e-23
+          ],
+          "normalized_weights": [
+            1.0
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIV",
+          "vacuum_wavelengths_A": [
+            1548.204,
+            1550.781
+          ],
+          "component_emissivity_erg_cm3_s": [
+            2.960299212485403e-22,
+            1.5023073756478813e-22
+          ],
+          "normalized_weights": [
+            0.663356528078739,
+            0.3366434719212609
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "HeII_OIII",
+          "vacuum_wavelengths_A": [
+            1640.42,
+            1660.809,
+            1666.15
+          ],
+          "component_emissivity_erg_cm3_s": null,
+          "normalized_weights": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "assumption": "Fixed equal HeII/OIII blend weights; ionic mixing not identified"
+        },
+        {
+          "group": "NIII",
+          "vacuum_wavelengths_A": [
+            1746.823,
+            1748.646,
+            1749.674,
+            1752.16,
+            1753.995
+          ],
+          "component_emissivity_erg_cm3_s": [
+            4.793983477222724e-24,
+            9.192363934490112e-24,
+            3.876106736295108e-23,
+            2.8529465975779795e-23,
+            9.789620035927312e-24
+          ],
+          "normalized_weights": [
+            0.052642667016148156,
+            0.10094122267917247,
+            0.42563475073978074,
+            0.3132816758020146,
+            0.107499683762884
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIII",
+          "vacuum_wavelengths_A": [
+            1906.683,
+            1908.734
+          ],
+          "component_emissivity_erg_cm3_s": [
+            2.926427104874553e-22,
+            1.9881603304525432e-22
+          ],
+          "normalized_weights": [
+            0.5954573284908464,
+            0.4045426715091537
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        }
+      ]
+    },
+    {
+      "temperature_K": 10000,
+      "electron_density_cm3": 10000,
+      "components": [
+        {
+          "group": "NIV",
+          "vacuum_wavelengths_A": [
+            1486.496
+          ],
+          "component_emissivity_erg_cm3_s": [
+            3.648127286844261e-23
+          ],
+          "normalized_weights": [
+            1.0
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIV",
+          "vacuum_wavelengths_A": [
+            1548.204,
+            1550.781
+          ],
+          "component_emissivity_erg_cm3_s": [
+            2.96029921247281e-22,
+            1.5023073756414412e-22
+          ],
+          "normalized_weights": [
+            0.6633565280787465,
+            0.3366434719212536
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "HeII_OIII",
+          "vacuum_wavelengths_A": [
+            1640.42,
+            1660.809,
+            1666.15
+          ],
+          "component_emissivity_erg_cm3_s": null,
+          "normalized_weights": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "assumption": "Fixed equal HeII/OIII blend weights; ionic mixing not identified"
+        },
+        {
+          "group": "NIII",
+          "vacuum_wavelengths_A": [
+            1746.823,
+            1748.646,
+            1749.674,
+            1752.16,
+            1753.995
+          ],
+          "component_emissivity_erg_cm3_s": [
+            4.460058690810668e-24,
+            7.723309018301357e-24,
+            4.446981492353994e-23,
+            2.654224681291123e-23,
+            8.225116112465467e-24
+          ],
+          "normalized_weights": [
+            0.04878617452550282,
+            0.08448110838935032,
+            0.4864313011052092,
+            0.2903313106577743,
+            0.0899701053221633
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIII",
+          "vacuum_wavelengths_A": [
+            1906.683,
+            1908.734
+          ],
+          "component_emissivity_erg_cm3_s": [
+            2.6315365080435793e-22,
+            2.233866879109764e-22
+          ],
+          "normalized_weights": [
+            0.5408670769194416,
+            0.45913292308055825
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        }
+      ]
+    },
+    {
+      "temperature_K": 10000,
+      "electron_density_cm3": 100000,
+      "components": [
+        {
+          "group": "NIV",
+          "vacuum_wavelengths_A": [
+            1486.496
+          ],
+          "component_emissivity_erg_cm3_s": [
+            5.11348422224155e-23
+          ],
+          "normalized_weights": [
+            1.0
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIV",
+          "vacuum_wavelengths_A": [
+            1548.204,
+            1550.781
+          ],
+          "component_emissivity_erg_cm3_s": [
+            2.960299212346881e-22,
+            1.5023073755770467e-22
+          ],
+          "normalized_weights": [
+            0.6633565280788188,
+            0.3366434719211811
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "HeII_OIII",
+          "vacuum_wavelengths_A": [
+            1640.42,
+            1660.809,
+            1666.15
+          ],
+          "component_emissivity_erg_cm3_s": null,
+          "normalized_weights": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "assumption": "Fixed equal HeII/OIII blend weights; ionic mixing not identified"
+        },
+        {
+          "group": "NIII",
+          "vacuum_wavelengths_A": [
+            1746.823,
+            1748.646,
+            1749.674,
+            1752.16,
+            1753.995
+          ],
+          "component_emissivity_erg_cm3_s": [
+            4.40940215849283e-24,
+            7.50227509119622e-24,
+            4.533100503278376e-23,
+            2.6240784819544072e-23,
+            7.989720932636981e-24
+          ],
+          "normalized_weights": [
+            0.048204312686930345,
+            0.08201611042958341,
+            0.49556603423082274,
+            0.2868685937741994,
+            0.08734494887846417
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIII",
+          "vacuum_wavelengths_A": [
+            1906.683,
+            1908.734
+          ],
+          "component_emissivity_erg_cm3_s": [
+            1.3108112555146376e-22,
+            3.334259996785649e-22
+          ],
+          "normalized_weights": [
+            0.2821940039919755,
+            0.7178059960080245
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        }
+      ]
+    },
+    {
+      "temperature_K": 15000,
+      "electron_density_cm3": 100,
+      "components": [
+        {
+          "group": "NIV",
+          "vacuum_wavelengths_A": [
+            1486.496
+          ],
+          "component_emissivity_erg_cm3_s": [
+            5.858683054132444e-22
+          ],
+          "normalized_weights": [
+            1.0
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIV",
+          "vacuum_wavelengths_A": [
+            1548.204,
+            1550.781
+          ],
+          "component_emissivity_erg_cm3_s": [
+            5.353449004953922e-21,
+            2.7027983057622614e-21
+          ],
+          "normalized_weights": [
+            0.6645090199543553,
+            0.3354909800456446
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "HeII_OIII",
+          "vacuum_wavelengths_A": [
+            1640.42,
+            1660.809,
+            1666.15
+          ],
+          "component_emissivity_erg_cm3_s": null,
+          "normalized_weights": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "assumption": "Fixed equal HeII/OIII blend weights; ionic mixing not identified"
+        },
+        {
+          "group": "NIII",
+          "vacuum_wavelengths_A": [
+            1746.823,
+            1748.646,
+            1749.674,
+            1752.16,
+            1753.995
+          ],
+          "component_emissivity_erg_cm3_s": [
+            7.124608494323042e-23,
+            1.5429608519408195e-22,
+            3.9397709050314474e-22,
+            4.239924409320145e-22,
+            1.6432117547192366e-22
+          ],
+          "normalized_weights": [
+            0.05898670776173258,
+            0.12774622062917287,
+            0.32618510225290354,
+            0.3510356846466518,
+            0.1360462847095392
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIII",
+          "vacuum_wavelengths_A": [
+            1906.683,
+            1908.734
+          ],
+          "component_emissivity_erg_cm3_s": [
+            2.9832366808255936e-21,
+            1.960433893287957e-21
+          ],
+          "normalized_weights": [
+            0.6034456859740331,
+            0.39655431402596686
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        }
+      ]
+    },
+    {
+      "temperature_K": 15000,
+      "electron_density_cm3": 1000,
+      "components": [
+        {
+          "group": "NIV",
+          "vacuum_wavelengths_A": [
+            1486.496
+          ],
+          "component_emissivity_erg_cm3_s": [
+            5.892505333212059e-22
+          ],
+          "normalized_weights": [
+            1.0
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIV",
+          "vacuum_wavelengths_A": [
+            1548.204,
+            1550.781
+          ],
+          "component_emissivity_erg_cm3_s": [
+            5.3534490049520526e-21,
+            2.7027983057613098e-21
+          ],
+          "normalized_weights": [
+            0.6645090199543561,
+            0.33549098004564404
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "HeII_OIII",
+          "vacuum_wavelengths_A": [
+            1640.42,
+            1660.809,
+            1666.15
+          ],
+          "component_emissivity_erg_cm3_s": null,
+          "normalized_weights": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "assumption": "Fixed equal HeII/OIII blend weights; ionic mixing not identified"
+        },
+        {
+          "group": "NIII",
+          "vacuum_wavelengths_A": [
+            1746.823,
+            1748.646,
+            1749.674,
+            1752.16,
+            1753.995
+          ],
+          "component_emissivity_erg_cm3_s": [
+            6.400196502517657e-23,
+            1.228616651806686e-22,
+            5.14576145952966e-22,
+            3.8088197263179496e-22,
+            1.3084436470005607e-22
+          ],
+          "normalized_weights": [
+            0.0527561430487229,
+            0.10127357153684155,
+            0.42415967626425694,
+            0.3139569828041745,
+            0.10785362634600426
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIII",
+          "vacuum_wavelengths_A": [
+            1906.683,
+            1908.734
+          ],
+          "component_emissivity_erg_cm3_s": [
+            2.954417287065241e-21,
+            1.9843389053006372e-21
+          ],
+          "normalized_weights": [
+            0.5982107988306965,
+            0.4017892011693035
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        }
+      ]
+    },
+    {
+      "temperature_K": 15000,
+      "electron_density_cm3": 10000,
+      "components": [
+        {
+          "group": "NIV",
+          "vacuum_wavelengths_A": [
+            1486.496
+          ],
+          "component_emissivity_erg_cm3_s": [
+            6.214512257036219e-22
+          ],
+          "normalized_weights": [
+            1.0
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIV",
+          "vacuum_wavelengths_A": [
+            1548.204,
+            1550.781
+          ],
+          "component_emissivity_erg_cm3_s": [
+            5.353449004933349e-21,
+            2.7027983057517956e-21
+          ],
+          "normalized_weights": [
+            0.6645090199543618,
+            0.3354909800456381
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "HeII_OIII",
+          "vacuum_wavelengths_A": [
+            1640.42,
+            1660.809,
+            1666.15
+          ],
+          "component_emissivity_erg_cm3_s": null,
+          "normalized_weights": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "assumption": "Fixed equal HeII/OIII blend weights; ionic mixing not identified"
+        },
+        {
+          "group": "NIII",
+          "vacuum_wavelengths_A": [
+            1746.823,
+            1748.646,
+            1749.674,
+            1752.16,
+            1753.995
+          ],
+          "component_emissivity_erg_cm3_s": [
+            5.932999437064805e-23,
+            1.0259051801132966e-22,
+            5.9234935690066245e-22,
+            3.530786169336584e-22,
+            1.092561388754005e-22
+          ],
+          "normalized_weights": [
+            0.048766865707235145,
+            0.08432527371297566,
+            0.48688731300525456,
+            0.29021640198601567,
+            0.08980414558851899
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIII",
+          "vacuum_wavelengths_A": [
+            1906.683,
+            1908.734
+          ],
+          "component_emissivity_erg_cm3_s": [
+            2.694152748522483e-21,
+            2.200221444893953e-21
+          ],
+          "normalized_weights": [
+            0.5504590867094848,
+            0.4495409132905151
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        }
+      ]
+    },
+    {
+      "temperature_K": 15000,
+      "electron_density_cm3": 100000,
+      "components": [
+        {
+          "group": "NIV",
+          "vacuum_wavelengths_A": [
+            1486.496
+          ],
+          "component_emissivity_erg_cm3_s": [
+            8.359371983069877e-22
+          ],
+          "normalized_weights": [
+            1.0
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIV",
+          "vacuum_wavelengths_A": [
+            1548.204,
+            1550.781
+          ],
+          "component_emissivity_erg_cm3_s": [
+            5.353449004746314e-21,
+            2.7027983056566513e-21
+          ],
+          "normalized_weights": [
+            0.664509019954421,
+            0.3354909800455791
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "HeII_OIII",
+          "vacuum_wavelengths_A": [
+            1640.42,
+            1660.809,
+            1666.15
+          ],
+          "component_emissivity_erg_cm3_s": null,
+          "normalized_weights": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "assumption": "Fixed equal HeII/OIII blend weights; ionic mixing not identified"
+        },
+        {
+          "group": "NIII",
+          "vacuum_wavelengths_A": [
+            1746.823,
+            1748.646,
+            1749.674,
+            1752.16,
+            1753.995
+          ],
+          "component_emissivity_erg_cm3_s": [
+            5.859121428335863e-23,
+            9.940546255907134e-23,
+            6.045942454726312e-22,
+            3.486820641578618e-22,
+            1.0586414059365523e-22
+          ],
+          "normalized_weights": [
+            0.04813854822140649,
+            0.08167153917870242,
+            0.49673469983596963,
+            0.2864772229881939,
+            0.08697798977572753
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIII",
+          "vacuum_wavelengths_A": [
+            1906.683,
+            1908.734
+          ],
+          "component_emissivity_erg_cm3_s": [
+            1.4324158294657513e-21,
+            3.246756354710731e-21
+          ],
+          "normalized_weights": [
+            0.3061259071230035,
+            0.6938740928769965
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        }
+      ]
+    },
+    {
+      "temperature_K": 20000,
+      "electron_density_cm3": 100,
+      "components": [
+        {
+          "group": "NIV",
+          "vacuum_wavelengths_A": [
+            1486.496
+          ],
+          "component_emissivity_erg_cm3_s": [
+            2.310492953490604e-21
+          ],
+          "normalized_weights": [
+            1.0
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIV",
+          "vacuum_wavelengths_A": [
+            1548.204,
+            1550.781
+          ],
+          "component_emissivity_erg_cm3_s": [
+            2.1821476641294803e-20,
+            1.0988595495174985e-20
+          ],
+          "normalized_weights": [
+            0.6650846895590731,
+            0.3349153104409269
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "HeII_OIII",
+          "vacuum_wavelengths_A": [
+            1640.42,
+            1660.809,
+            1666.15
+          ],
+          "component_emissivity_erg_cm3_s": null,
+          "normalized_weights": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "assumption": "Fixed equal HeII/OIII blend weights; ionic mixing not identified"
+        },
+        {
+          "group": "NIII",
+          "vacuum_wavelengths_A": [
+            1746.823,
+            1748.646,
+            1749.674,
+            1752.16,
+            1753.995
+          ],
+          "component_emissivity_erg_cm3_s": [
+            2.487271083687966e-22,
+            5.361458816961071e-22,
+            1.3955114690961932e-21,
+            1.4801994227090238e-21,
+            5.709809253677314e-22
+          ],
+          "normalized_weights": [
+            0.058778990680554616,
+            0.12670156457938678,
+            0.3297861506715553,
+            0.3497995399189507,
+            0.13493375414955264
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIII",
+          "vacuum_wavelengths_A": [
+            1906.683,
+            1908.734
+          ],
+          "component_emissivity_erg_cm3_s": [
+            9.049174611783447e-21,
+            5.8955256911869685e-21
+          ],
+          "normalized_weights": [
+            0.605510611008026,
+            0.394489388991974
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        }
+      ]
+    },
+    {
+      "temperature_K": 20000,
+      "electron_density_cm3": 1000,
+      "components": [
+        {
+          "group": "NIV",
+          "vacuum_wavelengths_A": [
+            1486.496
+          ],
+          "component_emissivity_erg_cm3_s": [
+            2.3216430385011008e-21
+          ],
+          "normalized_weights": [
+            1.0
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIV",
+          "vacuum_wavelengths_A": [
+            1548.204,
+            1550.781
+          ],
+          "component_emissivity_erg_cm3_s": [
+            2.1821476641288053e-20,
+            1.098859549517156e-20
+          ],
+          "normalized_weights": [
+            0.6650846895590736,
+            0.33491531044092643
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "HeII_OIII",
+          "vacuum_wavelengths_A": [
+            1640.42,
+            1660.809,
+            1666.15
+          ],
+          "component_emissivity_erg_cm3_s": null,
+          "normalized_weights": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "assumption": "Fixed equal HeII/OIII blend weights; ionic mixing not identified"
+        },
+        {
+          "group": "NIII",
+          "vacuum_wavelengths_A": [
+            1746.823,
+            1748.646,
+            1749.674,
+            1752.16,
+            1753.995
+          ],
+          "component_emissivity_erg_cm3_s": [
+            2.2429135002014184e-22,
+            4.309286693570629e-22,
+            1.7966549338492604e-21,
+            1.3347798275617765e-21,
+            4.5892742777132015e-22
+          ],
+          "normalized_weights": [
+            0.05282935036988467,
+            0.10150048878767749,
+            0.42318222698102653,
+            0.31439264675424566,
+            0.10809528710716562
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIII",
+          "vacuum_wavelengths_A": [
+            1906.683,
+            1908.734
+          ],
+          "component_emissivity_erg_cm3_s": [
+            8.966396138987184e-21,
+            5.962922140360615e-21
+          ],
+          "normalized_weights": [
+            0.6005897905861304,
+            0.3994102094138695
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        }
+      ]
+    },
+    {
+      "temperature_K": 20000,
+      "electron_density_cm3": 10000,
+      "components": [
+        {
+          "group": "NIV",
+          "vacuum_wavelengths_A": [
+            1486.496
+          ],
+          "component_emissivity_erg_cm3_s": [
+            2.428653449296782e-21
+          ],
+          "normalized_weights": [
+            1.0
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIV",
+          "vacuum_wavelengths_A": [
+            1548.204,
+            1550.781
+          ],
+          "component_emissivity_erg_cm3_s": [
+            2.182147664122052e-20,
+            1.0988595495137303e-20
+          ],
+          "normalized_weights": [
+            0.6650846895590786,
+            0.3349153104409213
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "HeII_OIII",
+          "vacuum_wavelengths_A": [
+            1640.42,
+            1660.809,
+            1666.15
+          ],
+          "component_emissivity_erg_cm3_s": null,
+          "normalized_weights": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "assumption": "Fixed equal HeII/OIII blend weights; ionic mixing not identified"
+        },
+        {
+          "group": "NIII",
+          "vacuum_wavelengths_A": [
+            1746.823,
+            1748.646,
+            1749.674,
+            1752.16,
+            1753.995
+          ],
+          "component_emissivity_erg_cm3_s": [
+            2.0746554793839226e-22,
+            3.5848493699361776e-22,
+            2.0728557661941555e-21,
+            1.234647828716304e-21,
+            3.81776803745045e-22
+          ],
+          "normalized_weights": [
+            0.048755415067743994,
+            0.08424570764803838,
+            0.4871312093050437,
+            0.2901482581070649,
+            0.08971940987210907
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIII",
+          "vacuum_wavelengths_A": [
+            1906.683,
+            1908.734
+          ],
+          "component_emissivity_erg_cm3_s": [
+            8.214931734430051e-21,
+            6.5747459554581985e-21
+          ],
+          "normalized_weights": [
+            0.5554503557603981,
+            0.44454964423960186
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        }
+      ]
+    },
+    {
+      "temperature_K": 20000,
+      "electron_density_cm3": 100000,
+      "components": [
+        {
+          "group": "NIV",
+          "vacuum_wavelengths_A": [
+            1486.496
+          ],
+          "component_emissivity_erg_cm3_s": [
+            3.1832926650929057e-21
+          ],
+          "normalized_weights": [
+            1.0
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIV",
+          "vacuum_wavelengths_A": [
+            1548.204,
+            1550.781
+          ],
+          "component_emissivity_erg_cm3_s": [
+            2.1821476640545264e-20,
+            1.098859549479474e-20
+          ],
+          "normalized_weights": [
+            0.6650846895591298,
+            0.3349153104408701
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "HeII_OIII",
+          "vacuum_wavelengths_A": [
+            1640.42,
+            1660.809,
+            1666.15
+          ],
+          "component_emissivity_erg_cm3_s": null,
+          "normalized_weights": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "assumption": "Fixed equal HeII/OIII blend weights; ionic mixing not identified"
+        },
+        {
+          "group": "NIII",
+          "vacuum_wavelengths_A": [
+            1746.823,
+            1748.646,
+            1749.674,
+            1752.16,
+            1753.995
+          ],
+          "component_emissivity_erg_cm3_s": [
+            2.0472500109234327e-22,
+            3.467487855664351e-22,
+            2.1176768060455805e-21,
+            1.2183385655803617e-21,
+            3.6927811853468857e-22
+          ],
+          "normalized_weights": [
+            0.04809400838218025,
+            0.08145824354896856,
+            0.49748475035916834,
+            0.2862121620354791,
+            0.0867508356742038
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIII",
+          "vacuum_wavelengths_A": [
+            1906.683,
+            1908.734
+          ],
+          "component_emissivity_erg_cm3_s": [
+            4.4694639397335525e-21,
+            9.624087750290603e-21
+          ],
+          "normalized_weights": [
+            0.3171282894500735,
+            0.6828717105499266
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        }
+      ]
+    },
+    {
+      "temperature_K": 25000,
+      "electron_density_cm3": 100,
+      "components": [
+        {
+          "group": "NIV",
+          "vacuum_wavelengths_A": [
+            1486.496
+          ],
+          "component_emissivity_erg_cm3_s": [
+            5.049709505619548e-21
+          ],
+          "normalized_weights": [
+            1.0
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIV",
+          "vacuum_wavelengths_A": [
+            1548.204,
+            1550.781
+          ],
+          "component_emissivity_erg_cm3_s": [
+            4.9948659814773456e-20,
+            2.5111950471905572e-20
+          ],
+          "normalized_weights": [
+            0.6654443605508203,
+            0.3345556394491796
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "HeII_OIII",
+          "vacuum_wavelengths_A": [
+            1640.42,
+            1660.809,
+            1666.15
+          ],
+          "component_emissivity_erg_cm3_s": null,
+          "normalized_weights": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "assumption": "Fixed equal HeII/OIII blend weights; ionic mixing not identified"
+        },
+        {
+          "group": "NIII",
+          "vacuum_wavelengths_A": [
+            1746.823,
+            1748.646,
+            1749.674,
+            1752.16,
+            1753.995
+          ],
+          "component_emissivity_erg_cm3_s": [
+            5.107964975383903e-22,
+            1.0983485557433014e-21,
+            2.890829794576608e-21,
+            3.039800067377653e-21,
+            1.1697116328687732e-21
+          ],
+          "normalized_weights": [
+            0.05864829054125412,
+            0.12610944969911156,
+            0.3319173614437332,
+            0.34902173056793406,
+            0.13430316774796727
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIII",
+          "vacuum_wavelengths_A": [
+            1906.683,
+            1908.734
+          ],
+          "component_emissivity_erg_cm3_s": [
+            1.7228663367640508e-20,
+            1.1145135424135262e-20
+          ],
+          "normalized_weights": [
+            0.6072032685533206,
+            0.3927967314466793
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        }
+      ]
+    },
+    {
+      "temperature_K": 25000,
+      "electron_density_cm3": 1000,
+      "components": [
+        {
+          "group": "NIV",
+          "vacuum_wavelengths_A": [
+            1486.496
+          ],
+          "component_emissivity_erg_cm3_s": [
+            5.070998785621199e-21
+          ],
+          "normalized_weights": [
+            1.0
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIV",
+          "vacuum_wavelengths_A": [
+            1548.204,
+            1550.781
+          ],
+          "component_emissivity_erg_cm3_s": [
+            4.994865981475888e-20,
+            2.51119504718982e-20
+          ],
+          "normalized_weights": [
+            0.6654443605508208,
+            0.33455563944917927
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "HeII_OIII",
+          "vacuum_wavelengths_A": [
+            1640.42,
+            1660.809,
+            1666.15
+          ],
+          "component_emissivity_erg_cm3_s": null,
+          "normalized_weights": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "assumption": "Fixed equal HeII/OIII blend weights; ionic mixing not identified"
+        },
+        {
+          "group": "NIII",
+          "vacuum_wavelengths_A": [
+            1746.823,
+            1748.646,
+            1749.674,
+            1752.16,
+            1753.995
+          ],
+          "component_emissivity_erg_cm3_s": [
+            4.617958192471072e-22,
+            8.881027356383677e-22,
+            3.688880651023725e-21,
+            2.7481922237663177e-21,
+            9.458054964671584e-22
+          ],
+          "normalized_weights": [
+            0.05288075295553042,
+            0.10169763216780672,
+            0.4224178267946583,
+            0.3146985485841572,
+            0.10830523949784741
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIII",
+          "vacuum_wavelengths_A": [
+            1906.683,
+            1908.734
+          ],
+          "component_emissivity_erg_cm3_s": [
+            1.7075383554290104e-20,
+            1.1265645395685942e-20
+          ],
+          "normalized_weights": [
+            0.6024969518371893,
+            0.3975030481628108
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        }
+      ]
+    },
+    {
+      "temperature_K": 25000,
+      "electron_density_cm3": 10000,
+      "components": [
+        {
+          "group": "NIV",
+          "vacuum_wavelengths_A": [
+            1486.496
+          ],
+          "component_emissivity_erg_cm3_s": [
+            5.2762970444971705e-21
+          ],
+          "normalized_weights": [
+            1.0
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIV",
+          "vacuum_wavelengths_A": [
+            1548.204,
+            1550.781
+          ],
+          "component_emissivity_erg_cm3_s": [
+            4.9948659814613176e-20,
+            2.5111950471824433e-20
+          ],
+          "normalized_weights": [
+            0.6654443605508252,
+            0.33455563944917466
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "HeII_OIII",
+          "vacuum_wavelengths_A": [
+            1640.42,
+            1660.809,
+            1666.15
+          ],
+          "component_emissivity_erg_cm3_s": null,
+          "normalized_weights": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "assumption": "Fixed equal HeII/OIII blend weights; ionic mixing not identified"
+        },
+        {
+          "group": "NIII",
+          "vacuum_wavelengths_A": [
+            1746.823,
+            1748.646,
+            1749.674,
+            1752.16,
+            1753.995
+          ],
+          "component_emissivity_erg_cm3_s": [
+            4.265119270317115e-22,
+            7.367223804018539e-22,
+            4.263502972331221e-21,
+            2.5382143197466356e-21,
+            7.84589494878186e-22
+          ],
+          "normalized_weights": [
+            0.048746776822981036,
+            0.08420125952368587,
+            0.48728303877160717,
+            0.2900968510650453,
+            0.08967207381668069
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIII",
+          "vacuum_wavelengths_A": [
+            1906.683,
+            1908.734
+          ],
+          "component_emissivity_erg_cm3_s": [
+            1.5680347600955875e-20,
+            1.2362430643327614e-20
+          ],
+          "normalized_weights": [
+            0.5591581356298857,
+            0.4408418643701143
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        }
+      ]
+    },
+    {
+      "temperature_K": 25000,
+      "electron_density_cm3": 100000,
+      "components": [
+        {
+          "group": "NIV",
+          "vacuum_wavelengths_A": [
+            1486.496
+          ],
+          "component_emissivity_erg_cm3_s": [
+            6.7762595462323274e-21
+          ],
+          "normalized_weights": [
+            1.0
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIV",
+          "vacuum_wavelengths_A": [
+            1548.204,
+            1550.781
+          ],
+          "component_emissivity_erg_cm3_s": [
+            4.994865981315614e-20,
+            2.5111950471086787e-20
+          ],
+          "normalized_weights": [
+            0.6654443605508706,
+            0.33455563944912936
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "HeII_OIII",
+          "vacuum_wavelengths_A": [
+            1640.42,
+            1660.809,
+            1666.15
+          ],
+          "component_emissivity_erg_cm3_s": null,
+          "normalized_weights": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "assumption": "Fixed equal HeII/OIII blend weights; ionic mixing not identified"
+        },
+        {
+          "group": "NIII",
+          "vacuum_wavelengths_A": [
+            1746.823,
+            1748.646,
+            1749.674,
+            1752.16,
+            1753.995
+          ],
+          "component_emissivity_erg_cm3_s": [
+            4.2064286888878555e-22,
+            7.1166114725088095e-22,
+            4.358769557187014e-21,
+            2.503286978967505e-21,
+            7.578999564821609e-22
+          ],
+          "normalized_weights": [
+            0.04806105445181677,
+            0.08131169616549476,
+            0.4980164327622846,
+            0.2860160499630157,
+            0.08659476665738813
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIII",
+          "vacuum_wavelengths_A": [
+            1906.683,
+            1908.734
+          ],
+          "component_emissivity_erg_cm3_s": [
+            8.630191445914954e-21,
+            1.7905050625904557e-20
+          ],
+          "normalized_weights": [
+            0.3252350750204852,
+            0.6747649249795148
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        }
+      ]
+    },
+    {
+      "temperature_K": 30000,
+      "electron_density_cm3": 100,
+      "components": [
+        {
+          "group": "NIV",
+          "vacuum_wavelengths_A": [
+            1486.496
+          ],
+          "component_emissivity_erg_cm3_s": [
+            8.230931448962485e-21
+          ],
+          "normalized_weights": [
+            1.0
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIV",
+          "vacuum_wavelengths_A": [
+            1548.204,
+            1550.781
+          ],
+          "component_emissivity_erg_cm3_s": [
+            8.543536699146142e-20,
+            4.290647263913431e-20
+          ],
+          "normalized_weights": [
+            0.6656860088445722,
+            0.33431399115542776
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "HeII_OIII",
+          "vacuum_wavelengths_A": [
+            1640.42,
+            1660.809,
+            1666.15
+          ],
+          "component_emissivity_erg_cm3_s": null,
+          "normalized_weights": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "assumption": "Fixed equal HeII/OIII blend weights; ionic mixing not identified"
+        },
+        {
+          "group": "NIII",
+          "vacuum_wavelengths_A": [
+            1746.823,
+            1748.646,
+            1749.674,
+            1752.16,
+            1753.995
+          ],
+          "component_emissivity_erg_cm3_s": [
+            8.072114695194229e-22,
+            1.7326965562981845e-21,
+            4.5936316781000265e-21,
+            4.803794644752311e-21,
+            1.8452751701959074e-21
+          ],
+          "normalized_weights": [
+            0.058567390189390424,
+            0.12571614641816867,
+            0.3332918684094033,
+            0.34854028463744846,
+            0.13388431034558917
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIII",
+          "vacuum_wavelengths_A": [
+            1906.683,
+            1908.734
+          ],
+          "component_emissivity_erg_cm3_s": [
+            2.600904628718095e-20,
+            1.6736288587088795e-20
+          ],
+          "normalized_weights": [
+            0.6084651427736717,
+            0.39153485722632825
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        }
+      ]
+    },
+    {
+      "temperature_K": 30000,
+      "electron_density_cm3": 1000,
+      "components": [
+        {
+          "group": "NIV",
+          "vacuum_wavelengths_A": [
+            1486.496
+          ],
+          "component_emissivity_erg_cm3_s": [
+            8.261866645236046e-21
+          ],
+          "normalized_weights": [
+            1.0
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIV",
+          "vacuum_wavelengths_A": [
+            1548.204,
+            1550.781
+          ],
+          "component_emissivity_erg_cm3_s": [
+            8.543536699143714e-20,
+            4.290647263912204e-20
+          ],
+          "normalized_weights": [
+            0.6656860088445726,
+            0.33431399115542737
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "HeII_OIII",
+          "vacuum_wavelengths_A": [
+            1640.42,
+            1660.809,
+            1666.15
+          ],
+          "component_emissivity_erg_cm3_s": null,
+          "normalized_weights": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "assumption": "Fixed equal HeII/OIII blend weights; ionic mixing not identified"
+        },
+        {
+          "group": "NIII",
+          "vacuum_wavelengths_A": [
+            1746.823,
+            1748.646,
+            1749.674,
+            1752.16,
+            1753.995
+          ],
+          "component_emissivity_erg_cm3_s": [
+            7.3091638583074635e-22,
+            1.4063614495065721e-21,
+            5.828472927273544e-21,
+            4.3497551169656265e-21,
+            1.4977370698072774e-21
+          ],
+          "normalized_weights": [
+            0.05291417725070519,
+            0.1018125471809871,
+            0.42194819483237733,
+            0.31489745984375644,
+            0.10842762089217392
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIII",
+          "vacuum_wavelengths_A": [
+            1906.683,
+            1908.734
+          ],
+          "component_emissivity_erg_cm3_s": [
+            2.5781527545011447e-20,
+            1.6907740972019237e-20
+          ],
+          "normalized_weights": [
+            0.6039346290210157,
+            0.3960653709789844
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        }
+      ]
+    },
+    {
+      "temperature_K": 30000,
+      "electron_density_cm3": 10000,
+      "components": [
+        {
+          "group": "NIV",
+          "vacuum_wavelengths_A": [
+            1486.496
+          ],
+          "component_emissivity_erg_cm3_s": [
+            8.561165873332276e-21
+          ],
+          "normalized_weights": [
+            1.0
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIV",
+          "vacuum_wavelengths_A": [
+            1548.204,
+            1550.781
+          ],
+          "component_emissivity_erg_cm3_s": [
+            8.543536699119428e-20,
+            4.290647263899928e-20
+          ],
+          "normalized_weights": [
+            0.6656860088445767,
+            0.3343139911554232
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "HeII_OIII",
+          "vacuum_wavelengths_A": [
+            1640.42,
+            1660.809,
+            1666.15
+          ],
+          "component_emissivity_erg_cm3_s": null,
+          "normalized_weights": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "assumption": "Fixed equal HeII/OIII blend weights; ionic mixing not identified"
+        },
+        {
+          "group": "NIII",
+          "vacuum_wavelengths_A": [
+            1746.823,
+            1748.646,
+            1749.674,
+            1752.16,
+            1753.995
+          ],
+          "component_emissivity_erg_cm3_s": [
+            6.743283987378431e-22,
+            1.1643355811559583e-21,
+            6.744309115779427e-21,
+            4.0129944543402044e-21,
+            1.2399860378743473e-21
+          ],
+          "normalized_weights": [
+            0.04873739959117536,
+            0.08415289728748707,
+            0.4874480875451553,
+            0.2900410462386377,
+            0.08962056933754473
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIII",
+          "vacuum_wavelengths_A": [
+            1906.683,
+            1908.734
+          ],
+          "component_emissivity_erg_cm3_s": [
+            2.3707672914081027e-20,
+            1.8470538137925406e-20
+          ],
+          "normalized_weights": [
+            0.5620834151749365,
+            0.4379165848250635
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        }
+      ]
+    },
+    {
+      "temperature_K": 30000,
+      "electron_density_cm3": 100000,
+      "components": [
+        {
+          "group": "NIV",
+          "vacuum_wavelengths_A": [
+            1486.496
+          ],
+          "component_emissivity_erg_cm3_s": [
+            1.0803351088940233e-20
+          ],
+          "normalized_weights": [
+            1.0
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIV",
+          "vacuum_wavelengths_A": [
+            1548.204,
+            1550.781
+          ],
+          "component_emissivity_erg_cm3_s": [
+            8.543536698876583e-20,
+            4.2906472637771783e-20
+          ],
+          "normalized_weights": [
+            0.6656860088446178,
+            0.33431399115538224
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "HeII_OIII",
+          "vacuum_wavelengths_A": [
+            1640.42,
+            1660.809,
+            1666.15
+          ],
+          "component_emissivity_erg_cm3_s": null,
+          "normalized_weights": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "assumption": "Fixed equal HeII/OIII blend weights; ionic mixing not identified"
+        },
+        {
+          "group": "NIII",
+          "vacuum_wavelengths_A": [
+            1746.823,
+            1748.646,
+            1749.674,
+            1752.16,
+            1753.995
+          ],
+          "component_emissivity_erg_cm3_s": [
+            6.64780452806407e-22,
+            1.123674941822711e-21,
+            6.898365120633987e-21,
+            3.9561736914227446e-21,
+            1.1966835519929014e-21
+          ],
+          "normalized_weights": [
+            0.04803438811207352,
+            0.08119227639661358,
+            0.49844839171259436,
+            0.28585735595916306,
+            0.0864675878195553
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        },
+        {
+          "group": "CIII",
+          "vacuum_wavelengths_A": [
+            1906.683,
+            1908.734
+          ],
+          "component_emissivity_erg_cm3_s": [
+            1.313929863491017e-20,
+            2.643415237279717e-20
+          ],
+          "normalized_weights": [
+            0.3320230685049721,
+            0.667976931495028
+          ],
+          "assumption": "Optically thin ionic emission at common fixed Te/ne"
+        }
+      ]
+    }
+  ],
+  "NIV_1483_included": false,
+  "HeII_OIII_mixing_calibrated": false,
+  "CIV_transfer_calibrated": false,
+  "interpretation": "Physical weights for single-ion multiplets only; no ionization correction"
+}
