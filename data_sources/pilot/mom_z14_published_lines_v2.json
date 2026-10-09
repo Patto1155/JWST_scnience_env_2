@@ -1,0 +1,56 @@
+{
+  "source_url": "https://arxiv.org/html/2505.11263v2",
+  "source_version": "2505.11263v2 (2026-01-28)",
+  "acquisition": "Manual transcription of published emission-line table; not a downloaded spectrum or posterior",
+  "flux_unit": "1e-20 erg s^-1 cm^-2",
+  "redshift": 14.44,
+  "lines": [
+    {
+      "line": "N IV] 1487",
+      "flux": 54.3,
+      "error_plus": 16.1,
+      "error_minus": 15.5,
+      "reported_snr": 3.4
+    },
+    {
+      "line": "C IV 1548,1551",
+      "flux": 44.0,
+      "error_plus": 12.8,
+      "error_minus": 12.8,
+      "reported_snr": 3.4
+    },
+    {
+      "line": "He II 1640 + O III] 1661,1666",
+      "flux": 45.3,
+      "error_plus": 15.6,
+      "error_minus": 14.8,
+      "reported_snr": 3.0
+    },
+    {
+      "line": "N III] 1747-1754",
+      "flux": 25.2,
+      "error_plus": 9.9,
+      "error_minus": 8.9,
+      "reported_snr": 2.7
+    },
+    {
+      "line": "C III] 1907,1909",
+      "flux": 21.5,
+      "error_plus": 7.7,
+      "error_minus": 7.6,
+      "reported_snr": 2.8
+    }
+  ],
+  "model_inferred_abundance": {
+    "quantity": "[N/C]",
+    "unit": "dex relative to solar",
+    "median": 0.9,
+    "error_plus": 0.29,
+    "error_minus": 0.63
+  },
+  "caveats": [
+    "Lines fit jointly at tied unconstrained FWHM, permitted up to 650 km/s.",
+    "Asymmetric quoted intervals are not independent Gaussian measurement likelihoods.",
+    "Abundance requires photoionization/ionization-correction modelling; flux ratios are not elemental ratios."
+  ]
+}

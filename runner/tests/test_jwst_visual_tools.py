@@ -6,6 +6,8 @@ import json
 from pathlib import Path
 from uuid import uuid4
 
+import pytest
+
 from core_api.db import SessionLocal
 from core_api.models.datasets import Dataset
 from discovery import build_universe_table as universe_table
@@ -43,6 +45,16 @@ REFERENCE_PATH = (
     / "jw01180026001_09201_00003_nrcalong"
     / "jw01180026001_09201_00003_nrcalong_i2d.fits"
 )
+
+
+pytestmark = pytest.mark.integration
+
+
+@pytest.fixture(autouse=True)
+def require_local_archive():
+    missing = [path for path in (BLUE_PATH, MID_PATH, REFERENCE_PATH) if not path.is_file()]
+    if missing:
+        pytest.skip("Local JWST archive not provisioned: " + ", ".join(str(p) for p in missing))
 
 
 def _register_pipeline_datasets() -> dict[str, str]:

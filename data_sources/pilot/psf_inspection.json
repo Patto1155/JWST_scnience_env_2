@@ -1,0 +1,71 @@
+[
+  {
+    "file": "f277wa_v5.0_mpsf.fits",
+    "shape": [
+      669,
+      669
+    ],
+    "sum": 0.9997273206382191,
+    "minimum": 0.0,
+    "maximum": 0.04235447943210602,
+    "finite": true,
+    "header": {
+      "BUNIT": "MJy/sr",
+      "PIXELSCL": 0.029994758999999965,
+      "FILTER": "F277W",
+      "INSTRUME": "NIRCAM",
+      "TELESCOP": "JWST",
+      "CDELT1": 8.33187749999999e-06,
+      "CDELT2": 8.33187749999999e-06,
+      "EXTNAME": "SCI",
+      "VERSION": null,
+      "CRDS_CTX": "jwst_1228.pmap"
+    }
+  },
+  {
+    "file": "f356wa_v5.0_mpsf.fits",
+    "shape": [
+      669,
+      669
+    ],
+    "sum": 0.999606021348273,
+    "minimum": 0.0,
+    "maximum": 0.03088434599339962,
+    "finite": true,
+    "header": {
+      "BUNIT": "MJy/sr",
+      "PIXELSCL": 0.029994758999999965,
+      "FILTER": "F356W",
+      "INSTRUME": "NIRCAM",
+      "TELESCOP": "JWST",
+      "CDELT1": 8.33187749999999e-06,
+      "CDELT2": 8.33187749999999e-06,
+      "EXTNAME": "SCI",
+      "VERSION": null,
+      "CRDS_CTX": "jwst_1228.pmap"
+    }
+  },
+  {
+    "file": "f444wa_v5.0_mpsf.fits",
+    "shape": [
+      669,
+      669
+    ],
+    "sum": 0.9995488712944013,
+    "minimum": 0.0,
+    "maximum": 0.02297215163707733,
+    "finite": true,
+    "header": {
+      "BUNIT": "MJy/sr",
+      "PIXELSCL": 0.029994758999999965,
+      "FILTER": "F444W",
+      "INSTRUME": "NIRCAM",
+      "TELESCOP": "JWST",
+      "CDELT1": 8.33187749999999e-06,
+      "CDELT2": 8.33187749999999e-06,
+      "EXTNAME": "SCI",
+      "VERSION": null,
+      "CRDS_CTX": "jwst_1228.pmap"
+    }
+  }
+]

@@ -8,6 +8,12 @@ from runner.result_schema import RunResult
 from core_api.schemas.experiments import ExperimentSpec
 
 
+@pytest.fixture(autouse=True)
+def mocked_llm_key(monkeypatch, forbid_external_connections):
+    """Fake credentials belong only to explicitly mocked request tests."""
+    monkeypatch.setattr("runner.executor.LLM_API_KEY", "test-only-fake-key")
+
+
 @pytest.fixture
 def mock_tool_lookup():
     """Mock tool lookup."""
