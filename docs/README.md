@@ -202,4 +202,17 @@ Post to `/runs` with:
 
 See `docs/AGENT_RULES.md` for agent interaction rules and guidelines.
 
+The [verified original-image photometry experiment](ORIGINAL_IMAGE_PHOTOMETRY.md)
+documents the direct hash-verified image-manifest rerun and replayable compact
+measurement artifacts. Exploratory proposals and physical dropout-screen survivors
+are saved separately; neither output establishes astrophysical identity.
 
+
+
+## Verified original-image workflow
+
+See [ORIGINAL_IMAGE_ASTROMETRY.md](ORIGINAL_IMAGE_ASTROMETRY.md) for bounded
+MAST acquisition, checksum/SCI/ERR/WHT readiness checks, optional catalog
+registration, external released-source centroid validation and repeat-pair
+reproduction. These are trusted coding/analysis CLIs, not new arbitrary-code
+capabilities exposed to research agents.

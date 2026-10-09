@@ -27,6 +27,10 @@ repository takeover may implement scientific modules, tests, acquisition tools
 and reports directly. They must preserve the runtime sandbox boundary and label
 actual data, model products, synthetic controls and unexecuted experiments.
 
+Trusted coding agents may run the hash-verified imaging reproduction described in
+`ORIGINAL_IMAGE_PHOTOMETRY.md`. Its direct manifest CLI is an operator/coding-agent
+workflow, not an additional filesystem capability for runtime research agents.
+
 **Allowed:**
 - Create and modify source code under `core_api/`, `runner/`, `tools/`, and `docs/`
 - Define and evolve DB schemas, Pydantic models, FastAPI routers, and runner behavior

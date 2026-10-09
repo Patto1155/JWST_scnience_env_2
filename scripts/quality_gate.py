@@ -18,6 +18,15 @@ CHECK_TARGETS = [
     "scripts/smoke_api.py",
 ]
 SCIENCE_LINT_TARGETS = [
+    "discovery/psf_noise.py",
+    "runner/tests/test_psf_noise.py",
+    "data_pipeline/original_images.py",
+    "tools/jwst/astrometry.py",
+    "discovery/external_astrometry.py",
+    "tests/test_external_astrometry.py",
+    "discovery/image_photometry_rerun.py",
+    "tools/jwst/common_coverage.py",
+    "tests/test_image_photometry_rerun.py",
     "tools/jwst/photometry.py",
     "tools/jwst/flux_calibration.py",
     "tools/jwst/dropout.py",

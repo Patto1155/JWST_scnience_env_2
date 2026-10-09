@@ -15,3 +15,5 @@ requests>=2.31.0
 rich>=13.0.0
 astropy>=5.3
 photutils>=1.13
+# photutils deblending imports watershed from this optional dependency.
+scikit-image>=0.22

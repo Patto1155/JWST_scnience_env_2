@@ -1,0 +1,20 @@
+[
+  {
+    "target": "GS-MEDIUM-HST",
+    "filter": "F277W",
+    "epoch_a": "jwst_GS-MEDIUM-HST_F277W_jw01180025001_13201_00002_nrcalong_i2d",
+    "epoch_b": "jwst_GS-MEDIUM-HST_F277W_jw01180026001_07201_00001_nrcalong_i2d",
+    "overlap_fraction": 0.5225,
+    "baseline_hours": 5.648527777811978,
+    "supports": "artifact_rejection_only"
+  },
+  {
+    "target": "GS-MEDIUM-HST",
+    "filter": "F356W",
+    "epoch_a": "jwst_GS-MEDIUM-HST_F356W_jw01180025001_05201_00003_nrcalong_i2d",
+    "epoch_b": "jwst_GS-MEDIUM-HST_F356W_jw01180026001_05201_00003_nrcalong_i2d",
+    "overlap_fraction": 0.511875,
+    "baseline_hours": 9.546568611112889,
+    "supports": "artifact_rejection_only"
+  }
+]

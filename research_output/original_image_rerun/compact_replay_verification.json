@@ -1,0 +1,61 @@
+{
+  "compact_replay_matches_full_measurements": true,
+  "standalone_audit_matches_rerun": true,
+  "selection_csv_sha256": "0d1c7a1ffe65412325cb8be2557eb7f526dcaf12e270eec265f1e4356a427937",
+  "selection_metadata_sha256": "eaf7a2305ea00645450e62d9c4d3327a6a21b28260692efbaad01293dde45fe6",
+  "audit_summary": {
+    "total_candidates": 1134,
+    "survivors": 7,
+    "blue_measured": 272,
+    "mid_measured": 254,
+    "blue_and_mid_measured": 246,
+    "module_mismatch_pairs": 0,
+    "untestable": 891,
+    "falsified": 236,
+    "blocker_counts": {
+      "f200w_not_measured_at_source_position": 880,
+      "f090w_not_measured_at_source_position": 862,
+      "blue_2sigma_limit_not_dropout_like": 225,
+      "blue_band_detected_above_snr_2": 203,
+      "reference_snr_below_5": 23,
+      "f444w_invalid_or_uncalibrated_flux_uncertainty": 10,
+      "f444w_not_measured_at_source_position": 7,
+      "f090w_invalid_or_uncalibrated_flux_uncertainty": 1
+    },
+    "pipeline_status_vs_audit": {
+      "None|falsified": 236,
+      "None|survives": 7,
+      "None|untestable": 891
+    },
+    "survivor_ids": [
+      {
+        "target": "GS-MEDIUM-HST",
+        "source_id": 361
+      },
+      {
+        "target": "GS-MEDIUM-HST",
+        "source_id": 107
+      },
+      {
+        "target": "GS-MEDIUM-HST",
+        "source_id": 98
+      },
+      {
+        "target": "GS-MEDIUM-HST",
+        "source_id": 994
+      },
+      {
+        "target": "GS-MEDIUM-HST",
+        "source_id": 138
+      },
+      {
+        "target": "GS-MEDIUM-HST",
+        "source_id": 333
+      },
+      {
+        "target": "GS-MEDIUM-HST",
+        "source_id": 336
+      }
+    ]
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "schema_version": 1,
+  "manifest_sha256": "aed2f5074d9dce254110c66d75f4a3cca56f2cf9a8cb1fb0ef74c23bbe498006",
+  "status": "executed",
+  "verified_image_count": 7,
+  "blockers": [],
+  "detection_count": 1134,
+  "proposal_count": 1134,
+  "dropout_screen_survivors": 7,
+  "interpretation": "Dropout-screen survivors are not redshift confirmations or discoveries",
+  "software_versions": {
+    "numpy": "2.5.3",
+    "astropy": "8.0.1",
+    "photutils": "3.0.0",
+    "scipy": "1.18.1",
+    "scikit-image": "0.26.0"
+  },
+  "image_receipts": [
+    {
+      "path": "/workspace/scratch/232075794deb/jwst/data/original_round2/jw01180026001_09201_00003_nrcalong_i2d.fits",
+      "sha256": "b9b84b9bd0bd8ef6140dca76163a9ac4625689024b651a25e631a6d14ce68d86",
+      "filter": "F444W",
+      "target": "GS-MEDIUM-HST",
+      "product_filename": "jw01180026001_09201_00003_nrcalong_i2d.fits",
+      "product_kind": "original_full_i2d"
+    },
+    {
+      "path": "/workspace/scratch/232075794deb/jwst/data/original_round2/jw01180026001_03201_00003_nrca1_i2d.fits",
+      "sha256": "738c9dad0ace88e469fb8edd0daa5ba8b86034f8c5392e0229093026cdcaaba3",
+      "filter": "F090W",
+      "target": "GS-MEDIUM-HST",
+      "product_filename": "jw01180026001_03201_00003_nrca1_i2d.fits",
+      "product_kind": "original_full_i2d"
+    },
+    {
+      "path": "/workspace/scratch/232075794deb/jwst/data/original_round2/jw01180026001_13201_00003_nrca1_i2d.fits",
+      "sha256": "075becbdd9bcc845ffacadc520b97da82f7d02a0c62bd5e9ddb7b1864deccd74",
+      "filter": "F200W",
+      "target": "GS-MEDIUM-HST",
+      "product_filename": "jw01180026001_13201_00003_nrca1_i2d.fits",
+      "product_kind": "original_full_i2d"
+    },
+    {
+      "path": "/workspace/scratch/232075794deb/jwst/data/original_round2/jw01180025001_13201_00002_nrcalong_i2d.fits",
+      "sha256": "808570fb67066245053f94f4ac25362a6292ca5e9743248b8eba55c03e204e9a",
+      "filter": "F277W",
+      "target": "GS-MEDIUM-HST",
+      "product_filename": "jw01180025001_13201_00002_nrcalong_i2d.fits",
+      "product_kind": "original_full_i2d"
+    },
+    {
+      "path": "/workspace/scratch/232075794deb/jwst/data/original_round2/jw01180026001_07201_00001_nrcalong_i2d.fits",
+      "sha256": "a2a89cafcf057706e84a80ecbdf6e1f6a2fe2391e30759bed72d8b5dfa5adaa7",
+      "filter": "F277W",
+      "target": "GS-MEDIUM-HST",
+      "product_filename": "jw01180026001_07201_00001_nrcalong_i2d.fits",
+      "product_kind": "original_full_i2d"
+    },
+    {
+      "path": "/workspace/scratch/232075794deb/jwst/data/original_round2/jw01180025001_05201_00003_nrcalong_i2d.fits",
+      "sha256": "78649e799b781d69105083ea4092f4ca084b8c7201152802cb4b8ee159cd0635",
+      "filter": "F356W",
+      "target": "GS-MEDIUM-HST",
+      "product_filename": "jw01180025001_05201_00003_nrcalong_i2d.fits",
+      "product_kind": "original_full_i2d"
+    },
+    {
+      "path": "/workspace/scratch/232075794deb/jwst/data/original_round2/jw01180026001_05201_00003_nrcalong_i2d.fits",
+      "sha256": "c9dfda39ac28e93899b1e159d6c7f7c4129e8abc0c38b812eab01732bd4b00ab",
+      "filter": "F356W",
+      "target": "GS-MEDIUM-HST",
+      "product_filename": "jw01180026001_05201_00003_nrcalong_i2d.fits",
+      "product_kind": "original_full_i2d"
+    }
+  ],
+  "limitations": [
+    "Matched angular apertures remain PSF-uncorrected",
+    "ERR/noise estimates remain diagonal without empirical covariance correction",
+    "No completeness, effective volume, redshift model or population abundance inferred"
+  ],
+  "audit_summary": {
+    "total_candidates": 1134,
+    "survivors": 7,
+    "blue_measured": 272,
+    "mid_measured": 254,
+    "blue_and_mid_measured": 246,
+    "module_mismatch_pairs": 0,
+    "untestable": 891,
+    "falsified": 236,
+    "blocker_counts": {
+      "f200w_not_measured_at_source_position": 880,
+      "f090w_not_measured_at_source_position": 862,
+      "blue_2sigma_limit_not_dropout_like": 225,
+      "blue_band_detected_above_snr_2": 203,
+      "reference_snr_below_5": 23,
+      "f444w_invalid_or_uncalibrated_flux_uncertainty": 10,
+      "f444w_not_measured_at_source_position": 7,
+      "f090w_invalid_or_uncalibrated_flux_uncertainty": 1
+    },
+    "pipeline_status_vs_audit": {
+      "None|falsified": 236,
+      "None|survives": 7,
+      "None|untestable": 891
+    },
+    "survivor_ids": [
+      {
+        "target": "GS-MEDIUM-HST",
+        "source_id": 361
+      },
+      {
+        "target": "GS-MEDIUM-HST",
+        "source_id": 107
+      },
+      {
+        "target": "GS-MEDIUM-HST",
+        "source_id": 98
+      },
+      {
+        "target": "GS-MEDIUM-HST",
+        "source_id": 994
+      },
+      {
+        "target": "GS-MEDIUM-HST",
+        "source_id": 138
+      },
+      {
+        "target": "GS-MEDIUM-HST",
+        "source_id": 333
+      },
+      {
+        "target": "GS-MEDIUM-HST",
+        "source_id": 336
+      }
+    ]
+  },
+  "targets": [
+    {
+      "target": "GS-MEDIUM-HST",
+      "detected_source_count": 1134,
+      "measured_source_count": 1134,
+      "source_limit": null,
+      "measurement_subset": "all_detections",
+      "reference_aperture_radii_arcsec": [
+        0.1258253863005391,
+        0.18873807945080867,
+        0.31456346575134775
+      ],
+      "detector_threshold_sigma": 3.0,
+      "detector_min_pixels": 9,
+      "coverage": {
+        "method": "reference_pixel_centres_with_native_validity_and_spherical_pixel_areas",
+        "reference_shape": [
+          2068,
+          2075
+        ],
+        "reference_valid_pixel_count": 4184055,
+        "reference_valid_area_arcsec2": 16560.517195605138,
+        "joint_valid_pixel_count": 875721,
+        "joint_valid_fraction_of_reference_valid": 0.20929959094705974,
+        "joint_valid_area_arcsec2": 3466.1094431754477,
+        "joint_valid_area_arcmin2": 0.9628081786598466,
+        "comparison_coverage": {
+          "F090W": {
+            "pixel_count": 971548,
+            "area_arcsec2": 3845.3933562103484
+          },
+          "F200W": {
+            "pixel_count": 890699,
+            "area_arcsec2": 3525.3924679624874
+          }
+        },
+        "limitations": [
+          "Reference-grid pixel-centre discretization, not exact fractional reprojection",
+          "Area is not aperture-safe, PSF-corrected or depth/completeness weighted",
+          "Uses SCI/ERR/WHT validity; upstream DQ policy must be documented separately"
+        ]
+      },
+      "selected_datasets": {
+        "F444W": "/workspace/scratch/232075794deb/jwst/data/original_round2/jw01180026001_09201_00003_nrcalong_i2d.fits",
+        "F090W": "/workspace/scratch/232075794deb/jwst/data/original_round2/jw01180026001_03201_00003_nrca1_i2d.fits",
+        "F200W": "/workspace/scratch/232075794deb/jwst/data/original_round2/jw01180026001_13201_00003_nrca1_i2d.fits",
+        "F277W": "/workspace/scratch/232075794deb/jwst/data/original_round2/jw01180026001_07201_00001_nrcalong_i2d.fits",
+        "F356W": "/workspace/scratch/232075794deb/jwst/data/original_round2/jw01180026001_05201_00003_nrcalong_i2d.fits"
+      },
+      "individual_footprint_overlap": {
+        "F444W": 1.0,
+        "F090W": 0.230625,
+        "F200W": 0.223125,
+        "F277W": 0.950625,
+        "F356W": 0.975
+      }
+    }
+  ]
+}
