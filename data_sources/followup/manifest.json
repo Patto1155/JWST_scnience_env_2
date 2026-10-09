@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "unite-point-prism",
+      "title": "UNITE prism point-source resolving power",
+      "version": "156e29eb75f788f90041b5d2bbae27ae9dac78d8",
+      "canonical_url": "https://github.com/TheSkyentist/unite",
+      "access": "Pinned author code; parse numeric calibration without execution",
+      "science_use": "Replace uniformly illuminated dispersion with point-source sensitivity scenario",
+      "caveats": "Generic polynomial from msafit, not MoM-specific slit-position LSF or exact 2025 installed version. GPLv3+ source remains external; numerical derivative is marked.",
+      "terms": "GPLv3 or later for UNITE source; cite UNITE and de Graaff DOI 10.1051/0004-6361/202347755.",
+      "products": [
+        {
+          "id": "source",
+          "url": "https://raw.githubusercontent.com/TheSkyentist/unite/156e29eb75f788f90041b5d2bbae27ae9dac78d8/unite/instrument/nirspec/disperser.py",
+          "kind": "author_calibration_code",
+          "filename": "unite_source.py",
+          "expected_bytes": 19220,
+          "sha256": "f9b5c59ee3ad14c54fbe1d7e2f939995766c9a839c9629757f4994cbd557de4e"
+        },
+        {
+          "id": "dispersion",
+          "url": "https://raw.githubusercontent.com/TheSkyentist/unite/156e29eb75f788f90041b5d2bbae27ae9dac78d8/unite/instrument/nirspec/data/jwst_nirspec_prism_disp.fits",
+          "kind": "uniform_dispersion_grid",
+          "filename": "unite_dispersion.fits",
+          "expected_bytes": 20160,
+          "sha256": "58f9330440c50af624313e70f3e5b9f58a6b22d06af094e0085ed66408d0d937"
+        }
+      ]
+    },
+    {
+      "id": "dja-deep-f444w-controls",
+      "title": "DAWN deep GOODS-S F444W compact control cutouts",
+      "version": "API snapshot 2026-10-09; exact upstream version from response headers",
+      "canonical_url": "https://dawn-cph.github.io/dja/general/api_summary/",
+      "access": "Documented thumb API FITS science+weight; size12 parameter returns24arcsec across",
+      "science_use": "Test depth/detection limitation at covered but unrecovered JADES high-z reference positions",
+      "caveats": "Two of three labels grade C, robust grade A reported separately. Includes original exposure and shares sky; not independent validation. No native-pixel classifier application to0.05arcsec mosaics.",
+      "terms": "Public data; redistribution license not stated in inspected DJA documentation, raw products kept outside git. Cite DJA reduction and relevant observing programs.",
+      "products": [
+        {
+          "id": "20083087",
+          "url": "https://grizli-cutout.herokuapp.com/thumb?ra=53.0677326&dec=-27.8378744&filters=f444w-clear&size=12&output=fits_weight",
+          "kind": "deep_science_inverse_variance_cutout",
+          "reference": {
+            "id": "20083087",
+            "ra_deg": 53.0677326,
+            "dec_deg": -27.8378744,
+            "quality_flag": "C",
+            "z_spec": 9.059601
+          },
+          "filename": "dja_f444w_20083087.fits",
+          "expected_bytes": 1872000,
+          "sha256": "4f0584d66e0196cbf698109212880a412ac1d41c6603d26d299a33e207d993a5"
+        },
+        {
+          "id": "20074794",
+          "url": "https://grizli-cutout.herokuapp.com/thumb?ra=53.0671723&dec=-27.8472697&filters=f444w-clear&size=12&output=fits_weight",
+          "kind": "deep_science_inverse_variance_cutout",
+          "reference": {
+            "id": "20074794",
+            "ra_deg": 53.0671723,
+            "dec_deg": -27.8472697,
+            "quality_flag": "C",
+            "z_spec": 8.589369
+          },
+          "filename": "dja_f444w_20074794.fits",
+          "expected_bytes": 1874880,
+          "sha256": "06c804359f2553155e46745c009572abfda6a62fcdcf922a2c04127fc74d8662"
+        },
+        {
+          "id": "20189546",
+          "url": "https://grizli-cutout.herokuapp.com/thumb?ra=53.0721288&dec=-27.8419459&filters=f444w-clear&size=12&output=fits_weight",
+          "kind": "deep_science_inverse_variance_cutout",
+          "reference": {
+            "id": "20189546",
+            "ra_deg": 53.0721288,
+            "dec_deg": -27.8419459,
+            "quality_flag": "A",
+            "z_spec": 8.697172188017191
+          },
+          "filename": "dja_f444w_20189546.fits",
+          "expected_bytes": 1872000,
+          "sha256": "0a887487f1fefa97b4360b977fa23fc248321b47dad58e7e99bfa9b43f778d34"
+        }
+      ]
+    },
+    {
+      "id": "mom-native-cal",
+      "title": "One official MoM-z14 native calibrated exposure",
+      "version": "MAST archive calibrated 2026-07-21 CAL2.0.1 CRDSjwst_1535",
+      "canonical_url": "https://archive.stsci.edu/proposal_search.php?id=5224&mission=jwst",
+      "access": "Public MAST explicit officialcal product linked to actualSLITS exposure stem",
+      "science_use": "Native source277193SCI/ERR/DQ/WAVELENGTH andpathloss control",
+      "caveats": "Single1750.667s exposure,EXTENDED upstreamsource classification; differsDJApointsource version. Not independent confirmation of nineexposure UVline detections.",
+      "terms": "Public MAST product; specific redistribution license not verified here. Raw exposure/slit kept outsidegit.",
+      "products": [
+        {
+          "id": "mom-exposure-00002-cal",
+          "filename": "jw05224004001_03101_00002_nrs2_cal.fits",
+          "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00002_nrs2_cal.fits",
+          "kind": "native_calibrated_multi_slit_exposure",
+          "expected_bytes": 51563520,
+          "sha256": "c2d318f836570e3cc77463ec91a8b2a8982deb8df4762873dcad3bdfbd03bc9f",
+          "max_bytes": 62914560
+        }
+      ]
+    },
+    {
+      "id": "nandal-rotating-benchmarks",
+      "title": "Nandal2024 numerical mixed-ISM scenario benchmarks",
+      "version": "arxiv2405.11235v1 Table2",
+      "canonical_url": "https://arxiv.org/html/2405.11235v1",
+      "access": "Pinned primary HTML table; extract numericalmodelvalues",
+      "science_use": "Competing fastrotatingmassivestar benchmark alongsideSMS",
+      "caveats": "Mixed-ISM predictions calibratedatGNz11oxygenabundance, notrawyieldgrid orMoMfit. Initialrotation/IMF/masscut assumptions.",
+      "terms": "Scientific numeric table derivative with source citation; fullHTML retainedoutsidegit.",
+      "products": [
+        {
+          "id": "nandal-table2-primary-html",
+          "filename": "nandal_2405.11235v1.html",
+          "url": "https://arxiv.org/html/2405.11235v1",
+          "kind": "primary_numeric_table_html",
+          "expected_bytes": 294734,
+          "sha256": "63b145f7ab342df69712dfb7ae0972d6db7a4f85a80cf1efc0bb93c82544ffa2"
+        }
+      ]
+    }
+  ]
+}

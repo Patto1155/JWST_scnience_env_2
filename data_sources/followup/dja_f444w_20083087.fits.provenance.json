@@ -1,0 +1,12 @@
+{
+  "requested_url": "https://grizli-cutout.herokuapp.com/thumb?ra=53.0677326&dec=-27.8378744&filters=f444w-clear&size=12&output=fits_weight",
+  "resolved_url": "https://grizli-cutout.herokuapp.com/thumb?ra=53.0677326&dec=-27.8378744&filters=f444w-clear&size=12&output=fits_weight",
+  "retrieved_utc": "2026-10-09T07:20:21.107745+00:00",
+  "bytes": 1872000,
+  "sha256": "4f0584d66e0196cbf698109212880a412ac1d41c6603d26d299a33e207d993a5",
+  "content_type": "image/fits",
+  "etag": "\"1791530420.819737-1872000-2668890721\"",
+  "last_modified": "Fri, 09 Oct 2026 07:20:20 GMT",
+  "product_id": "20083087",
+  "max_bytes": 8388608
+}

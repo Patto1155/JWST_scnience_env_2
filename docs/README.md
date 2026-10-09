@@ -216,3 +216,6 @@ MAST acquisition, checksum/SCI/ERR/WHT readiness checks, optional catalog
 registration, external released-source centroid validation and repeat-pair
 reproduction. These are trusted coding/analysis CLIs, not new arbitrary-code
 capabilities exposed to research agents.
+* [Bounded follow-up data and actual deep-reference comparison](FOLLOWUP_DATA.md).
+
+* [Nine native MoM exposures and rotating-star benchmarks](MOM_NATIVE_BATCH.md).

@@ -1,0 +1,12 @@
+{
+  "requested_url": "https://raw.githubusercontent.com/TheSkyentist/unite/156e29eb75f788f90041b5d2bbae27ae9dac78d8/unite/instrument/nirspec/data/jwst_nirspec_prism_disp.fits",
+  "resolved_url": "https://raw.githubusercontent.com/TheSkyentist/unite/156e29eb75f788f90041b5d2bbae27ae9dac78d8/unite/instrument/nirspec/data/jwst_nirspec_prism_disp.fits",
+  "retrieved_utc": "2026-10-09T07:20:18.956705+00:00",
+  "bytes": 20160,
+  "sha256": "58f9330440c50af624313e70f3e5b9f58a6b22d06af094e0085ed66408d0d937",
+  "content_type": "application/octet-stream",
+  "etag": "\"c1b070e11f88f5e60b0076e4ce1ef3eaecf0de96fa7f386667c163f28aa67946\"",
+  "last_modified": null,
+  "product_id": "dispersion",
+  "max_bytes": 8388608
+}

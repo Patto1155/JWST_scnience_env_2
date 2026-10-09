@@ -1,0 +1,42 @@
+{
+  "kind": "derived_generic_point_source_resolution_not_source_specific_lsf",
+  "transform": "np.polyval(descending coefficients, official wavelength_um grid)",
+  "coefficients_descending": [
+    0.6588751520824567,
+    -13.160715906787065,
+    105.20050050555237,
+    -429.52868537465565,
+    959.0507565400321,
+    -1043.4918213547285,
+    480.90575759267125
+  ],
+  "source_receipt": {
+    "requested_url": "https://raw.githubusercontent.com/TheSkyentist/unite/156e29eb75f788f90041b5d2bbae27ae9dac78d8/unite/instrument/nirspec/disperser.py",
+    "resolved_url": "https://raw.githubusercontent.com/TheSkyentist/unite/156e29eb75f788f90041b5d2bbae27ae9dac78d8/unite/instrument/nirspec/disperser.py",
+    "retrieved_utc": "2026-10-09T07:20:18.970030+00:00",
+    "bytes": 19220,
+    "sha256": "f9b5c59ee3ad14c54fbe1d7e2f939995766c9a839c9629757f4994cbd557de4e",
+    "content_type": "text/plain; charset=utf-8",
+    "etag": "\"26ad39863b2be8a7350ac757ab7938cd4666d2126b789a5793078f11b304c035\"",
+    "last_modified": null,
+    "product_id": "source",
+    "max_bytes": 8388608
+  },
+  "grid_receipt": {
+    "requested_url": "https://raw.githubusercontent.com/TheSkyentist/unite/156e29eb75f788f90041b5d2bbae27ae9dac78d8/unite/instrument/nirspec/data/jwst_nirspec_prism_disp.fits",
+    "resolved_url": "https://raw.githubusercontent.com/TheSkyentist/unite/156e29eb75f788f90041b5d2bbae27ae9dac78d8/unite/instrument/nirspec/data/jwst_nirspec_prism_disp.fits",
+    "retrieved_utc": "2026-10-09T07:20:18.956705+00:00",
+    "bytes": 20160,
+    "sha256": "58f9330440c50af624313e70f3e5b9f58a6b22d06af094e0085ed66408d0d937",
+    "content_type": "application/octet-stream",
+    "etag": "\"c1b070e11f88f5e60b0076e4ce1ef3eaecf0de96fa7f386667c163f28aa67946\"",
+    "last_modified": null,
+    "product_id": "dispersion",
+    "max_bytes": 8388608
+  },
+  "software_license": "UNITE GPLv3+; source code not redistributed here",
+  "citation": "UNITE; de Graaff et al. DOI 10.1051/0004-6361/202347755",
+  "limitation": "Current pinned UNITE calibration, not exact paper runtime or MoM shutter-specific LSF",
+  "bytes": 31680,
+  "sha256": "10cfc73cee0d73b914ddf0e5f8412bcf7746d1d7c225bbfbcd50ca7d0f1744a7"
+}
