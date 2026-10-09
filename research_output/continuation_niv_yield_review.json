@@ -1,0 +1,386 @@
+{
+  "schema_version": 1,
+  "yield_bridge_sha256": "f9129c0673de441f7ecf295928b9f9553a255a4d4c76b22a1fa895af81cc1eea",
+  "input_receipts": {
+    "v1_report": {
+      "file": "mom_native_multiplet_refit.json",
+      "sha256": "9248284f52552e88fa002351d9b39aec419cc27e76c631ab6cffae2c5e09e929"
+    },
+    "v1_grid": {
+      "file": "mom_atomic_grid.json",
+      "sha256": "b3923cd0084950e4b73a89a20848785188fc484287140c9f4d2720af43a5dc8d"
+    },
+    "v2_report": {
+      "file": "mom_native_niv_doublet_refit_v2.json",
+      "sha256": "446c1f7a35ed8c8e272ba277576088f7a4dbbd6d75dcceb2dd6c1767b2891b63"
+    },
+    "v2_grid": {
+      "file": "mom_atomic_grid_niv_doublet_v2.json",
+      "sha256": "a48ea0076ae9f6ef4d76845644880776c266efce0a281b0866d12889e36b1e0e"
+    },
+    "v2_components": {
+      "file": "mom_multiplet_components_niv_doublet_v2.json",
+      "sha256": "692ce2fe0ca5463708abfa3c232378f3aebe22ff9b96f97d779091d54ac5f474"
+    },
+    "benchmarks": {
+      "file": "enrichment_benchmarks.json",
+      "sha256": "8d80da92f18526b361f29244d9c57c1cdfdc82e240a2e334a1595cb29d096930"
+    }
+  },
+  "independent_fresh_ionic_projections": 224,
+  "independent_whitened_NNLS_cones": 5376,
+  "maximum_deviance_absolute_difference": 1.4210854715202004e-14,
+  "maximum_ionic_measurement_difference": 4.547473508864641e-13,
+  "maximum_ionic_covariance_difference": 1.8189894035458565e-12,
+  "conditional_reference_counts": [
+    {
+      "family": "nominal_shared_formal",
+      "v1_counts_by_model_k": [
+        [
+          3,
+          28,
+          28
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          6
+        ],
+        [
+          23,
+          28,
+          28
+        ],
+        [
+          5,
+          28,
+          28
+        ],
+        [
+          28,
+          28,
+          28
+        ],
+        [
+          25,
+          28,
+          28
+        ]
+      ],
+      "v2_counts_by_model_k": [
+        [
+          0,
+          9,
+          28
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          28,
+          28
+        ],
+        [
+          0,
+          12,
+          28
+        ],
+        [
+          8,
+          28,
+          28
+        ],
+        [
+          4,
+          28,
+          28
+        ]
+      ]
+    },
+    {
+      "family": "point_shared_formal",
+      "v1_counts_by_model_k": [
+        [
+          0,
+          28,
+          28
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          3
+        ],
+        [
+          14,
+          28,
+          28
+        ],
+        [
+          2,
+          28,
+          28
+        ],
+        [
+          26,
+          28,
+          28
+        ],
+        [
+          25,
+          28,
+          28
+        ]
+      ],
+      "v2_counts_by_model_k": [
+        [
+          0,
+          2,
+          28
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          17,
+          28
+        ],
+        [
+          0,
+          2,
+          28
+        ],
+        [
+          1,
+          28,
+          28
+        ],
+        [
+          0,
+          22,
+          28
+        ]
+      ]
+    },
+    {
+      "family": "nominal_empirical_offtrace_transport",
+      "v1_counts_by_model_k": [
+        [
+          0,
+          0,
+          13
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          6,
+          26
+        ],
+        [
+          0,
+          0,
+          16
+        ],
+        [
+          0,
+          13,
+          28
+        ],
+        [
+          0,
+          9,
+          28
+        ]
+      ],
+      "v2_counts_by_model_k": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "family": "point_empirical_offtrace_transport",
+      "v1_counts_by_model_k": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          15
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          22
+        ],
+        [
+          0,
+          0,
+          19
+        ]
+      ],
+      "v2_counts_by_model_k": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    }
+  ],
+  "scope": "Fixed k/equal retention/discrete benchmarks; deterministic sensitivity, no calibrated mechanism exclusion or probabilities"
+}
