@@ -98,6 +98,15 @@ def test_flux_units_and_sigmas_are_checked():
         check_fluxes(malformed)
 
 
+def test_self_consistent_atomic_member_receipt_forgery_is_rejected():
+    grid = json.loads(
+        (Path(__file__).resolve().parents[1] / "research_output/mom_atomic_grid.json").read_text()
+    )
+    grid["atomic_files"][0]["sha256"] = "0" * 64
+    with pytest.raises(ValueError, match="independently pinned"):
+        validate_grid(grid)
+
+
 def test_helium_oxygen_blend_operator_has_null_direction():
     e = epsilon()
     design = np.zeros((5, 6))
