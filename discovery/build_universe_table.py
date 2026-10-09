@@ -13,7 +13,6 @@ This script:
 from __future__ import annotations
 
 import json
-import re
 import sys
 from collections import defaultdict
 from pathlib import Path
@@ -27,10 +26,6 @@ if str(ROOT) not in sys.path:
 
 from core_api.db import SessionLocal
 from core_api.models.datasets import Dataset
-from discovery.audit_candidates import (
-    ab_magnitude,
-    surface_brightness_sum_to_jansky,
-)
 from discovery.proposal_channels import (
     BLUE_FILTER,
     MID_FILTER,
@@ -46,10 +41,11 @@ from discovery.proposal_channels import (
 from tools.jwst.fits_loader import load_fits_bundle
 from tools.jwst.footprints import (
     MIN_USEFUL_OVERLAP,
-    modules_are_disjoint,
     overlap_fraction,
 )
 from tools.jwst.photometry import compute_color_index, extract_photometry
+from tools.jwst.dropout import dropout_upper_limit_ratio, physical_flux
+from astropy.wcs.utils import proj_plane_pixel_scales
 from tools.jwst.source_detection import detect_sources
 from tools.jwst.visualization import (
     candidate_evidence_bundle,
@@ -163,8 +159,12 @@ def build_universe_table(datasets: List[Dataset]) -> List[Dict[str, Any]]:
                 "file_path": meta.get("file_path") or bundle.get("file_path"),
                 "shape": list(masked_image.shape),
                 "summary_stats": stats,
-                "percentile_25": float(np.nanpercentile(valid_values, 25)) if valid_values.size else 0.0,
-                "percentile_75": float(np.nanpercentile(valid_values, 75)) if valid_values.size else 0.0,
+                "percentile_25": float(np.nanpercentile(valid_values, 25))
+                if valid_values.size
+                else 0.0,
+                "percentile_75": float(np.nanpercentile(valid_values, 75))
+                if valid_values.size
+                else 0.0,
                 "quadrant_stats": compute_quadrant_stats(masked_image),
                 "histogram": _histogram(valid_values, bins=100),
                 "valid_pixel_count": int(np.sum(valid_mask)),
@@ -174,7 +174,9 @@ def build_universe_table(datasets: List[Dataset]) -> List[Dict[str, Any]]:
     return entries
 
 
-def _group_entries_by_target(entries: List[Dict[str, Any]]) -> Dict[str, Dict[str, List[Dict[str, Any]]]]:
+def _group_entries_by_target(
+    entries: List[Dict[str, Any]],
+) -> Dict[str, Dict[str, List[Dict[str, Any]]]]:
     """Group universe-table entries by target and filter."""
     grouped: Dict[str, Dict[str, List[Dict[str, Any]]]] = defaultdict(lambda: defaultdict(list))
     for entry in entries:
@@ -225,9 +227,6 @@ def _pick_overlapping_dataset(
     scored: List[Tuple[float, int, str]] = []
     for item in entries.get(filter_name, []):
         name = item["name"]
-        if modules_are_disjoint(reference_name, name):
-            # Disjoint NIRCam modules cannot share sky; skip the FITS read.
-            continue
         overlap = _overlap_with_reference(reference_bundle, name)
         if overlap < MIN_FOOTPRINT_OVERLAP:
             continue
@@ -384,9 +383,9 @@ def _color_point(candidate: Dict[str, Any]) -> Optional[Dict[str, Any]]:
     values = {}
     for filt in required:
         r3 = photometry[filt]["3"]
-        flux = float(r3.get("background_subtracted_flux") or 0.0)
+        flux = physical_flux(r3)
         coverage = float(r3.get("coverage_fraction") or 0.0)
-        if flux <= 0 or coverage < 0.9:
+        if flux is None or flux <= 0 or coverage < 0.9:
             return None
         values[filt] = flux
 
@@ -399,7 +398,9 @@ def _color_point(candidate: Dict[str, Any]) -> Optional[Dict[str, Any]]:
         "source_id": candidate["source_id"],
         "x_color": float(c1["color_index"]),
         "y_color": float(c2["color_index"]),
-        "highlight": bool(candidate.get("ratio_f090_f444") is not None and candidate["ratio_f090_f444"] < 0.05),
+        "highlight": bool(
+            candidate.get("ratio_f090_f444") is not None and candidate["ratio_f090_f444"] < 0.05
+        ),
     }
 
 
@@ -425,7 +426,7 @@ def _validation_summary(candidate: Dict[str, Any]) -> Dict[str, Any]:
     mid_r3 = (photometry_by_filter.get(MID_FILTER) or {}).get("3") or {}
 
     blue_snr = blue_r3.get("snr")
-    mid_flux = float(mid_r3.get("background_subtracted_flux") or 0.0)
+    mid_flux = physical_flux(mid_r3) or 0.0
     mid_coverage = float(mid_r3.get("coverage_fraction") or 0.0) if mid_r3 else 0.0
     dropout_fraction = (
         float(np.mean([1.0 if item.get("dropout_lt_0p05") else 0.0 for item in aperture_checks]))
@@ -465,11 +466,7 @@ def _validation_summary(candidate: Dict[str, Any]) -> Dict[str, Any]:
         + 0.05 * coverage_score
         + 0.05 * edge_score
     )
-    weighted_score = (
-        0.80 * weighted_score
-        + 0.10 * completeness_score
-        + 0.10 * novelty_score
-    )
+    weighted_score = 0.80 * weighted_score + 0.10 * completeness_score + 0.10 * novelty_score
 
     keep_reasons: List[str] = []
     reject_reasons: List[str] = []
@@ -516,6 +513,9 @@ def _validation_summary(candidate: Dict[str, Any]) -> Dict[str, Any]:
         elif mid_coverage < 0.5:
             reject_reasons.append("mid_band_coverage_too_low")
 
+    if not is_measured_status(str(measurement_status_by_filter.get(MID_FILTER) or "")):
+        reject_reasons.append("mid_filter_not_measured")
+
     if completeness_score >= 0.95:
         keep_reasons.append("required_filters_measured")
     elif completeness_score < 0.67:
@@ -530,7 +530,7 @@ def _validation_summary(candidate: Dict[str, Any]) -> Dict[str, Any]:
     validation_status = "reject"
     if not reject_reasons and weighted_score >= 0.8:
         validation_status = "strong_keep"
-    elif weighted_score >= 0.65:
+    elif weighted_score >= 0.65 and not reject_reasons:
         validation_status = "keep"
     elif weighted_score >= 0.5:
         validation_status = "review"
@@ -632,25 +632,43 @@ def _analyze_target_sources(
                 dataset_x, dataset_y = ref_x, ref_y
             else:
                 bundle = bundle_by_filter[filter_name]
-                if bundle.get("wcs") is not None and sky_center["ra"] is not None and sky_center["dec"] is not None:
+                if (
+                    bundle.get("wcs") is not None
+                    and sky_center["ra"] is not None
+                    and sky_center["dec"] is not None
+                ):
                     dataset_x, dataset_y = bundle["wcs"].world_to_pixel_values(
                         float(sky_center["ra"]),
                         float(sky_center["dec"]),
                     )
                 else:
-                    dataset_x, dataset_y = ref_x, ref_y
+                    continue
 
             bundle = bundle_by_filter[filter_name]
+            reference_wcs = bundle_by_filter[REFERENCE_FILTER].get("wcs")
+            if (
+                reference_wcs is None
+                or not reference_wcs.has_celestial
+                or sky_center["ra"] is None
+                or sky_center["dec"] is None
+            ):
+                # No shared sky coordinate means no cross-band measurement.
+                continue
+            reference_scale = float(
+                np.sqrt(np.prod(proj_plane_pixel_scales(reference_wcs.celestial))) * 3600.0
+            )
+            if not np.isfinite(reference_scale) or reference_scale <= 0:
+                continue
 
             aperture_results: Dict[str, Any] = {}
             for radius in APERTURE_RADII:
                 aperture_results[str(radius)] = extract_photometry(
                     image_data=bundle,
-                    x=float(dataset_x),
-                    y=float(dataset_y),
-                    aperture_radius=float(radius),
-                    background_annulus_inner_radius=6.0,
-                    background_annulus_outer_radius=10.0,
+                    ra_deg=float(sky_center["ra"]),
+                    dec_deg=float(sky_center["dec"]),
+                    aperture_radius_arcsec=float(radius) * reference_scale,
+                    background_annulus_inner_radius_arcsec=6.0 * reference_scale,
+                    background_annulus_outer_radius_arcsec=10.0 * reference_scale,
                 )
 
             per_filter[filter_name] = aperture_results
@@ -662,26 +680,20 @@ def _analyze_target_sources(
         reference_r3 = per_filter[REFERENCE_FILTER]["3"]
         blue_r3 = per_filter[BLUE_FILTER]["3"]
         mid_r3 = (per_filter.get(MID_FILTER) or {}).get("3") or {}
-        ratio_r3 = _ratio_from_fluxes(
-            blue_r3.get("background_subtracted_flux"),
-            reference_r3.get("background_subtracted_flux"),
-        )
+        ratio_r3 = dropout_upper_limit_ratio(blue_r3, reference_r3)
 
         aperture_checks = []
         all_apertures_dropout = True
         for radius in APERTURE_RADII:
             blue_measurement = per_filter[BLUE_FILTER][str(radius)]
             red_measurement = per_filter[REFERENCE_FILTER][str(radius)]
-            ratio = _ratio_from_fluxes(
-                blue_measurement.get("background_subtracted_flux"),
-                red_measurement.get("background_subtracted_flux"),
-            )
+            ratio = dropout_upper_limit_ratio(blue_measurement, red_measurement)
             is_dropout = ratio is not None and ratio < 0.05
             aperture_checks.append(
                 {
                     "radius": radius,
-                    "f444_flux": float(red_measurement["background_subtracted_flux"]),
-                    "f090_flux": float(blue_measurement["background_subtracted_flux"]),
+                    "f444_flux": physical_flux(red_measurement),
+                    "f090_flux": physical_flux(blue_measurement),
                     "ratio_f090_f444": ratio,
                     "dropout_lt_0p05": is_dropout,
                 }
@@ -694,27 +706,23 @@ def _analyze_target_sources(
             mid_r3,
             float(source.get("edge_distance_px") or 0.0),
         )
-        # i2d pixels are surface brightness; convert to flux density before any
-        # cross-filter comparison, because short-wave pixels subtend a quarter
-        # of the solid angle of long-wave pixels.
-        reference_flux_jy = surface_brightness_sum_to_jansky(
-            float(reference_r3.get("background_subtracted_flux") or 0.0), REFERENCE_FILTER
-        )
-        blue_limit_jy = surface_brightness_sum_to_jansky(
-            max(float(blue_r3.get("background_subtracted_flux") or 0.0), 0.0)
-            + 2.0 * float(blue_r3.get("flux_error") or 0.0),
-            BLUE_FILTER,
-        )
-        physical_ratio = (
-            float(blue_limit_jy / reference_flux_jy) if reference_flux_jy > 0 else None
-        )
+        reference_flux_jy = physical_flux(reference_r3)
+        blue_flux_jy = physical_flux(blue_r3)
+        physical_ratio = ratio_r3
 
-        measurement_status_by_filter = build_measurement_status_by_filter(per_filter, radius_key="3")
+        measurement_status_by_filter = build_measurement_status_by_filter(
+            per_filter, radius_key="3"
+        )
         completeness_score = compute_completeness_score(
             measurement_status_by_filter,
             required_filters=[BLUE_FILTER, REFERENCE_FILTER, MID_FILTER],
         )
 
+        valid_ratios = [
+            item["ratio_f090_f444"]
+            for item in aperture_checks
+            if item["ratio_f090_f444"] is not None
+        ]
         base_record = {
             "target": target,
             "source_id": source_id,
@@ -724,12 +732,14 @@ def _analyze_target_sources(
             "f444_dataset": reference_dataset,
             "f090_dataset": blue_dataset,
             "f200_dataset": mid_dataset,
-            "f444_flux": float(reference_r3["background_subtracted_flux"]),
-            "f090_flux": float(blue_r3["background_subtracted_flux"]),
+            "f444_flux": reference_flux_jy,
+            "flux_unit": "Jy",
+            "selection_ratio_kind": "blue_2sigma_upper_limit_over_red_flux",
+            "f090_flux": blue_flux_jy,
             "ratio_f090_f444": ratio_r3,
             "aperture_checks": aperture_checks,
             "all_apertures_dropout": all_apertures_dropout,
-            "mean_ratio": float(np.mean([item["ratio_f090_f444"] for item in aperture_checks if item["ratio_f090_f444"] is not None])) if aperture_checks else None,
+            "mean_ratio": float(np.mean(valid_ratios)) if valid_ratios else None,
             "red_snr_r3": reference_r3.get("snr"),
             "coverage_fraction": float(reference_r3["coverage_fraction"]),
             "coverage_fraction_r3": float(reference_r3["coverage_fraction"]),
@@ -737,20 +747,23 @@ def _analyze_target_sources(
             "quality_flags": quality_flags,
             "measurement_status_by_filter": measurement_status_by_filter,
             "measured_filters": [
-                filt for filt, status in measurement_status_by_filter.items()
+                filt
+                for filt, status in measurement_status_by_filter.items()
                 if is_measured_status(status)
             ],
             "unmeasured_filters": [
-                filt for filt, status in measurement_status_by_filter.items()
+                filt
+                for filt, status in measurement_status_by_filter.items()
                 if not is_measured_status(status)
             ],
             "completeness_score": float(completeness_score),
             "footprint_overlap_by_filter": dict(footprint_overlap),
             "f444_flux_jy": reference_flux_jy,
-            "f444_ab_magnitude": ab_magnitude(reference_flux_jy),
+            "f444_ab_magnitude": reference_r3.get("background_subtracted_magnitude"),
             "physical_ratio_f090_f444": physical_ratio,
             "photometry_by_filter": per_filter,
             "photometry_by_dataset": per_dataset,
+            "screen_identity": "exploratory_proposal",
             "note": "Source-level JWST proposal candidate",
         }
         all_sources.append(base_record)
@@ -782,6 +795,12 @@ def _analyze_target_sources(
             # A dropout requires an actual blue measurement. Without one the
             # ratio is a division by an off-detector zero, not a non-detection.
             and is_measured_status(str(blue_status or ""))
+            and physical_flux(
+                (source["photometry_by_filter"][REFERENCE_FILTER] or {}).get("3") or {}
+            )
+            is not None
+            and physical_flux((source["photometry_by_filter"][BLUE_FILTER] or {}).get("3") or {})
+            is not None
             and float(source.get("f444_flux") or 0.0) > 0.0
         ):
             candidates.append(dict(source))
@@ -858,7 +877,9 @@ def _analyze_target_sources(
         "candidate_count": len(candidates),
         "shortlist_count": len(top_ranked),
         "proposal_channel_counts": (
-            summarize_proposal_channels(candidates, top_ranked).get("candidate_channel_counts") if candidates else {}
+            summarize_proposal_channels(candidates, top_ranked).get("candidate_channel_counts")
+            if candidates
+            else {}
         ),
     }
     return candidates, evidence_records, target_summary
@@ -947,7 +968,7 @@ def update_memory(entries, highz, anomalies, target_summaries, shortlist):
             lines.append(
                 f"- {candidate['target']} source {candidate['source_id']} at "
                 f"(x={candidate['position']['x']:.0f}, y={candidate['position']['y']:.0f}): "
-                f"F090/F444={candidate['ratio_f090_f444']:.3f}, "
+                f"F090/F444={str(candidate.get('ratio_f090_f444'))}, "
                 f"score={float(candidate.get('validation_score') or 0.0):.3f}, "
                 f"SNR={snr_text}, "
                 f"channel={candidate.get('primary_channel')}, "
@@ -999,7 +1020,7 @@ def update_report(entries, highz, anomalies, target_summaries, shortlist):
             lines.append(
                 f"- {candidate['target']} source {candidate['source_id']} at "
                 f"(x={candidate['position']['x']:.0f}, y={candidate['position']['y']:.0f}): "
-                f"F090/F444={candidate['ratio_f090_f444']:.3f}, "
+                f"F090/F444={str(candidate.get('ratio_f090_f444'))}, "
                 f"score={float(candidate.get('validation_score') or 0.0):.3f}, "
                 f"status={candidate.get('validation_status')}, "
                 f"channel={candidate.get('primary_channel')}, "
@@ -1022,7 +1043,7 @@ def update_report(entries, highz, anomalies, target_summaries, shortlist):
             "- Ensure API is running: `python run_api.py`",
             "- Rebuild Universe Table: `python discovery/build_universe_table.py`",
             "- Review shortlist: `research_output/highz_shortlist.json`",
-            "- View strict-ready datasets: `curl \"http://localhost:8000/datasets/?limit=20&strict_ready=true\"`",
+            '- View strict-ready datasets: `curl "http://localhost:8000/datasets/?limit=20&strict_ready=true"`',
             "",
         ]
     )

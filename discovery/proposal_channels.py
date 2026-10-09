@@ -6,6 +6,7 @@ from collections import Counter
 from typing import Any, Dict, List, Optional
 
 from tools.jwst.photometry import compute_color_index
+from tools.jwst.dropout import physical_flux
 
 from discovery.proposal_schemas import (
     CandidateProposalMetadata,
@@ -83,10 +84,17 @@ def classify_measurement_status(
     if flux is None:
         return "unmeasured_invalid"
 
+    if "calibration_status" in measurement and (
+        physical_flux(measurement) is None
+        or physical_flux(measurement, "flux_error_jy") is None
+        or (physical_flux(measurement, "flux_error_jy") or 0) <= 0
+        or measurement.get("background_status") != "measured"
+    ):
+        return "unmeasured_invalid"
     snr = measurement.get("snr")
     numeric_flux = _safe_float(flux)
     numeric_snr = _safe_float(snr)
-    if numeric_flux > 0.0 and numeric_snr >= detection_snr_threshold:
+    if numeric_flux > 0.0 and numeric_snr > detection_snr_threshold:
         return "measured_detection"
     return "measured_nondetection"
 
@@ -115,11 +123,13 @@ def compute_completeness_score(
     required_filters: List[str],
 ) -> float:
     """Compute how much of the required evidence set is actually measured."""
-    filtered = [name for name in required_filters if name in measurement_status_by_filter]
+    filtered = list(dict.fromkeys(required_filters))
     if not filtered:
         return 0.0
     measured_count = sum(
-        1 for filter_name in filtered if is_measured_status(measurement_status_by_filter[filter_name])
+        1
+        for filter_name in filtered
+        if is_measured_status(measurement_status_by_filter.get(filter_name, ""))
     )
     return float(measured_count / len(filtered))
 
@@ -178,7 +188,7 @@ def propose_dropout_strict(candidate: Dict[str, Any]) -> Optional[float]:
         return None
 
     ratio = candidate.get("ratio_f090_f444")
-    if ratio is None or float(ratio) >= 0.05:
+    if ratio is None or float(ratio) >= 0.05 or statuses.get(BLUE_FILTER) == "measured_detection":
         return None
 
     dropout_fraction = _dropout_fraction(candidate)
@@ -204,7 +214,7 @@ def propose_dropout_loose(candidate: Dict[str, Any]) -> Optional[float]:
         return None
 
     ratio = candidate.get("ratio_f090_f444")
-    if ratio is None or float(ratio) >= 0.15:
+    if ratio is None or float(ratio) >= 0.15 or statuses.get(BLUE_FILTER) == "measured_detection":
         return None
 
     red_snr = _safe_float(candidate.get("red_snr_r3"))
@@ -225,13 +235,16 @@ def compute_target_color_baseline(all_sources: List[Dict[str, Any]]) -> Optional
     y_values: List[float] = []
     for candidate in all_sources:
         statuses = candidate.get("measurement_status_by_filter") or {}
-        if not all(is_measured_status(statuses.get(filt, "")) for filt in (BLUE_FILTER, MID_FILTER, REFERENCE_FILTER)):
+        if not all(
+            is_measured_status(statuses.get(filt, ""))
+            for filt in (BLUE_FILTER, MID_FILTER, REFERENCE_FILTER)
+        ):
             continue
 
         photometry = candidate.get("photometry_by_filter") or {}
-        blue = _safe_float((((photometry.get(BLUE_FILTER) or {}).get("3") or {}).get("background_subtracted_flux")))
-        mid = _safe_float((((photometry.get(MID_FILTER) or {}).get("3") or {}).get("background_subtracted_flux")))
-        red = _safe_float((((photometry.get(REFERENCE_FILTER) or {}).get("3") or {}).get("background_subtracted_flux")))
+        blue = physical_flux((photometry.get(BLUE_FILTER) or {}).get("3") or {}) or 0.0
+        mid = physical_flux((photometry.get(MID_FILTER) or {}).get("3") or {}) or 0.0
+        red = physical_flux((photometry.get(REFERENCE_FILTER) or {}).get("3") or {}) or 0.0
         c1 = compute_color_index(blue, mid)
         c2 = compute_color_index(mid, red)
         if c1.get("color_index") is None or c2.get("color_index") is None:
@@ -273,20 +286,27 @@ def propose_color_color_outlier(
         return None
 
     statuses = candidate.get("measurement_status_by_filter") or {}
-    if not all(is_measured_status(statuses.get(filt, "")) for filt in (BLUE_FILTER, MID_FILTER, REFERENCE_FILTER)):
+    if not all(
+        is_measured_status(statuses.get(filt, ""))
+        for filt in (BLUE_FILTER, MID_FILTER, REFERENCE_FILTER)
+    ):
         return None
 
     photometry = candidate.get("photometry_by_filter") or {}
-    blue = _safe_float((((photometry.get(BLUE_FILTER) or {}).get("3") or {}).get("background_subtracted_flux")))
-    mid = _safe_float((((photometry.get(MID_FILTER) or {}).get("3") or {}).get("background_subtracted_flux")))
-    red = _safe_float((((photometry.get(REFERENCE_FILTER) or {}).get("3") or {}).get("background_subtracted_flux")))
+    blue = physical_flux((photometry.get(BLUE_FILTER) or {}).get("3") or {}) or 0.0
+    mid = physical_flux((photometry.get(MID_FILTER) or {}).get("3") or {}) or 0.0
+    red = physical_flux((photometry.get(REFERENCE_FILTER) or {}).get("3") or {}) or 0.0
     c1 = compute_color_index(blue, mid)
     c2 = compute_color_index(mid, red)
     if c1.get("color_index") is None or c2.get("color_index") is None:
         return None
 
-    dx = abs(float(c1["color_index"]) - float(color_baseline["x_center"])) / float(color_baseline["x_mad"])
-    dy = abs(float(c2["color_index"]) - float(color_baseline["y_center"])) / float(color_baseline["y_mad"])
+    dx = abs(float(c1["color_index"]) - float(color_baseline["x_center"])) / float(
+        color_baseline["x_mad"]
+    )
+    dy = abs(float(c2["color_index"]) - float(color_baseline["y_center"])) / float(
+        color_baseline["y_mad"]
+    )
     distance = max(dx, dy)
     if distance < 2.5:
         return None
@@ -303,9 +323,8 @@ def propose_morphology_extended_red(candidate: Dict[str, Any]) -> Optional[float
     if growth is None or growth < 1.4:
         return None
     red_snr = _safe_float(candidate.get("red_snr_r3"))
-    score = (
-        0.60 * _clip_unit_interval((growth - 1.4) / 1.2)
-        + 0.40 * _clip_unit_interval((red_snr - 8.0) / 12.0)
+    score = 0.60 * _clip_unit_interval((growth - 1.4) / 1.2) + 0.40 * _clip_unit_interval(
+        (red_snr - 8.0) / 12.0
     )
     return score if score >= 0.4 else None
 
@@ -382,17 +401,19 @@ def attach_proposal_metadata(
     scorers: List[tuple[ProposalChannelName, Optional[float]]] = [
         ("dropout_strict", propose_dropout_strict(working)),
         ("dropout_loose", propose_dropout_loose(working)),
-        ("color_color_outlier", propose_color_color_outlier(working, color_baseline=color_baseline)),
+        (
+            "color_color_outlier",
+            propose_color_color_outlier(working, color_baseline=color_baseline),
+        ),
         ("morphology_extended_red", propose_morphology_extended_red(working)),
-        ("anomaly_context", propose_anomaly_context(working, anomalous_dataset_names=anomalous_dataset_names)),
+        (
+            "anomaly_context",
+            propose_anomaly_context(working, anomalous_dataset_names=anomalous_dataset_names),
+        ),
         ("novel_high_snr_outlier", propose_novel_high_snr_outlier(working)),
     ]
 
-    channel_scores = {
-        name: float(score)
-        for name, score in scorers
-        if score is not None
-    }
+    channel_scores = {name: float(score) for name, score in scorers if score is not None}
     proposal_channels = [
         name
         for name, score in sorted(channel_scores.items(), key=lambda item: item[1], reverse=True)
@@ -400,7 +421,12 @@ def attach_proposal_metadata(
     primary_channel = proposal_channels[0] if proposal_channels else None
 
     novelty_score = 0.0
-    for name in ("color_color_outlier", "morphology_extended_red", "anomaly_context", "novel_high_snr_outlier"):
+    for name in (
+        "color_color_outlier",
+        "morphology_extended_red",
+        "anomaly_context",
+        "novel_high_snr_outlier",
+    ):
         novelty_score = max(novelty_score, float(channel_scores.get(name) or 0.0))
 
     measured_filters = [
@@ -424,7 +450,9 @@ def attach_proposal_metadata(
         novelty_score=float(novelty_score),
         falsification_flags=falsification_flags,
         disqualifying_flags=disqualifying_flags,
-        portfolio_bucket=_portfolio_bucket_for(primary_channel, disqualifying_flags=disqualifying_flags)
+        portfolio_bucket=_portfolio_bucket_for(
+            primary_channel, disqualifying_flags=disqualifying_flags
+        )
         if primary_channel
         else None,
     )
@@ -464,9 +492,7 @@ def build_portfolio_shortlist(
 
     for bucket in ("conservative", "alternative", "novelty", "edge_exploration"):
         bucket_candidates = [
-            item
-            for item in candidates
-            if str(item.get("portfolio_bucket") or "") == bucket
+            item for item in candidates if str(item.get("portfolio_bucket") or "") == bucket
         ]
         bucket_candidates.sort(key=sort_key, reverse=True)
         taken = 0
@@ -485,7 +511,8 @@ def build_portfolio_shortlist(
             taken += 1
 
     leftovers.extend(
-        item for item in candidates
+        item
+        for item in candidates
         if (str(item.get("target") or ""), item.get("source_id")) not in seen_ids
     )
     unique_leftovers: Dict[tuple[str, Any], Dict[str, Any]] = {}
@@ -517,8 +544,12 @@ def summarize_proposal_channels(
     """Summarize how much diversity the proposal frontier actually has."""
     candidate_channel_counts = Counter()
     shortlist_channel_counts = Counter()
-    portfolio_bucket_counts = Counter(str(item.get("portfolio_bucket") or "none") for item in candidates)
-    shortlist_bucket_counts = Counter(str(item.get("portfolio_bucket") or "none") for item in shortlist)
+    portfolio_bucket_counts = Counter(
+        str(item.get("portfolio_bucket") or "none") for item in candidates
+    )
+    shortlist_bucket_counts = Counter(
+        str(item.get("portfolio_bucket") or "none") for item in shortlist
+    )
     measurement_status_counts = Counter()
     falsification_flag_counts = Counter()
     disqualifying_flag_counts = Counter()
