@@ -58,7 +58,7 @@ def submit_research_question(
     if constraints is None:
         constraints = {"max_steps": 15, "strict_real_data": True}
 
-    payload = {
+    payload: Dict[str, Any] = {
         "spec": {
             "objective": objective,
             "datasets": datasets,
