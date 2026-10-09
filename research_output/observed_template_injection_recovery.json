@@ -1,0 +1,3571 @@
+{
+  "schema_version": 1,
+  "evidence_kind": "synthetic_observed_profile_injections_into_actual_backgrounds",
+  "frozen_plan_sha256": "88be358d060e5c4c9f9bb9e5f85ab0d15a1bc59aae4e65626401f8b9f26fe815",
+  "total_insertion_trials": 2436,
+  "disjoint_background_sites": 29,
+  "distinct_observed_templates": 4,
+  "dependent_mosaic_groups": 1,
+  "baseline_null_controls": [
+    {
+      "site_id": "site-000",
+      "mode": "legacy",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": 1.272785266769006,
+      "matches": 0
+    },
+    {
+      "site_id": "site-000",
+      "mode": "angular_area",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": 1.272785266769006,
+      "matches": 0
+    },
+    {
+      "site_id": "site-001",
+      "mode": "legacy",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-001",
+      "mode": "angular_area",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-002",
+      "mode": "legacy",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-002",
+      "mode": "angular_area",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-003",
+      "mode": "legacy",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-003",
+      "mode": "angular_area",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-004",
+      "mode": "legacy",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-004",
+      "mode": "angular_area",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-005",
+      "mode": "legacy",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-005",
+      "mode": "angular_area",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-006",
+      "mode": "legacy",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": 1.1811596385322747,
+      "matches": 0
+    },
+    {
+      "site_id": "site-006",
+      "mode": "angular_area",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": 1.1811596385322747,
+      "matches": 0
+    },
+    {
+      "site_id": "site-007",
+      "mode": "legacy",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-007",
+      "mode": "angular_area",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-008",
+      "mode": "legacy",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-008",
+      "mode": "angular_area",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-009",
+      "mode": "legacy",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": 1.352827524909769,
+      "matches": 0
+    },
+    {
+      "site_id": "site-009",
+      "mode": "angular_area",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": 1.352827524909769,
+      "matches": 0
+    },
+    {
+      "site_id": "site-010",
+      "mode": "legacy",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-010",
+      "mode": "angular_area",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-011",
+      "mode": "legacy",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-011",
+      "mode": "angular_area",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-012",
+      "mode": "legacy",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-012",
+      "mode": "angular_area",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-013",
+      "mode": "legacy",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": 1.2132743724351376,
+      "matches": 0
+    },
+    {
+      "site_id": "site-013",
+      "mode": "angular_area",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": 1.2132743724351376,
+      "matches": 0
+    },
+    {
+      "site_id": "site-014",
+      "mode": "legacy",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-014",
+      "mode": "angular_area",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-015",
+      "mode": "legacy",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-015",
+      "mode": "angular_area",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-016",
+      "mode": "legacy",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": 1.2979192199481693,
+      "matches": 0
+    },
+    {
+      "site_id": "site-016",
+      "mode": "angular_area",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": 1.2979192199481693,
+      "matches": 0
+    },
+    {
+      "site_id": "site-017",
+      "mode": "legacy",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-017",
+      "mode": "angular_area",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-018",
+      "mode": "legacy",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-018",
+      "mode": "angular_area",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-019",
+      "mode": "legacy",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-019",
+      "mode": "angular_area",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-020",
+      "mode": "legacy",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-020",
+      "mode": "angular_area",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-021",
+      "mode": "legacy",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": 1.0844298189193926,
+      "matches": 0
+    },
+    {
+      "site_id": "site-021",
+      "mode": "angular_area",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": 1.0844298189193926,
+      "matches": 0
+    },
+    {
+      "site_id": "site-022",
+      "mode": "legacy",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-022",
+      "mode": "angular_area",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-023",
+      "mode": "legacy",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-023",
+      "mode": "angular_area",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-024",
+      "mode": "legacy",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-024",
+      "mode": "angular_area",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-025",
+      "mode": "legacy",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-025",
+      "mode": "angular_area",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-026",
+      "mode": "legacy",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-026",
+      "mode": "angular_area",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-027",
+      "mode": "legacy",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-027",
+      "mode": "angular_area",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": null,
+      "matches": 0
+    },
+    {
+      "site_id": "site-028",
+      "mode": "legacy",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": 1.5534056727891867,
+      "matches": 0
+    },
+    {
+      "site_id": "site-028",
+      "mode": "angular_area",
+      "status": "not_detected",
+      "nearest_centroid_arcsec": 1.5534056727891867,
+      "matches": 0
+    }
+  ],
+  "curves": [
+    {
+      "template_id": "186837",
+      "spatial_scale": 0.65,
+      "finite_stamp_flux_njy": 5.0,
+      "modes": {
+        "legacy": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "186837",
+      "spatial_scale": 0.65,
+      "finite_stamp_flux_njy": 10.0,
+      "modes": {
+        "legacy": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "186837",
+      "spatial_scale": 0.65,
+      "finite_stamp_flux_njy": 20.0,
+      "modes": {
+        "legacy": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "186837",
+      "spatial_scale": 0.65,
+      "finite_stamp_flux_njy": 40.0,
+      "modes": {
+        "legacy": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "186837",
+      "spatial_scale": 0.65,
+      "finite_stamp_flux_njy": 80.0,
+      "modes": {
+        "legacy": {
+          "matched": 17,
+          "sites": 29,
+          "fraction": 0.5862068965517241,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.4151580459770115,
+            "upper": 0.7680128205128205,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 17,
+          "sites": 29,
+          "fraction": 0.5862068965517241,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.4151580459770115,
+            "upper": 0.7680128205128205,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "186837",
+      "spatial_scale": 0.65,
+      "finite_stamp_flux_njy": 160.0,
+      "modes": {
+        "legacy": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "186837",
+      "spatial_scale": 0.65,
+      "finite_stamp_flux_njy": 320.0,
+      "modes": {
+        "legacy": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "186837",
+      "spatial_scale": 1.0,
+      "finite_stamp_flux_njy": 5.0,
+      "modes": {
+        "legacy": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "186837",
+      "spatial_scale": 1.0,
+      "finite_stamp_flux_njy": 10.0,
+      "modes": {
+        "legacy": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "186837",
+      "spatial_scale": 1.0,
+      "finite_stamp_flux_njy": 20.0,
+      "modes": {
+        "legacy": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "186837",
+      "spatial_scale": 1.0,
+      "finite_stamp_flux_njy": 40.0,
+      "modes": {
+        "legacy": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "186837",
+      "spatial_scale": 1.0,
+      "finite_stamp_flux_njy": 80.0,
+      "modes": {
+        "legacy": {
+          "matched": 26,
+          "sites": 29,
+          "fraction": 0.896551724137931,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.7777777777777778,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 9,
+          "sites": 29,
+          "fraction": 0.3103448275862069,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.15676923076923077,
+            "upper": 0.48,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 17,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "186837",
+      "spatial_scale": 1.0,
+      "finite_stamp_flux_njy": 160.0,
+      "modes": {
+        "legacy": {
+          "matched": 26,
+          "sites": 29,
+          "fraction": 0.896551724137931,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.7833705357142857,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 3,
+          "sites": 29,
+          "fraction": 0.10344827586206896,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.2222222222222222,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 23,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "186837",
+      "spatial_scale": 1.0,
+      "finite_stamp_flux_njy": 320.0,
+      "modes": {
+        "legacy": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 3,
+          "sites": 29,
+          "fraction": 0.10344827586206896,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.2076508620689655,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 26,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "186837",
+      "spatial_scale": 1.5,
+      "finite_stamp_flux_njy": 5.0,
+      "modes": {
+        "legacy": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "186837",
+      "spatial_scale": 1.5,
+      "finite_stamp_flux_njy": 10.0,
+      "modes": {
+        "legacy": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "186837",
+      "spatial_scale": 1.5,
+      "finite_stamp_flux_njy": 20.0,
+      "modes": {
+        "legacy": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "186837",
+      "spatial_scale": 1.5,
+      "finite_stamp_flux_njy": 40.0,
+      "modes": {
+        "legacy": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "186837",
+      "spatial_scale": 1.5,
+      "finite_stamp_flux_njy": 80.0,
+      "modes": {
+        "legacy": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "186837",
+      "spatial_scale": 1.5,
+      "finite_stamp_flux_njy": 160.0,
+      "modes": {
+        "legacy": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 24,
+          "sites": 29,
+          "fraction": 0.8275862068965517,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.6551724137931034,
+            "upper": 0.9701648841354723,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 5,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "186837",
+      "spatial_scale": 1.5,
+      "finite_stamp_flux_njy": 320.0,
+      "modes": {
+        "legacy": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "187956",
+      "spatial_scale": 0.65,
+      "finite_stamp_flux_njy": 5.0,
+      "modes": {
+        "legacy": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "187956",
+      "spatial_scale": 0.65,
+      "finite_stamp_flux_njy": 10.0,
+      "modes": {
+        "legacy": {
+          "matched": 3,
+          "sites": 29,
+          "fraction": 0.10344827586206896,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.21810461956521734,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 3,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "187956",
+      "spatial_scale": 0.65,
+      "finite_stamp_flux_njy": 20.0,
+      "modes": {
+        "legacy": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 28,
+          "sites": 29,
+          "fraction": 0.9655172413793104,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.8946120689655173,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 1,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "187956",
+      "spatial_scale": 0.65,
+      "finite_stamp_flux_njy": 40.0,
+      "modes": {
+        "legacy": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "187956",
+      "spatial_scale": 0.65,
+      "finite_stamp_flux_njy": 80.0,
+      "modes": {
+        "legacy": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "187956",
+      "spatial_scale": 0.65,
+      "finite_stamp_flux_njy": 160.0,
+      "modes": {
+        "legacy": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "187956",
+      "spatial_scale": 0.65,
+      "finite_stamp_flux_njy": 320.0,
+      "modes": {
+        "legacy": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "187956",
+      "spatial_scale": 1.0,
+      "finite_stamp_flux_njy": 5.0,
+      "modes": {
+        "legacy": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "187956",
+      "spatial_scale": 1.0,
+      "finite_stamp_flux_njy": 10.0,
+      "modes": {
+        "legacy": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "187956",
+      "spatial_scale": 1.0,
+      "finite_stamp_flux_njy": 20.0,
+      "modes": {
+        "legacy": {
+          "matched": 21,
+          "sites": 29,
+          "fraction": 0.7241379310344828,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.5819220430107527,
+            "upper": 0.8947967980295566,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 5,
+          "sites": 29,
+          "fraction": 0.1724137931034483,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.032768817204301075,
+            "upper": 0.3495715725806449,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 16,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "187956",
+      "spatial_scale": 1.0,
+      "finite_stamp_flux_njy": 40.0,
+      "modes": {
+        "legacy": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "187956",
+      "spatial_scale": 1.0,
+      "finite_stamp_flux_njy": 80.0,
+      "modes": {
+        "legacy": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "187956",
+      "spatial_scale": 1.0,
+      "finite_stamp_flux_njy": 160.0,
+      "modes": {
+        "legacy": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "187956",
+      "spatial_scale": 1.0,
+      "finite_stamp_flux_njy": 320.0,
+      "modes": {
+        "legacy": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "187956",
+      "spatial_scale": 1.5,
+      "finite_stamp_flux_njy": 5.0,
+      "modes": {
+        "legacy": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "187956",
+      "spatial_scale": 1.5,
+      "finite_stamp_flux_njy": 10.0,
+      "modes": {
+        "legacy": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "187956",
+      "spatial_scale": 1.5,
+      "finite_stamp_flux_njy": 20.0,
+      "modes": {
+        "legacy": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "187956",
+      "spatial_scale": 1.5,
+      "finite_stamp_flux_njy": 40.0,
+      "modes": {
+        "legacy": {
+          "matched": 12,
+          "sites": 29,
+          "fraction": 0.41379310344827586,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.21428571428571427,
+            "upper": 0.6451612903225806,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 6,
+          "sites": 29,
+          "fraction": 0.20689655172413793,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.07013546798029557,
+            "upper": 0.375,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 6,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "187956",
+      "spatial_scale": 1.5,
+      "finite_stamp_flux_njy": 80.0,
+      "modes": {
+        "legacy": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "187956",
+      "spatial_scale": 1.5,
+      "finite_stamp_flux_njy": 160.0,
+      "modes": {
+        "legacy": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "187956",
+      "spatial_scale": 1.5,
+      "finite_stamp_flux_njy": 320.0,
+      "modes": {
+        "legacy": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "190909",
+      "spatial_scale": 0.65,
+      "finite_stamp_flux_njy": 5.0,
+      "modes": {
+        "legacy": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "190909",
+      "spatial_scale": 0.65,
+      "finite_stamp_flux_njy": 10.0,
+      "modes": {
+        "legacy": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "190909",
+      "spatial_scale": 0.65,
+      "finite_stamp_flux_njy": 20.0,
+      "modes": {
+        "legacy": {
+          "matched": 25,
+          "sites": 29,
+          "fraction": 0.8620689655172413,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.736086956521739,
+            "upper": 0.9696969696969697,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 7,
+          "sites": 29,
+          "fraction": 0.2413793103448276,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0967741935483871,
+            "upper": 0.41306818181818167,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 18,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "190909",
+      "spatial_scale": 0.65,
+      "finite_stamp_flux_njy": 40.0,
+      "modes": {
+        "legacy": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "190909",
+      "spatial_scale": 0.65,
+      "finite_stamp_flux_njy": 80.0,
+      "modes": {
+        "legacy": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "190909",
+      "spatial_scale": 0.65,
+      "finite_stamp_flux_njy": 160.0,
+      "modes": {
+        "legacy": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "190909",
+      "spatial_scale": 0.65,
+      "finite_stamp_flux_njy": 320.0,
+      "modes": {
+        "legacy": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "190909",
+      "spatial_scale": 1.0,
+      "finite_stamp_flux_njy": 5.0,
+      "modes": {
+        "legacy": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "190909",
+      "spatial_scale": 1.0,
+      "finite_stamp_flux_njy": 10.0,
+      "modes": {
+        "legacy": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "190909",
+      "spatial_scale": 1.0,
+      "finite_stamp_flux_njy": 20.0,
+      "modes": {
+        "legacy": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "190909",
+      "spatial_scale": 1.0,
+      "finite_stamp_flux_njy": 40.0,
+      "modes": {
+        "legacy": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 27,
+          "sites": 29,
+          "fraction": 0.9310344827586207,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.8275862068965517,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 2,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "190909",
+      "spatial_scale": 1.0,
+      "finite_stamp_flux_njy": 80.0,
+      "modes": {
+        "legacy": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "190909",
+      "spatial_scale": 1.0,
+      "finite_stamp_flux_njy": 160.0,
+      "modes": {
+        "legacy": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "190909",
+      "spatial_scale": 1.0,
+      "finite_stamp_flux_njy": 320.0,
+      "modes": {
+        "legacy": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "190909",
+      "spatial_scale": 1.5,
+      "finite_stamp_flux_njy": 5.0,
+      "modes": {
+        "legacy": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "190909",
+      "spatial_scale": 1.5,
+      "finite_stamp_flux_njy": 10.0,
+      "modes": {
+        "legacy": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "190909",
+      "spatial_scale": 1.5,
+      "finite_stamp_flux_njy": 20.0,
+      "modes": {
+        "legacy": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "190909",
+      "spatial_scale": 1.5,
+      "finite_stamp_flux_njy": 40.0,
+      "modes": {
+        "legacy": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "190909",
+      "spatial_scale": 1.5,
+      "finite_stamp_flux_njy": 80.0,
+      "modes": {
+        "legacy": {
+          "matched": 21,
+          "sites": 29,
+          "fraction": 0.7241379310344828,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.5689285714285715,
+            "upper": 0.9047727272727271,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 16,
+          "sites": 29,
+          "fraction": 0.5517241379310345,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.34285714285714286,
+            "upper": 0.8001112347052277,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 5,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "190909",
+      "spatial_scale": 1.5,
+      "finite_stamp_flux_njy": 160.0,
+      "modes": {
+        "legacy": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "190909",
+      "spatial_scale": 1.5,
+      "finite_stamp_flux_njy": 320.0,
+      "modes": {
+        "legacy": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "20189546",
+      "spatial_scale": 0.65,
+      "finite_stamp_flux_njy": 5.0,
+      "modes": {
+        "legacy": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "20189546",
+      "spatial_scale": 0.65,
+      "finite_stamp_flux_njy": 10.0,
+      "modes": {
+        "legacy": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "20189546",
+      "spatial_scale": 0.65,
+      "finite_stamp_flux_njy": 20.0,
+      "modes": {
+        "legacy": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 6,
+          "sites": 29,
+          "fraction": 0.20689655172413793,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.06666666666666667,
+            "upper": 0.3921195652173913,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 23,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "20189546",
+      "spatial_scale": 0.65,
+      "finite_stamp_flux_njy": 40.0,
+      "modes": {
+        "legacy": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "20189546",
+      "spatial_scale": 0.65,
+      "finite_stamp_flux_njy": 80.0,
+      "modes": {
+        "legacy": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "20189546",
+      "spatial_scale": 0.65,
+      "finite_stamp_flux_njy": 160.0,
+      "modes": {
+        "legacy": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "20189546",
+      "spatial_scale": 0.65,
+      "finite_stamp_flux_njy": 320.0,
+      "modes": {
+        "legacy": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "20189546",
+      "spatial_scale": 1.0,
+      "finite_stamp_flux_njy": 5.0,
+      "modes": {
+        "legacy": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "20189546",
+      "spatial_scale": 1.0,
+      "finite_stamp_flux_njy": 10.0,
+      "modes": {
+        "legacy": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "20189546",
+      "spatial_scale": 1.0,
+      "finite_stamp_flux_njy": 20.0,
+      "modes": {
+        "legacy": {
+          "matched": 4,
+          "sites": 29,
+          "fraction": 0.13793103448275862,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.03172883064516129,
+            "upper": 0.26977650727650726,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 4,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "20189546",
+      "spatial_scale": 1.0,
+      "finite_stamp_flux_njy": 40.0,
+      "modes": {
+        "legacy": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "20189546",
+      "spatial_scale": 1.0,
+      "finite_stamp_flux_njy": 80.0,
+      "modes": {
+        "legacy": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "20189546",
+      "spatial_scale": 1.0,
+      "finite_stamp_flux_njy": 160.0,
+      "modes": {
+        "legacy": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "20189546",
+      "spatial_scale": 1.0,
+      "finite_stamp_flux_njy": 320.0,
+      "modes": {
+        "legacy": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "20189546",
+      "spatial_scale": 1.5,
+      "finite_stamp_flux_njy": 5.0,
+      "modes": {
+        "legacy": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "20189546",
+      "spatial_scale": 1.5,
+      "finite_stamp_flux_njy": 10.0,
+      "modes": {
+        "legacy": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "20189546",
+      "spatial_scale": 1.5,
+      "finite_stamp_flux_njy": 20.0,
+      "modes": {
+        "legacy": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "20189546",
+      "spatial_scale": 1.5,
+      "finite_stamp_flux_njy": 40.0,
+      "modes": {
+        "legacy": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 0,
+          "sites": 29,
+          "fraction": 0.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 0.0,
+            "upper": 0.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "20189546",
+      "spatial_scale": 1.5,
+      "finite_stamp_flux_njy": 80.0,
+      "modes": {
+        "legacy": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "20189546",
+      "spatial_scale": 1.5,
+      "finite_stamp_flux_njy": 160.0,
+      "modes": {
+        "legacy": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    },
+    {
+      "template_id": "20189546",
+      "spatial_scale": 1.5,
+      "finite_stamp_flux_njy": 320.0,
+      "modes": {
+        "legacy": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        },
+        "angular_area": {
+          "matched": 29,
+          "sites": 29,
+          "fraction": 1.0,
+          "ambiguous": 0,
+          "conditional_spatial_block_interval": {
+            "status": "conditional_empirical_resampling",
+            "lower": 1.0,
+            "upper": 1.0,
+            "spatial_blocks": 19,
+            "resamples": 500,
+            "interpretation": "Within this masked background design only; degenerate intervals at zero or one do not bound unseen failures; no field/systematic or calibrated 95-percent coverage guarantee"
+          }
+        }
+      },
+      "paired_legacy_only_matches": 0,
+      "paired_angular_area_only_matches": 0
+    }
+  ],
+  "full_trials_sha256": "6b47b731d8afdd4563534b5cbc40d50b85190671bb28986a8f0ab2841b15ed49",
+  "paired_flux_increase_recovery_losses": [
+    {
+      "template_id": "186837",
+      "spatial_scale": 1.0,
+      "lower_flux_njy": 80.0,
+      "higher_flux_njy": 160.0,
+      "mode": "angular_area",
+      "matched_then_nonmatched": 7,
+      "nonmatched_then_matched": 1,
+      "paired_sites": 29
+    },
+    {
+      "template_id": "186837",
+      "spatial_scale": 1.0,
+      "lower_flux_njy": 80.0,
+      "higher_flux_njy": 160.0,
+      "mode": "legacy",
+      "matched_then_nonmatched": 1,
+      "nonmatched_then_matched": 1,
+      "paired_sites": 29
+    },
+    {
+      "template_id": "186837",
+      "spatial_scale": 1.0,
+      "lower_flux_njy": 160.0,
+      "higher_flux_njy": 320.0,
+      "mode": "angular_area",
+      "matched_then_nonmatched": 2,
+      "nonmatched_then_matched": 2,
+      "paired_sites": 29
+    }
+  ],
+  "limits": [
+    "Fresh source Poisson noise omitted; stored WHT and correlated background retained",
+    "Observed clipped templates retain a fixed noise realization and finite-radius truncation",
+    "Spatial scaling is an interpolation sensitivity, not a physical redshift/PSF evolution model",
+    "Site masking avoids source cores; this does not calibrate dense crowding or unmasked-sky completeness",
+    "All templates/amplitudes/sizes reuse identical sites; disjoint pixel stamps are one dependent GOODS mosaic, not independent fields/visits",
+    "Local crop operator is not equivalent to global segmentation for segments/deblends connected outside the crop",
+    "Centroid nonmatch can indicate blending or phase/extent offsets rather than missing injected flux",
+    "No classifier, color/SED selection, artifact recall or real faint-population completeness is estimated",
+    "Conditional block intervals reuse source-masked sites and cannot certify frequentist coverage or independent visits"
+  ]
+}
