@@ -89,17 +89,18 @@ honest assessment of what this pipeline can and cannot establish.
 
 ## Repeat-exposure vetting
 
-A source present in one exposure and absent from an independent exposure of the
-same sky in the same filter is a detector artifact, not an object. Single
-exposures carry no cross-dither cosmic-ray rejection, so this check matters:
+A source present in one exposure and absent from an independent exposure is a
+single-epoch detection. Establish matched coverage, depth, calibration and detector
+diagnostics before assigning its identity. Single exposures lack cross-dither
+cosmic-ray rejection:
 
 ```bash
 python discovery/multi_epoch.py --pairs-only   # what repeat coverage exists
 python discovery/multi_epoch.py                # apply the veto to candidates
 ```
 
-Verdicts are interpreted against the measured time baseline: a few hours rejects
-cosmic rays but says nothing about astrophysical variability.
+Verdicts retain the measured time baseline; even a few hours can include moving
+sources or astrophysical variability.
 
 ## Stage-2b artifact characterization
 
@@ -110,10 +111,10 @@ truth set for detector artifacts that survived calibration:
 python discovery/artifact_characterization.py --auto
 ```
 
-Measured on JADES GOODS-S: **~15% of all 5-sigma detections in a single
-Stage-2b exposure are not real sources** (32-39 per arcmin² per exposure), and
-they separate cleanly from real sources in FWHM and peak-to-total flux. Results
-in `research_output/ARTIFACT_CHARACTERIZATION.md`.
+The historical GOODS-S run reported about 15% single-epoch detections. Those
+archive-dependent measurements have not yet been independently reproduced in
+the verified baseline. The original result and its interpretation limits remain
+in `research_output/ARTIFACT_CHARACTERIZATION.md` and `HANDOVER.md`.
 
 ## Single-image artifact classifier
 
@@ -124,12 +125,13 @@ repeat-exposure truth set and rejects artifacts in a single image:
 python discovery/artifact_classifier.py --train
 ```
 
-Cross-validated ROC AUC **0.971**, held-out visits 0.965 / 0.979. Trained with
-1320 injected point sources so it must separate cosmic rays from point sources
-rather than compact from extended. On F444W it now falsely rejects **1.4%** of
-real sources and **0%** of faint unresolved ones, against 28.8% and 88.9% before
-that fix. See `research_output/ARTIFACT_CLASSIFIER.md` and
-`INJECTION_RECOVERY.md`.
+Historical classifier training included 1320 injected point sources. The verified
+audit measures F444W faint-point full-chain recovery at **27/119 (22.7%)**, with
+a nominal 95% Wilson interval of 16.1–31.0%. Zero rejections among the 27 detected
+injections still permits a 12.5% upper bound, and does not establish real-source
+performance. The frozen model is sensitive to PSF-template choices; independent
+real-source tests are required. See [validation](docs/VALIDATION.md) and
+[PSF stress controls](docs/EXTERNAL_PSF_STRESS.md).
 
 ## Injection-recovery
 
