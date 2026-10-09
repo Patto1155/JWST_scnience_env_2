@@ -1,0 +1,1160 @@
+{
+  "schema_version": "chemistry_resolution_comparison_v1",
+  "source_pixel_spectrum_sha256": "42d95d348ebb55ca37eb31393b4603628ac13a4bca1f4f7f0ffba7b32d3125b1",
+  "benchmark_sha256": "8d80da92f18526b361f29244d9c57c1cdfdc82e240a2e334a1595cb29d096930",
+  "separate_resolution_families": {
+    "illuminated": {
+      "source_report_sha256": "769f494a493fd5295dfaf8a02c47e8a7a0b90686c367da8369e9b26ef7a73a55",
+      "scenario_count": 31,
+      "nominal_sum_line_ratio": {
+        "value": 1.0394447176565762,
+        "numerator_flux": 67.54283527124525,
+        "denominator_flux": 64.9797282375154,
+        "numerator_variance": 375.76771646739894,
+        "denominator_variance": 260.3682364517907,
+        "numerator_denominator_covariance": 49.05106953834012,
+        "conditional_gaussian_95_fieller_set": {
+          "type": "bounded",
+          "interval": [
+            0.44829100738109545,
+            2.1589493442379375
+          ]
+        }
+      },
+      "separate_scenario_point_ratio_range": [
+        0.6422721889024661,
+        1.3363400212021002
+      ],
+      "targets": [
+        {
+          "label": "Cue_lower_endpoint",
+          "status": "published_conditional_inference",
+          "target_bracket_n_c": 0.27,
+          "target_n_c_by_number": 0.46773514128719823,
+          "nominal_required_effective_factor": {
+            "required_q_point": 2.222293400483111,
+            "formal_conditional_q_95_set": {
+              "type": "bounded",
+              "interval": [
+                0.9584291788455473,
+                4.615751851136414
+              ]
+            },
+            "note": "Q must be physically positive. Signed Gaussian set is not clipped or a positive-parameter posterior; a set crossing zero shows weak conditional information."
+          },
+          "scenario_q_point_range": [
+            1.3731535910150885,
+            2.857044304014699
+          ]
+        },
+        {
+          "label": "Cue_median",
+          "status": "published_conditional_inference",
+          "target_bracket_n_c": 0.9,
+          "target_n_c_by_number": 1.9952623149688797,
+          "nominal_required_effective_factor": {
+            "required_q_point": 0.5209564225507805,
+            "formal_conditional_q_95_set": {
+              "type": "bounded",
+              "interval": [
+                0.2246777298493143,
+                1.0820378493800253
+              ]
+            },
+            "note": "Q must be physically positive. Signed Gaussian set is not clipped or a positive-parameter posterior; a set crossing zero shows weak conditional information."
+          },
+          "scenario_q_point_range": [
+            0.3218986215917598,
+            0.6697565584116909
+          ]
+        },
+        {
+          "label": "Cue_upper_endpoint",
+          "status": "published_conditional_inference",
+          "target_bracket_n_c": 1.19,
+          "target_n_c_by_number": 3.890451449942806,
+          "nominal_required_effective_factor": {
+            "required_q_point": 0.2671784318685836,
+            "formal_conditional_q_95_set": {
+              "type": "bounded",
+              "interval": [
+                0.11522853148255734,
+                0.5549354289640799
+              ]
+            },
+            "note": "Q must be physically positive. Signed Gaussian set is not clipped or a positive-parameter posterior; a set crossing zero shows weak conditional information."
+          },
+          "scenario_q_point_range": [
+            0.1650893725744626,
+            0.34349227548431327
+          ]
+        },
+        {
+          "label": "ionic_temperature_lower_case",
+          "status": "separate_published_ionic_inference",
+          "target_bracket_n_c": 1.3,
+          "target_n_c_by_number": 5.011872336272724,
+          "nominal_required_effective_factor": {
+            "required_q_point": 0.20739648736336333,
+            "formal_conditional_q_95_set": {
+              "type": "bounded",
+              "interval": [
+                0.08944581531669354,
+                0.4307670266484731
+              ]
+            },
+            "note": "Q must be physically positive. Signed Gaussian set is not clipped or a positive-parameter posterior; a set crossing zero shows weak conditional information."
+          },
+          "scenario_q_point_range": [
+            0.12815014944696637,
+            0.26663488842892635
+          ]
+        },
+        {
+          "label": "ionic_temperature_upper_case",
+          "status": "separate_published_ionic_inference",
+          "target_bracket_n_c": 1.7,
+          "target_n_c_by_number": 12.589254117941675,
+          "nominal_required_effective_factor": {
+            "required_q_point": 0.08256602876696272,
+            "formal_conditional_q_95_set": {
+              "type": "bounded",
+              "interval": [
+                0.03560902045357953,
+                0.17149144214676657
+              ]
+            },
+            "note": "Q must be physically positive. Signed Gaussian set is not clipped or a positive-parameter posterior; a set crossing zero shows weak conditional information."
+          },
+          "scenario_q_point_range": [
+            0.0510174934023396,
+            0.1061492610032873
+          ]
+        },
+        {
+          "label": "SMS_1000_pure_ejecta",
+          "status": "equal_retention_lower_ambient_n_c_mixing_ceiling",
+          "target_bracket_n_c": 0.7674284772623854,
+          "target_n_c_by_number": 1.4703762433328529,
+          "nominal_required_effective_factor": {
+            "required_q_point": 0.7069243143513401,
+            "formal_conditional_q_95_set": {
+              "type": "bounded",
+              "interval": [
+                0.30488183511790773,
+                1.468297215782213
+              ]
+            },
+            "note": "Q must be physically positive. Signed Gaussian set is not clipped or a positive-parameter posterior; a set crossing zero shows weak conditional information."
+          },
+          "scenario_q_point_range": [
+            0.43680805631533404,
+            0.9088422281449969
+          ]
+        },
+        {
+          "label": "SMS_10000_pure_ejecta",
+          "status": "equal_retention_lower_ambient_n_c_mixing_ceiling",
+          "target_bracket_n_c": 2.155043841132256,
+          "target_n_c_by_number": 35.895816890292025,
+          "nominal_required_effective_factor": {
+            "required_q_point": 0.028957265991004445,
+            "formal_conditional_q_95_set": {
+              "type": "bounded",
+              "interval": [
+                0.012488669884605277,
+                0.06014487289246849
+              ]
+            },
+            "note": "Q must be physically positive. Signed Gaussian set is not clipped or a positive-parameter posterior; a set crossing zero shows weak conditional information."
+          },
+          "scenario_q_point_range": [
+            0.01789267509541391,
+            0.037228293906399756
+          ]
+        },
+        {
+          "label": "SMS_50000_pure_ejecta",
+          "status": "equal_retention_lower_ambient_n_c_mixing_ceiling",
+          "target_bracket_n_c": 2.2061909837541536,
+          "target_n_c_by_number": 40.38229376257546,
+          "nominal_required_effective_factor": {
+            "required_q_point": 0.025740110845805596,
+            "formal_conditional_q_95_set": {
+              "type": "bounded",
+              "interval": [
+                0.011101177412476553,
+                0.05346277150404857
+              ]
+            },
+            "note": "Q must be physically positive. Signed Gaussian set is not clipped or a positive-parameter posterior; a set crossing zero shows weak conditional information."
+          },
+          "scenario_q_point_range": [
+            0.015904797104361015,
+            0.03309222673330561
+          ]
+        },
+        {
+          "label": "SMS_100000_pure_ejecta",
+          "status": "equal_retention_lower_ambient_n_c_mixing_ceiling",
+          "target_bracket_n_c": 1.693169220407242,
+          "target_n_c_by_number": 12.39279370718092,
+          "nominal_required_effective_factor": {
+            "required_q_point": 0.08387493104595754,
+            "formal_conditional_q_95_set": {
+              "type": "bounded",
+              "interval": [
+                0.0361735229338431,
+                0.17421006072157474
+              ]
+            },
+            "note": "Q must be physically positive. Signed Gaussian set is not clipped or a positive-parameter posterior; a set crossing zero shows weak conditional information."
+          },
+          "scenario_q_point_range": [
+            0.051826263236376305,
+            0.10783202341436274
+          ]
+        },
+        {
+          "label": "rotation_Top-heavy above remnant_Z0",
+          "status": "selected_published_mixed_ism_prediction",
+          "target_bracket_n_c": 0.44999999999999996,
+          "target_n_c_by_number": 0.7079457843841379,
+          "nominal_required_effective_factor": {
+            "required_q_point": 1.4682546892497121,
+            "formal_conditional_q_95_set": {
+              "type": "bounded",
+              "interval": [
+                0.6332278788425536,
+                3.049597005674762
+              ]
+            },
+            "note": "Q must be physically positive. Signed Gaussian set is not clipped or a positive-parameter posterior; a set crossing zero shows weak conditional information."
+          },
+          "scenario_q_point_range": [
+            0.9072335806917713,
+            1.887630452329934
+          ]
+        },
+        {
+          "label": "rotation_Top-heavy above remnant_Z1e-05",
+          "status": "selected_published_mixed_ism_prediction",
+          "target_bracket_n_c": 0.73,
+          "target_n_c_by_number": 1.3489628825916535,
+          "nominal_required_effective_factor": {
+            "required_q_point": 0.7705510144649607,
+            "formal_conditional_q_95_set": {
+              "type": "bounded",
+              "interval": [
+                0.33232271485471127,
+                1.6004512593334832
+              ]
+            },
+            "note": "Q must be physically positive. Signed Gaussian set is not clipped or a positive-parameter posterior; a set crossing zero shows weak conditional information."
+          },
+          "scenario_q_point_range": [
+            0.4761229513361556,
+            0.9906425435774021
+          ]
+        },
+        {
+          "label": "rotation_Top-heavy above CO core_Z0",
+          "status": "selected_published_mixed_ism_prediction",
+          "target_bracket_n_c": 0.31,
+          "target_n_c_by_number": 0.5128613839913648,
+          "nominal_required_effective_factor": {
+            "required_q_point": 2.0267556694697015,
+            "formal_conditional_q_95_set": {
+              "type": "bounded",
+              "interval": [
+                0.8740977998621231,
+                4.209615720013516
+              ]
+            },
+            "note": "Q must be physically positive. Signed Gaussian set is not clipped or a positive-parameter posterior; a set crossing zero shows weak conditional information."
+          },
+          "scenario_q_point_range": [
+            1.2523309591062528,
+            2.6056553737814667
+          ]
+        },
+        {
+          "label": "rotation_Top-heavy above CO core_Z1e-05",
+          "status": "selected_published_mixed_ism_prediction",
+          "target_bracket_n_c": 0.37,
+          "target_n_c_by_number": 0.588843655355589,
+          "nominal_required_effective_factor": {
+            "required_q_point": 1.7652303938451703,
+            "formal_conditional_q_95_set": {
+              "type": "bounded",
+              "interval": [
+                0.7613073577406263,
+                3.6664220198385222
+              ]
+            },
+            "note": "Q must be physically positive. Signed Gaussian set is not clipped or a positive-parameter posterior; a set crossing zero shows weak conditional information."
+          },
+          "scenario_q_point_range": [
+            1.0907346679563232,
+            2.2694309585370593
+          ]
+        }
+      ],
+      "nominal_ion_stage_and_blend_flux_diagnostics": {
+        "NIV_over_CIV": {
+          "value": 1.4420183694458486,
+          "numerator_flux": 53.77976132240524,
+          "denominator_flux": 37.29478241187191,
+          "numerator_variance": 245.17224213805375,
+          "denominator_variance": 177.5206924699043,
+          "numerator_denominator_covariance": 33.57783189975575,
+          "conditional_gaussian_95_fieller_set": {
+            "type": "bounded",
+            "interval": [
+              0.584080159347165,
+              4.7101829221878875
+            ]
+          }
+        },
+        "NIII_over_CIII": {
+          "value": 0.4971320527595831,
+          "numerator_flux": 13.763073948840002,
+          "denominator_flux": 27.684945825643496,
+          "numerator_variance": 108.75796048871086,
+          "denominator_variance": 79.68111093656142,
+          "numerator_denominator_covariance": 5.967847871148017,
+          "conditional_gaussian_95_fieller_set": {
+            "type": "bounded",
+            "interval": [
+              -0.27148101537417674,
+              1.8272252141832415
+            ]
+          }
+        },
+        "HeII_OIII_blend_over_CIII": {
+          "value": 1.1768000463874564,
+          "numerator_flux": 32.57964553185148,
+          "denominator_flux": 27.684945825643496,
+          "numerator_variance": 215.98806231303018,
+          "denominator_variance": 79.68111093656142,
+          "numerator_denominator_covariance": 6.311728586800711,
+          "conditional_gaussian_95_fieller_set": {
+            "type": "bounded",
+            "interval": [
+              0.1369199066613945,
+              3.676230064911733
+            ]
+          }
+        }
+      }
+    },
+    "generic_point_source": {
+      "source_report_sha256": "97518c1f0992b49970120b3e563ad2387cbf306f384329185292d771ef51827d",
+      "scenario_count": 29,
+      "nominal_sum_line_ratio": {
+        "value": 1.0501813333048324,
+        "numerator_flux": 54.81173809700979,
+        "denominator_flux": 52.19264174551823,
+        "numerator_variance": 191.9553918339809,
+        "denominator_variance": 134.65801227633295,
+        "numerator_denominator_covariance": 12.550368937903611,
+        "conditional_gaussian_95_fieller_set": {
+          "type": "bounded",
+          "interval": [
+            0.5017799257698845,
+            2.0472251119124865
+          ]
+        }
+      },
+      "separate_scenario_point_ratio_range": [
+        0.6192395340843929,
+        1.412566103821402
+      ],
+      "targets": [
+        {
+          "label": "Cue_lower_endpoint",
+          "status": "published_conditional_inference",
+          "target_bracket_n_c": 0.27,
+          "target_n_c_by_number": 0.46773514128719823,
+          "nominal_required_effective_factor": {
+            "required_q_point": 2.2452478777086395,
+            "formal_conditional_q_95_set": {
+              "type": "bounded",
+              "interval": [
+                1.072786458569257,
+                4.376889677945861
+              ]
+            },
+            "note": "Q must be physically positive. Signed Gaussian set is not clipped or a positive-parameter posterior; a set crossing zero shows weak conditional information."
+          },
+          "scenario_q_point_range": [
+            1.3239106481934573,
+            3.020012778886031
+          ]
+        },
+        {
+          "label": "Cue_median",
+          "status": "published_conditional_inference",
+          "target_bracket_n_c": 0.9,
+          "target_n_c_by_number": 1.9952623149688797,
+          "nominal_required_effective_factor": {
+            "required_q_point": 0.5263374772460493,
+            "formal_conditional_q_95_set": {
+              "type": "bounded",
+              "interval": [
+                0.25148569288630646,
+                1.026043090451702
+              ]
+            },
+            "note": "Q must be physically positive. Signed Gaussian set is not clipped or a positive-parameter posterior; a set crossing zero shows weak conditional information."
+          },
+          "scenario_q_point_range": [
+            0.31035494904039784,
+            0.7079600978899027
+          ]
+        },
+        {
+          "label": "Cue_upper_endpoint",
+          "status": "published_conditional_inference",
+          "target_bracket_n_c": 1.19,
+          "target_n_c_by_number": 3.890451449942806,
+          "nominal_required_effective_factor": {
+            "required_q_point": 0.2699381670269324,
+            "formal_conditional_q_95_set": {
+              "type": "bounded",
+              "interval": [
+                0.12897730050769848,
+                0.526217879403837
+              ]
+            },
+            "note": "Q must be physically positive. Signed Gaussian set is not clipped or a positive-parameter posterior; a set crossing zero shows weak conditional information."
+          },
+          "scenario_q_point_range": [
+            0.15916906869342798,
+            0.36308539561447767
+          ]
+        },
+        {
+          "label": "ionic_temperature_lower_case",
+          "status": "separate_published_ionic_inference",
+          "target_bracket_n_c": 1.3,
+          "target_n_c_by_number": 5.011872336272724,
+          "nominal_required_effective_factor": {
+            "required_q_point": 0.2095387238226904,
+            "formal_conditional_q_95_set": {
+              "type": "bounded",
+              "interval": [
+                0.10011825762965322,
+                0.40847511160569305
+              ]
+            },
+            "note": "Q must be physically positive. Signed Gaussian set is not clipped or a positive-parameter posterior; a set crossing zero shows weak conditional information."
+          },
+          "scenario_q_point_range": [
+            0.1235545306297476,
+            0.2818439914357261
+          ]
+        },
+        {
+          "label": "ionic_temperature_upper_case",
+          "status": "separate_published_ionic_inference",
+          "target_bracket_n_c": 1.7,
+          "target_n_c_by_number": 12.589254117941675,
+          "nominal_required_effective_factor": {
+            "required_q_point": 0.08341886846244197,
+            "formal_conditional_q_95_set": {
+              "type": "bounded",
+              "interval": [
+                0.03985779626568733,
+                0.16261687092286647
+              ]
+            },
+            "note": "Q must be physically positive. Signed Gaussian set is not clipped or a positive-parameter posterior; a set crossing zero shows weak conditional information."
+          },
+          "scenario_q_point_range": [
+            0.049187944598074226,
+            0.11220411396798101
+          ]
+        },
+        {
+          "label": "SMS_1000_pure_ejecta",
+          "status": "equal_retention_lower_ambient_n_c_mixing_ceiling",
+          "target_bracket_n_c": 0.7674284772623854,
+          "target_n_c_by_number": 1.4703762433328529,
+          "nominal_required_effective_factor": {
+            "required_q_point": 0.7142262656015316,
+            "formal_conditional_q_95_set": {
+              "type": "bounded",
+              "interval": [
+                0.34125954363389105,
+                1.392313784444796
+              ]
+            },
+            "note": "Q must be physically positive. Signed Gaussian set is not clipped or a positive-parameter posterior; a set crossing zero shows weak conditional information."
+          },
+          "scenario_q_point_range": [
+            0.42114359293563075,
+            0.9606834374714769
+          ]
+        },
+        {
+          "label": "SMS_10000_pure_ejecta",
+          "status": "equal_retention_lower_ambient_n_c_mixing_ceiling",
+          "target_bracket_n_c": 2.155043841132256,
+          "target_n_c_by_number": 35.895816890292025,
+          "nominal_required_effective_factor": {
+            "required_q_point": 0.02925637091682548,
+            "formal_conditional_q_95_set": {
+              "type": "bounded",
+              "interval": [
+                0.013978785531012394,
+                0.05703241461726299
+              ]
+            },
+            "note": "Q must be physically positive. Signed Gaussian set is not clipped or a positive-parameter posterior; a set crossing zero shows weak conditional information."
+          },
+          "scenario_q_point_range": [
+            0.017251022200636013,
+            0.039351830552808185
+          ]
+        },
+        {
+          "label": "SMS_50000_pure_ejecta",
+          "status": "equal_retention_lower_ambient_n_c_mixing_ceiling",
+          "target_bracket_n_c": 2.2061909837541536,
+          "target_n_c_by_number": 40.38229376257546,
+          "nominal_required_effective_factor": {
+            "required_q_point": 0.026005985184479406,
+            "formal_conditional_q_95_set": {
+              "type": "bounded",
+              "interval": [
+                0.012425741061665798,
+                0.05069610765423546
+              ]
+            },
+            "note": "Q must be physically positive. Signed Gaussian set is not clipped or a positive-parameter posterior; a set crossing zero shows weak conditional information."
+          },
+          "scenario_q_point_range": [
+            0.015334431910311074,
+            0.03497983824610048
+          ]
+        },
+        {
+          "label": "SMS_100000_pure_ejecta",
+          "status": "equal_retention_lower_ambient_n_c_mixing_ceiling",
+          "target_bracket_n_c": 1.693169220407242,
+          "target_n_c_by_number": 12.39279370718092,
+          "nominal_required_effective_factor": {
+            "required_q_point": 0.08474129063379084,
+            "formal_conditional_q_95_set": {
+              "type": "bounded",
+              "interval": [
+                0.04048965371537909,
+                0.1651948027446173
+              ]
+            },
+            "note": "Q must be physically positive. Signed Gaussian set is not clipped or a positive-parameter posterior; a set crossing zero shows weak conditional information."
+          },
+          "scenario_q_point_range": [
+            0.049967710971060446,
+            0.11398286271826667
+          ]
+        },
+        {
+          "label": "rotation_Top-heavy above remnant_Z0",
+          "status": "selected_published_mixed_ism_prediction",
+          "target_bracket_n_c": 0.44999999999999996,
+          "target_n_c_by_number": 0.7079457843841379,
+          "nominal_required_effective_factor": {
+            "required_q_point": 1.4834205619550584,
+            "formal_conditional_q_95_set": {
+              "type": "bounded",
+              "interval": [
+                0.7087829842879806,
+                2.891782332870907
+              ]
+            },
+            "note": "Q must be physically positive. Signed Gaussian set is not clipped or a positive-parameter posterior; a set crossing zero shows weak conditional information."
+          },
+          "scenario_q_point_range": [
+            0.8746990910089067,
+            1.9953026559092137
+          ]
+        },
+        {
+          "label": "rotation_Top-heavy above remnant_Z1e-05",
+          "status": "selected_published_mixed_ism_prediction",
+          "target_bracket_n_c": 0.73,
+          "target_n_c_by_number": 1.3489628825916535,
+          "nominal_required_effective_factor": {
+            "required_q_point": 0.7785101776019246,
+            "formal_conditional_q_95_set": {
+              "type": "bounded",
+              "interval": [
+                0.3719745978524296,
+                1.5176289417091433
+              ]
+            },
+            "note": "Q must be physically positive. Signed Gaussian set is not clipped or a positive-parameter posterior; a set crossing zero shows weak conditional information."
+          },
+          "scenario_q_point_range": [
+            0.4590486084351691,
+            1.0471497192773405
+          ]
+        },
+        {
+          "label": "rotation_Top-heavy above CO core_Z0",
+          "status": "selected_published_mixed_ism_prediction",
+          "target_bracket_n_c": 0.31,
+          "target_n_c_by_number": 0.5128613839913648,
+          "nominal_required_effective_factor": {
+            "required_q_point": 2.0476904015111317,
+            "formal_conditional_q_95_set": {
+              "type": "bounded",
+              "interval": [
+                0.9783928785294022,
+                3.991770828951622
+              ]
+            },
+            "note": "Q must be physically positive. Signed Gaussian set is not clipped or a positive-parameter posterior; a set crossing zero shows weak conditional information."
+          },
+          "scenario_q_point_range": [
+            1.2074208614911417,
+            2.754284389337423
+          ]
+        },
+        {
+          "label": "rotation_Top-heavy above CO core_Z1e-05",
+          "status": "selected_published_mixed_ism_prediction",
+          "target_bracket_n_c": 0.37,
+          "target_n_c_by_number": 0.588843655355589,
+          "nominal_required_effective_factor": {
+            "required_q_point": 1.783463783218743,
+            "formal_conditional_q_95_set": {
+              "type": "bounded",
+              "interval": [
+                0.8521445738714315,
+                3.476687051465664
+              ]
+            },
+            "note": "Q must be physically positive. Signed Gaussian set is not clipped or a positive-parameter posterior; a set crossing zero shows weak conditional information."
+          },
+          "scenario_q_point_range": [
+            1.0516196081121882,
+            2.3988814194973127
+          ]
+        }
+      ],
+      "nominal_ion_stage_and_blend_flux_diagnostics": {
+        "NIV_over_CIV": {
+          "value": 1.279076419219777,
+          "numerator_flux": 40.400942412944325,
+          "denominator_flux": 31.586027078498148,
+          "numerator_variance": 117.0149211879582,
+          "denominator_variance": 86.58677766274897,
+          "numerator_denominator_covariance": 8.056210246244898,
+          "conditional_gaussian_95_fieller_set": {
+            "type": "bounded",
+            "interval": [
+              0.5581185222909942,
+              3.186392404821779
+            ]
+          }
+        },
+        "NIII_over_CIII": {
+          "value": 0.6993286338842092,
+          "numerator_flux": 14.41079568406546,
+          "denominator_flux": 20.60661466702008,
+          "numerator_variance": 69.16474033587754,
+          "denominator_variance": 47.356934050281524,
+          "numerator_denominator_covariance": 2.075652875748251,
+          "conditional_gaussian_95_fieller_set": {
+            "type": "bounded",
+            "interval": [
+              -0.09648130675465708,
+              2.4777657876280146
+            ]
+          }
+        },
+        "HeII_OIII_blend_over_CIII": {
+          "value": 1.1283935138338506,
+          "numerator_flux": 23.25237033233895,
+          "denominator_flux": 20.60661466702008,
+          "numerator_variance": 149.09492046441542,
+          "denominator_variance": 47.356934050281524,
+          "numerator_denominator_covariance": 2.4195228228937826,
+          "conditional_gaussian_95_fieller_set": {
+            "type": "bounded",
+            "interval": [
+              -0.03383093325141499,
+              3.905551170689172
+            ]
+          }
+        }
+      }
+    }
+  },
+  "target_factor_changes": [
+    {
+      "target": "Cue_lower_endpoint",
+      "target_status": "published_conditional_inference",
+      "target_bracket_n_c": 0.27,
+      "central_required_q_fractional_change": 0.010329183905481765,
+      "illuminated_q": 2.222293400483111,
+      "generic_point_source_q": 2.2452478777086395
+    },
+    {
+      "target": "Cue_median",
+      "target_status": "published_conditional_inference",
+      "target_bracket_n_c": 0.9,
+      "central_required_q_fractional_change": 0.010329183905481765,
+      "illuminated_q": 0.5209564225507805,
+      "generic_point_source_q": 0.5263374772460493
+    },
+    {
+      "target": "Cue_upper_endpoint",
+      "target_status": "published_conditional_inference",
+      "target_bracket_n_c": 1.19,
+      "central_required_q_fractional_change": 0.010329183905481765,
+      "illuminated_q": 0.2671784318685836,
+      "generic_point_source_q": 0.2699381670269324
+    },
+    {
+      "target": "ionic_temperature_lower_case",
+      "target_status": "separate_published_ionic_inference",
+      "target_bracket_n_c": 1.3,
+      "central_required_q_fractional_change": 0.010329183905481543,
+      "illuminated_q": 0.20739648736336333,
+      "generic_point_source_q": 0.2095387238226904
+    },
+    {
+      "target": "ionic_temperature_upper_case",
+      "target_status": "separate_published_ionic_inference",
+      "target_bracket_n_c": 1.7,
+      "central_required_q_fractional_change": 0.010329183905481765,
+      "illuminated_q": 0.08256602876696272,
+      "generic_point_source_q": 0.08341886846244197
+    },
+    {
+      "target": "SMS_1000_pure_ejecta",
+      "target_status": "equal_retention_lower_ambient_n_c_mixing_ceiling",
+      "target_bracket_n_c": 0.7674284772623854,
+      "central_required_q_fractional_change": 0.010329183905481543,
+      "illuminated_q": 0.7069243143513401,
+      "generic_point_source_q": 0.7142262656015316,
+      "conditional_95_set_above_yield_ceiling_if_assumed_q_below": {
+        "illuminated": 0.30488183511790773,
+        "generic_point_source": 0.34125954363389105
+      }
+    },
+    {
+      "target": "SMS_10000_pure_ejecta",
+      "target_status": "equal_retention_lower_ambient_n_c_mixing_ceiling",
+      "target_bracket_n_c": 2.155043841132256,
+      "central_required_q_fractional_change": 0.010329183905481765,
+      "illuminated_q": 0.028957265991004445,
+      "generic_point_source_q": 0.02925637091682548,
+      "conditional_95_set_above_yield_ceiling_if_assumed_q_below": {
+        "illuminated": 0.012488669884605277,
+        "generic_point_source": 0.013978785531012394
+      }
+    },
+    {
+      "target": "SMS_50000_pure_ejecta",
+      "target_status": "equal_retention_lower_ambient_n_c_mixing_ceiling",
+      "target_bracket_n_c": 2.2061909837541536,
+      "central_required_q_fractional_change": 0.010329183905481765,
+      "illuminated_q": 0.025740110845805596,
+      "generic_point_source_q": 0.026005985184479406,
+      "conditional_95_set_above_yield_ceiling_if_assumed_q_below": {
+        "illuminated": 0.011101177412476553,
+        "generic_point_source": 0.012425741061665798
+      }
+    },
+    {
+      "target": "SMS_100000_pure_ejecta",
+      "target_status": "equal_retention_lower_ambient_n_c_mixing_ceiling",
+      "target_bracket_n_c": 1.693169220407242,
+      "central_required_q_fractional_change": 0.010329183905481765,
+      "illuminated_q": 0.08387493104595754,
+      "generic_point_source_q": 0.08474129063379084,
+      "conditional_95_set_above_yield_ceiling_if_assumed_q_below": {
+        "illuminated": 0.0361735229338431,
+        "generic_point_source": 0.04048965371537909
+      }
+    },
+    {
+      "target": "rotation_Top-heavy above remnant_Z0",
+      "target_status": "selected_published_mixed_ism_prediction",
+      "target_bracket_n_c": 0.44999999999999996,
+      "central_required_q_fractional_change": 0.010329183905481765,
+      "illuminated_q": 1.4682546892497121,
+      "generic_point_source_q": 1.4834205619550584
+    },
+    {
+      "target": "rotation_Top-heavy above remnant_Z1e-05",
+      "target_status": "selected_published_mixed_ism_prediction",
+      "target_bracket_n_c": 0.73,
+      "central_required_q_fractional_change": 0.010329183905481543,
+      "illuminated_q": 0.7705510144649607,
+      "generic_point_source_q": 0.7785101776019246
+    },
+    {
+      "target": "rotation_Top-heavy above CO core_Z0",
+      "target_status": "selected_published_mixed_ism_prediction",
+      "target_bracket_n_c": 0.31,
+      "central_required_q_fractional_change": 0.010329183905481765,
+      "illuminated_q": 2.0267556694697015,
+      "generic_point_source_q": 2.0476904015111317
+    },
+    {
+      "target": "rotation_Top-heavy above CO core_Z1e-05",
+      "target_status": "selected_published_mixed_ism_prediction",
+      "target_bracket_n_c": 0.37,
+      "central_required_q_fractional_change": 0.010329183905481765,
+      "illuminated_q": 1.7652303938451703,
+      "generic_point_source_q": 1.783463783218743
+    }
+  ],
+  "fixed_published_target_mixing_checks_identical": true,
+  "fixed_target_mixing_checks": {
+    "compatibility_box": {
+      "oxygen_12_log_o_h": [
+        6.770000000000001,
+        7.980000000000001
+      ],
+      "log_c_o": [
+        -1.1300000000000001,
+        -0.52
+      ]
+    },
+    "box_status": "necessary_marginal_endpoint_check_not_joint_confidence_or_likelihood",
+    "counts_status": "deterministic_grid_choice_counts_not_model_weights_or_probabilities",
+    "evaluated_at": "Each maximum ambient mass reaching the fixed N/C target",
+    "sms_summaries": [
+      {
+        "initial_mass_msun": 1000.0,
+        "target": "Cue_lower_marginal_endpoint",
+        "target_bracket_n_c": 0.27,
+        "grid_cases": 36,
+        "n_c_reachable_cases": 36,
+        "also_o_h_and_c_o_marginal_compatible_cases": 12,
+        "compatible_ambient_mass_range_msun": [
+          103730.97827354707,
+          7037614.667365117
+        ]
+      },
+      {
+        "initial_mass_msun": 1000.0,
+        "target": "Cue_median",
+        "target_bracket_n_c": 0.9,
+        "grid_cases": 36,
+        "n_c_reachable_cases": 0,
+        "also_o_h_and_c_o_marginal_compatible_cases": 0,
+        "compatible_ambient_mass_range_msun": null
+      },
+      {
+        "initial_mass_msun": 1000.0,
+        "target": "Cue_upper_marginal_endpoint",
+        "target_bracket_n_c": 1.19,
+        "grid_cases": 36,
+        "n_c_reachable_cases": 0,
+        "also_o_h_and_c_o_marginal_compatible_cases": 0,
+        "compatible_ambient_mass_range_msun": null
+      },
+      {
+        "initial_mass_msun": 1000.0,
+        "target": "separate_ionic_temperature_case_lower",
+        "target_bracket_n_c": 1.3,
+        "grid_cases": 36,
+        "n_c_reachable_cases": 0,
+        "also_o_h_and_c_o_marginal_compatible_cases": 0,
+        "compatible_ambient_mass_range_msun": null
+      },
+      {
+        "initial_mass_msun": 1000.0,
+        "target": "separate_ionic_temperature_case_upper",
+        "target_bracket_n_c": 1.7,
+        "grid_cases": 36,
+        "n_c_reachable_cases": 0,
+        "also_o_h_and_c_o_marginal_compatible_cases": 0,
+        "compatible_ambient_mass_range_msun": null
+      },
+      {
+        "initial_mass_msun": 10000.0,
+        "target": "Cue_lower_marginal_endpoint",
+        "target_bracket_n_c": 0.27,
+        "grid_cases": 36,
+        "n_c_reachable_cases": 36,
+        "also_o_h_and_c_o_marginal_compatible_cases": 12,
+        "compatible_ambient_mass_range_msun": [
+          669445.964903218,
+          45418474.01831293
+        ]
+      },
+      {
+        "initial_mass_msun": 10000.0,
+        "target": "Cue_median",
+        "target_bracket_n_c": 0.9,
+        "grid_cases": 36,
+        "n_c_reachable_cases": 36,
+        "also_o_h_and_c_o_marginal_compatible_cases": 24,
+        "compatible_ambient_mass_range_msun": [
+          30032.971374121604,
+          5396075.805765778
+        ]
+      },
+      {
+        "initial_mass_msun": 10000.0,
+        "target": "Cue_upper_marginal_endpoint",
+        "target_bracket_n_c": 1.19,
+        "grid_cases": 36,
+        "n_c_reachable_cases": 36,
+        "also_o_h_and_c_o_marginal_compatible_cases": 21,
+        "compatible_ambient_mass_range_msun": [
+          15053.775562163572,
+          2441436.521009196
+        ]
+      },
+      {
+        "initial_mass_msun": 10000.0,
+        "target": "separate_ionic_temperature_case_lower",
+        "target_bracket_n_c": 1.3,
+        "grid_cases": 36,
+        "n_c_reachable_cases": 36,
+        "also_o_h_and_c_o_marginal_compatible_cases": 6,
+        "compatible_ambient_mass_range_msun": [
+          38785.64161856738,
+          403180.4843620291
+        ]
+      },
+      {
+        "initial_mass_msun": 10000.0,
+        "target": "separate_ionic_temperature_case_upper",
+        "target_bracket_n_c": 1.7,
+        "grid_cases": 36,
+        "n_c_reachable_cases": 36,
+        "also_o_h_and_c_o_marginal_compatible_cases": 0,
+        "compatible_ambient_mass_range_msun": null
+      },
+      {
+        "initial_mass_msun": 50000.0,
+        "target": "Cue_lower_marginal_endpoint",
+        "target_bracket_n_c": 0.27,
+        "grid_cases": 36,
+        "n_c_reachable_cases": 36,
+        "also_o_h_and_c_o_marginal_compatible_cases": 12,
+        "compatible_ambient_mass_range_msun": [
+          13246.739342605095,
+          1105671.2094259951
+        ]
+      },
+      {
+        "initial_mass_msun": 50000.0,
+        "target": "Cue_median",
+        "target_bracket_n_c": 0.9,
+        "grid_cases": 36,
+        "n_c_reachable_cases": 36,
+        "also_o_h_and_c_o_marginal_compatible_cases": 12,
+        "compatible_ambient_mass_range_msun": [
+          2667.9998283750383,
+          132027.84580829527
+        ]
+      },
+      {
+        "initial_mass_msun": 50000.0,
+        "target": "Cue_upper_marginal_endpoint",
+        "target_bracket_n_c": 1.19,
+        "grid_cases": 36,
+        "n_c_reachable_cases": 36,
+        "also_o_h_and_c_o_marginal_compatible_cases": 12,
+        "compatible_ambient_mass_range_msun": [
+          1280.3915429096414,
+          60148.971478732514
+        ]
+      },
+      {
+        "initial_mass_msun": 50000.0,
+        "target": "separate_ionic_temperature_case_lower",
+        "target_bracket_n_c": 1.3,
+        "grid_cases": 36,
+        "n_c_reachable_cases": 36,
+        "also_o_h_and_c_o_marginal_compatible_cases": 12,
+        "compatible_ambient_mass_range_msun": [
+          959.8165186645523,
+          44567.342871641646
+        ]
+      },
+      {
+        "initial_mass_msun": 50000.0,
+        "target": "separate_ionic_temperature_case_upper",
+        "target_bracket_n_c": 1.7,
+        "grid_cases": 36,
+        "n_c_reachable_cases": 36,
+        "also_o_h_and_c_o_marginal_compatible_cases": 12,
+        "compatible_ambient_mass_range_msun": [
+          297.964128530164,
+          13512.472131348408
+        ]
+      },
+      {
+        "initial_mass_msun": 100000.0,
+        "target": "Cue_lower_marginal_endpoint",
+        "target_bracket_n_c": 0.27,
+        "grid_cases": 36,
+        "n_c_reachable_cases": 36,
+        "also_o_h_and_c_o_marginal_compatible_cases": 12,
+        "compatible_ambient_mass_range_msun": [
+          156912.7488733252,
+          13097102.942391535
+        ]
+      },
+      {
+        "initial_mass_msun": 100000.0,
+        "target": "Cue_median",
+        "target_bracket_n_c": 0.9,
+        "grid_cases": 36,
+        "n_c_reachable_cases": 36,
+        "also_o_h_and_c_o_marginal_compatible_cases": 12,
+        "compatible_ambient_mass_range_msun": [
+          28651.77681641828,
+          1417853.3039695583
+        ]
+      },
+      {
+        "initial_mass_msun": 100000.0,
+        "target": "Cue_upper_marginal_endpoint",
+        "target_bracket_n_c": 1.19,
+        "grid_cases": 36,
+        "n_c_reachable_cases": 36,
+        "also_o_h_and_c_o_marginal_compatible_cases": 12,
+        "compatible_ambient_mass_range_msun": [
+          11827.845450247085,
+          555636.8616939345
+        ]
+      },
+      {
+        "initial_mass_msun": 100000.0,
+        "target": "separate_ionic_temperature_case_lower",
+        "target_bracket_n_c": 1.3,
+        "grid_cases": 36,
+        "n_c_reachable_cases": 36,
+        "also_o_h_and_c_o_marginal_compatible_cases": 12,
+        "compatible_ambient_mass_range_msun": [
+          7941.062514384781,
+          368728.8653212026
+        ]
+      },
+      {
+        "initial_mass_msun": 100000.0,
+        "target": "separate_ionic_temperature_case_upper",
+        "target_bracket_n_c": 1.7,
+        "grid_cases": 36,
+        "n_c_reachable_cases": 0,
+        "also_o_h_and_c_o_marginal_compatible_cases": 0,
+        "compatible_ambient_mass_range_msun": null
+      }
+    ],
+    "conditional_helium_examples": {
+      "background_he_h_number": 0.08333333333333333,
+      "assumptions": "Ambient [O/H]=-1.38, [C/O]=-0.65, [N/C]=0; equal full retention, homogeneous mixing, X_H=0.75, X_He=0.25 neglecting ambient trace metals.",
+      "values": [
+        {
+          "initial_mass_msun": 1000.0,
+          "target_bracket_n_c": 0.9,
+          "ambient_mass_msun": null,
+          "mixed_he_h_number": null
+        },
+        {
+          "initial_mass_msun": 1000.0,
+          "target_bracket_n_c": 1.7,
+          "ambient_mass_msun": null,
+          "mixed_he_h_number": null
+        },
+        {
+          "initial_mass_msun": 10000.0,
+          "target_bracket_n_c": 0.9,
+          "ambient_mass_msun": 1486202.6869628744,
+          "mixed_he_h_number": 0.08382155246450775
+        },
+        {
+          "initial_mass_msun": 10000.0,
+          "target_bracket_n_c": 1.7,
+          "ambient_mass_msun": 144433.26331457382,
+          "mixed_he_h_number": 0.08828900744329118
+        },
+        {
+          "initial_mass_msun": 50000.0,
+          "target_bracket_n_c": 0.9,
+          "ambient_mass_msun": 132027.84580829527,
+          "mixed_he_h_number": 0.08576733776075815
+        },
+        {
+          "initial_mass_msun": 50000.0,
+          "target_bracket_n_c": 1.7,
+          "ambient_mass_msun": 13512.472131348408,
+          "mixed_he_h_number": 0.10000619298178355
+        },
+        {
+          "initial_mass_msun": 100000.0,
+          "target_bracket_n_c": 0.9,
+          "ambient_mass_msun": 1417853.3039695583,
+          "mixed_he_h_number": 0.09329301228878725
+        },
+        {
+          "initial_mass_msun": 100000.0,
+          "target_bracket_n_c": 1.7,
+          "ambient_mass_msun": null,
+          "mixed_he_h_number": null
+        }
+      ],
+      "inference_guard": "Predicted gas nuclei ratios only; HeII/OIII blend cannot measure them without hydrogen lines and ionization/emissivity modelling."
+    },
+    "vms_optimistic_nitrogen_only_bounds": {
+      "cases": [
+        {
+          "background_bracket_c_o": 0.0,
+          "optimistic_maximum_ambient_mass_msun_per_vms": 4647.783339254828
+        },
+        {
+          "background_bracket_c_o": -0.65,
+          "optimistic_maximum_ambient_mass_msun_per_vms": 20760.88557517745
+        }
+      ],
+      "nitrogen_per_star_msun_approx": 1.0,
+      "timescale_myr_approx": 2.0,
+      "assumptions": "LMC-like VMS estimate, full N retention, ignore coejected carbon and other sources; adding carbon lowers this ceiling. This is not a full N/C prediction."
+    }
+  },
+  "resolution_at_line_centers": {
+    "NIV": {
+      "nominal": 61.356653222505386,
+      "point": 122.17812597148946
+    },
+    "CIV": {
+      "nominal": 66.04173681457061,
+      "point": 130.41589057401106
+    },
+    "HeII_OIII": {
+      "nominal": 74.61468166578065,
+      "point": 144.94236526225984
+    },
+    "NIII": {
+      "nominal": 82.80168532685232,
+      "point": 158.40038752219877
+    },
+    "CIII": {
+      "nominal": 97.67706501587972,
+      "point": 182.41898363847406
+    }
+  },
+  "atomic_grid_available": false,
+  "identified_mechanism_exclusions": [],
+  "interpretation": [
+    "Both reports fit the same pixel spectrum; likelihoods and confidence sets are not pooled.",
+    "Q thresholds are conditional mathematical tests for a fixed unmeasured emissivity factor, not statistical exclusions of a stellar population.",
+    "Source LSF changes fitted flux and covariance but does not supply the missing atomic map.",
+    "Fixed-target yield/mixing and marginal-box results remain identical because those inputs were not re-inferred from either spectrum.",
+    "Generic point-source R(lambda) with a Gaussian is not the exact published UNITE runtime or a source-specific calibrated LSF."
+  ]
+}

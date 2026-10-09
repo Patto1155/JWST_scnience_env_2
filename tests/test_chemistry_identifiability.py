@@ -8,6 +8,7 @@ import pytest
 
 from discovery.chemistry_identifiability import (
     DEFAULT_SPECTRUM_REPORT,
+    compare_resolution_reports,
     flux_ratio_from_covariance,
     marginal_compatibility,
     required_effective_factor,
@@ -118,3 +119,63 @@ def test_compact_actual_spectrum_guard_and_joint_counts():
         (example["ambient_mass_msun"] * 0.25 / 4 + 2700 / 4)
         / (example["ambient_mass_msun"] * 0.75 + 5060)
     )
+
+
+def test_original_pinned_result_is_preserved():
+    saved = DEFAULT_SPECTRUM_REPORT.with_name("chemistry_identifiability.json")
+    assert run_identifiability(DEFAULT_SPECTRUM_REPORT) == json.loads(saved.read_text())
+
+
+@pytest.fixture
+def synthetic_point_report(tmp_path):
+    """Test schema handling only; these modified fluxes are not scientific data."""
+    original = json.loads(DEFAULT_SPECTRUM_REPORT.read_text())
+    scenarios = copy.deepcopy(original.pop("fixed_published_redshift_scenarios")[:2])
+    scenarios[0]["lines"]["NIV"]["flux"] *= 1.5
+    original["schema_version"] = "mom_point_resolution_v1"
+    original["point_source_scenarios"] = scenarios
+    path = tmp_path / "synthetic_point.json"
+    path.write_text(json.dumps(original))
+    return path
+
+
+def test_resolution_families_are_separate_and_fixed_targets_do_not_change(synthetic_point_report):
+    comparison = compare_resolution_reports(DEFAULT_SPECTRUM_REPORT, synthetic_point_report)
+    families = comparison["separate_resolution_families"]
+    assert families["illuminated"]["scenario_count"] == 31
+    assert families["generic_point_source"]["scenario_count"] == 2
+    assert comparison["fixed_published_target_mixing_checks_identical"] is True
+    assert comparison["identified_mechanism_exclusions"] == []
+    assert comparison["atomic_grid_available"] is False
+    assert (
+        families["illuminated"]["source_report_sha256"]
+        != (families["generic_point_source"]["source_report_sha256"])
+    )
+    first = families["illuminated"]["nominal_sum_line_ratio"]["value"]
+    second = families["generic_point_source"]["nominal_sum_line_ratio"]["value"]
+    for row in comparison["target_factor_changes"]:
+        assert row["central_required_q_fractional_change"] == pytest.approx(second / first - 1)
+    ceiling = next(
+        row
+        for row in comparison["target_factor_changes"]
+        if row["target"] == "SMS_1000_pure_ejecta"
+    )
+    old_set = families["illuminated"]["targets"][5]["nominal_required_effective_factor"]
+    new_set = families["generic_point_source"]["targets"][5]["nominal_required_effective_factor"]
+    boundaries = ceiling["conditional_95_set_above_yield_ceiling_if_assumed_q_below"]
+    assert boundaries["illuminated"] == old_set["formal_conditional_q_95_set"]["interval"][0]
+    assert (
+        boundaries["generic_point_source"] == new_set["formal_conditional_q_95_set"]["interval"][0]
+    )
+
+
+def test_comparison_rejects_different_pixels_and_wrong_schema(synthetic_point_report):
+    source = json.loads(synthetic_point_report.read_text())
+    source["metadata"]["input_sha256"] = "different pixel input"
+    synthetic_point_report.write_text(json.dumps(source))
+    with pytest.raises(ValueError, match="same pinned pixel-spectrum bytes"):
+        compare_resolution_reports(DEFAULT_SPECTRUM_REPORT, synthetic_point_report)
+    with pytest.raises(ValueError, match="point-resolution report"):
+        compare_resolution_reports(DEFAULT_SPECTRUM_REPORT, DEFAULT_SPECTRUM_REPORT)
+    with pytest.raises(ValueError, match="illuminated-resolution report"):
+        compare_resolution_reports(synthetic_point_report, DEFAULT_SPECTRUM_REPORT)
