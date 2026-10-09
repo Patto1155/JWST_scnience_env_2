@@ -7,7 +7,7 @@ import pytest
 from astropy.io import fits
 from astropy.wcs import WCS
 
-from data_pipeline.original_images import verify_image
+from data_pipeline.original_images import MAX_TOTAL_BYTES, provision, verify_image
 from tools.jwst.astrometry import external_astrometry, match_sources
 
 
@@ -75,3 +75,48 @@ def test_original_image_gate_rejects_psf_headers_and_checksum_mismatch(tmp_path)
     )
     with pytest.raises(ValueError, match="SCI, ERR and WHT"):
         verify_image(path, product)
+
+
+def test_combined_round_budget_counts_previous_images_too(tmp_path):
+    manifest = {
+        "images": [
+            {"expected_bytes": MAX_TOTAL_BYTES // 2},
+            {"expected_bytes": MAX_TOTAL_BYTES // 2 + 1},
+        ]
+    }
+    with pytest.raises(ValueError, match="total byte ceiling"):
+        provision(manifest, tmp_path / "new", previous_dir=tmp_path / "old")
+
+
+def test_previous_round_reuses_only_checksum_verified_file(tmp_path):
+    old, new = tmp_path / "old", tmp_path / "new"
+    old.mkdir()
+    filename = "synthetic_unit_fixture_i2d.fits"
+    path = old / filename
+    bundle = _bundle()
+    primary = fits.PrimaryHDU()
+    primary.header["FILENAME"] = filename
+    primary.header["FILTER"] = "F444W"
+    header = bundle["wcs"].to_header()
+    header["BUNIT"] = "MJy/sr"
+    fits.HDUList(
+        [
+            primary,
+            fits.ImageHDU(bundle["sci"], header=header, name="SCI"),
+            fits.ImageHDU(bundle["err"], name="ERR"),
+            fits.ImageHDU(np.ones_like(bundle["sci"]), name="WHT"),
+        ]
+    ).writeto(path)
+    product = {
+        "product_kind": "original_full_i2d",
+        "product_filename": filename,
+        "filter": "F444W",
+        "expected_bytes": path.stat().st_size,
+        "sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
+    }
+    payload = provision({"images": [product]}, new, previous_dir=old)
+    assert payload["images"][0]["path"] == str(path.resolve())
+    assert not (new / filename).exists()
+    path.write_bytes(path.read_bytes() + b"corrupt")
+    with pytest.raises(ValueError, match="checksum"):
+        provision({"images": [product]}, new, previous_dir=old)
