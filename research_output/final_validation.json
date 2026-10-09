@@ -96,5 +96,6 @@
     "tools/jwst/line_report.py": "5adfcd7818d71f2c25a56c917956372af43a9882cdfe774a71af8b5bdf58b22f",
     "tools/jwst/line_sensitivity.py": "ee0d766ecd0b9cf7b65c4d4be87330c19c85a194fe6cde78fa4e643ab2f7a3dc",
     "tools/jwst/point_resolution.py": "6ba5d692aa0edfe3025119e7763eb28ee7b6d20ef41225a84f3c83a0018f9cd0"
-  }
+  },
+  "final_pull_request": "https://github.com/Patto1155/JWST_scnience_env_2/pull/29"
 }
