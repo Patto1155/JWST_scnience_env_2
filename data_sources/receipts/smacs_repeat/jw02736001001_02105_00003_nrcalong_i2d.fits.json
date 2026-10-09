@@ -1,0 +1,9 @@
+{
+  "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw02736001001_02105_00003_nrcalong_i2d.fits",
+  "bytes": 120254400,
+  "sha256": "d06747dc62974e2e008b0a6e1f30c4864b1527e64218e73e210e97582e8aff8f",
+  "http_status": 200,
+  "last_modified": "Sun, 02 Aug 2026 21:17:54 GMT",
+  "etag": "\"6a6fb402-72aefc0\"",
+  "acquisition_utc": "2026-10-09T08:44:50Z"
+}

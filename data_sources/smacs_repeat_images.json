@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "kind": "two_distinct_native_integrations_same_filter",
+  "baseline_reference": "original_images_round3_matched_smacs.json",
+  "images": [
+    {
+      "id": "jw02736001001_02105_00004_nrcalong_i2d.fits",
+      "product_filename": "jw02736001001_02105_00004_nrcalong_i2d.fits",
+      "filter": "F444W",
+      "target": "SMACS-J0723.3-7327",
+      "kind": "science_image",
+      "product_kind": "original_full_i2d",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw02736001001_02105_00004_nrcalong_i2d.fits",
+      "expected_bytes": 120254400,
+      "sha256": "0226bb8a980aa2770bb6e57e0f91812bbbe247358f0ae80611a788a5827e1b92"
+    },
+    {
+      "id": "jw02736001001_02105_00003_nrcalong_i2d.fits",
+      "product_filename": "jw02736001001_02105_00003_nrcalong_i2d.fits",
+      "filter": "F444W",
+      "target": "SMACS-J0723.3-7327",
+      "kind": "science_image",
+      "product_kind": "original_full_i2d",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw02736001001_02105_00003_nrcalong_i2d.fits",
+      "expected_bytes": 120254400,
+      "sha256": "d06747dc62974e2e008b0a6e1f30c4864b1527e64218e73e210e97582e8aff8f"
+    }
+  ],
+  "new_download_bytes": 120254400,
+  "new_download_cap_bytes": 157286400,
+  "limitations": [
+    "Independent detector integrations within one visit, not independent calibration.",
+    "Original archive screen denominator retained; no high-redshift identity inferred."
+  ]
+}

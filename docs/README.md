@@ -229,3 +229,8 @@ explicit additional conditional proposals.
 The [current verified takeover status](TAKEOVER_STATUS.md) and
 [full research report](FINAL_RESEARCH_REPORT.md) index the executed experiments,
 merged PRs, reproducible inputs, uncertainty limits and next work.
+
+[Independent SMACS repeat vetting](SMACS_INDEPENDENT_REPEAT.md) adds a distinct
+native integration, hash/contributor guards, frozen-input reproduction and
+held-out relative astrometry. It reports fixed-aperture persistence separately
+from segmented-source association. These remain trusted operator CLIs.
