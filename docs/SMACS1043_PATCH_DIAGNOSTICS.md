@@ -65,7 +65,7 @@ These models do not supply a clean revised high-redshift or low-redshift label.
 | Image | Nine point parameters, nJy | Fiducial point parameter | Diagonal error | Residual-cluster error | Fiducial diagonal objective / dof |
 |---|---:|---:|---:|---:|---:|
 | F090W | 31.330–44.567 | 44.567 | 3.089 | 7.560 | 2637.87 / 1487 |
-| F200W | 567.658–586.291 | 580.575 | 5.522 | 97.867 | 10501.95 / 1485 |
+| F200W | 567.664–586.289 | 580.575 | 5.522 | 97.867 | 10501.95 / 1485 |
 | F444W reference | 1502.961–1625.376 | 1570.929 | 10.195 | 144.093 | 4327.63 / 383 |
 | F444W repeat | 1539.218–1653.805 | 1615.617 | 9.774 | 213.989 | 4727.22 / 386 |
 
