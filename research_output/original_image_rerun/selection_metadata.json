@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "flux_unit": "Jy",
+  "aperture_key": "3",
+  "status_fields": [
+    "calibration_status",
+    "measurement_status",
+    "background_status"
+  ],
+  "status_values": [
+    [
+      "calibrated",
+      "measured",
+      "measured"
+    ],
+    [
+      "calibrated",
+      "no_valid_pixels",
+      "measured"
+    ],
+    [
+      "calibrated",
+      "no_valid_pixels",
+      "missing_annulus"
+    ],
+    [
+      "calibrated",
+      "off_image",
+      "measured"
+    ],
+    [
+      "calibrated",
+      "off_image",
+      "missing_annulus"
+    ],
+    [
+      "calibrated",
+      "partial_coverage",
+      "measured"
+    ]
+  ],
+  "aperture_radius_arcsec_by_filter": {
+    "F090W": 0.18873807945080867,
+    "F200W": 0.18873807945080867,
+    "F444W": 0.18873807945080867
+  },
+  "empty_numeric_field": "unavailable (None), never zero",
+  "quantity_operator": "pixel-centre angular aperture minus mean native annulus",
+  "annulus_radii_arcsec": {
+    "inner": 0.37747615890161734,
+    "outer": 0.6291269315026955
+  }
+}

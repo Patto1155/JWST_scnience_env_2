@@ -1,0 +1,4402 @@
+{
+  "schema_version": 1,
+  "complete_original_archive": false,
+  "reference_catalog": {
+    "sha256": "4b588479eb9ebbfd590dd6ea0ea85949f80952e085ea94e874a191d558f4accf",
+    "source_url": "https://jades.herts.ac.uk/DR4/Combined_DR4_external_v1.2.1.fits",
+    "unique_AB_GS_reference_sources": 1737
+  },
+  "original_product_manifest_sha256": "0d6bde60df04720c0239ba2ff6995a1347206187ff50cb083d12c1a7366a1c8f",
+  "images": [
+    {
+      "product_filename": "jw01180026001_09201_00003_nrcalong_i2d.fits",
+      "filter": "F444W",
+      "sha256": "b9b84b9bd0bd8ef6140dca76163a9ac4625689024b651a25e631a6d14ce68d86",
+      "readiness": {
+        "shape": [
+          2068,
+          2075
+        ],
+        "valid_pixels": 4184055,
+        "valid_fraction": 0.975054181911398,
+        "bunit": "MJy/sr",
+        "cal_ver": "3.0.0",
+        "crds_context": "jwst_1584.pmap",
+        "detector": "NRCALONG",
+        "expstart_mjd": 59860.051583541666,
+        "expmid_mjd": 59860.05829402199,
+        "exposure_time_s": 1159.571,
+        "readiness": "original_full_image_verified"
+      },
+      "external_astrometry": {
+        "covered_references": 43,
+        "detected_centroids": 858,
+        "matched_sources": 23,
+        "median_offset_arcsec": [
+          -0.009048292229314187,
+          -0.015028107118468909
+        ],
+        "median_offset_bootstrap95_arcsec": [
+          [
+            -0.017974883632874656,
+            -0.027658083157001304
+          ],
+          [
+            -0.003756941273903223,
+            -0.01164321382121805
+          ]
+        ],
+        "radial_median_arcsec": 0.021550254742723457,
+        "radial_p90_arcsec": 0.1071476396555639,
+        "matching_radius_arcsec": 0.5,
+        "detection_threshold_sigma": 5,
+        "sample_status": "measured",
+        "shifted_catalog_controls": [
+          {
+            "offset_arcsec": [
+              10,
+              0
+            ],
+            "covered_references": 41,
+            "matched_sources": 1
+          },
+          {
+            "offset_arcsec": [
+              -10,
+              0
+            ],
+            "covered_references": 46,
+            "matched_sources": 2
+          },
+          {
+            "offset_arcsec": [
+              0,
+              10
+            ],
+            "covered_references": 54,
+            "matched_sources": 2
+          },
+          {
+            "offset_arcsec": [
+              0,
+              -10
+            ],
+            "covered_references": 34,
+            "matched_sources": 1
+          }
+        ],
+        "matches": [
+          {
+            "source_id": "GS_DR5_189288",
+            "detected_index": 144,
+            "x": 1390.2529838122057,
+            "y": 386.40906801888406,
+            "dra_cosdec_arcsec": -0.0017472719014081431,
+            "ddec_arcsec": -0.0007710711268413235,
+            "radial_arcsec": 0.0019098454858609882
+          },
+          {
+            "source_id": "GS_DR5_192380",
+            "detected_index": 433,
+            "x": 1185.088708407985,
+            "y": 1001.9811520316747,
+            "dra_cosdec_arcsec": 0.010252880343214744,
+            "ddec_arcsec": -0.005315839372830966,
+            "radial_arcsec": 0.011549013095560223
+          },
+          {
+            "source_id": "GS_DR5_187790",
+            "detected_index": 19,
+            "x": 1407.666157052145,
+            "y": 54.96816957960483,
+            "dra_cosdec_arcsec": -0.004085703293151604,
+            "ddec_arcsec": -0.012068880507234729,
+            "radial_arcsec": 0.012741697236052247
+          },
+          {
+            "source_id": "GS_DR5_79170",
+            "detected_index": 384,
+            "x": 1824.5281192095758,
+            "y": 896.7622846946684,
+            "dra_cosdec_arcsec": -0.009048292229314187,
+            "ddec_arcsec": -0.010282371321509918,
+            "radial_arcsec": 0.013696669383762412
+          },
+          {
+            "source_id": "GS_DR5_191333",
+            "detected_index": 439,
+            "x": 1433.1452824775358,
+            "y": 1014.553375615572,
+            "dra_cosdec_arcsec": -0.007455952891726893,
+            "ddec_arcsec": -0.01164321382121805,
+            "radial_arcsec": 0.013825905433910192
+          },
+          {
+            "source_id": "GS_DR5_189302",
+            "detected_index": 120,
+            "x": 1365.000420169071,
+            "y": 315.45596022597186,
+            "dra_cosdec_arcsec": -0.011478660866991107,
+            "ddec_arcsec": -0.008823837551699671,
+            "radial_arcsec": 0.014478251367903119
+          },
+          {
+            "source_id": "GS_DR5_188785",
+            "detected_index": 36,
+            "x": 1289.9359896199398,
+            "y": 124.66448676869125,
+            "dra_cosdec_arcsec": 0.01020189067907793,
+            "ddec_arcsec": -0.011891533727273838,
+            "radial_arcsec": 0.015668029490986703
+          },
+          {
+            "source_id": "GS_DR5_187956",
+            "detected_index": 173,
+            "x": 1692.0058484399292,
+            "y": 465.9745762922737,
+            "dra_cosdec_arcsec": -0.005796022299115281,
+            "ddec_arcsec": -0.016516176922311956,
+            "radial_arcsec": 0.017503656031043945
+          },
+          {
+            "source_id": "GS_DR5_186891",
+            "detected_index": 90,
+            "x": 1652.6370957102351,
+            "y": 245.95145291205884,
+            "dra_cosdec_arcsec": 0.009607785562552146,
+            "ddec_arcsec": -0.015028107118468909,
+            "radial_arcsec": 0.017836859237812405
+          },
+          {
+            "source_id": "GS_DR5_190909",
+            "detected_index": 349,
+            "x": 1375.7759311175605,
+            "y": 850.3201475067312,
+            "dra_cosdec_arcsec": -0.01883087971842658,
+            "ddec_arcsec": -0.005950429136330612,
+            "radial_arcsec": 0.019748661599526852
+          },
+          {
+            "source_id": "GS_DR5_186471",
+            "detected_index": 17,
+            "x": 1650.2368379015168,
+            "y": 49.637408806523375,
+            "dra_cosdec_arcsec": 0.01670958767000811,
+            "ddec_arcsec": 0.011284156037745666,
+            "radial_arcsec": 0.020162899042499197
+          },
+          {
+            "source_id": "GS_DR5_84256",
+            "detected_index": 436,
+            "x": 1449.8394812377292,
+            "y": 1008.6248925851775,
+            "dra_cosdec_arcsec": -0.017974883632874656,
+            "ddec_arcsec": -0.011887684215431776,
+            "radial_arcsec": 0.021550254742723457
+          },
+          {
+            "source_id": "GS_DR5_191208",
+            "detected_index": 563,
+            "x": 1697.9452515574033,
+            "y": 1330.3206634839732,
+            "dra_cosdec_arcsec": -0.020103223337556306,
+            "ddec_arcsec": -0.0200720962577608,
+            "radial_arcsec": 0.02840824937513154
+          },
+          {
+            "source_id": "GS_DR5_76543",
+            "detected_index": 308,
+            "x": 1921.109903708733,
+            "y": 764.1993903244073,
+            "dra_cosdec_arcsec": -0.009922726473798868,
+            "ddec_arcsec": -0.027658083157001304,
+            "radial_arcsec": 0.02938418050855939
+          },
+          {
+            "source_id": "GS_DR5_190921",
+            "detected_index": 212,
+            "x": 1175.4563612174022,
+            "y": 554.4816000020601,
+            "dra_cosdec_arcsec": -0.003756941273903223,
+            "ddec_arcsec": -0.029960067914911195,
+            "radial_arcsec": 0.03019470611723779
+          },
+          {
+            "source_id": "GS_DR5_86808",
+            "detected_index": 311,
+            "x": 1029.7231660035725,
+            "y": 769.7168469876583,
+            "dra_cosdec_arcsec": -0.019589940863418535,
+            "ddec_arcsec": -0.024484473846434568,
+            "radial_arcsec": 0.031356901070235234
+          },
+          {
+            "source_id": "GS_DR5_189743",
+            "detected_index": 543,
+            "x": 1989.9249054557426,
+            "y": 1275.7922676367207,
+            "dra_cosdec_arcsec": -0.02890662559897208,
+            "ddec_arcsec": -0.017747737942649715,
+            "radial_arcsec": 0.03392012978684644
+          },
+          {
+            "source_id": "GS_DR5_193512",
+            "detected_index": 760,
+            "x": 1557.4570949201818,
+            "y": 1784.9066468670078,
+            "dra_cosdec_arcsec": -0.013376541630208355,
+            "ddec_arcsec": -0.03555361801897072,
+            "radial_arcsec": 0.03798672950332298
+          },
+          {
+            "source_id": "GS_DR5_193082",
+            "detected_index": 421,
+            "x": 1011.9762879113065,
+            "y": 967.1220750080137,
+            "dra_cosdec_arcsec": -0.03605323896371283,
+            "ddec_arcsec": -0.03511626135561671,
+            "radial_arcsec": 0.050328797488374474
+          },
+          {
+            "source_id": "GS_DR5_296853",
+            "detected_index": 3,
+            "x": 126.69692407513585,
+            "y": 29.734788866109454,
+            "dra_cosdec_arcsec": 0.035583479702365126,
+            "ddec_arcsec": -0.05151979904838496,
+            "radial_arcsec": 0.06261368637693142
+          },
+          {
+            "source_id": "GS_DR5_188958",
+            "detected_index": 54,
+            "x": 1247.9516676377964,
+            "y": 169.20492214651966,
+            "dra_cosdec_arcsec": 0.09705687143907316,
+            "ddec_arcsec": -0.06760465173818574,
+            "radial_arcsec": 0.11828112797522197
+          },
+          {
+            "source_id": "GS_DR5_193699",
+            "detected_index": 390,
+            "x": 812.1114399081724,
+            "y": 912.8890318664445,
+            "dra_cosdec_arcsec": -0.3373773226102912,
+            "ddec_arcsec": 0.1058565375092616,
+            "radial_arcsec": 0.3535944913503345
+          },
+          {
+            "source_id": "GS_DR5_186837",
+            "detected_index": 174,
+            "x": 1905.548140616845,
+            "y": 468.1197364736435,
+            "dra_cosdec_arcsec": -0.39589750522435374,
+            "ddec_arcsec": -0.10916451280770179,
+            "radial_arcsec": 0.41067228479913515
+          }
+        ],
+        "interpretation": "external_released_JADES_target_coordinates_vs_image_centroids",
+        "limitations": [
+          "Released NIRSpec target coordinates are not a Gaia absolute-frame certification.",
+          "Galaxy structure, blending and target-coordinate choices contribute to offsets.",
+          "Bootstrap intervals capture finite-source sampling, not image-wide systematic error.",
+          "Matching radius and segmentation are fixed; no offset was fitted then reapplied."
+        ]
+      }
+    },
+    {
+      "product_filename": "jw01180026001_03201_00003_nrca1_i2d.fits",
+      "filter": "F090W",
+      "sha256": "738c9dad0ace88e469fb8edd0daa5ba8b86034f8c5392e0229093026cdcaaba3",
+      "readiness": {
+        "shape": [
+          2058,
+          2058
+        ],
+        "valid_pixels": 4162431,
+        "valid_fraction": 0.9827799924634577,
+        "bunit": "MJy/sr",
+        "cal_ver": "3.0.0",
+        "crds_context": "jwst_1584.pmap",
+        "detector": "NRCA1",
+        "expstart_mjd": 59859.916504583336,
+        "expmid_mjd": 59859.92197238426,
+        "exposure_time_s": 944.836,
+        "readiness": "original_full_image_verified"
+      },
+      "external_astrometry": {
+        "covered_references": 2,
+        "detected_centroids": 315,
+        "matched_sources": 1,
+        "median_offset_arcsec": [
+          -0.43083030099039105,
+          0.11160999062077667
+        ],
+        "median_offset_bootstrap95_arcsec": null,
+        "radial_median_arcsec": 0.4450522871450045,
+        "radial_p90_arcsec": 0.4450522871450045,
+        "matching_radius_arcsec": 0.5,
+        "detection_threshold_sigma": 5,
+        "sample_status": "insufficient_reference_matches",
+        "shifted_catalog_controls": [
+          {
+            "offset_arcsec": [
+              10,
+              0
+            ],
+            "covered_references": 3,
+            "matched_sources": 0
+          },
+          {
+            "offset_arcsec": [
+              -10,
+              0
+            ],
+            "covered_references": 3,
+            "matched_sources": 1
+          },
+          {
+            "offset_arcsec": [
+              0,
+              10
+            ],
+            "covered_references": 6,
+            "matched_sources": 0
+          },
+          {
+            "offset_arcsec": [
+              0,
+              -10
+            ],
+            "covered_references": 2,
+            "matched_sources": 0
+          }
+        ],
+        "matches": [
+          {
+            "source_id": "GS_DR5_296853",
+            "detected_index": 18,
+            "x": 317.228780240625,
+            "y": 99.30708577756558,
+            "dra_cosdec_arcsec": -0.43083030099039105,
+            "ddec_arcsec": 0.11160999062077667,
+            "radial_arcsec": 0.4450522871450045
+          }
+        ],
+        "interpretation": "external_released_JADES_target_coordinates_vs_image_centroids",
+        "limitations": [
+          "Released NIRSpec target coordinates are not a Gaia absolute-frame certification.",
+          "Galaxy structure, blending and target-coordinate choices contribute to offsets.",
+          "Bootstrap intervals capture finite-source sampling, not image-wide systematic error.",
+          "Matching radius and segmentation are fixed; no offset was fitted then reapplied."
+        ]
+      }
+    },
+    {
+      "product_filename": "jw01180026001_13201_00003_nrca1_i2d.fits",
+      "filter": "F200W",
+      "sha256": "075becbdd9bcc845ffacadc520b97da82f7d02a0c62bd5e9ddb7b1864deccd74",
+      "readiness": {
+        "shape": [
+          2058,
+          2058
+        ],
+        "valid_pixels": 4162715,
+        "valid_fraction": 0.9828470469126148,
+        "bunit": "MJy/sr",
+        "cal_ver": "3.0.0",
+        "crds_context": "jwst_1584.pmap",
+        "detector": "NRCA1",
+        "expstart_mjd": 59860.150253252315,
+        "expmid_mjd": 59860.15572105324,
+        "exposure_time_s": 944.836,
+        "readiness": "original_full_image_verified"
+      },
+      "external_astrometry": {
+        "covered_references": 4,
+        "detected_centroids": 439,
+        "matched_sources": 3,
+        "median_offset_arcsec": [
+          0.012139146355574493,
+          -0.016962215980879818
+        ],
+        "median_offset_bootstrap95_arcsec": null,
+        "radial_median_arcsec": 0.06017740373124578,
+        "radial_p90_arcsec": 0.1176501072932283,
+        "matching_radius_arcsec": 0.5,
+        "detection_threshold_sigma": 5,
+        "sample_status": "insufficient_reference_matches",
+        "shifted_catalog_controls": [
+          {
+            "offset_arcsec": [
+              10,
+              0
+            ],
+            "covered_references": 4,
+            "matched_sources": 0
+          },
+          {
+            "offset_arcsec": [
+              -10,
+              0
+            ],
+            "covered_references": 3,
+            "matched_sources": 0
+          },
+          {
+            "offset_arcsec": [
+              0,
+              10
+            ],
+            "covered_references": 7,
+            "matched_sources": 0
+          },
+          {
+            "offset_arcsec": [
+              0,
+              -10
+            ],
+            "covered_references": 3,
+            "matched_sources": 0
+          }
+        ],
+        "matches": [
+          {
+            "source_id": "GS_DR5_81034",
+            "detected_index": 15,
+            "x": 1832.9749691268971,
+            "y": 89.15794780766299,
+            "dra_cosdec_arcsec": 0.0011435713783694026,
+            "ddec_arcsec": -0.016962215980879818,
+            "radial_arcsec": 0.017000721343086125
+          },
+          {
+            "source_id": "GS_DR5_189781",
+            "detected_index": 40,
+            "x": 1850.955561386022,
+            "y": 195.6253441829761,
+            "dra_cosdec_arcsec": 0.012139146355574493,
+            "ddec_arcsec": 0.058940317657750305,
+            "radial_arcsec": 0.06017740373124578
+          },
+          {
+            "source_id": "GS_DR5_296853",
+            "detected_index": 64,
+            "x": 278.12629812274696,
+            "y": 278.75116729552695,
+            "dra_cosdec_arcsec": 0.10872988663655447,
+            "ddec_arcsec": -0.07487749222693668,
+            "radial_arcsec": 0.13201828318372394
+          }
+        ],
+        "interpretation": "external_released_JADES_target_coordinates_vs_image_centroids",
+        "limitations": [
+          "Released NIRSpec target coordinates are not a Gaia absolute-frame certification.",
+          "Galaxy structure, blending and target-coordinate choices contribute to offsets.",
+          "Bootstrap intervals capture finite-source sampling, not image-wide systematic error.",
+          "Matching radius and segmentation are fixed; no offset was fitted then reapplied."
+        ]
+      }
+    },
+    {
+      "product_filename": "jw01180025001_13201_00002_nrcalong_i2d.fits",
+      "filter": "F277W",
+      "sha256": "808570fb67066245053f94f4ac25362a6292ca5e9743248b8eba55c03e204e9a",
+      "readiness": {
+        "shape": [
+          2068,
+          2075
+        ],
+        "valid_pixels": 4184253,
+        "valid_fraction": 0.975100323926266,
+        "bunit": "MJy/sr",
+        "cal_ver": "3.0.0",
+        "crds_context": "jwst_1584.pmap",
+        "detector": "NRCALONG",
+        "expstart_mjd": 59859.74005216435,
+        "expmid_mjd": 59859.745519965276,
+        "exposure_time_s": 944.836,
+        "readiness": "original_full_image_verified"
+      },
+      "external_astrometry": {
+        "covered_references": 15,
+        "detected_centroids": 1351,
+        "matched_sources": 11,
+        "median_offset_arcsec": [
+          -0.02642505257536734,
+          -0.007953047772513403
+        ],
+        "median_offset_bootstrap95_arcsec": [
+          [
+            -0.038245679048378174,
+            -0.022775594666125182
+          ],
+          [
+            -0.008036057364300393,
+            -0.003711479359097239
+          ]
+        ],
+        "radial_median_arcsec": 0.03681051499749389,
+        "radial_p90_arcsec": 0.3923348146434711,
+        "matching_radius_arcsec": 0.5,
+        "detection_threshold_sigma": 5,
+        "sample_status": "measured",
+        "shifted_catalog_controls": [
+          {
+            "offset_arcsec": [
+              10,
+              0
+            ],
+            "covered_references": 13,
+            "matched_sources": 0
+          },
+          {
+            "offset_arcsec": [
+              -10,
+              0
+            ],
+            "covered_references": 18,
+            "matched_sources": 0
+          },
+          {
+            "offset_arcsec": [
+              0,
+              10
+            ],
+            "covered_references": 22,
+            "matched_sources": 2
+          },
+          {
+            "offset_arcsec": [
+              0,
+              -10
+            ],
+            "covered_references": 10,
+            "matched_sources": 0
+          }
+        ],
+        "matches": [
+          {
+            "source_id": "GS_DR5_194504",
+            "detected_index": 833,
+            "x": 1790.7245851340194,
+            "y": 1236.712608484347,
+            "dra_cosdec_arcsec": -0.008036057364300393,
+            "ddec_arcsec": -0.004412131928991254,
+            "radial_arcsec": 0.00916761295655806
+          },
+          {
+            "source_id": "GS_DR5_86808",
+            "detected_index": 573,
+            "x": 1977.3825317985402,
+            "y": 844.906112783754,
+            "dra_cosdec_arcsec": -0.018141026018414778,
+            "ddec_arcsec": -0.015813532339215387,
+            "radial_arcsec": 0.02406583945957189
+          },
+          {
+            "source_id": "GS_DR5_193082",
+            "detected_index": 716,
+            "x": 1959.3579881342864,
+            "y": 1042.4066354646668,
+            "dra_cosdec_arcsec": -0.02642505257536734,
+            "ddec_arcsec": -0.007953047772513403,
+            "radial_arcsec": 0.027595912252905436
+          },
+          {
+            "source_id": "GS_DR5_91285",
+            "detected_index": 1006,
+            "x": 2043.9520107282258,
+            "y": 1517.0036802503325,
+            "dra_cosdec_arcsec": -0.021968500372133836,
+            "ddec_arcsec": -0.019974476195189113,
+            "radial_arcsec": 0.0296916605417043
+          },
+          {
+            "source_id": "GS_DR5_94511",
+            "detected_index": 202,
+            "x": 833.5326688976661,
+            "y": 302.8168906912517,
+            "dra_cosdec_arcsec": -0.03419615756208294,
+            "ddec_arcsec": -0.003711479359097239,
+            "radial_arcsec": 0.034396980538229406
+          },
+          {
+            "source_id": "GS_DR5_189400",
+            "detected_index": 31,
+            "x": 2026.6383976735074,
+            "y": 46.199675583391,
+            "dra_cosdec_arcsec": -0.028918615119677075,
+            "ddec_arcsec": -0.022775594666125182,
+            "radial_arcsec": 0.03681051499749389
+          },
+          {
+            "source_id": "GS_DR5_196333",
+            "detected_index": 110,
+            "x": 595.9502615356112,
+            "y": 168.48019965048152,
+            "dra_cosdec_arcsec": -0.038245679048378174,
+            "ddec_arcsec": -0.0056822930069707935,
+            "radial_arcsec": 0.0386654938280502
+          },
+          {
+            "source_id": "GS_DR5_296853",
+            "detected_index": 66,
+            "x": 1074.254728823209,
+            "y": 105.13470436112755,
+            "dra_cosdec_arcsec": 0.02839092150775055,
+            "ddec_arcsec": -0.04361486885714749,
+            "radial_arcsec": 0.05204134134850008
+          },
+          {
+            "source_id": "GS_DR5_189781",
+            "detected_index": 35,
+            "x": 1855.2772807094314,
+            "y": 56.40682591342712,
+            "dra_cosdec_arcsec": -0.059080227058549074,
+            "ddec_arcsec": 0.033580131552531686,
+            "radial_arcsec": 0.06795659255513474
+          },
+          {
+            "source_id": "GS_DR5_193699",
+            "detected_index": 668,
+            "x": 1759.8626722734268,
+            "y": 988.7273861649733,
+            "dra_cosdec_arcsec": -0.3688489622147364,
+            "ddec_arcsec": 0.13370508531832329,
+            "radial_arcsec": 0.3923348146434711
+          },
+          {
+            "source_id": "GS_DR5_196423",
+            "detected_index": 233,
+            "x": 718.4530386226014,
+            "y": 355.4513095360331,
+            "dra_cosdec_arcsec": 0.4063608217968547,
+            "ddec_arcsec": -0.14912393220126127,
+            "radial_arcsec": 0.43285917418516073
+          }
+        ],
+        "interpretation": "external_released_JADES_target_coordinates_vs_image_centroids",
+        "limitations": [
+          "Released NIRSpec target coordinates are not a Gaia absolute-frame certification.",
+          "Galaxy structure, blending and target-coordinate choices contribute to offsets.",
+          "Bootstrap intervals capture finite-source sampling, not image-wide systematic error.",
+          "Matching radius and segmentation are fixed; no offset was fitted then reapplied."
+        ]
+      }
+    },
+    {
+      "product_filename": "jw01180026001_07201_00001_nrcalong_i2d.fits",
+      "filter": "F277W",
+      "sha256": "a2a89cafcf057706e84a80ecbdf6e1f6a2fe2391e30759bed72d8b5dfa5adaa7",
+      "readiness": {
+        "shape": [
+          2068,
+          2075
+        ],
+        "valid_pixels": 4184276,
+        "valid_fraction": 0.975105683857286,
+        "bunit": "MJy/sr",
+        "cal_ver": "3.0.0",
+        "crds_context": "jwst_1584.pmap",
+        "detector": "NRCALONG",
+        "expstart_mjd": 59859.975407488426,
+        "expmid_mjd": 59859.98087528935,
+        "exposure_time_s": 944.836,
+        "readiness": "original_full_image_verified"
+      },
+      "external_astrometry": {
+        "covered_references": 43,
+        "detected_centroids": 1404,
+        "matched_sources": 26,
+        "median_offset_arcsec": [
+          -0.008757122198534632,
+          -0.01862237565930348
+        ],
+        "median_offset_bootstrap95_arcsec": [
+          [
+            -0.011701140076648534,
+            -0.027924125139186646
+          ],
+          [
+            0.005149453932482663,
+            -0.011667654600926145
+          ]
+        ],
+        "radial_median_arcsec": 0.029326466776676757,
+        "radial_p90_arcsec": 0.07888566753696372,
+        "matching_radius_arcsec": 0.5,
+        "detection_threshold_sigma": 5,
+        "sample_status": "measured",
+        "shifted_catalog_controls": [
+          {
+            "offset_arcsec": [
+              10,
+              0
+            ],
+            "covered_references": 41,
+            "matched_sources": 2
+          },
+          {
+            "offset_arcsec": [
+              -10,
+              0
+            ],
+            "covered_references": 46,
+            "matched_sources": 2
+          },
+          {
+            "offset_arcsec": [
+              0,
+              10
+            ],
+            "covered_references": 53,
+            "matched_sources": 5
+          },
+          {
+            "offset_arcsec": [
+              0,
+              -10
+            ],
+            "covered_references": 34,
+            "matched_sources": 1
+          }
+        ],
+        "matches": [
+          {
+            "source_id": "GS_DR5_187790",
+            "detected_index": 29,
+            "x": 1402.0304381836556,
+            "y": 48.63812558063909,
+            "dra_cosdec_arcsec": -0.008081530523003286,
+            "ddec_arcsec": -0.007239607124783855,
+            "radial_arcsec": 0.01085002512345699
+          },
+          {
+            "source_id": "GS_DR5_192380",
+            "detected_index": 708,
+            "x": 1179.4227447400638,
+            "y": 995.61742671438,
+            "dra_cosdec_arcsec": 0.011680098486131272,
+            "ddec_arcsec": -0.0037336933720423003,
+            "radial_arcsec": 0.012262347523374073
+          },
+          {
+            "source_id": "GS_DR5_189743",
+            "detected_index": 893,
+            "x": 1983.902068550785,
+            "y": 1269.4722481905944,
+            "dra_cosdec_arcsec": -0.012624170397777856,
+            "ddec_arcsec": 0.005180504990024072,
+            "radial_arcsec": 0.013645779875843346
+          },
+          {
+            "source_id": "GS_DR5_190921",
+            "detected_index": 361,
+            "x": 1169.6562700017446,
+            "y": 548.3344706284265,
+            "dra_cosdec_arcsec": -0.00943271387406598,
+            "ddec_arcsec": -0.012107201104803315,
+            "radial_arcsec": 0.01534797734454746
+          },
+          {
+            "source_id": "GS_DR5_190909",
+            "detected_index": 576,
+            "x": 1370.164084906202,
+            "y": 843.8593428512795,
+            "dra_cosdec_arcsec": -0.014654500327794924,
+            "ddec_arcsec": -0.00973062178144381,
+            "radial_arcsec": 0.017590889135418893
+          },
+          {
+            "source_id": "GS_DR5_188785",
+            "detected_index": 59,
+            "x": 1284.3161592184556,
+            "y": 118.20112774778832,
+            "dra_cosdec_arcsec": 0.01210762228148759,
+            "ddec_arcsec": -0.01360468742040848,
+            "radial_arcsec": 0.018212139808496598
+          },
+          {
+            "source_id": "GS_DR5_189288",
+            "detected_index": 237,
+            "x": 1384.8382897082975,
+            "y": 379.8074254215305,
+            "dra_cosdec_arcsec": 0.0002565642472900465,
+            "ddec_arcsec": -0.018413058112253917,
+            "radial_arcsec": 0.018414845497188238
+          },
+          {
+            "source_id": "GS_DR5_189302",
+            "detected_index": 203,
+            "x": 1359.2908890517233,
+            "y": 308.6976388463536,
+            "dra_cosdec_arcsec": 0.009390589186792885,
+            "ddec_arcsec": -0.017783803028238173,
+            "radial_arcsec": 0.02011086311275979
+          },
+          {
+            "source_id": "GS_DR5_193082",
+            "detected_index": 690,
+            "x": 1005.9025484746926,
+            "y": 960.5710577730324,
+            "dra_cosdec_arcsec": -0.01017022136178139,
+            "ddec_arcsec": -0.02103885364742289,
+            "radial_arcsec": 0.023368071457996572
+          },
+          {
+            "source_id": "GS_DR5_86808",
+            "detected_index": 519,
+            "x": 1023.9547702899844,
+            "y": 763.3235658526897,
+            "dra_cosdec_arcsec": -0.013963622173664666,
+            "ddec_arcsec": -0.018831693206353042,
+            "radial_arcsec": 0.023443877933343148
+          },
+          {
+            "source_id": "GS_DR5_187956",
+            "detected_index": 291,
+            "x": 1686.5378141862461,
+            "y": 459.5064936571177,
+            "dra_cosdec_arcsec": -0.00722810125194594,
+            "ddec_arcsec": -0.02554735382227989,
+            "radial_arcsec": 0.02655019275022104
+          },
+          {
+            "source_id": "GS_DR5_79170",
+            "detected_index": 629,
+            "x": 1819.1382483398713,
+            "y": 890.2762886239875,
+            "dra_cosdec_arcsec": -0.010778109755519209,
+            "ddec_arcsec": -0.024657630603096975,
+            "radial_arcsec": 0.026910339976576342
+          },
+          {
+            "source_id": "GS_DR5_193512",
+            "detected_index": 1238,
+            "x": 1551.6287029215134,
+            "y": 1778.4852950275897,
+            "dra_cosdec_arcsec": 0.0009083186781724425,
+            "ddec_arcsec": -0.02910494003682065,
+            "radial_arcsec": 0.029119110177237634
+          },
+          {
+            "source_id": "GS_DR5_84256",
+            "detected_index": 713,
+            "x": 1444.3334801141375,
+            "y": 1001.972529169192,
+            "dra_cosdec_arcsec": -0.007643342990627639,
+            "ddec_arcsec": -0.028527636290727448,
+            "radial_arcsec": 0.02953382337611588
+          },
+          {
+            "source_id": "GS_DR5_186837",
+            "detected_index": 292,
+            "x": 1895.1030721735037,
+            "y": 458.1757575597075,
+            "dra_cosdec_arcsec": -0.03174698088477492,
+            "ddec_arcsec": -0.00504748018608245,
+            "radial_arcsec": 0.03214572834458467
+          },
+          {
+            "source_id": "GS_DR5_76543",
+            "detected_index": 514,
+            "x": 1915.5722644711022,
+            "y": 757.7953915163591,
+            "dra_cosdec_arcsec": -0.010178707733049134,
+            "ddec_arcsec": -0.030826682750444846,
+            "radial_arcsec": 0.032463679116666616
+          },
+          {
+            "source_id": "GS_DR5_91285",
+            "detected_index": 1017,
+            "x": 1090.4893337935496,
+            "y": 1435.4173923512255,
+            "dra_cosdec_arcsec": -0.020363808594741285,
+            "ddec_arcsec": -0.027924125139186646,
+            "radial_arcsec": 0.034560692449641855
+          },
+          {
+            "source_id": "GS_DR5_191333",
+            "detected_index": 719,
+            "x": 1427.8602193636991,
+            "y": 1008.1529622186459,
+            "dra_cosdec_arcsec": -0.01819737667412828,
+            "ddec_arcsec": -0.029569428830268096,
+            "radial_arcsec": 0.03472024822914946
+          },
+          {
+            "source_id": "GS_DR5_194504",
+            "detected_index": 820,
+            "x": 837.6335497700869,
+            "y": 1155.3447313847164,
+            "dra_cosdec_arcsec": -0.03195907366488679,
+            "ddec_arcsec": -0.01805099384585778,
+            "radial_arcsec": 0.03670450613542559
+          },
+          {
+            "source_id": "GS_DR5_191208",
+            "detected_index": 930,
+            "x": 1692.4937834704663,
+            "y": 1323.6930552114025,
+            "dra_cosdec_arcsec": -0.011314288559364526,
+            "ddec_arcsec": -0.03853180542424407,
+            "radial_arcsec": 0.04015859998299472
+          },
+          {
+            "source_id": "GS_DR5_85849",
+            "detected_index": 568,
+            "x": 1156.1552819110377,
+            "y": 822.3395259457791,
+            "dra_cosdec_arcsec": 0.011948882192963356,
+            "ddec_arcsec": 0.04131978139414204,
+            "radial_arcsec": 0.043012790198967504
+          },
+          {
+            "source_id": "GS_DR5_186471",
+            "detected_index": 23,
+            "x": 1644.2012337886777,
+            "y": 43.17634940068068,
+            "dra_cosdec_arcsec": 0.03535259825601614,
+            "ddec_arcsec": 0.03172238121918562,
+            "radial_arcsec": 0.04749858603576202
+          },
+          {
+            "source_id": "GS_DR5_296853",
+            "detected_index": 1,
+            "x": 120.98072375355552,
+            "y": 23.2869242453626,
+            "dra_cosdec_arcsec": 0.03682266220700837,
+            "ddec_arcsec": -0.051530826631954324,
+            "radial_arcsec": 0.06333509726146451
+          },
+          {
+            "source_id": "GS_DR5_187674",
+            "detected_index": 537,
+            "x": 2016.5984871381086,
+            "y": 786.1837573226424,
+            "dra_cosdec_arcsec": 0.026832613598912543,
+            "ddec_arcsec": -0.09054398852701231,
+            "radial_arcsec": 0.09443623781246294
+          },
+          {
+            "source_id": "GS_DR5_188958",
+            "detected_index": 94,
+            "x": 1242.3914128392144,
+            "y": 162.47551138316217,
+            "dra_cosdec_arcsec": 0.10988925767093363,
+            "ddec_arcsec": -0.08283342267355846,
+            "radial_arcsec": 0.13761186310300852
+          },
+          {
+            "source_id": "GS_DR5_193699",
+            "detected_index": 635,
+            "x": 806.5260996988842,
+            "y": 907.0103444348158,
+            "dra_cosdec_arcsec": -0.36449284736870036,
+            "ddec_arcsec": 0.12118903808812823,
+            "radial_arcsec": 0.3841117268550476
+          }
+        ],
+        "interpretation": "external_released_JADES_target_coordinates_vs_image_centroids",
+        "limitations": [
+          "Released NIRSpec target coordinates are not a Gaia absolute-frame certification.",
+          "Galaxy structure, blending and target-coordinate choices contribute to offsets.",
+          "Bootstrap intervals capture finite-source sampling, not image-wide systematic error.",
+          "Matching radius and segmentation are fixed; no offset was fitted then reapplied."
+        ]
+      }
+    },
+    {
+      "product_filename": "jw01180025001_05201_00003_nrcalong_i2d.fits",
+      "filter": "F356W",
+      "sha256": "78649e799b781d69105083ea4092f4ca084b8c7201152802cb4b8ee159cd0635",
+      "readiness": {
+        "shape": [
+          2068,
+          2075
+        ],
+        "valid_pixels": 4184143,
+        "valid_fraction": 0.9750746894735616,
+        "bunit": "MJy/sr",
+        "cal_ver": "3.0.0",
+        "crds_context": "jwst_1584.pmap",
+        "detector": "NRCALONG",
+        "expstart_mjd": 59859.56110641204,
+        "expmid_mjd": 59859.566574212964,
+        "exposure_time_s": 944.836,
+        "readiness": "original_full_image_verified"
+      },
+      "external_astrometry": {
+        "covered_references": 12,
+        "detected_centroids": 854,
+        "matched_sources": 5,
+        "median_offset_arcsec": [
+          -0.02914820239578103,
+          -0.010535321056693319
+        ],
+        "median_offset_bootstrap95_arcsec": [
+          [
+            -0.36104400041172546,
+            -0.15698044664185648
+          ],
+          [
+            0.46491121678497344,
+            0.12124697636605543
+          ]
+        ],
+        "radial_median_arcsec": 0.045221611029917994,
+        "radial_p90_arcsec": 0.44676288391184865,
+        "matching_radius_arcsec": 0.5,
+        "detection_threshold_sigma": 5,
+        "sample_status": "measured",
+        "shifted_catalog_controls": [
+          {
+            "offset_arcsec": [
+              10,
+              0
+            ],
+            "covered_references": 11,
+            "matched_sources": 0
+          },
+          {
+            "offset_arcsec": [
+              -10,
+              0
+            ],
+            "covered_references": 15,
+            "matched_sources": 0
+          },
+          {
+            "offset_arcsec": [
+              0,
+              10
+            ],
+            "covered_references": 18,
+            "matched_sources": 1
+          },
+          {
+            "offset_arcsec": [
+              0,
+              -10
+            ],
+            "covered_references": 8,
+            "matched_sources": 0
+          }
+        ],
+        "matches": [
+          {
+            "source_id": "GS_DR5_86808",
+            "detected_index": 346,
+            "x": 2001.3253956048204,
+            "y": 768.0480956341897,
+            "dra_cosdec_arcsec": -0.029395453811030467,
+            "ddec_arcsec": 0.0009132956368546469,
+            "radial_arcsec": 0.029409638134027843
+          },
+          {
+            "source_id": "GS_DR5_94511",
+            "detected_index": 87,
+            "x": 857.6052717988005,
+            "y": 225.52152290047988,
+            "dra_cosdec_arcsec": -0.02914820239578103,
+            "ddec_arcsec": -0.010535321056693319,
+            "radial_arcsec": 0.030993720144894044
+          },
+          {
+            "source_id": "GS_DR5_296853",
+            "detected_index": 4,
+            "x": 1098.5775684023101,
+            "y": 28.292897452542853,
+            "dra_cosdec_arcsec": 0.0012540686913521404,
+            "ddec_arcsec": -0.04520421900130633,
+            "radial_arcsec": 0.045221611029917994
+          },
+          {
+            "source_id": "GS_DR5_193699",
+            "detected_index": 411,
+            "x": 1783.9838555849315,
+            "y": 911.3459126222056,
+            "dra_cosdec_arcsec": -0.36104400041172546,
+            "ddec_arcsec": 0.12124697636605543,
+            "radial_arcsec": 0.3808590284269047
+          },
+          {
+            "source_id": "GS_DR5_196423",
+            "detected_index": 110,
+            "x": 742.015009799384,
+            "y": 277.4754439942248,
+            "dra_cosdec_arcsec": 0.46491121678497344,
+            "ddec_arcsec": -0.15698044664185648,
+            "radial_arcsec": 0.4906987875684779
+          }
+        ],
+        "interpretation": "external_released_JADES_target_coordinates_vs_image_centroids",
+        "limitations": [
+          "Released NIRSpec target coordinates are not a Gaia absolute-frame certification.",
+          "Galaxy structure, blending and target-coordinate choices contribute to offsets.",
+          "Bootstrap intervals capture finite-source sampling, not image-wide systematic error.",
+          "Matching radius and segmentation are fixed; no offset was fitted then reapplied."
+        ]
+      }
+    },
+    {
+      "product_filename": "jw01180026001_05201_00003_nrcalong_i2d.fits",
+      "filter": "F356W",
+      "sha256": "c9dfda39ac28e93899b1e159d6c7f7c4129e8abc0c38b812eab01732bd4b00ab",
+      "readiness": {
+        "shape": [
+          2068,
+          2075
+        ],
+        "valid_pixels": 4184183,
+        "valid_fraction": 0.9750840110927268,
+        "bunit": "MJy/sr",
+        "cal_ver": "3.0.0",
+        "crds_context": "jwst_1584.pmap",
+        "detector": "NRCALONG",
+        "expstart_mjd": 59859.95888010417,
+        "expmid_mjd": 59859.964347905094,
+        "exposure_time_s": 944.836,
+        "readiness": "original_full_image_verified"
+      },
+      "external_astrometry": {
+        "covered_references": 43,
+        "detected_centroids": 1332,
+        "matched_sources": 28,
+        "median_offset_arcsec": [
+          -0.008980850831848686,
+          -0.013025419925429955
+        ],
+        "median_offset_bootstrap95_arcsec": [
+          [
+            -0.015828514579947897,
+            -0.01913405354805723
+          ],
+          [
+            0.003380734028643923,
+            -0.008820227631041764
+          ]
+        ],
+        "radial_median_arcsec": 0.026920957291353687,
+        "radial_p90_arcsec": 0.082714486360805,
+        "matching_radius_arcsec": 0.5,
+        "detection_threshold_sigma": 5,
+        "sample_status": "measured",
+        "shifted_catalog_controls": [
+          {
+            "offset_arcsec": [
+              10,
+              0
+            ],
+            "covered_references": 41,
+            "matched_sources": 2
+          },
+          {
+            "offset_arcsec": [
+              -10,
+              0
+            ],
+            "covered_references": 46,
+            "matched_sources": 2
+          },
+          {
+            "offset_arcsec": [
+              0,
+              10
+            ],
+            "covered_references": 54,
+            "matched_sources": 5
+          },
+          {
+            "offset_arcsec": [
+              0,
+              -10
+            ],
+            "covered_references": 34,
+            "matched_sources": 3
+          }
+        ],
+        "matches": [
+          {
+            "source_id": "GS_DR5_192380",
+            "detected_index": 694,
+            "x": 1185.8807555506949,
+            "y": 1001.6737177060845,
+            "dra_cosdec_arcsec": 0.0038181485030320253,
+            "ddec_arcsec": -0.008950689811187656,
+            "radial_arcsec": 0.009731038273827545
+          },
+          {
+            "source_id": "GS_DR5_189288",
+            "detected_index": 237,
+            "x": 1391.1081682231782,
+            "y": 386.02753942263206,
+            "dra_cosdec_arcsec": -0.008619910657443627,
+            "ddec_arcsec": -0.007803035077690458,
+            "radial_arcsec": 0.011627132802523976
+          },
+          {
+            "source_id": "GS_DR5_187790",
+            "detected_index": 28,
+            "x": 1408.3557056617142,
+            "y": 54.6632909409151,
+            "dra_cosdec_arcsec": -0.009532073465959603,
+            "ddec_arcsec": -0.006863610513666661,
+            "radial_arcsec": 0.011746045021189607
+          },
+          {
+            "source_id": "GS_DR5_187918",
+            "detected_index": 220,
+            "x": 1624.7222559458517,
+            "y": 355.6447798249079,
+            "dra_cosdec_arcsec": -0.009341791006253746,
+            "ddec_arcsec": -0.00826276746229507,
+            "radial_arcsec": 0.0124716632952599
+          },
+          {
+            "source_id": "GS_DR5_187956",
+            "detected_index": 290,
+            "x": 1692.6698576411263,
+            "y": 465.61870568278846,
+            "dra_cosdec_arcsec": -0.0053489023035944855,
+            "ddec_arcsec": -0.012189396727764003,
+            "radial_arcsec": 0.01331135409160555
+          },
+          {
+            "source_id": "GS_DR5_189302",
+            "detected_index": 189,
+            "x": 1365.6164452294925,
+            "y": 314.8248381113985,
+            "dra_cosdec_arcsec": 0.0029433195542558203,
+            "ddec_arcsec": -0.013527652723229443,
+            "radial_arcsec": 0.013844151061088947
+          },
+          {
+            "source_id": "GS_DR5_188785",
+            "detected_index": 56,
+            "x": 1290.5789008949182,
+            "y": 124.2165732016184,
+            "dra_cosdec_arcsec": 0.013562345698445005,
+            "ddec_arcsec": -0.010550522072515717,
+            "radial_arcsec": 0.01718286171193274
+          },
+          {
+            "source_id": "GS_DR5_86808",
+            "detected_index": 519,
+            "x": 1030.1799823060676,
+            "y": 769.4609577958227,
+            "dra_cosdec_arcsec": -0.016940357730786965,
+            "ddec_arcsec": -0.009377687799788459,
+            "radial_arcsec": 0.01936276698971607
+          },
+          {
+            "source_id": "GS_DR5_193082",
+            "detected_index": 680,
+            "x": 1012.1598635368124,
+            "y": 966.7262699181257,
+            "dra_cosdec_arcsec": -0.015212623371209443,
+            "ddec_arcsec": -0.012523187127630469,
+            "radial_arcsec": 0.01970416523427975
+          },
+          {
+            "source_id": "GS_DR5_79170",
+            "detected_index": 623,
+            "x": 1825.3797051834813,
+            "y": 896.3284218543614,
+            "dra_cosdec_arcsec": -0.009993972751018697,
+            "ddec_arcsec": -0.019073767494075272,
+            "radial_arcsec": 0.02153341814892005
+          },
+          {
+            "source_id": "GS_DR5_190909",
+            "detected_index": 574,
+            "x": 1376.5654947877563,
+            "y": 849.868725547,
+            "dra_cosdec_arcsec": -0.01801959761098619,
+            "ddec_arcsec": -0.013871159109525723,
+            "radial_arcsec": 0.022740161684879096
+          },
+          {
+            "source_id": "GS_DR5_189743",
+            "detected_index": 871,
+            "x": 1990.2817317304457,
+            "y": 1275.6631378117984,
+            "dra_cosdec_arcsec": -0.023924478419384564,
+            "ddec_arcsec": 0.009273278999732478,
+            "radial_arcsec": 0.02565880693685206
+          },
+          {
+            "source_id": "GS_DR5_190921",
+            "detected_index": 356,
+            "x": 1176.1330533716232,
+            "y": 554.3926539479617,
+            "dra_cosdec_arcsec": -0.018258081992645014,
+            "ddec_arcsec": -0.018119036024658176,
+            "radial_arcsec": 0.025722694801274863
+          },
+          {
+            "source_id": "GS_DR5_91285",
+            "detected_index": 982,
+            "x": 1096.5952693179927,
+            "y": 1441.188989180374,
+            "dra_cosdec_arcsec": -0.0003561848533119346,
+            "ddec_arcsec": -0.026784144663030376,
+            "radial_arcsec": 0.02678651291646937
+          },
+          {
+            "source_id": "GS_DR5_191333",
+            "detected_index": 706,
+            "x": 1434.0558040125513,
+            "y": 1014.2737937125161,
+            "dra_cosdec_arcsec": -0.019067566358979465,
+            "ddec_arcsec": -0.01919433960203919,
+            "radial_arcsec": 0.027055401666238005
+          },
+          {
+            "source_id": "GS_DR5_194504",
+            "detected_index": 793,
+            "x": 843.4439217218321,
+            "y": 1160.701312103382,
+            "dra_cosdec_arcsec": 0.019943337516546842,
+            "ddec_arcsec": -0.018340928742576777,
+            "radial_arcsec": 0.027094766627432747
+          },
+          {
+            "source_id": "GS_DR5_191208",
+            "detected_index": 910,
+            "x": 1698.7179040795381,
+            "y": 1329.8803428057083,
+            "dra_cosdec_arcsec": -0.01644440578868635,
+            "ddec_arcsec": -0.026963967527710776,
+            "radial_arcsec": 0.03158281215057041
+          },
+          {
+            "source_id": "GS_DR5_84256",
+            "detected_index": 701,
+            "x": 1450.7400264249807,
+            "y": 1008.2566041483083,
+            "dra_cosdec_arcsec": -0.02477227703998935,
+            "ddec_arcsec": -0.022295989873081977,
+            "radial_arcsec": 0.033328319337258154
+          },
+          {
+            "source_id": "GS_DR5_193512",
+            "detected_index": 1179,
+            "x": 1558.1399744410162,
+            "y": 1784.6426502209395,
+            "dra_cosdec_arcsec": -0.013723499618056053,
+            "ddec_arcsec": -0.03305096979910791,
+            "radial_arcsec": 0.035786883701961716
+          },
+          {
+            "source_id": "GS_DR5_85849",
+            "detected_index": 562,
+            "x": 1162.5900418438105,
+            "y": 827.8372046445727,
+            "dra_cosdec_arcsec": 0.03263952381453314,
+            "ddec_arcsec": 0.01566508404601251,
+            "radial_arcsec": 0.03620405188086252
+          },
+          {
+            "source_id": "GS_DR5_76543",
+            "detected_index": 515,
+            "x": 1921.936136024439,
+            "y": 763.7117471870818,
+            "dra_cosdec_arcsec": -0.007422946489597836,
+            "ddec_arcsec": -0.03651766348832812,
+            "radial_arcsec": 0.0372644586907135
+          },
+          {
+            "source_id": "GS_DR5_78933",
+            "detected_index": 797,
+            "x": 2054.151883980861,
+            "y": 1162.1532163445875,
+            "dra_cosdec_arcsec": 0.03829538338166847,
+            "ddec_arcsec": 0.005390733080898394,
+            "radial_arcsec": 0.038672941341819755
+          },
+          {
+            "source_id": "GS_DR5_186471",
+            "detected_index": 22,
+            "x": 1650.6221907019194,
+            "y": 49.09837142997368,
+            "dra_cosdec_arcsec": 0.035352003359979456,
+            "ddec_arcsec": 0.02343934375876116,
+            "radial_arcsec": 0.04241658847938935
+          },
+          {
+            "source_id": "GS_DR5_296853",
+            "detected_index": 2,
+            "x": 127.42967408121036,
+            "y": 29.521374476437245,
+            "dra_cosdec_arcsec": 0.02000563981192519,
+            "ddec_arcsec": -0.04960130333298314,
+            "radial_arcsec": 0.053483781802660765
+          },
+          {
+            "source_id": "GS_DR5_187534",
+            "detected_index": 226,
+            "x": 1710.300607122749,
+            "y": 362.9812918544229,
+            "dra_cosdec_arcsec": 0.03189240786730966,
+            "ddec_arcsec": 0.06106449551757584,
+            "radial_arcsec": 0.06889120621710766
+          },
+          {
+            "source_id": "GS_DR5_188958",
+            "detected_index": 88,
+            "x": 1248.7318622219454,
+            "y": 168.8393124718245,
+            "dra_cosdec_arcsec": 0.09106382679990374,
+            "ddec_arcsec": -0.0701798116431207,
+            "radial_arcsec": 0.11496880669609867
+          },
+          {
+            "source_id": "GS_DR5_193699",
+            "detected_index": 626,
+            "x": 812.5150925859484,
+            "y": 911.8579596513666,
+            "dra_cosdec_arcsec": -0.2943343940459112,
+            "ddec_arcsec": 0.09237871043203731,
+            "radial_arcsec": 0.3084907805643834
+          },
+          {
+            "source_id": "GS_DR5_186837",
+            "detected_index": 292,
+            "x": 1906.1007609300577,
+            "y": 467.60087588808307,
+            "dra_cosdec_arcsec": -0.38240940856480343,
+            "ddec_arcsec": -0.10483126082303183,
+            "radial_arcsec": 0.3965180311188296
+          }
+        ],
+        "interpretation": "external_released_JADES_target_coordinates_vs_image_centroids",
+        "limitations": [
+          "Released NIRSpec target coordinates are not a Gaia absolute-frame certification.",
+          "Galaxy structure, blending and target-coordinate choices contribute to offsets.",
+          "Bootstrap intervals capture finite-source sampling, not image-wide systematic error.",
+          "Matching radius and segmentation are fixed; no offset was fitted then reapplied."
+        ]
+      }
+    }
+  ],
+  "cross_band_registration": [
+    {
+      "filter": "F090W",
+      "reference_filter": "F444W",
+      "covered_references": 213,
+      "detected_centroids": 315,
+      "matched_sources": 137,
+      "median_offset_arcsec": [
+        -0.0033991741226261415,
+        -0.005130340218010543
+      ],
+      "median_offset_bootstrap95_arcsec": [
+        [
+          -0.009566803596414937,
+          -0.010441849946281404
+        ],
+        [
+          0.0006392562440671881,
+          -0.0009398466910577861
+        ]
+      ],
+      "radial_median_arcsec": 0.027786107735352037,
+      "radial_p90_arcsec": 0.11531810974843192,
+      "matching_radius_arcsec": 0.5,
+      "detection_threshold_sigma": 5,
+      "sample_status": "measured",
+      "shifted_catalog_controls": [
+        {
+          "offset_arcsec": [
+            10,
+            0
+          ],
+          "covered_references": 228,
+          "matched_sources": 13
+        },
+        {
+          "offset_arcsec": [
+            -10,
+            0
+          ],
+          "covered_references": 158,
+          "matched_sources": 7
+        },
+        {
+          "offset_arcsec": [
+            0,
+            10
+          ],
+          "covered_references": 204,
+          "matched_sources": 12
+        },
+        {
+          "offset_arcsec": [
+            0,
+            -10
+          ],
+          "covered_references": 183,
+          "matched_sources": 15
+        }
+      ],
+      "matches": [
+        {
+          "source_id": "F444W_centroid_411",
+          "detected_index": 298,
+          "x": 1958.86876675464,
+          "y": 1974.743472242939,
+          "dra_cosdec_arcsec": -0.0002905256249566515,
+          "ddec_arcsec": -0.0009398466910577861,
+          "radial_arcsec": 0.0009837260235181521
+        },
+        {
+          "source_id": "F444W_centroid_94",
+          "detected_index": 74,
+          "x": 1725.3148453018107,
+          "y": 565.1695909782776,
+          "dra_cosdec_arcsec": -0.00012130951066126253,
+          "ddec_arcsec": -0.0029907425443728487,
+          "radial_arcsec": 0.002993201786850445
+        },
+        {
+          "source_id": "F444W_centroid_272",
+          "detected_index": 208,
+          "x": 723.9832484355628,
+          "y": 1445.2041928280826,
+          "dra_cosdec_arcsec": -0.0036402989651593025,
+          "ddec_arcsec": -0.0004882697957118523,
+          "radial_arcsec": 0.00367289852116905
+        },
+        {
+          "source_id": "F444W_centroid_228",
+          "detected_index": 176,
+          "x": 1857.4341934666681,
+          "y": 1227.9564170723854,
+          "dra_cosdec_arcsec": 0.0040806584932380355,
+          "ddec_arcsec": 0.0014681780907097573,
+          "radial_arcsec": 0.0043367408038666065
+        },
+        {
+          "source_id": "F444W_centroid_25",
+          "detected_index": 33,
+          "x": 1167.3420740090407,
+          "y": 183.28550116058452,
+          "dra_cosdec_arcsec": -0.0037130368563692007,
+          "ddec_arcsec": -0.002821889154527775,
+          "radial_arcsec": 0.004663657522815276
+        },
+        {
+          "source_id": "F444W_centroid_201",
+          "detected_index": 158,
+          "x": 643.5799944093721,
+          "y": 1102.6489224499057,
+          "dra_cosdec_arcsec": 0.005432602685141632,
+          "ddec_arcsec": 0.001531244432927627,
+          "radial_arcsec": 0.005644278658729241
+        },
+        {
+          "source_id": "F444W_centroid_410",
+          "detected_index": 296,
+          "x": 889.2068540484568,
+          "y": 1954.2448827414994,
+          "dra_cosdec_arcsec": -0.0033991741226261415,
+          "ddec_arcsec": 0.004859862930694132,
+          "radial_arcsec": 0.0059306536333259665
+        },
+        {
+          "source_id": "F444W_centroid_322",
+          "detected_index": 254,
+          "x": 1673.0275014426566,
+          "y": 1633.795914576313,
+          "dra_cosdec_arcsec": 0.00018701743585316269,
+          "ddec_arcsec": -0.0060356437341616154,
+          "radial_arcsec": 0.006038540452963331
+        },
+        {
+          "source_id": "F444W_centroid_360",
+          "detected_index": 273,
+          "x": 1377.1024846668245,
+          "y": 1777.4425952120603,
+          "dra_cosdec_arcsec": 0.002003560375523978,
+          "ddec_arcsec": 0.0061995477369169,
+          "radial_arcsec": 0.006515262578118144
+        },
+        {
+          "source_id": "F444W_centroid_240",
+          "detected_index": 183,
+          "x": 1329.9690484686687,
+          "y": 1299.19413327268,
+          "dra_cosdec_arcsec": 0.00698127905127855,
+          "ddec_arcsec": -0.0002204526976143578,
+          "radial_arcsec": 0.006984758860794038
+        },
+        {
+          "source_id": "F444W_centroid_293",
+          "detected_index": 224,
+          "x": 609.4324465866653,
+          "y": 1513.1905384114762,
+          "dra_cosdec_arcsec": -0.00101689510533305,
+          "ddec_arcsec": -0.007494667724137137,
+          "radial_arcsec": 0.007563340543806632
+        },
+        {
+          "source_id": "F444W_centroid_416",
+          "detected_index": 299,
+          "x": 1676.421766463202,
+          "y": 1973.7398015696308,
+          "dra_cosdec_arcsec": -0.0019887076342558637,
+          "ddec_arcsec": 0.007352089684020973,
+          "radial_arcsec": 0.007616310166681986
+        },
+        {
+          "source_id": "F444W_centroid_381",
+          "detected_index": 283,
+          "x": 1332.6159832687924,
+          "y": 1839.2572991349105,
+          "dra_cosdec_arcsec": -0.004334238390448252,
+          "ddec_arcsec": -0.006272343416260916,
+          "radial_arcsec": 0.007624166465426161
+        },
+        {
+          "source_id": "F444W_centroid_62",
+          "detected_index": 56,
+          "x": 896.8458143904032,
+          "y": 389.16329334451143,
+          "dra_cosdec_arcsec": -0.004749662596279803,
+          "ddec_arcsec": -0.005983658870648291,
+          "radial_arcsec": 0.007639598712615306
+        },
+        {
+          "source_id": "F444W_centroid_296",
+          "detected_index": 231,
+          "x": 1669.551692369558,
+          "y": 1542.9074040201263,
+          "dra_cosdec_arcsec": -0.008745733848464424,
+          "ddec_arcsec": -0.0018014952507562777,
+          "radial_arcsec": 0.008929347384961634
+        },
+        {
+          "source_id": "F444W_centroid_355",
+          "detected_index": 269,
+          "x": 654.1790155371575,
+          "y": 1752.08586160442,
+          "dra_cosdec_arcsec": 0.009318159048598373,
+          "ddec_arcsec": 0.00021396439659749717,
+          "radial_arcsec": 0.00932061525944863
+        },
+        {
+          "source_id": "F444W_centroid_373",
+          "detected_index": 279,
+          "x": 1307.9381211673133,
+          "y": 1806.0876654999886,
+          "dra_cosdec_arcsec": -0.0031682826460806084,
+          "ddec_arcsec": -0.008887700103798723,
+          "radial_arcsec": 0.009435530054807855
+        },
+        {
+          "source_id": "F444W_centroid_125",
+          "detected_index": 101,
+          "x": 855.1945490598997,
+          "y": 705.4967219934287,
+          "dra_cosdec_arcsec": -0.009754041272957573,
+          "ddec_arcsec": -0.0013679419099570426,
+          "radial_arcsec": 0.009849496699243343
+        },
+        {
+          "source_id": "F444W_centroid_198",
+          "detected_index": 155,
+          "x": 1598.1918000207684,
+          "y": 1098.522088675509,
+          "dra_cosdec_arcsec": 0.0026578060509217156,
+          "ddec_arcsec": -0.009746728308817353,
+          "radial_arcsec": 0.010102605884179454
+        },
+        {
+          "source_id": "F444W_centroid_254",
+          "detected_index": 193,
+          "x": 789.4197001080536,
+          "y": 1352.7664153751807,
+          "dra_cosdec_arcsec": -0.010406310404098508,
+          "ddec_arcsec": -0.0013313866958032847,
+          "radial_arcsec": 0.010491133755924698
+        },
+        {
+          "source_id": "F444W_centroid_238",
+          "detected_index": 184,
+          "x": 1858.9192209691298,
+          "y": 1325.598774663908,
+          "dra_cosdec_arcsec": 0.010085197440747989,
+          "ddec_arcsec": -0.0030702492615225126,
+          "radial_arcsec": 0.01054218374505256
+        },
+        {
+          "source_id": "F444W_centroid_189",
+          "detected_index": 147,
+          "x": 469.26743070394804,
+          "y": 1041.9081811779788,
+          "dra_cosdec_arcsec": -0.009566803596414937,
+          "ddec_arcsec": -0.005130340218010543,
+          "radial_arcsec": 0.010855603244577629
+        },
+        {
+          "source_id": "F444W_centroid_326",
+          "detected_index": 255,
+          "x": 673.4164236417603,
+          "y": 1648.24388208281,
+          "dra_cosdec_arcsec": -0.0002511856341682162,
+          "ddec_arcsec": -0.011469135981008778,
+          "radial_arcsec": 0.011471886259372427
+        },
+        {
+          "source_id": "F444W_centroid_343",
+          "detected_index": 259,
+          "x": 187.1717799792381,
+          "y": 1709.7343069450653,
+          "dra_cosdec_arcsec": -0.01105224906097921,
+          "ddec_arcsec": 0.004688785848410181,
+          "radial_arcsec": 0.012005703778368272
+        },
+        {
+          "source_id": "F444W_centroid_424",
+          "detected_index": 308,
+          "x": 1168.365508926767,
+          "y": 2008.8223735396198,
+          "dra_cosdec_arcsec": 0.011704358430314058,
+          "ddec_arcsec": -0.003164590525895291,
+          "radial_arcsec": 0.012124629462614672
+        },
+        {
+          "source_id": "F444W_centroid_4",
+          "detected_index": 12,
+          "x": 518.4252606271397,
+          "y": 77.70524728524806,
+          "dra_cosdec_arcsec": 0.008165086474290137,
+          "ddec_arcsec": -0.009317774511904055,
+          "radial_arcsec": 0.012389090325703204
+        },
+        {
+          "source_id": "F444W_centroid_379",
+          "detected_index": 280,
+          "x": 307.63372805105115,
+          "y": 1824.345508384664,
+          "dra_cosdec_arcsec": 0.0006392562440671881,
+          "ddec_arcsec": 0.012548618120241427,
+          "radial_arcsec": 0.01256489016876472
+        },
+        {
+          "source_id": "F444W_centroid_80",
+          "detected_index": 66,
+          "x": 483.3525580889693,
+          "y": 469.8482967783648,
+          "dra_cosdec_arcsec": 0.0066849113516774476,
+          "ddec_arcsec": -0.01125760026614382,
+          "radial_arcsec": 0.013092807328364743
+        },
+        {
+          "source_id": "F444W_centroid_184",
+          "detected_index": 145,
+          "x": 441.6064243430594,
+          "y": 1017.4488249818319,
+          "dra_cosdec_arcsec": -0.013457504832757743,
+          "ddec_arcsec": 0.0010914452218949056,
+          "radial_arcsec": 0.013501691995071834
+        },
+        {
+          "source_id": "F444W_centroid_194",
+          "detected_index": 153,
+          "x": 647.0629737690375,
+          "y": 1075.2689041702652,
+          "dra_cosdec_arcsec": 0.008234625602779133,
+          "ddec_arcsec": -0.011250064107214939,
+          "radial_arcsec": 0.013941771811859658
+        },
+        {
+          "source_id": "F444W_centroid_344",
+          "detected_index": 264,
+          "x": 1551.2415134692621,
+          "y": 1726.4650731828128,
+          "dra_cosdec_arcsec": -0.005725933295977406,
+          "ddec_arcsec": -0.01274912435083755,
+          "radial_arcsec": 0.013975925178732841
+        },
+        {
+          "source_id": "F444W_centroid_226",
+          "detected_index": 175,
+          "x": 1409.6184931070416,
+          "y": 1208.5952691553825,
+          "dra_cosdec_arcsec": -0.014024235159406775,
+          "ddec_arcsec": 0.0005545731092901256,
+          "radial_arcsec": 0.014035195930676462
+        },
+        {
+          "source_id": "F444W_centroid_10",
+          "detected_index": 17,
+          "x": 1459.1956079268577,
+          "y": 97.13261998303959,
+          "dra_cosdec_arcsec": 0.007508637086698039,
+          "ddec_arcsec": -0.012400385487729279,
+          "radial_arcsec": 0.014496523398034224
+        },
+        {
+          "source_id": "F444W_centroid_203",
+          "detected_index": 162,
+          "x": 1101.1553680744096,
+          "y": 1107.1702431581837,
+          "dra_cosdec_arcsec": 0.011142299095531336,
+          "ddec_arcsec": -0.009715506033747975,
+          "radial_arcsec": 0.014783162288596252
+        },
+        {
+          "source_id": "F444W_centroid_14",
+          "detected_index": 23,
+          "x": 1981.5681599844916,
+          "y": 120.75787940995826,
+          "dra_cosdec_arcsec": -7.782590341159157e-05,
+          "ddec_arcsec": 0.01546801986767043,
+          "radial_arcsec": 0.015468215630224472
+        },
+        {
+          "source_id": "F444W_centroid_316",
+          "detected_index": 247,
+          "x": 1052.3186016835057,
+          "y": 1596.658461880125,
+          "dra_cosdec_arcsec": 0.014789844397299171,
+          "ddec_arcsec": 0.004682119774742176,
+          "radial_arcsec": 0.015513276329909354
+        },
+        {
+          "source_id": "F444W_centroid_182",
+          "detected_index": 142,
+          "x": 154.03905580607585,
+          "y": 1003.8046847479264,
+          "dra_cosdec_arcsec": -0.010091637926577987,
+          "ddec_arcsec": -0.012387739721904635,
+          "radial_arcsec": 0.01597802396451298
+        },
+        {
+          "source_id": "F444W_centroid_398",
+          "detected_index": 289,
+          "x": 1011.1708599375022,
+          "y": 1893.8844894739627,
+          "dra_cosdec_arcsec": -0.00599257844109698,
+          "ddec_arcsec": 0.01544202145901541,
+          "radial_arcsec": 0.016564027977913644
+        },
+        {
+          "source_id": "F444W_centroid_261",
+          "detected_index": 203,
+          "x": 1046.5694460520683,
+          "y": 1392.582178208606,
+          "dra_cosdec_arcsec": 0.01675665424462307,
+          "ddec_arcsec": -0.0005309685285772255,
+          "radial_arcsec": 0.016765064548748668
+        },
+        {
+          "source_id": "F444W_centroid_394",
+          "detected_index": 286,
+          "x": 931.944063438872,
+          "y": 1862.0949129549558,
+          "dra_cosdec_arcsec": 0.017023175397726725,
+          "ddec_arcsec": 0.0008605740690937872,
+          "radial_arcsec": 0.017044913857229452
+        },
+        {
+          "source_id": "F444W_centroid_321",
+          "detected_index": 253,
+          "x": 806.6054191147526,
+          "y": 1640.2530724350795,
+          "dra_cosdec_arcsec": -0.013668338846015543,
+          "ddec_arcsec": -0.010441849946281404,
+          "radial_arcsec": 0.01720045693232484
+        },
+        {
+          "source_id": "F444W_centroid_193",
+          "detected_index": 151,
+          "x": 361.91688036033935,
+          "y": 1061.5474890269736,
+          "dra_cosdec_arcsec": -0.016064374347528027,
+          "ddec_arcsec": 0.008589709149593724,
+          "radial_arcsec": 0.01821667437382791
+        },
+        {
+          "source_id": "F444W_centroid_85",
+          "detected_index": 67,
+          "x": 1403.965836102273,
+          "y": 494.6739972038109,
+          "dra_cosdec_arcsec": -0.013771044035389717,
+          "ddec_arcsec": 0.012591026332336643,
+          "radial_arcsec": 0.01865946401048669
+        },
+        {
+          "source_id": "F444W_centroid_208",
+          "detected_index": 164,
+          "x": 411.549698067094,
+          "y": 1118.456099440751,
+          "dra_cosdec_arcsec": 0.007927172497124572,
+          "ddec_arcsec": -0.017060322553817807,
+          "radial_arcsec": 0.01881208839247819
+        },
+        {
+          "source_id": "F444W_centroid_52",
+          "detected_index": 54,
+          "x": 1917.065748882698,
+          "y": 379.97641084818355,
+          "dra_cosdec_arcsec": 0.008743580871206146,
+          "ddec_arcsec": 0.01741930181321177,
+          "radial_arcsec": 0.019490569044201326
+        },
+        {
+          "source_id": "F444W_centroid_307",
+          "detected_index": 238,
+          "x": 1355.450837682556,
+          "y": 1565.2942694074384,
+          "dra_cosdec_arcsec": 0.008501879475531436,
+          "ddec_arcsec": -0.01766547152435848,
+          "radial_arcsec": 0.01960486772323266
+        },
+        {
+          "source_id": "F444W_centroid_301",
+          "detected_index": 232,
+          "x": 1076.0503794153806,
+          "y": 1546.5637595862142,
+          "dra_cosdec_arcsec": -0.014908402817216483,
+          "ddec_arcsec": -0.01277750438173804,
+          "radial_arcsec": 0.0196347928995867
+        },
+        {
+          "source_id": "F444W_centroid_403",
+          "detected_index": 290,
+          "x": 814.361308934961,
+          "y": 1903.3137357233118,
+          "dra_cosdec_arcsec": -0.012344288323496103,
+          "ddec_arcsec": -0.015798904842285372,
+          "radial_arcsec": 0.02004960968465371
+        },
+        {
+          "source_id": "F444W_centroid_177",
+          "detected_index": 137,
+          "x": 521.8649027801088,
+          "y": 989.6456541669887,
+          "dra_cosdec_arcsec": -0.011828125579749896,
+          "ddec_arcsec": 0.016287507512305746,
+          "radial_arcsec": 0.020129268659262272
+        },
+        {
+          "source_id": "F444W_centroid_190",
+          "detected_index": 150,
+          "x": 1525.1776034718262,
+          "y": 1053.3111262282434,
+          "dra_cosdec_arcsec": -0.011872271821217459,
+          "ddec_arcsec": 0.01628167160920959,
+          "radial_arcsec": 0.020150525278240794
+        },
+        {
+          "source_id": "F444W_centroid_426",
+          "detected_index": 313,
+          "x": 2002.9209583487564,
+          "y": 2026.4332921910195,
+          "dra_cosdec_arcsec": -0.012379953506494464,
+          "ddec_arcsec": 0.017334871105065333,
+          "radial_arcsec": 0.021301666706971048
+        },
+        {
+          "source_id": "F444W_centroid_207",
+          "detected_index": 168,
+          "x": 1665.6021120869061,
+          "y": 1128.1244051080423,
+          "dra_cosdec_arcsec": -0.02148701133325847,
+          "ddec_arcsec": -0.003486412793650881,
+          "radial_arcsec": 0.021768020862485818
+        },
+        {
+          "source_id": "F444W_centroid_393",
+          "detected_index": 285,
+          "x": 203.1588309496964,
+          "y": 1854.4676576616628,
+          "dra_cosdec_arcsec": -0.004210990807519617,
+          "ddec_arcsec": -0.02145235581098267,
+          "radial_arcsec": 0.02186174773118935
+        },
+        {
+          "source_id": "F444W_centroid_78",
+          "detected_index": 64,
+          "x": 1246.6239064434599,
+          "y": 460.1758362682524,
+          "dra_cosdec_arcsec": 0.01853019935461076,
+          "ddec_arcsec": -0.013666725598708913,
+          "radial_arcsec": 0.023024935992275074
+        },
+        {
+          "source_id": "F444W_centroid_281",
+          "detected_index": 214,
+          "x": 1245.516717936363,
+          "y": 1487.4134355261585,
+          "dra_cosdec_arcsec": -0.022309933782299816,
+          "ddec_arcsec": 0.006477172432869035,
+          "radial_arcsec": 0.023231162437048293
+        },
+        {
+          "source_id": "F444W_centroid_206",
+          "detected_index": 166,
+          "x": 1330.7921124573102,
+          "y": 1123.075389436137,
+          "dra_cosdec_arcsec": 0.017851737588518185,
+          "ddec_arcsec": -0.015199807172181654,
+          "radial_arcsec": 0.02344608013455131
+        },
+        {
+          "source_id": "F444W_centroid_258",
+          "detected_index": 202,
+          "x": 1597.4709515551917,
+          "y": 1389.1536032619426,
+          "dra_cosdec_arcsec": -0.012112586736773208,
+          "ddec_arcsec": -0.020267599870231762,
+          "radial_arcsec": 0.023611233794779616
+        },
+        {
+          "source_id": "F444W_centroid_378",
+          "detected_index": 282,
+          "x": 1935.2785935595825,
+          "y": 1830.189452157134,
+          "dra_cosdec_arcsec": 0.016427498070683066,
+          "ddec_arcsec": -0.017013285119444808,
+          "radial_arcsec": 0.02364983219410779
+        },
+        {
+          "source_id": "F444W_centroid_153",
+          "detected_index": 123,
+          "x": 1551.1296160441318,
+          "y": 866.832690944212,
+          "dra_cosdec_arcsec": -0.0010538771295695107,
+          "ddec_arcsec": -0.024320966345620313,
+          "radial_arcsec": 0.02434378897592909
+        },
+        {
+          "source_id": "F444W_centroid_278",
+          "detected_index": 211,
+          "x": 1064.0540978603456,
+          "y": 1466.3331348069228,
+          "dra_cosdec_arcsec": -0.0142322378174427,
+          "ddec_arcsec": -0.019797734513211932,
+          "radial_arcsec": 0.0243825119049162
+        },
+        {
+          "source_id": "F444W_centroid_404",
+          "detected_index": 291,
+          "x": 701.3759248485495,
+          "y": 1906.9110667278749,
+          "dra_cosdec_arcsec": -0.019243320513078047,
+          "ddec_arcsec": -0.015185925653996624,
+          "radial_arcsec": 0.02451362321810299
+        },
+        {
+          "source_id": "F444W_centroid_405",
+          "detected_index": 292,
+          "x": 461.04992187311285,
+          "y": 1910.9340381680615,
+          "dra_cosdec_arcsec": -0.023082212803659182,
+          "ddec_arcsec": 0.008879449648266145,
+          "radial_arcsec": 0.0247312185383962
+        },
+        {
+          "source_id": "F444W_centroid_57",
+          "detected_index": 53,
+          "x": 497.4263994397809,
+          "y": 371.6152063307852,
+          "dra_cosdec_arcsec": 0.01817151219608655,
+          "ddec_arcsec": 0.01837668415155035,
+          "radial_arcsec": 0.025843884681178403
+        },
+        {
+          "source_id": "F444W_centroid_171",
+          "detected_index": 131,
+          "x": 426.08935900717506,
+          "y": 952.8160741375129,
+          "dra_cosdec_arcsec": 0.018816857662980274,
+          "ddec_arcsec": 0.018466299601471888,
+          "radial_arcsec": 0.02636433866786606
+        },
+        {
+          "source_id": "F444W_centroid_202",
+          "detected_index": 157,
+          "x": 356.4243931703111,
+          "y": 1102.1014562462885,
+          "dra_cosdec_arcsec": 0.019059885781240384,
+          "ddec_arcsec": 0.019213964152395905,
+          "radial_arcsec": 0.027063918110761892
+        },
+        {
+          "source_id": "F444W_centroid_295",
+          "detected_index": 227,
+          "x": 257.3779096088926,
+          "y": 1532.5505966105407,
+          "dra_cosdec_arcsec": 0.0250284468234379,
+          "ddec_arcsec": -0.010860262463891698,
+          "radial_arcsec": 0.027283116611885563
+        },
+        {
+          "source_id": "F444W_centroid_151",
+          "detected_index": 122,
+          "x": 1071.8623134333034,
+          "y": 858.962883675212,
+          "dra_cosdec_arcsec": -0.023490950028128475,
+          "ddec_arcsec": -0.013941806654960101,
+          "radial_arcsec": 0.02731663795379875
+        },
+        {
+          "source_id": "F444W_centroid_199",
+          "detected_index": 159,
+          "x": 801.9693124995529,
+          "y": 1103.9340061115552,
+          "dra_cosdec_arcsec": -0.017102687542174876,
+          "ddec_arcsec": 0.0215346535335653,
+          "radial_arcsec": 0.027499876763571966
+        },
+        {
+          "source_id": "F444W_centroid_292",
+          "detected_index": 233,
+          "x": 1862.3176680655085,
+          "y": 1582.1634611506065,
+          "dra_cosdec_arcsec": 0.027226742791443898,
+          "ddec_arcsec": 0.005547274976126961,
+          "radial_arcsec": 0.027786107735352037
+        },
+        {
+          "source_id": "F444W_centroid_329",
+          "detected_index": 256,
+          "x": 1955.8315742036443,
+          "y": 1663.5687914383286,
+          "dra_cosdec_arcsec": -0.024948418661981445,
+          "ddec_arcsec": -0.01446889310790421,
+          "radial_arcsec": 0.02884046570885287
+        },
+        {
+          "source_id": "F444W_centroid_309",
+          "detected_index": 240,
+          "x": 927.8587394804704,
+          "y": 1575.9410689346548,
+          "dra_cosdec_arcsec": -0.029191210415961406,
+          "ddec_arcsec": -0.00784184062842577,
+          "radial_arcsec": 0.03022616797752702
+        },
+        {
+          "source_id": "F444W_centroid_138",
+          "detected_index": 111,
+          "x": 1553.7593709052658,
+          "y": 769.8403898616306,
+          "dra_cosdec_arcsec": 0.027418807763759934,
+          "ddec_arcsec": 0.01399134014284712,
+          "radial_arcsec": 0.03078227766711547
+        },
+        {
+          "source_id": "F444W_centroid_248",
+          "detected_index": 196,
+          "x": 1626.046361165608,
+          "y": 1364.374571165518,
+          "dra_cosdec_arcsec": -0.020424615039630226,
+          "ddec_arcsec": -0.024365989198846968,
+          "radial_arcsec": 0.031794124129112825
+        },
+        {
+          "source_id": "F444W_centroid_252",
+          "detected_index": 194,
+          "x": 1182.6315337008048,
+          "y": 1351.1094157288946,
+          "dra_cosdec_arcsec": -0.031652205138821554,
+          "ddec_arcsec": 0.004191114471732107,
+          "radial_arcsec": 0.03192847524070989
+        },
+        {
+          "source_id": "F444W_centroid_16",
+          "detected_index": 25,
+          "x": 506.02804296937387,
+          "y": 122.70305101663888,
+          "dra_cosdec_arcsec": 0.013827440136140885,
+          "ddec_arcsec": -0.029854441270289907,
+          "radial_arcsec": 0.03290115141857734
+        },
+        {
+          "source_id": "F444W_centroid_392",
+          "detected_index": 287,
+          "x": 1912.4460029908346,
+          "y": 1873.2240933666976,
+          "dra_cosdec_arcsec": 0.027954532975979968,
+          "ddec_arcsec": -0.0184008485569594,
+          "radial_arcsec": 0.0334671053720511
+        },
+        {
+          "source_id": "F444W_centroid_95",
+          "detected_index": 78,
+          "x": 1974.493189857702,
+          "y": 552.2559666234199,
+          "dra_cosdec_arcsec": -0.029327542688894058,
+          "ddec_arcsec": -0.01623720540902996,
+          "radial_arcsec": 0.03352240446842482
+        },
+        {
+          "source_id": "F444W_centroid_154",
+          "detected_index": 124,
+          "x": 804.7261442039977,
+          "y": 872.6618526983581,
+          "dra_cosdec_arcsec": 0.020061951079649115,
+          "ddec_arcsec": -0.027876362439112973,
+          "radial_arcsec": 0.034344919049834347
+        },
+        {
+          "source_id": "F444W_centroid_118",
+          "detected_index": 100,
+          "x": 1666.6798938283453,
+          "y": 688.9409247222238,
+          "dra_cosdec_arcsec": 0.027636329949179753,
+          "ddec_arcsec": -0.02117100924775339,
+          "radial_arcsec": 0.034813479655825215
+        },
+        {
+          "source_id": "F444W_centroid_345",
+          "detected_index": 262,
+          "x": 1462.0578766462245,
+          "y": 1721.613632215429,
+          "dra_cosdec_arcsec": 0.023379964865130113,
+          "ddec_arcsec": 0.028669393766819116,
+          "radial_arcsec": 0.03699401162558153
+        },
+        {
+          "source_id": "F444W_centroid_93",
+          "detected_index": 71,
+          "x": 113.18272556293468,
+          "y": 526.6327685283029,
+          "dra_cosdec_arcsec": -0.0007619208962060243,
+          "ddec_arcsec": -0.038312060645585164,
+          "radial_arcsec": 0.038319636137559995
+        },
+        {
+          "source_id": "F444W_centroid_33",
+          "detected_index": 43,
+          "x": 1771.493947778869,
+          "y": 275.4463283294092,
+          "dra_cosdec_arcsec": -0.033399536030613484,
+          "ddec_arcsec": -0.019528028990033416,
+          "radial_arcsec": 0.03868944204847591
+        },
+        {
+          "source_id": "F444W_centroid_186",
+          "detected_index": 146,
+          "x": 387.1150789164309,
+          "y": 1018.7434258890753,
+          "dra_cosdec_arcsec": 0.0209487732474794,
+          "ddec_arcsec": 0.0331025367262861,
+          "radial_arcsec": 0.03917434158177699
+        },
+        {
+          "source_id": "F444W_centroid_163",
+          "detected_index": 125,
+          "x": 393.33765665843214,
+          "y": 903.229391519264,
+          "dra_cosdec_arcsec": 0.03989321298129693,
+          "ddec_arcsec": -2.574473397473507e-05,
+          "radial_arcsec": 0.039893221276970245
+        },
+        {
+          "source_id": "F444W_centroid_2",
+          "detected_index": 16,
+          "x": 614.0631772254532,
+          "y": 123.57833117920813,
+          "dra_cosdec_arcsec": -0.03560009718584696,
+          "ddec_arcsec": -0.01813209980696794,
+          "radial_arcsec": 0.03995172042503983
+        },
+        {
+          "source_id": "F444W_centroid_273",
+          "detected_index": 210,
+          "x": 1949.8963873335936,
+          "y": 1459.5807121135674,
+          "dra_cosdec_arcsec": 0.012887007903694086,
+          "ddec_arcsec": -0.03783935943349467,
+          "radial_arcsec": 0.039973642513361246
+        },
+        {
+          "source_id": "F444W_centroid_13",
+          "detected_index": 19,
+          "x": 1143.5450816230593,
+          "y": 103.28091323547974,
+          "dra_cosdec_arcsec": -0.009234210133419527,
+          "ddec_arcsec": -0.040096704477972624,
+          "radial_arcsec": 0.04114627984751158
+        },
+        {
+          "source_id": "F444W_centroid_312",
+          "detected_index": 246,
+          "x": 872.3829202969787,
+          "y": 1598.5551416018377,
+          "dra_cosdec_arcsec": -0.033400723349487176,
+          "ddec_arcsec": -0.024268344862281948,
+          "radial_arcsec": 0.041286328011863604
+        },
+        {
+          "source_id": "F444W_centroid_175",
+          "detected_index": 136,
+          "x": 1514.5053188801885,
+          "y": 985.0878893595059,
+          "dra_cosdec_arcsec": -0.017225049536546893,
+          "ddec_arcsec": -0.03823694992572736,
+          "radial_arcsec": 0.04193765219639764
+        },
+        {
+          "source_id": "F444W_centroid_352",
+          "detected_index": 267,
+          "x": 1030.5575936775292,
+          "y": 1749.2042775025063,
+          "dra_cosdec_arcsec": -0.03251074367327475,
+          "ddec_arcsec": 0.02709164903032086,
+          "radial_arcsec": 0.04231909618099189
+        },
+        {
+          "source_id": "F444W_centroid_368",
+          "detected_index": 277,
+          "x": 1841.4520370252142,
+          "y": 1786.6174608052188,
+          "dra_cosdec_arcsec": -0.013480802187155074,
+          "ddec_arcsec": -0.040133792220030044,
+          "radial_arcsec": 0.042337374781566676
+        },
+        {
+          "source_id": "F444W_centroid_213",
+          "detected_index": 171,
+          "x": 1458.2669646057304,
+          "y": 1149.0623102454233,
+          "dra_cosdec_arcsec": 0.025657750489790656,
+          "ddec_arcsec": -0.03627145251139274,
+          "radial_arcsec": 0.044429026866684714
+        },
+        {
+          "source_id": "F444W_centroid_12",
+          "detected_index": 14,
+          "x": 645.9489843706904,
+          "y": 89.83595022667734,
+          "dra_cosdec_arcsec": 0.02884304550684591,
+          "ddec_arcsec": -0.03499369253995155,
+          "radial_arcsec": 0.045348426578855634
+        },
+        {
+          "source_id": "F444W_centroid_232",
+          "detected_index": 177,
+          "x": 531.7923440465129,
+          "y": 1254.4219331223635,
+          "dra_cosdec_arcsec": 0.023132731872925912,
+          "ddec_arcsec": 0.0439640184545429,
+          "radial_arcsec": 0.04967854870561896
+        },
+        {
+          "source_id": "F444W_centroid_253",
+          "detected_index": 191,
+          "x": 188.41703990147957,
+          "y": 1344.1226182761086,
+          "dra_cosdec_arcsec": 0.016723509183032552,
+          "ddec_arcsec": -0.04688369242564715,
+          "radial_arcsec": 0.049777066744744136
+        },
+        {
+          "source_id": "F444W_centroid_69",
+          "detected_index": 58,
+          "x": 124.15934456027136,
+          "y": 404.46946728449865,
+          "dra_cosdec_arcsec": -0.0350947892223176,
+          "ddec_arcsec": -0.036027817417349464,
+          "radial_arcsec": 0.05029560471192332
+        },
+        {
+          "source_id": "F444W_centroid_386",
+          "detected_index": 284,
+          "x": 1842.3933539257634,
+          "y": 1847.2140983390038,
+          "dra_cosdec_arcsec": -0.04456357644886977,
+          "ddec_arcsec": 0.025839764998368348,
+          "radial_arcsec": 0.05151316146718399
+        },
+        {
+          "source_id": "F444W_centroid_97",
+          "detected_index": 82,
+          "x": 1018.5672723304849,
+          "y": 588.0647154149027,
+          "dra_cosdec_arcsec": 0.04359943059739077,
+          "ddec_arcsec": -0.030710278521485487,
+          "radial_arcsec": 0.053329462365145214
+        },
+        {
+          "source_id": "F444W_centroid_255",
+          "detected_index": 199,
+          "x": 1345.119165072305,
+          "y": 1364.6899777766318,
+          "dra_cosdec_arcsec": -0.053633033585167335,
+          "ddec_arcsec": 0.0020243163115197527,
+          "radial_arcsec": 0.05367122276041491
+        },
+        {
+          "source_id": "F444W_centroid_42",
+          "detected_index": 47,
+          "x": 148.2905614664259,
+          "y": 336.15505386368386,
+          "dra_cosdec_arcsec": -0.01686719335009428,
+          "ddec_arcsec": 0.053317350817175056,
+          "radial_arcsec": 0.05592174986701657
+        },
+        {
+          "source_id": "F444W_centroid_64",
+          "detected_index": 57,
+          "x": 255.20204084596034,
+          "y": 438.90153325496465,
+          "dra_cosdec_arcsec": -0.058168146323610545,
+          "ddec_arcsec": 0.0020401244748752935,
+          "radial_arcsec": 0.0582039118961626
+        },
+        {
+          "source_id": "F444W_centroid_129",
+          "detected_index": 105,
+          "x": 131.8152117076927,
+          "y": 711.8239615272126,
+          "dra_cosdec_arcsec": -0.05875954085948127,
+          "ddec_arcsec": -0.0037640395162524577,
+          "radial_arcsec": 0.05887997647424116
+        },
+        {
+          "source_id": "F444W_centroid_178",
+          "detected_index": 143,
+          "x": 1305.4110569717357,
+          "y": 1007.7457169539958,
+          "dra_cosdec_arcsec": 0.05885377199778513,
+          "ddec_arcsec": -0.005343232345302726,
+          "radial_arcsec": 0.059095825653765366
+        },
+        {
+          "source_id": "F444W_centroid_422",
+          "detected_index": 301,
+          "x": 317.6766814247913,
+          "y": 1991.6911723225394,
+          "dra_cosdec_arcsec": -0.0034148232455253904,
+          "ddec_arcsec": -0.059297969095359206,
+          "radial_arcsec": 0.05939621330012443
+        },
+        {
+          "source_id": "F444W_centroid_111",
+          "detected_index": 94,
+          "x": 1305.9308674734648,
+          "y": 636.6935997315298,
+          "dra_cosdec_arcsec": 0.005679681949688628,
+          "ddec_arcsec": -0.061416220207813545,
+          "radial_arcsec": 0.06167828542721409
+        },
+        {
+          "source_id": "F444W_centroid_165",
+          "detected_index": 128,
+          "x": 1649.9972755643014,
+          "y": 921.4447048010728,
+          "dra_cosdec_arcsec": 0.03191355897704649,
+          "ddec_arcsec": -0.0532054447652795,
+          "radial_arcsec": 0.062042683687347056
+        },
+        {
+          "source_id": "F444W_centroid_28",
+          "detected_index": 35,
+          "x": 637.3393679888625,
+          "y": 196.46484481680153,
+          "dra_cosdec_arcsec": -0.04204016495356323,
+          "ddec_arcsec": -0.04707715667917857,
+          "radial_arcsec": 0.06311603722658925
+        },
+        {
+          "source_id": "F444W_centroid_9",
+          "detected_index": 13,
+          "x": 1076.6847964531678,
+          "y": 90.47467339894827,
+          "dra_cosdec_arcsec": 0.04427848985866988,
+          "ddec_arcsec": -0.048212478403515203,
+          "radial_arcsec": 0.06546012325975081
+        },
+        {
+          "source_id": "F444W_centroid_168",
+          "detected_index": 127,
+          "x": 165.0513379664145,
+          "y": 918.3661658721873,
+          "dra_cosdec_arcsec": 0.030956223961545397,
+          "ddec_arcsec": 0.06551568244693405,
+          "radial_arcsec": 0.07246097190681851
+        },
+        {
+          "source_id": "F444W_centroid_99",
+          "detected_index": 81,
+          "x": 2013.9612833244537,
+          "y": 563.6664505633191,
+          "dra_cosdec_arcsec": 0.0604463486251084,
+          "ddec_arcsec": -0.04006886821887269,
+          "radial_arcsec": 0.07252086087365658
+        },
+        {
+          "source_id": "F444W_centroid_107",
+          "detected_index": 88,
+          "x": 657.1476503076957,
+          "y": 613.5674951180578,
+          "dra_cosdec_arcsec": -0.04715228278783173,
+          "ddec_arcsec": 0.05762399013520835,
+          "radial_arcsec": 0.07445711528771938
+        },
+        {
+          "source_id": "F444W_centroid_234",
+          "detected_index": 178,
+          "x": 570.0253299363849,
+          "y": 1261.087816443958,
+          "dra_cosdec_arcsec": 0.06816007415099334,
+          "ddec_arcsec": 0.03289156795801532,
+          "radial_arcsec": 0.07568124570217469
+        },
+        {
+          "source_id": "F444W_centroid_282",
+          "detected_index": 216,
+          "x": 1753.1506895960624,
+          "y": 1492.3825906952143,
+          "dra_cosdec_arcsec": -0.03613687102312875,
+          "ddec_arcsec": -0.0696735722681473,
+          "radial_arcsec": 0.0784874519669708
+        },
+        {
+          "source_id": "F444W_centroid_211",
+          "detected_index": 170,
+          "x": 415.710582791853,
+          "y": 1138.6058127975366,
+          "dra_cosdec_arcsec": -0.051300501048602724,
+          "ddec_arcsec": 0.06090787186936971,
+          "radial_arcsec": 0.07963360011917933
+        },
+        {
+          "source_id": "F444W_centroid_286",
+          "detected_index": 220,
+          "x": 1969.6309255631325,
+          "y": 1496.533647039397,
+          "dra_cosdec_arcsec": 0.06378241699462923,
+          "ddec_arcsec": 0.06024248128228484,
+          "radial_arcsec": 0.08773456142700989
+        },
+        {
+          "source_id": "F444W_centroid_114",
+          "detected_index": 96,
+          "x": 969.605695208667,
+          "y": 643.071019235657,
+          "dra_cosdec_arcsec": 0.004200971373273578,
+          "ddec_arcsec": 0.08795203842684159,
+          "radial_arcsec": 0.08805230960142219
+        },
+        {
+          "source_id": "F444W_centroid_358",
+          "detected_index": 274,
+          "x": 1556.3579701905746,
+          "y": 1771.7324932169342,
+          "dra_cosdec_arcsec": -0.08526799759352716,
+          "ddec_arcsec": 0.024189382901632573,
+          "radial_arcsec": 0.08863271217752665
+        },
+        {
+          "source_id": "F444W_centroid_215",
+          "detected_index": 172,
+          "x": 523.4124209585469,
+          "y": 1150.2452393646759,
+          "dra_cosdec_arcsec": -0.08538806006213114,
+          "ddec_arcsec": -0.02556251146551421,
+          "radial_arcsec": 0.08913227686425232
+        },
+        {
+          "source_id": "F444W_centroid_11",
+          "detected_index": 20,
+          "x": 1914.2030219123926,
+          "y": 113.6240535753955,
+          "dra_cosdec_arcsec": 0.06711787088861755,
+          "ddec_arcsec": -0.06059466232359713,
+          "radial_arcsec": 0.09042412120662326
+        },
+        {
+          "source_id": "F444W_centroid_89",
+          "detected_index": 69,
+          "x": 873.0452480629938,
+          "y": 523.1896876074313,
+          "dra_cosdec_arcsec": -0.03589019558852102,
+          "ddec_arcsec": 0.0851698825933939,
+          "radial_arcsec": 0.09242302224183001
+        },
+        {
+          "source_id": "F444W_centroid_104",
+          "detected_index": 86,
+          "x": 1137.4744033093855,
+          "y": 587.4734599963064,
+          "dra_cosdec_arcsec": -0.0963176186512286,
+          "ddec_arcsec": -0.016077981168838563,
+          "radial_arcsec": 0.09765032072113841
+        },
+        {
+          "source_id": "F444W_centroid_357",
+          "detected_index": 271,
+          "x": 1149.753580002975,
+          "y": 1772.7853444451644,
+          "dra_cosdec_arcsec": -0.08279554536261581,
+          "ddec_arcsec": 0.051996473214733586,
+          "radial_arcsec": 0.09776878621160694
+        },
+        {
+          "source_id": "F444W_centroid_209",
+          "detected_index": 167,
+          "x": 1323.6956494499505,
+          "y": 1123.9553763771166,
+          "dra_cosdec_arcsec": 0.04042342317658789,
+          "ddec_arcsec": -0.10582676806704293,
+          "radial_arcsec": 0.11328441189615171
+        },
+        {
+          "source_id": "F444W_centroid_287",
+          "detected_index": 217,
+          "x": 1173.868832917153,
+          "y": 1491.6398239120003,
+          "dra_cosdec_arcsec": -0.11559048015618807,
+          "ddec_arcsec": -0.0254947007484002,
+          "radial_arcsec": 0.11836865652685216
+        },
+        {
+          "source_id": "F444W_centroid_149",
+          "detected_index": 120,
+          "x": 832.9756521371762,
+          "y": 853.6504602992741,
+          "dra_cosdec_arcsec": 0.08947237243257479,
+          "ddec_arcsec": 0.08144817625740698,
+          "radial_arcsec": 0.12099219334019001
+        },
+        {
+          "source_id": "F444W_centroid_348",
+          "detected_index": 265,
+          "x": 844.258146430102,
+          "y": 1727.3898678830199,
+          "dra_cosdec_arcsec": -0.12407184676770691,
+          "ddec_arcsec": -0.009897642793942464,
+          "radial_arcsec": 0.12446600530416801
+        },
+        {
+          "source_id": "F444W_centroid_48",
+          "detected_index": 52,
+          "x": 1187.0470133210576,
+          "y": 358.48014290104095,
+          "dra_cosdec_arcsec": 0.06837008748573861,
+          "ddec_arcsec": 0.12609632635618967,
+          "radial_arcsec": 0.14343901973818474
+        },
+        {
+          "source_id": "F444W_centroid_428",
+          "detected_index": 311,
+          "x": 512.8372395570057,
+          "y": 2024.346820105128,
+          "dra_cosdec_arcsec": -0.1405754561849227,
+          "ddec_arcsec": -0.09867165116748826,
+          "radial_arcsec": 0.17174851856576315
+        },
+        {
+          "source_id": "F444W_centroid_113",
+          "detected_index": 93,
+          "x": 133.16003623562457,
+          "y": 624.7493309507497,
+          "dra_cosdec_arcsec": -0.05820208393108367,
+          "ddec_arcsec": -0.16805972616841053,
+          "radial_arcsec": 0.17785261916497355
+        },
+        {
+          "source_id": "F444W_centroid_420",
+          "detected_index": 302,
+          "x": 842.9786510572379,
+          "y": 2006.2234021732947,
+          "dra_cosdec_arcsec": 0.14230105643686816,
+          "ddec_arcsec": 0.10977696759758472,
+          "radial_arcsec": 0.179723602457701
+        },
+        {
+          "source_id": "F444W_centroid_169",
+          "detected_index": 129,
+          "x": 1470.6120006740173,
+          "y": 931.2263843381457,
+          "dra_cosdec_arcsec": -0.03097367227969851,
+          "ddec_arcsec": -0.18650091762138954,
+          "radial_arcsec": 0.18905544331214524
+        },
+        {
+          "source_id": "F444W_centroid_170",
+          "detected_index": 130,
+          "x": 1415.7676955607221,
+          "y": 944.8110863360981,
+          "dra_cosdec_arcsec": 0.22035120302174288,
+          "ddec_arcsec": 0.003494011778712499,
+          "radial_arcsec": 0.22037890277436492
+        },
+        {
+          "source_id": "F444W_centroid_288",
+          "detected_index": 223,
+          "x": 1348.1962993121747,
+          "y": 1508.086994288875,
+          "dra_cosdec_arcsec": 0.22407130407962278,
+          "ddec_arcsec": -0.0012416831381559547,
+          "radial_arcsec": 0.22407474443175407
+        },
+        {
+          "source_id": "F444W_centroid_268",
+          "detected_index": 205,
+          "x": 580.9802710036785,
+          "y": 1423.9341668385032,
+          "dra_cosdec_arcsec": -0.032502294491596785,
+          "ddec_arcsec": 0.22378778657409004,
+          "radial_arcsec": 0.22613573925487773
+        },
+        {
+          "source_id": "F444W_centroid_223",
+          "detected_index": 174,
+          "x": 946.2579249133875,
+          "y": 1204.9054556131227,
+          "dra_cosdec_arcsec": -0.38052597476641575,
+          "ddec_arcsec": -0.07757575334949057,
+          "radial_arcsec": 0.38835295146855603
+        },
+        {
+          "source_id": "F444W_centroid_18",
+          "detected_index": 30,
+          "x": 2007.6398506472026,
+          "y": 169.3235782173486,
+          "dra_cosdec_arcsec": -0.44501665784604294,
+          "ddec_arcsec": 0.04613147698187381,
+          "radial_arcsec": 0.44740131749350537
+        },
+        {
+          "source_id": "F444W_centroid_3",
+          "detected_index": 18,
+          "x": 317.228780240625,
+          "y": 99.30708577756558,
+          "dra_cosdec_arcsec": -0.46641379568080077,
+          "ddec_arcsec": 0.16312974718968437,
+          "radial_arcsec": 0.4941185516987443
+        }
+      ],
+      "interpretation": "secondary_image_centroid_cross_band_registration",
+      "limitations": [
+        "Reference is F444W image centroids; this is not a second external catalog.",
+        "Color gradients and blended-source changes contribute to centroid differences.",
+        "Bootstrap intervals omit shared-image and image-wide systematic errors.",
+        "No measured offset was fitted then applied to the images."
+      ]
+    },
+    {
+      "filter": "F200W",
+      "reference_filter": "F444W",
+      "covered_references": 199,
+      "detected_centroids": 439,
+      "matched_sources": 171,
+      "median_offset_arcsec": [
+        -0.001346166237241515,
+        -0.0035208108512974766
+      ],
+      "median_offset_bootstrap95_arcsec": [
+        [
+          -0.004608160420767966,
+          -0.006058499404930333
+        ],
+        [
+          0.0004991044697342277,
+          -0.0018372867386699258
+        ]
+      ],
+      "radial_median_arcsec": 0.016577238006927317,
+      "radial_p90_arcsec": 0.0552720012063439,
+      "matching_radius_arcsec": 0.5,
+      "detection_threshold_sigma": 5,
+      "sample_status": "measured",
+      "shifted_catalog_controls": [
+        {
+          "offset_arcsec": [
+            10,
+            0
+          ],
+          "covered_references": 234,
+          "matched_sources": 17
+        },
+        {
+          "offset_arcsec": [
+            -10,
+            0
+          ],
+          "covered_references": 143,
+          "matched_sources": 10
+        },
+        {
+          "offset_arcsec": [
+            0,
+            10
+          ],
+          "covered_references": 170,
+          "matched_sources": 11
+        },
+        {
+          "offset_arcsec": [
+            0,
+            -10
+          ],
+          "covered_references": 186,
+          "matched_sources": 18
+        }
+      ],
+      "matches": [
+        {
+          "source_id": "F444W_centroid_189",
+          "detected_index": 258,
+          "x": 435.59192422339146,
+          "y": 1238.507109934853,
+          "dra_cosdec_arcsec": 0.0010564301582678777,
+          "ddec_arcsec": -8.593552398287503e-05,
+          "radial_arcsec": 0.0010599195907108965
+        },
+        {
+          "source_id": "F444W_centroid_381",
+          "detected_index": 431,
+          "x": 1299.0625118402484,
+          "y": 2036.0135370830221,
+          "dra_cosdec_arcsec": -0.0007353981234951129,
+          "ddec_arcsec": -0.001358095050063194,
+          "radial_arcsec": 0.0015444197808106163
+        },
+        {
+          "source_id": "F444W_centroid_293",
+          "detected_index": 361,
+          "x": 575.8158644541345,
+          "y": 1710.06587476222,
+          "dra_cosdec_arcsec": 0.0013249817049635283,
+          "ddec_arcsec": 0.0014772982651033164,
+          "radial_arcsec": 0.00198443611040307
+        },
+        {
+          "source_id": "F444W_centroid_165",
+          "detected_index": 233,
+          "x": 1615.957829048127,
+          "y": 1120.090365223943,
+          "dra_cosdec_arcsec": -0.0017626947723695715,
+          "ddec_arcsec": -0.0009418133654172972,
+          "radial_arcsec": 0.0019985257917604702
+        },
+        {
+          "source_id": "F444W_centroid_355",
+          "detected_index": 410,
+          "x": 621.0847159994095,
+          "y": 1949.0518415342124,
+          "dra_cosdec_arcsec": -0.0006509687778983042,
+          "ddec_arcsec": -0.0019561086344648437,
+          "radial_arcsec": 0.0020615822344586146
+        },
+        {
+          "source_id": "F444W_centroid_28",
+          "detected_index": 87,
+          "x": 602.0556256305717,
+          "y": 393.0893635440623,
+          "dra_cosdec_arcsec": -0.0011465442441023846,
+          "ddec_arcsec": -0.002143449360979159,
+          "radial_arcsec": 0.002430830888894749
+        },
+        {
+          "source_id": "F444W_centroid_107",
+          "detected_index": 166,
+          "x": 624.2753246542445,
+          "y": 808.0675180128723,
+          "dra_cosdec_arcsec": 0.000395225896132528,
+          "ddec_arcsec": 0.0026068773694681246,
+          "radial_arcsec": 0.0026366670510382696
+        },
+        {
+          "source_id": "F444W_centroid_360",
+          "detected_index": 416,
+          "x": 1343.8893735007134,
+          "y": 1974.0523290744507,
+          "dra_cosdec_arcsec": 0.0027823522352434602,
+          "ddec_arcsec": -0.00015748514596933795,
+          "radial_arcsec": 0.002786805618654713
+        },
+        {
+          "source_id": "F444W_centroid_326",
+          "detected_index": 388,
+          "x": 639.879432447292,
+          "y": 1845.2491872092528,
+          "dra_cosdec_arcsec": -0.0027423839831276857,
+          "ddec_arcsec": -0.0019745735749402394,
+          "radial_arcsec": 0.003379291504711762
+        },
+        {
+          "source_id": "F444W_centroid_184",
+          "detected_index": 253,
+          "x": 408.0384255416045,
+          "y": 1213.968036683669,
+          "dra_cosdec_arcsec": -0.002874176194908053,
+          "ddec_arcsec": 0.0019601508955539347,
+          "radial_arcsec": 0.003478948175886817
+        },
+        {
+          "source_id": "F444W_centroid_202",
+          "detected_index": 270,
+          "x": 323.8622704217113,
+          "y": 1298.9076782318207,
+          "dra_cosdec_arcsec": 0.0034203835128472975,
+          "ddec_arcsec": 0.0006779692215779404,
+          "radial_arcsec": 0.00348692781452712
+        },
+        {
+          "source_id": "F444W_centroid_288",
+          "detected_index": 358,
+          "x": 1319.236973978943,
+          "y": 1710.6635392678097,
+          "dra_cosdec_arcsec": -0.0037037698701159884,
+          "ddec_arcsec": 0.00016016144533382727,
+          "radial_arcsec": 0.0037072310959167256
+        },
+        {
+          "source_id": "F444W_centroid_240",
+          "detected_index": 309,
+          "x": 1296.7393194656195,
+          "y": 1496.2588817961084,
+          "dra_cosdec_arcsec": -0.0029328432307849568,
+          "ddec_arcsec": 0.002284400356542474,
+          "radial_arcsec": 0.003717533307298858
+        },
+        {
+          "source_id": "F444W_centroid_254",
+          "detected_index": 320,
+          "x": 755.7214181992612,
+          "y": 1549.2526299206793,
+          "dra_cosdec_arcsec": 0.0031365948026891815,
+          "ddec_arcsec": 0.0021096477222186526,
+          "radial_arcsec": 0.0037800582684525985
+        },
+        {
+          "source_id": "F444W_centroid_10",
+          "detected_index": 71,
+          "x": 1425.704622970266,
+          "y": 294.2397630695237,
+          "dra_cosdec_arcsec": 0.0020752598321692626,
+          "ddec_arcsec": -0.0032249930263452482,
+          "radial_arcsec": 0.003835007588277596
+        },
+        {
+          "source_id": "F444W_centroid_238",
+          "detected_index": 308,
+          "x": 1825.788345813838,
+          "y": 1522.655272532214,
+          "dra_cosdec_arcsec": -0.001754622066588143,
+          "ddec_arcsec": -0.0034373543890332974,
+          "radial_arcsec": 0.0038592879599383466
+        },
+        {
+          "source_id": "F444W_centroid_118",
+          "detected_index": 184,
+          "x": 1633.403638232292,
+          "y": 886.7472933511226,
+          "dra_cosdec_arcsec": 0.00038714241590406053,
+          "ddec_arcsec": -0.003881044606696678,
+          "radial_arcsec": 0.0039003059598855267
+        },
+        {
+          "source_id": "F444W_centroid_232",
+          "detected_index": 300,
+          "x": 500.1413349971043,
+          "y": 1450.9574677693854,
+          "dra_cosdec_arcsec": -0.003257571370341944,
+          "ddec_arcsec": -0.002323207601877321,
+          "radial_arcsec": 0.004001132957153832
+        },
+        {
+          "source_id": "F444W_centroid_77",
+          "detected_index": 125,
+          "x": 420.6334247201415,
+          "y": 641.2376322264607,
+          "dra_cosdec_arcsec": 0.000334528901763505,
+          "ddec_arcsec": 0.004345427155623313,
+          "radial_arcsec": 0.004358284830527966
+        },
+        {
+          "source_id": "F444W_centroid_279",
+          "detected_index": 352,
+          "x": 2019.2689899309821,
+          "y": 1674.4495978206746,
+          "dra_cosdec_arcsec": 0.003953259095650419,
+          "ddec_arcsec": -0.0020721114723345063,
+          "radial_arcsec": 0.0044633959563971
+        },
+        {
+          "source_id": "F444W_centroid_252",
+          "detected_index": 319,
+          "x": 1148.6874103006974,
+          "y": 1547.1109555103867,
+          "dra_cosdec_arcsec": -0.0016016336206330047,
+          "ddec_arcsec": 0.004315460223858938,
+          "radial_arcsec": 0.00460308887985886
+        },
+        {
+          "source_id": "F444W_centroid_4",
+          "detected_index": 63,
+          "x": 485.07040249455594,
+          "y": 275.021719616253,
+          "dra_cosdec_arcsec": -0.004608160420767966,
+          "ddec_arcsec": 0.0009409462571555992,
+          "radial_arcsec": 0.004703245914615375
+        },
+        {
+          "source_id": "F444W_centroid_321",
+          "detected_index": 383,
+          "x": 772.5928761266765,
+          "y": 1836.7632266714493,
+          "dra_cosdec_arcsec": 0.00509113659668463,
+          "ddec_arcsec": 0.0013653277955254636,
+          "radial_arcsec": 0.00527103327725811
+        },
+        {
+          "source_id": "F444W_centroid_26",
+          "detected_index": 88,
+          "x": 2035.3288333449686,
+          "y": 395.31553435426684,
+          "dra_cosdec_arcsec": -0.005314027628378876,
+          "ddec_arcsec": -0.0005350142132153753,
+          "radial_arcsec": 0.005340892195512454
+        },
+        {
+          "source_id": "F444W_centroid_343",
+          "detected_index": 402,
+          "x": 153.77386434522296,
+          "y": 1906.287171353941,
+          "dra_cosdec_arcsec": -0.0047805251925980285,
+          "ddec_arcsec": 0.0024255168160103166,
+          "radial_arcsec": 0.005360648463299078
+        },
+        {
+          "source_id": "F444W_centroid_62",
+          "detected_index": 115,
+          "x": 863.3870745896758,
+          "y": 586.0514924453179,
+          "dra_cosdec_arcsec": -0.005266024111971384,
+          "ddec_arcsec": -0.0013389427777266935,
+          "radial_arcsec": 0.005433578685762955
+        },
+        {
+          "source_id": "F444W_centroid_194",
+          "detected_index": 264,
+          "x": 613.5361867429722,
+          "y": 1272.296134388145,
+          "dra_cosdec_arcsec": 0.005317505759573004,
+          "ddec_arcsec": -0.0018372867386699258,
+          "radial_arcsec": 0.005625965706322391
+        },
+        {
+          "source_id": "F444W_centroid_266",
+          "detected_index": 340,
+          "x": 2025.907659236938,
+          "y": 1618.2447891556503,
+          "dra_cosdec_arcsec": 0.0021207873783572113,
+          "ddec_arcsec": 0.00530054177628511,
+          "radial_arcsec": 0.005709070159913009
+        },
+        {
+          "source_id": "F444W_centroid_175",
+          "detected_index": 248,
+          "x": 1479.9038833814705,
+          "y": 1181.9940909144293,
+          "dra_cosdec_arcsec": 0.002922494368679071,
+          "ddec_arcsec": -0.004975487609517722,
+          "radial_arcsec": 0.005770307643440344
+        },
+        {
+          "source_id": "F444W_centroid_296",
+          "detected_index": 370,
+          "x": 1636.030344083653,
+          "y": 1739.6593280399227,
+          "dra_cosdec_arcsec": -0.005647267054396759,
+          "ddec_arcsec": 0.00192424896097064,
+          "radial_arcsec": 0.0059661007466666185
+        },
+        {
+          "source_id": "F444W_centroid_201",
+          "detected_index": 271,
+          "x": 610.1894249942505,
+          "y": 1299.491796130891,
+          "dra_cosdec_arcsec": 0.004486482758357881,
+          "ddec_arcsec": 0.0040801698760723195,
+          "radial_arcsec": 0.006064347783113815
+        },
+        {
+          "source_id": "F444W_centroid_234",
+          "detected_index": 302,
+          "x": 538.6677619181083,
+          "y": 1458.8638568253627,
+          "dra_cosdec_arcsec": 0.005422071768085779,
+          "ddec_arcsec": 0.002870131014069765,
+          "radial_arcsec": 0.006134860588209752
+        },
+        {
+          "source_id": "F444W_centroid_64",
+          "detected_index": 112,
+          "x": 220.99381819154067,
+          "y": 634.1211769062019,
+          "dra_cosdec_arcsec": -0.0028205288376516218,
+          "ddec_arcsec": -0.006058499404930333,
+          "radial_arcsec": 0.006682873488038932
+        },
+        {
+          "source_id": "F444W_centroid_322",
+          "detected_index": 385,
+          "x": 1639.385586971909,
+          "y": 1830.5002911811164,
+          "dra_cosdec_arcsec": 0.006704919534178716,
+          "ddec_arcsec": -0.00018482812775483652,
+          "radial_arcsec": 0.006707466521652934
+        },
+        {
+          "source_id": "F444W_centroid_14",
+          "detected_index": 77,
+          "x": 1948.783044265775,
+          "y": 317.1463211638205,
+          "dra_cosdec_arcsec": -0.001346166237241515,
+          "ddec_arcsec": -0.006767335012775459,
+          "radial_arcsec": 0.006899926589495481
+        },
+        {
+          "source_id": "F444W_centroid_229",
+          "detected_index": 295,
+          "x": 1168.2474925030501,
+          "y": 1424.7033233594095,
+          "dra_cosdec_arcsec": -0.0060236528165570034,
+          "ddec_arcsec": 0.004036043901099186,
+          "radial_arcsec": 0.007250796075918007
+        },
+        {
+          "source_id": "F444W_centroid_226",
+          "detected_index": 292,
+          "x": 1375.9260989401846,
+          "y": 1404.7636518206195,
+          "dra_cosdec_arcsec": 0.007081473450992748,
+          "ddec_arcsec": -0.0025764096377413823,
+          "radial_arcsec": 0.007535592396408963
+        },
+        {
+          "source_id": "F444W_centroid_344",
+          "detected_index": 408,
+          "x": 1517.6719440554725,
+          "y": 1923.4108545557133,
+          "dra_cosdec_arcsec": -0.0065599596771671286,
+          "ddec_arcsec": -0.0040013304647392636,
+          "radial_arcsec": 0.0076839908537374236
+        },
+        {
+          "source_id": "F444W_centroid_282",
+          "detected_index": 355,
+          "x": 1717.239144788646,
+          "y": 1689.8303123936194,
+          "dra_cosdec_arcsec": -0.004903901015491419,
+          "ddec_arcsec": 0.006454091471962232,
+          "radial_arcsec": 0.008105772160792751
+        },
+        {
+          "source_id": "F444W_centroid_193",
+          "detected_index": 262,
+          "x": 328.3423210753018,
+          "y": 1257.9834614103613,
+          "dra_cosdec_arcsec": -0.0032798556290177003,
+          "ddec_arcsec": 0.008102011933874512,
+          "radial_arcsec": 0.008740712235015517
+        },
+        {
+          "source_id": "F444W_centroid_378",
+          "detected_index": 430,
+          "x": 1901.7852028048176,
+          "y": 2027.407880075808,
+          "dra_cosdec_arcsec": 0.007160171306014708,
+          "ddec_arcsec": -0.005129669717644813,
+          "radial_arcsec": 0.008808039739893617
+        },
+        {
+          "source_id": "F444W_centroid_345",
+          "detected_index": 406,
+          "x": 1429.6648762323557,
+          "y": 1918.5879002267764,
+          "dra_cosdec_arcsec": -0.00046301900315137045,
+          "ddec_arcsec": 0.00883512963019634,
+          "radial_arcsec": 0.008847253935177518
+        },
+        {
+          "source_id": "F444W_centroid_185",
+          "detected_index": 255,
+          "x": 964.2211040054888,
+          "y": 1218.364450332945,
+          "dra_cosdec_arcsec": -0.00583814802833813,
+          "ddec_arcsec": 0.006767845911635049,
+          "radial_arcsec": 0.00893799247903044
+        },
+        {
+          "source_id": "F444W_centroid_155",
+          "detected_index": 222,
+          "x": 818.270356053977,
+          "y": 1079.4768400556454,
+          "dra_cosdec_arcsec": -0.00811579770718585,
+          "ddec_arcsec": -0.0038665223352377432,
+          "radial_arcsec": 0.008989781296121416
+        },
+        {
+          "source_id": "F444W_centroid_177",
+          "detected_index": 249,
+          "x": 488.4745931536955,
+          "y": 1185.626415317061,
+          "dra_cosdec_arcsec": 0.008708518690842037,
+          "ddec_arcsec": 0.002471234924495893,
+          "radial_arcsec": 0.009052364316883867
+        },
+        {
+          "source_id": "F444W_centroid_11",
+          "detected_index": 74,
+          "x": 1880.6675149234873,
+          "y": 313.01834308156424,
+          "dra_cosdec_arcsec": 0.00561326924284017,
+          "ddec_arcsec": -0.007112847736220348,
+          "radial_arcsec": 0.009060981993791014
+        },
+        {
+          "source_id": "F444W_centroid_373",
+          "detected_index": 425,
+          "x": 1274.516945965051,
+          "y": 2002.7457111453111,
+          "dra_cosdec_arcsec": 0.0003806909151770866,
+          "ddec_arcsec": -0.00912006520638927,
+          "radial_arcsec": 0.009128007161566337
+        },
+        {
+          "source_id": "F444W_centroid_178",
+          "detected_index": 252,
+          "x": 1273.179841168525,
+          "y": 1205.8476873946695,
+          "dra_cosdec_arcsec": 0.004426497415643281,
+          "ddec_arcsec": -0.008014214594603308,
+          "radial_arcsec": 0.009155409060818404
+        },
+        {
+          "source_id": "F444W_centroid_228",
+          "detected_index": 294,
+          "x": 1824.3962245509379,
+          "y": 1424.9969667666885,
+          "dra_cosdec_arcsec": -0.009076490731964568,
+          "ddec_arcsec": -0.0015484422480512585,
+          "radial_arcsec": 0.009207624917574101
+        },
+        {
+          "source_id": "F444W_centroid_199",
+          "detected_index": 268,
+          "x": 768.7293460955344,
+          "y": 1300.1256581738392,
+          "dra_cosdec_arcsec": -0.004836149826911056,
+          "ddec_arcsec": 0.007900621087971505,
+          "radial_arcsec": 0.009263269353246263
+        },
+        {
+          "source_id": "F444W_centroid_0",
+          "detected_index": 58,
+          "x": 795.4743754301056,
+          "y": 258.1984183067216,
+          "dra_cosdec_arcsec": -0.0011371376594875376,
+          "ddec_arcsec": -0.00939158873716815,
+          "radial_arcsec": 0.009460180817647913
+        },
+        {
+          "source_id": "F444W_centroid_385",
+          "detected_index": 434,
+          "x": 295.4522016239652,
+          "y": 2027.946048103648,
+          "dra_cosdec_arcsec": 0.008321668982657534,
+          "ddec_arcsec": -0.004672307459488835,
+          "radial_arcsec": 0.009543617318893152
+        },
+        {
+          "source_id": "F444W_centroid_272",
+          "detected_index": 346,
+          "x": 690.5876649820273,
+          "y": 1641.5543051682625,
+          "dra_cosdec_arcsec": 0.007509478478266795,
+          "ddec_arcsec": -0.007060261255522363,
+          "radial_arcsec": 0.010307257455159523
+        },
+        {
+          "source_id": "F444W_centroid_301",
+          "detected_index": 372,
+          "x": 1042.375135905048,
+          "y": 1743.3544745698714,
+          "dra_cosdec_arcsec": -0.009582726053639067,
+          "ddec_arcsec": -0.004187518016270498,
+          "radial_arcsec": 0.010457721762058022
+        },
+        {
+          "source_id": "F444W_centroid_309",
+          "detected_index": 375,
+          "x": 893.8575212668158,
+          "y": 1772.427999672904,
+          "dra_cosdec_arcsec": -0.010092191923225734,
+          "ddec_arcsec": 0.003150997959830851,
+          "radial_arcsec": 0.010572659367973075
+        },
+        {
+          "source_id": "F444W_centroid_80",
+          "detected_index": 133,
+          "x": 450.0327987327093,
+          "y": 666.7325391723562,
+          "dra_cosdec_arcsec": 0.0037720963752382454,
+          "ddec_arcsec": -0.009880807646019164,
+          "radial_arcsec": 0.010576344853114752
+        },
+        {
+          "source_id": "F444W_centroid_23",
+          "detected_index": 83,
+          "x": 1771.8737428131762,
+          "y": 366.04719782746116,
+          "dra_cosdec_arcsec": -0.01040466068855189,
+          "ddec_arcsec": -0.002725011246402127,
+          "radial_arcsec": 0.010755587013662873
+        },
+        {
+          "source_id": "F444W_centroid_2",
+          "detected_index": 62,
+          "x": 579.8292065026243,
+          "y": 320.04126932813944,
+          "dra_cosdec_arcsec": -0.01058566810120675,
+          "ddec_arcsec": -0.0023141530359657306,
+          "radial_arcsec": 0.010835666659771804
+        },
+        {
+          "source_id": "F444W_centroid_204",
+          "detected_index": 273,
+          "x": 798.5601613583556,
+          "y": 1303.4798615469763,
+          "dra_cosdec_arcsec": -0.009240392948520344,
+          "ddec_arcsec": -0.0065165025537601805,
+          "radial_arcsec": 0.011307062662358546
+        },
+        {
+          "source_id": "F444W_centroid_211",
+          "detected_index": 279,
+          "x": 382.9251886804932,
+          "y": 1333.2507805975756,
+          "dra_cosdec_arcsec": -0.009164223172653608,
+          "ddec_arcsec": 0.006850636270332291,
+          "radial_arcsec": 0.011441774443627891
+        },
+        {
+          "source_id": "F444W_centroid_331",
+          "detected_index": 395,
+          "x": 1786.8386186431376,
+          "y": 1872.7873242787725,
+          "dra_cosdec_arcsec": -0.005574553162380266,
+          "ddec_arcsec": -0.010400662590100666,
+          "radial_arcsec": 0.011800399396895365
+        },
+        {
+          "source_id": "F444W_centroid_94",
+          "detected_index": 149,
+          "x": 1692.1262700652371,
+          "y": 761.7239520246133,
+          "dra_cosdec_arcsec": 0.0020417411915309848,
+          "ddec_arcsec": -0.011737713782547213,
+          "radial_arcsec": 0.01191396793667581
+        },
+        {
+          "source_id": "F444W_centroid_342",
+          "detected_index": 403,
+          "x": 1658.6399740908212,
+          "y": 1914.0501936356045,
+          "dra_cosdec_arcsec": -0.003916480400458078,
+          "ddec_arcsec": 0.011939249951810286,
+          "radial_arcsec": 0.012565210219574009
+        },
+        {
+          "source_id": "F444W_centroid_171",
+          "detected_index": 239,
+          "x": 393.70459932668547,
+          "y": 1149.322932070924,
+          "dra_cosdec_arcsec": 0.007277966675241747,
+          "ddec_arcsec": -0.010255755872524478,
+          "radial_arcsec": 0.01257574360639003
+        },
+        {
+          "source_id": "F444W_centroid_60",
+          "detected_index": 111,
+          "x": 253.60141636318014,
+          "y": 580.5798546275004,
+          "dra_cosdec_arcsec": -0.0062793550622839475,
+          "ddec_arcsec": -0.010973785575942845,
+          "radial_arcsec": 0.012643348864753021
+        },
+        {
+          "source_id": "F444W_centroid_57",
+          "detected_index": 109,
+          "x": 464.5993270724364,
+          "y": 568.2384641839394,
+          "dra_cosdec_arcsec": 0.012418756767230412,
+          "ddec_arcsec": 0.0025307814575310904,
+          "radial_arcsec": 0.012674003873636756
+        },
+        {
+          "source_id": "F444W_centroid_61",
+          "detected_index": 116,
+          "x": 2014.1555744397667,
+          "y": 593.2740822568147,
+          "dra_cosdec_arcsec": -0.007960989169730917,
+          "ddec_arcsec": 0.010305240113975033,
+          "radial_arcsec": 0.013022108924909506
+        },
+        {
+          "source_id": "F444W_centroid_291",
+          "detected_index": 359,
+          "x": 728.7013621204973,
+          "y": 1703.7916035717121,
+          "dra_cosdec_arcsec": 0.00028656018189645015,
+          "ddec_arcsec": -0.013170391959513196,
+          "radial_arcsec": 0.013173509054549887
+        },
+        {
+          "source_id": "F444W_centroid_5",
+          "detected_index": 65,
+          "x": 980.8729836494942,
+          "y": 282.92550450169654,
+          "dra_cosdec_arcsec": 0.013011393559059734,
+          "ddec_arcsec": 0.002246555162843233,
+          "radial_arcsec": 0.01320391506631442
+        },
+        {
+          "source_id": "F444W_centroid_278",
+          "detected_index": 351,
+          "x": 1030.3478146025395,
+          "y": 1663.1274321264686,
+          "dra_cosdec_arcsec": -0.008358531778076756,
+          "ddec_arcsec": -0.01040015098134127,
+          "radial_arcsec": 0.013342720624781021
+        },
+        {
+          "source_id": "F444W_centroid_203",
+          "detected_index": 272,
+          "x": 1068.098770997347,
+          "y": 1304.7056848692107,
+          "dra_cosdec_arcsec": -0.013525040211797415,
+          "ddec_arcsec": -0.0025312753760453497,
+          "radial_arcsec": 0.01375987165455227
+        },
+        {
+          "source_id": "F444W_centroid_383",
+          "detected_index": 435,
+          "x": 1494.1262990351036,
+          "y": 2032.5412674832005,
+          "dra_cosdec_arcsec": 0.013528934641977143,
+          "ddec_arcsec": -0.0035208108512974766,
+          "radial_arcsec": 0.013979563014617604
+        },
+        {
+          "source_id": "F444W_centroid_73",
+          "detected_index": 124,
+          "x": 409.9700817998628,
+          "y": 632.2941819508317,
+          "dra_cosdec_arcsec": -0.007274853512697307,
+          "ddec_arcsec": -0.012040655978741498,
+          "radial_arcsec": 0.014067725119597826
+        },
+        {
+          "source_id": "F444W_centroid_151",
+          "detected_index": 215,
+          "x": 1038.1515765884365,
+          "y": 1055.441932373351,
+          "dra_cosdec_arcsec": -0.009403111327001465,
+          "ddec_arcsec": -0.010698800699665226,
+          "radial_arcsec": 0.01424369474512038
+        },
+        {
+          "source_id": "F444W_centroid_363",
+          "detected_index": 417,
+          "x": 565.5689259564833,
+          "y": 1963.427498484519,
+          "dra_cosdec_arcsec": 0.010362350763229677,
+          "ddec_arcsec": 0.009889188127716006,
+          "radial_arcsec": 0.01432390850182529
+        },
+        {
+          "source_id": "F444W_centroid_324",
+          "detected_index": 390,
+          "x": 2029.4305817912166,
+          "y": 1860.1940225152046,
+          "dra_cosdec_arcsec": -0.004780144319902701,
+          "ddec_arcsec": 0.013688039401451373,
+          "radial_arcsec": 0.01449869657467919
+        },
+        {
+          "source_id": "F444W_centroid_271",
+          "detected_index": 344,
+          "x": 1194.7577471035133,
+          "y": 1632.1852462455154,
+          "dra_cosdec_arcsec": 0.009493596644633964,
+          "ddec_arcsec": -0.011075409393264206,
+          "radial_arcsec": 0.01458742850145948
+        },
+        {
+          "source_id": "F444W_centroid_358",
+          "detected_index": 415,
+          "x": 1522.03431718892,
+          "y": 1966.3141829415229,
+          "dra_cosdec_arcsec": -0.01319987330836101,
+          "ddec_arcsec": 0.006749241258298053,
+          "radial_arcsec": 0.014825279553902714
+        },
+        {
+          "source_id": "F444W_centroid_42",
+          "detected_index": 101,
+          "x": 115.64669179914635,
+          "y": 531.1188620633886,
+          "dra_cosdec_arcsec": 0.015221094674281342,
+          "ddec_arcsec": 0.0015856443526772357,
+          "radial_arcsec": 0.015303463350924817
+        },
+        {
+          "source_id": "F444W_centroid_227",
+          "detected_index": 293,
+          "x": 451.02227702663373,
+          "y": 1405.148011704425,
+          "dra_cosdec_arcsec": 0.0004991044697342277,
+          "ddec_arcsec": -0.015383128377300628,
+          "radial_arcsec": 0.015391222951243401
+        },
+        {
+          "source_id": "F444W_centroid_138",
+          "detected_index": 202,
+          "x": 1521.4469825951805,
+          "y": 967.5258480767307,
+          "dra_cosdec_arcsec": -0.015128724572666829,
+          "ddec_arcsec": 0.005185164669293482,
+          "radial_arcsec": 0.0159926307607524
+        },
+        {
+          "source_id": "F444W_centroid_208",
+          "detected_index": 275,
+          "x": 377.7520367178877,
+          "y": 1315.2770208925037,
+          "dra_cosdec_arcsec": 0.01535248933072097,
+          "ddec_arcsec": -0.004707052406240097,
+          "radial_arcsec": 0.016057872553243493
+        },
+        {
+          "source_id": "F444W_centroid_99",
+          "detected_index": 158,
+          "x": 1980.9953278627852,
+          "y": 763.2139028390326,
+          "dra_cosdec_arcsec": -0.015950587393199385,
+          "ddec_arcsec": 0.0023550891677655084,
+          "radial_arcsec": 0.016123513312373335
+        },
+        {
+          "source_id": "F444W_centroid_186",
+          "detected_index": 254,
+          "x": 354.55518279390924,
+          "y": 1215.6153072374784,
+          "dra_cosdec_arcsec": 0.003668984378925879,
+          "ddec_arcsec": 0.0157044096441549,
+          "radial_arcsec": 0.016127303833079715
+        },
+        {
+          "source_id": "F444W_centroid_281",
+          "detected_index": 354,
+          "x": 1212.198108253425,
+          "y": 1683.8960270058312,
+          "dra_cosdec_arcsec": -0.01616422693048616,
+          "ddec_arcsec": 0.00025874030774201235,
+          "radial_arcsec": 0.016166297703016395
+        },
+        {
+          "source_id": "F444W_centroid_78",
+          "detected_index": 134,
+          "x": 1213.1334222054045,
+          "y": 657.1851250814944,
+          "dra_cosdec_arcsec": 0.015419439946971352,
+          "ddec_arcsec": -0.006086517215180374,
+          "radial_arcsec": 0.016577238006927317
+        },
+        {
+          "source_id": "F444W_centroid_13",
+          "detected_index": 75,
+          "x": 1109.494716620703,
+          "y": 300.4515724012603,
+          "dra_cosdec_arcsec": -0.0054808269689384514,
+          "ddec_arcsec": -0.015678749823356826,
+          "radial_arcsec": 0.01660911378223411
+        },
+        {
+          "source_id": "F444W_centroid_248",
+          "detected_index": 321,
+          "x": 1592.1020069201713,
+          "y": 1561.3961001501298,
+          "dra_cosdec_arcsec": -0.01586316382762546,
+          "ddec_arcsec": -0.005091258539151119,
+          "radial_arcsec": 0.016660158533833735
+        },
+        {
+          "source_id": "F444W_centroid_85",
+          "detected_index": 139,
+          "x": 1370.858606967966,
+          "y": 691.3573676066151,
+          "dra_cosdec_arcsec": -0.01616883770681901,
+          "ddec_arcsec": 0.004413639664576893,
+          "radial_arcsec": 0.016760415542235296
+        },
+        {
+          "source_id": "F444W_centroid_357",
+          "detected_index": 414,
+          "x": 1116.246268107943,
+          "y": 1966.9541277078988,
+          "dra_cosdec_arcsec": -0.01581151188422064,
+          "ddec_arcsec": 0.00669158111224443,
+          "radial_arcsec": 0.01716919237116209
+        },
+        {
+          "source_id": "F444W_centroid_190",
+          "detected_index": 260,
+          "x": 1492.0722819659272,
+          "y": 1250.0147987970406,
+          "dra_cosdec_arcsec": -0.015157126793661222,
+          "ddec_arcsec": 0.008631717298798885,
+          "radial_arcsec": 0.017442621193199087
+        },
+        {
+          "source_id": "F444W_centroid_258",
+          "detected_index": 333,
+          "x": 1563.77754053173,
+          "y": 1586.377093065717,
+          "dra_cosdec_arcsec": -0.017323776905414263,
+          "ddec_arcsec": -0.003352160046246728,
+          "radial_arcsec": 0.01764511891301653
+        },
+        {
+          "source_id": "F444W_centroid_329",
+          "detected_index": 392,
+          "x": 1922.140983624941,
+          "y": 1860.1593195570292,
+          "dra_cosdec_arcsec": -0.014827024483581185,
+          "ddec_arcsec": -0.009708325408671383,
+          "radial_arcsec": 0.01772264754601215
+        },
+        {
+          "source_id": "F444W_centroid_104",
+          "detected_index": 161,
+          "x": 1101.5185413350546,
+          "y": 781.6386056858149,
+          "dra_cosdec_arcsec": 0.017883805594705086,
+          "ddec_arcsec": -0.0012715578287456795,
+          "radial_arcsec": 0.01792895317800238
+        },
+        {
+          "source_id": "F444W_centroid_89",
+          "detected_index": 144,
+          "x": 840.7037729170022,
+          "y": 717.7724708085976,
+          "dra_cosdec_arcsec": -0.0005256319827438351,
+          "ddec_arcsec": 0.018409236389554218,
+          "radial_arcsec": 0.018416738934668157
+        },
+        {
+          "source_id": "F444W_centroid_153",
+          "detected_index": 216,
+          "x": 1517.5421806901352,
+          "y": 1063.6298422212203,
+          "dra_cosdec_arcsec": 0.0025855371744829283,
+          "ddec_arcsec": -0.01834135204896045,
+          "radial_arcsec": 0.018522694111695066
+        },
+        {
+          "source_id": "F444W_centroid_352",
+          "detected_index": 409,
+          "x": 997.5863308585753,
+          "y": 1944.09692321966,
+          "dra_cosdec_arcsec": 0.006414284641902116,
+          "ddec_arcsec": -0.01770273185221846,
+          "radial_arcsec": 0.01882896073095179
+        },
+        {
+          "source_id": "F444W_centroid_25",
+          "detected_index": 84,
+          "x": 1134.1985416104008,
+          "y": 379.5363453480413,
+          "dra_cosdec_arcsec": 0.005572166250236268,
+          "ddec_arcsec": -0.018329578681296047,
+          "radial_arcsec": 0.019157831081339772
+        },
+        {
+          "source_id": "F444W_centroid_379",
+          "detected_index": 427,
+          "x": 274.11580742617724,
+          "y": 2021.2360421826097,
+          "dra_cosdec_arcsec": 0.0007042903369442754,
+          "ddec_arcsec": 0.019661727271339954,
+          "radial_arcsec": 0.01967433719612383
+        },
+        {
+          "source_id": "F444W_centroid_198",
+          "detected_index": 267,
+          "x": 1565.1802171453444,
+          "y": 1295.8604121480028,
+          "dra_cosdec_arcsec": -0.01819759193406912,
+          "ddec_arcsec": -0.007685453571504651,
+          "radial_arcsec": 0.019753950172153454
+        },
+        {
+          "source_id": "F444W_centroid_167",
+          "detected_index": 235,
+          "x": 1241.759417636126,
+          "y": 1123.7911260928358,
+          "dra_cosdec_arcsec": -0.01386275228138611,
+          "ddec_arcsec": 0.014679282517784201,
+          "radial_arcsec": 0.020190523380061415
+        },
+        {
+          "source_id": "F444W_centroid_79",
+          "detected_index": 135,
+          "x": 2027.638061683564,
+          "y": 665.4279191761742,
+          "dra_cosdec_arcsec": -0.017850068774376743,
+          "ddec_arcsec": -0.009495711585002715,
+          "radial_arcsec": 0.020218642139224
+        },
+        {
+          "source_id": "F444W_centroid_55",
+          "detected_index": 108,
+          "x": 422.4606273866065,
+          "y": 563.9828975419393,
+          "dra_cosdec_arcsec": -0.008024617260244405,
+          "ddec_arcsec": -0.019270591199583437,
+          "radial_arcsec": 0.02087462978054414
+        },
+        {
+          "source_id": "F444W_centroid_93",
+          "detected_index": 148,
+          "x": 79.38677811184587,
+          "y": 723.7225416505045,
+          "dra_cosdec_arcsec": 0.0004092189029369191,
+          "ddec_arcsec": -0.02100697872253288,
+          "radial_arcsec": 0.0210109641654302
+        },
+        {
+          "source_id": "F444W_centroid_125",
+          "detected_index": 188,
+          "x": 822.2565673060393,
+          "y": 901.8109457898427,
+          "dra_cosdec_arcsec": -0.006076129709335106,
+          "ddec_arcsec": -0.02036883233811067,
+          "radial_arcsec": 0.021255791762415766
+        },
+        {
+          "source_id": "F444W_centroid_255",
+          "detected_index": 323,
+          "x": 1310.249288351474,
+          "y": 1559.5974265093287,
+          "dra_cosdec_arcsec": 0.02104187585119232,
+          "ddec_arcsec": 0.004241387526365876,
+          "radial_arcsec": 0.021465085785080745
+        },
+        {
+          "source_id": "F444W_centroid_273",
+          "detected_index": 348,
+          "x": 1915.5582825469435,
+          "y": 1656.753840109094,
+          "dra_cosdec_arcsec": 0.020972765639585455,
+          "ddec_arcsec": -0.006050810697693373,
+          "radial_arcsec": 0.021828174658859143
+        },
+        {
+          "source_id": "F444W_centroid_223",
+          "detected_index": 289,
+          "x": 903.4188822322394,
+          "y": 1394.2022740711557,
+          "dra_cosdec_arcsec": -0.015151612108776788,
+          "ddec_arcsec": 0.01579774894220304,
+          "radial_arcsec": 0.021889271794057003
+        },
+        {
+          "source_id": "F444W_centroid_207",
+          "detected_index": 278,
+          "x": 1632.1771627845296,
+          "y": 1324.9718616634786,
+          "dra_cosdec_arcsec": -0.022368906212492788,
+          "ddec_arcsec": -0.0005214937134311301,
+          "radial_arcsec": 0.022374984320120805
+        },
+        {
+          "source_id": "F444W_centroid_163",
+          "detected_index": 226,
+          "x": 360.4748615339847,
+          "y": 1100.3429792365735,
+          "dra_cosdec_arcsec": 0.02243066210257086,
+          "ddec_arcsec": -0.005379971492205936,
+          "radial_arcsec": 0.023066831077672927
+        },
+        {
+          "source_id": "F444W_centroid_81",
+          "detected_index": 138,
+          "x": 1870.4503243426507,
+          "y": 678.389962952816,
+          "dra_cosdec_arcsec": -0.0072392247864889285,
+          "ddec_arcsec": 0.02210574996156443,
+          "radial_arcsec": 0.023260923386368298
+        },
+        {
+          "source_id": "F444W_centroid_154",
+          "detected_index": 219,
+          "x": 771.7229270747389,
+          "y": 1070.1125809473797,
+          "dra_cosdec_arcsec": -0.003262366079424244,
+          "ddec_arcsec": -0.023575772566617276,
+          "radial_arcsec": 0.02380042193394176
+        },
+        {
+          "source_id": "F444W_centroid_316",
+          "detected_index": 378,
+          "x": 1018.8737924108417,
+          "y": 1793.1065850100129,
+          "dra_cosdec_arcsec": 0.024216922937863917,
+          "ddec_arcsec": 0.0010881653817462838,
+          "radial_arcsec": 0.024241358466699274
+        },
+        {
+          "source_id": "F444W_centroid_33",
+          "detected_index": 99,
+          "x": 1737.621834612204,
+          "y": 472.1979182652082,
+          "dra_cosdec_arcsec": -0.02301466057022414,
+          "ddec_arcsec": -0.00773855768366038,
+          "radial_arcsec": 0.02428085412107067
+        },
+        {
+          "source_id": "F444W_centroid_213",
+          "detected_index": 283,
+          "x": 1424.3131776348212,
+          "y": 1346.419422175477,
+          "dra_cosdec_arcsec": 0.022266969340807536,
+          "ddec_arcsec": -0.010399135652870307,
+          "radial_arcsec": 0.024575596551490712
+        },
+        {
+          "source_id": "F444W_centroid_286",
+          "detected_index": 357,
+          "x": 1939.4532466166447,
+          "y": 1693.0756284059287,
+          "dra_cosdec_arcsec": 0.008469768932606198,
+          "ddec_arcsec": -0.023087188010491925,
+          "radial_arcsec": 0.02459177170532567
+        },
+        {
+          "source_id": "F444W_centroid_97",
+          "detected_index": 156,
+          "x": 985.4639095310554,
+          "y": 787.3269604801069,
+          "dra_cosdec_arcsec": -0.022682171897599933,
+          "ddec_arcsec": 0.010232795606034505,
+          "radial_arcsec": 0.024883549382628697
+        },
+        {
+          "source_id": "F444W_centroid_52",
+          "detected_index": 110,
+          "x": 1884.1583187065062,
+          "y": 575.8540660507288,
+          "dra_cosdec_arcsec": 0.022354405043378135,
+          "ddec_arcsec": -0.011332828760669244,
+          "radial_arcsec": 0.025062969349235836
+        },
+        {
+          "source_id": "F444W_centroid_100",
+          "detected_index": 153,
+          "x": 442.67630424031586,
+          "y": 743.4277363055927,
+          "dra_cosdec_arcsec": 0.017687854859857074,
+          "ddec_arcsec": -0.017880340676807327,
+          "radial_arcsec": 0.025150880541733096
+        },
+        {
+          "source_id": "F444W_centroid_16",
+          "detected_index": 78,
+          "x": 472.07131652600964,
+          "y": 319.62185689823554,
+          "dra_cosdec_arcsec": 0.022324222370773052,
+          "ddec_arcsec": -0.012197727848524412,
+          "radial_arcsec": 0.025439250548387648
+        },
+        {
+          "source_id": "F444W_centroid_287",
+          "detected_index": 356,
+          "x": 1137.578185126354,
+          "y": 1686.7719218177438,
+          "dra_cosdec_arcsec": -0.01949139962570001,
+          "ddec_arcsec": 0.016357990899135234,
+          "radial_arcsec": 0.025445992297125505
+        },
+        {
+          "source_id": "F444W_centroid_206",
+          "detected_index": 276,
+          "x": 1297.2921330663576,
+          "y": 1319.7814760540396,
+          "dra_cosdec_arcsec": 0.022053375947008094,
+          "ddec_arcsec": -0.012886620962500213,
+          "radial_arcsec": 0.02554244291982971
+        },
+        {
+          "source_id": "F444W_centroid_295",
+          "detected_index": 363,
+          "x": 223.74224325674305,
+          "y": 1729.5017029122473,
+          "dra_cosdec_arcsec": 0.026003081398735126,
+          "ddec_arcsec": 0.0002167562722302234,
+          "radial_arcsec": 0.02600398481058522
+        },
+        {
+          "source_id": "F444W_centroid_9",
+          "detected_index": 68,
+          "x": 1043.2098836775288,
+          "y": 288.5333022892708,
+          "dra_cosdec_arcsec": 0.015126234003701389,
+          "ddec_arcsec": -0.021170531290534745,
+          "radial_arcsec": 0.026019115089657284
+        },
+        {
+          "source_id": "F444W_centroid_307",
+          "detected_index": 373,
+          "x": 1322.2682891908487,
+          "y": 1761.9141234407844,
+          "dra_cosdec_arcsec": 0.008570221793099374,
+          "ddec_arcsec": -0.024672491954762725,
+          "radial_arcsec": 0.026118586494773693
+        },
+        {
+          "source_id": "F444W_centroid_221",
+          "detected_index": 287,
+          "x": 1347.815477298972,
+          "y": 1377.381492817443,
+          "dra_cosdec_arcsec": -0.011797125033869585,
+          "ddec_arcsec": -0.023605267998961232,
+          "radial_arcsec": 0.026389028723721206
+        },
+        {
+          "source_id": "F444W_centroid_253",
+          "detected_index": 318,
+          "x": 154.41722164215116,
+          "y": 1541.3826278062074,
+          "dra_cosdec_arcsec": 0.017084679273374082,
+          "ddec_arcsec": -0.020961562825264245,
+          "radial_arcsec": 0.02704206688034522
+        },
+        {
+          "source_id": "F444W_centroid_200",
+          "detected_index": 269,
+          "x": 869.739638809706,
+          "y": 1297.3508153414036,
+          "dra_cosdec_arcsec": -0.005106237665484498,
+          "ddec_arcsec": -0.026576456089858126,
+          "radial_arcsec": 0.02706255127433803
+        },
+        {
+          "source_id": "F444W_centroid_169",
+          "detected_index": 237,
+          "x": 1432.7943987760063,
+          "y": 1130.728211028291,
+          "dra_cosdec_arcsec": -0.014049282073323288,
+          "ddec_arcsec": -0.0242145083510775,
+          "radial_arcsec": 0.02799508417836099
+        },
+        {
+          "source_id": "F444W_centroid_292",
+          "detected_index": 367,
+          "x": 1829.8564309730457,
+          "y": 1780.3917000400766,
+          "dra_cosdec_arcsec": -0.02651452504917818,
+          "ddec_arcsec": 0.010948302016396334,
+          "radial_arcsec": 0.028685978353576287
+        },
+        {
+          "source_id": "F444W_centroid_368",
+          "detected_index": 419,
+          "x": 1807.7032169241315,
+          "y": 1983.6378005534698,
+          "dra_cosdec_arcsec": -0.012921137332964282,
+          "ddec_arcsec": -0.02565099264439748,
+          "radial_arcsec": 0.028721580975457628
+        },
+        {
+          "source_id": "F444W_centroid_366",
+          "detected_index": 418,
+          "x": 645.6356105824871,
+          "y": 1973.5630688551016,
+          "dra_cosdec_arcsec": 0.02869314251444241,
+          "ddec_arcsec": -0.0045623599295550295,
+          "radial_arcsec": 0.02905359796636952
+        },
+        {
+          "source_id": "F444W_centroid_312",
+          "detected_index": 377,
+          "x": 836.8290946423739,
+          "y": 1795.0639900035133,
+          "dra_cosdec_arcsec": 0.014654087246258576,
+          "ddec_arcsec": 0.025670768449212622,
+          "radial_arcsec": 0.029558934771055274
+        },
+        {
+          "source_id": "F444W_centroid_149",
+          "detected_index": 214,
+          "x": 804.3937279225737,
+          "y": 1051.2215833200994,
+          "dra_cosdec_arcsec": -0.02080003735325525,
+          "ddec_arcsec": -0.021600871361467062,
+          "radial_arcsec": 0.029987317266447214
+        },
+        {
+          "source_id": "F444W_centroid_146",
+          "detected_index": 211,
+          "x": 235.36969789691727,
+          "y": 1008.7133247049952,
+          "dra_cosdec_arcsec": 0.0042851210870468994,
+          "ddec_arcsec": -0.02985781084406387,
+          "radial_arcsec": 0.03016373866652743
+        },
+        {
+          "source_id": "F444W_centroid_377",
+          "detected_index": 429,
+          "x": 1921.0301730672338,
+          "y": 2022.6360769298467,
+          "dra_cosdec_arcsec": -0.0052006371187412834,
+          "ddec_arcsec": -0.03044758322453041,
+          "radial_arcsec": 0.030888540776008624
+        },
+        {
+          "source_id": "F444W_centroid_123",
+          "detected_index": 186,
+          "x": 401.758468827703,
+          "y": 887.9955797453669,
+          "dra_cosdec_arcsec": 0.0017571147652531097,
+          "ddec_arcsec": -0.03103399410347075,
+          "radial_arcsec": 0.031083697378293793
+        },
+        {
+          "source_id": "F444W_centroid_261",
+          "detected_index": 331,
+          "x": 1012.9221324031173,
+          "y": 1588.9792798385372,
+          "dra_cosdec_arcsec": 0.03140383434897987,
+          "ddec_arcsec": -0.000162642316152025,
+          "radial_arcsec": 0.031404255497285836
+        },
+        {
+          "source_id": "F444W_centroid_6",
+          "detected_index": 67,
+          "x": 2030.144805315798,
+          "y": 291.23664519141494,
+          "dra_cosdec_arcsec": -0.011249822145881428,
+          "ddec_arcsec": -0.02946901054876543,
+          "radial_arcsec": 0.03154332068790164
+        },
+        {
+          "source_id": "F444W_centroid_137",
+          "detected_index": 205,
+          "x": 1443.764177406529,
+          "y": 961.614458216071,
+          "dra_cosdec_arcsec": -0.03171488718479503,
+          "ddec_arcsec": 0.013463743775743144,
+          "radial_arcsec": 0.03445441142437496
+        },
+        {
+          "source_id": "F444W_centroid_215",
+          "detected_index": 284,
+          "x": 488.81525474646224,
+          "y": 1345.7882069957716,
+          "dra_cosdec_arcsec": -0.031164246210524264,
+          "ddec_arcsec": -0.01770070654242506,
+          "radial_arcsec": 0.035840274172898624
+        },
+        {
+          "source_id": "F444W_centroid_69",
+          "detected_index": 118,
+          "x": 90.3856783694066,
+          "y": 601.0249863211407,
+          "dra_cosdec_arcsec": -0.021042001251557817,
+          "ddec_arcsec": -0.029480753802938103,
+          "radial_arcsec": 0.03621989318937888
+        },
+        {
+          "source_id": "F444W_centroid_170",
+          "detected_index": 238,
+          "x": 1387.892212886995,
+          "y": 1146.7209792682565,
+          "dra_cosdec_arcsec": -0.011215619081681243,
+          "ddec_arcsec": -0.03493165274720156,
+          "radial_arcsec": 0.03668801543643078
+        },
+        {
+          "source_id": "F444W_centroid_182",
+          "detected_index": 251,
+          "x": 121.2898228792756,
+          "y": 1201.07792790139,
+          "dra_cosdec_arcsec": -0.033613403835037525,
+          "ddec_arcsec": -0.017355085124160043,
+          "radial_arcsec": 0.03782935226727804
+        },
+        {
+          "source_id": "F444W_centroid_95",
+          "detected_index": 152,
+          "x": 1939.1324031396414,
+          "y": 747.8199937120501,
+          "dra_cosdec_arcsec": 0.0385334872799319,
+          "ddec_arcsec": 0.009924084523575648,
+          "radial_arcsec": 0.039790917248268755
+        },
+        {
+          "source_id": "F444W_centroid_111",
+          "detected_index": 175,
+          "x": 1270.9593975424689,
+          "y": 836.1266108590108,
+          "dra_cosdec_arcsec": -0.029514336838358583,
+          "ddec_arcsec": 0.02895615937310911,
+          "radial_arcsec": 0.04134676825039145
+        },
+        {
+          "source_id": "F444W_centroid_27",
+          "detected_index": 86,
+          "x": 655.6807664925236,
+          "y": 380.9435182758377,
+          "dra_cosdec_arcsec": 0.026667569371118357,
+          "ddec_arcsec": -0.0319828060390147,
+          "radial_arcsec": 0.0416420357171492
+        },
+        {
+          "source_id": "F444W_centroid_158",
+          "detected_index": 224,
+          "x": 312.3915434035007,
+          "y": 1081.5510976379173,
+          "dra_cosdec_arcsec": 0.022107464964993464,
+          "ddec_arcsec": 0.03720425755743576,
+          "radial_arcsec": 0.04327697756086789
+        },
+        {
+          "source_id": "F444W_centroid_348",
+          "detected_index": 405,
+          "x": 809.2588686280517,
+          "y": 1922.1794596600355,
+          "dra_cosdec_arcsec": -0.04398110045294802,
+          "ddec_arcsec": -0.006284757663149186,
+          "radial_arcsec": 0.04442786700423693
+        },
+        {
+          "source_id": "F444W_centroid_372",
+          "detected_index": 421,
+          "x": 1116.1479562158156,
+          "y": 1994.4485616745776,
+          "dra_cosdec_arcsec": 0.04694309898247091,
+          "ddec_arcsec": 0.013619038731964397,
+          "radial_arcsec": 0.048878755700377946
+        },
+        {
+          "source_id": "F444W_centroid_268",
+          "detected_index": 341,
+          "x": 554.2695936501681,
+          "y": 1615.5111671215868,
+          "dra_cosdec_arcsec": -0.029894433315499038,
+          "ddec_arcsec": -0.03909218551393832,
+          "radial_arcsec": 0.049212560561205355
+        },
+        {
+          "source_id": "F444W_centroid_371",
+          "detected_index": 420,
+          "x": 1381.1781062121804,
+          "y": 1993.7792447457803,
+          "dra_cosdec_arcsec": -0.035488140765415246,
+          "ddec_arcsec": -0.037993850577036845,
+          "radial_arcsec": 0.051989814571405
+        },
+        {
+          "source_id": "F444W_centroid_12",
+          "detected_index": 70,
+          "x": 612.9465221082023,
+          "y": 286.5089749352395,
+          "dra_cosdec_arcsec": 0.025267425581611443,
+          "ddec_arcsec": -0.045751302999704646,
+          "radial_arcsec": 0.05226494544131955
+        },
+        {
+          "source_id": "F444W_centroid_48",
+          "detected_index": 107,
+          "x": 1159.9947011591041,
+          "y": 554.6272717250062,
+          "dra_cosdec_arcsec": -0.03554445661313831,
+          "ddec_arcsec": -0.042327127522699404,
+          "radial_arcsec": 0.0552720012063439
+        },
+        {
+          "source_id": "F444W_centroid_152",
+          "detected_index": 217,
+          "x": 1838.1832164941964,
+          "y": 1061.9553998214517,
+          "dra_cosdec_arcsec": -0.013069587549766634,
+          "ddec_arcsec": -0.057754526946433724,
+          "radial_arcsec": 0.0592148588228647
+        },
+        {
+          "source_id": "F444W_centroid_375",
+          "detected_index": 426,
+          "x": 1304.1253469127678,
+          "y": 2008.9091719057487,
+          "dra_cosdec_arcsec": -0.05943629319829363,
+          "ddec_arcsec": -0.007232875969333736,
+          "radial_arcsec": 0.05987476472352898
+        },
+        {
+          "source_id": "F444W_centroid_76",
+          "detected_index": 128,
+          "x": 146.52782103406886,
+          "y": 661.448167760185,
+          "dra_cosdec_arcsec": -0.05632200763817335,
+          "ddec_arcsec": -0.02662051913564856,
+          "radial_arcsec": 0.06229623244300801
+        },
+        {
+          "source_id": "F444W_centroid_168",
+          "detected_index": 232,
+          "x": 131.94924138637913,
+          "y": 1115.0227816537295,
+          "dra_cosdec_arcsec": 0.029462613675974587,
+          "ddec_arcsec": 0.05754290550544233,
+          "radial_arcsec": 0.06464697655876861
+        },
+        {
+          "source_id": "F444W_centroid_161",
+          "detected_index": 225,
+          "x": 395.6171023358045,
+          "y": 1087.8068929207716,
+          "dra_cosdec_arcsec": -0.023975010827897058,
+          "ddec_arcsec": -0.06543232476379271,
+          "radial_arcsec": 0.06968637077543667
+        },
+        {
+          "source_id": "F444W_centroid_114",
+          "detected_index": 178,
+          "x": 936.497387109861,
+          "y": 839.5192870140995,
+          "dra_cosdec_arcsec": 0.007771066560526689,
+          "ddec_arcsec": 0.07563126372528242,
+          "radial_arcsec": 0.07602945172375376
+        },
+        {
+          "source_id": "F444W_centroid_3",
+          "detected_index": 64,
+          "x": 278.12629812274696,
+          "y": 278.75116729552695,
+          "dra_cosdec_arcsec": 0.07314640905242986,
+          "ddec_arcsec": -0.02335768651465251,
+          "radial_arcsec": 0.07678527645963054
+        },
+        {
+          "source_id": "F444W_centroid_82",
+          "detected_index": 137,
+          "x": 291.890649355463,
+          "y": 673.9752691663895,
+          "dra_cosdec_arcsec": -0.08256491018279985,
+          "ddec_arcsec": -0.006523873225884544,
+          "radial_arcsec": 0.08282225127720866
+        },
+        {
+          "source_id": "F444W_centroid_209",
+          "detected_index": 277,
+          "x": 1289.6138368354693,
+          "y": 1321.3169830802285,
+          "dra_cosdec_arcsec": 0.039426297383919146,
+          "ddec_arcsec": -0.07663612183822359,
+          "radial_arcsec": 0.08618310795910784
+        },
+        {
+          "source_id": "F444W_centroid_18",
+          "detected_index": 80,
+          "x": 1967.2885454582756,
+          "y": 356.67679785373946,
+          "dra_cosdec_arcsec": -0.0786390050609319,
+          "ddec_arcsec": 0.03990158493274612,
+          "radial_arcsec": 0.08818293258270353
+        },
+        {
+          "source_id": "F444W_centroid_374",
+          "detected_index": 424,
+          "x": 715.8560931909251,
+          "y": 1998.1799181007552,
+          "dra_cosdec_arcsec": 0.004352009999264624,
+          "ddec_arcsec": -0.09200790514644339,
+          "radial_arcsec": 0.09211077353302446
+        },
+        {
+          "source_id": "F444W_centroid_260",
+          "detected_index": 334,
+          "x": 1945.550696191716,
+          "y": 1590.7088078206898,
+          "dra_cosdec_arcsec": 0.05176067471609016,
+          "ddec_arcsec": -0.07637434842631513,
+          "radial_arcsec": 0.09226163094829357
+        },
+        {
+          "source_id": "F444W_centroid_216",
+          "detected_index": 286,
+          "x": 1411.872447038053,
+          "y": 1357.4869612161765,
+          "dra_cosdec_arcsec": -0.07320651704750876,
+          "ddec_arcsec": -0.0805166058759746,
+          "radial_arcsec": 0.10882149586321238
+        },
+        {
+          "source_id": "F444W_centroid_117",
+          "detected_index": 182,
+          "x": 1982.981627925296,
+          "y": 860.2823472237142,
+          "dra_cosdec_arcsec": 0.06505520828574453,
+          "ddec_arcsec": 0.12137999225044951,
+          "radial_arcsec": 0.13771449685134046
+        },
+        {
+          "source_id": "F444W_centroid_87",
+          "detected_index": 141,
+          "x": 341.3363740812034,
+          "y": 705.9377399099019,
+          "dra_cosdec_arcsec": 0.11284842798255151,
+          "ddec_arcsec": -0.14181734886948222,
+          "radial_arcsec": 0.18123721512048047
+        },
+        {
+          "source_id": "F444W_centroid_129",
+          "detected_index": 189,
+          "x": 96.10095791597598,
+          "y": 901.3338322389155,
+          "dra_cosdec_arcsec": 0.16666002408544486,
+          "ddec_arcsec": -0.08275923220139775,
+          "radial_arcsec": 0.18607701131919088
+        },
+        {
+          "source_id": "F444W_centroid_67",
+          "detected_index": 121,
+          "x": 1797.719470548758,
+          "y": 625.5176097974892,
+          "dra_cosdec_arcsec": 0.14433579115781117,
+          "ddec_arcsec": -0.18194074756098083,
+          "radial_arcsec": 0.23223965259323306
+        }
+      ],
+      "interpretation": "secondary_image_centroid_cross_band_registration",
+      "limitations": [
+        "Reference is F444W image centroids; this is not a second external catalog.",
+        "Color gradients and blended-source changes contribute to centroid differences.",
+        "Bootstrap intervals omit shared-image and image-wide systematic errors.",
+        "No measured offset was fitted then applied to the images."
+      ]
+    }
+  ],
+  "claim": "recovered original science images and measured external-frame consistency",
+  "not_established": [
+    "new galaxies",
+    "Gaia-level absolute frame certification",
+    "historical artifact-rate reproduction",
+    "full archive coverage"
+  ]
+}

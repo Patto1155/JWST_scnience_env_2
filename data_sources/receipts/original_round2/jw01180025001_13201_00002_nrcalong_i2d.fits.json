@@ -1,0 +1,12 @@
+{
+  "requested_url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw01180025001_13201_00002_nrcalong_i2d.fits",
+  "resolved_url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw01180025001_13201_00002_nrcalong_i2d.fits",
+  "retrieved_utc": "2026-10-09T07:07:39.789673+00:00",
+  "bytes": 120257280,
+  "sha256": "808570fb67066245053f94f4ac25362a6292ca5e9743248b8eba55c03e204e9a",
+  "content_type": "application/octet-stream",
+  "etag": "\"6aaceac8-72afb00\"",
+  "last_modified": "Fri, 18 Sep 2026 07:39:52 GMT",
+  "product_id": "jw01180025001_13201_00002_nrcalong_i2d.fits",
+  "max_bytes": 314572800
+}
