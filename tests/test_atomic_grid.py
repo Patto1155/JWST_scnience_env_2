@@ -28,6 +28,24 @@ def epsilon():
     return {"NIV": 1e-21, "CIV": 2e-21, "NIII": 1e-21, "CIII": 2e-21, "OIII": 1e-21, "HeII": 1e-24}
 
 
+def assert_compact_equal(actual, expected):
+    """Exact structure/lineage, tight floating tolerance across supported BLAS/NumPy."""
+    if isinstance(expected, dict):
+        assert isinstance(actual, dict) and actual.keys() == expected.keys()
+        for key in expected:
+            assert_compact_equal(actual[key], expected[key])
+    elif isinstance(expected, list):
+        assert isinstance(actual, list) and len(actual) == len(expected)
+        for value, reference in zip(actual, expected):
+            assert_compact_equal(value, reference)
+    elif isinstance(expected, float):
+        assert isinstance(actual, (float, np.floating))
+        assert actual == pytest.approx(expected, rel=1e-12, abs=1e-13)
+    else:
+        assert type(actual) is type(expected)
+        assert actual == expected
+
+
 def test_equal_ionic_abundances_have_unequal_fluxes():
     flux, cov = check_fluxes(fit())
     answer = ionic_ratio(flux, cov, epsilon(), ("NIV", "NIII"), ("CIV", "CIII"))
@@ -144,6 +162,28 @@ def test_committed_atomic_grid_and_saved_fit_replay():
     for fit_record, result in zip(
         [spectrum["nominal_reference_fit"], spectrum["point_source_scenarios"][0]], saved["models"]
     ):
-        assert analyze_fit(fit_record, grid) == {
-            k: v for k, v in result.items() if k != "resolution_family"
-        }
+        assert_compact_equal(
+            analyze_fit(fit_record, grid),
+            {k: v for k, v in result.items() if k != "resolution_family"},
+        )
+    assert (
+        saved["grid_sha256"]
+        == hashlib.sha256((root / "research_output/mom_atomic_grid.json").read_bytes()).hexdigest()
+    )
+    assert (
+        saved["spectrum_sha256"]
+        == hashlib.sha256(
+            (root / "research_output/mom_z14_point_resolution.json").read_bytes()
+        ).hexdigest()
+    )
+
+
+def test_replay_tolerance_rejects_meaningful_changes_and_preserves_lineage():
+    source = {"value": 8.828314179330988, "lineage": "actual-source", "identified": False}
+    assert_compact_equal({**source, "value": source["value"] + 1e-14}, source)
+    with pytest.raises(AssertionError):
+        assert_compact_equal({**source, "value": source["value"] + 1e-5}, source)
+    with pytest.raises(AssertionError):
+        assert_compact_equal({**source, "lineage": "changed-source"}, source)
+    with pytest.raises(AssertionError):
+        assert_compact_equal({**source, "identified": 0}, source)
