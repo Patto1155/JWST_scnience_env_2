@@ -1,0 +1,403 @@
+{
+  "schema_version": 1,
+  "selection_contract": "All A/B/C grouped JADES refs with complete valid angular margin in union of three fixed targeted cutouts; no SCI-amplitude, detection or redshift cut",
+  "targeted_footprint_limitation": "Cutouts centered on three historical high-z nonrecoveries; additional controls are blind to pixel outcomes but footprint is biased",
+  "reference_csv_sha256": "4b588479eb9ebbfd590dd6ea0ea85949f80952e085ea94e874a191d558f4accf",
+  "reference_grouping": {
+    "input_provenance": {
+      "reference_sha256": "4b588479eb9ebbfd590dd6ea0ea85949f80952e085ea94e874a191d558f4accf",
+      "reference_bytes": 850160,
+      "source_sha256": "4b4e7fd4306208ee801406c7ed73fdab895a2e67184af7f639a91e5f9c8ab7d4",
+      "source_version": "JADES DR4 Combined_DR4_external_v1.2.1.fits",
+      "source_url": "https://jades.herts.ac.uk/DR4/Combined_DR4_external_v1.2.1.fits"
+    },
+    "observation_cohort_counts": {
+      "robust_high_z_ge_6": 243,
+      "robust_controls_0_le_z_lt_3": 1461,
+      "secure_c_high_z_ge_6": 48
+    },
+    "grouping": {
+      "radius_arcsec": 0.3,
+      "observation_rows": 5190,
+      "conservative_sky_groups": 5088,
+      "group_size_histogram": {
+        "1": 4987,
+        "2": 100,
+        "3": 1
+      },
+      "shared_positive_dr5_id_edges": 95,
+      "spherical_proximity_edges": 93,
+      "components_wider_than_radius": 10,
+      "meaning": "Leakage prevention components; close/blended neighbours can merge, so these are not certified unique galaxies."
+    },
+    "group_cohort_counts": {
+      "c_other": 386,
+      "robust_controls_0_le_z_lt_3": 1440,
+      "robust_high_z_ge_6": 226,
+      "robust_other": 1129,
+      "secure_c_high_z_ge_6": 41
+    },
+    "redshift_conflict_groups": []
+  },
+  "required_valid_margin_arcsec": 1.0066030904043128,
+  "original_pixel_area_arcsec2": 0.003958006959419973,
+  "original_input": {
+    "filename": "jw01180026001_09201_00003_nrcalong_i2d.fits",
+    "requested_url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw01180026001_09201_00003_nrcalong_i2d.fits",
+    "resolved_url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw01180026001_09201_00003_nrcalong_i2d.fits",
+    "retrieved_utc": "2026-10-09T07:06:08.241856+00:00",
+    "bytes": 120257280,
+    "sha256": "b9b84b9bd0bd8ef6140dca76163a9ac4625689024b651a25e631a6d14ce68d86",
+    "content_type": "application/octet-stream",
+    "etag": "\"6aad3d7b-72afb00\"",
+    "last_modified": "Fri, 18 Sep 2026 13:32:43 GMT",
+    "product_id": "jw01180026001_09201_00003_nrcalong_i2d.fits",
+    "max_bytes": 314572800
+  },
+  "deep_inputs": [
+    {
+      "filename": "dja_f444w_20074794.fits",
+      "bytes": 1874880,
+      "sha256": "06c804359f2553155e46745c009572abfda6a62fcdcf922a2c04127fc74d8662",
+      "pixel_area_arcsec2": 0.00249999999999986,
+      "contributors_sha256": "f7457609a9d142f8130bef9613e2fb12a12e8713c066c50f8d7e593b708965bd",
+      "contributor_count": 67
+    },
+    {
+      "filename": "dja_f444w_20083087.fits",
+      "bytes": 1872000,
+      "sha256": "4f0584d66e0196cbf698109212880a412ac1d41c6603d26d299a33e207d993a5",
+      "pixel_area_arcsec2": 0.00249999999999986,
+      "contributors_sha256": "50dd8784f7d91f7447ce6b1e6558b7dde9a7ced1ba9f9a408d47ec8833f36fd1",
+      "contributor_count": 61
+    },
+    {
+      "filename": "dja_f444w_20189546.fits",
+      "bytes": 1872000,
+      "sha256": "0a887487f1fefa97b4360b977fa23fc248321b47dad58e7e99bfa9b43f778d34",
+      "pixel_area_arcsec2": 0.00249999999999986,
+      "contributors_sha256": "643e02ac34d83bdac4e7c53b8872dba5cbbebfcbdd8ea21fb888fb297841ebfa",
+      "contributor_count": 50
+    }
+  ],
+  "references": [
+    {
+      "source_id": "dr4-sky-25547a9f97e6e59e",
+      "sky_group_id": "dr4-sky-25547a9f97e6e59e",
+      "field_id": "GS",
+      "ra_deg": 53.065117,
+      "dec_deg": -27.8490469,
+      "cohort": "robust_other",
+      "z_spec": 5.587044379579053,
+      "observation_ids": [
+        "goods-s-deepjwst_72975"
+      ],
+      "quality_flags": [
+        "A"
+      ],
+      "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+      "role": "additional_geometry_control",
+      "primary_deep_image": "dja_f444w_20074794.fits",
+      "available_deep_images": [
+        "dja_f444w_20074794.fits"
+      ],
+      "original_covered": true
+    },
+    {
+      "source_id": "dr4-sky-3d889d5164f6cc95",
+      "sky_group_id": "dr4-sky-3d889d5164f6cc95",
+      "field_id": "GS",
+      "ra_deg": 53.0681289,
+      "dec_deg": -27.8371102,
+      "cohort": "robust_controls_0_le_z_lt_3",
+      "z_spec": 1.0449668183531653,
+      "observation_ids": [
+        "goods-s-mediumjwst_190909"
+      ],
+      "quality_flags": [
+        "A"
+      ],
+      "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+      "role": "additional_geometry_control",
+      "primary_deep_image": "dja_f444w_20083087.fits",
+      "available_deep_images": [
+        "dja_f444w_20083087.fits"
+      ],
+      "original_covered": true
+    },
+    {
+      "source_id": "dr4-sky-4bf50c0e9e14af1f",
+      "sky_group_id": "dr4-sky-4bf50c0e9e14af1f",
+      "field_id": "GS",
+      "ra_deg": 53.064192,
+      "dec_deg": -27.8489369,
+      "cohort": "robust_other",
+      "z_spec": 4.208167580756713,
+      "observation_ids": [
+        "goods-s-deepjwst_73071"
+      ],
+      "quality_flags": [
+        "A"
+      ],
+      "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+      "role": "additional_geometry_control",
+      "primary_deep_image": "dja_f444w_20074794.fits",
+      "available_deep_images": [
+        "dja_f444w_20074794.fits"
+      ],
+      "original_covered": true
+    },
+    {
+      "source_id": "dr4-sky-5d8a18075be6c32d",
+      "sky_group_id": "dr4-sky-5d8a18075be6c32d",
+      "field_id": "GS",
+      "ra_deg": 53.0686138,
+      "dec_deg": -27.8360468,
+      "cohort": "c_other",
+      "z_spec": 3.80804,
+      "observation_ids": [
+        "goods-s-mediumjwst_84610"
+      ],
+      "quality_flags": [
+        "C"
+      ],
+      "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+      "role": "additional_geometry_control",
+      "primary_deep_image": "dja_f444w_20083087.fits",
+      "available_deep_images": [
+        "dja_f444w_20083087.fits"
+      ],
+      "original_covered": false
+    },
+    {
+      "source_id": "dr4-sky-60a063992460019e",
+      "sky_group_id": "dr4-sky-60a063992460019e",
+      "field_id": "GS",
+      "ra_deg": 53.0677326,
+      "dec_deg": -27.8378744,
+      "cohort": "secure_c_high_z_ge_6",
+      "z_spec": 9.059601,
+      "observation_ids": [
+        "goods-s-mediumjwst_20083087"
+      ],
+      "quality_flags": [
+        "C"
+      ],
+      "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+      "role": "previously_selected_failure_seed",
+      "primary_deep_image": "dja_f444w_20083087.fits",
+      "available_deep_images": [
+        "dja_f444w_20083087.fits"
+      ],
+      "original_covered": true
+    },
+    {
+      "source_id": "dr4-sky-7daba3ac68aee7aa",
+      "sky_group_id": "dr4-sky-7daba3ac68aee7aa",
+      "field_id": "GS",
+      "ra_deg": 53.0702715,
+      "dec_deg": -27.8455956,
+      "cohort": "robust_other",
+      "z_spec": 3.702326157888164,
+      "observation_ids": [
+        "goods-s-mediumjwst_187956"
+      ],
+      "quality_flags": [
+        "A"
+      ],
+      "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+      "role": "additional_geometry_control",
+      "primary_deep_image": "dja_f444w_20074794.fits",
+      "available_deep_images": [
+        "dja_f444w_20074794.fits"
+      ],
+      "original_covered": false
+    },
+    {
+      "source_id": "dr4-sky-84f88ac67f8903c1",
+      "sky_group_id": "dr4-sky-84f88ac67f8903c1",
+      "field_id": "GS",
+      "ra_deg": 53.0677652,
+      "dec_deg": -27.8484896,
+      "cohort": "robust_controls_0_le_z_lt_3",
+      "z_spec": 1.5502263988006322,
+      "observation_ids": [
+        "goods-s-deepjwst_186837"
+      ],
+      "quality_flags": [
+        "A"
+      ],
+      "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+      "role": "additional_geometry_control",
+      "primary_deep_image": "dja_f444w_20074794.fits",
+      "available_deep_images": [
+        "dja_f444w_20074794.fits"
+      ],
+      "original_covered": false
+    },
+    {
+      "source_id": "dr4-sky-8af84e0661785f47",
+      "sky_group_id": "dr4-sky-8af84e0661785f47",
+      "field_id": "GS",
+      "ra_deg": 53.0648687,
+      "dec_deg": -27.8361342,
+      "cohort": "robust_controls_0_le_z_lt_3",
+      "z_spec": 1.6081494560688199,
+      "observation_ids": [
+        "goods-s-mediumjwst_191333"
+      ],
+      "quality_flags": [
+        "A"
+      ],
+      "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+      "role": "additional_geometry_control",
+      "primary_deep_image": "dja_f444w_20083087.fits",
+      "available_deep_images": [
+        "dja_f444w_20083087.fits"
+      ],
+      "original_covered": true
+    },
+    {
+      "source_id": "dr4-sky-a7dcfe132d13104d",
+      "sky_group_id": "dr4-sky-a7dcfe132d13104d",
+      "field_id": "GS",
+      "ra_deg": 53.0671723,
+      "dec_deg": -27.8472697,
+      "cohort": "secure_c_high_z_ge_6",
+      "z_spec": 8.589369,
+      "observation_ids": [
+        "goods-s-deepjwst_20074794"
+      ],
+      "quality_flags": [
+        "C"
+      ],
+      "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+      "role": "previously_selected_failure_seed",
+      "primary_deep_image": "dja_f444w_20074794.fits",
+      "available_deep_images": [
+        "dja_f444w_20074794.fits"
+      ],
+      "original_covered": false
+    },
+    {
+      "source_id": "dr4-sky-b52834593ece71e2",
+      "sky_group_id": "dr4-sky-b52834593ece71e2",
+      "field_id": "GS",
+      "ra_deg": 53.0647615,
+      "dec_deg": -27.8364279,
+      "cohort": "robust_controls_0_le_z_lt_3",
+      "z_spec": 1.5473957978266193,
+      "observation_ids": [
+        "goods-s-mediumjwst_84256"
+      ],
+      "quality_flags": [
+        "A"
+      ],
+      "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+      "role": "additional_geometry_control",
+      "primary_deep_image": "dja_f444w_20083087.fits",
+      "available_deep_images": [
+        "dja_f444w_20083087.fits"
+      ],
+      "original_covered": true
+    },
+    {
+      "source_id": "dr4-sky-b5b66766711ec8d2",
+      "sky_group_id": "dr4-sky-b5b66766711ec8d2",
+      "field_id": "GS",
+      "ra_deg": 53.0703182,
+      "dec_deg": -27.8395535,
+      "cohort": "c_other",
+      "z_spec": 2.823797,
+      "observation_ids": [
+        "goods-s-mediumjwst_81659"
+      ],
+      "quality_flags": [
+        "C"
+      ],
+      "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+      "role": "additional_geometry_control",
+      "primary_deep_image": "dja_f444w_20083087.fits",
+      "available_deep_images": [
+        "dja_f444w_20083087.fits",
+        "dja_f444w_20189546.fits"
+      ],
+      "original_covered": true
+    },
+    {
+      "source_id": "dr4-sky-c727b97a621b0f1f",
+      "sky_group_id": "dr4-sky-c727b97a621b0f1f",
+      "field_id": "GS",
+      "ra_deg": 53.0751776,
+      "dec_deg": -27.8422965,
+      "cohort": "robust_controls_0_le_z_lt_3",
+      "z_spec": 0.56006,
+      "observation_ids": [
+        "goods-s-mediumjwst_189290"
+      ],
+      "quality_flags": [
+        "B"
+      ],
+      "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+      "role": "additional_geometry_control",
+      "primary_deep_image": "dja_f444w_20189546.fits",
+      "available_deep_images": [
+        "dja_f444w_20189546.fits"
+      ],
+      "original_covered": false
+    },
+    {
+      "source_id": "dr4-sky-f399a6995236292a",
+      "sky_group_id": "dr4-sky-f399a6995236292a",
+      "field_id": "GS",
+      "ra_deg": 53.0660667,
+      "dec_deg": -27.8498924,
+      "cohort": "robust_controls_0_le_z_lt_3",
+      "z_spec": 1.0799832942330947,
+      "observation_ids": [
+        "goods-s-deepjwst_186339"
+      ],
+      "quality_flags": [
+        "A"
+      ],
+      "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+      "role": "additional_geometry_control",
+      "primary_deep_image": "dja_f444w_20074794.fits",
+      "available_deep_images": [
+        "dja_f444w_20074794.fits"
+      ],
+      "original_covered": true
+    },
+    {
+      "source_id": "dr4-sky-fa09ac04a1072665",
+      "sky_group_id": "dr4-sky-fa09ac04a1072665",
+      "field_id": "GS",
+      "ra_deg": 53.0721288,
+      "dec_deg": -27.8419459,
+      "cohort": "robust_high_z_ge_6",
+      "z_spec": 8.697172188017191,
+      "observation_ids": [
+        "goods-s-mediumjwst_20189546"
+      ],
+      "quality_flags": [
+        "A"
+      ],
+      "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+      "role": "previously_selected_failure_seed",
+      "primary_deep_image": "dja_f444w_20189546.fits",
+      "available_deep_images": [
+        "dja_f444w_20189546.fits"
+      ],
+      "original_covered": true
+    }
+  ],
+  "counts_by_role_and_cohort": {
+    "additional_geometry_control/c_other": 2,
+    "additional_geometry_control/robust_controls_0_le_z_lt_3": 6,
+    "additional_geometry_control/robust_other": 3,
+    "previously_selected_failure_seed/robust_high_z_ge_6": 1,
+    "previously_selected_failure_seed/secure_c_high_z_ge_6": 2
+  },
+  "control_catalogue_is_frozen_before_pixel_evaluation": true,
+  "frozen_content_sha256": "ab939a373c32c8517248bea8ac7b2394f363a7cac10d1fe039707151c3b3c625"
+}

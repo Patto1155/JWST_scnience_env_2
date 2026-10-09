@@ -1,0 +1,1009 @@
+{
+  "schema_version": 1,
+  "evidence_kind": "actual_public_pixels_geometry_frozen_conditional_controls",
+  "frozen_catalogue_sha256": "82caa9e4206a723f6031353c50f915b695518fe22655809b0e3c62050e5b3842",
+  "aperture_arcsec": {
+    "aperture_radius_arcsec": 0.2,
+    "background_annulus_inner_radius_arcsec": 0.4,
+    "background_annulus_outer_radius_arcsec": 0.6
+  },
+  "detector": {
+    "sigma": 5.0,
+    "match_radius_arcsec": 0.2,
+    "not_detected_status_meaning": "No detection centroid within matching radius; blends and shifted centroids can cause nonrecovery without absent source flux",
+    "angular_area_experiment": "Only minimum connected area matched; threshold noise/sampling/PSF remain different"
+  },
+  "image_reports": [
+    {
+      "filename": "dja_f444w_20074794.fits",
+      "legacy_min_pixels": 5,
+      "angular_area_min_pixels": 8,
+      "legacy_detections": 60,
+      "angular_area_detections": 51,
+      "original_in_contributors": true,
+      "noise": {
+        "status": "measured",
+        "count": 83,
+        "sigma_jy": 5.862470821306291e-10,
+        "median_jy": 8.559483491853083e-11,
+        "formal_error_median_jy": 5.242892318791227e-10,
+        "scatter_to_formal_ratio": 1.1181749433026522,
+        "limitation": "Source-masked blank-sky covariance/confusion diagnostic; masks and spatial depth affect scatter"
+      }
+    },
+    {
+      "filename": "dja_f444w_20083087.fits",
+      "legacy_min_pixels": 5,
+      "angular_area_min_pixels": 8,
+      "legacy_detections": 68,
+      "angular_area_detections": 57,
+      "original_in_contributors": true,
+      "noise": {
+        "status": "measured",
+        "count": 100,
+        "sigma_jy": 1.3724001975626813e-09,
+        "median_jy": -4.743831896354235e-11,
+        "formal_error_median_jy": 1.1995841670383279e-09,
+        "scatter_to_formal_ratio": 1.14406328065418,
+        "limitation": "Source-masked blank-sky covariance/confusion diagnostic; masks and spatial depth affect scatter"
+      }
+    },
+    {
+      "filename": "dja_f444w_20189546.fits",
+      "legacy_min_pixels": 5,
+      "angular_area_min_pixels": 8,
+      "legacy_detections": 81,
+      "angular_area_detections": 64,
+      "original_in_contributors": true,
+      "noise": {
+        "status": "measured",
+        "count": 85,
+        "sigma_jy": 7.3754839083518e-10,
+        "median_jy": -1.0625651908442522e-10,
+        "formal_error_median_jy": 5.299147550106014e-10,
+        "scatter_to_formal_ratio": 1.3918245979401436,
+        "limitation": "Source-masked blank-sky covariance/confusion diagnostic; masks and spatial depth affect scatter"
+      }
+    }
+  ],
+  "contributor_dependence": [
+    {
+      "first": "dja_f444w_20074794.fits",
+      "second": "dja_f444w_20083087.fits",
+      "shared_native_contributors": 58
+    },
+    {
+      "first": "dja_f444w_20074794.fits",
+      "second": "dja_f444w_20189546.fits",
+      "shared_native_contributors": 50
+    },
+    {
+      "first": "dja_f444w_20083087.fits",
+      "second": "dja_f444w_20189546.fits",
+      "shared_native_contributors": 50
+    }
+  ],
+  "unique_source_groups": 14,
+  "duplicate_images_not_pooled": true,
+  "summaries": {
+    "original_detection": [
+      {
+        "role": "additional_geometry_control",
+        "cohort": "c_other",
+        "groups_in_deep_union": 2,
+        "covered_group_denominator": 1,
+        "matched": 1,
+        "ambiguous": 0,
+        "not_detected": 0,
+        "conditional_recovery_fraction": 1.0
+      },
+      {
+        "role": "additional_geometry_control",
+        "cohort": "robust_controls_0_le_z_lt_3",
+        "groups_in_deep_union": 6,
+        "covered_group_denominator": 4,
+        "matched": 3,
+        "ambiguous": 0,
+        "not_detected": 1,
+        "conditional_recovery_fraction": 0.75
+      },
+      {
+        "role": "additional_geometry_control",
+        "cohort": "robust_other",
+        "groups_in_deep_union": 3,
+        "covered_group_denominator": 2,
+        "matched": 0,
+        "ambiguous": 0,
+        "not_detected": 2,
+        "conditional_recovery_fraction": 0.0
+      },
+      {
+        "role": "previously_selected_failure_seed",
+        "cohort": "robust_high_z_ge_6",
+        "groups_in_deep_union": 1,
+        "covered_group_denominator": 1,
+        "matched": 0,
+        "ambiguous": 0,
+        "not_detected": 1,
+        "conditional_recovery_fraction": 0.0
+      },
+      {
+        "role": "previously_selected_failure_seed",
+        "cohort": "secure_c_high_z_ge_6",
+        "groups_in_deep_union": 2,
+        "covered_group_denominator": 1,
+        "matched": 0,
+        "ambiguous": 0,
+        "not_detected": 1,
+        "conditional_recovery_fraction": 0.0
+      }
+    ],
+    "deep_legacy_detection": [
+      {
+        "role": "additional_geometry_control",
+        "cohort": "c_other",
+        "groups_in_deep_union": 2,
+        "covered_group_denominator": 2,
+        "matched": 2,
+        "ambiguous": 0,
+        "not_detected": 0,
+        "conditional_recovery_fraction": 1.0
+      },
+      {
+        "role": "additional_geometry_control",
+        "cohort": "robust_controls_0_le_z_lt_3",
+        "groups_in_deep_union": 6,
+        "covered_group_denominator": 6,
+        "matched": 6,
+        "ambiguous": 0,
+        "not_detected": 0,
+        "conditional_recovery_fraction": 1.0
+      },
+      {
+        "role": "additional_geometry_control",
+        "cohort": "robust_other",
+        "groups_in_deep_union": 3,
+        "covered_group_denominator": 3,
+        "matched": 1,
+        "ambiguous": 0,
+        "not_detected": 2,
+        "conditional_recovery_fraction": 0.3333333333333333
+      },
+      {
+        "role": "previously_selected_failure_seed",
+        "cohort": "robust_high_z_ge_6",
+        "groups_in_deep_union": 1,
+        "covered_group_denominator": 1,
+        "matched": 1,
+        "ambiguous": 0,
+        "not_detected": 0,
+        "conditional_recovery_fraction": 1.0
+      },
+      {
+        "role": "previously_selected_failure_seed",
+        "cohort": "secure_c_high_z_ge_6",
+        "groups_in_deep_union": 2,
+        "covered_group_denominator": 2,
+        "matched": 1,
+        "ambiguous": 0,
+        "not_detected": 1,
+        "conditional_recovery_fraction": 0.5
+      }
+    ],
+    "deep_angular_area_detection": [
+      {
+        "role": "additional_geometry_control",
+        "cohort": "c_other",
+        "groups_in_deep_union": 2,
+        "covered_group_denominator": 2,
+        "matched": 2,
+        "ambiguous": 0,
+        "not_detected": 0,
+        "conditional_recovery_fraction": 1.0
+      },
+      {
+        "role": "additional_geometry_control",
+        "cohort": "robust_controls_0_le_z_lt_3",
+        "groups_in_deep_union": 6,
+        "covered_group_denominator": 6,
+        "matched": 5,
+        "ambiguous": 0,
+        "not_detected": 1,
+        "conditional_recovery_fraction": 0.8333333333333334
+      },
+      {
+        "role": "additional_geometry_control",
+        "cohort": "robust_other",
+        "groups_in_deep_union": 3,
+        "covered_group_denominator": 3,
+        "matched": 1,
+        "ambiguous": 0,
+        "not_detected": 2,
+        "conditional_recovery_fraction": 0.3333333333333333
+      },
+      {
+        "role": "previously_selected_failure_seed",
+        "cohort": "robust_high_z_ge_6",
+        "groups_in_deep_union": 1,
+        "covered_group_denominator": 1,
+        "matched": 1,
+        "ambiguous": 0,
+        "not_detected": 0,
+        "conditional_recovery_fraction": 1.0
+      },
+      {
+        "role": "previously_selected_failure_seed",
+        "cohort": "secure_c_high_z_ge_6",
+        "groups_in_deep_union": 2,
+        "covered_group_denominator": 2,
+        "matched": 1,
+        "ambiguous": 0,
+        "not_detected": 1,
+        "conditional_recovery_fraction": 0.5
+      }
+    ]
+  },
+  "rows": [
+    {
+      "reference": {
+        "source_id": "dr4-sky-25547a9f97e6e59e",
+        "sky_group_id": "dr4-sky-25547a9f97e6e59e",
+        "field_id": "GS",
+        "ra_deg": 53.065117,
+        "dec_deg": -27.8490469,
+        "cohort": "robust_other",
+        "z_spec": 5.587044379579053,
+        "observation_ids": [
+          "goods-s-deepjwst_72975"
+        ],
+        "quality_flags": [
+          "A"
+        ],
+        "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+        "role": "additional_geometry_control",
+        "primary_deep_image": "dja_f444w_20074794.fits",
+        "available_deep_images": [
+          "dja_f444w_20074794.fits"
+        ],
+        "original_covered": true
+      },
+      "deep_legacy_detection": {
+        "status": "not_detected",
+        "detection_index": null,
+        "separation_arcsec": null
+      },
+      "deep_angular_area_detection": {
+        "status": "not_detected",
+        "detection_index": null,
+        "separation_arcsec": null
+      },
+      "deep_aperture": {
+        "background_subtracted_flux_jy": 1.1742722347412292e-09,
+        "flux_error_jy": 5.402221485373023e-10,
+        "snr": 2.1736839889306125,
+        "measurement_status": "measured",
+        "calibration_status": "calibrated",
+        "coverage_fraction": 1.0,
+        "uncertainty_method": "err_diagonal_plus_background_mean",
+        "blank_scatter_snr_diagnostic": 2.003032971138225
+      },
+      "original_detection": {
+        "status": "not_detected",
+        "detection_index": null,
+        "separation_arcsec": null
+      },
+      "original_aperture": {
+        "background_subtracted_flux_jy": 4.81046418682011e-09,
+        "flux_error_jy": 4.121173720261059e-09,
+        "snr": 1.1672558628553487,
+        "measurement_status": "measured",
+        "calibration_status": "calibrated",
+        "coverage_fraction": 1.0,
+        "uncertainty_method": "err_diagonal_plus_background_mean"
+      }
+    },
+    {
+      "reference": {
+        "source_id": "dr4-sky-3d889d5164f6cc95",
+        "sky_group_id": "dr4-sky-3d889d5164f6cc95",
+        "field_id": "GS",
+        "ra_deg": 53.0681289,
+        "dec_deg": -27.8371102,
+        "cohort": "robust_controls_0_le_z_lt_3",
+        "z_spec": 1.0449668183531653,
+        "observation_ids": [
+          "goods-s-mediumjwst_190909"
+        ],
+        "quality_flags": [
+          "A"
+        ],
+        "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+        "role": "additional_geometry_control",
+        "primary_deep_image": "dja_f444w_20083087.fits",
+        "available_deep_images": [
+          "dja_f444w_20083087.fits"
+        ],
+        "original_covered": true
+      },
+      "deep_legacy_detection": {
+        "status": "matched",
+        "detection_index": 51,
+        "separation_arcsec": 0.030524240755895566
+      },
+      "deep_angular_area_detection": {
+        "status": "matched",
+        "detection_index": 44,
+        "separation_arcsec": 0.030524240755895566
+      },
+      "deep_aperture": {
+        "background_subtracted_flux_jy": 1.6874182679378984e-06,
+        "flux_error_jy": 1.185070268970493e-09,
+        "snr": 1423.897225439476,
+        "measurement_status": "measured",
+        "calibration_status": "calibrated",
+        "coverage_fraction": 1.0,
+        "uncertainty_method": "err_diagonal_plus_background_mean",
+        "blank_scatter_snr_diagnostic": 1229.5380537941298
+      },
+      "original_detection": {
+        "status": "matched",
+        "detection_index": 257,
+        "separation_arcsec": 0.019748661600371746
+      },
+      "original_aperture": {
+        "background_subtracted_flux_jy": 1.708581656798168e-06,
+        "flux_error_jy": 7.693854001594628e-09,
+        "snr": 222.07097463040597,
+        "measurement_status": "measured",
+        "calibration_status": "calibrated",
+        "coverage_fraction": 1.0,
+        "uncertainty_method": "err_diagonal_plus_background_mean"
+      }
+    },
+    {
+      "reference": {
+        "source_id": "dr4-sky-4bf50c0e9e14af1f",
+        "sky_group_id": "dr4-sky-4bf50c0e9e14af1f",
+        "field_id": "GS",
+        "ra_deg": 53.064192,
+        "dec_deg": -27.8489369,
+        "cohort": "robust_other",
+        "z_spec": 4.208167580756713,
+        "observation_ids": [
+          "goods-s-deepjwst_73071"
+        ],
+        "quality_flags": [
+          "A"
+        ],
+        "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+        "role": "additional_geometry_control",
+        "primary_deep_image": "dja_f444w_20074794.fits",
+        "available_deep_images": [
+          "dja_f444w_20074794.fits"
+        ],
+        "original_covered": true
+      },
+      "deep_legacy_detection": {
+        "status": "not_detected",
+        "detection_index": null,
+        "separation_arcsec": null
+      },
+      "deep_angular_area_detection": {
+        "status": "not_detected",
+        "detection_index": null,
+        "separation_arcsec": null
+      },
+      "deep_aperture": {
+        "background_subtracted_flux_jy": 6.689405859678454e-09,
+        "flux_error_jy": 5.320043965418397e-10,
+        "snr": 12.573967251325831,
+        "measurement_status": "measured",
+        "calibration_status": "calibrated",
+        "coverage_fraction": 1.0,
+        "uncertainty_method": "err_diagonal_plus_background_mean",
+        "blank_scatter_snr_diagnostic": 11.410557192654654
+      },
+      "original_detection": {
+        "status": "not_detected",
+        "detection_index": null,
+        "separation_arcsec": null
+      },
+      "original_aperture": {
+        "background_subtracted_flux_jy": 1.617156348532904e-09,
+        "flux_error_jy": 4.162911134603961e-09,
+        "snr": 0.38846766030876434,
+        "measurement_status": "measured",
+        "calibration_status": "calibrated",
+        "coverage_fraction": 1.0,
+        "uncertainty_method": "err_diagonal_plus_background_mean"
+      }
+    },
+    {
+      "reference": {
+        "source_id": "dr4-sky-5d8a18075be6c32d",
+        "sky_group_id": "dr4-sky-5d8a18075be6c32d",
+        "field_id": "GS",
+        "ra_deg": 53.0686138,
+        "dec_deg": -27.8360468,
+        "cohort": "c_other",
+        "z_spec": 3.80804,
+        "observation_ids": [
+          "goods-s-mediumjwst_84610"
+        ],
+        "quality_flags": [
+          "C"
+        ],
+        "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+        "role": "additional_geometry_control",
+        "primary_deep_image": "dja_f444w_20083087.fits",
+        "available_deep_images": [
+          "dja_f444w_20083087.fits"
+        ],
+        "original_covered": false
+      },
+      "deep_legacy_detection": {
+        "status": "matched",
+        "detection_index": 35,
+        "separation_arcsec": 0.022028363135749882
+      },
+      "deep_angular_area_detection": {
+        "status": "matched",
+        "detection_index": 35,
+        "separation_arcsec": 0.022028363135749882
+      },
+      "deep_aperture": {
+        "background_subtracted_flux_jy": 5.620017510600731e-08,
+        "flux_error_jy": 1.2006028638817434e-09,
+        "snr": 46.809962558562496,
+        "measurement_status": "measured",
+        "calibration_status": "calibrated",
+        "coverage_fraction": 1.0,
+        "uncertainty_method": "err_diagonal_plus_background_mean",
+        "blank_scatter_snr_diagnostic": 40.95028199924206
+      },
+      "original_detection": null,
+      "original_aperture": null
+    },
+    {
+      "reference": {
+        "source_id": "dr4-sky-60a063992460019e",
+        "sky_group_id": "dr4-sky-60a063992460019e",
+        "field_id": "GS",
+        "ra_deg": 53.0677326,
+        "dec_deg": -27.8378744,
+        "cohort": "secure_c_high_z_ge_6",
+        "z_spec": 9.059601,
+        "observation_ids": [
+          "goods-s-mediumjwst_20083087"
+        ],
+        "quality_flags": [
+          "C"
+        ],
+        "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+        "role": "previously_selected_failure_seed",
+        "primary_deep_image": "dja_f444w_20083087.fits",
+        "available_deep_images": [
+          "dja_f444w_20083087.fits"
+        ],
+        "original_covered": true
+      },
+      "deep_legacy_detection": {
+        "status": "matched",
+        "detection_index": 20,
+        "separation_arcsec": 0.021975071701618675
+      },
+      "deep_angular_area_detection": {
+        "status": "matched",
+        "detection_index": 20,
+        "separation_arcsec": 0.021975071701618675
+      },
+      "deep_aperture": {
+        "background_subtracted_flux_jy": 1.9368531127645412e-08,
+        "flux_error_jy": 1.2056245760648966e-09,
+        "snr": 16.065142924394767,
+        "measurement_status": "measured",
+        "calibration_status": "calibrated",
+        "coverage_fraction": 1.0,
+        "uncertainty_method": "err_diagonal_plus_background_mean",
+        "blank_scatter_snr_diagnostic": 14.112888618088965
+      },
+      "original_detection": {
+        "status": "not_detected",
+        "detection_index": null,
+        "separation_arcsec": null
+      },
+      "original_aperture": {
+        "background_subtracted_flux_jy": 1.9993364849141046e-08,
+        "flux_error_jy": 4.246929291068349e-09,
+        "snr": 4.707722563497533,
+        "measurement_status": "measured",
+        "calibration_status": "calibrated",
+        "coverage_fraction": 1.0,
+        "uncertainty_method": "err_diagonal_plus_background_mean"
+      }
+    },
+    {
+      "reference": {
+        "source_id": "dr4-sky-7daba3ac68aee7aa",
+        "sky_group_id": "dr4-sky-7daba3ac68aee7aa",
+        "field_id": "GS",
+        "ra_deg": 53.0702715,
+        "dec_deg": -27.8455956,
+        "cohort": "robust_other",
+        "z_spec": 3.702326157888164,
+        "observation_ids": [
+          "goods-s-mediumjwst_187956"
+        ],
+        "quality_flags": [
+          "A"
+        ],
+        "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+        "role": "additional_geometry_control",
+        "primary_deep_image": "dja_f444w_20074794.fits",
+        "available_deep_images": [
+          "dja_f444w_20074794.fits"
+        ],
+        "original_covered": false
+      },
+      "deep_legacy_detection": {
+        "status": "matched",
+        "detection_index": 31,
+        "separation_arcsec": 0.019489105084787812
+      },
+      "deep_angular_area_detection": {
+        "status": "matched",
+        "detection_index": 30,
+        "separation_arcsec": 0.019489105084787812
+      },
+      "deep_aperture": {
+        "background_subtracted_flux_jy": 1.7395657723950616e-06,
+        "flux_error_jy": 5.381063400676104e-10,
+        "snr": 3232.7546487865093,
+        "measurement_status": "measured",
+        "calibration_status": "calibrated",
+        "coverage_fraction": 1.0,
+        "uncertainty_method": "err_diagonal_plus_background_mean",
+        "blank_scatter_snr_diagnostic": 2967.2911395530787
+      },
+      "original_detection": null,
+      "original_aperture": null
+    },
+    {
+      "reference": {
+        "source_id": "dr4-sky-84f88ac67f8903c1",
+        "sky_group_id": "dr4-sky-84f88ac67f8903c1",
+        "field_id": "GS",
+        "ra_deg": 53.0677652,
+        "dec_deg": -27.8484896,
+        "cohort": "robust_controls_0_le_z_lt_3",
+        "z_spec": 1.5502263988006322,
+        "observation_ids": [
+          "goods-s-deepjwst_186837"
+        ],
+        "quality_flags": [
+          "A"
+        ],
+        "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+        "role": "additional_geometry_control",
+        "primary_deep_image": "dja_f444w_20074794.fits",
+        "available_deep_images": [
+          "dja_f444w_20074794.fits"
+        ],
+        "original_covered": false
+      },
+      "deep_legacy_detection": {
+        "status": "matched",
+        "detection_index": 48,
+        "separation_arcsec": 0.041174116688565424
+      },
+      "deep_angular_area_detection": {
+        "status": "not_detected",
+        "detection_index": null,
+        "separation_arcsec": null
+      },
+      "deep_aperture": {
+        "background_subtracted_flux_jy": 1.6065851668936523e-08,
+        "flux_error_jy": 5.421262094642882e-10,
+        "snr": 29.63489200201607,
+        "measurement_status": "measured",
+        "calibration_status": "calibrated",
+        "coverage_fraction": 1.0,
+        "uncertainty_method": "err_diagonal_plus_background_mean",
+        "blank_scatter_snr_diagnostic": 27.404574212203393
+      },
+      "original_detection": null,
+      "original_aperture": null
+    },
+    {
+      "reference": {
+        "source_id": "dr4-sky-8af84e0661785f47",
+        "sky_group_id": "dr4-sky-8af84e0661785f47",
+        "field_id": "GS",
+        "ra_deg": 53.0648687,
+        "dec_deg": -27.8361342,
+        "cohort": "robust_controls_0_le_z_lt_3",
+        "z_spec": 1.6081494560688199,
+        "observation_ids": [
+          "goods-s-mediumjwst_191333"
+        ],
+        "quality_flags": [
+          "A"
+        ],
+        "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+        "role": "additional_geometry_control",
+        "primary_deep_image": "dja_f444w_20083087.fits",
+        "available_deep_images": [
+          "dja_f444w_20083087.fits"
+        ],
+        "original_covered": true
+      },
+      "deep_legacy_detection": {
+        "status": "matched",
+        "detection_index": 33,
+        "separation_arcsec": 0.034233554236086275
+      },
+      "deep_angular_area_detection": {
+        "status": "matched",
+        "detection_index": 33,
+        "separation_arcsec": 0.034233554236086275
+      },
+      "deep_aperture": {
+        "background_subtracted_flux_jy": 6.372948606335559e-08,
+        "flux_error_jy": 1.2102881243213064e-09,
+        "snr": 52.65645822898014,
+        "measurement_status": "measured",
+        "calibration_status": "calibrated",
+        "coverage_fraction": 1.0,
+        "uncertainty_method": "err_diagonal_plus_background_mean",
+        "blank_scatter_snr_diagnostic": 46.436517698362465
+      },
+      "original_detection": {
+        "status": "matched",
+        "detection_index": 321,
+        "separation_arcsec": 0.013825905450117516
+      },
+      "original_aperture": {
+        "background_subtracted_flux_jy": 6.579875026415634e-08,
+        "flux_error_jy": 4.525180344262727e-09,
+        "snr": 14.54058076327933,
+        "measurement_status": "measured",
+        "calibration_status": "calibrated",
+        "coverage_fraction": 1.0,
+        "uncertainty_method": "err_diagonal_plus_background_mean"
+      }
+    },
+    {
+      "reference": {
+        "source_id": "dr4-sky-a7dcfe132d13104d",
+        "sky_group_id": "dr4-sky-a7dcfe132d13104d",
+        "field_id": "GS",
+        "ra_deg": 53.0671723,
+        "dec_deg": -27.8472697,
+        "cohort": "secure_c_high_z_ge_6",
+        "z_spec": 8.589369,
+        "observation_ids": [
+          "goods-s-deepjwst_20074794"
+        ],
+        "quality_flags": [
+          "C"
+        ],
+        "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+        "role": "previously_selected_failure_seed",
+        "primary_deep_image": "dja_f444w_20074794.fits",
+        "available_deep_images": [
+          "dja_f444w_20074794.fits"
+        ],
+        "original_covered": false
+      },
+      "deep_legacy_detection": {
+        "status": "not_detected",
+        "detection_index": null,
+        "separation_arcsec": null
+      },
+      "deep_angular_area_detection": {
+        "status": "not_detected",
+        "detection_index": null,
+        "separation_arcsec": null
+      },
+      "deep_aperture": {
+        "background_subtracted_flux_jy": 7.243780253444115e-09,
+        "flux_error_jy": 5.415178231724649e-10,
+        "snr": 13.376808561917056,
+        "measurement_status": "measured",
+        "calibration_status": "calibrated",
+        "coverage_fraction": 1.0,
+        "uncertainty_method": "err_diagonal_plus_background_mean",
+        "blank_scatter_snr_diagnostic": 12.35618986301417
+      },
+      "original_detection": null,
+      "original_aperture": null
+    },
+    {
+      "reference": {
+        "source_id": "dr4-sky-b52834593ece71e2",
+        "sky_group_id": "dr4-sky-b52834593ece71e2",
+        "field_id": "GS",
+        "ra_deg": 53.0647615,
+        "dec_deg": -27.8364279,
+        "cohort": "robust_controls_0_le_z_lt_3",
+        "z_spec": 1.5473957978266193,
+        "observation_ids": [
+          "goods-s-mediumjwst_84256"
+        ],
+        "quality_flags": [
+          "A"
+        ],
+        "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+        "role": "additional_geometry_control",
+        "primary_deep_image": "dja_f444w_20083087.fits",
+        "available_deep_images": [
+          "dja_f444w_20083087.fits"
+        ],
+        "original_covered": true
+      },
+      "deep_legacy_detection": {
+        "status": "matched",
+        "detection_index": 30,
+        "separation_arcsec": 0.026314422475197805
+      },
+      "deep_angular_area_detection": {
+        "status": "matched",
+        "detection_index": 30,
+        "separation_arcsec": 0.026314422475197805
+      },
+      "deep_aperture": {
+        "background_subtracted_flux_jy": 7.423996079193434e-08,
+        "flux_error_jy": 1.200729518360194e-09,
+        "snr": 61.829046139651815,
+        "measurement_status": "measured",
+        "calibration_status": "calibrated",
+        "coverage_fraction": 1.0,
+        "uncertainty_method": "err_diagonal_plus_background_mean",
+        "blank_scatter_snr_diagnostic": 54.094979674136624
+      },
+      "original_detection": {
+        "status": "matched",
+        "detection_index": 318,
+        "separation_arcsec": 0.02155025472953945
+      },
+      "original_aperture": {
+        "background_subtracted_flux_jy": 7.635017103039086e-08,
+        "flux_error_jy": 4.524528245642244e-09,
+        "snr": 16.874725249848268,
+        "measurement_status": "measured",
+        "calibration_status": "calibrated",
+        "coverage_fraction": 1.0,
+        "uncertainty_method": "err_diagonal_plus_background_mean"
+      }
+    },
+    {
+      "reference": {
+        "source_id": "dr4-sky-b5b66766711ec8d2",
+        "sky_group_id": "dr4-sky-b5b66766711ec8d2",
+        "field_id": "GS",
+        "ra_deg": 53.0703182,
+        "dec_deg": -27.8395535,
+        "cohort": "c_other",
+        "z_spec": 2.823797,
+        "observation_ids": [
+          "goods-s-mediumjwst_81659"
+        ],
+        "quality_flags": [
+          "C"
+        ],
+        "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+        "role": "additional_geometry_control",
+        "primary_deep_image": "dja_f444w_20083087.fits",
+        "available_deep_images": [
+          "dja_f444w_20083087.fits",
+          "dja_f444w_20189546.fits"
+        ],
+        "original_covered": true
+      },
+      "deep_legacy_detection": {
+        "status": "matched",
+        "detection_index": 6,
+        "separation_arcsec": 0.020311929144459506
+      },
+      "deep_angular_area_detection": {
+        "status": "matched",
+        "detection_index": 6,
+        "separation_arcsec": 0.020311929144459506
+      },
+      "deep_aperture": {
+        "background_subtracted_flux_jy": 6.028160098947706e-08,
+        "flux_error_jy": 1.1940746202461872e-09,
+        "snr": 50.48394796051235,
+        "measurement_status": "measured",
+        "calibration_status": "calibrated",
+        "coverage_fraction": 1.0,
+        "uncertainty_method": "err_diagonal_plus_background_mean",
+        "blank_scatter_snr_diagnostic": 43.92421474183286
+      },
+      "original_detection": {
+        "status": "matched",
+        "detection_index": 199,
+        "separation_arcsec": 0.014901005897090217
+      },
+      "original_aperture": {
+        "background_subtracted_flux_jy": 6.810570981137645e-08,
+        "flux_error_jy": 4.151991373460991e-09,
+        "snr": 16.403143379993423,
+        "measurement_status": "measured",
+        "calibration_status": "calibrated",
+        "coverage_fraction": 1.0,
+        "uncertainty_method": "err_diagonal_plus_background_mean"
+      }
+    },
+    {
+      "reference": {
+        "source_id": "dr4-sky-c727b97a621b0f1f",
+        "sky_group_id": "dr4-sky-c727b97a621b0f1f",
+        "field_id": "GS",
+        "ra_deg": 53.0751776,
+        "dec_deg": -27.8422965,
+        "cohort": "robust_controls_0_le_z_lt_3",
+        "z_spec": 0.56006,
+        "observation_ids": [
+          "goods-s-mediumjwst_189290"
+        ],
+        "quality_flags": [
+          "B"
+        ],
+        "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+        "role": "additional_geometry_control",
+        "primary_deep_image": "dja_f444w_20189546.fits",
+        "available_deep_images": [
+          "dja_f444w_20189546.fits"
+        ],
+        "original_covered": false
+      },
+      "deep_legacy_detection": {
+        "status": "matched",
+        "detection_index": 60,
+        "separation_arcsec": 0.021286134153063897
+      },
+      "deep_angular_area_detection": {
+        "status": "matched",
+        "detection_index": 50,
+        "separation_arcsec": 0.021286134153063897
+      },
+      "deep_aperture": {
+        "background_subtracted_flux_jy": 1.6534535910079764e-07,
+        "flux_error_jy": 5.317340201260785e-10,
+        "snr": 310.9550129246816,
+        "measurement_status": "measured",
+        "calibration_status": "calibrated",
+        "coverage_fraction": 1.0,
+        "uncertainty_method": "err_diagonal_plus_background_mean",
+        "blank_scatter_snr_diagnostic": 224.1823874275761
+      },
+      "original_detection": null,
+      "original_aperture": null
+    },
+    {
+      "reference": {
+        "source_id": "dr4-sky-f399a6995236292a",
+        "sky_group_id": "dr4-sky-f399a6995236292a",
+        "field_id": "GS",
+        "ra_deg": 53.0660667,
+        "dec_deg": -27.8498924,
+        "cohort": "robust_controls_0_le_z_lt_3",
+        "z_spec": 1.0799832942330947,
+        "observation_ids": [
+          "goods-s-deepjwst_186339"
+        ],
+        "quality_flags": [
+          "A"
+        ],
+        "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+        "role": "additional_geometry_control",
+        "primary_deep_image": "dja_f444w_20074794.fits",
+        "available_deep_images": [
+          "dja_f444w_20074794.fits"
+        ],
+        "original_covered": true
+      },
+      "deep_legacy_detection": {
+        "status": "matched",
+        "detection_index": 4,
+        "separation_arcsec": 0.034002617841706606
+      },
+      "deep_angular_area_detection": {
+        "status": "matched",
+        "detection_index": 5,
+        "separation_arcsec": 0.034002617841706606
+      },
+      "deep_aperture": {
+        "background_subtracted_flux_jy": 3.007192676259881e-08,
+        "flux_error_jy": 5.338102278390714e-10,
+        "snr": 56.3344896637399,
+        "measurement_status": "measured",
+        "calibration_status": "calibrated",
+        "coverage_fraction": 1.0,
+        "uncertainty_method": "err_diagonal_plus_background_mean",
+        "blank_scatter_snr_diagnostic": 51.29565277034182
+      },
+      "original_detection": {
+        "status": "not_detected",
+        "detection_index": null,
+        "separation_arcsec": null
+      },
+      "original_aperture": {
+        "background_subtracted_flux_jy": 2.7760762830026765e-08,
+        "flux_error_jy": 4.080487984731935e-09,
+        "snr": 6.803294834808953,
+        "measurement_status": "measured",
+        "calibration_status": "calibrated",
+        "coverage_fraction": 1.0,
+        "uncertainty_method": "err_diagonal_plus_background_mean"
+      }
+    },
+    {
+      "reference": {
+        "source_id": "dr4-sky-fa09ac04a1072665",
+        "sky_group_id": "dr4-sky-fa09ac04a1072665",
+        "field_id": "GS",
+        "ra_deg": 53.0721288,
+        "dec_deg": -27.8419459,
+        "cohort": "robust_high_z_ge_6",
+        "z_spec": 8.697172188017191,
+        "observation_ids": [
+          "goods-s-mediumjwst_20189546"
+        ],
+        "quality_flags": [
+          "A"
+        ],
+        "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+        "role": "previously_selected_failure_seed",
+        "primary_deep_image": "dja_f444w_20189546.fits",
+        "available_deep_images": [
+          "dja_f444w_20189546.fits"
+        ],
+        "original_covered": true
+      },
+      "deep_legacy_detection": {
+        "status": "matched",
+        "detection_index": 25,
+        "separation_arcsec": 0.02124386086191166
+      },
+      "deep_angular_area_detection": {
+        "status": "matched",
+        "detection_index": 22,
+        "separation_arcsec": 0.02124386086191166
+      },
+      "deep_aperture": {
+        "background_subtracted_flux_jy": 1.1456242422600443e-08,
+        "flux_error_jy": 5.174489574904327e-10,
+        "snr": 22.139850234044122,
+        "measurement_status": "measured",
+        "calibration_status": "calibrated",
+        "coverage_fraction": 1.0,
+        "uncertainty_method": "err_diagonal_plus_background_mean",
+        "blank_scatter_snr_diagnostic": 15.532868846243026
+      },
+      "original_detection": {
+        "status": "not_detected",
+        "detection_index": null,
+        "separation_arcsec": null
+      },
+      "original_aperture": {
+        "background_subtracted_flux_jy": 1.1557513028079654e-08,
+        "flux_error_jy": 4.341077270449279e-09,
+        "snr": 2.662360586565535,
+        "measurement_status": "measured",
+        "calibration_status": "calibrated",
+        "coverage_fraction": 1.0,
+        "uncertainty_method": "err_diagonal_plus_background_mean"
+      }
+    }
+  ],
+  "limits": [
+    "Targeted footprint, targeted spectroscopy and operational catalog labels prevent population completeness/contamination claims",
+    "Seed high-z failures remain separate from additional geometry controls; no additional robust high-z denominator may exist",
+    "Shared contributors and sky prevent treating cutouts as independent observations; each group has one geometry-chosen primary image",
+    "No native-grid classifier scores; conditional classifier rejection is not estimated",
+    "Blank-scatter SNR omits source Poisson and spatial-depth/model uncertainty; aperture SNR is not segmentation significance",
+    "Area-matched detection is a counterfactual operator sensitivity, not a PSF-matched or noise-equivalent experiment"
+  ]
+}
