@@ -1,0 +1,13 @@
+# Optional exact-original-GWCS reader; install to a separate target/venv.
+# Main numerical compact replay needs only requirements-research.lock.
+asdf==5.2.0
+asdf-astropy==0.11.0
+asdf-coordinates-schemas==0.5.1
+asdf-standard==1.5.0
+asdf-transform-schemas==0.6.0
+asdf-wcs-schemas==0.5.0
+gwcs==1.0.3
+stdatamodels==5.0.2
+attrs==26.1.0
+jmespath==1.1.0
+semantic_version==2.10.0

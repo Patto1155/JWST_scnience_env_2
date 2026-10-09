@@ -1,0 +1,78 @@
+{
+  "report_sha256": "d7aba8206a3e1966b77a394a8f1a080fd4ea2b04696821947dfd6fcf05d6a647",
+  "comparisons": [
+    {
+      "hypothesis": "original_wavelength_scenarios",
+      "scenario": "nominal_formal_shared",
+      "maximum_flux_difference": 0.0,
+      "maximum_covariance_difference": 0.0
+    },
+    {
+      "hypothesis": "original_wavelength_scenarios",
+      "scenario": "point_formal_shared",
+      "maximum_flux_difference": 0.0,
+      "maximum_covariance_difference": 0.0
+    },
+    {
+      "hypothesis": "original_wavelength_scenarios",
+      "scenario": "nominal_empirical_spectral_transport",
+      "maximum_flux_difference": 0.0,
+      "maximum_covariance_difference": 0.0
+    },
+    {
+      "hypothesis": "original_wavelength_scenarios",
+      "scenario": "point_empirical_spectral_transport",
+      "maximum_flux_difference": 0.0,
+      "maximum_covariance_difference": 0.0
+    },
+    {
+      "hypothesis": "original_wavelength_scenarios",
+      "scenario": "point_spatial_spectral_transport",
+      "maximum_flux_difference": 0.0,
+      "maximum_covariance_difference": 0.0
+    },
+    {
+      "hypothesis": "original_wavelength_scenarios",
+      "scenario": "nominal_spatial_spectral_transport",
+      "maximum_flux_difference": 0.0,
+      "maximum_covariance_difference": 0.0
+    },
+    {
+      "hypothesis": "predicted_corrected_wavelength_scenarios",
+      "scenario": "nominal_formal_shared",
+      "maximum_flux_difference": 0.0,
+      "maximum_covariance_difference": 0.0
+    },
+    {
+      "hypothesis": "predicted_corrected_wavelength_scenarios",
+      "scenario": "point_formal_shared",
+      "maximum_flux_difference": 0.0,
+      "maximum_covariance_difference": 0.0
+    },
+    {
+      "hypothesis": "predicted_corrected_wavelength_scenarios",
+      "scenario": "nominal_empirical_spectral_transport",
+      "maximum_flux_difference": 0.0,
+      "maximum_covariance_difference": 0.0
+    },
+    {
+      "hypothesis": "predicted_corrected_wavelength_scenarios",
+      "scenario": "point_empirical_spectral_transport",
+      "maximum_flux_difference": 0.0,
+      "maximum_covariance_difference": 0.0
+    },
+    {
+      "hypothesis": "predicted_corrected_wavelength_scenarios",
+      "scenario": "point_spatial_spectral_transport",
+      "maximum_flux_difference": 0.0,
+      "maximum_covariance_difference": 0.0
+    },
+    {
+      "hypothesis": "predicted_corrected_wavelength_scenarios",
+      "scenario": "nominal_spatial_spectral_transport",
+      "maximum_flux_difference": 0.0,
+      "maximum_covariance_difference": 0.0
+    }
+  ],
+  "scope": "Compact numerical replay of frozen original-WCS derivatives and derived likelihood; not original ASDF/GWCS or raw-pixel validation"
+}
