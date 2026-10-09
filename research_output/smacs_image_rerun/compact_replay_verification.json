@@ -1,0 +1,27 @@
+{
+  "compact_replay_matches_full_measurements": true,
+  "selection_csv_sha256": "ca776e2b7e705e3dd43b4a3e1f18ef3c1fdc40a71be913435dc2796243184339",
+  "selection_metadata_sha256": "30d8e7793343c58893925120762af180dbafd803a496fb0cd8952f8db5e433ab",
+  "audit_summary": {
+    "total_candidates": 1267,
+    "survivors": 0,
+    "blue_measured": 330,
+    "mid_measured": 252,
+    "blue_and_mid_measured": 0,
+    "module_mismatch_pairs": 0,
+    "untestable": 1267,
+    "falsified": 0,
+    "blocker_counts": {
+      "f200w_not_measured_at_source_position": 1015,
+      "f090w_not_measured_at_source_position": 937,
+      "f444w_invalid_or_uncalibrated_flux_uncertainty": 7,
+      "f444w_not_measured_at_source_position": 4,
+      "f200w_invalid_or_uncalibrated_flux_uncertainty": 3,
+      "f090w_invalid_or_uncalibrated_flux_uncertainty": 2
+    },
+    "pipeline_status_vs_audit": {
+      "None|untestable": 1267
+    },
+    "survivor_ids": []
+  }
+}

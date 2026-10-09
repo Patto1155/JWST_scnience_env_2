@@ -15,6 +15,62 @@ from tools.jwst.flux_calibration import celestial_wcs, pixel_solid_angle_sr
 SR_TO_ARCSEC2 = (180.0 * 3600.0 / np.pi) ** 2
 
 
+def _sample_valid_pixels(bundle: dict[str, Any], x: np.ndarray, y: np.ndarray) -> np.ndarray:
+    """Inspect only requested native pixels, avoiding full-mask copies for ranking."""
+    science = np.asarray(bundle["sci"])
+    if science.ndim != 2:
+        raise ValueError("Coverage requires a two-dimensional science image")
+    valid = np.asarray(bundle["validity_mask"], dtype=bool)[y, x] & np.isfinite(science[y, x])
+    for plane in ("err", "wht"):
+        values = bundle.get(plane)
+        if values is not None:
+            values = np.asarray(values)[y, x]
+            valid &= np.isfinite(values) & (values > 0)
+    return valid
+
+
+def sampled_joint_valid_fraction(
+    reference: dict[str, Any],
+    comparisons: list[dict[str, Any]],
+    *,
+    grid_size: int = 40,
+) -> float:
+    """Bounded deterministic ranking score, not a measured final survey area.
+
+    A reference-grid sample tests actual WCS registration and native validity
+    simultaneously in all supplied bands. Every sampled reference centre is in
+    the denominator, including invalid reference pixels. Exact selected-image
+    pixel-centre area should subsequently use ``joint_valid_coverage``.
+    """
+    if grid_size <= 0:
+        raise ValueError("grid_size must be positive")
+    reference_wcs = celestial_wcs(reference)
+    if reference_wcs is None:
+        raise ValueError("Reference image lacks a celestial WCS")
+    height, width = np.asarray(reference["sci"]).shape
+    x, y = np.meshgrid(
+        np.linspace(0, width - 1, min(grid_size, width)).astype(int),
+        np.linspace(0, height - 1, min(grid_size, height)).astype(int),
+    )
+    x, y = x.ravel(), y.ravel()
+    valid = _sample_valid_pixels(reference, x, y)
+    longitude, latitude = reference_wcs.pixel_to_world_values(x, y)
+    for bundle in comparisons:
+        wcs = celestial_wcs(bundle)
+        if wcs is None:
+            raise ValueError("Comparison image lacks a celestial WCS")
+        bh, bw = np.asarray(bundle["sci"]).shape
+        bx, by = wcs.world_to_pixel_values(longitude, latitude)
+        inside = np.isfinite(bx) & np.isfinite(by) & (bx >= -0.5) & (bx < bw - 0.5)
+        inside &= (by >= -0.5) & (by < bh - 0.5)
+        band_valid = np.zeros(valid.size, dtype=bool)
+        band_valid[inside] = _sample_valid_pixels(
+            bundle, np.floor(bx[inside] + 0.5).astype(int), np.floor(by[inside] + 0.5).astype(int)
+        )
+        valid &= band_valid
+    return float(valid.mean())
+
+
 def scientific_valid_mask(bundle: dict[str, Any]) -> np.ndarray:
     """Require finite SCI and available valid errors, in addition to loader masks."""
     science = np.asarray(bundle["sci"])

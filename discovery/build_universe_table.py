@@ -39,6 +39,7 @@ from discovery.proposal_channels import (
     summarize_proposal_channels,
 )
 from tools.jwst.fits_loader import load_fits_bundle
+from tools.jwst.common_coverage import sampled_joint_valid_fraction
 from tools.jwst.footprints import (
     MIN_USEFUL_OVERLAP,
     overlap_fraction,
@@ -277,10 +278,10 @@ def _build_target_dataset_map(
 
     The reference filter anchors the selection and every other band is chosen by
     measured WCS footprint overlap against it. Which reference to anchor on is
-    itself a choice: two exposures of the same field in the reference filter can
-    differ in whether any blue exposure overlaps them at all. So each candidate
-    reference is scored by how much of the required-band coverage it actually
-    buys, and the best one wins.
+    itself a choice: two exposures of the same field can differ in joint
+    required-band coverage. A bounded deterministic WCS/valid-pixel grid ranks
+    each reference and required-band pair by simultaneous covered sky first.
+    Separate footprint overlap breaks ties; it cannot imply a common region.
 
     A filter with no overlapping exposure is left out of the map entirely rather
     than paired with disjoint sky, so downstream code sees a missing band
@@ -293,13 +294,46 @@ def _build_target_dataset_map(
     required = [BLUE_FILTER, MID_FILTER]
     best_map: Dict[str, str] = {}
     best_overlap: Dict[str, float] = {}
-    best_key: Tuple[int, float, int, str] = (-1, -1.0, -1, "")
+    best_key: Tuple[float, int, float, int, str] = (-1.0, -1, -1.0, -1, "")
 
     for reference_name in reference_options:
         dataset_map, overlap_by_filter = _map_for_reference(grouped_entries, reference_name)
+        joint_fraction = 0.0
+        reference_bundle = load_fits_bundle(reference_name)
+        options = {}
+        for band in required:
+            options[band] = [
+                (item["name"], _overlap_with_reference(reference_bundle, item["name"]))
+                for item in grouped_entries.get(band, [])
+            ]
+            options[band] = [item for item in options[band] if item[1] >= MIN_FOOTPRINT_OVERLAP]
+        best_pair_key = (-1.0, -1.0, -1, "", "")
+        # Independently maximal footprints can belong to disjoint SW quadrants.
+        # Rank required-band PAIRS by simultaneous WCS/valid-pixel coverage.
+        # The bounded deterministic sample is for ranking; the experiment's
+        # selected-image coverage report subsequently integrates the full grid.
+        for blue_name, blue_overlap in options[BLUE_FILTER]:
+            for mid_name, mid_overlap in options[MID_FILTER]:
+                pair_joint = sampled_joint_valid_fraction(
+                    reference_bundle,
+                    [load_fits_bundle(blue_name), load_fits_bundle(mid_name)],
+                )
+                pair_key = (
+                    pair_joint,
+                    blue_overlap + mid_overlap,
+                    _product_rank(blue_name) + _product_rank(mid_name),
+                    blue_name,
+                    mid_name,
+                )
+                if pair_key > best_pair_key:
+                    best_pair_key = pair_key
+                    joint_fraction = pair_joint
+                    dataset_map.update({BLUE_FILTER: blue_name, MID_FILTER: mid_name})
+                    overlap_by_filter.update({BLUE_FILTER: blue_overlap, MID_FILTER: mid_overlap})
         required_bands = sum(1 for filt in required if filt in dataset_map)
         required_overlap = sum(overlap_by_filter.get(filt, 0.0) for filt in required)
         key = (
+            joint_fraction,
             required_bands,
             required_overlap,
             _product_rank(reference_name),
