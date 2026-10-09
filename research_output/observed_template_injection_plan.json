@@ -1,0 +1,693 @@
+{
+  "schema_version": 1,
+  "evidence_kind": "frozen_synthetic_profiles_on_actual_background_pixels",
+  "basis_frozen_control_sha256": "82caa9e4206a723f6031353c50f915b695518fe22655809b0e3c62050e5b3842",
+  "deep_inputs": [
+    {
+      "filename": "dja_f444w_20074794.fits",
+      "bytes": 1874880,
+      "sha256": "06c804359f2553155e46745c009572abfda6a62fcdcf922a2c04127fc74d8662",
+      "pixel_area_arcsec2": 0.00249999999999986,
+      "contributors_sha256": "f7457609a9d142f8130bef9613e2fb12a12e8713c066c50f8d7e593b708965bd",
+      "contributor_count": 67
+    },
+    {
+      "filename": "dja_f444w_20083087.fits",
+      "bytes": 1872000,
+      "sha256": "4f0584d66e0196cbf698109212880a412ac1d41c6603d26d299a33e207d993a5",
+      "pixel_area_arcsec2": 0.00249999999999986,
+      "contributors_sha256": "50dd8784f7d91f7447ce6b1e6558b7dde9a7ced1ba9f9a408d47ec8833f36fd1",
+      "contributor_count": 61
+    },
+    {
+      "filename": "dja_f444w_20189546.fits",
+      "bytes": 1872000,
+      "sha256": "0a887487f1fefa97b4360b977fa23fc248321b47dad58e7e99bfa9b43f778d34",
+      "pixel_area_arcsec2": 0.00249999999999986,
+      "contributors_sha256": "643e02ac34d83bdac4e7c53b8872dba5cbbebfcbdd8ea21fb888fb297841ebfa",
+      "contributor_count": 50
+    }
+  ],
+  "template_ids": [
+    "190909",
+    "187956",
+    "186837",
+    "20189546"
+  ],
+  "templates": [
+    {
+      "reference": {
+        "source_id": "dr4-sky-3d889d5164f6cc95",
+        "sky_group_id": "dr4-sky-3d889d5164f6cc95",
+        "field_id": "GS",
+        "ra_deg": 53.0681289,
+        "dec_deg": -27.8371102,
+        "cohort": "robust_controls_0_le_z_lt_3",
+        "z_spec": 1.0449668183531653,
+        "observation_ids": [
+          "goods-s-mediumjwst_190909"
+        ],
+        "quality_flags": [
+          "A"
+        ],
+        "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+        "role": "additional_geometry_control",
+        "primary_deep_image": "dja_f444w_20083087.fits",
+        "available_deep_images": [
+          "dja_f444w_20083087.fits"
+        ],
+        "original_covered": true
+      },
+      "radius_arcsec": 0.45,
+      "stamp_shape_pixels": [
+        21,
+        21
+      ],
+      "array_sha256": "50387255932f1146451e4112ffb0c7c3a6c3a41c7a14da2e652eaddd2fe0e333",
+      "positive_stamp_flux_njy": 3696.7815576307476,
+      "signed_stamp_flux_njy": 3696.7815576307476,
+      "clipped_negative_to_positive_flux": -0.0,
+      "centroid_offset_from_stamp_center_arcsec": [
+        0.024213132324383647,
+        0.008192455738983643
+      ],
+      "measured_original_aperture": {
+        "background_subtracted_flux_jy": 1.6874182679378984e-06,
+        "flux_error_jy": 1.185070268970493e-09,
+        "snr": 1423.897225439476,
+        "measurement_status": "measured",
+        "calibration_status": "calibrated",
+        "coverage_fraction": 1.0,
+        "uncertainty_method": "err_diagonal_plus_background_mean"
+      },
+      "profile_caveat": "Observed noisy background-subtracted profile clipped positive within finite radius; can include neighbour flux; not a noiseless true galaxy",
+      "template_id": "190909",
+      "sized_profiles": [
+        {
+          "spatial_scale": 0.65,
+          "shape": [
+            15,
+            15
+          ],
+          "sha256": "2ea0fec376d60fca50fa5b999d9b411246c98253fb420d8ec7d044f79fd60500"
+        },
+        {
+          "spatial_scale": 1.0,
+          "shape": [
+            21,
+            21
+          ],
+          "sha256": "50387255932f1146451e4112ffb0c7c3a6c3a41c7a14da2e652eaddd2fe0e333"
+        },
+        {
+          "spatial_scale": 1.5,
+          "shape": [
+            33,
+            33
+          ],
+          "sha256": "627bcfa142e53c4b7e5b0206ebfca10168255a7f0b7cb3bc0f16d163a6a452fe"
+        }
+      ]
+    },
+    {
+      "reference": {
+        "source_id": "dr4-sky-7daba3ac68aee7aa",
+        "sky_group_id": "dr4-sky-7daba3ac68aee7aa",
+        "field_id": "GS",
+        "ra_deg": 53.0702715,
+        "dec_deg": -27.8455956,
+        "cohort": "robust_other",
+        "z_spec": 3.702326157888164,
+        "observation_ids": [
+          "goods-s-mediumjwst_187956"
+        ],
+        "quality_flags": [
+          "A"
+        ],
+        "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+        "role": "additional_geometry_control",
+        "primary_deep_image": "dja_f444w_20074794.fits",
+        "available_deep_images": [
+          "dja_f444w_20074794.fits"
+        ],
+        "original_covered": false
+      },
+      "radius_arcsec": 0.45,
+      "stamp_shape_pixels": [
+        21,
+        21
+      ],
+      "array_sha256": "53e72055f65fdc7cd2cb41e960a3a59f7ed95a588bf127525304360f5e2f6c28",
+      "positive_stamp_flux_njy": 2634.631572216749,
+      "signed_stamp_flux_njy": 2634.631572216749,
+      "clipped_negative_to_positive_flux": -0.0,
+      "centroid_offset_from_stamp_center_arcsec": [
+        0.02728429074546225,
+        0.001723264669614773
+      ],
+      "measured_original_aperture": {
+        "background_subtracted_flux_jy": 1.7395657723950616e-06,
+        "flux_error_jy": 5.381063400676104e-10,
+        "snr": 3232.7546487865093,
+        "measurement_status": "measured",
+        "calibration_status": "calibrated",
+        "coverage_fraction": 1.0,
+        "uncertainty_method": "err_diagonal_plus_background_mean"
+      },
+      "profile_caveat": "Observed noisy background-subtracted profile clipped positive within finite radius; can include neighbour flux; not a noiseless true galaxy",
+      "template_id": "187956",
+      "sized_profiles": [
+        {
+          "spatial_scale": 0.65,
+          "shape": [
+            15,
+            15
+          ],
+          "sha256": "d7b9a66a74efe0c57b479144f9f31023966993015ee1f18f299862d45819bc0b"
+        },
+        {
+          "spatial_scale": 1.0,
+          "shape": [
+            21,
+            21
+          ],
+          "sha256": "53e72055f65fdc7cd2cb41e960a3a59f7ed95a588bf127525304360f5e2f6c28"
+        },
+        {
+          "spatial_scale": 1.5,
+          "shape": [
+            33,
+            33
+          ],
+          "sha256": "0094727aeb51858091d84190c32a795eeadde4111840e2b668a1c7cd1171bcf0"
+        }
+      ]
+    },
+    {
+      "reference": {
+        "source_id": "dr4-sky-84f88ac67f8903c1",
+        "sky_group_id": "dr4-sky-84f88ac67f8903c1",
+        "field_id": "GS",
+        "ra_deg": 53.0677652,
+        "dec_deg": -27.8484896,
+        "cohort": "robust_controls_0_le_z_lt_3",
+        "z_spec": 1.5502263988006322,
+        "observation_ids": [
+          "goods-s-deepjwst_186837"
+        ],
+        "quality_flags": [
+          "A"
+        ],
+        "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+        "role": "additional_geometry_control",
+        "primary_deep_image": "dja_f444w_20074794.fits",
+        "available_deep_images": [
+          "dja_f444w_20074794.fits"
+        ],
+        "original_covered": false
+      },
+      "radius_arcsec": 0.45,
+      "stamp_shape_pixels": [
+        21,
+        21
+      ],
+      "array_sha256": "5baed6517e1131e734edd25877b43f4a23d4cc5de893e62d73bfd1d03e38edba",
+      "positive_stamp_flux_njy": 174.68063304782845,
+      "signed_stamp_flux_njy": 174.24042587022996,
+      "clipped_negative_to_positive_flux": 0.0025200685955721496,
+      "centroid_offset_from_stamp_center_arcsec": [
+        0.24412708821603535,
+        -0.03141631894949002
+      ],
+      "measured_original_aperture": {
+        "background_subtracted_flux_jy": 1.6065851668936523e-08,
+        "flux_error_jy": 5.421262094642882e-10,
+        "snr": 29.63489200201607,
+        "measurement_status": "measured",
+        "calibration_status": "calibrated",
+        "coverage_fraction": 1.0,
+        "uncertainty_method": "err_diagonal_plus_background_mean"
+      },
+      "profile_caveat": "Observed noisy background-subtracted profile clipped positive within finite radius; can include neighbour flux; not a noiseless true galaxy",
+      "template_id": "186837",
+      "sized_profiles": [
+        {
+          "spatial_scale": 0.65,
+          "shape": [
+            15,
+            15
+          ],
+          "sha256": "5e2ac6aedfce4d541502d4455ccbb957e34e4309929a5395ed028b60786fad6c"
+        },
+        {
+          "spatial_scale": 1.0,
+          "shape": [
+            21,
+            21
+          ],
+          "sha256": "5baed6517e1131e734edd25877b43f4a23d4cc5de893e62d73bfd1d03e38edba"
+        },
+        {
+          "spatial_scale": 1.5,
+          "shape": [
+            33,
+            33
+          ],
+          "sha256": "c2de77af7aba82d0fa542631bf0a3b662201ee49e02852fadca13c4d7740cdc2"
+        }
+      ]
+    },
+    {
+      "reference": {
+        "source_id": "dr4-sky-fa09ac04a1072665",
+        "sky_group_id": "dr4-sky-fa09ac04a1072665",
+        "field_id": "GS",
+        "ra_deg": 53.0721288,
+        "dec_deg": -27.8419459,
+        "cohort": "robust_high_z_ge_6",
+        "z_spec": 8.697172188017191,
+        "observation_ids": [
+          "goods-s-mediumjwst_20189546"
+        ],
+        "quality_flags": [
+          "A"
+        ],
+        "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+        "role": "previously_selected_failure_seed",
+        "primary_deep_image": "dja_f444w_20189546.fits",
+        "available_deep_images": [
+          "dja_f444w_20189546.fits"
+        ],
+        "original_covered": true
+      },
+      "radius_arcsec": 0.45,
+      "stamp_shape_pixels": [
+        21,
+        21
+      ],
+      "array_sha256": "ab29f8f24d2418550139e799ab1196481547bbcccb62fa77900594558d488975",
+      "positive_stamp_flux_njy": 41.09481253195554,
+      "signed_stamp_flux_njy": 40.11933063768083,
+      "clipped_negative_to_positive_flux": 0.02373734868643501,
+      "centroid_offset_from_stamp_center_arcsec": [
+        0.0548178455764391,
+        -0.036257431163264374
+      ],
+      "measured_original_aperture": {
+        "background_subtracted_flux_jy": 1.1456242422600443e-08,
+        "flux_error_jy": 5.174489574904327e-10,
+        "snr": 22.139850234044122,
+        "measurement_status": "measured",
+        "calibration_status": "calibrated",
+        "coverage_fraction": 1.0,
+        "uncertainty_method": "err_diagonal_plus_background_mean"
+      },
+      "profile_caveat": "Observed noisy background-subtracted profile clipped positive within finite radius; can include neighbour flux; not a noiseless true galaxy",
+      "template_id": "20189546",
+      "sized_profiles": [
+        {
+          "spatial_scale": 0.65,
+          "shape": [
+            15,
+            15
+          ],
+          "sha256": "bdfb19ea1fab214f50fd2df667b10d033dde1171b72df809358c63db174b3612"
+        },
+        {
+          "spatial_scale": 1.0,
+          "shape": [
+            21,
+            21
+          ],
+          "sha256": "ab29f8f24d2418550139e799ab1196481547bbcccb62fa77900594558d488975"
+        },
+        {
+          "spatial_scale": 1.5,
+          "shape": [
+            33,
+            33
+          ],
+          "sha256": "c96c57bfd2e3d7edd5afba39712a725b760f440fd8d2cf29a98cb03f70968f67"
+        }
+      ]
+    }
+  ],
+  "fluxes_finite_stamp_njy": [
+    5.0,
+    10.0,
+    20.0,
+    40.0,
+    80.0,
+    160.0,
+    320.0
+  ],
+  "spatial_scales": [
+    0.65,
+    1.0,
+    1.5
+  ],
+  "random_seed": 314159,
+  "sites": [
+    {
+      "x": 239,
+      "y": 452,
+      "ra_deg": 53.06715611448807,
+      "dec_deg": -27.844321444709042,
+      "nearest_source_mask_distance_arcsec": 0.7778174593051805,
+      "spatial_block": "dja_f444w_20074794.fits:1-2",
+      "image": "dja_f444w_20074794.fits",
+      "site_id": "site-000"
+    },
+    {
+      "x": 239,
+      "y": 310,
+      "ra_deg": 53.06717247534854,
+      "dec_deg": -27.846292640244823,
+      "nearest_source_mask_distance_arcsec": 1.12361025271218,
+      "spatial_block": "dja_f444w_20074794.fits:1-1",
+      "image": "dja_f444w_20074794.fits",
+      "site_id": "site-001"
+    },
+    {
+      "x": 168,
+      "y": 310,
+      "ra_deg": 53.06828727557044,
+      "dec_deg": -27.84628566666912,
+      "nearest_source_mask_distance_arcsec": 1.140175425099106,
+      "spatial_block": "dja_f444w_20074794.fits:1-1",
+      "image": "dja_f444w_20074794.fits",
+      "site_id": "site-002"
+    },
+    {
+      "x": 26,
+      "y": 97,
+      "ra_deg": 53.07054151111223,
+      "dec_deg": -27.849228488398854,
+      "nearest_source_mask_distance_arcsec": 1.004987562112061,
+      "spatial_block": "dja_f444w_20074794.fits:0-0",
+      "image": "dja_f444w_20074794.fits",
+      "site_id": "site-003"
+    },
+    {
+      "x": 452,
+      "y": 97,
+      "ra_deg": 53.06385251857116,
+      "dec_deg": -27.84927030829849,
+      "nearest_source_mask_distance_arcsec": 0.9962429422585359,
+      "spatial_block": "dja_f444w_20074794.fits:2-0",
+      "image": "dja_f444w_20074794.fits",
+      "site_id": "site-004"
+    },
+    {
+      "x": 168,
+      "y": 452,
+      "ra_deg": 53.068270893683575,
+      "dec_deg": -27.84431447172387,
+      "nearest_source_mask_distance_arcsec": 1.3999999999999608,
+      "spatial_block": "dja_f444w_20074794.fits:1-2",
+      "image": "dja_f444w_20074794.fits",
+      "site_id": "site-005"
+    },
+    {
+      "x": 310,
+      "y": 26,
+      "ra_deg": 53.066090355987775,
+      "dec_deg": -27.850242005280577,
+      "nearest_source_mask_distance_arcsec": 0.8499999999999762,
+      "spatial_block": "dja_f444w_20074794.fits:1-0",
+      "image": "dja_f444w_20074794.fits",
+      "site_id": "site-006"
+    },
+    {
+      "x": 310,
+      "y": 168,
+      "ra_deg": 53.066074014920616,
+      "dec_deg": -27.84827080371375,
+      "nearest_source_mask_distance_arcsec": 1.277693233918028,
+      "spatial_block": "dja_f444w_20074794.fits:1-1",
+      "image": "dja_f444w_20074794.fits",
+      "site_id": "site-007"
+    },
+    {
+      "x": 26,
+      "y": 452,
+      "ra_deg": 53.07050045010142,
+      "dec_deg": -27.844300498890036,
+      "nearest_source_mask_distance_arcsec": 1.3499999999999623,
+      "spatial_block": "dja_f444w_20074794.fits:0-2",
+      "image": "dja_f444w_20074794.fits",
+      "site_id": "site-008"
+    },
+    {
+      "x": 168,
+      "y": 168,
+      "ra_deg": 53.06830365807542,
+      "dec_deg": -27.848256864337323,
+      "nearest_source_mask_distance_arcsec": 1.0965856099730347,
+      "spatial_block": "dja_f444w_20074794.fits:1-1",
+      "image": "dja_f444w_20074794.fits",
+      "site_id": "site-009"
+    },
+    {
+      "x": 381,
+      "y": 452,
+      "ra_deg": 53.06549256462601,
+      "dec_deg": -27.834947380801356,
+      "nearest_source_mask_distance_arcsec": 1.1597413504742877,
+      "spatial_block": "dja_f444w_20083087.fits:2-2",
+      "image": "dja_f444w_20083087.fits",
+      "site_id": "site-010"
+    },
+    {
+      "x": 239,
+      "y": 97,
+      "ra_deg": 53.06776285036762,
+      "dec_deg": -27.839861417534603,
+      "nearest_source_mask_distance_arcsec": 0.9708243919473528,
+      "spatial_block": "dja_f444w_20083087.fits:1-0",
+      "image": "dja_f444w_20083087.fits",
+      "site_id": "site-011"
+    },
+    {
+      "x": 26,
+      "y": 310,
+      "ra_deg": 53.071082391398654,
+      "dec_deg": -27.836883684480465,
+      "nearest_source_mask_distance_arcsec": 1.0770329614268705,
+      "spatial_block": "dja_f444w_20083087.fits:0-1",
+      "image": "dja_f444w_20083087.fits",
+      "site_id": "site-012"
+    },
+    {
+      "x": 26,
+      "y": 239,
+      "ra_deg": 53.07109060819595,
+      "dec_deg": -27.83786927570672,
+      "nearest_source_mask_distance_arcsec": 0.8499999999999762,
+      "spatial_block": "dja_f444w_20083087.fits:0-1",
+      "image": "dja_f444w_20083087.fits",
+      "site_id": "site-013"
+    },
+    {
+      "x": 239,
+      "y": 26,
+      "ra_deg": 53.06777103609343,
+      "dec_deg": -27.84084701170377,
+      "nearest_source_mask_distance_arcsec": 0.9124143795447074,
+      "spatial_block": "dja_f444w_20083087.fits:1-0",
+      "image": "dja_f444w_20083087.fits",
+      "site_id": "site-014"
+    },
+    {
+      "x": 310,
+      "y": 168,
+      "ra_deg": 53.06663994336382,
+      "dec_deg": -27.838882791622254,
+      "nearest_source_mask_distance_arcsec": 1.4499999999999593,
+      "spatial_block": "dja_f444w_20083087.fits:1-1",
+      "image": "dja_f444w_20083087.fits",
+      "site_id": "site-015"
+    },
+    {
+      "x": 452,
+      "y": 452,
+      "ra_deg": 53.06437788392839,
+      "dec_deg": -27.834954329291403,
+      "nearest_source_mask_distance_arcsec": 0.8485281374238333,
+      "spatial_block": "dja_f444w_20083087.fits:2-2",
+      "image": "dja_f444w_20083087.fits",
+      "site_id": "site-016"
+    },
+    {
+      "x": 239,
+      "y": 168,
+      "ra_deg": 53.067754664796226,
+      "dec_deg": -27.83887582404997,
+      "nearest_source_mask_distance_arcsec": 0.9394147114027704,
+      "spatial_block": "dja_f444w_20083087.fits:1-1",
+      "image": "dja_f444w_20083087.fits",
+      "site_id": "site-017"
+    },
+    {
+      "x": 452,
+      "y": 97,
+      "ra_deg": 53.064418652566765,
+      "dec_deg": -27.839882294278222,
+      "nearest_source_mask_distance_arcsec": 1.0688779163215676,
+      "spatial_block": "dja_f444w_20083087.fits:2-0",
+      "image": "dja_f444w_20083087.fits",
+      "site_id": "site-018"
+    },
+    {
+      "x": 26,
+      "y": 26,
+      "ra_deg": 53.071115259517896,
+      "dec_deg": -27.840826053497345,
+      "nearest_source_mask_distance_arcsec": 0.890224690738218,
+      "spatial_block": "dja_f444w_20083087.fits:0-0",
+      "image": "dja_f444w_20083087.fits",
+      "site_id": "site-019"
+    },
+    {
+      "x": 26,
+      "y": 452,
+      "ra_deg": 53.07546477442477,
+      "dec_deg": -27.838980092047812,
+      "nearest_source_mask_distance_arcsec": 1.1412712210513007,
+      "spatial_block": "dja_f444w_20189546.fits:0-2",
+      "image": "dja_f444w_20189546.fits",
+      "site_id": "site-020"
+    },
+    {
+      "x": 168,
+      "y": 97,
+      "ra_deg": 53.073276524650446,
+      "dec_deg": -27.843922109664145,
+      "nearest_source_mask_distance_arcsec": 0.8200609733428134,
+      "spatial_block": "dja_f444w_20189546.fits:1-0",
+      "image": "dja_f444w_20189546.fits",
+      "site_id": "site-021"
+    },
+    {
+      "x": 97,
+      "y": 310,
+      "ra_deg": 53.07436655163759,
+      "dec_deg": -27.840958305935317,
+      "nearest_source_mask_distance_arcsec": 1.0688779163215676,
+      "spatial_block": "dja_f444w_20189546.fits:0-1",
+      "image": "dja_f444w_20189546.fits",
+      "site_id": "site-022"
+    },
+    {
+      "x": 26,
+      "y": 168,
+      "ra_deg": 53.075497808522556,
+      "dec_deg": -27.842922462310533,
+      "nearest_source_mask_distance_arcsec": 1.27279220613575,
+      "spatial_block": "dja_f444w_20189546.fits:0-1",
+      "image": "dja_f444w_20189546.fits",
+      "site_id": "site-023"
+    },
+    {
+      "x": 310,
+      "y": 452,
+      "ra_deg": 53.07100589645452,
+      "dec_deg": -27.83900815644719,
+      "nearest_source_mask_distance_arcsec": 1.1067971810589017,
+      "spatial_block": "dja_f444w_20189546.fits:1-2",
+      "image": "dja_f444w_20189546.fits",
+      "site_id": "site-024"
+    },
+    {
+      "x": 97,
+      "y": 239,
+      "ra_deg": 53.07437479972762,
+      "dec_deg": -27.84194389914093,
+      "nearest_source_mask_distance_arcsec": 1.3462912017835884,
+      "spatial_block": "dja_f444w_20189546.fits:0-1",
+      "image": "dja_f444w_20189546.fits",
+      "site_id": "site-025"
+    },
+    {
+      "x": 452,
+      "y": 239,
+      "ra_deg": 53.068801039630216,
+      "dec_deg": -27.84197891694589,
+      "nearest_source_mask_distance_arcsec": 1.1672617529928426,
+      "spatial_block": "dja_f444w_20189546.fits:2-1",
+      "image": "dja_f444w_20189546.fits",
+      "site_id": "site-026"
+    },
+    {
+      "x": 26,
+      "y": 26,
+      "ra_deg": 53.07551432650625,
+      "dec_deg": -27.844893651540342,
+      "nearest_source_mask_distance_arcsec": 1.3499999999999623,
+      "spatial_block": "dja_f444w_20189546.fits:0-0",
+      "image": "dja_f444w_20189546.fits",
+      "site_id": "site-027"
+    },
+    {
+      "x": 168,
+      "y": 168,
+      "ra_deg": 53.073268286761916,
+      "dec_deg": -27.842936514795245,
+      "nearest_source_mask_distance_arcsec": 1.1672617529928426,
+      "spatial_block": "dja_f444w_20189546.fits:1-1",
+      "image": "dja_f444w_20189546.fits",
+      "site_id": "site-028"
+    }
+  ],
+  "image_reports": [
+    {
+      "full_image_median": 0.001024750410579145,
+      "full_image_sigma": 0.010719886551111031,
+      "eligible_grid_sites_before_cross_image_dedup": 15,
+      "pixel_scale_arcsec": 0.0499999999999986,
+      "crop_half_pixels": 24,
+      "source_mask_fraction": 0.26253038194444445,
+      "selection_caveat": "Positive two-sigma source masking censors positive tails; chosen backgrounds are not a random sky population",
+      "filename": "dja_f444w_20074794.fits",
+      "angular_area_min_pixels": 8,
+      "legacy_min_pixels": 5,
+      "selected_disjoint_sites": 10
+    },
+    {
+      "full_image_median": -0.0015827225288376212,
+      "full_image_sigma": 0.011981507991834487,
+      "eligible_grid_sites_before_cross_image_dedup": 20,
+      "pixel_scale_arcsec": 0.0499999999999986,
+      "crop_half_pixels": 24,
+      "source_mask_fraction": 0.15421875,
+      "selection_caveat": "Positive two-sigma source masking censors positive tails; chosen backgrounds are not a random sky population",
+      "filename": "dja_f444w_20083087.fits",
+      "angular_area_min_pixels": 8,
+      "legacy_min_pixels": 5,
+      "selected_disjoint_sites": 10
+    },
+    {
+      "full_image_median": -0.00034178135683760047,
+      "full_image_sigma": 0.009104521028551384,
+      "eligible_grid_sites_before_cross_image_dedup": 12,
+      "pixel_scale_arcsec": 0.0499999999999986,
+      "crop_half_pixels": 24,
+      "source_mask_fraction": 0.19895399305555556,
+      "selection_caveat": "Positive two-sigma source masking censors positive tails; chosen backgrounds are not a random sky population",
+      "filename": "dja_f444w_20189546.fits",
+      "angular_area_min_pixels": 8,
+      "legacy_min_pixels": 5,
+      "selected_disjoint_sites": 9
+    }
+  ],
+  "match_radius_arcsec": 0.2,
+  "detector_scope": "49-pixel local segmentation/deblending at fixed full-uninjected-image median and five-sigma threshold; threshold not refit after insertion",
+  "dependence": "All templates/amplitudes/sizes reuse identical sites; disjoint pixel stamps are one dependent GOODS mosaic, not independent fields/visits",
+  "operator_assumptions": [
+    "Fresh source Poisson noise omitted; stored WHT and correlated background retained",
+    "Observed clipped templates retain a fixed noise realization and finite-radius truncation",
+    "Spatial scaling is an interpolation sensitivity, not a physical redshift/PSF evolution model",
+    "Site masking avoids source cores; this does not calibrate dense crowding or unmasked-sky completeness"
+  ],
+  "plan_content_sha256": "1f07c900bda3693a03ca42c58086f958461881fdb9fb48c42a83d3f843783e1f"
+}
