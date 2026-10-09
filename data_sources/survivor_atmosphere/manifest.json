@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "primary_source": "https://zenodo.org/records/5063476",
+  "version_doi": "10.5281/zenodo.5063476",
+  "paper_doi": "10.3847/1538-4357/ac141d",
+  "snapshot_utc": "2026-10-09",
+  "product": {
+    "id": "sonora-bobcat-photometry",
+    "filename": "sonora_bobcat_photometry.tar.gz",
+    "url": "https://zenodo.org/records/5063476/files/evolution_and_photometery.tar.gz?download=1",
+    "expected_bytes": 950605,
+    "sha256": "2198426d1ca0e410fda7b63c3b7f45f3890a8d9f2fcf0a3a1e36e14185283ca5",
+    "publisher_md5": "a7c844bdcc4093e5b667ecf944ca2128",
+    "max_bytes": 2097152
+  },
+  "tables": [
+    {
+      "member": "photometry_tables/flux_table_JWST-0.5",
+      "sha256": "128719a91e5f40b0bc84ace93f39dd8d9116862ebb50aa1f4e3fb97ef475a1e4",
+      "bytes": 135549,
+      "metallicity_dex": -0.5,
+      "co_relative_to_solar": 1.0,
+      "expected_status": "validated_actual_jwst_log_mjy_header"
+    },
+    {
+      "member": "photometry_tables/flux_table_JWST+0.0",
+      "sha256": "59f14911438a046c46f26c9bf64ec6635b0d98286af3dacc6f1f195079a369c7",
+      "bytes": 185954,
+      "metallicity_dex": 0.0,
+      "co_relative_to_solar": 1.0,
+      "expected_status": "validated_actual_jwst_log_mjy_header"
+    },
+    {
+      "member": "photometry_tables/flux_table_JWST+0.5",
+      "sha256": "9914999defbb12cc3dde36b13822c7007d3afb13cdb4a6c241d54d0d68463f9d",
+      "bytes": 169167,
+      "metallicity_dex": 0.5,
+      "co_relative_to_solar": 1.0,
+      "expected_status": "validated_actual_jwst_log_mjy_header"
+    },
+    {
+      "member": "photometry_tables/flux_table_JWST_m+0.0_co0.5",
+      "sha256": "b5e92abf7cfac74adc36c0114a1af651ee036ad62d970c7147c74b3cd76fc0c6",
+      "bytes": 17897,
+      "metallicity_dex": 0.0,
+      "co_relative_to_solar": 0.5,
+      "expected_status": "validated_actual_jwst_log_mjy_header"
+    },
+    {
+      "member": "photometry_tables/flux_table_JWST_m+0.0_co1.5",
+      "sha256": "2744edf27f20c88e72a3b697f434e623076465d2b876cdd6b616ffdb8ef74960",
+      "bytes": 17568,
+      "metallicity_dex": 0.0,
+      "co_relative_to_solar": 1.5,
+      "expected_status": "rejected_missing_jwst_header"
+    }
+  ],
+  "units": "numeric author tables give log10 flux(mJy) at10pc; no Vega-magnitude conversion",
+  "bounds": "Teff200\u20132400K andlogg3.25\u20135.5eligible; rawtable contains lowerlogg excluded",
+  "license_evidence": "Embedded author README says unlimited releaseLA-UR-18-28199; preserveauthorcitations",
+  "limitations": [
+    "Cloudless equilibriumBobcat2021 modelgrid; newer/cloud/non-equilibriumfamilies omitted",
+    "C/O1.5 namedJWSTfluxfile has incompatible actualheader and is rejected"
+  ],
+  "photometry_report_sha256": "32f7f9d9875ef21154fff8530c8dd465b06fceadbbe9afe474ba7226784a7a92"
+}
