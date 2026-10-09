@@ -2,6 +2,11 @@
 
 See **[NORTH_STAR.md](NORTH_STAR.md)** for the vision and goals of Science OS.
 
+For scientific claims, start with [the verified takeover baseline](TAKEOVER_STATUS.md).
+It supersedes stronger historical claims where the original images, independent
+controls or calibration have not been reproduced. [The current research protocol](RESEARCH_PROTOCOL.md)
+defines evidence labels, role ownership and the frozen environment.
+
 ## Architecture
 
 See **[ARCHITECTURE.md](ARCHITECTURE.md)** for detailed system architecture.
