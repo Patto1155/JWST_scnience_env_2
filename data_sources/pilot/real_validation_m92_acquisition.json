@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "total_product_bytes": 534424320,
+  "products": [
+    {
+      "requested_url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/jwststars/m92/nircam/hlsp_jwststars_jwst_nircam_m92_f090w-f150w-f277w-f444w_v1_phot.fits",
+      "resolved_url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/jwststars/m92/nircam/hlsp_jwststars_jwst_nircam_m92_f090w-f150w-f277w-f444w_v1_phot.fits",
+      "retrieved_utc": "2026-10-09T07:07:10.585093+00:00",
+      "bytes": 299278080,
+      "sha256": "184efd394861258f147668959d14098f32c3c917bece1119a4b4f15a415dfa83",
+      "content_type": "application/octet-stream",
+      "etag": "\"65b83ac9-11d69f00\"",
+      "last_modified": "Mon, 29 Jan 2024 23:54:49 GMT",
+      "product_id": "hlsp_jwststars_jwst_nircam_m92_f090w-f150w-f277w-f444w_v1_phot.fits",
+      "max_bytes": 299278080
+    },
+    {
+      "requested_url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw01334001001_04101_00001_nrcalong_cal.fits",
+      "resolved_url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw01334001001_04101_00001_nrcalong_cal.fits",
+      "retrieved_utc": "2026-10-09T07:07:45.177760+00:00",
+      "bytes": 117573120,
+      "sha256": "7fa99ab0486c6d1ebdbde9a53e6e772b710368ff55937c0240b683fc1875781a",
+      "content_type": "application/octet-stream",
+      "etag": "\"6a6a9d01-7020600\"",
+      "last_modified": "Thu, 30 Jul 2026 00:38:25 GMT",
+      "product_id": "jw01334001001_04101_00001_nrcalong_cal.fits",
+      "max_bytes": 117573120
+    },
+    {
+      "requested_url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw01334001001_04101_00004_nrcalong_cal.fits",
+      "resolved_url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw01334001001_04101_00004_nrcalong_cal.fits",
+      "retrieved_utc": "2026-10-09T07:07:26.154935+00:00",
+      "bytes": 117573120,
+      "sha256": "1e22ed5d1c73b984db4989d31eded5398f016f8908684a209caa8046516d9160",
+      "content_type": "application/octet-stream",
+      "etag": "\"6a6a9ca3-7020600\"",
+      "last_modified": "Thu, 30 Jul 2026 00:36:51 GMT",
+      "product_id": "jw01334001001_04101_00004_nrcalong_cal.fits",
+      "max_bytes": 117573120
+    }
+  ],
+  "excluded": [
+    "M92 exposure 3 has documented excess astrometric jitter",
+    "F150W HLSP reference mosaic exceeds the bounded acquisition cap"
+  ],
+  "source_documentation": "https://archive.stsci.edu/hlsp/jwststars",
+  "source_readme": "https://archive.stsci.edu/hlsps/jwststars/hlsp_jwststars_readme.txt",
+  "doi": "10.17909/cn6n-xg90",
+  "license": "CC BY 4.0"
+}

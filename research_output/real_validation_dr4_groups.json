@@ -1,0 +1,37 @@
+{
+  "input_provenance": {
+    "reference_sha256": "4b588479eb9ebbfd590dd6ea0ea85949f80952e085ea94e874a191d558f4accf",
+    "reference_bytes": 850160,
+    "source_sha256": "4b4e7fd4306208ee801406c7ed73fdab895a2e67184af7f639a91e5f9c8ab7d4",
+    "source_version": "JADES DR4 Combined_DR4_external_v1.2.1.fits",
+    "source_url": "https://jades.herts.ac.uk/DR4/Combined_DR4_external_v1.2.1.fits"
+  },
+  "observation_cohort_counts": {
+    "robust_high_z_ge_6": 243,
+    "robust_controls_0_le_z_lt_3": 1461,
+    "secure_c_high_z_ge_6": 48
+  },
+  "grouping": {
+    "radius_arcsec": 0.3,
+    "observation_rows": 5190,
+    "conservative_sky_groups": 5088,
+    "group_size_histogram": {
+      "1": 4987,
+      "2": 100,
+      "3": 1
+    },
+    "shared_positive_dr5_id_edges": 95,
+    "spherical_proximity_edges": 93,
+    "components_wider_than_radius": 10,
+    "meaning": "Leakage prevention components; close/blended neighbours can merge, so these are not certified unique galaxies."
+  },
+  "group_cohort_counts": {
+    "c_other": 386,
+    "robust_controls_0_le_z_lt_3": 1440,
+    "robust_high_z_ge_6": 226,
+    "robust_other": 1129,
+    "secure_c_high_z_ge_6": 41
+  },
+  "redshift_conflict_groups": [],
+  "schema_version": 1
+}

@@ -1,0 +1,883 @@
+{
+  "input_provenance": {
+    "reference_sha256": "4b588479eb9ebbfd590dd6ea0ea85949f80952e085ea94e874a191d558f4accf",
+    "reference_bytes": 850160,
+    "source_sha256": "4b4e7fd4306208ee801406c7ed73fdab895a2e67184af7f639a91e5f9c8ab7d4",
+    "source_version": "JADES DR4 Combined_DR4_external_v1.2.1.fits",
+    "source_url": "https://jades.herts.ac.uk/DR4/Combined_DR4_external_v1.2.1.fits"
+  },
+  "observation_cohort_counts": {
+    "robust_high_z_ge_6": 243,
+    "robust_controls_0_le_z_lt_3": 1461,
+    "secure_c_high_z_ge_6": 48
+  },
+  "grouping": {
+    "radius_arcsec": 0.3,
+    "observation_rows": 5190,
+    "conservative_sky_groups": 5088,
+    "group_size_histogram": {
+      "1": 4987,
+      "2": 100,
+      "3": 1
+    },
+    "shared_positive_dr5_id_edges": 95,
+    "spherical_proximity_edges": 93,
+    "components_wider_than_radius": 10,
+    "meaning": "Leakage prevention components; close/blended neighbours can merge, so these are not certified unique galaxies."
+  },
+  "group_cohort_counts": {
+    "c_other": 386,
+    "robust_controls_0_le_z_lt_3": 1440,
+    "robust_high_z_ge_6": 226,
+    "robust_other": 1129,
+    "secure_c_high_z_ge_6": 41
+  },
+  "redshift_conflict_groups": [],
+  "grouped_epoch_summary": {
+    "covered_sky_groups": 22,
+    "groups_covered_in_multiple_images": 0,
+    "accepted_in_at_least_one_covered_image": 11,
+    "accepted_in_every_covered_image": 11,
+    "groups_with_unknown_epoch": 0,
+    "ordered_epoch_state_counts": {
+      "not_detected": 11,
+      "accepted": 11
+    },
+    "interpretation": "Same visit/dither trials are dependent; no pooled-binomial object confidence interval."
+  },
+  "schema_version": 1,
+  "full_trial_output": {
+    "sha256": "f1aa384a6d337c37ab594c1bdc6ab957db6d37040ad35b3c0f31a370bf34ba9a",
+    "bytes": 30109,
+    "reproduce": "Supply --full-output to retain actual per-source trials outside git."
+  },
+  "images": [
+    {
+      "image_provenance": {
+        "filename": "jw01180026001_09201_00003_nrcalong_i2d.fits",
+        "sha256": "b9b84b9bd0bd8ef6140dca76163a9ac4625689024b651a25e631a6d14ce68d86",
+        "bytes": 120257280,
+        "filter": "F444W",
+        "pixel_scales_arcsec": [
+          0.06291269315026955,
+          0.06291269315026955
+        ],
+        "visit_id": "01180026001",
+        "CAL_VER": "3.0.0",
+        "CRDS_CTX": "jwst_1584.pmap"
+      },
+      "model_sha256": "2d5fe3bc291652e0748fa5dea9911bc5c0430fbb29f87b306679ff9f8bc87a21",
+      "threshold": 0.5,
+      "matching_radius_arcsec": 0.2,
+      "counts": {
+        "references_supplied": 1707,
+        "outside_or_border": 1685,
+        "masked_reference_positions": 0,
+        "covered_quality_references": 22,
+        "detections_in_image": 983,
+        "ambiguous_references": 0
+      },
+      "unambiguous_metrics": {
+        "counts": {
+          "detected": 11,
+          "classified": 11,
+          "accepted": 11,
+          "rejected": 0,
+          "unclassified": 0,
+          "not_detected": 11,
+          "references": 22
+        },
+        "detection_completeness": {
+          "successes": 11,
+          "trials": 22,
+          "confidence": 0.95,
+          "interval_method": "wilson",
+          "estimate": 0.5,
+          "lower": 0.30722106273725025,
+          "upper": 0.6927789372627497,
+          "status": "estimable",
+          "reason": null
+        },
+        "classifier_survival_among_classified": {
+          "successes": 11,
+          "trials": 11,
+          "confidence": 0.95,
+          "interval_method": "wilson",
+          "estimate": 1.0,
+          "lower": 0.7411670330319684,
+          "upper": 1.0,
+          "status": "estimable",
+          "reason": null
+        },
+        "false_rejection_among_classified": {
+          "successes": 0,
+          "trials": 11,
+          "confidence": 0.95,
+          "interval_method": "wilson",
+          "estimate": 0.0,
+          "lower": 0.0,
+          "upper": 0.25883296696803165,
+          "status": "estimable",
+          "reason": null
+        },
+        "confirmed_survival_among_detected": {
+          "successes": 11,
+          "trials": 11,
+          "confidence": 0.95,
+          "interval_method": "wilson",
+          "estimate": 1.0,
+          "lower": 0.7411670330319684,
+          "upper": 1.0,
+          "status": "estimable",
+          "reason": null
+        },
+        "end_to_end_completeness": {
+          "successes": 11,
+          "trials": 22,
+          "confidence": 0.95,
+          "interval_method": "wilson",
+          "estimate": 0.5,
+          "lower": 0.30722106273725025,
+          "upper": 0.6927789372627497,
+          "status": "estimable",
+          "reason": null
+        },
+        "unknown_survival_fraction_bounds": {
+          "lower": 0.5,
+          "upper": 0.5,
+          "meaning": "bounds if every unclassified detection fails or passes the cut"
+        },
+        "scope": "quality-selected, covered, unambiguous external references"
+      },
+      "full_covered_reference_recovery_bounds": {
+        "confirmed_accepted": 11,
+        "ambiguous_or_unclassified": 0,
+        "denominator": 22,
+        "lower": 0.5,
+        "upper": 0.5
+      },
+      "astrometric_match_residual_arcsec": {
+        "median": 0.017836859240391495,
+        "p95": 0.03409071781832243,
+        "scope": "Matched-source residuals, conditional on radius; not an external absolute-frame certificate"
+      },
+      "by_cohort": {
+        "robust_controls_0_le_z_lt_3": {
+          "counts": {
+            "detected": 11,
+            "classified": 11,
+            "accepted": 11,
+            "rejected": 0,
+            "unclassified": 0,
+            "not_detected": 8,
+            "references": 19
+          },
+          "detection_completeness": {
+            "successes": 11,
+            "trials": 19,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 0.5789473684210527,
+            "lower": 0.36275903534255044,
+            "upper": 0.7685810871754575,
+            "status": "estimable",
+            "reason": null
+          },
+          "classifier_survival_among_classified": {
+            "successes": 11,
+            "trials": 11,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 1.0,
+            "lower": 0.7411670330319684,
+            "upper": 1.0,
+            "status": "estimable",
+            "reason": null
+          },
+          "false_rejection_among_classified": {
+            "successes": 0,
+            "trials": 11,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 0.0,
+            "lower": 0.0,
+            "upper": 0.25883296696803165,
+            "status": "estimable",
+            "reason": null
+          },
+          "confirmed_survival_among_detected": {
+            "successes": 11,
+            "trials": 11,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 1.0,
+            "lower": 0.7411670330319684,
+            "upper": 1.0,
+            "status": "estimable",
+            "reason": null
+          },
+          "end_to_end_completeness": {
+            "successes": 11,
+            "trials": 19,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 0.5789473684210527,
+            "lower": 0.36275903534255044,
+            "upper": 0.7685810871754575,
+            "status": "estimable",
+            "reason": null
+          },
+          "unknown_survival_fraction_bounds": {
+            "lower": 0.5789473684210527,
+            "upper": 0.5789473684210527,
+            "meaning": "bounds if every unclassified detection fails or passes the cut"
+          },
+          "scope": "quality-selected, covered, unambiguous external references"
+        },
+        "robust_high_z_ge_6": {
+          "counts": {
+            "detected": 0,
+            "classified": 0,
+            "accepted": 0,
+            "rejected": 0,
+            "unclassified": 0,
+            "not_detected": 1,
+            "references": 1
+          },
+          "detection_completeness": {
+            "successes": 0,
+            "trials": 1,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 0.0,
+            "lower": 0.0,
+            "upper": 0.7934506856227626,
+            "status": "estimable",
+            "reason": null
+          },
+          "classifier_survival_among_classified": {
+            "successes": 0,
+            "trials": 0,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": null,
+            "lower": null,
+            "upper": null,
+            "status": "not_estimable",
+            "reason": "zero denominator"
+          },
+          "false_rejection_among_classified": {
+            "successes": 0,
+            "trials": 0,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": null,
+            "lower": null,
+            "upper": null,
+            "status": "not_estimable",
+            "reason": "zero denominator"
+          },
+          "confirmed_survival_among_detected": {
+            "successes": 0,
+            "trials": 0,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": null,
+            "lower": null,
+            "upper": null,
+            "status": "not_estimable",
+            "reason": "zero denominator"
+          },
+          "end_to_end_completeness": {
+            "successes": 0,
+            "trials": 1,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 0.0,
+            "lower": 0.0,
+            "upper": 0.7934506856227626,
+            "status": "estimable",
+            "reason": null
+          },
+          "unknown_survival_fraction_bounds": {
+            "lower": 0.0,
+            "upper": 0.0,
+            "meaning": "bounds if every unclassified detection fails or passes the cut"
+          },
+          "scope": "quality-selected, covered, unambiguous external references"
+        },
+        "secure_c_high_z_ge_6": {
+          "counts": {
+            "detected": 0,
+            "classified": 0,
+            "accepted": 0,
+            "rejected": 0,
+            "unclassified": 0,
+            "not_detected": 2,
+            "references": 2
+          },
+          "detection_completeness": {
+            "successes": 0,
+            "trials": 2,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 0.0,
+            "lower": 0.0,
+            "upper": 0.6576197724933468,
+            "status": "estimable",
+            "reason": null
+          },
+          "classifier_survival_among_classified": {
+            "successes": 0,
+            "trials": 0,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": null,
+            "lower": null,
+            "upper": null,
+            "status": "not_estimable",
+            "reason": "zero denominator"
+          },
+          "false_rejection_among_classified": {
+            "successes": 0,
+            "trials": 0,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": null,
+            "lower": null,
+            "upper": null,
+            "status": "not_estimable",
+            "reason": "zero denominator"
+          },
+          "confirmed_survival_among_detected": {
+            "successes": 0,
+            "trials": 0,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": null,
+            "lower": null,
+            "upper": null,
+            "status": "not_estimable",
+            "reason": "zero denominator"
+          },
+          "end_to_end_completeness": {
+            "successes": 0,
+            "trials": 2,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 0.0,
+            "lower": 0.0,
+            "upper": 0.6576197724933468,
+            "status": "estimable",
+            "reason": null
+          },
+          "unknown_survival_fraction_bounds": {
+            "lower": 0.0,
+            "upper": 0.0,
+            "meaning": "bounds if every unclassified detection fails or passes the cut"
+          },
+          "scope": "quality-selected, covered, unambiguous external references"
+        }
+      },
+      "roc_auc": {
+        "status": "not_estimable",
+        "value": null,
+        "reason": "External real sources provide only the real class"
+      },
+      "limits": [
+        "DOLPHOT reference photometry is full-stack; individual-exposure recovery need not match full-stack SNR.",
+        "Close or blended matches are unknown, never silently counted as failed or passed.",
+        "Per-image intervals assume independent sources and omit crowding/PSF/background systematics.",
+        "Repeat exposures of a source are grouped; these rows are not independent sky-object trials.",
+        "Frozen training provenance is incomplete; metadata alone cannot certify full independent-validation status."
+      ],
+      "catalogue_matched_rejections": [],
+      "outcomes": [
+        {
+          "source_id": "dr4-sky-0919a825a2f64b69",
+          "sky_group_id": "dr4-sky-0919a825a2f64b69",
+          "field_id": "GS",
+          "ra_deg": 53.0732803,
+          "dec_deg": -27.8477867,
+          "cohort": "robust_controls_0_le_z_lt_3",
+          "z_spec": 1.5402299669193233,
+          "observation_ids": [
+            "goods-s-deepjwst_187233"
+          ],
+          "quality_flags": [
+            "A"
+          ],
+          "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+          "status": "not_detected",
+          "detection_index": null,
+          "separation_arcsec": null,
+          "artifact_score": null,
+          "recovered": false,
+          "rejected": null
+        },
+        {
+          "source_id": "dr4-sky-10a53531947ac364",
+          "sky_group_id": "dr4-sky-10a53531947ac364",
+          "field_id": "GS",
+          "ra_deg": 53.0628403,
+          "dec_deg": -27.8455447,
+          "cohort": "robust_controls_0_le_z_lt_3",
+          "z_spec": 1.2201409602288955,
+          "observation_ids": [
+            "goods-s-mediumjwst_76543"
+          ],
+          "quality_flags": [
+            "A"
+          ],
+          "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+          "status": "matched",
+          "detection_index": 281,
+          "separation_arcsec": 0.02938418051351311,
+          "artifact_score": 0.014016176691451875,
+          "recovered": true,
+          "rejected": false
+        },
+        {
+          "source_id": "dr4-sky-2526e7200f5fdc3a",
+          "sky_group_id": "dr4-sky-2526e7200f5fdc3a",
+          "field_id": "GS",
+          "ra_deg": 53.0765934,
+          "dec_deg": -27.8427087,
+          "cohort": "robust_controls_0_le_z_lt_3",
+          "z_spec": 1.1884211830101767,
+          "observation_ids": [
+            "goods-s-mediumjwst_189302"
+          ],
+          "quality_flags": [
+            "A"
+          ],
+          "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+          "status": "matched",
+          "detection_index": 106,
+          "separation_arcsec": 0.014478251373402919,
+          "artifact_score": 0.026111151927758838,
+          "recovered": true,
+          "rejected": false
+        },
+        {
+          "source_id": "dr4-sky-3d889d5164f6cc95",
+          "sky_group_id": "dr4-sky-3d889d5164f6cc95",
+          "field_id": "GS",
+          "ra_deg": 53.0681289,
+          "dec_deg": -27.8371102,
+          "cohort": "robust_controls_0_le_z_lt_3",
+          "z_spec": 1.0449668183531653,
+          "observation_ids": [
+            "goods-s-mediumjwst_190909"
+          ],
+          "quality_flags": [
+            "A"
+          ],
+          "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+          "status": "matched",
+          "detection_index": 320,
+          "separation_arcsec": 0.019748661600371746,
+          "artifact_score": 0.008839163372992731,
+          "recovered": true,
+          "rejected": false
+        },
+        {
+          "source_id": "dr4-sky-3e2cc5bea25dc5b6",
+          "sky_group_id": "dr4-sky-3e2cc5bea25dc5b6",
+          "field_id": "GS",
+          "ra_deg": 53.0721534,
+          "dec_deg": -27.837814,
+          "cohort": "robust_controls_0_le_z_lt_3",
+          "z_spec": 2.6487030436906833,
+          "observation_ids": [
+            "goods-s-mediumjwst_83114"
+          ],
+          "quality_flags": [
+            "A"
+          ],
+          "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+          "status": "not_detected",
+          "detection_index": null,
+          "separation_arcsec": null,
+          "artifact_score": null,
+          "recovered": false,
+          "rejected": null
+        },
+        {
+          "source_id": "dr4-sky-4d31465e46757217",
+          "sky_group_id": "dr4-sky-4d31465e46757217",
+          "field_id": "GS",
+          "ra_deg": 53.0751691,
+          "dec_deg": -27.8375221,
+          "cohort": "robust_controls_0_le_z_lt_3",
+          "z_spec": 2.9727529176995953,
+          "observation_ids": [
+            "goods-s-mediumjwst_190921"
+          ],
+          "quality_flags": [
+            "A"
+          ],
+          "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+          "status": "matched",
+          "detection_index": 194,
+          "separation_arcsec": 0.030194706123782385,
+          "artifact_score": 0.015119262356508269,
+          "recovered": true,
+          "rejected": false
+        },
+        {
+          "source_id": "dr4-sky-4e2365b2dfd324f8",
+          "sky_group_id": "dr4-sky-4e2365b2dfd324f8",
+          "field_id": "GS",
+          "ra_deg": 53.0801326,
+          "dec_deg": -27.8460949,
+          "cohort": "robust_controls_0_le_z_lt_3",
+          "z_spec": 2.84991567317486,
+          "observation_ids": [
+            "goods-s-mediumjwst_187790"
+          ],
+          "quality_flags": [
+            "A"
+          ],
+          "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+          "status": "matched",
+          "detection_index": 18,
+          "separation_arcsec": 0.01274169724053363,
+          "artifact_score": 0.01394135686913875,
+          "recovered": true,
+          "rejected": false
+        },
+        {
+          "source_id": "dr4-sky-60a063992460019e",
+          "sky_group_id": "dr4-sky-60a063992460019e",
+          "field_id": "GS",
+          "ra_deg": 53.0677326,
+          "dec_deg": -27.8378744,
+          "cohort": "secure_c_high_z_ge_6",
+          "z_spec": 9.059601,
+          "observation_ids": [
+            "goods-s-mediumjwst_20083087"
+          ],
+          "quality_flags": [
+            "C"
+          ],
+          "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+          "status": "not_detected",
+          "detection_index": null,
+          "separation_arcsec": null,
+          "artifact_score": null,
+          "recovered": false,
+          "rejected": null
+        },
+        {
+          "source_id": "dr4-sky-6ece2353e6d1b3db",
+          "sky_group_id": "dr4-sky-6ece2353e6d1b3db",
+          "field_id": "GS",
+          "ra_deg": 53.0741744,
+          "dec_deg": -27.8474179,
+          "cohort": "robust_controls_0_le_z_lt_3",
+          "z_spec": 1.5404027690400275,
+          "observation_ids": [
+            "goods-s-mediumjwst_186891"
+          ],
+          "quality_flags": [
+            "A"
+          ],
+          "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+          "status": "matched",
+          "detection_index": 78,
+          "separation_arcsec": 0.017836859240391495,
+          "artifact_score": 0.021342535005529347,
+          "recovered": true,
+          "rejected": false
+        },
+        {
+          "source_id": "dr4-sky-84f88ac67f8903c1",
+          "sky_group_id": "dr4-sky-84f88ac67f8903c1",
+          "field_id": "GS",
+          "ra_deg": 53.0677652,
+          "dec_deg": -27.8484896,
+          "cohort": "robust_controls_0_le_z_lt_3",
+          "z_spec": 1.5502263988006322,
+          "observation_ids": [
+            "goods-s-deepjwst_186837"
+          ],
+          "quality_flags": [
+            "A"
+          ],
+          "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+          "status": "not_detected",
+          "detection_index": null,
+          "separation_arcsec": null,
+          "artifact_score": null,
+          "recovered": false,
+          "rejected": null
+        },
+        {
+          "source_id": "dr4-sky-8af84e0661785f47",
+          "sky_group_id": "dr4-sky-8af84e0661785f47",
+          "field_id": "GS",
+          "ra_deg": 53.0648687,
+          "dec_deg": -27.8361342,
+          "cohort": "robust_controls_0_le_z_lt_3",
+          "z_spec": 1.6081494560688199,
+          "observation_ids": [
+            "goods-s-mediumjwst_191333"
+          ],
+          "quality_flags": [
+            "A"
+          ],
+          "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+          "status": "matched",
+          "detection_index": 406,
+          "separation_arcsec": 0.013825905450117516,
+          "artifact_score": 0.013965059941007017,
+          "recovered": true,
+          "rejected": false
+        },
+        {
+          "source_id": "dr4-sky-a7dcfe132d13104d",
+          "sky_group_id": "dr4-sky-a7dcfe132d13104d",
+          "field_id": "GS",
+          "ra_deg": 53.0671723,
+          "dec_deg": -27.8472697,
+          "cohort": "secure_c_high_z_ge_6",
+          "z_spec": 8.589369,
+          "observation_ids": [
+            "goods-s-deepjwst_20074794"
+          ],
+          "quality_flags": [
+            "C"
+          ],
+          "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+          "status": "not_detected",
+          "detection_index": null,
+          "separation_arcsec": null,
+          "artifact_score": null,
+          "recovered": false,
+          "rejected": null
+        },
+        {
+          "source_id": "dr4-sky-aecf473d290907ec",
+          "sky_group_id": "dr4-sky-aecf473d290907ec",
+          "field_id": "GS",
+          "ra_deg": 53.0513556,
+          "dec_deg": -27.8295609,
+          "cohort": "robust_controls_0_le_z_lt_3",
+          "z_spec": 1.2248527880165239,
+          "observation_ids": [
+            "goods-s-mediumjwst_193512"
+          ],
+          "quality_flags": [
+            "A"
+          ],
+          "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+          "status": "matched",
+          "detection_index": 692,
+          "separation_arcsec": 0.03798672951286248,
+          "artifact_score": 0.012491092912318855,
+          "recovered": true,
+          "rejected": false
+        },
+        {
+          "source_id": "dr4-sky-b52834593ece71e2",
+          "sky_group_id": "dr4-sky-b52834593ece71e2",
+          "field_id": "GS",
+          "ra_deg": 53.0647615,
+          "dec_deg": -27.8364279,
+          "cohort": "robust_controls_0_le_z_lt_3",
+          "z_spec": 1.5473957978266193,
+          "observation_ids": [
+            "goods-s-mediumjwst_84256"
+          ],
+          "quality_flags": [
+            "A"
+          ],
+          "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+          "status": "matched",
+          "detection_index": 403,
+          "separation_arcsec": 0.02155025472953945,
+          "artifact_score": 0.015276535533634455,
+          "recovered": true,
+          "rejected": false
+        },
+        {
+          "source_id": "dr4-sky-c6f6e7b2e3186784",
+          "sky_group_id": "dr4-sky-c6f6e7b2e3186784",
+          "field_id": "GS",
+          "ra_deg": 53.0654864,
+          "dec_deg": -27.8440051,
+          "cohort": "robust_controls_0_le_z_lt_3",
+          "z_spec": 2.8265245879928003,
+          "observation_ids": [
+            "goods-s-deepjwst_188687"
+          ],
+          "quality_flags": [
+            "A"
+          ],
+          "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+          "status": "not_detected",
+          "detection_index": null,
+          "separation_arcsec": null,
+          "artifact_score": null,
+          "recovered": false,
+          "rejected": null
+        },
+        {
+          "source_id": "dr4-sky-c727b97a621b0f1f",
+          "sky_group_id": "dr4-sky-c727b97a621b0f1f",
+          "field_id": "GS",
+          "ra_deg": 53.0751776,
+          "dec_deg": -27.8422965,
+          "cohort": "robust_controls_0_le_z_lt_3",
+          "z_spec": 0.56006,
+          "observation_ids": [
+            "goods-s-mediumjwst_189290"
+          ],
+          "quality_flags": [
+            "B"
+          ],
+          "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+          "status": "matched",
+          "detection_index": 128,
+          "separation_arcsec": 0.001909845477263687,
+          "artifact_score": 0.020540963857447074,
+          "recovered": true,
+          "rejected": false
+        },
+        {
+          "source_id": "dr4-sky-c77d0f5edd767a6d",
+          "sky_group_id": "dr4-sky-c77d0f5edd767a6d",
+          "field_id": "GS",
+          "ra_deg": 53.0763509,
+          "dec_deg": -27.8403635,
+          "cohort": "robust_controls_0_le_z_lt_3",
+          "z_spec": 2.972248531713783,
+          "observation_ids": [
+            "goods-s-mediumjwst_190122"
+          ],
+          "quality_flags": [
+            "A"
+          ],
+          "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+          "status": "not_detected",
+          "detection_index": null,
+          "separation_arcsec": null,
+          "artifact_score": null,
+          "recovered": false,
+          "rejected": null
+        },
+        {
+          "source_id": "dr4-sky-dd5819cf4cea1257",
+          "sky_group_id": "dr4-sky-dd5819cf4cea1257",
+          "field_id": "GS",
+          "ra_deg": 53.0697517,
+          "dec_deg": -27.8264225,
+          "cohort": "robust_controls_0_le_z_lt_3",
+          "z_spec": 0.33859680058148645,
+          "observation_ids": [
+            "goods-s-mediumjwst_194504"
+          ],
+          "quality_flags": [
+            "A"
+          ],
+          "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+          "status": "not_detected",
+          "detection_index": null,
+          "separation_arcsec": null,
+          "artifact_score": null,
+          "recovered": false,
+          "rejected": null
+        },
+        {
+          "source_id": "dr4-sky-dff5a1c24e796aab",
+          "sky_group_id": "dr4-sky-dff5a1c24e796aab",
+          "field_id": "GS",
+          "ra_deg": 53.0680737,
+          "dec_deg": -27.8328527,
+          "cohort": "robust_controls_0_le_z_lt_3",
+          "z_spec": 1.6092514805064968,
+          "observation_ids": [
+            "goods-s-mediumjwst_192380"
+          ],
+          "quality_flags": [
+            "A"
+          ],
+          "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+          "status": "matched",
+          "detection_index": 400,
+          "separation_arcsec": 0.011549013100948717,
+          "artifact_score": 0.027576537185235693,
+          "recovered": true,
+          "rejected": false
+        },
+        {
+          "source_id": "dr4-sky-e7697033af1e106f",
+          "sky_group_id": "dr4-sky-e7697033af1e106f",
+          "field_id": "GS",
+          "ra_deg": 53.0724576,
+          "dec_deg": -27.852024,
+          "cohort": "robust_controls_0_le_z_lt_3",
+          "z_spec": 2.295220468741001,
+          "observation_ids": [
+            "goods-s-deepjwst_185390"
+          ],
+          "quality_flags": [
+            "A"
+          ],
+          "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+          "status": "not_detected",
+          "detection_index": null,
+          "separation_arcsec": null,
+          "artifact_score": null,
+          "recovered": false,
+          "rejected": null
+        },
+        {
+          "source_id": "dr4-sky-f399a6995236292a",
+          "sky_group_id": "dr4-sky-f399a6995236292a",
+          "field_id": "GS",
+          "ra_deg": 53.0660667,
+          "dec_deg": -27.8498924,
+          "cohort": "robust_controls_0_le_z_lt_3",
+          "z_spec": 1.0799832942330947,
+          "observation_ids": [
+            "goods-s-deepjwst_186339"
+          ],
+          "quality_flags": [
+            "A"
+          ],
+          "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+          "status": "not_detected",
+          "detection_index": null,
+          "separation_arcsec": null,
+          "artifact_score": null,
+          "recovered": false,
+          "rejected": null
+        },
+        {
+          "source_id": "dr4-sky-fa09ac04a1072665",
+          "sky_group_id": "dr4-sky-fa09ac04a1072665",
+          "field_id": "GS",
+          "ra_deg": 53.0721288,
+          "dec_deg": -27.8419459,
+          "cohort": "robust_high_z_ge_6",
+          "z_spec": 8.697172188017191,
+          "observation_ids": [
+            "goods-s-mediumjwst_20189546"
+          ],
+          "quality_flags": [
+            "A"
+          ],
+          "label_basis": "external JADES DR4 spectroscopic catalogue; target position can differ from imaging centroid",
+          "status": "not_detected",
+          "detection_index": null,
+          "separation_arcsec": null,
+          "artifact_score": null,
+          "recovered": false,
+          "rejected": null
+        }
+      ]
+    }
+  ]
+}
