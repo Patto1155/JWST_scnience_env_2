@@ -1,83 +1,125 @@
-# JWST research takeover: verified baseline
+# JWST research takeover: current verified status
 
-9 October 2026. Three rounds of work established calibrated measurements,
-tested the frozen recovery pipeline, and added actual public spectroscopy.
-The original research PR #1 and new PRs #2–#12 are merged. PR #13 records this
-handoff and expands lint coverage across the new scientific modules.
+9 October 2026. This document supersedes older scientific claims. The incoming
+verified baseline is preserved in [TAKEOVER_BASELINE_2026-10-09.md](TAKEOVER_BASELINE_2026-10-09.md).
+The [full research report](FINAL_RESEARCH_REPORT.md) distinguishes observations,
+assumptions, conditional inferences and unresolved requirements.
 
-## Merged work
+Eight specialists completed acquisition, implementation, validation and further
+experiments. All four incoming next-experiment categories were executed on real
+public data; follow-ups were built on merged changes. No new astrophysical
+source, elemental abundance, enrichment mechanism or cosmological discovery is
+claimed.
 
-| Round | Pull requests | Result |
+## Results that are currently supported
+
+- **Original images:** thirteen complete current GOODS-S/SMACS individual-exposure
+  i2d products, 1,555,571,520 bytes under 1.5 GiB. External JADES F444W residual
+  median 0.02155 arcsec. Old F277W repeat baseline corrected to 5.64853 hours.
+- **GOODS selection:** 1,134 proposals; 891 untestable, 236 measured screen
+  failures and seven first-screen survivors. Area 0.962808 arcmin². The screen
+  uses F090/F444 and F200 coverage, with no F200 color or redshift criterion.
+  Only **98 persists** among those seven in covered F444W siblings; six fail a
+  stable-source interpretation at original brightness. Conditional entrants
+  254/46 also persist and remain separate denominators. None is confirmed high-z.
+- **SMACS geometry:** simultaneous coverage, rather than independent overlap,
+  fixes disjoint-quarter selection. With the acquired F200 NRCA1 alternative:
+  1,267 proposals; 940 untestable, 317 failures, ten raw survivors; 1.064573 arcmin².
+  Noise/PSF/repeat validation of this raw screen remains a next experiment.
+- **PSF and sky scatter:** unresolved model total/aperture multipliers
+  1.217/1.207/1.429 (F090/F200/F444); empirical sky/diagonal factors
+  1.576 [1.328,1.804], 1.452 [1.192,1.625], 1.048 [0.965,1.154]. Brackets are
+  conditional spatial-block intervals. Corrections change candidate identities;
+  neither model nor robust sky width certifies faint-source tails or galaxy totals.
+  Eleven observed M92 stars give finite-aperture ratio 0.784 [0.754,0.807], with
+  substantial crowded-background sensitivity.
+- **Real recovery:** M92 conditional classifier rejection about 0.034%, nominal
+  Wilson 95% upper bound 0.101%, but full-chain acceptance about 66.5% and sharply
+  brightness dependent. One held-out visit and missing training provenance limit
+  generalization. Three covered high-z controls missed in the original image:
+  deeper public images recover two; the third has aperture signal but fails detection.
+- **MoM spectrum:** resolution, signed bin-integrated UV fits, explicit masks,
+  full linear flux covariance and alternative extractions are implemented.
+  Nitrogen/carbon summed **line-flux** ratio 1.039 [0.448,2.159] with nominal slit
+  R, versus 1.050 [0.502,2.047] with generic point-source R; conditional 95% Fieller
+  sets, not elemental N/C. Intrinsic width remains unresolved. All nine native
+  exposures acquired/verified; inspected DQ supports no removal of influential bins.
+  Source-weighted coadd reconstruction and empirical covariance remain unresolved.
+- **Chemistry and formation:** no calibrated emissivity/ionization grid means
+  elemental N/C and polluter identity remain unidentified. Cue-median effective
+  Q=0.521 [0.225,1.082], point-R Q=0.526 [0.251,1.026]. Joint C/O,O/H, helium and
+  local gas budgets provide conditional discriminators. A 204-Myr history starting
+  at z=20 fails the 104.959-Myr Planck18 budget; this rejects that combined history,
+  not WR enrichment generally. Selected stellar models are compared on common
+  solar conventions. No completeness-controlled population supports exotic cosmology.
+
+Historical 1,732 candidates remain **untestable**, not measured artifacts.
+Original historical claims, synthetic controls and independent real measurements
+retain their different scopes. Counterexamples corrected cached-byte verification,
+empty native inventories and a literature solar-convention comparison.
+
+## Reproducible artifact index
+
+| Experiment | Report and compact results | Executable entry point |
 |---|---|---|
-| Baseline | [#2](https://github.com/Patto1155/JWST_scnience_env_2/pull/2), [#3](https://github.com/Patto1155/JWST_scnience_env_2/pull/3), [#7](https://github.com/Patto1155/JWST_scnience_env_2/pull/7) | BUNIT/WCS calibration, matched sky apertures, uncertainty-aware dropout limits, WCS overlap, physical repeat-epoch comparisons |
-| Baseline | [#4](https://github.com/Patto1155/JWST_scnience_env_2/pull/4), [#5](https://github.com/Patto1155/JWST_scnience_env_2/pull/5), [#6](https://github.com/Patto1155/JWST_scnience_env_2/pull/6) | Bounded agent loops, offline CI, denominator-aware validation, pinned public data |
-| Follow-up | [#8](https://github.com/Patto1155/JWST_scnience_env_2/pull/8), [#9](https://github.com/Patto1155/JWST_scnience_env_2/pull/9), [#10](https://github.com/Patto1155/JWST_scnience_env_2/pull/10) | Actual-FITS epoch controls, 2,304 PSF stress trials, calibrated evidence panels and cache invalidation |
-| Real data | [#11](https://github.com/Patto1155/JWST_scnience_env_2/pull/11), [#12](https://github.com/Patto1155/JWST_scnience_env_2/pull/12) | Quality-aware reference cohorts, verified public MoM-z14 spectrum, unit/error diagnostics |
+| Environment/ownership | [Protocol](RESEARCH_PROTOCOL.md), `requirements-research.lock` | `python scripts/quality_gate.py` |
+| Original provisioning and astrometry | [Astrometry](ORIGINAL_IMAGE_ASTROMETRY.md), `research_output/original_image_astrometry.json` | `python -m data_pipeline.original_images`; `python -m discovery.external_astrometry` |
+| Calibrated original selection | [Photometry](ORIGINAL_IMAGE_PHOTOMETRY.md), `research_output/original_image_rerun/` | `python -m discovery.image_photometry_rerun MANIFEST --output-dir OUTPUT` |
+| Native PSF and real sky noise | [Noise report](../research_output/PSF_NOISE.md), [Native PSF](NATIVE_PSF_NOISE.md), phase CSV and noise JSON | `python -m discovery.psf_noise`; `python -m discovery.native_psf` |
+| Real stars and galaxies | [Real-source validation](REAL_SOURCE_VALIDATION.md), `research_output/real_validation_*.json` | `python -m data_pipeline.real_validation_acquire`; `python -m discovery.real_validation` |
+| Original repeat tests | [Repeat report](ORIGINAL_REPEAT_TEST.md), `research_output/f444w_repeat_screen*.json` | `python -m discovery.f444w_repeat_screen` |
+| Joint selection, noise and continuum | [Imaging follow-up](PHOTOMETRY_ROUND_THREE.md), SMACS replay CSVs, sensitivity/continuum JSON | `python -m discovery.photometry_sensitivity`; `python -m discovery.survivor_continuum` |
+| Deeper reference comparison | [Follow-up data](FOLLOWUP_DATA.md), `research_output/deep_reference_comparison.json` | `python -m data_pipeline.followup_data`; `python -m discovery.deep_reference_comparison` |
+| Nine native spectra and primary tables | [Native batch](MOM_NATIVE_BATCH.md), native/stellar inventories and JSON | `python -m data_pipeline.mom_native_batch`; `python -m data_pipeline.rotating_benchmarks` |
+| Nominal spectral analysis | [UV fit](../research_output/mom_z14_line_sensitivity.md), companion JSON/PNG | `python -m tools.jwst.line_sensitivity`; `python -m tools.jwst.line_report` |
+| Point-source resolution and leverage | [Point-R report](../research_output/mom_z14_point_resolution.md), companion JSON | `python -m tools.jwst.point_resolution` |
+| Conditional enrichment and formation | [Constraints](ENRICHMENT_CONSTRAINTS.md), companion JSON | `python -m discovery.enrichment_constraints` |
+| Flux/abundance identifiability | [Identifiability](CHEMISTRY_IDENTIFIABILITY.md), [resolution comparison](CHEMISTRY_RESOLUTION_COMPARISON.md), JSON | `python -m discovery.chemistry_identifiability` |
+| Observed aperture response | [Observed-star report](M92_APERTURE_RESPONSE.md), compact JSON/PNG | `python -m discovery.stellar_aperture` |
+| Independent review | [Review](ADVERSARIAL_REVIEW_R3.md), [follow-up addendum](ADVERSARIAL_FOLLOWUP_REVIEW.md), independent input/noise evidence | `python -m discovery.adversarial_noise_controls` |
 
-## Findings and their limits
+Report-specific commands give required arguments, exact inventories and caveats;
+entry points above are an index, not complete invocations. Large raw FITS and
+full trials stay outside git with bounded regenerators and receipts. Saved CSV
+replays reproduce all three selection summaries but do not replace pixel reruns.
+Spectral-resolution comparison retains an exact earlier point-report snapshot
+with recovery from its public Git commit when later provenance guards change.
 
-* Historical candidates: **1,732 untestable**, zero measured falsifications and
-  zero survivors under the corrected audit. Missing calibrated evidence does
-  not establish detector-artifact identity. Historical catalogs were not silently
-  replaced; the original FITS archive must be provisioned for a fresh pipeline run.
-* Existing F444W faint point injections: **27/119 recovered (22.7%)**, nominal
-  Wilson interval 16.1–31.0%. Zero classifier rejections among 27 detections still
-  allows a 12.5% nominal upper bound. Shared-image dependence and systematics are
-  not captured by these intervals. See [validation](VALIDATION.md).
-* New stress experiment: source-template choices materially alter recovery and
-  morphology. For unresolved F277W sources with total injected flux 120 times
-  the per-pixel noise sigma, both kernels detect 32/32; the frozen classifier
-  accepts 32/32 JADES-model kernels and 0/32 Gaussian kernels. This is a paired
-  synthetic-background comparison, not observed-sky performance. Training PSF
-  provenance remains incomplete. See [PSF stress](EXTERNAL_PSF_STRESS.md).
-* Real JADES DR4 references: **243 A/B high-z observations, 1,461 A/B low-z
-  controls, and 48 separately retained C high-z observations**. Repeated
-  observations are not unique galaxies, and targeted spectra do not measure
-  population prevalence. See [cohorts](DR4_REFERENCE_COHORTS.md).
-* Actual MoM-z14 spectrum: source ID, slit coordinates, spatial query and SHA256
-  agree. Of 473 samples, 467 have finite wavelength/flux and positive finite
-  errors. Signed bin SNR is a stored-value diagnostic, not line significance.
-  No new redshift, abundance or galaxy-age inference was made. See
-  [spectrum report](../research_output/mom_z14_spectrum_reference.md).
+## Merged changes and validation
 
-The nitrogen question concerns an inferred abundance ratio, not a direct clock
-for the whole galaxy. [Source notes](RESEARCH_SOURCES.md) pin the published
-MoM-z14 version and distinguish observational line values from photoionization
-and stellar-yield hypotheses.
+| Round | Merged PRs | Outcome |
+|---|---|---|
+| Real-image and spectral baseline | [#14](https://github.com/Patto1155/JWST_scnience_env_2/pull/14), [#15](https://github.com/Patto1155/JWST_scnience_env_2/pull/15), [#16](https://github.com/Patto1155/JWST_scnience_env_2/pull/16), [#17](https://github.com/Patto1155/JWST_scnience_env_2/pull/17), [#18](https://github.com/Patto1155/JWST_scnience_env_2/pull/18), [#19](https://github.com/Patto1155/JWST_scnience_env_2/pull/19) | Protocol, real noise, original rerun, conditional yields, covariant UV fits, real recovery |
+| Dependency-driven follow-up | [#20](https://github.com/Patto1155/JWST_scnience_env_2/pull/20), [#21](https://github.com/Patto1155/JWST_scnience_env_2/pull/21), [#22](https://github.com/Patto1155/JWST_scnience_env_2/pull/22), [#23](https://github.com/Patto1155/JWST_scnience_env_2/pull/23), [#24](https://github.com/Patto1155/JWST_scnience_env_2/pull/24) | Native PSFs/deep data, all native spectra, repeat tests, point-R/leverage, chemistry guard |
+| Further discrimination and corrections | [#25](https://github.com/Patto1155/JWST_scnience_env_2/pull/25), [#26](https://github.com/Patto1155/JWST_scnience_env_2/pull/26), [#27](https://github.com/Patto1155/JWST_scnience_env_2/pull/27), [#28](https://github.com/Patto1155/JWST_scnience_env_2/pull/28) | Common solar scale, joint coverage/noise/continuum, resolution-to-chemistry comparison, observed stellar aperture response |
+| Final independent review and handover | [#29](https://github.com/Patto1155/JWST_scnience_env_2/pull/29) | Independent input/operator audits, clean-checkout gate, consolidated results and preserved baseline |
 
-## Reproduce
+Integrated Python3.12 gate: **363 passed, 2 explicit historical-fixture skips**;
+all 61 scientific lint targets plus the core lint/format/type gates pass. The
+skips request older fixed `data/jwst/mastDownload` fixtures not in the selected
+acquisition. They do not substitute for the executed manifest-based real-image
+experiments. A clean tracked-file checkout is independently checked without
+local download caches. Every science PR passed CI before merge.
 
-```bash
-python -m pip install -r requirements-dev.txt
-python scripts/quality_gate.py
-python -m data_pipeline.research_sources validate
-python -m discovery.validation_audit --help
-python -m discovery.external_psf_stress --help
-python -m data_pipeline.reference_cohorts data_sources/pilot/jades_dr4_reference.csv --output /tmp/dr4-cohorts.json
-```
+Three compact selection catalogs replay exactly, including CSV/metadata hashes.
+The saved noise/PSF sensitivity JSON and the preserved spectral-resolution
+chemistry JSON reproduce exactly. Independent review also replayed all observed
+M92 aperture records byte-identically and verified all nine native hashes/DQ.
+[Final validation receipt](../research_output/final_validation.json) records the
+scope; numerical replay is distinct from calibration or astrophysical truth.
 
-The source manifest and acquisition receipts pin actual inputs. Spectrum and PSF
-experiments verify hashes before reading values. No provider keys or paid LLM
-calls are required for these checks. Final combined suite: **202 passed, 2
-explicit archive-dependent skips**. Lint, targeted type checking and offline CI
-are enabled. Agent dollar budgets are enforced after each response and may
-overshoot by one bounded completion.
+## Highest-value next work
 
-## Next experiments
-
-1. Provision the original images and verify astrometry against external sources.
-   Rerun detection and calibrated photometry; report exploratory proposals
-   separately from dropout survivors. Saved proposal catalogs are not discoveries.
-2. Freeze the classifier and evaluate real JWSTSTARS stars across held-out
-   fields/visits, then known JADES sources with observation groups kept together.
-   Quantify detection, classifier retention and full-chain recovery separately.
-3. Measure PSF aperture corrections and correlated drizzle/background noise
-   before treating cross-band colors or faint upper limits as precision evidence.
-4. Fit MoM-z14's continuum and UV lines with instrumental resolution, explicit
-   extraction-quality masks, covariance and alternative extractions. Propagate
-   ionization/density assumptions before comparing WR, massive-star and other
-   nitrogen-yield models. The generic diagnostic reader currently checks stored
-   values and units; it does not implement future DQ/extraction masks.
-
-Independent review reproduced the saved spectral and cohort diagnostics exactly.
-There is no new astrophysical-discovery claim in this baseline.
+1. Reconstruct independent native nod spectra with source-specific LSF/pathloss,
+   trace-weighted quality masks and empirical shared-noise/background covariance.
+   Public archive access is resolved; original PIXTAB/contributor weights and
+   exact upstream settings are genuine missing inputs.
+2. Fit versioned atomic/photoionization models jointly to covariant N/C/O/He line
+   groups, then compare abundance-conditioned yields. Higher-resolution density
+   multiplets and separated He II/O III] require new observations.
+3. Deep multiband PSF/SED modeling and independent repeat vetting of conditional
+   GOODS sources and raw SMACS survivors; calibrate faint real-source selection,
+   completeness and contamination across fields/visits.
+4. Constrain emitting gas mass, C/O, helium and differential retention; evaluate
+   complete enrichment histories and completeness-controlled galaxy populations
+   before cosmological claims.

@@ -1,0 +1,24 @@
+{
+  "status": "all_saved_catalog_hashes_and_audits_reproduced",
+  "scope": "Saved measured records; not new original-image remeasurement",
+  "datasets": {
+    "original_image_rerun": {
+      "total_candidates": 1134,
+      "untestable": 891,
+      "falsified": 236,
+      "survivors": 7
+    },
+    "smacs_image_rerun": {
+      "total_candidates": 1267,
+      "untestable": 1267,
+      "falsified": 0,
+      "survivors": 0
+    },
+    "smacs_matched_image_rerun": {
+      "total_candidates": 1267,
+      "untestable": 940,
+      "falsified": 317,
+      "survivors": 10
+    }
+  }
+}

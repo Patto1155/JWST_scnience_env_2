@@ -1,0 +1,271 @@
+{
+  "schema_version": 1,
+  "synthetic_control": true,
+  "independent_oracle": "exact convolution of signed aperture operator and known kernel",
+  "geometry": {
+    "radius_arcsec": 0.189,
+    "scale_arcsec": 0.063,
+    "annulus_factors": [
+      2,
+      3.3333333333333335
+    ],
+    "mask": "explicit empty mask"
+  },
+  "image_shape": [
+    768,
+    768
+  ],
+  "summaries": {
+    "white": {
+      "exact_multiplier": 1.0,
+      "measured_range": [
+        1.005805062223635,
+        1.0597050865138993
+      ],
+      "interval_contains_exact_count": 5,
+      "trials": 6
+    },
+    "positive_neighbor_covariance": {
+      "exact_multiplier": 2.291304333006132,
+      "measured_range": [
+        2.2397585927268877,
+        2.4337936876791235
+      ],
+      "interval_contains_exact_count": 6,
+      "trials": 6
+    },
+    "negative_neighbor_covariance": {
+      "exact_multiplier": 0.3793630230206654,
+      "measured_range": [
+        0.35134305297288165,
+        0.3976409266213075
+      ],
+      "interval_contains_exact_count": 6,
+      "trials": 6
+    }
+  },
+  "trials": [
+    {
+      "kind": "white",
+      "seed": 80000,
+      "apertures": 900,
+      "exact_multiplier": 1.0,
+      "measured_robust_multiplier": 1.005805062223635,
+      "block_bootstrap_95": [
+        0.9322895051470819,
+        1.103015883369272
+      ],
+      "interval_contains_exact": true
+    },
+    {
+      "kind": "positive_neighbor_covariance",
+      "seed": 80000,
+      "apertures": 900,
+      "exact_multiplier": 2.291304333006132,
+      "measured_robust_multiplier": 2.2397585927268877,
+      "block_bootstrap_95": [
+        2.0600344005692173,
+        2.4584235042203537
+      ],
+      "interval_contains_exact": true
+    },
+    {
+      "kind": "negative_neighbor_covariance",
+      "seed": 80000,
+      "apertures": 900,
+      "exact_multiplier": 0.3793630230206654,
+      "measured_robust_multiplier": 0.35134305297288165,
+      "block_bootstrap_95": [
+        0.3303725972607462,
+        0.3830000395185985
+      ],
+      "interval_contains_exact": true
+    },
+    {
+      "kind": "white",
+      "seed": 80001,
+      "apertures": 900,
+      "exact_multiplier": 1.0,
+      "measured_robust_multiplier": 1.0545868035612174,
+      "block_bootstrap_95": [
+        0.9739436566156118,
+        1.1171702648521813
+      ],
+      "interval_contains_exact": true
+    },
+    {
+      "kind": "positive_neighbor_covariance",
+      "seed": 80001,
+      "apertures": 900,
+      "exact_multiplier": 2.291304333006132,
+      "measured_robust_multiplier": 2.3697932530668107,
+      "block_bootstrap_95": [
+        2.1905670728444484,
+        2.4686391490187436
+      ],
+      "interval_contains_exact": true
+    },
+    {
+      "kind": "negative_neighbor_covariance",
+      "seed": 80001,
+      "apertures": 900,
+      "exact_multiplier": 0.3793630230206654,
+      "measured_robust_multiplier": 0.36502313008986076,
+      "block_bootstrap_95": [
+        0.33729674782658176,
+        0.40334116860401664
+      ],
+      "interval_contains_exact": true
+    },
+    {
+      "kind": "white",
+      "seed": 80002,
+      "apertures": 870,
+      "exact_multiplier": 1.0,
+      "measured_robust_multiplier": 1.0528535490277844,
+      "block_bootstrap_95": [
+        0.9815737892264697,
+        1.136642520625985
+      ],
+      "interval_contains_exact": true
+    },
+    {
+      "kind": "positive_neighbor_covariance",
+      "seed": 80002,
+      "apertures": 870,
+      "exact_multiplier": 2.291304333006132,
+      "measured_robust_multiplier": 2.300231591426313,
+      "block_bootstrap_95": [
+        2.162223648191512,
+        2.43996716424551
+      ],
+      "interval_contains_exact": true
+    },
+    {
+      "kind": "negative_neighbor_covariance",
+      "seed": 80002,
+      "apertures": 870,
+      "exact_multiplier": 0.3793630230206654,
+      "measured_robust_multiplier": 0.3733971308762195,
+      "block_bootstrap_95": [
+        0.3466209593495667,
+        0.41355158066452624
+      ],
+      "interval_contains_exact": true
+    },
+    {
+      "kind": "white",
+      "seed": 80003,
+      "apertures": 900,
+      "exact_multiplier": 1.0,
+      "measured_robust_multiplier": 1.0597050865138993,
+      "block_bootstrap_95": [
+        1.011210626633367,
+        1.144753312339555
+      ],
+      "interval_contains_exact": false
+    },
+    {
+      "kind": "positive_neighbor_covariance",
+      "seed": 80003,
+      "apertures": 900,
+      "exact_multiplier": 2.291304333006132,
+      "measured_robust_multiplier": 2.3306363299674224,
+      "block_bootstrap_95": [
+        2.1872785037898286,
+        2.5724733189348963
+      ],
+      "interval_contains_exact": true
+    },
+    {
+      "kind": "negative_neighbor_covariance",
+      "seed": 80003,
+      "apertures": 900,
+      "exact_multiplier": 0.3793630230206654,
+      "measured_robust_multiplier": 0.3976409266213075,
+      "block_bootstrap_95": [
+        0.36859898568409255,
+        0.42269812587513034
+      ],
+      "interval_contains_exact": true
+    },
+    {
+      "kind": "white",
+      "seed": 80004,
+      "apertures": 900,
+      "exact_multiplier": 1.0,
+      "measured_robust_multiplier": 1.0232221902432377,
+      "block_bootstrap_95": [
+        0.960199906954989,
+        1.098752293385658
+      ],
+      "interval_contains_exact": true
+    },
+    {
+      "kind": "positive_neighbor_covariance",
+      "seed": 80004,
+      "apertures": 900,
+      "exact_multiplier": 2.291304333006132,
+      "measured_robust_multiplier": 2.3769005202056537,
+      "block_bootstrap_95": [
+        2.219753483603591,
+        2.566913462947062
+      ],
+      "interval_contains_exact": true
+    },
+    {
+      "kind": "negative_neighbor_covariance",
+      "seed": 80004,
+      "apertures": 900,
+      "exact_multiplier": 0.3793630230206654,
+      "measured_robust_multiplier": 0.36065226624112245,
+      "block_bootstrap_95": [
+        0.32885472938845806,
+        0.3961366603927013
+      ],
+      "interval_contains_exact": true
+    },
+    {
+      "kind": "white",
+      "seed": 80005,
+      "apertures": 900,
+      "exact_multiplier": 1.0,
+      "measured_robust_multiplier": 1.0493842856383673,
+      "block_bootstrap_95": [
+        0.9539949209420097,
+        1.099142106972991
+      ],
+      "interval_contains_exact": true
+    },
+    {
+      "kind": "positive_neighbor_covariance",
+      "seed": 80005,
+      "apertures": 900,
+      "exact_multiplier": 2.291304333006132,
+      "measured_robust_multiplier": 2.4337936876791235,
+      "block_bootstrap_95": [
+        2.2267647344954273,
+        2.5606110715210635
+      ],
+      "interval_contains_exact": true
+    },
+    {
+      "kind": "negative_neighbor_covariance",
+      "seed": 80005,
+      "apertures": 900,
+      "exact_multiplier": 0.3793630230206654,
+      "measured_robust_multiplier": 0.38630972317894025,
+      "block_bootstrap_95": [
+        0.36154240487766737,
+        0.41174846198331666
+      ],
+      "interval_contains_exact": true
+    }
+  ],
+  "limits": [
+    "Six realizations are not a calibrated estimate of 95% interval coverage.",
+    "Synthetic covariance is known; actual JWST covariance, sources and backgrounds are not.",
+    "Uncertainty multipliers may be below one; off-diagonal covariance does not imply inflation.",
+    "This oracle excludes source-mask selection, heteroscedastic ERR and source Poisson variance."
+  ]
+}
