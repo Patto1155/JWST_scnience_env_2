@@ -1,0 +1,4092 @@
+{
+  "schema_version": 1,
+  "code_sha256": "657108fe0ff2f8d9b77372b8809379472107007f1f01683e8e2ce914017e399d",
+  "psf": {
+    "experiment": "modeled PSF finite-template aperture response",
+    "model_not_observed": true,
+    "output_scale_arcsec": 0.06291269315026955,
+    "aperture_radii_arcsec": [
+      0.1258253863005391,
+      0.18873807945080864,
+      0.31456346575134775
+    ],
+    "annulus_inner_factor": 2.0,
+    "annulus_outer_factor": 3.3333333333333335,
+    "fixed_annulus_radii_arcsec": [
+      0.3774761589016173,
+      0.6291269315026955
+    ],
+    "subsamples_per_axis": 16,
+    "phases_xy_pixels": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -0.4,
+        -0.4
+      ],
+      [
+        -0.4,
+        0
+      ],
+      [
+        -0.4,
+        0.4
+      ],
+      [
+        0,
+        -0.4
+      ],
+      [
+        0,
+        0.4
+      ],
+      [
+        0.4,
+        -0.4
+      ],
+      [
+        0.4,
+        0
+      ],
+      [
+        0.4,
+        0.4
+      ]
+    ],
+    "uncertainty_provenance": {
+      "phase_envelopes": "deterministic sensitivity range over nine specified pixel phases",
+      "integration_comparison": "fractional-area versus pixel-centre membership sensitivity",
+      "not_included": [
+        "PSF modeling uncertainty",
+        "field/visit PSF variation",
+        "source extension",
+        "calibration uncertainty",
+        "flux outside the supplied ~20 arcsec template"
+      ],
+      "statistical_confidence_intervals": false
+    },
+    "filters": [
+      {
+        "provenance": {
+          "filter": "F277W",
+          "sha256": "c90117d6f3261a00a4e6ac1821aca30cc2c29917697fcea90db76fa255f8ec3b",
+          "bytes": 1800000,
+          "requested_url": "https://slate.ucsc.edu/~brant/jades-dr5/GOODS-S/hlsp/images/submosaics/hlsp_jades_jwst_nircam_jw011800-deep_f277wa_v5.0_mpsf.fits",
+          "retrieved_utc": "2026-10-09T06:38:33.928274+00:00",
+          "input_scale_arcsec": 0.029994758999999965,
+          "template_shape": [
+            669,
+            669
+          ],
+          "original_template_sum": 0.9997273206382191,
+          "normalization": "finite supplied template; unmodeled outer wings are unknown",
+          "origin": "official JADES DR5 modeled PSF, not observed-star measurement"
+        },
+        "resampled_shape": [
+          325,
+          325
+        ],
+        "retained_fraction_full_resample": 1.0,
+        "old_61px_crop_retained_fraction": 0.9797218165424461,
+        "old_crop_normalization_flux_inflation": 1.02069789925585,
+        "apertures": [
+          {
+            "radius_arcsec": 0.1258253863005391,
+            "centered_fractional": {
+              "phase_x": 0.0,
+              "phase_y": 0.0,
+              "subsamples": 16,
+              "encircled_energy": 0.6711212251880967,
+              "annulus_energy": 0.03828033401188353,
+              "net_response": 0.6687210830431515,
+              "total_flux_multiplier": 1.4953917640061478
+            },
+            "fractional_ee_phase_range": [
+              0.6687309821334286,
+              0.6717172265748846
+            ],
+            "fractional_response_phase_range": [
+              0.6663403283496513,
+              0.669334235159727
+            ],
+            "pixel_center_ee_phase_range": [
+              0.672461527410473,
+              0.6926653793471005
+            ],
+            "old_crop_renormalized_centered_ee": 0.6850120246955026,
+            "measurements": [
+              {
+                "phase_x": 0.0,
+                "phase_y": 0.0,
+                "subsamples": 1,
+                "encircled_energy": 0.6851877643944624,
+                "annulus_energy": 0.03879151246315103,
+                "net_response": 0.6827157562473009,
+                "total_flux_multiplier": 1.4647384227613591
+              },
+              {
+                "phase_x": 0.0,
+                "phase_y": 0.0,
+                "subsamples": 16,
+                "encircled_energy": 0.6711212251880967,
+                "annulus_energy": 0.03828033401188353,
+                "net_response": 0.6687210830431515,
+                "total_flux_multiplier": 1.4953917640061478
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": -0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.6919514837052578,
+                "annulus_energy": 0.03670434393910771,
+                "net_response": 0.6895893229567014,
+                "total_flux_multiplier": 1.450138461704096
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": -0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.6716378516620503,
+                "annulus_energy": 0.0381670364150645,
+                "net_response": 0.6692557481655156,
+                "total_flux_multiplier": 1.4941971028879188
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": 0,
+                "subsamples": 1,
+                "encircled_energy": 0.6736910155324609,
+                "annulus_energy": 0.03881121267893198,
+                "net_response": 0.671362342771725,
+                "total_flux_multiplier": 1.4895086249125795
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": 0,
+                "subsamples": 16,
+                "encircled_energy": 0.6698487080807627,
+                "annulus_energy": 0.03821884749120514,
+                "net_response": 0.6674607726298046,
+                "total_flux_multiplier": 1.4982153873402722
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": 0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.69263859793518,
+                "annulus_energy": 0.0365967659475018,
+                "net_response": 0.690283360522717,
+                "total_flux_multiplier": 1.4486804364554726
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": 0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.6713198459246895,
+                "annulus_energy": 0.03818118948889929,
+                "net_response": 0.668936859098197,
+                "total_flux_multiplier": 1.4949094019846862
+              },
+              {
+                "phase_x": 0,
+                "phase_y": -0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.6726906608294965,
+                "annulus_energy": 0.0391202005463221,
+                "net_response": 0.6703434487967171,
+                "total_flux_multiplier": 1.4917726156569806
+              },
+              {
+                "phase_x": 0,
+                "phase_y": -0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.6689354021110234,
+                "annulus_energy": 0.03825041362626044,
+                "net_response": 0.6665454943898924,
+                "total_flux_multiplier": 1.5002726871859329
+              },
+              {
+                "phase_x": 0,
+                "phase_y": 0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.672461527410473,
+                "annulus_energy": 0.03923566964016553,
+                "net_response": 0.6701073872320631,
+                "total_flux_multiplier": 1.4922981287082762
+              },
+              {
+                "phase_x": 0,
+                "phase_y": 0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.6687309821334286,
+                "annulus_energy": 0.038262354340355895,
+                "net_response": 0.6663403283496513,
+                "total_flux_multiplier": 1.5007346208156656
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": -0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.6926653793471005,
+                "annulus_energy": 0.03689494572899629,
+                "net_response": 0.6902909521467195,
+                "total_flux_multiplier": 1.4486645042791357
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": -0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.6717172265748846,
+                "annulus_energy": 0.038181263010368366,
+                "net_response": 0.669334235159727,
+                "total_flux_multiplier": 1.4940218914117913
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": 0,
+                "subsamples": 1,
+                "encircled_energy": 0.6736968584877239,
+                "annulus_energy": 0.038417051038624805,
+                "net_response": 0.6713918354254064,
+                "total_flux_multiplier": 1.4894431943253843
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": 0,
+                "subsamples": 16,
+                "encircled_energy": 0.6698360944561212,
+                "annulus_energy": 0.038231870095150625,
+                "net_response": 0.6674473453454202,
+                "total_flux_multiplier": 1.4982455274917241
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": 0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.6921495587747087,
+                "annulus_energy": 0.03666755891771112,
+                "net_response": 0.6897897653790145,
+                "total_flux_multiplier": 1.4497170735064997
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": 0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.6712900495038574,
+                "annulus_energy": 0.03819056271406474,
+                "net_response": 0.6689064776701299,
+                "total_flux_multiplier": 1.494977300089996
+              }
+            ]
+          },
+          {
+            "radius_arcsec": 0.18873807945080864,
+            "centered_fractional": {
+              "phase_x": 0.0,
+              "phase_y": 0.0,
+              "subsamples": 16,
+              "encircled_energy": 0.7907168251017814,
+              "annulus_energy": 0.03828033401188353,
+              "net_response": 0.7853395549678769,
+              "total_flux_multiplier": 1.2733345642330514
+            },
+            "fractional_ee_phase_range": [
+              0.7907168251017814,
+              0.7932096849560062
+            ],
+            "fractional_response_phase_range": [
+              0.7853395549678769,
+              0.7878449476696929
+            ],
+            "pixel_center_ee_phase_range": [
+              0.7844097453183619,
+              0.8045998156867628
+            ],
+            "old_crop_renormalized_centered_ee": 0.8070830022876437,
+            "measurements": [
+              {
+                "phase_x": 0.0,
+                "phase_y": 0.0,
+                "subsamples": 1,
+                "encircled_energy": 0.796877222817238,
+                "annulus_energy": 0.03879151246315103,
+                "net_response": 0.7913627431043392,
+                "total_flux_multiplier": 1.2636430116449802
+              },
+              {
+                "phase_x": 0.0,
+                "phase_y": 0.0,
+                "subsamples": 16,
+                "encircled_energy": 0.7907168251017814,
+                "annulus_energy": 0.03828033401188353,
+                "net_response": 0.7853395549678769,
+                "total_flux_multiplier": 1.2733345642330514
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": -0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.8041238138600965,
+                "annulus_energy": 0.03670434393910771,
+                "net_response": 0.79867267367112,
+                "total_flux_multiplier": 1.2520773941137533
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": -0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.7932096849560062,
+                "annulus_energy": 0.0381670364150645,
+                "net_response": 0.7878449476696929,
+                "total_flux_multiplier": 1.2692852863470465
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": 0,
+                "subsamples": 1,
+                "encircled_energy": 0.7844097453183619,
+                "annulus_energy": 0.03881121267893198,
+                "net_response": 0.7793642876701008,
+                "total_flux_multiplier": 1.2830970264104438
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": 0,
+                "subsamples": 16,
+                "encircled_energy": 0.7919171116972463,
+                "annulus_energy": 0.03821884749120514,
+                "net_response": 0.7865398018291373,
+                "total_flux_multiplier": 1.27139147653361
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": 0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.8026065649605876,
+                "annulus_energy": 0.0365967659475018,
+                "net_response": 0.7971714017010576,
+                "total_flux_multiplier": 1.2544353671821808
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": 0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.7931746212629547,
+                "annulus_energy": 0.03818118948889929,
+                "net_response": 0.787807894628501,
+                "total_flux_multiplier": 1.2693449847587024
+              },
+              {
+                "phase_x": 0,
+                "phase_y": -0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.7882148149932942,
+                "annulus_energy": 0.0391202005463221,
+                "net_response": 0.7831291889222722,
+                "total_flux_multiplier": 1.2769285248787385
+              },
+              {
+                "phase_x": 0,
+                "phase_y": -0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.7922995734850824,
+                "annulus_energy": 0.03825041362626044,
+                "net_response": 0.7869178223294759,
+                "total_flux_multiplier": 1.2707807240147986
+              },
+              {
+                "phase_x": 0,
+                "phase_y": 0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.7876002674801117,
+                "annulus_energy": 0.03923566964016553,
+                "net_response": 0.7824996304268902,
+                "total_flux_multiplier": 1.2779558751413764
+              },
+              {
+                "phase_x": 0,
+                "phase_y": 0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.7922407428855409,
+                "annulus_energy": 0.038262354340355895,
+                "net_response": 0.7868573116970723,
+                "total_flux_multiplier": 1.2708784491602771
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": -0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.8030843418611484,
+                "annulus_energy": 0.03689494572899629,
+                "net_response": 0.7976048944756539,
+                "total_flux_multiplier": 1.2537535901875336
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": -0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.7932001093192915,
+                "annulus_energy": 0.038181263010368366,
+                "net_response": 0.7878333723507013,
+                "total_flux_multiplier": 1.2693039354454427
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": 0,
+                "subsamples": 1,
+                "encircled_energy": 0.784449650454456,
+                "annulus_energy": 0.038417051038624805,
+                "net_response": 0.7794554338194348,
+                "total_flux_multiplier": 1.2829469865901988
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": 0,
+                "subsamples": 16,
+                "encircled_energy": 0.7918842927362596,
+                "annulus_energy": 0.038231870095150625,
+                "net_response": 0.786505150615707,
+                "total_flux_multiplier": 1.2714474904800825
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": 0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.8045998156867628,
+                "annulus_energy": 0.03666755891771112,
+                "net_response": 0.7991541386197759,
+                "total_flux_multiplier": 1.2513230573104535
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": 0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.7931509416775226,
+                "annulus_energy": 0.03819056271406474,
+                "net_response": 0.7877828975477835,
+                "total_flux_multiplier": 1.269385262250307
+              }
+            ]
+          },
+          {
+            "radius_arcsec": 0.31456346575134775,
+            "centered_fractional": {
+              "phase_x": 0.0,
+              "phase_y": 0.0,
+              "subsamples": 16,
+              "encircled_energy": 0.8622009797289092,
+              "annulus_energy": 0.03828033401188353,
+              "net_response": 0.8472499083997399,
+              "total_flux_multiplier": 1.180289298453593
+            },
+            "fractional_ee_phase_range": [
+              0.8621551726446949,
+              0.8622514816741174
+            ],
+            "fractional_response_phase_range": [
+              0.8472261209727534,
+              0.8473210393261927
+            ],
+            "pixel_center_ee_phase_range": [
+              0.8601086161664357,
+              0.8633070262085938
+            ],
+            "old_crop_renormalized_centered_ee": 0.8800467287456334,
+            "measurements": [
+              {
+                "phase_x": 0.0,
+                "phase_y": 0.0,
+                "subsamples": 1,
+                "encircled_energy": 0.8633070262085938,
+                "annulus_energy": 0.03879151246315103,
+                "net_response": 0.8479045139070486,
+                "total_flux_multiplier": 1.1793780827891958
+              },
+              {
+                "phase_x": 0.0,
+                "phase_y": 0.0,
+                "subsamples": 16,
+                "encircled_energy": 0.8622009797289092,
+                "annulus_energy": 0.03828033401188353,
+                "net_response": 0.8472499083997399,
+                "total_flux_multiplier": 1.180289298453593
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": -0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.862611952811206,
+                "annulus_energy": 0.03670434393910771,
+                "net_response": 0.8482572836469014,
+                "total_flux_multiplier": 1.1788876078973505
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": -0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.862207536003279,
+                "annulus_energy": 0.0381670364150645,
+                "net_response": 0.8473017810086234,
+                "total_flux_multiplier": 1.1802170400369105
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": 0,
+                "subsamples": 1,
+                "encircled_energy": 0.86126299327726,
+                "annulus_energy": 0.03881121267893198,
+                "net_response": 0.8465147324592658,
+                "total_flux_multiplier": 1.1813143488889248
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": 0,
+                "subsamples": 16,
+                "encircled_energy": 0.8621551726446949,
+                "annulus_energy": 0.03821884749120514,
+                "net_response": 0.8472261209727534,
+                "total_flux_multiplier": 1.1803224372400574
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": 0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.8626318605565524,
+                "annulus_energy": 0.0365967659475018,
+                "net_response": 0.8483192639731235,
+                "total_flux_multiplier": 1.1788014754215013
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": 0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.8622210162905164,
+                "annulus_energy": 0.03818118948889929,
+                "net_response": 0.8473097339541854,
+                "total_flux_multiplier": 1.1802059623854984
+              },
+              {
+                "phase_x": 0,
+                "phase_y": -0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.8601086161664357,
+                "annulus_energy": 0.0391202005463221,
+                "net_response": 0.8452429399588334,
+                "total_flux_multiplier": 1.1830918103246197
+              },
+              {
+                "phase_x": 0,
+                "phase_y": -0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.8622331996501549,
+                "annulus_energy": 0.03825041362626044,
+                "net_response": 0.8472918176100245,
+                "total_flux_multiplier": 1.1802309183401807
+              },
+              {
+                "phase_x": 0,
+                "phase_y": 0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.8601647980202544,
+                "annulus_energy": 0.03923566964016553,
+                "net_response": 0.8452552435569914,
+                "total_flux_multiplier": 1.1830745891522823
+              },
+              {
+                "phase_x": 0,
+                "phase_y": 0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.8622514816741174,
+                "annulus_energy": 0.038262354340355895,
+                "net_response": 0.8473054353505396,
+                "total_flux_multiplier": 1.1802119498812007
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": -0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.8628359612882196,
+                "annulus_energy": 0.03689494572899629,
+                "net_response": 0.8484067498397507,
+                "total_flux_multiplier": 1.1786799199663165
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": -0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.8622267019646465,
+                "annulus_energy": 0.038181263010368366,
+                "net_response": 0.8473153909152398,
+                "total_flux_multiplier": 1.1801980829356065
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": 0,
+                "subsamples": 1,
+                "encircled_energy": 0.8612145700516621,
+                "annulus_energy": 0.038417051038624805,
+                "net_response": 0.8466160906569847,
+                "total_flux_multiplier": 1.181172920094145
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": 0,
+                "subsamples": 16,
+                "encircled_energy": 0.8621684565324601,
+                "annulus_energy": 0.038231870095150625,
+                "net_response": 0.8472343179691033,
+                "total_flux_multiplier": 1.1803110176144538
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": 0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.8628155053077884,
+                "annulus_energy": 0.03666755891771112,
+                "net_response": 0.8484752223647232,
+                "total_flux_multiplier": 1.1785847996986563
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": 0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.8622359822820255,
+                "annulus_energy": 0.03819056271406474,
+                "net_response": 0.8473210393261927,
+                "total_flux_multiplier": 1.180190215499925
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "provenance": {
+          "filter": "F356W",
+          "sha256": "7bd8a4854c3b587be258022d05f72ac29aab393d98dff64bc2f69ed7dfbf7203",
+          "bytes": 1800000,
+          "requested_url": "https://slate.ucsc.edu/~brant/jades-dr5/GOODS-S/hlsp/images/submosaics/hlsp_jades_jwst_nircam_jw011800-deep_f356wa_v5.0_mpsf.fits",
+          "retrieved_utc": "2026-10-09T06:38:33.756176+00:00",
+          "input_scale_arcsec": 0.029994758999999965,
+          "template_shape": [
+            669,
+            669
+          ],
+          "original_template_sum": 0.9996060213482729,
+          "normalization": "finite supplied template; unmodeled outer wings are unknown",
+          "origin": "official JADES DR5 modeled PSF, not observed-star measurement"
+        },
+        "resampled_shape": [
+          325,
+          325
+        ],
+        "retained_fraction_full_resample": 1.0,
+        "old_61px_crop_retained_fraction": 0.9741059614655602,
+        "old_crop_normalization_flux_inflation": 1.026582363273377,
+        "apertures": [
+          {
+            "radius_arcsec": 0.1258253863005391,
+            "centered_fractional": {
+              "phase_x": 0.0,
+              "phase_y": 0.0,
+              "subsamples": 16,
+              "encircled_energy": 0.6147284861963374,
+              "annulus_energy": 0.046492375939248945,
+              "net_response": 0.611813456487459,
+              "total_flux_multiplier": 1.6344851349644973
+            },
+            "fractional_ee_phase_range": [
+              0.6140204641361536,
+              0.6182147716409788
+            ],
+            "fractional_response_phase_range": [
+              0.6111170743133271,
+              0.6153089808686732
+            ],
+            "pixel_center_ee_phase_range": [
+              0.6186578621213059,
+              0.6418334169189537
+            ],
+            "old_crop_renormalized_centered_ee": 0.6310694221309016,
+            "measurements": [
+              {
+                "phase_x": 0.0,
+                "phase_y": 0.0,
+                "subsamples": 1,
+                "encircled_energy": 0.630948788108249,
+                "annulus_energy": 0.047164165443575254,
+                "net_response": 0.6279432285456682,
+                "total_flux_multiplier": 1.5925006506018455
+              },
+              {
+                "phase_x": 0.0,
+                "phase_y": 0.0,
+                "subsamples": 16,
+                "encircled_energy": 0.6147284861963374,
+                "annulus_energy": 0.046492375939248945,
+                "net_response": 0.611813456487459,
+                "total_flux_multiplier": 1.6344851349644973
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": -0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.6417334383895092,
+                "annulus_energy": 0.04608513020201835,
+                "net_response": 0.6387675636735378,
+                "total_flux_multiplier": 1.5655146830703528
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": -0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.617966946008025,
+                "annulus_energy": 0.046580411888947064,
+                "net_response": 0.6150597419792918,
+                "total_flux_multiplier": 1.6258583219606473
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": 0,
+                "subsamples": 1,
+                "encircled_energy": 0.6202848407588115,
+                "annulus_energy": 0.04717625367986862,
+                "net_response": 0.6174542655380194,
+                "total_flux_multiplier": 1.6195531488128097
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": 0,
+                "subsamples": 16,
+                "encircled_energy": 0.6144209241647298,
+                "annulus_energy": 0.04654331604259532,
+                "net_response": 0.6115128711574057,
+                "total_flux_multiplier": 1.6352885559175683
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": 0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.641610994465846,
+                "annulus_energy": 0.04597312861886858,
+                "net_response": 0.6386523277725525,
+                "total_flux_multiplier": 1.5657971583501948
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": 0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.6181094317792454,
+                "annulus_energy": 0.0465587955062823,
+                "net_response": 0.6152035768848848,
+                "total_flux_multiplier": 1.62547819546751
+              },
+              {
+                "phase_x": 0,
+                "phase_y": -0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.6188695513892569,
+                "annulus_energy": 0.047157361934440846,
+                "net_response": 0.6160401096731905,
+                "total_flux_multiplier": 1.6232709271649544
+              },
+              {
+                "phase_x": 0,
+                "phase_y": -0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.6140261223965098,
+                "annulus_energy": 0.046491191565410345,
+                "net_response": 0.6111213261563334,
+                "total_flux_multiplier": 1.6363362841377687
+              },
+              {
+                "phase_x": 0,
+                "phase_y": 0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.6186578621213059,
+                "annulus_energy": 0.04719349130875124,
+                "net_response": 0.6158262526427808,
+                "total_flux_multiplier": 1.6238346379495208
+              },
+              {
+                "phase_x": 0,
+                "phase_y": 0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.6140204641361536,
+                "annulus_energy": 0.046468681890712106,
+                "net_response": 0.6111170743133271,
+                "total_flux_multiplier": 1.636347668936653
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": -0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.6416167396010866,
+                "annulus_energy": 0.04607851836022789,
+                "net_response": 0.6386512903996857,
+                "total_flux_multiplier": 1.5657997017029
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": -0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.6180979215912732,
+                "annulus_energy": 0.04658293947791001,
+                "net_response": 0.6151905598091728,
+                "total_flux_multiplier": 1.6255125896440803
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": 0,
+                "subsamples": 1,
+                "encircled_energy": 0.6201204885778737,
+                "annulus_energy": 0.04701015322635288,
+                "net_response": 0.6172998793842925,
+                "total_flux_multiplier": 1.6199581976225563
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": 0,
+                "subsamples": 16,
+                "encircled_energy": 0.6145168293582997,
+                "annulus_energy": 0.04654915682777057,
+                "net_response": 0.6116084114153771,
+                "total_flux_multiplier": 1.6350331050644178
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": 0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.6418334169189537,
+                "annulus_energy": 0.046015930448094454,
+                "net_response": 0.6388719956524922,
+                "total_flux_multiplier": 1.565258779231168
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": 0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.6182147716409788,
+                "annulus_energy": 0.04655776811649204,
+                "net_response": 0.6153089808686732,
+                "total_flux_multiplier": 1.6251997469437753
+              }
+            ]
+          },
+          {
+            "radius_arcsec": 0.18873807945080864,
+            "centered_fractional": {
+              "phase_x": 0.0,
+              "phase_y": 0.0,
+              "subsamples": 16,
+              "encircled_energy": 0.741433197523362,
+              "annulus_energy": 0.046492375939248945,
+              "net_response": 0.7349023750776964,
+              "total_flux_multiplier": 1.3607249532895802
+            },
+            "fractional_ee_phase_range": [
+              0.7413543865157989,
+              0.7418574925871877
+            ],
+            "fractional_response_phase_range": [
+              0.7348163426423815,
+              0.735310175951049
+            ],
+            "pixel_center_ee_phase_range": [
+              0.7320147416186923,
+              0.7521580715484965
+            ],
+            "old_crop_renormalized_centered_ee": 0.7611422441228696,
+            "measurements": [
+              {
+                "phase_x": 0.0,
+                "phase_y": 0.0,
+                "subsamples": 1,
+                "encircled_energy": 0.7460399706457305,
+                "annulus_energy": 0.047164165443575254,
+                "net_response": 0.7393352608522811,
+                "total_flux_multiplier": 1.3525663564960142
+              },
+              {
+                "phase_x": 0.0,
+                "phase_y": 0.0,
+                "subsamples": 16,
+                "encircled_energy": 0.741433197523362,
+                "annulus_energy": 0.046492375939248945,
+                "net_response": 0.7349023750776964,
+                "total_flux_multiplier": 1.3607249532895802
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": -0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.7516225986735681,
+                "annulus_energy": 0.04608513020201835,
+                "net_response": 0.7447782724059416,
+                "total_flux_multiplier": 1.342681489310351
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": -0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.7418574925871877,
+                "annulus_energy": 0.046580411888947064,
+                "net_response": 0.735310175951049,
+                "total_flux_multiplier": 1.3599702992095841
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": 0,
+                "subsamples": 1,
+                "encircled_energy": 0.732054844188142,
+                "annulus_energy": 0.04717625367986862,
+                "net_response": 0.7259219312097591,
+                "total_flux_multiplier": 1.377558601010285
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": 0,
+                "subsamples": 16,
+                "encircled_energy": 0.7418386324939634,
+                "annulus_energy": 0.04654331604259532,
+                "net_response": 0.7352900877554556,
+                "total_flux_multiplier": 1.3600074537283606
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": 0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.7500747320832993,
+                "annulus_energy": 0.04597312861886858,
+                "net_response": 0.7432470397141604,
+                "total_flux_multiplier": 1.3454476729360163
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": 0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.7418122423268745,
+                "annulus_energy": 0.0465587955062823,
+                "net_response": 0.73526796407739,
+                "total_flux_multiplier": 1.3600483753631156
+              },
+              {
+                "phase_x": 0,
+                "phase_y": -0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.7342312599301498,
+                "annulus_energy": 0.047157361934440846,
+                "net_response": 0.7281008028786725,
+                "total_flux_multiplier": 1.3734362001062586
+              },
+              {
+                "phase_x": 0,
+                "phase_y": -0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.7413730487321031,
+                "annulus_energy": 0.046491191565410345,
+                "net_response": 0.7348318377957357,
+                "total_flux_multiplier": 1.3608555707108245
+              },
+              {
+                "phase_x": 0,
+                "phase_y": 0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.7338044454397266,
+                "annulus_energy": 0.04719349130875124,
+                "net_response": 0.7276692915695889,
+                "total_flux_multiplier": 1.3742506542264432
+              },
+              {
+                "phase_x": 0,
+                "phase_y": 0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.7413543865157989,
+                "annulus_energy": 0.046468681890712106,
+                "net_response": 0.7348163426423815,
+                "total_flux_multiplier": 1.360884267222507
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": -0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.7502486197606771,
+                "annulus_energy": 0.04607851836022789,
+                "net_response": 0.7434052754497522,
+                "total_flux_multiplier": 1.3451612909190223
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": -0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.7418462779982682,
+                "annulus_energy": 0.04658293947791001,
+                "net_response": 0.7352986060856389,
+                "total_flux_multiplier": 1.3599916982346785
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": 0,
+                "subsamples": 1,
+                "encircled_energy": 0.7320147416186923,
+                "annulus_energy": 0.04701015322635288,
+                "net_response": 0.7259034216992664,
+                "total_flux_multiplier": 1.3775937268061105
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": 0,
+                "subsamples": 16,
+                "encircled_energy": 0.7418308638155042,
+                "annulus_energy": 0.04654915682777057,
+                "net_response": 0.7352814972910499,
+                "total_flux_multiplier": 1.3600233430111262
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": 0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.7521580715484965,
+                "annulus_energy": 0.046015930448094454,
+                "net_response": 0.7453240224720468,
+                "total_flux_multiplier": 1.3416983350184515
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": 0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.7418151432712656,
+                "annulus_energy": 0.04655776811649204,
+                "net_response": 0.7352710094311153,
+                "total_flux_multiplier": 1.3600427422994787
+              }
+            ]
+          },
+          {
+            "radius_arcsec": 0.31456346575134775,
+            "centered_fractional": {
+              "phase_x": 0.0,
+              "phase_y": 0.0,
+              "subsamples": 16,
+              "encircled_energy": 0.8515213372765629,
+              "annulus_energy": 0.046492375939248945,
+              "net_response": 0.8333629056203897,
+              "total_flux_multiplier": 1.199957417417756
+            },
+            "fractional_ee_phase_range": [
+              0.8512604793043481,
+              0.8515408744169701
+            ],
+            "fractional_response_phase_range": [
+              0.8330774410082035,
+              0.8333892712522465
+            ],
+            "pixel_center_ee_phase_range": [
+              0.8508743009676594,
+              0.8535566001783094
+            ],
+            "old_crop_renormalized_centered_ee": 0.8741567867990804,
+            "measurements": [
+              {
+                "phase_x": 0.0,
+                "phase_y": 0.0,
+                "subsamples": 1,
+                "encircled_energy": 0.8535566001783094,
+                "annulus_energy": 0.047164165443575254,
+                "net_response": 0.8348296521345369,
+                "total_flux_multiplier": 1.197849162931799
+              },
+              {
+                "phase_x": 0.0,
+                "phase_y": 0.0,
+                "subsamples": 16,
+                "encircled_energy": 0.8515213372765629,
+                "annulus_energy": 0.046492375939248945,
+                "net_response": 0.8333629056203897,
+                "total_flux_multiplier": 1.199957417417756
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": -0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.8525063943344203,
+                "annulus_energy": 0.04608513020201835,
+                "net_response": 0.8344830018296706,
+                "total_flux_multiplier": 1.1983467581813172
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": -0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.8514159081259063,
+                "annulus_energy": 0.046580411888947064,
+                "net_response": 0.8332243933429365,
+                "total_flux_multiplier": 1.200156894096621
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": 0,
+                "subsamples": 1,
+                "encircled_energy": 0.8508788641043421,
+                "annulus_energy": 0.04717625367986862,
+                "net_response": 0.832951887705992,
+                "total_flux_multiplier": 1.200549533243835
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": 0,
+                "subsamples": 16,
+                "encircled_energy": 0.8512719722322062,
+                "annulus_energy": 0.04654331604259532,
+                "net_response": 0.8330912154644019,
+                "total_flux_multiplier": 1.2003487510578967
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": 0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.8522909682832784,
+                "annulus_energy": 0.04597312861886858,
+                "net_response": 0.8343113783778794,
+                "total_flux_multiplier": 1.1985932661547334
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": 0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.8514322235065697,
+                "annulus_energy": 0.0465587955062823,
+                "net_response": 0.8332491507860218,
+                "total_flux_multiplier": 1.2001212351151855
+              },
+              {
+                "phase_x": 0,
+                "phase_y": -0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.8513930253915454,
+                "annulus_energy": 0.047157361934440846,
+                "net_response": 0.8334732278564578,
+                "total_flux_multiplier": 1.1997985856988098
+              },
+              {
+                "phase_x": 0,
+                "phase_y": -0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.8515182810888838,
+                "annulus_energy": 0.046491191565410345,
+                "net_response": 0.8333578851918109,
+                "total_flux_multiplier": 1.1999646463653892
+              },
+              {
+                "phase_x": 0,
+                "phase_y": 0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.8513848779121126,
+                "annulus_energy": 0.04719349130875124,
+                "net_response": 0.8334513512147871,
+                "total_flux_multiplier": 1.1998300783152633
+              },
+              {
+                "phase_x": 0,
+                "phase_y": 0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.8515408744169701,
+                "annulus_energy": 0.046468681890712106,
+                "net_response": 0.8333892712522465,
+                "total_flux_multiplier": 1.1999194548034018
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": -0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.8525419646770951,
+                "annulus_energy": 0.04607851836022789,
+                "net_response": 0.8345211579916594,
+                "total_flux_multiplier": 1.1982919671043193
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": -0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.8513990137763656,
+                "annulus_energy": 0.04658293947791001,
+                "net_response": 0.833206511868763,
+                "total_flux_multiplier": 1.2001826507058173
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": 0,
+                "subsamples": 1,
+                "encircled_energy": 0.8508743009676594,
+                "annulus_energy": 0.04701015322635288,
+                "net_response": 0.8330104427416453,
+                "total_flux_multiplier": 1.200465142680265
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": 0,
+                "subsamples": 16,
+                "encircled_energy": 0.8512604793043481,
+                "annulus_energy": 0.04654915682777057,
+                "net_response": 0.8330774410082035,
+                "total_flux_multiplier": 1.2003685981339072
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": 0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.852513789801808,
+                "annulus_energy": 0.046015930448094454,
+                "net_response": 0.8345174605671573,
+                "total_flux_multiplier": 1.1982972762731376
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": 0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.8514204801073877,
+                "annulus_energy": 0.04655776811649204,
+                "net_response": 0.8332378086236645,
+                "total_flux_multiplier": 1.2001375713516793
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "provenance": {
+          "filter": "F444W",
+          "sha256": "b74abf676cd57f272ada642a27fbb6a8fcb6e0181407357784d812c7f5fd6db2",
+          "bytes": 1800000,
+          "requested_url": "https://slate.ucsc.edu/~brant/jades-dr5/GOODS-S/hlsp/images/submosaics/hlsp_jades_jwst_nircam_jw011800-deep_f444wa_v5.0_mpsf.fits",
+          "retrieved_utc": "2026-10-09T06:38:33.765039+00:00",
+          "input_scale_arcsec": 0.029994758999999965,
+          "template_shape": [
+            669,
+            669
+          ],
+          "original_template_sum": 0.9995488712944012,
+          "normalization": "finite supplied template; unmodeled outer wings are unknown",
+          "origin": "official JADES DR5 modeled PSF, not observed-star measurement"
+        },
+        "resampled_shape": [
+          325,
+          325
+        ],
+        "retained_fraction_full_resample": 1.0,
+        "old_61px_crop_retained_fraction": 0.9690845025795173,
+        "old_crop_normalization_flux_inflation": 1.031901756078228,
+        "apertures": [
+          {
+            "radius_arcsec": 0.1258253863005391,
+            "centered_fractional": {
+              "phase_x": 0.0,
+              "phase_y": 0.0,
+              "subsamples": 16,
+              "encircled_energy": 0.5635611542149344,
+              "annulus_energy": 0.04413168938966021,
+              "net_response": 0.5607941374068032,
+              "total_flux_multiplier": 1.7831855458121426
+            },
+            "fractional_ee_phase_range": [
+              0.5635611542149344,
+              0.5706035193764469
+            ],
+            "fractional_response_phase_range": [
+              0.5607941374068032,
+              0.5678396987504694
+            ],
+            "pixel_center_ee_phase_range": [
+              0.5683177094607343,
+              0.596355905454375
+            ],
+            "old_crop_renormalized_centered_ee": 0.5815397446918639,
+            "measurements": [
+              {
+                "phase_x": 0.0,
+                "phase_y": 0.0,
+                "subsamples": 1,
+                "encircled_energy": 0.5824386492331254,
+                "annulus_energy": 0.043784364212428255,
+                "net_response": 0.5796484691607647,
+                "total_flux_multiplier": 1.7251835434808185
+              },
+              {
+                "phase_x": 0.0,
+                "phase_y": 0.0,
+                "subsamples": 16,
+                "encircled_energy": 0.5635611542149344,
+                "annulus_energy": 0.04413168938966021,
+                "net_response": 0.5607941374068032,
+                "total_flux_multiplier": 1.7831855458121426
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": -0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.596355905454375,
+                "annulus_energy": 0.04338632392429767,
+                "net_response": 0.5935637162909301,
+                "total_flux_multiplier": 1.6847390980176737
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": -0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.5706035193764469,
+                "annulus_energy": 0.04428306437140453,
+                "net_response": 0.5678396987504694,
+                "total_flux_multiplier": 1.7610603876419682
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": 0,
+                "subsamples": 1,
+                "encircled_energy": 0.5705370451076079,
+                "annulus_energy": 0.04481778493842485,
+                "net_response": 0.5678479780113025,
+                "total_flux_multiplier": 1.7610347112657958
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": 0,
+                "subsamples": 16,
+                "encircled_energy": 0.5654102194361865,
+                "annulus_energy": 0.04429407135085301,
+                "net_response": 0.5626427005236837,
+                "total_flux_multiplier": 1.7773268880396793
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": 0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.5952515307045737,
+                "annulus_energy": 0.04354212976573151,
+                "net_response": 0.5924493144325217,
+                "total_flux_multiplier": 1.6879081056205647
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": 0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.5705463774591517,
+                "annulus_energy": 0.044254847702039246,
+                "net_response": 0.5677843179085175,
+                "total_flux_multiplier": 1.7612321588655113
+              },
+              {
+                "phase_x": 0,
+                "phase_y": -0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.5683177094607343,
+                "annulus_energy": 0.04381506131817033,
+                "net_response": 0.5656888057816442,
+                "total_flux_multiplier": 1.7677563879282419
+              },
+              {
+                "phase_x": 0,
+                "phase_y": -0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.5650268139191956,
+                "annulus_energy": 0.044057234408834925,
+                "net_response": 0.5622740927142917,
+                "total_flux_multiplier": 1.7784920432180216
+              },
+              {
+                "phase_x": 0,
+                "phase_y": 0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.5683585229397209,
+                "annulus_energy": 0.04384721831854956,
+                "net_response": 0.565727689840608,
+                "total_flux_multiplier": 1.7676348850482233
+              },
+              {
+                "phase_x": 0,
+                "phase_y": 0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.5650408391225431,
+                "annulus_energy": 0.04403115887376147,
+                "net_response": 0.5622897471319848,
+                "total_flux_multiplier": 1.7784425291419597
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": -0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.5952036629789521,
+                "annulus_energy": 0.043586721208117594,
+                "net_response": 0.5923985769606079,
+                "total_flux_multiplier": 1.6880526707721917
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": -0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.570456553405958,
+                "annulus_energy": 0.04428146619023782,
+                "net_response": 0.5676928325266023,
+                "total_flux_multiplier": 1.76151598664607
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": 0,
+                "subsamples": 1,
+                "encircled_energy": 0.570580153964414,
+                "annulus_energy": 0.044691297813437544,
+                "net_response": 0.5678986760956077,
+                "total_flux_multiplier": 1.7608774982099915
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": 0,
+                "subsamples": 16,
+                "encircled_energy": 0.565308657369189,
+                "annulus_energy": 0.04429355818540935,
+                "net_response": 0.5625411705195567,
+                "total_flux_multiplier": 1.777647668127848
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": 0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.596127310443907,
+                "annulus_energy": 0.04346693205477004,
+                "net_response": 0.593329933628501,
+                "total_flux_multiplier": 1.6854029155153423
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": 0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.5703941002905191,
+                "annulus_energy": 0.04425650274535963,
+                "net_response": 0.5676319374443489,
+                "total_flux_multiplier": 1.7617049606163868
+              }
+            ]
+          },
+          {
+            "radius_arcsec": 0.18873807945080864,
+            "centered_fractional": {
+              "phase_x": 0.0,
+              "phase_y": 0.0,
+              "subsamples": 16,
+              "encircled_energy": 0.7037064664904649,
+              "annulus_energy": 0.04413168938966021,
+              "net_response": 0.6975072516340819,
+              "total_flux_multiplier": 1.4336768508961801
+            },
+            "fractional_ee_phase_range": [
+              0.7033880676047997,
+              0.7039662802283281
+            ],
+            "fractional_response_phase_range": [
+              0.697163889489948,
+              0.6977341993936437
+            ],
+            "pixel_center_ee_phase_range": [
+              0.6983734973388129,
+              0.712414504487297
+            ],
+            "old_crop_renormalized_centered_ee": 0.7261559385351154,
+            "measurements": [
+              {
+                "phase_x": 0.0,
+                "phase_y": 0.0,
+                "subsamples": 1,
+                "encircled_energy": 0.7081622535667306,
+                "annulus_energy": 0.043784364212428255,
+                "net_response": 0.701938005713003,
+                "total_flux_multiplier": 1.4246272346861124
+              },
+              {
+                "phase_x": 0.0,
+                "phase_y": 0.0,
+                "subsamples": 16,
+                "encircled_energy": 0.7037064664904649,
+                "annulus_energy": 0.04413168938966021,
+                "net_response": 0.6975072516340819,
+                "total_flux_multiplier": 1.4336768508961801
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": -0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.7122177305135162,
+                "annulus_energy": 0.04338632392429767,
+                "net_response": 0.7057742170594126,
+                "total_flux_multiplier": 1.4168837226251625
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": -0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.7034205955781028,
+                "annulus_energy": 0.04428306437140453,
+                "net_response": 0.6971961928238004,
+                "total_flux_multiplier": 1.4343164955473673
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": 0,
+                "subsamples": 1,
+                "encircled_energy": 0.6983928672485393,
+                "annulus_energy": 0.04481778493842485,
+                "net_response": 0.6925665552065441,
+                "total_flux_multiplier": 1.4439045496526612
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": 0,
+                "subsamples": 16,
+                "encircled_energy": 0.7039662802283281,
+                "annulus_energy": 0.04429407135085301,
+                "net_response": 0.6977341993936437,
+                "total_flux_multiplier": 1.433210527546215
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": 0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.711716854633021,
+                "annulus_energy": 0.04354212976573151,
+                "net_response": 0.7052502016975164,
+                "total_flux_multiplier": 1.4179364962860408
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": 0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.7034464599277179,
+                "annulus_energy": 0.044254847702039246,
+                "net_response": 0.697226023292676,
+                "total_flux_multiplier": 1.4342551290289804
+              },
+              {
+                "phase_x": 0,
+                "phase_y": -0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.6986220802402906,
+                "annulus_energy": 0.04381506131817033,
+                "net_response": 0.6929261222689285,
+                "total_flux_multiplier": 1.4431552915418802
+              },
+              {
+                "phase_x": 0,
+                "phase_y": -0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.703489255633143,
+                "annulus_energy": 0.044057234408834925,
+                "net_response": 0.6972904972482196,
+                "total_flux_multiplier": 1.4341225127065267
+              },
+              {
+                "phase_x": 0,
+                "phase_y": 0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.6985280213282254,
+                "annulus_energy": 0.04384721831854956,
+                "net_response": 0.692827882946814,
+                "total_flux_multiplier": 1.4433599233141237
+              },
+              {
+                "phase_x": 0,
+                "phase_y": 0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.7035106444161017,
+                "annulus_energy": 0.04403115887376147,
+                "net_response": 0.6973155548030348,
+                "total_flux_multiplier": 1.43407097850049
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": -0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.7116927703281895,
+                "annulus_energy": 0.043586721208117594,
+                "net_response": 0.7052194949012413,
+                "total_flux_multiplier": 1.41799823633639
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": -0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.7033880676047997,
+                "annulus_energy": 0.04428146619023782,
+                "net_response": 0.697163889489948,
+                "total_flux_multiplier": 1.4343829551063092
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": 0,
+                "subsamples": 1,
+                "encircled_energy": 0.6983734973388129,
+                "annulus_energy": 0.044691297813437544,
+                "net_response": 0.6925636286230661,
+                "total_flux_multiplier": 1.4439106511962945
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": 0,
+                "subsamples": 16,
+                "encircled_energy": 0.7039351506854503,
+                "annulus_energy": 0.04429355818540935,
+                "net_response": 0.6977031420520431,
+                "total_flux_multiplier": 1.4332743250358015
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": 0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.712414504487297,
+                "annulus_energy": 0.04346693205477004,
+                "net_response": 0.7059590195286678,
+                "total_flux_multiplier": 1.416512817794506
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": 0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.7034275695309742,
+                "annulus_energy": 0.04425650274535963,
+                "net_response": 0.6972069002639691,
+                "total_flux_multiplier": 1.434294467856515
+              }
+            ]
+          },
+          {
+            "radius_arcsec": 0.31456346575134775,
+            "centered_fractional": {
+              "phase_x": 0.0,
+              "phase_y": 0.0,
+              "subsamples": 16,
+              "encircled_energy": 0.8304333644930588,
+              "annulus_energy": 0.04413168938966021,
+              "net_response": 0.8131969413276621,
+              "total_flux_multiplier": 1.2297144137893028
+            },
+            "fractional_ee_phase_range": [
+              0.8302563646757858,
+              0.8308010433654525
+            ],
+            "fractional_response_phase_range": [
+              0.8129544086438492,
+              0.8136015857901523
+            ],
+            "pixel_center_ee_phase_range": [
+              0.8274766591252594,
+              0.835043727719806
+            ],
+            "old_crop_renormalized_centered_ee": 0.8569256471263387,
+            "measurements": [
+              {
+                "phase_x": 0.0,
+                "phase_y": 0.0,
+                "subsamples": 1,
+                "encircled_energy": 0.835043727719806,
+                "annulus_energy": 0.043784364212428255,
+                "net_response": 0.8176587595766359,
+                "total_flux_multiplier": 1.2230040812108172
+              },
+              {
+                "phase_x": 0.0,
+                "phase_y": 0.0,
+                "subsamples": 16,
+                "encircled_energy": 0.8304333644930588,
+                "annulus_energy": 0.04413168938966021,
+                "net_response": 0.8131969413276621,
+                "total_flux_multiplier": 1.2297144137893028
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": -0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.8333361434309738,
+                "annulus_energy": 0.04338632392429767,
+                "net_response": 0.816368224668501,
+                "total_flux_multiplier": 1.224937436052298
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": -0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.830712756813522,
+                "annulus_energy": 0.04428306437140453,
+                "net_response": 0.8134184481657541,
+                "total_flux_multiplier": 1.2293795429092915
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": 0,
+                "subsamples": 1,
+                "encircled_energy": 0.8275726142114104,
+                "annulus_energy": 0.04481778493842485,
+                "net_response": 0.810541855934809,
+                "total_flux_multiplier": 1.2337425793350134
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": 0,
+                "subsamples": 16,
+                "encircled_energy": 0.8302855423110928,
+                "annulus_energy": 0.04429407135085301,
+                "net_response": 0.8129833858263972,
+                "total_flux_multiplier": 1.2300374367226465
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": 0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.8327327625621607,
+                "annulus_energy": 0.04354212976573151,
+                "net_response": 0.8157039098319984,
+                "total_flux_multiplier": 1.2259350334681602
+              },
+              {
+                "phase_x": -0.4,
+                "phase_y": 0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.8307335010303297,
+                "annulus_energy": 0.044254847702039246,
+                "net_response": 0.8134502121210543,
+                "total_flux_multiplier": 1.2293315375657978
+              },
+              {
+                "phase_x": 0,
+                "phase_y": -0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.8311203282561466,
+                "annulus_energy": 0.04381506131817033,
+                "net_response": 0.8144706049552418,
+                "total_flux_multiplier": 1.227791394699817
+              },
+              {
+                "phase_x": 0,
+                "phase_y": -0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.8307808189674883,
+                "annulus_energy": 0.044057234408834925,
+                "net_response": 0.8135711757629492,
+                "total_flux_multiplier": 1.2291487577128355
+              },
+              {
+                "phase_x": 0,
+                "phase_y": 0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.8311263422575739,
+                "annulus_energy": 0.04384721831854956,
+                "net_response": 0.814464399296525,
+                "total_flux_multiplier": 1.2278007496260452
+              },
+              {
+                "phase_x": 0,
+                "phase_y": 0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.8308010433654525,
+                "annulus_energy": 0.04403115887376147,
+                "net_response": 0.8136015857901523,
+                "total_flux_multiplier": 1.229102815758184
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": -0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.832965043361509,
+                "annulus_energy": 0.043586721208117594,
+                "net_response": 0.8159187514038788,
+                "total_flux_multiplier": 1.2256122295012695
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": -0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.8306812283416083,
+                "annulus_energy": 0.04428146619023782,
+                "net_response": 0.8133875438475382,
+                "total_flux_multiplier": 1.2294262526688515
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": 0,
+                "subsamples": 1,
+                "encircled_energy": 0.8274766591252594,
+                "annulus_energy": 0.044691297813437544,
+                "net_response": 0.8104939659561531,
+                "total_flux_multiplier": 1.2338154779724777
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": 0,
+                "subsamples": 16,
+                "encircled_energy": 0.8302563646757858,
+                "annulus_energy": 0.04429355818540935,
+                "net_response": 0.8129544086438492,
+                "total_flux_multiplier": 1.2300812805335244
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": 0.4,
+                "subsamples": 1,
+                "encircled_energy": 0.8331973821141249,
+                "annulus_energy": 0.04346693205477004,
+                "net_response": 0.8161979383897346,
+                "total_flux_multiplier": 1.2251929991061798
+              },
+              {
+                "phase_x": 0.4,
+                "phase_y": 0.4,
+                "subsamples": 16,
+                "encircled_energy": 0.8307068845861237,
+                "annulus_energy": 0.04425650274535963,
+                "net_response": 0.8134229493162043,
+                "total_flux_multiplier": 1.2293727400249033
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "differential_colors": [
+      {
+        "bands": [
+          "F277W",
+          "F356W"
+        ],
+        "radius_arcsec": 0.1258253863005391,
+        "observed_minus_intrinsic_color_mag_centered": -0.09656497695701703,
+        "paired_phase_color_bias_range_mag": [
+          -0.09656497695701703,
+          -0.09068036924750035
+        ],
+        "independent_phase_color_bias_range_mag": [
+          -0.09879655258524553,
+          -0.08650711132730834
+        ],
+        "correction_to_add_to_aperture_color_mag": 0.09656497695701703,
+        "assumption": "identical unresolved source position; one modeled PSF per band"
+      },
+      {
+        "bands": [
+          "F277W",
+          "F356W"
+        ],
+        "radius_arcsec": 0.18873807945080864,
+        "observed_minus_intrinsic_color_mag_centered": -0.07206955259926112,
+        "paired_phase_color_bias_range_mag": [
+          -0.07493671141326266,
+          -0.07206955259926112
+        ],
+        "independent_phase_color_bias_range_mag": [
+          -0.07565486912830639,
+          -0.07146723943906388
+        ],
+        "correction_to_add_to_aperture_color_mag": 0.07206955259926112,
+        "assumption": "identical unresolved source position; one modeled PSF per band"
+      },
+      {
+        "bands": [
+          "F277W",
+          "F356W"
+        ],
+        "radius_arcsec": 0.31456346575134775,
+        "observed_minus_intrinsic_color_mag_centered": -0.017943412948813135,
+        "paired_phase_color_bias_range_mag": [
+          -0.018295411528709227,
+          -0.017943412948813135
+        ],
+        "independent_phase_color_bias_range_mag": [
+          -0.018406539815896378,
+          -0.017878579758844215
+        ],
+        "correction_to_add_to_aperture_color_mag": 0.017943412948813135,
+        "assumption": "identical unresolved source position; one modeled PSF per band"
+      },
+      {
+        "bands": [
+          "F277W",
+          "F444W"
+        ],
+        "radius_arcsec": 0.1258253863005391,
+        "observed_minus_intrinsic_color_mag_centered": -0.1911038769185909,
+        "paired_phase_color_bias_range_mag": [
+          -0.1911038769185909,
+          -0.17800433362626325
+        ],
+        "independent_phase_color_bias_range_mag": [
+          -0.19209893517893473,
+          -0.17367586724324216
+        ],
+        "correction_to_add_to_aperture_color_mag": 0.1911038769185909,
+        "assumption": "identical unresolved source position; one modeled PSF per band"
+      },
+      {
+        "bands": [
+          "F277W",
+          "F444W"
+        ],
+        "radius_arcsec": 0.18873807945080864,
+        "observed_minus_intrinsic_color_mag_centered": -0.1287718621870346,
+        "paired_phase_color_bias_range_mag": [
+          -0.13274872313618802,
+          -0.1287718621870346
+        ],
+        "independent_phase_color_bias_range_mag": [
+          -0.13276467530453534,
+          -0.12841865392887045
+        ],
+        "correction_to_add_to_aperture_color_mag": 0.1287718621870346,
+        "assumption": "identical unresolved source position; one modeled PSF per band"
+      },
+      {
+        "bands": [
+          "F277W",
+          "F444W"
+        ],
+        "radius_arcsec": 0.31456346575134775,
+        "observed_minus_intrinsic_color_mag_centered": -0.04453948523919077,
+        "paired_phase_color_bias_range_mag": [
+          -0.04484337089619935,
+          -0.044070514895153894
+        ],
+        "independent_phase_color_bias_range_mag": [
+          -0.044954499183386544,
+          -0.043968876786070574
+        ],
+        "correction_to_add_to_aperture_color_mag": 0.04453948523919077,
+        "assumption": "identical unresolved source position; one modeled PSF per band"
+      },
+      {
+        "bands": [
+          "F356W",
+          "F444W"
+        ],
+        "radius_arcsec": 0.1258253863005391,
+        "observed_minus_intrinsic_color_mag_centered": -0.09453889996157401,
+        "paired_phase_color_bias_range_mag": [
+          -0.09453889996157401,
+          -0.0867288752776966
+        ],
+        "independent_phase_color_bias_range_mag": [
+          -0.10072447285135301,
+          -0.07974666565826971
+        ],
+        "correction_to_add_to_aperture_color_mag": 0.09453889996157401,
+        "assumption": "identical unresolved source position; one modeled PSF per band"
+      },
+      {
+        "bands": [
+          "F356W",
+          "F444W"
+        ],
+        "radius_arcsec": 0.18873807945080864,
+        "observed_minus_intrinsic_color_mag_centered": -0.05670230958777374,
+        "paired_phase_color_bias_range_mag": [
+          -0.057822146255229474,
+          -0.05670230958777374
+        ],
+        "independent_phase_color_bias_range_mag": [
+          -0.057839230094131625,
+          -0.05622199057190399
+        ],
+        "correction_to_add_to_aperture_color_mag": 0.05670230958777374,
+        "assumption": "identical unresolved source position; one modeled PSF per band"
+      },
+      {
+        "bands": [
+          "F356W",
+          "F444W"
+        ],
+        "radius_arcsec": 0.31456346575134775,
+        "observed_minus_intrinsic_color_mag_centered": -0.02659607229037776,
+        "paired_phase_color_bias_range_mag": [
+          -0.02659607229037776,
+          -0.02608998899831918
+        ],
+        "independent_phase_color_bias_range_mag": [
+          -0.026954286583217538,
+          -0.025683969811498963
+        ],
+        "correction_to_add_to_aperture_color_mag": 0.02659607229037776,
+        "assumption": "identical unresolved source position; one modeled PSF per band"
+      }
+    ]
+  },
+  "synthetic_noise": {
+    "synthetic_control": true,
+    "seed": 731,
+    "controls": [
+      {
+        "experiment": "blank aperture plus annulus empirical noise",
+        "synthetic_control": true,
+        "not_an_isolated_drizzle_factor": true,
+        "shape": [
+          768,
+          768
+        ],
+        "pixel_scale_arcsec": 0.063,
+        "angular_geometry": "explicit_scale",
+        "mask_method": "explicit supplied source mask",
+        "DQ_policy": "all nonzero bits excluded if DQ present",
+        "valid_pixels": 589824,
+        "source_masked_pixels": 0,
+        "seed": 731,
+        "block_size_pixels": 128,
+        "bootstrap_draws": 500,
+        "sampling": "random translated grid, disjoint largest aperture/annulus supports",
+        "attempted_positions": 361,
+        "annulus_inner_factor": 2.0,
+        "annulus_outer_factor": 3.3333333333333335,
+        "fixed_annulus_radii_arcsec": null,
+        "apertures": [
+          {
+            "radius_arcsec": 0.126,
+            "status": "measured",
+            "n_apertures": 361,
+            "n_spatial_blocks": 36,
+            "noise_multiplier": 0.8441325631884438,
+            "noise_multiplier_block_bootstrap_95": [
+              0.7620673139300588,
+              0.9834906426447493
+            ],
+            "ordinary_normalized_sigma": 0.9735331940477223,
+            "median_net_flux": -6.643707585574794e-10,
+            "robust_net_sigma": 3.2514948159017377e-09,
+            "ordinary_net_variance": 1.4061975990009974e-17,
+            "median_diagonal_sigma": 3.85187701280027e-09,
+            "aperture_variance": 1.2526887868434735e-17,
+            "background_contribution_variance": 1.7120781470899323e-18,
+            "aperture_background_covariance": 8.849501275734649e-20,
+            "variance_identity_ap_plus_bg_minus_2cov": 1.4061975990009974e-17,
+            "aperture_background_correlation": 0.019108887747481162,
+            "spatial_blocks": [
+              {
+                "id": "0:0",
+                "n_apertures": 9,
+                "normalized_sigma": 1.5170463754125363
+              },
+              {
+                "id": "0:1",
+                "n_apertures": 9,
+                "normalized_sigma": 0.7757110601806937
+              },
+              {
+                "id": "0:2",
+                "n_apertures": 9,
+                "normalized_sigma": 0.8738506167283238
+              },
+              {
+                "id": "0:3",
+                "n_apertures": 12,
+                "normalized_sigma": 0.7159670828822248
+              },
+              {
+                "id": "0:4",
+                "n_apertures": 9,
+                "normalized_sigma": 1.0994074821986621
+              },
+              {
+                "id": "0:5",
+                "n_apertures": 9,
+                "normalized_sigma": 1.3066641527630751
+              },
+              {
+                "id": "1:0",
+                "n_apertures": 9,
+                "normalized_sigma": 1.531380910694118
+              },
+              {
+                "id": "1:1",
+                "n_apertures": 9,
+                "normalized_sigma": 0.7837995735211832
+              },
+              {
+                "id": "1:2",
+                "n_apertures": 9,
+                "normalized_sigma": 0.5722141429972725
+              },
+              {
+                "id": "1:3",
+                "n_apertures": 12,
+                "normalized_sigma": 0.8457765710892788
+              },
+              {
+                "id": "1:4",
+                "n_apertures": 9,
+                "normalized_sigma": 1.084068634636559
+              },
+              {
+                "id": "1:5",
+                "n_apertures": 9,
+                "normalized_sigma": 0.9776830719389525
+              },
+              {
+                "id": "2:0",
+                "n_apertures": 9,
+                "normalized_sigma": 0.42819008186798674
+              },
+              {
+                "id": "2:1",
+                "n_apertures": 9,
+                "normalized_sigma": 1.140371478152358
+              },
+              {
+                "id": "2:2",
+                "n_apertures": 9,
+                "normalized_sigma": 0.6802072928962859
+              },
+              {
+                "id": "2:3",
+                "n_apertures": 12,
+                "normalized_sigma": 0.7585051233187964
+              },
+              {
+                "id": "2:4",
+                "n_apertures": 9,
+                "normalized_sigma": 0.4010301727619874
+              },
+              {
+                "id": "2:5",
+                "n_apertures": 9,
+                "normalized_sigma": 0.44705589538138146
+              },
+              {
+                "id": "3:0",
+                "n_apertures": 12,
+                "normalized_sigma": 1.0575070819809265
+              },
+              {
+                "id": "3:1",
+                "n_apertures": 12,
+                "normalized_sigma": 0.8481737924820335
+              },
+              {
+                "id": "3:2",
+                "n_apertures": 12,
+                "normalized_sigma": 0.9560167727277212
+              },
+              {
+                "id": "3:3",
+                "n_apertures": 16,
+                "normalized_sigma": 0.689688519455711
+              },
+              {
+                "id": "3:4",
+                "n_apertures": 12,
+                "normalized_sigma": 0.6714079824775611
+              },
+              {
+                "id": "3:5",
+                "n_apertures": 12,
+                "normalized_sigma": 0.8066341613700437
+              },
+              {
+                "id": "4:0",
+                "n_apertures": 9,
+                "normalized_sigma": 1.2270333537815068
+              },
+              {
+                "id": "4:1",
+                "n_apertures": 9,
+                "normalized_sigma": 0.5040585094647876
+              },
+              {
+                "id": "4:2",
+                "n_apertures": 9,
+                "normalized_sigma": 0.5753117664485238
+              },
+              {
+                "id": "4:3",
+                "n_apertures": 12,
+                "normalized_sigma": 1.041326887815695
+              },
+              {
+                "id": "4:4",
+                "n_apertures": 9,
+                "normalized_sigma": 0.246452343216502
+              },
+              {
+                "id": "4:5",
+                "n_apertures": 9,
+                "normalized_sigma": 1.36529012266717
+              },
+              {
+                "id": "5:0",
+                "n_apertures": 9,
+                "normalized_sigma": 1.0829155193405307
+              },
+              {
+                "id": "5:1",
+                "n_apertures": 9,
+                "normalized_sigma": 0.6201512544886634
+              },
+              {
+                "id": "5:2",
+                "n_apertures": 9,
+                "normalized_sigma": 0.39767977562882156
+              },
+              {
+                "id": "5:3",
+                "n_apertures": 12,
+                "normalized_sigma": 0.8316010613346203
+              },
+              {
+                "id": "5:4",
+                "n_apertures": 9,
+                "normalized_sigma": 1.5731064428769432
+              },
+              {
+                "id": "5:5",
+                "n_apertures": 9,
+                "normalized_sigma": 0.3276385262646311
+              }
+            ]
+          },
+          {
+            "radius_arcsec": 0.189,
+            "status": "measured",
+            "n_apertures": 361,
+            "n_spatial_blocks": 36,
+            "noise_multiplier": 1.0212255870288252,
+            "noise_multiplier_block_bootstrap_95": [
+              0.9084306033161083,
+              1.1342429264826077
+            ],
+            "ordinary_normalized_sigma": 0.9680370738544095,
+            "median_net_flux": -4.149215653162397e-10,
+            "robust_net_sigma": 5.870339141922544e-09,
+            "ordinary_net_variance": 3.096470803316811e-17,
+            "median_diagonal_sigma": 5.748327515962295e-09,
+            "aperture_variance": 2.671264237060056e-17,
+            "background_contribution_variance": 4.385267836489246e-18,
+            "aperture_background_covariance": 6.660108696084652e-20,
+            "variance_identity_ap_plus_bg_minus_2cov": 3.0964708033168115e-17,
+            "aperture_background_correlation": 0.006153537199707744,
+            "spatial_blocks": [
+              {
+                "id": "0:0",
+                "n_apertures": 9,
+                "normalized_sigma": 0.4606861377639056
+              },
+              {
+                "id": "0:1",
+                "n_apertures": 9,
+                "normalized_sigma": 1.3109667361154547
+              },
+              {
+                "id": "0:2",
+                "n_apertures": 9,
+                "normalized_sigma": 1.3815851598499223
+              },
+              {
+                "id": "0:3",
+                "n_apertures": 12,
+                "normalized_sigma": 0.9110226894474784
+              },
+              {
+                "id": "0:4",
+                "n_apertures": 9,
+                "normalized_sigma": 0.3899482711476088
+              },
+              {
+                "id": "0:5",
+                "n_apertures": 9,
+                "normalized_sigma": 0.6954034627729374
+              },
+              {
+                "id": "1:0",
+                "n_apertures": 9,
+                "normalized_sigma": 1.5779663320578536
+              },
+              {
+                "id": "1:1",
+                "n_apertures": 9,
+                "normalized_sigma": 1.1124021213577988
+              },
+              {
+                "id": "1:2",
+                "n_apertures": 9,
+                "normalized_sigma": 0.44443764483396264
+              },
+              {
+                "id": "1:3",
+                "n_apertures": 12,
+                "normalized_sigma": 1.3616281283716165
+              },
+              {
+                "id": "1:4",
+                "n_apertures": 9,
+                "normalized_sigma": 1.087559434064936
+              },
+              {
+                "id": "1:5",
+                "n_apertures": 9,
+                "normalized_sigma": 0.48802311640718776
+              },
+              {
+                "id": "2:0",
+                "n_apertures": 9,
+                "normalized_sigma": 1.1116667011930277
+              },
+              {
+                "id": "2:1",
+                "n_apertures": 9,
+                "normalized_sigma": 0.7340433869158867
+              },
+              {
+                "id": "2:2",
+                "n_apertures": 9,
+                "normalized_sigma": 1.0214898231338478
+              },
+              {
+                "id": "2:3",
+                "n_apertures": 12,
+                "normalized_sigma": 0.7136291816099722
+              },
+              {
+                "id": "2:4",
+                "n_apertures": 9,
+                "normalized_sigma": 0.440841162481551
+              },
+              {
+                "id": "2:5",
+                "n_apertures": 9,
+                "normalized_sigma": 1.1546835160936986
+              },
+              {
+                "id": "3:0",
+                "n_apertures": 12,
+                "normalized_sigma": 1.0289046594766562
+              },
+              {
+                "id": "3:1",
+                "n_apertures": 12,
+                "normalized_sigma": 0.6416270415455865
+              },
+              {
+                "id": "3:2",
+                "n_apertures": 12,
+                "normalized_sigma": 1.024226170896082
+              },
+              {
+                "id": "3:3",
+                "n_apertures": 16,
+                "normalized_sigma": 0.8466619135479964
+              },
+              {
+                "id": "3:4",
+                "n_apertures": 12,
+                "normalized_sigma": 0.8464864326067656
+              },
+              {
+                "id": "3:5",
+                "n_apertures": 12,
+                "normalized_sigma": 0.7237423906304101
+              },
+              {
+                "id": "4:0",
+                "n_apertures": 9,
+                "normalized_sigma": 1.0753766337797952
+              },
+              {
+                "id": "4:1",
+                "n_apertures": 9,
+                "normalized_sigma": 1.001238412215249
+              },
+              {
+                "id": "4:2",
+                "n_apertures": 9,
+                "normalized_sigma": 0.48464676850636984
+              },
+              {
+                "id": "4:3",
+                "n_apertures": 12,
+                "normalized_sigma": 1.0340584439003555
+              },
+              {
+                "id": "4:4",
+                "n_apertures": 9,
+                "normalized_sigma": 0.573989251573563
+              },
+              {
+                "id": "4:5",
+                "n_apertures": 9,
+                "normalized_sigma": 0.9671598289515928
+              },
+              {
+                "id": "5:0",
+                "n_apertures": 9,
+                "normalized_sigma": 1.2293330178945538
+              },
+              {
+                "id": "5:1",
+                "n_apertures": 9,
+                "normalized_sigma": 1.2003156491182967
+              },
+              {
+                "id": "5:2",
+                "n_apertures": 9,
+                "normalized_sigma": 0.42742545640131774
+              },
+              {
+                "id": "5:3",
+                "n_apertures": 12,
+                "normalized_sigma": 1.023536330358703
+              },
+              {
+                "id": "5:4",
+                "n_apertures": 9,
+                "normalized_sigma": 2.16981918571342
+              },
+              {
+                "id": "5:5",
+                "n_apertures": 9,
+                "normalized_sigma": 0.8212210508144515
+              }
+            ]
+          },
+          {
+            "radius_arcsec": 0.315,
+            "status": "measured",
+            "n_apertures": 361,
+            "n_spatial_blocks": 36,
+            "noise_multiplier": 1.025292099639089,
+            "noise_multiplier_block_bootstrap_95": [
+              0.884072750666045,
+              1.1487229055515695
+            ],
+            "ordinary_normalized_sigma": 0.9825365236140967,
+            "median_net_flux": -1.7066517597874688e-10,
+            "robust_net_sigma": 9.859359366526748e-09,
+            "ordinary_net_variance": 8.926877556700269e-17,
+            "median_diagonal_sigma": 9.616146822936916e-09,
+            "aperture_variance": 7.837062386838961e-17,
+            "background_contribution_variance": 1.102903683018374e-17,
+            "aperture_background_covariance": 6.544256578532834e-20,
+            "variance_identity_ap_plus_bg_minus_2cov": 8.926877556700269e-17,
+            "aperture_background_correlation": 0.0022259472727723323,
+            "spatial_blocks": [
+              {
+                "id": "0:0",
+                "n_apertures": 9,
+                "normalized_sigma": 1.2451384436851078
+              },
+              {
+                "id": "0:1",
+                "n_apertures": 9,
+                "normalized_sigma": 1.6525021066687404
+              },
+              {
+                "id": "0:2",
+                "n_apertures": 9,
+                "normalized_sigma": 0.6177530056458753
+              },
+              {
+                "id": "0:3",
+                "n_apertures": 12,
+                "normalized_sigma": 1.243593777901579
+              },
+              {
+                "id": "0:4",
+                "n_apertures": 9,
+                "normalized_sigma": 1.0756050773228265
+              },
+              {
+                "id": "0:5",
+                "n_apertures": 9,
+                "normalized_sigma": 0.9790246885235917
+              },
+              {
+                "id": "1:0",
+                "n_apertures": 9,
+                "normalized_sigma": 0.6614909763823067
+              },
+              {
+                "id": "1:1",
+                "n_apertures": 9,
+                "normalized_sigma": 1.32665000783399
+              },
+              {
+                "id": "1:2",
+                "n_apertures": 9,
+                "normalized_sigma": 0.5576022604858498
+              },
+              {
+                "id": "1:3",
+                "n_apertures": 12,
+                "normalized_sigma": 1.417293596286967
+              },
+              {
+                "id": "1:4",
+                "n_apertures": 9,
+                "normalized_sigma": 0.9075401883062348
+              },
+              {
+                "id": "1:5",
+                "n_apertures": 9,
+                "normalized_sigma": 0.5801948881915137
+              },
+              {
+                "id": "2:0",
+                "n_apertures": 9,
+                "normalized_sigma": 0.2914023947872844
+              },
+              {
+                "id": "2:1",
+                "n_apertures": 9,
+                "normalized_sigma": 0.4719509465759661
+              },
+              {
+                "id": "2:2",
+                "n_apertures": 9,
+                "normalized_sigma": 0.688808352383471
+              },
+              {
+                "id": "2:3",
+                "n_apertures": 12,
+                "normalized_sigma": 1.0013900339203046
+              },
+              {
+                "id": "2:4",
+                "n_apertures": 9,
+                "normalized_sigma": 0.2908075532715793
+              },
+              {
+                "id": "2:5",
+                "n_apertures": 9,
+                "normalized_sigma": 0.22530286263784133
+              },
+              {
+                "id": "3:0",
+                "n_apertures": 12,
+                "normalized_sigma": 1.1602732810487342
+              },
+              {
+                "id": "3:1",
+                "n_apertures": 12,
+                "normalized_sigma": 0.6600989498556284
+              },
+              {
+                "id": "3:2",
+                "n_apertures": 12,
+                "normalized_sigma": 0.6766519240104897
+              },
+              {
+                "id": "3:3",
+                "n_apertures": 16,
+                "normalized_sigma": 1.1748425768295694
+              },
+              {
+                "id": "3:4",
+                "n_apertures": 12,
+                "normalized_sigma": 0.6142001676843815
+              },
+              {
+                "id": "3:5",
+                "n_apertures": 12,
+                "normalized_sigma": 0.881940665637858
+              },
+              {
+                "id": "4:0",
+                "n_apertures": 9,
+                "normalized_sigma": 0.9701715094717154
+              },
+              {
+                "id": "4:1",
+                "n_apertures": 9,
+                "normalized_sigma": 0.28363799095795345
+              },
+              {
+                "id": "4:2",
+                "n_apertures": 9,
+                "normalized_sigma": 0.8481003961746113
+              },
+              {
+                "id": "4:3",
+                "n_apertures": 12,
+                "normalized_sigma": 1.0087285882148513
+              },
+              {
+                "id": "4:4",
+                "n_apertures": 9,
+                "normalized_sigma": 0.7561926268879088
+              },
+              {
+                "id": "4:5",
+                "n_apertures": 9,
+                "normalized_sigma": 0.4617198869419569
+              },
+              {
+                "id": "5:0",
+                "n_apertures": 9,
+                "normalized_sigma": 0.66651335664579
+              },
+              {
+                "id": "5:1",
+                "n_apertures": 9,
+                "normalized_sigma": 0.6384900058354236
+              },
+              {
+                "id": "5:2",
+                "n_apertures": 9,
+                "normalized_sigma": 0.6187733015651147
+              },
+              {
+                "id": "5:3",
+                "n_apertures": 12,
+                "normalized_sigma": 0.9746547826015627
+              },
+              {
+                "id": "5:4",
+                "n_apertures": 9,
+                "normalized_sigma": 1.4348639704064168
+              },
+              {
+                "id": "5:5",
+                "n_apertures": 9,
+                "normalized_sigma": 0.8727308603386492
+              }
+            ]
+          }
+        ],
+        "limits": [
+          "Background/confusion/flat errors and covariance are not separately identifiable.",
+          "One image and connected source mask cannot establish source-free sky truth.",
+          "Spatial block bootstrap is conditional on blocks; long-range covariance remains.",
+          "ERR assumed in SCI units, as in calibrated JWST products; WHT only masks coverage.",
+          "This measures sky-limited uncertainty, not source Poisson or calibration uncertainty.",
+          "Multiplier belongs to this image, aperture, annulus, mask and noise baseline only."
+        ],
+        "control_name": "white",
+        "known_pixel_variance": 1.0,
+        "known_noise_kernel": [
+          [
+            1.0
+          ]
+        ]
+      },
+      {
+        "experiment": "blank aperture plus annulus empirical noise",
+        "synthetic_control": true,
+        "not_an_isolated_drizzle_factor": true,
+        "shape": [
+          768,
+          768
+        ],
+        "pixel_scale_arcsec": 0.063,
+        "angular_geometry": "explicit_scale",
+        "mask_method": "explicit supplied source mask",
+        "DQ_policy": "all nonzero bits excluded if DQ present",
+        "valid_pixels": 589824,
+        "source_masked_pixels": 0,
+        "seed": 731,
+        "block_size_pixels": 128,
+        "bootstrap_draws": 500,
+        "sampling": "random translated grid, disjoint largest aperture/annulus supports",
+        "attempted_positions": 361,
+        "annulus_inner_factor": 2.0,
+        "annulus_outer_factor": 3.3333333333333335,
+        "fixed_annulus_radii_arcsec": null,
+        "apertures": [
+          {
+            "radius_arcsec": 0.126,
+            "status": "measured",
+            "n_apertures": 361,
+            "n_spatial_blocks": 36,
+            "noise_multiplier": 2.016750333399465,
+            "noise_multiplier_block_bootstrap_95": [
+              1.721448414310859,
+              2.2271216042504274
+            ],
+            "ordinary_normalized_sigma": 2.0646137076712536,
+            "median_net_flux": -8.122735020884565e-10,
+            "robust_net_sigma": 7.76827424977868e-09,
+            "ordinary_net_variance": 6.324445244564149e-17,
+            "median_diagonal_sigma": 3.85187701280027e-09,
+            "aperture_variance": 5.4754878705187005e-17,
+            "background_contribution_variance": 8.900623420521233e-18,
+            "aperture_background_covariance": 2.055248400333795e-19,
+            "variance_identity_ap_plus_bg_minus_2cov": 6.324445244564147e-17,
+            "aperture_background_correlation": 0.009309850239626485,
+            "spatial_blocks": [
+              {
+                "id": "0:0",
+                "n_apertures": 9,
+                "normalized_sigma": 4.65431053321533
+              },
+              {
+                "id": "0:1",
+                "n_apertures": 9,
+                "normalized_sigma": 2.204829058825915
+              },
+              {
+                "id": "0:2",
+                "n_apertures": 9,
+                "normalized_sigma": 2.717844718752036
+              },
+              {
+                "id": "0:3",
+                "n_apertures": 12,
+                "normalized_sigma": 1.1563050713610001
+              },
+              {
+                "id": "0:4",
+                "n_apertures": 9,
+                "normalized_sigma": 2.313899448003217
+              },
+              {
+                "id": "0:5",
+                "n_apertures": 9,
+                "normalized_sigma": 1.3351220518258884
+              },
+              {
+                "id": "1:0",
+                "n_apertures": 9,
+                "normalized_sigma": 1.7273181927767205
+              },
+              {
+                "id": "1:1",
+                "n_apertures": 9,
+                "normalized_sigma": 1.1628017181732422
+              },
+              {
+                "id": "1:2",
+                "n_apertures": 9,
+                "normalized_sigma": 0.982872807393054
+              },
+              {
+                "id": "1:3",
+                "n_apertures": 12,
+                "normalized_sigma": 1.8581398585341526
+              },
+              {
+                "id": "1:4",
+                "n_apertures": 9,
+                "normalized_sigma": 0.6311897537968485
+              },
+              {
+                "id": "1:5",
+                "n_apertures": 9,
+                "normalized_sigma": 1.2565143511364245
+              },
+              {
+                "id": "2:0",
+                "n_apertures": 9,
+                "normalized_sigma": 0.7570866390276767
+              },
+              {
+                "id": "2:1",
+                "n_apertures": 9,
+                "normalized_sigma": 3.259636680441748
+              },
+              {
+                "id": "2:2",
+                "n_apertures": 9,
+                "normalized_sigma": 1.4700992040064937
+              },
+              {
+                "id": "2:3",
+                "n_apertures": 12,
+                "normalized_sigma": 2.064891326809087
+              },
+              {
+                "id": "2:4",
+                "n_apertures": 9,
+                "normalized_sigma": 0.6097662694868142
+              },
+              {
+                "id": "2:5",
+                "n_apertures": 9,
+                "normalized_sigma": 2.3887434986438807
+              },
+              {
+                "id": "3:0",
+                "n_apertures": 12,
+                "normalized_sigma": 1.6637009436808095
+              },
+              {
+                "id": "3:1",
+                "n_apertures": 12,
+                "normalized_sigma": 1.096077273455952
+              },
+              {
+                "id": "3:2",
+                "n_apertures": 12,
+                "normalized_sigma": 2.2424536213569457
+              },
+              {
+                "id": "3:3",
+                "n_apertures": 16,
+                "normalized_sigma": 2.2367696039545812
+              },
+              {
+                "id": "3:4",
+                "n_apertures": 12,
+                "normalized_sigma": 1.3663424724576907
+              },
+              {
+                "id": "3:5",
+                "n_apertures": 12,
+                "normalized_sigma": 1.7540324509275118
+              },
+              {
+                "id": "4:0",
+                "n_apertures": 9,
+                "normalized_sigma": 2.8925905502002607
+              },
+              {
+                "id": "4:1",
+                "n_apertures": 9,
+                "normalized_sigma": 0.5358542275678747
+              },
+              {
+                "id": "4:2",
+                "n_apertures": 9,
+                "normalized_sigma": 0.5225629941482642
+              },
+              {
+                "id": "4:3",
+                "n_apertures": 12,
+                "normalized_sigma": 1.8676762104486015
+              },
+              {
+                "id": "4:4",
+                "n_apertures": 9,
+                "normalized_sigma": 1.0163785605823112
+              },
+              {
+                "id": "4:5",
+                "n_apertures": 9,
+                "normalized_sigma": 1.8299880133575441
+              },
+              {
+                "id": "5:0",
+                "n_apertures": 9,
+                "normalized_sigma": 1.7057309486005428
+              },
+              {
+                "id": "5:1",
+                "n_apertures": 9,
+                "normalized_sigma": 1.320919617750272
+              },
+              {
+                "id": "5:2",
+                "n_apertures": 9,
+                "normalized_sigma": 1.0762759003146192
+              },
+              {
+                "id": "5:3",
+                "n_apertures": 12,
+                "normalized_sigma": 1.4238060452697392
+              },
+              {
+                "id": "5:4",
+                "n_apertures": 9,
+                "normalized_sigma": 2.1070442427832274
+              },
+              {
+                "id": "5:5",
+                "n_apertures": 9,
+                "normalized_sigma": 1.5688346450310175
+              }
+            ]
+          },
+          {
+            "radius_arcsec": 0.189,
+            "status": "measured",
+            "n_apertures": 361,
+            "n_spatial_blocks": 36,
+            "noise_multiplier": 2.3889138486886807,
+            "noise_multiplier_block_bootstrap_95": [
+              2.111804862751387,
+              2.6158305550773084
+            ],
+            "ordinary_normalized_sigma": 2.2991620740926284,
+            "median_net_flux": -5.641477327501549e-10,
+            "robust_net_sigma": 1.3732259209680533e-08,
+            "ordinary_net_variance": 1.7467155349888127e-16,
+            "median_diagonal_sigma": 5.748327515962295e-09,
+            "aperture_variance": 1.4737901832429192e-16,
+            "background_contribution_variance": 2.450441639650503e-17,
+            "aperture_background_covariance": -1.3940593890421668e-18,
+            "variance_identity_ap_plus_bg_minus_2cov": 1.7467155349888127e-16,
+            "aperture_background_correlation": -0.023197504316349645,
+            "spatial_blocks": [
+              {
+                "id": "0:0",
+                "n_apertures": 9,
+                "normalized_sigma": 1.624559623559383
+              },
+              {
+                "id": "0:1",
+                "n_apertures": 9,
+                "normalized_sigma": 3.188361113023003
+              },
+              {
+                "id": "0:2",
+                "n_apertures": 9,
+                "normalized_sigma": 2.958339353692733
+              },
+              {
+                "id": "0:3",
+                "n_apertures": 12,
+                "normalized_sigma": 1.4661107738410797
+              },
+              {
+                "id": "0:4",
+                "n_apertures": 9,
+                "normalized_sigma": 0.5716160314054732
+              },
+              {
+                "id": "0:5",
+                "n_apertures": 9,
+                "normalized_sigma": 1.094548842673996
+              },
+              {
+                "id": "1:0",
+                "n_apertures": 9,
+                "normalized_sigma": 2.97832946304003
+              },
+              {
+                "id": "1:1",
+                "n_apertures": 9,
+                "normalized_sigma": 2.251672090907568
+              },
+              {
+                "id": "1:2",
+                "n_apertures": 9,
+                "normalized_sigma": 1.368900792827828
+              },
+              {
+                "id": "1:3",
+                "n_apertures": 12,
+                "normalized_sigma": 3.408613691348214
+              },
+              {
+                "id": "1:4",
+                "n_apertures": 9,
+                "normalized_sigma": 0.6924253469149024
+              },
+              {
+                "id": "1:5",
+                "n_apertures": 9,
+                "normalized_sigma": 1.3587861124372111
+              },
+              {
+                "id": "2:0",
+                "n_apertures": 9,
+                "normalized_sigma": 1.4587403619158068
+              },
+              {
+                "id": "2:1",
+                "n_apertures": 9,
+                "normalized_sigma": 1.8794325507202427
+              },
+              {
+                "id": "2:2",
+                "n_apertures": 9,
+                "normalized_sigma": 1.870192081770425
+              },
+              {
+                "id": "2:3",
+                "n_apertures": 12,
+                "normalized_sigma": 1.3763414706874437
+              },
+              {
+                "id": "2:4",
+                "n_apertures": 9,
+                "normalized_sigma": 1.5669745822663057
+              },
+              {
+                "id": "2:5",
+                "n_apertures": 9,
+                "normalized_sigma": 2.4722732230612365
+              },
+              {
+                "id": "3:0",
+                "n_apertures": 12,
+                "normalized_sigma": 2.1670508581734214
+              },
+              {
+                "id": "3:1",
+                "n_apertures": 12,
+                "normalized_sigma": 1.1323130165909967
+              },
+              {
+                "id": "3:2",
+                "n_apertures": 12,
+                "normalized_sigma": 2.8416806102893473
+              },
+              {
+                "id": "3:3",
+                "n_apertures": 16,
+                "normalized_sigma": 2.976527215921505
+              },
+              {
+                "id": "3:4",
+                "n_apertures": 12,
+                "normalized_sigma": 1.955577542357054
+              },
+              {
+                "id": "3:5",
+                "n_apertures": 12,
+                "normalized_sigma": 2.6961917215586357
+              },
+              {
+                "id": "4:0",
+                "n_apertures": 9,
+                "normalized_sigma": 3.634748842876204
+              },
+              {
+                "id": "4:1",
+                "n_apertures": 9,
+                "normalized_sigma": 1.8355844729609425
+              },
+              {
+                "id": "4:2",
+                "n_apertures": 9,
+                "normalized_sigma": 1.002808343507347
+              },
+              {
+                "id": "4:3",
+                "n_apertures": 12,
+                "normalized_sigma": 2.4628876168429668
+              },
+              {
+                "id": "4:4",
+                "n_apertures": 9,
+                "normalized_sigma": 2.3042757734339614
+              },
+              {
+                "id": "4:5",
+                "n_apertures": 9,
+                "normalized_sigma": 3.1548714356755356
+              },
+              {
+                "id": "5:0",
+                "n_apertures": 9,
+                "normalized_sigma": 2.685132967369437
+              },
+              {
+                "id": "5:1",
+                "n_apertures": 9,
+                "normalized_sigma": 2.9121004530442964
+              },
+              {
+                "id": "5:2",
+                "n_apertures": 9,
+                "normalized_sigma": 1.3845955115063455
+              },
+              {
+                "id": "5:3",
+                "n_apertures": 12,
+                "normalized_sigma": 1.4280278136552973
+              },
+              {
+                "id": "5:4",
+                "n_apertures": 9,
+                "normalized_sigma": 5.370492131192016
+              },
+              {
+                "id": "5:5",
+                "n_apertures": 9,
+                "normalized_sigma": 1.0642170951771808
+              }
+            ]
+          },
+          {
+            "radius_arcsec": 0.315,
+            "status": "measured",
+            "n_apertures": 361,
+            "n_spatial_blocks": 36,
+            "noise_multiplier": 2.614541823756827,
+            "noise_multiplier_block_bootstrap_95": [
+              2.268937445067679,
+              2.9520937127879945
+            ],
+            "ordinary_normalized_sigma": 2.458104537259317,
+            "median_net_flux": -2.655551522391235e-11,
+            "robust_net_sigma": 2.5141818051954906e-08,
+            "ordinary_net_variance": 5.587311290489591e-16,
+            "median_diagonal_sigma": 9.616146822936916e-09,
+            "aperture_variance": 4.680091334781745e-16,
+            "background_contribution_variance": 7.165257400170935e-17,
+            "aperture_background_covariance": -9.534710784537672e-18,
+            "variance_identity_ap_plus_bg_minus_2cov": 5.587311290489592e-16,
+            "aperture_background_correlation": -0.05206722856573266,
+            "spatial_blocks": [
+              {
+                "id": "0:0",
+                "n_apertures": 9,
+                "normalized_sigma": 2.2843289186825633
+              },
+              {
+                "id": "0:1",
+                "n_apertures": 9,
+                "normalized_sigma": 3.0486095254787076
+              },
+              {
+                "id": "0:2",
+                "n_apertures": 9,
+                "normalized_sigma": 0.7835982316447073
+              },
+              {
+                "id": "0:3",
+                "n_apertures": 12,
+                "normalized_sigma": 2.890350024405037
+              },
+              {
+                "id": "0:4",
+                "n_apertures": 9,
+                "normalized_sigma": 2.582094715588382
+              },
+              {
+                "id": "0:5",
+                "n_apertures": 9,
+                "normalized_sigma": 2.07267864777473
+              },
+              {
+                "id": "1:0",
+                "n_apertures": 9,
+                "normalized_sigma": 2.3779238790140056
+              },
+              {
+                "id": "1:1",
+                "n_apertures": 9,
+                "normalized_sigma": 3.663985521276786
+              },
+              {
+                "id": "1:2",
+                "n_apertures": 9,
+                "normalized_sigma": 1.3301404331414446
+              },
+              {
+                "id": "1:3",
+                "n_apertures": 12,
+                "normalized_sigma": 3.4402052247319626
+              },
+              {
+                "id": "1:4",
+                "n_apertures": 9,
+                "normalized_sigma": 1.7166471716935805
+              },
+              {
+                "id": "1:5",
+                "n_apertures": 9,
+                "normalized_sigma": 1.5026260182396387
+              },
+              {
+                "id": "2:0",
+                "n_apertures": 9,
+                "normalized_sigma": 1.0007841089095555
+              },
+              {
+                "id": "2:1",
+                "n_apertures": 9,
+                "normalized_sigma": 1.3747786032829952
+              },
+              {
+                "id": "2:2",
+                "n_apertures": 9,
+                "normalized_sigma": 1.3462774897234504
+              },
+              {
+                "id": "2:3",
+                "n_apertures": 12,
+                "normalized_sigma": 2.9555432675195816
+              },
+              {
+                "id": "2:4",
+                "n_apertures": 9,
+                "normalized_sigma": 1.62138753800186
+              },
+              {
+                "id": "2:5",
+                "n_apertures": 9,
+                "normalized_sigma": 1.9862985925606964
+              },
+              {
+                "id": "3:0",
+                "n_apertures": 12,
+                "normalized_sigma": 2.8410842891403076
+              },
+              {
+                "id": "3:1",
+                "n_apertures": 12,
+                "normalized_sigma": 1.4721209106488786
+              },
+              {
+                "id": "3:2",
+                "n_apertures": 12,
+                "normalized_sigma": 2.395978500992266
+              },
+              {
+                "id": "3:3",
+                "n_apertures": 16,
+                "normalized_sigma": 3.5857055883326265
+              },
+              {
+                "id": "3:4",
+                "n_apertures": 12,
+                "normalized_sigma": 2.393545712995948
+              },
+              {
+                "id": "3:5",
+                "n_apertures": 12,
+                "normalized_sigma": 2.92025834511438
+              },
+              {
+                "id": "4:0",
+                "n_apertures": 9,
+                "normalized_sigma": 3.5893735416869355
+              },
+              {
+                "id": "4:1",
+                "n_apertures": 9,
+                "normalized_sigma": 1.157396236594583
+              },
+              {
+                "id": "4:2",
+                "n_apertures": 9,
+                "normalized_sigma": 2.4078955031285734
+              },
+              {
+                "id": "4:3",
+                "n_apertures": 12,
+                "normalized_sigma": 2.097278779009088
+              },
+              {
+                "id": "4:4",
+                "n_apertures": 9,
+                "normalized_sigma": 2.0433359918514484
+              },
+              {
+                "id": "4:5",
+                "n_apertures": 9,
+                "normalized_sigma": 1.1695329234670753
+              },
+              {
+                "id": "5:0",
+                "n_apertures": 9,
+                "normalized_sigma": 2.8561201625077723
+              },
+              {
+                "id": "5:1",
+                "n_apertures": 9,
+                "normalized_sigma": 2.330390001052121
+              },
+              {
+                "id": "5:2",
+                "n_apertures": 9,
+                "normalized_sigma": 1.4554800240292571
+              },
+              {
+                "id": "5:3",
+                "n_apertures": 12,
+                "normalized_sigma": 2.770311192469483
+              },
+              {
+                "id": "5:4",
+                "n_apertures": 9,
+                "normalized_sigma": 3.625147568104324
+              },
+              {
+                "id": "5:5",
+                "n_apertures": 9,
+                "normalized_sigma": 2.2864350590414197
+              }
+            ]
+          }
+        ],
+        "limits": [
+          "Background/confusion/flat errors and covariance are not separately identifiable.",
+          "One image and connected source mask cannot establish source-free sky truth.",
+          "Spatial block bootstrap is conditional on blocks; long-range covariance remains.",
+          "ERR assumed in SCI units, as in calibrated JWST products; WHT only masks coverage.",
+          "This measures sky-limited uncertainty, not source Poisson or calibration uncertainty.",
+          "Multiplier belongs to this image, aperture, annulus, mask and noise baseline only."
+        ],
+        "control_name": "3x3 correlated",
+        "known_pixel_variance": 1.0,
+        "known_noise_kernel": [
+          [
+            0.16666666666666666,
+            0.3333333333333333,
+            0.16666666666666666
+          ],
+          [
+            0.3333333333333333,
+            0.6666666666666666,
+            0.3333333333333333
+          ],
+          [
+            0.16666666666666666,
+            0.3333333333333333,
+            0.16666666666666666
+          ]
+        ]
+      }
+    ]
+  },
+  "real_images": [
+    {
+      "experiment": "blank aperture plus annulus empirical noise",
+      "synthetic_control": false,
+      "not_an_isolated_drizzle_factor": true,
+      "shape": [
+        2068,
+        2075
+      ],
+      "pixel_scale_arcsec": 0.06291269315026955,
+      "angular_geometry": "celestial_separation",
+      "mask_method": "3sigma connected smoothed sources; min5 pixels; radius-dependent dilation",
+      "DQ_policy": "all nonzero bits excluded if DQ present",
+      "valid_pixels": 4184055,
+      "source_masked_pixels": 751307,
+      "seed": 731,
+      "block_size_pixels": 128,
+      "bootstrap_draws": 500,
+      "sampling": "random translated grid, disjoint largest aperture/annulus supports",
+      "attempted_positions": 1000,
+      "annulus_inner_factor": 2.0,
+      "annulus_outer_factor": 3.3333333333333335,
+      "fixed_annulus_radii_arcsec": [
+        0.3774761589016173,
+        0.6291269315026955
+      ],
+      "apertures": [
+        {
+          "radius_arcsec": 0.1258253863005391,
+          "status": "measured",
+          "n_apertures": 519,
+          "n_spatial_blocks": 219,
+          "noise_multiplier": 1.0005526155589612,
+          "noise_multiplier_block_bootstrap_95": [
+            0.9025664427671213,
+            1.0731526575759986
+          ],
+          "ordinary_normalized_sigma": 1.3596881735621227,
+          "median_net_flux": 5.723263316716636e-12,
+          "robust_net_sigma": 2.5221011643387414e-09,
+          "ordinary_net_variance": 6.934679447764267e-17,
+          "median_diagonal_sigma": 2.515752167324773e-09,
+          "aperture_variance": 6.918686220607812e-17,
+          "background_contribution_variance": 2.4625775174267117e-18,
+          "aperture_background_covariance": 1.151322622931088e-18,
+          "variance_identity_ap_plus_bg_minus_2cov": 6.934679447764267e-17,
+          "aperture_background_correlation": 0.08820440322753022
+        },
+        {
+          "radius_arcsec": 0.18873807945080864,
+          "status": "measured",
+          "n_apertures": 518,
+          "n_spatial_blocks": 219,
+          "noise_multiplier": 1.047563843727776,
+          "noise_multiplier_block_bootstrap_95": [
+            0.9646866415346781,
+            1.1534818546130055
+          ],
+          "ordinary_normalized_sigma": 1.480878244544044,
+          "median_net_flux": 6.778410533715792e-11,
+          "robust_net_sigma": 4.152488723414149e-09,
+          "ordinary_net_variance": 1.743620022813909e-16,
+          "median_diagonal_sigma": 3.9141870707170135e-09,
+          "aperture_variance": 1.782301392649715e-16,
+          "background_contribution_variance": 1.2202652669509268e-17,
+          "aperture_background_covariance": 8.035394826544869e-18,
+          "variance_identity_ap_plus_bg_minus_2cov": 1.7436200228139104e-16,
+          "aperture_background_correlation": 0.17230168433481946
+        },
+        {
+          "radius_arcsec": 0.31456346575134775,
+          "status": "measured",
+          "n_apertures": 513,
+          "n_spatial_blocks": 218,
+          "noise_multiplier": 1.0046002208813483,
+          "noise_multiplier_block_bootstrap_95": [
+            0.9025948765128534,
+            1.1319016169565528
+          ],
+          "ordinary_normalized_sigma": 1.3918638952096625,
+          "median_net_flux": -7.45816192785142e-11,
+          "robust_net_sigma": 7.315292772014711e-09,
+          "ordinary_net_variance": 3.398682616809536e-16,
+          "median_diagonal_sigma": 7.2596957820628556e-09,
+          "aperture_variance": 3.900258335018165e-16,
+          "background_contribution_variance": 9.501646013338702e-17,
+          "aperture_background_covariance": 7.258701597712493e-17,
+          "variance_identity_ap_plus_bg_minus_2cov": 3.398682616809536e-16,
+          "aperture_background_correlation": 0.37706205748392785
+        }
+      ],
+      "limits": [
+        "Background/confusion/flat errors and covariance are not separately identifiable.",
+        "One image and connected source mask cannot establish source-free sky truth.",
+        "Spatial block bootstrap is conditional on blocks; long-range covariance remains.",
+        "ERR assumed in SCI units, as in calibrated JWST products; WHT only masks coverage.",
+        "This measures sky-limited uncertainty, not source Poisson or calibration uncertainty.",
+        "Multiplier belongs to this image, aperture, annulus, mask and noise baseline only."
+      ],
+      "operator_transfer_checks": [
+        {
+          "radius_arcsec": 0.1258253863005391,
+          "x": 527,
+          "y": 21,
+          "production_flux_jy": -5.122507675575561e-10,
+          "flux_residual_jy": 1.1063540692896745e-23,
+          "diagonal_sigma_ratio": 1.0,
+          "matched_operator": true
+        },
+        {
+          "radius_arcsec": 0.1258253863005391,
+          "x": 677,
+          "y": 21,
+          "production_flux_jy": 3.214222307767098e-09,
+          "flux_residual_jy": -5.624828165360588e-23,
+          "diagonal_sigma_ratio": 1.0,
+          "matched_operator": true
+        },
+        {
+          "radius_arcsec": 0.1258253863005391,
+          "x": 1452,
+          "y": 21,
+          "production_flux_jy": -9.497074535437239e-11,
+          "flux_residual_jy": 2.884792386278684e-23,
+          "diagonal_sigma_ratio": 1.0,
+          "matched_operator": true
+        },
+        {
+          "radius_arcsec": 0.1258253863005391,
+          "x": 1552,
+          "y": 21,
+          "production_flux_jy": 2.3590181252306513e-09,
+          "flux_residual_jy": -4.549493369041652e-23,
+          "diagonal_sigma_ratio": 1.0,
+          "matched_operator": true
+        },
+        {
+          "radius_arcsec": 0.18873807945080864,
+          "x": 527,
+          "y": 21,
+          "production_flux_jy": -5.501151583732801e-10,
+          "flux_residual_jy": 1.068096965959097e-22,
+          "diagonal_sigma_ratio": 0.9999999999999998,
+          "matched_operator": true
+        },
+        {
+          "radius_arcsec": 0.18873807945080864,
+          "x": 677,
+          "y": 21,
+          "production_flux_jy": 4.064982900446459e-09,
+          "flux_residual_jy": -1.9852334701272664e-23,
+          "diagonal_sigma_ratio": 0.9999999999999998,
+          "matched_operator": true
+        },
+        {
+          "radius_arcsec": 0.18873807945080864,
+          "x": 1452,
+          "y": 21,
+          "production_flux_jy": -1.7429511807798036e-09,
+          "flux_residual_jy": -8.127049518333497e-23,
+          "diagonal_sigma_ratio": 1.0,
+          "matched_operator": true
+        },
+        {
+          "radius_arcsec": 0.18873807945080864,
+          "x": 1552,
+          "y": 21,
+          "production_flux_jy": 4.853360690462128e-10,
+          "flux_residual_jy": -9.202384314652433e-24,
+          "diagonal_sigma_ratio": 1.0,
+          "matched_operator": true
+        },
+        {
+          "radius_arcsec": 0.31456346575134775,
+          "x": 527,
+          "y": 21,
+          "production_flux_jy": -4.088174998375602e-09,
+          "flux_residual_jy": 1.2904017555827232e-22,
+          "diagonal_sigma_ratio": 0.9999999999999999,
+          "matched_operator": true
+        },
+        {
+          "radius_arcsec": 0.31456346575134775,
+          "x": 677,
+          "y": 21,
+          "production_flux_jy": 5.806668600211991e-09,
+          "flux_residual_jy": 6.203854594147708e-23,
+          "diagonal_sigma_ratio": 0.9999999999999998,
+          "matched_operator": true
+        },
+        {
+          "radius_arcsec": 0.31456346575134775,
+          "x": 1452,
+          "y": 21,
+          "production_flux_jy": -9.0395353579783e-10,
+          "flux_residual_jy": 3.774011544773189e-23,
+          "diagonal_sigma_ratio": 1.0,
+          "matched_operator": true
+        },
+        {
+          "radius_arcsec": 0.31456346575134775,
+          "x": 1552,
+          "y": 21,
+          "production_flux_jy": 4.463908433841678e-09,
+          "flux_residual_jy": -2.266474878395296e-22,
+          "diagonal_sigma_ratio": 1.0,
+          "matched_operator": true
+        }
+      ],
+      "input_path": "/workspace/scratch/232075794deb/jwst/data/original_round2/jw01180026001_09201_00003_nrcalong_i2d.fits",
+      "sha256": "b9b84b9bd0bd8ef6140dca76163a9ac4625689024b651a25e631a6d14ce68d86",
+      "bytes": 120257280
+    },
+    {
+      "experiment": "blank aperture plus annulus empirical noise",
+      "synthetic_control": false,
+      "not_an_isolated_drizzle_factor": true,
+      "shape": [
+        2058,
+        2058
+      ],
+      "pixel_scale_arcsec": 0.0312285081023676,
+      "angular_geometry": "celestial_separation",
+      "mask_method": "3sigma connected smoothed sources; min5 pixels; radius-dependent dilation",
+      "DQ_policy": "all nonzero bits excluded if DQ present",
+      "valid_pixels": 4162431,
+      "source_masked_pixels": 1063550,
+      "seed": 731,
+      "block_size_pixels": 128,
+      "bootstrap_draws": 500,
+      "sampling": "random translated grid, disjoint largest aperture/annulus supports",
+      "attempted_positions": 1000,
+      "annulus_inner_factor": 2.0,
+      "annulus_outer_factor": 3.3333333333333335,
+      "fixed_annulus_radii_arcsec": [
+        0.3774761589016173,
+        0.6291269315026955
+      ],
+      "apertures": [
+        {
+          "radius_arcsec": 0.1258253863005391,
+          "status": "measured",
+          "n_apertures": 176,
+          "n_spatial_blocks": 119,
+          "noise_multiplier": 1.3617877103926963,
+          "noise_multiplier_block_bootstrap_95": [
+            1.14640658853645,
+            1.6310012502929254
+          ],
+          "ordinary_normalized_sigma": 1.3485824022589696,
+          "median_net_flux": 4.638906236313903e-10,
+          "robust_net_sigma": 4.909528445606426e-09,
+          "ordinary_net_variance": 2.3226142533373942e-17,
+          "median_diagonal_sigma": 3.4923507063764277e-09,
+          "aperture_variance": 2.2135535949953106e-17,
+          "background_contribution_variance": 5.350617273131537e-18,
+          "aperture_background_covariance": 2.13000534485535e-18,
+          "variance_identity_ap_plus_bg_minus_2cov": 2.3226142533373942e-17,
+          "aperture_background_correlation": 0.19571933378204429
+        },
+        {
+          "radius_arcsec": 0.18873807945080864,
+          "status": "measured",
+          "n_apertures": 176,
+          "n_spatial_blocks": 119,
+          "noise_multiplier": 1.5763476752438543,
+          "noise_multiplier_block_bootstrap_95": [
+            1.3281007086735745,
+            1.804285685749937
+          ],
+          "ordinary_normalized_sigma": 1.403488149303423,
+          "median_net_flux": 6.975808789515401e-10,
+          "robust_net_sigma": 8.803031418425162e-09,
+          "ordinary_net_variance": 6.19401820319707e-17,
+          "median_diagonal_sigma": 5.536380651863748e-09,
+          "aperture_variance": 6.583848805093501e-17,
+          "background_contribution_variance": 2.845565679309051e-17,
+          "aperture_background_covariance": 1.6176981406027415e-17,
+          "variance_identity_ap_plus_bg_minus_2cov": 6.194018203197069e-17,
+          "aperture_background_correlation": 0.3737431613180056
+        },
+        {
+          "radius_arcsec": 0.31456346575134775,
+          "status": "measured",
+          "n_apertures": 175,
+          "n_spatial_blocks": 119,
+          "noise_multiplier": 1.7050605054133035,
+          "noise_multiplier_block_bootstrap_95": [
+            1.4112410964838324,
+            1.9992127402494033
+          ],
+          "ordinary_normalized_sigma": 1.5991293255580221,
+          "median_net_flux": 8.837058140888036e-11,
+          "robust_net_sigma": 1.769452416000167e-08,
+          "ordinary_net_variance": 2.825727504584672e-16,
+          "median_diagonal_sigma": 1.042080654446183e-08,
+          "aperture_variance": 3.4819809823167965e-16,
+          "background_contribution_variance": 2.3666871551871903e-16,
+          "aperture_background_covariance": 1.511470316459657e-16,
+          "variance_identity_ap_plus_bg_minus_2cov": 2.8257275045846734e-16,
+          "aperture_background_correlation": 0.5265213647223234
+        }
+      ],
+      "limits": [
+        "Background/confusion/flat errors and covariance are not separately identifiable.",
+        "One image and connected source mask cannot establish source-free sky truth.",
+        "Spatial block bootstrap is conditional on blocks; long-range covariance remains.",
+        "ERR assumed in SCI units, as in calibrated JWST products; WHT only masks coverage.",
+        "This measures sky-limited uncertainty, not source Poisson or calibration uncertainty.",
+        "Multiplier belongs to this image, aperture, annulus, mask and noise baseline only."
+      ],
+      "operator_transfer_checks": [
+        {
+          "radius_arcsec": 0.1258253863005391,
+          "x": 146,
+          "y": 40,
+          "production_flux_jy": -6.441203960425208e-10,
+          "flux_residual_jy": -1.6543612251060553e-23,
+          "diagonal_sigma_ratio": 1.0000000000000002,
+          "matched_operator": true
+        },
+        {
+          "radius_arcsec": 0.1258253863005391,
+          "x": 569,
+          "y": 40,
+          "production_flux_jy": -3.1205282291050294e-09,
+          "flux_residual_jy": 7.444625512977249e-24,
+          "diagonal_sigma_ratio": 1.0,
+          "matched_operator": true
+        },
+        {
+          "radius_arcsec": 0.1258253863005391,
+          "x": 1368,
+          "y": 40,
+          "production_flux_jy": 2.1258108106122735e-09,
+          "flux_residual_jy": -2.150669592637872e-23,
+          "diagonal_sigma_ratio": 1.0,
+          "matched_operator": true
+        },
+        {
+          "radius_arcsec": 0.1258253863005391,
+          "x": 710,
+          "y": 87,
+          "production_flux_jy": -4.4230550158480215e-09,
+          "flux_residual_jy": 3.474158572722716e-23,
+          "diagonal_sigma_ratio": 0.9999999999999999,
+          "matched_operator": true
+        },
+        {
+          "radius_arcsec": 0.18873807945080864,
+          "x": 146,
+          "y": 40,
+          "production_flux_jy": -6.135825884033741e-09,
+          "flux_residual_jy": -6.369290716658313e-23,
+          "diagonal_sigma_ratio": 1.0,
+          "matched_operator": true
+        },
+        {
+          "radius_arcsec": 0.18873807945080864,
+          "x": 569,
+          "y": 40,
+          "production_flux_jy": -1.0154539927083533e-09,
+          "flux_residual_jy": -3.494838088036542e-23,
+          "diagonal_sigma_ratio": 1.0,
+          "matched_operator": true
+        },
+        {
+          "radius_arcsec": 0.18873807945080864,
+          "x": 1368,
+          "y": 40,
+          "production_flux_jy": 8.977517953498854e-09,
+          "flux_residual_jy": 4.963083675318166e-24,
+          "diagonal_sigma_ratio": 1.0,
+          "matched_operator": true
+        },
+        {
+          "radius_arcsec": 0.18873807945080864,
+          "x": 710,
+          "y": 87,
+          "production_flux_jy": -7.274046798778243e-09,
+          "flux_residual_jy": 7.692779696743157e-23,
+          "diagonal_sigma_ratio": 0.9999999999999999,
+          "matched_operator": true
+        },
+        {
+          "radius_arcsec": 0.31456346575134775,
+          "x": 146,
+          "y": 40,
+          "production_flux_jy": -1.48737694642685e-08,
+          "flux_residual_jy": -3.044024654195142e-22,
+          "diagonal_sigma_ratio": 1.0,
+          "matched_operator": true
+        },
+        {
+          "radius_arcsec": 0.31456346575134775,
+          "x": 569,
+          "y": 40,
+          "production_flux_jy": 2.959913783201907e-09,
+          "flux_residual_jy": 9.016268676828002e-23,
+          "diagonal_sigma_ratio": 1.0,
+          "matched_operator": true
+        },
+        {
+          "radius_arcsec": 0.31456346575134775,
+          "x": 1368,
+          "y": 40,
+          "production_flux_jy": 6.99024155922644e-09,
+          "flux_residual_jy": -8.189088064274974e-23,
+          "diagonal_sigma_ratio": 1.0,
+          "matched_operator": true
+        },
+        {
+          "radius_arcsec": 0.31456346575134775,
+          "x": 710,
+          "y": 87,
+          "production_flux_jy": -1.0176081191253108e-08,
+          "flux_residual_jy": -2.3491929396505986e-22,
+          "diagonal_sigma_ratio": 1.0,
+          "matched_operator": true
+        }
+      ],
+      "input_path": "/workspace/scratch/232075794deb/jwst/data/original_round2/jw01180026001_03201_00003_nrca1_i2d.fits",
+      "sha256": "738c9dad0ace88e469fb8edd0daa5ba8b86034f8c5392e0229093026cdcaaba3",
+      "bytes": 118704960
+    },
+    {
+      "experiment": "blank aperture plus annulus empirical noise",
+      "synthetic_control": false,
+      "not_an_isolated_drizzle_factor": true,
+      "shape": [
+        2058,
+        2058
+      ],
+      "pixel_scale_arcsec": 0.03122919843918293,
+      "angular_geometry": "celestial_separation",
+      "mask_method": "3sigma connected smoothed sources; min5 pixels; radius-dependent dilation",
+      "DQ_policy": "all nonzero bits excluded if DQ present",
+      "valid_pixels": 4162715,
+      "source_masked_pixels": 1075450,
+      "seed": 731,
+      "block_size_pixels": 128,
+      "bootstrap_draws": 500,
+      "sampling": "random translated grid, disjoint largest aperture/annulus supports",
+      "attempted_positions": 1000,
+      "annulus_inner_factor": 2.0,
+      "annulus_outer_factor": 3.3333333333333335,
+      "fixed_annulus_radii_arcsec": [
+        0.3774761589016173,
+        0.6291269315026955
+      ],
+      "apertures": [
+        {
+          "radius_arcsec": 0.1258253863005391,
+          "status": "measured",
+          "n_apertures": 250,
+          "n_spatial_blocks": 145,
+          "noise_multiplier": 1.1549958111421461,
+          "noise_multiplier_block_bootstrap_95": [
+            1.0160841197361286,
+            1.3317652344278361
+          ],
+          "ordinary_normalized_sigma": 1.1265721946713327,
+          "median_net_flux": 1.1590199816121162e-10,
+          "robust_net_sigma": 2.8934776361212464e-09,
+          "ordinary_net_variance": 7.468049366818891e-18,
+          "median_diagonal_sigma": 2.397043751241794e-09,
+          "aperture_variance": 1.0181008389420489e-17,
+          "background_contribution_variance": 3.920944823912117e-18,
+          "aperture_background_covariance": 3.3169519232568568e-18,
+          "variance_identity_ap_plus_bg_minus_2cov": 7.468049366818891e-18,
+          "aperture_background_correlation": 0.5249868360507147
+        },
+        {
+          "radius_arcsec": 0.18873807945080864,
+          "status": "measured",
+          "n_apertures": 249,
+          "n_spatial_blocks": 145,
+          "noise_multiplier": 1.4515239125637434,
+          "noise_multiplier_block_bootstrap_95": [
+            1.1922988294845585,
+            1.6247712301264505
+          ],
+          "ordinary_normalized_sigma": 1.308051892107986,
+          "median_net_flux": 5.38833025446278e-10,
+          "robust_net_sigma": 5.5211300140030796e-09,
+          "ordinary_net_variance": 2.501552860809229e-17,
+          "median_diagonal_sigma": 3.8054585434300425e-09,
+          "aperture_variance": 3.611416147667781e-17,
+          "background_contribution_variance": 2.0929398806404337e-17,
+          "aperture_background_covariance": 1.6014015837494918e-17,
+          "variance_identity_ap_plus_bg_minus_2cov": 2.501552860809232e-17,
+          "aperture_background_correlation": 0.5824828046268056
+        },
+        {
+          "radius_arcsec": 0.31456346575134775,
+          "status": "measured",
+          "n_apertures": 249,
+          "n_spatial_blocks": 145,
+          "noise_multiplier": 1.256835136718121,
+          "noise_multiplier_block_bootstrap_95": [
+            1.0340555626503622,
+            1.4943033429832278
+          ],
+          "ordinary_normalized_sigma": 1.3816157139185359,
+          "median_net_flux": 1.6268601730724822e-09,
+          "robust_net_sigma": 8.832422314937275e-09,
+          "ordinary_net_variance": 9.889472345479734e-17,
+          "median_diagonal_sigma": 7.1679903474203995e-09,
+          "aperture_variance": 1.947906980383036e-16,
+          "background_contribution_variance": 1.7312771149970638e-16,
+          "aperture_background_covariance": 1.3451184304160631e-16,
+          "variance_identity_ap_plus_bg_minus_2cov": 9.889472345479736e-17,
+          "aperture_background_correlation": 0.7324755325590598
+        }
+      ],
+      "limits": [
+        "Background/confusion/flat errors and covariance are not separately identifiable.",
+        "One image and connected source mask cannot establish source-free sky truth.",
+        "Spatial block bootstrap is conditional on blocks; long-range covariance remains.",
+        "ERR assumed in SCI units, as in calibrated JWST products; WHT only masks coverage.",
+        "This measures sky-limited uncertainty, not source Poisson or calibration uncertainty.",
+        "Multiplier belongs to this image, aperture, annulus, mask and noise baseline only."
+      ],
+      "operator_transfer_checks": [
+        {
+          "radius_arcsec": 0.1258253863005391,
+          "x": 146,
+          "y": 40,
+          "production_flux_jy": -6.373071293313447e-10,
+          "flux_residual_jy": 1.8508166205873994e-23,
+          "diagonal_sigma_ratio": 1.0,
+          "matched_operator": true
+        },
+        {
+          "radius_arcsec": 0.1258253863005391,
+          "x": 428,
+          "y": 40,
+          "production_flux_jy": 2.9444608706015865e-09,
+          "flux_residual_jy": -2.274746684520826e-23,
+          "diagonal_sigma_ratio": 1.0,
+          "matched_operator": true
+        },
+        {
+          "radius_arcsec": 0.1258253863005391,
+          "x": 569,
+          "y": 40,
+          "production_flux_jy": 5.137659717925764e-10,
+          "flux_residual_jy": 3.4017802691243263e-23,
+          "diagonal_sigma_ratio": 1.0,
+          "matched_operator": true
+        },
+        {
+          "radius_arcsec": 0.1258253863005391,
+          "x": 804,
+          "y": 40,
+          "production_flux_jy": 7.960118087312775e-10,
+          "flux_residual_jy": -5.893661864440322e-24,
+          "diagonal_sigma_ratio": 1.0000000000000002,
+          "matched_operator": true
+        },
+        {
+          "radius_arcsec": 0.18873807945080864,
+          "x": 146,
+          "y": 40,
+          "production_flux_jy": -1.4753237498794152e-09,
+          "flux_residual_jy": 7.63074115080168e-23,
+          "diagonal_sigma_ratio": 1.0,
+          "matched_operator": true
+        },
+        {
+          "radius_arcsec": 0.18873807945080864,
+          "x": 428,
+          "y": 40,
+          "production_flux_jy": 7.638590853394143e-09,
+          "flux_residual_jy": 2.3161057151484775e-23,
+          "diagonal_sigma_ratio": 1.0000000000000002,
+          "matched_operator": true
+        },
+        {
+          "radius_arcsec": 0.18873807945080864,
+          "x": 569,
+          "y": 40,
+          "production_flux_jy": -2.630394096980533e-09,
+          "flux_residual_jy": -4.549493369041652e-23,
+          "diagonal_sigma_ratio": 1.0000000000000002,
+          "matched_operator": true
+        },
+        {
+          "radius_arcsec": 0.18873807945080864,
+          "x": 804,
+          "y": 40,
+          "production_flux_jy": 2.2004691930112644e-09,
+          "flux_residual_jy": -2.357464745776129e-23,
+          "diagonal_sigma_ratio": 1.0,
+          "matched_operator": true
+        },
+        {
+          "radius_arcsec": 0.31456346575134775,
+          "x": 146,
+          "y": 40,
+          "production_flux_jy": -7.860913167578205e-09,
+          "flux_residual_jy": -6.617444900424222e-24,
+          "diagonal_sigma_ratio": 0.9999999999999999,
+          "matched_operator": true
+        },
+        {
+          "radius_arcsec": 0.31456346575134775,
+          "x": 428,
+          "y": 40,
+          "production_flux_jy": 2.434465086020755e-08,
+          "flux_residual_jy": 3.970466940254533e-23,
+          "diagonal_sigma_ratio": 1.0,
+          "matched_operator": true
+        },
+        {
+          "radius_arcsec": 0.31456346575134775,
+          "x": 569,
+          "y": 40,
+          "production_flux_jy": 3.2079642622838057e-09,
+          "flux_residual_jy": -1.464109684218859e-22,
+          "diagonal_sigma_ratio": 0.9999999999999999,
+          "matched_operator": true
+        },
+        {
+          "radius_arcsec": 0.31456346575134775,
+          "x": 804,
+          "y": 40,
+          "production_flux_jy": 3.113929179914409e-09,
+          "flux_residual_jy": 9.181704799338607e-23,
+          "diagonal_sigma_ratio": 1.0,
+          "matched_operator": true
+        }
+      ],
+      "input_path": "/workspace/scratch/232075794deb/jwst/data/original_round2/jw01180026001_13201_00003_nrca1_i2d.fits",
+      "sha256": "075becbdd9bcc845ffacadc520b97da82f7d02a0c62bd5e9ddb7b1864deccd74",
+      "bytes": 118704960
+    }
+  ],
+  "command_parameters": {
+    "psf_directory": "data_sources/pilot",
+    "image_paths": [
+      "/workspace/scratch/232075794deb/jwst/data/original_round2/jw01180026001_09201_00003_nrcalong_i2d.fits",
+      "/workspace/scratch/232075794deb/jwst/data/original_round2/jw01180026001_03201_00003_nrca1_i2d.fits",
+      "/workspace/scratch/232075794deb/jwst/data/original_round2/jw01180026001_13201_00003_nrca1_i2d.fits"
+    ],
+    "radii_arcsec": [
+      0.1258253863005391,
+      0.18873807945080864,
+      0.31456346575134775
+    ],
+    "fixed_annulus_radii_arcsec": [
+      0.3774761589016173,
+      0.6291269315026955
+    ],
+    "output_scale_arcsec": 0.06291269315026955,
+    "seed": 731
+  },
+  "artifact_storage": {
+    "format": "compact_summary",
+    "full_output_sha256": "7564372f3519c10f28cd8c086d697831398d7a417a2f9b13b03c78ff6a5ab738",
+    "omitted_regenerable_arrays": [
+      {
+        "path": "/synthetic_noise/controls/0/apertures/0/measurements",
+        "rows": 361
+      },
+      {
+        "path": "/synthetic_noise/controls/0/apertures/1/measurements",
+        "rows": 361
+      },
+      {
+        "path": "/synthetic_noise/controls/0/apertures/2/measurements",
+        "rows": 361
+      },
+      {
+        "path": "/synthetic_noise/controls/1/apertures/0/measurements",
+        "rows": 361
+      },
+      {
+        "path": "/synthetic_noise/controls/1/apertures/1/measurements",
+        "rows": 361
+      },
+      {
+        "path": "/synthetic_noise/controls/1/apertures/2/measurements",
+        "rows": 361
+      },
+      {
+        "path": "/real_images/0/apertures/0/spatial_blocks",
+        "rows": 219
+      },
+      {
+        "path": "/real_images/0/apertures/0/measurements",
+        "rows": 519
+      },
+      {
+        "path": "/real_images/0/apertures/1/spatial_blocks",
+        "rows": 219
+      },
+      {
+        "path": "/real_images/0/apertures/1/measurements",
+        "rows": 518
+      },
+      {
+        "path": "/real_images/0/apertures/2/spatial_blocks",
+        "rows": 218
+      },
+      {
+        "path": "/real_images/0/apertures/2/measurements",
+        "rows": 513
+      },
+      {
+        "path": "/real_images/1/apertures/0/spatial_blocks",
+        "rows": 119
+      },
+      {
+        "path": "/real_images/1/apertures/0/measurements",
+        "rows": 176
+      },
+      {
+        "path": "/real_images/1/apertures/1/spatial_blocks",
+        "rows": 119
+      },
+      {
+        "path": "/real_images/1/apertures/1/measurements",
+        "rows": 176
+      },
+      {
+        "path": "/real_images/1/apertures/2/spatial_blocks",
+        "rows": 119
+      },
+      {
+        "path": "/real_images/1/apertures/2/measurements",
+        "rows": 175
+      },
+      {
+        "path": "/real_images/2/apertures/0/spatial_blocks",
+        "rows": 145
+      },
+      {
+        "path": "/real_images/2/apertures/0/measurements",
+        "rows": 250
+      },
+      {
+        "path": "/real_images/2/apertures/1/spatial_blocks",
+        "rows": 145
+      },
+      {
+        "path": "/real_images/2/apertures/1/measurements",
+        "rows": 249
+      },
+      {
+        "path": "/real_images/2/apertures/2/spatial_blocks",
+        "rows": 145
+      },
+      {
+        "path": "/real_images/2/apertures/2/measurements",
+        "rows": 249
+      }
+    ],
+    "reproduction": "Run recorded command_parameters with discovery.psf_noise; full blank trial arrays are written by the CLI."
+  }
+}
