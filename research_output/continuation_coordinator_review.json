@@ -1,0 +1,557 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-10-09",
+  "incoming_master": "1b4012e326664ce2a3ec5a515b5a832138aba46b",
+  "independent_native_gls_and_source254_annuli": {
+    "schema_version": 2,
+    "inputs_sha256": {
+      "native_report": "88e3cdbf5b7759eaad84dc21ead0974c38f392292d71ce605fa0f5b5951637ec",
+      "native_npz": "9412f52afbed589777cf55ad27ca2e93065cb4003be4990debc17503fe097027",
+      "deep_inventory": "3f61fa1ef58ac691610dacaa99bc61f7722656aa23247d655fb4e38a97c51117"
+    },
+    "native_gls_independent_oracle": [
+      {
+        "scenario": "nominal_shared_formal",
+        "max_flux_absolute_error": 1.8118839761882555e-13,
+        "max_covariance_absolute_error_over_largest_saved_entry": 7.139360518882387e-16
+      },
+      {
+        "scenario": "point_shared_formal",
+        "max_flux_absolute_error": 8.171241461241152e-14,
+        "max_covariance_absolute_error_over_largest_saved_entry": 6.819852697722577e-16
+      },
+      {
+        "scenario": "nominal_empirical_offtrace_transport",
+        "max_flux_absolute_error": 7.105427357601002e-14,
+        "max_covariance_absolute_error_over_largest_saved_entry": 6.136314408432216e-16
+      },
+      {
+        "scenario": "point_empirical_offtrace_transport",
+        "max_flux_absolute_error": 3.552713678800501e-14,
+        "max_covariance_absolute_error_over_largest_saved_entry": 4.4311073438343956e-16
+      }
+    ],
+    "source254_blue_background_oracle": {
+      "sha256": "24b557122f0cfba89f8e00459371d2c83499a4019d73c821f8629b86e19a4563",
+      "source_id": 254,
+      "band": "F090W",
+      "experiments": [
+        {
+          "annulus_arcsec": [
+            0.4,
+            0.6
+          ],
+          "aperture_radius_arcsec": 0.2,
+          "mean_sky_flux_njy": 19.010587688535452,
+          "mean_diagonal_error_njy": 1.0474429670259422,
+          "plane_sky_flux_njy": 19.01199272810629,
+          "plane_diagonal_error_njy": 1.0471974453345432,
+          "annulus_pixels": 249
+        },
+        {
+          "annulus_arcsec": [
+            0.4,
+            0.8
+          ],
+          "aperture_radius_arcsec": 0.2,
+          "mean_sky_flux_njy": 18.780374055728316,
+          "mean_diagonal_error_njy": 0.9957286776841174,
+          "plane_sky_flux_njy": 18.785904989358905,
+          "plane_diagonal_error_njy": 0.9956258915825728,
+          "annulus_pixels": 602
+        },
+        {
+          "annulus_arcsec": [
+            0.6,
+            0.8
+          ],
+          "aperture_radius_arcsec": 0.2,
+          "mean_sky_flux_njy": 18.617985336109996,
+          "mean_diagonal_error_njy": 1.021757598075781,
+          "plane_sky_flux_njy": 18.626471598449076,
+          "plane_diagonal_error_njy": 1.0216057851863052,
+          "annulus_pixels": 353
+        },
+        {
+          "annulus_arcsec": [
+            0.8,
+            1.0
+          ],
+          "aperture_radius_arcsec": 0.2,
+          "mean_sky_flux_njy": 18.46780328825116,
+          "mean_diagonal_error_njy": 1.0082250970108286,
+          "plane_sky_flux_njy": 18.485407115783484,
+          "plane_diagonal_error_njy": 1.0080310268216937,
+          "annulus_pixels": 451
+        }
+      ],
+      "limitations": "Same photons, fixed aperture, unmasked annuli, conditional diagonal errors; no deblend or redshift."
+    }
+  },
+  "independent_native_Cue_NNLS": {
+    "schema_version": 1,
+    "inputs_sha256": {
+      "model_input": "8c1089f4d7407c57558e14b0f26028379ca14d555a94f873834c767f3cc5abfb",
+      "spectrum": "88e3cdbf5b7759eaad84dc21ead0974c38f392292d71ce605fa0f5b5951637ec",
+      "comparison": "0a52b097a61f0667d13b375b7b608100ee8ef911cf8d0ea8b4030522e0124cde"
+    },
+    "mode": "cue",
+    "independent_NNLS_audit": [
+      {
+        "family": "nominal_shared_formal",
+        "max_best_chi2_error": 1.214306433183765e-16,
+        "independent_NNLS_grid_threshold_count": 124,
+        "models": 2025,
+        "NIV_included": false
+      },
+      {
+        "family": "point_shared_formal",
+        "max_best_chi2_error": 5.551115123125783e-16,
+        "independent_NNLS_grid_threshold_count": 145,
+        "models": 2025,
+        "NIV_included": false
+      },
+      {
+        "family": "nominal_empirical_offtrace_transport",
+        "max_best_chi2_error": 3.469446951953614e-17,
+        "independent_NNLS_grid_threshold_count": 583,
+        "models": 2025,
+        "NIV_included": false
+      },
+      {
+        "family": "point_empirical_offtrace_transport",
+        "max_best_chi2_error": 1.457167719820518e-16,
+        "independent_NNLS_grid_threshold_count": 672,
+        "models": 2025,
+        "NIV_included": false
+      }
+    ]
+  },
+  "restored_raw_and_environment": {
+    "schema_version": 1,
+    "native_raw_count": 9,
+    "native_raw_bytes": 464135040,
+    "all_original_pins_matched": true,
+    "records": [
+      {
+        "filename": "jw05224004001_03101_00002_nrs2_cal.fits",
+        "bytes": 51563520,
+        "sha256": "c2d318f836570e3cc77463ec91a8b2a8982deb8df4762873dcad3bdfbd03bc9f"
+      },
+      {
+        "filename": "jw05224004001_03101_00003_nrs2_cal.fits",
+        "bytes": 51575040,
+        "sha256": "7d60c48301e7020e897bc68de72d9103f27a4e3d4dec14f6e910bd76a6a68b39"
+      },
+      {
+        "filename": "jw05224004001_03101_00004_nrs2_cal.fits",
+        "bytes": 51575040,
+        "sha256": "0180117830dcad9a562c3c462b1dd7d08ba8ac2683c95a06d1b5c5855b0967e0"
+      },
+      {
+        "filename": "jw05224004001_05101_00001_nrs2_cal.fits",
+        "bytes": 51560640,
+        "sha256": "c4f576ff15f6d58b4fccf6ab4f5f97e82bb3472ebab6602d8f99a8b804d97695"
+      },
+      {
+        "filename": "jw05224004001_05101_00002_nrs2_cal.fits",
+        "bytes": 51575040,
+        "sha256": "0078c56d4d50a720b11e5ccb3be84705104c9ae06a3ecd7d8c29f5ffa678f3c5"
+      },
+      {
+        "filename": "jw05224004001_05101_00003_nrs2_cal.fits",
+        "bytes": 51575040,
+        "sha256": "b18c997fea94810da565d1044d02a6615862a8f1d9946e47506f9d60b2bccace"
+      },
+      {
+        "filename": "jw05224004001_07101_00001_nrs2_cal.fits",
+        "bytes": 51560640,
+        "sha256": "43faf1fe96cff76eab3cc3e33c900864fa42c5bf053a12ddf3107cc191a4c5ea"
+      },
+      {
+        "filename": "jw05224004001_07101_00002_nrs2_cal.fits",
+        "bytes": 51575040,
+        "sha256": "5b73760be206eef6891f37b33c3e8d973eef1522ece3b1a90ef4cc6506950a75"
+      },
+      {
+        "filename": "jw05224004001_07101_00003_nrs2_cal.fits",
+        "bytes": 51575040,
+        "sha256": "b7b3af35080d1ddafcb1184f07733e56c278f936be0fd662643dde46be8b343c"
+      }
+    ],
+    "python": "3.12.14",
+    "dependency_lock_sha256": "ff25f0785e7d5a3a1a0515075d28bf9c90272ce6cbf6f8b23cf88f317c6fd31c",
+    "all_locked_distributions_match": true,
+    "locked_distribution_count": 65,
+    "locked_distributions": [
+      {
+        "name": "alembic",
+        "version": "1.12.1"
+      },
+      {
+        "name": "annotated-types",
+        "version": "0.8.0"
+      },
+      {
+        "name": "anyio",
+        "version": "3.7.1"
+      },
+      {
+        "name": "ast_serialize",
+        "version": "0.12.1"
+      },
+      {
+        "name": "astropy",
+        "version": "8.0.1"
+      },
+      {
+        "name": "astropy-iers-data",
+        "version": "0.2026.10.5.1.0.7"
+      },
+      {
+        "name": "certifi",
+        "version": "2026.7.22"
+      },
+      {
+        "name": "charset-normalizer",
+        "version": "3.5.2"
+      },
+      {
+        "name": "click",
+        "version": "8.5.0"
+      },
+      {
+        "name": "contourpy",
+        "version": "1.4.0"
+      },
+      {
+        "name": "cycler",
+        "version": "0.12.1"
+      },
+      {
+        "name": "fastapi",
+        "version": "0.104.1"
+      },
+      {
+        "name": "fonttools",
+        "version": "4.66.1"
+      },
+      {
+        "name": "greenlet",
+        "version": "3.5.6"
+      },
+      {
+        "name": "h11",
+        "version": "0.16.0"
+      },
+      {
+        "name": "httpcore",
+        "version": "1.0.9"
+      },
+      {
+        "name": "httptools",
+        "version": "0.8.0"
+      },
+      {
+        "name": "httpx",
+        "version": "0.27.2"
+      },
+      {
+        "name": "idna",
+        "version": "3.20"
+      },
+      {
+        "name": "ImageIO",
+        "version": "2.38.1"
+      },
+      {
+        "name": "iniconfig",
+        "version": "2.3.1"
+      },
+      {
+        "name": "kiwisolver",
+        "version": "1.5.1"
+      },
+      {
+        "name": "lazy-loader",
+        "version": "0.6"
+      },
+      {
+        "name": "librt",
+        "version": "0.16.0"
+      },
+      {
+        "name": "Mako",
+        "version": "1.4.3"
+      },
+      {
+        "name": "markdown-it-py",
+        "version": "4.2.0"
+      },
+      {
+        "name": "MarkupSafe",
+        "version": "3.0.4"
+      },
+      {
+        "name": "matplotlib",
+        "version": "3.11.2"
+      },
+      {
+        "name": "mdurl",
+        "version": "0.1.2"
+      },
+      {
+        "name": "mypy",
+        "version": "2.4.0"
+      },
+      {
+        "name": "mypy_extensions",
+        "version": "1.1.0"
+      },
+      {
+        "name": "networkx",
+        "version": "3.7"
+      },
+      {
+        "name": "numpy",
+        "version": "2.5.3"
+      },
+      {
+        "name": "packaging",
+        "version": "26.3"
+      },
+      {
+        "name": "pathspec",
+        "version": "1.1.1"
+      },
+      {
+        "name": "photutils",
+        "version": "3.0.0"
+      },
+      {
+        "name": "pillow",
+        "version": "12.3.0"
+      },
+      {
+        "name": "pluggy",
+        "version": "1.6.0"
+      },
+      {
+        "name": "pydantic",
+        "version": "2.9.2"
+      },
+      {
+        "name": "pydantic-settings",
+        "version": "2.1.0"
+      },
+      {
+        "name": "pydantic_core",
+        "version": "2.23.4"
+      },
+      {
+        "name": "pyerfa",
+        "version": "2.0.1.5"
+      },
+      {
+        "name": "Pygments",
+        "version": "2.21.0"
+      },
+      {
+        "name": "pyparsing",
+        "version": "3.3.3"
+      },
+      {
+        "name": "pytest",
+        "version": "9.1.1"
+      },
+      {
+        "name": "pytest-asyncio",
+        "version": "1.4.0"
+      },
+      {
+        "name": "python-dateutil",
+        "version": "2.9.0.post0"
+      },
+      {
+        "name": "python-dotenv",
+        "version": "1.0.0"
+      },
+      {
+        "name": "PyYAML",
+        "version": "6.0.3"
+      },
+      {
+        "name": "requests",
+        "version": "2.34.2"
+      },
+      {
+        "name": "rich",
+        "version": "15.0.0"
+      },
+      {
+        "name": "ruff",
+        "version": "0.16.10"
+      },
+      {
+        "name": "scikit-image",
+        "version": "0.26.0"
+      },
+      {
+        "name": "scipy",
+        "version": "1.18.1"
+      },
+      {
+        "name": "six",
+        "version": "1.17.0"
+      },
+      {
+        "name": "sniffio",
+        "version": "1.3.1"
+      },
+      {
+        "name": "SQLAlchemy",
+        "version": "2.0.44"
+      },
+      {
+        "name": "starlette",
+        "version": "0.27.0"
+      },
+      {
+        "name": "tifffile",
+        "version": "2026.9.20"
+      },
+      {
+        "name": "typing_extensions",
+        "version": "4.16.0"
+      },
+      {
+        "name": "urllib3",
+        "version": "2.8.0"
+      },
+      {
+        "name": "uvicorn",
+        "version": "0.24.0"
+      },
+      {
+        "name": "uvloop",
+        "version": "0.23.0"
+      },
+      {
+        "name": "watchfiles",
+        "version": "1.3.0"
+      },
+      {
+        "name": "websockets",
+        "version": "17.2"
+      }
+    ],
+    "scope": "Coordinator hashes actual recovered originals and compares installed distributions to every lock row; no pixel/reduction/calibration claim."
+  },
+  "post_extension_default_coadd_replay": {
+    "whole_json_exact_vs_independent_incoming_rerun": true,
+    "byte_exact": true,
+    "sha256": "769f494a493fd5295dfaf8a02c47e8a7a0b90686c367da8369e9b26ef7a73a55",
+    "scope": "Same default implementation fresh coadd scenario/scan replay, not another observed spectrum."
+  },
+  "version2_native_replay": {
+    "spectral_fits": 112,
+    "byte_exact": true,
+    "sha256": "446c1f7a35ed8c8e272ba277576088f7a4dbbd6d75dcceb2dd6c1767b2891b63"
+  },
+  "versioned_yield_replay": {
+    "profiles": 5376,
+    "byte_exact": true,
+    "sha256": "f9129c0673de441f7ecf295928b9f9553a255a4d4c76b22a1fa895af81cc1eea"
+  },
+  "wavecorr_compact_replay": {
+    "report_sha256": "80ca86e7969e82bca424a963b39282f2fec42d589fb055238b4ac18510ab3fe6",
+    "comparisons": [
+      {
+        "hypothesis": "original_wavelength_scenarios",
+        "scenario": "nominal_formal_shared",
+        "maximum_flux_difference": 1.0658141036401503e-14,
+        "maximum_covariance_difference": 4.440892098500626e-16
+      },
+      {
+        "hypothesis": "original_wavelength_scenarios",
+        "scenario": "point_formal_shared",
+        "maximum_flux_difference": 0.0,
+        "maximum_covariance_difference": 0.0
+      },
+      {
+        "hypothesis": "original_wavelength_scenarios",
+        "scenario": "nominal_empirical_spectral_transport",
+        "maximum_flux_difference": 1.7763568394002505e-14,
+        "maximum_covariance_difference": 2.842170943040401e-14
+      },
+      {
+        "hypothesis": "original_wavelength_scenarios",
+        "scenario": "point_empirical_spectral_transport",
+        "maximum_flux_difference": 1.7763568394002505e-15,
+        "maximum_covariance_difference": 2.842170943040401e-14
+      },
+      {
+        "hypothesis": "original_wavelength_scenarios",
+        "scenario": "point_spatial_spectral_transport",
+        "maximum_flux_difference": 7.105427357601002e-15,
+        "maximum_covariance_difference": 4.440892098500626e-16
+      },
+      {
+        "hypothesis": "original_wavelength_scenarios",
+        "scenario": "nominal_spatial_spectral_transport",
+        "maximum_flux_difference": 1.0658141036401503e-14,
+        "maximum_covariance_difference": 2.842170943040401e-14
+      },
+      {
+        "hypothesis": "predicted_corrected_wavelength_scenarios",
+        "scenario": "nominal_formal_shared",
+        "maximum_flux_difference": 3.552713678800501e-15,
+        "maximum_covariance_difference": 4.440892098500626e-16
+      },
+      {
+        "hypothesis": "predicted_corrected_wavelength_scenarios",
+        "scenario": "point_formal_shared",
+        "maximum_flux_difference": 1.7763568394002505e-15,
+        "maximum_covariance_difference": 4.440892098500626e-16
+      },
+      {
+        "hypothesis": "predicted_corrected_wavelength_scenarios",
+        "scenario": "nominal_empirical_spectral_transport",
+        "maximum_flux_difference": 1.0658141036401503e-14,
+        "maximum_covariance_difference": 5.329070518200751e-15
+      },
+      {
+        "hypothesis": "predicted_corrected_wavelength_scenarios",
+        "scenario": "point_empirical_spectral_transport",
+        "maximum_flux_difference": 5.329070518200751e-15,
+        "maximum_covariance_difference": 2.842170943040401e-14
+      },
+      {
+        "hypothesis": "predicted_corrected_wavelength_scenarios",
+        "scenario": "point_spatial_spectral_transport",
+        "maximum_flux_difference": 7.105427357601002e-15,
+        "maximum_covariance_difference": 2.220446049250313e-16
+      },
+      {
+        "hypothesis": "predicted_corrected_wavelength_scenarios",
+        "scenario": "nominal_spatial_spectral_transport",
+        "maximum_flux_difference": 1.0658141036401503e-14,
+        "maximum_covariance_difference": 4.440892098500626e-16
+      }
+    ],
+    "scope": "Compact numerical replay of frozen original-WCS derivatives and derived likelihood; not original ASDF/GWCS or raw-pixel validation"
+  },
+  "optional_author_Cue_forward_test": {
+    "test": "tests/test_cue_grid.py::test_author_numpy_forward_replay_on_actual_pinned_weights",
+    "passed": 1,
+    "archive_sha256": "8c1089f4d7407c57558e14b0f26028379ca14d555a94f873834c767f3cc5abfb",
+    "scope": "Actual pinned author NumPy routine/weights for all2025 models and five networks; executed separately from cache-free release gate."
+  },
+  "scope": "Independent coordinator native GLS/blue-background/Cue oracles plus explicitly labeled same-implementation replays; no new photons, source identity, empirical calibration or model odds.",
+  "composed_spectral_replay": {
+    "spectral_fits": 336,
+    "byte_exact": true,
+    "sha256": "fd14eb0028016c7c66c09cdae74a6474416e11c6a29003103e274887ab0fdc50",
+    "scope": "Coordinator fresh same-implementation replay of twelve alternatives after scientific merge; independent solver is separately recorded."
+  }
+}

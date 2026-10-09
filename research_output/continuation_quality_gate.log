@@ -1,0 +1,98 @@
+[QUALITY] ruff-check: /workspace/scratch/68673a38e6a6/research-venv/bin/python -m ruff check --select E9,F core_api/routers/runs.py core_api/services/strict_validation.py core_api/services/run_service.py run_discovery.py discovery/batch_runner.py scripts/smoke_api.py discovery/psf_noise.py runner/tests/test_psf_noise.py data_pipeline/original_images.py tools/jwst/astrometry.py discovery/external_astrometry.py tests/test_external_astrometry.py discovery/image_photometry_rerun.py tools/jwst/common_coverage.py tests/test_image_photometry_rerun.py tools/jwst/photometry.py tools/jwst/flux_calibration.py tools/jwst/dropout.py discovery/build_universe_table.py discovery/proposal_channels.py discovery/multi_epoch.py tests/test_multi_epoch_physical.py tools/jwst/spectroscopy.py tools/jwst/visualization.py tools/jwst/fits_loader.py core_api/startup.py discovery/external_psf_stress.py discovery/validation_audit.py discovery/validation_metrics.py data_pipeline/research_sources.py data_pipeline/reference_cohorts.py tests/test_spectrum_reference.py data_pipeline/followup_data.py data_pipeline/mom_native_batch.py data_pipeline/real_validation_acquire.py data_pipeline/rotating_benchmarks.py discovery/adversarial_native_inputs.py discovery/adversarial_noise_controls.py discovery/chemistry_identifiability.py discovery/deep_reference_comparison.py discovery/enrichment_constraints.py discovery/f444w_repeat_screen.py discovery/native_psf.py discovery/photometry_sensitivity.py discovery/real_validation.py discovery/stellar_aperture.py discovery/survivor_continuum.py runner/tests/test_native_psf.py runner/tests/test_stellar_aperture.py scripts/quality_gate.py tests/test_adversarial_native_operator.py tests/test_adversarial_noise_controls.py tests/test_chemistry_identifiability.py tests/test_deep_reference_comparison.py tests/test_enrichment_constraints.py tests/test_f444w_repeat_screen.py tests/test_followup_data.py tests/test_joint_band_selection.py tests/test_line_sensitivity.py tests/test_mom_native_batch.py tests/test_photometry_sensitivity.py tests/test_point_resolution.py tests/test_real_validation.py tests/test_survivor_continuum.py tools/jwst/line_report.py tools/jwst/line_sensitivity.py tools/jwst/point_resolution.py data_pipeline/atomic_inputs.py data_pipeline/survivor_deep_data.py discovery/atomic_enrichment.py discovery/continuation_final_review.py discovery/continuation_followup_review.py discovery/continuation_review.py discovery/covariant_model_review.py discovery/deep_control_recovery.py discovery/empirical_imaging_controls.py discovery/formation_predictions.py discovery/independent_repeat_vetting.py discovery/observed_template_injections.py discovery/source_patch_diagnostics.py discovery/survivor_atmosphere.py discovery/survivor_deep_model.py discovery/survivor_deep_plot.py scripts/render_repeat_stamp.py tests/test_atomic_enrichment.py tests/test_atomic_grid.py tests/test_continuation_final_review.py tests/test_continuation_followup_review.py tests/test_continuation_review.py tests/test_cue_grid.py tests/test_deep_control_recovery.py tests/test_empirical_imaging_controls.py tests/test_formation_predictions.py tests/test_independent_repeat_vetting.py tests/test_mom_native_reduction.py tests/test_mom_native_spatial_covariance.py tests/test_multiplet_refit.py tests/test_native_chemistry.py tests/test_niv_doublet_refit.py tests/test_observed_template_injections.py tests/test_source_patch_diagnostics.py tests/test_survivor_atmosphere.py tests/test_survivor_deep_data.py tests/test_survivor_deep_model.py tools/jwst/atomic_grid.py tools/jwst/cue_grid.py tools/jwst/multiplet_refit.py tools/jwst/native_reduction.py tools/jwst/native_spatial_covariance.py tools/jwst/niv_doublet_refit.py discovery/niv_yield_sensitivity.py tests/test_composed_spectral_refit.py tests/test_mom_native_wavecorr.py tests/test_niv_yield_sensitivity.py tools/jwst/composed_spectral_refit.py tools/jwst/native_wavecorr.py discovery/continuation_composed_review.py discovery/continuation_physical_review.py discovery/continuation_wavecorr_review.py discovery/continuation_yield_version_review.py tests/test_continuation_physical_review.py tests/test_continuation_wavecorr_review.py tests/test_continuation_yield_version_review.py
+All checks passed!
+[QUALITY][OK] ruff-check
+[QUALITY] ruff-format-check: /workspace/scratch/68673a38e6a6/research-venv/bin/python -m ruff format --check core_api/routers/runs.py core_api/services/strict_validation.py core_api/services/run_service.py run_discovery.py discovery/batch_runner.py scripts/smoke_api.py
+6 files already formatted
+[QUALITY][OK] ruff-format-check
+[QUALITY] mypy: /workspace/scratch/68673a38e6a6/research-venv/bin/python -m mypy --follow-imports=silent --ignore-missing-imports --no-strict-optional --disable-error-code=import-untyped run_discovery.py discovery/batch_runner.py scripts/smoke_api.py
+Success: no issues found in 3 source files
+[QUALITY][OK] mypy
+[QUALITY] pytest: /workspace/scratch/68673a38e6a6/research-venv/bin/python -m pytest -q
+.......................................................................s [ 12%]
+s....................................................................... [ 24%]
+........................................................................ [ 37%]
+......................................................................s. [ 49%]
+........................................................................ [ 61%]
+........................................................................ [ 74%]
+........................................................................ [ 86%]
+........................................................................ [ 98%]
+......                                                                   [100%]
+=============================== warnings summary ===============================
+core_api/tests/test_allowed_tools.py: 2 warnings
+core_api/tests/test_api.py: 8 warnings
+core_api/tests/test_strict_run_validation.py: 6 warnings
+core_api/tests/test_tool_registry.py: 1 warning
+  /workspace/scratch/68673a38e6a6/research-venv/lib/python3.12/site-packages/httpx/_client.py:690: DeprecationWarning: The 'app' shortcut is now deprecated. Use the explicit style 'transport=WSGITransport(app=...)' instead.
+    warnings.warn(message, DeprecationWarning)
+
+tests/test_deep_control_recovery.py::test_area_detection_can_fail_real_aperture_signal
+tests/test_deep_control_recovery.py::test_area_detection_can_fail_real_aperture_signal
+  /workspace/scratch/68673a38e6a6/jwst-clean-final/discovery/deep_control_recovery.py:146: AstropyDeprecationWarning: 'npixels' was deprecated in version 3.0 and will be removed in version 4.0. Use argument 'n_pixels' instead.
+    segment = detect_sources(values, threshold=DETECTION_SIGMA * sigma, npixels=npixels, mask=~valid)
+
+tests/test_deep_control_recovery.py::test_area_detection_can_fail_real_aperture_signal
+tests/test_image_photometry_rerun.py::test_detector_photometry_audit_chain_keeps_proposals_separate
+tests/test_observed_template_injections.py::test_min_connected_area_is_different_from_aperture_flux
+tests/test_observed_template_injections.py::test_centroid_shift_gives_nonrecovery_at_high_flux
+tests/test_observed_template_injections.py::test_centroid_shift_gives_nonrecovery_at_high_flux
+  /workspace/scratch/68673a38e6a6/research-venv/lib/python3.12/site-packages/astropy/utils/decorators.py:620: AstropyDeprecationWarning: 'npixels' was deprecated in version 3.0 and will be removed in version 4.0. Use argument 'n_pixels' instead.
+    return function(*args, **kwargs)
+
+tests/test_deep_control_recovery.py::test_area_detection_can_fail_real_aperture_signal
+  /workspace/scratch/68673a38e6a6/jwst-clean-final/discovery/deep_control_recovery.py:154: AstropyDeprecationWarning: The 'xcentroid' attribute was deprecated in version 3.0; use 'x_centroid' instead. It will be removed in version 4.0.
+    x, y = float(row.xcentroid), float(row.ycentroid)
+
+tests/test_deep_control_recovery.py::test_area_detection_can_fail_real_aperture_signal
+  /workspace/scratch/68673a38e6a6/jwst-clean-final/discovery/deep_control_recovery.py:154: AstropyDeprecationWarning: The 'ycentroid' attribute was deprecated in version 3.0; use 'y_centroid' instead. It will be removed in version 4.0.
+    x, y = float(row.xcentroid), float(row.ycentroid)
+
+tests/test_deep_control_recovery.py::test_area_detection_can_fail_real_aperture_signal
+tests/test_observed_template_injections.py::test_min_connected_area_is_different_from_aperture_flux
+  /workspace/scratch/68673a38e6a6/research-venv/lib/python3.12/site-packages/photutils/segmentation/detect.py:394: NoDetectionsWarning: No sources were found. Try lowering the threshold or pixels parameters.
+    warnings.warn(msg, NoDetectionsWarning)
+
+tests/test_external_astrometry.py::test_small_reference_sample_has_no_degenerate_confidence_interval
+  /workspace/scratch/68673a38e6a6/jwst-clean-final/tools/jwst/astrometry.py:39: AstropyDeprecationWarning: 'npixels' was deprecated in version 3.0 and will be removed in version 4.0. Use argument 'n_pixels' instead.
+    segments = detect_sources(
+
+tests/test_external_astrometry.py::test_small_reference_sample_has_no_degenerate_confidence_interval
+  /workspace/scratch/68673a38e6a6/jwst-clean-final/tools/jwst/astrometry.py:45: AstropyDeprecationWarning: The 'xcentroid' attribute was deprecated in version 3.0; use 'x_centroid' instead. It will be removed in version 4.0.
+    points = np.column_stack([catalog.xcentroid, catalog.ycentroid]).astype(float)
+
+tests/test_external_astrometry.py::test_small_reference_sample_has_no_degenerate_confidence_interval
+  /workspace/scratch/68673a38e6a6/jwst-clean-final/tools/jwst/astrometry.py:45: AstropyDeprecationWarning: The 'ycentroid' attribute was deprecated in version 3.0; use 'y_centroid' instead. It will be removed in version 4.0.
+    points = np.column_stack([catalog.xcentroid, catalog.ycentroid]).astype(float)
+
+tests/test_image_photometry_rerun.py::test_detector_photometry_audit_chain_keeps_proposals_separate
+  /workspace/scratch/68673a38e6a6/jwst-clean-final/tools/jwst/source_detection.py:99: AstropyDeprecationWarning: 'npixels' was deprecated in version 3.0 and will be removed in version 4.0. Use argument 'n_pixels' instead.
+    segmentation = photutils_detect_sources(
+
+tests/test_image_photometry_rerun.py::test_detector_photometry_audit_chain_keeps_proposals_separate
+  /workspace/scratch/68673a38e6a6/jwst-clean-final/tools/jwst/source_detection.py:181: AstropyDeprecationWarning: The 'xcentroid' attribute was deprecated in version 3.0; use 'x_centroid' instead. It will be removed in version 4.0.
+    x = float(source.xcentroid)
+
+tests/test_image_photometry_rerun.py::test_detector_photometry_audit_chain_keeps_proposals_separate
+  /workspace/scratch/68673a38e6a6/jwst-clean-final/tools/jwst/source_detection.py:182: AstropyDeprecationWarning: The 'ycentroid' attribute was deprecated in version 3.0; use 'y_centroid' instead. It will be removed in version 4.0.
+    y = float(source.ycentroid)
+
+tests/test_observed_template_injections.py::test_min_connected_area_is_different_from_aperture_flux
+tests/test_observed_template_injections.py::test_min_connected_area_is_different_from_aperture_flux
+tests/test_observed_template_injections.py::test_centroid_shift_gives_nonrecovery_at_high_flux
+tests/test_observed_template_injections.py::test_centroid_shift_gives_nonrecovery_at_high_flux
+  /workspace/scratch/68673a38e6a6/jwst-clean-final/discovery/observed_template_injections.py:210: AstropyDeprecationWarning: 'npixels' was deprecated in version 3.0 and will be removed in version 4.0. Use argument 'n_pixels' instead.
+    segment = detect_sources(values-median, threshold=5*sigma, npixels=min_pixels)
+
+tests/test_observed_template_injections.py::test_min_connected_area_is_different_from_aperture_flux
+tests/test_observed_template_injections.py::test_centroid_shift_gives_nonrecovery_at_high_flux
+tests/test_observed_template_injections.py::test_centroid_shift_gives_nonrecovery_at_high_flux
+  /workspace/scratch/68673a38e6a6/jwst-clean-final/discovery/observed_template_injections.py:216: AstropyDeprecationWarning: The 'xcentroid' attribute was deprecated in version 3.0; use 'x_centroid' instead. It will be removed in version 4.0.
+    distances = np.array([np.hypot(float(r.xcentroid)-cx, float(r.ycentroid)-cy)*scale_arcsec for r in catalog])
+
+tests/test_observed_template_injections.py::test_min_connected_area_is_different_from_aperture_flux
+tests/test_observed_template_injections.py::test_centroid_shift_gives_nonrecovery_at_high_flux
+tests/test_observed_template_injections.py::test_centroid_shift_gives_nonrecovery_at_high_flux
+  /workspace/scratch/68673a38e6a6/jwst-clean-final/discovery/observed_template_injections.py:216: AstropyDeprecationWarning: The 'ycentroid' attribute was deprecated in version 3.0; use 'y_centroid' instead. It will be removed in version 4.0.
+    distances = np.array([np.hypot(float(r.xcentroid)-cx, float(r.ycentroid)-cy)*scale_arcsec for r in catalog])
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+[QUALITY][OK] pytest

@@ -166,4 +166,4 @@ archive, and for what this pipeline can realistically be used to discover.
 
 ## Verified research baseline
 
-See [takeover status and reproducible experiments](docs/TAKEOVER_STATUS.md) for merged improvements, public reference data, measured recovery limits, and next scientific work.
+See [current takeover status](docs/TAKEOVER_STATUS.md) and the [final research report](docs/FINAL_RESEARCH_REPORT.md) for independently validated native spectra, versioned atomic models, repeat/multiband imaging tests, merged PRs and prioritized experiments. No new source, abundance, polluter or cosmological discovery is claimed.

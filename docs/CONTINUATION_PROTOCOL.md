@@ -55,3 +55,49 @@ Before merging, run focused scientific controls, independently inspect the
 measurement/uncertainty contract, and run the integrated Python 3.12 quality
 gate. Record any external dependency without substituting synthetic observations.
 Follow-up rounds operate on merged results and retain earlier snapshots.
+
+## Executed continuation rounds
+
+The initial incoming baseline was reproduced before extension. Rotations kept
+no more than six specialist workers active with the coordinator, while retaining
+eight distinct responsibilities. Published result branches are separate from
+worker branches; the GitHub Git-object connector preserved reviewed committed
+file deltas when anonymous fetch worked but authenticated command-line push did
+not. Science publication did not modify the research-worker runtime sandbox.
+
+| Round | Owned follow-ups and merged-input dependencies | Independent validation |
+|---|---|---|
+| Baseline | Coordinator; exact master PR #29 images/native hashes, fresh GOODS pixels, coadd scans and compact replay | Locked gate and byte/numerical controls |
+| Native and deep observations | Astrometry: distinct SMACS repeat; PSF: field noise/tails; real sources: frozen deep controls; photometry: data then spatial models; spectroscopy: nine CAL signed extraction; literature: atomic/Cue; enrichment: full-covariant mixtures | Actual hashes/units/contributors; reviewer raw-native rerun, latent GLS and independent atomic/NNLS solvers |
+| Measured sensitivity and recovery | Spectroscopy: spatial covariance after native; literature: native chemistry after atomic/native; real sources: observed-profile injections after controls; photometry: atmosphere after calibrated deep flux; PSF:1043 patch after repeat/noise | Actual replay, SVD/cluster oracle, independent author-table parsing, paired trial audit |
+| Physical contracts and formation | Literature: physical v1 multiplets then separate N IV doublet v2; enrichment: formation after native chemistry/yields; spectroscopy: original-GWCS toy-reference sensitivity after shared-noise transport | Fresh per-template covariance, independent full-native GLS/Fieller, quadrature/conservation, exact original9CAL WCS |
+| Final bounded composition | Literature: v2 doublet × original/toy wavelength × three noise hypotheses after both inputs merge; enrichment: v2 yield bridge with each fresh covariance; reviewer: frozen approvals/receipts; coordinator: clean gate and current report | Independent constrained profiles and full-native solver; original defaults stay unchanged; alternate hypotheses never pooled |
+
+Review found and resolved a deep blank-control companion-offset bug, an
+injection annulus corner bug, brittle last-bit numerical replay assertions,
+a historical atmosphere prose count, and an uninitialized science-array
+surrogate in the new compact wavelength loader. Scientific reruns or explicit
+unchanged-data checks precede merge; these defects are not left as caveats.
+
+## Acquisition and recovery ledger
+
+Newly selected public scientific inputs for this continuation total
+**228,790,074 bytes**: distinct SMACS120,254,400; deep multiband/atmosphere
+47,882,944; PyNeb/Cue60,636,277; logged wavelength reference 16,453. Reused
+PSFs and existing native data are not counted again. Optional WCS software and
+inspected algorithm source total 3,425,987payload bytes and are separately
+receipted, including a superseded wheel. No purchased observation or account
+mutation was required.
+
+A late transient cache loss required restoring the exact locked environment and
+nine previously pinned CAL originals. Repeated native transfer was464,135,040
+bytes under the native acquisition ceiling; original pins and derivative audits
+matched. `research_output/native_cache_recovery.json` records that recovery.
+The lost earlier13-image cache is not represented as presently available; its
+completed baseline pixel rerun and committed independent reviews survived.
+
+A full public Cloudyc23.01 source archive is approximately323MB and exceeds the
+separate100MiB atomic allocation. It was not downloaded. A complete N IV-inclusive
+photoionization output subset or an explicitly larger bounded modeling round
+remains unfinished computational work, distinct from missing author extraction
+settings or new higher-resolution observations.
