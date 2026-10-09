@@ -2,6 +2,10 @@
 
 Current verified results and corrections are in [docs/TAKEOVER_STATUS.md](docs/TAKEOVER_STATUS.md).
 The historical measurements below retain their original scope and reduction version.
+In particular, older statements about absent F444W repeat coverage or unavailable
+SMACS repeats are superseded by the current status and continuation reports.
+The latest native atomic inference uses the separately versioned N IV doublet;
+older coadd/single-line results remain historical conditional alternatives.
 
 Companion to `FINDINGS.md` (the audit of the shipped candidate catalog). This
 document covers what was built, what was measured against real data, and an

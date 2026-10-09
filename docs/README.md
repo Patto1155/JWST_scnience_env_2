@@ -2,7 +2,7 @@
 
 See **[NORTH_STAR.md](NORTH_STAR.md)** for the vision and goals of Science OS.
 
-For scientific claims, start with [the verified takeover baseline](TAKEOVER_STATUS.md).
+For scientific claims, start with [the current verified status](TAKEOVER_STATUS.md) and [consolidated research report](FINAL_RESEARCH_REPORT.md). The incoming PR29 status/report are preserved as historical snapshots.
 It supersedes stronger historical claims where the original images, independent
 controls or calibration have not been reproduced. [The current research protocol](RESEARCH_PROTOCOL.md)
 defines evidence labels, role ownership and the frozen environment.
