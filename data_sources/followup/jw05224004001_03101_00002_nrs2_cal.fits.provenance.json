@@ -1,0 +1,12 @@
+{
+  "requested_url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00002_nrs2_cal.fits",
+  "resolved_url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00002_nrs2_cal.fits",
+  "retrieved_utc": "2026-10-09T07:26:06.780631+00:00",
+  "bytes": 51563520,
+  "sha256": "c2d318f836570e3cc77463ec91a8b2a8982deb8df4762873dcad3bdfbd03bc9f",
+  "content_type": "application/octet-stream",
+  "etag": "\"6a5ef9fa-312cc00\"",
+  "last_modified": "Tue, 21 Jul 2026 04:47:54 GMT",
+  "product_id": "mom-exposure-00002-cal",
+  "max_bytes": 62914560
+}

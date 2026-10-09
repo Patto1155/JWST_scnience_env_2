@@ -1,0 +1,12 @@
+{
+  "requested_url": "https://raw.githubusercontent.com/TheSkyentist/unite/156e29eb75f788f90041b5d2bbae27ae9dac78d8/unite/instrument/nirspec/disperser.py",
+  "resolved_url": "https://raw.githubusercontent.com/TheSkyentist/unite/156e29eb75f788f90041b5d2bbae27ae9dac78d8/unite/instrument/nirspec/disperser.py",
+  "retrieved_utc": "2026-10-09T07:20:18.970030+00:00",
+  "bytes": 19220,
+  "sha256": "f9b5c59ee3ad14c54fbe1d7e2f939995766c9a839c9629757f4994cbd557de4e",
+  "content_type": "text/plain; charset=utf-8",
+  "etag": "\"26ad39863b2be8a7350ac757ab7938cd4666d2126b789a5793078f11b304c035\"",
+  "last_modified": null,
+  "product_id": "source",
+  "max_bytes": 8388608
+}

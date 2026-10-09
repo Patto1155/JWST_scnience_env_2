@@ -1,0 +1,22 @@
+{
+  "kind": "primary_model_mixed_ISM_table_not_raw_stellar_yields",
+  "source_receipt": {
+    "requested_url": "https://arxiv.org/html/2405.11235v1",
+    "resolved_url": "https://arxiv.org/html/2405.11235v1",
+    "retrieved_utc": "2026-10-09T07:24:50.008408+00:00",
+    "bytes": 294734,
+    "sha256": "63b145f7ab342df69712dfb7ae0972d6db7a4f85a80cf1efc0bb93c82544ffa2",
+    "content_type": "text/html; charset=utf-8",
+    "etag": "\"CK79osn9uZYDEAE=\"",
+    "last_modified": "Mon, 24 Aug 2026 19:18:16 GMT",
+    "product_id": "nandal-table2-primary-html",
+    "max_bytes": 1048576
+  },
+  "rows": 24,
+  "transform": "ExtractHTMLTable2; NC=NO-CO conservative unpaired endpoint envelope",
+  "solar_log_NC": -0.63,
+  "solar_basis": "SamepaperTable3logNO=-.86 minus logCO=-.23",
+  "science_limit": "Table2dilution constrained toGNz11oxygenrange, notMoMfit; modelrangesare notstatistical uncertainty",
+  "bytes": 3882,
+  "sha256": "ab4d0e709265ddd00055306f0c845a86faf7383162363d4865d7e139ce1c82fa"
+}
