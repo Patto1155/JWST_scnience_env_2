@@ -16,6 +16,47 @@ from discovery.survivor_deep_model import (
 )
 
 
+def test_blank_deblend_operator_keeps_actual_science_relative_geometry(monkeypatch):
+    """A target-only recentering must not alter its separation from a companion."""
+    from astropy.wcs import WCS
+
+    from discovery import survivor_deep_model as model
+
+    scale, size, half = 0.05, 41, 20
+    psf = elliptical_gaussian(size, 1.4, 1.0, 0.0)
+    params = np.array([0.073, -0.046, 0.08, 0.6, 0.4])
+    expected = image_template(psf, scale, params)
+    companion = image_template(psf, scale, np.array([-0.27, -0.2, 0.03, 1.0, 0.0]))
+    wcs = WCS(naxis=2)
+    wcs.wcs.ctype = ["RA---TAN", "DEC--TAN"]
+    wcs.wcs.crpix = [151, 151]
+    wcs.wcs.crval = [53, -27]
+    wcs.wcs.cdelt = [-scale / 3600, scale / 3600]
+    rng = np.random.default_rng(871)
+    bundle = {
+        "sci": rng.normal(size=(300, 300)),
+        "err": np.ones((300, 300)),
+        "validity_mask": np.ones((300, 300), bool),
+        "wcs": wcs,
+        "header": {"BUNIT": "nanoJansky"},
+    }
+    monkeypatch.setattr(model, "detect_sources", lambda *args, **kwargs: None)
+    original_fit = model.linear_fit
+    sampled = []
+
+    def checked_fit(data, error, target, mask, pixel_scale, companion_arg=None):
+        # Validate against the independently constructed science target + companion.
+        np.testing.assert_allclose(target, expected, atol=1e-15)
+        np.testing.assert_array_equal(companion_arg, companion)
+        sampled.append(True)
+        return original_fit(data, error, target, mask, pixel_scale, companion_arg)
+
+    monkeypatch.setattr(model, "linear_fit", checked_fit)
+    measured = model.blank_operator_noise(bundle, psf, params, scale, half, companion)
+    assert measured["count"] >= 20
+    assert len(sampled) == measured["count"]
+
+
 def analytic_image(flux=120.0):
     size, scale = 41, 0.05
     psf = elliptical_gaussian(size, 1.8, 1.0, 0.0)

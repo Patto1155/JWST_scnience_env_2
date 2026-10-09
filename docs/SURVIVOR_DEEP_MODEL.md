@@ -48,20 +48,20 @@ stellar populations, dust, lines and IGM transfer.
 
 | Band | Source 98 target in two-component model (nJy) | Source 254 (nJy) | Source 46 (nJy) |
 |---|---:|---:|---:|
-| F090W | 4.14 ± 2.12 | 17.84 ± 0.79 | 0.43 ± 0.39 |
-| F115W | 11.86 ± 1.81 | 36.26 ± 0.66 | 3.91 ± 0.30 |
-| F150W | 63.40 ± 2.00 | 73.99 ± 0.96 | 3.00 ± 0.31 |
-| F200W | 223.38 ± 1.23 | 292.03 ± 0.44 | 2.12 ± 0.45 |
-| F277W | 821.43 ± 1.88 | 739.37 ± 0.94 | 9.74 ± 0.46 |
-| F356W | 2162.17 ± 1.88 | 877.70 ± 1.02 | 68.69 ± 0.47 |
-| F444W | 3962.46 ± 1.53 | 987.49 ± 1.65 | 644.88 ± 0.67 |
+| F090W | 4.14 ± 2.45 | 17.84 ± 0.81 | 0.43 ± 0.37 |
+| F115W | 11.87 ± 2.04 | 36.26 ± 0.76 | 3.91 ± 0.30 |
+| F150W | 63.40 ± 2.49 | 73.99 ± 0.96 | 3.00 ± 0.33 |
+| F200W | 223.38 ± 1.06 | 292.03 ± 0.38 | 2.12 ± 0.32 |
+| F277W | 821.43 ± 1.94 | 739.37 ± 0.97 | 9.74 ± 0.47 |
+| F356W | 2162.17 ± 1.72 | 877.70 ± 1.13 | 68.69 ± 0.44 |
+| F444W | 3962.46 ± 1.97 | 987.49 ± 1.56 | 644.88 ± 0.58 |
 
 Errors above are conditional background-scaled formal errors; **shape and
 calibration floors are excluded**. Source 98 has plainly inadequate spatial
 residuals, so its small formal errors do not justify physical total fluxes.
 
 **254: a measured blue counterpart removes the original nondetection premise.**
-Its F090W model flux is 17.84 ± 0.79 nJy after the empirical 1.17 background
+Its F090W model flux is 17.84 ± 0.81 nJy after the empirical 1.20 background
 scale from 66 blanks. The freely fitted blue centroid lies 0.010 arcsec from
 the fixed F444 position. Fit radii 0.35/0.50/0.65 arcsec give
 16.72/17.44/17.84 nJy; rotating the modeled PSF by 30 degrees gives 17.44 nJy.
@@ -101,12 +101,12 @@ galaxy or artifact identity follows from these ratios.
 
 | Source | Assumed independent floor | Smooth chi2 / 4 dof | 1216-step chi2 / 4 dof | 4000-step chi2 / 2 dof | Blackbody chi2 / 5 dof |
 |---|---:|---:|---:|---:|---:|
-| 98, deblended target | 5% | 4.94 | 21.64 | 7.32 | 135.70 |
-| 98, deblended target | 15% | 1.33 | 5.66 | 0.82 | 27.42 |
-| 254 | 5% | 100.18 | 182.46 | 0.13 | 233.85 |
-| 254 | 15% | 13.41 | 23.89 | 0.02 | 44.12 |
-| 46 | 5% | 105.22 | 207.40 | 86.11 | 241.98 |
-| 46 | 15% | 40.24 | 72.16 | 25.63 | 85.25 |
+| 98, deblended target | 5% | 4.29 | 20.14 | 7.32 | 126.69 |
+| 98, deblended target | 15% | 1.21 | 4.82 | 0.82 | 25.93 |
+| 254 | 5% | 99.83 | 182.23 | 0.12 | 230.08 |
+| 254 | 15% | 13.41 | 23.89 | 0.02 | 43.99 |
+| 46 | 5% | 105.11 | 208.82 | 90.01 | 248.47 |
+| 46 | 15% | 40.27 | 73.84 | 26.71 | 89.92 |
 
 Different family flexibility, optimized parameter boundaries, correlated
 systematics and inadequate source shapes prohibit converting this table into
@@ -131,9 +131,9 @@ python -m discovery.survivor_deep_plot \
 python -m pytest tests/test_survivor_deep_data.py tests/test_survivor_deep_model.py
 ```
 
-Eight analytic controls independently verify signed flux/background recovery,
+Nine analytic controls independently verify signed flux/background recovery,
 two-component flux covariance against SVD, masked pixels, finite-wing accounting,
-photon integration and corrupt cached receipts. Three acquisition tests enforce
+photon integration, corrupt cached receipts and exact science/blank companion geometry. Three acquisition tests enforce
 the pinned cache and byte-ceiling contract. Baseline continuum/deep-reference/
 photometry sensitivity checks gave 15 passes before these extensions.
 
@@ -144,3 +144,10 @@ nebular+dust population models for 46. All three need genuinely disjoint repeat
 contributor sets and physical SED libraries before a reliable redshift or source
 identity. The three selected objects cannot estimate population contamination,
 completeness, halo abundance or cosmological tension.
+
+An independent review caught and corrected a blank-template phase mismatch before
+merge: the original background control recentered only the target while leaving
+its companion shifted. Blank fits now preserve the exact science centroid,
+phase and relative component separation. All empirical errors and continuum
+scenarios above were regenerated after that correction; measured science fluxes
+remain unchanged. A nonzero-phase companion regression tests this contract.

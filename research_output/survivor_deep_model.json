@@ -2,7 +2,7 @@
   "schema_version": 1,
   "evidence_kind": "actual_pinned_deep_mosaics_conditional_image_and_continuum_models",
   "manifest_sha256": "3f61fa1ef58ac691610dacaa99bc61f7722656aa23247d655fb4e38a97c51117",
-  "code_sha256": "a63d844932b80e5ffa91bfb7defc8124efad0f53f9d7b57adecb1d30fafbbde6",
+  "code_sha256": "fea1ef640bc21995d0a9c90617af02900e502d6f70cd725a95bb2f22256d2d47",
   "selection_catalog_sha256": "aa0724bb51373a23caf87ffe5d84606077fa46213ea51e7741ff357d9dbd199d",
   "bands": [
     "F090W",
@@ -133,17 +133,17 @@
           "empirical_background": {
             "status": "measured_conditional_background_operator_scatter",
             "count": 65,
-            "robust_sigma_njy": 1.673159133894208,
-            "ordinary_sigma_njy": 2.2593730721153182,
-            "median_flux_njy": -0.2891979750065452,
-            "diagonal_scale_factor": 0.9063092584512086,
+            "robust_sigma_njy": 1.8627705933781498,
+            "ordinary_sigma_njy": 2.419480758394039,
+            "median_flux_njy": -0.30033947701606634,
+            "diagonal_scale_factor": 1.1562175482393122,
             "normalized_range": [
-              -3.0805446765429547,
-              4.0474908549542565
+              -2.821799958634483,
+              5.27258569125767
             ],
             "limitation": "Local source-mask/depth assumptions; not source shot-noise variance or calibrated Gaussian-tail probability"
           },
-          "background_scaled_error_njy": 2.1193214960565276,
+          "background_scaled_error_njy": 2.4503967041013497,
           "aperture_sensitivity": [
             {
               "radius_arcsec": 0.15,
@@ -332,17 +332,17 @@
           "empirical_background": {
             "status": "measured_conditional_background_operator_scatter",
             "count": 60,
-            "robust_sigma_njy": 1.6721459739664954,
-            "ordinary_sigma_njy": 1.8133842904448165,
-            "median_flux_njy": -0.19695134179030302,
-            "diagonal_scale_factor": 1.056934067701205,
+            "robust_sigma_njy": 1.8747942986226118,
+            "ordinary_sigma_njy": 2.0694654008850257,
+            "median_flux_njy": 0.2537317960362141,
+            "diagonal_scale_factor": 1.18830825700728,
             "normalized_range": [
-              -2.1718220346851207,
-              3.152282722484273
+              -2.4354154097616467,
+              3.4187122821813407
             ],
             "limitation": "Local source-mask/depth assumptions; not source shot-noise variance or calibrated Gaussian-tail probability"
           },
-          "background_scaled_error_njy": 1.8137811342530916,
+          "background_scaled_error_njy": 2.0392294695588244,
           "aperture_sensitivity": [
             {
               "radius_arcsec": 0.15,
@@ -531,17 +531,17 @@
           "empirical_background": {
             "status": "measured_conditional_background_operator_scatter",
             "count": 61,
-            "robust_sigma_njy": 2.0791320344475372,
-            "ordinary_sigma_njy": 1.9646357776352819,
-            "median_flux_njy": 0.24356445324428455,
-            "diagonal_scale_factor": 1.1932536795396806,
+            "robust_sigma_njy": 2.566819511904542,
+            "ordinary_sigma_njy": 2.3737695019801794,
+            "median_flux_njy": 0.07221894214422421,
+            "diagonal_scale_factor": 1.4839058602807522,
             "normalized_range": [
-              -2.341773384988431,
-              3.3294172271427622
+              -2.9622476658191883,
+              3.0237258664597193
             ],
             "limitation": "Local source-mask/depth assumptions; not source shot-noise variance or calibrated Gaussian-tail probability"
           },
-          "background_scaled_error_njy": 2.005306476337234,
+          "background_scaled_error_njy": 2.493758102672428,
           "aperture_sensitivity": [
             {
               "radius_arcsec": 0.15,
@@ -730,17 +730,17 @@
           "empirical_background": {
             "status": "measured_conditional_background_operator_scatter",
             "count": 55,
-            "robust_sigma_njy": 1.5392665992876478,
-            "ordinary_sigma_njy": 1.9996139717132255,
-            "median_flux_njy": -0.3458563003456063,
-            "diagonal_scale_factor": 1.3046136843832492,
+            "robust_sigma_njy": 1.4769984194022003,
+            "ordinary_sigma_njy": 1.9433933497098974,
+            "median_flux_njy": -0.2816262566151754,
+            "diagonal_scale_factor": 1.1246324193763064,
             "normalized_range": [
-              -3.8497128509001093,
-              6.755220883708985
+              -3.0527057750939868,
+              3.8042964886232493
             ],
             "limitation": "Local source-mask/depth assumptions; not source shot-noise variance or calibrated Gaussian-tail probability"
           },
-          "background_scaled_error_njy": 1.2297018180416721,
+          "background_scaled_error_njy": 1.060055208135762,
           "aperture_sensitivity": [
             {
               "radius_arcsec": 0.15,
@@ -929,17 +929,17 @@
           "empirical_background": {
             "status": "measured_conditional_background_operator_scatter",
             "count": 50,
-            "robust_sigma_njy": 1.8888319441561832,
-            "ordinary_sigma_njy": 1.9517892208549508,
-            "median_flux_njy": 0.09505395601738562,
-            "diagonal_scale_factor": 1.5041397352227628,
+            "robust_sigma_njy": 1.98077536437906,
+            "ordinary_sigma_njy": 2.05887474221606,
+            "median_flux_njy": -0.03439746706023889,
+            "diagonal_scale_factor": 1.5569790535027621,
             "normalized_range": [
-              -3.400061219877943,
-              5.113775776130824
+              -3.4636557856809644,
+              4.279656432415827
             ],
             "limitation": "Local source-mask/depth assumptions; not source shot-noise variance or calibrated Gaussian-tail probability"
           },
-          "background_scaled_error_njy": 1.877228947022025,
+          "background_scaled_error_njy": 1.9431746138329842,
           "aperture_sensitivity": [
             {
               "radius_arcsec": 0.15,
@@ -1128,17 +1128,17 @@
           "empirical_background": {
             "status": "measured_conditional_background_operator_scatter",
             "count": 55,
-            "robust_sigma_njy": 1.965601973724281,
-            "ordinary_sigma_njy": 1.831359186618807,
-            "median_flux_njy": -0.8364945931139603,
-            "diagonal_scale_factor": 1.5470758208181299,
+            "robust_sigma_njy": 1.6303951837537751,
+            "ordinary_sigma_njy": 1.8464921095935043,
+            "median_flux_njy": -0.8490467394998132,
+            "diagonal_scale_factor": 1.4129946190080853,
             "normalized_range": [
-              -2.977077022857328,
-              3.4189277405702434
+              -3.1640402640312724,
+              3.712610463274294
             ],
             "limitation": "Local source-mask/depth assumptions; not source shot-noise variance or calibrated Gaussian-tail probability"
           },
-          "background_scaled_error_njy": 1.8798898609403671,
+          "background_scaled_error_njy": 1.7169644965635211,
           "aperture_sensitivity": [
             {
               "radius_arcsec": 0.15,
@@ -1327,17 +1327,17 @@
           "empirical_background": {
             "status": "measured_conditional_background_operator_scatter",
             "count": 69,
-            "robust_sigma_njy": 2.092512834937046,
-            "ordinary_sigma_njy": 2.430731334864347,
-            "median_flux_njy": 0.05371408154264438,
-            "diagonal_scale_factor": 1.1260405047873971,
+            "robust_sigma_njy": 2.589713550266871,
+            "ordinary_sigma_njy": 2.5427845217775946,
+            "median_flux_njy": -0.5473715758725574,
+            "diagonal_scale_factor": 1.4485987532742668,
             "normalized_range": [
-              -3.154125163524104,
-              3.0929356494734903
+              -3.243442196633184,
+              2.372658311517543
             ],
             "limitation": "Local source-mask/depth assumptions; not source shot-noise variance or calibrated Gaussian-tail probability"
           },
-          "background_scaled_error_njy": 1.5305012869921701,
+          "background_scaled_error_njy": 1.9689187438600322,
           "aperture_sensitivity": [
             {
               "radius_arcsec": 0.15,
@@ -1526,7 +1526,7 @@
           "shared_fractional_calibration_term": 0.03,
           "flux_covariance_njy2": [
             [
-              4.549922178964849,
+              6.062842582788328,
               0.04425607146995963,
               0.2364648329970322,
               0.8332120666213134,
@@ -1536,7 +1536,7 @@
             ],
             [
               0.04425607146995963,
-              3.7684500403596286,
+              4.637104866904361,
               0.6769764744346546,
               2.3854074204970206,
               8.771625342511982,
@@ -1546,7 +1546,7 @@
             [
               0.2364648329970322,
               0.6769764744346546,
-              17.686066858717435,
+              19.88364226932177,
               12.745482113128553,
               46.86771448156112,
               123.36560237436719,
@@ -1556,7 +1556,7 @@
               0.8332120666213134,
               2.3854074204970206,
               12.745482113128553,
-              171.1730267393381,
+              170.78457722233887,
               165.14398672334218,
               434.69342650887876,
               796.6339882215366
@@ -1566,7 +1566,7 @@
               8.771625342511982,
               46.86771448156112,
               165.14398672334218,
-              2297.646887908057,
+              2297.898826968365,
               1598.4556111568502,
               2929.3842300257697
             ],
@@ -1576,7 +1576,7 @@
               123.36560237436719,
               434.69342650887876,
               1598.4556111568502,
-              15898.415549390782,
+              15897.829530583978,
               7710.750441335867
             ],
             [
@@ -1586,26 +1586,26 @@
               796.6339882215366,
               2929.3842300257697,
               7710.750441335867,
-              53386.05995315751
+              53387.59415998796
             ]
           ],
           "families": {
             "smooth_log_quadratic": {
               "parameters": [
-                4.462803335850491,
-                -1.0453309084974702
+                4.4550168187100985,
+                -1.030703758974333
               ],
-              "amplitude_njy": 223.24703298848354,
+              "amplitude_njy": 223.04604808613985,
               "model_flux_njy": [
-                3.4712192853136745,
-                14.59763597706553,
-                58.48647256975694,
-                222.26975866961905,
-                856.0291389761263,
-                2092.9514082224714,
-                3945.707177935999
+                3.5199499905546316,
+                14.705682257374209,
+                58.62289804399061,
+                222.06649475322203,
+                854.5026430619243,
+                2092.235038839852,
+                3954.7619705619068
               ],
-              "chi2_conditional": 4.938810578111141,
+              "chi2_conditional": 4.290333931136118,
               "dof_nominal": 4,
               "bounds": [
                 [
@@ -1622,20 +1622,20 @@
             },
             "lyman_step_powerlaw": {
               "parameters": [
-                8.818105438770461,
-                3.8338298172475027
+                8.82459366101147,
+                3.8233614547171086
               ],
-              "amplitude_njy": 206.52272377217787,
+              "amplitude_njy": 208.15178669694762,
               "model_flux_njy": [
                 0.0,
-                11.590646639839507,
-                69.71323719641249,
-                205.44074148134032,
-                725.4419152292982,
-                1932.1283748921753,
-                4339.523582959315
+                11.629407958608393,
+                70.46584635766848,
+                207.04489078450726,
+                728.5814765829206,
+                1935.3380726482533,
+                4337.082232966622
               ],
-              "chi2_conditional": 21.642545910158507,
+              "chi2_conditional": 20.1394777519041,
               "dof_nominal": 4,
               "bounds": [
                 [
@@ -1652,22 +1652,22 @@
             },
             "balmer4000_step_powerlaw": {
               "parameters": [
-                2.75728615700268,
-                4.254556319735209,
-                3.6443185283368926,
-                2.335496498408196
+                2.7575189066946053,
+                4.255628142792132,
+                3.644444549756337,
+                2.334367456253726
               ],
-              "amplitude_njy": 82.71932946527379,
+              "amplitude_njy": 82.72758852176172,
               "model_flux_njy": [
-                4.126773586524466,
-                11.780654008976867,
-                62.989358195897054,
-                232.79939543026686,
-                772.1538500390853,
-                1959.8766397554834,
-                4228.3002774318575
+                4.12590035712007,
+                11.781276165476996,
+                62.98733317915762,
+                232.77866379162148,
+                772.1172296245387,
+                1959.846451840971,
+                4228.348211550604
               ],
-              "chi2_conditional": 7.321056270667954,
+              "chi2_conditional": 7.323837725131191,
               "dof_nominal": 2,
               "bounds": [
                 [
@@ -1692,19 +1692,19 @@
             },
             "blackbody": {
               "parameters": [
-                839.9833755277431
+                828.8097958614364
               ],
-              "amplitude_njy": 226.6639598197398,
+              "amplitude_njy": 221.44461198956995,
               "model_flux_njy": [
-                0.1097119433586182,
-                2.74582709143722,
-                33.870240438143306,
-                225.59136092719223,
-                909.9170726352742,
-                1715.237487580469,
-                2295.3694351788586
+                0.09437104569393874,
+                2.4849974697797697,
+                31.979055604717605,
+                220.73627470281846,
+                918.3126218807283,
+                1762.275006331496,
+                2385.5479453899497
               ],
-              "chi2_conditional": 135.6990057783525,
+              "chi2_conditional": 126.68824263564305,
               "dof_nominal": 5,
               "bounds": [
                 [
@@ -1723,7 +1723,7 @@
           "shared_fractional_calibration_term": 0.03,
           "flux_covariance_njy2": [
             [
-              4.893443210244673,
+              6.406363614068152,
               0.04425607146995963,
               0.2364648329970322,
               0.8332120666213134,
@@ -1733,7 +1733,7 @@
             ],
             [
               0.04425607146995963,
-              6.5840267308725515,
+              7.452681557417284,
               0.6769764744346546,
               2.3854074204970206,
               8.771625342511982,
@@ -1743,7 +1743,7 @@
             [
               0.2364648329970322,
               0.6769764744346546,
-              98.06731859211376,
+              100.26489400271811,
               12.745482113128553,
               46.86771448156112,
               123.36560237436719,
@@ -1753,7 +1753,7 @@
               0.8332120666213134,
               2.3854074204970206,
               12.745482113128553,
-              1169.17808661018,
+              1168.7896370931805,
               165.14398672334218,
               434.69342650887876,
               796.6339882215366
@@ -1763,7 +1763,7 @@
               8.771625342511982,
               46.86771448156112,
               165.14398672334218,
-              15792.487472546405,
+              15792.739411606713,
               1598.4556111568502,
               2929.3842300257697
             ],
@@ -1773,7 +1773,7 @@
               123.36560237436719,
               434.69342650887876,
               1598.4556111568502,
-              109397.7188641056,
+              109397.1328452988,
               7710.750441335867
             ],
             [
@@ -1783,26 +1783,26 @@
               796.6339882215366,
               2929.3842300257697,
               7710.750441335867,
-              367407.92771179293
+              367409.4619186234
             ]
           ],
           "families": {
             "smooth_log_quadratic": {
               "parameters": [
-                4.5527784214543185,
-                -1.1654440757440268
+                4.5509248128413,
+                -1.1656237268762537
               ],
-              "amplitude_njy": 223.2257260909524,
+              "amplitude_njy": 223.48301430393803,
               "model_flux_njy": [
-                3.0118925380535964,
-                13.452284945912444,
-                56.55374344141582,
-                222.33937099137222,
-                869.8002446084791,
-                2115.40721573375,
-                3924.136069720991
+                3.0193592503235767,
+                13.480295800120183,
+                56.64644524541734,
+                222.59097608115866,
+                870.2389830402047,
+                2115.4000512166317,
+                3922.396142669896
               ],
-              "chi2_conditional": 1.3268511951496482,
+              "chi2_conditional": 1.2067713028872342,
               "dof_nominal": 4,
               "bounds": [
                 [
@@ -1819,20 +1819,20 @@
             },
             "lyman_step_powerlaw": {
               "parameters": [
-                8.790690513930597,
-                3.8549967686963993
+                8.78796659378638,
+                3.8538618084482734
               ],
-              "amplitude_njy": 206.8639806595147,
+              "amplitude_njy": 207.1738440295705,
               "model_flux_njy": [
                 0.0,
-                11.819259375905842,
-                69.42295904506872,
-                205.8134419281921,
-                731.8597839237415,
-                1959.727680170071,
-                4421.337328140862
+                11.84339037566409,
+                69.54865883625413,
+                206.1199363431175,
+                732.6747815987583,
+                1961.344654825819,
+                4423.919131883047
               ],
-              "chi2_conditional": 5.659361001744719,
+              "chi2_conditional": 4.823887203102079,
               "dof_nominal": 4,
               "bounds": [
                 [
@@ -1849,22 +1849,22 @@
             },
             "balmer4000_step_powerlaw": {
               "parameters": [
-                2.7575836737587847,
-                4.2636052622260125,
-                3.6449845918834525,
-                2.327894283283921
+                2.7576319612928866,
+                4.263224845131724,
+                3.644978412438728,
+                2.328119679002981
               ],
-              "amplitude_njy": 83.18020009383014,
+              "amplitude_njy": 83.18441599949787,
               "model_flux_njy": [
-                4.1432832506227335,
-                11.85421900042337,
-                63.36312856263957,
-                234.074475430275,
-                776.5539073266059,
-                1971.3784858644392,
-                4253.715849146286
+                4.143646634053894,
+                11.854146050903344,
+                63.36214101119354,
+                234.07495196061868,
+                776.5539030328906,
+                1971.3753792965858,
+                4253.703568651309
               ],
-              "chi2_conditional": 0.819716937443206,
+              "chi2_conditional": 0.8197515158354499,
               "dof_nominal": 2,
               "bounds": [
                 [
@@ -1889,19 +1889,19 @@
             },
             "blackbody": {
               "parameters": [
-                905.5110905480497
+                897.2178157165354
               ],
-              "amplitude_njy": 288.8124466371498,
+              "amplitude_njy": 285.41717870997087,
               "model_flux_njy": [
-                0.2776209057682995,
-                5.28595649147565,
-                51.91296727731812,
-                285.3624116900793,
-                974.7455285419169,
-                1669.5051624838936,
-                2101.3094566741083
+                0.25287633769416723,
+                4.973668645968625,
+                50.185939026127336,
+                282.226073332533,
+                983.2149297333016,
+                1703.2285970352025,
+                2159.3187003794524
               ],
-              "chi2_conditional": 27.415607319990126,
+              "chi2_conditional": 25.93127347117156,
               "dof_nominal": 5,
               "bounds": [
                 [
@@ -2029,17 +2029,17 @@
           "empirical_background": {
             "status": "measured_conditional_background_operator_scatter",
             "count": 66,
-            "robust_sigma_njy": 0.7169896827906194,
-            "ordinary_sigma_njy": 0.6611777263043629,
-            "median_flux_njy": 0.03808833279130315,
-            "diagonal_scale_factor": 1.1695357509364084,
+            "robust_sigma_njy": 0.7704675673210128,
+            "ordinary_sigma_njy": 0.7021094061295811,
+            "median_flux_njy": 0.011933884436796792,
+            "diagonal_scale_factor": 1.1952555389741852,
             "normalized_range": [
-              -2.8742956819446777,
-              2.2718913120645894
+              -3.0270875812998894,
+              1.683658940894364
             ],
             "limitation": "Local source-mask/depth assumptions; not source shot-noise variance or calibrated Gaussian-tail probability"
           },
-          "background_scaled_error_njy": 0.7941498383103842,
+          "background_scaled_error_njy": 0.8116143454836142,
           "aperture_sensitivity": [
             {
               "radius_arcsec": 0.15,
@@ -2210,17 +2210,17 @@
           "empirical_background": {
             "status": "measured_conditional_background_operator_scatter",
             "count": 56,
-            "robust_sigma_njy": 0.6154715745125025,
-            "ordinary_sigma_njy": 0.5505619632483082,
-            "median_flux_njy": -0.010619521017646585,
-            "diagonal_scale_factor": 1.035155644598403,
+            "robust_sigma_njy": 0.7625441080511078,
+            "ordinary_sigma_njy": 0.6134607147478889,
+            "median_flux_njy": -0.009371799167227211,
+            "diagonal_scale_factor": 1.1969444886301766,
             "normalized_range": [
-              -1.5227131929616577,
-              2.6322341688234956
+              -1.831322275423649,
+              2.060185998129067
             ],
             "limitation": "Local source-mask/depth assumptions; not source shot-noise variance or calibrated Gaussian-tail probability"
           },
-          "background_scaled_error_njy": 0.6606919185393834,
+          "background_scaled_error_njy": 0.7639542465954618,
           "aperture_sensitivity": [
             {
               "radius_arcsec": 0.15,
@@ -2391,13 +2391,13 @@
           "empirical_background": {
             "status": "measured_conditional_background_operator_scatter",
             "count": 62,
-            "robust_sigma_njy": 0.6853545342443856,
-            "ordinary_sigma_njy": 0.848725592087167,
-            "median_flux_njy": -0.003610923382163308,
-            "diagonal_scale_factor": 0.7973946193109841,
+            "robust_sigma_njy": 0.7242002836216259,
+            "ordinary_sigma_njy": 0.9349422994735587,
+            "median_flux_njy": 0.006230260995842275,
+            "diagonal_scale_factor": 0.7969767240988974,
             "normalized_range": [
-              -1.9929258502040148,
-              2.3928917525278828
+              -2.2988169656789914,
+              3.2735342158138643
             ],
             "limitation": "Local source-mask/depth assumptions; not source shot-noise variance or calibrated Gaussian-tail probability"
           },
@@ -2572,17 +2572,17 @@
           "empirical_background": {
             "status": "measured_conditional_background_operator_scatter",
             "count": 35,
-            "robust_sigma_njy": 0.41549726482377,
-            "ordinary_sigma_njy": 0.43753711376812227,
-            "median_flux_njy": 0.0928061733308224,
-            "diagonal_scale_factor": 1.1518687038833528,
+            "robust_sigma_njy": 0.3256693026304467,
+            "ordinary_sigma_njy": 0.4828518048304099,
+            "median_flux_njy": 0.13259828025831905,
+            "diagonal_scale_factor": 0.9208841210748938,
             "normalized_range": [
-              -2.8397290954975403,
-              2.131930839834839
+              -3.0073841761832734,
+              3.1345162562479305
             ],
             "limitation": "Local source-mask/depth assumptions; not source shot-noise variance or calibrated Gaussian-tail probability"
           },
-          "background_scaled_error_njy": 0.44301177732358005,
+          "background_scaled_error_njy": 0.3846026685420241,
           "aperture_sensitivity": [
             {
               "radius_arcsec": 0.15,
@@ -2753,17 +2753,17 @@
           "empirical_background": {
             "status": "measured_conditional_background_operator_scatter",
             "count": 39,
-            "robust_sigma_njy": 0.9780297495493573,
-            "ordinary_sigma_njy": 0.9349437714350153,
-            "median_flux_njy": -0.14099948140744548,
-            "diagonal_scale_factor": 1.76376828551175,
+            "robust_sigma_njy": 0.9762663196210154,
+            "ordinary_sigma_njy": 0.9612971317622526,
+            "median_flux_njy": -0.04937540035828267,
+            "diagonal_scale_factor": 1.8078831269488003,
             "normalized_range": [
-              -3.9112709327060053,
-              5.778345408183096
+              -3.8391096475192334,
+              5.4268053054252725
             ],
             "limitation": "Local source-mask/depth assumptions; not source shot-noise variance or calibrated Gaussian-tail probability"
           },
-          "background_scaled_error_njy": 0.9442071312833031,
+          "background_scaled_error_njy": 0.967823355830741,
           "aperture_sensitivity": [
             {
               "radius_arcsec": 0.15,
@@ -2934,17 +2934,17 @@
           "empirical_background": {
             "status": "measured_conditional_background_operator_scatter",
             "count": 54,
-            "robust_sigma_njy": 0.9687503442322773,
-            "ordinary_sigma_njy": 0.8914422835871127,
-            "median_flux_njy": -0.15675227867932864,
-            "diagonal_scale_factor": 1.2554112666035477,
+            "robust_sigma_njy": 1.1100951355055801,
+            "ordinary_sigma_njy": 0.9374472194572718,
+            "median_flux_njy": -0.014734793731649137,
+            "diagonal_scale_factor": 1.3834687569126167,
             "normalized_range": [
-              -2.0606053245223395,
-              2.5241729763129275
+              -2.2527898260024215,
+              2.559036719429402
             ],
             "limitation": "Local source-mask/depth assumptions; not source shot-noise variance or calibrated Gaussian-tail probability"
           },
-          "background_scaled_error_njy": 1.0230668837066093,
+          "background_scaled_error_njy": 1.1274242214420218,
           "aperture_sensitivity": [
             {
               "radius_arcsec": 0.15,
@@ -3115,17 +3115,17 @@
           "empirical_background": {
             "status": "measured_conditional_background_operator_scatter",
             "count": 66,
-            "robust_sigma_njy": 1.3437319725865888,
-            "ordinary_sigma_njy": 1.3305123757234492,
-            "median_flux_njy": -0.14624450865662836,
-            "diagonal_scale_factor": 1.1836631584682324,
+            "robust_sigma_njy": 1.2944527966536556,
+            "ordinary_sigma_njy": 1.3599224339285876,
+            "median_flux_njy": -0.2008026156224979,
+            "diagonal_scale_factor": 1.1211178877162784,
             "normalized_range": [
-              -3.835636337970843,
-              2.587436266240713
+              -4.089130298550906,
+              2.954018609382243
             ],
             "limitation": "Local source-mask/depth assumptions; not source shot-noise variance or calibrated Gaussian-tail probability"
           },
-          "background_scaled_error_njy": 1.6487077357045563,
+          "background_scaled_error_njy": 1.5615893093323714,
           "aperture_sensitivity": [
             {
               "radius_arcsec": 0.15,
@@ -3248,7 +3248,7 @@
           "shared_fractional_calibration_term": 0.03,
           "flux_covariance_njy2": [
             [
-              1.7130981479091163,
+              1.7411420280155023,
               0.5822441760268039,
               1.1881942598065163,
               4.689558831996938,
@@ -3258,7 +3258,7 @@
             ],
             [
               0.5822441760268039,
-              4.906288535229514,
+              5.053400814897502,
               2.414523988554247,
               9.529630531489751,
               24.12719862813688,
@@ -3278,7 +3278,7 @@
               4.689558831996938,
               9.529630531489751,
               19.44725728793168,
-              290.1570707230226,
+              290.10873050082483,
               194.32726350313027,
               230.68529473617644,
               259.53998730314254
@@ -3288,7 +3288,7 @@
               24.12719862813688,
               49.236729357760304,
               194.32726350313027,
-              1859.555919847317,
+              1859.601074788642,
               584.0509669601995,
               657.105519979495
             ],
@@ -3298,7 +3298,7 @@
               58.44876945718594,
               230.68529473617644,
               584.0509669601995,
-              2620.2748224369225,
+              2620.499241963479,
               780.0479346882612
             ],
             [
@@ -3308,26 +3308,26 @@
               259.53998730314254,
               657.105519979495,
               780.0479346882612,
-              3318.1650641914184
+              3317.885388164668
             ]
           ],
           "families": {
             "smooth_log_quadratic": {
               "parameters": [
-                2.8469105498255396,
-                -1.156309902751993
+                2.850473178706305,
+                -1.1640961392866318
               ],
-              "amplitude_njy": 219.25218863654453,
+              "amplitude_njy": 219.63876243372124,
               "model_flux_njy": [
-                11.179169876137058,
-                32.81431657910213,
-                88.55927758245974,
-                215.798491156255,
-                484.34328378706374,
-                767.9478769643778,
-                1000.5564034328929
+                11.11471789522473,
+                32.735292902499324,
+                88.57248080034056,
+                216.1735487799659,
+                485.336798046764,
+                768.8427863807867,
+                1000.2362164436801
               ],
-              "chi2_conditional": 100.18024259941926,
+              "chi2_conditional": 99.83188891750028,
               "dof_nominal": 4,
               "bounds": [
                 [
@@ -3344,20 +3344,20 @@
             },
             "lyman_step_powerlaw": {
               "parameters": [
-                6.001600916858461,
-                2.537750268490149
+                6.000322318013816,
+                2.535994612996739
               ],
-              "amplitude_njy": 141.54952141025097,
+              "amplitude_njy": 141.7578967109099,
               "model_flux_njy": [
-                14.861435068667852,
-                35.19430979664018,
-                68.49583044226384,
-                139.97166281265604,
-                322.25710467898745,
-                617.1420659941961,
-                1053.2664307374318
+                14.903259629322005,
+                35.27970507463141,
+                68.6304646737065,
+                140.17732598772741,
+                322.5439451090981,
+                617.414879239896,
+                1053.3409878855612
               ],
-              "chi2_conditional": 182.46228166267085,
+              "chi2_conditional": 182.2252151082986,
               "dof_nominal": 4,
               "bounds": [
                 [
@@ -3374,22 +3374,22 @@
             },
             "balmer4000_step_powerlaw": {
               "parameters": [
-                4.194946493291346,
-                2.786435454834289,
-                0.6225846433027555,
-                3.3973354441182604
+                4.19577989014216,
+                2.786349511102111,
+                0.6225021747602477,
+                3.3969003855750146
               ],
-              "amplitude_njy": 622.8180112126273,
+              "amplitude_njy": 622.9119493396358,
               "model_flux_njy": [
-                18.017632984178732,
-                35.807332940944185,
-                74.3780192525986,
-                292.1068263143053,
-                741.742767810325,
-                870.3255797089287,
-                991.9439580695688
+                18.015884109465368,
+                35.80309838500373,
+                74.36754997756715,
+                292.09931459123413,
+                741.7632928136085,
+                870.3312493337978,
+                991.9332201586169
               ],
-              "chi2_conditional": 0.12666835764884515,
+              "chi2_conditional": 0.12419177400116066,
               "dof_nominal": 2,
               "bounds": [
                 [
@@ -3414,19 +3414,19 @@
             },
             "blackbody": {
               "parameters": [
-                1173.9497032620757
+                1171.2517673716945
               ],
-              "amplitude_njy": 251.3346519548825,
+              "amplitude_njy": 251.78486706885786,
               "model_flux_njy": [
-                1.8560021130804076,
-                15.730585334292657,
-                78.67216217115438,
-                245.51191644227504,
-                515.3582393813512,
-                668.1173994774582,
-                705.6728837172062
+                1.829790702316766,
+                15.607102194865933,
+                78.4683610351709,
+                245.95920941809317,
+                518.2466232024216,
+                673.2997463443794,
+                712.0924710506328
               ],
-              "chi2_conditional": 233.85017377734042,
+              "chi2_conditional": 230.08373959486067,
               "dof_nominal": 5,
               "bounds": [
                 [
@@ -3445,7 +3445,7 @@
           "shared_fractional_calibration_term": 0.03,
           "flux_covariance_njy2": [
             [
-              8.080299219795627,
+              8.108343099902013,
               0.5822441760268039,
               1.1881942598065163,
               4.689558831996938,
@@ -3455,7 +3455,7 @@
             ],
             [
               0.5822441760268039,
-              31.199081029383994,
+              31.346193309051984,
               2.414523988554247,
               9.529630531489751,
               24.12719862813688,
@@ -3475,7 +3475,7 @@
               4.689558831996938,
               9.529630531489751,
               19.44725728793168,
-              1995.8089018299356,
+              1995.7605616077378,
               194.32726350313027,
               230.68529473617644,
               259.53998730314254
@@ -3485,7 +3485,7 @@
               24.12719862813688,
               49.236729357760304,
               194.32726350313027,
-              12792.87587714467,
+              12792.921032085997,
               584.0509669601995,
               657.105519979495
             ],
@@ -3495,7 +3495,7 @@
               58.44876945718594,
               230.68529473617644,
               584.0509669601995,
-              18027.499272956837,
+              18027.723692483392,
               780.0479346882612
             ],
             [
@@ -3505,26 +3505,26 @@
               259.53998730314254,
               657.105519979495,
               780.0479346882612,
-              22820.793458271688
+              22820.513782244936
             ]
           ],
           "families": {
             "smooth_log_quadratic": {
               "parameters": [
-                2.774025586257005,
-                -0.9756012672127871
+                2.7743923368193855,
+                -0.9765313657340607
               ],
-              "amplitude_njy": 228.63142644467638,
+              "amplitude_njy": 228.6825731976687,
               "model_flux_njy": [
-                13.78620423910314,
-                37.50672725032802,
-                95.61634129218643,
-                225.17112387102432,
-                503.3247704731893,
-                816.6464699116149,
-                1103.6450941071932
+                13.777459999334742,
+                37.49754028878946,
+                95.62080171463899,
+                225.22074911099415,
+                503.444896707124,
+                816.7426165152687,
+                1103.5648824264995
               ],
-              "chi2_conditional": 13.413049006528277,
+              "chi2_conditional": 13.405832082797918,
               "dof_nominal": 4,
               "bounds": [
                 [
@@ -3541,20 +3541,20 @@
             },
             "lyman_step_powerlaw": {
               "parameters": [
-                6.000538465267267,
-                2.5422514964355334
+                6.000496436504503,
+                2.542072001635227
               ],
-              "amplitude_njy": 165.07552256938519,
+              "amplitude_njy": 165.09788918933904,
               "model_flux_njy": [
-                17.272044301202847,
-                40.943621429539036,
-                79.77924212553354,
-                163.2365918432328,
-                376.3778740645843,
-                721.6145347010058,
-                1232.7404912978263
+                17.27675005986095,
+                40.95315646454736,
+                79.7940701590779,
+                163.2586622133962,
+                376.4064972620504,
+                721.6363789031584,
+                1232.7310260537258
               ],
-              "chi2_conditional": 23.88992295941246,
+              "chi2_conditional": 23.885233829502656,
               "dof_nominal": 4,
               "bounds": [
                 [
@@ -3571,22 +3571,22 @@
             },
             "balmer4000_step_powerlaw": {
               "parameters": [
-                4.196388292965989,
-                2.794480212462345,
-                0.6197548356312579,
-                3.388230691229394
+                4.197864985448359,
+                2.7944475869336034,
+                0.6197418784918934,
+                3.386269962606709
               ],
-              "amplitude_njy": 624.043312581327,
+              "amplitude_njy": 624.158082967355,
               "model_flux_njy": [
-                17.967734444598587,
-                35.77908808624241,
-                74.47604640429178,
-                291.846333274615,
-                742.480675747446,
-                870.5591802496776,
-                991.6200294004042
+                17.967657420972643,
+                35.77864680579119,
+                74.47449171696222,
+                291.84474105463744,
+                742.4837576530408,
+                870.5598999802771,
+                991.6181477484455
               ],
-              "chi2_conditional": 0.016060844491574723,
+              "chi2_conditional": 0.01601637572517792,
               "dof_nominal": 2,
               "bounds": [
                 [
@@ -3611,19 +3611,19 @@
             },
             "blackbody": {
               "parameters": [
-                1195.522225752159
+                1195.0421285044768
               ],
-              "amplitude_njy": 308.936725557718,
+              "amplitude_njy": 308.88166723190017,
               "model_flux_njy": [
-                2.5865073622292396,
-                20.85877726699935,
-                100.0846353389811,
-                301.71698915708527,
-                614.924405765198,
-                783.9738185421761,
-                819.4820840084948
+                2.5789543395174546,
+                20.820496569090142,
+                99.99155503544583,
+                301.6644011381279,
+                615.2137711286958,
+                784.6292651195491,
+                820.3532090042971
               ],
-              "chi2_conditional": 44.11545225145382,
+              "chi2_conditional": 43.98628102307677,
               "dof_nominal": 5,
               "bounds": [
                 [
@@ -3751,17 +3751,17 @@
           "empirical_background": {
             "status": "measured_conditional_background_operator_scatter",
             "count": 63,
-            "robust_sigma_njy": 0.3110049711284003,
-            "ordinary_sigma_njy": 0.307873586251024,
-            "median_flux_njy": -0.014868824121504785,
-            "diagonal_scale_factor": 1.123481119503011,
+            "robust_sigma_njy": 0.3787854079346279,
+            "ordinary_sigma_njy": 0.4008334155725355,
+            "median_flux_njy": 0.028772755543484022,
+            "diagonal_scale_factor": 1.0583617725347427,
             "normalized_range": [
-              -2.4590016173310367,
-              3.0502299588053403
+              -2.6910020338724143,
+              3.061225477990728
             ],
             "limitation": "Local source-mask/depth assumptions; not source shot-noise variance or calibrated Gaussian-tail probability"
           },
-          "background_scaled_error_njy": 0.394764746211283,
+          "background_scaled_error_njy": 0.37188334479463553,
           "aperture_sensitivity": [
             {
               "radius_arcsec": 0.15,
@@ -3932,17 +3932,17 @@
           "empirical_background": {
             "status": "measured_conditional_background_operator_scatter",
             "count": 51,
-            "robust_sigma_njy": 0.2496777831537982,
-            "ordinary_sigma_njy": 0.2746305322857118,
-            "median_flux_njy": 0.05862593139914998,
-            "diagonal_scale_factor": 1.0036674985742648,
+            "robust_sigma_njy": 0.2891476746186866,
+            "ordinary_sigma_njy": 0.3470700665660464,
+            "median_flux_njy": -0.01731507948872707,
+            "diagonal_scale_factor": 0.9532831926480727,
             "normalized_range": [
-              -3.144379750748701,
-              2.3778076079662473
+              -2.398876209173802,
+              3.898333395747213
             ],
             "limitation": "Local source-mask/depth assumptions; not source shot-noise variance or calibrated Gaussian-tail probability"
           },
-          "background_scaled_error_njy": 0.2967081121097653,
+          "background_scaled_error_njy": 0.2956239118345933,
           "aperture_sensitivity": [
             {
               "radius_arcsec": 0.15,
@@ -4113,17 +4113,17 @@
           "empirical_background": {
             "status": "measured_conditional_background_operator_scatter",
             "count": 46,
-            "robust_sigma_njy": 0.2544310118503352,
-            "ordinary_sigma_njy": 0.2812746494495211,
-            "median_flux_njy": -0.028456546327178398,
-            "diagonal_scale_factor": 0.9744872111991917,
+            "robust_sigma_njy": 0.3359703696435298,
+            "ordinary_sigma_njy": 0.4458479855036921,
+            "median_flux_njy": -0.060735502574692554,
+            "diagonal_scale_factor": 1.0563905332707362,
             "normalized_range": [
-              -2.504932259219137,
-              2.9163064529372256
+              -2.268232966132217,
+              6.552145344826016
             ],
             "limitation": "Local source-mask/depth assumptions; not source shot-noise variance or calibrated Gaussian-tail probability"
           },
-          "background_scaled_error_njy": 0.31197979030365275,
+          "background_scaled_error_njy": 0.32957249704856817,
           "aperture_sensitivity": [
             {
               "radius_arcsec": 0.15,
@@ -4294,17 +4294,17 @@
           "empirical_background": {
             "status": "measured_conditional_background_operator_scatter",
             "count": 41,
-            "robust_sigma_njy": 0.40015794721505776,
-            "ordinary_sigma_njy": 0.41982119669631013,
-            "median_flux_njy": -0.016268951570258743,
-            "diagonal_scale_factor": 1.3895672468602385,
+            "robust_sigma_njy": 0.30653428710366876,
+            "ordinary_sigma_njy": 0.4420657112743699,
+            "median_flux_njy": 0.05309346064371785,
+            "diagonal_scale_factor": 0.9570112331259258,
             "normalized_range": [
-              -2.5902666942615333,
-              4.032376629571364
+              -2.6987769322154183,
+              3.421420968441205
             ],
             "limitation": "Local source-mask/depth assumptions; not source shot-noise variance or calibrated Gaussian-tail probability"
           },
-          "background_scaled_error_njy": 0.44518122840121715,
+          "background_scaled_error_njy": 0.32037400810008665,
           "aperture_sensitivity": [
             {
               "radius_arcsec": 0.15,
@@ -4475,17 +4475,17 @@
           "empirical_background": {
             "status": "measured_conditional_background_operator_scatter",
             "count": 42,
-            "robust_sigma_njy": 0.41641602430342084,
-            "ordinary_sigma_njy": 0.4000009773022723,
-            "median_flux_njy": 0.011850183638713445,
-            "diagonal_scale_factor": 1.4548513653017685,
+            "robust_sigma_njy": 0.4556328044261607,
+            "ordinary_sigma_njy": 0.4648789742095672,
+            "median_flux_njy": -0.1135388563110192,
+            "diagonal_scale_factor": 1.498509159723137,
             "normalized_range": [
-              -3.188123030835275,
-              2.855508264415183
+              -2.5468157593402916,
+              3.4656421668532076
             ],
             "limitation": "Local source-mask/depth assumptions; not source shot-noise variance or calibrated Gaussian-tail probability"
           },
-          "background_scaled_error_njy": 0.4587852180943007,
+          "background_scaled_error_njy": 0.4725526387482787,
           "aperture_sensitivity": [
             {
               "radius_arcsec": 0.15,
@@ -4656,17 +4656,17 @@
           "empirical_background": {
             "status": "measured_conditional_background_operator_scatter",
             "count": 42,
-            "robust_sigma_njy": 0.43607453803303714,
-            "ordinary_sigma_njy": 0.43230789002039993,
-            "median_flux_njy": -0.02269818999968854,
-            "diagonal_scale_factor": 1.3126974746619613,
+            "robust_sigma_njy": 0.4291852354365731,
+            "ordinary_sigma_njy": 0.45664671374293986,
+            "median_flux_njy": -0.02225683251064573,
+            "diagonal_scale_factor": 1.2293824800582411,
             "normalized_range": [
-              -2.9117168224442573,
-              2.9909272518661205
+              -2.4682365533004993,
+              2.9240276082189216
             ],
             "limitation": "Local source-mask/depth assumptions; not source shot-noise variance or calibrated Gaussian-tail probability"
           },
-          "background_scaled_error_njy": 0.4669053300019848,
+          "background_scaled_error_njy": 0.4372715295259224,
           "aperture_sensitivity": [
             {
               "radius_arcsec": 0.15,
@@ -4837,17 +4837,17 @@
           "empirical_background": {
             "status": "measured_conditional_background_operator_scatter",
             "count": 52,
-            "robust_sigma_njy": 0.6271728519071751,
-            "ordinary_sigma_njy": 0.5884499645215999,
-            "median_flux_njy": -0.21001066706542904,
-            "diagonal_scale_factor": 1.3244394448991863,
+            "robust_sigma_njy": 0.5814539476322365,
+            "ordinary_sigma_njy": 0.5927257575376237,
+            "median_flux_njy": -0.1741225685337785,
+            "diagonal_scale_factor": 1.1345509107697072,
             "normalized_range": [
-              -3.07510615618091,
-              2.060787537367889
+              -2.43492198236842,
+              2.379230010479608
             ],
             "limitation": "Local source-mask/depth assumptions; not source shot-noise variance or calibrated Gaussian-tail probability"
           },
-          "background_scaled_error_njy": 0.6743239214527551,
+          "background_scaled_error_njy": 0.5776442420108217,
           "aperture_sensitivity": [
             {
               "radius_arcsec": 0.15,
@@ -4970,7 +4970,7 @@
           "shared_fractional_calibration_term": 0.03,
           "flux_covariance_njy2": [
             [
-              0.1564809297331405,
+              0.13893894701752763,
               0.0015274026522229176,
               0.0011741806831704043,
               0.000828809870209975,
@@ -4980,7 +4980,7 @@
             ],
             [
               0.0015274026522229176,
-              0.1399194130821092,
+              0.13927720653875558,
               0.01055786247522604,
               0.0074523970230541935,
               0.03424431525903332,
@@ -4990,7 +4990,7 @@
             [
               0.0011741806831704043,
               0.01055786247522604,
-              0.12799291793761586,
+              0.1392795591905332,
               0.005728980904316101,
               0.026325090785351155,
               0.18566127171171548,
@@ -5000,7 +5000,7 @@
               0.000828809870209975,
               0.0074523970230541935,
               0.005728980904316101,
-              0.21346317439327545,
+              0.11791635333857316,
               0.018581888962915488,
               0.13105129109680144,
               1.2302654036948968
@@ -5010,7 +5010,7 @@
               0.03424431525903332,
               0.026325090785351155,
               0.018581888962915488,
-              0.5330500117852679,
+              0.5458721318313939,
               0.6021903709020334,
               5.6531604805918
             ],
@@ -5020,7 +5020,7 @@
               0.18566127171171548,
               0.13105129109680144,
               0.6021903709020334,
-              16.262333237643922,
+              16.2355390409936,
               39.86968070025159
             ],
             [
@@ -5030,26 +5030,26 @@
               1.2302654036948968,
               5.6531604805918,
               39.86968070025159,
-              1414.4132442088762
+              1414.292204328161
             ]
           ],
           "families": {
             "smooth_log_quadratic": {
               "parameters": [
-                3.454838973520448,
-                4.373755871407862
+                3.4962135381614368,
+                4.342426721550078
               ],
-              "amplitude_njy": 1.7978276772036572,
+              "amplitude_njy": 1.7762094833571207,
               "model_flux_njy": [
-                1.9639404438797503,
-                1.0429608846908165,
-                0.9724210958466716,
-                1.820726649433353,
-                9.529598472470239,
-                66.57109081056974,
-                538.3417731090151
+                1.8366978589794416,
+                0.9967117414520907,
+                0.9467836239213233,
+                1.7989949694158647,
+                9.51445509735098,
+                66.6623010572685,
+                538.589187923781
               ],
-              "chi2_conditional": 105.21946064721679,
+              "chi2_conditional": 105.10796832090702,
               "dof_nominal": 4,
               "bounds": [
                 [
@@ -5066,20 +5066,20 @@
             },
             "lyman_step_powerlaw": {
               "parameters": [
-                6.002785538495363,
-                7.999999937189683
+                6.000003737679288,
+                7.9999999821527235
               ],
-              "amplitude_njy": 0.5694776818934105,
+              "amplitude_njy": 0.5711121161614215,
               "model_flux_njy": [
-                0.0009586427589174533,
-                0.007800676270855678,
-                0.06323058852910127,
-                0.6073747469784221,
-                8.550606402067118,
-                65.13881814885553,
-                356.68313169875665
+                0.0009613940872794133,
+                0.007823064485382357,
+                0.06341206327952403,
+                0.6091179487379359,
+                8.57514728110274,
+                65.32577215830591,
+                357.7068464252173
               ],
-              "chi2_conditional": 207.3985814066322,
+              "chi2_conditional": 208.81861491106952,
               "dof_nominal": 4,
               "bounds": [
                 [
@@ -5096,22 +5096,22 @@
             },
             "balmer4000_step_powerlaw": {
               "parameters": [
-                5.8097029735548675,
-                0.4726478684244374,
+                5.743988517846512,
+                0.3757256080941203,
                 8.0,
-                2.3681433418349567
+                2.510284565547974
               ],
-              "amplitude_njy": 7.763291981818922,
+              "amplitude_njy": 7.1546197879207485,
               "model_flux_njy": [
-                1.9412829758178023,
-                2.180967405007354,
-                2.4694491649243866,
-                2.8204087358660153,
-                8.987100798397769,
-                75.01425219575702,
-                410.7584312680327
+                1.8859144778859487,
+                2.068773357068354,
+                2.283516485722705,
+                2.537920732319785,
+                8.95314826962438,
+                74.70939150845518,
+                409.08909385539516
               ],
-              "chi2_conditional": 86.10756068510855,
+              "chi2_conditional": 90.01484797130372,
               "dof_nominal": 2,
               "bounds": [
                 [
@@ -5136,19 +5136,19 @@
             },
             "blackbody": {
               "parameters": [
-                317.5322567414664
+                316.48743760905654
               ],
-              "amplitude_njy": 0.01590690997401427,
+              "amplitude_njy": 0.01521583388599918,
               "model_flux_njy": [
-                2.6305783260157347e-12,
-                2.885528171804054e-08,
-                5.6909726853034006e-05,
-                0.026853265613558643,
-                4.3519752916486585,
-                67.654891748197,
-                376.0581587018642
+                2.329778804088215e-12,
+                2.6387709768227286e-08,
+                5.345699971355148e-05,
+                0.025794901695344173,
+                4.261986951202683,
+                66.97365429413415,
+                375.0775515946602
               ],
-              "chi2_conditional": 241.98164308608992,
+              "chi2_conditional": 248.47276729500865,
               "dof_nominal": 5,
               "bounds": [
                 [
@@ -5167,7 +5167,7 @@
           "shared_fractional_calibration_term": 0.03,
           "flux_covariance_njy2": [
             [
-              0.1602557819795045,
+              0.14271379926389158,
               0.0015274026522229176,
               0.0011741806831704043,
               0.000828809870209975,
@@ -5177,7 +5177,7 @@
             ],
             [
               0.0015274026522229176,
-              0.44511770302545145,
+              0.44447549648209783,
               0.01055786247522604,
               0.0074523970230541935,
               0.03424431525903332,
@@ -5187,7 +5187,7 @@
             [
               0.0011741806831704043,
               0.01055786247522604,
-              0.30835484958293763,
+              0.31964149083585497,
               0.005728980904316101,
               0.026325090785351155,
               0.18566127171171548,
@@ -5197,7 +5197,7 @@
               0.000828809870209975,
               0.0074523970230541935,
               0.005728980904316101,
-              0.30332698776067996,
+              0.20778016670597765,
               0.018581888962915488,
               0.13105129109680144,
               1.2302654036948968
@@ -5207,7 +5207,7 @@
               0.03424431525903332,
               0.026325090785351155,
               0.018581888962915488,
-              2.4304978673348723,
+              2.4433199873809985,
               0.6021903709020334,
               5.6531604805918
             ],
@@ -5217,7 +5217,7 @@
               0.18566127171171548,
               0.13105129109680144,
               0.6021903709020334,
-              110.64076059328897,
+              110.61396639663866,
               39.86968070025159
             ],
             [
@@ -5227,26 +5227,26 @@
               1.2302654036948968,
               5.6531604805918,
               39.86968070025159,
-              9731.816370431421
+              9731.695330550707
             ]
           ],
           "families": {
             "smooth_log_quadratic": {
               "parameters": [
-                3.7207638882563216,
-                3.8030958773683663
+                3.7580603673116255,
+                3.7822393207732543
               ],
-              "amplitude_njy": 2.0434821064095323,
+              "amplitude_njy": 2.016120099589623,
               "model_flux_njy": [
-                1.2274214664555203,
-                0.8521483502400778,
-                0.9750228885286755,
-                2.067410246010508,
-                11.052667085624934,
-                71.78124774866895,
-                512.0229564860964
+                1.158719994517059,
+                0.8180584801379228,
+                0.9501046049641528,
+                2.0400607869371292,
+                11.01873934517215,
+                71.88403584692098,
+                513.5742758804574
               ],
-              "chi2_conditional": 40.23652310599136,
+              "chi2_conditional": 40.269549838256204,
               "dof_nominal": 4,
               "bounds": [
                 [
@@ -5263,20 +5263,20 @@
             },
             "lyman_step_powerlaw": {
               "parameters": [
-                6.000429304937193,
-                7.999999789589276
+                6.002168760424808,
+                7.7409830431202495
               ],
-              "amplitude_njy": 0.664293321490759,
+              "amplitude_njy": 0.7706826297906293,
               "model_flux_njy": [
-                0.001118252871442873,
-                0.00909945676904951,
-                0.07375821847784941,
-                0.7085000859071374,
-                9.974245887676629,
-                75.98415065184429,
-                416.06932274627644
+                0.0015758871408882397,
+                0.012079387001913841,
+                0.09151877175744993,
+                0.8166759094994994,
+                10.546258646738982,
+                75.29088457430412,
+                389.89632736902695
               ],
-              "chi2_conditional": 72.15835381780028,
+              "chi2_conditional": 73.83615292157057,
               "dof_nominal": 4,
               "bounds": [
                 [
@@ -5293,22 +5293,22 @@
             },
             "balmer4000_step_powerlaw": {
               "parameters": [
-                5.823819339773583,
-                0.9043512582183362,
+                5.7811692241393,
+                0.8786010913929562,
                 8.0,
-                2.2719608469815906
+                2.3389558655903837
               ],
-              "amplitude_njy": 8.343339554863665,
+              "amplitude_njy": 7.926648275443728,
               "model_flux_njy": [
-                1.3462671331415623,
-                1.6822336015982207,
-                2.133419926695512,
-                2.7513036282986625,
-                9.51688410347144,
-                79.29448321516942,
-                434.1958571909169
+                1.285400515819566,
+                1.59601789727655,
+                2.0104430926909593,
+                2.573987954053666,
+                9.508757170503245,
+                79.20929477795377,
+                433.72938758269424
               ],
-              "chi2_conditional": 25.630084239934984,
+              "chi2_conditional": 26.70721245007313,
               "dof_nominal": 2,
               "bounds": [
                 [
@@ -5333,19 +5333,19 @@
             },
             "blackbody": {
               "parameters": [
-                355.64248982138076
+                361.38988436853253
               ],
-              "amplitude_njy": 0.05855542042931758,
+              "amplitude_njy": 0.06715221140034044,
               "model_flux_njy": [
-                1.1880276930625251e-10,
-                4.6038635592238624e-07,
-                0.00038037308110811934,
-                0.08676878390053303,
-                7.505905636203029,
-                82.0822849021815,
-                357.4114810952365
+                1.9014687720870582e-10,
+                6.418947905683156e-07,
+                0.0004725840423203132,
+                0.0978971621983655,
+                7.79148999160771,
+                81.29934228032883,
+                342.71062318803314
               ],
-              "chi2_conditional": 85.25336239833364,
+              "chi2_conditional": 89.91934800337151,
               "dof_nominal": 5,
               "bounds": [
                 [

@@ -207,7 +207,9 @@ def blank_operator_noise(
     fit_half = int(np.ceil(FIT_RADIUS / scale)) + 1
     separation = 2 * fit_half + 2
     mask = fit_mask(2 * half + 1, scale)
-    blank_params = np.array([0.0, 0.0, *params[2:]])
+    # Keep the complete science phase/centroid, including its relative separation
+    # from a companion: centering only the target changes the deblend operator.
+    blank_params = params.copy()
     template = image_template(psf, scale, blank_params)
     values, normalized = [], []
     for y in range(half + 1, valid.shape[0] - half - 1, separation):
