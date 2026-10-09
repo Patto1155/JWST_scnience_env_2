@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "kind": "pinned_nine_native_originals",
+  "source_spectrum_sha256": "42d95d348ebb55ca37eb31393b4603628ac13a4bca1f4f7f0ffba7b32d3125b1",
+  "per_file_max_bytes": 67108864,
+  "batch_max_bytes": 629145600,
+  "products": [
+    {
+      "filename": "jw05224004001_03101_00002_nrs2_cal.fits",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00002_nrs2_cal.fits",
+      "source_slits_filename": "jw05224004001_03101_00002_nrs2_clear_prism_raw.21.5224_277193.fits",
+      "expected_bytes": 51563520,
+      "sha256": "c2d318f836570e3cc77463ec91a8b2a8982deb8df4762873dcad3bdfbd03bc9f"
+    },
+    {
+      "filename": "jw05224004001_03101_00003_nrs2_cal.fits",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00003_nrs2_cal.fits",
+      "source_slits_filename": "jw05224004001_03101_00003_nrs2_clear_prism_raw.21.5224_277193.fits",
+      "expected_bytes": 51575040,
+      "sha256": "7d60c48301e7020e897bc68de72d9103f27a4e3d4dec14f6e910bd76a6a68b39"
+    },
+    {
+      "filename": "jw05224004001_03101_00004_nrs2_cal.fits",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00004_nrs2_cal.fits",
+      "source_slits_filename": "jw05224004001_03101_00004_nrs2_clear_prism_raw.21.5224_277193.fits",
+      "expected_bytes": 51575040,
+      "sha256": "0180117830dcad9a562c3c462b1dd7d08ba8ac2683c95a06d1b5c5855b0967e0"
+    },
+    {
+      "filename": "jw05224004001_05101_00001_nrs2_cal.fits",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00001_nrs2_cal.fits",
+      "source_slits_filename": "jw05224004001_05101_00001_nrs2_clear_prism_raw.21.5224_277193.fits",
+      "expected_bytes": 51560640,
+      "sha256": "c4f576ff15f6d58b4fccf6ab4f5f97e82bb3472ebab6602d8f99a8b804d97695"
+    },
+    {
+      "filename": "jw05224004001_05101_00002_nrs2_cal.fits",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00002_nrs2_cal.fits",
+      "source_slits_filename": "jw05224004001_05101_00002_nrs2_clear_prism_raw.21.5224_277193.fits",
+      "expected_bytes": 51575040,
+      "sha256": "0078c56d4d50a720b11e5ccb3be84705104c9ae06a3ecd7d8c29f5ffa678f3c5"
+    },
+    {
+      "filename": "jw05224004001_05101_00003_nrs2_cal.fits",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00003_nrs2_cal.fits",
+      "source_slits_filename": "jw05224004001_05101_00003_nrs2_clear_prism_raw.21.5224_277193.fits",
+      "expected_bytes": 51575040,
+      "sha256": "b18c997fea94810da565d1044d02a6615862a8f1d9946e47506f9d60b2bccace"
+    },
+    {
+      "filename": "jw05224004001_07101_00001_nrs2_cal.fits",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00001_nrs2_cal.fits",
+      "source_slits_filename": "jw05224004001_07101_00001_nrs2_clear_prism_raw.21.5224_277193.fits",
+      "expected_bytes": 51560640,
+      "sha256": "43faf1fe96cff76eab3cc3e33c900864fa42c5bf053a12ddf3107cc191a4c5ea"
+    },
+    {
+      "filename": "jw05224004001_07101_00002_nrs2_cal.fits",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00002_nrs2_cal.fits",
+      "source_slits_filename": "jw05224004001_07101_00002_nrs2_clear_prism_raw.21.5224_277193.fits",
+      "expected_bytes": 51575040,
+      "sha256": "5b73760be206eef6891f37b33c3e8d973eef1522ece3b1a90ef4cc6506950a75"
+    },
+    {
+      "filename": "jw05224004001_07101_00003_nrs2_cal.fits",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00003_nrs2_cal.fits",
+      "source_slits_filename": "jw05224004001_07101_00003_nrs2_clear_prism_raw.21.5224_277193.fits",
+      "expected_bytes": 51575040,
+      "sha256": "b7b3af35080d1ddafcb1184f07733e56c278f936be0fd662643dde46be8b343c"
+    }
+  ]
+}
