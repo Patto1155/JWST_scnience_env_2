@@ -1,0 +1,12 @@
+{
+  "requested_url": "https://slate.ucsc.edu/~brant/jades-dr5/GOODS-S/hlsp/images/submosaics/hlsp_jades_jwst_nircam_jw011800-deep_f356wa_v5.0_mpsf.fits",
+  "resolved_url": "https://slate.ucsc.edu/~brant/jades-dr5/GOODS-S/hlsp/images/submosaics/hlsp_jades_jwst_nircam_jw011800-deep_f356wa_v5.0_mpsf.fits",
+  "retrieved_utc": "2026-10-09T06:38:33.756176+00:00",
+  "bytes": 1800000,
+  "sha256": "7bd8a4854c3b587be258022d05f72ac29aab393d98dff64bc2f69ed7dfbf7203",
+  "content_type": null,
+  "etag": "\"1b7740-6490153ae7100\"",
+  "last_modified": "Thu, 22 Jan 2026 22:11:48 GMT",
+  "product_id": "f356wa",
+  "max_bytes": 5242880
+}
