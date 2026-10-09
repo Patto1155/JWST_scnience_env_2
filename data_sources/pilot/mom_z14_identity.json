@@ -1,0 +1,41 @@
+{
+  "published_coordinates_deg": [
+    150.0933255,
+    2.2731627
+  ],
+  "coordinate_source": "https://arxiv.org/html/2505.11263v2 (Table 1)",
+  "query_match": {
+    "root": "mom-cos04-v4",
+    "file": "mom-cos04-v4_prism-clear_5224_277193.spec.fits",
+    "ra": "150.0933255",
+    "dec": "2.2731627",
+    "srcid": "277193",
+    "msamet": "jw05224004001_01_msa.fits",
+    "slitid": "21",
+    "grating": "PRISM_CLEAR",
+    "exptime": "15756.003",
+    "wmin": "0.54912597",
+    "wmax": "5.4950185",
+    "sn50": "1.0249245",
+    "flux50": "0.016802028",
+    "ctime": "1744811929.6655347",
+    "version": "0.9.5.dev8+ge2b237b",
+    "z": "14.480445",
+    "grade": "3",
+    "comment": "lyman break"
+  },
+  "fits_slit_source_ids": [
+    277193
+  ],
+  "fits_slit_source_ra_deg": [
+    150.0933255
+  ],
+  "fits_slit_source_dec_deg": [
+    2.2731627
+  ],
+  "published_uv_line_redshift": 14.44,
+  "public_index_pipeline_redshift": 14.480445,
+  "redshift_caveat": "Different fitting results; no new redshift estimated here. Nearby CAPERS grade1 z6.13832 is not a confirmed alternative.",
+  "spectrum_sha256": "42d95d348ebb55ca37eb31393b4603628ac13a4bca1f4f7f0ffba7b32d3125b1",
+  "query_sha256": "d856849376bb306a2727e84fd3cd4df38baef504153435b20104837d39e9a460"
+}

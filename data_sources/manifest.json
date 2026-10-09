@@ -154,7 +154,7 @@
       "canonical_url": "https://dawn-cph.github.io/dja/spectroscopy/nirspec/",
       "access": "Documented nirspec_extractions spatial API; public linked S3 table",
       "science_use": "Independent spectral reductions and identification of program 5224 targets",
-      "caveats": "Program 5224 listing alone does not verify MoM-z14 target spectrum availability. Match RA/Dec/source ID before downloading.",
+      "caveats": "MoM-z14 target verified by published coordinate query plus FITS SLITS target ID/coordinates. Public index redshift 14.480445 is a pipeline value distinct from published joint UV-line 14.44.",
       "terms": "Not stated on inspected release page; cite the source and verify redistribution terms.",
       "papers": [
         "https://dawn-cph.github.io/dja/general/api_summary/"
@@ -165,6 +165,22 @@
           "url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/nirspec_public_v4.4.html",
           "expected_bytes": null,
           "kind": "spectroscopic_index"
+        },
+        {
+          "id": "mom-coordinate-query",
+          "url": "https://grizli-cutout.herokuapp.com/nirspec_extractions?coords=150.0933255,2.2731627&size=0.4&output=csv",
+          "expected_bytes": 591,
+          "sha256": "d856849376bb306a2727e84fd3cd4df38baef504153435b20104837d39e9a460",
+          "kind": "spectroscopic_spatial_metadata",
+          "evidence_url": "https://dawn-cph.github.io/dja/general/api_summary/"
+        },
+        {
+          "id": "mom-z14-spectrum",
+          "url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/mom-cos04-v4/mom-cos04-v4_prism-clear_5224_277193.spec.fits",
+          "expected_bytes": 688320,
+          "sha256": "42d95d348ebb55ca37eb31393b4603628ac13a4bca1f4f7f0ffba7b32d3125b1",
+          "kind": "reduced_spectrum",
+          "evidence_url": "https://dawn-cph.github.io/dja/general/api_summary/"
         }
       ]
     },
