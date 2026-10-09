@@ -71,15 +71,41 @@ def recover_raw_variance(post_variance: np.ndarray, mixing: np.ndarray) -> np.nd
 
 
 def shared_extraction_covariance(
-    raw_variance: np.ndarray, operators: np.ndarray, mixing: np.ndarray
+    raw_variance: np.ndarray,
+    operators: np.ndarray,
+    mixing: np.ndarray,
+    spatial_correlation: np.ndarray | None = None,
 ) -> np.ndarray:
     """Same-column covariance from shared raw nod pixels and extraction weights."""
     count, _, columns = operators.shape
+    if spatial_correlation is not None:
+        expected_shape = (operators.shape[1], operators.shape[1])
+        if (
+            spatial_correlation.shape != expected_shape
+            or not np.all(np.isfinite(spatial_correlation))
+            or not np.allclose(spatial_correlation, spatial_correlation.T)
+            or np.linalg.eigvalsh(spatial_correlation).min() < -1e-10
+        ):
+            raise ValueError("Spatial correlation must be finite, aligned, symmetric and PSD")
     result = np.zeros((columns, count, count))
     for i in range(count):
         for j in range(count):
-            shared = np.einsum("k,krc->rc", mixing[i] * mixing[j], raw_variance)
-            result[:, i, j] = np.sum(operators[i] * operators[j] * shared, axis=0)
+            if spatial_correlation is None:
+                shared = np.einsum("k,krc->rc", mixing[i] * mixing[j], raw_variance)
+                result[:, i, j] = np.sum(operators[i] * operators[j] * shared, axis=0)
+            else:
+                for k in range(count):
+                    standard_error = np.sqrt(raw_variance[k])
+                    result[:, i, j] += (
+                        mixing[i, k]
+                        * mixing[j, k]
+                        * np.einsum(
+                            "rc,rs,sc->c",
+                            operators[i] * standard_error,
+                            spatial_correlation,
+                            operators[j] * standard_error,
+                        )
+                    )
     return result
 
 
@@ -322,7 +348,9 @@ def fit_geometry(data: list[dict]) -> dict[str, Any]:
     }
 
 
-def covariance_blocks(data: list[dict], operators: np.ndarray) -> tuple[np.ndarray, dict]:
+def covariance_blocks(
+    data: list[dict], operators: np.ndarray, spatial_correlation: np.ndarray | None = None
+) -> tuple[np.ndarray, dict]:
     count, _, columns = operators.shape
     covariance = np.zeros((columns, count, count))
     records = []
@@ -343,11 +371,19 @@ def covariance_blocks(data: list[dict], operators: np.ndarray) -> tuple[np.ndarr
             scale = np.max(values)
             raw[:, row, column] = nnls(mixing_matrix() ** 2, values / scale)[0] * scale
         raw = np.where(good[None], np.maximum(raw, 0), 0)
-        local = shared_extraction_covariance(raw, operators[members], mixing_matrix())
+        local = shared_extraction_covariance(
+            raw, operators[members], mixing_matrix(), spatial_correlation
+        )
         predicted_post = np.einsum("ij,jrc->irc", mixing_matrix() ** 2, raw)
         remainder = np.maximum(safe_post - predicted_post, 0)
         for ii in range(len(members)):
-            local[:, ii, ii] += np.sum(operators[members[ii]] ** 2 * remainder[ii], axis=0)
+            if spatial_correlation is None:
+                local[:, ii, ii] += np.sum(operators[members[ii]] ** 2 * remainder[ii], axis=0)
+            else:
+                weighted = operators[members[ii]] * np.sqrt(remainder[ii])
+                local[:, ii, ii] += np.einsum(
+                    "rc,rs,sc->c", weighted, spatial_correlation, weighted
+                )
         for ii, i in enumerate(members):
             for jj, j in enumerate(members):
                 covariance[:, i, j] = local[:, ii, jj]
@@ -378,6 +414,7 @@ def covariance_blocks(data: list[dict], operators: np.ndarray) -> tuple[np.ndarr
     return covariance, {
         "groups": records,
         "cross_group_shared_calibration_covariance_measured": False,
+        "spatial_correlation_transported": spatial_correlation is not None,
     }
 
 
