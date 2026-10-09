@@ -149,8 +149,9 @@ def _freeze_array(array: Optional[np.ndarray]) -> Optional[np.ndarray]:
 
 
 @lru_cache(maxsize=16)
-def _load_fits_bundle_from_path(fits_path_str: str) -> Dict[str, Any]:
-    """Load a FITS bundle from disk once and cache the raw planes by file path."""
+def _load_fits_bundle_version(fits_path_str: str, file_size: int, mtime_ns: int) -> Dict[str, Any]:
+    """Cache raw planes by path and file version, never by path alone."""
+    del file_size, mtime_ns  # Used in the cache key; data are loaded below.
     fits_path = Path(fits_path_str)
 
     with fits.open(fits_path) as hdul:
@@ -200,6 +201,12 @@ def _load_fits_bundle_from_path(fits_path_str: str) -> Dict[str, Any]:
         "wcs": wcs,
         "validity_mask": _freeze_array(validity_mask),
     }
+
+
+def _load_fits_bundle_from_path(fits_path_str: str) -> Dict[str, Any]:
+    """Load current file version while retaining the existing path-only API."""
+    file_stat = Path(fits_path_str).stat()
+    return _load_fits_bundle_version(fits_path_str, file_stat.st_size, file_stat.st_mtime_ns)
 
 
 def load_fits_bundle(dataset_name: str, db_session=None) -> Dict[str, Any]:

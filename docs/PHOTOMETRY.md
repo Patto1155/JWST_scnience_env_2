@@ -118,3 +118,33 @@ metadata fallback, stale detector area vs actual WCS, flux invariance across
 two grids with a common sky aperture, diagonal variance propagation, empirical
 noise, missing/off-image/zero distinctions, edge coverage, loader metadata, and
 spherical pixel areas across RA zero near the celestial pole.
+
+## Evidence-panel and registered-tool integration
+
+`candidate_evidence_bundle` now derives a common angular aperture and annulus
+from the actual reference WCS by default. It preserves reference radius keys
+(`"2"`, `"3"`, `"5"`) in its sidecar so consumers can compare existing reports;
+those keys no longer mean equal pixel radii in every filter. An optional
+`aperture_radius_arcsec` sets key `"3"`, and other keys scale proportionally.
+Angular annulus overrides are also accepted. The reference summary requires
+key `"3"` to be present.
+
+Cross-band ratios and colours use `background_subtracted_flux_jy` only when
+both bands are calibrated, sky registered, have measured backgrounds and at
+least 90% coverage. Off-image bands, absent calibration or pixel-only
+registration produce no scientific colour. Signed ratios retain a negative blue
+flux; logarithmic colours require positive fluxes. `color_status` explicitly
+labels these as **PSF-uncorrected** aperture diagnostics. This is not a redshift
+or dropout classification.
+
+The API tool registry exposes the angular arguments, Jy quantities and nullable
+raw fields. Panels render unavailable fluxes explicitly instead of formatting
+`None` as a number. Schema-versioned evidence caches compare resolved centres,
+cutout/aperture parameters and source file size/mtime; legacy raw-only caches
+are regenerated. The FITS loader likewise keys its memory cache on file version
+as well as path. This prevents ordinary in-process file updates from returning
+stale measurements; it is not a cryptographic content-identity check.
+
+`runner/tests/test_calibrated_evidence.py` exercises the complete synthetic FITS
+→ matched apertures → Jy colours → rendered panel → sidecar workflow, including
+missing/calibration failures and cache invalidation after file updates.
