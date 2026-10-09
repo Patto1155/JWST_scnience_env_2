@@ -1,0 +1,990 @@
+{
+  "experiment": "conditional mask and block-size sensitivity",
+  "images": [
+    {
+      "filter": "F090W",
+      "image_sha256": "738c9dad0ace88e469fb8edd0daa5ba8b86034f8c5392e0229093026cdcaaba3",
+      "image_filename": "jw01180026001_03201_00003_nrca1_i2d.fits",
+      "mask_variations": [
+        {
+          "experiment": "blank aperture plus annulus empirical noise",
+          "synthetic_control": false,
+          "not_an_isolated_drizzle_factor": true,
+          "shape": [
+            2058,
+            2058
+          ],
+          "pixel_scale_arcsec": 0.0312285081023676,
+          "angular_geometry": "celestial_separation",
+          "mask_method": "explicit supplied source mask",
+          "DQ_policy": "all nonzero bits excluded if DQ present",
+          "valid_pixels": 4162431,
+          "source_masked_pixels": 1063550,
+          "seed": 731,
+          "block_size_pixels": 128,
+          "bootstrap_draws": 500,
+          "sampling": "random translated grid, disjoint largest aperture/annulus supports",
+          "attempted_positions": 1000,
+          "annulus_inner_factor": 2.0,
+          "annulus_outer_factor": 3.3333333333333335,
+          "fixed_annulus_radii_arcsec": [
+            0.37747615890161734,
+            0.6291269315026955
+          ],
+          "apertures": [
+            {
+              "radius_arcsec": 0.18873807945080867,
+              "status": "measured",
+              "n_apertures": 176,
+              "n_spatial_blocks": 119,
+              "noise_multiplier": 1.5763476752438543,
+              "noise_multiplier_block_bootstrap_95": [
+                1.3281007086735745,
+                1.804285685749937
+              ],
+              "ordinary_normalized_sigma": 1.403488149303423,
+              "median_net_flux": 6.975808789515401e-10,
+              "robust_net_sigma": 8.803031418425162e-09,
+              "ordinary_net_variance": 6.19401820319707e-17,
+              "median_diagonal_sigma": 5.536380651863748e-09,
+              "aperture_variance": 6.583848805093501e-17,
+              "background_contribution_variance": 2.845565679309051e-17,
+              "aperture_background_covariance": 1.6176981406027415e-17,
+              "variance_identity_ap_plus_bg_minus_2cov": 6.194018203197069e-17,
+              "aperture_background_correlation": 0.3737431613180056,
+              "regenerable_blank_measurements": {
+                "count": 176,
+                "canonical_json_sha256": "e0faffb16e18f48e2b78a9b4dd82460a6b19f44b566bbad59a8bd30b9b819b56"
+              }
+            }
+          ],
+          "limits": [
+            "Background/confusion/flat errors and covariance are not separately identifiable.",
+            "One image and connected source mask cannot establish source-free sky truth.",
+            "Spatial block bootstrap is conditional on blocks; long-range covariance remains.",
+            "ERR assumed in SCI units, as in calibrated JWST products; WHT only masks coverage.",
+            "This measures sky-limited uncertainty, not source Poisson or calibration uncertainty.",
+            "Multiplier belongs to this image, aperture, annulus, mask and noise baseline only."
+          ],
+          "source_mask_threshold": 3.0,
+          "source_mask_dilation_pixels": 13,
+          "block_size_sensitivity": [
+            {
+              "block_size_pixels": 64,
+              "status": "measured",
+              "n_apertures": 176,
+              "n_spatial_blocks": 154,
+              "noise_multiplier": 1.5763476752438543,
+              "noise_multiplier_block_bootstrap_95": [
+                1.3104816953842273,
+                1.7831829612957821
+              ],
+              "ordinary_normalized_sigma": 1.403488149303423,
+              "median_net_flux": 6.975808789515401e-10,
+              "robust_net_sigma": 8.803031418425162e-09,
+              "ordinary_net_variance": 6.19401820319707e-17,
+              "median_diagonal_sigma": 5.536380651863748e-09,
+              "aperture_variance": 6.583848805093501e-17,
+              "background_contribution_variance": 2.845565679309051e-17,
+              "aperture_background_covariance": 1.6176981406027415e-17,
+              "variance_identity_ap_plus_bg_minus_2cov": 6.194018203197069e-17,
+              "aperture_background_correlation": 0.3737431613180056
+            },
+            {
+              "block_size_pixels": 128,
+              "status": "measured",
+              "n_apertures": 176,
+              "n_spatial_blocks": 119,
+              "noise_multiplier": 1.5763476752438543,
+              "noise_multiplier_block_bootstrap_95": [
+                1.3281007086735745,
+                1.804285685749937
+              ],
+              "ordinary_normalized_sigma": 1.403488149303423,
+              "median_net_flux": 6.975808789515401e-10,
+              "robust_net_sigma": 8.803031418425162e-09,
+              "ordinary_net_variance": 6.19401820319707e-17,
+              "median_diagonal_sigma": 5.536380651863748e-09,
+              "aperture_variance": 6.583848805093501e-17,
+              "background_contribution_variance": 2.845565679309051e-17,
+              "aperture_background_covariance": 1.6176981406027415e-17,
+              "variance_identity_ap_plus_bg_minus_2cov": 6.194018203197069e-17,
+              "aperture_background_correlation": 0.3737431613180056
+            },
+            {
+              "block_size_pixels": 256,
+              "status": "measured",
+              "n_apertures": 176,
+              "n_spatial_blocks": 56,
+              "noise_multiplier": 1.5763476752438543,
+              "noise_multiplier_block_bootstrap_95": [
+                1.34534311537356,
+                1.7654250455820217
+              ],
+              "ordinary_normalized_sigma": 1.403488149303423,
+              "median_net_flux": 6.975808789515401e-10,
+              "robust_net_sigma": 8.803031418425162e-09,
+              "ordinary_net_variance": 6.19401820319707e-17,
+              "median_diagonal_sigma": 5.536380651863748e-09,
+              "aperture_variance": 6.583848805093501e-17,
+              "background_contribution_variance": 2.845565679309051e-17,
+              "aperture_background_covariance": 1.6176981406027415e-17,
+              "variance_identity_ap_plus_bg_minus_2cov": 6.194018203197069e-17,
+              "aperture_background_correlation": 0.3737431613180056
+            }
+          ]
+        },
+        {
+          "experiment": "blank aperture plus annulus empirical noise",
+          "synthetic_control": false,
+          "not_an_isolated_drizzle_factor": true,
+          "shape": [
+            2058,
+            2058
+          ],
+          "pixel_scale_arcsec": 0.0312285081023676,
+          "angular_geometry": "celestial_separation",
+          "mask_method": "explicit supplied source mask",
+          "DQ_policy": "all nonzero bits excluded if DQ present",
+          "valid_pixels": 4162431,
+          "source_masked_pixels": 584687,
+          "seed": 731,
+          "block_size_pixels": 128,
+          "bootstrap_draws": 500,
+          "sampling": "random translated grid, disjoint largest aperture/annulus supports",
+          "attempted_positions": 1000,
+          "annulus_inner_factor": 2.0,
+          "annulus_outer_factor": 3.3333333333333335,
+          "fixed_annulus_radii_arcsec": [
+            0.37747615890161734,
+            0.6291269315026955
+          ],
+          "apertures": [
+            {
+              "radius_arcsec": 0.18873807945080867,
+              "status": "measured",
+              "n_apertures": 430,
+              "n_spatial_blocks": 208,
+              "noise_multiplier": 1.3984379606703914,
+              "noise_multiplier_block_bootstrap_95": [
+                1.2311697859519002,
+                1.5485282083758085
+              ],
+              "ordinary_normalized_sigma": 1.3860717753428595,
+              "median_net_flux": -3.85823079161642e-10,
+              "robust_net_sigma": 7.834609795410987e-09,
+              "ordinary_net_variance": 6.175849765956793e-17,
+              "median_diagonal_sigma": 5.559781489209255e-09,
+              "aperture_variance": 6.704066951839563e-17,
+              "background_contribution_variance": 3.6365497498268903e-17,
+              "aperture_background_covariance": 2.0823834678548304e-17,
+              "variance_identity_ap_plus_bg_minus_2cov": 6.175849765956792e-17,
+              "aperture_background_correlation": 0.4217419183531764,
+              "regenerable_blank_measurements": {
+                "count": 430,
+                "canonical_json_sha256": "cf1cb61e03f82d46ff9d3dd11692ffa9ae24bb8e83bfb9a9cba9ed7033882233"
+              }
+            }
+          ],
+          "limits": [
+            "Background/confusion/flat errors and covariance are not separately identifiable.",
+            "One image and connected source mask cannot establish source-free sky truth.",
+            "Spatial block bootstrap is conditional on blocks; long-range covariance remains.",
+            "ERR assumed in SCI units, as in calibrated JWST products; WHT only masks coverage.",
+            "This measures sky-limited uncertainty, not source Poisson or calibration uncertainty.",
+            "Multiplier belongs to this image, aperture, annulus, mask and noise baseline only."
+          ],
+          "source_mask_threshold": 4.0,
+          "source_mask_dilation_pixels": 13
+        },
+        {
+          "experiment": "blank aperture plus annulus empirical noise",
+          "synthetic_control": false,
+          "not_an_isolated_drizzle_factor": true,
+          "shape": [
+            2058,
+            2058
+          ],
+          "pixel_scale_arcsec": 0.0312285081023676,
+          "angular_geometry": "celestial_separation",
+          "mask_method": "explicit supplied source mask",
+          "DQ_policy": "all nonzero bits excluded if DQ present",
+          "valid_pixels": 4162431,
+          "source_masked_pixels": 1367846,
+          "seed": 731,
+          "block_size_pixels": 128,
+          "bootstrap_draws": 500,
+          "sampling": "random translated grid, disjoint largest aperture/annulus supports",
+          "attempted_positions": 1000,
+          "annulus_inner_factor": 2.0,
+          "annulus_outer_factor": 3.3333333333333335,
+          "fixed_annulus_radii_arcsec": [
+            0.37747615890161734,
+            0.6291269315026955
+          ],
+          "apertures": [
+            {
+              "radius_arcsec": 0.18873807945080867,
+              "status": "measured",
+              "n_apertures": 148,
+              "n_spatial_blocks": 103,
+              "noise_multiplier": 1.5522281636371165,
+              "noise_multiplier_block_bootstrap_95": [
+                1.2862920301303775,
+                1.8032649766498887
+              ],
+              "ordinary_normalized_sigma": 1.4187520265471643,
+              "median_net_flux": 1.1824945152777586e-09,
+              "robust_net_sigma": 8.732405673564028e-09,
+              "ordinary_net_variance": 6.344042496963075e-17,
+              "median_diagonal_sigma": 5.5356553073972695e-09,
+              "aperture_variance": 6.740027295900059e-17,
+              "background_contribution_variance": 2.935387543527631e-17,
+              "aperture_background_covariance": 1.665686171232307e-17,
+              "variance_identity_ap_plus_bg_minus_2cov": 6.344042496963075e-17,
+              "aperture_background_correlation": 0.37448086305719785,
+              "regenerable_blank_measurements": {
+                "count": 148,
+                "canonical_json_sha256": "54aec032268bb9b05f38be27dcb900f34a8832880eb027df31a93f3693dfb766"
+              }
+            }
+          ],
+          "limits": [
+            "Background/confusion/flat errors and covariance are not separately identifiable.",
+            "One image and connected source mask cannot establish source-free sky truth.",
+            "Spatial block bootstrap is conditional on blocks; long-range covariance remains.",
+            "ERR assumed in SCI units, as in calibrated JWST products; WHT only masks coverage.",
+            "This measures sky-limited uncertainty, not source Poisson or calibration uncertainty.",
+            "Multiplier belongs to this image, aperture, annulus, mask and noise baseline only."
+          ],
+          "source_mask_threshold": 3.0,
+          "source_mask_dilation_pixels": 16
+        },
+        {
+          "experiment": "blank aperture plus annulus empirical noise",
+          "synthetic_control": false,
+          "not_an_isolated_drizzle_factor": true,
+          "shape": [
+            2058,
+            2058
+          ],
+          "pixel_scale_arcsec": 0.0312285081023676,
+          "angular_geometry": "celestial_separation",
+          "mask_method": "explicit supplied source mask",
+          "DQ_policy": "all nonzero bits excluded if DQ present",
+          "valid_pixels": 4162431,
+          "source_masked_pixels": 688344,
+          "seed": 731,
+          "block_size_pixels": 128,
+          "bootstrap_draws": 500,
+          "sampling": "random translated grid, disjoint largest aperture/annulus supports",
+          "attempted_positions": 1000,
+          "annulus_inner_factor": 2.0,
+          "annulus_outer_factor": 3.3333333333333335,
+          "fixed_annulus_radii_arcsec": [
+            0.37747615890161734,
+            0.6291269315026955
+          ],
+          "apertures": [
+            {
+              "radius_arcsec": 0.18873807945080867,
+              "status": "measured",
+              "n_apertures": 242,
+              "n_spatial_blocks": 151,
+              "noise_multiplier": 1.4279364315014904,
+              "noise_multiplier_block_bootstrap_95": [
+                1.237543062977728,
+                1.6497024478319737
+              ],
+              "ordinary_normalized_sigma": 1.3676699823896008,
+              "median_net_flux": -2.603682371466616e-10,
+              "robust_net_sigma": 7.899330552085343e-09,
+              "ordinary_net_variance": 5.897882702958574e-17,
+              "median_diagonal_sigma": 5.536425051684196e-09,
+              "aperture_variance": 6.227441104848825e-17,
+              "background_contribution_variance": 2.586876437977626e-17,
+              "aperture_background_covariance": 1.4582174199339373e-17,
+              "variance_identity_ap_plus_bg_minus_2cov": 5.897882702958576e-17,
+              "aperture_background_correlation": 0.3633119015928582,
+              "regenerable_blank_measurements": {
+                "count": 242,
+                "canonical_json_sha256": "dc2102f5d2e2a241b8698f8b15216acc8bce77dfa6d60414e66238831728bd35"
+              }
+            }
+          ],
+          "limits": [
+            "Background/confusion/flat errors and covariance are not separately identifiable.",
+            "One image and connected source mask cannot establish source-free sky truth.",
+            "Spatial block bootstrap is conditional on blocks; long-range covariance remains.",
+            "ERR assumed in SCI units, as in calibrated JWST products; WHT only masks coverage.",
+            "This measures sky-limited uncertainty, not source Poisson or calibration uncertainty.",
+            "Multiplier belongs to this image, aperture, annulus, mask and noise baseline only."
+          ],
+          "source_mask_threshold": 3.0,
+          "source_mask_dilation_pixels": 9
+        }
+      ]
+    },
+    {
+      "filter": "F200W",
+      "image_sha256": "075becbdd9bcc845ffacadc520b97da82f7d02a0c62bd5e9ddb7b1864deccd74",
+      "image_filename": "jw01180026001_13201_00003_nrca1_i2d.fits",
+      "mask_variations": [
+        {
+          "experiment": "blank aperture plus annulus empirical noise",
+          "synthetic_control": false,
+          "not_an_isolated_drizzle_factor": true,
+          "shape": [
+            2058,
+            2058
+          ],
+          "pixel_scale_arcsec": 0.03122919843918293,
+          "angular_geometry": "celestial_separation",
+          "mask_method": "explicit supplied source mask",
+          "DQ_policy": "all nonzero bits excluded if DQ present",
+          "valid_pixels": 4162715,
+          "source_masked_pixels": 1075450,
+          "seed": 731,
+          "block_size_pixels": 128,
+          "bootstrap_draws": 500,
+          "sampling": "random translated grid, disjoint largest aperture/annulus supports",
+          "attempted_positions": 1000,
+          "annulus_inner_factor": 2.0,
+          "annulus_outer_factor": 3.3333333333333335,
+          "fixed_annulus_radii_arcsec": [
+            0.37747615890161734,
+            0.6291269315026955
+          ],
+          "apertures": [
+            {
+              "radius_arcsec": 0.18873807945080867,
+              "status": "measured",
+              "n_apertures": 249,
+              "n_spatial_blocks": 145,
+              "noise_multiplier": 1.4515239125637434,
+              "noise_multiplier_block_bootstrap_95": [
+                1.1922988294845585,
+                1.6247712301264505
+              ],
+              "ordinary_normalized_sigma": 1.308051892107986,
+              "median_net_flux": 5.38833025446278e-10,
+              "robust_net_sigma": 5.5211300140030796e-09,
+              "ordinary_net_variance": 2.501552860809229e-17,
+              "median_diagonal_sigma": 3.8054585434300425e-09,
+              "aperture_variance": 3.611416147667781e-17,
+              "background_contribution_variance": 2.0929398806404337e-17,
+              "aperture_background_covariance": 1.6014015837494918e-17,
+              "variance_identity_ap_plus_bg_minus_2cov": 2.501552860809232e-17,
+              "aperture_background_correlation": 0.5824828046268056,
+              "regenerable_blank_measurements": {
+                "count": 249,
+                "canonical_json_sha256": "5eaa4f1e1e6b06487bd9afbd09d046194e25bef55f00c03f7fc9e44d80aa95ff"
+              }
+            }
+          ],
+          "limits": [
+            "Background/confusion/flat errors and covariance are not separately identifiable.",
+            "One image and connected source mask cannot establish source-free sky truth.",
+            "Spatial block bootstrap is conditional on blocks; long-range covariance remains.",
+            "ERR assumed in SCI units, as in calibrated JWST products; WHT only masks coverage.",
+            "This measures sky-limited uncertainty, not source Poisson or calibration uncertainty.",
+            "Multiplier belongs to this image, aperture, annulus, mask and noise baseline only."
+          ],
+          "source_mask_threshold": 3.0,
+          "source_mask_dilation_pixels": 13,
+          "block_size_sensitivity": [
+            {
+              "block_size_pixels": 64,
+              "status": "measured",
+              "n_apertures": 249,
+              "n_spatial_blocks": 222,
+              "noise_multiplier": 1.4515239125637434,
+              "noise_multiplier_block_bootstrap_95": [
+                1.2160712119920616,
+                1.6044071849231485
+              ],
+              "ordinary_normalized_sigma": 1.308051892107986,
+              "median_net_flux": 5.38833025446278e-10,
+              "robust_net_sigma": 5.5211300140030796e-09,
+              "ordinary_net_variance": 2.501552860809229e-17,
+              "median_diagonal_sigma": 3.8054585434300425e-09,
+              "aperture_variance": 3.611416147667781e-17,
+              "background_contribution_variance": 2.0929398806404337e-17,
+              "aperture_background_covariance": 1.6014015837494918e-17,
+              "variance_identity_ap_plus_bg_minus_2cov": 2.501552860809232e-17,
+              "aperture_background_correlation": 0.5824828046268056
+            },
+            {
+              "block_size_pixels": 128,
+              "status": "measured",
+              "n_apertures": 249,
+              "n_spatial_blocks": 145,
+              "noise_multiplier": 1.4515239125637434,
+              "noise_multiplier_block_bootstrap_95": [
+                1.1922988294845585,
+                1.6247712301264505
+              ],
+              "ordinary_normalized_sigma": 1.308051892107986,
+              "median_net_flux": 5.38833025446278e-10,
+              "robust_net_sigma": 5.5211300140030796e-09,
+              "ordinary_net_variance": 2.501552860809229e-17,
+              "median_diagonal_sigma": 3.8054585434300425e-09,
+              "aperture_variance": 3.611416147667781e-17,
+              "background_contribution_variance": 2.0929398806404337e-17,
+              "aperture_background_covariance": 1.6014015837494918e-17,
+              "variance_identity_ap_plus_bg_minus_2cov": 2.501552860809232e-17,
+              "aperture_background_correlation": 0.5824828046268056
+            },
+            {
+              "block_size_pixels": 256,
+              "status": "measured",
+              "n_apertures": 249,
+              "n_spatial_blocks": 61,
+              "noise_multiplier": 1.4515239125637434,
+              "noise_multiplier_block_bootstrap_95": [
+                1.2410801362114312,
+                1.6044106901625466
+              ],
+              "ordinary_normalized_sigma": 1.308051892107986,
+              "median_net_flux": 5.38833025446278e-10,
+              "robust_net_sigma": 5.5211300140030796e-09,
+              "ordinary_net_variance": 2.501552860809229e-17,
+              "median_diagonal_sigma": 3.8054585434300425e-09,
+              "aperture_variance": 3.611416147667781e-17,
+              "background_contribution_variance": 2.0929398806404337e-17,
+              "aperture_background_covariance": 1.6014015837494918e-17,
+              "variance_identity_ap_plus_bg_minus_2cov": 2.501552860809232e-17,
+              "aperture_background_correlation": 0.5824828046268056
+            }
+          ]
+        },
+        {
+          "experiment": "blank aperture plus annulus empirical noise",
+          "synthetic_control": false,
+          "not_an_isolated_drizzle_factor": true,
+          "shape": [
+            2058,
+            2058
+          ],
+          "pixel_scale_arcsec": 0.03122919843918293,
+          "angular_geometry": "celestial_separation",
+          "mask_method": "explicit supplied source mask",
+          "DQ_policy": "all nonzero bits excluded if DQ present",
+          "valid_pixels": 4162715,
+          "source_masked_pixels": 736764,
+          "seed": 731,
+          "block_size_pixels": 128,
+          "bootstrap_draws": 500,
+          "sampling": "random translated grid, disjoint largest aperture/annulus supports",
+          "attempted_positions": 1000,
+          "annulus_inner_factor": 2.0,
+          "annulus_outer_factor": 3.3333333333333335,
+          "fixed_annulus_radii_arcsec": [
+            0.37747615890161734,
+            0.6291269315026955
+          ],
+          "apertures": [
+            {
+              "radius_arcsec": 0.18873807945080867,
+              "status": "measured",
+              "n_apertures": 410,
+              "n_spatial_blocks": 200,
+              "noise_multiplier": 1.443416521372947,
+              "noise_multiplier_block_bootstrap_95": [
+                1.2392324211131451,
+                1.548717592462159
+              ],
+              "ordinary_normalized_sigma": 1.3988065855097824,
+              "median_net_flux": 3.51831095845111e-10,
+              "robust_net_sigma": 5.484339270903955e-09,
+              "ordinary_net_variance": 2.920081303536831e-17,
+              "median_diagonal_sigma": 3.805548732670793e-09,
+              "aperture_variance": 4.011199915498801e-17,
+              "background_contribution_variance": 2.5068518089216097e-17,
+              "aperture_background_covariance": 1.7989852104417884e-17,
+              "variance_identity_ap_plus_bg_minus_2cov": 2.920081303536834e-17,
+              "aperture_background_correlation": 0.5673174059749264,
+              "regenerable_blank_measurements": {
+                "count": 410,
+                "canonical_json_sha256": "97344ae856eb931798312d2f9b036d9c9c3d6a1d825b14334f40eb3a714a91cc"
+              }
+            }
+          ],
+          "limits": [
+            "Background/confusion/flat errors and covariance are not separately identifiable.",
+            "One image and connected source mask cannot establish source-free sky truth.",
+            "Spatial block bootstrap is conditional on blocks; long-range covariance remains.",
+            "ERR assumed in SCI units, as in calibrated JWST products; WHT only masks coverage.",
+            "This measures sky-limited uncertainty, not source Poisson or calibration uncertainty.",
+            "Multiplier belongs to this image, aperture, annulus, mask and noise baseline only."
+          ],
+          "source_mask_threshold": 4.0,
+          "source_mask_dilation_pixels": 13
+        },
+        {
+          "experiment": "blank aperture plus annulus empirical noise",
+          "synthetic_control": false,
+          "not_an_isolated_drizzle_factor": true,
+          "shape": [
+            2058,
+            2058
+          ],
+          "pixel_scale_arcsec": 0.03122919843918293,
+          "angular_geometry": "celestial_separation",
+          "mask_method": "explicit supplied source mask",
+          "DQ_policy": "all nonzero bits excluded if DQ present",
+          "valid_pixels": 4162715,
+          "source_masked_pixels": 1338996,
+          "seed": 731,
+          "block_size_pixels": 128,
+          "bootstrap_draws": 500,
+          "sampling": "random translated grid, disjoint largest aperture/annulus supports",
+          "attempted_positions": 1000,
+          "annulus_inner_factor": 2.0,
+          "annulus_outer_factor": 3.3333333333333335,
+          "fixed_annulus_radii_arcsec": [
+            0.37747615890161734,
+            0.6291269315026955
+          ],
+          "apertures": [
+            {
+              "radius_arcsec": 0.18873807945080867,
+              "status": "measured",
+              "n_apertures": 195,
+              "n_spatial_blocks": 127,
+              "noise_multiplier": 1.4714602110581678,
+              "noise_multiplier_block_bootstrap_95": [
+                1.1964868772821677,
+                1.6442124228278585
+              ],
+              "ordinary_normalized_sigma": 1.29034322190758,
+              "median_net_flux": 5.135189295416316e-10,
+              "robust_net_sigma": 5.602334881104434e-09,
+              "ordinary_net_variance": 2.438462102650008e-17,
+              "median_diagonal_sigma": 3.810827874655014e-09,
+              "aperture_variance": 3.651877740724319e-17,
+              "background_contribution_variance": 2.104688597675656e-17,
+              "aperture_background_covariance": 1.6590521178749825e-17,
+              "variance_identity_ap_plus_bg_minus_2cov": 2.4384621026500096e-17,
+              "aperture_background_correlation": 0.5984226050241757,
+              "regenerable_blank_measurements": {
+                "count": 195,
+                "canonical_json_sha256": "c4d3e3575c9730ff6d17f64492a49b4868ca50f8987be3c0b702ec32959f8cfb"
+              }
+            }
+          ],
+          "limits": [
+            "Background/confusion/flat errors and covariance are not separately identifiable.",
+            "One image and connected source mask cannot establish source-free sky truth.",
+            "Spatial block bootstrap is conditional on blocks; long-range covariance remains.",
+            "ERR assumed in SCI units, as in calibrated JWST products; WHT only masks coverage.",
+            "This measures sky-limited uncertainty, not source Poisson or calibration uncertainty.",
+            "Multiplier belongs to this image, aperture, annulus, mask and noise baseline only."
+          ],
+          "source_mask_threshold": 3.0,
+          "source_mask_dilation_pixels": 16
+        },
+        {
+          "experiment": "blank aperture plus annulus empirical noise",
+          "synthetic_control": false,
+          "not_an_isolated_drizzle_factor": true,
+          "shape": [
+            2058,
+            2058
+          ],
+          "pixel_scale_arcsec": 0.03122919843918293,
+          "angular_geometry": "celestial_separation",
+          "mask_method": "explicit supplied source mask",
+          "DQ_policy": "all nonzero bits excluded if DQ present",
+          "valid_pixels": 4162715,
+          "source_masked_pixels": 746637,
+          "seed": 731,
+          "block_size_pixels": 128,
+          "bootstrap_draws": 500,
+          "sampling": "random translated grid, disjoint largest aperture/annulus supports",
+          "attempted_positions": 1000,
+          "annulus_inner_factor": 2.0,
+          "annulus_outer_factor": 3.3333333333333335,
+          "fixed_annulus_radii_arcsec": [
+            0.37747615890161734,
+            0.6291269315026955
+          ],
+          "apertures": [
+            {
+              "radius_arcsec": 0.18873807945080867,
+              "status": "measured",
+              "n_apertures": 315,
+              "n_spatial_blocks": 168,
+              "noise_multiplier": 1.4127176977939184,
+              "noise_multiplier_block_bootstrap_95": [
+                1.221825817497488,
+                1.5225557067494326
+              ],
+              "ordinary_normalized_sigma": 1.3619367220078546,
+              "median_net_flux": 3.0921548654556375e-10,
+              "robust_net_sigma": 5.4408830902473856e-09,
+              "ordinary_net_variance": 2.7816776223623255e-17,
+              "median_diagonal_sigma": 3.8032790426325e-09,
+              "aperture_variance": 3.468323688730645e-17,
+              "background_contribution_variance": 2.3649264254580922e-17,
+              "aperture_background_covariance": 1.525786245913205e-17,
+              "variance_identity_ap_plus_bg_minus_2cov": 2.7816776223623273e-17,
+              "aperture_background_correlation": 0.5327519739633164,
+              "regenerable_blank_measurements": {
+                "count": 315,
+                "canonical_json_sha256": "6c8b9700932499169a8f84d6b5161647f5379393949f158ae2a4e9c55a4c5ce5"
+              }
+            }
+          ],
+          "limits": [
+            "Background/confusion/flat errors and covariance are not separately identifiable.",
+            "One image and connected source mask cannot establish source-free sky truth.",
+            "Spatial block bootstrap is conditional on blocks; long-range covariance remains.",
+            "ERR assumed in SCI units, as in calibrated JWST products; WHT only masks coverage.",
+            "This measures sky-limited uncertainty, not source Poisson or calibration uncertainty.",
+            "Multiplier belongs to this image, aperture, annulus, mask and noise baseline only."
+          ],
+          "source_mask_threshold": 3.0,
+          "source_mask_dilation_pixels": 9
+        }
+      ]
+    },
+    {
+      "filter": "F444W",
+      "image_sha256": "b9b84b9bd0bd8ef6140dca76163a9ac4625689024b651a25e631a6d14ce68d86",
+      "image_filename": "jw01180026001_09201_00003_nrcalong_i2d.fits",
+      "mask_variations": [
+        {
+          "experiment": "blank aperture plus annulus empirical noise",
+          "synthetic_control": false,
+          "not_an_isolated_drizzle_factor": true,
+          "shape": [
+            2068,
+            2075
+          ],
+          "pixel_scale_arcsec": 0.06291269315026955,
+          "angular_geometry": "celestial_separation",
+          "mask_method": "explicit supplied source mask",
+          "DQ_policy": "all nonzero bits excluded if DQ present",
+          "valid_pixels": 4184055,
+          "source_masked_pixels": 751307,
+          "seed": 731,
+          "block_size_pixels": 128,
+          "bootstrap_draws": 500,
+          "sampling": "random translated grid, disjoint largest aperture/annulus supports",
+          "attempted_positions": 1000,
+          "annulus_inner_factor": 2.0,
+          "annulus_outer_factor": 3.3333333333333335,
+          "fixed_annulus_radii_arcsec": [
+            0.37747615890161734,
+            0.6291269315026955
+          ],
+          "apertures": [
+            {
+              "radius_arcsec": 0.18873807945080867,
+              "status": "measured",
+              "n_apertures": 518,
+              "n_spatial_blocks": 219,
+              "noise_multiplier": 1.047563843727776,
+              "noise_multiplier_block_bootstrap_95": [
+                0.9646866415346781,
+                1.1534818546130055
+              ],
+              "ordinary_normalized_sigma": 1.480878244544044,
+              "median_net_flux": 6.778410533715792e-11,
+              "robust_net_sigma": 4.152488723414149e-09,
+              "ordinary_net_variance": 1.743620022813909e-16,
+              "median_diagonal_sigma": 3.9141870707170135e-09,
+              "aperture_variance": 1.782301392649715e-16,
+              "background_contribution_variance": 1.2202652669509268e-17,
+              "aperture_background_covariance": 8.035394826544869e-18,
+              "variance_identity_ap_plus_bg_minus_2cov": 1.7436200228139104e-16,
+              "aperture_background_correlation": 0.17230168433481946,
+              "regenerable_blank_measurements": {
+                "count": 518,
+                "canonical_json_sha256": "ec609f26fba0e38a44b850bd0292916ad21295e4f7d6ff55306b2d38da241cfe"
+              }
+            }
+          ],
+          "limits": [
+            "Background/confusion/flat errors and covariance are not separately identifiable.",
+            "One image and connected source mask cannot establish source-free sky truth.",
+            "Spatial block bootstrap is conditional on blocks; long-range covariance remains.",
+            "ERR assumed in SCI units, as in calibrated JWST products; WHT only masks coverage.",
+            "This measures sky-limited uncertainty, not source Poisson or calibration uncertainty.",
+            "Multiplier belongs to this image, aperture, annulus, mask and noise baseline only."
+          ],
+          "source_mask_threshold": 3.0,
+          "source_mask_dilation_pixels": 7,
+          "block_size_sensitivity": [
+            {
+              "block_size_pixels": 64,
+              "status": "measured",
+              "n_apertures": 518,
+              "n_spatial_blocks": 402,
+              "noise_multiplier": 1.047563843727776,
+              "noise_multiplier_block_bootstrap_95": [
+                0.9612959105297166,
+                1.141818841280252
+              ],
+              "ordinary_normalized_sigma": 1.480878244544044,
+              "median_net_flux": 6.778410533715792e-11,
+              "robust_net_sigma": 4.152488723414149e-09,
+              "ordinary_net_variance": 1.743620022813909e-16,
+              "median_diagonal_sigma": 3.9141870707170135e-09,
+              "aperture_variance": 1.782301392649715e-16,
+              "background_contribution_variance": 1.2202652669509268e-17,
+              "aperture_background_covariance": 8.035394826544869e-18,
+              "variance_identity_ap_plus_bg_minus_2cov": 1.7436200228139104e-16,
+              "aperture_background_correlation": 0.17230168433481946
+            },
+            {
+              "block_size_pixels": 128,
+              "status": "measured",
+              "n_apertures": 518,
+              "n_spatial_blocks": 219,
+              "noise_multiplier": 1.047563843727776,
+              "noise_multiplier_block_bootstrap_95": [
+                0.9646866415346781,
+                1.1534818546130055
+              ],
+              "ordinary_normalized_sigma": 1.480878244544044,
+              "median_net_flux": 6.778410533715792e-11,
+              "robust_net_sigma": 4.152488723414149e-09,
+              "ordinary_net_variance": 1.743620022813909e-16,
+              "median_diagonal_sigma": 3.9141870707170135e-09,
+              "aperture_variance": 1.782301392649715e-16,
+              "background_contribution_variance": 1.2202652669509268e-17,
+              "aperture_background_covariance": 8.035394826544869e-18,
+              "variance_identity_ap_plus_bg_minus_2cov": 1.7436200228139104e-16,
+              "aperture_background_correlation": 0.17230168433481946
+            },
+            {
+              "block_size_pixels": 256,
+              "status": "measured",
+              "n_apertures": 518,
+              "n_spatial_blocks": 66,
+              "noise_multiplier": 1.047563843727776,
+              "noise_multiplier_block_bootstrap_95": [
+                0.9510504443699181,
+                1.1530208531900379
+              ],
+              "ordinary_normalized_sigma": 1.480878244544044,
+              "median_net_flux": 6.778410533715792e-11,
+              "robust_net_sigma": 4.152488723414149e-09,
+              "ordinary_net_variance": 1.743620022813909e-16,
+              "median_diagonal_sigma": 3.9141870707170135e-09,
+              "aperture_variance": 1.782301392649715e-16,
+              "background_contribution_variance": 1.2202652669509268e-17,
+              "aperture_background_covariance": 8.035394826544869e-18,
+              "variance_identity_ap_plus_bg_minus_2cov": 1.7436200228139104e-16,
+              "aperture_background_correlation": 0.17230168433481946
+            }
+          ]
+        },
+        {
+          "experiment": "blank aperture plus annulus empirical noise",
+          "synthetic_control": false,
+          "not_an_isolated_drizzle_factor": true,
+          "shape": [
+            2068,
+            2075
+          ],
+          "pixel_scale_arcsec": 0.06291269315026955,
+          "angular_geometry": "celestial_separation",
+          "mask_method": "explicit supplied source mask",
+          "DQ_policy": "all nonzero bits excluded if DQ present",
+          "valid_pixels": 4184055,
+          "source_masked_pixels": 608784,
+          "seed": 731,
+          "block_size_pixels": 128,
+          "bootstrap_draws": 500,
+          "sampling": "random translated grid, disjoint largest aperture/annulus supports",
+          "attempted_positions": 1000,
+          "annulus_inner_factor": 2.0,
+          "annulus_outer_factor": 3.3333333333333335,
+          "fixed_annulus_radii_arcsec": [
+            0.37747615890161734,
+            0.6291269315026955
+          ],
+          "apertures": [
+            {
+              "radius_arcsec": 0.18873807945080867,
+              "status": "measured",
+              "n_apertures": 578,
+              "n_spatial_blocks": 232,
+              "noise_multiplier": 1.04929118972742,
+              "noise_multiplier_block_bootstrap_95": [
+                0.963235104350211,
+                1.1600957142459842
+              ],
+              "ordinary_normalized_sigma": 1.4421819876014943,
+              "median_net_flux": 6.259516938229539e-11,
+              "robust_net_sigma": 4.152278156403001e-09,
+              "ordinary_net_variance": 1.5799531101734294e-16,
+              "median_diagonal_sigma": 3.9141870707170135e-09,
+              "aperture_variance": 1.6365516679310915e-16,
+              "background_contribution_variance": 1.3608022190804652e-17,
+              "aperture_background_covariance": 9.633938983285438e-18,
+              "variance_identity_ap_plus_bg_minus_2cov": 1.5799531101734294e-16,
+              "aperture_background_correlation": 0.2041463062843107,
+              "regenerable_blank_measurements": {
+                "count": 578,
+                "canonical_json_sha256": "45ac37e0391d2aa3f2f9495823ed8aac11b9a97c915c86d8f4cfc6f6d7e8735f"
+              }
+            }
+          ],
+          "limits": [
+            "Background/confusion/flat errors and covariance are not separately identifiable.",
+            "One image and connected source mask cannot establish source-free sky truth.",
+            "Spatial block bootstrap is conditional on blocks; long-range covariance remains.",
+            "ERR assumed in SCI units, as in calibrated JWST products; WHT only masks coverage.",
+            "This measures sky-limited uncertainty, not source Poisson or calibration uncertainty.",
+            "Multiplier belongs to this image, aperture, annulus, mask and noise baseline only."
+          ],
+          "source_mask_threshold": 4.0,
+          "source_mask_dilation_pixels": 7
+        },
+        {
+          "experiment": "blank aperture plus annulus empirical noise",
+          "synthetic_control": false,
+          "not_an_isolated_drizzle_factor": true,
+          "shape": [
+            2068,
+            2075
+          ],
+          "pixel_scale_arcsec": 0.06291269315026955,
+          "angular_geometry": "celestial_separation",
+          "mask_method": "explicit supplied source mask",
+          "DQ_policy": "all nonzero bits excluded if DQ present",
+          "valid_pixels": 4184055,
+          "source_masked_pixels": 1002973,
+          "seed": 731,
+          "block_size_pixels": 128,
+          "bootstrap_draws": 500,
+          "sampling": "random translated grid, disjoint largest aperture/annulus supports",
+          "attempted_positions": 1000,
+          "annulus_inner_factor": 2.0,
+          "annulus_outer_factor": 3.3333333333333335,
+          "fixed_annulus_radii_arcsec": [
+            0.37747615890161734,
+            0.6291269315026955
+          ],
+          "apertures": [
+            {
+              "radius_arcsec": 0.18873807945080867,
+              "status": "measured",
+              "n_apertures": 458,
+              "n_spatial_blocks": 210,
+              "noise_multiplier": 1.0597341556631839,
+              "noise_multiplier_block_bootstrap_95": [
+                0.9731689716620975,
+                1.1578429313997443
+              ],
+              "ordinary_normalized_sigma": 1.5252173944223417,
+              "median_net_flux": 1.2764973554052513e-10,
+              "robust_net_sigma": 4.1383360918642874e-09,
+              "ordinary_net_variance": 1.9470337459248712e-16,
+              "median_diagonal_sigma": 3.9141870707170135e-09,
+              "aperture_variance": 1.9775658217703251e-16,
+              "background_contribution_variance": 1.154520692734521e-17,
+              "aperture_background_covariance": 7.299207255945323e-18,
+              "variance_identity_ap_plus_bg_minus_2cov": 1.947033745924871e-16,
+              "aperture_background_correlation": 0.1527598984131901,
+              "regenerable_blank_measurements": {
+                "count": 458,
+                "canonical_json_sha256": "03098d0e3c2372908e4971aaf655ed14eb81e1ea9fa6ac3dfab727220633b198"
+              }
+            }
+          ],
+          "limits": [
+            "Background/confusion/flat errors and covariance are not separately identifiable.",
+            "One image and connected source mask cannot establish source-free sky truth.",
+            "Spatial block bootstrap is conditional on blocks; long-range covariance remains.",
+            "ERR assumed in SCI units, as in calibrated JWST products; WHT only masks coverage.",
+            "This measures sky-limited uncertainty, not source Poisson or calibration uncertainty.",
+            "Multiplier belongs to this image, aperture, annulus, mask and noise baseline only."
+          ],
+          "source_mask_threshold": 3.0,
+          "source_mask_dilation_pixels": 10
+        },
+        {
+          "experiment": "blank aperture plus annulus empirical noise",
+          "synthetic_control": false,
+          "not_an_isolated_drizzle_factor": true,
+          "shape": [
+            2068,
+            2075
+          ],
+          "pixel_scale_arcsec": 0.06291269315026955,
+          "angular_geometry": "celestial_separation",
+          "mask_method": "explicit supplied source mask",
+          "DQ_policy": "all nonzero bits excluded if DQ present",
+          "valid_pixels": 4184055,
+          "source_masked_pixels": 598903,
+          "seed": 731,
+          "block_size_pixels": 128,
+          "bootstrap_draws": 500,
+          "sampling": "random translated grid, disjoint largest aperture/annulus supports",
+          "attempted_positions": 1000,
+          "annulus_inner_factor": 2.0,
+          "annulus_outer_factor": 3.3333333333333335,
+          "fixed_annulus_radii_arcsec": [
+            0.37747615890161734,
+            0.6291269315026955
+          ],
+          "apertures": [
+            {
+              "radius_arcsec": 0.18873807945080867,
+              "status": "measured",
+              "n_apertures": 560,
+              "n_spatial_blocks": 226,
+              "noise_multiplier": 1.0544606543027653,
+              "noise_multiplier_block_bootstrap_95": [
+                0.9524524684284578,
+                1.1550423748355387
+              ],
+              "ordinary_normalized_sigma": 1.4491277972775956,
+              "median_net_flux": 2.2962542162357897e-11,
+              "robust_net_sigma": 4.138191062339641e-09,
+              "ordinary_net_variance": 1.6232033858028035e-16,
+              "median_diagonal_sigma": 3.9141870707170135e-09,
+              "aperture_variance": 1.6769702038983804e-16,
+              "background_contribution_variance": 1.3006254586556083e-17,
+              "aperture_background_covariance": 9.191468198056886e-18,
+              "variance_identity_ap_plus_bg_minus_2cov": 1.6232033858028033e-16,
+              "aperture_background_correlation": 0.19680951469989466,
+              "regenerable_blank_measurements": {
+                "count": 560,
+                "canonical_json_sha256": "d3e57a6fd499037ee5ef658df7c7d78f3e3143bb9ba81729e22e9f21c866a31f"
+              }
+            }
+          ],
+          "limits": [
+            "Background/confusion/flat errors and covariance are not separately identifiable.",
+            "One image and connected source mask cannot establish source-free sky truth.",
+            "Spatial block bootstrap is conditional on blocks; long-range covariance remains.",
+            "ERR assumed in SCI units, as in calibrated JWST products; WHT only masks coverage.",
+            "This measures sky-limited uncertainty, not source Poisson or calibration uncertainty.",
+            "Multiplier belongs to this image, aperture, annulus, mask and noise baseline only."
+          ],
+          "source_mask_threshold": 3.0,
+          "source_mask_dilation_pixels": 5
+        }
+      ]
+    }
+  ],
+  "seed": 731,
+  "radius_arcsec": 0.18873807945080867,
+  "annulus_radii_arcsec": [
+    0.37747615890161734,
+    0.6291269315026955
+  ],
+  "robust_vs_ordinary": "both retained; neither yields validated tail probability",
+  "limits": [
+    "Mask thresholds select different sky subsets; intervals are conditional on each subset.",
+    "Robust MAD and standard deviation estimate different aspects of non-Gaussian residuals.",
+    "Disjoint footprints do not remove longer-range or whole-field dependence."
+  ],
+  "code_sha256": "d485f4773524c9e977cbf36abe2ef9333eb384bd8b911c95f5e41007a826b2a6"
+}

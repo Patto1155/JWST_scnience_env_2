@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "origin": "official JADES DR5 modeled PSFs; not observed stellar truth",
+  "max_bytes_per_product": 5242880,
+  "products": [
+    {
+      "id": "f090w",
+      "url": "https://slate.ucsc.edu/~brant/jades-dr5/GOODS-S/hlsp/images/submosaics/hlsp_jades_jwst_nircam_jw011800-deep_f090w_v5.0_mpsf.fits",
+      "filename": "f090w_v5.0_mpsf.fits",
+      "filter": "F090W",
+      "expected_bytes": 1800000,
+      "sha256": "9f32676b77f9067594d5773027f0e01c86686c9121d005967fd8925ed265b1d4"
+    },
+    {
+      "id": "f200w",
+      "url": "https://slate.ucsc.edu/~brant/jades-dr5/GOODS-S/hlsp/images/submosaics/hlsp_jades_jwst_nircam_jw011800-deep_f200w_v5.0_mpsf.fits",
+      "filename": "f200w_v5.0_mpsf.fits",
+      "filter": "F200W",
+      "expected_bytes": 1800000,
+      "sha256": "1d6f1ae676990b9fc0b27bd5d53e5e6291663230dc10b503e16bbcf8b62de9cd"
+    }
+  ]
+}
