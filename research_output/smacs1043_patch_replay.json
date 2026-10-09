@@ -1,0 +1,8 @@
+{
+  "compact_sha256": "959a6258349a779fb3f7313a71cd158a9bcc7b90a961e71eb17bf5a9cce6547f",
+  "independent_rerun_sha256": "959a6258349a779fb3f7313a71cd158a9bcc7b90a961e71eb17bf5a9cce6547f",
+  "byte_identical": true,
+  "focused_tests_passed": 10,
+  "figure_sha256": "1713e7862475d5f078752382f6c22ee5b686fb9e72c04e6f5ead440bceb30cc5",
+  "scope": "Numerical replay does not calibrate point-template/background-family adequacy, interval coverage, source identity or redshift."
+}
