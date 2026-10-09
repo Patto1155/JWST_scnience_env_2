@@ -1,0 +1,11 @@
+{
+  "source_url": "https://jwst-docs.stsci.edu/files/216455634/216455648/1/1762452062676/jwst_nirspec_prism_disp.fits",
+  "final_url": "https://jwst-docs.stsci.edu/files/216455634/216455648/1/1762452062676/jwst_nirspec_prism_disp.fits",
+  "retrieved_utc": "2026-10-09T07:05:55.406488+00:00",
+  "bytes": 20160,
+  "sha256": "58f9330440c50af624313e70f3e5b9f58a6b22d06af094e0085ed66408d0d937",
+  "headers": {
+    "Content-Type": "application/octet-stream;charset=ISO-8859-1",
+    "Date": "Fri, 09 Oct 2026 07:05:55 GMT"
+  }
+}

@@ -49,7 +49,7 @@
     "error_minus": 0.63
   },
   "caveats": [
-    "Lines fit jointly at tied unconstrained FWHM, permitted up to 650 km/s.",
+    "Published UNITE fits include wavelength-dependent point-source LSF and calibration uncertainties; intrinsic FWHM prior is uniform up to 650 km/s, tied across lines together with redshift.",
     "Asymmetric quoted intervals are not independent Gaussian measurement likelihoods.",
     "Abundance requires photoionization/ionization-correction modelling; flux ratios are not elemental ratios."
   ]
