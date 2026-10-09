@@ -161,3 +161,7 @@ archive, and for what this pipeline can realistically be used to discover.
 ## Notes
 - Strict mode treats missing/invalid `metadata.file_path` as data-integrity failure.
 - Startup audits catalog integrity and quarantines invalid datasets (including legacy invalid samples).
+
+## Verified research baseline
+
+See [takeover status and reproducible experiments](docs/TAKEOVER_STATUS.md) for merged improvements, public reference data, measured recovery limits, and next scientific work.
