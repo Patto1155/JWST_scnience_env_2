@@ -1,0 +1,708 @@
+{
+  "schema_version": 1,
+  "provenance": {
+    "archive_url": "https://zenodo.org/records/11118643/files/yi-jia-li/cue-v0.1.zip?download=1",
+    "archive_sha256": "8c1089f4d7407c57558e14b0f26028379ca14d555a94f873834c767f3cc5abfb",
+    "archive_bytes": 31885220,
+    "member_provenance": [
+      {
+        "member": "src/cue/data/lineList_replaceblnd_name.npy",
+        "bytes": 7304,
+        "sha256": "70da74a52875c58e3f92ff3e203c220771704ae8a5a35b06182776a97b0a9a31"
+      },
+      {
+        "member": "src/cue/data/lineList_wav.npy",
+        "bytes": 1232,
+        "sha256": "07d46da9616ac5b91e5b396c74eebc1de300bf6c38f94de04f73f7bb6f5574c7"
+      },
+      {
+        "member": "src/cue/data/speculator_line_new_C2C3.pkl",
+        "bytes": 553766,
+        "sha256": "13ecb0947b2965434b386a7679bf3ab17cf011fd4cf1168c48a75459427a6ce6"
+      },
+      {
+        "member": "src/cue/data/pca_line_new_C2C3.pkl",
+        "bytes": 1922721,
+        "sha256": "da31df09a663bbbff749256e583bb78ee2f0fcd938b9bcea51a46d7c8b1d60ac"
+      },
+      {
+        "member": "src/cue/data/speculator_line_new_C4.pkl",
+        "bytes": 549350,
+        "sha256": "5776edd8c29d01379a498d0453e1cca2c504092102c424b9da0ee454fe7403b7"
+      },
+      {
+        "member": "src/cue/data/pca_line_new_C4.pkl",
+        "bytes": 1922017,
+        "sha256": "cdb2671fc4d140e9ff1c0164689173a27797a9ace7301e21945572a33b8cfe1e"
+      },
+      {
+        "member": "src/cue/data/speculator_line_new_N.pkl",
+        "bytes": 555953,
+        "sha256": "dd0cf172eb6588f89497784333ae8ec13b39586a6c7807a5a7aa662c748bbbf4"
+      },
+      {
+        "member": "src/cue/data/pca_line_new_N.pkl",
+        "bytes": 1923001,
+        "sha256": "12ae1f176ecaeb13c3dfb8dacd3a580ffe826434ee8c70c737b03ff0e3cb3246"
+      },
+      {
+        "member": "src/cue/data/speculator_line_new_He2.pkl",
+        "bytes": 549350,
+        "sha256": "50a274c0c735767b4c4dcfec877cd35065aba11de701eaa65718da3dd2bc11b5"
+      },
+      {
+        "member": "src/cue/data/pca_line_new_He2.pkl",
+        "bytes": 1922017,
+        "sha256": "640434b8f47168db5556f9388be7cff51004f3dcffb5c97f356daba5c66291af"
+      },
+      {
+        "member": "src/cue/data/speculator_line_new_O3.pkl",
+        "bytes": 553766,
+        "sha256": "88c812c9baaf6e0f663b0c5b5648730bf7ebf96119e01a9776b64d94f5af0237"
+      },
+      {
+        "member": "src/cue/data/pca_line_new_O3.pkl",
+        "bytes": 1922721,
+        "sha256": "714325aa5ca59aef2ec01acbf704b32025365413deaa5f50652006fb848b5dbf"
+      },
+      {
+        "member": "src/cue/nn.py",
+        "bytes": 16937,
+        "sha256": "af40709b14dd38369c2bb42602da371a76b355122697824923f9a3c0217b6033"
+      },
+      {
+        "member": "src/cue/emulator.py",
+        "bytes": 11607,
+        "sha256": "ba1fe191ca857dd95bb50d97db3d6c7ec492cd25d37d38acee1322f2cc9c2157"
+      },
+      {
+        "member": "src/cue/utils.py",
+        "bytes": 17432,
+        "sha256": "4bfcb3a528c83c61edd6046df31d14430ecb72e11acbbf7d874fdbf1898521dc"
+      }
+    ],
+    "version": "Cue v0.1 / DOI 10.5281/zenodo.11118643",
+    "runtime": "Author NumPy inference and PCA algebra; no TensorFlow runtime loaded",
+    "missing_observed_groups": [
+      "NIV"
+    ],
+    "upstream_FSPS_128_line_projection_applied": false,
+    "native_solar_log_NO": -0.88,
+    "native_solar_log_CO": -0.37,
+    "assumed_depletion_log_N": -0.22,
+    "assumed_depletion_log_C": -0.3,
+    "native_NC_parameter_to_MoM_undepleted_bracket_offset": 0.09,
+    "native_NC_parameter_to_MoM_gas_phase_bracket_offset": 0.17
+  },
+  "input_spectrum_sha256": "a7e5ba3acbfe74ec41c6eccb040c7e8e2758eeeb523209e3e6e495f52237e98b",
+  "parameter_grid": {
+    "ionizing_shapes": {
+      "author_emulator_default": [
+        19.7,
+        5.3,
+        1.6,
+        0.6,
+        3.9,
+        0.01,
+        0.2
+      ],
+      "author_readme_demo": [
+        21.5,
+        14.85,
+        6.45,
+        3.15,
+        4.55,
+        0.7,
+        0.85
+      ],
+      "hard_piecewise_control": [
+        5.0,
+        2.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    "logU": [
+      -3.0,
+      -2.0,
+      -1.0
+    ],
+    "log_nH": [
+      2.0,
+      3.0,
+      4.0
+    ],
+    "native_Cue_OH": [
+      -2.0,
+      -1.3,
+      -0.6
+    ],
+    "native_Cue_NO": [
+      -1.0,
+      -0.5,
+      0.0,
+      0.5,
+      0.7323937598229685
+    ],
+    "native_Cue_CO": [
+      -1.0,
+      -0.5,
+      0.0,
+      0.5,
+      0.7323937598229685
+    ]
+  },
+  "predicted_four_group_grid_sha256": "fcc4f5cf1b33a8883b4a2a9561df8ea9eee099ad35c6ef30db5f17bf625e3b69",
+  "scenarios": [
+    {
+      "resolution_family": "nominal_illuminated_slit",
+      "extraction": "stored_pixel_table_1d",
+      "line_order": [
+        "CIV",
+        "HeII_OIII",
+        "NIII",
+        "CIII"
+      ],
+      "input_fluxes": [
+        37.29478241187191,
+        32.57964553185148,
+        13.763073948840002,
+        27.684945825643496
+      ],
+      "input_covariance": [
+        [
+          177.5206924699043,
+          24.4852887662577,
+          9.913611691484567,
+          1.5832165226625015
+        ],
+        [
+          24.4852887662577,
+          215.98806231303018,
+          12.960132526626728,
+          6.311728586800711
+        ],
+        [
+          9.913611691484567,
+          12.960132526626728,
+          108.75796048871086,
+          5.967847871148017
+        ],
+        [
+          1.5832165226625015,
+          6.311728586800711,
+          5.967847871148017,
+          79.68111093656142
+        ]
+      ],
+      "normalization_profiled": true,
+      "models_compared": 2025,
+      "best_chi2_four_groups": 0.09194841477056648,
+      "ranked_grid_points": [
+        {
+          "ionizing_spectrum_control": "author_readme_demo",
+          "logU": -1.0,
+          "log_nH_cm3": 4.0,
+          "native_Cue_OH": -2.0,
+          "native_Cue_NO": 0.0,
+          "native_Cue_CO": -0.5,
+          "native_Cue_NO_minus_CO": 0.5,
+          "touches_U_density_NO_CO_sampling_edge": true,
+          "chi2_four_groups": 0.09194841477056648,
+          "CIII_normalization_flux": 28.27262179925038,
+          "predicted_four_group_fluxes": [
+            38.09828726480069,
+            30.55726142992915,
+            11.164165790514739,
+            28.27262179925038
+          ]
+        },
+        {
+          "ionizing_spectrum_control": "hard_piecewise_control",
+          "logU": -2.0,
+          "log_nH_cm3": 3.0,
+          "native_Cue_OH": -2.0,
+          "native_Cue_NO": 0.7323937598229685,
+          "native_Cue_CO": 0.0,
+          "native_Cue_NO_minus_CO": 0.7323937598229685,
+          "touches_U_density_NO_CO_sampling_edge": true,
+          "chi2_four_groups": 0.18894191428444623,
+          "CIII_normalization_flux": 27.341467911509813,
+          "predicted_four_group_fluxes": [
+            34.28702796035,
+            37.36436782250029,
+            12.91474760558842,
+            27.341467911509813
+          ]
+        },
+        {
+          "ionizing_spectrum_control": "author_emulator_default",
+          "logU": -2.0,
+          "log_nH_cm3": 4.0,
+          "native_Cue_OH": -2.0,
+          "native_Cue_NO": 0.0,
+          "native_Cue_CO": -0.5,
+          "native_Cue_NO_minus_CO": 0.5,
+          "touches_U_density_NO_CO_sampling_edge": true,
+          "chi2_four_groups": 0.4647809946715732,
+          "CIII_normalization_flux": 26.8604384104802,
+          "predicted_four_group_fluxes": [
+            35.10014271951099,
+            38.00669390717096,
+            8.49158846025716,
+            26.8604384104802
+          ]
+        },
+        {
+          "ionizing_spectrum_control": "hard_piecewise_control",
+          "logU": -2.0,
+          "log_nH_cm3": 3.0,
+          "native_Cue_OH": -2.0,
+          "native_Cue_NO": 0.5,
+          "native_Cue_CO": 0.0,
+          "native_Cue_NO_minus_CO": 0.5,
+          "touches_U_density_NO_CO_sampling_edge": false,
+          "chi2_four_groups": 0.5118563224784594,
+          "CIII_normalization_flux": 27.201092848166407,
+          "predicted_four_group_fluxes": [
+            35.19416348921283,
+            37.113993505532456,
+            7.54403677561109,
+            27.201092848166407
+          ]
+        },
+        {
+          "ionizing_spectrum_control": "author_emulator_default",
+          "logU": -1.0,
+          "log_nH_cm3": 2.0,
+          "native_Cue_OH": -1.3,
+          "native_Cue_NO": 0.0,
+          "native_Cue_CO": -0.5,
+          "native_Cue_NO_minus_CO": 0.5,
+          "touches_U_density_NO_CO_sampling_edge": true,
+          "chi2_four_groups": 0.550072553605652,
+          "CIII_normalization_flux": 26.69007829664408,
+          "predicted_four_group_fluxes": [
+            35.30596906187067,
+            37.97468294335832,
+            7.667394829885687,
+            26.69007829664408
+          ]
+        },
+        {
+          "ionizing_spectrum_control": "hard_piecewise_control",
+          "logU": -2.0,
+          "log_nH_cm3": 4.0,
+          "native_Cue_OH": -2.0,
+          "native_Cue_NO": 0.5,
+          "native_Cue_CO": 0.0,
+          "native_Cue_NO_minus_CO": 0.5,
+          "touches_U_density_NO_CO_sampling_edge": true,
+          "chi2_four_groups": 0.5859603642998996,
+          "CIII_normalization_flux": 26.27729615448821,
+          "predicted_four_group_fluxes": [
+            35.47385958860659,
+            38.53281981178672,
+            7.7194580054887245,
+            26.27729615448821
+          ]
+        },
+        {
+          "ionizing_spectrum_control": "hard_piecewise_control",
+          "logU": -2.0,
+          "log_nH_cm3": 4.0,
+          "native_Cue_OH": -2.0,
+          "native_Cue_NO": 0.7323937598229685,
+          "native_Cue_CO": 0.0,
+          "native_Cue_NO_minus_CO": 0.7323937598229685,
+          "touches_U_density_NO_CO_sampling_edge": true,
+          "chi2_four_groups": 0.595294502720093,
+          "CIII_normalization_flux": 27.094119700607088,
+          "predicted_four_group_fluxes": [
+            30.552333261522048,
+            40.047331755809466,
+            13.730740592965265,
+            27.094119700607088
+          ]
+        },
+        {
+          "ionizing_spectrum_control": "hard_piecewise_control",
+          "logU": -2.0,
+          "log_nH_cm3": 3.0,
+          "native_Cue_OH": -1.3,
+          "native_Cue_NO": 0.7323937598229685,
+          "native_Cue_CO": 0.0,
+          "native_Cue_NO_minus_CO": 0.7323937598229685,
+          "touches_U_density_NO_CO_sampling_edge": true,
+          "chi2_four_groups": 0.7208773255349077,
+          "CIII_normalization_flux": 29.000293244477415,
+          "predicted_four_group_fluxes": [
+            38.201059542209194,
+            20.750408827862667,
+            14.305523997115978,
+            29.000293244477415
+          ]
+        },
+        {
+          "ionizing_spectrum_control": "author_emulator_default",
+          "logU": -1.0,
+          "log_nH_cm3": 2.0,
+          "native_Cue_OH": -2.0,
+          "native_Cue_NO": 0.5,
+          "native_Cue_CO": -0.5,
+          "native_Cue_NO_minus_CO": 1.0,
+          "touches_U_density_NO_CO_sampling_edge": true,
+          "chi2_four_groups": 0.7861857656408979,
+          "CIII_normalization_flux": 22.53064542841781,
+          "predicted_four_group_fluxes": [
+            37.451527911927116,
+            35.98834670473163,
+            20.013762604716863,
+            22.53064542841781
+          ]
+        },
+        {
+          "ionizing_spectrum_control": "author_readme_demo",
+          "logU": -1.0,
+          "log_nH_cm3": 3.0,
+          "native_Cue_OH": -0.6,
+          "native_Cue_NO": 0.0,
+          "native_Cue_CO": -1.0,
+          "native_Cue_NO_minus_CO": 1.0,
+          "touches_U_density_NO_CO_sampling_edge": true,
+          "chi2_four_groups": 0.8507276218295252,
+          "CIII_normalization_flux": 20.864797730473743,
+          "predicted_four_group_fluxes": [
+            43.997274634061135,
+            33.5372025744015,
+            14.1280906520823,
+            20.864797730473743
+          ]
+        },
+        {
+          "ionizing_spectrum_control": "author_emulator_default",
+          "logU": -1.0,
+          "log_nH_cm3": 3.0,
+          "native_Cue_OH": -0.6,
+          "native_Cue_NO": 0.5,
+          "native_Cue_CO": -0.5,
+          "native_Cue_NO_minus_CO": 1.0,
+          "touches_U_density_NO_CO_sampling_edge": true,
+          "chi2_four_groups": 0.8540215284273832,
+          "CIII_normalization_flux": 21.3043492824225,
+          "predicted_four_group_fluxes": [
+            40.77448233484742,
+            34.32469023996228,
+            18.807282499027338,
+            21.3043492824225
+          ]
+        },
+        {
+          "ionizing_spectrum_control": "author_emulator_default",
+          "logU": -1.0,
+          "log_nH_cm3": 2.0,
+          "native_Cue_OH": -2.0,
+          "native_Cue_NO": 0.0,
+          "native_Cue_CO": -0.5,
+          "native_Cue_NO_minus_CO": 0.5,
+          "touches_U_density_NO_CO_sampling_edge": true,
+          "chi2_four_groups": 0.9397259602510297,
+          "CIII_normalization_flux": 23.01526399271204,
+          "predicted_four_group_fluxes": [
+            40.96801998485535,
+            36.72856365921917,
+            6.433054749169863,
+            23.01526399271204
+          ]
+        }
+      ],
+      "grid_points_with_delta_chi2_le_3_841": 157,
+      "native_Cue_NO_minus_CO_range_within_delta": [
+        -1.5,
+        1.2323937598229686
+      ],
+      "delta_set_is_calibrated_confidence_region": false,
+      "sampling_edge_fraction_within_delta": 0.7898089171974523,
+      "physical_degrees_of_freedom": null,
+      "interpretation": "Sparse deterministic sensitivity grid; neither posterior weights nor calibrated multi-parameter confidence region. NIV omitted, not fitted. Emulator/geometry errors and independent LSF calibration not propagated."
+    },
+    {
+      "resolution_family": "generic_point_source",
+      "extraction": "stored_pixel_table_1d",
+      "line_order": [
+        "CIV",
+        "HeII_OIII",
+        "NIII",
+        "CIII"
+      ],
+      "input_fluxes": [
+        31.586027078498148,
+        23.25237033233895,
+        14.41079568406546,
+        20.60661466702008
+      ],
+      "input_covariance": [
+        [
+          86.58677766274897,
+          7.744547663788121,
+          2.712425586681287,
+          0.3571502816512325
+        ],
+        [
+          7.744547663788121,
+          149.09492046441542,
+          4.88848670582442,
+          2.4195228228937826
+        ],
+        [
+          2.712425586681287,
+          4.88848670582442,
+          69.16474033587754,
+          2.075652875748251
+        ],
+        [
+          0.3571502816512325,
+          2.4195228228937826,
+          2.075652875748251,
+          47.356934050281524
+        ]
+      ],
+      "normalization_profiled": true,
+      "models_compared": 2025,
+      "best_chi2_four_groups": 0.41088555843758867,
+      "ranked_grid_points": [
+        {
+          "ionizing_spectrum_control": "author_emulator_default",
+          "logU": -1.0,
+          "log_nH_cm3": 3.0,
+          "native_Cue_OH": -0.6,
+          "native_Cue_NO": 0.5,
+          "native_Cue_CO": -0.5,
+          "native_Cue_NO_minus_CO": 1.0,
+          "touches_U_density_NO_CO_sampling_edge": true,
+          "chi2_four_groups": 0.41088555843758867,
+          "CIII_normalization_flux": 17.102116518032716,
+          "predicted_four_group_fluxes": [
+            32.73181164131451,
+            27.554225860047726,
+            15.0975902817788,
+            17.102116518032716
+          ]
+        },
+        {
+          "ionizing_spectrum_control": "author_emulator_default",
+          "logU": -1.0,
+          "log_nH_cm3": 2.0,
+          "native_Cue_OH": -2.0,
+          "native_Cue_NO": 0.5,
+          "native_Cue_CO": -0.5,
+          "native_Cue_NO_minus_CO": 1.0,
+          "touches_U_density_NO_CO_sampling_edge": true,
+          "chi2_four_groups": 0.43265855297556666,
+          "CIII_normalization_flux": 18.20131593984173,
+          "predicted_four_group_fluxes": [
+            30.2551071659493,
+            29.07308051189644,
+            16.16805952012278,
+            18.20131593984173
+          ]
+        },
+        {
+          "ionizing_spectrum_control": "author_readme_demo",
+          "logU": -1.0,
+          "log_nH_cm3": 4.0,
+          "native_Cue_OH": -2.0,
+          "native_Cue_NO": 0.0,
+          "native_Cue_CO": -0.5,
+          "native_Cue_NO_minus_CO": 0.5,
+          "touches_U_density_NO_CO_sampling_edge": true,
+          "chi2_four_groups": 0.5581120580613109,
+          "CIII_normalization_flux": 22.419565055370118,
+          "predicted_four_group_fluxes": [
+            30.211100898114257,
+            24.2312338560838,
+            8.852937057150431,
+            22.419565055370118
+          ]
+        },
+        {
+          "ionizing_spectrum_control": "hard_piecewise_control",
+          "logU": -2.0,
+          "log_nH_cm3": 3.0,
+          "native_Cue_OH": -1.3,
+          "native_Cue_NO": 0.7323937598229685,
+          "native_Cue_CO": 0.0,
+          "native_Cue_NO_minus_CO": 0.7323937598229685,
+          "touches_U_density_NO_CO_sampling_edge": true,
+          "chi2_four_groups": 0.573878988156071,
+          "CIII_normalization_flux": 23.242834088098547,
+          "predicted_four_group_fluxes": [
+            30.616962437034218,
+            16.630808025986855,
+            11.465433056322555,
+            23.242834088098547
+          ]
+        },
+        {
+          "ionizing_spectrum_control": "author_readme_demo",
+          "logU": -1.0,
+          "log_nH_cm3": 3.0,
+          "native_Cue_OH": -0.6,
+          "native_Cue_NO": 0.0,
+          "native_Cue_CO": -1.0,
+          "native_Cue_NO_minus_CO": 1.0,
+          "touches_U_density_NO_CO_sampling_edge": true,
+          "chi2_four_groups": 0.699752269578164,
+          "CIII_normalization_flux": 16.5401746764192,
+          "predicted_four_group_fluxes": [
+            34.87800922560084,
+            26.58598448471331,
+            11.1997772635211,
+            16.5401746764192
+          ]
+        },
+        {
+          "ionizing_spectrum_control": "hard_piecewise_control",
+          "logU": -1.0,
+          "log_nH_cm3": 2.0,
+          "native_Cue_OH": -0.6,
+          "native_Cue_NO": 0.7323937598229685,
+          "native_Cue_CO": 0.0,
+          "native_Cue_NO_minus_CO": 0.7323937598229685,
+          "touches_U_density_NO_CO_sampling_edge": true,
+          "chi2_four_groups": 0.798238201205257,
+          "CIII_normalization_flux": 23.51807214259767,
+          "predicted_four_group_fluxes": [
+            30.32120225904249,
+            14.81294131770743,
+            11.413654828634316,
+            23.51807214259767
+          ]
+        },
+        {
+          "ionizing_spectrum_control": "hard_piecewise_control",
+          "logU": -2.0,
+          "log_nH_cm3": 3.0,
+          "native_Cue_OH": -2.0,
+          "native_Cue_NO": 0.7323937598229685,
+          "native_Cue_CO": 0.0,
+          "native_Cue_NO_minus_CO": 0.7323937598229685,
+          "touches_U_density_NO_CO_sampling_edge": true,
+          "chi2_four_groups": 0.8180046736108743,
+          "CIII_normalization_flux": 21.842143065529033,
+          "predicted_four_group_fluxes": [
+            27.390708224794945,
+            29.849087480359586,
+            10.317140461127634,
+            21.842143065529033
+          ]
+        },
+        {
+          "ionizing_spectrum_control": "author_emulator_default",
+          "logU": -1.0,
+          "log_nH_cm3": 2.0,
+          "native_Cue_OH": -1.3,
+          "native_Cue_NO": 0.5,
+          "native_Cue_CO": -0.5,
+          "native_Cue_NO_minus_CO": 1.0,
+          "touches_U_density_NO_CO_sampling_edge": true,
+          "chi2_four_groups": 0.9019758066056858,
+          "CIII_normalization_flux": 20.211740880461218,
+          "predicted_four_group_fluxes": [
+            25.515772821141496,
+            28.454918070073038,
+            18.525382652321838,
+            20.211740880461218
+          ]
+        },
+        {
+          "ionizing_spectrum_control": "author_emulator_default",
+          "logU": -1.0,
+          "log_nH_cm3": 2.0,
+          "native_Cue_OH": -2.0,
+          "native_Cue_NO": 0.7323937598229685,
+          "native_Cue_CO": 0.0,
+          "native_Cue_NO_minus_CO": 0.7323937598229685,
+          "touches_U_density_NO_CO_sampling_edge": true,
+          "chi2_four_groups": 1.2766747057380368,
+          "CIII_normalization_flux": 21.955039440535366,
+          "predicted_four_group_fluxes": [
+            32.64181178489337,
+            10.989468286198168,
+            10.5577066447449,
+            21.955039440535366
+          ]
+        },
+        {
+          "ionizing_spectrum_control": "hard_piecewise_control",
+          "logU": -2.0,
+          "log_nH_cm3": 3.0,
+          "native_Cue_OH": -1.3,
+          "native_Cue_NO": 0.5,
+          "native_Cue_CO": 0.0,
+          "native_Cue_NO_minus_CO": 0.5,
+          "touches_U_density_NO_CO_sampling_edge": false,
+          "chi2_four_groups": 1.3103706396627013,
+          "CIII_normalization_flux": 23.21797794100883,
+          "predicted_four_group_fluxes": [
+            30.976444124585164,
+            16.482465135243817,
+            6.66562075035782,
+            23.21797794100883
+          ]
+        },
+        {
+          "ionizing_spectrum_control": "hard_piecewise_control",
+          "logU": -2.0,
+          "log_nH_cm3": 4.0,
+          "native_Cue_OH": -2.0,
+          "native_Cue_NO": 0.7323937598229685,
+          "native_Cue_CO": 0.0,
+          "native_Cue_NO_minus_CO": 0.7323937598229685,
+          "touches_U_density_NO_CO_sampling_edge": true,
+          "chi2_four_groups": 1.3879047816373458,
+          "CIII_normalization_flux": 21.79638478935701,
+          "predicted_four_group_fluxes": [
+            24.578411084744864,
+            32.216844923627505,
+            11.045957894709126,
+            21.79638478935701
+          ]
+        },
+        {
+          "ionizing_spectrum_control": "author_emulator_default",
+          "logU": -2.0,
+          "log_nH_cm3": 4.0,
+          "native_Cue_OH": -2.0,
+          "native_Cue_NO": 0.0,
+          "native_Cue_CO": -0.5,
+          "native_Cue_NO_minus_CO": 0.5,
+          "touches_U_density_NO_CO_sampling_edge": true,
+          "chi2_four_groups": 1.4073177215373347,
+          "CIII_normalization_flux": 21.362357938402454,
+          "predicted_four_group_fluxes": [
+            27.91547185509247,
+            30.227079204466744,
+            6.753439738453555,
+            21.362357938402454
+          ]
+        }
+      ],
+      "grid_points_with_delta_chi2_le_3_841": 126,
+      "native_Cue_NO_minus_CO_range_within_delta": [
+        -1.5,
+        1.5
+      ],
+      "delta_set_is_calibrated_confidence_region": false,
+      "sampling_edge_fraction_within_delta": 0.8650793650793651,
+      "physical_degrees_of_freedom": null,
+      "interpretation": "Sparse deterministic sensitivity grid; neither posterior weights nor calibrated multi-parameter confidence region. NIV omitted, not fitted. Emulator/geometry errors and independent LSF calibration not propagated."
+    }
+  ],
+  "all_five_measured_groups_fit": false,
+  "source_specific_model_validated": false,
+  "ionizing_controls_identified_as_stellar_or_AGN": false
+}

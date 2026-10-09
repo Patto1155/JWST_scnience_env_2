@@ -19,6 +19,10 @@ PYNEB_URL = (
 PYNEB_SHA256 = "96a63479536b4e53fdb36e1da20d72b9291cf920e042d765dd4a0c4ca3160cbe"
 PYNEB_BYTES = 28751057
 TOTAL_CAP = 100 * 1024**2
+CUE_FILENAME = "cue-v0.1.zip"
+CUE_URL = "https://zenodo.org/records/11118643/files/yi-jia-li/cue-v0.1.zip?download=1"
+CUE_SHA256 = "8c1089f4d7407c57558e14b0f26028379ca14d555a94f873834c767f3cc5abfb"
+CUE_BYTES = 31885220
 
 
 def acquire_file(root: Path, name: str, url: str, sha256: str, size: int) -> dict[str, Any]:
@@ -76,11 +80,27 @@ def acquire_pyneb(root: Path) -> dict[str, Any]:
     return result
 
 
+def acquire_cue(root: Path) -> dict[str, Any]:
+    if PYNEB_BYTES + CUE_BYTES > TOTAL_CAP:
+        raise ValueError("aggregate atomic model acquisition exceeds cap")
+    result = acquire_file(root, CUE_FILENAME, CUE_URL, CUE_SHA256, CUE_BYTES)
+    result["publisher_md5"] = "370380e7e685acfb03861bfb82650301"
+    result["source"] = "https://doi.org/10.5281/zenodo.11118643"
+    return result
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("output_dir", type=Path)
+    parser.add_argument("--cue", action="store_true")
     args = parser.parse_args()
-    print(json.dumps(acquire_pyneb(args.output_dir), indent=2))
+    result = acquire_pyneb(args.output_dir)
+    if args.cue:
+        result["inputs"].append(acquire_cue(args.output_dir))
+        (args.output_dir / "atomic_input_receipt.json").write_text(
+            json.dumps(result, indent=2) + "\n"
+        )
+    print(json.dumps(result, indent=2))
 
 
 if __name__ == "__main__":
