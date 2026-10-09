@@ -1,0 +1,1243 @@
+{
+  "experiment": "observed M92 two-dither finite-aperture response",
+  "schema_version": 1,
+  "actual_observed_stars": true,
+  "not_true_total_encircled_energy": true,
+  "policy": {
+    "object_type": 1,
+    "minimum_reference_snr": 100,
+    "vega_magnitude_range": [
+      15,
+      19
+    ],
+    "maximum_abs_sharpness": 0.1,
+    "maximum_crowding_mag": 0.05,
+    "quality_flag": 0,
+    "neighbor_minimum_reference_snr": 3,
+    "neighbor_maximum_vega_magnitude": 30,
+    "isolation_radius_arcsec": 0.8,
+    "maximum_summed_neighbor_catalog_flux_ratio": 0.03,
+    "minimum_large_aperture_coverage": 0.99,
+    "core_radius_arcsec": 0.3,
+    "minimum_annulus_coverage": 0.5,
+    "minimum_reference_aperture_snr": 30,
+    "maximum_centroid_catalog_separation_arcsec": 0.2,
+    "maximum_centroid_radius_method_difference_pixels": 0.15,
+    "neighbor_background_mask_radius_arcsec": 0.22,
+    "DQ_excluded_bits": 3,
+    "maximum_selected_stars": 24
+  },
+  "selection": {
+    "catalog_receipt": {
+      "requested_url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/jwststars/m92/nircam/hlsp_jwststars_jwst_nircam_m92_f090w-f150w-f277w-f444w_v1_phot.fits",
+      "resolved_url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/jwststars/m92/nircam/hlsp_jwststars_jwst_nircam_m92_f090w-f150w-f277w-f444w_v1_phot.fits",
+      "retrieved_utc": "2026-10-09T07:07:10.585093+00:00",
+      "bytes": 299278080,
+      "sha256": "184efd394861258f147668959d14098f32c3c917bece1119a4b4f15a415dfa83",
+      "content_type": "application/octet-stream",
+      "etag": "\"65b83ac9-11d69f00\"",
+      "last_modified": "Mon, 29 Jan 2024 23:54:49 GMT",
+      "product_id": "hlsp_jwststars_jwst_nircam_m92_f090w-f150w-f277w-f444w_v1_phot.fits",
+      "max_bytes": 299278080
+    },
+    "raw_rows": 984423,
+    "reference_quality_rows": 6166,
+    "covered_in_both_images": 2975,
+    "isolated_candidates_before_image_gates": 56,
+    "neighbor_reference_rows": 399925,
+    "policy": {
+      "object_type": 1,
+      "minimum_reference_snr": 100,
+      "vega_magnitude_range": [
+        15,
+        19
+      ],
+      "maximum_abs_sharpness": 0.1,
+      "maximum_crowding_mag": 0.05,
+      "quality_flag": 0,
+      "neighbor_minimum_reference_snr": 3,
+      "neighbor_maximum_vega_magnitude": 30,
+      "isolation_radius_arcsec": 0.8,
+      "maximum_summed_neighbor_catalog_flux_ratio": 0.03,
+      "minimum_large_aperture_coverage": 0.99,
+      "core_radius_arcsec": 0.3,
+      "minimum_annulus_coverage": 0.5,
+      "minimum_reference_aperture_snr": 30,
+      "maximum_centroid_catalog_separation_arcsec": 0.2,
+      "maximum_centroid_radius_method_difference_pixels": 0.15,
+      "neighbor_background_mask_radius_arcsec": 0.22,
+      "DQ_excluded_bits": 3,
+      "maximum_selected_stars": 24
+    }
+  },
+  "attempted_candidates": [
+    {
+      "source_id": "1145",
+      "accepted_both_images": false,
+      "failure": "ambiguous_centroid"
+    },
+    {
+      "source_id": "1355",
+      "accepted_both_images": false,
+      "failure": "ambiguous_centroid"
+    },
+    {
+      "source_id": "1425",
+      "accepted_both_images": false,
+      "failure": "ambiguous_centroid"
+    },
+    {
+      "source_id": "1429",
+      "accepted_both_images": false,
+      "failure": "ambiguous_centroid"
+    },
+    {
+      "source_id": "1610",
+      "accepted_both_images": false,
+      "failure": "ambiguous_centroid"
+    },
+    {
+      "source_id": "1519",
+      "accepted_both_images": false,
+      "failure": "ambiguous_centroid"
+    },
+    {
+      "source_id": "1587",
+      "accepted_both_images": false,
+      "failure": "ambiguous_centroid"
+    },
+    {
+      "source_id": "1889",
+      "accepted_both_images": false,
+      "failure": "background_coverage"
+    },
+    {
+      "source_id": "2147",
+      "accepted_both_images": false,
+      "failure": "masked_or_saturated_core"
+    },
+    {
+      "source_id": "2292",
+      "accepted_both_images": false,
+      "failure": "background_coverage"
+    },
+    {
+      "source_id": "2484",
+      "accepted_both_images": false,
+      "failure": "background_coverage"
+    },
+    {
+      "source_id": "2894",
+      "accepted_both_images": false,
+      "failure": "background_coverage"
+    },
+    {
+      "source_id": "2354",
+      "accepted_both_images": false,
+      "failure": "background_coverage"
+    },
+    {
+      "source_id": "3067",
+      "accepted_both_images": false,
+      "failure": "masked_or_saturated_core"
+    },
+    {
+      "source_id": "3238",
+      "accepted_both_images": false,
+      "failure": "background_coverage"
+    },
+    {
+      "source_id": "3157",
+      "accepted_both_images": true,
+      "failure": null
+    },
+    {
+      "source_id": "3716",
+      "accepted_both_images": false,
+      "failure": "background_coverage"
+    },
+    {
+      "source_id": "3738",
+      "accepted_both_images": false,
+      "failure": "background_coverage"
+    },
+    {
+      "source_id": "3981",
+      "accepted_both_images": false,
+      "failure": "masked_or_saturated_core"
+    },
+    {
+      "source_id": "4370",
+      "accepted_both_images": false,
+      "failure": "background_coverage"
+    },
+    {
+      "source_id": "4657",
+      "accepted_both_images": false,
+      "failure": "masked_or_saturated_core"
+    },
+    {
+      "source_id": "9210",
+      "accepted_both_images": false,
+      "failure": "background_coverage"
+    },
+    {
+      "source_id": "5648",
+      "accepted_both_images": true,
+      "failure": null
+    },
+    {
+      "source_id": "5609",
+      "accepted_both_images": false,
+      "failure": "background_coverage"
+    },
+    {
+      "source_id": "6661",
+      "accepted_both_images": false,
+      "failure": "masked_or_saturated_core"
+    },
+    {
+      "source_id": "6931",
+      "accepted_both_images": false,
+      "failure": "masked_or_saturated_core"
+    },
+    {
+      "source_id": "7078",
+      "accepted_both_images": true,
+      "failure": null
+    },
+    {
+      "source_id": "7472",
+      "accepted_both_images": true,
+      "failure": null
+    },
+    {
+      "source_id": "7513",
+      "accepted_both_images": false,
+      "failure": "masked_or_saturated_core"
+    },
+    {
+      "source_id": "7651",
+      "accepted_both_images": true,
+      "failure": null
+    },
+    {
+      "source_id": "8095",
+      "accepted_both_images": false,
+      "failure": "background_coverage"
+    },
+    {
+      "source_id": "9386",
+      "accepted_both_images": true,
+      "failure": null
+    },
+    {
+      "source_id": "9745",
+      "accepted_both_images": false,
+      "failure": "background_coverage"
+    },
+    {
+      "source_id": "11886",
+      "accepted_both_images": false,
+      "failure": "background_coverage"
+    },
+    {
+      "source_id": "12047",
+      "accepted_both_images": true,
+      "failure": null
+    },
+    {
+      "source_id": "11956",
+      "accepted_both_images": true,
+      "failure": null
+    },
+    {
+      "source_id": "11405",
+      "accepted_both_images": false,
+      "failure": "background_coverage"
+    },
+    {
+      "source_id": "12438",
+      "accepted_both_images": true,
+      "failure": null
+    },
+    {
+      "source_id": "13205",
+      "accepted_both_images": false,
+      "failure": "background_coverage"
+    },
+    {
+      "source_id": "13244",
+      "accepted_both_images": false,
+      "failure": "reference_coverage"
+    },
+    {
+      "source_id": "14032",
+      "accepted_both_images": false,
+      "failure": "background_coverage"
+    },
+    {
+      "source_id": "14260",
+      "accepted_both_images": false,
+      "failure": "background_coverage"
+    },
+    {
+      "source_id": "16380",
+      "accepted_both_images": false,
+      "failure": "reference_signal_to_noise"
+    },
+    {
+      "source_id": "16603",
+      "accepted_both_images": false,
+      "failure": "masked_or_saturated_core"
+    },
+    {
+      "source_id": "17575",
+      "accepted_both_images": false,
+      "failure": "reference_signal_to_noise"
+    },
+    {
+      "source_id": "17739",
+      "accepted_both_images": false,
+      "failure": "background_coverage"
+    },
+    {
+      "source_id": "19086",
+      "accepted_both_images": false,
+      "failure": "reference_coverage"
+    },
+    {
+      "source_id": "18808",
+      "accepted_both_images": true,
+      "failure": null
+    },
+    {
+      "source_id": "19181",
+      "accepted_both_images": false,
+      "failure": "masked_or_saturated_core"
+    },
+    {
+      "source_id": "19823",
+      "accepted_both_images": false,
+      "failure": "reference_signal_to_noise"
+    },
+    {
+      "source_id": "20164",
+      "accepted_both_images": true,
+      "failure": null
+    },
+    {
+      "source_id": "20524",
+      "accepted_both_images": false,
+      "failure": "masked_or_saturated_core"
+    },
+    {
+      "source_id": "20323",
+      "accepted_both_images": false,
+      "failure": "masked_or_saturated_core"
+    },
+    {
+      "source_id": "20770",
+      "accepted_both_images": false,
+      "failure": "background_coverage"
+    },
+    {
+      "source_id": "21125",
+      "accepted_both_images": false,
+      "failure": "masked_or_saturated_core"
+    },
+    {
+      "source_id": "23341",
+      "accepted_both_images": false,
+      "failure": "masked_or_saturated_core"
+    }
+  ],
+  "gate_failure_counts": {
+    "ambiguous_centroid": 7,
+    "background_coverage": 20,
+    "masked_or_saturated_core": 13,
+    "reference_coverage": 2,
+    "reference_signal_to_noise": 3
+  },
+  "selected_stars": [
+    {
+      "source_id": "3157",
+      "catalog_index": 3156,
+      "ra": 259.2241286966953,
+      "dec": 43.14561041985833,
+      "vega_magnitude": 17.169,
+      "reference_snr": 794.6,
+      "catalog_neighbor_flux_ratio_inside_08": 0.015582350991518083
+    },
+    {
+      "source_id": "5648",
+      "catalog_index": 5647,
+      "ra": 259.2277282329658,
+      "dec": 43.11578256202835,
+      "vega_magnitude": 17.687,
+      "reference_snr": 635.0,
+      "catalog_neighbor_flux_ratio_inside_08": 0.0013267833107241625
+    },
+    {
+      "source_id": "7078",
+      "catalog_index": 7077,
+      "ra": 259.22747882524624,
+      "dec": 43.140938524342985,
+      "vega_magnitude": 17.908,
+      "reference_snr": 560.9,
+      "catalog_neighbor_flux_ratio_inside_08": 0.004336143516571389
+    },
+    {
+      "source_id": "7472",
+      "catalog_index": 7471,
+      "ra": 259.21966636013565,
+      "dec": 43.14562744314688,
+      "vega_magnitude": 17.935,
+      "reference_snr": 547.9,
+      "catalog_neighbor_flux_ratio_inside_08": 0.01564588018040549
+    },
+    {
+      "source_id": "7651",
+      "catalog_index": 7650,
+      "ra": 259.23618624193404,
+      "dec": 43.11280258801027,
+      "vega_magnitude": 17.965,
+      "reference_snr": 558.3,
+      "catalog_neighbor_flux_ratio_inside_08": 0.019200867854761678
+    },
+    {
+      "source_id": "9386",
+      "catalog_index": 9385,
+      "ra": 259.22546614484617,
+      "dec": 43.12494812659089,
+      "vega_magnitude": 18.162,
+      "reference_snr": 500.7,
+      "catalog_neighbor_flux_ratio_inside_08": 0.012302687708123787
+    },
+    {
+      "source_id": "12047",
+      "catalog_index": 12046,
+      "ra": 259.22568083232636,
+      "dec": 43.141464484505605,
+      "vega_magnitude": 18.397,
+      "reference_snr": 440.4,
+      "catalog_neighbor_flux_ratio_inside_08": 0.003902506821130768
+    },
+    {
+      "source_id": "11956",
+      "catalog_index": 11955,
+      "ra": 259.22996226525584,
+      "dec": 43.13631311807601,
+      "vega_magnitude": 18.405,
+      "reference_snr": 440.9,
+      "catalog_neighbor_flux_ratio_inside_08": 0.001987925021041886
+    },
+    {
+      "source_id": "12438",
+      "catalog_index": 12437,
+      "ra": 259.22113587209526,
+      "dec": 43.142864558207805,
+      "vega_magnitude": 18.425,
+      "reference_snr": 433.2,
+      "catalog_neighbor_flux_ratio_inside_08": 0.004903024214966868
+    },
+    {
+      "source_id": "18808",
+      "catalog_index": 18807,
+      "ra": 259.23289492174536,
+      "dec": 43.114838914302545,
+      "vega_magnitude": 18.874,
+      "reference_snr": 354.1,
+      "catalog_neighbor_flux_ratio_inside_08": 0.0
+    },
+    {
+      "source_id": "20164",
+      "catalog_index": 20163,
+      "ra": 259.2280725598737,
+      "dec": 43.139432612887575,
+      "vega_magnitude": 18.929,
+      "reference_snr": 337.2,
+      "catalog_neighbor_flux_ratio_inside_08": 0.007386390299444537
+    }
+  ],
+  "selected_star_count": 11,
+  "image_provenance": [
+    {
+      "filename": "jw01334001001_04101_00001_nrcalong_cal.fits",
+      "receipt": {
+        "requested_url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw01334001001_04101_00001_nrcalong_cal.fits",
+        "resolved_url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw01334001001_04101_00001_nrcalong_cal.fits",
+        "retrieved_utc": "2026-10-09T07:07:45.177760+00:00",
+        "bytes": 117573120,
+        "sha256": "7fa99ab0486c6d1ebdbde9a53e6e772b710368ff55937c0240b683fc1875781a",
+        "content_type": "application/octet-stream",
+        "etag": "\"6a6a9d01-7020600\"",
+        "last_modified": "Thu, 30 Jul 2026 00:38:25 GMT",
+        "product_id": "jw01334001001_04101_00001_nrcalong_cal.fits",
+        "max_bytes": 117573120
+      },
+      "CAL_VER": "2.0.1",
+      "CRDS_CTX": "jwst_1535.pmap",
+      "EXPMID": 59750.99285940972
+    },
+    {
+      "filename": "jw01334001001_04101_00004_nrcalong_cal.fits",
+      "receipt": {
+        "requested_url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw01334001001_04101_00004_nrcalong_cal.fits",
+        "resolved_url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw01334001001_04101_00004_nrcalong_cal.fits",
+        "retrieved_utc": "2026-10-09T07:07:26.154935+00:00",
+        "bytes": 117573120,
+        "sha256": "1e22ed5d1c73b984db4989d31eded5398f016f8908684a209caa8046516d9160",
+        "content_type": "application/octet-stream",
+        "etag": "\"6a6a9ca3-7020600\"",
+        "last_modified": "Thu, 30 Jul 2026 00:36:51 GMT",
+        "product_id": "jw01334001001_04101_00004_nrcalong_cal.fits",
+        "max_bytes": 117573120
+      },
+      "CAL_VER": "2.0.1",
+      "CRDS_CTX": "jwst_1535.pmap",
+      "EXPMID": 59751.006653460645
+    }
+  ],
+  "science_radius_arcsec": 0.18873807945080867,
+  "science_annulus_arcsec": [
+    0.37747615890161734,
+    0.6291269315026955
+  ],
+  "summaries": [
+    {
+      "reference_radius_arcsec": 0.45,
+      "reference_background_annulus_arcsec": [
+        0.95,
+        1.35
+      ],
+      "reference_background_neighbor_masked": false,
+      "status": "measured",
+      "stars": 11,
+      "dependent_exposure_measurements": 22,
+      "median_star_mean_ratio": 0.8767111528049945,
+      "star_mean_ratio_16_84": [
+        0.8268625268442964,
+        0.8965292393513828
+      ],
+      "median_source_bootstrap_95": [
+        0.833019777432043,
+        0.8854010753971051
+      ],
+      "median_epoch2_minus_epoch1_ratio": 0.0004074093493778852,
+      "repeat_difference_robust_sigma": 0.006567924454894956,
+      "repeat_difference_ordinary_sigma": 0.005871148252871878,
+      "median_diagonal_ratio_sigma": 0.002445750287733972,
+      "interval_scope": "source-group resampling, conditional one field/visit and selection; no whole-field systematic error"
+    },
+    {
+      "reference_radius_arcsec": 0.45,
+      "reference_background_annulus_arcsec": [
+        0.95,
+        1.35
+      ],
+      "reference_background_neighbor_masked": true,
+      "status": "measured",
+      "stars": 11,
+      "dependent_exposure_measurements": 22,
+      "median_star_mean_ratio": 0.8197177386949327,
+      "star_mean_ratio_16_84": [
+        0.808430563355758,
+        0.8314992413014143
+      ],
+      "median_source_bootstrap_95": [
+        0.8086326648461042,
+        0.8282851678363001
+      ],
+      "median_epoch2_minus_epoch1_ratio": 0.00018756800987163036,
+      "repeat_difference_robust_sigma": 0.0036891808252669674,
+      "repeat_difference_ordinary_sigma": 0.004809208804884383,
+      "median_diagonal_ratio_sigma": 0.0022714744554832578,
+      "interval_scope": "source-group resampling, conditional one field/visit and selection; no whole-field systematic error"
+    },
+    {
+      "reference_radius_arcsec": 0.45,
+      "reference_background_annulus_arcsec": [
+        1.1,
+        1.5
+      ],
+      "reference_background_neighbor_masked": true,
+      "status": "measured",
+      "stars": 11,
+      "dependent_exposure_measurements": 22,
+      "median_star_mean_ratio": 0.8216616045506588,
+      "star_mean_ratio_16_84": [
+        0.8087231026674521,
+        0.8295909577487938
+      ],
+      "median_source_bootstrap_95": [
+        0.8096760763533235,
+        0.8287063891314401
+      ],
+      "median_epoch2_minus_epoch1_ratio": -9.186816540496245e-06,
+      "repeat_difference_robust_sigma": 0.004982019375601891,
+      "repeat_difference_ordinary_sigma": 0.005243598294757396,
+      "median_diagonal_ratio_sigma": 0.002262757858261466,
+      "interval_scope": "source-group resampling, conditional one field/visit and selection; no whole-field systematic error"
+    },
+    {
+      "reference_radius_arcsec": 0.6,
+      "reference_background_annulus_arcsec": [
+        0.95,
+        1.35
+      ],
+      "reference_background_neighbor_masked": false,
+      "status": "measured",
+      "stars": 11,
+      "dependent_exposure_measurements": 22,
+      "median_star_mean_ratio": 0.9052109027945642,
+      "star_mean_ratio_16_84": [
+        0.8162766172509519,
+        0.9388716377127756
+      ],
+      "median_source_bootstrap_95": [
+        0.8267917120429165,
+        0.9235599308070199
+      ],
+      "median_epoch2_minus_epoch1_ratio": 0.0010595691269017493,
+      "repeat_difference_robust_sigma": 0.007060741059975804,
+      "repeat_difference_ordinary_sigma": 0.006092765158599979,
+      "median_diagonal_ratio_sigma": 0.0035726834321394563,
+      "interval_scope": "source-group resampling, conditional one field/visit and selection; no whole-field systematic error"
+    },
+    {
+      "reference_radius_arcsec": 0.6,
+      "reference_background_annulus_arcsec": [
+        0.95,
+        1.35
+      ],
+      "reference_background_neighbor_masked": true,
+      "status": "measured",
+      "stars": 11,
+      "dependent_exposure_measurements": 22,
+      "median_star_mean_ratio": 0.8052773717679621,
+      "star_mean_ratio_16_84": [
+        0.785091477768689,
+        0.8178165699127795
+      ],
+      "median_source_bootstrap_95": [
+        0.7854223092771291,
+        0.8149685437536467
+      ],
+      "median_epoch2_minus_epoch1_ratio": -0.00029524189170682114,
+      "repeat_difference_robust_sigma": 0.0037427556581807984,
+      "repeat_difference_ordinary_sigma": 0.0050559319094443346,
+      "median_diagonal_ratio_sigma": 0.003125081304460764,
+      "interval_scope": "source-group resampling, conditional one field/visit and selection; no whole-field systematic error"
+    },
+    {
+      "reference_radius_arcsec": 0.6,
+      "reference_background_annulus_arcsec": [
+        1.1,
+        1.5
+      ],
+      "reference_background_neighbor_masked": true,
+      "status": "measured",
+      "stars": 11,
+      "dependent_exposure_measurements": 22,
+      "median_star_mean_ratio": 0.8086915313495,
+      "star_mean_ratio_16_84": [
+        0.7855879237418266,
+        0.814800228385005
+      ],
+      "median_source_bootstrap_95": [
+        0.7871778808554931,
+        0.814206721789346
+      ],
+      "median_epoch2_minus_epoch1_ratio": -0.0005003944405727045,
+      "repeat_difference_robust_sigma": 0.005177877305809949,
+      "repeat_difference_ordinary_sigma": 0.006007411934082519,
+      "median_diagonal_ratio_sigma": 0.0031104417284950614,
+      "interval_scope": "source-group resampling, conditional one field/visit and selection; no whole-field systematic error"
+    },
+    {
+      "reference_radius_arcsec": 0.8,
+      "reference_background_annulus_arcsec": [
+        0.95,
+        1.35
+      ],
+      "reference_background_neighbor_masked": false,
+      "status": "measured",
+      "stars": 11,
+      "dependent_exposure_measurements": 22,
+      "median_star_mean_ratio": 0.9926449417308925,
+      "star_mean_ratio_16_84": [
+        0.8203118048445812,
+        1.0753194667920432
+      ],
+      "median_source_bootstrap_95": [
+        0.839372964002437,
+        1.0504350282149246
+      ],
+      "median_epoch2_minus_epoch1_ratio": 0.004283981168447859,
+      "repeat_difference_robust_sigma": 0.008905898956889726,
+      "repeat_difference_ordinary_sigma": 0.015643121109656162,
+      "median_diagonal_ratio_sigma": 0.006017974345013499,
+      "interval_scope": "source-group resampling, conditional one field/visit and selection; no whole-field systematic error"
+    },
+    {
+      "reference_radius_arcsec": 0.8,
+      "reference_background_annulus_arcsec": [
+        0.95,
+        1.35
+      ],
+      "reference_background_neighbor_masked": true,
+      "status": "measured",
+      "stars": 11,
+      "dependent_exposure_measurements": 22,
+      "median_star_mean_ratio": 0.7839595909800313,
+      "star_mean_ratio_16_84": [
+        0.7464242845145777,
+        0.8095180987863136
+      ],
+      "median_source_bootstrap_95": [
+        0.7544835753067096,
+        0.8069382415851114
+      ],
+      "median_epoch2_minus_epoch1_ratio": 0.0003333879267017892,
+      "repeat_difference_robust_sigma": 0.009461918121376115,
+      "repeat_difference_ordinary_sigma": 0.008309772482703504,
+      "median_diagonal_ratio_sigma": 0.004458097042515874,
+      "interval_scope": "source-group resampling, conditional one field/visit and selection; no whole-field systematic error"
+    },
+    {
+      "reference_radius_arcsec": 0.8,
+      "reference_background_annulus_arcsec": [
+        1.1,
+        1.5
+      ],
+      "reference_background_neighbor_masked": true,
+      "status": "measured",
+      "stars": 11,
+      "dependent_exposure_measurements": 22,
+      "median_star_mean_ratio": 0.7792858142890464,
+      "star_mean_ratio_16_84": [
+        0.7485530256856455,
+        0.8139847968156004
+      ],
+      "median_source_bootstrap_95": [
+        0.7621119088252553,
+        0.8135384931817562
+      ],
+      "median_epoch2_minus_epoch1_ratio": -0.0034444945069241895,
+      "repeat_difference_robust_sigma": 0.00963119917481301,
+      "repeat_difference_ordinary_sigma": 0.009885162941550799,
+      "median_diagonal_ratio_sigma": 0.004437437513843179,
+      "interval_scope": "source-group resampling, conditional one field/visit and selection; no whole-field systematic error"
+    }
+  ],
+  "curve_of_growth_finite_08": [
+    {
+      "radius_arcsec": 0.1258253863005391,
+      "status": "measured",
+      "stars": 11,
+      "dependent_exposure_measurements": 22,
+      "median_star_mean_ratio": 0.7000860774201887,
+      "star_mean_ratio_16_84": [
+        0.6765491289813448,
+        0.7276928840495503
+      ],
+      "median_source_bootstrap_95": [
+        0.6812110830046489,
+        0.7264453237261723
+      ],
+      "median_epoch2_minus_epoch1_ratio": 0.0113485889608399,
+      "repeat_difference_robust_sigma": 0.014114520515610362,
+      "repeat_difference_ordinary_sigma": 0.02594879286045878,
+      "median_diagonal_ratio_sigma": 0.003931861137971282,
+      "interval_scope": "source-group resampling, conditional one field/visit and selection; no whole-field systematic error"
+    },
+    {
+      "radius_arcsec": 0.18873807945080867,
+      "status": "measured",
+      "stars": 11,
+      "dependent_exposure_measurements": 22,
+      "median_star_mean_ratio": 0.7876091508250589,
+      "star_mean_ratio_16_84": [
+        0.7519656270955154,
+        0.8126623138710074
+      ],
+      "median_source_bootstrap_95": [
+        0.7582455512064697,
+        0.810197873712643
+      ],
+      "median_epoch2_minus_epoch1_ratio": -0.0002865037721365704,
+      "repeat_difference_robust_sigma": 0.009516807055873532,
+      "repeat_difference_ordinary_sigma": 0.008037758653102682,
+      "median_diagonal_ratio_sigma": 0.004176766844466329,
+      "interval_scope": "source-group resampling, conditional one field/visit and selection; no whole-field systematic error"
+    },
+    {
+      "radius_arcsec": 0.25,
+      "status": "measured",
+      "stars": 11,
+      "dependent_exposure_measurements": 22,
+      "median_star_mean_ratio": 0.8556287625446289,
+      "star_mean_ratio_16_84": [
+        0.8231859847105917,
+        0.8863088693802942
+      ],
+      "median_source_bootstrap_95": [
+        0.8271510551712586,
+        0.8850225203953128
+      ],
+      "median_epoch2_minus_epoch1_ratio": 0.0024661922827790006,
+      "repeat_difference_robust_sigma": 0.010271800567186181,
+      "repeat_difference_ordinary_sigma": 0.01023370118990948,
+      "median_diagonal_ratio_sigma": 0.004338054917752743,
+      "interval_scope": "source-group resampling, conditional one field/visit and selection; no whole-field systematic error"
+    },
+    {
+      "radius_arcsec": 0.315,
+      "status": "measured",
+      "stars": 11,
+      "dependent_exposure_measurements": 22,
+      "median_star_mean_ratio": 0.9282531190638827,
+      "star_mean_ratio_16_84": [
+        0.8898988129275764,
+        0.9589904209686931
+      ],
+      "median_source_bootstrap_95": [
+        0.8937283124084073,
+        0.9589630648891827
+      ],
+      "median_epoch2_minus_epoch1_ratio": 0.003423122109609489,
+      "repeat_difference_robust_sigma": 0.006037776549696494,
+      "repeat_difference_ordinary_sigma": 0.007117460301450371,
+      "median_diagonal_ratio_sigma": 0.004410404246300459,
+      "interval_scope": "source-group resampling, conditional one field/visit and selection; no whole-field systematic error"
+    },
+    {
+      "radius_arcsec": 0.45,
+      "status": "measured",
+      "stars": 11,
+      "dependent_exposure_measurements": 22,
+      "median_star_mean_ratio": 0.9587153364945222,
+      "star_mean_ratio_16_84": [
+        0.9196609494343725,
+        0.980601352910587
+      ],
+      "median_source_bootstrap_95": [
+        0.9212081981622218,
+        0.9796584229508418
+      ],
+      "median_epoch2_minus_epoch1_ratio": 0.0025892716324984466,
+      "repeat_difference_robust_sigma": 0.010502883332395336,
+      "repeat_difference_ordinary_sigma": 0.008083090230325888,
+      "median_diagonal_ratio_sigma": 0.0038330128882080317,
+      "interval_scope": "source-group resampling, conditional one field/visit and selection; no whole-field systematic error"
+    },
+    {
+      "radius_arcsec": 0.6,
+      "status": "measured",
+      "stars": 11,
+      "dependent_exposure_measurements": 22,
+      "median_star_mean_ratio": 0.9874709827595851,
+      "star_mean_ratio_16_84": [
+        0.9493848180277918,
+        0.9971221520649054
+      ],
+      "median_source_bootstrap_95": [
+        0.9582205136084824,
+        0.9964901648941772
+      ],
+      "median_epoch2_minus_epoch1_ratio": 0.000478053325588923,
+      "repeat_difference_robust_sigma": 0.008809828717392585,
+      "repeat_difference_ordinary_sigma": 0.007653392039199957,
+      "median_diagonal_ratio_sigma": 0.00285377842374146,
+      "interval_scope": "source-group resampling, conditional one field/visit and selection; no whole-field systematic error"
+    },
+    {
+      "radius_arcsec": 0.8,
+      "status": "measured",
+      "stars": 11,
+      "dependent_exposure_measurements": 22,
+      "median_star_mean_ratio": 1.0,
+      "star_mean_ratio_16_84": [
+        1.0,
+        1.0
+      ],
+      "median_source_bootstrap_95": [
+        1.0,
+        1.0
+      ],
+      "median_epoch2_minus_epoch1_ratio": 0.0,
+      "repeat_difference_robust_sigma": 0.0,
+      "repeat_difference_ordinary_sigma": 0.0,
+      "median_diagonal_ratio_sigma": 4.647383990682709e-19,
+      "interval_scope": "source-group resampling, conditional one field/visit and selection; no whole-field systematic error"
+    }
+  ],
+  "forced_catalog_to_centroid_ratio_quantiles_16_50_84": [
+    0.9367330812208892,
+    0.9499612812388721,
+    0.968076533748034
+  ],
+  "production_operator_transfer": [
+    {
+      "source_id": "3157",
+      "epoch": 0,
+      "flux_residual_jy": 0.0,
+      "diagonal_sigma_ratio": 1.0
+    },
+    {
+      "source_id": "3157",
+      "epoch": 1,
+      "flux_residual_jy": 0.0,
+      "diagonal_sigma_ratio": 1.0
+    },
+    {
+      "source_id": "5648",
+      "epoch": 0,
+      "flux_residual_jy": 1.6940658945086007e-21,
+      "diagonal_sigma_ratio": 1.0000000000000002
+    },
+    {
+      "source_id": "5648",
+      "epoch": 1,
+      "flux_residual_jy": -1.6940658945086007e-21,
+      "diagonal_sigma_ratio": 1.0
+    },
+    {
+      "source_id": "7078",
+      "epoch": 0,
+      "flux_residual_jy": 0.0,
+      "diagonal_sigma_ratio": 1.0000000000000002
+    },
+    {
+      "source_id": "7078",
+      "epoch": 1,
+      "flux_residual_jy": 1.6940658945086007e-21,
+      "diagonal_sigma_ratio": 1.0
+    },
+    {
+      "source_id": "7472",
+      "epoch": 0,
+      "flux_residual_jy": 1.6940658945086007e-21,
+      "diagonal_sigma_ratio": 1.0
+    },
+    {
+      "source_id": "7472",
+      "epoch": 1,
+      "flux_residual_jy": -1.6940658945086007e-21,
+      "diagonal_sigma_ratio": 0.9999999999999999
+    },
+    {
+      "source_id": "7651",
+      "epoch": 0,
+      "flux_residual_jy": 3.3881317890172014e-21,
+      "diagonal_sigma_ratio": 1.0
+    },
+    {
+      "source_id": "7651",
+      "epoch": 1,
+      "flux_residual_jy": 1.6940658945086007e-21,
+      "diagonal_sigma_ratio": 0.9999999999999999
+    },
+    {
+      "source_id": "9386",
+      "epoch": 0,
+      "flux_residual_jy": 0.0,
+      "diagonal_sigma_ratio": 1.0000000000000002
+    },
+    {
+      "source_id": "9386",
+      "epoch": 1,
+      "flux_residual_jy": 0.0,
+      "diagonal_sigma_ratio": 1.0
+    },
+    {
+      "source_id": "12047",
+      "epoch": 0,
+      "flux_residual_jy": 8.470329472543003e-22,
+      "diagonal_sigma_ratio": 1.0
+    },
+    {
+      "source_id": "12047",
+      "epoch": 1,
+      "flux_residual_jy": 0.0,
+      "diagonal_sigma_ratio": 1.0000000000000002
+    },
+    {
+      "source_id": "11956",
+      "epoch": 0,
+      "flux_residual_jy": 8.470329472543003e-22,
+      "diagonal_sigma_ratio": 1.0000000000000002
+    },
+    {
+      "source_id": "11956",
+      "epoch": 1,
+      "flux_residual_jy": 0.0,
+      "diagonal_sigma_ratio": 1.0
+    },
+    {
+      "source_id": "12438",
+      "epoch": 0,
+      "flux_residual_jy": 0.0,
+      "diagonal_sigma_ratio": 1.0
+    },
+    {
+      "source_id": "12438",
+      "epoch": 1,
+      "flux_residual_jy": 1.6940658945086007e-21,
+      "diagonal_sigma_ratio": 1.0
+    },
+    {
+      "source_id": "18808",
+      "epoch": 0,
+      "flux_residual_jy": 0.0,
+      "diagonal_sigma_ratio": 1.0
+    },
+    {
+      "source_id": "18808",
+      "epoch": 1,
+      "flux_residual_jy": -1.2705494208814505e-21,
+      "diagonal_sigma_ratio": 1.0000000000000002
+    },
+    {
+      "source_id": "20164",
+      "epoch": 0,
+      "flux_residual_jy": -4.235164736271502e-22,
+      "diagonal_sigma_ratio": 1.0000000000000002
+    },
+    {
+      "source_id": "20164",
+      "epoch": 1,
+      "flux_residual_jy": 4.235164736271502e-22,
+      "diagonal_sigma_ratio": 1.0
+    }
+  ],
+  "modeled_comparator": {
+    "provenance": {
+      "filter": "F444W",
+      "sha256": "b74abf676cd57f272ada642a27fbb6a8fcb6e0181407357784d812c7f5fd6db2",
+      "bytes": 1800000,
+      "requested_url": "https://slate.ucsc.edu/~brant/jades-dr5/GOODS-S/hlsp/images/submosaics/hlsp_jades_jwst_nircam_jw011800-deep_f444wa_v5.0_mpsf.fits",
+      "retrieved_utc": "2026-10-09T06:38:33.765039+00:00",
+      "input_scale_arcsec": 0.029994758999999965,
+      "template_shape": [
+        669,
+        669
+      ],
+      "original_template_sum": 0.9995488712944012,
+      "normalization": "finite supplied template; unmodeled outer wings are unknown",
+      "origin": "official JADES DR5 modeled PSF, not observed-star measurement"
+    },
+    "comparator_sampling_arcsec": 0.063,
+    "curve_finite_08": [
+      {
+        "radius_arcsec": 0.1258253863005391,
+        "nine_phase_and_scale_sensitivity_range": [
+          0.5691397228318236,
+          0.6637893528794436
+        ]
+      },
+      {
+        "radius_arcsec": 0.18873807945080867,
+        "nine_phase_and_scale_sensitivity_range": [
+          0.770037481300396,
+          0.7914304003672694
+        ]
+      },
+      {
+        "radius_arcsec": 0.25,
+        "nine_phase_and_scale_sensitivity_range": [
+          0.8387465918847551,
+          0.8618894798544837
+        ]
+      },
+      {
+        "radius_arcsec": 0.315,
+        "nine_phase_and_scale_sensitivity_range": [
+          0.906935886043245,
+          0.9231242428015762
+        ]
+      },
+      {
+        "radius_arcsec": 0.45,
+        "nine_phase_and_scale_sensitivity_range": [
+          0.9545860119394575,
+          0.9563540296363157
+        ]
+      },
+      {
+        "radius_arcsec": 0.6,
+        "nine_phase_and_scale_sensitivity_range": [
+          0.982192634501538,
+          0.9838382092205161
+        ]
+      },
+      {
+        "radius_arcsec": 0.8,
+        "nine_phase_and_scale_sensitivity_range": [
+          1.0,
+          1.0
+        ]
+      }
+    ],
+    "curve_sampling_scales_arcsec": [
+      0.06228049667781291,
+      0.06337835503460751,
+      0.06389565051494128
+    ],
+    "phase_grid": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -0.4,
+        -0.4
+      ],
+      [
+        -0.4,
+        0
+      ],
+      [
+        -0.4,
+        0.4
+      ],
+      [
+        0,
+        -0.4
+      ],
+      [
+        0,
+        0.4
+      ],
+      [
+        0.4,
+        -0.4
+      ],
+      [
+        0.4,
+        0
+      ],
+      [
+        0.4,
+        0.4
+      ]
+    ],
+    "ratios": [
+      {
+        "reference_radius_arcsec": 0.45,
+        "background_annulus_arcsec": [
+          0.95,
+          1.35
+        ],
+        "background_neighbor_masked": false,
+        "modeled_small_net_response_finite_template": 0.689092379421438,
+        "modeled_reference_net_response_finite_template": 0.86270761575111,
+        "modeled_finite_aperture_ratio": 0.7987554147432497
+      },
+      {
+        "reference_radius_arcsec": 0.45,
+        "background_annulus_arcsec": [
+          0.95,
+          1.35
+        ],
+        "background_neighbor_masked": true,
+        "modeled_small_net_response_finite_template": 0.689092379421438,
+        "modeled_reference_net_response_finite_template": 0.86270761575111,
+        "modeled_finite_aperture_ratio": 0.7987554147432497
+      },
+      {
+        "reference_radius_arcsec": 0.45,
+        "background_annulus_arcsec": [
+          1.1,
+          1.5
+        ],
+        "background_neighbor_masked": true,
+        "modeled_small_net_response_finite_template": 0.689092379421438,
+        "modeled_reference_net_response_finite_template": 0.863983439556733,
+        "modeled_finite_aperture_ratio": 0.797575911611196
+      },
+      {
+        "reference_radius_arcsec": 0.6,
+        "background_annulus_arcsec": [
+          0.95,
+          1.35
+        ],
+        "background_neighbor_masked": false,
+        "modeled_small_net_response_finite_template": 0.689092379421438,
+        "modeled_reference_net_response_finite_template": 0.8891313965489388,
+        "modeled_finite_aperture_ratio": 0.77501748571254
+      },
+      {
+        "reference_radius_arcsec": 0.6,
+        "background_annulus_arcsec": [
+          0.95,
+          1.35
+        ],
+        "background_neighbor_masked": true,
+        "modeled_small_net_response_finite_template": 0.689092379421438,
+        "modeled_reference_net_response_finite_template": 0.8891313965489388,
+        "modeled_finite_aperture_ratio": 0.77501748571254
+      },
+      {
+        "reference_radius_arcsec": 0.6,
+        "background_annulus_arcsec": [
+          1.1,
+          1.5
+        ],
+        "background_neighbor_masked": true,
+        "modeled_small_net_response_finite_template": 0.689092379421438,
+        "modeled_reference_net_response_finite_template": 0.8914532373877433,
+        "modeled_finite_aperture_ratio": 0.7729989084348491
+      },
+      {
+        "reference_radius_arcsec": 0.8,
+        "background_annulus_arcsec": [
+          0.95,
+          1.35
+        ],
+        "background_neighbor_masked": false,
+        "modeled_small_net_response_finite_template": 0.689092379421438,
+        "modeled_reference_net_response_finite_template": 0.90294364232516,
+        "modeled_finite_aperture_ratio": 0.7631621145777869
+      },
+      {
+        "reference_radius_arcsec": 0.8,
+        "background_annulus_arcsec": [
+          0.95,
+          1.35
+        ],
+        "background_neighbor_masked": true,
+        "modeled_small_net_response_finite_template": 0.689092379421438,
+        "modeled_reference_net_response_finite_template": 0.90294364232516,
+        "modeled_finite_aperture_ratio": 0.7631621145777869
+      },
+      {
+        "reference_radius_arcsec": 0.8,
+        "background_annulus_arcsec": [
+          1.1,
+          1.5
+        ],
+        "background_neighbor_masked": true,
+        "modeled_small_net_response_finite_template": 0.689092379421438,
+        "modeled_reference_net_response_finite_template": 0.9069454499142258,
+        "modeled_finite_aperture_ratio": 0.7597947368131223
+      }
+    ],
+    "limits": "Modeled mosaic shape on an isotropic grid, not a model of this cal exposure's field/visit/SIP/phase."
+  },
+  "code_sha256": "4930b51cb48a2b6863b46ec5fbb88e31f194082a6be405ee868c37f23575aba6",
+  "limits": [
+    "Larger apertures are finite references, not true total flux or measured infinite-aperture EE.",
+    "Catalog neighbor sum is a conditional contamination screen; uncataloged/faint neighbors remain.",
+    "DOLPHOT catalog and current image calibration versions differ; image cores are recentered independently.",
+    "Two dithers share one visit and stars; group bootstrap excludes field-wide systematic uncertainty.",
+    "M92 cal detector pixels are not GOODS-S/JADES i2d mosaic pixels; a universal correction is unsupported.",
+    "Diagonal ratio error includes shared pixels; interpixel detector/noise correlations remain unknown.",
+    "Observed stellar SED, field PSF variation, sample selection and background masking affect transfer."
+  ],
+  "regenerable_records": {
+    "count": 220,
+    "canonical_json_sha256": "b13cb0ebd30bd7ffed1dd2597fd5625db025336d90bcc5f1838c3435a9ccb446"
+  }
+}
