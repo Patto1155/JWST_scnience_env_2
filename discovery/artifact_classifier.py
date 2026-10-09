@@ -45,6 +45,8 @@ ROOT = Path(__file__).resolve().parent.parent
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
+from discovery.validation_metrics import roc_auc
+
 RESEARCH_DIR = Path("research_output")
 DEFAULT_TRUTH = RESEARCH_DIR / "artifact_characterization.json"
 DEFAULT_POINT_SOURCES = RESEARCH_DIR / "injected_point_sources.json"
@@ -159,7 +161,7 @@ def predict_probability(weights: np.ndarray, features: np.ndarray) -> np.ndarray
     return 1.0 / (1.0 + np.exp(-design @ weights))
 
 
-def _metrics(labels: np.ndarray, scores: np.ndarray, threshold: float) -> Dict[str, float]:
+def _metrics(labels: np.ndarray, scores: np.ndarray, threshold: float) -> Dict[str, Any]:
     """Purity and completeness of the artifact class at one threshold."""
     flagged = scores >= threshold
     true_positive = int(np.sum(flagged & (labels == 1)))
@@ -170,25 +172,32 @@ def _metrics(labels: np.ndarray, scores: np.ndarray, threshold: float) -> Dict[s
         "n_flagged": int(np.sum(flagged)),
         "artifact_purity": float(true_positive / (true_positive + false_positive))
         if (true_positive + false_positive)
-        else float("nan"),
+        else None,
         "artifact_completeness": float(true_positive / (true_positive + false_negative))
         if (true_positive + false_negative)
-        else float("nan"),
+        else None,
         "real_sources_lost": int(false_positive),
-        "real_source_loss_fraction": float(false_positive / max(int(np.sum(labels == 0)), 1)),
+        "real_source_loss_fraction": float(false_positive / int(np.sum(labels == 0)))
+        if np.sum(labels == 0) else None,
     }
 
 
-def _roc_auc(labels: np.ndarray, scores: np.ndarray) -> float:
-    """Area under the ROC curve, via the rank-sum identity."""
-    order = np.argsort(scores)
-    ranks = np.empty(len(scores), dtype=float)
-    ranks[order] = np.arange(1, len(scores) + 1)
-    n_pos = float(np.sum(labels == 1))
-    n_neg = float(np.sum(labels == 0))
-    if n_pos == 0 or n_neg == 0:
-        return float("nan")
-    return float((np.sum(ranks[labels == 1]) - n_pos * (n_pos + 1) / 2.0) / (n_pos * n_neg))
+def _roc_auc(labels: np.ndarray, scores: np.ndarray) -> Optional[float]:
+    """Tie-aware AUC; a one-class test has no estimable ROC curve."""
+    return roc_auc(labels.tolist(), scores.tolist())["value"]
+
+
+def _auc_fields(labels: np.ndarray, scores: np.ndarray) -> Dict[str, Any]:
+    result = roc_auc(labels.tolist(), scores.tolist())
+    return {"roc_auc": result["value"], "roc_auc_status": result["status"],
+            "roc_auc_reason": result["reason"]}
+
+
+def _metric_text(value: Optional[float], *, percent: bool = False) -> str:
+    """Render legacy NaN and undefined metrics without claiming a measurement."""
+    if value is None or not math.isfinite(float(value)):
+        return "not estimable"
+    return f"{100 * value:.1f}%" if percent else f"{value:.3f}"
 
 
 def sky_groups(
@@ -255,7 +264,7 @@ def cross_validate(
         out_of_sample[fold] = predict_probability(weights, (features[fold] - mean) / scale)
 
     return {
-        "roc_auc": _roc_auc(labels, out_of_sample),
+        **_auc_fields(labels, out_of_sample),
         "operating_points": [
             _metrics(labels, out_of_sample, threshold)
             for threshold in (0.5, 0.7, 0.9, 0.95)
@@ -380,7 +389,7 @@ def train(path: Path, point_sources: Optional[Path] = None) -> Dict[str, Any]:
                 {
                     "trained_on": [f for f in unique_filters if f != held_out],
                     "tested_on": held_out,
-                    "roc_auc": _roc_auc(labels[test_mask], scores),
+                    **_auc_fields(labels[test_mask], scores),
                     "at_threshold_0.9": _metrics(labels[test_mask], scores, 0.9),
                 }
             )
@@ -405,7 +414,7 @@ def train(path: Path, point_sources: Optional[Path] = None) -> Dict[str, Any]:
             {
                 "held_out_visit": held_out,
                 "n_test": int(test_mask.sum()),
-                "roc_auc": _roc_auc(labels[test_mask], scores),
+                **_auc_fields(labels[test_mask], scores),
                 "at_threshold_0.5": _metrics(labels[test_mask], scores, 0.5),
             }
         )
@@ -424,6 +433,8 @@ def train(path: Path, point_sources: Optional[Path] = None) -> Dict[str, Any]:
         "trained_on_filters": unique_filters,
         "cross_validation": {
             "roc_auc": validation["roc_auc"],
+            "roc_auc_status": validation["roc_auc_status"],
+            "roc_auc_reason": validation["roc_auc_reason"],
             "operating_points": validation["operating_points"],
         },
         "cross_filter_transfer": transfer,
@@ -483,7 +494,9 @@ def residual_contamination(
          if abs(p["threshold"] - threshold) < 1e-9),
         None,
     )
-    if point is None or not truth_summaries:
+    if (point is None or not truth_summaries
+            or point["artifact_completeness"] is None
+            or point["real_source_loss_fraction"] is None):
         return None
 
     fractions = [s["single_epoch_fraction"] for s in truth_summaries
@@ -529,7 +542,7 @@ def render_report(model: Dict[str, Any]) -> str:
         f"({model['n_artifacts']} artifacts, {model['n_real']} real sources, "
         f"of which {model.get('n_injected_point_sources', 0)} are injected point sources)",
         f"- Filters: {', '.join(model['trained_on_filters'])}",
-        f"- Cross-validated ROC AUC: **{model['cross_validation']['roc_auc']:.3f}**",
+        f"- Cross-validated ROC AUC: **{_metric_text(model['cross_validation']['roc_auc'])}**",
         "",
         "## Operating points (5-fold, out-of-sample)",
         "",
@@ -539,8 +552,8 @@ def render_report(model: Dict[str, Any]) -> str:
     for point in model["cross_validation"]["operating_points"]:
         lines.append(
             f"| {point['threshold']:.2f} | {point['n_flagged']} | "
-            f"{point['artifact_purity']:.3f} | {point['artifact_completeness']:.3f} | "
-            f"{point['real_sources_lost']} ({100 * point['real_source_loss_fraction']:.1f}%) |"
+            f"{_metric_text(point['artifact_purity'])} | {_metric_text(point['artifact_completeness'])} | "
+            f"{point['real_sources_lost']} ({_metric_text(point['real_source_loss_fraction'], percent=True)}) |"
         )
 
     lines += [
@@ -557,8 +570,8 @@ def render_report(model: Dict[str, Any]) -> str:
         point = row["at_threshold_0.9"]
         lines.append(
             f"| {', '.join(row['trained_on'])} | {row['tested_on']} | "
-            f"{row['roc_auc']:.3f} | {point['artifact_purity']:.3f} | "
-            f"{point['artifact_completeness']:.3f} |"
+            f"{_metric_text(row['roc_auc'])} | {_metric_text(point['artifact_purity'])} | "
+            f"{_metric_text(point['artifact_completeness'])} |"
         )
 
     lines += [
@@ -602,6 +615,12 @@ def render_report(model: Dict[str, Any]) -> str:
         "",
         "## Limits",
         "",
+        "- Sky-group folds and held-out visits are internal diagnostic checks.",
+        "  Shared fields or injection generators/PSFs are not independent external",
+        "  validation. Legacy training rows lack complete provenance; use the gate",
+        "  in `validation_metrics.py` before claiming independent performance.",
+        "- ROC AUC requires both classes. Real-only synthetic-source tests can",
+        "  estimate rejection, but their AUC is explicitly not estimable.",
         "- Fitted on NIRCam long-wave imaging only. `psf_ratio` normalizes by the",
         "  diffraction-limited FWHM so the model transfers across wavelength, but",
         "  short-wave detectors sample the PSF differently and should be validated",
@@ -641,25 +660,25 @@ def main() -> int:
     model["residual_contamination"] = residual_contamination(model, truth_summaries)
     if args.train:
         args.model.parent.mkdir(parents=True, exist_ok=True)
-        args.model.write_text(json.dumps(model, indent=2), encoding="utf-8")
+        args.model.write_text(json.dumps(model, indent=2, allow_nan=False), encoding="utf-8")
         args.report.write_text(render_report(model), encoding="utf-8")
 
     print(f"Trained on {model['n_training_rows']} rows "
           f"({model['n_artifacts']} artifacts, {model['n_real']} real, "
           f"{model.get('n_injected_point_sources', 0)} of them injected point sources)")
-    print(f"Cross-validated ROC AUC: {model['cross_validation']['roc_auc']:.3f}")
+    print(f"Cross-validated ROC AUC: {_metric_text(model['cross_validation']['roc_auc'])}")
     for point in model["cross_validation"]["operating_points"]:
         print(
             f"  threshold {point['threshold']:.2f}: "
-            f"purity={point['artifact_purity']:.3f} "
-            f"completeness={point['artifact_completeness']:.3f} "
+            f"purity={_metric_text(point['artifact_purity'])} "
+            f"completeness={_metric_text(point['artifact_completeness'])} "
             f"real lost={point['real_sources_lost']}"
         )
     for row in model["cross_filter_transfer"]:
-        print(f"  filter transfer -> {row['tested_on']}: ROC AUC {row['roc_auc']:.3f}")
+        print(f"  filter transfer -> {row['tested_on']}: ROC AUC {_metric_text(row['roc_auc'])}")
     for row in model.get("held_out_visit", []):
         print(
-            f"  held-out visit {row['held_out_visit']}: ROC AUC {row['roc_auc']:.3f} "
+            f"  held-out visit {row['held_out_visit']}: ROC AUC {_metric_text(row['roc_auc'])} "
             f"(n={row['n_test']})"
         )
     residual = model.get("residual_contamination")
