@@ -149,9 +149,7 @@ def _filter_tool_lookup_for_spec(
         )
 
     filtered_lookup = {
-        tool_name: tool_lookup[tool_name]
-        for tool_name in allowed_tools
-        if tool_name in tool_lookup
+        tool_name: tool_lookup[tool_name] for tool_name in allowed_tools if tool_name in tool_lookup
     }
     return filtered_lookup, issues
 

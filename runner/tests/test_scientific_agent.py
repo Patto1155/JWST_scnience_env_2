@@ -8,6 +8,12 @@ import pytest
 from runner.scientific_agent import ScientificResearchAgent
 
 
+@pytest.fixture(autouse=True)
+def mocked_llm_key(monkeypatch, forbid_external_connections):
+    """Only mocked LLM tests receive a fake key; runtime has no fallback key."""
+    monkeypatch.setattr("runner.scientific_agent.LLM_API_KEY", "test-only-fake-key")
+
+
 @pytest.fixture
 def scientific_agent():
     """Create ScientificResearchAgent instance with one mock tool."""
@@ -41,7 +47,10 @@ def _mock_llm_response(content: str) -> Mock:
     """Build requests.post response mock for a single LLM content payload."""
     response = Mock()
     response.raise_for_status = Mock()
-    response.json.return_value = {"choices": [{"message": {"content": content}}]}
+    response.json.return_value = {
+        "choices": [{"message": {"content": content}}],
+        "usage": {"prompt_tokens": 10, "completion_tokens": 5, "cost": 0.0},
+    }
     return response
 
 

@@ -18,4 +18,5 @@ exclude = "(^research_output/|^data/)"
 
 [tool.pytest.ini_options]
 addopts = "-q"
-testpaths = ["core_api/tests", "runner/tests"]
+testpaths = ["core_api/tests", "runner/tests", "tests"]
+markers = ["integration: requires explicitly provisioned local astronomy archive data"]

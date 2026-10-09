@@ -11,6 +11,7 @@ This agent follows a rigorous scientific process:
 """
 
 import json
+import math
 import re
 import traceback
 from datetime import UTC, datetime
@@ -69,6 +70,9 @@ class ScientificResearchAgent:
         self.messages: List[Message] = []
         self.step_count = 0
         self.cost_estimate = 0.0
+        self.token_count = 0
+        self.cost_tracking_complete = True
+        self.max_tokens_per_call = 4096
         self.stream_callback = stream_callback  # Callback for real-time streaming
         self.model = model
 
@@ -97,7 +101,11 @@ class ScientificResearchAgent:
         return result
 
     def _call_llm(self, messages: List[Dict[str, str]]) -> str:
-        """Call LLM API."""
+        """Call the provider and retain reported usage, never a guessed USD rate.
+
+        Custom compatible endpoints must return usage.cost (USD), prompt_tokens,
+        and completion_tokens. Unknown spend stops a run after its first reply.
+        """
         api_key = OPENROUTER_API_KEY or LLM_API_KEY
         if not api_key:
             raise ValueError("API key required")
@@ -112,6 +120,8 @@ class ScientificResearchAgent:
             "model": chosen_model,
             "messages": messages,
             "temperature": LLM_TEMPERATURE,
+            "max_tokens": self.max_tokens_per_call,
+            "usage": {"include": True},
         }
 
         # Allow full OpenRouter slug mapping when a short name is passed
@@ -124,7 +134,24 @@ class ScientificResearchAgent:
 
         response = requests.post(LLM_API_URL, headers=headers, json=payload, timeout=60)
         response.raise_for_status()
-        return response.json()["choices"][0]["message"]["content"]
+        body = response.json()
+        usage = body.get("usage", {})
+        try:
+            # USD is provider reported, never guessed from an unverified model rate.
+            cost = float(usage["cost"])
+            prompt_tokens = int(usage["prompt_tokens"])
+            completion_tokens = int(usage["completion_tokens"])
+            if not math.isfinite(cost) or cost < 0 or min(prompt_tokens, completion_tokens) < 0:
+                raise ValueError("invalid usage")
+        except (KeyError, TypeError, ValueError, OverflowError) as exc:
+            self.cost_tracking_complete = False
+            raise RuntimeError(
+                "AGENT_USAGE_UNAVAILABLE: provider must report non-negative USD cost "
+                "and token usage; stopped without executing its requested action"
+            ) from exc
+        self.cost_estimate += cost
+        self.token_count += prompt_tokens + completion_tokens
+        return body["choices"][0]["message"]["content"]
 
     @staticmethod
     def _parse_non_negative_int(value: Any, default: int = 0) -> int:
@@ -339,8 +366,15 @@ class ScientificResearchAgent:
         if model:
             self.model = model
 
-        max_steps = constraints.get("max_steps", MAX_STEPS_PER_RUN)
-        max_cost = constraints.get("max_cost", MAX_COST_PER_RUN)
+        max_steps = self._parse_non_negative_int(constraints.get("max_steps", MAX_STEPS_PER_RUN))
+        try:
+            max_cost = float(constraints.get("max_cost", MAX_COST_PER_RUN))
+        except (TypeError, ValueError, OverflowError):
+            max_cost = math.nan
+        max_total_tokens = self._parse_non_negative_int(constraints.get("max_total_tokens", 100000))
+        self.max_tokens_per_call = self._parse_non_negative_int(
+            constraints.get("max_tokens_per_call", 4096)
+        )
         strict_real_data = bool(constraints.get("strict_real_data", False))
         min_successful_tool_calls = self._parse_non_negative_int(
             constraints.get("min_successful_tool_calls", 0)
@@ -351,6 +385,8 @@ class ScientificResearchAgent:
         self.messages = []
         self.step_count = 0
         self.cost_estimate = 0.0
+        self.token_count = 0
+        self.cost_tracking_complete = True
         successful_tool_calls = 0
         reflection_count = 0
         blocked_finish_attempts = 0
@@ -420,6 +456,13 @@ IMPORTANT RULES:
         artifacts: List[str] = []
 
         def update_activity_metrics() -> None:
+            metrics["llm_calls"] = self.step_count
+            metrics["provider_reported_cost_usd"] = self.cost_estimate
+            metrics["total_tokens"] = self.token_count
+            metrics["cost_tracking_complete"] = self.cost_tracking_complete
+            # Checking after each response can overshoot by one bounded completion;
+            # this is not a provider-side hard dollar cap.
+            metrics["cost_limit_enforcement"] = "post_response"
             metrics["successful_tool_calls"] = successful_tool_calls
             metrics["reflection_count"] = reflection_count
             metrics["blocked_finish_attempts"] = blocked_finish_attempts
@@ -442,7 +485,15 @@ IMPORTANT RULES:
             )
 
         try:
+            if not math.isfinite(max_cost) or max_cost < 0 or self.max_tokens_per_call <= 0:
+                raise ValueError(
+                    "Agent budgets must be finite and non-negative; per-call tokens must be positive"
+                )
             while self.step_count < max_steps:
+                if self.cost_estimate >= max_cost:
+                    raise RuntimeError("AGENT_COST_LIMIT_REACHED: no further LLM calls permitted")
+                if self.token_count >= max_total_tokens:
+                    raise RuntimeError("AGENT_TOKEN_LIMIT_REACHED: no further LLM calls permitted")
                 # Build messages with MORE context (last 20 instead of 10)
                 llm_messages = [{"role": "system", "content": system_prompt}]
                 for msg in self.messages[-20:]:  # More context for deeper thinking
@@ -458,13 +509,18 @@ IMPORTANT RULES:
                         })
 
                 # Call LLM
-                logs.append(f"Step {self.step_count + 1}: Calling LLM...")
+                self.step_count += 1
+                logs.append(f"Step {self.step_count}: Calling LLM...")
                 try:
                     agent_response = self._call_llm(llm_messages)
                 except Exception as llm_error:
                     error_msg = f"LLM call failed: {str(llm_error)}"
                     logs.append(error_msg)
                     raise
+                if self.cost_estimate > max_cost:
+                    raise RuntimeError("AGENT_COST_LIMIT_REACHED: response exceeded USD limit")
+                if self.token_count > max_total_tokens:
+                    raise RuntimeError("AGENT_TOKEN_LIMIT_REACHED: response exceeded token limit")
 
                 # Add agent message
                 agent_msg = Message(
@@ -499,7 +555,6 @@ IMPORTANT RULES:
                                 timestamp=utc_now(),
                             )
                         )
-                        self.step_count += 1
                         if trajectory_callback and self.step_count % 3 == 0:
                             trajectory_callback([m.model_dump() for m in self.messages])
                         continue
@@ -518,7 +573,6 @@ IMPORTANT RULES:
                                 timestamp=utc_now(),
                             )
                         )
-                        self.step_count += 1
                         if trajectory_callback and self.step_count % 3 == 0:
                             trajectory_callback([m.model_dump() for m in self.messages])
                         continue
@@ -554,7 +608,9 @@ IMPORTANT RULES:
                     if self.stream_callback:
                         self.stream_callback("reflection", thoughts, self.step_count)
 
-                    # Reflection doesn't count as a step - encourage more thinking!
+                    # Every LLM attempt consumes the step budget, including reflections.
+                    if trajectory_callback and self.step_count % 3 == 0:
+                        trajectory_callback([m.model_dump() for m in self.messages])
                     continue
 
                 elif parsed.get("action") == "tool_call":
@@ -637,8 +693,6 @@ IMPORTANT RULES:
                             logs.append(strict_msg)
                             raise RuntimeError(strict_msg) from e
 
-                self.step_count += 1
-
                 # Update trajectory periodically
                 if trajectory_callback and self.step_count % 3 == 0:
                     trajectory_callback([m.model_dump() for m in self.messages])
@@ -671,10 +725,11 @@ IMPORTANT RULES:
                 ), self.messages
 
             return RunResult(
-                status="success",
+                status="failed",
                 summary_metrics=metrics,
                 artifacts=artifacts,
                 log_summary=log_summary,
+                error="AGENT_STEP_LIMIT_REACHED: no explicit evidence-based finish before limit",
             ), self.messages
 
         except Exception as e:

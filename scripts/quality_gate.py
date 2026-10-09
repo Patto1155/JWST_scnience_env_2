@@ -77,7 +77,7 @@ def main() -> int:
     )
     ok &= _run_step(
         "pytest",
-        [sys.executable, "-m", "pytest", "core_api/tests", "runner/tests", "-q"],
+        [sys.executable, "-m", "pytest", "-q"],
     )
 
     return 0 if ok else 1
