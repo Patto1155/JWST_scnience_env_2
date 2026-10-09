@@ -1,0 +1,1334 @@
+{
+  "input_provenance": {
+    "requested_url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/jwststars/m92/nircam/hlsp_jwststars_jwst_nircam_m92_f090w-f150w-f277w-f444w_v1_phot.fits",
+    "resolved_url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/jwststars/m92/nircam/hlsp_jwststars_jwst_nircam_m92_f090w-f150w-f277w-f444w_v1_phot.fits",
+    "retrieved_utc": "2026-10-09T07:07:10.585093+00:00",
+    "bytes": 299278080,
+    "sha256": "184efd394861258f147668959d14098f32c3c917bece1119a4b4f15a415dfa83",
+    "content_type": "application/octet-stream",
+    "etag": "\"65b83ac9-11d69f00\"",
+    "last_modified": "Mon, 29 Jan 2024 23:54:49 GMT",
+    "product_id": "hlsp_jwststars_jwst_nircam_m92_f090w-f150w-f277w-f444w_v1_phot.fits",
+    "max_bytes": 299278080
+  },
+  "raw_rows": 984423,
+  "selected_rows": 27016,
+  "filter": "F444W",
+  "quality_policy": {
+    "object_types": [
+      1
+    ],
+    "minimum_snr": 10.0,
+    "maximum_abs_sharpness": 0.2,
+    "maximum_crowding_magnitude": 0.1,
+    "quality_flags": [
+      0
+    ],
+    "interpretation": "Conservative prespecified operational stellar quality cull; not published universal cuts."
+  },
+  "object_type_counts": {
+    "1": 804108,
+    "2": 153054,
+    "4": 27261
+  },
+  "grouped_epoch_summary": {
+    "covered_sky_groups": 13308,
+    "groups_covered_in_multiple_images": 13105,
+    "accepted_in_at_least_one_covered_image": 9029,
+    "accepted_in_every_covered_image": 8557,
+    "groups_with_unknown_epoch": 84,
+    "ordered_epoch_state_counts": {
+      "accepted|accepted": 8442,
+      "accepted": 115,
+      "accepted|unknown": 22,
+      "accepted|not_detected": 208,
+      "not_detected|not_detected": 4150,
+      "unknown|accepted": 20,
+      "not_detected|accepted": 216,
+      "not_detected": 87,
+      "unknown|unknown": 41,
+      "unknown": 1,
+      "rejected|accepted": 3,
+      "accepted|rejected": 3
+    },
+    "interpretation": "Same visit/dither trials are dependent; no pooled-binomial object confidence interval."
+  },
+  "schema_version": 1,
+  "full_trial_output": {
+    "sha256": "f1dbca39509c33445f6d2ec8703fe7aba128066d9f672b795be224124ab42f56",
+    "bytes": 17634297,
+    "reproduce": "Supply --full-output to retain actual per-source trials outside git."
+  },
+  "images": [
+    {
+      "image_provenance": {
+        "filename": "jw01334001001_04101_00001_nrcalong_cal.fits",
+        "sha256": "7fa99ab0486c6d1ebdbde9a53e6e772b710368ff55937c0240b683fc1875781a",
+        "bytes": 117573120,
+        "filter": "F444W",
+        "pixel_scales_arcsec": [
+          0.0627573135460618,
+          0.06306341524739241
+        ],
+        "visit_id": "01334001001",
+        "CAL_VER": "2.0.1",
+        "CRDS_CTX": "jwst_1535.pmap"
+      },
+      "model_sha256": "2d5fe3bc291652e0748fa5dea9911bc5c0430fbb29f87b306679ff9f8bc87a21",
+      "threshold": 0.5,
+      "matching_radius_arcsec": 0.2,
+      "counts": {
+        "references_supplied": 27016,
+        "outside_or_border": 13754,
+        "masked_reference_positions": 69,
+        "covered_quality_references": 13193,
+        "detections_in_image": 17201,
+        "ambiguous_references": 62
+      },
+      "unambiguous_metrics": {
+        "counts": {
+          "detected": 8733,
+          "classified": 8733,
+          "accepted": 8730,
+          "rejected": 3,
+          "unclassified": 0,
+          "not_detected": 4398,
+          "references": 13131
+        },
+        "detection_completeness": {
+          "successes": 8733,
+          "trials": 13131,
+          "confidence": 0.95,
+          "interval_method": "wilson",
+          "estimate": 0.6650673977610235,
+          "lower": 0.6569476080081214,
+          "upper": 0.6730906352086503,
+          "status": "estimable",
+          "reason": null
+        },
+        "classifier_survival_among_classified": {
+          "successes": 8730,
+          "trials": 8733,
+          "confidence": 0.95,
+          "interval_method": "wilson",
+          "estimate": 0.9996564754379939,
+          "lower": 0.9989904039567994,
+          "upper": 0.9998831639261616,
+          "status": "estimable",
+          "reason": null
+        },
+        "false_rejection_among_classified": {
+          "successes": 3,
+          "trials": 8733,
+          "confidence": 0.95,
+          "interval_method": "wilson",
+          "estimate": 0.00034352456200618345,
+          "lower": 0.0001168360738383535,
+          "upper": 0.0010095960432007177,
+          "status": "estimable",
+          "reason": null
+        },
+        "confirmed_survival_among_detected": {
+          "successes": 8730,
+          "trials": 8733,
+          "confidence": 0.95,
+          "interval_method": "wilson",
+          "estimate": 0.9996564754379939,
+          "lower": 0.9989904039567994,
+          "upper": 0.9998831639261616,
+          "status": "estimable",
+          "reason": null
+        },
+        "end_to_end_completeness": {
+          "successes": 8730,
+          "trials": 13131,
+          "confidence": 0.95,
+          "interval_method": "wilson",
+          "estimate": 0.6648389307745031,
+          "lower": 0.6567178428270383,
+          "upper": 0.6728636000531011,
+          "status": "estimable",
+          "reason": null
+        },
+        "unknown_survival_fraction_bounds": {
+          "lower": 0.6648389307745031,
+          "upper": 0.6648389307745031,
+          "meaning": "bounds if every unclassified detection fails or passes the cut"
+        },
+        "scope": "quality-selected, covered, unambiguous external references"
+      },
+      "full_covered_reference_recovery_bounds": {
+        "confirmed_accepted": 8730,
+        "ambiguous_or_unclassified": 62,
+        "denominator": 13193,
+        "lower": 0.6617145455923595,
+        "upper": 0.6664140074281816
+      },
+      "astrometric_match_residual_arcsec": {
+        "median": 0.08311312346095705,
+        "p95": 0.09794997413175734,
+        "scope": "Matched-source residuals, conditional on radius; not an external absolute-frame certificate"
+      },
+      "by_cohort": {
+        "quality_selected_stars": {
+          "counts": {
+            "detected": 8733,
+            "classified": 8733,
+            "accepted": 8730,
+            "rejected": 3,
+            "unclassified": 0,
+            "not_detected": 4398,
+            "references": 13131
+          },
+          "detection_completeness": {
+            "successes": 8733,
+            "trials": 13131,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 0.6650673977610235,
+            "lower": 0.6569476080081214,
+            "upper": 0.6730906352086503,
+            "status": "estimable",
+            "reason": null
+          },
+          "classifier_survival_among_classified": {
+            "successes": 8730,
+            "trials": 8733,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 0.9996564754379939,
+            "lower": 0.9989904039567994,
+            "upper": 0.9998831639261616,
+            "status": "estimable",
+            "reason": null
+          },
+          "false_rejection_among_classified": {
+            "successes": 3,
+            "trials": 8733,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 0.00034352456200618345,
+            "lower": 0.0001168360738383535,
+            "upper": 0.0010095960432007177,
+            "status": "estimable",
+            "reason": null
+          },
+          "confirmed_survival_among_detected": {
+            "successes": 8730,
+            "trials": 8733,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 0.9996564754379939,
+            "lower": 0.9989904039567994,
+            "upper": 0.9998831639261616,
+            "status": "estimable",
+            "reason": null
+          },
+          "end_to_end_completeness": {
+            "successes": 8730,
+            "trials": 13131,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 0.6648389307745031,
+            "lower": 0.6567178428270383,
+            "upper": 0.6728636000531011,
+            "status": "estimable",
+            "reason": null
+          },
+          "unknown_survival_fraction_bounds": {
+            "lower": 0.6648389307745031,
+            "upper": 0.6648389307745031,
+            "meaning": "bounds if every unclassified detection fails or passes the cut"
+          },
+          "scope": "quality-selected, covered, unambiguous external references"
+        }
+      },
+      "roc_auc": {
+        "status": "not_estimable",
+        "value": null,
+        "reason": "External real sources provide only the real class"
+      },
+      "limits": [
+        "DOLPHOT reference photometry is full-stack; individual-exposure recovery need not match full-stack SNR.",
+        "Close or blended matches are unknown, never silently counted as failed or passed.",
+        "Per-image intervals assume independent sources and omit crowding/PSF/background systematics.",
+        "Repeat exposures of a source are grouped; these rows are not independent sky-object trials.",
+        "Frozen training provenance is incomplete; metadata alone cannot certify full independent-validation status."
+      ],
+      "catalogue_matched_rejections": [
+        {
+          "source_id": "jwststars-m92-28746",
+          "sky_group_id": "jwststars-m92-28746",
+          "field_id": "M92",
+          "ra_deg": 259.2250366942251,
+          "dec_deg": 43.135564309266584,
+          "cohort": "quality_selected_stars",
+          "reference_snr": 270.2,
+          "vega_magnitude": 19.339,
+          "label_basis": "independent DOLPHOT type1 plus prespecified quality cull; Gaia DR3-tied astrometry",
+          "status": "matched",
+          "detection_index": 3460,
+          "separation_arcsec": 0.07917254388911017,
+          "artifact_score": 0.9117908162847609,
+          "recovered": true,
+          "rejected": true,
+          "other_image_decisions": [
+            {
+              "image": "jw01334001001_04101_00004_nrcalong_cal.fits",
+              "status": "matched",
+              "artifact_score": 0.03970641379769151,
+              "rejected": false
+            }
+          ]
+        },
+        {
+          "source_id": "jwststars-m92-42711",
+          "sky_group_id": "jwststars-m92-42711",
+          "field_id": "M92",
+          "ra_deg": 259.263780521048,
+          "dec_deg": 43.12252190314306,
+          "cohort": "quality_selected_stars",
+          "reference_snr": 194.8,
+          "vega_magnitude": 19.912,
+          "label_basis": "independent DOLPHOT type1 plus prespecified quality cull; Gaia DR3-tied astrometry",
+          "status": "matched",
+          "detection_index": 9158,
+          "separation_arcsec": 0.11931831535981047,
+          "artifact_score": 0.9916023790455781,
+          "recovered": true,
+          "rejected": true,
+          "other_image_decisions": [
+            {
+              "image": "jw01334001001_04101_00004_nrcalong_cal.fits",
+              "status": "matched",
+              "artifact_score": 0.025279955718584234,
+              "rejected": false
+            }
+          ]
+        },
+        {
+          "source_id": "jwststars-m92-60724",
+          "sky_group_id": "jwststars-m92-60724",
+          "field_id": "M92",
+          "ra_deg": 259.24675387234083,
+          "dec_deg": 43.13169218865369,
+          "cohort": "quality_selected_stars",
+          "reference_snr": 165.1,
+          "vega_magnitude": 20.142,
+          "label_basis": "independent DOLPHOT type1 plus prespecified quality cull; Gaia DR3-tied astrometry",
+          "status": "matched",
+          "detection_index": 5527,
+          "separation_arcsec": 0.0682860501414122,
+          "artifact_score": 0.5742692733321085,
+          "recovered": true,
+          "rejected": true,
+          "other_image_decisions": [
+            {
+              "image": "jw01334001001_04101_00004_nrcalong_cal.fits",
+              "status": "matched",
+              "artifact_score": 0.03665356175554875,
+              "rejected": false
+            }
+          ]
+        }
+      ],
+      "by_reference_vega_magnitude": {
+        "0_le_vega_lt_20": {
+          "counts": {
+            "detected": 7401,
+            "classified": 7401,
+            "accepted": 7399,
+            "rejected": 2,
+            "unclassified": 0,
+            "not_detected": 112,
+            "references": 7513
+          },
+          "detection_completeness": {
+            "successes": 7401,
+            "trials": 7513,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 0.9850925063223746,
+            "lower": 0.9820939078703873,
+            "upper": 0.9875952946931,
+            "status": "estimable",
+            "reason": null
+          },
+          "classifier_survival_among_classified": {
+            "successes": 7399,
+            "trials": 7401,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 0.9997297662478043,
+            "lower": 0.9990151472011909,
+            "upper": 0.9999258890297261,
+            "status": "estimable",
+            "reason": null
+          },
+          "false_rejection_among_classified": {
+            "successes": 2,
+            "trials": 7401,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 0.00027023375219564923,
+            "lower": 7.41109702738527e-05,
+            "upper": 0.000984852798809053,
+            "status": "estimable",
+            "reason": null
+          },
+          "confirmed_survival_among_detected": {
+            "successes": 7399,
+            "trials": 7401,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 0.9997297662478043,
+            "lower": 0.9990151472011909,
+            "upper": 0.9999258890297261,
+            "status": "estimable",
+            "reason": null
+          },
+          "end_to_end_completeness": {
+            "successes": 7399,
+            "trials": 7513,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 0.9848263010781313,
+            "lower": 0.9818039694417503,
+            "upper": 0.9873530947200012,
+            "status": "estimable",
+            "reason": null
+          },
+          "unknown_survival_fraction_bounds": {
+            "lower": 0.9848263010781313,
+            "upper": 0.9848263010781313,
+            "meaning": "bounds if every unclassified detection fails or passes the cut"
+          },
+          "scope": "quality-selected, covered, unambiguous external references"
+        },
+        "20_le_vega_lt_22": {
+          "counts": {
+            "detected": 1332,
+            "classified": 1332,
+            "accepted": 1331,
+            "rejected": 1,
+            "unclassified": 0,
+            "not_detected": 3774,
+            "references": 5106
+          },
+          "detection_completeness": {
+            "successes": 1332,
+            "trials": 5106,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 0.2608695652173913,
+            "lower": 0.24900826910464402,
+            "upper": 0.273090406621473,
+            "status": "estimable",
+            "reason": null
+          },
+          "classifier_survival_among_classified": {
+            "successes": 1331,
+            "trials": 1332,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 0.9992492492492493,
+            "lower": 0.9957596698986586,
+            "upper": 0.9998674617627206,
+            "status": "estimable",
+            "reason": null
+          },
+          "false_rejection_among_classified": {
+            "successes": 1,
+            "trials": 1332,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 0.0007507507507507507,
+            "lower": 0.00013253823727943804,
+            "upper": 0.004240330101341428,
+            "status": "estimable",
+            "reason": null
+          },
+          "confirmed_survival_among_detected": {
+            "successes": 1331,
+            "trials": 1332,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 0.9992492492492493,
+            "lower": 0.9957596698986586,
+            "upper": 0.9998674617627206,
+            "status": "estimable",
+            "reason": null
+          },
+          "end_to_end_completeness": {
+            "successes": 1331,
+            "trials": 5106,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 0.26067371719545634,
+            "lower": 0.24881549167246364,
+            "upper": 0.27289178247767154,
+            "status": "estimable",
+            "reason": null
+          },
+          "unknown_survival_fraction_bounds": {
+            "lower": 0.26067371719545634,
+            "upper": 0.26067371719545634,
+            "meaning": "bounds if every unclassified detection fails or passes the cut"
+          },
+          "scope": "quality-selected, covered, unambiguous external references"
+        },
+        "22_le_vega_lt_24": {
+          "counts": {
+            "detected": 0,
+            "classified": 0,
+            "accepted": 0,
+            "rejected": 0,
+            "unclassified": 0,
+            "not_detected": 512,
+            "references": 512
+          },
+          "detection_completeness": {
+            "successes": 0,
+            "trials": 512,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 0.0,
+            "lower": 0.0,
+            "upper": 0.007446975722882736,
+            "status": "estimable",
+            "reason": null
+          },
+          "classifier_survival_among_classified": {
+            "successes": 0,
+            "trials": 0,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": null,
+            "lower": null,
+            "upper": null,
+            "status": "not_estimable",
+            "reason": "zero denominator"
+          },
+          "false_rejection_among_classified": {
+            "successes": 0,
+            "trials": 0,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": null,
+            "lower": null,
+            "upper": null,
+            "status": "not_estimable",
+            "reason": "zero denominator"
+          },
+          "confirmed_survival_among_detected": {
+            "successes": 0,
+            "trials": 0,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": null,
+            "lower": null,
+            "upper": null,
+            "status": "not_estimable",
+            "reason": "zero denominator"
+          },
+          "end_to_end_completeness": {
+            "successes": 0,
+            "trials": 512,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 0.0,
+            "lower": 0.0,
+            "upper": 0.007446975722882736,
+            "status": "estimable",
+            "reason": null
+          },
+          "unknown_survival_fraction_bounds": {
+            "lower": 0.0,
+            "upper": 0.0,
+            "meaning": "bounds if every unclassified detection fails or passes the cut"
+          },
+          "scope": "quality-selected, covered, unambiguous external references"
+        },
+        "24_le_vega_lt_27": {
+          "counts": {
+            "detected": 0,
+            "classified": 0,
+            "accepted": 0,
+            "rejected": 0,
+            "unclassified": 0,
+            "not_detected": 0,
+            "references": 0
+          },
+          "detection_completeness": {
+            "successes": 0,
+            "trials": 0,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": null,
+            "lower": null,
+            "upper": null,
+            "status": "not_estimable",
+            "reason": "zero denominator"
+          },
+          "classifier_survival_among_classified": {
+            "successes": 0,
+            "trials": 0,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": null,
+            "lower": null,
+            "upper": null,
+            "status": "not_estimable",
+            "reason": "zero denominator"
+          },
+          "false_rejection_among_classified": {
+            "successes": 0,
+            "trials": 0,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": null,
+            "lower": null,
+            "upper": null,
+            "status": "not_estimable",
+            "reason": "zero denominator"
+          },
+          "confirmed_survival_among_detected": {
+            "successes": 0,
+            "trials": 0,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": null,
+            "lower": null,
+            "upper": null,
+            "status": "not_estimable",
+            "reason": "zero denominator"
+          },
+          "end_to_end_completeness": {
+            "successes": 0,
+            "trials": 0,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": null,
+            "lower": null,
+            "upper": null,
+            "status": "not_estimable",
+            "reason": "zero denominator"
+          },
+          "unknown_survival_fraction_bounds": {
+            "lower": null,
+            "upper": null,
+            "meaning": "bounds if every unclassified detection fails or passes the cut"
+          },
+          "scope": "quality-selected, covered, unambiguous external references"
+        },
+        "27_le_vega_lt_99": {
+          "counts": {
+            "detected": 0,
+            "classified": 0,
+            "accepted": 0,
+            "rejected": 0,
+            "unclassified": 0,
+            "not_detected": 0,
+            "references": 0
+          },
+          "detection_completeness": {
+            "successes": 0,
+            "trials": 0,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": null,
+            "lower": null,
+            "upper": null,
+            "status": "not_estimable",
+            "reason": "zero denominator"
+          },
+          "classifier_survival_among_classified": {
+            "successes": 0,
+            "trials": 0,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": null,
+            "lower": null,
+            "upper": null,
+            "status": "not_estimable",
+            "reason": "zero denominator"
+          },
+          "false_rejection_among_classified": {
+            "successes": 0,
+            "trials": 0,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": null,
+            "lower": null,
+            "upper": null,
+            "status": "not_estimable",
+            "reason": "zero denominator"
+          },
+          "confirmed_survival_among_detected": {
+            "successes": 0,
+            "trials": 0,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": null,
+            "lower": null,
+            "upper": null,
+            "status": "not_estimable",
+            "reason": "zero denominator"
+          },
+          "end_to_end_completeness": {
+            "successes": 0,
+            "trials": 0,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": null,
+            "lower": null,
+            "upper": null,
+            "status": "not_estimable",
+            "reason": "zero denominator"
+          },
+          "unknown_survival_fraction_bounds": {
+            "lower": null,
+            "upper": null,
+            "meaning": "bounds if every unclassified detection fails or passes the cut"
+          },
+          "scope": "quality-selected, covered, unambiguous external references"
+        }
+      }
+    },
+    {
+      "image_provenance": {
+        "filename": "jw01334001001_04101_00004_nrcalong_cal.fits",
+        "sha256": "1e22ed5d1c73b984db4989d31eded5398f016f8908684a209caa8046516d9160",
+        "bytes": 117573120,
+        "filter": "F444W",
+        "pixel_scales_arcsec": [
+          0.06275731298175795,
+          0.063063414680295
+        ],
+        "visit_id": "01334001001",
+        "CAL_VER": "2.0.1",
+        "CRDS_CTX": "jwst_1535.pmap"
+      },
+      "model_sha256": "2d5fe3bc291652e0748fa5dea9911bc5c0430fbb29f87b306679ff9f8bc87a21",
+      "threshold": 0.5,
+      "matching_radius_arcsec": 0.2,
+      "counts": {
+        "references_supplied": 27016,
+        "outside_or_border": 13729,
+        "masked_reference_positions": 67,
+        "covered_quality_references": 13220,
+        "detections_in_image": 17088,
+        "ambiguous_references": 63
+      },
+      "unambiguous_metrics": {
+        "counts": {
+          "detected": 8744,
+          "classified": 8744,
+          "accepted": 8741,
+          "rejected": 3,
+          "unclassified": 0,
+          "not_detected": 4413,
+          "references": 13157
+        },
+        "detection_completeness": {
+          "successes": 8744,
+          "trials": 13157,
+          "confidence": 0.95,
+          "interval_method": "wilson",
+          "estimate": 0.6645891920650604,
+          "lower": 0.6564747624910606,
+          "upper": 0.6726075392410421,
+          "status": "estimable",
+          "reason": null
+        },
+        "classifier_survival_among_classified": {
+          "successes": 8741,
+          "trials": 8744,
+          "confidence": 0.95,
+          "interval_method": "wilson",
+          "estimate": 0.9996569075937786,
+          "lower": 0.9989916734034412,
+          "upper": 0.9998833109150309,
+          "status": "estimable",
+          "reason": null
+        },
+        "false_rejection_among_classified": {
+          "successes": 3,
+          "trials": 8744,
+          "confidence": 0.95,
+          "interval_method": "wilson",
+          "estimate": 0.00034309240622140897,
+          "lower": 0.00011668908496920838,
+          "upper": 0.0010083265965587992,
+          "status": "estimable",
+          "reason": null
+        },
+        "confirmed_survival_among_detected": {
+          "successes": 8741,
+          "trials": 8744,
+          "confidence": 0.95,
+          "interval_method": "wilson",
+          "estimate": 0.9996569075937786,
+          "lower": 0.9989916734034412,
+          "upper": 0.9998833109150309,
+          "status": "estimable",
+          "reason": null
+        },
+        "end_to_end_completeness": {
+          "successes": 8741,
+          "trials": 13157,
+          "confidence": 0.95,
+          "interval_method": "wilson",
+          "estimate": 0.664361176560006,
+          "lower": 0.6562454569933851,
+          "upper": 0.6723809468374495,
+          "status": "estimable",
+          "reason": null
+        },
+        "unknown_survival_fraction_bounds": {
+          "lower": 0.664361176560006,
+          "upper": 0.664361176560006,
+          "meaning": "bounds if every unclassified detection fails or passes the cut"
+        },
+        "scope": "quality-selected, covered, unambiguous external references"
+      },
+      "full_covered_reference_recovery_bounds": {
+        "confirmed_accepted": 8741,
+        "ambiguous_or_unclassified": 63,
+        "denominator": 13220,
+        "lower": 0.661195158850227,
+        "upper": 0.6659606656580938
+      },
+      "astrometric_match_residual_arcsec": {
+        "median": 0.08283706337178261,
+        "p95": 0.09789998381699637,
+        "scope": "Matched-source residuals, conditional on radius; not an external absolute-frame certificate"
+      },
+      "by_cohort": {
+        "quality_selected_stars": {
+          "counts": {
+            "detected": 8744,
+            "classified": 8744,
+            "accepted": 8741,
+            "rejected": 3,
+            "unclassified": 0,
+            "not_detected": 4413,
+            "references": 13157
+          },
+          "detection_completeness": {
+            "successes": 8744,
+            "trials": 13157,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 0.6645891920650604,
+            "lower": 0.6564747624910606,
+            "upper": 0.6726075392410421,
+            "status": "estimable",
+            "reason": null
+          },
+          "classifier_survival_among_classified": {
+            "successes": 8741,
+            "trials": 8744,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 0.9996569075937786,
+            "lower": 0.9989916734034412,
+            "upper": 0.9998833109150309,
+            "status": "estimable",
+            "reason": null
+          },
+          "false_rejection_among_classified": {
+            "successes": 3,
+            "trials": 8744,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 0.00034309240622140897,
+            "lower": 0.00011668908496920838,
+            "upper": 0.0010083265965587992,
+            "status": "estimable",
+            "reason": null
+          },
+          "confirmed_survival_among_detected": {
+            "successes": 8741,
+            "trials": 8744,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 0.9996569075937786,
+            "lower": 0.9989916734034412,
+            "upper": 0.9998833109150309,
+            "status": "estimable",
+            "reason": null
+          },
+          "end_to_end_completeness": {
+            "successes": 8741,
+            "trials": 13157,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 0.664361176560006,
+            "lower": 0.6562454569933851,
+            "upper": 0.6723809468374495,
+            "status": "estimable",
+            "reason": null
+          },
+          "unknown_survival_fraction_bounds": {
+            "lower": 0.664361176560006,
+            "upper": 0.664361176560006,
+            "meaning": "bounds if every unclassified detection fails or passes the cut"
+          },
+          "scope": "quality-selected, covered, unambiguous external references"
+        }
+      },
+      "roc_auc": {
+        "status": "not_estimable",
+        "value": null,
+        "reason": "External real sources provide only the real class"
+      },
+      "limits": [
+        "DOLPHOT reference photometry is full-stack; individual-exposure recovery need not match full-stack SNR.",
+        "Close or blended matches are unknown, never silently counted as failed or passed.",
+        "Per-image intervals assume independent sources and omit crowding/PSF/background systematics.",
+        "Repeat exposures of a source are grouped; these rows are not independent sky-object trials.",
+        "Frozen training provenance is incomplete; metadata alone cannot certify full independent-validation status."
+      ],
+      "catalogue_matched_rejections": [
+        {
+          "source_id": "jwststars-m92-30357",
+          "sky_group_id": "jwststars-m92-30357",
+          "field_id": "M92",
+          "ra_deg": 259.24887176054995,
+          "dec_deg": 43.12331534934612,
+          "cohort": "quality_selected_stars",
+          "reference_snr": 329.4,
+          "vega_magnitude": 18.956,
+          "label_basis": "independent DOLPHOT type1 plus prespecified quality cull; Gaia DR3-tied astrometry",
+          "status": "matched",
+          "detection_index": 8347,
+          "separation_arcsec": 0.14674650800852843,
+          "artifact_score": 0.7801862628341257,
+          "recovered": true,
+          "rejected": true,
+          "other_image_decisions": [
+            {
+              "image": "jw01334001001_04101_00001_nrcalong_cal.fits",
+              "status": "matched",
+              "artifact_score": 0.02068277441410261,
+              "rejected": false
+            }
+          ]
+        },
+        {
+          "source_id": "jwststars-m92-40336",
+          "sky_group_id": "jwststars-m92-40336",
+          "field_id": "M92",
+          "ra_deg": 259.2511300590742,
+          "dec_deg": 43.13517808836058,
+          "cohort": "quality_selected_stars",
+          "reference_snr": 216.3,
+          "vega_magnitude": 19.698,
+          "label_basis": "independent DOLPHOT type1 plus prespecified quality cull; Gaia DR3-tied astrometry",
+          "status": "matched",
+          "detection_index": 4748,
+          "separation_arcsec": 0.050213406577072184,
+          "artifact_score": 0.9994451368851409,
+          "recovered": true,
+          "rejected": true,
+          "other_image_decisions": [
+            {
+              "image": "jw01334001001_04101_00001_nrcalong_cal.fits",
+              "status": "matched",
+              "artifact_score": 0.036244797192519336,
+              "rejected": false
+            }
+          ]
+        },
+        {
+          "source_id": "jwststars-m92-47524",
+          "sky_group_id": "jwststars-m92-47524",
+          "field_id": "M92",
+          "ra_deg": 259.24705291149417,
+          "dec_deg": 43.12446364390432,
+          "cohort": "quality_selected_stars",
+          "reference_snr": 183.9,
+          "vega_magnitude": 20.024,
+          "label_basis": "independent DOLPHOT type1 plus prespecified quality cull; Gaia DR3-tied astrometry",
+          "status": "matched",
+          "detection_index": 7903,
+          "separation_arcsec": 0.07478603251774461,
+          "artifact_score": 0.8195347620220962,
+          "recovered": true,
+          "rejected": true,
+          "other_image_decisions": [
+            {
+              "image": "jw01334001001_04101_00001_nrcalong_cal.fits",
+              "status": "matched",
+              "artifact_score": 0.025787497007394893,
+              "rejected": false
+            }
+          ]
+        }
+      ],
+      "by_reference_vega_magnitude": {
+        "0_le_vega_lt_20": {
+          "counts": {
+            "detected": 7392,
+            "classified": 7392,
+            "accepted": 7390,
+            "rejected": 2,
+            "unclassified": 0,
+            "not_detected": 121,
+            "references": 7513
+          },
+          "detection_completeness": {
+            "successes": 7392,
+            "trials": 7513,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 0.9838945827232797,
+            "lower": 0.9807908549810713,
+            "upper": 0.986503724774604,
+            "status": "estimable",
+            "reason": null
+          },
+          "classifier_survival_among_classified": {
+            "successes": 7390,
+            "trials": 7392,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 0.9997294372294372,
+            "lower": 0.999013948784431,
+            "upper": 0.9999257987933998,
+            "status": "estimable",
+            "reason": null
+          },
+          "false_rejection_among_classified": {
+            "successes": 2,
+            "trials": 7392,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 0.00027056277056277056,
+            "lower": 7.420120660017244e-05,
+            "upper": 0.0009860512155690402,
+            "status": "estimable",
+            "reason": null
+          },
+          "confirmed_survival_among_detected": {
+            "successes": 7390,
+            "trials": 7392,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 0.9997294372294372,
+            "lower": 0.999013948784431,
+            "upper": 0.9999257987933998,
+            "status": "estimable",
+            "reason": null
+          },
+          "end_to_end_completeness": {
+            "successes": 7390,
+            "trials": 7513,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 0.9836283774790363,
+            "lower": 0.9805018495404111,
+            "upper": 0.9862605918135282,
+            "status": "estimable",
+            "reason": null
+          },
+          "unknown_survival_fraction_bounds": {
+            "lower": 0.9836283774790363,
+            "upper": 0.9836283774790363,
+            "meaning": "bounds if every unclassified detection fails or passes the cut"
+          },
+          "scope": "quality-selected, covered, unambiguous external references"
+        },
+        "20_le_vega_lt_22": {
+          "counts": {
+            "detected": 1352,
+            "classified": 1352,
+            "accepted": 1351,
+            "rejected": 1,
+            "unclassified": 0,
+            "not_detected": 3774,
+            "references": 5126
+          },
+          "detection_completeness": {
+            "successes": 1352,
+            "trials": 5126,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 0.2637534139680062,
+            "lower": 0.25187015302513993,
+            "upper": 0.27599049930839303,
+            "status": "estimable",
+            "reason": null
+          },
+          "classifier_survival_among_classified": {
+            "successes": 1351,
+            "trials": 1352,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 0.9992603550295858,
+            "lower": 0.9958222132194998,
+            "upper": 0.9998694225667559,
+            "status": "estimable",
+            "reason": null
+          },
+          "false_rejection_among_classified": {
+            "successes": 1,
+            "trials": 1352,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 0.0007396449704142012,
+            "lower": 0.0001305774332441595,
+            "upper": 0.004177786780500273,
+            "status": "estimable",
+            "reason": null
+          },
+          "confirmed_survival_among_detected": {
+            "successes": 1351,
+            "trials": 1352,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 0.9992603550295858,
+            "lower": 0.9958222132194998,
+            "upper": 0.9998694225667559,
+            "status": "estimable",
+            "reason": null
+          },
+          "end_to_end_completeness": {
+            "successes": 1351,
+            "trials": 5126,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 0.26355833008193524,
+            "lower": 0.2516780763139179,
+            "upper": 0.2757927004228633,
+            "status": "estimable",
+            "reason": null
+          },
+          "unknown_survival_fraction_bounds": {
+            "lower": 0.26355833008193524,
+            "upper": 0.26355833008193524,
+            "meaning": "bounds if every unclassified detection fails or passes the cut"
+          },
+          "scope": "quality-selected, covered, unambiguous external references"
+        },
+        "22_le_vega_lt_24": {
+          "counts": {
+            "detected": 0,
+            "classified": 0,
+            "accepted": 0,
+            "rejected": 0,
+            "unclassified": 0,
+            "not_detected": 518,
+            "references": 518
+          },
+          "detection_completeness": {
+            "successes": 0,
+            "trials": 518,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 0.0,
+            "lower": 0.0,
+            "upper": 0.007361352295341595,
+            "status": "estimable",
+            "reason": null
+          },
+          "classifier_survival_among_classified": {
+            "successes": 0,
+            "trials": 0,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": null,
+            "lower": null,
+            "upper": null,
+            "status": "not_estimable",
+            "reason": "zero denominator"
+          },
+          "false_rejection_among_classified": {
+            "successes": 0,
+            "trials": 0,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": null,
+            "lower": null,
+            "upper": null,
+            "status": "not_estimable",
+            "reason": "zero denominator"
+          },
+          "confirmed_survival_among_detected": {
+            "successes": 0,
+            "trials": 0,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": null,
+            "lower": null,
+            "upper": null,
+            "status": "not_estimable",
+            "reason": "zero denominator"
+          },
+          "end_to_end_completeness": {
+            "successes": 0,
+            "trials": 518,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": 0.0,
+            "lower": 0.0,
+            "upper": 0.007361352295341595,
+            "status": "estimable",
+            "reason": null
+          },
+          "unknown_survival_fraction_bounds": {
+            "lower": 0.0,
+            "upper": 0.0,
+            "meaning": "bounds if every unclassified detection fails or passes the cut"
+          },
+          "scope": "quality-selected, covered, unambiguous external references"
+        },
+        "24_le_vega_lt_27": {
+          "counts": {
+            "detected": 0,
+            "classified": 0,
+            "accepted": 0,
+            "rejected": 0,
+            "unclassified": 0,
+            "not_detected": 0,
+            "references": 0
+          },
+          "detection_completeness": {
+            "successes": 0,
+            "trials": 0,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": null,
+            "lower": null,
+            "upper": null,
+            "status": "not_estimable",
+            "reason": "zero denominator"
+          },
+          "classifier_survival_among_classified": {
+            "successes": 0,
+            "trials": 0,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": null,
+            "lower": null,
+            "upper": null,
+            "status": "not_estimable",
+            "reason": "zero denominator"
+          },
+          "false_rejection_among_classified": {
+            "successes": 0,
+            "trials": 0,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": null,
+            "lower": null,
+            "upper": null,
+            "status": "not_estimable",
+            "reason": "zero denominator"
+          },
+          "confirmed_survival_among_detected": {
+            "successes": 0,
+            "trials": 0,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": null,
+            "lower": null,
+            "upper": null,
+            "status": "not_estimable",
+            "reason": "zero denominator"
+          },
+          "end_to_end_completeness": {
+            "successes": 0,
+            "trials": 0,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": null,
+            "lower": null,
+            "upper": null,
+            "status": "not_estimable",
+            "reason": "zero denominator"
+          },
+          "unknown_survival_fraction_bounds": {
+            "lower": null,
+            "upper": null,
+            "meaning": "bounds if every unclassified detection fails or passes the cut"
+          },
+          "scope": "quality-selected, covered, unambiguous external references"
+        },
+        "27_le_vega_lt_99": {
+          "counts": {
+            "detected": 0,
+            "classified": 0,
+            "accepted": 0,
+            "rejected": 0,
+            "unclassified": 0,
+            "not_detected": 0,
+            "references": 0
+          },
+          "detection_completeness": {
+            "successes": 0,
+            "trials": 0,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": null,
+            "lower": null,
+            "upper": null,
+            "status": "not_estimable",
+            "reason": "zero denominator"
+          },
+          "classifier_survival_among_classified": {
+            "successes": 0,
+            "trials": 0,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": null,
+            "lower": null,
+            "upper": null,
+            "status": "not_estimable",
+            "reason": "zero denominator"
+          },
+          "false_rejection_among_classified": {
+            "successes": 0,
+            "trials": 0,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": null,
+            "lower": null,
+            "upper": null,
+            "status": "not_estimable",
+            "reason": "zero denominator"
+          },
+          "confirmed_survival_among_detected": {
+            "successes": 0,
+            "trials": 0,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": null,
+            "lower": null,
+            "upper": null,
+            "status": "not_estimable",
+            "reason": "zero denominator"
+          },
+          "end_to_end_completeness": {
+            "successes": 0,
+            "trials": 0,
+            "confidence": 0.95,
+            "interval_method": "wilson",
+            "estimate": null,
+            "lower": null,
+            "upper": null,
+            "status": "not_estimable",
+            "reason": "zero denominator"
+          },
+          "unknown_survival_fraction_bounds": {
+            "lower": null,
+            "upper": null,
+            "meaning": "bounds if every unclassified detection fails or passes the cut"
+          },
+          "scope": "quality-selected, covered, unambiguous external references"
+        }
+      }
+    }
+  ]
+}
