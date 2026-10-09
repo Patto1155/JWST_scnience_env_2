@@ -104,7 +104,8 @@ matched 36 real blank positions in masks, Jy flux and diagonal errors. Unit
 tests are synthetic controls and are labelled separately from real sky results.
 
 Primary sources: the [JADES DR5 release](https://jades-survey.github.io/), exact
-PSF product URLs and receipts in `data_sources/native_psf_products.json`, and
+PSF product URLs in `data_sources/native_psf_products.json`, archived download
+receipts in `data_sources/receipts/native_psf/`, and
 [STScI NIRCam PSF documentation](https://jwst-docs.stsci.edu/jwst-near-infrared-camera/nircam-performance/nircam-point-spread-functions).
 STScI distinguishes individual-exposure and resampled PSFs. Its full downloadable
 ASCII curves on that page are simulated individual-exposure curves; its
