@@ -21,6 +21,9 @@ import astropy.units as u
 
 from tools.jwst.fits_loader import load_fits_bundle
 from tools.jwst.photometry import compute_color_index, extract_photometry
+from tools.jwst.flux_calibration import celestial_wcs, pixel_solid_angle_sr, ARCSEC2_TO_SR
+
+EVIDENCE_SCHEMA_VERSION = 2
 
 
 def _sanitize_name(value: str) -> str:
@@ -103,10 +106,10 @@ def _resolve_center(
         raise ValueError("Provide x/y or catalog_path + source_id")
 
     sky_center = None
-    if reference_bundle["wcs"] is not None:
+    wcs = celestial_wcs(reference_bundle)
+    if wcs is not None:
         try:
-            ra, dec = reference_bundle["wcs"].pixel_to_world_values(float(x), float(y))
-            sky_center = SkyCoord(ra=float(ra) * u.deg, dec=float(dec) * u.deg)
+            sky_center = wcs.pixel_to_world(float(x), float(y))
         except Exception:
             sky_center = None
 
@@ -120,9 +123,10 @@ def _resolve_dataset_position(
     fallback_y: float,
 ) -> Tuple[float, float]:
     """Resolve pixel coordinates in a dataset using WCS when available."""
-    if sky_center is not None and bundle["wcs"] is not None:
+    wcs = celestial_wcs(bundle)
+    if sky_center is not None and wcs is not None:
         try:
-            x, y = bundle["wcs"].world_to_pixel(sky_center)
+            x, y = wcs.world_to_pixel(sky_center)
             return float(x), float(y)
         except Exception:
             pass
@@ -196,7 +200,14 @@ def _quality_flags(reference_r3: Dict[str, Any], source_entry: Optional[Dict[str
     snr = reference_r3.get("snr")
     if snr is None or float(snr) < 5.0:
         flags.append("low_snr")
-    if float(reference_r3.get("background_subtracted_flux") or 0.0) <= 0:
+    flux_jy = reference_r3.get("background_subtracted_flux_jy")
+    if reference_r3.get("calibration_status") != "calibrated":
+        flags.append("uncalibrated_reference")
+    if reference_r3.get("measurement_status") in {"off_image", "no_valid_pixels"}:
+        flags.append("unmeasured_reference")
+    if reference_r3.get("background_status") != "measured":
+        flags.append("missing_reference_background")
+    if flux_jy is not None and float(flux_jy) <= 0:
         flags.append("nonpositive_reference_flux")
     if source_entry and float(source_entry.get("edge_distance_px") or 0.0) < 16.0:
         flags.append("near_edge")
@@ -233,11 +244,21 @@ def candidate_evidence_bundle(
     output_dir: str = "visuals",
     output_prefix: Optional[str] = None,
     strict_data: Optional[bool] = None,
+    aperture_radius_arcsec: Optional[float] = None,
+    background_annulus_inner_radius_arcsec: Optional[float] = None,
+    background_annulus_outer_radius_arcsec: Optional[float] = None,
 ) -> Dict[str, Any]:
-    """Build a JWST candidate evidence panel and machine-readable sidecar."""
+    """Render calibrated evidence using common sky apertures where WCS permits.
+
+    ``aperture_radius_arcsec`` sets radius key 3; other radius keys scale with
+    it. Defaults derive angular sizes from the actual reference-grid pixel area.
+    Colours are Jy aperture diagnostics, with no filter PSF correction.
+    """
     del strict_data  # strictness is enforced by the sandbox calling conventions
 
     aperture_radii = list(aperture_radii or [2, 3, 5])
+    if 3 not in aperture_radii:
+        raise ValueError("Evidence requires radius key 3 for its reference summary")
     science_datasets = [reference_dataset]
     for dataset_name in comparison_datasets:
         if dataset_name not in science_datasets:
@@ -260,34 +281,49 @@ def candidate_evidence_bundle(
     panel_path = output_root / f"{prefix}_evidence.png"
     sidecar_path = output_root / f"{prefix}_evidence.json"
 
+    # Match every filter on the sky using angular radii derived from the actual
+    # reference grid. Keys remain the original reference-pixel radii for callers.
+    ref_wcs = celestial_wcs(reference_bundle)
+    angular_options = {}
+    if aperture_radius_arcsec is not None or background_annulus_inner_radius_arcsec is not None or background_annulus_outer_radius_arcsec is not None:
+        if ref_wcs is None or sky_center is None:
+            raise ValueError("Angular evidence apertures require reference celestial WCS")
+    if ref_wcs is not None and sky_center is not None:
+        scale = float(np.sqrt(pixel_solid_angle_sr(ref_wcs, np.asarray(ref_x), np.asarray(ref_y)) / ARCSEC2_TO_SR))
+        angular_scale = float(aperture_radius_arcsec) / 3 if aperture_radius_arcsec is not None else scale
+        angular_options = {
+            "aperture_radius_arcsec": float(aperture_radius_arcsec) if aperture_radius_arcsec is not None else 3 * scale,
+            "background_annulus_inner_radius_arcsec": float(background_annulus_inner_radius_arcsec) if background_annulus_inner_radius_arcsec is not None else background_annulus_inner_radius * angular_scale,
+            "background_annulus_outer_radius_arcsec": float(background_annulus_outer_radius_arcsec) if background_annulus_outer_radius_arcsec is not None else background_annulus_outer_radius * angular_scale,
+        }
+    input_fingerprints = []
+    for dataset in science_datasets:
+        source = load_fits_bundle(dataset)
+        file_path = source.get("file_path")
+        stat = Path(file_path).stat() if file_path and Path(file_path).exists() else None
+        input_fingerprints.append({"dataset": dataset, "path": file_path,
+                                   "size": stat.st_size if stat else None,
+                                   "mtime_ns": stat.st_mtime_ns if stat else None})
+    request = {"reference_dataset": reference_dataset, "comparison_datasets": comparison_datasets,
+               "x": ref_x, "y": ref_y, "source_id": source_id, "cutout_size": cutout_size,
+               "aperture_radii": aperture_radii,
+               "background_annulus_inner_radius": background_annulus_inner_radius,
+               "background_annulus_outer_radius": background_annulus_outer_radius,
+               "angular_options": angular_options, "input_fingerprints": input_fingerprints}
     if panel_path.exists() and sidecar_path.exists():
-        cached = json.loads(sidecar_path.read_text(encoding="utf-8"))
-        if (
-            cached.get("reference_dataset") == reference_dataset
-            and list(cached.get("comparison_datasets", [])) == list(comparison_datasets)
-            and list(cached.get("aperture_radii", [])) == list(aperture_radii)
-            and float(cached.get("background_annulus_inner_radius", -1.0)) == float(background_annulus_inner_radius)
-            and float(cached.get("background_annulus_outer_radius", -1.0)) == float(background_annulus_outer_radius)
-            and cached.get("source_id") == source_id
-        ):
+        try:
+            cached = json.loads(sidecar_path.read_text(encoding="utf-8"))
+        except (ValueError, OSError):
+            cached = {}
+        if cached.get("evidence_schema_version") == EVIDENCE_SCHEMA_VERSION and cached.get("request") == request:
             return {
-                "source_id": cached.get("source_id"),
-                "reference_dataset": cached.get("reference_dataset"),
-                "comparison_datasets": cached.get("comparison_datasets", []),
-                "sky_center": cached.get("sky_center"),
-                "quality_flags": cached.get("quality_flags", []),
-                "ratio_f090_f444": cached.get("ratio_f090_f444"),
-                "photometry": cached.get("photometry", {}),
-                "output_path": str(panel_path),
-                "sidecar_path": str(sidecar_path),
-                "artifacts": cached.get(
-                    "artifacts",
-                    [
-                        {"path": str(panel_path), "kind": "evidence_panel"},
-                        {"path": str(sidecar_path), "kind": "evidence_sidecar"},
-                    ],
-                ),
-                "cache_hit": True,
+                "source_id": cached.get("source_id"), "reference_dataset": reference_dataset,
+                "comparison_datasets": comparison_datasets, "sky_center": cached.get("sky_center"),
+                "quality_flags": cached.get("quality_flags", []), "ratio_f090_f444": cached.get("ratio_f090_f444"),
+                "color_indices": cached.get("color_indices", {}), "color_status": cached.get("color_status"),
+                "color_flux_unit": "Jy", "aperture_matching": cached.get("aperture_matching"),
+                "photometry": cached.get("photometry", {}), "output_path": str(panel_path),
+                "sidecar_path": str(sidecar_path), "artifacts": cached.get("artifacts", []), "cache_hit": True,
             }
 
     dataset_summaries: List[Dict[str, Any]] = []
@@ -299,8 +335,18 @@ def candidate_evidence_bundle(
         dataset_x, dataset_y = _resolve_dataset_position(bundle, sky_center, ref_x, ref_y)
         cutout = _cutout_for_bundle(bundle, dataset_x, dataset_y, cutout_size=cutout_size)
 
+        registered_sky = False
+        dataset_wcs = celestial_wcs(bundle)
+        if sky_center is not None and dataset_wcs is not None:
+            try:
+                registered_sky = bool(dataset_wcs.pixel_to_world(dataset_x, dataset_y).separation(sky_center).arcsec < 1e-3)
+            except (ValueError, TypeError):
+                registered_sky = False
         aperture_results = {}
         for radius in aperture_radii:
+            matched_options = dict(angular_options) if registered_sky else {}
+            if matched_options:
+                matched_options["aperture_radius_arcsec"] *= float(radius) / 3.0
             aperture_results[str(radius)] = extract_photometry(
                 image_data=bundle,
                 x=dataset_x,
@@ -308,6 +354,7 @@ def candidate_evidence_bundle(
                 aperture_radius=float(radius),
                 background_annulus_inner_radius=background_annulus_inner_radius,
                 background_annulus_outer_radius=background_annulus_outer_radius,
+                **matched_options,
             )
 
         dataset_summary = {
@@ -318,6 +365,7 @@ def candidate_evidence_bundle(
             "instrument": bundle.get("instrument"),
             "dataset_x": dataset_x,
             "dataset_y": dataset_y,
+            "astrometry_status": "matched_sky" if registered_sky else "pixel_only",
             "cutout": cutout,
         }
         dataset_summaries.append(dataset_summary)
@@ -325,15 +373,23 @@ def candidate_evidence_bundle(
 
         filter_name = str(bundle.get("filter") or "")
         radius_three = aperture_results.get("3")
-        if filter_name and radius_three is not None:
-            filter_flux_map[filter_name] = float(radius_three["background_subtracted_flux"])
+        if (filter_name and radius_three is not None and registered_sky and angular_options
+                and radius_three.get("calibration_status") == "calibrated"
+                and radius_three.get("background_status") == "measured"
+                and float(radius_three.get("coverage_fraction") or 0) >= .9
+                and radius_three.get("background_subtracted_flux_jy") is not None):
+            filter_flux_map[filter_name] = float(radius_three["background_subtracted_flux_jy"])
 
     reference_r3 = photometry_by_dataset[reference_dataset]["3"]
     quality_flags = _quality_flags(reference_r3, source_entry)
+    if any(item["astrometry_status"] != "matched_sky" for item in dataset_summaries):
+        quality_flags.append("unregistered_band_astrometry")
+    if any(photometry_by_dataset[item["dataset_name"]]["3"].get("calibration_status") != "calibrated" for item in dataset_summaries):
+        quality_flags.append("uncalibrated_band")
 
     ratio_f090_f444 = None
     if "F090W" in filter_flux_map and "F444W" in filter_flux_map and filter_flux_map["F444W"] > 0:
-        ratio_f090_f444 = float(max(filter_flux_map["F090W"], 0.0) / filter_flux_map["F444W"])
+        ratio_f090_f444 = float(filter_flux_map["F090W"] / filter_flux_map["F444W"])
 
     total_panels = len(dataset_summaries) + 2
     ncols = 3
@@ -351,9 +407,9 @@ def candidate_evidence_bundle(
             ax,
             cutout["center_x"],
             cutout["center_y"],
-            aperture_radius=3.0,
-            annulus_inner=background_annulus_inner_radius,
-            annulus_outer=background_annulus_outer_radius,
+            aperture_radius=photometry_by_dataset[dataset_summary["dataset_name"]]["3"]["aperture_radius"],
+            annulus_inner=photometry_by_dataset[dataset_summary["dataset_name"]]["3"]["background_annulus_inner_radius"],
+            annulus_outer=photometry_by_dataset[dataset_summary["dataset_name"]]["3"]["background_annulus_outer_radius"],
         )
         filter_name = dataset_summary.get("filter") or dataset_summary["dataset_name"]
         title = str(filter_name)
@@ -381,9 +437,9 @@ def candidate_evidence_bundle(
         sn_ax,
         reference_cutout["center_x"],
         reference_cutout["center_y"],
-        aperture_radius=3.0,
-        annulus_inner=background_annulus_inner_radius,
-        annulus_outer=background_annulus_outer_radius,
+        aperture_radius=reference_r3["aperture_radius"],
+        annulus_inner=reference_r3["background_annulus_inner_radius"],
+        annulus_outer=reference_r3["background_annulus_outer_radius"],
     )
     sn_ax.set_title("Reference S/N")
     sn_ax.set_xticks([])
@@ -396,9 +452,9 @@ def candidate_evidence_bundle(
         coverage_ax,
         reference_cutout["center_x"],
         reference_cutout["center_y"],
-        aperture_radius=3.0,
-        annulus_inner=background_annulus_inner_radius,
-        annulus_outer=background_annulus_outer_radius,
+        aperture_radius=reference_r3["aperture_radius"],
+        annulus_inner=reference_r3["background_annulus_inner_radius"],
+        annulus_outer=reference_r3["background_annulus_outer_radius"],
     )
     coverage_ax.set_title("Reference Coverage")
     coverage_ax.set_xticks([])
@@ -415,7 +471,8 @@ def candidate_evidence_bundle(
 
     title_bits = [
         f"source={source_id}" if source_id is not None else f"x={ref_x:.1f}, y={ref_y:.1f}",
-        f"ref_flux_r3={reference_r3['background_subtracted_flux']:.3f}",
+        (f"ref_flux_r3={reference_r3['background_subtracted_flux_jy']:.3g} Jy"
+         if reference_r3.get("background_subtracted_flux_jy") is not None else "ref_flux_r3=unavailable"),
         f"snr_r3={reference_r3['snr']:.2f}" if reference_r3.get("snr") is not None else "snr_r3=None",
         f"coverage_r3={reference_r3['coverage_fraction']:.2f}",
     ]
@@ -461,7 +518,11 @@ def candidate_evidence_bundle(
             flux_band2=filter_flux_map["F444W"],
         )
 
+    color_status = "matched_aperture_fluxes_psf_uncorrected" if color_indices else "unavailable_or_nonpositive_fluxes"
+    aperture_matching = "same_sky_angular" if angular_options else "pixel_only_no_cross_band_science"
     sidecar = {
+        "evidence_schema_version": EVIDENCE_SCHEMA_VERSION, "request": request,
+        "color_flux_unit": "Jy", "color_status": color_status, "aperture_matching": aperture_matching,
         "source_id": source_id,
         "reference_dataset": reference_dataset,
         "comparison_datasets": comparison_datasets,
@@ -484,6 +545,7 @@ def candidate_evidence_bundle(
                 "dataset_x": item["dataset_x"],
                 "dataset_y": item["dataset_y"],
                 "off_chip": bool(item["cutout"].get("off_chip")),
+                "astrometry_status": item["astrometry_status"],
             }
             for item in dataset_summaries
         ],
@@ -510,6 +572,8 @@ def candidate_evidence_bundle(
             {"path": str(sidecar_path), "kind": "evidence_sidecar"},
         ],
         "cache_hit": False,
+        "color_indices": color_indices, "color_flux_unit": "Jy", "color_status": color_status,
+        "aperture_matching": aperture_matching,
     }
 
 
