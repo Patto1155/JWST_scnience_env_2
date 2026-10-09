@@ -1,0 +1,7 @@
+{
+  "compact_sha256": "6245e2da21fa85a4f7e23f1c418a2a5d90c56f6d95bb05d612b5539399b75dcb",
+  "independent_observed_rerun_sha256": "6245e2da21fa85a4f7e23f1c418a2a5d90c56f6d95bb05d612b5539399b75dcb",
+  "byte_identical": true,
+  "focused_tests_passed": 38,
+  "scientific_limits": "Numerical replay validates reproducibility, not masks, tail independence, source calibration or astrophysical truth."
+}
