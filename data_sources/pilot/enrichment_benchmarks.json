@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "acquisition": "Manual transcription of explicitly identified primary-paper tables and model parameters; not a downloaded yield grid or posterior.",
+  "solar_reference": {
+    "source_url": "https://arxiv.org/html/2505.11263v2",
+    "location": "paragraph before Section 2",
+    "log_n_o": -0.86,
+    "log_c_o": -0.26,
+    "oxygen_12_log_o_h": 8.71
+  },
+  "mom_z14_model_parameters": {
+    "source_url": "https://arxiv.org/html/2505.11263v2",
+    "location": "physical-properties table and Section 3.2.2; conditional model inferences",
+    "redshift": {"median": 14.44, "minus": 0.02, "plus": 0.02},
+    "formation_redshift_in_sed_prior": 20.0,
+    "bracket_o_h": {"median": -1.38, "minus": 0.56, "plus": 0.65},
+    "bracket_c_o": {"median": -0.65, "minus": 0.22, "plus": 0.39},
+    "bracket_n_c": {"median": 0.90, "minus": 0.63, "plus": 0.29},
+    "log_stellar_mass_msun": {"median": 8.1, "minus": 0.2, "plus": 0.3},
+    "note": "Marginal endpoints are not a joint credible region. Cue excludes N IV], and its posteriors approach grid boundaries. The paper also gives a separate, stronger ionic-abundance estimate; it is not interchangeable with Cue."
+  },
+  "sms_yields": {
+    "source_url": "https://arxiv.org/html/2601.04344v3",
+    "location": "Table 1",
+    "original_yield_source_url": "https://arxiv.org/html/2304.05013v4",
+    "original_yield_location": "Nagele and Umeda (2023), Table 1, independently checked against the reproduction by Ebihara et al. (2026)",
+    "stellar_initial_z_solar": 0.1,
+    "units": "solar masses of ejected element, not abundance by number",
+    "rows": [
+      {"initial_mass": 1000.0, "channel": "wind", "h": 205.0, "he": 334.0, "c": 9.91, "n": 17.0, "o": 27.0},
+      {"initial_mass": 10000.0, "channel": "wind", "h": 1650.0, "he": 2730.0, "c": 1.81, "n": 75.8, "o": 133.0},
+      {"initial_mass": 50000.0, "channel": "wind", "h": 5060.0, "he": 2700.0, "c": 0.142, "n": 6.69, "o": 0.412},
+      {"initial_mass": 100000.0, "channel": "wind/explosion", "explosion_energy_erg": 7.97e54, "h": 41900.0, "he": 58000.0, "c": 5.63, "n": 81.4, "o": 0.884}
+    ],
+    "note": "Four discrete models, not a monotone mass interpolation. Equal retention is a scenario, especially uncertain for the explosion."
+  },
+  "wr_time_benchmarks": {
+    "source_url": "https://arxiv.org/html/2308.15583v2",
+    "location": "Table 1 and Section III.2",
+    "fiducial_total_history_myr": 204.0,
+    "shorter_total_history_myr": 103.0,
+    "fiducial_first_episode_myr": 100.0,
+    "fiducial_hiatus_myr": 100.0,
+    "second_burst_observed_age_myr": 4.0,
+    "enhanced_window_myr": 0.6,
+    "agb_delay_range_myr": [40.0, 150.0],
+    "note": "Predictions tuned to GN-z11, not MoM-z14. Testing a history's clock does not exclude all WR stars."
+  },
+  "vms_benchmark": {
+    "source_url": "https://arxiv.org/html/2310.10725v3",
+    "location": "Section 5",
+    "nitrogen_ejecta_per_star_msun_approx": 1.0,
+    "timescale_myr_approx": 2.0,
+    "reference_initial_mass_msun": 300.0,
+    "metallicity_z_solar": 0.4,
+    "note": "LMC model estimate: not a numerical MoM-z14 yield grid. No carbon or oxygen ejecta is supplied here, so no complete N/C mixing prediction is assigned."
+  },
+  "rotating_models": {
+    "source_url": "https://arxiv.org/html/2405.11235v1",
+    "published_source_url": "https://www.aanda.org/articles/aa/abs/2024/08/aa48866-23/aa48866-23.html",
+    "location": "Table 2; top-heavy cases only",
+    "dilution_definition": "mass of initially ambient ISM / ejected mass; not the fraction of SMS ejecta in a final mixture",
+    "rows": [
+      {"scenario": "Top-heavy above remnant", "z": 0.0, "dilution_range": [53.0, 125.0], "oxygen_12_log_o_h_range": [7.62, 7.99], "log_n_o": -0.22, "log_c_o": -0.07, "log_c12_c13": 1.71},
+      {"scenario": "Top-heavy above remnant", "z": 0.00001, "dilution_range": [47.0, 114.0], "oxygen_12_log_o_h_range": [7.62, 8.00], "log_n_o": -0.38, "log_c_o": -0.51, "log_c12_c13": 1.35},
+      {"scenario": "Top-heavy above CO core", "z": 0.0, "dilution_range": [66.0, 158.0], "oxygen_12_log_o_h_range": [7.62, 8.00], "log_n_o": -0.35, "log_c_o": -0.06, "log_c12_c13": 1.84},
+      {"scenario": "Top-heavy above CO core", "z": 0.00001, "dilution_range": [44.0, 106.0], "oxygen_12_log_o_h_range": [7.62, 8.00], "log_n_o": -0.36, "log_c_o": -0.13, "log_c12_c13": 1.645}
+    ],
+    "note": "Selected rounded benchmark ratios, not all rotations, IMFs, metallicities, ages, or mass cuts. Isotope ratio in the final row represents the reported 1.64-1.65 range by its midpoint."
+  }
+}
