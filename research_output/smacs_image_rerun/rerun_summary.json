@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "manifest_sha256": "cd8e9635a6bb2b9d91cf65fba37cd079d6e8947bb55b25a6474bd6245a2f6940",
+  "status": "executed",
+  "verified_image_count": 3,
+  "blockers": [],
+  "detection_count": 1267,
+  "proposal_count": 1267,
+  "dropout_screen_survivors": 0,
+  "interpretation": "Dropout-screen survivors are not redshift confirmations or discoveries",
+  "software_versions": {
+    "numpy": "2.5.3",
+    "astropy": "8.0.1",
+    "photutils": "3.0.0",
+    "scipy": "1.18.1",
+    "scikit-image": "0.26.0"
+  },
+  "image_receipts": [
+    {
+      "path": "/workspace/scratch/232075794deb/jwst/data/original_round3/jw02736001001_02105_00004_nrcalong_i2d.fits",
+      "sha256": "0226bb8a980aa2770bb6e57e0f91812bbbe247358f0ae80611a788a5827e1b92",
+      "filter": "F444W",
+      "target": "SMACS-J0723.3-7327",
+      "product_filename": "jw02736001001_02105_00004_nrcalong_i2d.fits",
+      "product_kind": "original_full_i2d"
+    },
+    {
+      "path": "/workspace/scratch/232075794deb/jwst/data/original_round3/jw02736001001_02101_00004_nrca1_i2d.fits",
+      "sha256": "fb3929f8470dd5e012e66fd19868e32d9154f0a7a7b572fc6c66a0fd2badaefc",
+      "filter": "F090W",
+      "target": "SMACS-J0723.3-7327",
+      "product_filename": "jw02736001001_02101_00004_nrca1_i2d.fits",
+      "product_kind": "original_full_i2d"
+    },
+    {
+      "path": "/workspace/scratch/232075794deb/jwst/data/original_round3/jw02736001001_02105_00004_nrca4_i2d.fits",
+      "sha256": "9121dd419ca62b343e0d7649155962d6976da9ddb856a54b0a902fde8109a793",
+      "filter": "F200W",
+      "target": "SMACS-J0723.3-7327",
+      "product_filename": "jw02736001001_02105_00004_nrca4_i2d.fits",
+      "product_kind": "original_full_i2d"
+    }
+  ],
+  "limitations": [
+    "Matched angular apertures remain PSF-uncorrected",
+    "ERR/noise estimates remain diagonal without empirical covariance correction",
+    "No completeness, effective volume, redshift model or population abundance inferred"
+  ],
+  "audit_summary": {
+    "total_candidates": 1267,
+    "survivors": 0,
+    "blue_measured": 330,
+    "mid_measured": 252,
+    "blue_and_mid_measured": 0,
+    "module_mismatch_pairs": 0,
+    "untestable": 1267,
+    "falsified": 0,
+    "blocker_counts": {
+      "f200w_not_measured_at_source_position": 1015,
+      "f090w_not_measured_at_source_position": 937,
+      "f444w_invalid_or_uncalibrated_flux_uncertainty": 7,
+      "f444w_not_measured_at_source_position": 4,
+      "f200w_invalid_or_uncalibrated_flux_uncertainty": 3,
+      "f090w_invalid_or_uncalibrated_flux_uncertainty": 2
+    },
+    "pipeline_status_vs_audit": {
+      "None|untestable": 1267
+    },
+    "survivor_ids": []
+  },
+  "targets": [
+    {
+      "target": "SMACS-J0723.3-7327",
+      "detected_source_count": 1267,
+      "measured_source_count": 1267,
+      "source_limit": null,
+      "measurement_subset": "all_detections",
+      "reference_aperture_radii_arcsec": [
+        0.1258207676679823,
+        0.18873115150197345,
+        0.3145519191699558
+      ],
+      "detector_threshold_sigma": 3.0,
+      "detector_min_pixels": 9,
+      "coverage": {
+        "method": "reference_pixel_centres_with_native_validity_and_spherical_pixel_areas",
+        "reference_shape": [
+          2068,
+          2075
+        ],
+        "reference_valid_pixel_count": 4185355,
+        "reference_valid_area_arcsec2": 16564.446485269313,
+        "joint_valid_pixel_count": 0,
+        "joint_valid_fraction_of_reference_valid": 0.0,
+        "joint_valid_area_arcsec2": 0.0,
+        "joint_valid_area_arcmin2": 0.0,
+        "comparison_coverage": {
+          "F090W": {
+            "pixel_count": 971885,
+            "area_arcsec2": 3846.4448156554377
+          },
+          "F200W": {
+            "pixel_count": 975439,
+            "area_arcsec2": 3860.510526945573
+          }
+        },
+        "limitations": [
+          "Reference-grid pixel-centre discretization, not exact fractional reprojection",
+          "Area is not aperture-safe, PSF-corrected or depth/completeness weighted",
+          "Uses SCI/ERR/WHT validity; upstream DQ policy must be documented separately"
+        ]
+      },
+      "selected_datasets": {
+        "F444W": "/workspace/scratch/232075794deb/jwst/data/original_round3/jw02736001001_02105_00004_nrcalong_i2d.fits",
+        "F090W": "/workspace/scratch/232075794deb/jwst/data/original_round3/jw02736001001_02101_00004_nrca1_i2d.fits",
+        "F200W": "/workspace/scratch/232075794deb/jwst/data/original_round3/jw02736001001_02105_00004_nrca4_i2d.fits"
+      },
+      "individual_footprint_overlap": {
+        "F444W": 1.0,
+        "F090W": 0.230625,
+        "F200W": 0.22875
+      }
+    }
+  ]
+}

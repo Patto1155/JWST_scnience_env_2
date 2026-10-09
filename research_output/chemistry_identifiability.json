@@ -1,0 +1,1450 @@
+{
+  "schema_version": "chemistry_identifiability_v1",
+  "source_sha256": {
+    "spectrum_report": "769f494a493fd5295dfaf8a02c47e8a7a0b90686c367da8369e9b26ef7a73a55",
+    "enrichment_benchmarks": "8d80da92f18526b361f29244d9c57c1cdfdc82e240a2e334a1595cb29d096930"
+  },
+  "status": "line_measurements_and_conditional_nuisance_requirements_no_abundance_fit",
+  "atomic_grid_available": false,
+  "target_source_locations": {
+    "Cue_and_separate_ionic_targets": "https://arxiv.org/html/2505.11263v2 physical-property table and Section 3.2.3; ionic range spans temperature cases, not a confidence interval",
+    "numeric_yields_and_rotation": "Locations and versions pinned in enrichment_benchmarks.json"
+  },
+  "forward_relation": "sum(F_NIV,F_NIII)/sum(F_CIV,F_CIII) = Q_eff * number(N/C)",
+  "effective_factor": "Uncalibrated abundance-weighted line emissivity/ion fraction factor; depends on density, temperature, radiation, geometry, transfer, and chemical cooling. It need not be constant across stellar/nebular models or abundance changes.",
+  "nominal_definition": "First source scenario: stored 1D, specified illuminated LSF, fixed published z, diagonal pixel covariance. Not a preferred physical model.",
+  "targets": [
+    {
+      "label": "Cue_lower_endpoint",
+      "status": "published_conditional_inference",
+      "target_bracket_n_c": 0.27,
+      "target_n_c_by_number": 0.46773514128719823,
+      "nominal_required_effective_factor": {
+        "required_q_point": 2.222293400483111,
+        "formal_conditional_q_95_set": {
+          "type": "bounded",
+          "interval": [
+            0.9584291788455473,
+            4.615751851136414
+          ]
+        },
+        "note": "Q must be physically positive. Signed Gaussian set is not clipped or a positive-parameter posterior; a set crossing zero shows weak conditional information."
+      },
+      "scenario_q_point_range": [
+        1.3731535910150885,
+        2.857044304014699
+      ]
+    },
+    {
+      "label": "Cue_median",
+      "status": "published_conditional_inference",
+      "target_bracket_n_c": 0.9,
+      "target_n_c_by_number": 1.9952623149688797,
+      "nominal_required_effective_factor": {
+        "required_q_point": 0.5209564225507805,
+        "formal_conditional_q_95_set": {
+          "type": "bounded",
+          "interval": [
+            0.2246777298493143,
+            1.0820378493800253
+          ]
+        },
+        "note": "Q must be physically positive. Signed Gaussian set is not clipped or a positive-parameter posterior; a set crossing zero shows weak conditional information."
+      },
+      "scenario_q_point_range": [
+        0.3218986215917598,
+        0.6697565584116909
+      ]
+    },
+    {
+      "label": "Cue_upper_endpoint",
+      "status": "published_conditional_inference",
+      "target_bracket_n_c": 1.19,
+      "target_n_c_by_number": 3.890451449942806,
+      "nominal_required_effective_factor": {
+        "required_q_point": 0.2671784318685836,
+        "formal_conditional_q_95_set": {
+          "type": "bounded",
+          "interval": [
+            0.11522853148255734,
+            0.5549354289640799
+          ]
+        },
+        "note": "Q must be physically positive. Signed Gaussian set is not clipped or a positive-parameter posterior; a set crossing zero shows weak conditional information."
+      },
+      "scenario_q_point_range": [
+        0.1650893725744626,
+        0.34349227548431327
+      ]
+    },
+    {
+      "label": "ionic_temperature_lower_case",
+      "status": "separate_published_ionic_inference",
+      "target_bracket_n_c": 1.3,
+      "target_n_c_by_number": 5.011872336272724,
+      "nominal_required_effective_factor": {
+        "required_q_point": 0.20739648736336333,
+        "formal_conditional_q_95_set": {
+          "type": "bounded",
+          "interval": [
+            0.08944581531669354,
+            0.4307670266484731
+          ]
+        },
+        "note": "Q must be physically positive. Signed Gaussian set is not clipped or a positive-parameter posterior; a set crossing zero shows weak conditional information."
+      },
+      "scenario_q_point_range": [
+        0.12815014944696637,
+        0.26663488842892635
+      ]
+    },
+    {
+      "label": "ionic_temperature_upper_case",
+      "status": "separate_published_ionic_inference",
+      "target_bracket_n_c": 1.7,
+      "target_n_c_by_number": 12.589254117941675,
+      "nominal_required_effective_factor": {
+        "required_q_point": 0.08256602876696272,
+        "formal_conditional_q_95_set": {
+          "type": "bounded",
+          "interval": [
+            0.03560902045357953,
+            0.17149144214676657
+          ]
+        },
+        "note": "Q must be physically positive. Signed Gaussian set is not clipped or a positive-parameter posterior; a set crossing zero shows weak conditional information."
+      },
+      "scenario_q_point_range": [
+        0.0510174934023396,
+        0.1061492610032873
+      ]
+    },
+    {
+      "label": "SMS_1000_pure_ejecta",
+      "status": "equal_retention_lower_ambient_n_c_mixing_ceiling",
+      "target_bracket_n_c": 0.7674284772623854,
+      "target_n_c_by_number": 1.4703762433328529,
+      "nominal_required_effective_factor": {
+        "required_q_point": 0.7069243143513401,
+        "formal_conditional_q_95_set": {
+          "type": "bounded",
+          "interval": [
+            0.30488183511790773,
+            1.468297215782213
+          ]
+        },
+        "note": "Q must be physically positive. Signed Gaussian set is not clipped or a positive-parameter posterior; a set crossing zero shows weak conditional information."
+      },
+      "scenario_q_point_range": [
+        0.43680805631533404,
+        0.9088422281449969
+      ]
+    },
+    {
+      "label": "SMS_10000_pure_ejecta",
+      "status": "equal_retention_lower_ambient_n_c_mixing_ceiling",
+      "target_bracket_n_c": 2.155043841132256,
+      "target_n_c_by_number": 35.895816890292025,
+      "nominal_required_effective_factor": {
+        "required_q_point": 0.028957265991004445,
+        "formal_conditional_q_95_set": {
+          "type": "bounded",
+          "interval": [
+            0.012488669884605277,
+            0.06014487289246849
+          ]
+        },
+        "note": "Q must be physically positive. Signed Gaussian set is not clipped or a positive-parameter posterior; a set crossing zero shows weak conditional information."
+      },
+      "scenario_q_point_range": [
+        0.01789267509541391,
+        0.037228293906399756
+      ]
+    },
+    {
+      "label": "SMS_50000_pure_ejecta",
+      "status": "equal_retention_lower_ambient_n_c_mixing_ceiling",
+      "target_bracket_n_c": 2.2061909837541536,
+      "target_n_c_by_number": 40.38229376257546,
+      "nominal_required_effective_factor": {
+        "required_q_point": 0.025740110845805596,
+        "formal_conditional_q_95_set": {
+          "type": "bounded",
+          "interval": [
+            0.011101177412476553,
+            0.05346277150404857
+          ]
+        },
+        "note": "Q must be physically positive. Signed Gaussian set is not clipped or a positive-parameter posterior; a set crossing zero shows weak conditional information."
+      },
+      "scenario_q_point_range": [
+        0.015904797104361015,
+        0.03309222673330561
+      ]
+    },
+    {
+      "label": "SMS_100000_pure_ejecta",
+      "status": "equal_retention_lower_ambient_n_c_mixing_ceiling",
+      "target_bracket_n_c": 1.693169220407242,
+      "target_n_c_by_number": 12.39279370718092,
+      "nominal_required_effective_factor": {
+        "required_q_point": 0.08387493104595754,
+        "formal_conditional_q_95_set": {
+          "type": "bounded",
+          "interval": [
+            0.0361735229338431,
+            0.17421006072157474
+          ]
+        },
+        "note": "Q must be physically positive. Signed Gaussian set is not clipped or a positive-parameter posterior; a set crossing zero shows weak conditional information."
+      },
+      "scenario_q_point_range": [
+        0.051826263236376305,
+        0.10783202341436274
+      ]
+    },
+    {
+      "label": "rotation_Top-heavy above remnant_Z0",
+      "status": "selected_published_mixed_ism_prediction",
+      "target_bracket_n_c": 0.44999999999999996,
+      "target_n_c_by_number": 0.7079457843841379,
+      "nominal_required_effective_factor": {
+        "required_q_point": 1.4682546892497121,
+        "formal_conditional_q_95_set": {
+          "type": "bounded",
+          "interval": [
+            0.6332278788425536,
+            3.049597005674762
+          ]
+        },
+        "note": "Q must be physically positive. Signed Gaussian set is not clipped or a positive-parameter posterior; a set crossing zero shows weak conditional information."
+      },
+      "scenario_q_point_range": [
+        0.9072335806917713,
+        1.887630452329934
+      ]
+    },
+    {
+      "label": "rotation_Top-heavy above remnant_Z1e-05",
+      "status": "selected_published_mixed_ism_prediction",
+      "target_bracket_n_c": 0.73,
+      "target_n_c_by_number": 1.3489628825916535,
+      "nominal_required_effective_factor": {
+        "required_q_point": 0.7705510144649607,
+        "formal_conditional_q_95_set": {
+          "type": "bounded",
+          "interval": [
+            0.33232271485471127,
+            1.6004512593334832
+          ]
+        },
+        "note": "Q must be physically positive. Signed Gaussian set is not clipped or a positive-parameter posterior; a set crossing zero shows weak conditional information."
+      },
+      "scenario_q_point_range": [
+        0.4761229513361556,
+        0.9906425435774021
+      ]
+    },
+    {
+      "label": "rotation_Top-heavy above CO core_Z0",
+      "status": "selected_published_mixed_ism_prediction",
+      "target_bracket_n_c": 0.31,
+      "target_n_c_by_number": 0.5128613839913648,
+      "nominal_required_effective_factor": {
+        "required_q_point": 2.0267556694697015,
+        "formal_conditional_q_95_set": {
+          "type": "bounded",
+          "interval": [
+            0.8740977998621231,
+            4.209615720013516
+          ]
+        },
+        "note": "Q must be physically positive. Signed Gaussian set is not clipped or a positive-parameter posterior; a set crossing zero shows weak conditional information."
+      },
+      "scenario_q_point_range": [
+        1.2523309591062528,
+        2.6056553737814667
+      ]
+    },
+    {
+      "label": "rotation_Top-heavy above CO core_Z1e-05",
+      "status": "selected_published_mixed_ism_prediction",
+      "target_bracket_n_c": 0.37,
+      "target_n_c_by_number": 0.588843655355589,
+      "nominal_required_effective_factor": {
+        "required_q_point": 1.7652303938451703,
+        "formal_conditional_q_95_set": {
+          "type": "bounded",
+          "interval": [
+            0.7613073577406263,
+            3.6664220198385222
+          ]
+        },
+        "note": "Q must be physically positive. Signed Gaussian set is not clipped or a positive-parameter posterior; a set crossing zero shows weak conditional information."
+      },
+      "scenario_q_point_range": [
+        1.0907346679563232,
+        2.2694309585370593
+      ]
+    }
+  ],
+  "spectrum_scenario_summaries": [
+    {
+      "source_scenario_index": 0,
+      "extraction": "stored_pixel_table_1d",
+      "rho_assumed": 0.0,
+      "lsf_fwhm_multiplier": 1,
+      "intrinsic_fwhm_km_s": 0,
+      "continuum_order": 1,
+      "blend_assumption": "equal_HeO",
+      "measured_sum_n_lines_over_sum_c_lines": {
+        "value": 1.0394447176565762,
+        "numerator_flux": 67.54283527124525,
+        "denominator_flux": 64.9797282375154,
+        "numerator_variance": 375.76771646739894,
+        "denominator_variance": 260.3682364517907,
+        "numerator_denominator_covariance": 49.05106953834012,
+        "conditional_gaussian_95_fieller_set": {
+          "type": "bounded",
+          "interval": [
+            0.44829100738109545,
+            2.1589493442379375
+          ]
+        }
+      }
+    },
+    {
+      "source_scenario_index": 1,
+      "extraction": "stored_pixel_table_1d",
+      "rho_assumed": 0.25,
+      "lsf_fwhm_multiplier": 1,
+      "intrinsic_fwhm_km_s": 0,
+      "continuum_order": 1,
+      "blend_assumption": "equal_HeO",
+      "measured_sum_n_lines_over_sum_c_lines": {
+        "value": 1.040065976706909,
+        "numerator_flux": 74.8456593711848,
+        "denominator_flux": 71.96241493079467,
+        "numerator_variance": 503.95227304606374,
+        "denominator_variance": 352.2680695401148,
+        "numerator_denominator_covariance": 52.74056777356235,
+        "conditional_gaussian_95_fieller_set": {
+          "type": "bounded",
+          "interval": [
+            0.4181339284914231,
+            2.291919875082788
+          ]
+        }
+      }
+    },
+    {
+      "source_scenario_index": 2,
+      "extraction": "stored_pixel_table_1d",
+      "rho_assumed": 0.5,
+      "lsf_fwhm_multiplier": 1,
+      "intrinsic_fwhm_km_s": 0,
+      "continuum_order": 1,
+      "blend_assumption": "equal_HeO",
+      "measured_sum_n_lines_over_sum_c_lines": {
+        "value": 1.0394721944426881,
+        "numerator_flux": 86.29116074268805,
+        "denominator_flux": 83.0144001965853,
+        "numerator_variance": 545.0465540607288,
+        "denominator_variance": 385.25326041936785,
+        "numerator_denominator_covariance": 33.78412782614736,
+        "conditional_gaussian_95_fieller_set": {
+          "type": "bounded",
+          "interval": [
+            0.4629225835882048,
+            2.1366101409062463
+          ]
+        }
+      }
+    },
+    {
+      "source_scenario_index": 3,
+      "extraction": "2d_optimal_r1",
+      "rho_assumed": 0.0,
+      "lsf_fwhm_multiplier": 1,
+      "intrinsic_fwhm_km_s": 0,
+      "continuum_order": 1,
+      "blend_assumption": "equal_HeO",
+      "measured_sum_n_lines_over_sum_c_lines": {
+        "value": 1.078597318285202,
+        "numerator_flux": 65.75410433503923,
+        "denominator_flux": 60.962606915783724,
+        "numerator_variance": 441.8139683149625,
+        "denominator_variance": 301.12677180776535,
+        "numerator_denominator_covariance": 57.25668643611718,
+        "conditional_gaussian_95_fieller_set": {
+          "type": "bounded",
+          "interval": [
+            0.4009165524147847,
+            2.5592989884452138
+          ]
+        }
+      }
+    },
+    {
+      "source_scenario_index": 4,
+      "extraction": "2d_optimal_r1",
+      "rho_assumed": 0.25,
+      "lsf_fwhm_multiplier": 1,
+      "intrinsic_fwhm_km_s": 0,
+      "continuum_order": 1,
+      "blend_assumption": "equal_HeO",
+      "measured_sum_n_lines_over_sum_c_lines": {
+        "value": 1.0746457242329683,
+        "numerator_flux": 73.2571149993902,
+        "denominator_flux": 68.16861905971633,
+        "numerator_variance": 592.7559981499394,
+        "denominator_variance": 407.54587059317583,
+        "numerator_denominator_covariance": 61.51584278117658,
+        "conditional_gaussian_95_fieller_set": {
+          "type": "bounded",
+          "interval": [
+            0.3687332495462326,
+            2.719175696569151
+          ]
+        }
+      }
+    },
+    {
+      "source_scenario_index": 5,
+      "extraction": "2d_optimal_r1",
+      "rho_assumed": 0.5,
+      "lsf_fwhm_multiplier": 1,
+      "intrinsic_fwhm_km_s": 0,
+      "continuum_order": 1,
+      "blend_assumption": "equal_HeO",
+      "measured_sum_n_lines_over_sum_c_lines": {
+        "value": 1.0674076694421173,
+        "numerator_flux": 85.04423465615211,
+        "denominator_flux": 79.67362151388761,
+        "numerator_variance": 641.4178106044125,
+        "denominator_variance": 446.00848364497847,
+        "numerator_denominator_covariance": 39.22675950330014,
+        "conditional_gaussian_95_fieller_set": {
+          "type": "bounded",
+          "interval": [
+            0.4222467180183458,
+            2.436747561315009
+          ]
+        }
+      }
+    },
+    {
+      "source_scenario_index": 6,
+      "extraction": "2d_optimal_r2",
+      "rho_assumed": 0.0,
+      "lsf_fwhm_multiplier": 1,
+      "intrinsic_fwhm_km_s": 0,
+      "continuum_order": 1,
+      "blend_assumption": "equal_HeO",
+      "measured_sum_n_lines_over_sum_c_lines": {
+        "value": 1.1180358705021116,
+        "numerator_flux": 68.54151616795885,
+        "denominator_flux": 61.30529259063643,
+        "numerator_variance": 430.7709327451454,
+        "denominator_variance": 294.1094637428016,
+        "numerator_denominator_covariance": 55.85728087688195,
+        "conditional_gaussian_95_fieller_set": {
+          "type": "bounded",
+          "interval": [
+            0.44764607101012627,
+            2.5862816441169403
+          ]
+        }
+      }
+    },
+    {
+      "source_scenario_index": 7,
+      "extraction": "2d_optimal_r2",
+      "rho_assumed": 0.25,
+      "lsf_fwhm_multiplier": 1,
+      "intrinsic_fwhm_km_s": 0,
+      "continuum_order": 1,
+      "blend_assumption": "equal_HeO",
+      "measured_sum_n_lines_over_sum_c_lines": {
+        "value": 1.1250376569193445,
+        "numerator_flux": 76.7583032544964,
+        "denominator_flux": 68.22731913230466,
+        "numerator_variance": 577.7382057478128,
+        "denominator_variance": 398.0955303572171,
+        "numerator_denominator_covariance": 60.001497910852734,
+        "conditional_gaussian_95_fieller_set": {
+          "type": "bounded",
+          "interval": [
+            0.4224901127783785,
+            2.7809656165735186
+          ]
+        }
+      }
+    },
+    {
+      "source_scenario_index": 8,
+      "extraction": "2d_optimal_r2",
+      "rho_assumed": 0.5,
+      "lsf_fwhm_multiplier": 1,
+      "intrinsic_fwhm_km_s": 0,
+      "continuum_order": 1,
+      "blend_assumption": "equal_HeO",
+      "measured_sum_n_lines_over_sum_c_lines": {
+        "value": 1.135242213023434,
+        "numerator_flux": 89.89780051440604,
+        "denominator_flux": 79.18821154032469,
+        "numerator_variance": 624.83752106272,
+        "denominator_variance": 435.7573315074312,
+        "numerator_denominator_covariance": 38.265193249810636,
+        "conditional_gaussian_95_fieller_set": {
+          "type": "bounded",
+          "interval": [
+            0.48499153478410634,
+            2.548339431733392
+          ]
+        }
+      }
+    },
+    {
+      "source_scenario_index": 9,
+      "extraction": "2d_optimal_r3",
+      "rho_assumed": 0.0,
+      "lsf_fwhm_multiplier": 1,
+      "intrinsic_fwhm_km_s": 0,
+      "continuum_order": 1,
+      "blend_assumption": "equal_HeO",
+      "measured_sum_n_lines_over_sum_c_lines": {
+        "value": 1.1003263655280915,
+        "numerator_flux": 68.8050970068024,
+        "denominator_flux": 62.531535335682,
+        "numerator_variance": 429.87941531873105,
+        "denominator_variance": 293.5363868571678,
+        "numerator_denominator_covariance": 55.74297677755594,
+        "conditional_gaussian_95_fieller_set": {
+          "type": "bounded",
+          "interval": [
+            0.44415189539445565,
+            2.4943776018477584
+          ]
+        }
+      }
+    },
+    {
+      "source_scenario_index": 10,
+      "extraction": "2d_optimal_r3",
+      "rho_assumed": 0.25,
+      "lsf_fwhm_multiplier": 1,
+      "intrinsic_fwhm_km_s": 0,
+      "continuum_order": 1,
+      "blend_assumption": "equal_HeO",
+      "measured_sum_n_lines_over_sum_c_lines": {
+        "value": 1.1098995449074176,
+        "numerator_flux": 77.19366525720531,
+        "denominator_flux": 69.55013686724634,
+        "numerator_variance": 576.5244990383131,
+        "denominator_variance": 397.29962373833683,
+        "numerator_denominator_covariance": 59.87810429537711,
+        "conditional_gaussian_95_fieller_set": {
+          "type": "bounded",
+          "interval": [
+            0.4215522473439688,
+            2.68252085916161
+          ]
+        }
+      }
+    },
+    {
+      "source_scenario_index": 11,
+      "extraction": "2d_optimal_r3",
+      "rho_assumed": 0.5,
+      "lsf_fwhm_multiplier": 1,
+      "intrinsic_fwhm_km_s": 0,
+      "continuum_order": 1,
+      "blend_assumption": "equal_HeO",
+      "measured_sum_n_lines_over_sum_c_lines": {
+        "value": 1.1233815277192212,
+        "numerator_flux": 90.62384861674617,
+        "denominator_flux": 80.67058820233402,
+        "numerator_variance": 623.4978738187426,
+        "denominator_variance": 434.8475679750316,
+        "numerator_denominator_covariance": 38.193054948910486,
+        "conditional_gaussian_95_fieller_set": {
+          "type": "bounded",
+          "interval": [
+            0.4856592155557937,
+            2.4763112485538494
+          ]
+        }
+      }
+    },
+    {
+      "source_scenario_index": 12,
+      "extraction": "2d_boxcar_r1",
+      "rho_assumed": 0.0,
+      "lsf_fwhm_multiplier": 1,
+      "intrinsic_fwhm_km_s": 0,
+      "continuum_order": 1,
+      "blend_assumption": "equal_HeO",
+      "measured_sum_n_lines_over_sum_c_lines": {
+        "value": 1.063940817380062,
+        "numerator_flux": 62.281832879189515,
+        "denominator_flux": 58.538813307828136,
+        "numerator_variance": 503.5561374096893,
+        "denominator_variance": 346.5756228490007,
+        "numerator_denominator_covariance": 65.88834203755358,
+        "conditional_gaussian_95_fieller_set": {
+          "type": "bounded",
+          "interval": [
+            0.31776463054842374,
+            2.9205076274224533
+          ]
+        }
+      }
+    },
+    {
+      "source_scenario_index": 13,
+      "extraction": "2d_boxcar_r1",
+      "rho_assumed": 0.25,
+      "lsf_fwhm_multiplier": 1,
+      "intrinsic_fwhm_km_s": 0,
+      "continuum_order": 1,
+      "blend_assumption": "equal_HeO",
+      "measured_sum_n_lines_over_sum_c_lines": {
+        "value": 1.0424767485541508,
+        "numerator_flux": 69.91493978145866,
+        "denominator_flux": 67.06618625156507,
+        "numerator_variance": 675.5118467584663,
+        "denominator_variance": 468.89814940518045,
+        "numerator_denominator_covariance": 70.529361349365,
+        "conditional_gaussian_95_fieller_set": {
+          "type": "bounded",
+          "interval": [
+            0.284167939315783,
+            2.992520708127214
+          ]
+        }
+      }
+    },
+    {
+      "source_scenario_index": 14,
+      "extraction": "2d_boxcar_r1",
+      "rho_assumed": 0.5,
+      "lsf_fwhm_multiplier": 1,
+      "intrinsic_fwhm_km_s": 0,
+      "continuum_order": 1,
+      "blend_assumption": "equal_HeO",
+      "measured_sum_n_lines_over_sum_c_lines": {
+        "value": 1.0104414450182666,
+        "numerator_flux": 81.77547698914479,
+        "denominator_flux": 80.93044618500032,
+        "numerator_variance": 730.9324398818798,
+        "denominator_variance": 512.9944514570923,
+        "numerator_denominator_covariance": 44.46859151150812,
+        "conditional_gaussian_95_fieller_set": {
+          "type": "bounded",
+          "interval": [
+            0.3425139448119767,
+            2.473461060389212
+          ]
+        }
+      }
+    },
+    {
+      "source_scenario_index": 15,
+      "extraction": "2d_boxcar_r2",
+      "rho_assumed": 0.0,
+      "lsf_fwhm_multiplier": 1,
+      "intrinsic_fwhm_km_s": 0,
+      "continuum_order": 1,
+      "blend_assumption": "equal_HeO",
+      "measured_sum_n_lines_over_sum_c_lines": {
+        "value": 1.3363400212021002,
+        "numerator_flux": 68.16131534369418,
+        "denominator_flux": 51.00596724056794,
+        "numerator_variance": 691.7792424009936,
+        "denominator_variance": 498.4318737146881,
+        "numerator_denominator_covariance": 92.62170966804248,
+        "conditional_gaussian_95_fieller_set": {
+          "type": "bounded",
+          "interval": [
+            0.33061827665012594,
+            8.756051988837351
+          ]
+        }
+      }
+    },
+    {
+      "source_scenario_index": 16,
+      "extraction": "2d_boxcar_r2",
+      "rho_assumed": 0.25,
+      "lsf_fwhm_multiplier": 1,
+      "intrinsic_fwhm_km_s": 0,
+      "continuum_order": 1,
+      "blend_assumption": "equal_HeO",
+      "measured_sum_n_lines_over_sum_c_lines": {
+        "value": 1.3186566811020362,
+        "numerator_flux": 77.79529697943035,
+        "denominator_flux": 58.99586912524856,
+        "numerator_variance": 925.0498187107162,
+        "denominator_variance": 678.2682175838481,
+        "numerator_denominator_covariance": 99.3364434373914,
+        "conditional_gaussian_95_fieller_set": {
+          "type": "bounded",
+          "interval": [
+            0.30665962352468423,
+            9.311931115184525
+          ]
+        }
+      }
+    },
+    {
+      "source_scenario_index": 17,
+      "extraction": "2d_boxcar_r2",
+      "rho_assumed": 0.5,
+      "lsf_fwhm_multiplier": 1,
+      "intrinsic_fwhm_km_s": 0,
+      "continuum_order": 1,
+      "blend_assumption": "equal_HeO",
+      "measured_sum_n_lines_over_sum_c_lines": {
+        "value": 1.2946167436249973,
+        "numerator_flux": 93.32423941321477,
+        "denominator_flux": 72.08638376783372,
+        "numerator_variance": 994.9101031677126,
+        "denominator_variance": 749.5467871576487,
+        "numerator_denominator_covariance": 62.5951869635757,
+        "conditional_gaussian_95_fieller_set": {
+          "type": "bounded",
+          "interval": [
+            0.4061843156425092,
+            5.193028493545836
+          ]
+        }
+      }
+    },
+    {
+      "source_scenario_index": 18,
+      "extraction": "2d_profile_plus_background_r3",
+      "rho_assumed": 0.0,
+      "lsf_fwhm_multiplier": 1,
+      "intrinsic_fwhm_km_s": 0,
+      "continuum_order": 1,
+      "blend_assumption": "equal_HeO",
+      "measured_sum_n_lines_over_sum_c_lines": {
+        "value": 0.7564178577938055,
+        "numerator_flux": 53.44866833281351,
+        "denominator_flux": 70.66024127022033,
+        "numerator_variance": 874.9427858393543,
+        "denominator_variance": 606.3656001750863,
+        "numerator_denominator_covariance": 116.7887596218532,
+        "conditional_gaussian_95_fieller_set": {
+          "type": "bounded",
+          "interval": [
+            -0.07359692254948641,
+            2.572568271600332
+          ]
+        }
+      }
+    },
+    {
+      "source_scenario_index": 19,
+      "extraction": "2d_profile_plus_background_r3",
+      "rho_assumed": 0.25,
+      "lsf_fwhm_multiplier": 1,
+      "intrinsic_fwhm_km_s": 0,
+      "continuum_order": 1,
+      "blend_assumption": "equal_HeO",
+      "measured_sum_n_lines_over_sum_c_lines": {
+        "value": 0.713099675720498,
+        "numerator_flux": 58.664651925718935,
+        "denominator_flux": 82.26711345289232,
+        "numerator_variance": 1173.009135433365,
+        "denominator_variance": 821.7238844039359,
+        "numerator_denominator_covariance": 125.70153130350236,
+        "conditional_gaussian_95_fieller_set": {
+          "type": "bounded",
+          "interval": [
+            -0.11686984812945696,
+            2.522287863160256
+          ]
+        }
+      }
+    },
+    {
+      "source_scenario_index": 20,
+      "extraction": "2d_profile_plus_background_r3",
+      "rho_assumed": 0.5,
+      "lsf_fwhm_multiplier": 1,
+      "intrinsic_fwhm_km_s": 0,
+      "continuum_order": 1,
+      "blend_assumption": "equal_HeO",
+      "measured_sum_n_lines_over_sum_c_lines": {
+        "value": 0.6422721889024661,
+        "numerator_flux": 65.49766463838002,
+        "denominator_flux": 101.97804882429112,
+        "numerator_variance": 1267.3571827127369,
+        "denominator_variance": 901.366625171798,
+        "numerator_denominator_covariance": 80.25477815529848,
+        "conditional_gaussian_95_fieller_set": {
+          "type": "bounded",
+          "interval": [
+            -0.0443351507780857,
+            1.8811711483504108
+          ]
+        }
+      }
+    },
+    {
+      "source_scenario_index": 21,
+      "extraction": "stored_pixel_table_1d",
+      "rho_assumed": 0,
+      "lsf_fwhm_multiplier": 0.7,
+      "intrinsic_fwhm_km_s": 0,
+      "continuum_order": 1,
+      "blend_assumption": "equal_HeO",
+      "measured_sum_n_lines_over_sum_c_lines": {
+        "value": 1.0599502614620064,
+        "numerator_flux": 61.52019358795631,
+        "denominator_flux": 58.040641928896285,
+        "numerator_variance": 257.9634646670285,
+        "denominator_variance": 179.31253492735445,
+        "numerator_denominator_covariance": 23.008547311489565,
+        "conditional_gaussian_95_fieller_set": {
+          "type": "bounded",
+          "interval": [
+            0.4956861432891494,
+            2.103136515456633
+          ]
+        }
+      }
+    },
+    {
+      "source_scenario_index": 22,
+      "extraction": "stored_pixel_table_1d",
+      "rho_assumed": 0,
+      "lsf_fwhm_multiplier": 1.3,
+      "intrinsic_fwhm_km_s": 0,
+      "continuum_order": 1,
+      "blend_assumption": "equal_HeO",
+      "measured_sum_n_lines_over_sum_c_lines": {
+        "value": 1.0453339713919025,
+        "numerator_flux": 72.50082010377616,
+        "denominator_flux": 69.3566095505712,
+        "numerator_variance": 520.1432785972354,
+        "denominator_variance": 354.52239890205334,
+        "numerator_denominator_covariance": 90.8575381108032,
+        "conditional_gaussian_95_fieller_set": {
+          "type": "bounded",
+          "interval": [
+            0.41013003772523904,
+            2.303771752556413
+          ]
+        }
+      }
+    },
+    {
+      "source_scenario_index": 23,
+      "extraction": "stored_pixel_table_1d",
+      "rho_assumed": 0,
+      "lsf_fwhm_multiplier": 1,
+      "intrinsic_fwhm_km_s": 300.0,
+      "continuum_order": 1,
+      "blend_assumption": "equal_HeO",
+      "measured_sum_n_lines_over_sum_c_lines": {
+        "value": 1.0386582960231445,
+        "numerator_flux": 67.56763863490846,
+        "denominator_flux": 65.05280792885792,
+        "numerator_variance": 376.76286182729007,
+        "denominator_variance": 261.2112454250487,
+        "numerator_denominator_covariance": 49.319567763964216,
+        "conditional_gaussian_95_fieller_set": {
+          "type": "bounded",
+          "interval": [
+            0.4475373430320318,
+            2.158062446633671
+          ]
+        }
+      }
+    },
+    {
+      "source_scenario_index": 24,
+      "extraction": "stored_pixel_table_1d",
+      "rho_assumed": 0,
+      "lsf_fwhm_multiplier": 1,
+      "intrinsic_fwhm_km_s": 650.0,
+      "continuum_order": 1,
+      "blend_assumption": "equal_HeO",
+      "measured_sum_n_lines_over_sum_c_lines": {
+        "value": 1.0358561801691024,
+        "numerator_flux": 67.65915257620233,
+        "denominator_flux": 65.31712980189687,
+        "numerator_variance": 380.4319093531142,
+        "denominator_variance": 264.31101769035666,
+        "numerator_denominator_covariance": 50.31487079841636,
+        "conditional_gaussian_95_fieller_set": {
+          "type": "bounded",
+          "interval": [
+            0.4448142170020583,
+            2.15502295558133
+          ]
+        }
+      }
+    },
+    {
+      "source_scenario_index": 25,
+      "extraction": "stored_pixel_table_1d",
+      "rho_assumed": 0,
+      "lsf_fwhm_multiplier": 1,
+      "intrinsic_fwhm_km_s": 0,
+      "continuum_order": 0,
+      "blend_assumption": "equal_HeO",
+      "measured_sum_n_lines_over_sum_c_lines": {
+        "value": 1.0228510182728496,
+        "numerator_flux": 65.83817552578932,
+        "denominator_flux": 64.36731679356527,
+        "numerator_variance": 349.5502228550089,
+        "denominator_variance": 256.9844546158953,
+        "numerator_denominator_covariance": 39.63224377987575,
+        "conditional_gaussian_95_fieller_set": {
+          "type": "bounded",
+          "interval": [
+            0.44140353944016636,
+            2.1477204645653805
+          ]
+        }
+      }
+    },
+    {
+      "source_scenario_index": 26,
+      "extraction": "stored_pixel_table_1d",
+      "rho_assumed": 0,
+      "lsf_fwhm_multiplier": 1,
+      "intrinsic_fwhm_km_s": 0,
+      "continuum_order": 2,
+      "blend_assumption": "equal_HeO",
+      "measured_sum_n_lines_over_sum_c_lines": {
+        "value": 1.0411950820728348,
+        "numerator_flux": 67.1900081048797,
+        "denominator_flux": 64.53162261496308,
+        "numerator_variance": 376.863767110311,
+        "denominator_variance": 262.13617584951675,
+        "numerator_denominator_covariance": 50.44310082875966,
+        "conditional_gaussian_95_fieller_set": {
+          "type": "bounded",
+          "interval": [
+            0.4460144825327591,
+            2.1777755447815594
+          ]
+        }
+      }
+    },
+    {
+      "source_scenario_index": 27,
+      "extraction": "stored_pixel_table_1d",
+      "rho_assumed": 0,
+      "lsf_fwhm_multiplier": 1,
+      "intrinsic_fwhm_km_s": 0,
+      "continuum_order": 3,
+      "blend_assumption": "equal_HeO",
+      "measured_sum_n_lines_over_sum_c_lines": {
+        "value": 1.0272794583261222,
+        "numerator_flux": 71.04267518267358,
+        "denominator_flux": 69.15613332562154,
+        "numerator_variance": 380.71788501356394,
+        "denominator_variance": 267.6892517816365,
+        "numerator_denominator_covariance": 55.06935302336665,
+        "conditional_gaussian_95_fieller_set": {
+          "type": "bounded",
+          "interval": [
+            0.46905803190434153,
+            2.0355624024205903
+          ]
+        }
+      }
+    },
+    {
+      "source_scenario_index": 28,
+      "extraction": "stored_pixel_table_1d",
+      "rho_assumed": 0,
+      "lsf_fwhm_multiplier": 1,
+      "intrinsic_fwhm_km_s": 0,
+      "continuum_order": 1,
+      "blend_assumption": "HeII_only",
+      "measured_sum_n_lines_over_sum_c_lines": {
+        "value": 1.0354873394936448,
+        "numerator_flux": 66.17027969519621,
+        "denominator_flux": 63.90254827022183,
+        "numerator_variance": 373.1787618809652,
+        "denominator_variance": 258.8811310928465,
+        "numerator_denominator_covariance": 47.08487865638113,
+        "conditional_gaussian_95_fieller_set": {
+          "type": "bounded",
+          "interval": [
+            0.4364975373791019,
+            2.184093914145013
+          ]
+        }
+      }
+    },
+    {
+      "source_scenario_index": 29,
+      "extraction": "stored_pixel_table_1d",
+      "rho_assumed": 0,
+      "lsf_fwhm_multiplier": 1,
+      "intrinsic_fwhm_km_s": 0,
+      "continuum_order": 1,
+      "blend_assumption": "OIII_only",
+      "measured_sum_n_lines_over_sum_c_lines": {
+        "value": 1.0262038401108835,
+        "numerator_flux": 64.40102441444313,
+        "denominator_flux": 62.75656151070771,
+        "numerator_variance": 372.42986143526485,
+        "denominator_variance": 258.7230207805684,
+        "numerator_denominator_covariance": 46.70660957152902,
+        "conditional_gaussian_95_fieller_set": {
+          "type": "bounded",
+          "interval": [
+            0.4184798614593564,
+            2.204817373200291
+          ]
+        }
+      }
+    },
+    {
+      "source_scenario_index": 30,
+      "extraction": "stored_pixel_table_1d",
+      "rho_assumed": 0,
+      "lsf_fwhm_multiplier": 1,
+      "intrinsic_fwhm_km_s": 0,
+      "continuum_order": 1,
+      "blend_assumption": "alternate_multiplets",
+      "measured_sum_n_lines_over_sum_c_lines": {
+        "value": 1.0347295738020221,
+        "numerator_flux": 67.30756408301855,
+        "denominator_flux": 65.04845883132813,
+        "numerator_variance": 380.91543782887425,
+        "denominator_variance": 261.0321507470445,
+        "numerator_denominator_covariance": 49.87126890879917,
+        "conditional_gaussian_95_fieller_set": {
+          "type": "bounded",
+          "interval": [
+            0.4414132740867151,
+            2.152113139085147
+          ]
+        }
+      }
+    }
+  ],
+  "fixed_q_sensitivity_not_predictions": [
+    {
+      "q_assumed_unmeasured": 0.2,
+      "conditional_bracket_n_c_point": 1.315771400884572,
+      "formal_number_n_c_95_set": {
+        "type": "bounded",
+        "interval": [
+          2.241455036905477,
+          10.794746721189687
+        ]
+      }
+    },
+    {
+      "q_assumed_unmeasured": 0.5,
+      "conditional_bracket_n_c_point": 0.9178313922125343,
+      "formal_number_n_c_95_set": {
+        "type": "bounded",
+        "interval": [
+          0.8965820147621909,
+          4.317898688475875
+        ]
+      }
+    },
+    {
+      "q_assumed_unmeasured": 1.0,
+      "conditional_bracket_n_c_point": 0.6168013965485531,
+      "formal_number_n_c_95_set": {
+        "type": "bounded",
+        "interval": [
+          0.44829100738109545,
+          2.1589493442379375
+        ]
+      }
+    },
+    {
+      "q_assumed_unmeasured": 2.0,
+      "conditional_bracket_n_c_point": 0.315771400884572,
+      "formal_number_n_c_95_set": {
+        "type": "bounded",
+        "interval": [
+          0.22414550369054773,
+          1.0794746721189687
+        ]
+      }
+    }
+  ],
+  "nominal_ion_stage_and_blend_flux_diagnostics": {
+    "NIV_over_CIV": {
+      "value": 1.4420183694458486,
+      "numerator_flux": 53.77976132240524,
+      "denominator_flux": 37.29478241187191,
+      "numerator_variance": 245.17224213805375,
+      "denominator_variance": 177.5206924699043,
+      "numerator_denominator_covariance": 33.57783189975575,
+      "conditional_gaussian_95_fieller_set": {
+        "type": "bounded",
+        "interval": [
+          0.584080159347165,
+          4.7101829221878875
+        ]
+      }
+    },
+    "NIII_over_CIII": {
+      "value": 0.4971320527595831,
+      "numerator_flux": 13.763073948840002,
+      "denominator_flux": 27.684945825643496,
+      "numerator_variance": 108.75796048871086,
+      "denominator_variance": 79.68111093656142,
+      "numerator_denominator_covariance": 5.967847871148017,
+      "conditional_gaussian_95_fieller_set": {
+        "type": "bounded",
+        "interval": [
+          -0.27148101537417674,
+          1.8272252141832415
+        ]
+      }
+    },
+    "HeII_OIII_blend_over_CIII": {
+      "value": 1.1768000463874564,
+      "numerator_flux": 32.57964553185148,
+      "denominator_flux": 27.684945825643496,
+      "numerator_variance": 215.98806231303018,
+      "denominator_variance": 79.68111093656142,
+      "numerator_denominator_covariance": 6.311728586800711,
+      "conditional_gaussian_95_fieller_set": {
+        "type": "bounded",
+        "interval": [
+          0.1369199066613945,
+          3.676230064911733
+        ]
+      }
+    }
+  },
+  "mixing_joint_marginal_checks": {
+    "compatibility_box": {
+      "oxygen_12_log_o_h": [
+        6.770000000000001,
+        7.980000000000001
+      ],
+      "log_c_o": [
+        -1.1300000000000001,
+        -0.52
+      ]
+    },
+    "box_status": "necessary_marginal_endpoint_check_not_joint_confidence_or_likelihood",
+    "counts_status": "deterministic_grid_choice_counts_not_model_weights_or_probabilities",
+    "evaluated_at": "Each maximum ambient mass reaching the fixed N/C target",
+    "sms_summaries": [
+      {
+        "initial_mass_msun": 1000.0,
+        "target": "Cue_lower_marginal_endpoint",
+        "target_bracket_n_c": 0.27,
+        "grid_cases": 36,
+        "n_c_reachable_cases": 36,
+        "also_o_h_and_c_o_marginal_compatible_cases": 12,
+        "compatible_ambient_mass_range_msun": [
+          103730.97827354707,
+          7037614.667365117
+        ]
+      },
+      {
+        "initial_mass_msun": 1000.0,
+        "target": "Cue_median",
+        "target_bracket_n_c": 0.9,
+        "grid_cases": 36,
+        "n_c_reachable_cases": 0,
+        "also_o_h_and_c_o_marginal_compatible_cases": 0,
+        "compatible_ambient_mass_range_msun": null
+      },
+      {
+        "initial_mass_msun": 1000.0,
+        "target": "Cue_upper_marginal_endpoint",
+        "target_bracket_n_c": 1.19,
+        "grid_cases": 36,
+        "n_c_reachable_cases": 0,
+        "also_o_h_and_c_o_marginal_compatible_cases": 0,
+        "compatible_ambient_mass_range_msun": null
+      },
+      {
+        "initial_mass_msun": 1000.0,
+        "target": "separate_ionic_temperature_case_lower",
+        "target_bracket_n_c": 1.3,
+        "grid_cases": 36,
+        "n_c_reachable_cases": 0,
+        "also_o_h_and_c_o_marginal_compatible_cases": 0,
+        "compatible_ambient_mass_range_msun": null
+      },
+      {
+        "initial_mass_msun": 1000.0,
+        "target": "separate_ionic_temperature_case_upper",
+        "target_bracket_n_c": 1.7,
+        "grid_cases": 36,
+        "n_c_reachable_cases": 0,
+        "also_o_h_and_c_o_marginal_compatible_cases": 0,
+        "compatible_ambient_mass_range_msun": null
+      },
+      {
+        "initial_mass_msun": 10000.0,
+        "target": "Cue_lower_marginal_endpoint",
+        "target_bracket_n_c": 0.27,
+        "grid_cases": 36,
+        "n_c_reachable_cases": 36,
+        "also_o_h_and_c_o_marginal_compatible_cases": 12,
+        "compatible_ambient_mass_range_msun": [
+          669445.964903218,
+          45418474.01831293
+        ]
+      },
+      {
+        "initial_mass_msun": 10000.0,
+        "target": "Cue_median",
+        "target_bracket_n_c": 0.9,
+        "grid_cases": 36,
+        "n_c_reachable_cases": 36,
+        "also_o_h_and_c_o_marginal_compatible_cases": 24,
+        "compatible_ambient_mass_range_msun": [
+          30032.971374121604,
+          5396075.805765778
+        ]
+      },
+      {
+        "initial_mass_msun": 10000.0,
+        "target": "Cue_upper_marginal_endpoint",
+        "target_bracket_n_c": 1.19,
+        "grid_cases": 36,
+        "n_c_reachable_cases": 36,
+        "also_o_h_and_c_o_marginal_compatible_cases": 21,
+        "compatible_ambient_mass_range_msun": [
+          15053.775562163572,
+          2441436.521009196
+        ]
+      },
+      {
+        "initial_mass_msun": 10000.0,
+        "target": "separate_ionic_temperature_case_lower",
+        "target_bracket_n_c": 1.3,
+        "grid_cases": 36,
+        "n_c_reachable_cases": 36,
+        "also_o_h_and_c_o_marginal_compatible_cases": 6,
+        "compatible_ambient_mass_range_msun": [
+          38785.64161856738,
+          403180.4843620291
+        ]
+      },
+      {
+        "initial_mass_msun": 10000.0,
+        "target": "separate_ionic_temperature_case_upper",
+        "target_bracket_n_c": 1.7,
+        "grid_cases": 36,
+        "n_c_reachable_cases": 36,
+        "also_o_h_and_c_o_marginal_compatible_cases": 0,
+        "compatible_ambient_mass_range_msun": null
+      },
+      {
+        "initial_mass_msun": 50000.0,
+        "target": "Cue_lower_marginal_endpoint",
+        "target_bracket_n_c": 0.27,
+        "grid_cases": 36,
+        "n_c_reachable_cases": 36,
+        "also_o_h_and_c_o_marginal_compatible_cases": 12,
+        "compatible_ambient_mass_range_msun": [
+          13246.739342605095,
+          1105671.2094259951
+        ]
+      },
+      {
+        "initial_mass_msun": 50000.0,
+        "target": "Cue_median",
+        "target_bracket_n_c": 0.9,
+        "grid_cases": 36,
+        "n_c_reachable_cases": 36,
+        "also_o_h_and_c_o_marginal_compatible_cases": 12,
+        "compatible_ambient_mass_range_msun": [
+          2667.9998283750383,
+          132027.84580829527
+        ]
+      },
+      {
+        "initial_mass_msun": 50000.0,
+        "target": "Cue_upper_marginal_endpoint",
+        "target_bracket_n_c": 1.19,
+        "grid_cases": 36,
+        "n_c_reachable_cases": 36,
+        "also_o_h_and_c_o_marginal_compatible_cases": 12,
+        "compatible_ambient_mass_range_msun": [
+          1280.3915429096414,
+          60148.971478732514
+        ]
+      },
+      {
+        "initial_mass_msun": 50000.0,
+        "target": "separate_ionic_temperature_case_lower",
+        "target_bracket_n_c": 1.3,
+        "grid_cases": 36,
+        "n_c_reachable_cases": 36,
+        "also_o_h_and_c_o_marginal_compatible_cases": 12,
+        "compatible_ambient_mass_range_msun": [
+          959.8165186645523,
+          44567.342871641646
+        ]
+      },
+      {
+        "initial_mass_msun": 50000.0,
+        "target": "separate_ionic_temperature_case_upper",
+        "target_bracket_n_c": 1.7,
+        "grid_cases": 36,
+        "n_c_reachable_cases": 36,
+        "also_o_h_and_c_o_marginal_compatible_cases": 12,
+        "compatible_ambient_mass_range_msun": [
+          297.964128530164,
+          13512.472131348408
+        ]
+      },
+      {
+        "initial_mass_msun": 100000.0,
+        "target": "Cue_lower_marginal_endpoint",
+        "target_bracket_n_c": 0.27,
+        "grid_cases": 36,
+        "n_c_reachable_cases": 36,
+        "also_o_h_and_c_o_marginal_compatible_cases": 12,
+        "compatible_ambient_mass_range_msun": [
+          156912.7488733252,
+          13097102.942391535
+        ]
+      },
+      {
+        "initial_mass_msun": 100000.0,
+        "target": "Cue_median",
+        "target_bracket_n_c": 0.9,
+        "grid_cases": 36,
+        "n_c_reachable_cases": 36,
+        "also_o_h_and_c_o_marginal_compatible_cases": 12,
+        "compatible_ambient_mass_range_msun": [
+          28651.77681641828,
+          1417853.3039695583
+        ]
+      },
+      {
+        "initial_mass_msun": 100000.0,
+        "target": "Cue_upper_marginal_endpoint",
+        "target_bracket_n_c": 1.19,
+        "grid_cases": 36,
+        "n_c_reachable_cases": 36,
+        "also_o_h_and_c_o_marginal_compatible_cases": 12,
+        "compatible_ambient_mass_range_msun": [
+          11827.845450247085,
+          555636.8616939345
+        ]
+      },
+      {
+        "initial_mass_msun": 100000.0,
+        "target": "separate_ionic_temperature_case_lower",
+        "target_bracket_n_c": 1.3,
+        "grid_cases": 36,
+        "n_c_reachable_cases": 36,
+        "also_o_h_and_c_o_marginal_compatible_cases": 12,
+        "compatible_ambient_mass_range_msun": [
+          7941.062514384781,
+          368728.8653212026
+        ]
+      },
+      {
+        "initial_mass_msun": 100000.0,
+        "target": "separate_ionic_temperature_case_upper",
+        "target_bracket_n_c": 1.7,
+        "grid_cases": 36,
+        "n_c_reachable_cases": 0,
+        "also_o_h_and_c_o_marginal_compatible_cases": 0,
+        "compatible_ambient_mass_range_msun": null
+      }
+    ],
+    "conditional_helium_examples": {
+      "background_he_h_number": 0.08333333333333333,
+      "assumptions": "Ambient [O/H]=-1.38, [C/O]=-0.65, [N/C]=0; equal full retention, homogeneous mixing, X_H=0.75, X_He=0.25 neglecting ambient trace metals.",
+      "values": [
+        {
+          "initial_mass_msun": 1000.0,
+          "target_bracket_n_c": 0.9,
+          "ambient_mass_msun": null,
+          "mixed_he_h_number": null
+        },
+        {
+          "initial_mass_msun": 1000.0,
+          "target_bracket_n_c": 1.7,
+          "ambient_mass_msun": null,
+          "mixed_he_h_number": null
+        },
+        {
+          "initial_mass_msun": 10000.0,
+          "target_bracket_n_c": 0.9,
+          "ambient_mass_msun": 1486202.6869628744,
+          "mixed_he_h_number": 0.08382155246450775
+        },
+        {
+          "initial_mass_msun": 10000.0,
+          "target_bracket_n_c": 1.7,
+          "ambient_mass_msun": 144433.26331457382,
+          "mixed_he_h_number": 0.08828900744329118
+        },
+        {
+          "initial_mass_msun": 50000.0,
+          "target_bracket_n_c": 0.9,
+          "ambient_mass_msun": 132027.84580829527,
+          "mixed_he_h_number": 0.08576733776075815
+        },
+        {
+          "initial_mass_msun": 50000.0,
+          "target_bracket_n_c": 1.7,
+          "ambient_mass_msun": 13512.472131348408,
+          "mixed_he_h_number": 0.10000619298178355
+        },
+        {
+          "initial_mass_msun": 100000.0,
+          "target_bracket_n_c": 0.9,
+          "ambient_mass_msun": 1417853.3039695583,
+          "mixed_he_h_number": 0.09329301228878725
+        },
+        {
+          "initial_mass_msun": 100000.0,
+          "target_bracket_n_c": 1.7,
+          "ambient_mass_msun": null,
+          "mixed_he_h_number": null
+        }
+      ],
+      "inference_guard": "Predicted gas nuclei ratios only; HeII/OIII blend cannot measure them without hydrogen lines and ionization/emissivity modelling."
+    },
+    "vms_optimistic_nitrogen_only_bounds": {
+      "cases": [
+        {
+          "background_bracket_c_o": 0.0,
+          "optimistic_maximum_ambient_mass_msun_per_vms": 4647.783339254828
+        },
+        {
+          "background_bracket_c_o": -0.65,
+          "optimistic_maximum_ambient_mass_msun_per_vms": 20760.88557517745
+        }
+      ],
+      "nitrogen_per_star_msun_approx": 1.0,
+      "timescale_myr_approx": 2.0,
+      "assumptions": "LMC-like VMS estimate, full N retention, ignore coejected carbon and other sources; adding carbon lowers this ceiling. This is not a full N/C prediction."
+    }
+  },
+  "unavailable_mechanism_predictions": {
+    "WR": "The pinned time-history benchmark does not give a numerical N/C yield here.",
+    "VMS": "Pinned approximate N yield lacks C/O; only an optimistic N-only budget is computed."
+  },
+  "limits": [
+    "Flux covariances condition on the source fit's extraction and nuisance choices; AR(1) correlations are assumed sensitivities, not empirically measured covariance.",
+    "Alternative extractions share exposures and cannot be multiplied as independent likelihoods.",
+    "Separate ionic [N/C]1.3-1.7 cases are temperature-model outcomes, not a new confidence interval or replacement for Cue's broad posterior.",
+    "Physical positivity is not imposed on signed flux confidence sets; no abundance prior or posterior model probability is inferred.",
+    "HeII and OIII remain blended; helium abundance or stellar HeII origin cannot be derived."
+  ]
+}

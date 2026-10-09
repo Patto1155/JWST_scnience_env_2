@@ -27,6 +27,8 @@ from .line_sensitivity import (
     redshift_scan,
 )
 
+REPO_ROOT = Path(__file__).resolve().parents[2]
+
 
 def read_point_resolution(path: Path) -> tuple[np.ndarray, np.ndarray, dict[str, Any]]:
     """Verify derivative bytes and replay the non-executable polynomial transform."""
@@ -194,6 +196,7 @@ def native_quality_support(
             "source_type_upstream": h["SCI"].header["SRCTYPE"],
             "science_bunit": h["SCI"].header["BUNIT"],
             "exposure_time_s": receipt["exposure_time_s"],
+            "nod_position_header": h[0].header.get("PATT_NUM"),
             "quality_rule": "Finite SCI/wavelength, finite positive ERR, no DO_NOT_USE(1) or SATURATED(2)",
             "usable_native_pixels": int(usable.sum()),
             "line_window_quality_support": supports,
@@ -215,40 +218,146 @@ def native_batch_quality(
     rr: np.ndarray,
     leverage: dict[str, Any],
     source_wave: np.ndarray,
+    *,
+    inventory_path: Path = REPO_ROOT / "data_sources/followup/mom_native_inventory.json",
+    pinned_batch_path: Path = REPO_ROOT / "research_output/mom_native_batch.json",
+    spectrum_path: Path = REPO_ROOT / "data_sources/pilot/mom_z14_dja_v4.spec.fits",
 ) -> dict[str, Any]:
-    """Re-read every acquired native slit rather than trusting saved DQ counts."""
+    """Require the pinned nine originals/derivatives before certifying coverage.
+
+    Empty, partial, duplicate or substituted batches are rejected. Empty UV
+    wavelength support is not estimable, rather than vacuously usable.
+    """
     batch = json.loads(batch_path.read_text())
-    if batch["source_spectrum_receipt"]["sha256"] != SOURCE_HASH:
-        raise ValueError("Native batch was not selected from the verified source spectrum")
-    exposures = []
-    for record in batch["exposures"]:
-        filename = record["derived_slit_filename"]
-        if Path(filename).name != filename:
-            raise ValueError("Native batch filename must be a basename")
-        path = native_dir / filename
-        actual = native_quality_support(path, rw, rr, leverage, source_wave)
-        if actual["input_sha256"] != record["identity_quality"]["sha256"]:
-            raise ValueError("Native batch derivative differs from selected manifest")
-        actual["filename"] = filename
-        actual["nod_position"] = record["metadata"]["position_number"]
-        exposures.append(actual)
-    if len({e["source_url"] for e in exposures}) != len(exposures):
+    records = batch.get("exposures", [])
+    names = [r.get("metadata", {}).get("filename") for r in records]
+    if len(names) != len(set(names)):
         raise ValueError("Duplicate exposure in native batch")
+    if len(records) != 9:
+        raise ValueError("Native batch requires exactly nine pinned exposures")
+    if batch.get("source_spectrum_receipt", {}).get("sha256") != SOURCE_HASH:
+        raise ValueError("Native batch was not selected from the verified source spectrum")
+    inventory = json.loads(inventory_path.read_text())
+    products = inventory["products"]
+    expected = {p["filename"]: p for p in products}
+    if (
+        inventory["source_spectrum_sha256"] != SOURCE_HASH
+        or len(products) != 9
+        or len(expected) != 9
+    ):
+        raise ValueError("Pinned native inventory is inconsistent with the source spectrum")
+    if set(names) != set(expected):
+        raise ValueError("Native batch identities differ from exact pinned nine-exposure inventory")
+    pinned = json.loads(pinned_batch_path.read_text())
+    pinned_records = {r["metadata"]["filename"]: r for r in pinned["exposures"]}
+    if (
+        pinned.get("source_spectrum_receipt", {}).get("sha256") != SOURCE_HASH
+        or len(pinned["exposures"]) != 9
+        or set(pinned_records) != set(expected)
+    ):
+        raise ValueError("Pinned derivative manifest does not cover the exact inventory")
+    if hashlib.sha256(spectrum_path.read_bytes()).hexdigest() != SOURCE_HASH:
+        raise ValueError("Source spectrum differs from verified source SHA256")
+    with fits.open(spectrum_path, memmap=False) as h:
+        source_nods = {r["filename"]: int(r["position_number"]) for r in h["SLITS"].data}
+    if {p["source_slits_filename"] for p in products} != set(source_nods):
+        raise ValueError("Pinned inventory does not match the source SLITS exposure set")
+    total_bytes = sum(p["expected_bytes"] for p in products)
+    if batch.get("budget", {}).get("actual_original_bytes") != total_bytes:
+        raise ValueError("Native batch byte total differs from pinned originals")
+    exposures = []
+    for record in records:
+        metadata = record.get("metadata", {})
+        product = expected[metadata["filename"]]
+        reference = pinned_records[product["filename"]]
+        filename = record.get("derived_slit_filename")
+        expected_derived = product["filename"].replace("_cal.fits", "_277193_native.fits")
+        if filename != expected_derived or filename != reference["derived_slit_filename"]:
+            raise ValueError("Native derivative filename differs from pinned exposure")
+        receipt = record.get("native_exposure_receipt", {})
+        if (
+            receipt.get("requested_url") != product["url"]
+            or receipt.get("sha256") != product["sha256"]
+            or receipt.get("bytes") != product["expected_bytes"]
+            or metadata.get("source_slits_filename") != product["source_slits_filename"]
+            or metadata.get("url") != product["url"]
+            or metadata.get("position_number") != source_nods[product["source_slits_filename"]]
+        ):
+            raise ValueError(
+                "Native parent identity/hash/size/nod differs from pinned source inventory"
+            )
+        original_path = native_dir / product["filename"]
+        if (
+            original_path.stat().st_size != product["expected_bytes"]
+            or hashlib.sha256(original_path.read_bytes()).hexdigest() != product["sha256"]
+        ):
+            raise ValueError("Actual native original bytes differ from pinned inventory")
+        path = native_dir / filename
+        derivative_receipt = json.loads(Path(str(path) + ".provenance.json").read_text())
+        parent_receipt = derivative_receipt.get("input_receipt", {})
+        if (
+            parent_receipt.get("requested_url") != product["url"]
+            or parent_receipt.get("sha256") != product["sha256"]
+            or parent_receipt.get("bytes") != product["expected_bytes"]
+            or derivative_receipt.get("sha256") != reference["identity_quality"]["sha256"]
+        ):
+            raise ValueError("Native derivative parent/pinned checksum differs from inventory")
+        actual = native_quality_support(path, rw, rr, leverage, source_wave)
+        if (
+            actual["input_sha256"] != record.get("identity_quality", {}).get("sha256")
+            or actual["input_sha256"] != reference["identity_quality"]["sha256"]
+        ):
+            raise ValueError("Native batch derivative differs from selected manifest")
+        if actual["nod_position_header"] != source_nods[product["source_slits_filename"]]:
+            raise ValueError("Native slit nod header differs from verified source observation")
+        if set(actual["line_window_quality_support"]) != set(LINE_NAMES) or set(
+            actual["highest_leverage_bin_native_overlap"]
+        ) != {"NIV", "CIV"}:
+            raise ValueError("Native quality support is missing required UV groups")
+        actual["filename"] = filename
+        actual["nod_position"] = metadata["position_number"]
+        exposures.append(actual)
+    windows = [
+        group
+        for exposure in exposures
+        for group in exposure["line_window_quality_support"].values()
+    ]
+    overlaps = [
+        group
+        for exposure in exposures
+        for group in exposure["highest_leverage_bin_native_overlap"].values()
+    ]
+    window_estimable = all(g["native_pixels_in_window_all_rows"] > 0 for g in windows)
+    overlap_estimable = all(g["native_pixels_in_bin_all_rows"] > 0 for g in overlaps)
+    window_usable = (
+        all(
+            g["native_pixels_in_window_all_rows"] == g["finite_usable_dq_pixels_all_rows"]
+            for g in windows
+        )
+        if window_estimable
+        else None
+    )
+    overlap_usable = (
+        all(
+            g["native_pixels_in_bin_all_rows"] == g["native_usable_pixels_in_bin_all_rows"]
+            for g in overlaps
+        )
+        if overlap_estimable
+        else None
+    )
     return {
         "batch_manifest_sha256": hashlib.sha256(batch_path.read_bytes()).hexdigest(),
+        "pinned_inventory_sha256": hashlib.sha256(inventory_path.read_bytes()).hexdigest(),
+        "pinned_derivative_manifest_sha256": hashlib.sha256(
+            pinned_batch_path.read_bytes()
+        ).hexdigest(),
         "exposure_count": len(exposures),
-        "original_bytes": batch["budget"]["actual_original_bytes"],
+        "original_bytes": total_bytes,
         "exposures": exposures,
-        "all_uv_window_pixels_usable": all(
-            group["native_pixels_in_window_all_rows"] == group["finite_usable_dq_pixels_all_rows"]
-            for exposure in exposures
-            for group in exposure["line_window_quality_support"].values()
-        ),
-        "all_high_leverage_overlap_pixels_usable": all(
-            group["native_pixels_in_bin_all_rows"] == group["native_usable_pixels_in_bin_all_rows"]
-            for exposure in exposures
-            for group in exposure["highest_leverage_bin_native_overlap"].values()
-        ),
+        "all_uv_window_pixels_usable": window_usable,
+        "all_high_leverage_overlap_pixels_usable": overlap_usable,
+        "uv_support_status": "estimable" if window_estimable else "not_estimable",
+        "high_leverage_support_status": "estimable" if overlap_estimable else "not_estimable",
         "interpretation": "Acquired full exposure set is available; native quality is not a re-extracted or independently calibrated line measurement",
     }
 
@@ -331,12 +440,26 @@ def render_summary(result: dict[str, Any], output: Path) -> None:
         ]
     if result["native_batch_quality"] is not None:
         batch = result["native_batch_quality"]
+        windows_clear = batch["all_uv_window_pixels_usable"] is True
+        overlaps_clear = batch["all_high_leverage_overlap_pixels_usable"] is True
+        if batch["all_uv_window_pixels_usable"] is None:
+            window_text = "UV-window quality is **not estimable**: at least one required wavelength window has no native support. No all-window usability claim is possible."
+        elif windows_clear:
+            window_text = "All pixels in the five ±generic-point-FWHM UV windows are finite with positive errors and lack DO_NOT_USE/SATURATED in every acquired exposure."
+        else:
+            window_text = "At least one supported UV-window pixel fails the finite-value, positive-error or DO_NOT_USE/SATURATED criteria; the full window set is not wholly usable."
+        if batch["all_high_leverage_overlap_pixels_usable"] is None:
+            overlap_text = "Highest-leverage-bin native quality is **not estimable**: at least one required N IV]/C IV wavelength overlap has no native support."
+        elif overlaps_clear:
+            overlap_text = "All highest-leverage N IV]/C IV wavelength-overlap samples are likewise usable under these explicit criteria."
+        else:
+            overlap_text = "At least one highest-leverage N IV]/C IV wavelength-overlap sample fails the explicit usability criteria."
         text += [
             "## All-nine-exposure quality follow-up",
             "",
-            f"The acquisition team subsequently fetched all {batch['exposure_count']} actual native calibrated exposures ({batch['original_bytes']:,} bytes), selected from the verified DJA SLITS list. This experiment independently re-reads each compact target slit, validates receipt and manifest SHA256, and re-evaluates wavelength/DQ/error overlap. All pixels in the five ±generic-point-FWHM UV windows are finite with positive errors and lack DO_NOT_USE/SATURATED in every acquired exposure. All highest-leverage N IV]/C IV wavelength-overlap samples are likewise usable under these explicit criteria.",
+            f"The acquisition team subsequently fetched all {batch['exposure_count']} actual native calibrated exposures ({batch['original_bytes']:,} bytes), selected from the verified DJA SLITS list. This experiment requires the exact nine pinned identities, validates actual original hashes/sizes, independently pinned derivative hashes and source SLITS nod positions, and re-evaluates wavelength/DQ/error overlap. {window_text} {overlap_text}",
             "",
-            "This closes the specific archive-access and basic native-DQ input gaps. It supplies no flag-based reason to discard the influential bins. It does **not** close source-trace mapping, geometry/pathloss, exposure/nod background modelling, source-specific LSF or empirical covariance, and it does not establish independent line detections. All-row wavelength checks are kept distinct from a full reduction or source-trace completeness.",
+            "The nine original exposures are acquired and independently checked. Empty, partial, duplicate and substituted batches cannot certify full acquisition; an empty UV window or influential-bin overlap reports `not_estimable`, rather than vacuously usable. The wavelength/DQ checks do **not** close source-trace mapping, geometry/pathloss, exposure/nod background modelling, source-specific LSF or empirical covariance, and they do not establish independent line detections. All-row wavelength checks are kept distinct from a full reduction or source-trace completeness.",
             "",
         ]
         text += [
@@ -360,7 +483,12 @@ def render_summary(result: dict[str, Any], output: Path) -> None:
             )
         text += [
             "",
-            "These native samples supply no flag-based justification for dropping the influential wavelengths. The 2026 official native calibration differs from the 2025 DJA processing; mapping exact original coadd contributors and its internal rejection remains an analysis task. Complete matched re-extraction is still needed, while the nine original calibrated exposures are acquired and verified.",
+            (
+                "These native samples supply no flag-based justification for dropping the influential wavelengths. "
+                if overlaps_clear
+                else "The influence of quality failures or missing native overlap requires further assessment; the present checks do not justify automatic wavelength rejection. "
+            )
+            + "The 2026 official native calibration differs from the 2025 DJA processing; mapping exact original coadd contributors and its internal rejection remains an analysis task. Complete matched re-extraction is still needed, while the nine original calibrated exposures are acquired and verified.",
             "",
         ]
     text += [
@@ -436,7 +564,13 @@ def run(
         if native_path is not None
         else None,
         "native_batch_quality": native_batch_quality(
-            native_batch_path, native_dir, pw, pr, point_leverage, exts[0].wave
+            native_batch_path,
+            native_dir,
+            pw,
+            pr,
+            point_leverage,
+            exts[0].wave,
+            spectrum_path=spectrum,
         )
         if native_batch_path is not None and native_dir is not None
         else None,

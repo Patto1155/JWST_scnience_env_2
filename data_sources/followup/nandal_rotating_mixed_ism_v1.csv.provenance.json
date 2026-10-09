@@ -16,7 +16,9 @@
   "transform": "ExtractHTMLTable2; NC=NO-CO conservative unpaired endpoint envelope",
   "solar_log_NC": -0.63,
   "solar_basis": "SamepaperTable3logNO=-.86 minus logCO=-.23",
+  "mom_comparison_solar_log_NC": -0.6,
+  "comparison_scope": "Common-solar-basis marginal interval endpoint screen, not joint-posterior model selection",
   "science_limit": "Table2dilution constrained toGNz11oxygenrange, notMoMfit; modelrangesare notstatistical uncertainty",
-  "bytes": 3882,
-  "sha256": "ab4d0e709265ddd00055306f0c845a86faf7383162363d4865d7e139ce1c82fa"
+  "bytes": 4812,
+  "sha256": "ac2aacb315352edac4a40a9a24beb48a3e1487bb81627e1fbb41c6dffce01d6d"
 }

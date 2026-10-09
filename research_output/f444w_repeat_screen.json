@@ -1,0 +1,2001 @@
+{
+  "schema_version": 1,
+  "manifest_sha256": "fd867e2d24e82b9f50193b97be3431f8c7ad2fd47e45a4cf288ff8549bb81284",
+  "frozen_survivors_sha256": "f82417b886b0f51469ee6a8f1846c9b3871c7656e8f7eb1ead7e6fc98058be30",
+  "external_astrometry_sha256": "350e4df82641bf6942266713b413223efd51ed3dafce1f5160f6a199a61af79f",
+  "source_count": 7,
+  "frozen_screen_source_count": 7,
+  "additional_inputs": {},
+  "summary_by_selection_origin": {
+    "frozen_uncorrected_dropout_screen": {
+      "not_persistent_at_measured_depth": 6,
+      "persistent_in_repeat": 1
+    }
+  },
+  "summary": {
+    "not_persistent_at_measured_depth": 6,
+    "persistent_in_repeat": 1
+  },
+  "f444w_repeat_pairs": [
+    {
+      "target": "GS-MEDIUM-HST",
+      "filter": "F444W",
+      "epoch_a": "jw01180026001_09201_00003_nrcalong_i2d.fits",
+      "epoch_b": "jw01180026001_09201_00001_nrcalong_i2d.fits",
+      "overlap_fraction": 0.950625,
+      "baseline_hours": 0.7485861110617407,
+      "supports": "artifact_rejection_only"
+    },
+    {
+      "target": "GS-MEDIUM-HST",
+      "filter": "F444W",
+      "epoch_a": "jw01180026001_09201_00003_nrcalong_i2d.fits",
+      "epoch_b": "jw01180026001_09201_00002_nrcalong_i2d.fits",
+      "overlap_fraction": 0.950625,
+      "baseline_hours": 0.37279972212854773,
+      "supports": "artifact_rejection_only"
+    },
+    {
+      "target": "GS-MEDIUM-HST",
+      "filter": "F444W",
+      "epoch_a": "jw01180026001_09201_00001_nrcalong_i2d.fits",
+      "epoch_b": "jw01180026001_09201_00002_nrcalong_i2d.fits",
+      "overlap_fraction": 0.950625,
+      "baseline_hours": 0.37578638893319294,
+      "supports": "artifact_rejection_only"
+    }
+  ],
+  "independent_source_controls": [
+    {
+      "product_filename": "jw01180026001_09201_00001_nrcalong_i2d.fits",
+      "bright_covered_control_count": 22,
+      "reference_bright_control_count": 23,
+      "reference_bright_repeat_statuses": {
+        "persistent_detection": 22,
+        "untestable_coverage_or_measurement": 1
+      },
+      "flux_ratio_median": 1.0351960516769931,
+      "flux_ratio_median_bootstrap95": [
+        1.003406926202557,
+        1.0655754908200894
+      ],
+      "flux_ratio_p16_p84": [
+        0.9866647436198129,
+        1.11681800952409
+      ],
+      "controls": [
+        {
+          "source_id": "GS_DR5_189288",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 37.926012770713044,
+          "comparison_snr": 38.45934529264257,
+          "absolute_flux_difference_sigma": 0.32531320874072395,
+          "comparison_reference_flux_ratio": 1.0121189034652527,
+          "comparison_3sigma_limit_jy": 1.7829715031261862e-07
+        },
+        {
+          "source_id": "GS_DR5_192380",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 87.05505594908676,
+          "comparison_snr": 79.67210314037355,
+          "absolute_flux_difference_sigma": 2.8648277325084064,
+          "comparison_reference_flux_ratio": 1.0500866567735194,
+          "comparison_3sigma_limit_jy": 4.6977912065930445e-07
+        },
+        {
+          "source_id": "GS_DR5_187790",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 12.45851665256384,
+          "comparison_snr": 15.071650947743818,
+          "absolute_flux_difference_sigma": 2.1736001656505293,
+          "comparison_reference_flux_ratio": 1.250972961879866,
+          "comparison_3sigma_limit_jy": 6.969551728695271e-08
+        },
+        {
+          "source_id": "GS_DR5_79170",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 21.196040352508348,
+          "comparison_snr": 21.845508703232372,
+          "absolute_flux_difference_sigma": 0.20648658671059908,
+          "comparison_reference_flux_ratio": 1.013663920901222,
+          "comparison_3sigma_limit_jy": 9.623378750741091e-08
+        },
+        {
+          "source_id": "GS_DR5_191333",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 13.85498221581951,
+          "comparison_snr": 15.308382822892272,
+          "absolute_flux_difference_sigma": 0.7174545533814717,
+          "comparison_reference_flux_ratio": 1.072155405911019,
+          "comparison_3sigma_limit_jy": 7.51092380701594e-08
+        },
+        {
+          "source_id": "GS_DR5_189302",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 13.43717533180822,
+          "comparison_snr": 12.722684749128076,
+          "absolute_flux_difference_sigma": 0.2771608278540186,
+          "comparison_reference_flux_ratio": 0.9704634968391882,
+          "comparison_3sigma_limit_jy": 6.162745311684356e-08
+        },
+        {
+          "source_id": "GS_DR5_188785",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 66.08250261801629,
+          "comparison_snr": 69.59148580049009,
+          "absolute_flux_difference_sigma": 2.571836754417013,
+          "comparison_reference_flux_ratio": 1.0550912334181772,
+          "comparison_3sigma_limit_jy": 3.3256490101810385e-07
+        },
+        {
+          "source_id": "GS_DR5_186891",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 75.39029439529618,
+          "comparison_snr": 78.6898522015147,
+          "absolute_flux_difference_sigma": 1.9070812452056438,
+          "comparison_reference_flux_ratio": 1.0356350288931155,
+          "comparison_3sigma_limit_jy": 3.776856685778748e-07
+        },
+        {
+          "source_id": "GS_DR5_190909",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 221.7859258376444,
+          "comparison_snr": 224.86709093691948,
+          "absolute_flux_difference_sigma": 1.3957610755965109,
+          "comparison_reference_flux_ratio": 0.9911989964443958,
+          "comparison_3sigma_limit_jy": 1.6756575376780784e-06
+        },
+        {
+          "source_id": "GS_DR5_186471",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 18.406093756280185,
+          "comparison_snr": 18.871095607386984,
+          "absolute_flux_difference_sigma": 0.21094433015693895,
+          "comparison_reference_flux_ratio": 0.9841142264059851,
+          "comparison_3sigma_limit_jy": 8.942091566661223e-08
+        },
+        {
+          "source_id": "GS_DR5_84256",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 17.88950446418072,
+          "comparison_snr": 18.589972901128608,
+          "absolute_flux_difference_sigma": 0.7391916854208405,
+          "comparison_reference_flux_ratio": 1.0589955757291596,
+          "comparison_3sigma_limit_jy": 9.151621608013928e-08
+        },
+        {
+          "source_id": "GS_DR5_191208",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 111.36091640712239,
+          "comparison_snr": 109.45267395380071,
+          "absolute_flux_difference_sigma": 0.03819058393588048,
+          "comparison_reference_flux_ratio": 1.0004893642561243,
+          "comparison_3sigma_limit_jy": 5.578386219336946e-07
+        },
+        {
+          "source_id": "GS_DR5_76543",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 17.882943198414804,
+          "comparison_snr": 16.346173371649915,
+          "absolute_flux_difference_sigma": 1.142334350056766,
+          "comparison_reference_flux_ratio": 0.9098693504113768,
+          "comparison_3sigma_limit_jy": 7.555853805640848e-08
+        },
+        {
+          "source_id": "GS_DR5_190921",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 14.47616754101433,
+          "comparison_snr": 19.30063851935155,
+          "absolute_flux_difference_sigma": 1.130666753963415,
+          "comparison_reference_flux_ratio": 1.1013056331781808,
+          "comparison_3sigma_limit_jy": 9.565372735911866e-08
+        },
+        {
+          "source_id": "GS_DR5_86808",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 15.854887863250415,
+          "comparison_snr": 15.258965902696419,
+          "absolute_flux_difference_sigma": 0.33970628730085645,
+          "comparison_reference_flux_ratio": 0.9695859961873318,
+          "comparison_3sigma_limit_jy": 7.442935725505517e-08
+        },
+        {
+          "source_id": "GS_DR5_189743",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 13.370120958604835,
+          "comparison_snr": 15.028872781762093,
+          "absolute_flux_difference_sigma": 1.4660488068574486,
+          "comparison_reference_flux_ratio": 1.1573853040691544,
+          "comparison_3sigma_limit_jy": 7.296804286448477e-08
+        },
+        {
+          "source_id": "GS_DR5_193512",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 21.62671378714643,
+          "comparison_snr": 21.771457633152036,
+          "absolute_flux_difference_sigma": 1.313099898938029,
+          "comparison_reference_flux_ratio": 1.08946594909715,
+          "comparison_3sigma_limit_jy": 1.0758034986308683e-07
+        },
+        {
+          "source_id": "GS_DR5_193082",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 14.22473948066295,
+          "comparison_snr": 14.59067150792987,
+          "absolute_flux_difference_sigma": 0.034643075736905976,
+          "comparison_reference_flux_ratio": 1.003406926202557,
+          "comparison_3sigma_limit_jy": 7.128223460744573e-08
+        },
+        {
+          "source_id": "GS_DR5_296853",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 43.91445293276425,
+          "comparison_snr": 39.12045979192468,
+          "absolute_flux_difference_sigma": 0.9958376300957703,
+          "comparison_reference_flux_ratio": 1.0347570744608707,
+          "comparison_3sigma_limit_jy": 2.0340356857292666e-07
+        },
+        {
+          "source_id": "GS_DR5_188958",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 17.227917202391055,
+          "comparison_snr": 12.324544741395988,
+          "absolute_flux_difference_sigma": 1.320363118146767,
+          "comparison_reference_flux_ratio": 1.1446051953500247,
+          "comparison_3sigma_limit_jy": 9.759407273849646e-08
+        },
+        {
+          "source_id": "GS_DR5_193699",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 70.40778123413823,
+          "comparison_snr": 76.48482713309635,
+          "absolute_flux_difference_sigma": 6.138470313360693,
+          "comparison_reference_flux_ratio": 1.125543721218664,
+          "comparison_3sigma_limit_jy": 4.0221106892284394e-07
+        },
+        {
+          "source_id": "GS_DR5_186837",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 38.76710396929464,
+          "comparison_snr": 38.36682980574793,
+          "absolute_flux_difference_sigma": 0.2778608587355004,
+          "comparison_reference_flux_ratio": 1.0102421565463602,
+          "comparison_3sigma_limit_jy": 1.708358520376535e-07
+        }
+      ],
+      "selection": "JADES-identified detections with >=10 diagonal SNR in both images"
+    },
+    {
+      "product_filename": "jw01180026001_09201_00002_nrcalong_i2d.fits",
+      "bright_covered_control_count": 23,
+      "reference_bright_control_count": 23,
+      "reference_bright_repeat_statuses": {
+        "persistent_detection": 23
+      },
+      "flux_ratio_median": 1.0070926888283427,
+      "flux_ratio_median_bootstrap95": [
+        0.9760760476305875,
+        1.0258240957621991
+      ],
+      "flux_ratio_p16_p84": [
+        0.9342412911005282,
+        1.0407358427834936
+      ],
+      "controls": [
+        {
+          "source_id": "GS_DR5_189288",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 37.926012770713044,
+          "comparison_snr": 37.634526570189934,
+          "absolute_flux_difference_sigma": 0.646857130266962,
+          "comparison_reference_flux_ratio": 0.9760760476305875,
+          "comparison_3sigma_limit_jy": 1.7222044833847212e-07
+        },
+        {
+          "source_id": "GS_DR5_192380",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 87.05505594908676,
+          "comparison_snr": 88.00920608240823,
+          "absolute_flux_difference_sigma": 1.6434766809276624,
+          "comparison_reference_flux_ratio": 1.02690978586367,
+          "comparison_3sigma_limit_jy": 4.5783119554216277e-07
+        },
+        {
+          "source_id": "GS_DR5_187790",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 12.45851665256384,
+          "comparison_snr": 14.428204215717404,
+          "absolute_flux_difference_sigma": 1.653599033046127,
+          "comparison_reference_flux_ratio": 1.1903367523615567,
+          "comparison_3sigma_limit_jy": 6.680825417901311e-08
+        },
+        {
+          "source_id": "GS_DR5_79170",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 21.196040352508348,
+          "comparison_snr": 20.435878137030862,
+          "absolute_flux_difference_sigma": 0.3160516972321282,
+          "comparison_reference_flux_ratio": 1.0217260903190937,
+          "comparison_3sigma_limit_jy": 9.780707455607912e-08
+        },
+        {
+          "source_id": "GS_DR5_191333",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 13.85498221581951,
+          "comparison_snr": 15.10157823642723,
+          "absolute_flux_difference_sigma": 0.07217668853023924,
+          "comparison_reference_flux_ratio": 1.0070926888283427,
+          "comparison_3sigma_limit_jy": 7.070961849282904e-08
+        },
+        {
+          "source_id": "GS_DR5_189302",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 13.43717533180822,
+          "comparison_snr": 12.927498049866804,
+          "absolute_flux_difference_sigma": 0.2678612867891553,
+          "comparison_reference_flux_ratio": 0.9716676056868878,
+          "comparison_3sigma_limit_jy": 6.151738680071552e-08
+        },
+        {
+          "source_id": "GS_DR5_188785",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 66.08250261801629,
+          "comparison_snr": 59.78965834356474,
+          "absolute_flux_difference_sigma": 0.1225068529792619,
+          "comparison_reference_flux_ratio": 0.9972410385303456,
+          "comparison_3sigma_limit_jy": 3.164601364537624e-07
+        },
+        {
+          "source_id": "GS_DR5_187956",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 249.25025406580292,
+          "comparison_snr": 232.87378839898264,
+          "absolute_flux_difference_sigma": 3.2624859703153524,
+          "comparison_reference_flux_ratio": 1.019372043869795,
+          "comparison_3sigma_limit_jy": 1.7154246546774804e-06
+        },
+        {
+          "source_id": "GS_DR5_186891",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 75.39029439529618,
+          "comparison_snr": 75.80140904682781,
+          "absolute_flux_difference_sigma": 1.362781903921962,
+          "comparison_reference_flux_ratio": 1.0258240957621991,
+          "comparison_3sigma_limit_jy": 3.7463124375538316e-07
+        },
+        {
+          "source_id": "GS_DR5_190909",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 221.7859258376444,
+          "comparison_snr": 237.66379300787702,
+          "absolute_flux_difference_sigma": 2.812138274756915,
+          "comparison_reference_flux_ratio": 1.0174847099363802,
+          "comparison_3sigma_limit_jy": 1.718875135249399e-06
+        },
+        {
+          "source_id": "GS_DR5_186471",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 18.406093756280185,
+          "comparison_snr": 17.0818618895809,
+          "absolute_flux_difference_sigma": 2.2367443111433722,
+          "comparison_reference_flux_ratio": 0.8364074499984933,
+          "comparison_3sigma_limit_jy": 7.709156120306967e-08
+        },
+        {
+          "source_id": "GS_DR5_84256",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 17.88950446418072,
+          "comparison_snr": 18.482292063761783,
+          "absolute_flux_difference_sigma": 0.19696825330135154,
+          "comparison_reference_flux_ratio": 0.9847890943908544,
+          "comparison_3sigma_limit_jy": 8.517234160616225e-08
+        },
+        {
+          "source_id": "GS_DR5_191208",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 111.36091640712239,
+          "comparison_snr": 110.07369860019764,
+          "absolute_flux_difference_sigma": 3.049201081056064,
+          "comparison_reference_flux_ratio": 1.0397404887695219,
+          "comparison_3sigma_limit_jy": 5.796364488609463e-07
+        },
+        {
+          "source_id": "GS_DR5_76543",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 17.882943198414804,
+          "comparison_snr": 17.310975003961495,
+          "absolute_flux_difference_sigma": 0.9253966906469949,
+          "comparison_reference_flux_ratio": 0.9283034712559983,
+          "comparison_3sigma_limit_jy": 7.64231180605487e-08
+        },
+        {
+          "source_id": "GS_DR5_190921",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 14.47616754101433,
+          "comparison_snr": 19.344653445693076,
+          "absolute_flux_difference_sigma": 0.7577591938213711,
+          "comparison_reference_flux_ratio": 1.066984199473876,
+          "comparison_3sigma_limit_jy": 9.26443788408347e-08
+        },
+        {
+          "source_id": "GS_DR5_86808",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 15.854887863250415,
+          "comparison_snr": 15.134268800451954,
+          "absolute_flux_difference_sigma": 0.3156204511045675,
+          "comparison_reference_flux_ratio": 1.0292751938703386,
+          "comparison_3sigma_limit_jy": 7.911830436742643e-08
+        },
+        {
+          "source_id": "GS_DR5_189743",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 13.370120958604835,
+          "comparison_snr": 11.500950963908357,
+          "absolute_flux_difference_sigma": 1.5226645088089659,
+          "comparison_reference_flux_ratio": 0.8407515270881613,
+          "comparison_3sigma_limit_jy": 5.571125799749201e-08
+        },
+        {
+          "source_id": "GS_DR5_193512",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 21.62671378714643,
+          "comparison_snr": 20.226054431858067,
+          "absolute_flux_difference_sigma": 0.5215181821388715,
+          "comparison_reference_flux_ratio": 0.965343591640859,
+          "comparison_3sigma_limit_jy": 9.620583671501913e-08
+        },
+        {
+          "source_id": "GS_DR5_193082",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 14.22473948066295,
+          "comparison_snr": 11.6065916092253,
+          "absolute_flux_difference_sigma": 2.1684918683287306,
+          "comparison_reference_flux_ratio": 0.7880616235640179,
+          "comparison_3sigma_limit_jy": 5.8438819592239954e-08
+        },
+        {
+          "source_id": "GS_DR5_296853",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 43.91445293276425,
+          "comparison_snr": 41.654558562322734,
+          "absolute_flux_difference_sigma": 0.03345943956998613,
+          "comparison_reference_flux_ratio": 1.0011077833037862,
+          "comparison_3sigma_limit_jy": 1.9593639483733335e-07
+        },
+        {
+          "source_id": "GS_DR5_188958",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 17.227917202391055,
+          "comparison_snr": 16.270233963396183,
+          "absolute_flux_difference_sigma": 0.7361258905950895,
+          "comparison_reference_flux_ratio": 0.9397223555724019,
+          "comparison_3sigma_limit_jy": 7.632095248112329e-08
+        },
+        {
+          "source_id": "GS_DR5_193699",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 70.40778123413823,
+          "comparison_snr": 77.87071508551838,
+          "absolute_flux_difference_sigma": 2.143002518366599,
+          "comparison_reference_flux_ratio": 1.0418141429652965,
+          "comparison_3sigma_limit_jy": 3.7204037492048735e-07
+        },
+        {
+          "source_id": "GS_DR5_186837",
+          "status": "persistent_detection",
+          "error_scale": 1,
+          "reference_snr": 38.76710396929464,
+          "comparison_snr": 38.17813996209566,
+          "absolute_flux_difference_sigma": 1.3310997403136233,
+          "comparison_reference_flux_ratio": 1.0501961177128856,
+          "comparison_3sigma_limit_jy": 1.7765587539326118e-07
+        }
+      ],
+      "selection": "JADES-identified detections with >=10 diagonal SNR in both images"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": 361,
+      "selection_origin": "frozen_uncorrected_dropout_screen",
+      "sky_center": {
+        "ra": 53.085363314826104,
+        "dec": -27.819126809568598
+      },
+      "status": "not_persistent_at_measured_depth",
+      "reference_replay_verified": true,
+      "measurements": [
+        {
+          "product_filename": "jw01180026001_09201_00003_nrcalong_i2d.fits",
+          "sha256": "b9b84b9bd0bd8ef6140dca76163a9ac4625689024b651a25e631a6d14ce68d86",
+          "baseline_hours": 0.0,
+          "exposure_time_s": 1159.571,
+          "measurement": {
+            "flux": 295.96197064220905,
+            "background_subtracted_flux": 288.5178947431764,
+            "flux_error": 1.0053855419950708,
+            "raw_flux_unit": "MJy/sr",
+            "flux_jy": 2.753354505109461e-05,
+            "background_subtracted_flux_jy": 2.6841017566216832e-05,
+            "flux_error_jy": 9.353170629985006e-08,
+            "magnitude": 20.300410292036307,
+            "background_subtracted_magnitude": 20.328068181559967,
+            "magnitude_system": "AB",
+            "calibration_status": "calibrated",
+            "measurement_status": "measured",
+            "background_status": "measured",
+            "uncertainty_method": "err_diagonal_plus_background_mean",
+            "uncertainty_assumptions": "diagonal pixel noise; drizzle covariance, calibration and aperture corrections excluded",
+            "pixel_area_source": "celestial_wcs_pixel_corners",
+            "mean_pixel_area_sr": 9.303068564464405e-14,
+            "snr": 286.9723928714413,
+            "snr_basis": "flux_jy",
+            "background_mean": 0.256692272380437,
+            "background_std": 0.005725744679590847,
+            "coverage_fraction": 1.0,
+            "x": 27.726141351507408,
+            "y": 795.1250128070758,
+            "aperture_radius": 3.0,
+            "background_annulus_inner_radius": 6.0,
+            "background_annulus_outer_radius": 10.0,
+            "aperture_radius_arcsec": 0.18873807945080867,
+            "background_annulus_inner_radius_arcsec": 0.37747615890161734,
+            "background_annulus_outer_radius_arcsec": 0.6291269315026955,
+            "pixels_in_aperture": 29,
+            "valid_pixel_count": 29,
+            "annulus_pixel_count": 202,
+            "dataset_name": "/workspace/scratch/232075794deb/jwst/data/original_round2/jw01180026001_09201_00003_nrcalong_i2d.fits",
+            "file_path": "/workspace/scratch/232075794deb/jwst/data/original_round2/jw01180026001_09201_00003_nrcalong_i2d.fits",
+            "mean_weight": 1063.4723258182921
+          }
+        },
+        {
+          "product_filename": "jw01180026001_09201_00001_nrcalong_i2d.fits",
+          "sha256": "0fa2c443b59e5e31a08dc988193f30156390ed04e5df8e517448ebca8b767ad1",
+          "baseline_hours": 0.7485861110617407,
+          "exposure_time_s": 1159.571,
+          "measurement": {
+            "flux": 7.190967947244644,
+            "background_subtracted_flux": 0.0068297259509568775,
+            "flux_error": 0.040188956126980487,
+            "raw_flux_unit": "MJy/sr",
+            "flux_jy": 6.689807221144426e-07,
+            "background_subtracted_flux_jy": 6.353741274263419e-10,
+            "flux_error_jy": 3.738806387113063e-09,
+            "magnitude": 24.336531614858004,
+            "background_subtracted_magnitude": 31.89249180657039,
+            "magnitude_system": "AB",
+            "calibration_status": "calibrated",
+            "measurement_status": "measured",
+            "background_status": "measured",
+            "uncertainty_method": "err_diagonal_plus_background_mean",
+            "uncertainty_assumptions": "diagonal pixel noise; drizzle covariance, calibration and aperture corrections excluded",
+            "pixel_area_source": "celestial_wcs_pixel_corners",
+            "mean_pixel_area_sr": 9.303069169883865e-14,
+            "snr": 0.16994036642719793,
+            "snr_basis": "flux_jy",
+            "background_mean": 0.2565763650462031,
+            "background_std": 0.005299841213309253,
+            "coverage_fraction": 1.0,
+            "x": 22.163881051835574,
+            "y": 788.8093253451696,
+            "aperture_radius": 2.9999998995136785,
+            "background_annulus_inner_radius": 5.999999799027357,
+            "background_annulus_outer_radius": 9.999999665045594,
+            "aperture_radius_arcsec": 0.18873807945080867,
+            "background_annulus_inner_radius_arcsec": 0.37747615890161734,
+            "background_annulus_outer_radius_arcsec": 0.6291269315026955,
+            "pixels_in_aperture": 28,
+            "valid_pixel_count": 28,
+            "annulus_pixel_count": 160,
+            "dataset_name": "/workspace/scratch/232075794deb/jwst/data/original_round3/jw01180026001_09201_00001_nrcalong_i2d.fits",
+            "file_path": "/workspace/scratch/232075794deb/jwst/data/original_round3/jw01180026001_09201_00001_nrcalong_i2d.fits",
+            "mean_weight": 1067.0597534179688
+          }
+        },
+        {
+          "product_filename": "jw01180026001_09201_00002_nrcalong_i2d.fits",
+          "sha256": "57a8984ee8ff26a01de946ad385b7d5ef962acebcc71e3da299fd02e8524e5f0",
+          "baseline_hours": 0.37279972212854773,
+          "exposure_time_s": 1159.571,
+          "measurement": {
+            "flux": 5.612540036439896,
+            "background_subtracted_flux": -0.00884500753532258,
+            "flux_error": 0.035655463012207095,
+            "raw_flux_unit": "MJy/sr",
+            "flux_jy": 5.221384632915355e-07,
+            "background_subtracted_flux_jy": -8.228571401912323e-10,
+            "flux_error_jy": 3.317052269487285e-09,
+            "magnitude": 24.60560140563166,
+            "background_subtracted_magnitude": null,
+            "magnitude_system": "AB",
+            "calibration_status": "calibrated",
+            "measurement_status": "partial_coverage",
+            "background_status": "measured",
+            "uncertainty_method": "err_diagonal_plus_background_mean",
+            "uncertainty_assumptions": "diagonal pixel noise; drizzle covariance, calibration and aperture corrections excluded",
+            "pixel_area_source": "celestial_wcs_pixel_corners",
+            "mean_pixel_area_sr": 9.303068840520297e-14,
+            "snr": -0.2480687891959028,
+            "snr_basis": "flux_jy",
+            "background_mean": 0.2555175019988736,
+            "background_std": 0.005609039995515792,
+            "coverage_fraction": 0.7333333333333333,
+            "x": 16.609936728367643,
+            "y": 782.5024775303373,
+            "aperture_radius": 2.9999999498902143,
+            "background_annulus_inner_radius": 5.999999899780429,
+            "background_annulus_outer_radius": 9.99999983296738,
+            "aperture_radius_arcsec": 0.18873807945080867,
+            "background_annulus_inner_radius_arcsec": 0.37747615890161734,
+            "background_annulus_outer_radius_arcsec": 0.6291269315026955,
+            "pixels_in_aperture": 30,
+            "valid_pixel_count": 22,
+            "annulus_pixel_count": 103,
+            "dataset_name": "/workspace/scratch/232075794deb/jwst/data/original_round3/jw01180026001_09201_00002_nrcalong_i2d.fits",
+            "file_path": "/workspace/scratch/232075794deb/jwst/data/original_round3/jw01180026001_09201_00002_nrcalong_i2d.fits",
+            "mean_weight": 799.7000096061013
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "product_filename": "jw01180026001_09201_00001_nrcalong_i2d.fits",
+          "error_scale_sensitivity": [
+            {
+              "status": "single_epoch_only",
+              "error_scale": 1,
+              "reference_snr": 286.9723928714413,
+              "comparison_snr": 0.16994036642719793,
+              "absolute_flux_difference_sigma": 286.73660367877403,
+              "comparison_reference_flux_ratio": 2.3671760053763722e-05,
+              "comparison_3sigma_limit_jy": 1.185179328876553e-08
+            },
+            {
+              "status": "single_epoch_only",
+              "error_scale": 3,
+              "reference_snr": 95.65746429048042,
+              "comparison_snr": 0.05664678880906598,
+              "absolute_flux_difference_sigma": 95.57886789292468,
+              "comparison_reference_flux_ratio": 2.3671760053763722e-05,
+              "comparison_3sigma_limit_jy": 3.428463161144391e-08
+            },
+            {
+              "status": "single_epoch_only",
+              "error_scale": 10,
+              "reference_snr": 28.69723928714413,
+              "comparison_snr": 0.01699403664271979,
+              "absolute_flux_difference_sigma": 28.673660367877403,
+              "comparison_reference_flux_ratio": 2.3671760053763722e-05,
+              "comparison_3sigma_limit_jy": 1.1279956574081823e-07
+            }
+          ]
+        },
+        {
+          "product_filename": "jw01180026001_09201_00002_nrcalong_i2d.fits",
+          "error_scale_sensitivity": [
+            {
+              "status": "untestable_coverage_or_measurement"
+            },
+            {
+              "status": "untestable_coverage_or_measurement"
+            },
+            {
+              "status": "untestable_coverage_or_measurement"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": 107,
+      "selection_origin": "frozen_uncorrected_dropout_screen",
+      "sky_center": {
+        "ra": 53.08517616118868,
+        "dec": -27.834922970743794
+      },
+      "status": "not_persistent_at_measured_depth",
+      "reference_replay_verified": true,
+      "measurements": [
+        {
+          "product_filename": "jw01180026001_09201_00003_nrcalong_i2d.fits",
+          "sha256": "b9b84b9bd0bd8ef6140dca76163a9ac4625689024b651a25e631a6d14ce68d86",
+          "baseline_hours": 0.0,
+          "exposure_time_s": 1159.571,
+          "measurement": {
+            "flux": 71.93443003296852,
+            "background_subtracted_flux": 64.85908492366866,
+            "flux_error": 0.2107236873498374,
+            "raw_flux_unit": "MJy/sr",
+            "flux_jy": 6.692109706961991e-06,
+            "background_subtracted_flux_jy": 6.033885465138655e-06,
+            "flux_error_jy": 1.960377016962981e-08,
+            "magnitude": 21.83615799241644,
+            "background_subtracted_magnitude": 21.948572966870405,
+            "magnitude_system": "AB",
+            "calibration_status": "calibrated",
+            "measurement_status": "measured",
+            "background_status": "measured",
+            "uncertainty_method": "err_diagonal_plus_background_mean",
+            "uncertainty_assumptions": "diagonal pixel noise; drizzle covariance, calibration and aperture corrections excluded",
+            "pixel_area_source": "celestial_wcs_pixel_corners",
+            "mean_pixel_area_sr": 9.303069061015348e-14,
+            "snr": 307.7920937109516,
+            "snr_basis": "flux_jy",
+            "background_mean": 0.2526908967607092,
+            "background_std": 0.0039346529470725014,
+            "coverage_fraction": 1.0,
+            "x": 746.4027511772098,
+            "y": 246.8444512408746,
+            "aperture_radius": 3.0,
+            "background_annulus_inner_radius": 6.0,
+            "background_annulus_outer_radius": 10.0,
+            "aperture_radius_arcsec": 0.18873807945080867,
+            "background_annulus_inner_radius_arcsec": 0.37747615890161734,
+            "background_annulus_outer_radius_arcsec": 0.6291269315026955,
+            "pixels_in_aperture": 28,
+            "valid_pixel_count": 28,
+            "annulus_pixel_count": 202,
+            "dataset_name": "/workspace/scratch/232075794deb/jwst/data/original_round2/jw01180026001_09201_00003_nrcalong_i2d.fits",
+            "file_path": "/workspace/scratch/232075794deb/jwst/data/original_round2/jw01180026001_09201_00003_nrcalong_i2d.fits",
+            "mean_weight": 1050.1173226492745
+          }
+        },
+        {
+          "product_filename": "jw01180026001_09201_00001_nrcalong_i2d.fits",
+          "sha256": "0fa2c443b59e5e31a08dc988193f30156390ed04e5df8e517448ebca8b767ad1",
+          "baseline_hours": 0.7485861110617407,
+          "exposure_time_s": 1159.571,
+          "measurement": {
+            "flux": 7.132616579532623,
+            "background_subtracted_flux": 0.021421812731643897,
+            "flux_error": 0.041954938566362766,
+            "raw_flux_unit": "MJy/sr",
+            "flux_jy": 6.635522894750481e-07,
+            "background_subtracted_flux_jy": 1.9928861605368853e-09,
+            "flux_error_jy": 3.9030971635249885e-09,
+            "magnitude": 24.3453777423531,
+            "background_subtracted_magnitude": 30.65135939417464,
+            "magnitude_system": "AB",
+            "calibration_status": "calibrated",
+            "measurement_status": "measured",
+            "background_status": "measured",
+            "uncertainty_method": "err_diagonal_plus_background_mean",
+            "uncertainty_assumptions": "diagonal pixel noise; drizzle covariance, calibration and aperture corrections excluded",
+            "pixel_area_source": "celestial_wcs_pixel_corners",
+            "mean_pixel_area_sr": 9.303069667041594e-14,
+            "snr": 0.5105909684136734,
+            "snr_basis": "flux_jy",
+            "background_mean": 0.25397124167146357,
+            "background_std": 0.0036491753066261244,
+            "coverage_fraction": 1.0,
+            "x": 740.8414079919783,
+            "y": 240.5300148678583,
+            "aperture_radius": 2.9999998995136785,
+            "background_annulus_inner_radius": 5.999999799027357,
+            "background_annulus_outer_radius": 9.999999665045594,
+            "aperture_radius_arcsec": 0.18873807945080867,
+            "background_annulus_inner_radius_arcsec": 0.37747615890161734,
+            "background_annulus_outer_radius_arcsec": 0.6291269315026955,
+            "pixels_in_aperture": 28,
+            "valid_pixel_count": 28,
+            "annulus_pixel_count": 203,
+            "dataset_name": "/workspace/scratch/232075794deb/jwst/data/original_round3/jw01180026001_09201_00001_nrcalong_i2d.fits",
+            "file_path": "/workspace/scratch/232075794deb/jwst/data/original_round3/jw01180026001_09201_00001_nrcalong_i2d.fits",
+            "mean_weight": 1049.9029017857142
+          }
+        },
+        {
+          "product_filename": "jw01180026001_09201_00002_nrcalong_i2d.fits",
+          "sha256": "57a8984ee8ff26a01de946ad385b7d5ef962acebcc71e3da299fd02e8524e5f0",
+          "baseline_hours": 0.37279972212854773,
+          "exposure_time_s": 1159.571,
+          "measurement": {
+            "flux": 7.397293031215668,
+            "background_subtracted_flux": 0.04242015482470585,
+            "flux_error": 0.04219480403600224,
+            "raw_flux_unit": "MJy/sr",
+            "flux_jy": 6.881752998405807e-07,
+            "background_subtracted_flux_jy": 3.946376415368792e-09,
+            "flux_error_jy": 3.925411876443442e-09,
+            "magnitude": 24.305817920385145,
+            "background_subtracted_magnitude": 29.9095693547859,
+            "magnitude_system": "AB",
+            "calibration_status": "calibrated",
+            "measurement_status": "measured",
+            "background_status": "measured",
+            "uncertainty_method": "err_diagonal_plus_background_mean",
+            "uncertainty_assumptions": "diagonal pixel noise; drizzle covariance, calibration and aperture corrections excluded",
+            "pixel_area_source": "celestial_wcs_pixel_corners",
+            "mean_pixel_area_sr": 9.303069338174113e-14,
+            "snr": 1.005340723364893,
+            "snr_basis": "flux_jy",
+            "background_mean": 0.25361630608244695,
+            "background_std": 0.003492646933908786,
+            "coverage_fraction": 1.0,
+            "x": 735.2870465357701,
+            "y": 234.22259427723088,
+            "aperture_radius": 2.9999999498902143,
+            "background_annulus_inner_radius": 5.999999899780429,
+            "background_annulus_outer_radius": 9.99999983296738,
+            "aperture_radius_arcsec": 0.18873807945080867,
+            "background_annulus_inner_radius_arcsec": 0.37747615890161734,
+            "background_annulus_outer_radius_arcsec": 0.6291269315026955,
+            "pixels_in_aperture": 29,
+            "valid_pixel_count": 29,
+            "annulus_pixel_count": 202,
+            "dataset_name": "/workspace/scratch/232075794deb/jwst/data/original_round3/jw01180026001_09201_00002_nrcalong_i2d.fits",
+            "file_path": "/workspace/scratch/232075794deb/jwst/data/original_round3/jw01180026001_09201_00002_nrcalong_i2d.fits",
+            "mean_weight": 1049.6886449353449
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "product_filename": "jw01180026001_09201_00001_nrcalong_i2d.fits",
+          "error_scale_sensitivity": [
+            {
+              "status": "single_epoch_only",
+              "error_scale": 1,
+              "reference_snr": 307.7920937109516,
+              "comparison_snr": 0.5105909684136734,
+              "absolute_flux_difference_sigma": 301.7674507386344,
+              "comparison_reference_flux_ratio": 0.0003302823979757279,
+              "comparison_3sigma_limit_jy": 1.3702177651111852e-08
+            },
+            {
+              "status": "single_epoch_only",
+              "error_scale": 3,
+              "reference_snr": 102.59736457031718,
+              "comparison_snr": 0.1701969894712244,
+              "absolute_flux_difference_sigma": 100.58915024621146,
+              "comparison_reference_flux_ratio": 0.0003302823979757279,
+              "comparison_3sigma_limit_jy": 3.712076063226178e-08
+            },
+            {
+              "status": "single_epoch_only",
+              "error_scale": 10,
+              "reference_snr": 30.779209371095153,
+              "comparison_snr": 0.051059096841367335,
+              "absolute_flux_difference_sigma": 30.176745073863437,
+              "comparison_reference_flux_ratio": 0.0003302823979757279,
+              "comparison_3sigma_limit_jy": 1.1908580106628654e-07
+            }
+          ]
+        },
+        {
+          "product_filename": "jw01180026001_09201_00002_nrcalong_i2d.fits",
+          "error_scale_sensitivity": [
+            {
+              "status": "single_epoch_only",
+              "error_scale": 1,
+              "reference_snr": 307.7920937109516,
+              "comparison_snr": 1.005340723364893,
+              "absolute_flux_difference_sigma": 301.6037926519592,
+              "comparison_reference_flux_ratio": 0.0006540356853257085,
+              "comparison_3sigma_limit_jy": 1.572261204469912e-08
+            },
+            {
+              "status": "single_epoch_only",
+              "error_scale": 3,
+              "reference_snr": 102.59736457031718,
+              "comparison_snr": 0.3351135744549643,
+              "absolute_flux_difference_sigma": 100.53459755065307,
+              "comparison_reference_flux_ratio": 0.0006540356853257085,
+              "comparison_3sigma_limit_jy": 3.927508330335977e-08
+            },
+            {
+              "status": "single_epoch_only",
+              "error_scale": 10,
+              "reference_snr": 30.779209371095153,
+              "comparison_snr": 0.10053407233648928,
+              "absolute_flux_difference_sigma": 30.160379265195917,
+              "comparison_reference_flux_ratio": 0.0006540356853257085,
+              "comparison_3sigma_limit_jy": 1.2170873270867208e-07
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": 98,
+      "selection_origin": "frozen_uncorrected_dropout_screen",
+      "sky_center": {
+        "ra": 53.09237566987862,
+        "dec": -27.826863361019758
+      },
+      "status": "persistent_in_repeat",
+      "reference_replay_verified": true,
+      "measurements": [
+        {
+          "product_filename": "jw01180026001_09201_00003_nrcalong_i2d.fits",
+          "sha256": "b9b84b9bd0bd8ef6140dca76163a9ac4625689024b651a25e631a6d14ce68d86",
+          "baseline_hours": 0.0,
+          "exposure_time_s": 1159.571,
+          "measurement": {
+            "flux": 26.64080160856247,
+            "background_subtracted_flux": 17.558478656989426,
+            "flux_error": 0.07324855360805055,
+            "raw_flux_unit": "MJy/sr",
+            "flux_jy": 2.4784119315667676e-06,
+            "background_subtracted_flux_jy": 1.6334772371029156e-06,
+            "flux_error_jy": 6.814362867085232e-09,
+            "magnitude": 22.914631894282316,
+            "background_subtracted_magnitude": 23.367282905142595,
+            "magnitude_system": "AB",
+            "calibration_status": "calibrated",
+            "measurement_status": "measured",
+            "background_status": "measured",
+            "uncertainty_method": "err_diagonal_plus_background_mean",
+            "uncertainty_assumptions": "diagonal pixel noise; drizzle covariance, calibration and aperture corrections excluded",
+            "pixel_area_source": "celestial_wcs_pixel_corners",
+            "mean_pixel_area_sr": 9.30306815744216e-14,
+            "snr": 239.7109266066451,
+            "snr_basis": "flux_jy",
+            "background_mean": 0.3363823315397424,
+            "background_std": 0.07704503666901251,
+            "coverage_fraction": 1.0,
+            "x": 158.68829334528584,
+            "y": 243.06570844674923,
+            "aperture_radius": 3.0,
+            "background_annulus_inner_radius": 6.0,
+            "background_annulus_outer_radius": 10.0,
+            "aperture_radius_arcsec": 0.18873807945080867,
+            "background_annulus_inner_radius_arcsec": 0.37747615890161734,
+            "background_annulus_outer_radius_arcsec": 0.6291269315026955,
+            "pixels_in_aperture": 27,
+            "valid_pixel_count": 27,
+            "annulus_pixel_count": 201,
+            "dataset_name": "/workspace/scratch/232075794deb/jwst/data/original_round2/jw01180026001_09201_00003_nrcalong_i2d.fits",
+            "file_path": "/workspace/scratch/232075794deb/jwst/data/original_round2/jw01180026001_09201_00003_nrcalong_i2d.fits",
+            "mean_weight": 1037.0877504701969
+          }
+        },
+        {
+          "product_filename": "jw01180026001_09201_00001_nrcalong_i2d.fits",
+          "sha256": "0fa2c443b59e5e31a08dc988193f30156390ed04e5df8e517448ebca8b767ad1",
+          "baseline_hours": 0.7485861110617407,
+          "exposure_time_s": 1159.571,
+          "measurement": {
+            "flux": 28.100245773792267,
+            "background_subtracted_flux": 18.381360869354275,
+            "flux_error": 0.08040290912723139,
+            "raw_flux_unit": "MJy/sr",
+            "flux_jy": 2.6141851847029293e-06,
+            "background_subtracted_flux_jy": 1.7100306399106902e-06,
+            "flux_error_jy": 7.479937916627723e-09,
+            "magnitude": 22.8567247496281,
+            "background_subtracted_magnitude": 23.317555892171843,
+            "magnitude_system": "AB",
+            "calibration_status": "calibrated",
+            "measurement_status": "measured",
+            "background_status": "measured",
+            "uncertainty_method": "err_diagonal_plus_background_mean",
+            "uncertainty_assumptions": "diagonal pixel noise; drizzle covariance, calibration and aperture corrections excluded",
+            "pixel_area_source": "celestial_wcs_pixel_corners",
+            "mean_pixel_area_sr": 9.303068754105422e-14,
+            "snr": 228.61561940364948,
+            "snr_basis": "flux_jy",
+            "background_mean": 0.33513396222199965,
+            "background_std": 0.06873470710003776,
+            "coverage_fraction": 1.0,
+            "x": 153.1269756977141,
+            "y": 236.7502636028604,
+            "aperture_radius": 2.9999998995136785,
+            "background_annulus_inner_radius": 5.999999799027357,
+            "background_annulus_outer_radius": 9.999999665045594,
+            "aperture_radius_arcsec": 0.18873807945080867,
+            "background_annulus_inner_radius_arcsec": 0.37747615890161734,
+            "background_annulus_outer_radius_arcsec": 0.6291269315026955,
+            "pixels_in_aperture": 29,
+            "valid_pixel_count": 29,
+            "annulus_pixel_count": 201,
+            "dataset_name": "/workspace/scratch/232075794deb/jwst/data/original_round3/jw01180026001_09201_00001_nrcalong_i2d.fits",
+            "file_path": "/workspace/scratch/232075794deb/jwst/data/original_round3/jw01180026001_09201_00001_nrcalong_i2d.fits",
+            "mean_weight": 1049.016117490571
+          }
+        },
+        {
+          "product_filename": "jw01180026001_09201_00002_nrcalong_i2d.fits",
+          "sha256": "57a8984ee8ff26a01de946ad385b7d5ef962acebcc71e3da299fd02e8524e5f0",
+          "baseline_hours": 0.37279972212854773,
+          "exposure_time_s": 1159.571,
+          "measurement": {
+            "flux": 28.61312946677208,
+            "background_subtracted_flux": 18.602437537668937,
+            "flux_error": 0.07574756139538293,
+            "raw_flux_unit": "MJy/sr",
+            "flux_jy": 2.6618990106616775e-06,
+            "background_subtracted_flux_jy": 1.7305974915174735e-06,
+            "flux_error_jy": 7.046847461087593e-09,
+            "magnitude": 22.837086685217272,
+            "background_subtracted_magnitude": 23.304575447596555,
+            "magnitude_system": "AB",
+            "calibration_status": "calibrated",
+            "measurement_status": "measured",
+            "background_status": "measured",
+            "uncertainty_method": "err_diagonal_plus_background_mean",
+            "uncertainty_assumptions": "diagonal pixel noise; drizzle covariance, calibration and aperture corrections excluded",
+            "pixel_area_source": "celestial_wcs_pixel_corners",
+            "mean_pixel_area_sr": 9.303068416646786e-14,
+            "snr": 245.58463924098868,
+            "snr_basis": "flux_jy",
+            "background_mean": 0.33368973097010474,
+            "background_std": 0.0702329044463042,
+            "coverage_fraction": 1.0,
+            "x": 147.5726007740842,
+            "y": 230.44330330651553,
+            "aperture_radius": 2.9999999498902143,
+            "background_annulus_inner_radius": 5.999999899780429,
+            "background_annulus_outer_radius": 9.99999983296738,
+            "aperture_radius_arcsec": 0.18873807945080867,
+            "background_annulus_inner_radius_arcsec": 0.37747615890161734,
+            "background_annulus_outer_radius_arcsec": 0.6291269315026955,
+            "pixels_in_aperture": 30,
+            "valid_pixel_count": 30,
+            "annulus_pixel_count": 199,
+            "dataset_name": "/workspace/scratch/232075794deb/jwst/data/original_round3/jw01180026001_09201_00002_nrcalong_i2d.fits",
+            "file_path": "/workspace/scratch/232075794deb/jwst/data/original_round3/jw01180026001_09201_00002_nrcalong_i2d.fits",
+            "mean_weight": 1012.9573160807291
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "product_filename": "jw01180026001_09201_00001_nrcalong_i2d.fits",
+          "error_scale_sensitivity": [
+            {
+              "status": "persistent_detection",
+              "error_scale": 1,
+              "reference_snr": 239.7109266066451,
+              "comparison_snr": 228.61561940364948,
+              "absolute_flux_difference_sigma": 7.565651042202169,
+              "comparison_reference_flux_ratio": 1.0468653012536295,
+              "comparison_3sigma_limit_jy": 1.7324704536605735e-06
+            },
+            {
+              "status": "persistent_detection",
+              "error_scale": 3,
+              "reference_snr": 79.90364220221502,
+              "comparison_snr": 76.20520646788316,
+              "absolute_flux_difference_sigma": 2.5218836807340566,
+              "comparison_reference_flux_ratio": 1.0468653012536295,
+              "comparison_3sigma_limit_jy": 1.7773500811603397e-06
+            },
+            {
+              "status": "persistent_detection",
+              "error_scale": 10,
+              "reference_snr": 23.971092660664507,
+              "comparison_snr": 22.861561940364947,
+              "absolute_flux_difference_sigma": 0.7565651042202168,
+              "comparison_reference_flux_ratio": 1.0468653012536295,
+              "comparison_3sigma_limit_jy": 1.934428777409522e-06
+            }
+          ]
+        },
+        {
+          "product_filename": "jw01180026001_09201_00002_nrcalong_i2d.fits",
+          "error_scale_sensitivity": [
+            {
+              "status": "persistent_detection",
+              "error_scale": 1,
+              "reference_snr": 239.7109266066451,
+              "comparison_snr": 245.58463924098868,
+              "absolute_flux_difference_sigma": 9.907465723835411,
+              "comparison_reference_flux_ratio": 1.0594561419091504,
+              "comparison_3sigma_limit_jy": 1.7517380339007362e-06
+            },
+            {
+              "status": "persistent_detection",
+              "error_scale": 3,
+              "reference_snr": 79.90364220221502,
+              "comparison_snr": 81.8615464136629,
+              "absolute_flux_difference_sigma": 3.302488574611804,
+              "comparison_reference_flux_ratio": 1.0594561419091504,
+              "comparison_3sigma_limit_jy": 1.7940191186672618e-06
+            },
+            {
+              "status": "persistent_detection",
+              "error_scale": 10,
+              "reference_snr": 23.971092660664507,
+              "comparison_snr": 24.558463924098866,
+              "absolute_flux_difference_sigma": 0.9907465723835411,
+              "comparison_reference_flux_ratio": 1.0594561419091504,
+              "comparison_3sigma_limit_jy": 1.9420029153501015e-06
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": 994,
+      "selection_origin": "frozen_uncorrected_dropout_screen",
+      "sky_center": {
+        "ra": 53.075844639192944,
+        "dec": -27.83318498890854
+      },
+      "status": "not_persistent_at_measured_depth",
+      "reference_replay_verified": true,
+      "measurements": [
+        {
+          "product_filename": "jw01180026001_09201_00003_nrcalong_i2d.fits",
+          "sha256": "b9b84b9bd0bd8ef6140dca76163a9ac4625689024b651a25e631a6d14ce68d86",
+          "baseline_hours": 0.0,
+          "exposure_time_s": 1159.571,
+          "measurement": {
+            "flux": 50.227064937353134,
+            "background_subtracted_flux": 42.731599705559866,
+            "flux_error": 0.3593769548697902,
+            "raw_flux_unit": "MJy/sr",
+            "flux_jy": 4.672658909436596e-06,
+            "background_subtracted_flux_jy": 3.97535054706053e-06,
+            "flux_error_jy": 3.343308895319167e-08,
+            "magnitude": 22.226155422426377,
+            "background_subtracted_magnitude": 22.40162704518369,
+            "magnitude_system": "AB",
+            "calibration_status": "calibrated",
+            "measurement_status": "measured",
+            "background_status": "measured",
+            "uncertainty_method": "err_diagonal_plus_background_mean",
+            "uncertainty_assumptions": "diagonal pixel noise; drizzle covariance, calibration and aperture corrections excluded",
+            "pixel_area_source": "celestial_wcs_pixel_corners",
+            "mean_pixel_area_sr": 9.303069800368312e-14,
+            "snr": 118.90467412766613,
+            "snr_basis": "flux_jy",
+            "background_mean": 0.2584643183376989,
+            "background_std": 0.009132765688041996,
+            "coverage_fraction": 1.0,
+            "x": 958.3105760315214,
+            "y": 680.376874618376,
+            "aperture_radius": 3.0,
+            "background_annulus_inner_radius": 6.0,
+            "background_annulus_outer_radius": 10.0,
+            "aperture_radius_arcsec": 0.18873807945080867,
+            "background_annulus_inner_radius_arcsec": 0.37747615890161734,
+            "background_annulus_outer_radius_arcsec": 0.6291269315026955,
+            "pixels_in_aperture": 29,
+            "valid_pixel_count": 29,
+            "annulus_pixel_count": 203,
+            "dataset_name": "/workspace/scratch/232075794deb/jwst/data/original_round2/jw01180026001_09201_00003_nrcalong_i2d.fits",
+            "file_path": "/workspace/scratch/232075794deb/jwst/data/original_round2/jw01180026001_09201_00003_nrcalong_i2d.fits",
+            "mean_weight": 923.9985551505254
+          }
+        },
+        {
+          "product_filename": "jw01180026001_09201_00001_nrcalong_i2d.fits",
+          "sha256": "0fa2c443b59e5e31a08dc988193f30156390ed04e5df8e517448ebca8b767ad1",
+          "baseline_hours": 0.7485861110617407,
+          "exposure_time_s": 1159.571,
+          "measurement": {
+            "flux": 7.1388188153505325,
+            "background_subtracted_flux": -0.09478201478719761,
+            "flux_error": 0.0419766457519112,
+            "raw_flux_unit": "MJy/sr",
+            "flux_jy": 6.641293413265341e-07,
+            "background_subtracted_flux_jy": -8.817637577494427e-09,
+            "flux_error_jy": 3.905116912973377e-09,
+            "magnitude": 24.344433952649158,
+            "background_subtracted_magnitude": null,
+            "magnitude_system": "AB",
+            "calibration_status": "calibrated",
+            "measurement_status": "measured",
+            "background_status": "measured",
+            "uncertainty_method": "err_diagonal_plus_background_mean",
+            "uncertainty_assumptions": "diagonal pixel noise; drizzle covariance, calibration and aperture corrections excluded",
+            "pixel_area_source": "celestial_wcs_pixel_corners",
+            "mean_pixel_area_sr": 9.303070416884135e-14,
+            "snr": -2.2579701898811093,
+            "snr_basis": "flux_jy",
+            "background_mean": 0.2583428867906332,
+            "background_std": 0.007712126634722827,
+            "coverage_fraction": 1.0,
+            "x": 952.7484820883835,
+            "y": 674.0627876929185,
+            "aperture_radius": 2.9999998995136785,
+            "background_annulus_inner_radius": 5.999999799027357,
+            "background_annulus_outer_radius": 9.999999665045594,
+            "aperture_radius_arcsec": 0.18873807945080867,
+            "background_annulus_inner_radius_arcsec": 0.37747615890161734,
+            "background_annulus_outer_radius_arcsec": 0.6291269315026955,
+            "pixels_in_aperture": 28,
+            "valid_pixel_count": 28,
+            "annulus_pixel_count": 200,
+            "dataset_name": "/workspace/scratch/232075794deb/jwst/data/original_round3/jw01180026001_09201_00001_nrcalong_i2d.fits",
+            "file_path": "/workspace/scratch/232075794deb/jwst/data/original_round3/jw01180026001_09201_00001_nrcalong_i2d.fits",
+            "mean_weight": 1025.355484008789
+          }
+        },
+        {
+          "product_filename": "jw01180026001_09201_00002_nrcalong_i2d.fits",
+          "sha256": "57a8984ee8ff26a01de946ad385b7d5ef962acebcc71e3da299fd02e8524e5f0",
+          "baseline_hours": 0.37279972212854773,
+          "exposure_time_s": 1159.571,
+          "measurement": {
+            "flux": 7.131849080324173,
+            "background_subtracted_flux": -0.08038558733874268,
+            "flux_error": 0.04156989600048186,
+            "raw_flux_unit": "MJy/sr",
+            "flux_jy": 6.634809191009917e-07,
+            "background_subtracted_flux_jy": -7.478327536851994e-09,
+            "flux_error_jy": 3.8672765638633416e-09,
+            "magnitude": 24.34549452827622,
+            "background_subtracted_magnitude": null,
+            "magnitude_system": "AB",
+            "calibration_status": "calibrated",
+            "measurement_status": "measured",
+            "background_status": "measured",
+            "uncertainty_method": "err_diagonal_plus_background_mean",
+            "uncertainty_assumptions": "diagonal pixel noise; drizzle covariance, calibration and aperture corrections excluded",
+            "pixel_area_source": "celestial_wcs_pixel_corners",
+            "mean_pixel_area_sr": 9.303070096237791e-14,
+            "snr": -1.9337452114832139,
+            "snr_basis": "flux_jy",
+            "background_mean": 0.25757980955938986,
+            "background_std": 0.006119953325169297,
+            "coverage_fraction": 1.0,
+            "x": 947.1944641224605,
+            "y": 667.7552087047247,
+            "aperture_radius": 2.9999999498902143,
+            "background_annulus_inner_radius": 5.999999899780429,
+            "background_annulus_outer_radius": 9.99999983296738,
+            "aperture_radius_arcsec": 0.18873807945080867,
+            "background_annulus_inner_radius_arcsec": 0.37747615890161734,
+            "background_annulus_outer_radius_arcsec": 0.6291269315026955,
+            "pixels_in_aperture": 28,
+            "valid_pixel_count": 28,
+            "annulus_pixel_count": 203,
+            "dataset_name": "/workspace/scratch/232075794deb/jwst/data/original_round3/jw01180026001_09201_00002_nrcalong_i2d.fits",
+            "file_path": "/workspace/scratch/232075794deb/jwst/data/original_round3/jw01180026001_09201_00002_nrcalong_i2d.fits",
+            "mean_weight": 1063.531245640346
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "product_filename": "jw01180026001_09201_00001_nrcalong_i2d.fits",
+          "error_scale_sensitivity": [
+            {
+              "status": "single_epoch_only",
+              "error_scale": 1,
+              "reference_snr": 118.90467412766613,
+              "comparison_snr": -2.2579701898811093,
+              "absolute_flux_difference_sigma": 118.36372152532192,
+              "comparison_reference_flux_ratio": -0.002218077996672369,
+              "comparison_3sigma_limit_jy": 1.171535073892013e-08
+            },
+            {
+              "status": "single_epoch_only",
+              "error_scale": 3,
+              "reference_snr": 39.63489137588871,
+              "comparison_snr": -0.7526567299603698,
+              "absolute_flux_difference_sigma": 39.45457384177397,
+              "comparison_reference_flux_ratio": -0.002218077996672369,
+              "comparison_3sigma_limit_jy": 3.514605221676039e-08
+            },
+            {
+              "status": "single_epoch_only",
+              "error_scale": 10,
+              "reference_snr": 11.890467412766613,
+              "comparison_snr": -0.22579701898811097,
+              "absolute_flux_difference_sigma": 11.83637215253219,
+              "comparison_reference_flux_ratio": -0.002218077996672369,
+              "comparison_3sigma_limit_jy": 1.1715350738920129e-07
+            }
+          ]
+        },
+        {
+          "product_filename": "jw01180026001_09201_00002_nrcalong_i2d.fits",
+          "error_scale_sensitivity": [
+            {
+              "status": "single_epoch_only",
+              "error_scale": 1,
+              "reference_snr": 118.90467412766613,
+              "comparison_snr": -1.9337452114832139,
+              "absolute_flux_difference_sigma": 118.3392928867429,
+              "comparison_reference_flux_ratio": -0.0018811743639517901,
+              "comparison_3sigma_limit_jy": 1.1601829691590026e-08
+            },
+            {
+              "status": "single_epoch_only",
+              "error_scale": 3,
+              "reference_snr": 39.63489137588871,
+              "comparison_snr": -0.6445817371610713,
+              "absolute_flux_difference_sigma": 39.44643096224763,
+              "comparison_reference_flux_ratio": -0.0018811743639517901,
+              "comparison_3sigma_limit_jy": 3.480548907477007e-08
+            },
+            {
+              "status": "single_epoch_only",
+              "error_scale": 10,
+              "reference_snr": 11.890467412766613,
+              "comparison_snr": -0.1933745211483214,
+              "absolute_flux_difference_sigma": 11.83392928867429,
+              "comparison_reference_flux_ratio": -0.0018811743639517901,
+              "comparison_3sigma_limit_jy": 1.1601829691590024e-07
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": 138,
+      "selection_origin": "frozen_uncorrected_dropout_screen",
+      "sky_center": {
+        "ra": 53.090416975142354,
+        "dec": -27.826949511385802
+      },
+      "status": "not_persistent_at_measured_depth",
+      "reference_replay_verified": true,
+      "measurements": [
+        {
+          "product_filename": "jw01180026001_09201_00003_nrcalong_i2d.fits",
+          "sha256": "b9b84b9bd0bd8ef6140dca76163a9ac4625689024b651a25e631a6d14ce68d86",
+          "baseline_hours": 0.0,
+          "exposure_time_s": 1159.571,
+          "measurement": {
+            "flux": 38.92013594508171,
+            "background_subtracted_flux": 31.78973092228174,
+            "flux_error": 0.17461056138701642,
+            "raw_flux_unit": "MJy/sr",
+            "flux_jy": 3.6207668852667944e-06,
+            "background_subtracted_flux_jy": 2.957420425541605e-06,
+            "flux_error_jy": 1.6244140034392676e-08,
+            "magnitude": 22.50306421061341,
+            "background_subtracted_magnitude": 22.722782952230205,
+            "magnitude_system": "AB",
+            "calibration_status": "calibrated",
+            "measurement_status": "measured",
+            "background_status": "measured",
+            "uncertainty_method": "err_diagonal_plus_background_mean",
+            "uncertainty_assumptions": "diagonal pixel noise; drizzle covariance, calibration and aperture corrections excluded",
+            "pixel_area_source": "celestial_wcs_pixel_corners",
+            "mean_pixel_area_sr": 9.303068445678641e-14,
+            "snr": 182.06075663470324,
+            "snr_basis": "flux_jy",
+            "background_mean": 0.25465732224285603,
+            "background_std": 0.004751619690802074,
+            "coverage_fraction": 1.0,
+            "x": 223.51546325795084,
+            "y": 318.20892390888275,
+            "aperture_radius": 3.0,
+            "background_annulus_inner_radius": 6.0,
+            "background_annulus_outer_radius": 10.0,
+            "aperture_radius_arcsec": 0.18873807945080867,
+            "background_annulus_inner_radius_arcsec": 0.37747615890161734,
+            "background_annulus_outer_radius_arcsec": 0.6291269315026955,
+            "pixels_in_aperture": 28,
+            "valid_pixel_count": 28,
+            "annulus_pixel_count": 200,
+            "dataset_name": "/workspace/scratch/232075794deb/jwst/data/original_round2/jw01180026001_09201_00003_nrcalong_i2d.fits",
+            "file_path": "/workspace/scratch/232075794deb/jwst/data/original_round2/jw01180026001_09201_00003_nrcalong_i2d.fits",
+            "mean_weight": 1052.427943638393
+          }
+        },
+        {
+          "product_filename": "jw01180026001_09201_00001_nrcalong_i2d.fits",
+          "sha256": "0fa2c443b59e5e31a08dc988193f30156390ed04e5df8e517448ebca8b767ad1",
+          "baseline_hours": 0.7485861110617407,
+          "exposure_time_s": 1159.571,
+          "measurement": {
+            "flux": 6.86342017352581,
+            "background_subtracted_flux": -0.017770577858319037,
+            "flux_error": 0.043297694574918985,
+            "raw_flux_unit": "MJy/sr",
+            "flux_jy": 6.385087175810878e-07,
+            "background_subtracted_flux_jy": -1.6532091286767563e-09,
+            "flux_error_jy": 4.028014420988691e-09,
+            "magnitude": 24.387148544589373,
+            "background_subtracted_magnitude": null,
+            "magnitude_system": "AB",
+            "calibration_status": "calibrated",
+            "measurement_status": "measured",
+            "background_status": "measured",
+            "uncertainty_method": "err_diagonal_plus_background_mean",
+            "uncertainty_assumptions": "diagonal pixel noise; drizzle covariance, calibration and aperture corrections excluded",
+            "pixel_area_source": "celestial_wcs_pixel_corners",
+            "mean_pixel_area_sr": 9.303069044859683e-14,
+            "snr": -0.41042780782075006,
+            "snr_basis": "flux_jy",
+            "background_mean": 0.2548589167179307,
+            "background_std": 0.02471519492330386,
+            "coverage_fraction": 1.0,
+            "x": 217.95401463729138,
+            "y": 311.8935878973076,
+            "aperture_radius": 2.9999998995136785,
+            "background_annulus_inner_radius": 5.999999799027357,
+            "background_annulus_outer_radius": 9.999999665045594,
+            "aperture_radius_arcsec": 0.18873807945080867,
+            "background_annulus_inner_radius_arcsec": 0.37747615890161734,
+            "background_annulus_outer_radius_arcsec": 0.6291269315026955,
+            "pixels_in_aperture": 27,
+            "valid_pixel_count": 27,
+            "annulus_pixel_count": 200,
+            "dataset_name": "/workspace/scratch/232075794deb/jwst/data/original_round3/jw01180026001_09201_00001_nrcalong_i2d.fits",
+            "file_path": "/workspace/scratch/232075794deb/jwst/data/original_round3/jw01180026001_09201_00001_nrcalong_i2d.fits",
+            "mean_weight": 1052.1694381148727
+          }
+        },
+        {
+          "product_filename": "jw01180026001_09201_00002_nrcalong_i2d.fits",
+          "sha256": "57a8984ee8ff26a01de946ad385b7d5ef962acebcc71e3da299fd02e8524e5f0",
+          "baseline_hours": 0.37279972212854773,
+          "exposure_time_s": 1159.571,
+          "measurement": {
+            "flux": 7.5669612139463425,
+            "background_subtracted_flux": -0.06412129415504886,
+            "flux_error": 0.04181995646801371,
+            "raw_flux_unit": "MJy/sr",
+            "flux_jy": 7.039596009682651e-07,
+            "background_subtracted_flux_jy": -5.965248054468024e-09,
+            "flux_error_jy": 3.890539284595916e-09,
+            "magnitude": 24.28119628117407,
+            "background_subtracted_magnitude": null,
+            "magnitude_system": "AB",
+            "calibration_status": "calibrated",
+            "measurement_status": "measured",
+            "background_status": "measured",
+            "uncertainty_method": "err_diagonal_plus_background_mean",
+            "uncertainty_assumptions": "diagonal pixel noise; drizzle covariance, calibration and aperture corrections excluded",
+            "pixel_area_source": "celestial_wcs_pixel_corners",
+            "mean_pixel_area_sr": 9.303068709702131e-14,
+            "snr": -1.533270227622851,
+            "snr_basis": "flux_jy",
+            "background_mean": 0.25436941693671306,
+            "background_std": 0.00459227852546477,
+            "coverage_fraction": 1.0,
+            "x": 212.39969981838794,
+            "y": 305.586578182872,
+            "aperture_radius": 2.9999999498902143,
+            "background_annulus_inner_radius": 5.999999899780429,
+            "background_annulus_outer_radius": 9.99999983296738,
+            "aperture_radius_arcsec": 0.18873807945080867,
+            "background_annulus_inner_radius_arcsec": 0.37747615890161734,
+            "background_annulus_outer_radius_arcsec": 0.6291269315026955,
+            "pixels_in_aperture": 30,
+            "valid_pixel_count": 30,
+            "annulus_pixel_count": 201,
+            "dataset_name": "/workspace/scratch/232075794deb/jwst/data/original_round3/jw01180026001_09201_00002_nrcalong_i2d.fits",
+            "file_path": "/workspace/scratch/232075794deb/jwst/data/original_round3/jw01180026001_09201_00002_nrcalong_i2d.fits",
+            "mean_weight": 1051.9127766927083
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "product_filename": "jw01180026001_09201_00001_nrcalong_i2d.fits",
+          "error_scale_sensitivity": [
+            {
+              "status": "single_epoch_only",
+              "error_scale": 1,
+              "reference_snr": 182.06075663470324,
+              "comparison_snr": -0.41042780782075006,
+              "absolute_flux_difference_sigma": 176.80785480530628,
+              "comparison_reference_flux_ratio": -0.0005590037569223852,
+              "comparison_3sigma_limit_jy": 1.2084043262966072e-08
+            },
+            {
+              "status": "single_epoch_only",
+              "error_scale": 3,
+              "reference_snr": 60.686918878234415,
+              "comparison_snr": -0.13680926927358336,
+              "absolute_flux_difference_sigma": 58.93595160176876,
+              "comparison_reference_flux_ratio": -0.0005590037569223852,
+              "comparison_3sigma_limit_jy": 3.6252129788898215e-08
+            },
+            {
+              "status": "single_epoch_only",
+              "error_scale": 10,
+              "reference_snr": 18.206075663470322,
+              "comparison_snr": -0.041042780782075,
+              "absolute_flux_difference_sigma": 17.680785480530627,
+              "comparison_reference_flux_ratio": -0.0005590037569223852,
+              "comparison_3sigma_limit_jy": 1.2084043262966073e-07
+            }
+          ]
+        },
+        {
+          "product_filename": "jw01180026001_09201_00002_nrcalong_i2d.fits",
+          "error_scale_sensitivity": [
+            {
+              "status": "single_epoch_only",
+              "error_scale": 1,
+              "reference_snr": 182.06075663470324,
+              "comparison_snr": -1.533270227622851,
+              "absolute_flux_difference_sigma": 177.41059488499312,
+              "comparison_reference_flux_ratio": -0.0020170443143455274,
+              "comparison_3sigma_limit_jy": 1.1671617853787748e-08
+            },
+            {
+              "status": "single_epoch_only",
+              "error_scale": 3,
+              "reference_snr": 60.686918878234415,
+              "comparison_snr": -0.5110900758742837,
+              "absolute_flux_difference_sigma": 59.13686496166437,
+              "comparison_reference_flux_ratio": -0.0020170443143455274,
+              "comparison_3sigma_limit_jy": 3.5014853561363246e-08
+            },
+            {
+              "status": "single_epoch_only",
+              "error_scale": 10,
+              "reference_snr": 18.206075663470322,
+              "comparison_snr": -0.15332702276228508,
+              "absolute_flux_difference_sigma": 17.74105948849931,
+              "comparison_reference_flux_ratio": -0.0020170443143455274,
+              "comparison_3sigma_limit_jy": 1.167161785378775e-07
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": 333,
+      "selection_origin": "frozen_uncorrected_dropout_screen",
+      "sky_center": {
+        "ra": 53.084095408412885,
+        "dec": -27.821930570555317
+      },
+      "status": "not_persistent_at_measured_depth",
+      "reference_replay_verified": true,
+      "measurements": [
+        {
+          "product_filename": "jw01180026001_09201_00003_nrcalong_i2d.fits",
+          "sha256": "b9b84b9bd0bd8ef6140dca76163a9ac4625689024b651a25e631a6d14ce68d86",
+          "baseline_hours": 0.0,
+          "exposure_time_s": 1159.571,
+          "measurement": {
+            "flux": 13.438164725899696,
+            "background_subtracted_flux": 6.032979148301748,
+            "flux_error": 0.1662598570145789,
+            "raw_flux_unit": "MJy/sr",
+            "flux_jy": 1.2501617278394085e-06,
+            "background_subtracted_flux_jy": 5.61252208974755e-07,
+            "flux_error_jy": 1.54672691063071e-08,
+            "magnitude": 23.657650123832347,
+            "background_subtracted_magnitude": 24.527170464008083,
+            "magnitude_system": "AB",
+            "calibration_status": "calibrated",
+            "measurement_status": "measured",
+            "background_status": "measured",
+            "uncertainty_method": "err_diagonal_plus_background_mean",
+            "uncertainty_assumptions": "diagonal pixel noise; drizzle covariance, calibration and aperture corrections excluded",
+            "pixel_area_source": "celestial_wcs_pixel_corners",
+            "mean_pixel_area_sr": 9.303068932515774e-14,
+            "snr": 36.28644495141633,
+            "snr_basis": "flux_jy",
+            "background_mean": 0.25535122681372235,
+            "background_std": 0.0069653931943611325,
+            "coverage_fraction": 1.0,
+            "x": 193.7069620211289,
+            "y": 747.0854856025893,
+            "aperture_radius": 3.0,
+            "background_annulus_inner_radius": 6.0,
+            "background_annulus_outer_radius": 10.0,
+            "aperture_radius_arcsec": 0.18873807945080867,
+            "background_annulus_inner_radius_arcsec": 0.37747615890161734,
+            "background_annulus_outer_radius_arcsec": 0.6291269315026955,
+            "pixels_in_aperture": 29,
+            "valid_pixel_count": 29,
+            "annulus_pixel_count": 202,
+            "dataset_name": "/workspace/scratch/232075794deb/jwst/data/original_round2/jw01180026001_09201_00003_nrcalong_i2d.fits",
+            "file_path": "/workspace/scratch/232075794deb/jwst/data/original_round2/jw01180026001_09201_00003_nrcalong_i2d.fits",
+            "mean_weight": 1060.6745184536637
+          }
+        },
+        {
+          "product_filename": "jw01180026001_09201_00001_nrcalong_i2d.fits",
+          "sha256": "0fa2c443b59e5e31a08dc988193f30156390ed04e5df8e517448ebca8b767ad1",
+          "baseline_hours": 0.7485861110617407,
+          "exposure_time_s": 1159.571,
+          "measurement": {
+            "flux": 7.4255741238594055,
+            "background_subtracted_flux": 0.003300833642183143,
+            "flux_error": 0.04207639756060506,
+            "raw_flux_unit": "MJy/sr",
+            "flux_jy": 6.908063244749819e-07,
+            "background_subtracted_flux_jy": 3.0707884854744e-10,
+            "flux_error_jy": 3.914396524890012e-09,
+            "magnitude": 24.30167485985834,
+            "background_subtracted_magnitude": 32.68194086361909,
+            "magnitude_system": "AB",
+            "calibration_status": "calibrated",
+            "measurement_status": "measured",
+            "background_status": "measured",
+            "uncertainty_method": "err_diagonal_plus_background_mean",
+            "uncertainty_assumptions": "diagonal pixel noise; drizzle covariance, calibration and aperture corrections excluded",
+            "pixel_area_source": "celestial_wcs_pixel_corners",
+            "mean_pixel_area_sr": 9.303069539847486e-14,
+            "snr": 0.07844857990110453,
+            "snr_basis": "flux_jy",
+            "background_mean": 0.2559404582833525,
+            "background_std": 0.005128166379210399,
+            "coverage_fraction": 1.0,
+            "x": 188.14477874253976,
+            "y": 740.7700845111685,
+            "aperture_radius": 2.9999998995136785,
+            "background_annulus_inner_radius": 5.999999799027357,
+            "background_annulus_outer_radius": 9.999999665045594,
+            "aperture_radius_arcsec": 0.18873807945080867,
+            "background_annulus_inner_radius_arcsec": 0.37747615890161734,
+            "background_annulus_outer_radius_arcsec": 0.6291269315026955,
+            "pixels_in_aperture": 29,
+            "valid_pixel_count": 29,
+            "annulus_pixel_count": 199,
+            "dataset_name": "/workspace/scratch/232075794deb/jwst/data/original_round3/jw01180026001_09201_00001_nrcalong_i2d.fits",
+            "file_path": "/workspace/scratch/232075794deb/jwst/data/original_round3/jw01180026001_09201_00001_nrcalong_i2d.fits",
+            "mean_weight": 1066.5454312028555
+          }
+        },
+        {
+          "product_filename": "jw01180026001_09201_00002_nrcalong_i2d.fits",
+          "sha256": "57a8984ee8ff26a01de946ad385b7d5ef962acebcc71e3da299fd02e8524e5f0",
+          "baseline_hours": 0.37279972212854773,
+          "exposure_time_s": 1159.571,
+          "measurement": {
+            "flux": 7.916679918766022,
+            "background_subtracted_flux": 0.006941928710769929,
+            "flux_error": 0.04240347385265483,
+            "raw_flux_unit": "MJy/sr",
+            "flux_jy": 7.36494211932316e-07,
+            "background_subtracted_flux_jy": 6.458124303103941e-10,
+            "flux_error_jy": 3.944824519627981e-09,
+            "magnitude": 24.232142277043458,
+            "background_subtracted_magnitude": 31.87479962261073,
+            "magnitude_system": "AB",
+            "calibration_status": "calibrated",
+            "measurement_status": "measured",
+            "background_status": "measured",
+            "uncertainty_method": "err_diagonal_plus_background_mean",
+            "uncertainty_assumptions": "diagonal pixel noise; drizzle covariance, calibration and aperture corrections excluded",
+            "pixel_area_source": "celestial_wcs_pixel_corners",
+            "mean_pixel_area_sr": 9.30306920946272e-14,
+            "snr": 0.1637113202620475,
+            "snr_basis": "flux_jy",
+            "background_mean": 0.2551528383888791,
+            "background_std": 0.00476496934557234,
+            "coverage_fraction": 1.0,
+            "x": 182.59079971802066,
+            "y": 734.4631057920258,
+            "aperture_radius": 2.9999999498902143,
+            "background_annulus_inner_radius": 5.999999899780429,
+            "background_annulus_outer_radius": 9.99999983296738,
+            "aperture_radius_arcsec": 0.18873807945080867,
+            "background_annulus_inner_radius_arcsec": 0.37747615890161734,
+            "background_annulus_outer_radius_arcsec": 0.6291269315026955,
+            "pixels_in_aperture": 31,
+            "valid_pixel_count": 31,
+            "annulus_pixel_count": 199,
+            "dataset_name": "/workspace/scratch/232075794deb/jwst/data/original_round3/jw01180026001_09201_00002_nrcalong_i2d.fits",
+            "file_path": "/workspace/scratch/232075794deb/jwst/data/original_round3/jw01180026001_09201_00002_nrcalong_i2d.fits",
+            "mean_weight": 1066.3287707913307
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "product_filename": "jw01180026001_09201_00001_nrcalong_i2d.fits",
+          "error_scale_sensitivity": [
+            {
+              "status": "single_epoch_only",
+              "error_scale": 1,
+              "reference_snr": 36.28644495141633,
+              "comparison_snr": 0.07844857990110453,
+              "absolute_flux_difference_sigma": 35.15816722490874,
+              "comparison_reference_flux_ratio": 0.0005471316524675849,
+              "comparison_3sigma_limit_jy": 1.2050268423217476e-08
+            },
+            {
+              "status": "single_epoch_only",
+              "error_scale": 3,
+              "reference_snr": 12.09548165047211,
+              "comparison_snr": 0.02614952663370151,
+              "absolute_flux_difference_sigma": 11.719389074969579,
+              "comparison_reference_flux_ratio": 0.0005471316524675849,
+              "comparison_3sigma_limit_jy": 3.5536647572557545e-08
+            },
+            {
+              "status": "single_epoch_only",
+              "error_scale": 10,
+              "reference_snr": 3.628644495141633,
+              "comparison_snr": 0.007844857990110454,
+              "absolute_flux_difference_sigma": 3.5158167224908734,
+              "comparison_reference_flux_ratio": 0.0005471316524675849,
+              "comparison_3sigma_limit_jy": 1.1773897459524779e-07
+            }
+          ]
+        },
+        {
+          "product_filename": "jw01180026001_09201_00002_nrcalong_i2d.fits",
+          "error_scale_sensitivity": [
+            {
+              "status": "single_epoch_only",
+              "error_scale": 1,
+              "reference_snr": 36.28644495141633,
+              "comparison_snr": 0.1637113202620475,
+              "absolute_flux_difference_sigma": 35.12044380475096,
+              "comparison_reference_flux_ratio": 0.0011506634984833398,
+              "comparison_3sigma_limit_jy": 1.2480285989194336e-08
+            },
+            {
+              "status": "single_epoch_only",
+              "error_scale": 3,
+              "reference_snr": 12.09548165047211,
+              "comparison_snr": 0.05457044008734917,
+              "absolute_flux_difference_sigma": 11.706814601583654,
+              "comparison_reference_flux_ratio": 0.0011506634984833398,
+              "comparison_3sigma_limit_jy": 3.614923310696223e-08
+            },
+            {
+              "status": "single_epoch_only",
+              "error_scale": 10,
+              "reference_snr": 3.628644495141633,
+              "comparison_snr": 0.016371132026204747,
+              "absolute_flux_difference_sigma": 3.5120443804750963,
+              "comparison_reference_flux_ratio": 0.0011506634984833398,
+              "comparison_3sigma_limit_jy": 1.1899054801914984e-07
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": 336,
+      "selection_origin": "frozen_uncorrected_dropout_screen",
+      "sky_center": {
+        "ra": 53.08402497425158,
+        "dec": -27.82196121024682
+      },
+      "status": "not_persistent_at_measured_depth",
+      "reference_replay_verified": true,
+      "measurements": [
+        {
+          "product_filename": "jw01180026001_09201_00003_nrcalong_i2d.fits",
+          "sha256": "b9b84b9bd0bd8ef6140dca76163a9ac4625689024b651a25e631a6d14ce68d86",
+          "baseline_hours": 0.0,
+          "exposure_time_s": 1159.571,
+          "measurement": {
+            "flux": 10.507810540497303,
+            "background_subtracted_flux": 3.1112943024623503,
+            "flux_error": 0.16499783288554143,
+            "raw_flux_unit": "MJy/sr",
+            "flux_jy": 9.775488589780562e-07,
+            "background_subtracted_flux_jy": 2.8944585400892485e-07,
+            "flux_error_jy": 1.534986214898022e-08,
+            "magnitude": 23.92471943945448,
+            "background_subtracted_magnitude": 25.246147289381643,
+            "magnitude_system": "AB",
+            "calibration_status": "calibrated",
+            "measurement_status": "measured",
+            "background_status": "measured",
+            "uncertainty_method": "err_diagonal_plus_background_mean",
+            "uncertainty_assumptions": "diagonal pixel noise; drizzle covariance, calibration and aperture corrections excluded",
+            "pixel_area_source": "celestial_wcs_pixel_corners",
+            "mean_pixel_area_sr": 9.303068942520716e-14,
+            "snr": 18.85657676920274,
+            "snr_basis": "flux_jy",
+            "background_mean": 0.2550522840701708,
+            "background_std": 0.0053386283029754,
+            "coverage_fraction": 1.0,
+            "x": 197.28129397306748,
+            "y": 748.8186031846351,
+            "aperture_radius": 3.0,
+            "background_annulus_inner_radius": 6.0,
+            "background_annulus_outer_radius": 10.0,
+            "aperture_radius_arcsec": 0.18873807945080867,
+            "background_annulus_inner_radius_arcsec": 0.37747615890161734,
+            "background_annulus_outer_radius_arcsec": 0.6291269315026955,
+            "pixels_in_aperture": 29,
+            "valid_pixel_count": 29,
+            "annulus_pixel_count": 202,
+            "dataset_name": "/workspace/scratch/232075794deb/jwst/data/original_round2/jw01180026001_09201_00003_nrcalong_i2d.fits",
+            "file_path": "/workspace/scratch/232075794deb/jwst/data/original_round2/jw01180026001_09201_00003_nrcalong_i2d.fits",
+            "mean_weight": 994.9873809814453
+          }
+        },
+        {
+          "product_filename": "jw01180026001_09201_00001_nrcalong_i2d.fits",
+          "sha256": "0fa2c443b59e5e31a08dc988193f30156390ed04e5df8e517448ebca8b767ad1",
+          "baseline_hours": 0.7485861110617407,
+          "exposure_time_s": 1159.571,
+          "measurement": {
+            "flux": 7.155214726924896,
+            "background_subtracted_flux": -0.014360013032201024,
+            "flux_error": 0.041490487387508594,
+            "raw_flux_unit": "MJy/sr",
+            "flux_jy": 6.656546024207116e-07,
+            "background_subtracted_flux_jy": -1.3359219984328688e-09,
+            "flux_error_jy": 3.859888897872839e-09,
+            "magnitude": 24.341943274481967,
+            "background_subtracted_magnitude": null,
+            "magnitude_system": "AB",
+            "calibration_status": "calibrated",
+            "measurement_status": "measured",
+            "background_status": "measured",
+            "uncertainty_method": "err_diagonal_plus_background_mean",
+            "uncertainty_assumptions": "diagonal pixel noise; drizzle covariance, calibration and aperture corrections excluded",
+            "pixel_area_source": "celestial_wcs_pixel_corners",
+            "mean_pixel_area_sr": 9.303069548907944e-14,
+            "snr": -0.346103743858816,
+            "snr_basis": "flux_jy",
+            "background_mean": 0.25605624071275346,
+            "background_std": 0.005090626290813799,
+            "coverage_fraction": 1.0,
+            "x": 191.71910760588355,
+            "y": 742.5032081693878,
+            "aperture_radius": 2.9999998995136785,
+            "background_annulus_inner_radius": 5.999999799027357,
+            "background_annulus_outer_radius": 9.999999665045594,
+            "aperture_radius_arcsec": 0.18873807945080867,
+            "background_annulus_inner_radius_arcsec": 0.37747615890161734,
+            "background_annulus_outer_radius_arcsec": 0.6291269315026955,
+            "pixels_in_aperture": 28,
+            "valid_pixel_count": 28,
+            "annulus_pixel_count": 198,
+            "dataset_name": "/workspace/scratch/232075794deb/jwst/data/original_round3/jw01180026001_09201_00001_nrcalong_i2d.fits",
+            "file_path": "/workspace/scratch/232075794deb/jwst/data/original_round3/jw01180026001_09201_00001_nrcalong_i2d.fits",
+            "mean_weight": 1028.2751007080078
+          }
+        },
+        {
+          "product_filename": "jw01180026001_09201_00002_nrcalong_i2d.fits",
+          "sha256": "57a8984ee8ff26a01de946ad385b7d5ef962acebcc71e3da299fd02e8524e5f0",
+          "baseline_hours": 0.37279972212854773,
+          "exposure_time_s": 1159.571,
+          "measurement": {
+            "flux": 7.119769588112831,
+            "background_subtracted_flux": 0.0014818705877859273,
+            "flux_error": 0.04040447565225566,
+            "raw_flux_unit": "MJy/sr",
+            "flux_jy": 6.623570930679977e-07,
+            "background_subtracted_flux_jy": 1.378594466106831e-10,
+            "flux_error_jy": 3.758856337899095e-09,
+            "magnitude": 24.347335143634808,
+            "background_subtracted_magnitude": 33.5514742951925,
+            "magnitude_system": "AB",
+            "calibration_status": "calibrated",
+            "measurement_status": "measured",
+            "background_status": "measured",
+            "uncertainty_method": "err_diagonal_plus_background_mean",
+            "uncertainty_assumptions": "diagonal pixel noise; drizzle covariance, calibration and aperture corrections excluded",
+            "pixel_area_source": "celestial_wcs_pixel_corners",
+            "mean_pixel_area_sr": 9.303069219736931e-14,
+            "snr": 0.03667590198132863,
+            "snr_basis": "flux_jy",
+            "background_mean": 0.2542245613401802,
+            "background_std": 0.004960692425147923,
+            "coverage_fraction": 1.0,
+            "x": 186.1651300037338,
+            "y": 736.1962266800629,
+            "aperture_radius": 2.9999999498902143,
+            "background_annulus_inner_radius": 5.999999899780429,
+            "background_annulus_outer_radius": 9.99999983296738,
+            "aperture_radius_arcsec": 0.18873807945080867,
+            "background_annulus_inner_radius_arcsec": 0.37747615890161734,
+            "background_annulus_outer_radius_arcsec": 0.6291269315026955,
+            "pixels_in_aperture": 28,
+            "valid_pixel_count": 28,
+            "annulus_pixel_count": 201,
+            "dataset_name": "/workspace/scratch/232075794deb/jwst/data/original_round3/jw01180026001_09201_00002_nrcalong_i2d.fits",
+            "file_path": "/workspace/scratch/232075794deb/jwst/data/original_round3/jw01180026001_09201_00002_nrcalong_i2d.fits",
+            "mean_weight": 1066.40425327846
+          }
+        }
+      ],
+      "comparisons": [
+        {
+          "product_filename": "jw01180026001_09201_00001_nrcalong_i2d.fits",
+          "error_scale_sensitivity": [
+            {
+              "status": "single_epoch_only",
+              "error_scale": 1,
+              "reference_snr": 18.85657676920274,
+              "comparison_snr": -0.346103743858816,
+              "absolute_flux_difference_sigma": 18.37166741394289,
+              "comparison_reference_flux_ratio": -0.004615446999602477,
+              "comparison_3sigma_limit_jy": 1.1579666693618518e-08
+            },
+            {
+              "status": "single_epoch_only",
+              "error_scale": 3,
+              "reference_snr": 6.285525589734247,
+              "comparison_snr": -0.11536791461960533,
+              "absolute_flux_difference_sigma": 6.123889137980964,
+              "comparison_reference_flux_ratio": -0.004615446999602477,
+              "comparison_3sigma_limit_jy": 3.473900008085555e-08
+            },
+            {
+              "status": "inconclusive_depth",
+              "error_scale": 10,
+              "reference_snr": 1.885657676920274,
+              "comparison_snr": -0.034610374385881604,
+              "absolute_flux_difference_sigma": 1.8371667413942887,
+              "comparison_reference_flux_ratio": -0.004615446999602477,
+              "comparison_3sigma_limit_jy": 1.1579666693618517e-07
+            }
+          ]
+        },
+        {
+          "product_filename": "jw01180026001_09201_00002_nrcalong_i2d.fits",
+          "error_scale_sensitivity": [
+            {
+              "status": "single_epoch_only",
+              "error_scale": 1,
+              "reference_snr": 18.85657676920274,
+              "comparison_snr": 0.03667590198132863,
+              "absolute_flux_difference_sigma": 18.306699844560704,
+              "comparison_reference_flux_ratio": 0.00047628751526851133,
+              "comparison_3sigma_limit_jy": 1.1414428460307968e-08
+            },
+            {
+              "status": "single_epoch_only",
+              "error_scale": 3,
+              "reference_snr": 6.285525589734247,
+              "comparison_snr": 0.012225300660442877,
+              "absolute_flux_difference_sigma": 6.102233281520236,
+              "comparison_reference_flux_ratio": 0.00047628751526851133,
+              "comparison_3sigma_limit_jy": 3.396756648770254e-08
+            },
+            {
+              "status": "inconclusive_depth",
+              "error_scale": 10,
+              "reference_snr": 1.885657676920274,
+              "comparison_snr": 0.003667590198132863,
+              "absolute_flux_difference_sigma": 1.8306699844560705,
+              "comparison_reference_flux_ratio": 0.00047628751526851133,
+              "comparison_3sigma_limit_jy": 1.1290354958358354e-07
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Single-epoch-only does not establish detector-artifact identity or exclude variability.",
+    "Diagonal errors omit covariance/PSF/calibration effects; 3x/10x are sensitivity assumptions.",
+    "No redshift, abundance, new-galaxy identity or population-purity estimate established.",
+    "Partial apertures are untestable, never zero-flux nondetections."
+  ]
+}

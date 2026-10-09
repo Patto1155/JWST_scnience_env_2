@@ -51,6 +51,27 @@ def test_coherent_cached_native_original_cannot_replace_pinned_inventory(monkeyp
         batch.acquire_batch(tmp_path / "spectrum", out)
 
 
+def test_coherent_wrong_fresh_download_rejected_before_extraction(monkeypatch, tmp_path):
+    product = {"filename": "exposure.fits", "url": "https://example.org/a", "source_slits_filename": "actual_metadata"}
+    inventory = tmp_path / "inventory.json"
+    inventory.write_text(json.dumps({"source_spectrum_sha256": "spectrum", "products": [{**product,
+        "expected_bytes": 7, "sha256": hashlib.sha256(b"correct").hexdigest()}]}))
+    monkeypatch.setattr(batch, "INVENTORY", inventory)
+    monkeypatch.setattr(batch, "exposure_products", lambda _: ([product], {"sha256": "spectrum"}))
+    monkeypatch.setattr(batch, "probe_product", lambda *a, **kw: {"status": 200, "content_length": "7"})
+
+    def wrong_download(product, path, **kwargs):
+        path.write_bytes(b"altered")
+        receipt = {"bytes": 7, "sha256": hashlib.sha256(b"altered").hexdigest()}
+        path.with_name(path.name + ".provenance.json").write_text(json.dumps(receipt))
+        return receipt
+
+    monkeypatch.setattr(batch, "fetch_product", wrong_download)
+    monkeypatch.setattr(batch, "extract_native_slit", lambda *a, **kw: pytest.fail("Wrong input must not reach extraction"))
+    with pytest.raises(ValueError, match="Retrieved native original differs from pinned inventory"):
+        batch.acquire_batch(tmp_path / "spectrum", tmp_path / "output")
+
+
 def test_primary_table_parser_avoids_duplicate_mathml_annotation():
     parser = TableParser()
     parser.feed('<table id="S3.T2.2.1"><tr><td><math alttext="10^{-5}"><mi>10</mi><annotation>10^{-5}</annotation></math></td></tr></table>')
@@ -70,3 +91,10 @@ def test_numeric_benchmarks_have_full_model_denominator_and_pinned_bytes():
     emp = next(r for r in rows if r["scenario"] == "Top-heavy above remnant" and r["metallicity_source"] == "10^{-5}")
     assert float(emp["bracket_NC_lower"]) == pytest.approx(.76)
     assert float(emp["bracket_NC_upper"]) == pytest.approx(.76)
+    assert float(emp["log_NC_lower"]) == pytest.approx(.13)
+    assert float(emp["mom_bracket_NC_lower"]) == pytest.approx(.73)
+    popiii = next(r for r in rows if r["scenario"] == "Salpeter above remnant" and r["metallicity_source"] == "0")
+    assert float(popiii["log_NC_lower"]) == pytest.approx(-.35)
+    assert float(popiii["bracket_NC_lower"]) == pytest.approx(.28)
+    assert float(popiii["mom_bracket_NC_lower"]) == pytest.approx(.25)
+    assert float(popiii["mom_bracket_NC_upper"]) < .27

@@ -8,7 +8,8 @@ calibrated exposures, resolving the original data-volume dependency directly.
 
 All nine exposure names derive from the identity-verified DAWN spectrum's
 SLITS metadata, then each official archive `_cal` product was HEAD-verified
-before streaming. Each original is 51,563,520 bytes: **464,135,040 bytes total**
+before streaming. Originals range from 51,560,640 to 51,575,040 bytes:
+**464,135,040 bytes total**
 (442.63 MiB), including the original already acquired in the earlier pilot.
 The additional eight consumed 412,571,520 bytes. The full literature/data input
 acquisition across both batches totals **470,088,034 bytes**, counting originals
@@ -66,10 +67,14 @@ give log(N/C)⊙=−0.63, which is an explicit conversion assumption.
 
 For its Z=10⁻⁵, top-heavy, above-remnant scenario, log(N/O)=−0.38 and
 log(C/O)=−0.51 give **[N/C]=+0.76 dex**. For its Z=0, Salpeter,
-above-remnant scenario, −0.55 and −0.20 give **[N/C]=+0.28 dex**. These
-scenario benchmarks lie within the broad quoted MoM-z14 v2 [N/C] interval
-0.27–1.19 dex under that solar conversion. They show why a broad nitrogen
-enhancement alone cannot uniquely identify supermassive-star pollution.
+above-remnant scenario, −0.55 and −0.20 give **[N/C]=+0.28 dex**. These are
+the source paper's solar convention; the raw log(N/C) values are +0.13 and
+−0.35 respectively. MoM's quoted interval uses solar log(N/C)=−0.60, so the
+same models on that common basis give **+0.73 and +0.25 dex**. The former
+lies inside the quoted 0.27–1.19 dex marginal interval; the latter lies just
+below its lower endpoint. That endpoint screen is not a statistical exclusion
+or a joint-posterior model comparison. A broad nitrogen enhancement cannot
+uniquely identify supermassive-star pollution.
 
 This is a conditional comparison of model predictions, not statistical model
 selection. Table 2's dilution factors are constrained to GN-z11's oxygen range

@@ -219,3 +219,8 @@ capabilities exposed to research agents.
 * [Bounded follow-up data and actual deep-reference comparison](FOLLOWUP_DATA.md).
 
 * [Nine native MoM exposures and rotating-star benchmarks](MOM_NATIVE_BATCH.md).
+
+The next merged-baseline experiment is documented in
+[ORIGINAL_REPEAT_TEST.md](ORIGINAL_REPEAT_TEST.md): additional original dithers,
+matched-quadrant SMACS acquisition, covered same-filter persistence tests and
+explicit additional conditional proposals.

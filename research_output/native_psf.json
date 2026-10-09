@@ -1,0 +1,563 @@
+{
+  "experiment": "native-grid modeled point-source response",
+  "model_not_observed": true,
+  "radius_arcsec": 0.18873807945080867,
+  "annulus_radii_arcsec": [
+    0.37747615890161734,
+    0.6291269315026955
+  ],
+  "catalog_sha256": "aa0724bb51373a23caf87ffe5d84606077fa46213ea51e7741ff357d9dbd199d",
+  "images_manifest_sha256": "aed2f5074d9dce254110c66d75f4a3cca56f2cf9a8cb1fb0ef74c23bbe498006",
+  "phase_grid_pixels": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      -0.4,
+      -0.4
+    ],
+    [
+      -0.4,
+      0
+    ],
+    [
+      -0.4,
+      0.4
+    ],
+    [
+      0,
+      -0.4
+    ],
+    [
+      0,
+      0.4
+    ],
+    [
+      0.4,
+      -0.4
+    ],
+    [
+      0.4,
+      0
+    ],
+    [
+      0.4,
+      0.4
+    ]
+  ],
+  "filters": [
+    {
+      "filter": "F090W",
+      "provenance": {
+        "filter": "F090W",
+        "sha256": "9f32676b77f9067594d5773027f0e01c86686c9121d005967fd8925ed265b1d4",
+        "bytes": 1800000,
+        "requested_url": "https://slate.ucsc.edu/~brant/jades-dr5/GOODS-S/hlsp/images/submosaics/hlsp_jades_jwst_nircam_jw011800-deep_f090w_v5.0_mpsf.fits",
+        "retrieved_utc": "2026-10-09T07:13:19.574001+00:00",
+        "input_scale_arcsec": 0.029994758999999965,
+        "template_shape": [
+          669,
+          669
+        ],
+        "original_template_sum": 0.9998399699802665,
+        "normalization": "finite supplied template; unmodeled outer wings are unknown",
+        "origin": "official JADES DR5 modeled PSF, not observed-star measurement"
+      },
+      "image_sha256": "738c9dad0ace88e469fb8edd0daa5ba8b86034f8c5392e0229093026cdcaaba3",
+      "image_filename": "jw01180026001_03201_00003_nrca1_i2d.fits",
+      "native_pixel_scale_arcsec": 0.0312285081023676,
+      "nine_sampled_phases": [
+        {
+          "phase": [
+            0.0,
+            0.0
+          ],
+          "encircled_energy": 0.8265016296208069,
+          "annulus_energy": 0.03873748224754209,
+          "annulus_subtraction_response": 0.005364381732809138,
+          "net_response": 0.8211372478879977,
+          "total_flux_multiplier": 1.2178232111282803,
+          "n_aperture_pixels": 113,
+          "n_annulus_pixels": 816
+        },
+        {
+          "phase": [
+            -0.4,
+            -0.4
+          ],
+          "encircled_energy": 0.827714902348321,
+          "annulus_energy": 0.03944916936092306,
+          "annulus_subtraction_response": 0.0055602717446744535,
+          "net_response": 0.8221546306036466,
+          "total_flux_multiplier": 1.2163162047336216,
+          "n_aperture_pixels": 116,
+          "n_annulus_pixels": 823
+        },
+        {
+          "phase": [
+            -0.4,
+            0
+          ],
+          "encircled_energy": 0.8261580087612813,
+          "annulus_energy": 0.03897892378894136,
+          "annulus_subtraction_response": 0.005458964756682206,
+          "net_response": 0.8206990440045991,
+          "total_flux_multiplier": 1.2184734554100396,
+          "n_aperture_pixels": 114,
+          "n_annulus_pixels": 814
+        },
+        {
+          "phase": [
+            -0.4,
+            0.4
+          ],
+          "encircled_energy": 0.827970912672838,
+          "annulus_energy": 0.03944379169897912,
+          "annulus_subtraction_response": 0.0055595137753117595,
+          "net_response": 0.8224113988975262,
+          "total_flux_multiplier": 1.2159364538727673,
+          "n_aperture_pixels": 116,
+          "n_annulus_pixels": 823
+        },
+        {
+          "phase": [
+            0,
+            -0.4
+          ],
+          "encircled_energy": 0.8268581919838591,
+          "annulus_energy": 0.03901440174296574,
+          "annulus_subtraction_response": 0.005463933413634023,
+          "net_response": 0.8213942585702251,
+          "total_flux_multiplier": 1.2174421595552278,
+          "n_aperture_pixels": 114,
+          "n_annulus_pixels": 814
+        },
+        {
+          "phase": [
+            0,
+            0.4
+          ],
+          "encircled_energy": 0.8266807519203568,
+          "annulus_energy": 0.0388345395044437,
+          "annulus_subtraction_response": 0.005438743861801698,
+          "net_response": 0.8212420080585552,
+          "total_flux_multiplier": 1.217667861832878,
+          "n_aperture_pixels": 114,
+          "n_annulus_pixels": 814
+        },
+        {
+          "phase": [
+            0.4,
+            -0.4
+          ],
+          "encircled_energy": 0.8273793696544246,
+          "annulus_energy": 0.03944440162633271,
+          "annulus_subtraction_response": 0.005559599743201209,
+          "net_response": 0.8218197699112234,
+          "total_flux_multiplier": 1.2168118079077417,
+          "n_aperture_pixels": 116,
+          "n_annulus_pixels": 823
+        },
+        {
+          "phase": [
+            0.4,
+            0
+          ],
+          "encircled_energy": 0.8263204853218727,
+          "annulus_energy": 0.03895272511266801,
+          "annulus_subtraction_response": 0.005455295654599696,
+          "net_response": 0.8208651896672731,
+          "total_flux_multiplier": 1.2182268326000483,
+          "n_aperture_pixels": 114,
+          "n_annulus_pixels": 814
+        },
+        {
+          "phase": [
+            0.4,
+            0.4
+          ],
+          "encircled_energy": 0.8275159039331046,
+          "annulus_energy": 0.0394562288210591,
+          "annulus_subtraction_response": 0.005561266759711853,
+          "net_response": 0.8219546371733928,
+          "total_flux_multiplier": 1.2166121520268864,
+          "n_aperture_pixels": 116,
+          "n_annulus_pixels": 823
+        }
+      ],
+      "source_count": 272,
+      "actual_source_response_quantiles_0_16_50_84_100": [
+        0.8188250363657879,
+        0.8209236439052398,
+        0.8216030822133724,
+        0.8221637756642328,
+        0.8226473575015658
+      ],
+      "actual_source_multiplier_quantiles_0_16_50_84_100": [
+        1.2155876887966501,
+        1.2163026754948658,
+        1.217132727061715,
+        1.2181400882096918,
+        1.2212621202184115
+      ]
+    },
+    {
+      "filter": "F200W",
+      "provenance": {
+        "filter": "F200W",
+        "sha256": "1d6f1ae676990b9fc0b27bd5d53e5e6291663230dc10b503e16bbcf8b62de9cd",
+        "bytes": 1800000,
+        "requested_url": "https://slate.ucsc.edu/~brant/jades-dr5/GOODS-S/hlsp/images/submosaics/hlsp_jades_jwst_nircam_jw011800-deep_f200w_v5.0_mpsf.fits",
+        "retrieved_utc": "2026-10-09T07:13:19.638247+00:00",
+        "input_scale_arcsec": 0.029994758999999965,
+        "template_shape": [
+          669,
+          669
+        ],
+        "original_template_sum": 0.9997512863246064,
+        "normalization": "finite supplied template; unmodeled outer wings are unknown",
+        "origin": "official JADES DR5 modeled PSF, not observed-star measurement"
+      },
+      "image_sha256": "075becbdd9bcc845ffacadc520b97da82f7d02a0c62bd5e9ddb7b1864deccd74",
+      "image_filename": "jw01180026001_13201_00003_nrca1_i2d.fits",
+      "native_pixel_scale_arcsec": 0.03122919843918293,
+      "nine_sampled_phases": [
+        {
+          "phase": [
+            0.0,
+            0.0
+          ],
+          "encircled_energy": 0.8338709921830111,
+          "annulus_energy": 0.03889169862984547,
+          "annulus_subtraction_response": 0.0053857376779075225,
+          "net_response": 0.8284852545051036,
+          "total_flux_multiplier": 1.2070220858636174,
+          "n_aperture_pixels": 113,
+          "n_annulus_pixels": 816
+        },
+        {
+          "phase": [
+            -0.4,
+            -0.4
+          ],
+          "encircled_energy": 0.8341200710832938,
+          "annulus_energy": 0.03921996547064426,
+          "annulus_subtraction_response": 0.005527965971561038,
+          "net_response": 0.8285921051117328,
+          "total_flux_multiplier": 1.2068664350418274,
+          "n_aperture_pixels": 116,
+          "n_annulus_pixels": 823
+        },
+        {
+          "phase": [
+            -0.4,
+            0
+          ],
+          "encircled_energy": 0.8333530310389068,
+          "annulus_energy": 0.039022211541398885,
+          "annulus_subtraction_response": 0.005465027169188542,
+          "net_response": 0.8278880038697183,
+          "total_flux_multiplier": 1.2078928494262449,
+          "n_aperture_pixels": 114,
+          "n_annulus_pixels": 814
+        },
+        {
+          "phase": [
+            -0.4,
+            0.4
+          ],
+          "encircled_energy": 0.8340755868539,
+          "annulus_energy": 0.039357420688294495,
+          "annulus_subtraction_response": 0.005547339975506879,
+          "net_response": 0.8285282468783932,
+          "total_flux_multiplier": 1.2069594534255805,
+          "n_aperture_pixels": 116,
+          "n_annulus_pixels": 823
+        },
+        {
+          "phase": [
+            0,
+            -0.4
+          ],
+          "encircled_energy": 0.8338588862503848,
+          "annulus_energy": 0.03875316534570841,
+          "annulus_subtraction_response": 0.005427347480848599,
+          "net_response": 0.8284315387695362,
+          "total_flux_multiplier": 1.2071003495174668,
+          "n_aperture_pixels": 114,
+          "n_annulus_pixels": 814
+        },
+        {
+          "phase": [
+            0,
+            0.4
+          ],
+          "encircled_energy": 0.8339670421080121,
+          "annulus_energy": 0.03877352997882662,
+          "annulus_subtraction_response": 0.005430199530204219,
+          "net_response": 0.8285368425778079,
+          "total_flux_multiplier": 1.20694693176072,
+          "n_aperture_pixels": 114,
+          "n_annulus_pixels": 814
+        },
+        {
+          "phase": [
+            0.4,
+            -0.4
+          ],
+          "encircled_energy": 0.8340398350051764,
+          "annulus_energy": 0.039171773193341204,
+          "annulus_subtraction_response": 0.005521173378405322,
+          "net_response": 0.8285186616267711,
+          "total_flux_multiplier": 1.2069734169131816,
+          "n_aperture_pixels": 116,
+          "n_annulus_pixels": 823
+        },
+        {
+          "phase": [
+            0.4,
+            0
+          ],
+          "encircled_energy": 0.8332868488368732,
+          "annulus_energy": 0.039086264911617576,
+          "annulus_subtraction_response": 0.005473997788604919,
+          "net_response": 0.8278128510482683,
+          "total_flux_multiplier": 1.2080025077331058,
+          "n_aperture_pixels": 114,
+          "n_annulus_pixels": 814
+        },
+        {
+          "phase": [
+            0.4,
+            0.4
+          ],
+          "encircled_energy": 0.8339930244259139,
+          "annulus_energy": 0.03928080260674375,
+          "annulus_subtraction_response": 0.005536540829140067,
+          "net_response": 0.8284564835967739,
+          "total_flux_multiplier": 1.207064003722276,
+          "n_aperture_pixels": 116,
+          "n_annulus_pixels": 823
+        }
+      ],
+      "source_count": 254,
+      "actual_source_response_quantiles_0_16_50_84_100": [
+        0.8277353548791214,
+        0.8281761856235201,
+        0.8284805067975514,
+        0.828680673555987,
+        0.8290421111598518
+      ],
+      "actual_source_multiplier_quantiles_0_16_50_84_100": [
+        1.2062113450437077,
+        1.2067374465356773,
+        1.2070290028514803,
+        1.2074725371178712,
+        1.208115606160178
+      ]
+    },
+    {
+      "filter": "F444W",
+      "provenance": {
+        "filter": "F444W",
+        "sha256": "b74abf676cd57f272ada642a27fbb6a8fcb6e0181407357784d812c7f5fd6db2",
+        "bytes": 1800000,
+        "requested_url": "https://slate.ucsc.edu/~brant/jades-dr5/GOODS-S/hlsp/images/submosaics/hlsp_jades_jwst_nircam_jw011800-deep_f444wa_v5.0_mpsf.fits",
+        "retrieved_utc": "2026-10-09T06:38:33.765039+00:00",
+        "input_scale_arcsec": 0.029994758999999965,
+        "template_shape": [
+          669,
+          669
+        ],
+        "original_template_sum": 0.9995488712944012,
+        "normalization": "finite supplied template; unmodeled outer wings are unknown",
+        "origin": "official JADES DR5 modeled PSF, not observed-star measurement"
+      },
+      "image_sha256": "b9b84b9bd0bd8ef6140dca76163a9ac4625689024b651a25e631a6d14ce68d86",
+      "image_filename": "jw01180026001_09201_00003_nrcalong_i2d.fits",
+      "native_pixel_scale_arcsec": 0.06291269315026955,
+      "nine_sampled_phases": [
+        {
+          "phase": [
+            0.0,
+            0.0
+          ],
+          "encircled_energy": 0.7081622535667307,
+          "annulus_energy": 0.04536590197239225,
+          "annulus_subtraction_response": 0.006325053640381611,
+          "net_response": 0.7018371999263491,
+          "total_flux_multiplier": 1.4248318557422437,
+          "n_aperture_pixels": 29,
+          "n_annulus_pixels": 208
+        },
+        {
+          "phase": [
+            -0.4,
+            -0.4
+          ],
+          "encircled_energy": 0.7122177305135163,
+          "annulus_energy": 0.04338632392429767,
+          "annulus_subtraction_response": 0.006443513454103615,
+          "net_response": 0.7057742170594127,
+          "total_flux_multiplier": 1.4168837226251623,
+          "n_aperture_pixels": 30,
+          "n_annulus_pixels": 202
+        },
+        {
+          "phase": [
+            -0.4,
+            0
+          ],
+          "encircled_energy": 0.6983928672485392,
+          "annulus_energy": 0.04481778493842485,
+          "annulus_subtraction_response": 0.00582631204199523,
+          "net_response": 0.692566555206544,
+          "total_flux_multiplier": 1.4439045496526615,
+          "n_aperture_pixels": 26,
+          "n_annulus_pixels": 200
+        },
+        {
+          "phase": [
+            -0.4,
+            0.4
+          ],
+          "encircled_energy": 0.711716854633021,
+          "annulus_energy": 0.04354212976573151,
+          "annulus_subtraction_response": 0.00646665293550468,
+          "net_response": 0.7052502016975164,
+          "total_flux_multiplier": 1.4179364962860408,
+          "n_aperture_pixels": 30,
+          "n_annulus_pixels": 202
+        },
+        {
+          "phase": [
+            0,
+            -0.4
+          ],
+          "encircled_energy": 0.6986220802402905,
+          "annulus_energy": 0.04381506131817033,
+          "annulus_subtraction_response": 0.005695957971362143,
+          "net_response": 0.6929261222689284,
+          "total_flux_multiplier": 1.4431552915418804,
+          "n_aperture_pixels": 26,
+          "n_annulus_pixels": 200
+        },
+        {
+          "phase": [
+            0,
+            0.4
+          ],
+          "encircled_energy": 0.6985280213282254,
+          "annulus_energy": 0.04384721831854956,
+          "annulus_subtraction_response": 0.005700138381411443,
+          "net_response": 0.692827882946814,
+          "total_flux_multiplier": 1.4433599233141237,
+          "n_aperture_pixels": 26,
+          "n_annulus_pixels": 200
+        },
+        {
+          "phase": [
+            0.4,
+            -0.4
+          ],
+          "encircled_energy": 0.7116927703281896,
+          "annulus_energy": 0.043586721208117594,
+          "annulus_subtraction_response": 0.006473275426948158,
+          "net_response": 0.7052194949012414,
+          "total_flux_multiplier": 1.4179982363363899,
+          "n_aperture_pixels": 30,
+          "n_annulus_pixels": 202
+        },
+        {
+          "phase": [
+            0.4,
+            0
+          ],
+          "encircled_energy": 0.6983734973388129,
+          "annulus_energy": 0.044691297813437544,
+          "annulus_subtraction_response": 0.005809868715746881,
+          "net_response": 0.6925636286230661,
+          "total_flux_multiplier": 1.4439106511962945,
+          "n_aperture_pixels": 26,
+          "n_annulus_pixels": 200
+        },
+        {
+          "phase": [
+            0.4,
+            0.4
+          ],
+          "encircled_energy": 0.712414504487297,
+          "annulus_energy": 0.04346693205477005,
+          "annulus_subtraction_response": 0.006455484958629215,
+          "net_response": 0.7059590195286678,
+          "total_flux_multiplier": 1.416512817794506,
+          "n_aperture_pixels": 30,
+          "n_annulus_pixels": 202
+        }
+      ],
+      "source_count": 1127,
+      "actual_source_response_quantiles_0_16_50_84_100": [
+        0.5814417802102918,
+        0.696099593179824,
+        0.6999500950694014,
+        0.7031734241322241,
+        0.7114914296023257
+      ],
+      "actual_source_multiplier_quantiles_0_16_50_84_100": [
+        1.4054983073498588,
+        1.4221242806989949,
+        1.4286732826300252,
+        1.4365760442869309,
+        1.7198626483950414
+      ]
+    }
+  ],
+  "differential_color_summary": [
+    {
+      "bands": [
+        "F090W",
+        "F444W"
+      ],
+      "matched_sources": 272,
+      "aperture_minus_total_color_quantiles_0_16_50_84_100": [
+        -0.1999046171373144,
+        -0.17951510153893582,
+        -0.17335367273690716,
+        -0.1682704396589574,
+        -0.15576139545638654
+      ],
+      "correction": "subtract modeled bias only under unresolved-source assumption"
+    },
+    {
+      "bands": [
+        "F200W",
+        "F444W"
+      ],
+      "matched_sources": 254,
+      "aperture_minus_total_color_quantiles_0_16_50_84_100": [
+        -0.20812561674219016,
+        -0.1887852136526926,
+        -0.18269822364339616,
+        -0.17758097288015734,
+        -0.1649460931917085
+      ],
+      "correction": "subtract modeled bias only under unresolved-source assumption"
+    }
+  ],
+  "limits": [
+    "JADES modeled PSFs are not observed stars in these original exposures.",
+    "Input/output PSF axes are aligned; rotation/field/visit/template uncertainty remains.",
+    "Nine sampled phases give sensitivity values, not a confidence interval or exhaustive bound.",
+    "Output grid locally isotropic; spherical WCS masks and Jy conversion are evaluated per source.",
+    "No galaxy morphology/extension model: these values must not silently correct extended-source colors.",
+    "Current stored astrometry is used; any independently measured offset must be resolved separately.",
+    "Finite supplied template defines total; unknown more distant wings are not measured."
+  ],
+  "source_phase_csv": {
+    "path": "research_output/native_psf_source_phases.csv",
+    "rows": 1653,
+    "sha256": "4d2e81eb1d292fd26cff6d139309550a419eda7e8c1a151744dbe65a349259cc"
+  },
+  "code_sha256": "d485f4773524c9e977cbf36abe2ef9333eb384bd8b911c95f5e41007a826b2a6"
+}

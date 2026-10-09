@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "source": "MAST original full single-exposure i2d",
+  "parent_manifest": "original_images.json",
+  "parent_manifest_sha256": "0d6bde60df04720c0239ba2ff6995a1347206187ff50cb083d12c1a7366a1c8f",
+  "historical_archive_complete": false,
+  "selected_total_bytes": 1436869440,
+  "images": [
+    {
+      "id": "jw01180026001_09201_00003_nrcalong_i2d.fits",
+      "product_filename": "jw01180026001_09201_00003_nrcalong_i2d.fits",
+      "filter": "F444W",
+      "target": "GS-MEDIUM-HST",
+      "kind": "science_image",
+      "product_kind": "original_full_i2d",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw01180026001_09201_00003_nrcalong_i2d.fits",
+      "expected_bytes": 120257280,
+      "sha256": "b9b84b9bd0bd8ef6140dca76163a9ac4625689024b651a25e631a6d14ce68d86"
+    },
+    {
+      "id": "jw01180026001_03201_00003_nrca1_i2d.fits",
+      "product_filename": "jw01180026001_03201_00003_nrca1_i2d.fits",
+      "filter": "F090W",
+      "target": "GS-MEDIUM-HST",
+      "kind": "science_image",
+      "product_kind": "original_full_i2d",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw01180026001_03201_00003_nrca1_i2d.fits",
+      "expected_bytes": 118704960,
+      "sha256": "738c9dad0ace88e469fb8edd0daa5ba8b86034f8c5392e0229093026cdcaaba3"
+    },
+    {
+      "id": "jw01180026001_13201_00003_nrca1_i2d.fits",
+      "product_filename": "jw01180026001_13201_00003_nrca1_i2d.fits",
+      "filter": "F200W",
+      "target": "GS-MEDIUM-HST",
+      "kind": "science_image",
+      "product_kind": "original_full_i2d",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw01180026001_13201_00003_nrca1_i2d.fits",
+      "expected_bytes": 118704960,
+      "sha256": "075becbdd9bcc845ffacadc520b97da82f7d02a0c62bd5e9ddb7b1864deccd74"
+    },
+    {
+      "id": "jw01180025001_13201_00002_nrcalong_i2d.fits",
+      "product_filename": "jw01180025001_13201_00002_nrcalong_i2d.fits",
+      "filter": "F277W",
+      "target": "GS-MEDIUM-HST",
+      "kind": "science_image",
+      "product_kind": "original_full_i2d",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw01180025001_13201_00002_nrcalong_i2d.fits",
+      "expected_bytes": 120257280,
+      "sha256": "808570fb67066245053f94f4ac25362a6292ca5e9743248b8eba55c03e204e9a"
+    },
+    {
+      "id": "jw01180026001_07201_00001_nrcalong_i2d.fits",
+      "product_filename": "jw01180026001_07201_00001_nrcalong_i2d.fits",
+      "filter": "F277W",
+      "target": "GS-MEDIUM-HST",
+      "kind": "science_image",
+      "product_kind": "original_full_i2d",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw01180026001_07201_00001_nrcalong_i2d.fits",
+      "expected_bytes": 120257280,
+      "sha256": "a2a89cafcf057706e84a80ecbdf6e1f6a2fe2391e30759bed72d8b5dfa5adaa7"
+    },
+    {
+      "id": "jw01180025001_05201_00003_nrcalong_i2d.fits",
+      "product_filename": "jw01180025001_05201_00003_nrcalong_i2d.fits",
+      "filter": "F356W",
+      "target": "GS-MEDIUM-HST",
+      "kind": "science_image",
+      "product_kind": "original_full_i2d",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw01180025001_05201_00003_nrcalong_i2d.fits",
+      "expected_bytes": 120257280,
+      "sha256": "78649e799b781d69105083ea4092f4ca084b8c7201152802cb4b8ee159cd0635"
+    },
+    {
+      "id": "jw01180026001_05201_00003_nrcalong_i2d.fits",
+      "product_filename": "jw01180026001_05201_00003_nrcalong_i2d.fits",
+      "filter": "F356W",
+      "target": "GS-MEDIUM-HST",
+      "kind": "science_image",
+      "product_kind": "original_full_i2d",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw01180026001_05201_00003_nrcalong_i2d.fits",
+      "expected_bytes": 120257280,
+      "sha256": "c9dfda39ac28e93899b1e159d6c7f7c4129e8abc0c38b812eab01732bd4b00ab"
+    },
+    {
+      "id": "jw02736001001_02105_00004_nrcalong_i2d.fits",
+      "product_filename": "jw02736001001_02105_00004_nrcalong_i2d.fits",
+      "filter": "F444W",
+      "target": "SMACS-J0723.3-7327",
+      "kind": "science_image",
+      "product_kind": "original_full_i2d",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw02736001001_02105_00004_nrcalong_i2d.fits",
+      "expected_bytes": 120254400,
+      "sha256": "0226bb8a980aa2770bb6e57e0f91812bbbe247358f0ae80611a788a5827e1b92"
+    },
+    {
+      "id": "jw02736001001_02101_00004_nrca1_i2d.fits",
+      "product_filename": "jw02736001001_02101_00004_nrca1_i2d.fits",
+      "filter": "F090W",
+      "target": "SMACS-J0723.3-7327",
+      "kind": "science_image",
+      "product_kind": "original_full_i2d",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw02736001001_02101_00004_nrca1_i2d.fits",
+      "expected_bytes": 118702080,
+      "sha256": "fb3929f8470dd5e012e66fd19868e32d9154f0a7a7b572fc6c66a0fd2badaefc"
+    },
+    {
+      "id": "jw02736001001_02105_00004_nrca4_i2d.fits",
+      "product_filename": "jw02736001001_02105_00004_nrca4_i2d.fits",
+      "filter": "F200W",
+      "target": "SMACS-J0723.3-7327",
+      "kind": "science_image",
+      "product_kind": "original_full_i2d",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw02736001001_02105_00004_nrca4_i2d.fits",
+      "expected_bytes": 118702080,
+      "sha256": "9121dd419ca62b343e0d7649155962d6976da9ddb856a54b0a902fde8109a793"
+    },
+    {
+      "id": "jw01180026001_09201_00001_nrcalong_i2d.fits",
+      "product_filename": "jw01180026001_09201_00001_nrcalong_i2d.fits",
+      "filter": "F444W",
+      "target": "GS-MEDIUM-HST",
+      "kind": "science_image",
+      "product_kind": "original_full_i2d",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw01180026001_09201_00001_nrcalong_i2d.fits",
+      "expected_bytes": 120257280,
+      "sha256": "0fa2c443b59e5e31a08dc988193f30156390ed04e5df8e517448ebca8b767ad1"
+    },
+    {
+      "id": "jw01180026001_09201_00002_nrcalong_i2d.fits",
+      "product_filename": "jw01180026001_09201_00002_nrcalong_i2d.fits",
+      "filter": "F444W",
+      "target": "GS-MEDIUM-HST",
+      "kind": "science_image",
+      "product_kind": "original_full_i2d",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw01180026001_09201_00002_nrcalong_i2d.fits",
+      "expected_bytes": 120257280,
+      "sha256": "57a8984ee8ff26a01de946ad385b7d5ef962acebcc71e3da299fd02e8524e5f0"
+    }
+  ]
+}

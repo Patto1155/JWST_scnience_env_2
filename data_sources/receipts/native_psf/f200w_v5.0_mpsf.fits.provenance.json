@@ -1,0 +1,12 @@
+{
+  "requested_url": "https://slate.ucsc.edu/~brant/jades-dr5/GOODS-S/hlsp/images/submosaics/hlsp_jades_jwst_nircam_jw011800-deep_f200w_v5.0_mpsf.fits",
+  "resolved_url": "https://slate.ucsc.edu/~brant/jades-dr5/GOODS-S/hlsp/images/submosaics/hlsp_jades_jwst_nircam_jw011800-deep_f200w_v5.0_mpsf.fits",
+  "retrieved_utc": "2026-10-09T07:13:19.638247+00:00",
+  "bytes": 1800000,
+  "sha256": "1d6f1ae676990b9fc0b27bd5d53e5e6291663230dc10b503e16bbcf8b62de9cd",
+  "content_type": null,
+  "etag": "\"1b7740-6490153ae7100\"",
+  "last_modified": "Thu, 22 Jan 2026 22:11:48 GMT",
+  "product_id": "f200w",
+  "max_bytes": 5242880
+}
