@@ -1,0 +1,575 @@
+{
+  "schema_version": 2,
+  "pyneb_version": "1.1.32",
+  "emissivity_definition": "j_line / (n_e n_ion), erg cm^3 s^-1",
+  "atomic_files": [
+    {
+      "ion": "N4",
+      "filename": "n_iv_atom_WFD96.dat",
+      "bytes": 581,
+      "sha256": "52c5db33fe42acf6501cddd44eea9d8bef18bc2ea9ba103556a5c17ffca6323f",
+      "sources": [
+        "N4: All transition probabilities: Wiese, Fuhr & Deters, 1996, JPCRD, Monograph 7, 269: ",
+        "N4: Energy levels: \n    Ref. 7288 of NIST 2014 (try this: http://physics.nist.gov/cgi-bin/ASBib1/get_ASBib_ref.cgi?db=el&db_id=7288&comment_code=&element=N&spectr_charge=4&): ",
+        "N4: All collision strengths: Ramsbotton, Berrington Hibbert & Bell, 1994, Phys Scr., 50: "
+      ]
+    },
+    {
+      "ion": "N4",
+      "filename": "n_iv_coll_RBHB94.dat",
+      "bytes": 1470,
+      "sha256": "90700c6d32c807b6acc0c975892335751ce1de545398e34549fc2563f2973339",
+      "sources": [
+        "N4: All transition probabilities: Wiese, Fuhr & Deters, 1996, JPCRD, Monograph 7, 269: ",
+        "N4: Energy levels: \n    Ref. 7288 of NIST 2014 (try this: http://physics.nist.gov/cgi-bin/ASBib1/get_ASBib_ref.cgi?db=el&db_id=7288&comment_code=&element=N&spectr_charge=4&): ",
+        "N4: All collision strengths: Ramsbotton, Berrington Hibbert & Bell, 1994, Phys Scr., 50: "
+      ]
+    },
+    {
+      "ion": "N3",
+      "filename": "n_iii_atom_GMZ98.dat",
+      "bytes": 1129,
+      "sha256": "8ae8cbd0c38753c3f5617973bff58b611d3392438e7bdef3fa3d10af328b32bc",
+      "sources": [
+        "N3: All A-values: Galavis, Mendoza & Zeippen, 1998, A&A Supp., 131, 499: ",
+        "N3: Energy levels: \n    Ref. 7288 of NIST 2014 (try this: http://physics.nist.gov/cgi-bin/ASBib1/get_ASBib_ref.cgi?db=el&db_id=7288&comment_code=&element=N&spectr_charge=3&): ",
+        "N3: All collision strengths: Blum & Pradhan, 1992, ApJ Suppl., 80, 425: "
+      ]
+    },
+    {
+      "ion": "N3",
+      "filename": "n_iii_coll_BP92.dat",
+      "bytes": 8148,
+      "sha256": "977024d9a257c2bfdb42cae3e6e7e6a9c974d1b510af9ccab595416869430c5c",
+      "sources": [
+        "N3: All A-values: Galavis, Mendoza & Zeippen, 1998, A&A Supp., 131, 499: ",
+        "N3: Energy levels: \n    Ref. 7288 of NIST 2014 (try this: http://physics.nist.gov/cgi-bin/ASBib1/get_ASBib_ref.cgi?db=el&db_id=7288&comment_code=&element=N&spectr_charge=3&): ",
+        "N3: All collision strengths: Blum & Pradhan, 1992, ApJ Suppl., 80, 425: "
+      ]
+    },
+    {
+      "ion": "C4",
+      "filename": "c_iv_atom_WFD96.dat",
+      "bytes": 333,
+      "sha256": "fa5d2c45bf74d8b38759e88503d265e4be7bdd5350dd27b017c2ac865f64f752",
+      "sources": [
+        "C4: All A-values: Wiese, Fuhr and Deters 1996, JPCRD, Monograph 7, p. 127: ",
+        "C4: Energy levels: \n    Ref. 7288 of NIST 2014 (try this: http://physics.nist.gov/cgi-bin/ASBib1/get_ASBib_ref.cgi?db=el&db_id=7288&comment_code=&element=C&spectr_charge=4&): ",
+        "C4: Collision strengths: Aggarwal and Keenan 2004, Phys Scripta, 69, 385: "
+      ]
+    },
+    {
+      "ion": "C4",
+      "filename": "c_iv_coll_AK04.dat",
+      "bytes": 335,
+      "sha256": "be270bc39589b41a20f7c9331e38dc6ac9ed35a6e06cb96cb1ab72d070dcd1a3",
+      "sources": [
+        "C4: All A-values: Wiese, Fuhr and Deters 1996, JPCRD, Monograph 7, p. 127: ",
+        "C4: Energy levels: \n    Ref. 7288 of NIST 2014 (try this: http://physics.nist.gov/cgi-bin/ASBib1/get_ASBib_ref.cgi?db=el&db_id=7288&comment_code=&element=C&spectr_charge=4&): ",
+        "C4: Collision strengths: Aggarwal and Keenan 2004, Phys Scripta, 69, 385: "
+      ]
+    },
+    {
+      "ion": "C3",
+      "filename": "c_iii_atom_G83-NS78-WFD96.dat",
+      "bytes": 732,
+      "sha256": "078f5127fef00ad336cc885650ff3a73ad2755155ab51da0fa3045f54fb61d80",
+      "sources": [
+        "C3: A-value for 4-2: Glass, 1983, Astrophy. Space Sci., 92, 307: ",
+        "C3: A-values of 3-2: Nussbaumer & Storey, 1978, A&A, 64, 139: ",
+        "C3: All other A-values: Wiese, Fuhr & Deters, 1996, JPCRD, Monograph No. 7, 96: ",
+        "C3: Energy levels: \n    Ref.  of NIST 2014 (try this: http://physics.nist.gov/cgi-bin/ASBib1/get_ASBib_ref.cgi?db=el&db_id=&comment_code=&element=C&spectr_charge=3&): ",
+        "C3: All collision strengths: Berrington, Burke, Dufton & Kingston, 1985, ADNDT, 33, 195: "
+      ]
+    },
+    {
+      "ion": "C3",
+      "filename": "c_iii_coll_Bal85.dat",
+      "bytes": 1249,
+      "sha256": "c19b8c06a3ea9257db83c8aef0f4c8415684b2748c9587479a7a428c5cae96ab",
+      "sources": [
+        "C3: A-value for 4-2: Glass, 1983, Astrophy. Space Sci., 92, 307: ",
+        "C3: A-values of 3-2: Nussbaumer & Storey, 1978, A&A, 64, 139: ",
+        "C3: All other A-values: Wiese, Fuhr & Deters, 1996, JPCRD, Monograph No. 7, 96: ",
+        "C3: Energy levels: \n    Ref.  of NIST 2014 (try this: http://physics.nist.gov/cgi-bin/ASBib1/get_ASBib_ref.cgi?db=el&db_id=&comment_code=&element=C&spectr_charge=3&): ",
+        "C3: All collision strengths: Berrington, Burke, Dufton & Kingston, 1985, ADNDT, 33, 195: "
+      ]
+    },
+    {
+      "ion": "O3",
+      "filename": "o_iii_atom_FFT04-SZ00.dat",
+      "bytes": 808,
+      "sha256": "f802375827fa91d68ff6cc6f0cb811397d5358811207ae90b52996820a612ff1",
+      "sources": [
+        "O3: A values for 4-2 and 4-3: Storey and Zeippen 2000, 312, 813: ",
+        "O3: A-values from all levels: Froese Fischer et al 2004, ADNDT 87, 1: ",
+        "O3: Energy levels: \n    Ref. 7288 of NIST 2014 (try this: http://physics.nist.gov/cgi-bin/ASBib1/get_ASBib_ref.cgi?db=el&db_id=7288&comment_code=&element=O&spectr_charge=3&): ",
+        "O3: Collision strengths: Tayal, S. S. & Zatsarinny, O. 2017, Astrophysical Journal, 850, 147: "
+      ]
+    },
+    {
+      "ion": "O3",
+      "filename": "o_iii_coll_TZ17.dat",
+      "bytes": 1989841,
+      "sha256": "a2857d2f4cd211ed263039beb9dcc6dbf7dbe0e8fe665529236798c3eb9e53b7",
+      "sources": [
+        "O3: A values for 4-2 and 4-3: Storey and Zeippen 2000, 312, 813: ",
+        "O3: A-values from all levels: Froese Fischer et al 2004, ADNDT 87, 1: ",
+        "O3: Energy levels: \n    Ref. 7288 of NIST 2014 (try this: http://physics.nist.gov/cgi-bin/ASBib1/get_ASBib_ref.cgi?db=el&db_id=7288&comment_code=&element=O&spectr_charge=3&): ",
+        "O3: Collision strengths: Tayal, S. S. & Zatsarinny, O. 2017, Astrophysical Journal, 850, 147: "
+      ]
+    },
+    {
+      "ion": "He2",
+      "filename": "he_ii_rec_SH95.fits",
+      "bytes": 1480320,
+      "sha256": "798f38646be61942eb01820c3c6be7f0a3f8eaa1744c7f1acacfb19cd048e7a8",
+      "sources": [
+        "He2: Atomic data:Storey and Hummer 1995",
+        "Ref.  of NIST 2014 (try this: http://physics.nist.gov/cgi-bin/ASBib1/get_ASBib_ref.cgi?db=el&db_id=&comment_code=&element=He&spectr_charge=2&",
+        "Ref. 3620c107 of NIST 2014 (try this: http://physics.nist.gov/cgi-bin/ASBib1/get_ASBib_ref.cgi?db=el&db_id=3620c107&comment_code=&element=He&spectr_charge=2&"
+      ]
+    }
+  ],
+  "transitions": {
+    "NIV": [
+      {
+        "requested_vacuum_A": 1483.321,
+        "upper_level": 4,
+        "lower_level": 1,
+        "atomic_wavelength_A": 1483.3207992725795
+      },
+      {
+        "requested_vacuum_A": 1486.496,
+        "upper_level": 3,
+        "lower_level": 1,
+        "atomic_wavelength_A": 1486.495927744406
+      }
+    ],
+    "CIV": [
+      {
+        "requested_vacuum_A": 1548.204,
+        "upper_level": 3,
+        "lower_level": 1,
+        "atomic_wavelength_A": 1548.186531706086
+      },
+      {
+        "requested_vacuum_A": 1550.781,
+        "upper_level": 2,
+        "lower_level": 1,
+        "atomic_wavelength_A": 1550.7722845977296
+      }
+    ],
+    "NIII": [
+      {
+        "requested_vacuum_A": 1746.823,
+        "upper_level": 4,
+        "lower_level": 1,
+        "atomic_wavelength_A": 1746.8225298182606
+      },
+      {
+        "requested_vacuum_A": 1748.646,
+        "upper_level": 3,
+        "lower_level": 1,
+        "atomic_wavelength_A": 1748.646110748753
+      },
+      {
+        "requested_vacuum_A": 1749.674,
+        "upper_level": 5,
+        "lower_level": 2,
+        "atomic_wavelength_A": 1749.674123194555
+      },
+      {
+        "requested_vacuum_A": 1752.16,
+        "upper_level": 4,
+        "lower_level": 2,
+        "atomic_wavelength_A": 1752.1604137902034
+      },
+      {
+        "requested_vacuum_A": 1753.995,
+        "upper_level": 3,
+        "lower_level": 2,
+        "atomic_wavelength_A": 1753.995162481342
+      }
+    ],
+    "CIII": [
+      {
+        "requested_vacuum_A": 1906.683,
+        "upper_level": 4,
+        "lower_level": 1,
+        "atomic_wavelength_A": 1906.6827514423578
+      },
+      {
+        "requested_vacuum_A": 1908.734,
+        "upper_level": 3,
+        "lower_level": 1,
+        "atomic_wavelength_A": 1908.7338890930175
+      }
+    ],
+    "OIII": [
+      {
+        "requested_vacuum_A": 1660.809,
+        "upper_level": 6,
+        "lower_level": 2,
+        "atomic_wavelength_A": 1660.8092140100816
+      },
+      {
+        "requested_vacuum_A": 1666.15,
+        "upper_level": 6,
+        "lower_level": 3,
+        "atomic_wavelength_A": 1666.1497159481319
+      }
+    ]
+  },
+  "records": [
+    {
+      "temperature_K": 5000,
+      "electron_density_cm3": 100,
+      "emissivity_erg_cm3_s": {
+        "NIV": 1.0201899105389197e-26,
+        "CIV": 5.839150800054083e-26,
+        "NIII": 3.155234488397746e-26,
+        "CIII": 3.6899184176033594e-25,
+        "OIII": 4.479004709836167e-27,
+        "HeII": 1.745e-23
+      }
+    },
+    {
+      "temperature_K": 5000,
+      "electron_density_cm3": 1000,
+      "emissivity_erg_cm3_s": {
+        "NIV": 1.0190571981556759e-26,
+        "CIV": 5.83915080005056e-26,
+        "NIII": 3.1977801899322827e-26,
+        "CIII": 3.68414431802774e-25,
+        "OIII": 5.01595124749004e-27,
+        "HeII": 1.745e-23
+      }
+    },
+    {
+      "temperature_K": 5000,
+      "electron_density_cm3": 10000,
+      "emissivity_erg_cm3_s": {
+        "NIV": 1.00896377426786e-26,
+        "CIV": 5.839150800015352e-26,
+        "NIII": 3.21848315781253e-26,
+        "CIII": 3.6350490949452215e-25,
+        "OIII": 5.2352188015766424e-27,
+        "HeII": 1.746e-23
+      }
+    },
+    {
+      "temperature_K": 5000,
+      "electron_density_cm3": 100000,
+      "emissivity_erg_cm3_s": {
+        "NIV": 9.632659176039074e-27,
+        "CIV": 5.83915079966326e-26,
+        "NIII": 3.221350076386403e-26,
+        "CIII": 3.4553884765284724e-25,
+        "OIII": 5.26793369811831e-27,
+        "HeII": 1.751e-23
+      }
+    },
+    {
+      "temperature_K": 7500,
+      "electron_density_cm3": 100,
+      "emissivity_erg_cm3_s": {
+        "NIV": 4.297457919951111e-24,
+        "CIV": 2.33061609343114e-23,
+        "NIII": 6.476843246342083e-24,
+        "CIII": 4.598668347320681e-23,
+        "OIII": 1.248611528524831e-24,
+        "HeII": 1.251e-23
+      }
+    },
+    {
+      "temperature_K": 7500,
+      "electron_density_cm3": 1000,
+      "emissivity_erg_cm3_s": {
+        "NIV": 4.294280506595215e-24,
+        "CIV": 2.3306160934299928e-23,
+        "NIII": 6.534728810849546e-24,
+        "CIII": 4.592756729881595e-23,
+        "OIII": 1.3942631071760558e-24,
+        "HeII": 1.25e-23
+      }
+    },
+    {
+      "temperature_K": 7500,
+      "electron_density_cm3": 10000,
+      "emissivity_erg_cm3_s": {
+        "NIV": 4.265055792942077e-24,
+        "CIV": 2.3306160934185185e-23,
+        "NIII": 6.566203589124097e-24,
+        "CIII": 4.541073116277589e-23,
+        "OIII": 1.4579063629419884e-24,
+        "HeII": 1.25e-23
+      }
+    },
+    {
+      "temperature_K": 7500,
+      "electron_density_cm3": 100000,
+      "emissivity_erg_cm3_s": {
+        "NIV": 4.108390821274201e-24,
+        "CIV": 2.3306160933037738e-23,
+        "NIII": 6.570749599136892e-24,
+        "CIII": 4.3274280873987647e-23,
+        "OIII": 1.4660844571191176e-24,
+        "HeII": 1.25e-23
+      }
+    },
+    {
+      "temperature_K": 10000,
+      "electron_density_cm3": 100,
+      "emissivity_erg_cm3_s": {
+        "NIV": 8.354700948512483e-23,
+        "CIV": 4.462606588135188e-22,
+        "NIII": 9.046095306336835e-23,
+        "CIII": 4.920118933113368e-22,
+        "OIII": 2.0485465267541396e-23,
+        "HeII": 9.815e-24
+      }
+    },
+    {
+      "temperature_K": 10000,
+      "electron_density_cm3": 1000,
+      "emissivity_erg_cm3_s": {
+        "NIV": 8.349923957983704e-23,
+        "CIV": 4.462606588133285e-22,
+        "NIII": 9.106650078637102e-23,
+        "CIII": 4.9145874353270955e-22,
+        "OIII": 2.2877648241070402e-23,
+        "HeII": 9.81e-24
+      }
+    },
+    {
+      "temperature_K": 10000,
+      "electron_density_cm3": 10000,
+      "emissivity_erg_cm3_s": {
+        "NIV": 8.305258405975082e-23,
+        "CIV": 4.462606588114251e-22,
+        "NIII": 9.142054555802866e-23,
+        "CIII": 4.865403387153344e-22,
+        "OIII": 2.3989877586355882e-23,
+        "HeII": 9.804e-24
+      }
+    },
+    {
+      "temperature_K": 10000,
+      "electron_density_cm3": 100000,
+      "emissivity_erg_cm3_s": {
+        "NIV": 8.041062197528895e-23,
+        "CIV": 4.462606587923928e-22,
+        "NIII": 9.147318803465386e-23,
+        "CIII": 4.645071252300286e-22,
+        "OIII": 2.4093222838220672e-23,
+        "HeII": 9.799e-24
+      }
+    },
+    {
+      "temperature_K": 15000,
+      "electron_density_cm3": 100,
+      "emissivity_erg_cm3_s": {
+        "NIV": 1.4570405661024591e-21,
+        "CIV": 8.056247310716184e-21,
+        "NIII": 1.2078328770443953e-21,
+        "CIII": 4.9436705741135504e-21,
+        "OIII": 3.0845441135268774e-22,
+        "HeII": 6.915e-24
+      }
+    },
+    {
+      "temperature_K": 15000,
+      "electron_density_cm3": 1000,
+      "emissivity_erg_cm3_s": {
+        "NIV": 1.4564529006285921e-21,
+        "CIV": 8.056247310713362e-21,
+        "NIII": 1.2131661134906622e-21,
+        "CIII": 4.9387561923658784e-21,
+        "OIII": 3.4114961070290415e-22,
+        "HeII": 6.912e-24
+      }
+    },
+    {
+      "temperature_K": 15000,
+      "electron_density_cm3": 10000,
+      "emissivity_erg_cm3_s": {
+        "NIV": 1.4508579740034141e-21,
+        "CIV": 8.056247310685145e-21,
+        "NIII": 1.216604625091699e-21,
+        "CIII": 4.8943741934164364e-21,
+        "OIII": 3.5740138064626263e-22,
+        "HeII": 6.906e-24
+      }
+    },
+    {
+      "temperature_K": 15000,
+      "electron_density_cm3": 100000,
+      "emissivity_erg_cm3_s": {
+        "NIV": 1.413588976164483e-21,
+        "CIV": 8.056247310402965e-21,
+        "NIII": 1.2171371270665782e-21,
+        "CIII": 4.6791721841764824e-21,
+        "OIII": 3.5738154713521174e-22,
+        "HeII": 6.9e-24
+      }
+    },
+    {
+      "temperature_K": 20000,
+      "electron_density_cm3": 100,
+      "emissivity_erg_cm3_s": {
+        "NIV": 5.761784731395241e-21,
+        "CIV": 3.281007213646979e-20,
+        "NIII": 4.231564807237852e-21,
+        "CIII": 1.4944700302970417e-20,
+        "OIII": 1.1627223687581714e-21,
+        "HeII": 5.36e-24
+      }
+    },
+    {
+      "temperature_K": 20000,
+      "electron_density_cm3": 1000,
+      "emissivity_erg_cm3_s": {
+        "NIV": 5.759819630942511e-21,
+        "CIV": 3.281007213645961e-20,
+        "NIII": 4.245582208559562e-21,
+        "CIII": 1.49293182793478e-20,
+        "OIII": 1.2762242569403348e-21,
+        "HeII": 5.357e-24
+      }
+    },
+    {
+      "temperature_K": 20000,
+      "electron_density_cm3": 10000,
+      "emissivity_erg_cm3_s": {
+        "NIV": 5.7409599573963264e-21,
+        "CIV": 3.2810072136357824e-20,
+        "NIII": 4.255230883587514e-21,
+        "CIII": 1.478967768988825e-20,
+        "OIII": 1.3353875478357267e-21,
+        "HeII": 5.353e-24
+      }
+    },
+    {
+      "temperature_K": 20000,
+      "electron_density_cm3": 100000,
+      "emissivity_erg_cm3_s": {
+        "NIV": 5.6079562553762736e-21,
+        "CIV": 3.2810072135340007e-20,
+        "NIII": 4.256767276819409e-21,
+        "CIII": 1.4093551690024154e-20,
+        "OIII": 1.330195627882924e-21,
+        "HeII": 5.347e-24
+      }
+    },
+    {
+      "temperature_K": 25000,
+      "electron_density_cm3": 100,
+      "emissivity_erg_cm3_s": {
+        "NIV": 1.2616590445251138e-20,
+        "CIV": 7.506061028667903e-20,
+        "NIII": 8.709486548104726e-21,
+        "CIII": 2.837379879177577e-20,
+        "OIII": 2.4636719817577693e-21,
+        "HeII": 4.3682e-24
+      }
+    },
+    {
+      "temperature_K": 25000,
+      "electron_density_cm3": 1000,
+      "emissivity_erg_cm3_s": {
+        "NIV": 1.2612519178454972e-20,
+        "CIV": 7.506061028665708e-20,
+        "NIII": 8.732776926142676e-21,
+        "CIII": 2.8341028949976044e-20,
+        "OIII": 2.6932921758651726e-21,
+        "HeII": 4.3657999999999996e-24
+      }
+    },
+    {
+      "temperature_K": 25000,
+      "electron_density_cm3": 10000,
+      "emissivity_erg_cm3_s": {
+        "NIV": 1.2573258732301814e-20,
+        "CIV": 7.506061028643762e-20,
+        "NIII": 8.749541094389608e-21,
+        "CIII": 2.804277824428349e-20,
+        "OIII": 2.8164674027409764e-21,
+        "HeII": 4.363e-24
+      }
+    },
+    {
+      "temperature_K": 25000,
+      "electron_density_cm3": 100000,
+      "emissivity_erg_cm3_s": {
+        "NIV": 1.2286402309560827e-20,
+        "CIV": 7.506061028424292e-20,
+        "NIII": 8.752260508776347e-21,
+        "CIII": 2.6535242071819512e-20,
+        "OIII": 2.7975478708041567e-21,
+        "HeII": 4.3582e-24
+      }
+    },
+    {
+      "temperature_K": 30000,
+      "electron_density_cm3": 100,
+      "emissivity_erg_cm3_s": {
+        "NIV": 2.059379679441716e-20,
+        "CIV": 1.2834183963059573e-19,
+        "NIII": 1.3782609518865852e-20,
+        "CIII": 4.2745334874269743e-20,
+        "OIII": 3.992305705003785e-21,
+        "HeII": 3.707e-24
+      }
+    },
+    {
+      "temperature_K": 30000,
+      "electron_density_cm3": 1000,
+      "emissivity_erg_cm3_s": {
+        "NIV": 2.05871000050953e-20,
+        "CIV": 1.283418396305592e-19,
+        "NIII": 1.3813242949383766e-20,
+        "CIII": 4.268926851703068e-20,
+        "OIII": 4.348451407623601e-21,
+        "HeII": 3.705e-24
+      }
+    },
+    {
+      "temperature_K": 30000,
+      "electron_density_cm3": 10000,
+      "emissivity_erg_cm3_s": {
+        "NIV": 2.052230812184946e-20,
+        "CIV": 1.2834183963019358e-19,
+        "NIII": 1.3835953587887782e-20,
+        "CIII": 4.217821105200643e-20,
+        "OIII": 4.543900941483576e-21,
+        "HeII": 3.703e-24
+      }
+    },
+    {
+      "temperature_K": 30000,
+      "electron_density_cm3": 100000,
+      "emissivity_erg_cm3_s": {
+        "NIV": 2.0036908615811096e-20,
+        "CIV": 1.283418396265376e-19,
+        "NIII": 1.383967775867875e-20,
+        "CIII": 3.957345100770734e-20,
+        "OIII": 4.503785835961412e-21,
+        "HeII": 3.699e-24
+      }
+    }
+  ],
+  "photoionization_grid": false,
+  "ion_fraction_correction_available": false,
+  "assumptions": [
+    "Homogeneous common electron temperature and density for all emitting ions",
+    "NIV means total1483.321+1486.496 doublet under a physical optically thin ionic template",
+    "NIII five specified UV lines; CIII/CIV doublets; OIII 1661/1666",
+    "Collisionally excited, optically thin CIV; no stellar/resonant transfer component",
+    "HeII case B recombination; no HeII/OIII blend decomposition from observations",
+    "No differential attenuation, elemental closure, ion fractions, or gas mass measured"
+  ],
+  "line_contract_version": 2,
+  "parent_v1_atomic_grid_sha256": "b3923cd0084950e4b73a89a20848785188fc484287140c9f4d2720af43a5dc8d",
+  "NIV_1483_included": true
+}
