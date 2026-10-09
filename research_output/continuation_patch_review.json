@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "inputs_sha256": {
+    "comparison": "959a6258349a779fb3f7313a71cd158a9bcc7b90a961e71eb17bf5a9cce6547f"
+  },
+  "audit": {
+    "actual_full_science_replay_exact": true,
+    "independent_svd_checked_actual_fits": 104,
+    "tested_fit_quantities": 6,
+    "maximum_absolute_difference_njy": 5.4569682106375694e-12,
+    "residual_group_count_range": [
+      28,
+      173
+    ],
+    "blue_joint_point_parameter_range_njy": [
+      31.329842865829296,
+      44.56703295088118
+    ],
+    "blue_source_excluded_aperture_range_njy": [
+      -12.083866480126677,
+      92.15261288882162
+    ],
+    "scope": "actual geometry, calibration and finite transported PSF reused; alternate SVD and cluster influence algebra, not a calibrated detection"
+  }
+}

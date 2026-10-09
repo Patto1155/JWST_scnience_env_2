@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "actual_full_science_replay_exact": true,
+  "full_trials_canonical_sha256": "6b47b731d8afdd4563534b5cbc40d50b85190671bb28986a8f0ab2841b15ed49",
+  "compact_report_sha256": "71641702fc6dd5b50e2ac89703777c8c020de973e4d7e369791da3c67f34f0f2",
+  "actual_insertion_trials": 2436,
+  "background_sites": 29,
+  "paired_losses": [
+    {
+      "template_id": "186837",
+      "spatial_scale": 1.0,
+      "lower_flux_njy": 80.0,
+      "higher_flux_njy": 160.0,
+      "mode": "angular_area",
+      "matched_then_nonmatched": 7,
+      "nonmatched_then_matched": 1,
+      "paired_sites": 29
+    },
+    {
+      "template_id": "186837",
+      "spatial_scale": 1.0,
+      "lower_flux_njy": 80.0,
+      "higher_flux_njy": 160.0,
+      "mode": "legacy",
+      "matched_then_nonmatched": 1,
+      "nonmatched_then_matched": 1,
+      "paired_sites": 29
+    },
+    {
+      "template_id": "186837",
+      "spatial_scale": 1.0,
+      "lower_flux_njy": 160.0,
+      "higher_flux_njy": 320.0,
+      "mode": "angular_area",
+      "matched_then_nonmatched": 2,
+      "nonmatched_then_matched": 2,
+      "paired_sites": 29
+    }
+  ],
+  "review_correction": "Observed template sky annulus now finite0.7<=r<=1.0arcsec; corner exclusion regression. Previously unbounded square-corner samples altered morphology. All2436 trials regenerated.",
+  "scope": "dependent real mosaic and clipped noisy observed profile injections; no calibrated population completeness or classifier transfer"
+}
