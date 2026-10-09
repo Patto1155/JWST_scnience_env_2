@@ -25,6 +25,16 @@ SCIENCE_LINT_TARGETS = [
     "discovery/proposal_channels.py",
     "discovery/multi_epoch.py",
     "tests/test_multi_epoch_physical.py",
+    "tools/jwst/spectroscopy.py",
+    "tools/jwst/visualization.py",
+    "tools/jwst/fits_loader.py",
+    "core_api/startup.py",
+    "discovery/external_psf_stress.py",
+    "discovery/validation_audit.py",
+    "discovery/validation_metrics.py",
+    "data_pipeline/research_sources.py",
+    "data_pipeline/reference_cohorts.py",
+    "tests/test_spectrum_reference.py",
 ]
 
 

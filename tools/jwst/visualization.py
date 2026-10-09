@@ -17,7 +17,6 @@ import numpy as np
 from astropy.coordinates import SkyCoord
 from astropy.nddata import Cutout2D
 from astropy.nddata.utils import NoOverlapError
-import astropy.units as u
 
 from tools.jwst.fits_loader import load_fits_bundle
 from tools.jwst.photometry import compute_color_index, extract_photometry
