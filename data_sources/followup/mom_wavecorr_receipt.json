@@ -7,8 +7,6 @@
   "bytes": 16453,
   "sha256": "869d4279137b1c7dea5e8bb4b4980d72fd0aa8423c87814050bfa710cd2b58f3",
   "cap_bytes": 26214400,
-  "prior_scientific_acquisition_bytes": 470088034,
-  "scientific_acquisition_total_bytes": 470104487,
   "selection": "Exact R_WAVCOR in nine calibration2.0.1/jwst_1535.pmap CAL headers, not a current CRDS selection",
   "internal_filename": "jwst_nirspec_wavecorr_0002.asdf",
   "pedigree": "DUMMY",
@@ -131,5 +129,12 @@
   "note": "Software downloads separately accounted below; no raw CAL acquisition repeated.",
   "software_wheel_total_bytes": 3399866,
   "bounded_new_payload_bytes": 3425987,
-  "bounded_new_payload_plus_conservative_metadata_allowance_bytes": 4474563
+  "bounded_new_payload_plus_conservative_metadata_allowance_bytes": 4474563,
+  "experiment_new_unique_scientific_bytes": 16453,
+  "continuation_rollup_unique_scientific_bytes": 228790074,
+  "continuation_rollup_scope": "Current autonomous continuation: SMACS120254400 + deep/atmosphere47882944 + atomic/Cue60636277 + this wavecorr16453. Parent ledger; not all-time repository cumulative input.",
+  "historical_native_batch_reported_bytes": 470088034,
+  "historical_native_batch_scope": "Inherited docs/MOM_NATIVE_BATCH.md historical native+literature bundle, including nineCAL464135040 bytes; not this continuation rollup.",
+  "native_cache_recovery_repeated_bytes": 464135040,
+  "native_cache_recovery_scope": "Same previously pinned nineCAL products recovered after older scratch cache disappeared; separate repeated-transfer ledger."
 }

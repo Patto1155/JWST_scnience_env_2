@@ -25,8 +25,12 @@ Each original pins `crds://jwst_nirspec_wavecorr_0004.asdf` under
 record the 16,453-byte SHA256-pinned public CRDS file. It has the internal
 filename `_0002.asdf`, author ESA, date 2016-03-30, and DUMMY metadata; this
 discrepancy is retained rather than silently renamed. Only 16,453 new scientific
-input bytes were acquired, bringing the prior unique scientific-input total to
-470,104,487 bytes. Optional WCS software wheels and the inspected algorithm
+input bytes were acquired. The parent continuation ledger totals 228,790,074
+unique scientific bytes across all specialist experiments; this is separate from
+the inherited historical native/literature bundle reported as 470,088,034 bytes in
+[MOM_NATIVE_BATCH.md](MOM_NATIVE_BATCH.md), which includes the nine CAL inputs.
+Neither figure is used to infer an all-time repository acquisition total.
+Optional WCS software wheels and the inspected algorithm
 source have separate receipts: 3,425,987 payload bytes including a superseded
 ASDF wheel, below the 25 MiB new-input allowance even with 1 MiB conservative
 metadata allowance. Restoration of the vanished earlier scratch environment

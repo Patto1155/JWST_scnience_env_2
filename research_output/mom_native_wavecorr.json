@@ -37,7 +37,7 @@
     "point_lsf_empirically_calibrated": false,
     "wavelength_unit_contract": "Pinned JWST2.0.1 WAVELENGTH values in microns; BUNIT absent in exact originals; reject conflicting labels/range and misaligned detector grids"
   },
-  "reference_receipt_sha256": "696d7710a8462d74bd2a2383721fdd608f23ed9532b5c6042adbb48954114a09",
+  "reference_receipt_sha256": "affd1af027a14d2af76e757af0202d8461a11fa2d0db3225e109816ca2cfd6f3",
   "reference": {
     "sha256": "869d4279137b1c7dea5e8bb4b4980d72fd0aa8423c87814050bfa710cd2b58f3",
     "filename": "jwst_nirspec_wavecorr_0004.asdf",
