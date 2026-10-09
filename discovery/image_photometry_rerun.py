@@ -63,7 +63,7 @@ def write_selection_measurements(proposals: list[dict[str, Any]], output_dir: Pa
     with (output_dir / "selection_measurements.csv").open(
         "w", newline="", encoding="utf-8"
     ) as handle:
-        writer = csv.DictWriter(handle, fieldnames=fields)
+        writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
         writer.writeheader()
         for proposal in proposals:
             row = {
