@@ -223,8 +223,14 @@ def run_identifiability(
 ) -> dict[str, Any]:
     spectrum_bytes, benchmark_bytes = spectrum_path.read_bytes(), benchmark_path.read_bytes()
     spectrum, inputs = json.loads(spectrum_bytes), json.loads(benchmark_bytes)
-    if spectrum["schema_version"] != "mom_line_sensitivity_v1":
+    schema = spectrum["schema_version"]
+    if schema == "mom_line_sensitivity_v1":
+        scenario_key = "fixed_published_redshift_scenarios"
+    elif schema == "mom_point_resolution_v1":
+        scenario_key = "point_source_scenarios"
+    else:
         raise ValueError("unsupported spectrum report schema")
+    source_scenarios = spectrum[scenario_key]
     solar = inputs["solar_reference"]
     solar_nc = solar["log_n_o"] - solar["log_c_o"]
     targets = [
@@ -254,7 +260,7 @@ def run_identifiability(
             }
         )
     scenarios = []
-    for index, scenario in enumerate(spectrum["fixed_published_redshift_scenarios"]):
+    for index, scenario in enumerate(source_scenarios):
         ratio = flux_ratio_from_covariance(scenario, ("NIV", "NIII"), ("CIV", "CIII"))
         scenarios.append(
             {
@@ -298,14 +304,10 @@ def run_identifiability(
             }
         )
     stage_diagnostics = {
-        "NIV_over_CIV": flux_ratio_from_covariance(
-            spectrum["fixed_published_redshift_scenarios"][0], ("NIV",), ("CIV",)
-        ),
-        "NIII_over_CIII": flux_ratio_from_covariance(
-            spectrum["fixed_published_redshift_scenarios"][0], ("NIII",), ("CIII",)
-        ),
+        "NIV_over_CIV": flux_ratio_from_covariance(source_scenarios[0], ("NIV",), ("CIV",)),
+        "NIII_over_CIII": flux_ratio_from_covariance(source_scenarios[0], ("NIII",), ("CIII",)),
         "HeII_OIII_blend_over_CIII": flux_ratio_from_covariance(
-            spectrum["fixed_published_redshift_scenarios"][0], ("HeII_OIII",), ("CIII",)
+            source_scenarios[0], ("HeII_OIII",), ("CIII",)
         ),
     }
     return {
@@ -327,8 +329,13 @@ def run_identifiability(
         "effective_factor": "Uncalibrated abundance-weighted line emissivity/ion fraction factor; "
         "depends on density, temperature, radiation, geometry, transfer, and chemical cooling. "
         "It need not be constant across stellar/nebular models or abundance changes.",
-        "nominal_definition": "First source scenario: stored 1D, specified illuminated LSF, "
-        "fixed published z, diagonal pixel covariance. Not a preferred physical model.",
+        "nominal_definition": "First source scenario: stored 1D, specified "
+        + (
+            "illuminated LSF, "
+            if schema == "mom_line_sensitivity_v1"
+            else "generic point-source Gaussian LSF, "
+        )
+        + "fixed published z, diagonal pixel covariance. Not a preferred physical model.",
         "targets": targets,
         "spectrum_scenario_summaries": scenarios,
         "fixed_q_sensitivity_not_predictions": fixed_q,
@@ -355,21 +362,117 @@ def run_identifiability(
     }
 
 
+def compare_resolution_reports(
+    illuminated_path: Path,
+    point_path: Path,
+    benchmark_path: Path = DEFAULT_INPUT,
+) -> dict[str, Any]:
+    """Separate two resolution sensitivity families from the same pixel spectrum.
+
+    No confidence sets or likelihoods are pooled; deterministic mixing bounds at
+    fixed published abundance targets do not acquire a new abundance posterior.
+    """
+    first_raw = json.loads(illuminated_path.read_text())
+    second_raw = json.loads(point_path.read_text())
+    if first_raw["schema_version"] != "mom_line_sensitivity_v1":
+        raise ValueError("first comparison input must be the illuminated-resolution report")
+    if second_raw["schema_version"] != "mom_point_resolution_v1":
+        raise ValueError("second comparison input must be the point-resolution report")
+    if first_raw["metadata"]["input_sha256"] != second_raw["metadata"]["input_sha256"]:
+        raise ValueError("resolution comparison requires the same pinned pixel-spectrum bytes")
+    first = run_identifiability(illuminated_path, benchmark_path)
+    second = run_identifiability(point_path, benchmark_path)
+    summaries = {}
+    for label, report in (("illuminated", first), ("generic_point_source", second)):
+        ratios = report["spectrum_scenario_summaries"]
+        values = [x["measured_sum_n_lines_over_sum_c_lines"]["value"] for x in ratios]
+        summaries[label] = {
+            "source_report_sha256": report["source_sha256"]["spectrum_report"],
+            "scenario_count": len(ratios),
+            "nominal_sum_line_ratio": ratios[0]["measured_sum_n_lines_over_sum_c_lines"],
+            "separate_scenario_point_ratio_range": [min(values), max(values)],
+            "targets": report["targets"],
+            "nominal_ion_stage_and_blend_flux_diagnostics": report[
+                "nominal_ion_stage_and_blend_flux_diagnostics"
+            ],
+        }
+    comparisons = []
+    for old, new in zip(first["targets"], second["targets"], strict=True):
+        if (
+            old["label"] != new["label"]
+            or old["target_n_c_by_number"] != new["target_n_c_by_number"]
+        ):
+            raise ValueError("comparison needs identical benchmark targets")
+        q_old = old["nominal_required_effective_factor"]["required_q_point"]
+        q_new = new["nominal_required_effective_factor"]["required_q_point"]
+        row = {
+            "target": old["label"],
+            "target_status": old["status"],
+            "target_bracket_n_c": old["target_bracket_n_c"],
+            "central_required_q_fractional_change": q_new / q_old - 1,
+            "illuminated_q": q_old,
+            "generic_point_source_q": q_new,
+        }
+        if old["status"] == "equal_retention_lower_ambient_n_c_mixing_ceiling":
+            boundaries = {}
+            for label, target in (("illuminated", old), ("generic_point_source", new)):
+                q_set = target["nominal_required_effective_factor"]["formal_conditional_q_95_set"]
+                boundaries[label] = q_set["interval"][0] if q_set["type"] == "bounded" else None
+            row["conditional_95_set_above_yield_ceiling_if_assumed_q_below"] = boundaries
+        comparisons.append(row)
+    equal_mixing = first["mixing_joint_marginal_checks"] == second["mixing_joint_marginal_checks"]
+    return {
+        "schema_version": "chemistry_resolution_comparison_v1",
+        "source_pixel_spectrum_sha256": first_raw["metadata"]["input_sha256"],
+        "benchmark_sha256": first["source_sha256"]["enrichment_benchmarks"],
+        "separate_resolution_families": summaries,
+        "target_factor_changes": comparisons,
+        "fixed_published_target_mixing_checks_identical": equal_mixing,
+        "fixed_target_mixing_checks": first["mixing_joint_marginal_checks"],
+        "resolution_at_line_centers": second_raw.get("resolution_at_group_centers"),
+        "atomic_grid_available": False,
+        "identified_mechanism_exclusions": [],
+        "interpretation": [
+            "Both reports fit the same pixel spectrum; "
+            "likelihoods and confidence sets are not pooled.",
+            "Q thresholds are conditional mathematical tests "
+            "for a fixed unmeasured emissivity factor, "
+            "not statistical exclusions of a stellar population.",
+            "Source LSF changes fitted flux and covariance "
+            "but does not supply the missing atomic map.",
+            "Fixed-target yield/mixing and marginal-box results "
+            "remain identical because those inputs "
+            "were not re-inferred from either spectrum.",
+            "Generic point-source R(lambda) with a Gaussian "
+            "is not the exact published UNITE runtime "
+            "or a source-specific calibrated LSF.",
+        ],
+    }
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--spectrum-report", type=Path, default=DEFAULT_SPECTRUM_REPORT)
     parser.add_argument("--benchmarks", type=Path, default=DEFAULT_INPUT)
+    parser.add_argument(
+        "--comparison-report",
+        type=Path,
+        help="Compare separate point-source report; preserves existing saved outputs",
+    )
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
-    result = run_identifiability(args.spectrum_report, args.benchmarks)
+    result = (
+        compare_resolution_reports(args.spectrum_report, args.comparison_report, args.benchmarks)
+        if args.comparison_report is not None
+        else run_identifiability(args.spectrum_report, args.benchmarks)
+    )
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(result, indent=2, allow_nan=False) + "\n")
     print(
         json.dumps(
             {
                 "output": str(args.output),
-                "targets": len(result["targets"]),
-                "spectral_scenarios": len(result["spectrum_scenario_summaries"]),
+                "schema": result["schema_version"],
             }
         )
     )
