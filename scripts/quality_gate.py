@@ -17,6 +17,15 @@ CHECK_TARGETS = [
     "discovery/batch_runner.py",
     "scripts/smoke_api.py",
 ]
+SCIENCE_LINT_TARGETS = [
+    "tools/jwst/photometry.py",
+    "tools/jwst/flux_calibration.py",
+    "tools/jwst/dropout.py",
+    "discovery/build_universe_table.py",
+    "discovery/proposal_channels.py",
+    "discovery/multi_epoch.py",
+    "tests/test_multi_epoch_physical.py",
+]
 
 
 def _module_available(module_name: str) -> bool:
@@ -54,6 +63,7 @@ def main() -> int:
             "--select",
             "E9,F",
             *CHECK_TARGETS,
+            *SCIENCE_LINT_TARGETS,
         ],
     )
     ok &= _run_step(
