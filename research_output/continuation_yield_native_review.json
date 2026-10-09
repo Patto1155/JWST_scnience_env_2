@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "inputs_sha256": {
+    "model_input": "ded9ec02ba9f4ee19e0b8943ca5aa384f5c10b1ae255376c001c1e0df79e17aa",
+    "comparison": "dc447921f9d1ebb0ff1a923ec0bd6340300add004236490bc7762d258bfa7999"
+  },
+  "mode": "yield",
+  "independent_NNLS_audit": {
+    "actual_cell_yield_profiles": 448,
+    "maximum_deviance_absolute_error": 7.993605777301127e-15,
+    "mechanism_probability_supplied": false
+  }
+}

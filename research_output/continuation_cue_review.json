@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "inputs_sha256": {
+    "model_input": "8c1089f4d7407c57558e14b0f26028379ca14d555a94f873834c767f3cc5abfb",
+    "spectrum": "a7e5ba3acbfe74ec41c6eccb040c7e8e2758eeeb523209e3e6e495f52237e98b",
+    "comparison": "397c9d0d7da61c96e14977e4dc69af9bf20b7680af5c405b4e96dbb81b1b48da"
+  },
+  "mode": "cue",
+  "independent_NNLS_audit": [
+    {
+      "family": "nominal_illuminated_slit",
+      "max_best_chi2_error": 5.551115123125783e-17,
+      "independent_NNLS_grid_threshold_count": 157,
+      "models": 2025,
+      "NIV_included": false
+    },
+    {
+      "family": "generic_point_source",
+      "max_best_chi2_error": 2.220446049250313e-16,
+      "independent_NNLS_grid_threshold_count": 126,
+      "models": 2025,
+      "NIV_included": false
+    }
+  ]
+}

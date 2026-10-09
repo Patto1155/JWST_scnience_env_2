@@ -1,0 +1,86 @@
+{
+  "schema_version": 2,
+  "inputs_sha256": {
+    "native_report": "88e3cdbf5b7759eaad84dc21ead0974c38f392292d71ce605fa0f5b5951637ec",
+    "native_npz": "9412f52afbed589777cf55ad27ca2e93065cb4003be4990debc17503fe097027",
+    "deep_inventory": "3f61fa1ef58ac691610dacaa99bc61f7722656aa23247d655fb4e38a97c51117"
+  },
+  "native_gls_independent_oracle": [
+    {
+      "scenario": "nominal_shared_formal",
+      "max_flux_absolute_error": 1.8118839761882555e-13,
+      "max_covariance_absolute_error_over_largest_saved_entry": 7.139360518882387e-16
+    },
+    {
+      "scenario": "point_shared_formal",
+      "max_flux_absolute_error": 8.171241461241152e-14,
+      "max_covariance_absolute_error_over_largest_saved_entry": 6.819852697722577e-16
+    },
+    {
+      "scenario": "nominal_empirical_offtrace_transport",
+      "max_flux_absolute_error": 7.105427357601002e-14,
+      "max_covariance_absolute_error_over_largest_saved_entry": 6.136314408432216e-16
+    },
+    {
+      "scenario": "point_empirical_offtrace_transport",
+      "max_flux_absolute_error": 3.552713678800501e-14,
+      "max_covariance_absolute_error_over_largest_saved_entry": 4.4311073438343956e-16
+    }
+  ],
+  "source254_blue_background_oracle": {
+    "sha256": "24b557122f0cfba89f8e00459371d2c83499a4019d73c821f8629b86e19a4563",
+    "source_id": 254,
+    "band": "F090W",
+    "experiments": [
+      {
+        "annulus_arcsec": [
+          0.4,
+          0.6
+        ],
+        "aperture_radius_arcsec": 0.2,
+        "mean_sky_flux_njy": 19.010587688535452,
+        "mean_diagonal_error_njy": 1.0474429670259422,
+        "plane_sky_flux_njy": 19.01199272810629,
+        "plane_diagonal_error_njy": 1.0471974453345432,
+        "annulus_pixels": 249
+      },
+      {
+        "annulus_arcsec": [
+          0.4,
+          0.8
+        ],
+        "aperture_radius_arcsec": 0.2,
+        "mean_sky_flux_njy": 18.780374055728316,
+        "mean_diagonal_error_njy": 0.9957286776841174,
+        "plane_sky_flux_njy": 18.785904989358905,
+        "plane_diagonal_error_njy": 0.9956258915825728,
+        "annulus_pixels": 602
+      },
+      {
+        "annulus_arcsec": [
+          0.6,
+          0.8
+        ],
+        "aperture_radius_arcsec": 0.2,
+        "mean_sky_flux_njy": 18.617985336109996,
+        "mean_diagonal_error_njy": 1.021757598075781,
+        "plane_sky_flux_njy": 18.626471598449076,
+        "plane_diagonal_error_njy": 1.0216057851863052,
+        "annulus_pixels": 353
+      },
+      {
+        "annulus_arcsec": [
+          0.8,
+          1.0
+        ],
+        "aperture_radius_arcsec": 0.2,
+        "mean_sky_flux_njy": 18.46780328825116,
+        "mean_diagonal_error_njy": 1.0082250970108286,
+        "plane_sky_flux_njy": 18.485407115783484,
+        "plane_diagonal_error_njy": 1.0080310268216937,
+        "annulus_pixels": 451
+      }
+    ],
+    "limitations": "Same photons, fixed aperture, unmasked annuli, conditional diagonal errors; no deblend or redshift."
+  }
+}
