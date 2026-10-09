@@ -50,8 +50,8 @@ def test_detector_and_module_parsing():
     assert module_letter("jwst_ngc1234_f200w") is None
 
 
-def test_modules_are_disjoint_detects_the_shipped_bug():
-    """The pipeline paired a module-A reference with a module-B blue image."""
+def test_module_name_difference_is_advisory():
+    """Names differ, but actual overlap needs WCS and cannot follow from names."""
     reference = "jwst_GS_F444W_jw01180030001_09201_00003_nrcalong_i2d"
     blue_wrong = "jwst_GS_F090W_jw01180030001_03201_00001_nrcb1_i2d"
     blue_right = "jwst_GS_F090W_jw01180026001_03201_00003_nrca1_i2d"
@@ -114,3 +114,13 @@ def test_sky_to_pixel_center_maps_to_array_center():
     x, y = sky_to_pixel(bundle, FIELD_CENTER_RA, FIELD_CENTER_DEC)
     assert x == pytest.approx(size / 2.0 - 1, abs=1.0)
     assert y == pytest.approx(size / 2.0 - 1, abs=1.0)
+
+
+def test_different_modules_across_visits_can_have_identical_sky_coverage():
+    """Synthetic control: opposite modules reobserving one sky position."""
+    name_a = "jw01180026001_03201_00003_nrca1_i2d"
+    name_b = "jw01180030001_03201_00001_nrcb1_i2d"
+    assert modules_are_disjoint(name_a, name_b) is True  # advisory only
+    a = _bundle(FIELD_CENTER_RA, FIELD_CENTER_DEC, 0.031, 64)
+    b = _bundle(FIELD_CENTER_RA, FIELD_CENTER_DEC, 0.031, 64)
+    assert overlap_fraction(a, b) == pytest.approx(1.0)
