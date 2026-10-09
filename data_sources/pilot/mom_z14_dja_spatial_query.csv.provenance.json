@@ -1,0 +1,12 @@
+{
+  "requested_url": "https://grizli-cutout.herokuapp.com/nirspec_extractions?coords=150.0933255,2.2731627&size=0.4&output=csv",
+  "resolved_url": "https://grizli-cutout.herokuapp.com/nirspec_extractions?coords=150.0933255,2.2731627&size=0.4&output=csv",
+  "retrieved_utc": "2026-10-09T06:45:21.437415+00:00",
+  "bytes": 591,
+  "sha256": "d856849376bb306a2727e84fd3cd4df38baef504153435b20104837d39e9a460",
+  "content_type": "text/html; charset=utf-8",
+  "etag": null,
+  "last_modified": null,
+  "product_id": "mom-query",
+  "max_bytes": 5242880
+}

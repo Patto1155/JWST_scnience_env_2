@@ -58,10 +58,16 @@ first rather than copying the documentation's unfiltered bulk-download example.
 provides CSV association/exposure metadata and FITS cutouts with optional inverse
 variance extensions. The
 [NIRSpec index](https://dawn-cph.github.io/dja/spectroscopy/nirspec/) links public
-v4.4 products for program 5224 (`mom-cos03/04/05-v4`). That identifies an accessible
-program, **not yet a verified match to MoM-z14**. Match published coordinates,
-source ID and redshift, then retain exact extraction/version and checksum. Dynamic
-cutouts need receipts because their upstream reduction can change.
+v4.4 products for program 5224 (`mom-cos03/04/05-v4`). The second acquisition round verified MoM-z14 by the exact published coordinates
+(150.0933255°, 2.2731627°), a spatial query returning source 277193 in
+`mom-cos04-v4`, and the FITS SLITS coordinates/source IDs. The checked-in 688,320-byte
+`mom_z14_dja_v4.spec.fits` contains a 473-bin 1D spectrum (wavelength µm;
+flux/error µJy), 2D science/weight/background products, and exposure metadata.
+Receipts pin the spectrum and query CSV. The public index fits z=14.480445;
+the paper reports a joint UV-line z=14.44. These are different fitting outputs;
+this acquisition does not re-estimate redshift or abundance. A nearby CAPERS
+grade-1 index fit at z=6.13832 is not a confirmed competing redshift.
+Dynamic cutouts need receipts because their upstream reduction can change.
 
 ## MoM-z14 physics: what is measured and what is inferred
 
