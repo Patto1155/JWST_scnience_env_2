@@ -1,0 +1,48 @@
+{
+  "source_id": 277193,
+  "source_ra_deg": 150.0933255,
+  "source_dec_deg": 2.2731627,
+  "slit_id": 21,
+  "shape": [
+    28,
+    423
+  ],
+  "calibration_version": "2.0.1",
+  "crds_context": "jwst_1535.pmap",
+  "source_type_upstream": "EXTENDED",
+  "exposure_time_s": 1750.667,
+  "science_bunit": "MJy/sr",
+  "pixels": 11844,
+  "dq_nonzero": 7391,
+  "dq_do_not_use": 4179,
+  "dq_saturated": 121,
+  "finite_positive_error_wavelength_and_dq_usable": 7565,
+  "retained_extensions": [
+    "SCI",
+    "DQ",
+    "ERR",
+    "WAVELENGTH",
+    "BARSHADOW",
+    "VAR_POISSON",
+    "VAR_RNOISE",
+    "VAR_FLAT",
+    "PATHLOSS_PS",
+    "PATHLOSS_UN"
+  ],
+  "input_receipt": {
+    "requested_url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00002_nrs2_cal.fits",
+    "resolved_url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00002_nrs2_cal.fits",
+    "retrieved_utc": "2026-10-09T07:26:06.780631+00:00",
+    "bytes": 51563520,
+    "sha256": "c2d318f836570e3cc77463ec91a8b2a8982deb8df4762873dcad3bdfbd03bc9f",
+    "content_type": "application/octet-stream",
+    "etag": "\"6a5ef9fa-312cc00\"",
+    "last_modified": "Tue, 21 Jul 2026 04:47:54 GMT",
+    "product_id": "mom-exposure-00002-cal",
+    "max_bytes": 62914560
+  },
+  "interpretation": "One native-grid official calibrated exposure; upstream EXTENDED source treatment differs from DJA point-source pathloss",
+  "kind": "derived_native_calibrated_target_slit_not_independent_full_reduction",
+  "bytes": 547200,
+  "sha256": "349e54f05202cb6230fdd6d70990f65872ae3578c62e55b2a8ca024f964aff41"
+}

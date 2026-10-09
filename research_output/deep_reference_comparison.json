@@ -1,0 +1,1806 @@
+{
+  "schema_version": 1,
+  "evidence_kind": "actual_public_images_targeted_depth_comparison",
+  "original_receipt": {
+    "requested_url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw01180026001_09201_00003_nrcalong_i2d.fits",
+    "resolved_url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw01180026001_09201_00003_nrcalong_i2d.fits",
+    "retrieved_utc": "2026-10-09T07:06:08.241856+00:00",
+    "bytes": 120257280,
+    "sha256": "b9b84b9bd0bd8ef6140dca76163a9ac4625689024b651a25e631a6d14ce68d86",
+    "content_type": "application/octet-stream",
+    "etag": "\"6aad3d7b-72afb00\"",
+    "last_modified": "Fri, 18 Sep 2026 13:32:43 GMT",
+    "product_id": "jw01180026001_09201_00003_nrcalong_i2d.fits",
+    "max_bytes": 314572800
+  },
+  "reference_csv_sha256": "4b588479eb9ebbfd590dd6ea0ea85949f80952e085ea94e874a191d558f4accf",
+  "selection": "Three exact covered-undetected high-z references from preceding frozen real validation; A and C labels separate",
+  "aperture": {
+    "aperture_radius_arcsec": 0.2,
+    "background_annulus_inner_radius_arcsec": 0.4,
+    "background_annulus_outer_radius_arcsec": 0.6
+  },
+  "rows": [
+    {
+      "reference": {
+        "id": "20083087",
+        "ra_deg": 53.0677326,
+        "dec_deg": -27.8378744,
+        "quality_flag": "C",
+        "z_spec": 9.059601
+      },
+      "deep_image": {
+        "filename": "dja_f444w_20083087.fits",
+        "receipt": {
+          "requested_url": "https://grizli-cutout.herokuapp.com/thumb?ra=53.0677326&dec=-27.8378744&filters=f444w-clear&size=12&output=fits_weight",
+          "resolved_url": "https://grizli-cutout.herokuapp.com/thumb?ra=53.0677326&dec=-27.8378744&filters=f444w-clear&size=12&output=fits_weight",
+          "retrieved_utc": "2026-10-09T07:20:21.107745+00:00",
+          "bytes": 1872000,
+          "sha256": "4f0584d66e0196cbf698109212880a412ac1d41c6603d26d299a33e207d993a5",
+          "content_type": "image/fits",
+          "etag": "\"1791530420.819737-1872000-2668890721\"",
+          "last_modified": "Fri, 09 Oct 2026 07:20:20 GMT",
+          "product_id": "20083087",
+          "max_bytes": 8388608
+        },
+        "input_bunit": "10.0*nanoJansky",
+        "grid_pixel_scales_arcsec": [
+          0.049999999999996804,
+          0.0500000000000004
+        ],
+        "ndrizim": 61,
+        "header_exptime_s": 14537.581000000004,
+        "header_exptime_caveat": "Mosaic total header time is not necessarily local per-pixel depth",
+        "grizli_version": "1.12.10",
+        "crds_context": "jwst_1123.pmap",
+        "updated_context": "jwst_1293.pmap",
+        "contributors": [
+          "jw01180026001_09201_00001_nrcalong_rate.fits",
+          "jw01180026001_09201_00002_nrcalong_rate.fits",
+          "jw01180026001_09201_00003_nrcalong_rate.fits",
+          "jw01180026001_11201_00001_nrcalong_rate.fits",
+          "jw01180026001_11201_00002_nrcalong_rate.fits",
+          "jw01180026001_11201_00003_nrcalong_rate.fits",
+          "jw01210001001_11201_00001_nrcalong_rate.fits",
+          "jw01210001001_11201_00002_nrcalong_rate.fits",
+          "jw01210001001_11201_00003_nrcalong_rate.fits",
+          "jw01210001001_13201_00001_nrcalong_rate.fits",
+          "jw01210001001_13201_00002_nrcalong_rate.fits",
+          "jw01210001001_13201_00003_nrcalong_rate.fits",
+          "jw01210001002_07201_00001_nrcalong_rate.fits",
+          "jw01210001002_07201_00002_nrcalong_rate.fits",
+          "jw01210001002_07201_00003_nrcalong_rate.fits",
+          "jw01210001002_09201_00001_nrcalong_rate.fits",
+          "jw01210001002_09201_00002_nrcalong_rate.fits",
+          "jw01210001002_09201_00003_nrcalong_rate.fits",
+          "jw01210001003_11201_00001_nrcalong_rate.fits",
+          "jw01210001003_11201_00002_nrcalong_rate.fits",
+          "jw01210001003_11201_00003_nrcalong_rate.fits",
+          "jw01210001003_13201_00001_nrcalong_rate.fits",
+          "jw01210001003_13201_00002_nrcalong_rate.fits",
+          "jw01210001003_13201_00003_nrcalong_rate.fits",
+          "jw01895001006_05101_00001_nrcblong_rate.fits",
+          "jw01895001006_07101_00001_nrcblong_rate.fits",
+          "jw01895001006_07101_00002_nrcblong_rate.fits",
+          "jw02198001001_03101_00001_nrcalong_rate.fits",
+          "jw02198001001_03101_00002_nrcalong_rate.fits",
+          "jw02198001001_03101_00003_nrcblong_rate.fits",
+          "jw02198001002_03101_00001_nrcblong_rate.fits",
+          "jw02198001002_03101_00002_nrcblong_rate.fits",
+          "jw02198001002_03101_00003_nrcblong_rate.fits",
+          "jw02198001003_02101_00001_nrcalong_rate.fits",
+          "jw02198001004_02101_00002_nrcblong_rate.fits",
+          "jw02514238001_03201_00001_nrcblong_rate.fits",
+          "jw02514238001_03201_00002_nrcblong_rate.fits",
+          "jw02514238001_03201_00003_nrcblong_rate.fits",
+          "jw04540001001_07101_00001_nrcalong_rate.fits",
+          "jw04540001002_02101_00001_nrcalong_rate.fits",
+          "jw04540001003_02101_00001_nrcalong_rate.fits",
+          "jw04540001004_07101_00001_nrcalong_rate.fits",
+          "jw04540001005_02101_00001_nrcalong_rate.fits",
+          "jw04540001006_02101_00001_nrcalong_rate.fits",
+          "jw04540012001_05101_00001_nrcalong_rate.fits",
+          "jw04540012002_02101_00001_nrcalong_rate.fits",
+          "jw04540012003_02101_00001_nrcalong_rate.fits",
+          "jw04540012004_05101_00001_nrcalong_rate.fits",
+          "jw04540012005_02101_00001_nrcalong_rate.fits",
+          "jw04540012006_02101_00001_nrcalong_rate.fits",
+          "jw01895001005_05101_00001_nrcblong_rate.fits",
+          "jw01895001005_07101_00001_nrcblong_rate.fits",
+          "jw01895001005_07101_00002_nrcblong_rate.fits",
+          "jw02198001001_03101_00001_nrcblong_rate.fits",
+          "jw02198001001_03101_00002_nrcblong_rate.fits",
+          "jw02198001003_02101_00001_nrcblong_rate.fits",
+          "jw02198001004_02101_00003_nrcblong_rate.fits",
+          "jw02516003001_03101_00001_nrcblong_rate.fits",
+          "jw02516003001_03101_00002_nrcblong_rate.fits",
+          "jw02516003001_03101_00003_nrcblong_rate.fits",
+          "jw02516003001_03101_00004_nrcblong_rate.fits"
+        ],
+        "weight_interpretation": "inverse variance of SCI stored units from documented fits_weight API"
+      },
+      "original_in_deep_contributors": true,
+      "single_exposure_measurement": {
+        "background_subtracted_flux_jy": 1.9993364849141046e-08,
+        "flux_error_jy": 4.246929291068349e-09,
+        "snr": 4.707722563497533,
+        "measurement_status": "measured",
+        "calibration_status": "calibrated",
+        "coverage_fraction": 1.0,
+        "uncertainty_method": "err_diagonal_plus_background_mean"
+      },
+      "single_exposure_detection": {
+        "status": "not_detected",
+        "total_detections": 983,
+        "matches_within_0p2_arcsec": 0,
+        "separation_arcsec": 1.8319501786313968,
+        "detector_rule": "unchanged 5-sigma >=5-pixel segmentation; angular area differs between image grids"
+      },
+      "deep_measurement": {
+        "background_subtracted_flux_jy": 1.9368531127645412e-08,
+        "flux_error_jy": 1.2056245760648966e-09,
+        "snr": 16.065142924394767,
+        "measurement_status": "measured",
+        "calibration_status": "calibrated",
+        "coverage_fraction": 1.0,
+        "uncertainty_method": "err_diagonal_plus_background_mean",
+        "blank_scatter_snr": 14.112888618088965
+      },
+      "deep_detection": {
+        "status": "matched",
+        "total_detections": 71,
+        "matches_within_0p2_arcsec": 1,
+        "separation_arcsec": 0.021975071701618675,
+        "detector_rule": "unchanged 5-sigma >=5-pixel segmentation; angular area differs between image grids"
+      },
+      "deep_blank_noise": {
+        "status": "measured",
+        "count": 100,
+        "sigma_jy": 1.3724001975626813e-09,
+        "median_jy": -4.743831896354235e-11,
+        "formal_error_median_jy": 1.1995841670383279e-09,
+        "scatter_to_formal_ratio": 1.14406328065418,
+        "samples_jy": [
+          3.0265365968664486e-10,
+          -1.3884312567704941e-09,
+          1.505448747814879e-09,
+          -1.4908348954422317e-09,
+          3.4601235213917564e-11,
+          -4.721884915029547e-10,
+          6.509267825798606e-10,
+          -2.3533080453541114e-09,
+          5.767502041923678e-10,
+          -9.088982995665559e-10,
+          3.2229020053356917e-09,
+          -9.041162889292008e-11,
+          4.7363965002987944e-11,
+          -6.439848715002817e-10,
+          1.1711933959363483e-09,
+          2.761613398142389e-09,
+          6.16237265789927e-12,
+          1.722247771236824e-09,
+          1.2409080923907075e-09,
+          -1.3412845447798093e-09,
+          1.207626825337341e-09,
+          3.698849098085207e-10,
+          -1.4691854875252937e-09,
+          3.078632118069703e-10,
+          8.60899786000014e-10,
+          -1.8948148049499897e-11,
+          -2.770088069074503e-09,
+          -2.1308442178353757e-09,
+          -2.1855378700790617e-10,
+          7.260459229606651e-10,
+          -1.0027576405322866e-09,
+          5.479063159503712e-10,
+          2.4612089490264945e-10,
+          7.09860894783049e-10,
+          -1.8622620909896709e-09,
+          -2.420220567674121e-09,
+          1.821258780437648e-10,
+          -9.397623010037003e-10,
+          -8.30548540942964e-11,
+          -8.207448105951965e-10,
+          -2.5837289328189715e-10,
+          -1.6652142872713801e-09,
+          2.3087126194106947e-09,
+          -1.2354842312711262e-09,
+          -1.926496559428385e-09,
+          -1.9334594060739143e-09,
+          2.0194875253511179e-10,
+          -2.6970773731427163e-10,
+          2.0705916467968714e-09,
+          -6.715120578907086e-11,
+          6.311178280921909e-10,
+          1.7912481635156554e-09,
+          -3.826791423990009e-09,
+          -3.4386653138694875e-10,
+          1.1845194089403883e-09,
+          8.563225926320495e-10,
+          2.3602850346878014e-10,
+          2.6179095651920487e-10,
+          2.0641259219513302e-09,
+          -6.348073199098476e-10,
+          -2.000184042100329e-09,
+          1.2337734284936563e-09,
+          -3.833324135194879e-10,
+          -2.5085649519869416e-10,
+          -2.85902093129585e-10,
+          -8.754203382460166e-10,
+          1.4688335976977412e-09,
+          1.3028947892598808e-09,
+          4.533900184594774e-10,
+          8.715938064008204e-10,
+          -1.5527062032999284e-09,
+          -1.562851514519605e-10,
+          8.848720587918594e-10,
+          2.365104102351943e-09,
+          -6.634115370756352e-10,
+          1.3002698514239578e-09,
+          -2.7521707826747194e-10,
+          -1.367788323842418e-09,
+          6.682670896715291e-10,
+          1.5787275855869728e-09,
+          -1.005126580649839e-09,
+          2.546822947162403e-10,
+          -7.834800437685921e-10,
+          -1.4170144124235787e-09,
+          -2.320492886891096e-09,
+          -8.787306462439674e-10,
+          1.685351117467973e-09,
+          2.451846822082413e-09,
+          -6.889852643653883e-10,
+          -2.130074508273858e-09,
+          -2.7725432138013835e-11,
+          -9.90188979277547e-10,
+          -1.3258604876455885e-09,
+          9.238204147132802e-10,
+          1.3667149058266183e-09,
+          1.036254161346107e-09,
+          -1.6310041374884008e-09,
+          1.170375507279489e-10,
+          -1.5159823319995445e-09,
+          -3.4280222383444454e-10
+        ],
+        "positions_pixels": [
+          [
+            46,
+            15
+          ],
+          [
+            77,
+            15
+          ],
+          [
+            170,
+            15
+          ],
+          [
+            201,
+            15
+          ],
+          [
+            232,
+            15
+          ],
+          [
+            294,
+            15
+          ],
+          [
+            325,
+            15
+          ],
+          [
+            356,
+            15
+          ],
+          [
+            418,
+            15
+          ],
+          [
+            15,
+            46
+          ],
+          [
+            46,
+            46
+          ],
+          [
+            77,
+            46
+          ],
+          [
+            108,
+            46
+          ],
+          [
+            170,
+            46
+          ],
+          [
+            232,
+            46
+          ],
+          [
+            294,
+            46
+          ],
+          [
+            356,
+            46
+          ],
+          [
+            387,
+            46
+          ],
+          [
+            418,
+            46
+          ],
+          [
+            449,
+            46
+          ],
+          [
+            15,
+            77
+          ],
+          [
+            77,
+            77
+          ],
+          [
+            108,
+            77
+          ],
+          [
+            139,
+            77
+          ],
+          [
+            201,
+            77
+          ],
+          [
+            232,
+            77
+          ],
+          [
+            294,
+            77
+          ],
+          [
+            356,
+            77
+          ],
+          [
+            387,
+            77
+          ],
+          [
+            418,
+            77
+          ],
+          [
+            15,
+            108
+          ],
+          [
+            232,
+            108
+          ],
+          [
+            356,
+            108
+          ],
+          [
+            387,
+            108
+          ],
+          [
+            418,
+            108
+          ],
+          [
+            449,
+            108
+          ],
+          [
+            15,
+            139
+          ],
+          [
+            46,
+            139
+          ],
+          [
+            232,
+            139
+          ],
+          [
+            263,
+            139
+          ],
+          [
+            15,
+            170
+          ],
+          [
+            46,
+            170
+          ],
+          [
+            139,
+            170
+          ],
+          [
+            232,
+            170
+          ],
+          [
+            263,
+            170
+          ],
+          [
+            294,
+            170
+          ],
+          [
+            325,
+            170
+          ],
+          [
+            418,
+            170
+          ],
+          [
+            46,
+            201
+          ],
+          [
+            139,
+            201
+          ],
+          [
+            418,
+            201
+          ],
+          [
+            449,
+            201
+          ],
+          [
+            46,
+            232
+          ],
+          [
+            170,
+            232
+          ],
+          [
+            201,
+            232
+          ],
+          [
+            263,
+            232
+          ],
+          [
+            325,
+            232
+          ],
+          [
+            387,
+            232
+          ],
+          [
+            418,
+            232
+          ],
+          [
+            449,
+            232
+          ],
+          [
+            170,
+            263
+          ],
+          [
+            263,
+            263
+          ],
+          [
+            418,
+            263
+          ],
+          [
+            449,
+            263
+          ],
+          [
+            46,
+            294
+          ],
+          [
+            108,
+            294
+          ],
+          [
+            139,
+            294
+          ],
+          [
+            263,
+            294
+          ],
+          [
+            294,
+            294
+          ],
+          [
+            325,
+            294
+          ],
+          [
+            356,
+            294
+          ],
+          [
+            387,
+            294
+          ],
+          [
+            15,
+            325
+          ],
+          [
+            46,
+            325
+          ],
+          [
+            77,
+            325
+          ],
+          [
+            108,
+            325
+          ],
+          [
+            170,
+            325
+          ],
+          [
+            325,
+            325
+          ],
+          [
+            356,
+            325
+          ],
+          [
+            77,
+            356
+          ],
+          [
+            201,
+            356
+          ],
+          [
+            263,
+            356
+          ],
+          [
+            294,
+            356
+          ],
+          [
+            325,
+            356
+          ],
+          [
+            356,
+            356
+          ],
+          [
+            449,
+            356
+          ],
+          [
+            170,
+            387
+          ],
+          [
+            263,
+            387
+          ],
+          [
+            294,
+            387
+          ],
+          [
+            356,
+            387
+          ],
+          [
+            449,
+            387
+          ],
+          [
+            15,
+            418
+          ],
+          [
+            170,
+            418
+          ],
+          [
+            201,
+            418
+          ],
+          [
+            356,
+            418
+          ],
+          [
+            449,
+            418
+          ],
+          [
+            263,
+            449
+          ],
+          [
+            356,
+            449
+          ],
+          [
+            387,
+            449
+          ],
+          [
+            449,
+            449
+          ]
+        ],
+        "limitation": "Source-masked blank-sky covariance/confusion diagnostic; masks and spatial depth affect scatter"
+      }
+    },
+    {
+      "reference": {
+        "id": "20074794",
+        "ra_deg": 53.0671723,
+        "dec_deg": -27.8472697,
+        "quality_flag": "C",
+        "z_spec": 8.589369
+      },
+      "deep_image": {
+        "filename": "dja_f444w_20074794.fits",
+        "receipt": {
+          "requested_url": "https://grizli-cutout.herokuapp.com/thumb?ra=53.0671723&dec=-27.8472697&filters=f444w-clear&size=12&output=fits_weight",
+          "resolved_url": "https://grizli-cutout.herokuapp.com/thumb?ra=53.0671723&dec=-27.8472697&filters=f444w-clear&size=12&output=fits_weight",
+          "retrieved_utc": "2026-10-09T07:20:27.125059+00:00",
+          "bytes": 1874880,
+          "sha256": "06c804359f2553155e46745c009572abfda6a62fcdcf922a2c04127fc74d8662",
+          "content_type": "image/fits",
+          "etag": "\"1791530426.8266952-1874880-2685799023\"",
+          "last_modified": "Fri, 09 Oct 2026 07:20:26 GMT",
+          "product_id": "20074794",
+          "max_bytes": 8388608
+        },
+        "input_bunit": "10.0*nanoJansky",
+        "grid_pixel_scales_arcsec": [
+          0.049999999999996804,
+          0.0500000000000004
+        ],
+        "ndrizim": 67,
+        "header_exptime_s": 66041.86600000001,
+        "header_exptime_caveat": "Mosaic total header time is not necessarily local per-pixel depth",
+        "grizli_version": "1.12.10",
+        "crds_context": "jwst_1123.pmap",
+        "updated_context": "jwst_1293.pmap",
+        "contributors": [
+          "jw01180026001_09201_00001_nrcalong_rate.fits",
+          "jw01180026001_09201_00002_nrcalong_rate.fits",
+          "jw01180026001_09201_00003_nrcalong_rate.fits",
+          "jw01180026001_11201_00001_nrcalong_rate.fits",
+          "jw01180026001_11201_00002_nrcalong_rate.fits",
+          "jw01180026001_11201_00003_nrcalong_rate.fits",
+          "jw01180027001_09201_00001_nrcalong_rate.fits",
+          "jw01180027001_09201_00002_nrcalong_rate.fits",
+          "jw01180027001_09201_00003_nrcalong_rate.fits",
+          "jw01180028001_09201_00001_nrcblong_rate.fits",
+          "jw01180028001_09201_00002_nrcblong_rate.fits",
+          "jw01180028001_09201_00003_nrcblong_rate.fits",
+          "jw01210001001_11201_00001_nrcalong_rate.fits",
+          "jw01210001001_11201_00002_nrcalong_rate.fits",
+          "jw01210001001_11201_00003_nrcalong_rate.fits",
+          "jw01210001001_13201_00001_nrcalong_rate.fits",
+          "jw01210001001_13201_00002_nrcalong_rate.fits",
+          "jw01210001001_13201_00003_nrcalong_rate.fits",
+          "jw01210001002_07201_00001_nrcalong_rate.fits",
+          "jw01210001002_07201_00002_nrcalong_rate.fits",
+          "jw01210001002_07201_00003_nrcalong_rate.fits",
+          "jw01210001002_09201_00001_nrcalong_rate.fits",
+          "jw01210001002_09201_00002_nrcalong_rate.fits",
+          "jw01210001002_09201_00003_nrcalong_rate.fits",
+          "jw01210001003_11201_00001_nrcalong_rate.fits",
+          "jw01210001003_11201_00002_nrcalong_rate.fits",
+          "jw01210001003_11201_00003_nrcalong_rate.fits",
+          "jw01210001003_13201_00001_nrcalong_rate.fits",
+          "jw01210001003_13201_00002_nrcalong_rate.fits",
+          "jw01210001003_13201_00003_nrcalong_rate.fits",
+          "jw01895001006_05101_00001_nrcblong_rate.fits",
+          "jw01895001006_07101_00001_nrcblong_rate.fits",
+          "jw01895001006_07101_00002_nrcblong_rate.fits",
+          "jw02198001001_03101_00002_nrcalong_rate.fits",
+          "jw02198001001_03101_00003_nrcblong_rate.fits",
+          "jw02198001002_03101_00001_nrcblong_rate.fits",
+          "jw02198001003_02101_00001_nrcalong_rate.fits",
+          "jw02198001003_02101_00002_nrcalong_rate.fits",
+          "jw02198001004_02101_00001_nrcblong_rate.fits",
+          "jw02198001004_02101_00002_nrcblong_rate.fits",
+          "jw02514238001_03201_00001_nrcblong_rate.fits",
+          "jw02514238001_03201_00002_nrcblong_rate.fits",
+          "jw02514238001_03201_00003_nrcblong_rate.fits",
+          "jw04540001001_07101_00001_nrcalong_rate.fits",
+          "jw04540001002_02101_00001_nrcalong_rate.fits",
+          "jw04540001003_02101_00001_nrcalong_rate.fits",
+          "jw04540001004_07101_00001_nrcalong_rate.fits",
+          "jw04540001005_02101_00001_nrcalong_rate.fits",
+          "jw04540001006_02101_00001_nrcalong_rate.fits",
+          "jw04540012001_05101_00001_nrcalong_rate.fits",
+          "jw04540012002_02101_00001_nrcalong_rate.fits",
+          "jw04540012003_02101_00001_nrcalong_rate.fits",
+          "jw04540012004_05101_00001_nrcalong_rate.fits",
+          "jw04540012005_02101_00001_nrcalong_rate.fits",
+          "jw04540012006_02101_00001_nrcalong_rate.fits",
+          "jw02198001001_03101_00001_nrcalong_rate.fits",
+          "jw02198001002_03101_00002_nrcblong_rate.fits",
+          "jw02198001002_03101_00003_nrcblong_rate.fits",
+          "jw02198001001_03101_00002_nrcblong_rate.fits",
+          "jw02198001003_02101_00003_nrcblong_rate.fits",
+          "jw02198001004_02101_00003_nrcblong_rate.fits",
+          "jw02516003001_03101_00001_nrcblong_rate.fits",
+          "jw02516003001_03101_00002_nrcblong_rate.fits",
+          "jw02516003001_03101_00003_nrcblong_rate.fits",
+          "jw02516003001_03101_00004_nrcblong_rate.fits",
+          "jw02198001001_03101_00001_nrcblong_rate.fits",
+          "jw02198001003_02101_00001_nrcblong_rate.fits"
+        ],
+        "weight_interpretation": "inverse variance of SCI stored units from documented fits_weight API"
+      },
+      "original_in_deep_contributors": true,
+      "single_exposure_measurement": {
+        "background_subtracted_flux_jy": 9.758199449522854e-09,
+        "flux_error_jy": 4.006080726252419e-09,
+        "snr": 2.4358469327829515,
+        "measurement_status": "measured",
+        "calibration_status": "calibrated",
+        "coverage_fraction": 1.0,
+        "uncertainty_method": "err_diagonal_plus_background_mean"
+      },
+      "single_exposure_detection": {
+        "status": "not_detected",
+        "total_detections": 983,
+        "matches_within_0p2_arcsec": 0,
+        "separation_arcsec": 4.7414524703730665,
+        "detector_rule": "unchanged 5-sigma >=5-pixel segmentation; angular area differs between image grids"
+      },
+      "deep_measurement": {
+        "background_subtracted_flux_jy": 7.243780253444115e-09,
+        "flux_error_jy": 5.415178231724649e-10,
+        "snr": 13.376808561917056,
+        "measurement_status": "measured",
+        "calibration_status": "calibrated",
+        "coverage_fraction": 1.0,
+        "uncertainty_method": "err_diagonal_plus_background_mean",
+        "blank_scatter_snr": 12.35618986301417
+      },
+      "deep_detection": {
+        "status": "not_detected",
+        "total_detections": 67,
+        "matches_within_0p2_arcsec": 0,
+        "separation_arcsec": 2.073951730621753,
+        "detector_rule": "unchanged 5-sigma >=5-pixel segmentation; angular area differs between image grids"
+      },
+      "deep_blank_noise": {
+        "status": "measured",
+        "count": 83,
+        "sigma_jy": 5.862470821306291e-10,
+        "median_jy": 8.559483491853083e-11,
+        "formal_error_median_jy": 5.242892318791227e-10,
+        "scatter_to_formal_ratio": 1.1181749433026522,
+        "samples_jy": [
+          -4.086512349152571e-10,
+          -7.244788384088635e-11,
+          2.4083021285389175e-10,
+          -1.0682416627589722e-09,
+          -5.004939753320526e-10,
+          8.969180457451435e-10,
+          2.2667615731814401e-10,
+          1.9748435766930068e-10,
+          -3.196210109894176e-10,
+          8.559483491853083e-11,
+          -5.0674921843758406e-11,
+          -4.702646307350361e-10,
+          -1.3872107522203364e-09,
+          -3.662238709764892e-11,
+          -9.303035918044945e-11,
+          3.526111013553552e-10,
+          8.300955532561483e-10,
+          -9.964982056725393e-11,
+          3.2425639344823967e-10,
+          3.489702042030763e-10,
+          -5.165230153678299e-10,
+          -2.0899823257273948e-11,
+          1.7620364884690789e-09,
+          3.686158254122086e-10,
+          -1.3703838963678969e-09,
+          3.147197400585356e-10,
+          -4.619655139077011e-10,
+          -8.09177076419932e-10,
+          1.5073438967192428e-11,
+          -1.2449221584285966e-10,
+          2.3147655900651883e-11,
+          3.713774142578005e-10,
+          8.226929886893873e-10,
+          3.360729361548082e-10,
+          1.0017951042837164e-09,
+          -4.995986345169302e-10,
+          2.437893621763429e-10,
+          -7.357661354718237e-10,
+          2.5498390825258667e-10,
+          3.288110641354056e-10,
+          1.203853350102467e-09,
+          2.465964698827431e-10,
+          5.299760017898406e-10,
+          4.618147840197768e-10,
+          2.576385991426935e-11,
+          3.4508735604519094e-10,
+          3.654240598174898e-10,
+          -5.339850513270203e-10,
+          1.0971390387665257e-09,
+          -1.5963754093226285e-10,
+          -5.475012442659813e-10,
+          -5.864934983386417e-10,
+          4.072746934837252e-10,
+          1.1226262354580285e-09,
+          -7.231119705934883e-10,
+          5.2437037531609454e-11,
+          4.055019498517767e-10,
+          4.810130745857568e-10,
+          -6.766430876328795e-10,
+          -3.5229106719807657e-10,
+          9.649658104146189e-10,
+          -5.805297089647388e-10,
+          1.8435325814052106e-09,
+          -3.8849292810277595e-10,
+          -6.719831977313677e-10,
+          4.1103739073612996e-10,
+          -3.6403836783020004e-10,
+          -1.0051850578721292e-09,
+          9.758674402695253e-10,
+          9.546504268267899e-10,
+          2.1051945163674023e-10,
+          4.273127225823016e-10,
+          -1.304258952600098e-10,
+          -7.867675542717578e-12,
+          5.482784259857744e-10,
+          4.887171296805257e-10,
+          8.637746565721904e-10,
+          -4.137990727824338e-10,
+          -1.9537656537404175e-09,
+          -3.3222538792877744e-11,
+          -2.5520016009320573e-10,
+          2.261184994500343e-10,
+          4.5267037197793473e-10
+        ],
+        "positions_pixels": [
+          [
+            77,
+            15
+          ],
+          [
+            170,
+            15
+          ],
+          [
+            294,
+            15
+          ],
+          [
+            325,
+            15
+          ],
+          [
+            356,
+            15
+          ],
+          [
+            15,
+            46
+          ],
+          [
+            46,
+            46
+          ],
+          [
+            108,
+            46
+          ],
+          [
+            139,
+            46
+          ],
+          [
+            170,
+            46
+          ],
+          [
+            46,
+            77
+          ],
+          [
+            170,
+            77
+          ],
+          [
+            201,
+            77
+          ],
+          [
+            325,
+            77
+          ],
+          [
+            387,
+            77
+          ],
+          [
+            418,
+            77
+          ],
+          [
+            15,
+            108
+          ],
+          [
+            46,
+            108
+          ],
+          [
+            201,
+            108
+          ],
+          [
+            387,
+            108
+          ],
+          [
+            418,
+            108
+          ],
+          [
+            449,
+            108
+          ],
+          [
+            46,
+            139
+          ],
+          [
+            77,
+            139
+          ],
+          [
+            108,
+            139
+          ],
+          [
+            139,
+            139
+          ],
+          [
+            418,
+            139
+          ],
+          [
+            15,
+            170
+          ],
+          [
+            77,
+            170
+          ],
+          [
+            170,
+            170
+          ],
+          [
+            232,
+            170
+          ],
+          [
+            263,
+            170
+          ],
+          [
+            294,
+            170
+          ],
+          [
+            325,
+            170
+          ],
+          [
+            418,
+            170
+          ],
+          [
+            108,
+            201
+          ],
+          [
+            139,
+            201
+          ],
+          [
+            170,
+            201
+          ],
+          [
+            232,
+            201
+          ],
+          [
+            263,
+            201
+          ],
+          [
+            294,
+            201
+          ],
+          [
+            325,
+            201
+          ],
+          [
+            15,
+            232
+          ],
+          [
+            139,
+            232
+          ],
+          [
+            170,
+            232
+          ],
+          [
+            201,
+            232
+          ],
+          [
+            263,
+            232
+          ],
+          [
+            294,
+            232
+          ],
+          [
+            325,
+            232
+          ],
+          [
+            15,
+            263
+          ],
+          [
+            108,
+            263
+          ],
+          [
+            139,
+            263
+          ],
+          [
+            201,
+            263
+          ],
+          [
+            232,
+            263
+          ],
+          [
+            15,
+            294
+          ],
+          [
+            77,
+            294
+          ],
+          [
+            170,
+            294
+          ],
+          [
+            201,
+            294
+          ],
+          [
+            232,
+            294
+          ],
+          [
+            263,
+            294
+          ],
+          [
+            294,
+            294
+          ],
+          [
+            325,
+            294
+          ],
+          [
+            139,
+            325
+          ],
+          [
+            201,
+            325
+          ],
+          [
+            263,
+            325
+          ],
+          [
+            294,
+            325
+          ],
+          [
+            139,
+            356
+          ],
+          [
+            108,
+            387
+          ],
+          [
+            139,
+            387
+          ],
+          [
+            170,
+            387
+          ],
+          [
+            232,
+            387
+          ],
+          [
+            15,
+            418
+          ],
+          [
+            46,
+            418
+          ],
+          [
+            77,
+            418
+          ],
+          [
+            108,
+            418
+          ],
+          [
+            139,
+            418
+          ],
+          [
+            201,
+            418
+          ],
+          [
+            263,
+            418
+          ],
+          [
+            294,
+            418
+          ],
+          [
+            15,
+            449
+          ],
+          [
+            46,
+            449
+          ],
+          [
+            170,
+            449
+          ],
+          [
+            263,
+            449
+          ]
+        ],
+        "limitation": "Source-masked blank-sky covariance/confusion diagnostic; masks and spatial depth affect scatter"
+      }
+    },
+    {
+      "reference": {
+        "id": "20189546",
+        "ra_deg": 53.0721288,
+        "dec_deg": -27.8419459,
+        "quality_flag": "A",
+        "z_spec": 8.697172188017191
+      },
+      "deep_image": {
+        "filename": "dja_f444w_20189546.fits",
+        "receipt": {
+          "requested_url": "https://grizli-cutout.herokuapp.com/thumb?ra=53.0721288&dec=-27.8419459&filters=f444w-clear&size=12&output=fits_weight",
+          "resolved_url": "https://grizli-cutout.herokuapp.com/thumb?ra=53.0721288&dec=-27.8419459&filters=f444w-clear&size=12&output=fits_weight",
+          "retrieved_utc": "2026-10-09T07:20:26.000877+00:00",
+          "bytes": 1872000,
+          "sha256": "0a887487f1fefa97b4360b977fa23fc248321b47dad58e7e99bfa9b43f778d34",
+          "content_type": "image/fits",
+          "etag": "\"1791530425.7147028-1872000-2670070383\"",
+          "last_modified": "Fri, 09 Oct 2026 07:20:25 GMT",
+          "product_id": "20189546",
+          "max_bytes": 8388608
+        },
+        "input_bunit": "10.0*nanoJansky",
+        "grid_pixel_scales_arcsec": [
+          0.049999999999996804,
+          0.0500000000000004
+        ],
+        "ndrizim": 50,
+        "header_exptime_s": 64624.611000000026,
+        "header_exptime_caveat": "Mosaic total header time is not necessarily local per-pixel depth",
+        "grizli_version": "1.12.10",
+        "crds_context": "jwst_1123.pmap",
+        "updated_context": "jwst_1293.pmap",
+        "contributors": [
+          "jw01180026001_09201_00001_nrcalong_rate.fits",
+          "jw01180026001_09201_00002_nrcalong_rate.fits",
+          "jw01180026001_09201_00003_nrcalong_rate.fits",
+          "jw01180026001_11201_00001_nrcalong_rate.fits",
+          "jw01180026001_11201_00002_nrcalong_rate.fits",
+          "jw01180026001_11201_00003_nrcalong_rate.fits",
+          "jw01210001001_11201_00001_nrcalong_rate.fits",
+          "jw01210001001_11201_00002_nrcalong_rate.fits",
+          "jw01210001001_11201_00003_nrcalong_rate.fits",
+          "jw01210001001_13201_00001_nrcalong_rate.fits",
+          "jw01210001001_13201_00002_nrcalong_rate.fits",
+          "jw01210001001_13201_00003_nrcalong_rate.fits",
+          "jw01210001002_07201_00001_nrcalong_rate.fits",
+          "jw01210001002_07201_00002_nrcalong_rate.fits",
+          "jw01210001002_07201_00003_nrcalong_rate.fits",
+          "jw01210001002_09201_00001_nrcalong_rate.fits",
+          "jw01210001002_09201_00002_nrcalong_rate.fits",
+          "jw01210001002_09201_00003_nrcalong_rate.fits",
+          "jw01210001003_11201_00001_nrcalong_rate.fits",
+          "jw01210001003_11201_00002_nrcalong_rate.fits",
+          "jw01210001003_11201_00003_nrcalong_rate.fits",
+          "jw01210001003_13201_00001_nrcalong_rate.fits",
+          "jw01210001003_13201_00002_nrcalong_rate.fits",
+          "jw01210001003_13201_00003_nrcalong_rate.fits",
+          "jw01895001006_05101_00001_nrcblong_rate.fits",
+          "jw01895001006_07101_00001_nrcblong_rate.fits",
+          "jw01895001006_07101_00002_nrcblong_rate.fits",
+          "jw02198001001_03101_00001_nrcalong_rate.fits",
+          "jw02198001001_03101_00002_nrcalong_rate.fits",
+          "jw02198001001_03101_00003_nrcblong_rate.fits",
+          "jw02198001002_03101_00001_nrcblong_rate.fits",
+          "jw02198001002_03101_00002_nrcblong_rate.fits",
+          "jw02198001002_03101_00003_nrcblong_rate.fits",
+          "jw02198001003_02101_00001_nrcalong_rate.fits",
+          "jw02198001004_02101_00002_nrcblong_rate.fits",
+          "jw02514238001_03201_00001_nrcblong_rate.fits",
+          "jw02514238001_03201_00002_nrcblong_rate.fits",
+          "jw02514238001_03201_00003_nrcblong_rate.fits",
+          "jw04540001001_07101_00001_nrcalong_rate.fits",
+          "jw04540001002_02101_00001_nrcalong_rate.fits",
+          "jw04540001003_02101_00001_nrcalong_rate.fits",
+          "jw04540001004_07101_00001_nrcalong_rate.fits",
+          "jw04540001005_02101_00001_nrcalong_rate.fits",
+          "jw04540001006_02101_00001_nrcalong_rate.fits",
+          "jw04540012001_05101_00001_nrcalong_rate.fits",
+          "jw04540012002_02101_00001_nrcalong_rate.fits",
+          "jw04540012003_02101_00001_nrcalong_rate.fits",
+          "jw04540012004_05101_00001_nrcalong_rate.fits",
+          "jw04540012005_02101_00001_nrcalong_rate.fits",
+          "jw04540012006_02101_00001_nrcalong_rate.fits"
+        ],
+        "weight_interpretation": "inverse variance of SCI stored units from documented fits_weight API"
+      },
+      "original_in_deep_contributors": true,
+      "single_exposure_measurement": {
+        "background_subtracted_flux_jy": 1.1557513028079654e-08,
+        "flux_error_jy": 4.341077270449279e-09,
+        "snr": 2.662360586565535,
+        "measurement_status": "measured",
+        "calibration_status": "calibrated",
+        "coverage_fraction": 1.0,
+        "uncertainty_method": "err_diagonal_plus_background_mean"
+      },
+      "single_exposure_detection": {
+        "status": "not_detected",
+        "total_detections": 983,
+        "matches_within_0p2_arcsec": 0,
+        "separation_arcsec": 0.6382589679805781,
+        "detector_rule": "unchanged 5-sigma >=5-pixel segmentation; angular area differs between image grids"
+      },
+      "deep_measurement": {
+        "background_subtracted_flux_jy": 1.1456242422600443e-08,
+        "flux_error_jy": 5.174489574904327e-10,
+        "snr": 22.139850234044122,
+        "measurement_status": "measured",
+        "calibration_status": "calibrated",
+        "coverage_fraction": 1.0,
+        "uncertainty_method": "err_diagonal_plus_background_mean",
+        "blank_scatter_snr": 15.532868846243026
+      },
+      "deep_detection": {
+        "status": "matched",
+        "total_detections": 83,
+        "matches_within_0p2_arcsec": 1,
+        "separation_arcsec": 0.02124386086191166,
+        "detector_rule": "unchanged 5-sigma >=5-pixel segmentation; angular area differs between image grids"
+      },
+      "deep_blank_noise": {
+        "status": "measured",
+        "count": 85,
+        "sigma_jy": 7.3754839083518e-10,
+        "median_jy": -1.0625651908442522e-10,
+        "formal_error_median_jy": 5.299147550106014e-10,
+        "scatter_to_formal_ratio": 1.3918245979401436,
+        "samples_jy": [
+          -2.290569734691039e-11,
+          -1.3312131783595018e-10,
+          5.704637110996926e-10,
+          -2.592726733446474e-10,
+          1.0999110252221894e-10,
+          -7.231177172969663e-11,
+          2.881725530640651e-10,
+          -7.023286609665165e-10,
+          8.772138218236639e-10,
+          6.785351908517627e-11,
+          -3.334069608294545e-10,
+          -3.910542513081875e-10,
+          2.211318160027718e-10,
+          -2.1426376079392365e-10,
+          1.2619269079583378e-09,
+          -3.593936929883057e-10,
+          -2.0751193897793752e-10,
+          2.3959957621785883e-09,
+          -9.549392572956926e-11,
+          2.4444257811231444e-10,
+          -1.979704037962696e-10,
+          -1.0020707023687396e-10,
+          -1.3721866915963545e-09,
+          9.476017023046954e-10,
+          -1.0625651908442522e-10,
+          2.2921073969717896e-12,
+          -1.6607864241689007e-10,
+          1.2359468486239e-09,
+          -3.600816052390717e-10,
+          -1.1706271913509654e-10,
+          3.912130552007361e-10,
+          -9.978494717164512e-10,
+          -2.426006918540598e-10,
+          -1.1792614036434695e-10,
+          -8.791517557405258e-12,
+          4.1580489196647177e-11,
+          -6.351598319720399e-10,
+          -7.426818951641703e-10,
+          3.6723255009001464e-10,
+          -7.179828981088765e-10,
+          1.5336967342233546e-09,
+          3.2803257165470014e-10,
+          1.0636597753901682e-09,
+          -4.492101879194795e-10,
+          1.3094672879553226e-10,
+          -1.2801962261640212e-09,
+          -3.189443155428845e-10,
+          -1.1361667756673493e-09,
+          1.0709300836187269e-09,
+          9.170561257789026e-11,
+          -8.755246449048873e-10,
+          4.82816175777234e-10,
+          5.397757347802625e-10,
+          -9.720708532566902e-11,
+          -8.708884962313699e-10,
+          -9.269728450957788e-10,
+          -8.836256754180857e-10,
+          -4.585923712437628e-10,
+          1.908737604665729e-10,
+          -5.143501946512231e-10,
+          1.2856348889573797e-09,
+          7.71224839386098e-10,
+          7.687527363152901e-10,
+          4.768014783585983e-10,
+          -4.711424196964381e-10,
+          -1.315952817699997e-09,
+          -1.6334068756544305e-10,
+          -1.7438535061936532e-09,
+          -2.912937651792282e-09,
+          -1.0099917199902134e-09,
+          1.1821121556008654e-09,
+          -3.193672701059978e-10,
+          -1.106564099794267e-09,
+          1.0378729948934797e-09,
+          -2.0174365258407916e-09,
+          8.126496479166026e-10,
+          -6.678815101928258e-10,
+          -6.631511043034125e-11,
+          -3.9222601819391606e-11,
+          -1.910112604825342e-09,
+          2.1198603105581315e-09,
+          -6.122482658550503e-10,
+          -4.020983642148342e-10,
+          9.454707451861218e-10,
+          4.080101965447569e-10
+        ],
+        "positions_pixels": [
+          [
+            15,
+            15
+          ],
+          [
+            46,
+            15
+          ],
+          [
+            139,
+            15
+          ],
+          [
+            232,
+            15
+          ],
+          [
+            294,
+            15
+          ],
+          [
+            387,
+            15
+          ],
+          [
+            418,
+            15
+          ],
+          [
+            15,
+            46
+          ],
+          [
+            46,
+            46
+          ],
+          [
+            108,
+            46
+          ],
+          [
+            170,
+            46
+          ],
+          [
+            201,
+            46
+          ],
+          [
+            294,
+            46
+          ],
+          [
+            325,
+            46
+          ],
+          [
+            356,
+            46
+          ],
+          [
+            387,
+            46
+          ],
+          [
+            418,
+            46
+          ],
+          [
+            449,
+            46
+          ],
+          [
+            15,
+            77
+          ],
+          [
+            77,
+            77
+          ],
+          [
+            108,
+            77
+          ],
+          [
+            139,
+            77
+          ],
+          [
+            170,
+            77
+          ],
+          [
+            201,
+            77
+          ],
+          [
+            325,
+            77
+          ],
+          [
+            356,
+            77
+          ],
+          [
+            46,
+            108
+          ],
+          [
+            325,
+            108
+          ],
+          [
+            387,
+            108
+          ],
+          [
+            15,
+            139
+          ],
+          [
+            46,
+            139
+          ],
+          [
+            139,
+            139
+          ],
+          [
+            387,
+            139
+          ],
+          [
+            15,
+            170
+          ],
+          [
+            139,
+            170
+          ],
+          [
+            170,
+            170
+          ],
+          [
+            201,
+            170
+          ],
+          [
+            232,
+            170
+          ],
+          [
+            294,
+            170
+          ],
+          [
+            418,
+            170
+          ],
+          [
+            449,
+            170
+          ],
+          [
+            15,
+            201
+          ],
+          [
+            108,
+            201
+          ],
+          [
+            139,
+            201
+          ],
+          [
+            170,
+            201
+          ],
+          [
+            15,
+            232
+          ],
+          [
+            108,
+            232
+          ],
+          [
+            201,
+            232
+          ],
+          [
+            418,
+            232
+          ],
+          [
+            449,
+            232
+          ],
+          [
+            15,
+            263
+          ],
+          [
+            77,
+            263
+          ],
+          [
+            108,
+            263
+          ],
+          [
+            170,
+            263
+          ],
+          [
+            449,
+            263
+          ],
+          [
+            46,
+            294
+          ],
+          [
+            77,
+            294
+          ],
+          [
+            108,
+            294
+          ],
+          [
+            170,
+            294
+          ],
+          [
+            201,
+            294
+          ],
+          [
+            449,
+            294
+          ],
+          [
+            77,
+            325
+          ],
+          [
+            108,
+            325
+          ],
+          [
+            201,
+            325
+          ],
+          [
+            325,
+            325
+          ],
+          [
+            356,
+            325
+          ],
+          [
+            294,
+            356
+          ],
+          [
+            325,
+            356
+          ],
+          [
+            356,
+            356
+          ],
+          [
+            418,
+            356
+          ],
+          [
+            449,
+            356
+          ],
+          [
+            15,
+            387
+          ],
+          [
+            170,
+            387
+          ],
+          [
+            294,
+            387
+          ],
+          [
+            356,
+            387
+          ],
+          [
+            15,
+            418
+          ],
+          [
+            108,
+            418
+          ],
+          [
+            139,
+            418
+          ],
+          [
+            294,
+            418
+          ],
+          [
+            449,
+            418
+          ],
+          [
+            15,
+            449
+          ],
+          [
+            46,
+            449
+          ],
+          [
+            108,
+            449
+          ],
+          [
+            139,
+            449
+          ],
+          [
+            294,
+            449
+          ]
+        ],
+        "limitation": "Source-masked blank-sky covariance/confusion diagnostic; masks and spatial depth affect scatter"
+      }
+    }
+  ],
+  "limits": [
+    "No independent-image claim: mosaic includes original exposure and cutouts may overlap",
+    "No completeness estimate from three selected nonrecoveries",
+    "No frozen classifier transferred to differently sampled mosaic",
+    "Aperture fluxes omit PSF correction; WHT formal errors are diagonal; empirical sky scatter retains masking assumptions",
+    "5-pixel detector rule covers different angular area at different sampling",
+    "Two tentative C redshifts are not treated as robust A/B truth"
+  ]
+}
