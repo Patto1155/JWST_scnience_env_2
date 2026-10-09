@@ -292,6 +292,16 @@ def test_versioned_real_coadd_output_replays_without_download_cache():
     assert_replay_close(observed, saved)
 
 
+def test_versioned_real_native_output_replays_without_download_cache():
+    observed = run_comparison(
+        ROOT / "research_output/mom_native_ionic_fit.json",
+        ROOT / "research_output/mom_atomic_grid.json",
+        ROOT / "research_output/mom_native_reduction.json",
+    )
+    saved = json.loads((ROOT / "research_output/atomic_enrichment_native.json").read_text())
+    assert_replay_close(observed, saved)
+
+
 def assert_replay_close(observed, saved):
     """Keep exact receipt/schema/count identity; tolerate only negligible BLAS roundoff."""
     if isinstance(saved, dict):

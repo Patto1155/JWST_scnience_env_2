@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "status": "explicit_deterministic_assumptions_not_fitted_parameters_or_priors",
+  "formation_onset_redshifts": [20.0, 25.0, 30.0, 40.0],
+  "recent_complete_assembly_windows_myr": [4.0, 10.0],
+  "rising_sfr_efold_myr": [null, 5.0, 10.0, 30.0, 100.0],
+  "quoted_mass_conventions": ["current_surviving", "cumulative_formed"],
+  "mass_convention_provenance": {
+    "paper_url": "https://arxiv.org/html/2505.11263v2",
+    "paper_location": "Table 1 and Section 3.2.2",
+    "prospector_documentation_url": "https://prospect.readthedocs.io/en/stable/faq.html",
+    "documentation_access_date": "2026-10-09",
+    "recorded_primary_excerpt": "By default, masses are in solar masses of stars formed",
+    "interpretation": "Paper labels total stellar mass without specifying conversion; Prospector defaults to formed mass. Author configuration/posterior mass conversion is unavailable; neither convention is assumed confirmed."
+  },
+  "published_model_sfr_and_halfmass_benchmarks": {
+    "source_url": "https://arxiv.org/html/2505.11263v2",
+    "source_location": "Table 1",
+    "status": "manual_primary_table_transcription_model_dependent_margins_not_joint_likelihood",
+    "sfr_last_5_myr_msun_per_year": {"median": 13.0, "minus": 3.5, "plus": 3.7},
+    "sfr_last_50_myr_msun_per_year": {"median": 2.2, "minus": 0.6, "plus": 1.5},
+    "halfmass_lookback_myr": {"median": 4.0, "minus": 1.4, "plus": 10.0},
+    "window_definition_assumed": "means over nested trailing 5/50-Myr windows including zero SFR before modeled onset; exact author postprocessing is unavailable",
+    "halfmass_definition_assumed": "lookback time enclosing half the cumulative formed mass; constant effective return makes it also half the surviving mass. Exact author postprocessing is unavailable."
+  },
+  "time_duty_fractions": [0.1, 1.0],
+  "effective_returned_mass_fractions": [0.0, 0.4],
+  "inverse_active_sfr_msun_per_year": [5.0, 10.0, 30.0, 100.0],
+  "inverse_duty_fractions": [0.1, 1.0],
+  "inverse_returned_mass_fraction": 0.4,
+  "permanently_lost_outflow_mass_per_formed_stellar_mass": [0.0, 1.0, 5.0],
+  "initial_available_cosmic_baryon_fractions": [0.1, 0.3, 1.0],
+  "remaining_gas_mass_msun": [0.0, 100000000.0],
+  "hypothetical_halo_masses_msun": [1000000000.0, 10000000000.0, 100000000000.0],
+  "hypothetical_polluted_ambient_gas_masses_msun": [10000.0, 100000.0, 1000000.0],
+  "polluter_stage_fraction_ratio_k": 0.3,
+  "polluter_ambient_bracket_C_over_O": -0.65,
+  "polluter_retention_scenarios": ["full_equal", "tenth_equal"],
+  "assumptions": [
+    "both current surviving and cumulative formed interpretations of the quoted model-dependent stellar mass are evaluated; neither is asserted to be the author's reporting convention",
+    "freezing the same quoted mass across alternative histories is a sensitivity experiment, not a stellar-population refit; mass-to-light ratios must be refitted for real likelihoods",
+    "null e-fold time means constant SFR; finite positive times mean a rising exponential envelope",
+    "duty is a uniformly interleaved active fraction multiplying the envelope integral; contiguous burst histories need their actual integration",
+    "active SFR predictions condition on observing an active phase; duty is not automatically the probability of UV selection",
+    "returned fraction is an uncalibrated effective integrated parameter; an age-dependent stellar return kernel is required for physical fitting",
+    "recent complete assembly windows are counterfactual tests of forming all surviving stellar mass in that interval, not observed stellar ages",
+    "closed-parcel baryon accounting permits returned gas to recycle, assumes permanent outflow loss and no later external inflow or ex-situ stars",
+    "available baryon fraction refers to the initial retained cosmic allowance, separate from later wind loss",
+    "gas masses and halo masses are hypothetical sensitivity inputs, not measured quantities",
+    "polluter initial mass fractions are conditional event-equivalent bookkeeping, not IMF constraints or star formation rates for the polluter itself"
+  ]
+}
