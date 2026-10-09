@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 1,
   "inputs_sha256": {
     "native_report": "88e3cdbf5b7759eaad84dc21ead0974c38f392292d71ce605fa0f5b5951637ec",
     "native_npz": "9412f52afbed589777cf55ad27ca2e93065cb4003be4990debc17503fe097027",
@@ -9,22 +9,22 @@
     {
       "scenario": "nominal_shared_formal",
       "max_flux_absolute_error": 1.8118839761882555e-13,
-      "max_covariance_absolute_error_over_largest_saved_entry": 7.139360518882387e-16
+      "max_covariance_relative_error": 2.48245868306185e-13
     },
     {
       "scenario": "point_shared_formal",
       "max_flux_absolute_error": 8.171241461241152e-14,
-      "max_covariance_absolute_error_over_largest_saved_entry": 6.819852697722577e-16
+      "max_covariance_relative_error": 2.4313884239290928e-14
     },
     {
       "scenario": "nominal_empirical_offtrace_transport",
       "max_flux_absolute_error": 7.105427357601002e-14,
-      "max_covariance_absolute_error_over_largest_saved_entry": 6.136314408432216e-16
+      "max_covariance_relative_error": 1.8407497748285095e-13
     },
     {
       "scenario": "point_empirical_offtrace_transport",
       "max_flux_absolute_error": 3.552713678800501e-14,
-      "max_covariance_absolute_error_over_largest_saved_entry": 4.4311073438343956e-16
+      "max_covariance_relative_error": 2.353672812205332e-14
     }
   ],
   "source254_blue_background_oracle": {

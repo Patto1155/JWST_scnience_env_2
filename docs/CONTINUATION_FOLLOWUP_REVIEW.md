@@ -114,3 +114,13 @@ The four compact reviewer JSONs pin every supplied model/report input and retain
 independent discrepancies and signed blue measurements. Raw input files stay
 external. The original reduction and model reports give acquisition recipes and
 physical assumptions; these audit commands do not replace those experiments.
+
+The coordinator's review found that elementwise covariance-relative differences
+could silently contain NaN when a saved off-diagonal covariance is exactly zero.
+The audit now fails closed for nonfinite values, dimensions, covariance order,
+units, missing/reordered scenarios and invalid native arrays. Covariance
+comparison uses absolute differences normalized by the largest saved entry,
+with explicit finite `allclose` checks. Zero-entry and nonfinite counterexamples
+pass. The earlier numerical receipt is retained as
+`continuation_followup_review_v1.json`; schema 2 is the current guarded receipt.
+Observed signed fluxes and blue-background results remain unchanged.

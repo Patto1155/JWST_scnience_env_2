@@ -22,14 +22,120 @@ from tools.jwst.line_sensitivity import line_matrix, read_resolution
 from tools.jwst.point_resolution import read_point_resolution
 
 ROOT = Path(__file__).resolve().parents[1]
+NATIVE_SCENARIOS = (
+    "nominal_shared_formal",
+    "point_shared_formal",
+    "nominal_empirical_offtrace_transport",
+    "point_empirical_offtrace_transport",
+)
+LINE_ORDER = ("NIV", "CIV", "HeII_OIII", "NIII", "CIII")
+
+
+def compare_native_model(flux: np.ndarray, covariance: np.ndarray, stored: dict) -> dict:
+    """Fail closed for zero entries, nonfinite values, units or likelihood order."""
+    expected_flux = np.asarray(stored["fluxes"], dtype=float)
+    expected_covariance = np.asarray(stored["flux_covariance"], dtype=float)
+    if (
+        stored.get("flux_units") != "1e-20 erg s^-1 cm^-2"
+        or tuple(stored.get("line_order", ())) != LINE_ORDER
+    ):
+        raise ValueError("native stored likelihood units/order differ")
+    for vector, matrix in ((flux, covariance), (expected_flux, expected_covariance)):
+        if (
+            vector.shape != (5,)
+            or matrix.shape != (5, 5)
+            or not np.isfinite(vector).all()
+            or not np.isfinite(matrix).all()
+        ):
+            raise ValueError("native likelihood must have finite aligned five-group arrays")
+        if (
+            not np.allclose(matrix, matrix.T, rtol=1e-10, atol=1e-12)
+            or np.linalg.eigvalsh(matrix).min() <= 0
+        ):
+            raise ValueError("native likelihood covariance must be symmetric positive definite")
+    scale = float(np.max(np.abs(expected_covariance)))
+    flux_difference = float(np.max(np.abs(flux - expected_flux)))
+    covariance_difference = float(np.max(np.abs(covariance - expected_covariance)) / scale)
+    if not np.allclose(flux, expected_flux, rtol=1e-10, atol=1e-10) or not np.allclose(
+        covariance, expected_covariance, rtol=1e-9, atol=1e-11 * scale
+    ):
+        raise ValueError("independent native GLS disagrees with saved signed likelihood")
+    return {
+        "max_flux_absolute_error": flux_difference,
+        "max_covariance_absolute_error_over_largest_saved_entry": covariance_difference,
+    }
+
+
+def check_native_arrays(npz, report: dict) -> None:
+    """Reject empty/changed scenario and derived-array contracts before fitting."""
+    if tuple(s.get("name") for s in report.get("scenarios", ())) != NATIVE_SCENARIOS:
+        raise ValueError("exactly four ordered native scenarios required")
+    if len(npz.files) != len(set(npz.files)):
+        raise ValueError("duplicate native replay array names")
+    wave, good, trace, sigma = (npz[k] for k in ("native_wave", "native_good", "trace", "sigma"))
+    selected, blocks, flux, kernel, scale = (
+        npz[k]
+        for k in (
+            "selected_columns",
+            "covariance_blocks",
+            "flux",
+            "spectral_kernel",
+            "noise_scale_squared",
+        )
+    )
+    if (
+        wave.ndim != 3
+        or wave.shape[0] != 9
+        or good.shape != wave.shape
+        or good.dtype != bool
+        or trace.shape != (9, wave.shape[2])
+    ):
+        raise ValueError("native wavelength/mask/trace shapes differ")
+    if (
+        sigma.shape != (1,)
+        or scale.shape != (1,)
+        or not np.isfinite(sigma).all()
+        or not np.isfinite(scale).all()
+        or min(sigma[0], scale[0]) <= 0
+    ):
+        raise ValueError("positive finite native width/noise scales required")
+    if (
+        selected.ndim != 1
+        or not np.issubdtype(selected.dtype, np.integer)
+        or len(selected) < 20
+        or np.any(np.diff(selected) <= 0)
+        or selected.min() < 0
+        or selected.max() >= wave.shape[2]
+    ):
+        raise ValueError("ordered covered native columns required")
+    if (
+        flux.shape != (9, len(selected))
+        or blocks.shape != (len(selected), 9, 9)
+        or kernel.shape != (len(selected), len(selected))
+    ):
+        raise ValueError("native flux/covariance/kernel shapes differ")
+    if (
+        not np.isfinite(trace).all()
+        or not np.isfinite(wave[good]).all()
+        or any(not np.isfinite(x).all() for x in (flux, blocks, kernel))
+    ):
+        raise ValueError("native replay contains nonfinite source arrays")
+    if (
+        not np.allclose(blocks, blocks.transpose(0, 2, 1))
+        or np.linalg.eigvalsh(blocks).min() <= 0
+        or not np.allclose(kernel, kernel.T)
+        or np.linalg.eigvalsh(kernel).min() <= 0
+    ):
+        raise ValueError("native covariance/kernel must be symmetric positive definite")
 
 
 def native_gls_audit(npz_path: Path, report_path: Path) -> list:
     """Build L (K tensor I) L.T independently and solve GLS normal equations."""
-    npz = np.load(npz_path)
+    npz = np.load(npz_path, allow_pickle=False)
     report = json.loads(report_path.read_text())
     if digest(npz_path) != report["compact_native_replay"]["sha256"]:
         raise ValueError("derived native amplitudes disagree with report receipt")
+    check_native_arrays(npz, report)
     wave, good, trace, sigma = (npz[k] for k in ("native_wave", "native_good", "trace", "sigma"))
     yy = np.arange(wave.shape[1])[None, :, None]
     profile = ndtr((yy + 0.5 - trace[:, None, :]) / sigma[0]) - ndtr(
@@ -40,6 +146,8 @@ def native_gls_audit(npz_path: Path, report_path: Path) -> list:
     waves = np.divide(numerator, den, out=np.full_like(den, np.nan), where=den > 0)
     for row in waves:
         valid = np.flatnonzero(np.isfinite(row))
+        if len(valid) < 2:
+            raise ValueError("native source wavelength lacks finite interpolation anchors")
         row[:] = np.interp(np.arange(len(row)), valid, row[valid])
         left, right = valid[0], valid[-1]
         row[:left] = row[left] + (np.arange(left) - left) * (row[left + 1] - row[left])
@@ -50,7 +158,7 @@ def native_gls_audit(npz_path: Path, report_path: Path) -> list:
     factor = block_diag(*[np.linalg.cholesky(x) for x in blocks])
     values = npz["flux"].T.ravel()
     output = []
-    for index, scenario in enumerate(report["scenarios"][:4]):
+    for index, scenario in enumerate(report["scenarios"]):
         if index % 2:
             rw, rr, _ = read_point_resolution(
                 ROOT / "data_sources/followup/unite_point_prism_resolution.csv"
@@ -69,18 +177,10 @@ def native_gls_audit(npz_path: Path, report_path: Path) -> list:
         solved = np.linalg.solve(covariance, np.column_stack((matrix, values)))
         inverse = np.linalg.inv(matrix.T @ solved[:, :7])
         coefficient = inverse @ (matrix.T @ solved[:, -1])
-        stored = scenario["fit"]
-        flux_difference = float(np.max(np.abs(coefficient[2:] - stored["fluxes"])))
-        covariance_difference = float(
-            np.max(np.abs(inverse[2:, 2:] / stored["flux_covariance"] - 1))
-        )
-        if flux_difference > 1e-10 or covariance_difference > 1e-8:
-            raise ValueError("independent native GLS disagrees with saved signed likelihood")
         output.append(
             {
                 "scenario": scenario["name"],
-                "max_flux_absolute_error": flux_difference,
-                "max_covariance_relative_error": covariance_difference,
+                **compare_native_model(coefficient[2:], inverse[2:, 2:], scenario["fit"]),
             }
         )
     return output
@@ -155,7 +255,7 @@ def main() -> None:
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
     result = {
-        "schema_version": 1,
+        "schema_version": 2,
         "inputs_sha256": {
             k: digest(v)
             for k, v in vars(args).items()
