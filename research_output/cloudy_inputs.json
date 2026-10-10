@@ -1,0 +1,232 @@
+{
+  "url": "https://data.nublado.org/cloudy_releases/c23/c23.01.tar.gz",
+  "doi": "https://doi.org/10.5281/zenodo.14142065",
+  "bytes": 338434070,
+  "md5": "73917420ab471497fa15750c751bbf1f",
+  "sha256": "a9ad2dc037e88f552389de0e483d68f54310976dee32154ed13830882aedae0b",
+  "build": {
+    "url": "https://data.nublado.org/cloudy_releases/c23/c23.01.tar.gz",
+    "doi": "https://doi.org/10.5281/zenodo.14142065",
+    "bytes": 338434070,
+    "md5": "73917420ab471497fa15750c751bbf1f",
+    "sha256": "a9ad2dc037e88f552389de0e483d68f54310976dee32154ed13830882aedae0b",
+    "lapack_backend": {
+      "library": "liblapack.so.3",
+      "compile_args": [
+        "g++",
+        "-std=c++11",
+        "-O2",
+        "-ftrapping-math",
+        "-fno-math-errno",
+        "-Wno-deprecated-declarations",
+        "-DLAPACK",
+        "-no-pie",
+        "-fno-pie",
+        "-DSYS_CONFIG=\"/workspace/scratch/7016fca60156/research-cache/cloudy/c23.01/source/sys_pilot/cloudyconfig.h\"",
+        "-c",
+        "../thirdparty_lapack.cpp",
+        "-o",
+        "thirdparty_lapack_external.o"
+      ],
+      "link_args": [
+        "g++",
+        "-O2",
+        "-no-pie",
+        "-fno-pie",
+        "-Wl,-export-dynamic",
+        "-o",
+        "cloudy-lapack.exe",
+        "maincl.o",
+        "thirdparty_lapack_external.o",
+        "-L.",
+        "-lcloudy",
+        "-l:liblapack.so.3"
+      ],
+      "dynamic_links": "\tlinux-vdso.so.1 (0x00007f465864a000)\n\tliblapack.so.3 => /lib/x86_64-linux-gnu/liblapack.so.3 (0x00007f4657f49000)\n\tlibstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007f4657ccb000)\n\tlibm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007f4657be2000)\n\tlibgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007f4657bb4000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f46579a2000)\n\tlibblas.so.3 => /lib/x86_64-linux-gnu/libblas.so.3 (0x00007f46578f9000)\n\tlibgfortran.so.5 => /lib/x86_64-linux-gnu/libgfortran.so.5 (0x00007f46575db000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007f465864c000)\n"
+    },
+    "build_seconds": 2.2941671250009676,
+    "executable_sha256": "9833712a825ba23d96717c88481406df21b83e758655476358f63e2fa841abc5",
+    "makefile_config": "OPT = -O1 -ftrapping-math -fno-math-errno -Wno-deprecated-declarations\nCXXFLAGS = $(STD) $(OPT) -Wall -W\nLDFLAGS = $(OPT) -Wall\n",
+    "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0"
+  },
+  "selected_members_verified_against_archive": [
+    {
+      "member": "c23.01/docs/LineLabels.txt",
+      "bytes": 5604816,
+      "sha256": "482368fef3de18ef01b2a6ac6ff7e67f1d544c19fe0dbbc169946a2090ba3d46",
+      "reference_tail": null
+    },
+    {
+      "member": "c23.01/data/abundances/solar_GASS10.abn",
+      "bytes": 1488,
+      "sha256": "f1125b218a81783a7f2c23eb17d210035f0e4fd82bae1f1c5deca00e66907504",
+      "reference_tail": null
+    },
+    {
+      "member": "c23.01/docs/latex/hazy1/conout.tex",
+      "bytes": 165160,
+      "sha256": "422df86353bf82d929d9ffe8993284ac4c920a1c04f6b4378263adf5c05facdb",
+      "reference_tail": null
+    },
+    {
+      "member": "c23.01/source/cddrive.cpp",
+      "bytes": 49195,
+      "sha256": "886fd3fd953cbb46ef08433c34246fbfc54184a66b25a2a14af7efe102fc49b4",
+      "reference_tail": null
+    },
+    {
+      "member": "c23.01/source/save_do.cpp",
+      "bytes": 140662,
+      "sha256": "c63913974256dae9431f3480d0348b76d3105f2a374a86430e9fbc213ed69e42",
+      "reference_tail": null
+    },
+    {
+      "member": "c23.01/source/thirdparty_lapack.cpp",
+      "bytes": 72190,
+      "sha256": "8a568e589be12a1b1b11a2c48a81e664e62b69accabc9a208c89f638b9aeeef8",
+      "reference_tail": null
+    },
+    {
+      "member": "c23.01/data/stout/n/n_4/n_4.coll",
+      "bytes": 4853767,
+      "sha256": "bd5f6315e318552e5439539483d9f5ca6b716938960f30df0491963958ed1c9a",
+      "reference_tail": "CS ELECTRON\t234\t238\t4.71e-01\t4.03e-01\t3.49e-01\t2.95e-01\t2.61e-01\t2.32e-01\t2.09e-01\t1.92e-01\t1.82e-01\t1.78e-01\t1.77e-01\t1.78e-01\t1.79e-01\t1.80e-01\t1.81e-01\t1.81e-01\t1.82e-01\nCS ELECTRON\t235\t236\t2.92e-02\t2.22e-02\t1.70e-02\t1.25e-02\t1.00e-02\t8.04e-03\t6.49e-03\t5.20e-03\t4.10e-03\t3.14e-03\t2.31e-03\t1.65e-03\t1.14e-03\t7.61e-04\t3.35e-04\t1.79e-04\t9.81e-05\nCS ELECTRON\t235\t237\t1.45e-01\t1.19e-01\t1.02e-01\t8.56e-02\t7.58e-02\t6.69e-02\t5.87e-02\t5.13e-02\t4.47e-02\t3.89e-02\t3.42e-02\t3.06e-02\t2.80e-02\t2.62e-02\t2.43e-02\t2.36e-02\t2.33e-02\nCS ELECTRON\t235\t238\t1.13e-01\t9.16e-02\t7.44e-02\t5.74e-02\t4.71e-02\t3.83e-02\t3.14e-02\t2.63e-02\t2.26e-02\t2.01e-02\t1.84e-02\t1.73e-02\t1.67e-02\t1.62e-02\t1.58e-02\t1.57e-02\t1.56e-02\nCS ELECTRON\t236\t237\t1.78e+01\t1.84e+01\t1.88e+01\t1.88e+01\t1.86e+01\t1.81e+01\t1.74e+01\t1.69e+01\t1.68e+01\t1.73e+01\t1.79e+01\t1.87e+01\t1.93e+01\t1.97e+01\t2.03e+01\t2.05e+01\t2.06e+01\nCS ELECTRON\t236\t238\t2.98e+02\t3.88e+02\t5.53e+02\t7.79e+02\t9.41e+02\t1.10e+03\t1.25e+03\t1.39e+03\t1.53e+03\t1.67e+03\t1.80e+03\t1.93e+03\t2.08e+03\t2.27e+03\t2.73e+03\t3.17e+03\t3.64e+03\nCS ELECTRON\t237\t238\t4.70e+01\t4.63e+01\t4.55e+01\t4.34e+01\t4.10e+01\t3.80e+01\t3.47e+01\t3.15e+01\t2.91e+01\t2.76e+01\t2.70e+01\t2.69e+01\t2.70e+01\t2.71e+01\t2.73e+01\t2.74e+01\t2.75e+01\n**************\n#Reference:\nhttp://adsabs.harvard.edu/abs/2017JPhB...50f5203F"
+    },
+    {
+      "member": "c23.01/data/stout/n/n_4/n_4.tp",
+      "bytes": 510347,
+      "sha256": "4dc0891429fe787823f541f5ac6a1a212946933f70f74cf46069dcc4ddbee31b",
+      "reference_tail": "A\t234\t238\t3.99e-05\nA\t235\t236\t1.00e-30\nA\t235\t237\t1.00e-30\nA\t235\t238\t2.56e-05\nA\t236\t237\t3.82e-21\nA\t236\t238\t9.77e+03\nA\t237\t238\t2.32e-07\n**************\n#Reference:\nhttp://adsabs.harvard.edu/abs/2017JPhB...50f5203F"
+    },
+    {
+      "member": "c23.01/data/stout/n/n_4/n_4.nrg",
+      "bytes": 7776,
+      "sha256": "e4ab82978db50833727e9b3cd4d4460834d63840a10e8ecfd829e2163d9f94cf",
+      "reference_tail": "234\t668913.6000\t3\t\"2D1 7D1 3P1\"\n235\t668934.1000\t1\t\"2D1 7D1 3P0\"\n236\t669152.0000\t1\t\"2P1 7P1 1S0\"\n237\t669201.1000\t7\t\"2D1 7D1 1F3\"\n238\t669563.6000\t3\t\"2D1 7D1 1P1\"\n**************\n#Reference:\nhttp://adsabs.harvard.edu/abs/2017JPhB...50f5203F\ndata for first 20 levels are updated to NIST\nremainder are from the ADF04 file provided by Luis"
+    },
+    {
+      "member": "c23.01/data/stout/c/c_3/c_3.tp",
+      "bytes": 510350,
+      "sha256": "45451a52209bdbb15fb9e307ddd0ab0f3fd85bdfa918b140ca278a20d6e3a540",
+      "reference_tail": "A\t234\t238\t1.98e+03\nA\t235\t236\t1.00e-30\nA\t235\t237\t8.68e-06\nA\t235\t238\t1.00e-30\nA\t236\t237\t4.07e-07\nA\t236\t238\t2.33e-08\nA\t237\t238\t2.22e+06\n**************\n#Reference:\n#http://adsabs.harvard.edu/abs/2014A%26A...566A.104F"
+    },
+    {
+      "member": "c23.01/data/stout/c/c_3/c_3.coll",
+      "bytes": 3838426,
+      "sha256": "3de090fd0132ed8866ffd9b01526ac3e49473139e9e667c1a55149e339272704",
+      "reference_tail": "CS ELECTRON\t234\t238\t1.06e+00\t9.38e-01\t7.82e-01\t6.21e-01\t4.64e-01\t3.94e-01\t3.61e-01\t3.67e-01\t3.98e-01\t4.42e-01\t5.08e-01\t5.60e-01\t6.14e-01\nCS ELECTRON\t235\t236\t6.06e-01\t4.86e-01\t3.85e-01\t2.94e-01\t1.97e-01\t1.41e-01\t1.00e-01\t6.18e-02\t4.13e-02\t2.63e-02\t1.36e-02\t7.89e-03\t4.46e-03\nCS ELECTRON\t235\t237\t7.00e-01\t7.48e-01\t7.42e-01\t6.64e-01\t5.11e-01\t4.11e-01\t3.40e-01\t2.52e-01\t1.81e-01\t1.17e-01\t5.91e-02\t3.31e-02\t1.79e-02\nCS ELECTRON\t235\t238\t3.50e-01\t3.02e-01\t2.42e-01\t1.77e-01\t1.06e-01\t6.87e-02\t4.23e-02\t2.06e-02\t1.14e-02\t6.04e-03\t2.53e-03\t1.29e-03\t6.51e-04\nCS ELECTRON\t236\t237\t6.76e+01\t6.71e+01\t6.75e+01\t6.74e+01\t6.41e+01\t5.95e+01\t5.39e+01\t4.42e+01\t3.71e+01\t3.24e+01\t3.00e+01\t2.98e+01\t3.00e+01\nCS ELECTRON\t236\t238\t3.05e+01\t3.12e+01\t3.21e+01\t3.29e+01\t3.28e+01\t3.12e+01\t2.81e+01\t2.20e+01\t1.80e+01\t1.60e+01\t1.56e+01\t1.60e+01\t1.65e+01\nCS ELECTRON\t237\t238\t1.01e+02\t1.38e+02\t1.95e+02\t2.94e+02\t5.01e+02\t7.09e+02\t9.48e+02\t1.29e+03\t1.55e+03\t1.80e+03\t2.11e+03\t2.32e+03\t2.54e+03\n**************\n#Reference:\n#http://adsabs.harvard.edu/abs/2014A%26A...566A.104F"
+    },
+    {
+      "member": "c23.01/data/stout/c/c_3/c_3.nrg",
+      "bytes": 9325,
+      "sha256": "6f8757491b23c29aaa03095d0de85cd682e09b0672c7198a9dc5a8c3d774e622",
+      "reference_tail": "237\t428821.8957\t3\t\"2P1 7D1 (1)1( 1.0)\"\n238\t430525.6332\t1\t\"2P1 7P1 (1)0( 0.0)\"\n**************\n#Reference:\n#NIST  2013-11-08\n#http://adsabs.harvard.edu/abs/2014A%26A...566A.104F\n**************\n\n# Levels 1-20 are from NIST\n# The rest are from Fernandez-Menchero"
+    },
+    {
+      "member": "c23.01/data/stout/o/o_3/o_3.tp",
+      "bytes": 19947,
+      "sha256": "3344810f98be07efa0642f8385e2b95281ebcd573825d9e4e565a4475989f21a",
+      "reference_tail": null
+    },
+    {
+      "member": "c23.01/data/stout/o/o_3/o_3.coll",
+      "bytes": 91614,
+      "sha256": "98a5a135a7a2fa9d0e9a9272fa03bf1f3fe64a67d6f34ba71a162878ec0cb0e5",
+      "reference_tail": null
+    },
+    {
+      "member": "c23.01/data/stout/o/o_3/o_3.nrg",
+      "bytes": 6629,
+      "sha256": "ac287f75cad9841b30feaac3521096e990c0499d90230d8dd27cf0fa938e80b7",
+      "reference_tail": "169\t454181.000\t3\t\"2s.2p2.(2D).3d 3D1\"\n170\t454181.001\t7\t\"2s.2p2.(2D).3d 3D3\"\n171\t454181.002\t5\t\"2s.2p2.(2D).3d 3D2\"\n172\t457574.000\t5\t\"2s.2p2.(2D).3d 3P2\"\n173\t457574.001\t3\t\"2s.2p2.(2D).3d 3P1\"\n174\t457574.002\t1\t\"2s.2p2.(2D).3d 3P0\"\n175\t473762.000\t7\t\"2s.2p2.(4P).5d 5P3\"\n**************\n#Reference:\n#NIST  2014-09-16"
+    },
+    {
+      "member": "c23.01/data/chianti/n/n_3/n_3.wgfa",
+      "bytes": 60109,
+      "sha256": "308e1a3a564074298ddd770eab323b84a72cd662b3605a79a1447b9821736298",
+      "reference_tail": "Produced for the CHIANTI database v.8 by Giulio Del Zanna  Oct 2013\n\n\n\n \n%File processed with wgfa_tidy by pryoung on  6-Mar-2019\n\nReference:\nChianti  2022-02-18\n -1"
+    },
+    {
+      "member": "c23.01/data/chianti/n/n_3/n_3.elvlc",
+      "bytes": 9603,
+      "sha256": "80b759e3fba6cc4f499014802eea7e0b89dff88c26c21f3690305eeebf664fa5",
+      "reference_tail": "      \n      Observed energies: Kramida, A., Ralchenko, Yu., Reader, J., and NIST ASD Team (2012). NIST Atomic Spectra Database (ver. 5.0), [Online]. Available: http://physics.nist.gov/\n      \nProduced for the CHIANTI database v.8 by Giulio Del Zanna  Nov 2013\n\n \n\nReference:\nChianti  2022-02-18\n -1"
+    },
+    {
+      "member": "c23.01/data/chianti/n/n_3/n_3.splups",
+      "bytes": 889846,
+      "sha256": "9ef2794ace67462facb5fc791d702c433dedbdf766ded4db9b29b75a13e31518",
+      "reference_tail": "G Y Liang, N R Badnell and G Zhao  A&A 547, A87 (2012)\n   DOI: 10.1051/0004-6361/201220277\n   \nProduced for the CHIANTI database v.8 by G. Del Zanna 28 Apr 2014\n\n\n\nReference:\nChianti  2022-02-18\n -1"
+    },
+    {
+      "member": "c23.01/data/chianti/c/c_4/c_4.splups",
+      "bytes": 11777,
+      "sha256": "ac1cf4677a1eb6b742a00cbbd90bd13ad3ef2baa9220ca5c3cb7f0d712a81119",
+      "reference_tail": "DOI:  https://ui.adsabs.harvard.edu/link_gateway/2011A&A...528A..69L/doi:10.1051/0004-6361/201016417\nADS ref:  https://ui.adsabs.harvard.edu/abs/2011A%26A...528A..69L/abstract\ncollision strengths provided in the range   3.20e+03 to   3.20e+07 K\n\nproduced as a part of the 'CHIANTI' atomic database for astrophysical spectroscopy\n K. Dere (GMU) - 2014 December 21\n\nReference:\nChianti  2022-02-18\n -1"
+    },
+    {
+      "member": "c23.01/data/chianti/c/c_4/c_4.elvlc",
+      "bytes": 5505,
+      "sha256": "c9b74b93d098a2504daae28022aadf91c98d7ad0691155662070282915ca32ef",
+      "reference_tail": "updated by U. Safronova, 2001, private communication\n\nproduced as a part of the 'CHIANTI' atomic database for astrophysical spectroscopy\n K. Dere (GMU) - 2017 August 10\n\n\n\nReference:\nChianti  2022-02-18\n -1"
+    },
+    {
+      "member": "c23.01/data/chianti/c/c_4/c_4.wgfa",
+      "bytes": 12720,
+      "sha256": "bb632f4cb066baedf17f6b3982963088a0c814d13fca6d5cdb188b1a82873359",
+      "reference_tail": " allWvl =   1\n minDiff =      0.00010\n \nproduced as a part of the 'CHIANTI' atomic database for astrophysical spectroscopy\n K. Dere (GMU) - 2017 August 10\n%File processed with wgfa_tidy by pryoung on  6-Mar-2019\n\nReference:\nChianti  2022-02-18\n -1"
+    },
+    {
+      "member": "c23.01/data/stout/n/n_5/n_5.nrg",
+      "bytes": 4521,
+      "sha256": "d2d218a78b2c2d8e243d9d5c4e8ac6fa69dac792b433fc05e260bbfd2746a99d",
+      "reference_tail": "131\t3817350.000\t4\t\"1s.2s.3s 4S3/2\"\n132\t3861130.000\t8\t\"1s.2s.3d 4D7/2\"\n133\t3881360.000\t6\t\"1s.2p.3s 4P*5/2\"\n134\t3908120.000\t6\t\"1s.2p.3p 4P5/2\"\n135\t3908690.000\t4\t\"1s.2s.4s 4S3/2\"\n136\t3923030.000\t8\t\"1s.2p.3d 4D*7/2\"\n137\t3927360.000\t6\t\"1s.2p.3d 4P*5/2\"\n**************\n#Reference:\n#NIST  2013-12-05"
+    },
+    {
+      "member": "c23.01/data/stout/n/n_5/n_5.tp",
+      "bytes": 7122,
+      "sha256": "3018249865b04580fe25185491cc6261ffa50bfd917a7d9ead35e0238f75c002",
+      "reference_tail": "A\t66\t67\t5.75e+02\t\nA\t83\t85\t2.64e+03\t\nA\t12\t14\t2.36e+01\t\nA\t13\t15\t2.30e+01\t\nA\t13\t14\t1.38e+00\t\nA\t82\t84\t1.41e+03\t\nA\t83\t84\t2.69e+02\t\n**************\n#Reference:\n#NIST  2013-12-05"
+    },
+    {
+      "member": "c23.01/data/stout/n/n_5/n_5.coll",
+      "bytes": 25650,
+      "sha256": "a1f068184462f7a7c00c32eb6b40f1603b04ab8235e96fcac1bd68ea64e105fa",
+      "reference_tail": "CS ELECTRON\t16\t20\t3.92E+01\t3.90E+01\t3.88E+01\t3.84E+01\t3.75E+01\t3.64E+01\t3.51E+01\t3.27E+01\t2.98E+01\t2.59E+01\t2.27E+01\t2.27E+01\t2.39E+01\nCS ELECTRON\t17\t18\t2.91E+01\t2.67E+01\t2.57E+01\t2.52E+01\t2.50E+01\t2.47E+01\t2.43E+01\t2.30E+01\t2.10E+01\t1.82E+01\t1.61E+01\t1.62E+01\t1.71E+01\nCS ELECTRON\t17\t19\t2.42E+02\t2.57E+02\t2.85E+02\t3.29E+02\t4.10E+02\t4.83E+02\t5.61E+02\t6.64E+02\t7.41E+02\t8.19E+02\t9.18E+02\t9.87E+02\t1.05E+03\nCS ELECTRON\t17\t20\t6.19E+00\t6.14E+00\t6.10E+00\t6.04E+00\t5.91E+00\t5.78E+00\t5.63E+00\t5.37E+00\t4.95E+00\t4.36E+00\t3.92E+00\t4.00E+00\t4.27E+00\nCS ELECTRON\t18\t19\t5.60E+01\t5.91E+01\t6.46E+01\t7.34E+01\t8.96E+01\t1.04E+02\t1.19E+02\t1.39E+02\t1.54E+02\t1.68E+02\t1.87E+02\t2.00E+02\t2.13E+02\nCS ELECTRON\t18\t20\t4.41E+02\t4.69E+02\t5.19E+02\t5.99E+02\t7.46E+02\t8.78E+02\t1.02E+03\t1.20E+03\t1.34E+03\t1.48E+03\t1.66E+03\t1.78E+03\t1.90E+03\nCS ELECTRON\t19\t20\t1.46E+01\t1.47E+01\t1.46E+01\t1.45E+01\t1.42E+01\t1.38E+01\t1.33E+01\t1.26E+01\t1.16E+01\t1.03E+01\t9.07E+00\t8.96E+00\t9.26E+00\n**************\n#Reference:\n#2013-12-06\t"
+    },
+    {
+      "member": "c23.01/data/stout/c/c_2/c_2.nrg",
+      "bytes": 7793,
+      "sha256": "79f1882d937beb460810ba7e8ff74a846998ee72e7416f7e057fc0cef23b17c0",
+      "reference_tail": "200\t236813.000\t6\t\"2s.2p.(3P*).6f 4G5/2\"\n201\t236823.300\t8\t\"2s.2p.(3P*).6f 4G7/2\"\n202\t236843.200\t10\t\"2s.2p.(3P*).6f 4G9/2\"\n203\t236856.600\t8\t\"2s.2p.(3P*).6f 2G7/2\"\n204\t236877.800\t8\t\"2s.2p.(3P*).6f 4D7/2\"\n205\t236881.200\t12\t\"2s.2p.(3P*).6f 4G11/2\"\n206\t236889.700\t10\t\"2s.2p.(3P*).6f 2G9/2\"\n**************\n#Reference:\n#NIST  2013-10-01"
+    },
+    {
+      "member": "c23.01/data/stout/c/c_2/c_2.tp",
+      "bytes": 11524,
+      "sha256": "71f04f3f927a2c103c37c68180857047eabe81ecb962c04ccc0ca54b3da3eee6",
+      "reference_tail": "A\t25\t29\t3.27e+04\t\nA\t26\t30\t3.49e+04\t\nA\t26\t29\t2.33e+03\t\nA\t25\t28\t3.80e+02\t\nA\t26\t28\t3.41e+03\t\nA\t25\t27\t3.47e+03\t\nA\t1\t2\t2.29e-06\tM1\n**************\n#Reference:\n#NIST  2013-10-01"
+    },
+    {
+      "member": "c23.01/data/stout/c/c_2/c_2.coll",
+      "bytes": 57222,
+      "sha256": "529414583cba111cf48cb645f9747e19e4b87950005e1c37a2530b737ea7cc7b",
+      "reference_tail": "*********************\n#References\n# CSE\tTayal, S. S. 2008, A&A, 486, 629\n# CSE RATE H,H2\tGoldsmith, P.F., Langer, W.D., Pineda, J.L., & Velusamy, T. 2012, ApJS, 203, 13\n# CSE 1-2: Goldsmith+12 for T < 1000 K, Tayal 2008 for T >= 1000 K; to ensure continuity at 1000 K,\n#     the Goldsmith+12 fitting function [eq. (40) therein] has been multiplied by 0.94\n# Goldsmith RATE H2 disabled in favor of Wiesenfeld 2013\n# RATE H2 ORTHO/PARA\tWiesenfeld http://adsabs.harvard.edu/abs/2014ApJ...780..183W\n# http://adsabs.harvard.edu/abs/2012ApJS..203...13G\n# http://adsabs.harvard.edu/abs/2008A&A...486..629T"
+    }
+  ],
+  "engineering_probes": {
+    "first_wrong_Z_squared_model": "model000",
+    "runtime_seconds": 359.6505622140012,
+    "reason": "global metallicity scaled explicit already-scaled C/N/O twice; reviewer caught before pilot expansion; no scientific use",
+    "corrected_gas_abundance_guard": true,
+    "partial_host_payload_bytes": 14557081,
+    "partial_host_payload_is_conservative_estimate": false,
+    "range_probe_chunk_reused": true,
+    "new_unique_archive_bytes": 338434070,
+    "new_total_payload_bytes_including_transfer_probes": 352991151
+  },
+  "system_lapack_existing_library": {
+    "path": "/lib/x86_64-linux-gnu/liblapack.so.3",
+    "sha256": "851bb1fc5833ede9ed704b4417a251a899976d5e0915de40452615187a65278f",
+    "new_download_bytes": 0
+  }
+}
