@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "snapshot_date_utc": "2026-10-10",
+  "plan_revision": "8286753",
+  "url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/capers-cos07-v4/capers-cos07-v4_prism-clear_6368_102896.pixtab.fits",
+  "method": "GET",
+  "status": 200,
+  "headers": {
+    "x-amz-id-2": "XYNk7HLHdwNmV8kHM6KklQo9w/Duurkd0P4WmrdpWhZRb/ZLcvu00Vw7B/BFBe3tunFFK1ywVZY=",
+    "x-amz-request-id": "RK1BJZ5W60KPTQC9",
+    "Server": "AmazonS3",
+    "Date": "Sat, 10 Oct 2026 04:06:18 GMT",
+    "Last-Modified": "Wed, 21 May 2025 22:41:36 GMT",
+    "ETag": "\"3740b9e9ddecfe9a8ef5cd559c56ea3f\"",
+    "x-amz-server-side-encryption": "AES256",
+    "Accept-Ranges": "bytes",
+    "Content-Type": "binary/octet-stream",
+    "Content-Length": "4475520",
+    "Connection": "close"
+  },
+  "bytes": 4475520,
+  "sha256": "2c0d315274d0d0c74252f6d584e80636ae49e3a1361c0976216a366e8dbe6430",
+  "single_part_etag_md5": "3740b9e9ddecfe9a8ef5cd559c56ea3f",
+  "acquisition_runtime_s": 6.240004151999528,
+  "endpoint_count": 1,
+  "new_selected_payload_bytes": 4475520,
+  "restoration_bytes": 0,
+  "cache_path": "/workspace/scratch/7016fca60156/research-cache/compact-capers/capers_pixtab.fits",
+  "cap_bytes": 5242880,
+  "runtime_cap_s": 60,
+  "failure_or_retry_count": 0
+}

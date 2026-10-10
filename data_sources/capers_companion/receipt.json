@@ -1,0 +1,326 @@
+{
+  "plan_revision": "2e8478f",
+  "snapshot_utc": "2026-10-10",
+  "start_epoch": 1791605533.0185764,
+  "cap_bytes": 2097152,
+  "endpoint_cap": 8,
+  "runtime_cap_s": 300,
+  "queries": [
+    {
+      "id": "products_page2",
+      "url": "https://mast.stsci.edu/api/v0/invoke",
+      "request": {
+        "service": "Mast.Caom.Products",
+        "params": {
+          "obsid": "266381037"
+        },
+        "format": "json",
+        "pagesize": 100,
+        "page": 2
+      },
+      "elapsed_start_s": 0.00011444091796875,
+      "status": 200,
+      "headers": {
+        "Server": "nginx/1.22.1",
+        "Date": "Sat, 10 Oct 2026 04:12:27 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Cache-Control": "private, max-age=0",
+        "X-AspNet-Version": "4.0.30319",
+        "Set-Cookie": "MAST_Session=Id=b83ea37a-fc6b-4851-bc68-8f848863b281; path=/",
+        "X-Powered-By": "ASP.NET",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "x-requested-with"
+      },
+      "bytes": 59957,
+      "sha256": "d0b06822e1f04c0e0deb6cc9f451eb3c0ace005642d4d3836fdd3420f46692ea",
+      "potentially_truncated": false,
+      "path": "data_sources/capers_companion/products_page2.response",
+      "elapsed_end_s": 14.264671087265015,
+      "method": "POST"
+    },
+    {
+      "id": "products_page3",
+      "url": "https://mast.stsci.edu/api/v0/invoke",
+      "request": {
+        "service": "Mast.Caom.Products",
+        "params": {
+          "obsid": "266381037"
+        },
+        "format": "json",
+        "pagesize": 100,
+        "page": 3
+      },
+      "elapsed_start_s": 14.265295505523682,
+      "status": 200,
+      "headers": {
+        "Server": "nginx/1.22.1",
+        "Date": "Sat, 10 Oct 2026 04:12:33 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Cache-Control": "private, max-age=0",
+        "X-AspNet-Version": "4.0.30319",
+        "Set-Cookie": "MAST_Session=Id=cb921eb1-c8db-40dd-838f-a82b3f5add23; path=/",
+        "X-Powered-By": "ASP.NET",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "x-requested-with"
+      },
+      "bytes": 59966,
+      "sha256": "d86ee298c343b68f9b9464e0b452a8b1baa6ebb1aa7e6793faad6a88f1919b6f",
+      "potentially_truncated": false,
+      "path": "data_sources/capers_companion/products_page3.response",
+      "elapsed_end_s": 20.740877389907837,
+      "method": "POST"
+    },
+    {
+      "id": "products_page4",
+      "url": "https://mast.stsci.edu/api/v0/invoke",
+      "request": {
+        "service": "Mast.Caom.Products",
+        "params": {
+          "obsid": "266381037"
+        },
+        "format": "json",
+        "pagesize": 100,
+        "page": 4
+      },
+      "elapsed_start_s": 20.750677347183228,
+      "status": 200,
+      "headers": {
+        "Server": "nginx/1.22.1",
+        "Date": "Sat, 10 Oct 2026 04:12:39 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Cache-Control": "private, max-age=0",
+        "X-AspNet-Version": "4.0.30319",
+        "Set-Cookie": "MAST_Session=Id=cdc67aee-c47e-41e6-803f-ff40b51f3807; path=/",
+        "X-Powered-By": "ASP.NET",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "x-requested-with"
+      },
+      "bytes": 59959,
+      "sha256": "34e97b205a53c32f2b51fe070c88f3dd1b301b673e2d563bc856a0ea4dcc6c97",
+      "potentially_truncated": false,
+      "path": "data_sources/capers_companion/products_page4.response",
+      "elapsed_end_s": 27.23284149169922,
+      "method": "POST"
+    },
+    {
+      "id": "products_page5",
+      "url": "https://mast.stsci.edu/api/v0/invoke",
+      "request": {
+        "service": "Mast.Caom.Products",
+        "params": {
+          "obsid": "266381037"
+        },
+        "format": "json",
+        "pagesize": 100,
+        "page": 5
+      },
+      "elapsed_start_s": 27.240848064422607,
+      "status": 200,
+      "headers": {
+        "Server": "nginx/1.22.1",
+        "Date": "Sat, 10 Oct 2026 04:12:48 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Cache-Control": "private, max-age=0",
+        "X-AspNet-Version": "4.0.30319",
+        "Set-Cookie": "MAST_Session=Id=be5be656-ecc4-4959-b26c-1792d9ccda23; path=/",
+        "X-Powered-By": "ASP.NET",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "x-requested-with"
+      },
+      "bytes": 59963,
+      "sha256": "e6610942201a6da2549775bb79ddb0f9f7c406cff4fe8ad50195ebcb69866fff",
+      "potentially_truncated": false,
+      "path": "data_sources/capers_companion/products_page5.response",
+      "elapsed_end_s": 35.701523303985596,
+      "method": "POST"
+    },
+    {
+      "id": "products_page6",
+      "url": "https://mast.stsci.edu/api/v0/invoke",
+      "request": {
+        "service": "Mast.Caom.Products",
+        "params": {
+          "obsid": "266381037"
+        },
+        "format": "json",
+        "pagesize": 100,
+        "page": 6
+      },
+      "elapsed_start_s": 35.70274877548218,
+      "status": 200,
+      "headers": {
+        "Server": "nginx/1.22.1",
+        "Date": "Sat, 10 Oct 2026 04:13:01 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Cache-Control": "private, max-age=0",
+        "X-AspNet-Version": "4.0.30319",
+        "Set-Cookie": "MAST_Session=Id=ca801421-2e34-4881-8098-279bc0eeace0; path=/",
+        "X-Powered-By": "ASP.NET",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "x-requested-with"
+      },
+      "bytes": 59778,
+      "sha256": "74a4c76c083a4e59fd5515a13fb77f10b1e0479753b8ad07019fbab89a1f8000",
+      "potentially_truncated": false,
+      "path": "data_sources/capers_companion/products_page6.response",
+      "elapsed_end_s": 49.028228759765625,
+      "method": "POST"
+    },
+    {
+      "id": "products_page7",
+      "url": "https://mast.stsci.edu/api/v0/invoke",
+      "request": {
+        "service": "Mast.Caom.Products",
+        "params": {
+          "obsid": "266381037"
+        },
+        "format": "json",
+        "pagesize": 100,
+        "page": 7
+      },
+      "elapsed_start_s": 49.02949929237366,
+      "status": 200,
+      "headers": {
+        "Server": "nginx/1.22.1",
+        "Date": "Sat, 10 Oct 2026 04:13:08 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Cache-Control": "private, max-age=0",
+        "X-AspNet-Version": "4.0.30319",
+        "Set-Cookie": "MAST_Session=Id=9631dc57-04f9-408a-98e9-e8448c849616; path=/",
+        "X-Powered-By": "ASP.NET",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "x-requested-with"
+      },
+      "bytes": 19313,
+      "sha256": "f09dd17f7a31a4e3ca88a34990e178e559cfd5041e13bbfee587128ee19e915c",
+      "potentially_truncated": false,
+      "path": "data_sources/capers_companion/products_page7.response",
+      "elapsed_end_s": 55.30750608444214,
+      "method": "POST"
+    },
+    {
+      "id": "source_x1d",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw06368-o007_s000102896_nirspec_clear-prism_x1d.fits",
+      "request": null,
+      "elapsed_start_s": 86.99108386039734,
+      "status": 200,
+      "headers": {
+        "Server": "nginx/1.22.1",
+        "Date": "Sat, 10 Oct 2026 04:13:46 GMT",
+        "Content-Type": "application/octet-stream",
+        "Content-Length": "887040",
+        "Connection": "close",
+        "Last-Modified": "Wed, 30 Sep 2026 07:06:36 GMT",
+        "content-disposition": "attachment; filename=\"jw06368-o007_s000102896_nirspec_clear-prism_x1d.fits\"",
+        "ETag": "\"6abcb4fc-d8900\"",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1",
+        "X-Frame-Options": "sameorigin",
+        "Vary": "Origin",
+        "Strict-Transport-Security": "max-age=31536000",
+        "X-Permitted-Cross-Domain-Policies": "master-only",
+        "Content-Security-Policy": "default-src 'self' 'unsafe-inline' 'unsafe-eval' *.stsci.edu ws://*.stsci.edu wss://*.stsci.edu https://stackpath.bootstrapcdn.com https://cdnjs.cloudflare.com https://code.jquery.com https://ajax.googleapis.com https://cdn.datatables.net https://www.googletagmanager.com https://www.google-analytics.com https://cdn.materialdesignicons.com/ https://cdn.jsdelivr.net https://fastapi.tiangolo.com https://cdn.pydata.org https://cdn.bokeh.org https://cdn.datatables.net https://fonts.googleapis.com https://fonts.gstatic.com;font-src 'self' data: 'self' 'unsafe-inline' 'unsafe-eval' *.stsci.edu ws://*.stsci.edu wss://*.stsci.edu https://stackpath.bootstrapcdn.com https://cdnjs.cloudflare.com https://code.jquery.com https://ajax.googleapis.com https://cdn.datatables.net https://www.googletagmanager.com https://www.google-analytics.com https://cdn.materialdesignicons.com/ https://cdn.jsdelivr.net https://fastapi.tiangolo.com https://cdn.pydata.org https://cdn.bokeh.org https://cdn.datatables.net https://fonts.googleapis.com https://fonts.gstatic.com;img-src 'self' blob: data: https://cdn.datatables.net https://www.google-analytics.com https://validator.swagger.io;frame-src 'self' blob:;frame-ancestors 'self' https://*.stsci.edu;worker-src 'self' blob:;",
+        "Accept-Ranges": "bytes"
+      },
+      "bytes": 887040,
+      "sha256": "06a925cf57715f392091679e548acb5a8a2c5248e79a241e56be8d3169e240e2",
+      "potentially_truncated": false,
+      "path": "data_sources/capers_companion/source_x1d.fits",
+      "elapsed_end_s": 93.5530138015747,
+      "method": "GET"
+    },
+    {
+      "id": "source_association",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw06368-o007_20260920t075233_spec3_00001_asn.json",
+      "request": null,
+      "elapsed_start_s": 156.6506085395813,
+      "status": 200,
+      "headers": {
+        "Server": "nginx/1.22.1",
+        "Date": "Sat, 10 Oct 2026 04:14:54 GMT",
+        "Content-Type": "application/octet-stream",
+        "Content-Length": "13510",
+        "Connection": "close",
+        "Last-Modified": "Sun, 20 Sep 2026 16:27:27 GMT",
+        "content-disposition": "attachment; filename=\"jw06368-o007_20260920t075233_spec3_00001_asn.json\"",
+        "ETag": "\"6ab0096f-34c6\"",
+        "X-Content-Type-Options": "nosniff",
+        "X-XSS-Protection": "1",
+        "X-Frame-Options": "sameorigin",
+        "Vary": "Origin",
+        "Strict-Transport-Security": "max-age=31536000",
+        "X-Permitted-Cross-Domain-Policies": "master-only",
+        "Content-Security-Policy": "default-src 'self' 'unsafe-inline' 'unsafe-eval' *.stsci.edu ws://*.stsci.edu wss://*.stsci.edu https://stackpath.bootstrapcdn.com https://cdnjs.cloudflare.com https://code.jquery.com https://ajax.googleapis.com https://cdn.datatables.net https://www.googletagmanager.com https://www.google-analytics.com https://cdn.materialdesignicons.com/ https://cdn.jsdelivr.net https://fastapi.tiangolo.com https://cdn.pydata.org https://cdn.bokeh.org https://cdn.datatables.net https://fonts.googleapis.com https://fonts.gstatic.com;font-src 'self' data: 'self' 'unsafe-inline' 'unsafe-eval' *.stsci.edu ws://*.stsci.edu wss://*.stsci.edu https://stackpath.bootstrapcdn.com https://cdnjs.cloudflare.com https://code.jquery.com https://ajax.googleapis.com https://cdn.datatables.net https://www.googletagmanager.com https://www.google-analytics.com https://cdn.materialdesignicons.com/ https://cdn.jsdelivr.net https://fastapi.tiangolo.com https://cdn.pydata.org https://cdn.bokeh.org https://cdn.datatables.net https://fonts.googleapis.com https://fonts.gstatic.com;img-src 'self' blob: data: https://cdn.datatables.net https://www.google-analytics.com https://validator.swagger.io;frame-src 'self' blob:;frame-ancestors 'self' https://*.stsci.edu;worker-src 'self' blob:;",
+        "Accept-Ranges": "bytes"
+      },
+      "bytes": 13510,
+      "sha256": "cb02abda385ef11e79aff1e50186b7f8561dc115e506059c31ef83b1f8dcd55a",
+      "potentially_truncated": false,
+      "path": "data_sources/capers_companion/source_association.json",
+      "elapsed_end_s": 161.98600721359253,
+      "method": "GET"
+    }
+  ],
+  "response_bytes": 1219486,
+  "restoration_bytes": 0,
+  "actual_elapsed_last_endpoint_s": 161.98600721359253,
+  "summed_active_query_runtime_s": 67.18379330635071,
+  "failure_or_retry_count": 0,
+  "reused_page1": "data_sources/public_metadata/mast_capers_products.response",
+  "selected_source_product": {
+    "obsID": 266381037,
+    "obs_collection": "JWST",
+    "dataproduct_type": "spectrum",
+    "obs_id": "jw06368-o007_s000102896_nirspec_clear-prism",
+    "description": "exposure/target (L2b/L3): 1D extracted spectrum",
+    "type": "D",
+    "dataURI": "mast:JWST/product/jw06368-o007_s000102896_nirspec_clear-prism_x1d.fits",
+    "productType": "SCIENCE",
+    "productGroupDescription": "Minimum Recommended Products",
+    "productSubGroupDescription": "X1D",
+    "productDocumentationURL": null,
+    "project": "CALJWST",
+    "prvversion": "3.0.0",
+    "proposal_id": "6368",
+    "productFilename": "jw06368-o007_s000102896_nirspec_clear-prism_x1d.fits",
+    "size": 887040,
+    "parent_obsid": 266381037,
+    "dataRights": "PUBLIC",
+    "calib_level": 3,
+    "filters": "CLEAR;PRISM"
+  },
+  "association_product": {
+    "obsID": 266381037,
+    "obs_collection": "JWST",
+    "dataproduct_type": "spectrum",
+    "obs_id": "jw06368-o007_s000102896_nirspec_clear-prism",
+    "description": "source/target (L3) : association generator",
+    "type": "D",
+    "dataURI": "mast:JWST/product/jw06368-o007_20260920t075233_spec3_00001_asn.json",
+    "productType": "INFO",
+    "productGroupDescription": "Minimum Recommended Products",
+    "productSubGroupDescription": "ASN",
+    "productDocumentationURL": null,
+    "project": "CALJWST",
+    "prvversion": "3.0.0",
+    "proposal_id": "6368",
+    "productFilename": "jw06368-o007_20260920t075233_spec3_00001_asn.json",
+    "size": 13510,
+    "parent_obsid": 266381037,
+    "dataRights": "PUBLIC",
+    "calib_level": 3,
+    "filters": "CLEAR;PRISM"
+  }
+}

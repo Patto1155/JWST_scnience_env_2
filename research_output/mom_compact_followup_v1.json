@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "plan_revision": "4316293",
+  "response_bytes": 718228,
+  "new_selected_payload_bytes": 701775,
+  "pinned_reference_restoration_bytes": 16453,
+  "endpoint_count": 7,
+  "elapsed_last_endpoint_s": 52.87294960021973,
+  "source_observation_iso": "2025-04-16 03:54:27.628",
+  "context_chains": {
+    "1535": "jwst_nirspec_0432.imap",
+    "1596": "jwst_nirspec_0444.imap"
+  },
+  "same_applicable_rmap": "jwst_nirspec_wavecorr_0005.rmap",
+  "selected_reference": "jwst_nirspec_wavecorr_0004.asdf",
+  "reference_sha256": "869d4279137b1c7dea5e8bb4b4980d72fd0aa8423c87814050bfa710cd2b58f3",
+  "pedigree": "DUMMY",
+  "empirical_calibration_gained": false,
+  "source_position_offset_arcsec": 0.030580241070783887,
+  "compact_source_id": 102896,
+  "contributor_count": 18,
+  "contributors": [
+    "jw06368007001_03101_00002_nrs2_clear_prism_raw.139.6368_102896.fits",
+    "jw06368007001_03101_00003_nrs2_clear_prism_raw.139.6368_102896.fits",
+    "jw06368007001_03101_00004_nrs2_clear_prism_raw.139.6368_102896.fits",
+    "jw06368007001_05101_00001_nrs2_clear_prism_raw.139.6368_102896.fits",
+    "jw06368007001_05101_00002_nrs2_clear_prism_raw.139.6368_102896.fits",
+    "jw06368007001_05101_00003_nrs2_clear_prism_raw.139.6368_102896.fits",
+    "jw06368007001_07101_00001_nrs2_clear_prism_raw.139.6368_102896.fits",
+    "jw06368007001_07101_00002_nrs2_clear_prism_raw.139.6368_102896.fits",
+    "jw06368007001_07101_00003_nrs2_clear_prism_raw.139.6368_102896.fits",
+    "jw06368007001_09101_00001_nrs2_clear_prism_raw.139.6368_102896.fits",
+    "jw06368007001_09101_00002_nrs2_clear_prism_raw.139.6368_102896.fits",
+    "jw06368007001_09101_00003_nrs2_clear_prism_raw.139.6368_102896.fits",
+    "jw06368007001_11101_00001_nrs2_clear_prism_raw.139.6368_102896.fits",
+    "jw06368007001_11101_00002_nrs2_clear_prism_raw.139.6368_102896.fits",
+    "jw06368007001_11101_00003_nrs2_clear_prism_raw.139.6368_102896.fits",
+    "jw06368007001_13101_00001_nrs2_clear_prism_raw.139.6368_102896.fits",
+    "jw06368007001_13101_00002_nrs2_clear_prism_raw.139.6368_102896.fits",
+    "jw06368007001_13101_00003_nrs2_clear_prism_raw.139.6368_102896.fits"
+  ],
+  "contributor_roots_disjoint_from_MoM": true,
+  "exposure_time_s": 17069.004,
+  "usable_bins": 195,
+  "usable_wavelength_range_um": [
+    3.9379894416595107,
+    5.501833324931415
+  ],
+  "units": {
+    "wave": "um",
+    "flux": "uJy",
+    "err": "uJy",
+    "sky": "uJy",
+    "path_corr": null,
+    "npix": null,
+    "flux_sum": null,
+    "profile_sum": null,
+    "var_sum": null
+  },
+  "settings": {
+    "CAL_VER": "0.1.dev8704+g9b678d4",
+    "CAL_VCS": "9b678d4",
+    "CRDS_CTX": "jwst_1298.pmap",
+    "CRDS_VER": "12.1.5",
+    "VERSION": "0.9.5.dev8+ge2b237b",
+    "WEIGHT_TYPE": "ivm",
+    "WITHPATH": true,
+    "PROFCEN": 0.000999987364997731,
+    "PROFSIG": 0.6978526781772028,
+    "YMIN1D": -3,
+    "YMAX1D": 3
+  },
+  "known_z14p44_UV_groups": {
+    "NIV1486": {
+      "wavelength_um": 2.295156,
+      "inside_usable_range": false
+    },
+    "CIV1549": {
+      "wavelength_um": 2.3924279999999998,
+      "inside_usable_range": false
+    },
+    "HeII_OIII1654": {
+      "wavelength_um": 2.553776,
+      "inside_usable_range": false
+    },
+    "NIII1750": {
+      "wavelength_um": 2.702,
+      "inside_usable_range": false
+    },
+    "CIII1908": {
+      "wavelength_um": 2.9459519999999997,
+      "inside_usable_range": false
+    }
+  },
+  "weak_catalog_z6p13832_conditional_lines": {
+    "Halpha": {
+      "wavelength_um": 4.6847366496000005,
+      "inside_usable_range": true
+    },
+    "NII6584": {
+      "wavelength_um": 4.6994772804,
+      "inside_usable_range": true
+    },
+    "SII6717": {
+      "wavelength_um": 4.79440979808,
+      "inside_usable_range": true
+    },
+    "SII6731": {
+      "wavelength_um": 4.80467470224,
+      "inside_usable_range": true
+    }
+  },
+  "pixtab_public_advertised_bytes": 4475520,
+  "pixtab_acquired": false,
+  "limits": [
+    "No source-specific empirical wavelength or instrumental resolution calibration gained",
+    "Old author extraction context1298 differs from current official CAL1535",
+    "Author errors are diagonal; no independent nod coadds or full covariance acquired",
+    "Position and disjoint contributor identity do not prove one astrophysical emitter",
+    "A weak catalog redshift is not an established alternative identity",
+    "Line locations are predictions only; no new spectral fit or detection reported",
+    "PIXTAB is publicly accessible but exceeds this pilot allocation"
+  ]
+}
