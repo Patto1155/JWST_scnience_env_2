@@ -24,14 +24,13 @@ from scipy.stats import truncnorm
 
 from data_pipeline.cloudy_inputs import verify
 from tools.jwst.line_sensitivity import read_resolution
-from tools.jwst.native_reduction import fit_native
-from tools.jwst.native_reduction import extract_columns, read_inputs, signed_profiles
 from tools.jwst.native_measurement_validation import (
     apply_signed_response,
     response,
     signed_response_coupling,
     transported_covariance,
 )
+from tools.jwst.native_reduction import extract_columns, fit_native, read_inputs, signed_profiles
 from tools.jwst.native_wavecorr import load_wavecorr_replay
 from tools.jwst.point_resolution import read_point_resolution
 
@@ -405,7 +404,10 @@ def signed_coupling(native_directory: Path | None = None) -> tuple[np.ndarray, d
             "sha256": digest(artifact),
             **dependencies,
             "actual_pixel_generation": metadata,
-            "scope": "Actual signed operators and source-plus-negative-nod response; no double subtraction or pathloss correction.",
+            "scope": (
+                "Actual signed operators and source-plus-negative-nod response; "
+                "no double subtraction or pathloss correction."
+            ),
         }
         receipt_path.write_text(json.dumps(receipt, indent=2) + "\n")
         mode = "actual_pinned_CAL_pixels"
@@ -445,10 +447,37 @@ def projected_native_fit(design: np.ndarray, chol: np.ndarray, whitened_values: 
     }
 
 
-def native_likelihood(models: list[dict], native_directory: Path | None = None) -> dict:
+def native_likelihood(
+    models: list[dict], native_directory: Path | None = None, rate_noise_report: Path | None = None
+) -> dict:
     """Primary physical predictions through the independently validated signed Q."""
-    coupling, receipt = signed_coupling(native_directory)
+    started = time.monotonic()
+    if rate_noise_report is None:
+        coupling, receipt = signed_coupling(native_directory)
+        rate_replays = None
+    else:
+        from tools.jwst.native_rate_noise import load_rate_noise_replay
+
+        if native_directory is not None:
+            raise ValueError(
+                "Regenerate RATE/CAL response with native_rate_noise; "
+                "v3 bridge consumes that verified compact receipt"
+            )
+        rate_replays = [
+            load_rate_noise_replay(rate_noise_report, empirical=value) for value in (False, True)
+        ]
+        coupling = rate_replays[0]["signed_response_coupling"]
+        if not np.array_equal(coupling, rate_replays[1]["signed_response_coupling"]):
+            raise ValueError("RATE covariance alternatives changed physical operator")
+        receipt = {
+            "report_filename": rate_noise_report.name,
+            "report_sha256": digest(rate_noise_report),
+            "compact_replay": json.loads(rate_noise_report.read_text())["compact_replay"],
+            "execution_mode": "compact_RATE_CAL_operator_replay_not_actual_pixel_reproduction",
+        }
     wavecorr = ROOT / "research_output/mom_native_wavecorr.json"
+    if digest(wavecorr) != WAVECORR_SHA256:
+        raise ValueError("native wavelength response baseline changed")
     rw, rr, _ = read_resolution(ROOT / "data_sources/pilot/jwst_nirspec_prism_disp.fits")
     pw, pr, _ = read_point_resolution(
         ROOT / "data_sources/followup/unite_point_prism_resolution.csv"
@@ -457,8 +486,7 @@ def native_likelihood(models: list[dict], native_directory: Path | None = None) 
     for corrected in (False, True):
         replay = load_wavecorr_replay(wavecorr, corrected=corrected)
         selected = replay["selected"]
-        values = replay["flux"][:, selected].T.reshape(-1)
-        for noise, blocks, kernel, scale in (
+        configurations = (
             ("formal_shared", replay["covariance_blocks"], np.eye(len(selected)), 1.0),
             (
                 "empirical_columns",
@@ -472,7 +500,30 @@ def native_likelihood(models: list[dict], native_directory: Path | None = None) 
                 replay["spectral_kernel"],
                 replay["noise_scale_squared"],
             ),
-        ):
+        )
+        if rate_replays is None:
+            values = replay["flux"][:, selected].T.reshape(-1)
+        else:
+            if any(not np.array_equal(item["selected"], selected) for item in rate_replays):
+                raise ValueError("RATE/CAL selected columns differ from wavelength response")
+            flux = rate_replays[0]["flux"]
+            if flux.shape != (9, len(selected)) or not np.array_equal(
+                flux, rate_replays[1]["flux"]
+            ):
+                raise ValueError("RATE noise alternatives changed native measurements")
+            values = flux.T.reshape(-1)
+            configurations = tuple(
+                (
+                    label,
+                    item["covariance_blocks"],
+                    item["spectral_kernel"],
+                    item["noise_scale_squared"],
+                )
+                for label, item in zip(
+                    ("RATE_formal_v3", "RATE_empirical_rows_and_columns_v3"), rate_replays
+                )
+            )
+        for noise, blocks, kernel, scale in configurations:
             covariance = transported_covariance(blocks, selected, kernel, scale, list(range(9)))
             chol = cholesky(covariance, lower=True)
             y = solve_triangular(chol, values, lower=True)
@@ -523,29 +574,64 @@ def native_likelihood(models: list[dict], native_directory: Path | None = None) 
                         - best["full_native_profiled_chi2"],
                     }
                 )
+    runtime = time.monotonic() - started
+    if rate_replays is not None and runtime > 120:
+        raise TimeoutError("RATE composition bridge exceeded declared120s budget")
     return {
         "alternatives": alternatives,
+        "runtime_seconds": runtime,
         "signed_coupling": receipt,
-        "spectral_response_contract": "Signed source-plus-ghost transport v1",
+        "spectral_response_contract": "RATE-gain signed source-plus-ghost transport v3"
+        if rate_replays is not None
+        else "Signed source-plus-ghost transport v1",
+        "noise_contract_version": 3
+        if rate_replays is not None
+        else "historical_marginal_demix_control",
         "alternatives_pooled": False,
         "model_counts_are_probabilities": False,
         "native_group_covariance_and_template_refitted_per_model": True,
-        "interpretation": "Conditional profiled full-native likelihood. Original wavelengths and DUMMY sensitivity stay separate; unknown source LSF, shared calibration and ionizing spectrum preclude an elemental abundance posterior.",
+        "wavelength_assignment": (
+            "Per-nod source-column response; row-dependent response is a separate sensitivity"
+        ),
+        "interpretation": (
+            "Conditional profiled full-native likelihood. Original wavelengths and DUMMY "
+            "sensitivity stay separate; unknown source LSF, shared calibration and ionizing "
+            "spectrum preclude an elemental abundance posterior."
+        ),
     }
 
 
-def held_out_likelihood(models: list[dict]) -> dict:
+def held_out_likelihood(models: list[dict], rate_noise_report: Path | None = None) -> dict:
     """Choose the model on two RATE groups, predict the third without refitting it."""
     started = time.monotonic()
-    coupling, _ = signed_coupling()
-    replay = load_wavecorr_replay(
-        ROOT / "research_output/mom_native_wavecorr.json", corrected=False
-    )
+    wavecorr = ROOT / "research_output/mom_native_wavecorr.json"
+    if digest(wavecorr) != WAVECORR_SHA256:
+        raise ValueError("native wavelength response baseline changed")
+    replay = load_wavecorr_replay(wavecorr, corrected=False)
     wave, resolution, _ = read_point_resolution(
         ROOT / "data_sources/followup/unite_point_prism_resolution.csv"
     )
     selected = replay["selected"]
     full_values = replay["flux"][:, selected].T
+    blocks, kernel, scale = (
+        replay["spatial_covariance_blocks"],
+        replay["spectral_kernel"],
+        replay["noise_scale_squared"],
+    )
+    if rate_noise_report is None:
+        coupling, _ = signed_coupling()
+    else:
+        from tools.jwst.native_rate_noise import load_rate_noise_replay
+
+        fresh = load_rate_noise_replay(rate_noise_report, empirical=True)
+        if not np.array_equal(fresh["selected"], selected):
+            raise ValueError("RATE/CAL held-out source-response selection differs")
+        coupling, full_values = fresh["signed_response_coupling"], fresh["flux"].T
+        blocks, kernel, scale = (
+            fresh["covariance_blocks"],
+            fresh["spectral_kernel"],
+            fresh["noise_scale_squared"],
+        )
     designs = []
     for model in models:
         for attenuation in (0.0, 0.5, 1.0):
@@ -562,10 +648,10 @@ def held_out_likelihood(models: list[dict]) -> dict:
         prepared = {}
         for label, members in (("train", train_members), ("test", test_members)):
             covariance = transported_covariance(
-                replay["spatial_covariance_blocks"],
+                blocks,
                 selected,
-                replay["spectral_kernel"],
-                replay["noise_scale_squared"],
+                kernel,
+                scale,
                 members,
             )
             chol = cholesky(covariance, lower=True)
@@ -636,13 +722,28 @@ def held_out_likelihood(models: list[dict]) -> dict:
     return {
         "records": records,
         "runtime_seconds": time.monotonic() - started,
-        "configuration": "original_native/generic_point/empirical_rows_and_columns/signed_transport_v1",
+        "configuration": "original_native/generic_point/RATE_empirical_v3/RATE_gain_transport_v3"
+        if rate_noise_report is not None
+        else ("original_native/generic_point/empirical_rows_and_columns/signed_transport_v1"),
+        "noise_contract_report_sha256": digest(rate_noise_report)
+        if rate_noise_report is not None
+        else None,
         "test_group_used_for_model_choice": False,
         "amplitude_retrained_on_test": False,
-        "training_amplitude_weight": "Gaussian profile likelihood normalized on nonnegative amplitudes with explicit flat amplitude measure",
-        "predictive_distribution_approximation": "Moment-matched mean/covariance of truncated amplitude; quadratic is not a calibrated Gaussian p-value near the boundary",
+        "training_amplitude_weight": (
+            "Gaussian profile likelihood normalized on nonnegative amplitudes with "
+            "explicit flat amplitude measure"
+        ),
+        "predictive_distribution_approximation": (
+            "Moment-matched mean/covariance of truncated amplitude; quadratic is not "
+            "a calibrated Gaussian p-value near the boundary"
+        ),
         "common_calibration_bounded_by_agreement": False,
-        "scope": "Conditional group prediction under fixed geometry, wavelength, instrumental response and stationary noise; no independent author PIXTAB pooling or elemental abundance posterior.",
+        "scope": (
+            "Conditional group prediction under fixed geometry, wavelength, instrumental "
+            "response and stationary noise; no independent author PIXTAB pooling or "
+            "elemental abundance posterior."
+        ),
     }
 
 
@@ -732,7 +833,10 @@ def legacy_native_likelihood(models: list[dict]) -> dict:
         "alternatives_pooled": False,
         "model_counts_are_probabilities": False,
         "native_group_covariance_and_template_refitted_per_model": True,
-        "interpretation": "Historical positive-only measurement control. Signed nod injection demonstrates bias; do not use as the primary abundance likelihood.",
+        "interpretation": (
+            "Historical positive-only measurement control. Signed nod injection demonstrates "
+            "bias; do not use as the primary abundance likelihood."
+        ),
     }
 
 
@@ -749,6 +853,7 @@ def main() -> None:
     parser.add_argument("--executable", type=Path)
     parser.add_argument("--fit-native", action="store_true")
     parser.add_argument("--native-directory", type=Path)
+    parser.add_argument("--rate-noise-report", type=Path)
     parser.add_argument("--legacy-control", action="store_true")
     parser.add_argument("--held-out", action="store_true")
     parser.add_argument("--replay-models", type=Path)
@@ -882,14 +987,21 @@ def main() -> None:
             "sphere_inner_radius_cm": 1e19,
             "constant_hydrogen_density": True,
             "elemental_abundance_identified": False,
-            "interpretation": "Independent composition-aware HII pilot; blackbody controls are assumptions, not measured ionizing spectrum or full abundance posterior.",
+            "interpretation": (
+                "Independent composition-aware HII pilot; blackbody controls are assumptions, "
+                "not measured ionizing spectrum or full abundance posterior."
+            ),
         }
     if args.fit_native:
-        result["native_likelihood"] = native_likelihood(result["models"], args.native_directory)
+        result["native_likelihood"] = native_likelihood(
+            result["models"], args.native_directory, args.rate_noise_report
+        )
     if args.legacy_control:
         result["legacy_positive_only_control"] = legacy_native_likelihood(result["models"])
     if args.held_out:
-        result["held_out_likelihood"] = held_out_likelihood(result["models"])
+        result["held_out_likelihood"] = held_out_likelihood(
+            result["models"], args.rate_noise_report
+        )
     result["thermal_pair_diagnostics"] = thermal_pair_diagnostics(result["models"])
     args.output.write_text(json.dumps(result, indent=2, allow_nan=False) + "\n")
     if result.get("failed_models"):
