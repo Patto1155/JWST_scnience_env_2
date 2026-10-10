@@ -92,7 +92,10 @@ def unpack_build(
     build_dir = source / "source" / "sys_pilot"
     build_dir.mkdir(exist_ok=True)
     (build_dir / "Makefile").write_bytes((source / "source" / "sys_gcc" / "Makefile").read_bytes())
-    configuration = "OPT = -O1 -ftrapping-math -fno-math-errno -Wno-deprecated-declarations\nCXXFLAGS = $(STD) $(OPT) -Wall -W\nLDFLAGS = $(OPT) -Wall\n"
+    configuration = (
+        "OPT = -O1 -ftrapping-math -fno-math-errno -Wno-deprecated-declarations\n"
+        "CXXFLAGS = $(STD) $(OPT) -Wall -W\nLDFLAGS = $(OPT) -Wall\n"
+    )
     (build_dir / "Makefile.conf").write_text(configuration)
     started = time.monotonic()
     result = subprocess.run(

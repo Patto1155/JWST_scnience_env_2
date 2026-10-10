@@ -59,6 +59,18 @@ def test_signed_flux_and_offdiagonal_covariance_are_retained():
     assert negative["profiled_group_chi2"] == 5
 
 
+def test_replayed_model_cannot_omit_a_line_or_substitute_zero_template():
+    from tools.jwst.cloudy_pilot import group_predictions
+
+    for values in (np.ones(13), np.ones(14), np.r_[np.ones(28), np.nan]):
+        with pytest.raises(ValueError, match="29line thermal response"):
+            group_predictions({"intrinsic_line_values": values})
+    values = np.ones(29)
+    values[:2] = 0
+    with pytest.raises(ValueError, match="explicit direct-template"):
+        group_predictions({"intrinsic_line_values": values})
+
+
 def _fixture(path: Path, *, missing=False, blend_error=False):
     values = np.ones(len(LINES))
     values[14:19] = [values[selection].sum() for selection in SLICES]
@@ -132,6 +144,7 @@ def test_signed_native_physical_constraint_matches_independent_direct_fit():
 def test_model_timeout_retains_exception_receipt_without_incomplete_flux(tmp_path, monkeypatch):
     import json
     import subprocess
+
     from tools.jwst.cloudy_pilot import execute_model, pilot_parameters
 
     executable = tmp_path / "model.exe"
@@ -158,6 +171,7 @@ def test_failed_preflight_cancels_unstarted_grid_and_keeps_failure_artifact(tmp_
     import json
     import sys
     import time
+
     import tools.jwst.cloudy_pilot as pilot
 
     executable = tmp_path / "model.exe"
@@ -213,3 +227,36 @@ def test_failed_preflight_cancels_unstarted_grid_and_keeps_failure_artifact(tmp_
         == 20
     )
     assert (run / "model000.failure.json").exists()
+
+
+def test_rate_bridge_rejects_changed_physical_operator_between_noise_alternatives(monkeypatch):
+    import tools.jwst.cloudy_pilot as pilot
+    import tools.jwst.native_rate_noise as rate
+
+    def changed(report, *, empirical):
+        return {"signed_response_coupling": np.eye(3)[None] + float(empirical)}
+
+    monkeypatch.setattr(rate, "load_rate_noise_replay", changed)
+    with pytest.raises(ValueError, match="changed physical operator"):
+        pilot.native_likelihood([], rate_noise_report=Path("unused-report.json"))
+
+
+def test_rate_heldout_uses_fresh_operator_without_legacy_receipt(monkeypatch):
+    import json
+
+    import tools.jwst.cloudy_pilot as pilot
+
+    report = pilot.ROOT / "research_output/mom_native_rate_noise.json"
+    model = json.loads((pilot.ROOT / "research_output/mom_cloudy_first_model.json").read_text())[
+        "models"
+    ][0]
+
+    def unavailable_legacy(*args, **kwargs):
+        raise AssertionError("fresh RATE inference must not require the obsolete operator")
+
+    monkeypatch.setattr(pilot, "signed_coupling", unavailable_legacy)
+    result = pilot.held_out_likelihood([model], rate_noise_report=report)
+    assert "RATE_empirical_v3" in result["configuration"]
+    assert result["noise_contract_report_sha256"] == pilot.digest(report)
+    assert len(result["records"]) == 3
+    assert {item["held_out_RATE_group"] for item in result["records"]} == {"03", "05", "07"}

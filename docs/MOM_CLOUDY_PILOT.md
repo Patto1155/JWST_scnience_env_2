@@ -253,3 +253,68 @@ isolate host load or establish a universal backend speedup. The complete
 original20pilot now uses one executable; the original pair remains a versioned
 control and duplicate reductions are never pooled. The remaining18models
 started only after this declared cross-backend preflight passed.
+
+## Declared RATE-variance bridge before outcomes
+
+The question is whether complete ordinary/enhanced thermal predictions remain
+adequate when the independently reconstructed RATE donor variance and
+post-subtraction gain enter both covariance and signed source/ghost response.
+Competing predictions are the actual14UV components of each converged model,
+with a common nonnegative amplitude, two continuum terms and the three
+previously declared foreground screens. Expected information gain is removal
+of a falsified measurement assumption, rather than additional abundance-grid
+volume. No acquisitions or additional Cloudy executions are required.
+
+First replay the validated two-model pilot, then the complete original20pilot
+only if every requested thermal model passes its own final guards. Budget
+120seconds for the full8alternative bridge (two wavelength hypotheses, two
+instrumental response choices, formal/empirical RATE covariance), plus the
+existing hard60second held-out diagnostic. Stop on changed input identity,
+selection, source operator, covariance positivity or incomplete thermal
+outputs. Keep all historical twelve noise alternatives separately versioned;
+do not pool them with the eight fresh likelihoods or reuse their fitted scale.
+
+The bridge consumes the independently pinned compact RATE/CAL operator receipt.
+Its execution is numerical replay; actual-pixel reproduction remains the
+separate `native_rate_noise` command and pinned RATE/CAL acquisition. Every
+model's component weights and template covariance are recomputed from its own
+thermal outputs. Held-out model/screen choice uses only the two training RATE
+groups, with explicit nonnegative-amplitude uncertainty, and never bounds a
+shared instrumental systematic. Original wavelengths remain the primary
+measurement assumption; DUMMY remains a calibration sensitivity experiment.
+
+The consistent-backend two-model bridge completed in4.175s and its six held-out
+checks in0.307s. `mom_cloudy_focused_pair_rate_v3.json` contains48 separate
+fits. Original-wavelength/generic-point ordinary composition gives
+chi2=557.492 for627 conditional residual degrees of freedom under empirical
+RATE transport, with7.782 of that statistic from its restriction on the five
+measured groups. The enhanced partner gives557.815. Formal RATE transport
+gives789.340 and789.870 respectively. Similar empirical shape scores do not
+identify nitrogen abundance; formal errors still do not describe the source
+residuals adequately. The DUMMY/generic-point enhanced alternative improves
+chi2 by only0.290empirical or0.327formal, conditional on that uncalibrated
+wavelength hypothesis.
+
+Held-out ordinary/enhanced predictive quadratics for groups03,05,07 are
+189.441/190.202,209.027/211.556 and158.733/156.519, each with208
+continuum-projected dimensions. The group07 enhanced model uses the A1500=1
+screen chosen from training groups only; all other paired training choices
+select zero screen. These quantities preserve the stated truncated-amplitude,
+moment-matched scope and are not abundance probabilities or calibrated
+goodness-of-fit p-values. Unknown source-specific resolution and wavelength,
+stationary noise transfer, shared reference errors, ionizing spectrum,
+attenuation, C IV transfer and He/O blending remain distinct uncertainties.
+
+Reproduce this numerical bridge using the checked-in complete thermal pair:
+
+```sh
+python -m tools.jwst.cloudy_pilot \
+  --replay-models research_output/mom_cloudy_focused_pair_rate_v3.json \
+  --fit-native --held-out \
+  --rate-noise-report research_output/mom_native_rate_noise.json \
+  --output /tmp/cloudy-pair-rate-v3.json
+```
+
+The14 component predictions use each nod's source-column wavelength response.
+Full row-dependent response is a separately validated sensitivity, rather
+than a hidden claim of source-specific empirical wavelength calibration.
