@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "evidence_kind": "actual-pixel-reproduction",
+  "input_manifest_sha256": "3f61fa1ef58ac691610dacaa99bc61f7722656aa23247d655fb4e38a97c51117",
+  "original_sha256": "32f7f9d9875ef21154fff8530c8dd465b06fceadbbe9afe474ba7226784a7a92",
+  "replay_sha256": "9e5d8f8002f704b9cf4f335fa2afa9f4ca537169d1b661f875b6ae5514c8f784",
+  "byte_equal": false,
+  "numerical_result_max_abs_diff": 0.0,
+  "replay_command": "python -m discovery.survivor_deep_model --input /tmp/jwst-deep --output /tmp/deep-replay.json",
+  "non_byte_equivalence_reason": "84 acquisition-metadata differences only: restored UTC, dynamic API ETag/Last-Modified; all scientific values and byte hashes equal.",
+  "all_scientific_values_equal": true,
+  "differing_acquisition_metadata_leaves": 84
+}
