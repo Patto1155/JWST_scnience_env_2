@@ -204,7 +204,24 @@ def test_actual_frozen_complete_forecast_contract():
             assert record["required_truth_matched_SNR"] ** 2 * record[
                 "shape_information_fraction"
             ] == pytest.approx(9, rel=1e-12)
+    def compare_ranges(saved, replayed):
+        # Floating arithmetic can differ by one ULP across supported NumPy builds.
+        # Keep labels, structure and missing-value contracts exact.
+        if isinstance(saved, dict):
+            assert saved.keys() == replayed.keys()
+            for key in saved:
+                compare_ranges(saved[key], replayed[key])
+        elif isinstance(saved, list):
+            assert len(saved) == len(replayed)
+            for left, right in zip(saved, replayed):
+                compare_ranges(left, right)
+        elif isinstance(saved, float):
+            assert replayed == pytest.approx(saved, rel=1e-12, abs=1e-15)
+        else:
+            assert saved == replayed
+
     for response in ("intrinsic_line_values", "emergent_line_values"):
-        assert output["extra_stage_ranges"][response] == stage_ranges(
-            pilot["models"], [0, 0.5, 1], response
+        compare_ranges(
+            output["extra_stage_ranges"][response],
+            stage_ranges(pilot["models"], [0, 0.5, 1], response),
         )
