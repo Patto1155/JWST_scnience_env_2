@@ -1,0 +1,229 @@
+{
+  "schema_version": 1,
+  "input_sha256": {
+    "research_output/mom_native_wavecorr.json": "80ca86e7969e82bca424a963b39282f2fec42d589fb055238b4ac18510ab3fe6",
+    "research_output/mom_native_wavecorr.npz": "6ac87fb9fcb527b951f9dccf6e4a40fcae5ee78c0f85a55bfb2d93ac55281cb0",
+    "research_output/mom_multiplet_components_niv_doublet_v2.json": "692ce2fe0ca5463708abfa3c232378f3aebe22ff9b96f97d779091d54ac5f474",
+    "research_output/mom_composed_spectral_refit.json": "fd14eb0028016c7c66c09cdae74a6474416e11c6a29003103e274887ab0fdc50",
+    "research_output/mom_native_reduction.json": "88e3cdbf5b7759eaad84dc21ead0974c38f392292d71ce605fa0f5b5951637ec"
+  },
+  "question": "Can three RATE groups calibrate a common line-like systematic?",
+  "method_scope": "Extracted-likelihood numerical reproduction and prescribed linear injections; no raw pixels",
+  "line_contract_version": 2,
+  "reference": {
+    "wavelength": "original_native",
+    "resolution": {
+      "sha256": "b066eb2ec1a46bd861a3fc7b31937a4a6793b7fd066de0392ce04747d7c3832e",
+      "source_url": "https://raw.githubusercontent.com/TheSkyentist/unite/156e29eb75f788f90041b5d2bbae27ae9dac78d8/unite/instrument/nirspec/disperser.py",
+      "author_source_sha256": "f9b5c59ee3ad14c54fbe1d7e2f939995766c9a839c9629757f4994cbd557de4e",
+      "author_grid_sha256": "58f9330440c50af624313e70f3e5b9f58a6b22d06af094e0085ed66408d0d937",
+      "coefficients_descending": [
+        0.6588751520824567,
+        -13.160715906787065,
+        105.20050050555237,
+        -429.52868537465565,
+        959.0507565400321,
+        -1043.4918213547285,
+        480.90575759267125
+      ],
+      "transform_replayed": true,
+      "interpretation": "Pinned UNITE generic point-source R(lambda), Gaussian FWHM approximation",
+      "source_specific_lsf_calibrated": false,
+      "exact_published_runtime_reproduced": false,
+      "citation": "UNITE; de Graaff et al. DOI 10.1051/0004-6361/202347755"
+    },
+    "noise": "empirical_rows_and_columns",
+    "temperature_K": 20000,
+    "electron_density_cm3": 1000
+  },
+  "independent_reference_reproduction": {
+    "maximum_flux_absolute_error": 1.766249368984063e-10,
+    "maximum_covariance_absolute_error": 1.1595346904869075e-09,
+    "chi2_absolute_error": 3.490185918053612e-11,
+    "NIV_total_flux": 13.699616193892535,
+    "NIV_conditional_sigma": 9.007058418284084
+  },
+  "heldout_group_diagnostics": [
+    {
+      "heldout_group": "03",
+      "exposure_indices": [
+        0,
+        1,
+        2
+      ],
+      "group_fluxes": [
+        38.049046727327095,
+        23.33368902207872,
+        20.927466062862973,
+        2.9671617322726274,
+        20.46430446631499
+      ],
+      "group_conditional_sigmas": [
+        15.863480047437092,
+        13.549011714051714,
+        16.920881632167717,
+        10.482054897211786,
+        9.02098798297423
+      ],
+      "other_two_groups_fluxes": [
+        1.981840454712688,
+        9.847359916282155,
+        13.433785657184387,
+        6.319643762093592,
+        9.027717272993087
+      ],
+      "heldout_minus_training_five_flux_chi2": 5.247800055773931,
+      "conditional_degrees_of_freedom": 5,
+      "conditional_gaussian_tail_probability": 0.38639291176833646,
+      "common_mode_cancellation_max_absolute_error": 1.7763568394002505e-15
+    },
+    {
+      "heldout_group": "05",
+      "exposure_indices": [
+        3,
+        4,
+        5
+      ],
+      "group_fluxes": [
+        3.102429412504165,
+        11.117525405692339,
+        5.797200687163238,
+        -10.986407010491355,
+        9.854570375445965
+      ],
+      "group_conditional_sigmas": [
+        15.4172293599412,
+        13.498835876827611,
+        17.041843094191673,
+        10.74340926354551,
+        9.534496909156942
+      ],
+      "other_two_groups_fluxes": [
+        19.076896965389114,
+        16.05020716226813,
+        20.922924726231095,
+        12.884606709142187,
+        14.323003578957827
+      ],
+      "heldout_minus_training_five_flux_chi2": 4.520567867641665,
+      "conditional_degrees_of_freedom": 5,
+      "conditional_gaussian_tail_probability": 0.47713625352156774,
+      "common_mode_cancellation_max_absolute_error": 7.105427357601002e-15
+    },
+    {
+      "heldout_group": "07",
+      "exposure_indices": [
+        6,
+        7,
+        8
+      ],
+      "group_fluxes": [
+        0.7639380177746058,
+        8.516621915007784,
+        20.866994146065135,
+        22.988114598113217,
+        8.365337059171106
+      ],
+      "group_conditional_sigmas": [
+        15.534174277934559,
+        13.764131614891337,
+        16.902654617719918,
+        10.54636736498435,
+        8.888190591217779
+      ],
+      "other_two_groups_fluxes": [
+        20.237437457800375,
+        17.20821126549125,
+        13.520650609854545,
+        -3.8806898169674398,
+        15.40456326601237
+      ],
+      "heldout_minus_training_five_flux_chi2": 6.322190923850305,
+      "conditional_degrees_of_freedom": 5,
+      "conditional_gaussian_tail_probability": 0.27611843524647295,
+      "common_mode_cancellation_max_absolute_error": 2.713080411373414e-16
+    }
+  ],
+  "shared_mode_identifiability": {
+    "prescribed_mode": "One globally shared N IV-template amplitude; not inferred calibration",
+    "one_conditional_sigma_amplitude_flux_units": 9.007058418284084,
+    "source_residual_response_max_absolute_error_uJy": 1.734723475976807e-18,
+    "group_contrast_response_max_absolute_error_flux_units": 9.627157159082305e-16,
+    "group_contrast_rank": 2,
+    "global_shared_mode_information_from_group_contrasts": 0,
+    "degeneracy": "A line-shaped global residual is exactly confounded with its astrophysical flux"
+  },
+  "prescribed_gaussian_common_mode_coverage": [
+    {
+      "prescribed_common_sigma_over_conditional_sigma": 0,
+      "draws": 100000,
+      "seed": 52241444,
+      "omitted_systematic_exact_95_coverage": 0.95,
+      "omitted_systematic_simulated_95_coverage": 0.95028,
+      "simulation_binomial_standard_error": 0.0006892024376045114,
+      "included_systematic_simulated_95_coverage": 0.95028,
+      "included_systematic_exact_95_coverage": 0.95,
+      "distribution_measured": false
+    },
+    {
+      "prescribed_common_sigma_over_conditional_sigma": 0.5,
+      "draws": 100000,
+      "seed": 52241444,
+      "omitted_systematic_exact_95_coverage": 0.9204057308079443,
+      "omitted_systematic_simulated_95_coverage": 0.92203,
+      "simulation_binomial_standard_error": 0.0008559148409966863,
+      "included_systematic_simulated_95_coverage": 0.95031,
+      "included_systematic_exact_95_coverage": 0.95,
+      "distribution_measured": false
+    },
+    {
+      "prescribed_common_sigma_over_conditional_sigma": 1,
+      "draws": 100000,
+      "seed": 52241444,
+      "omitted_systematic_exact_95_coverage": 0.834223727104296,
+      "omitted_systematic_simulated_95_coverage": 0.83566,
+      "simulation_binomial_standard_error": 0.001175986820676631,
+      "included_systematic_simulated_95_coverage": 0.95131,
+      "included_systematic_exact_95_coverage": 0.95,
+      "distribution_measured": false
+    },
+    {
+      "prescribed_common_sigma_over_conditional_sigma": 2,
+      "draws": 100000,
+      "seed": 52241444,
+      "omitted_systematic_exact_95_coverage": 0.6192539719419363,
+      "omitted_systematic_simulated_95_coverage": 0.61976,
+      "simulation_binomial_standard_error": 0.0015355080272537551,
+      "included_systematic_simulated_95_coverage": 0.9514,
+      "included_systematic_exact_95_coverage": 0.95,
+      "distribution_measured": false
+    }
+  ],
+  "idealized_independent_equal_variance_group_sigma_interval": {
+    "groups": 3,
+    "degrees_of_freedom": 2,
+    "95_population_sigma_over_sample_sigma": [
+      0.5206582666988174,
+      6.2847346964853825
+    ],
+    "applied_to_native_heteroscedastic_groups": false,
+    "bounds_global_common_systematic": false
+  },
+  "offsource_controls_already_measured": {
+    "pooled_variance_scale_squared": 2.2206192172121764,
+    "leave_one_group_out_scale_squared_range": [
+      2.179377524755566,
+      2.246827380609594
+    ],
+    "scope": "Historical same-pixel controls; do not measure source-specific pathloss/wavelength/LSF"
+  },
+  "runtime_seconds": 0.17517130999931396,
+  "new_download_bytes": 0,
+  "limitations": [
+    "Gaussian common-mode amplitudes are assumed sensitivity scales, not empirical priors",
+    "Coverage is for signed N IV total flux at fixed physical templates, not elemental N/C",
+    "Exact template-aligned mode demonstrates a worst-case identifiable limitation, not its occurrence",
+    "This compact replay neither reproduces detector calibration nor author extraction settings",
+    "Off-source spatial controls and three exposure groups cannot resolve every shared calibration mode"
+  ]
+}
