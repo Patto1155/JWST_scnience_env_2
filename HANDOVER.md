@@ -4,8 +4,13 @@ Current verified results and corrections are in [docs/TAKEOVER_STATUS.md](docs/T
 The historical measurements below retain their original scope and reduction version.
 In particular, older statements about absent F444W repeat coverage or unavailable
 SMACS repeats are superseded by the current status and continuation reports.
-The latest native atomic inference uses the separately versioned N IV doublet;
-older coadd/single-line results remain historical conditional alternatives.
+The current inference uses the separately versioned total N IV doublet and
+version 3 signed RATE covariance; older coadd/single-line and variance contracts
+remain historical conditional alternatives. Actual RATE/CAL validation rejects
+the older CAL-variance demixing assumption. The complete twenty-model Cloudy
+pilot leaves ordinary declared composition conditionally adequate; source
+calibration and ion-stage corrections remain unresolved. Read the current status
+and report before using any numerical or discovery claim below.
 
 Companion to `FINDINGS.md` (the audit of the shipped candidate catalog). This
 document covers what was built, what was measured against real data, and an

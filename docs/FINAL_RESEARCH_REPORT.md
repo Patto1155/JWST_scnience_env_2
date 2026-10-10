@@ -1,367 +1,484 @@
-# JWST continuation: native spectra, persistent patches and quantitative model tests
+# Verified scientific continuation, 10 October 2026
 
-9 October 2026. This report supersedes scientific conclusions in the incoming
-master `1b4012e326664ce2a3ec5a515b5a832138aba46b` (PR #29) where new evidence
-changes their scope. The incoming [verified status](TAKEOVER_BASELINE_PR29.md)
-and [full report](FINAL_RESEARCH_REPORT_PR29.md) remain preserved. Read the
-[current status](TAKEOVER_STATUS.md) first. Eight distinct specialists worked
-on separate branches, with dependency-driven follow-ups and independent review;
-[ownership and release rules](CONTINUATION_PROTOCOL.md) identify their roles.
+This report supersedes the PR54 inference summary while preserving its historical
+contracts in `FINAL_RESEARCH_REPORT_PR54.md`. No new high-redshift source, elemental
+abundance, stellar polluter or cosmological discovery is established.
 
-**No new high-redshift source, elemental abundance, stellar polluter or
-cosmological discovery is established.** The productive results are an actual
-native-pixel reconstruction with shared-noise accounting, physical atomic
-refits that weaken the nitrogen inference, repeat/multiband rejection of
-several candidate premises, and reproducible predictions for further tests.
+## Starting state and actual reproduction
 
-## Independently reproduced starting point
+Live master was fetched before any local scientific claim was used. It was exactly
+`379ff35786aff31535335bbe7d1de114f91dd3c4`, the supplied PR54 handover; ancestry
+verification passed and there were no subsequent changes. The prescribed status,
+handover, final report, instructions/protocol, validation and coordinator review
+were read in order. Existing working copies were preserved; eight named specialists
+worked in isolated branches with separate numerical/data validators. The ownership,
+budgets, questions and stopping rules are recorded in `RESEARCH2_PROTOCOL.md`.
 
-The coordinator inspected master and reproduced the locked Python 3.12 gate
-(363 passed, two explicit historical-fixture skips), actual hashes of all 13
-original images (1,555,571,520 bytes), and nine original CAL spectra. A fresh
-GOODS pixel run reproduced both measurement CSV and selection metadata byte
-for byte: 1,134 proposals, 891 untestable, 236 measured screen failures, seven
-first-screen survivors over 0.9628081787 arcmin². Three catalog replays,
-noise/chemistry sensitivity JSONs and a fresh nominal coadd fit/scan reproduced
-the saved numerical baseline. See `research_output/continuation_baseline.json`.
+Python 3.12.14 and all 65 distributions match `requirements-research.lock`. The incoming
+quality gate reproduced 579 passing tests and three explicit skips. All 68 incoming
+scientific artifact identities and 210 code/configuration identities matched.
+The independent 336-fit replay differed by at most 2.86e-10 in flux and 1.79e-11 in
+scaled covariance, consistent with solver roundoff rather than byte identity.
 
-The historical 1,732 candidates remain **untestable**, not measured artifacts.
-Six of the seven GOODS survivors fail persistence at their original brightness;
-98 persists. Conditional entrants 254/46 have separate denominators. The matched
-SMACS selection had 1,267 proposals, 940 untestable, 317 failures and ten raw
-survivors. None of these counts is a redshift-confirmed population.
+All 13 selected original mosaics and nine CALs were restored and whole-file hashed.
+Actual GOODS pixel selection reproduced its CSV and metadata byte for byte:
+1,134 proposals, 891 untestable, 236 failures, seven first-screen survivors and
+0.962808 arcmin². Native extraction arrays reproduced from actual CAL pixels.
+Deep photometry reproduces all scientific numerical fields in the inherited
+default-thread environment, with 84 acquisition-metadata differences. The
+independent one-thread run has 1,850 numerical and 84 metadata differences;
+the largest is 0.0452343 nJy in a degenerate source 254 continuum amplitude.
+The largest source 98 band-flux change is 2.21e-6 nJy. The source 46 morphology
+parameter that moved from 0.224974 to 0.222812 is axial ratio, not Gaussian width.
+Compact NPZ replays are
+explicitly distinguished from these actual-pixel runs.
 
-A transient cache disappeared late in the session. Completed pixel reruns,
-committed measurements and reviewer receipts survived. The exact locked runtime
-and all nine native originals were restored; the latter transferred 464,135,040
-bytes with every original pin matching. The old 13-image cache is no longer
-present. `research_output/native_cache_recovery.json` records recovery, rather
-than implying an unexecuted second image rerun.
+## Spectral measurement: a rejected error contract and its replacement
 
-## Persistent imaging candidates
+Public author PIXTAB, extraction settings and contributor information were found.
+The table has 56,734 rows including 36,520 negative-profile rows. Applying its own
+read-noise weights, y[-3,3] extraction and pathloss once reproduces 467 finite coadd
+bins to about 1e-10 µJy and all 473 contribution counts. Its reused background rows
+make author group slices dependent. It uses an older pipeline/context than the
+current public CALs; these reductions are not independent datasets and are not
+pooled. This closes the public-settings accessibility blocker without reproducing
+the entire published likelihood, source masks or instrumental response. Our
+RATE-based implementation is an independent reduction alternative. A difference
+from the published analysis neither reproduces nor falsifies it without its
+complete source-specific settings and calibration contract.
 
-### A distinct SMACS repeat and field-specific noise
+Known-spectrum injections exposed omitted negative-nod spectral mixing in the
+earlier mean response: an injected total N IV 20 was recovered as 13.934 under the
+positive-only design. A signed contributor response restores exact closure.
+Using every detector row's own wavelength changes fitted coefficients by less
+than 0.052 conditional sigma; under the declared morphology, row averaging is a
+smaller effect than covariance or unknown instrumental calibration.
 
-A bounded acquisition obtained a different F444W exposure,
-`jw02736001001_02105_00003_nrcalong_i2d.fits` (120,254,400 bytes). Its sole
-uncalibrated contributor is disjoint from reference exposure 00004. Both have
-837.468-s exposure time, separated by 15.3888 minutes in one visit. Of ten raw
-survivors, nine fail nominal persistence; 1043 retains a fixed-aperture red
-patch. With tripled errors eight fail and 152 becomes inconclusive. The nearest
-repeat segmentation centroid to 1043 is 0.951 arcsec away, so patch persistence
-is not evidence of an independently segmented compact object. Coordinate shifts
-of ±0.05 arcsec leave this conclusion stable. There were 345 astrometric training
-and 352 held-out matches; the raw median/p90 residuals are 0.01303/0.04451 arcsec.
-[Repeat report](SMACS_INDEPENDENT_REPEAT.md).
+Nine newly selected RATE images and exact JWST 2.0.1 pipeline source establish the
+decisive variance result. NRS_MSASPEC background subtraction changes SCI and DQ
+but leaves the target's ERR/variance arrays unchanged. The historical equation
+that treated CALERR as target-plus-quarter-donor variance is therefore false for
+these products. Actual target-only variance closure is within 5.85e-7 relative;
+equal-half donor SCI subtraction plus measured gain reproduces CAL within
+1.74e-6 CAL sigma. Historical artifacts are retained as conditional controls.
 
-Actual SMACS blank apertures yield noise/diagonal-error factors F090=1.184
-[1.081,1.351], F200=1.285 [1.183,1.380], F444=0.938 [0.894,0.979]. These are
-conditional spatial-block intervals, with adjacent-pixel correlations about
-0.50/0.52/0.69. Held-out F444 apertures include one negative five-sigma event and
-no positive event: this does not certify a Gaussian five-sigma false-positive
-rate. A negative-image selection has no passes among five testable proposals,
-not a population contamination estimate. Field-specific corrections can change
-candidate identities; GOODS factors cannot simply transfer to SMACS.
-[Noise controls](SMACS_EMPIRICAL_CONTROLS.md).
+Version 3 propagates all signed raw contributors and their gain differences into
+full covariance and the source/ghost mean response. It recomputes the empirical
+off-source scale against donor-inclusive variance: 1.427616 instead of reusing
+2.220621. Reusing the old scale would count donor variance twice. Independent
+raw-pixel covariance, 12 likelihoods/Fieller sets, 12 heldouts and new-seed 5,000
+Gaussian injections pass; conditional 95% coverage is 94.80–95.18%. This is fixed
+observed-variance Gaussian coverage, not calibrated empirical source-Poisson coverage.
 
-For 1043, the original F090 aperture is −40.30±6.45 nJy after subtracting
-649.75 nJy of annulus background from 609.45 nJy of unsubtracted signal. Nine
-point-plus-background alternatives give positive point coefficients 31.33–44.57
-nJy, while source-excluded background apertures span −12.08–92.15 nJy. Red
-residual chi²/dof remains 11–28. A red patch persists; a background-independent
-blue non-detection and precise calibrated point flux do not follow.
-[Actual patch models and figure](SMACS1043_PATCH_DIAGNOSTICS.md).
+The original-wavelength generic-point reference gives total N IV 22.6461±11.7184
+in units 10^-20 erg/s/cm². Observed-stage ionic N/C is 3.06015 with signed conditional
+95% Fieller interval [-0.158243,9.90503], admitting the stated ambient ionic reference
+10^-0.60. Formal photon/read/independent-flat noise alone gives the narrower
+[0.4286,7.7620] interval and excludes that reference. The empirical noise assumption
+therefore controls the conditional enrichment tension. Negative interval endpoints
+represent signed measurement uncertainty, not negative physical abundances.
 
-### Deep seven-band GOODS models
+Three disjoint RATE groups test differential consistency but cannot measure an
+arbitrary shared line-shaped systematic: it is exactly confounded with source
+flux. Off-source covariance transport is an assumption about source pixels.
+Recorded flat variance contributes little diagonally, but arbitrary correlation
+can contribute up to 4.02% of formal N IV variance; unrecorded common systematics
+remain unbounded. DUMMY wavelength corrections remain sensitivity experiments.
+Source-specific morphology/pathloss, LSF and absolute wavelength calibration are
+not established by the closure tests.
 
-Twenty-one bounded DAWN cutouts, seven finite PSFs and seven SVO bandpasses
-support forward modeling of 98/254/46. Their mosaics share native contributors
-with earlier observations. Reused photons are not independent confirmation.
-The model transports source geometry and local background jointly into blank
-controls; review found and corrected a companion-offset defect before merge.
-[Acquisition](SURVIVOR_DEEP_DATA.md), [deep models](SURVIVOR_DEEP_MODEL.md).
+## Bounded redshift, width and continuum identifiability
 
-| Source | Executed evidence | Supported interpretation |
-|---|---|---|
-| 254 | F090 aligned flux 17.84±0.81 nJy, conditional background error; blue/red centroid separation 0.010 arcsec. Alternative radii, PSF rotation and apertures remain positive. Independently computed mean/planar annulus alternatives give 18.47–19.01 nJy. | The premise of no blue counterpart fails. This alone does not determine a redshift. |
-| 98 | A second red knot lies 0.336 arcsec away. F090 target flux changes from 10.16 to 4.14±2.45 nJy under one/two-component fits and to −0.71 nJy under a smaller window. F444 diagonal chi² is still 184,658/525. | A persistent complex is supported; the current spatial model and tiny formal errors do not certify component totals or a dropout identity. |
-| 46 | Approximate conditional fν in F115/F150/F200/F277/F356/F444 is 3.91/3.00/2.12/9.74/68.69/644.88 nJy; F444/F356=9.39, F356/F277=7.05. | Strong curvature is measured; a simple smooth continuum family is inadequate. |
+Six full fits and six held-out comparisons use the merged RATE likelihood.
+Redshift 14.42/14.46 changes N IV by -0.370/+0.301 conditional sigma; the
+z=14.46 ionic interval excludes the ambient reference but improves chi-squared
+by only 0.475. A +0.12953% common shift of assigned line centroids reproduces that
+forward-response change exactly, with detector wavelengths, continuum and
+units held fixed. It is not a proof for dilation of the full calibrated grid. Unknown Gaussian instrumental width likewise absorbs the
+tested intrinsic broadening exactly. These are explicit confounding examples,
+not fitted calibration errors. Intrinsic 1,000 km/s width and quadratic continuum
+change N IV by only +0.067/+0.076 sigma, with no held-out width improvement.
+This pilot provides no absolute-redshift, intrinsic-width or tighter elemental
+abundance identification.
 
-A publisher-pinned Sonora Bobcat 2021 table adds **1,052 evaluated cloudless,
-equilibrium atmosphere rows** for source 46. All perform poorly under the adopted
-5%/15% floors: best conditional chi²=171.49/49.38. The best model predicts
-F277≈1.36 nJy versus 9.74 nJy measured; holding F277 out predicts ≈1.35 nJy.
-Independent author-table parsing and NNLS reproduce the fits. This rejects that
-finite grid as a satisfactory explanation, not cool atmospheres as a class.
-Clouds, nonequilibrium chemistry, other stellar/galaxy models and multiplicity
-remain open. Any distance or proper-motion prediction from its inadequate best
-model is explicitly hypothetical. [Atmosphere comparison](SURVIVOR_ATMOSPHERE.md).
+## Complete composition models
 
-### Recovery experiments are conditional operator tests
+Cloudy C23.01 was acquired publicly and fully pinned, including atomic provenance.
+A first engineering run accidentally applied metallicity twice; independent review
+rejected it. Its outputs are preserved and excluded. Corrected inputs verify actual
+C/N/O abundance saves, all 14 UV components and 29 total saved line entries (including five blends),
+intrinsic/emergent units, multiplet sums and convergence. Missing or incomplete
+outputs are never treated as zero. Default Cloudy wavelengths above 2000 Å are air;
+the fourteen UV measurement components are vacuum.
 
-Fourteen frozen, geometrically selected control groups yielded no additional
-robust high-z object. Five-pixel detection recovers six of six robust low-z
-controls; an eight-pixel angular-area threshold recovers five. Source186837 has
-aperture SNR≈27.4 despite a detector-centroid failure. Non-recovery is not absent
-flux. [Frozen controls](DEEP_CONTROL_RECOVERY.md).
+The ambient reference fixes log(N/C)=-0.60 at declared log(C/O)=-0.37,
+with GASS10 background metals. This is not an unmodified scaled-solar C/N/O
+pattern. The paired experiment changes nitrogen by +1 dex and recomputes thermal
+balance. H+ weighted temperature falls 13,462.39→13,177.67K. N IV/N III increase
+7.825/8.784 rather than 10; C IV/C III/He+O change 0.784/0.885/0.888. Nitrogen-flux
+rescaling is rejected as a shortcut in this declared physical setup. These
+responses do not imply that the observed source has enhanced nitrogen. After
+normalization to C III, enhanced/ordinary N IV, N III, C IV and He+O ratios are
+8.842, 9.925, 0.885 and 1.003. Absolute line-response changes should not be
+misrepresented as equally large changes in normalized abundance observables.
 
-A further experiment executes 2,436 observed-profile insertions: four noisy
-source templates × seven prescribed fluxes × three sizes ×29 globally disjoint
-masked sites, with paired five/eight-pixel detector evaluations. Increasing the
-threshold loses 149 recoveries and gains none. A blended template falls from
-9/29 recoveries at 80 nJy to 3/29 at 160 nJy. At40 nJy, extending one template from
-size 1 to 1.5 changes recovery29/29 to 0/29. Segmentation response can be
-nonmonotonic in brightness. Review corrected the template annulus's missing
-outer radial bound and reran all trials. Nineteen spatial blocks provide
-conditional bootstrap uncertainty. No fresh source Poisson realization,
-representative field selection or independent classifier training exists here;
-these are not population completeness curves.
-[Injection experiment](OBSERVED_TEMPLATE_INJECTIONS.md).
+Four environmental runs hit the original 600-second cap; three more started
+during exception unwinding and were interrupted, and twelve were unexecuted.
+An existing supported LAPACK backend was validated against actual complete
+outputs before retrying the unchanged 20-model pilot with two workers and 1,200 s
+caps. Both backend controls match 58 printed line responses and five weighted
+temperatures; small zone-profile differences and variable runtimes are recorded.
+No universal speedup or bitwise thermal-profile identity is claimed.
 
-## Native MoM-z14 spectral reconstruction
+All twenty declared models now converge under one pinned backend, after three
+iterations. Eleven stop at the declared low electron fraction and nine at the
+1,000 K temperature floor. These finite outer-boundary choices can affect
+additional low-ionization predictions; they are not physical completeness of
+all phases. H+ weighted temperatures span 10,240–17,111 K. Individual wall
+runtimes are 323–584 seconds; 8,779.59 seconds is the sum of model wall times,
+including reused controls, rather than parallel elapsed time or summed CPU.
 
-### Observations and extraction assumptions
+All 140 original model files and the line list are preserved in an exact-hash
+compressed archive. Original controls and capped failures are preserved separately.
+Fresh coupling produces 480 fits across eight distinct measurement alternatives
+and three screens, plus six training-only group predictions. Independent raw
+thermal and direct constrained-GLS reviews pass at solver roundoff.
 
-Nine actual CAL products supply three disjoint RATE exposure groups. Their
-pipeline backgrounds reuse the other two nods within each group, so the nine
-calibrated slits are correlated. The signed subtraction operator has rank two
-per nod triplet; its common background cannot be recovered from these CALs
-alone. Shared calibration effects across groups remain unmeasured. Background subtraction is already complete: no second nod
-subtraction is applied. Extraction restores uniform-source pathloss/barshadow,
-then applies the point-source pathloss once. The trace/profile is constrained
-by continuum3.35–4.45µm under a fixed +0.2-pixel offset/0.8-pixel width. Shapes,
-origins, DQ, source identity and operation order are guarded.
+Under original wavelengths, generic point response and fresh empirical RATE
+noise, the ordinary high-ionization model gives chi-squared 554.534 and the
+nitrogen-enhanced/hotter-blackbody model 552.552: a difference of 1.982.
+Ordinary composition remains conditionally adequate. Both model and screen
+selection are finite sensitivities; different environmental winners prevent
+attribution solely to nitrogen. Held-out predictive quadratics are ordinary/
+enhanced 188.277/186.470, 209.011/212.121 and 157.503/154.851 for groups 03/05/07;
+two improve and one worsens. They are conditional moment-matched diagnostics.
 
-The reduction keeps 70 UV columns ×nine source amplitudes. Exact inversion of
-shared diagonal variances produces 43 negative selected UV pixels; these are reconciled with
-nonnegative latent variances plus a positive independent remainder, an explicit
-conditional noise model. Off-trace empirical variance inflation is2.22062,
-with leave-one-group values 2.179–2.247. Pixel nod correlations are negative
-(−0.574 to−0.385), while source-amplitude correlations are positive
-(+0.210 to+0.288). Independent latent-matrix GLS reproduces extraction and full
-line covariance. [Native reduction](MOM_NATIVE_REDUCTION.md).
+The normalized N IV/C III enhancement factor varies 6.322–9.531 across
+otherwise paired controls, while ordinary N IV/C III varies by more than
+200-fold across the declared environments. These finite ranges illustrate
+ionization/thermal degeneracy, rather than supply an abundance interval or
+prior distribution. The [complete pilot report](MOM_CLOUDY_PILOT20_REPORT.md)
+records all alternatives, raw preservation and selected predictions.
 
-| Conditional native point-source result | Value |
+The best ordinary environmental model illustrates the likelihood scope: its
+profiled N IV prediction is about 1.06 while its unconstrained fitted total
+is about 21.99±11.65 in the same flux units. Statistical adequacy under weak, correlated
+constraints is not a claim that central observed line features are reproduced.
+The bridge uses source-column wavelength responses; the independently tested
+full-row response remains a bounded sensitivity, not empirical calibration.
+
+Ionizing-spectrum, density, metallicity, attenuation and nitrogen controls remain
+assumed families. No member counts are posterior odds. Selecting a best member over environments
+and screens also changes the goodness-of-fit question; a nominal fixed-model
+chi-squared tail is not a calibrated selected-family probability. Ionic N/C is not elemental
+N/C; missing ion fractions, He/O blending and C IV transfer remain material.
+Stellar yield or polluter inference is not identified before observational,
+ionization and retention uncertainties are propagated.
+
+## Source-specific archive coverage and calibration
+
+An exact-date CRDS selector audit follows both the product context 1535 and
+public current context 1596 to the same NRS_MSASPEC wavecorr reference:
+`jwst_nirspec_wavecorr_0004.asdf`, SHA256
+`869d4279137b1c7dea5e8bb4b4980d72fd0aa8423c87814050bfa710cd2b58f3`.
+Its internal DUMMY/toy contract is unchanged. Updated context numbers and
+matching reference filenames alone do not establish empirical calibration.
+
+A later CAPERS release has a source only 0.03058 arcsec from the MoM position.
+Position coincidence is a useful association lead, not proven source identity.
+Its actual SPEC and all 46,519 PIXTAB rows cover roughly 3.94–5.50 microns,
+with zero UV diagnostic rows. Shared background values connect nominal author
+groups; group slices cannot be pooled as independent photons. The official
+combined NRS1/NRS2 source X1D has a gap from 1.84305 to 3.89722 microns.
+The source-specific S2D has zero wavelength pixels at 2.15–3.20 microns before
+any flux or quality cut. Thus the released UV gap is not solely a 1D mask.
+This does not prove the absence of useful unrectified photons in every raw
+exposure. It supplies no nitrogen likelihood or UV upper limit. Nominal prism
+bandpass alone is insufficient to design coverage of this source.
+
+## Selection and bounded candidate decisions
+
+A predeclared 40 arcsec GOODS cutout contains 16 disjoint unmasked injection sites,
+0.0267 arcmin² of usable stamps. The 1,152 trials vary point/extended/pair morphology,
+color, 20/80 nJy flux and explicitly assumed output-grid count gains. At gain 10,
+red 20 nJy joint recovery is 11/16 point, 6/16 extended and 3/16 pair; gain 1 gives 1/16
+point. Bright pair color recovery 16/16 becomes 6/16 after centroid requirements.
+Those denominators are two realizations at each of eight diagnostic sites,
+not sixteen independent skies. Site-bootstrap intervals are 0.375–0.938,
+0.125–0.688 and 0.0625–0.375 for the three faint profiles. These are conditional
+resampling intervals without calibrated coverage, not population confidence
+intervals. Degenerate bright-profile 1–1 intervals do not bound unseen failures.
+
+Actual mosaic headers, contributor footprints and released Grizli source separate
+combining WHT from separately propagated VAR. The public VAR image is accessible;
+a bounded 4,096-byte prefix was retained and independently decoded. Neither WHT
+nor VAR identifies each contributor's count/variance operator. A constructive
+Poisson witness gives the same released SCI/variance with different source shot
+noise. Expanding assumed-gain injections would not fix this identifiability gap.
+Labeled galaxy/star/blend/background denominators and held-out field/visit
+selection are absent, so completeness, contamination and cosmological odds are
+not supplied by this pilot.
+
+For 98 and 1043, 36 actual-pixel neighbor/background fits and 216 fixed-geometry
+heldouts test explicit RMS/flux-stability gates. Every red classification family
+fails the RMS≤2 gate. For 98, best heldout RMS remains 5.19/5.23 in F200/F444 after
+neighbor modeling; 1043 minima are 7.40/11.58/15.42. Rank is adequate: failure is
+model inadequacy and background assignment, not numerical singularity. Stop
+classification from these fits. Source 254 retains its established blue counterpart.
+
+For 46, all 552,826 positive two-member pairs and the unrestricted positive cone
+of 1,052 Bobcat members fail the finite-family fit. A broader 37,800-member
+Flame/Skimmer atmosphere family also fails the declared photometric floors and
+held-out F277 prediction. This rejects these finite families, not all stellar
+atmospheres or the source's identity. Actual F410M gives strong aligned emission,
+rejecting negligible F410 with an F444-only excess. Fiducial F410/F444 is 0.8448;
+background/PSF/aperture alternatives matter far more than its tiny formal error.
+The two filters overlap, allowing a single line near 4.307–4.316µm under the assumed
+ratio tolerance. Continuum, line and multiplicity explanations remain unresolved.
+Mixed mosaic contributors provide no proper-motion constraint.
+
+## Discriminating observations and ranked continuation
+
+The exact merged twenty-model input passed an ancestry/hash gate before the
+48-case forecast ran (12.170 seconds, zero acquisitions). A separate oracle
+reproduces all 43,200 distances and 96 direct spectral quadratures. Each
+comparison profiles a nonnegative normalization and the declared attenuation
+choices. These are hardest-pair stress tests across all finite models, including
+members that are not the best native fits, rather than posterior-weighted
+expected information gain.
+
+For Cloudy intrinsic line-energy responses, zero intrinsic FWHM and the
+pinned nominal G235H instrumental response:
+
+| Measured bundle | Hardest enhanced-truth matched total SNR for expected squared separation 9 |
 |---|---:|
-| N IV, original assumed1486 response | 16.76±8.94 |
-| C IV summed flux | 14.52±7.88 |
-| N III summed flux | 4.77±6.34 |
-| C III summed flux | 12.67±5.28 |
-| (N IV+N III)/(C IV+C III), line flux | 0.79179;95% Fieller[−0.00677,2.88294] |
+| N IV + C III | 4,723.4 |
+| He/O + C III | 1,195.0 |
+| N III + C III | 11.315 |
+| All fourteen UV components | 10.792 |
 
-Flux units are1e−20 erg s−1 cm−2. These ratios are **line-flux ratios**, not
-ionic or elemental abundances. Group03 carries the largest N IV estimate
-(45.34±15.76 versus5.58±15.33 and0.38±15.40); this is not a three-group
-independent confirmation. The published coadd and these native alternatives
-reuse observations and must not be pooled as independent likelihoods. This
-independent implementation is a conditional reduction alternative; without the
-author's extraction settings it does not reproduce or falsify the full published
-analysis. Atomic rate/systematic uncertainty is not supplied by merely pinning
-one temperature/density grid.
+The strong next contrast is N III with the C III anchor under these assumptions;
+N IV-only and He/O-only composition contrasts remain nearly degenerate across
+environments. He/O separation retains a separate value for physical component
+identification. Required SNR is a matched-template quantity under white noise,
+known centroid/width/continuum and nominal response, not empirical source
+sensitivity. A lower threshold in some broadened cases does not mean broader
+sources need less observing time: template norms and sensitivity also change.
 
-An additional actual-pixel spatial covariance experiment transports measured
-row lags through signed extraction and nod mixing. It changes the point result
-to 0.79306[−0.00598,2.88356], still crossing zero. An assumed wavelength-scaled spatial extraction width
-σ=0.8*(λ/3.9µm) native pixels gives0.73336[−0.05831,2.71072]; the spectral
-intrinsic-width assumption remains zero. Below-break source amplitudes have formal
-RMS1.261 and empirical-scaled RMS0.846;28 samples do not calibrate tails.
-The separable/stationary transport and source geometry remain assumptions.
-[Spatial covariance](MOM_NATIVE_SPATIAL_COVARIANCE.md).
+Intrinsic N V/C III ranges are ordinary 0–0.002415 versus enhanced 0–0.015959;
+C II/C III ranges are 0.020698–0.577398 versus 0.020139–0.640808. Their overlap
+prevents a guaranteed abundance discriminator. A calibrated ratio outside these
+finite ranges would test the declared physical family, not all ordinary gas.
+Outer stopping boundaries, C IV transfer, ionizing spectra and dust remain
+material. No absolute exposure time or archive-independent observing necessity
+is asserted. See [the forecast report](MOM_CLOUDY_OBSERVATION_CONTRASTS.md).
 
-Source-specific instrumental resolution is **not empirically calibrated**.
-Generic nominal/point R curves, fixed redshift, continuum and profile choices
-remain conditional. A [pinned source-offset wavelength-reference experiment](MOM_NATIVE_WAVECORR.md)
-audits original GWCS derivatives and target correction flags on all nine actual
-CALs. The logged reference has DUMMY/toy pedigree and predicts shifts of
-−0.233 to−0.131 detector pixels. Applied as a point-source hypothesis with the original legacy line templates,
-its point spatial/empirical line-flux ratio is0.9733[0.1218,3.8186], but conditional
-chi² worsens by 1.029. That apparent interval change does not justify selecting a
-detection model. Planned MOS offsets, partial recalibration and generic LSF
-remain assumptions; the reference does not supply empirical calibration.
+Nominal medium-resolution NIRSpec separates narrow N IV and C III geometrically;
+high resolution alone does not separate 1,000 km/s components. Density-component
+shape discrimination requires total doublet SNR of roughly 6–20 under fixed
+centroids/known response, rather than merely a nominal Rayleigh criterion.
+These are optimistic design calculations. Required MSA placement and detector
+gap coverage must be checked for the actual source, rather than inferred from
+nominal disperser curves. Relative exposure scaling needs a
+declared instrument-specific reference; no absolute ETC seconds or feasible
+proposal has been established.
 
-## Atomic physics, enrichment and formation
+1. Source-specific calibration with public PIXTAB/actual RATE contributors:
+   determine morphology/LSF/wavelength and source-control noise transport. Highest
+   immediate information gain because these control the nitrogen likelihood.
+2. Complete-model ion-stage/density/He-O predictions under the fresh likelihood:
+   target observables that differ after normalization and attenuation profiling;
+   acquire additional ion stages or medium/high-resolution spectra where archive
+   coverage cannot supply them. Physical continuum/transfer families precede
+   larger abundance grids.
+3. Native contributor count/variance transport and representative labeled controls:
+   establish source-Poisson and selection likelihood before expanding the field
+   pilot or attempting population/cosmology odds.
+4. Candidate 46 independent epoch/optical/medium-band or spectroscopy, conditional
+   on resolving its specific continuum/line/multiplicity ambiguity. For 98/1043,
+   improved morphology/background or genuinely independent data precede another
+   classification fit.
 
-### Versioned likelihoods and abundance identifiability
+## Uncertainty budget and rejected explanations
 
-Publisher/package/member-pinned PyNeb1.1.32 provides28 temperature/density cells
-(Te 5,000–30,000K;ne 100–100,000cm−3). Cuev0.1 provides2,025 photoionization models,
-but its actual emulator omits N IV. Its four-group comparison uses the marginal
-covariance and never substitutes zero N IV; retained grid counts are
-124/145/583/672 for the four native scenarios, not posterior probabilities.
-He II/O III blending, C IV resonance/stellar transfer and unobserved stages
-remain unresolved. [Atomic inputs](MOM_ATOMIC_IONIC_GRID.md),
-[Cue](MOM_CUE_PHOTOIONIZATION.md), [native mapping](MOM_NATIVE_CHEMISTRY_FOLLOWUP.md).
+The following contrasts are not independent random errors to add in quadrature.
+They identify measured arithmetic, conditional transport and unidentified physics.
 
-The initial physical-multiplet round executes112 fresh fits with density-specific
-N III/C III/C IV weights, preserving the original1486-only N IV definition.
-At the reference cell, point/empirical ionic N/C is6.4509[0.2601,21.1594]. These
-are conditional Gaussian Fieller sets, not a posterior over density, ionization
-or enrichment. [Version1 refit](MOM_NATIVE_MULTIPLET_REFIT.md).
+| Input | Actual evidence | Consequence for nitrogen |
+|---|---|---|
+| Signed mean / donor variance | Actual RATE/CAL closure; known spectra; independent GLS | Reject positive-only response and historical CAL variance demixing |
+| Residual covariance | Fresh off-source scale 1.427616; fixed Gaussian injection coverage | Empirical ionic interval admits ambient reference; formal-only interval excludes it; transport to source remains assumed |
+| Common wavelength | Exact-date reference still DUMMY; explicit ±0.12953% centroid counterexamples | A selected redshift branch can change the ionic comparison without calibrated absolute wavelength |
+| Source LSF | Exact Gaussian width confounding; no held-out broadening improvement | Intrinsic width is unidentified; nominal response is conditional |
+| Row wavelength / tested continuum | Less than 0.052 sigma scalar-row change; quadratic N IV change +0.076 sigma | Small within these declared alternatives; no universal bound on morphology or continuum |
+| Recorded flat-reference variance | Independent diagonal small; arbitrary recorded correlation bound up to 4.02% formal N IV variance | Bounds only recorded marginal flat errors, not unrecorded common systematics |
+| Shared calibration | Three disjoint groups; common line shape exactly confounded with flux | No empirical finite bound on arbitrary common source/calibration error |
+| Composition / ionization / transfer | Complete thermal alternatives; unknown stage fractions, He/O and C IV transfer | Observed-stage N/C cannot be promoted to elemental abundance or polluter identity |
+| Population selection | Unknown native count operator and real class denominators | No completeness, contamination or galaxy-formation/cosmology likelihood |
 
-**Version2 changes the N IV contract to the total 1483.321+1486.496 doublet and
-refits all 112 likelihoods and covariances.** AtTe20,000K/ne 1,000cm−3,
-epsilon1483/epsilon1486=1.480924; total emissivity is2.480924×the earlier response.
-The new fitted point/empirical N IV total is13.6847±9.0207, and conditional
-ionic N/C becomes **2.7504[−0.5064,9.5916]**. At original wavelengths, all 28 point/empirical and26/28
-nominal/empirical cells cross zero. Formal-noise families retain positive lower
-endpoints, demonstrating dependence on noise treatment. Old version 1 bytes and
-definitions remain unchanged. Dividing a doublet total by a single-line
-emissivity, or applying new emissivity to an old fit/covariance, is rejected.
-[Version2 atomic and spectral result](MOM_NIV_DOUBLET_V2.md).
+Rejected explanations are specific: positive-only nod response; the target-plus-
+donor CAL ERR assumption; nitrogen-only flux rescaling for the declared physical
+setup; absolute redshift/width identification under unresolved calibration;
+classification from the tested inadequate 98/1043 scene models; the tested finite
+source 46 atmosphere families; and negligible F410 with an F444-only excess.
+None of these rejects all low-redshift galaxies, stars, backgrounds or standard
+cosmology. Dusty/nebular galaxy fits and other atmosphere physics remain untested
+identity alternatives where the present measurements cannot discriminate them.
 
-Even a perfectly determined observed-two-stage ionic ratio is not elemental
-N/C: elemental N/C=ionic N/C×k, where k=f_C,observed/f_N,observed is unmeasured.
-The finite temperature/density range of positive central values is model
-sensitivity, not a confidence interval. Signed Fieller endpoints must not be
-silently clipped and logged as physical abundances. No polluter is identified.
+## Reproduction, validation and acquisition
 
-### Composed version2 noise and wavelength experiment
+The final exact-lock quality gate passes **719 tests, with three explicit skips**
+(722 collected, zero failures/errors). The incoming 579/3 result is preserved.
+The same two visual-runner tests lack their expected repository-layout archive
+files; the third requires the separately pinned author Cue weights. These skips
+do not count as actual-pixel validation. Actual scientific pixel runs have their
+own receipts. [Final validation](../research_output/research2_final_validation.json)
+records all 65 installed versions, immutable tested code, JUnit/log identities,
+independent numerical reviews and successful CI heads for PRs 55–79.
 
-The [final bounded spectral round](MOM_COMPOSED_SPECTRAL_ROUND.md) fits336 likelihoods:28 physical doublet cells
-×two generic resolution families ×three source-noise hypotheses ×two wavelength
-hypotheses. Each gets fresh line flux/covariance; the source-amplitude extraction
-is frozen and the alternatives reuse the same observations. The earlier112-fit
-version2 quartet is an exact execution control.
+The canonical gate preserves 46 reviewed artifacts and all 261 historical
+PR54 research-output blobs. The final independently fetched remote-tree audit is
+in [the release receipt](../research_output/research2_release_integrity_final.json).
+CI for PR79 initially failed a one-ULP floating-point exact-equality assertion; the
+independently validated numeric tolerance preserves exact labels/nulls/structure.
+Its corrected CI run 298 passes, with no changed scientific output.
 
-At the reference cell, point/empirical rows+columns gives ionic N/C
-**2.7535[−0.5058,9.5970]** at original wavelengths versus
-**3.7236[0.1077,14.5265]** with the DUMMY wavelength prediction. Across28 cells,
-original empirical alternatives admit the assumed solar ionic reference0.251
-in every cell. DUMMY alternatives admit it in16 nominal/18 point cells; their
-zero-admission counts become3 nominal/0 point. These changes are conditional
-calibration/model sensitivities, not grounds to select the dummy prediction or
-assign abundance odds. The reference ambient value remains admitted by both
-empirical alternatives. For the composed reference row+column likelihoods, the toy prediction changes
-chi² by−0.708 nominal and+0.863 point. This conditional resolution dependence
-is not calibrated model odds. Row covariance has little effect in this particular
-transport; it is not proven irrelevant in general. Source-specific wavelength,
-LSF and ion-stage fractions remain unmeasured.
+New-transfer accounting is **1,334,355,625 bytes conservatively charged**:
+1,290,651,149 exact recorded body bytes plus 43,704,476 in upper-bound categories.
+This is 1.243 GiB against the 2 GiB cap, leaving 813,128,023 bytes. Separately,
+2,073,005,957 bytes of unique previously pinned products were restored; historical
+restoration retry wire totals are not fully instrumented. The immutable earlier
+ledgers remain historical; [v3](../research_output/research2_download_ledger_v3.json)
+is the authoritative complete ledger.
 
-![Signed version2 ionic intervals under alternative noise and wavelength assumptions](../research_output/mom_composed_spectral_refit.png)
 
-The figure's solar ionic line assumes equal observed-stage fractions. It is not
-an elemental abundance test. A positive lower endpoint under one unresolved
-hypothesis is neither robust confirmation nor an independent observation.
+Use Python 3.12 and the unchanged exact research lock; all 65 distributions were
+checked against it. Commands below run from the repository root. Cache paths
+are examples; acquisition commands restore their exact public manifests and
+verify whole-file identities, not assumptions about surviving scratch data.
 
-### Quantitative conditional enrichment comparisons
+```bash
+python3.12 -m venv /tmp/jwst-research-env
+/tmp/jwst-research-env/bin/python -m pip install -r requirements-research.lock
+source /tmp/jwst-research-env/bin/activate
+export OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 BLIS_NUM_THREADS=1
+python scripts/quality_gate.py
 
-Full two-dimensional covariance profiles compare ambient/ejecta mixtures and
-four rotating-star benchmarks under explicit k and retention conventions.
-Version1 coadd models with k=1/equal retention can conditionally disfavor the
-1,000-solar-mass SMS ceiling (Δchi²≈7.2–10.7 nominal/9.2–12.8 point across 28
-cells). Native empirical models do not retain that exclusion: point Δchi²≈1.68–3.03,
-and all four rotators are compatible at the illustrative3.841 threshold
-(Δchi²≈1.83–3.56). Unknown stage correction, differential retention and gas
-mixing prevent physical mechanism odds. [Version1 yield tests](ATOMIC_ENRICHMENT_COMPARISON.md).
-A separate [version 2 bridge](NIV_YIELD_SENSITIVITY.md) executes5,376 matched
-profiles using each version/cell's fresh covariance. At k=1/equal retention, the
-point empirical1,000-M⊙ SMS ceiling hasΔchi²0.422–1.952, below the illustrative
-reference in all 28 cells; all four rotating benchmarks remain compatible.
-These yield profiles use the original-wavelength version2 quartet, separately
-from the composed toy-wavelength alternatives. Formal-noise tension remains in
-some cells. These conditional tests strengthen
-the conclusion that the present observations do not identify a polluter.
+# Actual native pixels: nine already-pinned CALs, nine newly selected RATEs.
+python -m data_pipeline.mom_native_batch \
+  --spectrum data_sources/pilot/mom_z14_dja_v4.spec.fits \
+  --output /tmp/mom-native --report /tmp/native-restoration.json
+python -m tools.jwst.acquire_rate_noise_inputs --output-dir /tmp/mom-rate
+python -m tools.jwst.native_rate_noise \
+  --native-dir /tmp/mom-native --rate-dir /tmp/mom-rate \
+  --output /tmp/rate-noise.json --compact-output /tmp/rate-noise.npz
+python -m tools.jwst.native_local_identifiability --native-dir /tmp/mom-native \
+  --output /tmp/local-identifiability.json
 
-### Galaxy formation through observable predictions
+# Compact numerical replay: does not read or re-reduce raw RATE pixels.
+python -m tools.jwst.cloudy_pilot \
+  --replay-models research_output/mom_cloudy_pilot20_rate_v3.json \
+  --fit-native --held-out --rate-noise-report research_output/mom_native_rate_noise.json \
+  --output /tmp/cloudy20-native-replay.json
 
-A frozen scenario grid executes720 histories,216 baryon budgets and80 onset
-inversions. Published MoM stellar mass/SFR/time estimates are SED-model outputs,
-not directly observed mass or a joint likelihood. The paper does not specify a
-formed/current mass conversion; both conventions are retained rather than
-assuming one from a package default. [Formation experiment](FORMATION_PREDICTIONS.md).
+# Offline retained metadata and source-product coverage checks.
+python -m data_pipeline.mom_public_metadata --output /tmp/public-metadata.json
+python -m data_pipeline.mom_compact_followup --output /tmp/compact-followup.json
+python -m data_pipeline.capers_companion_coverage --output /tmp/companion.json
+python -m data_pipeline.capers_s2d_coverage --output /tmp/s2d.json
+python -m data_pipeline.capers_pixtab_coverage \
+  --pixtab /tmp/capers-pixtab.fits --acquire --output /tmp/pixtab-coverage.json
+python -m discovery.research2_capers_source_review
+python -m discovery.research2_download_ledger \
+  --manifest data_sources/research2_download_ledger/manifest_v3.json \
+  --source-root . --output /tmp/download-ledger.json
+python -m discovery.research2_release_review --root . --output /tmp/release-integrity.json
+```
 
-With assumed Planck18 and onsetz20, the available time is104.959Myr. If quoted
-mass is surviving mass and return fractionR=.4, illustrative constant formation
-requires 2.00M⊙/yr; a rising history with 10-Myr e-fold time requires 20.98. A duty fraction.1
-raises active rates tenfold. Under the formed-mass convention, median rising
-histories with timescales5/10Myr predict SFR5/SFR50/t50=15.92/2.518/3.466 and
-9.907/2.501/6.931. These fall within published marginal endpoint boxes; that is
-not a joint SED fit or model preference.
+Thermal reexecution is a numerical comparison; runtime-bearing output text
+need not reproduce original file hashes. Exact original restoration uses the
+preserved raw archive and member manifests. Reexecute the declared pilot with:
 
-A closed-parcel baryon accounting with unmeasured remaining gas set to zero
-requires illustrative halo lower bounds7.96e8/2.12e9/7.43e9M⊙ for outflow loading
-η=0/1/5. Inflow, gas, mass return and baryon retention change these bounds. A
-preserved version1 central-composition example with a hypothetical1e6M⊙ gas parcel at k=.3 needs7.316 equivalents of the50,000-M⊙ SMS benchmark at full
-retention or73.16 at one-tenth retention to produce the specified central
-composition; ambient-only ionic0.837 was already inside the version 1 empirical
-interval. No positive minimum polluter fraction follows.
+```bash
+python -m data_pipeline.cloudy_inputs /tmp/cloudy --build --scipy-openblas
+python -m tools.jwst.cloudy_pilot --cloudy-directory /tmp/cloudy \
+  --executable /tmp/cloudy/c23.01/source/sys_pilot/cloudy-openblas.exe \
+  --run-directory /tmp/cloudy/runs --limit 20 --workers 2 --timeout-seconds 1200 \
+  --output /tmp/cloudy/models20.json
+```
 
-A204-Myr history starting atz20 fails the assumed104.959-Myr time budget; the
-combined scenario is rejected, not WR enrichment or standard cosmology. A
-cosmological population comparison must predict selected observables through
-response, visibility, missed/scattered bins and contamination. The implemented
-forward operator is λ_selected=R[λ_parent⊙p_visible]+λ_contamination. Current
-targeted patches provide no completeness-controlled population likelihood.
+Reproduce the ancestry-gated numerical observation forecast using its exact
+merged model identity:
 
-## Rejected premises and open questions
+```bash
+git fetch origin master
+python -m tools.jwst.cloudy_observation_contrasts \
+  --input research_output/mom_cloudy_pilot20_rate_v3.json \
+  --validated-merged-revision 6b44032b82e550ed0f740a56830deed296b5c4e9 \
+  --input-sha256 7ef48626ddfb7c882d9725b17939c3a7752151de734e3ab4c46472b940127759 \
+  --output /tmp/cloudy-observation-contrasts.json
+```
+Actual original GOODS, deep/source 46, representative injection and candidate
+scene commands remain in their linked track reports; their inputs and output
+hashes are preserved in baseline/restoration/actual-pixel receipts.
 
-| Tested premise | Result and limit |
+Major input identity anchors: Cloudy archive SHA256
+`a9ad2dc037e88f552389de0e483d68f54310976dee32154ed13830882aedae0b`;
+original author PIXTAB
+`c3566b0173e9b1808b7fd856d98ca1be96ff2d6a0959132c1c7b9791d10e7420`;
+CAPERS PIXTAB
+`2c0d315274d0d0c74252f6d584e80636ae49e3a1361c0976216a366e8dbe6430`.
+The nine individual RATE hashes are in
+`data_sources/followup/mom_rate_noise_manifest.json`, restored CAL identities in
+`research_output/research2_native_reproduction.json`, and image/model/filter
+identities in their versioned `data_sources` manifests. Final validation and
+the independent canonical release gate index all accepted artifact identities.
+
+
+All focused merges require relevant tests, independent numerical/data validation
+and CI. PR67 repairs a publication truncation discovered after PR65; its exact
+frozen candidate artifact supersedes the truncated copy. Publication now reads
+bounded chunks and checks every remote Git blob against the immutable local
+identity. Final remote-tree JSON/hash checks complement tests and scientific
+review. No paid resource or external-person contact was used.
+
+## Focused merged changes
+
+| PR | Validated change |
 |---|---|
-| Every historical proposal is either a real galaxy or a measured artifact | Rejected:1,732 historical entries remain untestable. |
-| Original brightness persists in every GOODS/SMACS screen survivor | Six GOODS and nine nominal SMACS entries fail that premise; failure alone does not identify the cause. |
-| 254 has no blue counterpart;1043 has a background-independent blue non-detection | Rejected by aligned deep F090 flux and background alternatives, respectively. Source identities remain open. |
-| Source46 is satisfactorily described by the tested cloudless Sonora grid | Rejected under both stated error floors; other atmosphere/galaxy families remain untested. |
-| Recovery must increase monotonically with source brightness | Rejected for the blended observed-template segmentation experiment; not a population statement. |
-| Equal component weights or a1486-only emissivity can calibrate a physical N IV doublet | Rejected; physical normalized templates require fresh likelihood/covariance and a versioned summed response. |
-| Exact shared-variance inversion always produces valid latent variances | Rejected on 43 native pixels; reconciliation is explicit and conditional. |
-| A coadd fixed-k yield rejection establishes a preferred polluter | Rejected as robust inference: native noise, atomic line contract and unmeasured retention/ion fractions remove identification. |
-| A slowz20-onset history forces a cosmological timing crisis | Rejected: other quantified histories fit assumed time/marginal SED constraints; population selection is absent. |
+| [#55](https://github.com/Patto1155/JWST_scnience_env_2/pull/55) | Verify PR54 baseline and start bounded scientific continuation |
+| [#56](https://github.com/Patto1155/JWST_scnience_env_2/pull/56) | Measure what three spectral groups cannot constrain |
+| [#57](https://github.com/Patto1155/JWST_scnience_env_2/pull/57) | Reject finite Bobcat multiplicity as source 46 explanation |
+| [#58](https://github.com/Patto1155/JWST_scnience_env_2/pull/58) | Recover MoM author pixel table and audit dependent extraction |
+| [#59](https://github.com/Patto1155/JWST_scnience_env_2/pull/59) | Calibrate bounded selection operator and expose source-count dependency |
+| [#60](https://github.com/Patto1155/JWST_scnience_env_2/pull/60) | Correct omitted ghost wavelength response in native spectral measurement |
+| [#61](https://github.com/Patto1155/JWST_scnience_env_2/pull/61) | Quantify UV doublet separability and conditional observing sensitivity |
+| [#62](https://github.com/Patto1155/JWST_scnience_env_2/pull/62) | Test source 46 against broader equilibrium and mixing atmospheres |
+| [#63](https://github.com/Patto1155/JWST_scnience_env_2/pull/63) | Publish independent research validation and original-pixel reproduction |
+| [#64](https://github.com/Patto1155/JWST_scnience_env_2/pull/64) | Constrain source 46 spectral width with independent medium-band pixels |
+| [#65](https://github.com/Patto1155/JWST_scnience_env_2/pull/65) | Test broader neighbors and stop inadequate candidate classifications |
+| [#66](https://github.com/Patto1155/JWST_scnience_env_2/pull/66) | Connect complete Cloudy emission to signed native spectrum |
+| [#67](https://github.com/Patto1155/JWST_scnience_env_2/pull/67) | Repair candidate artifact transfer and verify exact published identity |
+| [#68](https://github.com/Patto1155/JWST_scnience_env_2/pull/68) | Prepare bounded complete-model observation contrasts with provenance gates |
+| [#69](https://github.com/Patto1155/JWST_scnience_env_2/pull/69) | Quantify native row wavelength response under retained covariance |
+| [#70](https://github.com/Patto1155/JWST_scnience_env_2/pull/70) | Resolve Cloudy runtime blocker with validated existing backend |
+| [#71](https://github.com/Patto1155/JWST_scnience_env_2/pull/71) | Correct native spectral uncertainty with nine actual RATE exposures |
+| [#72](https://github.com/Patto1155/JWST_scnience_env_2/pull/72) | Bound native selection calibration by actual mosaic provenance |
+| [#73](https://github.com/Patto1155/JWST_scnience_env_2/pull/73) | Test complete nitrogen thermal response before environmental expansion |
+| [#74](https://github.com/Patto1155/JWST_scnience_env_2/pull/74) | Recompute complete-model fits with actual RATE covariance |
+| [#75](https://github.com/Patto1155/JWST_scnience_env_2/pull/75) | Test native measurement alternatives and calibration identifiability |
+| [#76](https://github.com/Patto1155/JWST_scnience_env_2/pull/76) | Verify public calibration applicability and CAPERS source coverage |
+| [#77](https://github.com/Patto1155/JWST_scnience_env_2/pull/77) | Require strict science lint and independent release integrity checks |
+| [#78](https://github.com/Patto1155/JWST_scnience_env_2/pull/78) | Complete 20 thermal models and validate their native likelihood |
+| [#79](https://github.com/Patto1155/JWST_scnience_env_2/pull/79) | Rank finite-model UV observing contrasts after calibration-aware fits |
+| [#80](https://github.com/Patto1155/JWST_scnience_env_2/pull/80) | Authoritative integrated assessment and final release evidence; independent remote-tree review before merge |
 
-## Prioritized next experiments and genuine dependencies
-
-1. **Calibrate native extraction, wavelength and source-specific LSF.** Obtain
-   the author's PIXTAB/extraction settings and compare independent source slits
-   or visits. Inject spectral models through actual signed operators, estimate
-   cross-group/reference covariance and calibrate residual tails. Extend the merged336-fit composition to source geometry, redshift, intrinsic
-   width and He/O/C IV nuisance hypotheses, each with its own fresh covariance
-   and empirical calibration; reused observations remain dependent.
-2. **Build a complete versioned composition-aware photoionization likelihood.**
-   Include both N IV components, N III, density diagnostics, He/O alternatives,
-   C IV transfer and attenuation, with each model's own spectrum/covariance.
-   Current Cue/Feltre/Gutkin inventories do not close the required N-line map.
-   Public Cloudyc23.01 is accessible but its≈323-MB archive exceeds the current
-   100-MiB atomic acquisition allocation; a larger bounded model-computation
-   round or a complete published output subset is needed. This is unfinished
-   model work, distinct from an unavailable observational calibration.
-3. **Obtain discriminating spectra.** Higher resolution can separate
-   N IV1483/1486, C III1907/1909 and He II1640/O III1661/1666; additional stages,
-   C/O and gas mass constrain k, mixing and retention. Predict sensitivities
-   before treating any line as an elemental abundance measurement.
-4. **Resolve persistent imaging complexes.** Improve empirical PSF/neighbor
-   models for98/1043, add independent optical/medium-band constraints, and compare
-   broader atmosphere/nebular/dust/multiple families for46. A long-baseline,
-   disjoint-visit motion/parallax experiment can test a conditional nearby-source
-   prediction; a15-minute same-visit patch repeat cannot establish its class.
-5. **Constrain formation and populations.** Retrieve the actual SED setup,
-   mass convention and time-bin posterior. Fit joint photometry/spectroscopy
-   rather than marginal endpoint boxes. Use representative fields with source
-   injections, contamination and reproducible survey volume to test galaxy
-   formation or cosmological predictions in observed space.
-
-## Reproducibility and merged work
-
-`requirements-research.lock` pins the executed Python environment. Report-specific
-commands identify bounded raw inventories; compact native NPZ, measured JSON/CSV,
-versioned grids, figures and independent reviewer receipts are committed.
-Large FITS, software archives and full trial arrays have verified manifests and
-regenerators. Synthetic counterexamples validate operators, never manufacture
-observations. The final clean tracked-tree gate passes **579 tests with three explicit skips**,
-with 117 scientific lint targets plus six core targets and passing format/type
-gates. Two skips require historical unprovisioned image fixtures; the optional
-Cue-author archive test is the third and passes separately on the actual pinned
-archive. The 65-distribution research lock exactly matches the restored runtime.
-Numerical source/config bytes are hashed against the tested archive; later
-report/receipt-counter updates do not change tested code. The final receipt
-records the exact gate scope, skips, artifact hashes, acquisition accounting
-and the 24 previously merged science/review PRs (#30–53):
-`research_output/continuation_final_validation.json`. Its exact JUnit inventory
-and quality-gate log are also committed for audit.
-
-[Independent first review](CONTINUATION_INDEPENDENT_REVIEW.md),
-[follow-up review](CONTINUATION_FOLLOWUP_REVIEW.md), and
-[final mathematical/data review](CONTINUATION_FINAL_REVIEW.md) give separate
-solvers, actual-pixel checks, corrected defects and remaining assumptions.
-The current status indexes the merged science/review PR links and executable artifacts.
-`research_output/continuation_coordinator_review.json` separately preserves the
-coordinator's independent GLS/blue-background/Cue checks, restored raw/runtime
-audits and explicitly labeled post-extension replays.
+The ranked work above is feasible in different ways. Calibration/contributor
+recovery is archive and software work with moderate computation and the highest
+immediate effect on the nitrogen likelihood. A usable new ion-stage observation
+requires source placement, detector-gap and ETC verification, and may require
+new observing time; the finite-model SNR forecast does not establish that cost.
+Selection calibration requires native inputs and a labeled held-out cohort before
+more simulation expenditure is informative. Candidate follow-up has lower priority
+until an independent datum can resolve a declared ambiguity. None currently
+supports galaxy-formation or cosmology odds without the population likelihood.

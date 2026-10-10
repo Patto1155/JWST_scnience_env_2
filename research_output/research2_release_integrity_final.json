@@ -1,0 +1,1021 @@
+{
+  "schema_version": 2,
+  "fetched_release_revision": "9eb9c3737309298057b7fc68e326cd7e56e5e437",
+  "handover_baseline_ancestor": "379ff35786aff31535335bbe7d1de114f91dd3c4",
+  "strict_valid_tracked_json_count": 342,
+  "baseline_research_artifacts_preserved_count": 261,
+  "canonical_science_artifacts": [
+    {
+      "filename": "candidate_neighborhood_v1.json",
+      "frozen_science_revision": "2b050c0",
+      "bytes": 321806,
+      "sha256": "10e74e8bd2c0b33b0a0e67927189580d5ac1e98561a6822924d8ed8b93a0b973",
+      "published_git_blob": "07cef31e2799e9e9bba66351baa6ee6e6cb7f293"
+    },
+    {
+      "filename": "mom_author_provenance_v1.json",
+      "frozen_science_revision": "a4743ac",
+      "bytes": 6585,
+      "sha256": "e437c0de391c935d4d56ace5b9193db857135df1c6dabac464da9f79ddb4ec37",
+      "published_git_blob": "cb4715c5eababda76aa506ca847cfa038f36b9a7"
+    },
+    {
+      "filename": "mom_cloudy_first_model.json",
+      "frozen_science_revision": "04766f6",
+      "bytes": 259922,
+      "sha256": "0c6718059538fcdb3739697c0a6dd77d915b69f2c23e057171972da3b939f6b4",
+      "published_git_blob": "ccf1fe3b537ee9c5c2c5d2063c59e1b99a8fcedc"
+    },
+    {
+      "filename": "mom_cloudy_signed_coupling.json",
+      "frozen_science_revision": "04766f6",
+      "bytes": 1147,
+      "sha256": "4c8ca3718c0d40281f0e5c458db87ee840dabfe8439c7bab1b6d8d67df40deb4",
+      "published_git_blob": "f25d97ac766e199b22b5ffbf3347371ad6d148e2"
+    },
+    {
+      "filename": "mom_cloudy_signed_coupling.npz",
+      "frozen_science_revision": "04766f6",
+      "bytes": 15596,
+      "sha256": "fa68e7585ee4c800f9543ad336b011f73eafa0a2ab6b7ee4ae6f1a6b416e7da2",
+      "published_git_blob": "7f95e252d54d40fd815ef12d35c5566e8efce10f"
+    },
+    {
+      "filename": "mom_native_measurement_validation.json",
+      "frozen_science_revision": "4c65726",
+      "bytes": 136735,
+      "sha256": "c7e31e81a6bb6b9b4b81bf48661ccfa28475be5cf6b226f85113c78fe73074ca",
+      "published_git_blob": "e0cf9dae023b97d10997710bb433342c8ee7f29b"
+    },
+    {
+      "filename": "mom_observation_design.json",
+      "frozen_science_revision": "f94252a",
+      "bytes": 36377,
+      "sha256": "45b067f2b394692613181700e5574f1ad3ede94dd90d69980d875518dc23fc59",
+      "published_git_blob": "5eb5db22733c3f103869f83b763e4c93e950bddb"
+    },
+    {
+      "filename": "mom_shared_systematics_v1.json",
+      "frozen_science_revision": "7c6cb10",
+      "bytes": 8745,
+      "sha256": "1871b31010506955003a5a629077a59273ba7dd1a9e5dfb5b101ee2d7905a0f8",
+      "published_git_blob": "69241e3a01f69d3682225f7b950178469d17b456"
+    },
+    {
+      "filename": "survivor46_flame_v1.json",
+      "frozen_science_revision": "645174e",
+      "bytes": 55021,
+      "sha256": "7ed820f1482291db279c75445bd5e41403490aeada7a65c705eff9bb7b9d1c49",
+      "published_git_blob": "2eb9863cd309c16772355da441c25246dce02f98"
+    },
+    {
+      "filename": "survivor46_medium_v1.json",
+      "frozen_science_revision": "2a1247a",
+      "bytes": 19680,
+      "sha256": "df00194c821bc3ff4b17ffd95c9fe7ba885c8f297f2bbdb636baf5da8f582eec",
+      "published_git_blob": "77422a1f75fd1720852bc20ff012da9a2e712a7b"
+    },
+    {
+      "filename": "survivor46_multiplicity_v1.json",
+      "frozen_science_revision": "0eb1771",
+      "bytes": 31330,
+      "sha256": "767053b087f99b947103f6fbf0eb321ed0d652f7a9a7a64c3847a6fdae132834",
+      "published_git_blob": "ea12a3ce5085979c827f8cec0e93789e31190f35"
+    },
+    {
+      "filename": "mom_cloudy_focused_pair.json",
+      "frozen_science_revision": "62634bf",
+      "bytes": 427426,
+      "sha256": "50e63ba57d14c7cd664995ce1ec619f3118df2aa30f846551339a05ff0dd65fd",
+      "published_git_blob": "c261deee5fd201a56287fef3af9f9eae4e76b971"
+    },
+    {
+      "filename": "mom_cloudy_openblas_control.json",
+      "frozen_science_revision": "71f7011",
+      "bytes": 9181,
+      "sha256": "3b9444fe78925d99e91f50bf9fc850f1394bc361ba8f3ab671be0c4eb68077ee",
+      "published_git_blob": "ff5f813eaa9ff55d884362043f8722c56e018be6"
+    },
+    {
+      "filename": "mom_cloudy_enhanced_backend_control.json",
+      "frozen_science_revision": "5ebf3b2",
+      "bytes": 8357,
+      "sha256": "0d10acea141a94a911013fce551aa2e31b46450d89d26eafc94d5b3ecfdd1892",
+      "published_git_blob": "0dd7454f18f74500e93854fe10491e5d07b7460c"
+    },
+    {
+      "filename": "selection_count_audit.json",
+      "frozen_science_revision": "65d16cb",
+      "bytes": 53516,
+      "sha256": "c46b28bda61602b692f39c177eb9325329fd1a7a17440c1739da918b1bf28a46",
+      "published_git_blob": "e0cfd69131576903f624407f5580973d6e8828a2"
+    },
+    {
+      "filename": "mom_native_rate_noise.json",
+      "frozen_science_revision": "18ff94b",
+      "bytes": 48427,
+      "sha256": "5e9cc7e5e46870f0221c42f762a1186a1396f440e6b34f2b42d5c5fb259d9fc7",
+      "published_git_blob": "f5a1c236690e18cb18f10b338c619315a99f0565"
+    },
+    {
+      "filename": "mom_native_rate_noise_arrays.npz",
+      "frozen_science_revision": "18ff94b",
+      "bytes": 2181867,
+      "sha256": "4d679850b44b28ed3d8fc71f0e7fd41f0aa7a7cfcd95aff896de97b728bdfa5e",
+      "published_git_blob": "f014dbf10a605fbe403b6e21dc34bd319b1f4955"
+    },
+    {
+      "filename": "mom_native_row_response.json",
+      "frozen_science_revision": "dc9cb69",
+      "bytes": 42996,
+      "sha256": "ee0a79bcc65ff60da25cbd97ad8e9aca895a70d9c7f222dca7039da29036ab00",
+      "published_git_blob": "e120cefcaece4a91a22cd7077a5798e9aac48837"
+    },
+    {
+      "filename": "mom_native_local_identifiability.json",
+      "frozen_science_revision": "b44f219",
+      "bytes": 21243,
+      "sha256": "36538f611670eed232c07064fc731e90c88211e384a34b5054fa35441cb45ce2",
+      "published_git_blob": "9ce438c3bfea1d1905048fe27b5fd173e686fd66"
+    },
+    {
+      "filename": "mom_cloudy_focused_pair_rate_v3.json",
+      "frozen_science_revision": "6d6fd5e",
+      "bytes": 292222,
+      "sha256": "3c4d1dfb18cb011b8640c7b8425c94c03773b5a42dcb8fa8c8b0e6ccc4f220f2",
+      "published_git_blob": "1ad39832a6ef34a68383f2e31190b46d57646125"
+    },
+    {
+      "filename": "mom_public_metadata_v1.json",
+      "frozen_science_revision": "f9b22f9",
+      "bytes": 37452,
+      "sha256": "80ad68c99411d46f8abae2dbce113596499041d15edb8efa81da0a5fb5ee4f1d",
+      "published_git_blob": "aeed74775c8a71fd9e6ab8a5d86b9dc0adddc08b"
+    },
+    {
+      "filename": "mom_compact_followup_v1.json",
+      "frozen_science_revision": "ba99a31",
+      "bytes": 4514,
+      "sha256": "fdd3d749ac25ddbb31db71cdc7148029437aa6cf3f59717f73acfab069d76053",
+      "published_git_blob": "fe1d46f29d894f6c93917f119a9c3f94a642b363"
+    },
+    {
+      "filename": "capers_pixtab_coverage_v1.json",
+      "frozen_science_revision": "6ce04a5",
+      "bytes": 19505,
+      "sha256": "a22f30092bfb51149221733e4575cc4a6f3082f13c0e85ea62a751292558436c",
+      "published_git_blob": "df5bf613b20d98b81af5f6c19d584dd4c5b6b4b3"
+    },
+    {
+      "filename": "capers_companion_coverage_v1.json",
+      "frozen_science_revision": "a768eb3",
+      "bytes": 5077,
+      "sha256": "043de0ad96cf0d1c47e46fc74af591f13637c5755625f42f60109e505c3ff168",
+      "published_git_blob": "dc94393b3a7703e1189844a7126084be0d06cbfd"
+    },
+    {
+      "filename": "capers_s2d_coverage_v1.json",
+      "frozen_science_revision": "db0e170",
+      "bytes": 7212,
+      "sha256": "b0da433b8f1168006b38435b12c427aef86158efd61e21737b3304f042176570",
+      "published_git_blob": "ba6f4f6a114af9d7b24c0f18bb57626776f9b16b"
+    },
+    {
+      "filename": "cloudy_inputs.json",
+      "frozen_science_revision": "04766f6",
+      "bytes": 17023,
+      "sha256": "cb4561102fcf35f491ea561e0a5fddf80b5d636b3ba0a11e3f1c0f0aa08ff39c",
+      "published_git_blob": "39d9b2045ab0a4167e9f8ad45aee604ebf8f358f"
+    },
+    {
+      "filename": "mom_cloudy_capped_pilot.json",
+      "frozen_science_revision": "e6393e4",
+      "bytes": 12527,
+      "sha256": "639ad54753e7aa18d105ec6c8941c47f94ef8a9ed85b194d827aa7ed519b692e",
+      "published_git_blob": "0ad389d65865f3a3d2ef82860e4d1838e69b0e49"
+    },
+    {
+      "filename": "selection_pilot_response.json",
+      "frozen_science_revision": "ecc2c481ca8abbbb620f46520fcffdc666b6dbb7",
+      "bytes": 67681,
+      "sha256": "f1b19aea12e4623e1b3a6253399f9f4a12eaf629e760ac659020e5f5a7fc2b10",
+      "published_git_blob": "39c3d2bad5de3d58ac8c2f2629a6736b26a5248e"
+    },
+    {
+      "filename": "selection_pilot_validation.json",
+      "frozen_science_revision": "ecc2c481ca8abbbb620f46520fcffdc666b6dbb7",
+      "bytes": 1044,
+      "sha256": "a5f11a952618938aeaf27ac98620e5c55eec7d08326710b482a3b61ca6f324c3",
+      "published_git_blob": "d69439b35159e63a18dbf5cba992328e2e112321"
+    },
+    {
+      "filename": "selection_count_audit_validation.json",
+      "frozen_science_revision": "f6ee1a869a6cdb5ca1e5c2964e31239d20b1095e",
+      "bytes": 2078,
+      "sha256": "7caeb744a8a12702d2944068ee4e48cd00f4923088a8de6ebc55511109e4de3d",
+      "published_git_blob": "2ddc722836df05c742c3c5577f795ed1aa2f4048"
+    },
+    {
+      "filename": "selection_variance_public_probes.json",
+      "frozen_science_revision": "670d86737639202c359aa05f88af1d5257ef25da",
+      "bytes": 6422,
+      "sha256": "d4f283a7e40a07cff998a071a1d44c53224f3d22f9e1f6ab8a2b260a63128c89",
+      "published_git_blob": "3c6e5a7c78117e89f73f6db320e7fbd82f5d56bb"
+    },
+    {
+      "filename": "selection_var_prefix_retention.json",
+      "frozen_science_revision": "65d16cb",
+      "bytes": 912,
+      "sha256": "231cfd06ffc9b4863381a6c87b755aba3f0de393f6146e5635cd483caca8c892",
+      "published_git_blob": "e7c72eb4bca140ebdc531f82a8b8c325a3faa57f"
+    },
+    {
+      "filename": "survivor46_medium_v1.png",
+      "frozen_science_revision": "2a1247a",
+      "bytes": 142407,
+      "sha256": "437cacc6e1887e7095578124edb3ec9d7bf28b5b16fdd8ff2a8c94245d52c29c",
+      "published_git_blob": "67f4e439afe913c4c8ade423ebd115d03b7373e9"
+    },
+    {
+      "filename": "research2_download_ledger.json",
+      "frozen_science_revision": "360c0fb",
+      "bytes": 7034,
+      "sha256": "1a6a2f821ba35c6485cd6b66d12425b59d307d67bbebbee9e417f22b9dee706c",
+      "published_git_blob": "cf887cd2ca818255e54913294c7821176970362c"
+    },
+    {
+      "filename": "research2_download_ledger_v2.json",
+      "frozen_science_revision": "5f7e1c6",
+      "bytes": 8655,
+      "sha256": "2073a6ba008933a9f9963c258c9419cb178956ec0fab1fd0e0f5306982ebd176",
+      "published_git_blob": "6b031955196da1188efdbd02d060bb4e03035e49"
+    },
+    {
+      "filename": "research2_download_ledger_v3.json",
+      "frozen_science_revision": "2ef87ba",
+      "bytes": 10406,
+      "sha256": "09b9f42a2e708da32529e4244bcbb8f658cc7b4e3ffbf4c303ef1c37d2eae642",
+      "published_git_blob": "416ec7003135c3f0722fef764a57d8aa4d8d37da"
+    },
+    {
+      "filename": "mom_cloudy_atomic_provenance.json",
+      "frozen_science_revision": "97524d5",
+      "bytes": 3086,
+      "sha256": "1c18ee7532e63ba7c69374408d4c37fefdec29b894aa503f5af90a91e3cfa7fb",
+      "published_git_blob": "19576df758d4cf6931111328a51060091ccb0b66"
+    },
+    {
+      "filename": "mom_cloudy_original_pair_raw.json",
+      "frozen_science_revision": "56262de",
+      "bytes": 2920,
+      "sha256": "0b3d997a933c4a1c5e70c722b561686d5fb47823ac92fc71240c458d0c076c69",
+      "published_git_blob": "96df09286f998d3c1d65391a1b7fab38a3efa029"
+    },
+    {
+      "filename": "mom_cloudy_original_pair_raw.tar.gz",
+      "frozen_science_revision": "56262de",
+      "bytes": 228541,
+      "sha256": "0bfc0261772b5dd338518aaa6859bb2c39dd844557a5e3c40cca7bc0f5e4f2dd",
+      "published_git_blob": "823eb1eef0bf322f2084722d2d0abf8af043683f"
+    },
+    {
+      "filename": "mom_cloudy_capped_raw.json",
+      "frozen_science_revision": "df3150b",
+      "bytes": 7678,
+      "sha256": "f68fc2d9d01215f4fe840142ed7964724a55b914b517324ec0d15c75bfa76032",
+      "published_git_blob": "945a4d0f5ad8ac2ae051560be7c2645490009e07"
+    },
+    {
+      "filename": "mom_cloudy_capped_raw.tar.gz",
+      "frozen_science_revision": "df3150b",
+      "bytes": 316171,
+      "sha256": "173170e34feaca94eb4735f62fa417f921b387c7103ad2bffe0bce27ad068dec",
+      "published_git_blob": "b6c7dcb3c143da68890a00dc5e446c2a330c5650"
+    },
+    {
+      "filename": "mom_cloudy_pilot20_rate_v3.json",
+      "frozen_science_revision": "a49e7f3",
+      "bytes": 2221190,
+      "sha256": "7ef48626ddfb7c882d9725b17939c3a7752151de734e3ab4c46472b940127759",
+      "published_git_blob": "b2166f98db403bdba08691a8694c4c414e1b3e52"
+    },
+    {
+      "filename": "mom_cloudy_pilot20_raw.json",
+      "frozen_science_revision": "a49e7f3",
+      "bytes": 21869,
+      "sha256": "7e334f516463fbb0304c118b3822c468d2d84ba9b030afe75be85d9018dc50e2",
+      "published_git_blob": "6039ce26c2bbaee074d153465d5de7b2b62fc374"
+    },
+    {
+      "filename": "mom_cloudy_pilot20_raw.tar.gz",
+      "frozen_science_revision": "a49e7f3",
+      "bytes": 2276836,
+      "sha256": "5b36c11a1f9839e30d433198ad47ec7c69e977f476992aaa26beae853fcf4f4a",
+      "published_git_blob": "45bb253536845cf2fb92fad7bcac0436a64bce0d"
+    },
+    {
+      "filename": "mom_cloudy_observation_contrasts.json",
+      "frozen_science_revision": "12ee3b6",
+      "bytes": 310697,
+      "sha256": "a73b72229e2f20f87c14b29b84f88f50a8cb594cb0ff220eb22b93d4b8c65a29",
+      "published_git_blob": "7d33c0bb7222ced235e8e2e3a00e091806be7145"
+    },
+    {
+      "filename": "mom_cloudy_observation_execution.json",
+      "frozen_science_revision": "12ee3b6",
+      "bytes": 1064,
+      "sha256": "f4d2e25846ca27fa1626bb6f7a46991b6fdf7ddb8dbd0ea8383af9ed4482b109",
+      "published_git_blob": "366c865baaaa3bea918d63aec4412a60122b511f"
+    }
+  ],
+  "strict_new_science_lint_coverage": {
+    "new_scientific_module_count": 53,
+    "uncovered": []
+  },
+  "scope": "Exact Git/SHA256 artifact identities plus strict JSON across a fresh fetched tree; numerical review and executable test validation remain separate.",
+  "accepted": true,
+  "authoritative_document_assessment": "Scientifically defensible conditional assessment; no new source, elemental abundance, stellar-polluter, completeness/contamination or cosmology claim. Corrected native variance/mean operators and complete thermal responses are established within declared scope; remaining calibration/ionization/shared-systematic assumptions are explicit.",
+  "reviewed_coordinator_revision": "75a6527b8530f2ba0e9d0bcea83591bc62bdd561",
+  "remote_supplement_identities": [
+    {
+      "path": "HANDOVER.md",
+      "bytes": 32877,
+      "sha256": "9b2405e64bec1faf25e1043237aa83b7a77cd0a68b21467309ba10c42498ce41",
+      "published_git_blob": "be162b6a71ab4f6e1dde8588687ee3dededf098e"
+    },
+    {
+      "path": "docs/FINAL_RESEARCH_REPORT.md",
+      "bytes": 32930,
+      "sha256": "09d5ef17542ede17049ba283f1a3c6e671548fbd106c31eff4f31852fc0283f3",
+      "published_git_blob": "dfd7662ed317cde237874e0737ef543d4105cd37"
+    },
+    {
+      "path": "docs/RESEARCH2_INDEPENDENT_REVIEW.md",
+      "bytes": 39737,
+      "sha256": "e95784ee6a65c79154854273231496aac675c726deb99645eed157a9e959d630",
+      "published_git_blob": "30fbca59f5a3dbf7472efc9376b968c59603c3f6"
+    },
+    {
+      "path": "docs/TAKEOVER_STATUS.md",
+      "bytes": 7671,
+      "sha256": "bfa18db92648230d72dd558efcb4cca3e8cb2cf5fdabbc49d3a04fc95f520b95",
+      "published_git_blob": "4e6402a1fdb4053dadab2fc76290afe71b5d2878"
+    },
+    {
+      "path": "research_output/research2_final_quality.log",
+      "bytes": 21396,
+      "sha256": "5378f8049ca43733afb6a41b59aec0a66984b356625ccac86d033c25cc9f3f7e",
+      "published_git_blob": "a59e2da17f54a4e31d100c1f878444bd8bef78cc"
+    },
+    {
+      "path": "research_output/research2_final_tests.xml",
+      "bytes": 100483,
+      "sha256": "2b830e4d499def9899b5f16746dce71fc77c248263bd1d9b63871917c36b9264",
+      "published_git_blob": "f01f6098493fe8c488d35ee82b2a041e760f6422"
+    },
+    {
+      "path": "research_output/research2_final_validation.json",
+      "bytes": 103694,
+      "sha256": "7977140b5949b19cc864ab17c89cbbffc52a9902fa6baa5e99b5ae56c375b9e6",
+      "published_git_blob": "6832c991f733f8dd24a38610f903b52c2c84ff6f"
+    },
+    {
+      "path": "research_output/research2_forecast_test_roundoff_review.json",
+      "bytes": 612,
+      "sha256": "a63cbab05a0f8ebc4f51fea7b9e29a4e766399d7727acd873640b5f2758ad544",
+      "published_git_blob": "4e469d01aab71cc9a6e9f9bbce1af3bbdfe0aed9"
+    },
+    {
+      "path": "research_output/research2_release_integrity_forecast.json",
+      "bytes": 14107,
+      "sha256": "aa91cc9718578ddc478ce741eb28b18e20013c447f92995d899001adbdd246e1",
+      "published_git_blob": "bcae303deb64726d02cf3179e8a47c3565e306c1"
+    }
+  ],
+  "tested_code_configuration": {
+    "revision": "21605eaa8e1cef6de3e59ce5ff1987fc97800eab",
+    "exact_identity_count": 298,
+    "all_match_tested_Git_revision_and_final_validation": true,
+    "paths_and_hashes_receipt": {
+      "path": "research_output/research2_final_validation.json",
+      "bytes": 103694,
+      "sha256": "7977140b5949b19cc864ab17c89cbbffc52a9902fa6baa5e99b5ae56c375b9e6",
+      "published_git_blob": "6832c991f733f8dd24a38610f903b52c2c84ff6f"
+    }
+  },
+  "locked_environment": {
+    "python": "3.12.14",
+    "lock": {
+      "path": "requirements-research.lock",
+      "bytes": 1126,
+      "sha256": "ff25f0785e7d5a3a1a0515075d28bf9c90272ce6cbf6f8b23cf88f317c6fd31c",
+      "published_git_blob": "6b4d69c684797cf009a94a6fb63b14cc75c115dd"
+    },
+    "verified_distribution_count": 65,
+    "all_actual_versions_match": true
+  },
+  "parsed_quality": {
+    "counts": {
+      "tests": 722,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 3,
+      "passed": 719
+    },
+    "seconds": 39.415,
+    "log": {
+      "path": "research_output/research2_final_quality.log",
+      "bytes": 21396,
+      "sha256": "5378f8049ca43733afb6a41b59aec0a66984b356625ccac86d033c25cc9f3f7e",
+      "published_git_blob": "a59e2da17f54a4e31d100c1f878444bd8bef78cc"
+    },
+    "junit": {
+      "path": "research_output/research2_final_tests.xml",
+      "bytes": 100483,
+      "sha256": "2b830e4d499def9899b5f16746dce71fc77c248263bd1d9b63871917c36b9264",
+      "published_git_blob": "f01f6098493fe8c488d35ee82b2a041e760f6422"
+    },
+    "three_skips_remain_explicit_baseline_skips": true
+  },
+  "independent_review_identities": [
+    {
+      "path": "research_output/research2_capers_source_review.json",
+      "bytes": 2636,
+      "sha256": "532171a7af5ad8a600407dd562c4b11e2868b55d7e7089c27ea13cc08969335b"
+    },
+    {
+      "path": "research_output/research2_cloudy_atomic_review.json",
+      "bytes": 3014,
+      "sha256": "9068a61f0b65c76ac092902ea4669ac7dacf8c38daee2b187a857a93870004c4"
+    },
+    {
+      "path": "research_output/research2_cloudy_backend_review.json",
+      "bytes": 2212,
+      "sha256": "6801c7e8e11b1e307d7fe5531adb14323cb1372d93f68eefa1cd4f9c08e8f4da"
+    },
+    {
+      "path": "research_output/research2_cloudy_capped_preservation_review.json",
+      "bytes": 523,
+      "sha256": "c89859d4d9318a1d2029bba99a5d9769e1abec9aa74c3d26731491f3ca7f1dbe"
+    },
+    {
+      "path": "research_output/research2_cloudy_capped_review.json",
+      "bytes": 2637,
+      "sha256": "da00047bc863a591c5ff6c2183b6f07538122f5a1144d8d20d12bb6f87a346e5"
+    },
+    {
+      "path": "research_output/research2_cloudy_design_review.json",
+      "bytes": 466,
+      "sha256": "d5c563f9d07d6384f9282e7fdd32790bbc2084bcdf710a7bb985e228eba1e946"
+    },
+    {
+      "path": "research_output/research2_cloudy_enhanced_backend_review.json",
+      "bytes": 798,
+      "sha256": "b554f41c7871b14d3945846a749a217ef404eb9b52f46bb86cc394e44ef420a8"
+    },
+    {
+      "path": "research_output/research2_cloudy_first_model_review.json",
+      "bytes": 2484,
+      "sha256": "7d5beda7876a8ef5e07868648ef0b34707f878ff603b64ebd0aed1c0f2edd72a"
+    },
+    {
+      "path": "research_output/research2_cloudy_forecast_review.json",
+      "bytes": 76114,
+      "sha256": "951b7378a56dd5bb07b5d61483c2a01f4c0c8a049a0e7a4d0f3f3a974e04fcb1"
+    },
+    {
+      "path": "research_output/research2_cloudy_grid_rate_review.json",
+      "bytes": 6509,
+      "sha256": "7ce942aa47fb758df77ef0cc8a31fd893ca57ce8c9048b5707e498a0cbd8fe5f"
+    },
+    {
+      "path": "research_output/research2_cloudy_likelihood_review.json",
+      "bytes": 14907,
+      "sha256": "f59aa870381dc5537ed3d14ac256a2a51e9c5bb4be14e48d7fd8a5fda367e0ef"
+    },
+    {
+      "path": "research_output/research2_cloudy_pair_heldout_review.json",
+      "bytes": 1729,
+      "sha256": "9597fb7b150f8a1e3ac45d1cfa55f0509e7bfd1446cbfff892319732c93164f1"
+    },
+    {
+      "path": "research_output/research2_cloudy_pair_likelihood_review.json",
+      "bytes": 29223,
+      "sha256": "91bc7fdbd1f5824b6df14226da8a85e13043fdc164476afb3b9b06cb99efe3a5"
+    },
+    {
+      "path": "research_output/research2_cloudy_pair_model_review.json",
+      "bytes": 3459,
+      "sha256": "5c882f00e3f5b9ba912edcaecf23346b98e22a29b90c242a932a5c36a8ef62dc"
+    },
+    {
+      "path": "research_output/research2_cloudy_pilot20_model_review.json",
+      "bytes": 41193,
+      "sha256": "565a1cc94ff7427a3e41da6f10604f4b4a020cfa06be542e465dcdd7c6882e5c"
+    },
+    {
+      "path": "research_output/research2_cloudy_rate_bridge_review.json",
+      "bytes": 2011,
+      "sha256": "d91cc2179058a6b636510e7ce665d7a12edb6afd697756b7766822f0af69c1ff"
+    },
+    {
+      "path": "research_output/research2_cloudy_raw_preservation_review.json",
+      "bytes": 672,
+      "sha256": "27c97402aba45b54d82a3a964e47134fff8b9dc8078986be4ecf42d4570cc590"
+    },
+    {
+      "path": "research_output/research2_compact_followup_review.json",
+      "bytes": 2852,
+      "sha256": "004605f1e1b52d6f1d3ca7ecbac1e29cc986c1db6aea362b2a3c113ce9e16a11"
+    },
+    {
+      "path": "research_output/research2_compact_metadata_review.json",
+      "bytes": 2560,
+      "sha256": "404e8659e1ecba76e076b4360a83faeddc68b2b745815bbe65e62ed839a7554e"
+    },
+    {
+      "path": "research_output/research2_flame_review.json",
+      "bytes": 1516,
+      "sha256": "7cb56c3f75dd4753f575bc1f1ce0a320a4127992a2881b1156162c88e2262186"
+    },
+    {
+      "path": "research_output/research2_forecast_test_roundoff_review.json",
+      "bytes": 612,
+      "sha256": "a63cbab05a0f8ebc4f51fea7b9e29a4e766399d7727acd873640b5f2758ad544"
+    },
+    {
+      "path": "research_output/research2_identifiability_design_review.json",
+      "bytes": 3982,
+      "sha256": "2e0cb5c7b7e908aab1014be851dd6e19494864493bfe96ef710bf2a97541bb9b"
+    },
+    {
+      "path": "research_output/research2_independent_review.json",
+      "bytes": 10176,
+      "sha256": "b96794e1a48b40be713ef7d0ba74fb35469367df6e633cac353f649a263e7f16"
+    },
+    {
+      "path": "research_output/research2_local_identifiability_review.json",
+      "bytes": 6420,
+      "sha256": "a2634a39f2b6370e00c00a7174116421aa01c3293d0aaffb557b1e5c96d183a3"
+    },
+    {
+      "path": "research_output/research2_mechanical_review.json",
+      "bytes": 5136,
+      "sha256": "762c1ea7c04930c1b93e176b0d237fc5223e174a0d4afe444ca1feaa6aaac85e"
+    },
+    {
+      "path": "research_output/research2_medium_review.json",
+      "bytes": 4551,
+      "sha256": "c30fe30b48b8b0757422c7951cdb73d3fc5eaaffb3bc0541ee12472bc3e149b3"
+    },
+    {
+      "path": "research_output/research2_neighborhood_review.json",
+      "bytes": 26603,
+      "sha256": "86431297840a72b644d65945ecb62d7085952a825eb3212cb06ff86d30d2cfe0"
+    },
+    {
+      "path": "research_output/research2_observation_review.json",
+      "bytes": 2551,
+      "sha256": "3ad9ae30b858f03b9bada049385a6adc10fb3674867b883e5f234fe83c526a47"
+    },
+    {
+      "path": "research_output/research2_prediction_review.json",
+      "bytes": 919,
+      "sha256": "59f2e0a9d9430ac9a8afa26b42fcba73a00bb4839aeb8fa43ecda97f80c59477"
+    },
+    {
+      "path": "research_output/research2_public_metadata_review.json",
+      "bytes": 6381,
+      "sha256": "1a4b646fdd2545233353ea826fb7f5dc40f78083213d9c7985c93c21edfa5b75"
+    },
+    {
+      "path": "research_output/research2_rate_noise_review.json",
+      "bytes": 18605,
+      "sha256": "311bd61875b9aa2e70627e11143a6db322be74f51df5c4e50395f21d029e9690"
+    },
+    {
+      "path": "research_output/research2_row_response_review.json",
+      "bytes": 6514,
+      "sha256": "711316ddecd3e5d103f967f5049120ca2ca312771aa26712a26ce78edaf73a85"
+    },
+    {
+      "path": "research_output/research2_selection_baseline_review.json",
+      "bytes": 2003,
+      "sha256": "0b86cb16999e15b39276ae83b9f8df25b0db877350c42e9e68f904dcc7e777fc"
+    },
+    {
+      "path": "research_output/research2_selection_count_review.json",
+      "bytes": 2257,
+      "sha256": "b168edb778488a6ceb6617dd728461d967b27c18414fb5cb9670b81d07c93bdd"
+    },
+    {
+      "path": "research_output/research2_signed_response_review.json",
+      "bytes": 9246,
+      "sha256": "cb952f0cf9bb80010b058ba0d20c9f53c4dc060ef9f7dc85f041150dcde85e22"
+    }
+  ],
+  "independently_fetched_live_CI": {
+    "checked_science_heads": [
+      {
+        "number": 55,
+        "head_sha": "b039c304dc62bb4c820632589ff45a8e463c7a4e",
+        "live_successful_run": {
+          "id": 38016659150,
+          "name": "Offline tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 194,
+          "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38016659150/jobs",
+          "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38016659150/logs",
+          "workflow_id": 379343808
+        }
+      },
+      {
+        "number": 56,
+        "head_sha": "5ea7ffd9b01d5fbd186c782d0fd6f9b48c6af692",
+        "live_successful_run": {
+          "id": 38017137125,
+          "name": "Offline tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 198,
+          "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38017137125/jobs",
+          "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38017137125/logs",
+          "workflow_id": 379343808
+        }
+      },
+      {
+        "number": 57,
+        "head_sha": "1290968eb5a4cecb94ad278093372dede79e01af",
+        "live_successful_run": {
+          "id": 38017368852,
+          "name": "Offline tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 210,
+          "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38017368852/jobs",
+          "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38017368852/logs",
+          "workflow_id": 379343808
+        }
+      },
+      {
+        "number": 58,
+        "head_sha": "19b0dfcc704267f595090e6068806a3a3ce147ea",
+        "live_successful_run": {
+          "id": 38017226227,
+          "name": "Offline tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 204,
+          "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38017226227/jobs",
+          "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38017226227/logs",
+          "workflow_id": 379343808
+        }
+      },
+      {
+        "number": 59,
+        "head_sha": "924d11553f39d87652173b6277b955b783869277",
+        "live_successful_run": {
+          "id": 38017321103,
+          "name": "Offline tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 208,
+          "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38017321103/jobs",
+          "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38017321103/logs",
+          "workflow_id": 379343808
+        }
+      },
+      {
+        "number": 60,
+        "head_sha": "4a2aec1cfa3ba00ea38afc3918b8a533988d7ef0",
+        "live_successful_run": {
+          "id": 38018035471,
+          "name": "Offline tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 216,
+          "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38018035471/jobs",
+          "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38018035471/logs",
+          "workflow_id": 379343808
+        }
+      },
+      {
+        "number": 61,
+        "head_sha": "9079e7e21aa49a9399a10685ebee37a227a20e6e",
+        "live_successful_run": {
+          "id": 38018286085,
+          "name": "Offline tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 226,
+          "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38018286085/jobs",
+          "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38018286085/logs",
+          "workflow_id": 379343808
+        }
+      },
+      {
+        "number": 62,
+        "head_sha": "f6853bec8c8bc647f660237efeee7186ac1c0de2",
+        "live_successful_run": {
+          "id": 38018063956,
+          "name": "Offline tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 222,
+          "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38018063956/jobs",
+          "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38018063956/logs",
+          "workflow_id": 379343808
+        }
+      },
+      {
+        "number": 63,
+        "head_sha": "1b9733b496d1b1879dc25feecb9f00aeea4ed8ab",
+        "live_successful_run": {
+          "id": 38018473662,
+          "name": "Offline tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 230,
+          "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38018473662/jobs",
+          "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38018473662/logs",
+          "workflow_id": 379343808
+        }
+      },
+      {
+        "number": 64,
+        "head_sha": "2a1247afd247906dbe4ba07ecb112de5e7f7b597",
+        "live_successful_run": {
+          "id": 38018571514,
+          "name": "Offline tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 233,
+          "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38018571514/jobs",
+          "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38018571514/logs",
+          "workflow_id": 379343808
+        }
+      },
+      {
+        "number": 65,
+        "head_sha": "af843b02982e3bcf8a1f29fa8b396bfaae462986",
+        "live_successful_run": {
+          "id": 38019031861,
+          "name": "Offline tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 238,
+          "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38019031861/jobs",
+          "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38019031861/logs",
+          "workflow_id": 379343808
+        }
+      },
+      {
+        "number": 66,
+        "head_sha": "5897586d01886a934f9e1163df4ceaca2476f44c",
+        "live_successful_run": {
+          "id": 38019048252,
+          "name": "Offline tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 241,
+          "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38019048252/jobs",
+          "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38019048252/logs",
+          "workflow_id": 379343808
+        }
+      },
+      {
+        "number": 67,
+        "head_sha": "9abce1ff7bb925f079b7304d284af4cf95d758f6",
+        "live_successful_run": {
+          "id": 38019353558,
+          "name": "Offline tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 246,
+          "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38019353558/jobs",
+          "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38019353558/logs",
+          "workflow_id": 379343808
+        }
+      },
+      {
+        "number": 68,
+        "head_sha": "2952398e92429210d87a27e9cd59155fcb372fb0",
+        "live_successful_run": {
+          "id": 38019461347,
+          "name": "Offline tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 249,
+          "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38019461347/jobs",
+          "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38019461347/logs",
+          "workflow_id": 379343808
+        }
+      },
+      {
+        "number": 69,
+        "head_sha": "3c93cc6a773b0242be541465333e1a9474280fe3",
+        "live_successful_run": {
+          "id": 38019941670,
+          "name": "Offline tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 254,
+          "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38019941670/jobs",
+          "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38019941670/logs",
+          "workflow_id": 379343808
+        }
+      },
+      {
+        "number": 70,
+        "head_sha": "23cea68f3d5e06c84f7dd92260b3de66109c07ec",
+        "live_successful_run": {
+          "id": 38020391489,
+          "name": "Offline tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 257,
+          "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38020391489/jobs",
+          "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38020391489/logs",
+          "workflow_id": 379343808
+        }
+      },
+      {
+        "number": 71,
+        "head_sha": "18ff94b02703ac24f10f23759e82782b8cb4425b",
+        "live_successful_run": {
+          "id": 38021335925,
+          "name": "Offline tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 262,
+          "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38021335925/jobs",
+          "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38021335925/logs",
+          "workflow_id": 379343808
+        }
+      },
+      {
+        "number": 72,
+        "head_sha": "9f822efff578b2283aca288f9404902c6c9304cd",
+        "live_successful_run": {
+          "id": 38021384302,
+          "name": "Offline tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 265,
+          "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38021384302/jobs",
+          "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38021384302/logs",
+          "workflow_id": 379343808
+        }
+      },
+      {
+        "number": 73,
+        "head_sha": "9d5439b5dafb6c653e175e858b196f2e3d02ee78",
+        "live_successful_run": {
+          "id": 38021415531,
+          "name": "Offline tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 268,
+          "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38021415531/jobs",
+          "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38021415531/logs",
+          "workflow_id": 379343808
+        }
+      },
+      {
+        "number": 74,
+        "head_sha": "aaaa4f2c0f0c04c9cd687e21eea5d82621821914",
+        "live_successful_run": {
+          "id": 38022094982,
+          "name": "Offline tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 276,
+          "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38022094982/jobs",
+          "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38022094982/logs",
+          "workflow_id": 379343808
+        }
+      },
+      {
+        "number": 75,
+        "head_sha": "058e2b78acae276cf7a0de1973d45a6ed48231e2",
+        "live_successful_run": {
+          "id": 38022979464,
+          "name": "Offline tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 280,
+          "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38022979464/jobs",
+          "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38022979464/logs",
+          "workflow_id": 379343808
+        }
+      },
+      {
+        "number": 76,
+        "head_sha": "b9bac4a430c9f40562ba4a33aaf66a9032a836e5",
+        "live_successful_run": {
+          "id": 38024177249,
+          "name": "Offline tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 284,
+          "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38024177249/jobs",
+          "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38024177249/logs",
+          "workflow_id": 379343808
+        }
+      },
+      {
+        "number": 77,
+        "head_sha": "778f7067ef6d7b6fe25a863a1540c651532b97ec",
+        "live_successful_run": {
+          "id": 38024362207,
+          "name": "Offline tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 288,
+          "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38024362207/jobs",
+          "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38024362207/logs",
+          "workflow_id": 379343808
+        }
+      },
+      {
+        "number": 78,
+        "head_sha": "2fa185cf0ac43812957fc421ee51fb5930fafe96",
+        "live_successful_run": {
+          "id": 38025125552,
+          "name": "Offline tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 292,
+          "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38025125552/jobs",
+          "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38025125552/logs",
+          "workflow_id": 379343808
+        }
+      },
+      {
+        "number": 79,
+        "head_sha": "d1c99dc2a597e612f0bbaa01cc10bb0eab499f4b",
+        "live_successful_run": {
+          "id": 38026068814,
+          "name": "Offline tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 298,
+          "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38026068814/jobs",
+          "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38026068814/logs",
+          "workflow_id": 379343808
+        }
+      }
+    ],
+    "document_head": "9eb9c3737309298057b7fc68e326cd7e56e5e437",
+    "document_head_workflow_runs": [
+      {
+        "id": 38026351528,
+        "name": "Offline tests",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 302,
+        "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38026351528/jobs",
+        "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38026351528/logs",
+        "workflow_id": 379343808
+      }
+    ],
+    "scope": "Independent fresh GitHub Actions reads for each exact recorded PR55\u201379 head and initial PR80 document head; successful run IDs match the coordinator's final validation. Later receipt-publication head requires CI separately."
+  },
+  "acquisition": {
+    "ledger": {
+      "path": "research_output/research2_download_ledger_v3.json",
+      "bytes": 10406,
+      "sha256": "09b9f42a2e708da32529e4244bcbb8f658cc7b4e3ffbf4c303ef1c37d2eae642"
+    },
+    "initial_cap_bytes": 2147483648,
+    "exact_body_subtotal_bytes": 1290651149,
+    "upper_bound_category_charges_bytes": 43704476,
+    "conservative_new_transfer_charge_bytes": 1334355625,
+    "charge_is_exact_measurement": false,
+    "restored_unique_pinned_product_bytes_separate": 2073005957,
+    "restoration_retry_wire_accounting_complete": false,
+    "remaining_cap_bytes": 813128023,
+    "paid_resources": false,
+    "external_person_contact": false
+  },
+  "acquisition_source_receipts_verified_in_version3_ledger": true,
+  "source_reproduction_scopes": {
+    "actual_original_GOODS_pixels": "research_output/research2_original_pixel_reproduction.json",
+    "actual_nine_CAL_pixels": "research_output/research2_native_reproduction.json",
+    "deep_actual_pixel_default_and_single_thread_discrepancies": "research_output/research2_deep_pixel_replay.json",
+    "actual_RATE_covariance_independent_validation": "research_output/research2_rate_noise_review.json",
+    "actual_twenty_thermal_models_independent_validation": "research_output/research2_cloudy_pilot20_model_review.json",
+    "compact_480_fit_replay_independent_validation": "research_output/research2_cloudy_grid_rate_review.json",
+    "all_forecast_arithmetic_independent_validation": "research_output/research2_cloudy_forecast_review.json",
+    "compact_replay_is_actual_pixel_reduction": false
+  },
+  "authoritative_internal_links": {
+    "all_current_targets_exist": true,
+    "planned_exception": "research_output/research2_release_integrity_final.json",
+    "exception_reason": "This audit receipt is added after checking the initial publication; its self-hash and later commit head cannot appear within its own content."
+  },
+  "self_reference_scope": "Audited remote head9eb9c3737309298057b7fc68e326cd7e56e5e437 before adding this receipt/doc supplement. Exact subsequent publication identities and CI must be checked separately; no claim to self-hash or a future merge head.",
+  "reproduction_command_flags_reviewed": true,
+  "production_code_changed_by_document_supplement": false
+}

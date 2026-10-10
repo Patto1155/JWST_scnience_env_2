@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "reviewed_commit": "21605eaa8e1cef6de3e59ce5ff1987fc97800eab",
+  "approved": true,
+  "changed_file": "tests/test_cloudy_observation_contrasts.py",
+  "changed_file_sha256": "3ca947c2ac2153a45ff6a005676425fd6dc37f87ecf8d2c0670e4d9818a46f20",
+  "one_ULP_positive_control": true,
+  "material_numeric_missing_label_key_length_negative_controls": 5,
+  "scope": "Test-only recursive numerical tolerance for replayed stage ranges. Production arithmetic and all frozen scientific artifacts unchanged; rel1e-12/abs1e-15 permits rounding without accepting material range or structure changes."
+}
