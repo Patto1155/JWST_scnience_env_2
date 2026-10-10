@@ -127,3 +127,89 @@ def test_signed_native_physical_constraint_matches_independent_direct_fit():
         rtol=1e-11,
     )
     assert not np.allclose(design, source_design)
+
+
+def test_model_timeout_retains_exception_receipt_without_incomplete_flux(tmp_path, monkeypatch):
+    import json
+    import subprocess
+    from tools.jwst.cloudy_pilot import execute_model, pilot_parameters
+
+    executable = tmp_path / "model.exe"
+    executable.write_bytes(b"pinned model executable")
+
+    def capped(*args, **kwargs):
+        assert kwargs["timeout"] == 1200
+        assert kwargs["env"]["OPENBLAS_NUM_THREADS"] == "1"
+        raise subprocess.TimeoutExpired(args[0], kwargs["timeout"])
+
+    monkeypatch.setattr(subprocess, "run", capped)
+    run = tmp_path / "run"
+    with pytest.raises(subprocess.TimeoutExpired):
+        execute_model(executable, run, pilot_parameters()[0], "model000", timeout_seconds=1200)
+    receipt = json.loads((run / "model000.failure.json").read_text())
+    assert receipt["status"] == "hard_wall_time_cap"
+    assert receipt["wall_time_cap_seconds"] == 1200
+    assert receipt["complete_thermal_prediction_used"] is False
+    assert "intrinsic_line_values" not in receipt
+    assert len(receipt["input_sha256"]) == len(receipt["executable_sha256"]) == 64
+
+
+def test_failed_preflight_cancels_unstarted_grid_and_keeps_failure_artifact(tmp_path, monkeypatch):
+    import json
+    import sys
+    import time
+    import tools.jwst.cloudy_pilot as pilot
+
+    executable = tmp_path / "model.exe"
+    executable.write_bytes(b"pinned model executable")
+    run = tmp_path / "run"
+    run.mkdir()
+    output = tmp_path / "pilot.json"
+    attempted = []
+
+    def controlled(executable, directory, parameters, name, **kwargs):
+        attempted.append(name)
+        if name == "model000":
+            raise ValueError("independent injected convergence failure")
+        # Already-started work can finish, but the unstarted grid must cancel.
+        time.sleep(0.05)
+        return {
+            "id": name,
+            "parameters": parameters,
+            "runtime_seconds": 0.05,
+            "convergence_summary": "controlled successful engineering task",
+        }
+
+    monkeypatch.setattr(pilot, "execute_model", controlled)
+    monkeypatch.setattr(pilot, "verify", lambda path: {"verified_test_archive": True})
+    monkeypatch.setattr(
+        sys,
+        "argv",
+        [
+            "pilot",
+            "--cloudy-directory",
+            str(tmp_path),
+            "--run-directory",
+            str(run),
+            "--executable",
+            str(executable),
+            "--workers",
+            "1",
+            "--limit",
+            "20",
+            "--output",
+            str(output),
+        ],
+    )
+    with pytest.raises(SystemExit) as failure:
+        pilot.main()
+    assert failure.value.code == 1
+    receipt = json.loads(output.read_text())
+    assert receipt["failed_models"][0]["id"] == "model000"
+    assert receipt["failed_models"][0]["complete_thermal_prediction_used"] is False
+    assert len(attempted) <= 2
+    assert (
+        len(receipt["models"]) + len(receipt["failed_models"]) + len(receipt["cancelled_models"])
+        == 20
+    )
+    assert (run / "model000.failure.json").exists()
