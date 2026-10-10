@@ -1,0 +1,298 @@
+{
+  "schema_version": 1,
+  "spectral": {
+    "report_sha256": "1871b31010506955003a5a629077a59273ba7dd1a9e5dfb5b101ee2d7905a0f8",
+    "compact_sha256": "6ac87fb9fcb527b951f9dccf6e4a40fcae5ee78c0f85a55bfb2d93ac55281cb0",
+    "NIV_flux": 13.6996161938925,
+    "NIV_sigma": 9.007058418284082,
+    "chi2": 548.2344545272318,
+    "group_checks": [
+      {
+        "group": "03",
+        "chi2": 5.247800055773932,
+        "common_mode_response_difference": 3.2469686661595887e-15
+      },
+      {
+        "group": "05",
+        "chi2": 4.520567867641675,
+        "common_mode_response_difference": 1.0658141036401503e-14
+      },
+      {
+        "group": "07",
+        "chi2": 6.322190923850305,
+        "common_mode_response_difference": 5.016820292524926e-15
+      }
+    ],
+    "augmented_design_rank": 7,
+    "shared_covariance_propagation_max_error": 2.842170943040401e-14,
+    "scope": "Independent whitened-SVD solve of frozen extracted likelihood; design shared, no pixel calibration"
+  },
+  "atmosphere": {
+    "archive_sha256": "2198426d1ca0e410fda7b63c3b7f45f3890a8d9f2fcf0a3a1e36e14185283ca5",
+    "report_sha256": "767053b087f99b947103f6fbf0eb321ed0d652f7a9a7a64c3847a6fdae132834",
+    "actual_grid_rows": 1052,
+    "scenarios": [
+      {
+        "floor": 0.05,
+        "cone_chi2": 125.58905025140466,
+        "independent_polar_chi2": 125.58905025140409,
+        "all1052_max_dual_projection": 7.546047120499111e-17,
+        "direct_QR_pair_chi2": 127.2757479432795,
+        "random4000_pairs_min": 137.16404340382678
+      },
+      {
+        "floor": 0.15,
+        "cone_chi2": 29.048438346594395,
+        "independent_polar_chi2": 29.04843834659421,
+        "all1052_max_dual_projection": 6.071532165918825e-18,
+        "direct_QR_pair_chi2": 29.281874908005815,
+        "random4000_pairs_min": 30.865147359857318
+      }
+    ],
+    "scope": "Independent actual-header/unit parsing, all-row dual certificate and seven-variable polar solver; photometry/floors remain conditional"
+  },
+  "pixtab": {
+    "pixtab_sha256": "c3566b0173e9b1808b7fd856d98ca1be96ff2d6a0959132c1c7b9791d10e7420",
+    "source_sha256": "191bf8cda952bcdbfc72db18023cd3d3cb2ca3a2b65acaf13c0b5cf5ac6dfd9a",
+    "spectrum_sha256": "42d95d348ebb55ca37eb31393b4603628ac13a4bca1f4f7f0ffba7b32d3125b1",
+    "direct_dot_flux_max_error_uJy": 1.5265566588595902e-16,
+    "direct_dot_diagonal_error_max_error_uJy": 4.163336342344337e-17,
+    "exact_all473_bin_counts": true,
+    "nonzero_shared_sky_witnesses": [
+      {
+        "pair": [
+          0,
+          3
+        ],
+        "exact_nonzero_shared_sky_values": 6296,
+        "different_science_at_matching_sky_values": 6296,
+        "shared_sky_std": 0.023549460740294466
+      },
+      {
+        "pair": [
+          0,
+          6
+        ],
+        "exact_nonzero_shared_sky_values": 6293,
+        "different_science_at_matching_sky_values": 6293,
+        "shared_sky_std": 0.025006716549453446
+      },
+      {
+        "pair": [
+          1,
+          4
+        ],
+        "exact_nonzero_shared_sky_values": 6299,
+        "different_science_at_matching_sky_values": 6299,
+        "shared_sky_std": 0.025482079517573576
+      },
+      {
+        "pair": [
+          2,
+          5
+        ],
+        "exact_nonzero_shared_sky_values": 6301,
+        "different_science_at_matching_sky_values": 6301,
+        "shared_sky_std": 0.02415179518896303
+      }
+    ],
+    "clipping_negative_profiles_max_change_uJy": 0.0020256934840261545,
+    "double_pathloss_max_change_uJy": 0.09879301950994357,
+    "scope": "Actual public intermediate/operator validation; shared background witness, not recovered masks or covariance or source calibration"
+  },
+  "new_download_bytes": 0,
+  "actual_deep_replay": {
+    "actual_input_pixels": true,
+    "replay_sha256": "4035b980a4ad7e5915929ed385f41eedbc1255fdf769127e3fd1252636f6287f",
+    "replay_command": "OPENBLAS_NUM_THREADS=1 python -m discovery.survivor_deep_model --input CACHE/deep --output /tmp/review-deep-replay.json",
+    "metadata_difference_count": 84,
+    "scientific_numeric_difference_count": 1850,
+    "maximum_absolute_numeric_difference": 0.0452343300019038,
+    "maximum_difference_path": "/sources/1/phenomenological_continuum_sensitivity/1/families/balmer4000_step_powerlaw/amplitude_njy",
+    "non_numeric_scientific_differences": [],
+    "scientific_flux_sensitivity": [
+      {
+        "source_id": 98,
+        "fixed_extended_signed_flux_differences_njy": [
+          -6.702495447541423e-09,
+          -1.3492808648152277e-08,
+          -7.333876084203439e-08,
+          -2.0739940964631387e-07,
+          -5.473642659126199e-07,
+          -1.2211348803248256e-06,
+          -2.2069766600907315e-06
+        ],
+        "maximum_fixed_extended_flux_difference_njy": 2.2069766600907315e-06
+      },
+      {
+        "source_id": 254,
+        "fixed_extended_signed_flux_differences_njy": [
+          2.2650745279406692e-08,
+          4.046989943162771e-08,
+          7.242414312713663e-08,
+          2.611664058349561e-07,
+          5.240025302555296e-07,
+          5.622542857963708e-07,
+          5.414144652604591e-07
+        ],
+        "maximum_fixed_extended_flux_difference_njy": 5.622542857963708e-07
+      },
+      {
+        "source_id": 46,
+        "fixed_extended_signed_flux_differences_njy": [
+          -1.3914128849101814e-08,
+          2.4526159325688468e-08,
+          4.5845545137979116e-09,
+          -3.3047684588893844e-09,
+          1.3217835714840476e-09,
+          2.704084067772783e-08,
+          1.716060751277837e-07
+        ],
+        "maximum_fixed_extended_flux_difference_njy": 1.716060751277837e-07
+      }
+    ],
+    "source46_refit_cone_sensitivity": [
+      {
+        "floor": 0.05,
+        "fresh_thread1_cone_chi2": 125.5890468953215,
+        "seven_by_seven_covariance_difference_njy2": [
+          [
+            9.793190314244526e-09,
+            -3.932891902772018e-11,
+            -3.5813334936518615e-11,
+            -2.78367523259479e-11,
+            -1.2145751635342372e-10,
+            -8.496675446556523e-10,
+            -8.008550378413304e-09
+          ],
+          [
+            -3.932891902772018e-11,
+            8.864605161029715e-10,
+            8.240534296599655e-11,
+            3.5170861882594107e-11,
+            2.1964881302682926e-10,
+            1.611397931755576e-09,
+            1.4838110740100774e-08
+          ],
+          [
+            -3.5813334936518615e-11,
+            8.240534296599655e-11,
+            -5.134588310085064e-10,
+            -1.8568827031550939e-13,
+            4.3761626267180276e-11,
+            3.565235606739492e-10,
+            3.1246407683482857e-09
+          ],
+          [
+            -2.78367523259479e-11,
+            3.5170861882594107e-11,
+            -1.8568827031550939e-13,
+            1.6888634934986158e-10,
+            -2.6448707807213978e-11,
+            -1.5273024511763822e-10,
+            -1.5906804762266802e-09
+          ],
+          [
+            -1.2145751635342372e-10,
+            2.1964881302682926e-10,
+            4.3761626267180276e-11,
+            -2.6448707807213978e-11,
+            1.3742658233617533e-08,
+            3.187652364289306e-10,
+            2.2714887748520596e-09
+          ],
+          [
+            -8.496675446556523e-10,
+            1.611397931755576e-09,
+            3.565235606739492e-10,
+            -1.5273024511763822e-10,
+            3.187652364289306e-10,
+            2.1658195237250766e-08,
+            2.6303830225060665e-08
+          ],
+          [
+            -8.008550378413304e-09,
+            1.4838110740100774e-08,
+            3.1246407683482857e-09,
+            -1.5906804762266802e-09,
+            2.2714887748520596e-09,
+            2.6303830225060665e-08,
+            7.45157649362227e-07
+          ]
+        ],
+        "maximum_absolute_covariance_difference_njy2": 7.45157649362227e-07
+      },
+      {
+        "floor": 0.15,
+        "fresh_thread1_cone_chi2": 29.04843815115899,
+        "seven_by_seven_covariance_difference_njy2": [
+          [
+            9.551393287399179e-09,
+            -3.932891902772018e-11,
+            -3.5813334936518615e-11,
+            -2.78367523259479e-11,
+            -1.2145751635342372e-10,
+            -8.496675446556523e-10,
+            -8.008550378413304e-09
+          ],
+          [
+            -3.932891902772018e-11,
+            4.718814228255042e-09,
+            8.240534296599655e-11,
+            3.5170861882594107e-11,
+            2.1964881302682926e-10,
+            1.611397931755576e-09,
+            1.4838110740100774e-08
+          ],
+          [
+            -3.5813334936518615e-11,
+            8.240534296599655e-11,
+            3.7240543981909013e-11,
+            -1.8568827031550939e-13,
+            4.3761626267180276e-11,
+            3.565235606739492e-10,
+            3.1246407683482857e-09
+          ],
+          [
+            -2.78367523259479e-11,
+            3.5170861882594107e-11,
+            -1.8568827031550939e-13,
+            -1.1132031407790066e-10,
+            -2.6448707807213978e-11,
+            -1.5273024511763822e-10,
+            -1.5906804762266802e-09
+          ],
+          [
+            -1.2145751635342372e-10,
+            2.1964881302682926e-10,
+            4.3761626267180276e-11,
+            -2.6448707807213978e-11,
+            1.4257638181192078e-08,
+            3.187652364289306e-10,
+            2.2714887748520596e-09
+          ],
+          [
+            -8.496675446556523e-10,
+            1.611397931755576e-09,
+            3.565235606739492e-10,
+            -1.5273024511763822e-10,
+            3.187652364289306e-10,
+            9.596037386927492e-08,
+            2.6303830225060665e-08
+          ],
+          [
+            -8.008550378413304e-09,
+            1.4838110740100774e-08,
+            3.1246407683482857e-09,
+            -1.5906804762266802e-09,
+            2.2714887748520596e-09,
+            2.6303830225060665e-08,
+            5.171768862055615e-06
+          ]
+        ],
+        "maximum_absolute_covariance_difference_njy2": 5.171768862055615e-06
+      }
+    ],
+    "scope": "Actual-pixel same-implementation replay and independent polar sensitivity; no bitwise equality or separate pixel extraction implementation claimed"
+  }
+}

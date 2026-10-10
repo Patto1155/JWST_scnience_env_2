@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "report_sha256": "c7e31e81a6bb6b9b4b81bf48661ccfa28475be5cf6b226f85113c78fe73074ca",
+  "synthetic_draws": 4000,
+  "seed": 6144,
+  "synthetic_dof": 46,
+  "synthetic_statistic_mean": 45.72921382421597,
+  "synthetic_fraction_below95percentile": 0.9515,
+  "actual_recalculated_tails": [
+    {
+      "held_out_group": "03",
+      "chi2": 183.86051182493608,
+      "dof": 208,
+      "independently_calculated_tail": 0.8848669398502493
+    },
+    {
+      "held_out_group": "05",
+      "chi2": 210.4048464444661,
+      "dof": 208,
+      "independently_calculated_tail": 0.44033570412946554
+    },
+    {
+      "held_out_group": "07",
+      "chi2": 158.49608693744835,
+      "dof": 208,
+      "independently_calculated_tail": 0.9955832585150798
+    }
+  ],
+  "scope": "Independent precision nuisance projection and Gaussian tail normalization; source/empirical covariance calibration not established"
+}

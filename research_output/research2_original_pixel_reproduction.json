@@ -1,0 +1,311 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-10",
+  "starting_master": "379ff35786aff31535335bbe7d1de114f91dd3c4",
+  "python": "3.12.14",
+  "restoration_not_new_selection": true,
+  "restored_original_image_count": 13,
+  "restored_original_image_bytes": 1555571520,
+  "image_identities": [
+    {
+      "product_filename": "jw01180026001_09201_00003_nrcalong_i2d.fits",
+      "sha256": "b9b84b9bd0bd8ef6140dca76163a9ac4625689024b651a25e631a6d14ce68d86",
+      "expected_bytes": 120257280,
+      "filter": "F444W",
+      "target": "GS-MEDIUM-HST",
+      "cal_ver": "3.0.0",
+      "crds_context": "jwst_1584.pmap"
+    },
+    {
+      "product_filename": "jw01180026001_03201_00003_nrca1_i2d.fits",
+      "sha256": "738c9dad0ace88e469fb8edd0daa5ba8b86034f8c5392e0229093026cdcaaba3",
+      "expected_bytes": 118704960,
+      "filter": "F090W",
+      "target": "GS-MEDIUM-HST",
+      "cal_ver": "3.0.0",
+      "crds_context": "jwst_1584.pmap"
+    },
+    {
+      "product_filename": "jw01180026001_13201_00003_nrca1_i2d.fits",
+      "sha256": "075becbdd9bcc845ffacadc520b97da82f7d02a0c62bd5e9ddb7b1864deccd74",
+      "expected_bytes": 118704960,
+      "filter": "F200W",
+      "target": "GS-MEDIUM-HST",
+      "cal_ver": "3.0.0",
+      "crds_context": "jwst_1584.pmap"
+    },
+    {
+      "product_filename": "jw01180025001_13201_00002_nrcalong_i2d.fits",
+      "sha256": "808570fb67066245053f94f4ac25362a6292ca5e9743248b8eba55c03e204e9a",
+      "expected_bytes": 120257280,
+      "filter": "F277W",
+      "target": "GS-MEDIUM-HST",
+      "cal_ver": "3.0.0",
+      "crds_context": "jwst_1584.pmap"
+    },
+    {
+      "product_filename": "jw01180026001_07201_00001_nrcalong_i2d.fits",
+      "sha256": "a2a89cafcf057706e84a80ecbdf6e1f6a2fe2391e30759bed72d8b5dfa5adaa7",
+      "expected_bytes": 120257280,
+      "filter": "F277W",
+      "target": "GS-MEDIUM-HST",
+      "cal_ver": "3.0.0",
+      "crds_context": "jwst_1584.pmap"
+    },
+    {
+      "product_filename": "jw01180025001_05201_00003_nrcalong_i2d.fits",
+      "sha256": "78649e799b781d69105083ea4092f4ca084b8c7201152802cb4b8ee159cd0635",
+      "expected_bytes": 120257280,
+      "filter": "F356W",
+      "target": "GS-MEDIUM-HST",
+      "cal_ver": "3.0.0",
+      "crds_context": "jwst_1584.pmap"
+    },
+    {
+      "product_filename": "jw01180026001_05201_00003_nrcalong_i2d.fits",
+      "sha256": "c9dfda39ac28e93899b1e159d6c7f7c4129e8abc0c38b812eab01732bd4b00ab",
+      "expected_bytes": 120257280,
+      "filter": "F356W",
+      "target": "GS-MEDIUM-HST",
+      "cal_ver": "3.0.0",
+      "crds_context": "jwst_1584.pmap"
+    },
+    {
+      "product_filename": "jw02736001001_02105_00004_nrcalong_i2d.fits",
+      "sha256": "0226bb8a980aa2770bb6e57e0f91812bbbe247358f0ae80611a788a5827e1b92",
+      "expected_bytes": 120254400,
+      "filter": "F444W",
+      "target": "SMACS-J0723.3-7327",
+      "cal_ver": "2.0.1",
+      "crds_context": "jwst_1535.pmap"
+    },
+    {
+      "product_filename": "jw02736001001_02101_00004_nrca1_i2d.fits",
+      "sha256": "fb3929f8470dd5e012e66fd19868e32d9154f0a7a7b572fc6c66a0fd2badaefc",
+      "expected_bytes": 118702080,
+      "filter": "F090W",
+      "target": "SMACS-J0723.3-7327",
+      "cal_ver": "2.0.1",
+      "crds_context": "jwst_1535.pmap"
+    },
+    {
+      "product_filename": "jw02736001001_02105_00004_nrca4_i2d.fits",
+      "sha256": "9121dd419ca62b343e0d7649155962d6976da9ddb856a54b0a902fde8109a793",
+      "expected_bytes": 118702080,
+      "filter": "F200W",
+      "target": "SMACS-J0723.3-7327",
+      "cal_ver": "2.0.1",
+      "crds_context": "jwst_1535.pmap"
+    },
+    {
+      "product_filename": "jw01180026001_09201_00001_nrcalong_i2d.fits",
+      "sha256": "0fa2c443b59e5e31a08dc988193f30156390ed04e5df8e517448ebca8b767ad1",
+      "expected_bytes": 120257280,
+      "filter": "F444W",
+      "target": "GS-MEDIUM-HST",
+      "cal_ver": "3.0.0",
+      "crds_context": "jwst_1584.pmap"
+    },
+    {
+      "product_filename": "jw01180026001_09201_00002_nrcalong_i2d.fits",
+      "sha256": "57a8984ee8ff26a01de946ad385b7d5ef962acebcc71e3da299fd02e8524e5f0",
+      "expected_bytes": 120257280,
+      "filter": "F444W",
+      "target": "GS-MEDIUM-HST",
+      "cal_ver": "3.0.0",
+      "crds_context": "jwst_1584.pmap"
+    },
+    {
+      "product_filename": "jw02736001001_02105_00004_nrca1_i2d.fits",
+      "sha256": "45020ba0b16a8819cafbcd7a2b9d5af8672c8cb13ab71c5896947f04775cef38",
+      "expected_bytes": 118702080,
+      "filter": "F200W",
+      "target": "SMACS-J0723.3-7327",
+      "cal_ver": "2.0.1",
+      "crds_context": "jwst_1535.pmap"
+    }
+  ],
+  "goods_actual_pixel_replay": {
+    "command": "python -m discovery.image_photometry_rerun CACHE/originals/goods_baseline_manifest.json --output-dir CACHE/goods_baseline_replay",
+    "verified_image_count": 3,
+    "proposal_count": 1134,
+    "survivor_count": 7,
+    "outputs": [
+      {
+        "filename": "selection_measurements.csv",
+        "baseline_sha256": "aa0724bb51373a23caf87ffe5d84606077fa46213ea51e7741ff357d9dbd199d",
+        "fresh_sha256": "aa0724bb51373a23caf87ffe5d84606077fa46213ea51e7741ff357d9dbd199d",
+        "byte_exact": true
+      },
+      {
+        "filename": "selection_metadata.json",
+        "baseline_sha256": "eaf7a2305ea00645450e62d9c4d3327a6a21b28260692efbaad01293dde45fe6",
+        "fresh_sha256": "eaf7a2305ea00645450e62d9c4d3327a6a21b28260692efbaad01293dde45fe6",
+        "byte_exact": true
+      }
+    ],
+    "summary": {
+      "schema_version": 1,
+      "manifest_sha256": "6599799a5dd4c9b50eb74035159caef82ec77f90c88a2200390effea8ff397a5",
+      "status": "executed",
+      "verified_image_count": 3,
+      "blockers": [],
+      "detection_count": 1134,
+      "proposal_count": 1134,
+      "dropout_screen_survivors": 7,
+      "interpretation": "Dropout-screen survivors are not redshift confirmations or discoveries",
+      "software_versions": {
+        "numpy": "2.5.3",
+        "astropy": "8.0.1",
+        "photutils": "3.0.0",
+        "scipy": "1.18.1",
+        "scikit-image": "0.26.0"
+      },
+      "image_receipts": [
+        {
+          "path": "/workspace/scratch/7016fca60156/research-cache/originals/jw01180026001_09201_00003_nrcalong_i2d.fits",
+          "sha256": "b9b84b9bd0bd8ef6140dca76163a9ac4625689024b651a25e631a6d14ce68d86",
+          "filter": "F444W",
+          "target": "GS-MEDIUM-HST",
+          "product_filename": "jw01180026001_09201_00003_nrcalong_i2d.fits",
+          "product_kind": "original_full_i2d"
+        },
+        {
+          "path": "/workspace/scratch/7016fca60156/research-cache/originals/jw01180026001_03201_00003_nrca1_i2d.fits",
+          "sha256": "738c9dad0ace88e469fb8edd0daa5ba8b86034f8c5392e0229093026cdcaaba3",
+          "filter": "F090W",
+          "target": "GS-MEDIUM-HST",
+          "product_filename": "jw01180026001_03201_00003_nrca1_i2d.fits",
+          "product_kind": "original_full_i2d"
+        },
+        {
+          "path": "/workspace/scratch/7016fca60156/research-cache/originals/jw01180026001_13201_00003_nrca1_i2d.fits",
+          "sha256": "075becbdd9bcc845ffacadc520b97da82f7d02a0c62bd5e9ddb7b1864deccd74",
+          "filter": "F200W",
+          "target": "GS-MEDIUM-HST",
+          "product_filename": "jw01180026001_13201_00003_nrca1_i2d.fits",
+          "product_kind": "original_full_i2d"
+        }
+      ],
+      "limitations": [
+        "Matched angular apertures remain PSF-uncorrected",
+        "ERR/noise estimates remain diagonal without empirical covariance correction",
+        "No completeness, effective volume, redshift model or population abundance inferred"
+      ],
+      "audit_summary": {
+        "total_candidates": 1134,
+        "survivors": 7,
+        "blue_measured": 272,
+        "mid_measured": 254,
+        "blue_and_mid_measured": 246,
+        "module_mismatch_pairs": 0,
+        "untestable": 891,
+        "falsified": 236,
+        "blocker_counts": {
+          "f200w_not_measured_at_source_position": 880,
+          "f090w_not_measured_at_source_position": 862,
+          "blue_2sigma_limit_not_dropout_like": 225,
+          "blue_band_detected_above_snr_2": 203,
+          "reference_snr_below_5": 23,
+          "f444w_invalid_or_uncalibrated_flux_uncertainty": 10,
+          "f444w_not_measured_at_source_position": 7,
+          "f090w_invalid_or_uncalibrated_flux_uncertainty": 1
+        },
+        "pipeline_status_vs_audit": {
+          "None|falsified": 236,
+          "None|survives": 7,
+          "None|untestable": 891
+        },
+        "survivor_ids": [
+          {
+            "target": "GS-MEDIUM-HST",
+            "source_id": 361
+          },
+          {
+            "target": "GS-MEDIUM-HST",
+            "source_id": 107
+          },
+          {
+            "target": "GS-MEDIUM-HST",
+            "source_id": 98
+          },
+          {
+            "target": "GS-MEDIUM-HST",
+            "source_id": 994
+          },
+          {
+            "target": "GS-MEDIUM-HST",
+            "source_id": 138
+          },
+          {
+            "target": "GS-MEDIUM-HST",
+            "source_id": 333
+          },
+          {
+            "target": "GS-MEDIUM-HST",
+            "source_id": 336
+          }
+        ]
+      },
+      "targets": [
+        {
+          "target": "GS-MEDIUM-HST",
+          "detected_source_count": 1134,
+          "measured_source_count": 1134,
+          "source_limit": null,
+          "measurement_subset": "all_detections",
+          "reference_aperture_radii_arcsec": [
+            0.1258253863005391,
+            0.18873807945080867,
+            0.31456346575134775
+          ],
+          "detector_threshold_sigma": 3.0,
+          "detector_min_pixels": 9,
+          "coverage": {
+            "method": "reference_pixel_centres_with_native_validity_and_spherical_pixel_areas",
+            "reference_shape": [
+              2068,
+              2075
+            ],
+            "reference_valid_pixel_count": 4184055,
+            "reference_valid_area_arcsec2": 16560.517195605138,
+            "joint_valid_pixel_count": 875721,
+            "joint_valid_fraction_of_reference_valid": 0.20929959094705974,
+            "joint_valid_area_arcsec2": 3466.1094431754477,
+            "joint_valid_area_arcmin2": 0.9628081786598466,
+            "comparison_coverage": {
+              "F090W": {
+                "pixel_count": 971548,
+                "area_arcsec2": 3845.3933562103484
+              },
+              "F200W": {
+                "pixel_count": 890699,
+                "area_arcsec2": 3525.3924679624874
+              }
+            },
+            "limitations": [
+              "Reference-grid pixel-centre discretization, not exact fractional reprojection",
+              "Area is not aperture-safe, PSF-corrected or depth/completeness weighted",
+              "Uses SCI/ERR/WHT validity; upstream DQ policy must be documented separately"
+            ]
+          },
+          "selected_datasets": {
+            "F444W": "/workspace/scratch/7016fca60156/research-cache/originals/jw01180026001_09201_00003_nrcalong_i2d.fits",
+            "F090W": "/workspace/scratch/7016fca60156/research-cache/originals/jw01180026001_03201_00003_nrca1_i2d.fits",
+            "F200W": "/workspace/scratch/7016fca60156/research-cache/originals/jw01180026001_13201_00003_nrca1_i2d.fits"
+          },
+          "individual_footprint_overlap": {
+            "F444W": 1.0,
+            "F090W": 0.230625,
+            "F200W": 0.223125
+          }
+        }
+      ]
+    }
+  },
+  "scope": [
+    "Actual pixels restored and measured; distinct from compact numerical artifact replay.",
+    "Thirteen products are the declared pinned baseline subset, not the entire public archive.",
+    "Nine native CAL actual-pixel replay and deep-image numerical/thread sensitivity have separate receipts."
+  ]
+}
