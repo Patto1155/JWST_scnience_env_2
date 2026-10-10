@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "question": "Which new UV component measurements could distinguish density and He/O alternatives under explicitly idealized response, and which additional ion-stage measurements are in band?",
+  "competing_predictions": ["N IV and C III weights at Te20000 and ne1000 versus ne100000 from pinned PyNebv2", "Free HeII/OIII components versus unresolved combined flux", "Intrinsic widths 0,300,1000km/s reduce resolution gains"],
+  "expected_information_gain": "Resolve line-shape and stage/blend degeneracies before yield interpretation; not empirical calibration or an elemental abundance",
+  "new_acquisition_cap_bytes": 104857600,
+  "selected_inputs": "Four small primary JDox grating dispersion FITS and three documentation pages; no sensitivity software or paid observations",
+  "computation_budget": "Under60 seconds; analytic Gram matrices, bounded widths and four nominal modes",
+  "stopping_rule": "Report conditioning and conditional required SNR; do not expand density grids or supply absolute exposure without source-specific ETC normalization",
+  "redshift_assumed": 14.44,
+  "intrinsic_fwhm_km_s": [0,300,1000],
+  "nominal_resolving_power": [100,1000,2700],
+  "density_comparison_cm3": [1000,100000],
+  "temperature_K": 20000,
+  "conditional_discrimination_lambda": 9,
+  "known_nuisance_parameters": ["centroid", "width", "continuum", "source geometry"],
+  "noise_assumption": "White stationary Gaussian spectral noise, continuum known; designs are optimistic conditional lower bounds",
+  "absolute_exposure_seconds": null
+}
