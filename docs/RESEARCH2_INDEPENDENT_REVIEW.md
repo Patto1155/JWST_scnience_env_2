@@ -628,3 +628,19 @@ the exact input is the reviewed merged complete thermal family. N III+C III
 is the strongest bounded finite-family discriminator under the declared
 optimistic response assumptions; this is neither a posterior expected-gain
 ranking nor an empirical exposure/abundance result.
+
+Approved test-only roundoff correction `21605ea`. An independent extraction
+of the recursive comparator accepts a one-ULP positive control and rejects
+five material numeric/missing-value/label/key/list-length changes. The tolerance
+is rel1e-12/abs1e-15 for floating replay arithmetic; production code, frozen
+scientific outputs and exact metadata contracts are unchanged. All seven
+forecast tests pass in the exact lock.
+
+Fresh fetched live master `3b404a9acaed1b562428718fad67260a9373c558` passes
+all **46** canonical artifact hashes/lengths, strict tracked JSON, all 261
+historical research-artifact Git identities, baseline ancestry and explicit
+strict coverage for all **53** new scientific modules. Every Python file,
+requirements file, pyproject and pytest configuration matches the coordinator
+revision tested under the exact lock (`21605ea`). The independent detached
+worktree is clean. Authoritative release documents remain a separate final
+review before their merge.

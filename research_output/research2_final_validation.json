@@ -1,0 +1,2921 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-10",
+  "starting_live_master": "379ff35786aff31535335bbe7d1de114f91dd3c4",
+  "supplied_handover_ancestor_verified": true,
+  "starting_subsequent_commits": [],
+  "verified_merged_scientific_release": "3b404a9acaed1b562428718fad67260a9373c558",
+  "quality_gate_tested_revision": "21605eaa8e1cef6de3e59ce5ff1987fc97800eab",
+  "tested_code_and_configuration_unchanged_in_merged_release": true,
+  "python": "3.12.14",
+  "research_lock": {
+    "path": "requirements-research.lock",
+    "bytes": 1126,
+    "sha256": "ff25f0785e7d5a3a1a0515075d28bf9c90272ce6cbf6f8b23cf88f317c6fd31c"
+  },
+  "locked_distributions": [
+    {
+      "name": "alembic",
+      "expected": "1.12.1",
+      "actual": "1.12.1"
+    },
+    {
+      "name": "annotated-types",
+      "expected": "0.8.0",
+      "actual": "0.8.0"
+    },
+    {
+      "name": "anyio",
+      "expected": "3.7.1",
+      "actual": "3.7.1"
+    },
+    {
+      "name": "ast_serialize",
+      "expected": "0.12.1",
+      "actual": "0.12.1"
+    },
+    {
+      "name": "astropy",
+      "expected": "8.0.1",
+      "actual": "8.0.1"
+    },
+    {
+      "name": "astropy-iers-data",
+      "expected": "0.2026.10.5.1.0.7",
+      "actual": "0.2026.10.5.1.0.7"
+    },
+    {
+      "name": "certifi",
+      "expected": "2026.7.22",
+      "actual": "2026.7.22"
+    },
+    {
+      "name": "charset-normalizer",
+      "expected": "3.5.2",
+      "actual": "3.5.2"
+    },
+    {
+      "name": "click",
+      "expected": "8.5.0",
+      "actual": "8.5.0"
+    },
+    {
+      "name": "contourpy",
+      "expected": "1.4.0",
+      "actual": "1.4.0"
+    },
+    {
+      "name": "cycler",
+      "expected": "0.12.1",
+      "actual": "0.12.1"
+    },
+    {
+      "name": "fastapi",
+      "expected": "0.104.1",
+      "actual": "0.104.1"
+    },
+    {
+      "name": "fonttools",
+      "expected": "4.66.1",
+      "actual": "4.66.1"
+    },
+    {
+      "name": "greenlet",
+      "expected": "3.5.6",
+      "actual": "3.5.6"
+    },
+    {
+      "name": "h11",
+      "expected": "0.16.0",
+      "actual": "0.16.0"
+    },
+    {
+      "name": "httpcore",
+      "expected": "1.0.9",
+      "actual": "1.0.9"
+    },
+    {
+      "name": "httptools",
+      "expected": "0.8.0",
+      "actual": "0.8.0"
+    },
+    {
+      "name": "httpx",
+      "expected": "0.27.2",
+      "actual": "0.27.2"
+    },
+    {
+      "name": "idna",
+      "expected": "3.20",
+      "actual": "3.20"
+    },
+    {
+      "name": "ImageIO",
+      "expected": "2.38.1",
+      "actual": "2.38.1"
+    },
+    {
+      "name": "iniconfig",
+      "expected": "2.3.1",
+      "actual": "2.3.1"
+    },
+    {
+      "name": "kiwisolver",
+      "expected": "1.5.1",
+      "actual": "1.5.1"
+    },
+    {
+      "name": "lazy-loader",
+      "expected": "0.6",
+      "actual": "0.6"
+    },
+    {
+      "name": "librt",
+      "expected": "0.16.0",
+      "actual": "0.16.0"
+    },
+    {
+      "name": "Mako",
+      "expected": "1.4.3",
+      "actual": "1.4.3"
+    },
+    {
+      "name": "markdown-it-py",
+      "expected": "4.2.0",
+      "actual": "4.2.0"
+    },
+    {
+      "name": "MarkupSafe",
+      "expected": "3.0.4",
+      "actual": "3.0.4"
+    },
+    {
+      "name": "matplotlib",
+      "expected": "3.11.2",
+      "actual": "3.11.2"
+    },
+    {
+      "name": "mdurl",
+      "expected": "0.1.2",
+      "actual": "0.1.2"
+    },
+    {
+      "name": "mypy",
+      "expected": "2.4.0",
+      "actual": "2.4.0"
+    },
+    {
+      "name": "mypy_extensions",
+      "expected": "1.1.0",
+      "actual": "1.1.0"
+    },
+    {
+      "name": "networkx",
+      "expected": "3.7",
+      "actual": "3.7"
+    },
+    {
+      "name": "numpy",
+      "expected": "2.5.3",
+      "actual": "2.5.3"
+    },
+    {
+      "name": "packaging",
+      "expected": "26.3",
+      "actual": "26.3"
+    },
+    {
+      "name": "pathspec",
+      "expected": "1.1.1",
+      "actual": "1.1.1"
+    },
+    {
+      "name": "photutils",
+      "expected": "3.0.0",
+      "actual": "3.0.0"
+    },
+    {
+      "name": "pillow",
+      "expected": "12.3.0",
+      "actual": "12.3.0"
+    },
+    {
+      "name": "pluggy",
+      "expected": "1.6.0",
+      "actual": "1.6.0"
+    },
+    {
+      "name": "pydantic",
+      "expected": "2.9.2",
+      "actual": "2.9.2"
+    },
+    {
+      "name": "pydantic-settings",
+      "expected": "2.1.0",
+      "actual": "2.1.0"
+    },
+    {
+      "name": "pydantic_core",
+      "expected": "2.23.4",
+      "actual": "2.23.4"
+    },
+    {
+      "name": "pyerfa",
+      "expected": "2.0.1.5",
+      "actual": "2.0.1.5"
+    },
+    {
+      "name": "Pygments",
+      "expected": "2.21.0",
+      "actual": "2.21.0"
+    },
+    {
+      "name": "pyparsing",
+      "expected": "3.3.3",
+      "actual": "3.3.3"
+    },
+    {
+      "name": "pytest",
+      "expected": "9.1.1",
+      "actual": "9.1.1"
+    },
+    {
+      "name": "pytest-asyncio",
+      "expected": "1.4.0",
+      "actual": "1.4.0"
+    },
+    {
+      "name": "python-dateutil",
+      "expected": "2.9.0.post0",
+      "actual": "2.9.0.post0"
+    },
+    {
+      "name": "python-dotenv",
+      "expected": "1.0.0",
+      "actual": "1.0.0"
+    },
+    {
+      "name": "PyYAML",
+      "expected": "6.0.3",
+      "actual": "6.0.3"
+    },
+    {
+      "name": "requests",
+      "expected": "2.34.2",
+      "actual": "2.34.2"
+    },
+    {
+      "name": "rich",
+      "expected": "15.0.0",
+      "actual": "15.0.0"
+    },
+    {
+      "name": "ruff",
+      "expected": "0.16.10",
+      "actual": "0.16.10"
+    },
+    {
+      "name": "scikit-image",
+      "expected": "0.26.0",
+      "actual": "0.26.0"
+    },
+    {
+      "name": "scipy",
+      "expected": "1.18.1",
+      "actual": "1.18.1"
+    },
+    {
+      "name": "six",
+      "expected": "1.17.0",
+      "actual": "1.17.0"
+    },
+    {
+      "name": "sniffio",
+      "expected": "1.3.1",
+      "actual": "1.3.1"
+    },
+    {
+      "name": "SQLAlchemy",
+      "expected": "2.0.44",
+      "actual": "2.0.44"
+    },
+    {
+      "name": "starlette",
+      "expected": "0.27.0",
+      "actual": "0.27.0"
+    },
+    {
+      "name": "tifffile",
+      "expected": "2026.9.20",
+      "actual": "2026.9.20"
+    },
+    {
+      "name": "typing_extensions",
+      "expected": "4.16.0",
+      "actual": "4.16.0"
+    },
+    {
+      "name": "urllib3",
+      "expected": "2.8.0",
+      "actual": "2.8.0"
+    },
+    {
+      "name": "uvicorn",
+      "expected": "0.24.0",
+      "actual": "0.24.0"
+    },
+    {
+      "name": "uvloop",
+      "expected": "0.23.0",
+      "actual": "0.23.0"
+    },
+    {
+      "name": "watchfiles",
+      "expected": "1.3.0",
+      "actual": "1.3.0"
+    },
+    {
+      "name": "websockets",
+      "expected": "17.2",
+      "actual": "17.2"
+    }
+  ],
+  "quality_gate": {
+    "exit_code": 0,
+    "counts": {
+      "tests": 722,
+      "errors": 0,
+      "failures": 0,
+      "skipped": 3,
+      "passed": 719
+    },
+    "pytest_seconds": 39.415,
+    "timestamp": "2026-10-10T16:01:06.267954+11:00",
+    "skips": [
+      {
+        "test": "runner.tests.test_jwst_visual_tools.test_real_jwst_visual_tools_generate_catalog_evidence_and_overview",
+        "reason": "Local JWST archive not provisioned: /workspace/scratch/7016fca60156/jwst-coordinator/data/jwst/mastDownload/JWST/jw01180026001_03201_00003_nrca1/jw01180026001_03201_00003_nrca1_i2d.fits, /workspace/scratch/7016fca60156/jwst-coordinator/data/jwst/mastDownload/JWST/jw01180025001_07201_00002_nrca1/jw01180025001_07201_00002_nrca1_i2d.fits, /workspace/scratch/7016fca60156/jwst-coordinator/data/jwst/mastDownload/JWST/jw01180026001_09201_00003_nrcalong/jw01180026001_09201_00003_nrcalong_i2d.fits"
+      },
+      {
+        "test": "runner.tests.test_jwst_visual_tools.test_build_universe_table_pipeline_returns_source_level_candidate_artifacts",
+        "reason": "Local JWST archive not provisioned: /workspace/scratch/7016fca60156/jwst-coordinator/data/jwst/mastDownload/JWST/jw01180026001_03201_00003_nrca1/jw01180026001_03201_00003_nrca1_i2d.fits, /workspace/scratch/7016fca60156/jwst-coordinator/data/jwst/mastDownload/JWST/jw01180025001_07201_00002_nrca1/jw01180025001_07201_00002_nrca1_i2d.fits, /workspace/scratch/7016fca60156/jwst-coordinator/data/jwst/mastDownload/JWST/jw01180026001_09201_00003_nrcalong/jw01180026001_09201_00003_nrcalong_i2d.fits"
+      },
+      {
+        "test": "tests.test_cue_grid.test_author_numpy_forward_replay_on_actual_pinned_weights",
+        "reason": "set JWST_CUE_ARCHIVE to independently pinned Cue v0.1 archive"
+      }
+    ],
+    "steps": [
+      "ruff-check",
+      "research2-strict-science-lint",
+      "ruff-format-check",
+      "mypy",
+      "pytest"
+    ],
+    "log": {
+      "path": "research_output/research2_final_quality.log",
+      "bytes": 21396,
+      "sha256": "5378f8049ca43733afb6a41b59aec0a66984b356625ccac86d033c25cc9f3f7e"
+    },
+    "junit": {
+      "path": "research_output/research2_final_tests.xml",
+      "bytes": 100483,
+      "sha256": "2b830e4d499def9899b5f16746dce71fc77c248263bd1d9b63871917c36b9264"
+    }
+  },
+  "ci_discrepancy_and_resolution": {
+    "pr": 79,
+    "failed_head": "c3d162a76c597b8e9974e94bc065a44b9abb9e5d",
+    "run": 38025758407,
+    "job": 114136139920,
+    "reason": "Exact equality of computed floating-point stage-range maximum and overlap endpoint differed by one ULP",
+    "saved": 0.577344474119078,
+    "ci_replay": 0.5773444741190781,
+    "ci_python": "3.12.15",
+    "ci_numpy": "2.5.3",
+    "locked_local_python": "3.12.14",
+    "locked_local_numpy": "2.5.3",
+    "fix": "Recursive numeric comparison with relative tolerance 1e-12 and absolute 1e-15; labels, keys, list lengths, nulls and nonnumeric contracts remain exact",
+    "local_fix_revision": "21605eaa8e1cef6de3e59ce5ff1987fc97800eab",
+    "fixed_remote_head": "d1c99dc2a597e612f0bbaa01cc10bb0eab499f4b",
+    "scientific_outputs_changed": false,
+    "fixed_ci": {
+      "id": 38026068814,
+      "name": "Offline tests",
+      "status": "completed",
+      "conclusion": "success",
+      "run_number": 298,
+      "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38026068814/jobs",
+      "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38026068814/logs",
+      "workflow_id": 379343808
+    }
+  },
+  "checked_code_and_configuration_identities": [
+    {
+      "path": ".github/workflows/tests.yml",
+      "bytes": 444,
+      "sha256": "1149cc485f0ef3f69abd2618731d6aeb159a2c01b4ac48b7a8bd8e1c5bd6d56b"
+    },
+    {
+      "path": "conftest.py",
+      "bytes": 1314,
+      "sha256": "443c3c94690d7797c944ef1828e4bfd6b6c8d9aa424c457beb79ce22cf042f50"
+    },
+    {
+      "path": "core_api/__init__.py",
+      "bytes": 49,
+      "sha256": "b5bf532c560c4c1d1184e673762fac97d0b9fc2f0691c5d7e94eecd45e15ee17"
+    },
+    {
+      "path": "core_api/_import_helper.py",
+      "bytes": 711,
+      "sha256": "6c0e068c667cd1bc6b92b76bbceab5f85210263e4f44bd8aa03c34977c1d8db3"
+    },
+    {
+      "path": "core_api/app.py",
+      "bytes": 2523,
+      "sha256": "35215a0298412352c5f4beb3df1cf13495a26ff990dc826c7f7800d01af32f03"
+    },
+    {
+      "path": "core_api/config.py",
+      "bytes": 1652,
+      "sha256": "399e6186c0d72590f1b321ad9c068965d97753ef604d2d54801739be61ecc138"
+    },
+    {
+      "path": "core_api/config_scientific.py",
+      "bytes": 625,
+      "sha256": "f30a32fa764b20807513f07599a665077fed62d07bd9010b3c95c35010f69608"
+    },
+    {
+      "path": "core_api/db.py",
+      "bytes": 1194,
+      "sha256": "70be9e5aaafec63c5feb5b51d7377845306320ca6366850b00f183c7a27e6a5e"
+    },
+    {
+      "path": "core_api/models/__init__.py",
+      "bytes": 189,
+      "sha256": "d5334aba9fa24de0a40f2f2b65accf39ecd23e8943ba9da4d43ed0d40c5625b6"
+    },
+    {
+      "path": "core_api/models/datasets.py",
+      "bytes": 839,
+      "sha256": "0fe11579e147414c3c8019fa0c1a5624ef0cc8731aaaffa388ed39fc0377ba01"
+    },
+    {
+      "path": "core_api/models/experiments.py",
+      "bytes": 809,
+      "sha256": "e70acf712666212fb686da32d74d09e41137fb2e0e9895e9ac72a923a3c697aa"
+    },
+    {
+      "path": "core_api/models/runs.py",
+      "bytes": 1215,
+      "sha256": "d173746c2843f9bab5c30d2c1f6cb389a9c5591db01f3dfd219d7a0983294688"
+    },
+    {
+      "path": "core_api/models/tools.py",
+      "bytes": 1033,
+      "sha256": "8fdb794d76ea4c7f5ccf208d63185329f8903f08bd095c3e35f7d4ce448e9cba"
+    },
+    {
+      "path": "core_api/routers/__init__.py",
+      "bytes": 141,
+      "sha256": "6b70b21c56454bbb3cf327c91aa9161a0720b8ec9d6cb35b80fb242a33af88f9"
+    },
+    {
+      "path": "core_api/routers/catalog.py",
+      "bytes": 2242,
+      "sha256": "a2a6343823021b53270fa493e7ec64cb02b32839302fb16e8193071a4040b84e"
+    },
+    {
+      "path": "core_api/routers/experiments.py",
+      "bytes": 1822,
+      "sha256": "fdc90885716e0a9cca89826542bcc081e712aa83fab23e74eb077fa1cc6ca6de"
+    },
+    {
+      "path": "core_api/routers/runs.py",
+      "bytes": 16732,
+      "sha256": "418c386e2042dbcb597e1dc6b42f1b79142182a187c4e1be30c563db33d19016"
+    },
+    {
+      "path": "core_api/routers/tools.py",
+      "bytes": 1769,
+      "sha256": "6b0d0619df42f5511a3febb6d346aa38a3513e2442b6fdf459a9ce496a65faeb"
+    },
+    {
+      "path": "core_api/schemas/__init__.py",
+      "bytes": 760,
+      "sha256": "348465e9db8343c79904a252ba956fdaa62e5d08460f01bfc9a08b0f92409182"
+    },
+    {
+      "path": "core_api/schemas/datasets.py",
+      "bytes": 983,
+      "sha256": "c21473e2e2cee55733a7ad7eaf29911863d391e3ddfae76974dc3925223e065c"
+    },
+    {
+      "path": "core_api/schemas/experiments.py",
+      "bytes": 1891,
+      "sha256": "3ce751f832a4ce1d52032a5f7e5714733ab6ef125edfedc92f5132dfff11e881"
+    },
+    {
+      "path": "core_api/schemas/runs.py",
+      "bytes": 3214,
+      "sha256": "d47dda7a0d1ffd829d59f7d739d2af8680b949a6397dcb29becc6809c518dc0f"
+    },
+    {
+      "path": "core_api/schemas/tools.py",
+      "bytes": 1222,
+      "sha256": "66382222818cf9b44013656170dd795c976a19dfb76b02e34399d35e61086a7a"
+    },
+    {
+      "path": "core_api/services/__init__.py",
+      "bytes": 465,
+      "sha256": "e1eb7049b507f8bb78bdfc0024ca9eaf9f64b1c4068d723cf9e2b9f7877e4ff7"
+    },
+    {
+      "path": "core_api/services/catalog_service.py",
+      "bytes": 2868,
+      "sha256": "9f2139324a38c22c39b5fe03e42d23b9594d84b27e9d69f8017f931f8bd9acf3"
+    },
+    {
+      "path": "core_api/services/run_service.py",
+      "bytes": 8850,
+      "sha256": "6465ea1d25b03a05b9640327cf1cf536c02de544013858915891c875e0210b1a"
+    },
+    {
+      "path": "core_api/services/strict_validation.py",
+      "bytes": 11201,
+      "sha256": "4706848679a63e0d323e68d783b886ab18cb337bb2de41e0e2f16b9d76d6dcfa"
+    },
+    {
+      "path": "core_api/services/tool_registry.py",
+      "bytes": 2286,
+      "sha256": "02e816d19eff18415dd0bf855b390086f5e4fc20910fa0ac8ad0b7e9c2a61484"
+    },
+    {
+      "path": "core_api/startup.py",
+      "bytes": 22986,
+      "sha256": "d3545b6b048dac41aade54030b10bc571e8cc03ed48f4da2c984ccfcc40ddffe"
+    },
+    {
+      "path": "core_api/tests/__init__.py",
+      "bytes": 22,
+      "sha256": "e1356b48e8ab81662e7f0c304184437e7405803f15c6386108bc571af4b647c5"
+    },
+    {
+      "path": "core_api/tests/conftest.py",
+      "bytes": 613,
+      "sha256": "1920d7329e561901053cabbd8bed2203e9c359ed5e657e7a7f57e8041c721adb"
+    },
+    {
+      "path": "core_api/tests/test_allowed_tools.py",
+      "bytes": 3199,
+      "sha256": "a51dba9ebfc642bd2ad503798c87bfbb4abd9237ba34bc88bfd5d3b24684f491"
+    },
+    {
+      "path": "core_api/tests/test_api.py",
+      "bytes": 4266,
+      "sha256": "de88d2aa5002ceb4f37509163515c9658f155fac5a3a955a223f989c1035b640"
+    },
+    {
+      "path": "core_api/tests/test_strict_run_validation.py",
+      "bytes": 7490,
+      "sha256": "daccc144977371f97d9521ea6fb672e59d6109661884122c66c433904e6e70d7"
+    },
+    {
+      "path": "core_api/tests/test_tool_registry.py",
+      "bytes": 2101,
+      "sha256": "69b1051c1c1c72a2341208643ccd32afcfa5c76a33d3e89c2d7fe1640c50561c"
+    },
+    {
+      "path": "data_pipeline/atomic_inputs.py",
+      "bytes": 4377,
+      "sha256": "a1ee08cef435a48f1077d6c882309e1f2b6996d42cd68326fd6ed81cd3271ae1"
+    },
+    {
+      "path": "data_pipeline/capers_companion_coverage.py",
+      "bytes": 8056,
+      "sha256": "71e98aec68e79cabb7c6ef9fd9eebf51646c0f4daca8b1260a3f47860dacaa8c"
+    },
+    {
+      "path": "data_pipeline/capers_pixtab_coverage.py",
+      "bytes": 7150,
+      "sha256": "1c5298164ae94aec30fc4e753416c699c73903523cd954152d90aa601176a504"
+    },
+    {
+      "path": "data_pipeline/capers_s2d_coverage.py",
+      "bytes": 7430,
+      "sha256": "d72983695f5bfe39a387701f157add7879c5349b150ae3b675f4c30f21ece8ce"
+    },
+    {
+      "path": "data_pipeline/cloudy_inputs.py",
+      "bytes": 8575,
+      "sha256": "b1041a02dcb09a7168a7ded46fd7e7a62bea1031f1e9d06527b931e273195038"
+    },
+    {
+      "path": "data_pipeline/download_jwst_data.py",
+      "bytes": 13952,
+      "sha256": "3b0828feede3d5f7ff3d418d865e9b7ac4c6973fa43076613f0c3db74135fbbf"
+    },
+    {
+      "path": "data_pipeline/followup_data.py",
+      "bytes": 9766,
+      "sha256": "74e77e52bda60cbf24505cef607f3c0b1cebdf05f3da6b22014917a559a8a44c"
+    },
+    {
+      "path": "data_pipeline/mom_author_provenance.py",
+      "bytes": 10520,
+      "sha256": "161fd1a21a7424d2df40a1f97e0f909bcc3b3af3a6d63d98512eeb76e759d55c"
+    },
+    {
+      "path": "data_pipeline/mom_compact_followup.py",
+      "bytes": 10157,
+      "sha256": "806cfe739e296880dae76afefb6ccea518df020239afb88b171404d373dacedd"
+    },
+    {
+      "path": "data_pipeline/mom_native_batch.py",
+      "bytes": 9464,
+      "sha256": "a1bdb47fb078429333b39dd6febaed7a8485a9692abd9c360a117923c2ebf7d0"
+    },
+    {
+      "path": "data_pipeline/mom_public_metadata.py",
+      "bytes": 8195,
+      "sha256": "bb7fccbc04ccd4b6ec594fa56517489fb66df17df7d632c6b5c369630726fcd9"
+    },
+    {
+      "path": "data_pipeline/observation_design_inputs.py",
+      "bytes": 2235,
+      "sha256": "0f24a634f7d8928911afe1e9dfd193756f5200375481ad9c96caae389c964d43"
+    },
+    {
+      "path": "data_pipeline/original_images.py",
+      "bytes": 8065,
+      "sha256": "93c7ca34b8747c3807bd4b84ee92fc337a6e92209beb892e3992b50bde9d132c"
+    },
+    {
+      "path": "data_pipeline/real_validation_acquire.py",
+      "bytes": 4511,
+      "sha256": "6097fa5c38662b2c01c51ff3343a012652a52c0ebbedaffcafc0961ebaa952c0"
+    },
+    {
+      "path": "data_pipeline/reference_cohorts.py",
+      "bytes": 5723,
+      "sha256": "d25edf840dbb62e1f5b7014356e5c48887a581a6da886c28b1d68b73d16545e4"
+    },
+    {
+      "path": "data_pipeline/register_datasets.py",
+      "bytes": 3468,
+      "sha256": "37112131dd5ecedca06d0f71409b3b1760dea8aac5b2431889336231b52d56f9"
+    },
+    {
+      "path": "data_pipeline/research_sources.py",
+      "bytes": 11239,
+      "sha256": "592e2bb20c47b11dd21365680279859356cb0ee6c777489825e9a9741f229d6e"
+    },
+    {
+      "path": "data_pipeline/rotating_benchmarks.py",
+      "bytes": 4800,
+      "sha256": "c03ebaa000999c2555a9b97b23c49a6fa1fb49b965da256dba1956f18f14f2f6"
+    },
+    {
+      "path": "data_pipeline/survivor_deep_data.py",
+      "bytes": 3214,
+      "sha256": "ce5275a481d464a0b6c073a35e1381ef86d7f7226ee14e742f5a9d8ee3a280a8"
+    },
+    {
+      "path": "discovery/adversarial_native_inputs.py",
+      "bytes": 6003,
+      "sha256": "84779e7abde348c1b2e5eb89c5a73294c4c31e328eaaba8c71f58b14e7a00d2e"
+    },
+    {
+      "path": "discovery/adversarial_noise_controls.py",
+      "bytes": 5259,
+      "sha256": "f318e6854313d25def454e7142a7e2e54195b80a7bdf82c87dffd7c6aec5b7dc"
+    },
+    {
+      "path": "discovery/artifact_characterization.py",
+      "bytes": 34876,
+      "sha256": "6adc248e7c189029c1ae33c48535f0c5978286340bbc73cdb718a732bc6cd599"
+    },
+    {
+      "path": "discovery/artifact_classifier.py",
+      "bytes": 29182,
+      "sha256": "e2b6012515af6827c0f6306f38cddaf699d1cec14e0e0ecbee93733f325028bb"
+    },
+    {
+      "path": "discovery/atomic_enrichment.py",
+      "bytes": 26959,
+      "sha256": "fa861fe0cc66b36559db1839c5c74b7edd61c6c258a2fac80b53b4dc29121a10"
+    },
+    {
+      "path": "discovery/audit_candidates.py",
+      "bytes": 15479,
+      "sha256": "988d7a3ea9098e86b3328e27c09d3b84c923c930cfdc53dccc08660d2a935dac"
+    },
+    {
+      "path": "discovery/batch_runner.py",
+      "bytes": 6856,
+      "sha256": "e9c6540c348d8f6b5479a2aeaae561785de93b47284901400a3f46442ac9dd2a"
+    },
+    {
+      "path": "discovery/build_universe_table.py",
+      "bytes": 45609,
+      "sha256": "090a44f264ce66f9b33f1b6710648c28c0b7596c3deeae0b1a97099b0c0fdd81"
+    },
+    {
+      "path": "discovery/candidate_neighborhood.py",
+      "bytes": 19343,
+      "sha256": "9d42e2b2ac126c2877f1c7ad109a8d23285954b5ac500834d32d6e84b9eda500"
+    },
+    {
+      "path": "discovery/chemistry_identifiability.py",
+      "bytes": 22832,
+      "sha256": "a9e0f14778ca6b5a714f5eb312d2aa2db4e80f7e62039667314ca9b7fa4aedd5"
+    },
+    {
+      "path": "discovery/continuation_composed_review.py",
+      "bytes": 7888,
+      "sha256": "7688f8db78ad5d3fe668757101ac50eeae6c6190509b50b95072f3538ed85c5a"
+    },
+    {
+      "path": "discovery/continuation_final_review.py",
+      "bytes": 18622,
+      "sha256": "60f2b52f2ffc1862b5cdac5dba2f0ccadea0ecc939c5096f3506dd6484933322"
+    },
+    {
+      "path": "discovery/continuation_followup_review.py",
+      "bytes": 12011,
+      "sha256": "0f3b44806cacfd9a1357e53bcaa9cea824128873587809839d1d65141b168a4d"
+    },
+    {
+      "path": "discovery/continuation_physical_review.py",
+      "bytes": 14939,
+      "sha256": "d3b8b9ef4088b69449a700373c2af135f61e148da540b80287152bd22d07b9e3"
+    },
+    {
+      "path": "discovery/continuation_review.py",
+      "bytes": 9948,
+      "sha256": "20e280fe49f95ab7cf07b2c2657f25ef66a756e8f5e06010e9ee6639ef4f65bf"
+    },
+    {
+      "path": "discovery/continuation_wavecorr_review.py",
+      "bytes": 12592,
+      "sha256": "4aeaa98042170c531834eb03133a198978dfab276e55f7870becc25f6e102521"
+    },
+    {
+      "path": "discovery/continuation_yield_version_review.py",
+      "bytes": 7987,
+      "sha256": "60f344e5d9d2059054c7fde1150c69818d7817151c9787baa63829173bcfe3b1"
+    },
+    {
+      "path": "discovery/covariant_model_review.py",
+      "bytes": 5525,
+      "sha256": "80c2b3f72e9ff3a268362a8c749620abcdfe79bef9dfde466763322f5a480fe7"
+    },
+    {
+      "path": "discovery/deep_control_recovery.py",
+      "bytes": 15611,
+      "sha256": "e7f3d1c9f831cb70cf90a87d928a667c532b9ab6e883443fc41934489db18540"
+    },
+    {
+      "path": "discovery/deep_reference_comparison.py",
+      "bytes": 9251,
+      "sha256": "655a831531a6fcb5c2740f61ad79e52f09430fb88fa4e7742e10b7ea615ea9b4"
+    },
+    {
+      "path": "discovery/empirical_imaging_controls.py",
+      "bytes": 21499,
+      "sha256": "2890ad4b04584fa50bea092f88bae800d2068b8c5b0b9e088ffbac2283897157"
+    },
+    {
+      "path": "discovery/enrichment_constraints.py",
+      "bytes": 14371,
+      "sha256": "9fc60d0d426c8769c60c35dccbfe5c80094e51b048551e18eb53cded84cdab24"
+    },
+    {
+      "path": "discovery/external_astrometry.py",
+      "bytes": 4544,
+      "sha256": "8f6c3ddde742640784fcd838c8a4e38edcd528e107be5f4e7f411ba842cda99c"
+    },
+    {
+      "path": "discovery/external_psf_stress.py",
+      "bytes": 15973,
+      "sha256": "80512fdf61379374a39c7616030c1d73ac83c6bb0c74dd33e5e5aac8c34f3f2d"
+    },
+    {
+      "path": "discovery/f444w_repeat_screen.py",
+      "bytes": 13544,
+      "sha256": "ccd6e4845cf308de725935ab8afcffa62f7953fdc296e7044eb1ab2f005b7fae"
+    },
+    {
+      "path": "discovery/formation_predictions.py",
+      "bytes": 22392,
+      "sha256": "878dbf6b32a7bb98e8cf86d229d462850a2ceb5dff29dcc8f68097364bfa3a34"
+    },
+    {
+      "path": "discovery/image_photometry_rerun.py",
+      "bytes": 20036,
+      "sha256": "a0ec2a97ce1b77b5fb00779b2baae399b15526edf25efbc2c72076cb93a53aa0"
+    },
+    {
+      "path": "discovery/independent_repeat_vetting.py",
+      "bytes": 13201,
+      "sha256": "b8a87c353d5775ad0a6f4f086bd1eab441228a07c49aed95ff5df11183861920"
+    },
+    {
+      "path": "discovery/injection_recovery.py",
+      "bytes": 29854,
+      "sha256": "6b7e4087aa74aa8ceaebf7a4afbe5a3fdffd598f60453aa57711922501e50616"
+    },
+    {
+      "path": "discovery/multi_epoch.py",
+      "bytes": 13812,
+      "sha256": "6ef55f26b21ae5b6ed65b4ecfe00b7a2d65c0975d4cd50de2c291a20025bcda2"
+    },
+    {
+      "path": "discovery/native_psf.py",
+      "bytes": 19484,
+      "sha256": "d485f4773524c9e977cbf36abe2ef9333eb384bd8b911c95f5e41007a826b2a6"
+    },
+    {
+      "path": "discovery/niv_yield_sensitivity.py",
+      "bytes": 17742,
+      "sha256": "c6a482448294bae2d80b7d80935af0e267c81a5df92051559390b2b58c1ab43d"
+    },
+    {
+      "path": "discovery/observed_template_injections.py",
+      "bytes": 23439,
+      "sha256": "163c3fcba8e53a9add96757fc80c1dc671b0420955f65a97c9b603654f42f81d"
+    },
+    {
+      "path": "discovery/photometry_sensitivity.py",
+      "bytes": 12293,
+      "sha256": "be55ce040f92d394dc529500d86643efc7aaf030b9f5ac7a4ca586e07dd37090"
+    },
+    {
+      "path": "discovery/proposal_channels.py",
+      "bytes": 22971,
+      "sha256": "b18cd994e6803d4f791cce9041affedc23e234119c304c17ced80f150a5081b2"
+    },
+    {
+      "path": "discovery/proposal_schemas.py",
+      "bytes": 1709,
+      "sha256": "df26cfc7dd2c737e762bf4d821b5f34eaaa88bd8b01445e71c2571bfcea0ee2b"
+    },
+    {
+      "path": "discovery/psf_noise.py",
+      "bytes": 37988,
+      "sha256": "657108fe0ff2f8d9b77372b8809379472107007f1f01683e8e2ce914017e399d"
+    },
+    {
+      "path": "discovery/ramp_diagnostics.py",
+      "bytes": 25322,
+      "sha256": "248cbe4b27ff842d4dce76ac9f91d252c4fa2250b5633a5feb5e74a94e7bf827"
+    },
+    {
+      "path": "discovery/real_validation.py",
+      "bytes": 23642,
+      "sha256": "7abeef06dc30fd6df236431e0939cb1a42f31097853dcd4d338c883cc06b6b54"
+    },
+    {
+      "path": "discovery/research2_capers_source_review.py",
+      "bytes": 8532,
+      "sha256": "88e096d0ce02799922a199583117c0ec53c897e786195ff6cfa5caf435b0e026"
+    },
+    {
+      "path": "discovery/research2_cloudy_backend_review.py",
+      "bytes": 7027,
+      "sha256": "9f9bd0d85c40496c22a17703b0dec10591e9832143b7783bb8f13e8d5ffcbc8d"
+    },
+    {
+      "path": "discovery/research2_cloudy_capped_review.py",
+      "bytes": 2071,
+      "sha256": "bd0442b5412db99e7ad2b670e60aae47349e45c6244db899a0b3a508bcf16621"
+    },
+    {
+      "path": "discovery/research2_cloudy_composition_review.py",
+      "bytes": 3735,
+      "sha256": "f1c2246f9fd1dc1337f04075ae22a379fd4e5e815e06d9a044f43588a2b60e3f"
+    },
+    {
+      "path": "discovery/research2_cloudy_design_review.py",
+      "bytes": 3758,
+      "sha256": "361ecf6d65ca54e283cd992839f99916a246a9b1305d47fe8507849e6ba8b519"
+    },
+    {
+      "path": "discovery/research2_cloudy_forecast_review.py",
+      "bytes": 20963,
+      "sha256": "2e02bf88d59edde42920717c4b3daa1909565efbd3d7413e547742ed160e3933"
+    },
+    {
+      "path": "discovery/research2_cloudy_grid_rate_review.py",
+      "bytes": 20707,
+      "sha256": "2a72cfe92fe53a1244a646ea990e4f109e5ad8544fb84be61a145edaa7aa599a"
+    },
+    {
+      "path": "discovery/research2_cloudy_heldout_review.py",
+      "bytes": 5962,
+      "sha256": "831e5d84f671af82cd53fb2742f7f3b8ba0bfcbd5339b8a5965fc2b374c6d37e"
+    },
+    {
+      "path": "discovery/research2_cloudy_likelihood_review.py",
+      "bytes": 7041,
+      "sha256": "d14850c2b868d10d3c57fa5ee902c751ba367089114c7c54ad1f1029c3040b0d"
+    },
+    {
+      "path": "discovery/research2_cloudy_model_review.py",
+      "bytes": 14601,
+      "sha256": "887bd476d0816b5e50af75f6079ad750e340e0263cde6e84c66f622efcbb0c2c"
+    },
+    {
+      "path": "discovery/research2_cloudy_rate_bridge_review.py",
+      "bytes": 15252,
+      "sha256": "34e19e25ee4f9211f8d9e64b397523d9cb8ac495ff7d11343f027b4c38aedbbe"
+    },
+    {
+      "path": "discovery/research2_compact_followup_review.py",
+      "bytes": 8733,
+      "sha256": "8021aee4aebf4a14a5982cdbe5db7938fce9941e0d5cd0119f36de32c176ca4a"
+    },
+    {
+      "path": "discovery/research2_download_ledger.py",
+      "bytes": 3348,
+      "sha256": "3706403a966abeef3eaa266dc244e195672f466299a8624d93df0e807fb904e5"
+    },
+    {
+      "path": "discovery/research2_flame_review.py",
+      "bytes": 6568,
+      "sha256": "466a5809f1a13074cdb2001361a4bd6067d7358a770992d9f767ac655c621341"
+    },
+    {
+      "path": "discovery/research2_independent_review.py",
+      "bytes": 21734,
+      "sha256": "a93e12ffaa6a5931144e5a4eed841e1be18221b8c6f67fa77dde57dd3a61898f"
+    },
+    {
+      "path": "discovery/research2_local_identifiability_review.py",
+      "bytes": 14270,
+      "sha256": "632f310e6da481c67c1b0ff0a62a2b0289a4a2cc2874811c4b09abbae2923cd8"
+    },
+    {
+      "path": "discovery/research2_medium_review.py",
+      "bytes": 13765,
+      "sha256": "e8c7186c53bbca8f8b1c1ed0d9377168a049e131a7bccad45ec8d1bef7be1b3b"
+    },
+    {
+      "path": "discovery/research2_neighborhood_review.py",
+      "bytes": 14950,
+      "sha256": "f09257fc77b6a771376282e351433e7becd2a460c95fd22e40d16fec31d3103e"
+    },
+    {
+      "path": "discovery/research2_observation_review.py",
+      "bytes": 6565,
+      "sha256": "ffbd406dad7206adfa8f1bb46899132b1994c9998feef835bb76778a17445d73"
+    },
+    {
+      "path": "discovery/research2_prediction_review.py",
+      "bytes": 3742,
+      "sha256": "1c3da87f232f8ac0926dd4581037f7b58cbbc2fdc1e7884c52cab59a03200c50"
+    },
+    {
+      "path": "discovery/research2_public_metadata_review.py",
+      "bytes": 14599,
+      "sha256": "269bb2e82c9b0187445e0c3f7081e3e1e0ddaf9174689f7ba1ba50a6960f2ec9"
+    },
+    {
+      "path": "discovery/research2_rate_noise_review.py",
+      "bytes": 29540,
+      "sha256": "2c47ca8c8ad2a89063a05e8ea2d49c01eec2ffafc2b252c587a0f2b834d5b437"
+    },
+    {
+      "path": "discovery/research2_release_review.py",
+      "bytes": 11857,
+      "sha256": "00257ce4090083e7959632c5502887163df75e2694b28282f8e670f6b78d5214"
+    },
+    {
+      "path": "discovery/research2_row_response_review.py",
+      "bytes": 18219,
+      "sha256": "82f759e48435f460b0ebefd06a00f95c48f7b8f27aab2063a0e5790339dfbd5e"
+    },
+    {
+      "path": "discovery/research2_selection_count_review.py",
+      "bytes": 7979,
+      "sha256": "455cadb1e32cf5dcd80f81a93adb6f64790cf9a10d00a1678959c11c1eab1467"
+    },
+    {
+      "path": "discovery/research2_selection_receipt.py",
+      "bytes": 7692,
+      "sha256": "4e9d8ec02ecaabfffdfe25290048a6929e29d5026d72368e1966324b9d2759dc"
+    },
+    {
+      "path": "discovery/research2_signed_response_review.py",
+      "bytes": 17993,
+      "sha256": "24d6fd0161cfeff7ac1b1420db607e52253c8adb316053d652b9c66564b946b8"
+    },
+    {
+      "path": "discovery/selection_count_audit.py",
+      "bytes": 25308,
+      "sha256": "d87e32d1622abeba988189a450332db81d69fb54fcdacbfdbdf66172a5b5fd85"
+    },
+    {
+      "path": "discovery/selection_pilot.py",
+      "bytes": 19922,
+      "sha256": "de7d989d0266f87c5148b903a143779f40898bb4f838f5a9768c60f619a4275e"
+    },
+    {
+      "path": "discovery/session_schemas.py",
+      "bytes": 9816,
+      "sha256": "c46c6190b98f23818b12e40ec370a21c155dd5c1c12ae5991839febcf784b898"
+    },
+    {
+      "path": "discovery/source_patch_diagnostics.py",
+      "bytes": 17800,
+      "sha256": "1b2b725cffeb32790d0fadf8234bc3dc0821888332389a9fe5e45553691e7798"
+    },
+    {
+      "path": "discovery/stellar_aperture.py",
+      "bytes": 33312,
+      "sha256": "4930b51cb48a2b6863b46ec5fbb88e31f194082a6be405ee868c37f23575aba6"
+    },
+    {
+      "path": "discovery/supervisor_campaign.py",
+      "bytes": 40847,
+      "sha256": "c0927e8d51b300c171d6dac87ea6dcf41e2fcbb3ee8fda7eaebbc42e122724a1"
+    },
+    {
+      "path": "discovery/supervisor_dashboard.py",
+      "bytes": 35367,
+      "sha256": "16ade241f72e30b9a9d376cd9ddd917c21389cede8bb74bba6b102c5e158dcdc"
+    },
+    {
+      "path": "discovery/survivor46_medium.py",
+      "bytes": 9813,
+      "sha256": "e49c2b873abdb1ea4f18970f338483c20e8bcea1ab5786f950621e6d3e48e63c"
+    },
+    {
+      "path": "discovery/survivor46_medium_plot.py",
+      "bytes": 4467,
+      "sha256": "056c36f42238eb322c88d7d01a2d4705dbff7f6eb1a0b0c5a4ab63d388eb5365"
+    },
+    {
+      "path": "discovery/survivor_atmosphere.py",
+      "bytes": 13192,
+      "sha256": "60cf2c0e5ab8a4c375c76dd00eda2301d660730606d4f52b6553292e3f325edd"
+    },
+    {
+      "path": "discovery/survivor_continuum.py",
+      "bytes": 10723,
+      "sha256": "e74fdde440939848972335105748fdad33832c7b87e47040955d833276ec77ca"
+    },
+    {
+      "path": "discovery/survivor_deep_model.py",
+      "bytes": 26882,
+      "sha256": "fea1ef640bc21995d0a9c90617af02900e502d6f70cd725a95bb2f22256d2d47"
+    },
+    {
+      "path": "discovery/survivor_deep_plot.py",
+      "bytes": 4488,
+      "sha256": "c394ad91fc676cd9e21626cccc382a5a8a3fc4a93b698e955cf2d603d6515034"
+    },
+    {
+      "path": "discovery/survivor_flame.py",
+      "bytes": 12583,
+      "sha256": "b2d3729a48835bcec2173c4cb0cea8381289027104d4a21c0997c9b4e0326099"
+    },
+    {
+      "path": "discovery/survivor_multiplicity.py",
+      "bytes": 8667,
+      "sha256": "abc4b177d06514a66ff4bc2a46c63cd22e67982b328d18dd3ac02d487763803b"
+    },
+    {
+      "path": "discovery/telemetry.py",
+      "bytes": 10771,
+      "sha256": "0b6799d676cda834ce17bdb503c8f88e8dea5731d94db1449d39eddfe4a03be7"
+    },
+    {
+      "path": "discovery/trajectory_viewer.py",
+      "bytes": 5986,
+      "sha256": "c515677ce9a67922cdde27119dde1f77ca63df36f2dbc063a0acd96d85093681"
+    },
+    {
+      "path": "discovery/validation_audit.py",
+      "bytes": 5370,
+      "sha256": "ecc30cecda9d343d1cf91e768eb37b5dc3651dc8b9c58931a037d56ebe359ab9"
+    },
+    {
+      "path": "discovery/validation_metrics.py",
+      "bytes": 9039,
+      "sha256": "6d7b6b56ecb30ae7e4c0b38b83f282983b0891fe33406698b32f139a7246898d"
+    },
+    {
+      "path": "discovery_monitor.py",
+      "bytes": 12913,
+      "sha256": "9f84a42159293f7de048c8d072e3404dc49c363bf4d3fdbe8f1bdccc9272d8aa"
+    },
+    {
+      "path": "examples/__init__.py",
+      "bytes": 25,
+      "sha256": "ef3cb2f16bfa660a01b9158662cb46521352e7740daf1bafa50212b2efac4206"
+    },
+    {
+      "path": "examples/quickstart.py",
+      "bytes": 2445,
+      "sha256": "8321f7056fbccec950e281a73892d028abdb3cdf9f7f073247abecf593ad61a2"
+    },
+    {
+      "path": "infra/docker-compose.yml",
+      "bytes": 716,
+      "sha256": "10d6851db18985e6541d5c53737f1e6e2a3c5c892fe6479d690379515695d880"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 560,
+      "sha256": "99a4def0805753cd14d4ef90513aa41368d435f023161fb9180af46fdf745244"
+    },
+    {
+      "path": "requirements-dev.txt",
+      "bytes": 59,
+      "sha256": "436f2fa065a11206c082a434b95263e9dc9df274648b0be762769048c0f2468c"
+    },
+    {
+      "path": "requirements-research.lock",
+      "bytes": 1126,
+      "sha256": "ff25f0785e7d5a3a1a0515075d28bf9c90272ce6cbf6f8b23cf88f317c6fd31c"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 446,
+      "sha256": "a6fe49f135dc97b9c5aca4d2ddda6f3f4ae60aa9fcf9c626f93f0110baf8609c"
+    },
+    {
+      "path": "run_api.py",
+      "bytes": 445,
+      "sha256": "ee1f757047388c15fd5921c6c3827e70b6b975eaeff54474c93411928e240ade"
+    },
+    {
+      "path": "run_discovery.py",
+      "bytes": 32412,
+      "sha256": "8c5c027d37f05f458916164479de29d51bbf6bafa6957ccad199491704daea69"
+    },
+    {
+      "path": "run_startup.py",
+      "bytes": 354,
+      "sha256": "f73ca371ec652122e6746f826263105c744e156d03994bd3c145a15957483497"
+    },
+    {
+      "path": "runner/__init__.py",
+      "bytes": 265,
+      "sha256": "191374579a0a26345b473aa98bfb2421702193a1ede8b988a37a2ff869e3bc98"
+    },
+    {
+      "path": "runner/executor.py",
+      "bytes": 21162,
+      "sha256": "edc42fb95bbeed79efbb6599221fcd62503bdf116ba891d81a0d25e8a63aa1d0"
+    },
+    {
+      "path": "runner/result_schema.py",
+      "bytes": 630,
+      "sha256": "c2474ea125906176384c404c5c1e127c9a4625ed21391d34879faa4f361ca368"
+    },
+    {
+      "path": "runner/sandbox.py",
+      "bytes": 3029,
+      "sha256": "87e2bcd4a7f59c300f0b2832c5d450ef3176debd9222580b55e3a08b5826af87"
+    },
+    {
+      "path": "runner/scientific_agent.py",
+      "bytes": 30812,
+      "sha256": "0a6ba692d4699a7fcd1472b965fb684877aeb828f4ec610502fd59fe30d2b30a"
+    },
+    {
+      "path": "runner/tests/__init__.py",
+      "bytes": 22,
+      "sha256": "e1356b48e8ab81662e7f0c304184437e7405803f15c6386108bc571af4b647c5"
+    },
+    {
+      "path": "runner/tests/test_build_universe_table.py",
+      "bytes": 4179,
+      "sha256": "d9480343ae3b77e7aaf23e60f32528697f7173808fc53598075337e8d8d6a485"
+    },
+    {
+      "path": "runner/tests/test_calibrated_evidence.py",
+      "bytes": 6831,
+      "sha256": "09b1542949b3898c14acc85bffcd302efbc2e35e65ec5082087d29ac10b32e68"
+    },
+    {
+      "path": "runner/tests/test_calibrated_photometry.py",
+      "bytes": 8675,
+      "sha256": "f2b7d17c2fb4bf2c31c326eed221f9881d8a4d310ce7869213f1280dcfe799a8"
+    },
+    {
+      "path": "runner/tests/test_discovery_cli.py",
+      "bytes": 4708,
+      "sha256": "ce677a3b3874f9c2f37c22ddb6cb3a52c81cef8cf5616a1eefa5d735a502261f"
+    },
+    {
+      "path": "runner/tests/test_external_psf_stress.py",
+      "bytes": 3264,
+      "sha256": "068b9e43452d92cdde046b066bbbdd5cc1bd6ec447eb433b43f17376a1d13a28"
+    },
+    {
+      "path": "runner/tests/test_jwst_visual_tools.py",
+      "bytes": 8849,
+      "sha256": "2cc4fd2b50e1d184e2b5d6df7f1228e2a61636418d347abf914e4a6f153450b3"
+    },
+    {
+      "path": "runner/tests/test_native_psf.py",
+      "bytes": 5107,
+      "sha256": "0007d23dbe8772eb0d80f6a9dce1f222d9f5d958282e50095919257231bb331f"
+    },
+    {
+      "path": "runner/tests/test_psf_noise.py",
+      "bytes": 8177,
+      "sha256": "27b32bb1e26ccacf889a7c9c1d84c926b3d1bd14eb44d4e440f352b73a0d4681"
+    },
+    {
+      "path": "runner/tests/test_research_agent.py",
+      "bytes": 5815,
+      "sha256": "2a52a17be5aec631b397954f50b4282ffd0ba5bb3b75a99c8a9f09653ca66373"
+    },
+    {
+      "path": "runner/tests/test_scientific_agent.py",
+      "bytes": 7925,
+      "sha256": "f4fc39cef46581a637e380b2d1b3527a05d588660209d7c0ce8753a282f9a431"
+    },
+    {
+      "path": "runner/tests/test_stellar_aperture.py",
+      "bytes": 4981,
+      "sha256": "31784d733e1a557b60954c02c8ef461f85780b4ebd3830408b7cf9e8a4583f37"
+    },
+    {
+      "path": "runner/tests/test_strict_no_dummy.py",
+      "bytes": 2303,
+      "sha256": "33557821319d45c5e2da305a85d30b2d8e05d5456fdf55809ecdbf328edeb5df"
+    },
+    {
+      "path": "runner/tests/test_supervisor_campaign.py",
+      "bytes": 9765,
+      "sha256": "bed51061fe53dc84bc26ee15e7620e333d5a5895553d9bfeb811edae344a9e23"
+    },
+    {
+      "path": "runner/tests/test_supervisor_dashboard.py",
+      "bytes": 6051,
+      "sha256": "0394e3d7579bcda18abe1639bff1d5509ddc0b57de805fef072c7b132f324d0b"
+    },
+    {
+      "path": "runner/tests/test_validation_metrics.py",
+      "bytes": 7090,
+      "sha256": "bc4e4c25f2fcdd37ce52c6764af0417483ac9d00d384ace4cfd0a07954ad92b5"
+    },
+    {
+      "path": "scripts/quality_gate.py",
+      "bytes": 11206,
+      "sha256": "ede0908b69cc4e9568b16c5885522620da425ba71b56a9fee8fc5329724acfe6"
+    },
+    {
+      "path": "scripts/render_repeat_stamp.py",
+      "bytes": 3349,
+      "sha256": "533e4430b779d305091a6b64b44ea56480fad9c1504dacf7123aa8d64f9dd2ac"
+    },
+    {
+      "path": "scripts/smoke_api.py",
+      "bytes": 4993,
+      "sha256": "68a76cd868f14fba07f5cb641956485a97a2e4c1b6f0bcfd669e0c5bab6ae2ce"
+    },
+    {
+      "path": "setup.py",
+      "bytes": 514,
+      "sha256": "08438a859b7bf849ede01b2606b0bc5e48bcb45ce730ad54c4b28e370f8288fe"
+    },
+    {
+      "path": "stream_discovery.py",
+      "bytes": 7883,
+      "sha256": "91bd69b318167cbaa9beab575f04864b80ed2e427d4a705fc8ce99cd8f70ba74"
+    },
+    {
+      "path": "tests/test_adversarial_native_operator.py",
+      "bytes": 2601,
+      "sha256": "097218e95f424c18122ae6778edaf5de68b19b0114a5cf4e6de1198f11014d01"
+    },
+    {
+      "path": "tests/test_adversarial_noise_controls.py",
+      "bytes": 1929,
+      "sha256": "a325abf258d737aa7376307a35498d14b3f9eba034ed6132d70439f58b5e406e"
+    },
+    {
+      "path": "tests/test_agent_budgets.py",
+      "bytes": 5633,
+      "sha256": "cb2cb8bb674e1aa2386dafc499fe2f148e10d52351630833cd95ad82d2c67b52"
+    },
+    {
+      "path": "tests/test_atomic_enrichment.py",
+      "bytes": 14120,
+      "sha256": "3d89ddb237b87aec1c7c59480d540ec5c831db2c5170a433f0f346cb4802e715"
+    },
+    {
+      "path": "tests/test_atomic_grid.py",
+      "bytes": 7488,
+      "sha256": "d8a6d63631f0d7f1147b4c81caa483c9c2e86563030bbcfa862d7346eab065cb"
+    },
+    {
+      "path": "tests/test_audit_candidates.py",
+      "bytes": 4478,
+      "sha256": "727fccf90e43afa82b4d937761cab9bd8ecf2818367a2e0b411edc16de9502e7"
+    },
+    {
+      "path": "tests/test_candidate_neighborhood.py",
+      "bytes": 2631,
+      "sha256": "656b0ba0f644d92820c9e872216096a838fa8e406e6b8f0a5e3f18de0431298e"
+    },
+    {
+      "path": "tests/test_capers_companion_coverage.py",
+      "bytes": 1409,
+      "sha256": "3c7ef527eeee89aecff3d6c558b5f474c44d0977feacc39689b923a73460268b"
+    },
+    {
+      "path": "tests/test_capers_pixtab_coverage.py",
+      "bytes": 1131,
+      "sha256": "58788aecd4ccc42dc8d6dc66905b87ab904d73b83e6bb038de909b05fab1a997"
+    },
+    {
+      "path": "tests/test_capers_s2d_coverage.py",
+      "bytes": 1512,
+      "sha256": "42806e153b2d9c4a78b813a7d24dc7405a1c499cc1c1bea3d30efe64e6c34097"
+    },
+    {
+      "path": "tests/test_capers_source_review.py",
+      "bytes": 1284,
+      "sha256": "7d6c54fb0d032dab15f9a96fa1dec6e7f808b615efce2be7900e140c305e0b81"
+    },
+    {
+      "path": "tests/test_chemistry_identifiability.py",
+      "bytes": 8461,
+      "sha256": "210f8d1b1098c7c8b6bd97b091cd5f4f2af3e696fb487662fb0f84cb903dcaee"
+    },
+    {
+      "path": "tests/test_cloudy_grid_rate_review.py",
+      "bytes": 1268,
+      "sha256": "ee17ca106331120dc11cbeea55a5011b0212720d81d082aaf937ad40a272dc76"
+    },
+    {
+      "path": "tests/test_cloudy_observation_contrasts.py",
+      "bytes": 9198,
+      "sha256": "3ca947c2ac2153a45ff6a005676425fd6dc37f87ecf8d2c0670e4d9818a46f20"
+    },
+    {
+      "path": "tests/test_cloudy_pilot.py",
+      "bytes": 10557,
+      "sha256": "d3b66547f805a681ac35db65588a2a202cdbc74e76d755db8f1538ea78643944"
+    },
+    {
+      "path": "tests/test_cloudy_rate_bridge_review.py",
+      "bytes": 771,
+      "sha256": "b51d21f3409e257106142e09b4ef7d3bbb5251e6221cc1c054d1981a7604dae9"
+    },
+    {
+      "path": "tests/test_cloudy_raw_archive.py",
+      "bytes": 1986,
+      "sha256": "5e68930f61ccff69ff7aee9ef15f5ab5f780bfb7a71e430a6dd8e50b1531298d"
+    },
+    {
+      "path": "tests/test_composed_spectral_refit.py",
+      "bytes": 6728,
+      "sha256": "a8a67fa3def8fb8627e76079832561be8c154ff800323b26007fe9801622ffc6"
+    },
+    {
+      "path": "tests/test_continuation_final_review.py",
+      "bytes": 2505,
+      "sha256": "c91e08a5d5459158097e0bd289c3c67cdf22f2fb286cd105d53815f13c962df0"
+    },
+    {
+      "path": "tests/test_continuation_followup_review.py",
+      "bytes": 2247,
+      "sha256": "2c8be112a4945a57e73af0704c458d549f83b4b777f746ec653d4d1fcd5674ea"
+    },
+    {
+      "path": "tests/test_continuation_physical_review.py",
+      "bytes": 1898,
+      "sha256": "37aecda9ce86714003206bd5e4920d31b1bbf8ad2144f1d854a3b29ac3290260"
+    },
+    {
+      "path": "tests/test_continuation_review.py",
+      "bytes": 1015,
+      "sha256": "1287996938d9f833ac5f5f19f279ec59667aefffdc5c7fb5b1c9e0f37c3689ac"
+    },
+    {
+      "path": "tests/test_continuation_wavecorr_review.py",
+      "bytes": 2186,
+      "sha256": "d4a1702f6efc5a19010377fa618711869fb255fbbca4556ed47e6e8b63ca1248"
+    },
+    {
+      "path": "tests/test_continuation_yield_version_review.py",
+      "bytes": 695,
+      "sha256": "d843c44d3fc587b24960520d1b14814331282a61132e6ac275e6f0960f5e4fed"
+    },
+    {
+      "path": "tests/test_cue_grid.py",
+      "bytes": 5627,
+      "sha256": "378963cb84cdd63a5cbe1228e472a01d2c9332e138577ee32ea17563685fbfa0"
+    },
+    {
+      "path": "tests/test_deep_control_recovery.py",
+      "bytes": 4394,
+      "sha256": "f267489347e7cbc5d64347602e9038e6a196384e7db8581e2db464281fc0c7fd"
+    },
+    {
+      "path": "tests/test_deep_reference_comparison.py",
+      "bytes": 1342,
+      "sha256": "631ae88b9f459449800e463ee7ba0c5d0cd92f818e4e29872de076301b9a473b"
+    },
+    {
+      "path": "tests/test_empirical_imaging_controls.py",
+      "bytes": 5551,
+      "sha256": "7c3d315117c5bb3dcdbe97508ce013f10044345eeb2e75f3dfb4bb5170a909c3"
+    },
+    {
+      "path": "tests/test_enrichment_constraints.py",
+      "bytes": 5175,
+      "sha256": "52385e273912f2d0a28bcce76d1215e375ebc01fcc195703b83161f3bb742601"
+    },
+    {
+      "path": "tests/test_external_astrometry.py",
+      "bytes": 4658,
+      "sha256": "29b43379a5abbcca4aacb17c6d3c43249bb6e16decf6313d04e77f1a213d496c"
+    },
+    {
+      "path": "tests/test_f444w_repeat_screen.py",
+      "bytes": 1545,
+      "sha256": "7b939082800b034aa603f9fb2d7191f3574905bde8d4f7bf3af9a7ed2df2beb9"
+    },
+    {
+      "path": "tests/test_followup_data.py",
+      "bytes": 3990,
+      "sha256": "fef55faeb8f5881db0d2d726db6dc489e7ea9e5770b1535c4a1748fd0fd3029f"
+    },
+    {
+      "path": "tests/test_footprints.py",
+      "bytes": 5017,
+      "sha256": "1de5c3c3db6887c602377fb7f95548ee72cb3e33a5f51412867d6445da8075e0"
+    },
+    {
+      "path": "tests/test_formation_predictions.py",
+      "bytes": 9951,
+      "sha256": "4ec7ead31b01f35e9cbcd98c60dae2fa6d5a5645f3791af60f2345e40d383cef"
+    },
+    {
+      "path": "tests/test_image_photometry_rerun.py",
+      "bytes": 5863,
+      "sha256": "8d7ae22856f42a675325c1740356e6c3d9fb4ac5c3777363d540902131c626a2"
+    },
+    {
+      "path": "tests/test_independent_repeat_vetting.py",
+      "bytes": 3333,
+      "sha256": "0e0cb5b7b212e67932120ae4dccc09d32123560f8d518c3d5c95ea2a9f9645e2"
+    },
+    {
+      "path": "tests/test_joint_band_selection.py",
+      "bytes": 2738,
+      "sha256": "1ccdb7119de018b26b678cf05b7e834302f4866c38d7a32d915c1179f73a8426"
+    },
+    {
+      "path": "tests/test_line_sensitivity.py",
+      "bytes": 4950,
+      "sha256": "9c4dc330c86f803d93e8742cff8669fd869f88d8f2ee449468d546e739ed62c1"
+    },
+    {
+      "path": "tests/test_mom_author_provenance.py",
+      "bytes": 2745,
+      "sha256": "0f1c04212f44f5cbe3ec8c46bc7e086c459dd9f095818a1960e260694bf6007b"
+    },
+    {
+      "path": "tests/test_mom_compact_followup.py",
+      "bytes": 1945,
+      "sha256": "c2390c18c078512ef538632bd5e7dd340dcdfe02d0752149231a24b98792f685"
+    },
+    {
+      "path": "tests/test_mom_native_batch.py",
+      "bytes": 5684,
+      "sha256": "4489c28eb0c89ce6d1d817bb07c9a4beb56f571cd25fe5252dc0c1389987a336"
+    },
+    {
+      "path": "tests/test_mom_native_reduction.py",
+      "bytes": 6364,
+      "sha256": "8f4a7e05f093c8502544aa03e96d055397525f0e3029f61526905c6536780b42"
+    },
+    {
+      "path": "tests/test_mom_native_spatial_covariance.py",
+      "bytes": 4094,
+      "sha256": "c2d08e7b08a4eb7b8ea39215e37aa061eb5b0c3fd9397cf6f9ab521cb96c78d9"
+    },
+    {
+      "path": "tests/test_mom_native_wavecorr.py",
+      "bytes": 5593,
+      "sha256": "b93f0ea765fcb8832b8b99ea67e23b8b2886970671c9086f31fa290e7f175829"
+    },
+    {
+      "path": "tests/test_mom_public_metadata.py",
+      "bytes": 1905,
+      "sha256": "f08350a25a93b49de646fa02684675eecccd7df0fe449a0323985e0ebac8742d"
+    },
+    {
+      "path": "tests/test_multi_epoch_physical.py",
+      "bytes": 4925,
+      "sha256": "cc5a1e3d51bfed16c5aaf6eed2ee7f74f56009a27b8f36a8cfa72c6b1ef60ae0"
+    },
+    {
+      "path": "tests/test_multiplet_refit.py",
+      "bytes": 8699,
+      "sha256": "9d077286787c7cda184f026882bbd3413b828e1a7da237aa54dc5b5767bdddb9"
+    },
+    {
+      "path": "tests/test_native_chemistry.py",
+      "bytes": 4099,
+      "sha256": "600152900285ca148664869fa19c41293f7400e725fead083be0ad5b2283ebd9"
+    },
+    {
+      "path": "tests/test_native_local_identifiability.py",
+      "bytes": 2182,
+      "sha256": "af08442b3914032b4bcf72358c16f6977e50da26165ff686a585b4c13433ee24"
+    },
+    {
+      "path": "tests/test_native_measurement_validation.py",
+      "bytes": 9828,
+      "sha256": "d62f6a95bbf8b8381a77f10239cfed65673f0483d064a85451407f35ebd5b80d"
+    },
+    {
+      "path": "tests/test_native_rate_noise.py",
+      "bytes": 4108,
+      "sha256": "1b152cf389786afa3ed988fa0590ead23db5efda64a1e6cd38df96bb7820108b"
+    },
+    {
+      "path": "tests/test_native_row_response.py",
+      "bytes": 5690,
+      "sha256": "a612a59778ac36e7770af7427f65f170ef4d97acb5af1dc06c1475a75b300413"
+    },
+    {
+      "path": "tests/test_niv_doublet_refit.py",
+      "bytes": 7940,
+      "sha256": "ee7628a34d1431d3324f43de794b6d468e527d2cdef4ed6624dc6ab3a2448834"
+    },
+    {
+      "path": "tests/test_niv_yield_sensitivity.py",
+      "bytes": 8351,
+      "sha256": "91ee63949255b116d026b670fee994b3178a92e1124912a256351acd0d9eec0a"
+    },
+    {
+      "path": "tests/test_observation_design.py",
+      "bytes": 5457,
+      "sha256": "57d874a3e3f079a413825649c80194d7b4a67047475db4ba614659181d5ec517"
+    },
+    {
+      "path": "tests/test_observed_template_injections.py",
+      "bytes": 5771,
+      "sha256": "92dccf7c16a73810cae28370e110790f228f54c019fb98c03ec2367738a44114"
+    },
+    {
+      "path": "tests/test_photometry_sensitivity.py",
+      "bytes": 3492,
+      "sha256": "73893fba5d63116e750d248bf4cafc0e5ed65cf2541cf2cbadeb07edabf1a5cb"
+    },
+    {
+      "path": "tests/test_pipeline_physical_integration.py",
+      "bytes": 5856,
+      "sha256": "8874f8ee10200837d53268fa7f153e8fc288560fa34c23682eb0d0b6ce661208"
+    },
+    {
+      "path": "tests/test_point_resolution.py",
+      "bytes": 16440,
+      "sha256": "c435e63954d65b5292a50d6f5aa56b116b866d981cb74ea0c21f4809f094d67e"
+    },
+    {
+      "path": "tests/test_real_validation.py",
+      "bytes": 4962,
+      "sha256": "7311ed02805c1288a7d198981449edd2d4776e8720fc3000f385620c0e3ca016"
+    },
+    {
+      "path": "tests/test_reference_cohorts.py",
+      "bytes": 2662,
+      "sha256": "1547a77830fbf4878049b4f0b5a187878468b2771218024f9deaa3eb4bffceb4"
+    },
+    {
+      "path": "tests/test_research2_cloudy_composition_review.py",
+      "bytes": 1389,
+      "sha256": "a3939a0424203952049920c875cb64dc313926abed7df58cc2457b1c653da646"
+    },
+    {
+      "path": "tests/test_research2_cloudy_heldout_review.py",
+      "bytes": 535,
+      "sha256": "af792ebb70756e6400a1e06e76ecebc7cb03ea01e683e082dcb2c9910dbd88a3"
+    },
+    {
+      "path": "tests/test_research2_cloudy_likelihood_review.py",
+      "bytes": 1103,
+      "sha256": "98081b41cf3b2932d0744e38880a53d3c986cd8a92fe4d4b1df80723d8b1786d"
+    },
+    {
+      "path": "tests/test_research2_cloudy_model_review.py",
+      "bytes": 5484,
+      "sha256": "be81c2bcc65af3a56c7f325b455b178cd676d63764cfb9c352bb5d24b2496f14"
+    },
+    {
+      "path": "tests/test_research2_download_ledger.py",
+      "bytes": 4229,
+      "sha256": "2350e7e47da2211775d0743a8c0e13f7657084c2e20c27cebf81a77b982e6d25"
+    },
+    {
+      "path": "tests/test_research2_independent_review.py",
+      "bytes": 1307,
+      "sha256": "ab4216ee158e77f56c34e17c9668bdc2a0d0a5cc35da228cafdd0d12296c932b"
+    },
+    {
+      "path": "tests/test_research2_model_review.py",
+      "bytes": 1367,
+      "sha256": "cf96cad310e13fb95a92ea7f53a31efb86ab14113a1d0e00d003b89fd9d30039"
+    },
+    {
+      "path": "tests/test_research2_release_review.py",
+      "bytes": 3232,
+      "sha256": "76cb1202017d0ecd8045bb6be5660c13e3fe2fb05aa642cda8494ccb5a8184ac"
+    },
+    {
+      "path": "tests/test_research_sources.py",
+      "bytes": 3765,
+      "sha256": "977bb8c732d9ce7c2938d5f170e3746b375101be601c385402b2e481a7e38889"
+    },
+    {
+      "path": "tests/test_selection_count_audit.py",
+      "bytes": 3888,
+      "sha256": "818ba3db98d06705739411c9208c22e0e37ff257e58377df4e84bb2339173f43"
+    },
+    {
+      "path": "tests/test_selection_pilot.py",
+      "bytes": 3186,
+      "sha256": "1cc31d8ba2ebff315dae5d1e5d90b756cc8f32205ea0ef27fc1119875cb1e5c2"
+    },
+    {
+      "path": "tests/test_shared_systematics.py",
+      "bytes": 2731,
+      "sha256": "1083b83e707b6a727c44624de685602821bcccc48223c52098df0293c75b2a4b"
+    },
+    {
+      "path": "tests/test_source_patch_diagnostics.py",
+      "bytes": 3166,
+      "sha256": "4fcef4e306e8cd8aeaec483ec1cb71e1db1fa40a96c66404472847ff04544a0c"
+    },
+    {
+      "path": "tests/test_spectrum_reference.py",
+      "bytes": 3212,
+      "sha256": "3f164bf63795ec28ad44c8ab7d023aa364bef99e6f8db3cae5f87230c18bd745"
+    },
+    {
+      "path": "tests/test_survivor46_medium.py",
+      "bytes": 1376,
+      "sha256": "2718021f63b68220718227ac7b31f458863af3b7ca6ff0d7ef755960a93b13ff"
+    },
+    {
+      "path": "tests/test_survivor_atmosphere.py",
+      "bytes": 3020,
+      "sha256": "e542377215780bfa9516839c9c137d87fd7f35a8142c708a76044217f40c2f7c"
+    },
+    {
+      "path": "tests/test_survivor_continuum.py",
+      "bytes": 2529,
+      "sha256": "015a1cbbfabe4fc15718ecd108d0a96150df85be1a1ecb253029b94d7401b968"
+    },
+    {
+      "path": "tests/test_survivor_deep_data.py",
+      "bytes": 2334,
+      "sha256": "07f8aef5b32bec147ede3db5cf8c11837ed83b9670fe7b274eccf46801bdff39"
+    },
+    {
+      "path": "tests/test_survivor_deep_model.py",
+      "bytes": 6183,
+      "sha256": "692720ae60c8b36c5ea04783af7288522ea80b5b2a79c3ee8b6550a031949792"
+    },
+    {
+      "path": "tests/test_survivor_flame.py",
+      "bytes": 3075,
+      "sha256": "996a519c75cddb1c2dccdd178722b2e74b568f748544ae89d60974b458aa92fc"
+    },
+    {
+      "path": "tests/test_survivor_multiplicity.py",
+      "bytes": 2838,
+      "sha256": "1a6073c1cdd7614518cb7a608182a06aade14d8ebaf1cd760014b925c19daf5a"
+    },
+    {
+      "path": "tools/__init__.py",
+      "bytes": 36,
+      "sha256": "dc69f09e1daf247672cba9eb8166c2c448f8b034d8239d6b3c4458a62474d233"
+    },
+    {
+      "path": "tools/core/__init__.py",
+      "bytes": 41,
+      "sha256": "0f8d69e57419f51b34c8995df57778b60c7740e74bb8e9933118da24ac1d6547"
+    },
+    {
+      "path": "tools/core/stats.py",
+      "bytes": 2015,
+      "sha256": "49ca8d2d145a091838ed7247fe1e9eab7fae8fd32af522f4d73a41ceadfd7c94"
+    },
+    {
+      "path": "tools/core/summarize.py",
+      "bytes": 3115,
+      "sha256": "3d3e862904bff0987b4ace7b186ec767ee93eedea7ba54e6d8136e6c2627acf8"
+    },
+    {
+      "path": "tools/core/viz.py",
+      "bytes": 3034,
+      "sha256": "b671c0d31e5d31bfe0cc161ef23931e3de92f91c7dbeb938b2199bab3ae199d2"
+    },
+    {
+      "path": "tools/jwst/__init__.py",
+      "bytes": 41,
+      "sha256": "c40aac0349286bec53be4f096a730df15aacfd5eea347af5cd6dfd66c7232a37"
+    },
+    {
+      "path": "tools/jwst/acquire_rate_noise_inputs.py",
+      "bytes": 3362,
+      "sha256": "84db451a32218319b795283f700253dae661e33913e1490a7efd2ca553eb005d"
+    },
+    {
+      "path": "tools/jwst/astrometry.py",
+      "bytes": 6850,
+      "sha256": "dfdd9c1b38e53f12d48b8ee2f386cc996a92a3e065f4a927ef7cb81b03298ad1"
+    },
+    {
+      "path": "tools/jwst/atomic_grid.py",
+      "bytes": 16738,
+      "sha256": "894657f438de78449a212dfef8637ed2ac3a111f341839cca80c7a753c22a297"
+    },
+    {
+      "path": "tools/jwst/basic_stats.py",
+      "bytes": 4848,
+      "sha256": "6a7594a01cd0ec72b14045d5a1eac6cfb989b19a948daa1e2a5f40a51a1d2d5d"
+    },
+    {
+      "path": "tools/jwst/cloudy_atomic_provenance.py",
+      "bytes": 4284,
+      "sha256": "56099a8a34bae2acce7ac9ebc29fbbc96aa98e95f168677e09c68f5c1324fa47"
+    },
+    {
+      "path": "tools/jwst/cloudy_observation_contrasts.py",
+      "bytes": 14453,
+      "sha256": "8f93079201d6c72787b9d8aac167d6a85642f2801f25c4ae99e3409e506f000f"
+    },
+    {
+      "path": "tools/jwst/cloudy_pilot.py",
+      "bytes": 46693,
+      "sha256": "5768a4411505645676f4059d2adb6c9ec79d50fb5e05cfcc2e46ece350828b69"
+    },
+    {
+      "path": "tools/jwst/cloudy_raw_archive.py",
+      "bytes": 4161,
+      "sha256": "2bda361e6af5d19976e00ff6f446a321b373c5bfedac38a098ed1f771b4b1027"
+    },
+    {
+      "path": "tools/jwst/common_coverage.py",
+      "bytes": 7197,
+      "sha256": "ac59b3b65121bc021a5544360d83d1e20f53df8529107069e58e1a8fea7b871a"
+    },
+    {
+      "path": "tools/jwst/composed_spectral_refit.py",
+      "bytes": 16261,
+      "sha256": "8c376fea40e10666cc253bd840078f670aed104a82260e1bec8773341e148ffc"
+    },
+    {
+      "path": "tools/jwst/cue_grid.py",
+      "bytes": 12917,
+      "sha256": "5e9713859ecee04103bd0426af07c1d41db98bd2d9b75ab131faccd360762b6f"
+    },
+    {
+      "path": "tools/jwst/dropout.py",
+      "bytes": 2448,
+      "sha256": "c4b6d6ca5aaedda8cf7c9597047818a04fb9e2f122adcc2fd10ae2e273478874"
+    },
+    {
+      "path": "tools/jwst/fits_loader.py",
+      "bytes": 12189,
+      "sha256": "4c119990ec3900af0996e0b421a0efc26e9fffcd8dd912c47532124f18b59f33"
+    },
+    {
+      "path": "tools/jwst/flux_calibration.py",
+      "bytes": 5356,
+      "sha256": "9b1eb1da5641e45383a7618b715779a6d3b6553a8b4e7a0f6a7167e58e2e537a"
+    },
+    {
+      "path": "tools/jwst/footprints.py",
+      "bytes": 4952,
+      "sha256": "9533ce873059b24e07aa52c7b7abc3484a53ee6142246ae0a8a61b892129c3e2"
+    },
+    {
+      "path": "tools/jwst/line_report.py",
+      "bytes": 12974,
+      "sha256": "5adfcd7818d71f2c25a56c917956372af43a9882cdfe774a71af8b5bdf58b22f"
+    },
+    {
+      "path": "tools/jwst/line_sensitivity.py",
+      "bytes": 25302,
+      "sha256": "26f878e3771b4586f3927dd55be3ec75bdcc7a730cd6714194f9e1c631b0176c"
+    },
+    {
+      "path": "tools/jwst/multiplet_refit.py",
+      "bytes": 13298,
+      "sha256": "571f552b944850aecc9261ec0f79d8a123d7d3c8cc643122e35b7741fb51a1f1"
+    },
+    {
+      "path": "tools/jwst/native_local_identifiability.py",
+      "bytes": 12253,
+      "sha256": "e7e24e3bb47933e9f4a26827763ea41cc89690aefcbe531c89f27ca8505be540"
+    },
+    {
+      "path": "tools/jwst/native_measurement_validation.py",
+      "bytes": 34688,
+      "sha256": "555409b43556584e97dbefd948d2d21b330d71370eadc4e4df91a2bd54b1bc64"
+    },
+    {
+      "path": "tools/jwst/native_rate_noise.py",
+      "bytes": 26807,
+      "sha256": "17b79367f1a39e2d23d56b559da72173755a023f1044824af97222922e2ebc20"
+    },
+    {
+      "path": "tools/jwst/native_reduction.py",
+      "bytes": 41953,
+      "sha256": "00fe09a2a3324c3d0066f6885b99be007d6f7b56109105cccf3d8fc894b34c0b"
+    },
+    {
+      "path": "tools/jwst/native_row_response.py",
+      "bytes": 15263,
+      "sha256": "533985a3862d9a95f6c0fca72f39ad8b4eaf46ce2f170da0f2f940f8e553d63b"
+    },
+    {
+      "path": "tools/jwst/native_spatial_covariance.py",
+      "bytes": 16909,
+      "sha256": "b75a3bd4ff733f5a72d1da4d8ef28f5c0737e2f28f4a06482cfb7a2d57cfcd73"
+    },
+    {
+      "path": "tools/jwst/native_wavecorr.py",
+      "bytes": 28164,
+      "sha256": "20cb07f54110c1d4015410fa193a5b5436fc80aee9dbef35162c886bc5943967"
+    },
+    {
+      "path": "tools/jwst/niv_doublet_refit.py",
+      "bytes": 17819,
+      "sha256": "44323ba2c98089ac2612a05308b7952d784173a10bc7459be401887c33c938b7"
+    },
+    {
+      "path": "tools/jwst/observation_design.py",
+      "bytes": 10257,
+      "sha256": "edb98f0f97fa83b94490f3459344ed6904bb0e75f462ce41cc56fbaf7465c3d6"
+    },
+    {
+      "path": "tools/jwst/photometry.py",
+      "bytes": 12718,
+      "sha256": "17574fbc7088f049b23e18f4291b20e7e460c08fa201bfee3efed366b34ea032"
+    },
+    {
+      "path": "tools/jwst/point_resolution.py",
+      "bytes": 34194,
+      "sha256": "6ba5d692aa0edfe3025119e7763eb28ee7b6d20ef41225a84f3c83a0018f9cd0"
+    },
+    {
+      "path": "tools/jwst/ramp_calibration.py",
+      "bytes": 10606,
+      "sha256": "847cfd869864ceaec9cb134c8926b3f4b56530697820400d1683b8d7523c459b"
+    },
+    {
+      "path": "tools/jwst/shared_systematics.py",
+      "bytes": 13850,
+      "sha256": "31749464ef713b68990bc256daa6493597a4527455bcf561e9e3f27e2ee329d5"
+    },
+    {
+      "path": "tools/jwst/source_detection.py",
+      "bytes": 9478,
+      "sha256": "2c8e11d5f143efeabfa21528869b7e10b11f777c150c21979a21895408c95380"
+    },
+    {
+      "path": "tools/jwst/spectroscopy.py",
+      "bytes": 6093,
+      "sha256": "34840b9136fb24571f52165cafd9d6a5678e631b9b64c1f926fa7e24a726f1ef"
+    },
+    {
+      "path": "tools/jwst/visualization.py",
+      "bytes": 29030,
+      "sha256": "2f5906b26fdbda23a1950e979a1db1cb2ac3d815747232588597daca1fcd3683"
+    }
+  ],
+  "local_exact_identity_audit": {
+    "schema_version": 1,
+    "fetched_release_revision": "21605eaa8e1cef6de3e59ce5ff1987fc97800eab",
+    "handover_baseline_ancestor": "379ff35786aff31535335bbe7d1de114f91dd3c4",
+    "strict_valid_tracked_json_count": 339,
+    "baseline_research_artifacts_preserved_count": 261,
+    "canonical_science_artifacts": [
+      {
+        "filename": "candidate_neighborhood_v1.json",
+        "frozen_science_revision": "2b050c0",
+        "bytes": 321806,
+        "sha256": "10e74e8bd2c0b33b0a0e67927189580d5ac1e98561a6822924d8ed8b93a0b973",
+        "published_git_blob": "07cef31e2799e9e9bba66351baa6ee6e6cb7f293"
+      },
+      {
+        "filename": "mom_author_provenance_v1.json",
+        "frozen_science_revision": "a4743ac",
+        "bytes": 6585,
+        "sha256": "e437c0de391c935d4d56ace5b9193db857135df1c6dabac464da9f79ddb4ec37",
+        "published_git_blob": "cb4715c5eababda76aa506ca847cfa038f36b9a7"
+      },
+      {
+        "filename": "mom_cloudy_first_model.json",
+        "frozen_science_revision": "04766f6",
+        "bytes": 259922,
+        "sha256": "0c6718059538fcdb3739697c0a6dd77d915b69f2c23e057171972da3b939f6b4",
+        "published_git_blob": "ccf1fe3b537ee9c5c2c5d2063c59e1b99a8fcedc"
+      },
+      {
+        "filename": "mom_cloudy_signed_coupling.json",
+        "frozen_science_revision": "04766f6",
+        "bytes": 1147,
+        "sha256": "4c8ca3718c0d40281f0e5c458db87ee840dabfe8439c7bab1b6d8d67df40deb4",
+        "published_git_blob": "f25d97ac766e199b22b5ffbf3347371ad6d148e2"
+      },
+      {
+        "filename": "mom_cloudy_signed_coupling.npz",
+        "frozen_science_revision": "04766f6",
+        "bytes": 15596,
+        "sha256": "fa68e7585ee4c800f9543ad336b011f73eafa0a2ab6b7ee4ae6f1a6b416e7da2",
+        "published_git_blob": "7f95e252d54d40fd815ef12d35c5566e8efce10f"
+      },
+      {
+        "filename": "mom_native_measurement_validation.json",
+        "frozen_science_revision": "4c65726",
+        "bytes": 136735,
+        "sha256": "c7e31e81a6bb6b9b4b81bf48661ccfa28475be5cf6b226f85113c78fe73074ca",
+        "published_git_blob": "e0cf9dae023b97d10997710bb433342c8ee7f29b"
+      },
+      {
+        "filename": "mom_observation_design.json",
+        "frozen_science_revision": "f94252a",
+        "bytes": 36377,
+        "sha256": "45b067f2b394692613181700e5574f1ad3ede94dd90d69980d875518dc23fc59",
+        "published_git_blob": "5eb5db22733c3f103869f83b763e4c93e950bddb"
+      },
+      {
+        "filename": "mom_shared_systematics_v1.json",
+        "frozen_science_revision": "7c6cb10",
+        "bytes": 8745,
+        "sha256": "1871b31010506955003a5a629077a59273ba7dd1a9e5dfb5b101ee2d7905a0f8",
+        "published_git_blob": "69241e3a01f69d3682225f7b950178469d17b456"
+      },
+      {
+        "filename": "survivor46_flame_v1.json",
+        "frozen_science_revision": "645174e",
+        "bytes": 55021,
+        "sha256": "7ed820f1482291db279c75445bd5e41403490aeada7a65c705eff9bb7b9d1c49",
+        "published_git_blob": "2eb9863cd309c16772355da441c25246dce02f98"
+      },
+      {
+        "filename": "survivor46_medium_v1.json",
+        "frozen_science_revision": "2a1247a",
+        "bytes": 19680,
+        "sha256": "df00194c821bc3ff4b17ffd95c9fe7ba885c8f297f2bbdb636baf5da8f582eec",
+        "published_git_blob": "77422a1f75fd1720852bc20ff012da9a2e712a7b"
+      },
+      {
+        "filename": "survivor46_multiplicity_v1.json",
+        "frozen_science_revision": "0eb1771",
+        "bytes": 31330,
+        "sha256": "767053b087f99b947103f6fbf0eb321ed0d652f7a9a7a64c3847a6fdae132834",
+        "published_git_blob": "ea12a3ce5085979c827f8cec0e93789e31190f35"
+      },
+      {
+        "filename": "mom_cloudy_focused_pair.json",
+        "frozen_science_revision": "62634bf",
+        "bytes": 427426,
+        "sha256": "50e63ba57d14c7cd664995ce1ec619f3118df2aa30f846551339a05ff0dd65fd",
+        "published_git_blob": "c261deee5fd201a56287fef3af9f9eae4e76b971"
+      },
+      {
+        "filename": "mom_cloudy_openblas_control.json",
+        "frozen_science_revision": "71f7011",
+        "bytes": 9181,
+        "sha256": "3b9444fe78925d99e91f50bf9fc850f1394bc361ba8f3ab671be0c4eb68077ee",
+        "published_git_blob": "ff5f813eaa9ff55d884362043f8722c56e018be6"
+      },
+      {
+        "filename": "mom_cloudy_enhanced_backend_control.json",
+        "frozen_science_revision": "5ebf3b2",
+        "bytes": 8357,
+        "sha256": "0d10acea141a94a911013fce551aa2e31b46450d89d26eafc94d5b3ecfdd1892",
+        "published_git_blob": "0dd7454f18f74500e93854fe10491e5d07b7460c"
+      },
+      {
+        "filename": "selection_count_audit.json",
+        "frozen_science_revision": "65d16cb",
+        "bytes": 53516,
+        "sha256": "c46b28bda61602b692f39c177eb9325329fd1a7a17440c1739da918b1bf28a46",
+        "published_git_blob": "e0cfd69131576903f624407f5580973d6e8828a2"
+      },
+      {
+        "filename": "mom_native_rate_noise.json",
+        "frozen_science_revision": "18ff94b",
+        "bytes": 48427,
+        "sha256": "5e9cc7e5e46870f0221c42f762a1186a1396f440e6b34f2b42d5c5fb259d9fc7",
+        "published_git_blob": "f5a1c236690e18cb18f10b338c619315a99f0565"
+      },
+      {
+        "filename": "mom_native_rate_noise_arrays.npz",
+        "frozen_science_revision": "18ff94b",
+        "bytes": 2181867,
+        "sha256": "4d679850b44b28ed3d8fc71f0e7fd41f0aa7a7cfcd95aff896de97b728bdfa5e",
+        "published_git_blob": "f014dbf10a605fbe403b6e21dc34bd319b1f4955"
+      },
+      {
+        "filename": "mom_native_row_response.json",
+        "frozen_science_revision": "dc9cb69",
+        "bytes": 42996,
+        "sha256": "ee0a79bcc65ff60da25cbd97ad8e9aca895a70d9c7f222dca7039da29036ab00",
+        "published_git_blob": "e120cefcaece4a91a22cd7077a5798e9aac48837"
+      },
+      {
+        "filename": "mom_native_local_identifiability.json",
+        "frozen_science_revision": "b44f219",
+        "bytes": 21243,
+        "sha256": "36538f611670eed232c07064fc731e90c88211e384a34b5054fa35441cb45ce2",
+        "published_git_blob": "9ce438c3bfea1d1905048fe27b5fd173e686fd66"
+      },
+      {
+        "filename": "mom_cloudy_focused_pair_rate_v3.json",
+        "frozen_science_revision": "6d6fd5e",
+        "bytes": 292222,
+        "sha256": "3c4d1dfb18cb011b8640c7b8425c94c03773b5a42dcb8fa8c8b0e6ccc4f220f2",
+        "published_git_blob": "1ad39832a6ef34a68383f2e31190b46d57646125"
+      },
+      {
+        "filename": "mom_public_metadata_v1.json",
+        "frozen_science_revision": "f9b22f9",
+        "bytes": 37452,
+        "sha256": "80ad68c99411d46f8abae2dbce113596499041d15edb8efa81da0a5fb5ee4f1d",
+        "published_git_blob": "aeed74775c8a71fd9e6ab8a5d86b9dc0adddc08b"
+      },
+      {
+        "filename": "mom_compact_followup_v1.json",
+        "frozen_science_revision": "ba99a31",
+        "bytes": 4514,
+        "sha256": "fdd3d749ac25ddbb31db71cdc7148029437aa6cf3f59717f73acfab069d76053",
+        "published_git_blob": "fe1d46f29d894f6c93917f119a9c3f94a642b363"
+      },
+      {
+        "filename": "capers_pixtab_coverage_v1.json",
+        "frozen_science_revision": "6ce04a5",
+        "bytes": 19505,
+        "sha256": "a22f30092bfb51149221733e4575cc4a6f3082f13c0e85ea62a751292558436c",
+        "published_git_blob": "df5bf613b20d98b81af5f6c19d584dd4c5b6b4b3"
+      },
+      {
+        "filename": "capers_companion_coverage_v1.json",
+        "frozen_science_revision": "a768eb3",
+        "bytes": 5077,
+        "sha256": "043de0ad96cf0d1c47e46fc74af591f13637c5755625f42f60109e505c3ff168",
+        "published_git_blob": "dc94393b3a7703e1189844a7126084be0d06cbfd"
+      },
+      {
+        "filename": "capers_s2d_coverage_v1.json",
+        "frozen_science_revision": "db0e170",
+        "bytes": 7212,
+        "sha256": "b0da433b8f1168006b38435b12c427aef86158efd61e21737b3304f042176570",
+        "published_git_blob": "ba6f4f6a114af9d7b24c0f18bb57626776f9b16b"
+      },
+      {
+        "filename": "cloudy_inputs.json",
+        "frozen_science_revision": "04766f6",
+        "bytes": 17023,
+        "sha256": "cb4561102fcf35f491ea561e0a5fddf80b5d636b3ba0a11e3f1c0f0aa08ff39c",
+        "published_git_blob": "39d9b2045ab0a4167e9f8ad45aee604ebf8f358f"
+      },
+      {
+        "filename": "mom_cloudy_capped_pilot.json",
+        "frozen_science_revision": "e6393e4",
+        "bytes": 12527,
+        "sha256": "639ad54753e7aa18d105ec6c8941c47f94ef8a9ed85b194d827aa7ed519b692e",
+        "published_git_blob": "0ad389d65865f3a3d2ef82860e4d1838e69b0e49"
+      },
+      {
+        "filename": "selection_pilot_response.json",
+        "frozen_science_revision": "ecc2c481ca8abbbb620f46520fcffdc666b6dbb7",
+        "bytes": 67681,
+        "sha256": "f1b19aea12e4623e1b3a6253399f9f4a12eaf629e760ac659020e5f5a7fc2b10",
+        "published_git_blob": "39c3d2bad5de3d58ac8c2f2629a6736b26a5248e"
+      },
+      {
+        "filename": "selection_pilot_validation.json",
+        "frozen_science_revision": "ecc2c481ca8abbbb620f46520fcffdc666b6dbb7",
+        "bytes": 1044,
+        "sha256": "a5f11a952618938aeaf27ac98620e5c55eec7d08326710b482a3b61ca6f324c3",
+        "published_git_blob": "d69439b35159e63a18dbf5cba992328e2e112321"
+      },
+      {
+        "filename": "selection_count_audit_validation.json",
+        "frozen_science_revision": "f6ee1a869a6cdb5ca1e5c2964e31239d20b1095e",
+        "bytes": 2078,
+        "sha256": "7caeb744a8a12702d2944068ee4e48cd00f4923088a8de6ebc55511109e4de3d",
+        "published_git_blob": "2ddc722836df05c742c3c5577f795ed1aa2f4048"
+      },
+      {
+        "filename": "selection_variance_public_probes.json",
+        "frozen_science_revision": "670d86737639202c359aa05f88af1d5257ef25da",
+        "bytes": 6422,
+        "sha256": "d4f283a7e40a07cff998a071a1d44c53224f3d22f9e1f6ab8a2b260a63128c89",
+        "published_git_blob": "3c6e5a7c78117e89f73f6db320e7fbd82f5d56bb"
+      },
+      {
+        "filename": "selection_var_prefix_retention.json",
+        "frozen_science_revision": "65d16cb",
+        "bytes": 912,
+        "sha256": "231cfd06ffc9b4863381a6c87b755aba3f0de393f6146e5635cd483caca8c892",
+        "published_git_blob": "e7c72eb4bca140ebdc531f82a8b8c325a3faa57f"
+      },
+      {
+        "filename": "survivor46_medium_v1.png",
+        "frozen_science_revision": "2a1247a",
+        "bytes": 142407,
+        "sha256": "437cacc6e1887e7095578124edb3ec9d7bf28b5b16fdd8ff2a8c94245d52c29c",
+        "published_git_blob": "67f4e439afe913c4c8ade423ebd115d03b7373e9"
+      },
+      {
+        "filename": "research2_download_ledger.json",
+        "frozen_science_revision": "360c0fb",
+        "bytes": 7034,
+        "sha256": "1a6a2f821ba35c6485cd6b66d12425b59d307d67bbebbee9e417f22b9dee706c",
+        "published_git_blob": "cf887cd2ca818255e54913294c7821176970362c"
+      },
+      {
+        "filename": "research2_download_ledger_v2.json",
+        "frozen_science_revision": "5f7e1c6",
+        "bytes": 8655,
+        "sha256": "2073a6ba008933a9f9963c258c9419cb178956ec0fab1fd0e0f5306982ebd176",
+        "published_git_blob": "6b031955196da1188efdbd02d060bb4e03035e49"
+      },
+      {
+        "filename": "research2_download_ledger_v3.json",
+        "frozen_science_revision": "2ef87ba",
+        "bytes": 10406,
+        "sha256": "09b9f42a2e708da32529e4244bcbb8f658cc7b4e3ffbf4c303ef1c37d2eae642",
+        "published_git_blob": "416ec7003135c3f0722fef764a57d8aa4d8d37da"
+      },
+      {
+        "filename": "mom_cloudy_atomic_provenance.json",
+        "frozen_science_revision": "97524d5",
+        "bytes": 3086,
+        "sha256": "1c18ee7532e63ba7c69374408d4c37fefdec29b894aa503f5af90a91e3cfa7fb",
+        "published_git_blob": "19576df758d4cf6931111328a51060091ccb0b66"
+      },
+      {
+        "filename": "mom_cloudy_original_pair_raw.json",
+        "frozen_science_revision": "56262de",
+        "bytes": 2920,
+        "sha256": "0b3d997a933c4a1c5e70c722b561686d5fb47823ac92fc71240c458d0c076c69",
+        "published_git_blob": "96df09286f998d3c1d65391a1b7fab38a3efa029"
+      },
+      {
+        "filename": "mom_cloudy_original_pair_raw.tar.gz",
+        "frozen_science_revision": "56262de",
+        "bytes": 228541,
+        "sha256": "0bfc0261772b5dd338518aaa6859bb2c39dd844557a5e3c40cca7bc0f5e4f2dd",
+        "published_git_blob": "823eb1eef0bf322f2084722d2d0abf8af043683f"
+      },
+      {
+        "filename": "mom_cloudy_capped_raw.json",
+        "frozen_science_revision": "df3150b",
+        "bytes": 7678,
+        "sha256": "f68fc2d9d01215f4fe840142ed7964724a55b914b517324ec0d15c75bfa76032",
+        "published_git_blob": "945a4d0f5ad8ac2ae051560be7c2645490009e07"
+      },
+      {
+        "filename": "mom_cloudy_capped_raw.tar.gz",
+        "frozen_science_revision": "df3150b",
+        "bytes": 316171,
+        "sha256": "173170e34feaca94eb4735f62fa417f921b387c7103ad2bffe0bce27ad068dec",
+        "published_git_blob": "b6c7dcb3c143da68890a00dc5e446c2a330c5650"
+      },
+      {
+        "filename": "mom_cloudy_pilot20_rate_v3.json",
+        "frozen_science_revision": "a49e7f3",
+        "bytes": 2221190,
+        "sha256": "7ef48626ddfb7c882d9725b17939c3a7752151de734e3ab4c46472b940127759",
+        "published_git_blob": "b2166f98db403bdba08691a8694c4c414e1b3e52"
+      },
+      {
+        "filename": "mom_cloudy_pilot20_raw.json",
+        "frozen_science_revision": "a49e7f3",
+        "bytes": 21869,
+        "sha256": "7e334f516463fbb0304c118b3822c468d2d84ba9b030afe75be85d9018dc50e2",
+        "published_git_blob": "6039ce26c2bbaee074d153465d5de7b2b62fc374"
+      },
+      {
+        "filename": "mom_cloudy_pilot20_raw.tar.gz",
+        "frozen_science_revision": "a49e7f3",
+        "bytes": 2276836,
+        "sha256": "5b36c11a1f9839e30d433198ad47ec7c69e977f476992aaa26beae853fcf4f4a",
+        "published_git_blob": "45bb253536845cf2fb92fad7bcac0436a64bce0d"
+      },
+      {
+        "filename": "mom_cloudy_observation_contrasts.json",
+        "frozen_science_revision": "12ee3b6",
+        "bytes": 310697,
+        "sha256": "a73b72229e2f20f87c14b29b84f88f50a8cb594cb0ff220eb22b93d4b8c65a29",
+        "published_git_blob": "7d33c0bb7222ced235e8e2e3a00e091806be7145"
+      },
+      {
+        "filename": "mom_cloudy_observation_execution.json",
+        "frozen_science_revision": "12ee3b6",
+        "bytes": 1064,
+        "sha256": "f4d2e25846ca27fa1626bb6f7a46991b6fdf7ddb8dbd0ea8383af9ed4482b109",
+        "published_git_blob": "366c865baaaa3bea918d63aec4412a60122b511f"
+      }
+    ],
+    "strict_new_science_lint_coverage": {
+      "new_scientific_module_count": 53,
+      "uncovered": []
+    },
+    "scope": "Exact Git/SHA256 artifact identities plus strict JSON across a fresh fetched tree; numerical review and executable test validation remain separate."
+  },
+  "independent_review_identities": [
+    {
+      "path": "research_output/research2_capers_source_review.json",
+      "bytes": 2636,
+      "sha256": "532171a7af5ad8a600407dd562c4b11e2868b55d7e7089c27ea13cc08969335b"
+    },
+    {
+      "path": "research_output/research2_cloudy_atomic_review.json",
+      "bytes": 3014,
+      "sha256": "9068a61f0b65c76ac092902ea4669ac7dacf8c38daee2b187a857a93870004c4"
+    },
+    {
+      "path": "research_output/research2_cloudy_backend_review.json",
+      "bytes": 2212,
+      "sha256": "6801c7e8e11b1e307d7fe5531adb14323cb1372d93f68eefa1cd4f9c08e8f4da"
+    },
+    {
+      "path": "research_output/research2_cloudy_capped_preservation_review.json",
+      "bytes": 523,
+      "sha256": "c89859d4d9318a1d2029bba99a5d9769e1abec9aa74c3d26731491f3ca7f1dbe"
+    },
+    {
+      "path": "research_output/research2_cloudy_capped_review.json",
+      "bytes": 2637,
+      "sha256": "da00047bc863a591c5ff6c2183b6f07538122f5a1144d8d20d12bb6f87a346e5"
+    },
+    {
+      "path": "research_output/research2_cloudy_design_review.json",
+      "bytes": 466,
+      "sha256": "d5c563f9d07d6384f9282e7fdd32790bbc2084bcdf710a7bb985e228eba1e946"
+    },
+    {
+      "path": "research_output/research2_cloudy_enhanced_backend_review.json",
+      "bytes": 798,
+      "sha256": "b554f41c7871b14d3945846a749a217ef404eb9b52f46bb86cc394e44ef420a8"
+    },
+    {
+      "path": "research_output/research2_cloudy_first_model_review.json",
+      "bytes": 2484,
+      "sha256": "7d5beda7876a8ef5e07868648ef0b34707f878ff603b64ebd0aed1c0f2edd72a"
+    },
+    {
+      "path": "research_output/research2_cloudy_forecast_review.json",
+      "bytes": 76114,
+      "sha256": "951b7378a56dd5bb07b5d61483c2a01f4c0c8a049a0e7a4d0f3f3a974e04fcb1"
+    },
+    {
+      "path": "research_output/research2_cloudy_grid_rate_review.json",
+      "bytes": 6509,
+      "sha256": "7ce942aa47fb758df77ef0cc8a31fd893ca57ce8c9048b5707e498a0cbd8fe5f"
+    },
+    {
+      "path": "research_output/research2_cloudy_likelihood_review.json",
+      "bytes": 14907,
+      "sha256": "f59aa870381dc5537ed3d14ac256a2a51e9c5bb4be14e48d7fd8a5fda367e0ef"
+    },
+    {
+      "path": "research_output/research2_cloudy_pair_heldout_review.json",
+      "bytes": 1729,
+      "sha256": "9597fb7b150f8a1e3ac45d1cfa55f0509e7bfd1446cbfff892319732c93164f1"
+    },
+    {
+      "path": "research_output/research2_cloudy_pair_likelihood_review.json",
+      "bytes": 29223,
+      "sha256": "91bc7fdbd1f5824b6df14226da8a85e13043fdc164476afb3b9b06cb99efe3a5"
+    },
+    {
+      "path": "research_output/research2_cloudy_pair_model_review.json",
+      "bytes": 3459,
+      "sha256": "5c882f00e3f5b9ba912edcaecf23346b98e22a29b90c242a932a5c36a8ef62dc"
+    },
+    {
+      "path": "research_output/research2_cloudy_pilot20_model_review.json",
+      "bytes": 41193,
+      "sha256": "565a1cc94ff7427a3e41da6f10604f4b4a020cfa06be542e465dcdd7c6882e5c"
+    },
+    {
+      "path": "research_output/research2_cloudy_rate_bridge_review.json",
+      "bytes": 2011,
+      "sha256": "d91cc2179058a6b636510e7ce665d7a12edb6afd697756b7766822f0af69c1ff"
+    },
+    {
+      "path": "research_output/research2_cloudy_raw_preservation_review.json",
+      "bytes": 672,
+      "sha256": "27c97402aba45b54d82a3a964e47134fff8b9dc8078986be4ecf42d4570cc590"
+    },
+    {
+      "path": "research_output/research2_compact_followup_review.json",
+      "bytes": 2852,
+      "sha256": "004605f1e1b52d6f1d3ca7ecbac1e29cc986c1db6aea362b2a3c113ce9e16a11"
+    },
+    {
+      "path": "research_output/research2_compact_metadata_review.json",
+      "bytes": 2560,
+      "sha256": "404e8659e1ecba76e076b4360a83faeddc68b2b745815bbe65e62ed839a7554e"
+    },
+    {
+      "path": "research_output/research2_flame_review.json",
+      "bytes": 1516,
+      "sha256": "7cb56c3f75dd4753f575bc1f1ce0a320a4127992a2881b1156162c88e2262186"
+    },
+    {
+      "path": "research_output/research2_forecast_test_roundoff_review.json",
+      "bytes": 612,
+      "sha256": "a63cbab05a0f8ebc4f51fea7b9e29a4e766399d7727acd873640b5f2758ad544"
+    },
+    {
+      "path": "research_output/research2_identifiability_design_review.json",
+      "bytes": 3982,
+      "sha256": "2e0cb5c7b7e908aab1014be851dd6e19494864493bfe96ef710bf2a97541bb9b"
+    },
+    {
+      "path": "research_output/research2_independent_review.json",
+      "bytes": 10176,
+      "sha256": "b96794e1a48b40be713ef7d0ba74fb35469367df6e633cac353f649a263e7f16"
+    },
+    {
+      "path": "research_output/research2_local_identifiability_review.json",
+      "bytes": 6420,
+      "sha256": "a2634a39f2b6370e00c00a7174116421aa01c3293d0aaffb557b1e5c96d183a3"
+    },
+    {
+      "path": "research_output/research2_mechanical_review.json",
+      "bytes": 5136,
+      "sha256": "762c1ea7c04930c1b93e176b0d237fc5223e174a0d4afe444ca1feaa6aaac85e"
+    },
+    {
+      "path": "research_output/research2_medium_review.json",
+      "bytes": 4551,
+      "sha256": "c30fe30b48b8b0757422c7951cdb73d3fc5eaaffb3bc0541ee12472bc3e149b3"
+    },
+    {
+      "path": "research_output/research2_neighborhood_review.json",
+      "bytes": 26603,
+      "sha256": "86431297840a72b644d65945ecb62d7085952a825eb3212cb06ff86d30d2cfe0"
+    },
+    {
+      "path": "research_output/research2_observation_review.json",
+      "bytes": 2551,
+      "sha256": "3ad9ae30b858f03b9bada049385a6adc10fb3674867b883e5f234fe83c526a47"
+    },
+    {
+      "path": "research_output/research2_prediction_review.json",
+      "bytes": 919,
+      "sha256": "59f2e0a9d9430ac9a8afa26b42fcba73a00bb4839aeb8fa43ecda97f80c59477"
+    },
+    {
+      "path": "research_output/research2_public_metadata_review.json",
+      "bytes": 6381,
+      "sha256": "1a4b646fdd2545233353ea826fb7f5dc40f78083213d9c7985c93c21edfa5b75"
+    },
+    {
+      "path": "research_output/research2_rate_noise_review.json",
+      "bytes": 18605,
+      "sha256": "311bd61875b9aa2e70627e11143a6db322be74f51df5c4e50395f21d029e9690"
+    },
+    {
+      "path": "research_output/research2_row_response_review.json",
+      "bytes": 6514,
+      "sha256": "711316ddecd3e5d103f967f5049120ca2ca312771aa26712a26ce78edaf73a85"
+    },
+    {
+      "path": "research_output/research2_selection_baseline_review.json",
+      "bytes": 2003,
+      "sha256": "0b86cb16999e15b39276ae83b9f8df25b0db877350c42e9e68f904dcc7e777fc"
+    },
+    {
+      "path": "research_output/research2_selection_count_review.json",
+      "bytes": 2257,
+      "sha256": "b168edb778488a6ceb6617dd728461d967b27c18414fb5cb9670b81d07c93bdd"
+    },
+    {
+      "path": "research_output/research2_signed_response_review.json",
+      "bytes": 9246,
+      "sha256": "cb952f0cf9bb80010b058ba0d20c9f53c4dc060ef9f7dc85f041150dcde85e22"
+    }
+  ],
+  "merged_science_prs_and_successful_head_ci": [
+    {
+      "number": 55,
+      "url": "https://github.com/Patto1155/JWST_scnience_env_2/pull/55",
+      "title": "Verify PR54 baseline and start bounded scientific continuation",
+      "head_sha": "b039c304dc62bb4c820632589ff45a8e463c7a4e",
+      "merge_commit_sha": "9eff5621c214b37b8c8c1a12b20f845d80c96403",
+      "merged": true,
+      "ci": {
+        "id": 38016659150,
+        "name": "Offline tests",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 194,
+        "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38016659150/jobs",
+        "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38016659150/logs",
+        "workflow_id": 379343808
+      }
+    },
+    {
+      "number": 56,
+      "url": "https://github.com/Patto1155/JWST_scnience_env_2/pull/56",
+      "title": "Measure what three spectral groups cannot constrain",
+      "head_sha": "5ea7ffd9b01d5fbd186c782d0fd6f9b48c6af692",
+      "merge_commit_sha": "970ced3b3204862d36afd226ae47153bd29fa766",
+      "merged": true,
+      "ci": {
+        "id": 38017137125,
+        "name": "Offline tests",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 198,
+        "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38017137125/jobs",
+        "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38017137125/logs",
+        "workflow_id": 379343808
+      }
+    },
+    {
+      "number": 57,
+      "url": "https://github.com/Patto1155/JWST_scnience_env_2/pull/57",
+      "title": "Reject finite Bobcat multiplicity as source 46 explanation",
+      "head_sha": "1290968eb5a4cecb94ad278093372dede79e01af",
+      "merge_commit_sha": "bc7abf06378ecb02859df0e172637dbf9c6863f4",
+      "merged": true,
+      "ci": {
+        "id": 38017368852,
+        "name": "Offline tests",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 210,
+        "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38017368852/jobs",
+        "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38017368852/logs",
+        "workflow_id": 379343808
+      }
+    },
+    {
+      "number": 58,
+      "url": "https://github.com/Patto1155/JWST_scnience_env_2/pull/58",
+      "title": "Recover MoM author pixel table and audit dependent extraction",
+      "head_sha": "19b0dfcc704267f595090e6068806a3a3ce147ea",
+      "merge_commit_sha": "153a57ba1e267edaf4266152af03fd781df5ed58",
+      "merged": true,
+      "ci": {
+        "id": 38017226227,
+        "name": "Offline tests",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 204,
+        "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38017226227/jobs",
+        "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38017226227/logs",
+        "workflow_id": 379343808
+      }
+    },
+    {
+      "number": 59,
+      "url": "https://github.com/Patto1155/JWST_scnience_env_2/pull/59",
+      "title": "Calibrate bounded selection operator and expose source-count dependency",
+      "head_sha": "924d11553f39d87652173b6277b955b783869277",
+      "merge_commit_sha": "abca0d35642939665bce3d99d2decaeae003f7cc",
+      "merged": true,
+      "ci": {
+        "id": 38017321103,
+        "name": "Offline tests",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 208,
+        "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38017321103/jobs",
+        "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38017321103/logs",
+        "workflow_id": 379343808
+      }
+    },
+    {
+      "number": 60,
+      "url": "https://github.com/Patto1155/JWST_scnience_env_2/pull/60",
+      "title": "Correct omitted ghost wavelength response in native spectral measurement",
+      "head_sha": "4a2aec1cfa3ba00ea38afc3918b8a533988d7ef0",
+      "merge_commit_sha": "f0a9fd8ce6e2e3dbe6225bbd1cdfca2a0754b4b9",
+      "merged": true,
+      "ci": {
+        "id": 38018035471,
+        "name": "Offline tests",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 216,
+        "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38018035471/jobs",
+        "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38018035471/logs",
+        "workflow_id": 379343808
+      }
+    },
+    {
+      "number": 61,
+      "url": "https://github.com/Patto1155/JWST_scnience_env_2/pull/61",
+      "title": "Quantify UV doublet separability and conditional observing sensitivity",
+      "head_sha": "9079e7e21aa49a9399a10685ebee37a227a20e6e",
+      "merge_commit_sha": "139c4c21160208cebdb7db9a92c50b8744bd3149",
+      "merged": true,
+      "ci": {
+        "id": 38018286085,
+        "name": "Offline tests",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 226,
+        "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38018286085/jobs",
+        "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38018286085/logs",
+        "workflow_id": 379343808
+      }
+    },
+    {
+      "number": 62,
+      "url": "https://github.com/Patto1155/JWST_scnience_env_2/pull/62",
+      "title": "Test source46 against broader equilibrium and mixing atmospheres",
+      "head_sha": "f6853bec8c8bc647f660237efeee7186ac1c0de2",
+      "merge_commit_sha": "51d544b3d2854c5759914526cc4b791ed8621b59",
+      "merged": true,
+      "ci": {
+        "id": 38018063956,
+        "name": "Offline tests",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 222,
+        "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38018063956/jobs",
+        "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38018063956/logs",
+        "workflow_id": 379343808
+      }
+    },
+    {
+      "number": 63,
+      "url": "https://github.com/Patto1155/JWST_scnience_env_2/pull/63",
+      "title": "Publish independent research validation and original-pixel reproduction",
+      "head_sha": "1b9733b496d1b1879dc25feecb9f00aeea4ed8ab",
+      "merge_commit_sha": "cdcefafca673735e750634a5ab7170dc9e147a2c",
+      "merged": true,
+      "ci": {
+        "id": 38018473662,
+        "name": "Offline tests",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 230,
+        "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38018473662/jobs",
+        "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38018473662/logs",
+        "workflow_id": 379343808
+      }
+    },
+    {
+      "number": 64,
+      "url": "https://github.com/Patto1155/JWST_scnience_env_2/pull/64",
+      "title": "Constrain source46 spectral width with independent medium-band pixels",
+      "head_sha": "2a1247afd247906dbe4ba07ecb112de5e7f7b597",
+      "merge_commit_sha": "bcf11ccac2195611a363479c3447e0ab370f5038",
+      "merged": true,
+      "ci": {
+        "id": 38018571514,
+        "name": "Offline tests",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 233,
+        "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38018571514/jobs",
+        "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38018571514/logs",
+        "workflow_id": 379343808
+      }
+    },
+    {
+      "number": 65,
+      "url": "https://github.com/Patto1155/JWST_scnience_env_2/pull/65",
+      "title": "Test broader neighbors and stop inadequate candidate classifications",
+      "head_sha": "af843b02982e3bcf8a1f29fa8b396bfaae462986",
+      "merge_commit_sha": "d898a349a79b8877c661c4db414d267849b3318f",
+      "merged": true,
+      "ci": {
+        "id": 38019031861,
+        "name": "Offline tests",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 238,
+        "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38019031861/jobs",
+        "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38019031861/logs",
+        "workflow_id": 379343808
+      }
+    },
+    {
+      "number": 66,
+      "url": "https://github.com/Patto1155/JWST_scnience_env_2/pull/66",
+      "title": "Connect complete Cloudy emission to signed native spectrum",
+      "head_sha": "5897586d01886a934f9e1163df4ceaca2476f44c",
+      "merge_commit_sha": "283b0730523fa8e3949726785dd3230d19a03f46",
+      "merged": true,
+      "ci": {
+        "id": 38019048252,
+        "name": "Offline tests",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 241,
+        "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38019048252/jobs",
+        "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38019048252/logs",
+        "workflow_id": 379343808
+      }
+    },
+    {
+      "number": 67,
+      "url": "https://github.com/Patto1155/JWST_scnience_env_2/pull/67",
+      "title": "Repair candidate artifact transfer and verify exact published identity",
+      "head_sha": "9abce1ff7bb925f079b7304d284af4cf95d758f6",
+      "merge_commit_sha": "c1adc103dd27d0f577afc965ddddbd951ce28d5b",
+      "merged": true,
+      "ci": {
+        "id": 38019353558,
+        "name": "Offline tests",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 246,
+        "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38019353558/jobs",
+        "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38019353558/logs",
+        "workflow_id": 379343808
+      }
+    },
+    {
+      "number": 68,
+      "url": "https://github.com/Patto1155/JWST_scnience_env_2/pull/68",
+      "title": "Prepare bounded complete-model observation contrasts with provenance gates",
+      "head_sha": "2952398e92429210d87a27e9cd59155fcb372fb0",
+      "merge_commit_sha": "86250368624c59a6c64efb1ae80c9ee6e7c57399",
+      "merged": true,
+      "ci": {
+        "id": 38019461347,
+        "name": "Offline tests",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 249,
+        "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38019461347/jobs",
+        "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38019461347/logs",
+        "workflow_id": 379343808
+      }
+    },
+    {
+      "number": 69,
+      "url": "https://github.com/Patto1155/JWST_scnience_env_2/pull/69",
+      "title": "Quantify native row wavelength response under retained covariance",
+      "head_sha": "3c93cc6a773b0242be541465333e1a9474280fe3",
+      "merge_commit_sha": "f63962e7461feff553366b6a5a9897744a1a6b03",
+      "merged": true,
+      "ci": {
+        "id": 38019941670,
+        "name": "Offline tests",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 254,
+        "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38019941670/jobs",
+        "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38019941670/logs",
+        "workflow_id": 379343808
+      }
+    },
+    {
+      "number": 70,
+      "url": "https://github.com/Patto1155/JWST_scnience_env_2/pull/70",
+      "title": "Resolve Cloudy runtime blocker with validated existing backend",
+      "head_sha": "23cea68f3d5e06c84f7dd92260b3de66109c07ec",
+      "merge_commit_sha": "3d4c90c3bc880485e9dc8a911a2459b01489b8d8",
+      "merged": true,
+      "ci": {
+        "id": 38020391489,
+        "name": "Offline tests",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 257,
+        "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38020391489/jobs",
+        "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38020391489/logs",
+        "workflow_id": 379343808
+      }
+    },
+    {
+      "number": 71,
+      "url": "https://github.com/Patto1155/JWST_scnience_env_2/pull/71",
+      "title": "Correct native spectral uncertainty with nine actual RATE exposures",
+      "head_sha": "18ff94b02703ac24f10f23759e82782b8cb4425b",
+      "merge_commit_sha": "9d7dda75e523adc59251afc921c87c88410acd9b",
+      "merged": true,
+      "ci": {
+        "id": 38021335925,
+        "name": "Offline tests",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 262,
+        "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38021335925/jobs",
+        "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38021335925/logs",
+        "workflow_id": 379343808
+      }
+    },
+    {
+      "number": 72,
+      "url": "https://github.com/Patto1155/JWST_scnience_env_2/pull/72",
+      "title": "Bound native selection calibration by actual mosaic provenance",
+      "head_sha": "9f822efff578b2283aca288f9404902c6c9304cd",
+      "merge_commit_sha": "94a868d5c67e3f448ffcd6669b57bcaf27ec4227",
+      "merged": true,
+      "ci": {
+        "id": 38021384302,
+        "name": "Offline tests",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 265,
+        "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38021384302/jobs",
+        "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38021384302/logs",
+        "workflow_id": 379343808
+      }
+    },
+    {
+      "number": 73,
+      "url": "https://github.com/Patto1155/JWST_scnience_env_2/pull/73",
+      "title": "Test complete nitrogen thermal response before environmental expansion",
+      "head_sha": "9d5439b5dafb6c653e175e858b196f2e3d02ee78",
+      "merge_commit_sha": "cf2f10d8521dbadb88c78a21580cb5257b234866",
+      "merged": true,
+      "ci": {
+        "id": 38021415531,
+        "name": "Offline tests",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 268,
+        "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38021415531/jobs",
+        "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38021415531/logs",
+        "workflow_id": 379343808
+      }
+    },
+    {
+      "number": 74,
+      "url": "https://github.com/Patto1155/JWST_scnience_env_2/pull/74",
+      "title": "Recompute complete-model fits with actual RATE covariance",
+      "head_sha": "aaaa4f2c0f0c04c9cd687e21eea5d82621821914",
+      "merge_commit_sha": "c69cde99fe6defe8d46c4b9433d37f34139f61c0",
+      "merged": true,
+      "ci": {
+        "id": 38022094982,
+        "name": "Offline tests",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 276,
+        "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38022094982/jobs",
+        "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38022094982/logs",
+        "workflow_id": 379343808
+      }
+    },
+    {
+      "number": 75,
+      "url": "https://github.com/Patto1155/JWST_scnience_env_2/pull/75",
+      "title": "Test native measurement alternatives and calibration identifiability",
+      "head_sha": "058e2b78acae276cf7a0de1973d45a6ed48231e2",
+      "merge_commit_sha": "497a38ef81c58ca3ec590b04366fbc693db32d4e",
+      "merged": true,
+      "ci": {
+        "id": 38022979464,
+        "name": "Offline tests",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 280,
+        "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38022979464/jobs",
+        "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38022979464/logs",
+        "workflow_id": 379343808
+      }
+    },
+    {
+      "number": 76,
+      "url": "https://github.com/Patto1155/JWST_scnience_env_2/pull/76",
+      "title": "Verify public calibration applicability and CAPERS source coverage",
+      "head_sha": "b9bac4a430c9f40562ba4a33aaf66a9032a836e5",
+      "merge_commit_sha": "fdc7ed10f566458af80279776f368e884dea8625",
+      "merged": true,
+      "ci": {
+        "id": 38024177249,
+        "name": "Offline tests",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 284,
+        "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38024177249/jobs",
+        "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38024177249/logs",
+        "workflow_id": 379343808
+      }
+    },
+    {
+      "number": 77,
+      "url": "https://github.com/Patto1155/JWST_scnience_env_2/pull/77",
+      "title": "Require strict science lint and independent release integrity checks",
+      "head_sha": "778f7067ef6d7b6fe25a863a1540c651532b97ec",
+      "merge_commit_sha": "550052e1bdafde42c57146c5fb840b2b85a84e3d",
+      "merged": true,
+      "ci": {
+        "id": 38024362207,
+        "name": "Offline tests",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 288,
+        "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38024362207/jobs",
+        "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38024362207/logs",
+        "workflow_id": 379343808
+      }
+    },
+    {
+      "number": 78,
+      "url": "https://github.com/Patto1155/JWST_scnience_env_2/pull/78",
+      "title": "Complete 20 thermal models and validate their native likelihood",
+      "head_sha": "2fa185cf0ac43812957fc421ee51fb5930fafe96",
+      "merge_commit_sha": "6b44032b82e550ed0f740a56830deed296b5c4e9",
+      "merged": true,
+      "ci": {
+        "id": 38025125552,
+        "name": "Offline tests",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 292,
+        "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38025125552/jobs",
+        "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38025125552/logs",
+        "workflow_id": 379343808
+      }
+    },
+    {
+      "number": 79,
+      "url": "https://github.com/Patto1155/JWST_scnience_env_2/pull/79",
+      "title": "Rank finite-model UV observing contrasts after calibration-aware fits",
+      "head_sha": "d1c99dc2a597e612f0bbaa01cc10bb0eab499f4b",
+      "merge_commit_sha": "3b404a9acaed1b562428718fad67260a9373c558",
+      "merged": true,
+      "ci": {
+        "id": 38026068814,
+        "name": "Offline tests",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 298,
+        "jobs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38026068814/jobs",
+        "logs_url": "https://api.github.com/repos/Patto1155/JWST_scnience_env_2/actions/runs/38026068814/logs",
+        "workflow_id": 379343808
+      }
+    }
+  ],
+  "acquisition": {
+    "ledger": {
+      "path": "research_output/research2_download_ledger_v3.json",
+      "bytes": 10406,
+      "sha256": "09b9f42a2e708da32529e4244bcbb8f658cc7b4e3ffbf4c303ef1c37d2eae642"
+    },
+    "initial_cap_bytes": 2147483648,
+    "exact_body_subtotal_bytes": 1290651149,
+    "upper_bound_category_charges_bytes": 43704476,
+    "conservative_new_transfer_charge_bytes": 1334355625,
+    "charge_is_exact_measurement": false,
+    "restored_unique_pinned_product_bytes_separate": 2073005957,
+    "restoration_retry_wire_accounting_complete": false,
+    "remaining_cap_bytes": 813128023,
+    "paid_resources": false,
+    "external_person_contact": false
+  },
+  "reproduction_scopes": {
+    "actual_original_GOODS_pixels": "research_output/research2_original_pixel_reproduction.json",
+    "actual_nine_CAL_pixels": "research_output/research2_native_reproduction.json",
+    "deep_actual_pixel_default_and_single_thread_discrepancies": "research_output/research2_deep_pixel_replay.json",
+    "actual_RATE_covariance_independent_validation": "research_output/research2_rate_noise_review.json",
+    "actual_twenty_thermal_models_independent_validation": "research_output/research2_cloudy_pilot20_model_review.json",
+    "compact_480_fit_replay_independent_validation": "research_output/research2_cloudy_grid_rate_review.json",
+    "all_forecast_arithmetic_independent_validation": "research_output/research2_cloudy_forecast_review.json",
+    "compact_replay_is_actual_pixel_reduction": false
+  },
+  "scientific_assessment": {
+    "new_source_discovery": false,
+    "elemental_abundance_established": false,
+    "stellar_polluter_established": false,
+    "cosmological_discovery": false,
+    "population_likelihood_exists": false,
+    "native_error_contract_changed": true,
+    "composition_requires_thermal_recomputation": true,
+    "ordinary_declared_composition_conditionally_adequate": true,
+    "ordinary_composition_log_NC": -0.6,
+    "declared_log_CO": -0.37,
+    "unmodified_solar_pattern": false,
+    "primary_family_minimum_delta_chi2": 1.9817,
+    "selected_family_delta_is_posterior_odds": false,
+    "original_point_empirical_ionic_NC_signed_95_Fieller": [
+      -0.158243,
+      9.905026
+    ],
+    "formal_noise_comparison_is_assumption_dependent": true,
+    "source_specific_absolute_wavelength_LSF_pathloss_unresolved": true,
+    "candidate_98_1043_46_identity_unresolved": true,
+    "survey_completeness_contamination_unestablished": true
+  },
+  "scope": "The final document supplement changes no checked production code or canonical scientific artifact. This receipt records the immutable tested code and merged PR55-79 evidence. A separate independent fresh-remote receipt validates the published final supplement before its merge; neither receipt self-hashes its own containing commit."
+}

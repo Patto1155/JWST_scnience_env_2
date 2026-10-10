@@ -1,158 +1,119 @@
-# JWST research takeover: current verified status
+# JWST research takeover: verified current status
 
-9 October2026. This document supersedes historical claims. Incoming master
-`1b4012e326664ce2a3ec5a515b5a832138aba46b` (PR #29) is preserved in
-[TAKEOVER_BASELINE_PR29.md](TAKEOVER_BASELINE_PR29.md), with its
-[full report](FINAL_RESEARCH_REPORT_PR29.md). The
-[current full report](FINAL_RESEARCH_REPORT.md) distinguishes observations,
-assumptions, conditional inferences and speculation. Historical1,732 candidates
-remain **untestable**, not measured artifacts. No new high-z source, elemental
-abundance, polluter or cosmological discovery is claimed.
+10 October 2026. This status supersedes the PR54 inference summary. The exact
+incoming status and report are preserved in [TAKEOVER_BASELINE_PR54.md](TAKEOVER_BASELINE_PR54.md)
+and [FINAL_RESEARCH_REPORT_PR54.md](FINAL_RESEARCH_REPORT_PR54.md). Live master
+initially equaled `379ff35786aff31535335bbe7d1de114f91dd3c4`; ancestry passed,
+with no intervening changes. [Current full report](FINAL_RESEARCH_REPORT.md)
+gives inputs, assumptions, rejected hypotheses, executable reproduction and
+ranked next experiments.
 
-Eight specialists completed separate-branch research, implementation and
-independent-validation rounds; [protocol](CONTINUATION_PROTOCOL.md) records
-ownership/dependencies. Follow-ups use merged inputs and preserve earlier
-contracts. The coordinator reproduced the incoming363-test/two-fixture-skip
-gate, all 13 original image hashes, nine native hashes, fresh GOODS pixel
-CSV/metadata byte for byte and nominal coadd numerical fits/scans.
+**No new high-redshift source, elemental abundance, stellar polluter or
+cosmological discovery has been established.** Eight specialists worked on
+separate branches through dependency-driven pilot, revision and integrated
+assessment rounds. Authors were not sole scientific validators. Ownership,
+budgets and stopping rules are in [the protocol](RESEARCH2_PROTOCOL.md).
 
-## Supported results and limitations
+## What changed scientifically
 
-- **GOODS:**1,134 proposals,891 untestable,236 measured screen failures,seven
-  first-screen survivors,0.962808arcmin². Six fail stable original-brightness
-  persistence;98 persists. Conditional254/46 remain separate denominators.
-- **SMACS:** matched selection1,267/940 untestable/317 failures/ten raw survivors.
-  A newly acquired disjoint-contributor F444 exposure separated by 15.39minutes
-  rejects nine nominal persistence premises.1043 retains a fixed-aperture red
-  patch, without an independent segmented object or confirmed identity.
-- **SMACS noise/background:** measured field-specific aperture factors
-  F0901.184[1.081,1.351],F2001.285[1.183,1.380],F4440.938[0.894,0.979]. Conditional
-  block intervals and sparse tails do not certify Gaussian five-sigma behavior.
- 1043's blue residual changes strongly with background; its old negative
-  aperture is not a background-independent non-detection.
-- **Deep modeling:**254 has aligned F09017.84±0.81nJy, with independent
-  background checks18.47–19.01. Its no-blue-counterpart premise fails.98 is a
-  persistent blended complex with inadequate residual fit; component totals and
-  dropout identity remain uncertain.46 has strongly curved red photometry.
-  All 1,052 tested cloudless Sonora equilibrium rows fit poorly; this finite
-  grid fails, without identifying the source or excluding other atmosphere families.
-- **Real-source recovery:** frozen14-group controls and2,436 observed-profile
-  injections expose centroid/segmentation failures and nonmonotonic recovery.
-  The latter has149 paired losses/no gains for the larger detector threshold.
-  These conditional local tests do not measure survey completeness or contamination.
-- **Native spectroscopy:** nine actual CALs form three RATE groups with shared
-  background photons. The reconstruction applies no second nod subtraction,
-  uses guarded pathloss/profile extraction, and transports empirical covariance.
-  Original point empirical line-flux N/C=.79179[−.00677,2.88294]; spatial transport
-  gives.79306[−.00598,2.88356]. These are signed conditional95% Fieller sets,
-  not abundance measurements. Source-specific LSF remains uncalibrated.
-- **Atomic models:** PyNeb1.1.32 and Cuev0.1 are versioned and member-pinned.
-  Cue omits N IV and cannot supply a full N-line ionization map. Version2
-  explicitly fits total N IV1483+1486 with physical weights and fresh covariance:
-  atTe20k/ne 1,000 point empirical ionic N/C=2.7504[−.5064,9.5916], and all 28
-  original-wavelength point empirical cells cross zero. Elemental N/C requires unmeasured stage
-  fractions, with unresolved He/O and C IV transfer.
-- **Wavelength sensitivity:** the exact logged reference is DUMMY/toy. Original
-  target WCS was not wave-corrected despite the global COMPLETE flag. Its
-  prediction changes conditional line flux and worsens the legacy point
-  scenario's chi²; the composed response depends on resolution. It is neither a
-  preferred detection model nor empirical wavelength/LSF calibration.
-- **Enrichment/formation:** full covariant yield profiles do not identify an SMS
-  or rotating polluter.720 histories/216 budgets/80 inverse tests give explicit
-  conditional predictions. Standard rising histories can lie inside the
-  published marginal SED boxes under assumed mass conventions. Population
-  selection/contamination and survey volume are absent, so cosmological model
-  odds cannot be assigned from these candidate counts.
+- Actual nine-RATE/nine-CAL data and exact JWST 2.0.1 source reject the older
+  CAL-variance demixing assumption: target ERR does not include subtracted
+  donor noise. Version 3 propagates signed donors, measured calibration gains
+  and full covariance, then recomputes off-source transport once. The empirical
+  scale is 1.427616; applying the old 2.220621 as well double counts donor noise.
+- Original-wavelength generic-point total N IV is 22.646±11.718 in
+  `10^-20 erg/s/cm²`. The conditional observed-stage ionic N/C 95% Fieller set
+  is [-0.158,9.905], admitting the stated ambient ionic reference. Formal noise
+  alone gives [0.429,7.762], so the residual-noise assumption remains decisive.
+  This is neither elemental N/C nor empirically certified source coverage.
+- Signed known-spectrum injections reject the old positive-only mean response.
+  Full-row wavelengths make a small conditional change. Three independent
+  RATE groups cannot identify shared line-shaped systematics. Local redshift
+  changes are exactly confounded with common assigned-centroid shifts; unknown
+  source LSF absorbs tested Gaussian intrinsic widths. No tighter abundance
+  follows from selecting those calibration branches.
+- Public author PIXTAB/settings reproduce its published coadd numerically,
+  while reused sky rows expose dependent group slices. The exact-date current
+  CRDS selector still selects the same DUMMY reference. No empirical absolute
+  wavelength or source LSF calibration has been obtained.
+- Complete Cloudy C23.01 now supplies twenty independently equilibrated
+  composition/environment controls, 480 fresh RATE fits and six held-out
+  predictions. The primary family minima differ by only 1.982 chi-squared;
+  ordinary composition remains conditionally adequate. Nitrogen-only rescaling
+  fails, while ionizing-environment degeneracy remains material. All original
+  model outputs are durably preserved with exact hashes.
+- Later CAPERS same-position release products contain no 2.15–3.20 micron
+  UV diagnostic coordinates in SPEC, PIXTAB, official X1D or rectified S2D.
+  This rejects a gap due solely to the 1D extraction mask. It is not zero flux,
+  an upper limit, absence in all raw pixels, or proof that new time is necessary.
+- The geometry-frozen injection pilot demonstrates morphology, association
+  and count-gain dependence. Actual WHT/VAR/header audits show that released
+  mosaic variance does not identify native source-Poisson transport. Survey
+  completeness, contamination and population/cosmology odds remain unavailable.
+- Source254 retains its blue counterpart. Source98 remains blended; every
+  tested red neighbor/background family fails the held-out residual gate.
+  Source1043 remains a persistent patch with unstable flux assignment. Stop
+  classification from these inadequate fits.
+- Source46 rejects tested Bobcat multiplicities and the broader finite
+  Flame/Skimmer family. Actual F410M rejects negligible-F410/F444-only excess;
+  overlapping passbands still permit a single line under the declared tolerance.
+  Its identity and continuum/line/multiplicity explanation remain unresolved.
+- The merged-model forecast favors N III with a C III anchor for
+  conditional finite-family discrimination: narrow G235H matched bundle SNR
+  about 11 for expected squared separation 9. It supplies no posterior-weighted
+  information gain or absolute exposure time; source-specific coverage and
+  response/sensitivity calibration are required.
 
-The final336-fit composition explicitly compares original and DUMMY wavelength
-hypotheses with all three reviewed noise transports. Original empirical cells
-admit the assumed solar ionic reference in28/28 cells; DUMMY alternatives admit
-it in16/28 nominal and18/28 point cells. Positive lower endpoints under the toy
-hypothesis are conditional sensitivity, with no measured calibration or stage
-correction. At the reference point/row+column cell, original2.7535[−.5058,9.5970]
-versusDUMMY3.7236[.1077,14.5265] both admit that reference.
+## Reproduction and release evidence
 
-## Reproducible experiment index
+The incoming exact-lock gate reproduced **579 passing tests and three explicit
+skips**. Original GOODS selection and native extraction were reproduced from
+actual restored, hash-verified pixels. Compact likelihood replay is separately
+labeled. Historical version1/version2/336-fit artifacts remain intact.
 
-Report-specific commands give exact arguments and raw inventories. Entry points
-below identify executable work; numerical replay is distinct from calibration.
+The final exact-lock quality gate passes **719 tests, with three explicit skips**
+(722 collected, zero failures/errors). The incoming 579/3 result is preserved.
+The same two visual-runner tests lack their expected repository-layout archive
+files; the third requires the separately pinned author Cue weights. These skips
+do not count as actual-pixel validation. Actual scientific pixel runs have their
+own receipts. [Final validation](../research_output/research2_final_validation.json)
+records all 65 installed versions, immutable tested code, JUnit/log identities,
+independent numerical reviews and successful CI heads for PRs 55–79.
 
-| Experiment | Report | Entry point / compact artifacts |
-|---|---|---|
-| Incoming independent baseline | [Protocol](CONTINUATION_PROTOCOL.md) | `research_output/continuation_baseline.json`; `python scripts/quality_gate.py` |
-| Distinct repeat and held-out coordinates | [SMACS repeat](SMACS_INDEPENDENT_REPEAT.md) | `discovery.independent_repeat_vetting`; repeat JSON/figure |
-| Local empirical PSF/noise/tails | [SMACS controls](SMACS_EMPIRICAL_CONTROLS.md) | `discovery.empirical_imaging_controls`; controls JSON |
-| Persistent patch spatial models | [1043 diagnostics](SMACS1043_PATCH_DIAGNOSTICS.md) | `discovery.source_patch_diagnostics`; JSON/native figure |
-| Deep data and seven-band model | [Inputs](SURVIVOR_DEEP_DATA.md), [models](SURVIVOR_DEEP_MODEL.md) | `data_pipeline.survivor_deep_data`; `discovery.survivor_deep_model`; JSON/figures |
-| Frozen controls and injections | [Controls](DEEP_CONTROL_RECOVERY.md), [injections](OBSERVED_TEMPLATE_INJECTIONS.md) | `discovery.deep_control_recovery`; `discovery.observed_template_injections`; plan/recovery JSON |
-| Source46 atmosphere families | [Atmosphere](SURVIVOR_ATMOSPHERE.md) | `discovery.survivor_atmosphere`;1,052-row CSV and JSON |
-| Native extraction/shared covariance | [Reduction](MOM_NATIVE_REDUCTION.md), [spatial covariance](MOM_NATIVE_SPATIAL_COVARIANCE.md) | `tools.jwst.native_reduction`; `tools.jwst.native_spatial_covariance`; pinned NPZ/JSON |
-| Source-offset toy wavelength model | [Wavelength report](MOM_NATIVE_WAVECORR.md) | `tools.jwst.native_wavecorr`; reference, original-GWCS derivatives, NPZ/JSON |
-| Atomic and four-group photoionization | [Atomic](MOM_ATOMIC_IONIC_GRID.md), [Cue](MOM_CUE_PHOTOIONIZATION.md), [native chemistry](MOM_NATIVE_CHEMISTRY_FOLLOWUP.md) | `tools.jwst.atomic_grid`; `tools.jwst.cue_grid`; pinned grids/native fits |
-| Versioned physical multiplets | [Version1](MOM_NATIVE_MULTIPLET_REFIT.md), [N IV doublet v2](MOM_NIV_DOUBLET_V2.md) | `tools.jwst.multiplet_refit`; `tools.jwst.niv_doublet_refit`;112 fresh fits per contract |
-| Composed physical/noise/wavelength alternatives | [Final336 fits](MOM_COMPOSED_SPECTRAL_ROUND.md) | `tools.jwst.composed_spectral_refit`; fresh flux/covariance JSON and signed interval figure |
-| Covariant yields and formation predictions | [Version1 yields](ATOMIC_ENRICHMENT_COMPARISON.md), [version 2 bridge](NIV_YIELD_SENSITIVITY.md), [formation](FORMATION_PREDICTIONS.md) | `discovery.atomic_enrichment`; `discovery.niv_yield_sensitivity`; `discovery.formation_predictions`; full-covariance JSON |
-| Independent solvers and counterexamples | [First](CONTINUATION_INDEPENDENT_REVIEW.md), [follow-up](CONTINUATION_FOLLOWUP_REVIEW.md), [final](CONTINUATION_FINAL_REVIEW.md) | `discovery.continuation_review`; follow-up/final/physical review modules; compact receipts; `research_output/continuation_coordinator_review.json` |
+The canonical gate preserves 46 reviewed artifacts and all 261 historical
+PR54 research-output blobs. The final independently fetched remote-tree audit is
+in [the release receipt](../research_output/research2_release_integrity_final.json).
+CI for PR79 initially failed a one-ULP floating-point exact-equality assertion; the
+independently validated numeric tolerance preserves exact labels/nulls/structure.
+Its corrected CI run 298 passes, with no changed scientific output.
 
-Large raw inputs remain outside git with public bounded regenerators and exact
-byte/hash receipts. Newly selected scientific inputs total 228,790,074bytes;
-3,425,987bytes of optional WCS software/source are separately accounted. After
-transient cache loss,464,135,040bytes of already-pinned native originals were
-recovered, separately from new input selection. The lost original-image cache
-is not claimed present; its completed reruns and reviews remain committed.
+New-transfer accounting is **1,334,355,625 bytes conservatively charged**:
+1,290,651,149 exact recorded body bytes plus 43,704,476 in upper-bound categories.
+This is 1.243 GiB against the 2 GiB cap, leaving 813,128,023 bytes. Separately,
+2,073,005,957 bytes of unique previously pinned products were restored; historical
+restoration retry wire totals are not fully instrumented. The immutable earlier
+ledgers remain historical; [v3](../research_output/research2_download_ledger_v3.json)
+is the authoritative complete ledger.
 
-## Release validation and merged PRs
 
-The final receipt `research_output/continuation_final_validation.json` records
-the tested tree, exact test/skips and lint target counts, numerical replays,
-input ledger, artifact pins and merged PR revisions. Every science PR passed
-CI and independent validation before merge. Earlier gates are historical;
-final clean tracked-tree release gate: **579 passed, 3 explicit skips**,
-117 scientific lint targets plus six core targets. The two historical
-archive fixtures and optional author Cue archive are named skips. The optional
-author NumPy/weight test passed separately on the actual pinned archive.
+Reports and manifests retain identities, raw-output preservation, runtime and
+convergence, independent reviews and focused merged PR links. A truncated PR65
+candidate artifact was repaired exactly in PR67; publication now verifies every
+remote Git blob, and the final remote-tree audit verifies JSON and historical
+artifact identities in addition to CI.
 
-| PR | Validated change | Merge revision |
-|---|---|---|
-| [#30](https://github.com/Patto1155/JWST_scnience_env_2/pull/30) | Incoming baseline/protocol | `e9975a1560ce` |
-| [#31](https://github.com/Patto1155/JWST_scnience_env_2/pull/31) | Distinct SMACS repeat | `0ad4a654addc` |
-| [#32](https://github.com/Patto1155/JWST_scnience_env_2/pull/32) | Frozen deep controls | `e4bcfd41b0eb` |
-| [#33](https://github.com/Patto1155/JWST_scnience_env_2/pull/33) | SMACS empirical noise/tails | `ecc015b3a30e` |
-| [#34](https://github.com/Patto1155/JWST_scnience_env_2/pull/34) | Versioned atomic inputs | `e95d05b5b532` |
-| [#35](https://github.com/Patto1155/JWST_scnience_env_2/pull/35) | Deep cutouts/PSF/filter inputs | `efdf88e59b2b` |
-| [#36](https://github.com/Patto1155/JWST_scnience_env_2/pull/36) | Nine-CAL native reconstruction | `06273801b1e8` |
-| [#37](https://github.com/Patto1155/JWST_scnience_env_2/pull/37) | Cue photoionization comparison | `f1a74d1ce0e3` |
-| [#38](https://github.com/Patto1155/JWST_scnience_env_2/pull/38) | Deep multiband spatial models | `fdfc98f52400` |
-| [#39](https://github.com/Patto1155/JWST_scnience_env_2/pull/39) | Covariant enrichment comparisons | `d87538305b9d` |
-| [#40](https://github.com/Patto1155/JWST_scnience_env_2/pull/40) | Independent review/operators | `2cdcbc4e7c95` |
-| [#41](https://github.com/Patto1155/JWST_scnience_env_2/pull/41) | Observed-profile injections | `9944ac3e8ded` |
-| [#42](https://github.com/Patto1155/JWST_scnience_env_2/pull/42) | Source46 atmosphere grid | `c984db47e8b2` |
-| [#43](https://github.com/Patto1155/JWST_scnience_env_2/pull/43) | Native spatial covariance | `05d619135da6` |
-| [#44](https://github.com/Patto1155/JWST_scnience_env_2/pull/44) | Native atomic/Cue follow-up | `6293d04ffe65` |
-| [#45](https://github.com/Patto1155/JWST_scnience_env_2/pull/45) | 1043 background/PSF diagnostics | `83b5c8ed1bf3` |
-| [#46](https://github.com/Patto1155/JWST_scnience_env_2/pull/46) | Version1 physical multiplet refits | `f1e428f62647` |
-| [#47](https://github.com/Patto1155/JWST_scnience_env_2/pull/47) | Formation/population predictions | `2758481572de` |
-| [#48](https://github.com/Patto1155/JWST_scnience_env_2/pull/48) | Actual-data follow-up reviews | `384448e3bc4e` |
-| [#49](https://github.com/Patto1155/JWST_scnience_env_2/pull/49) | Version2 N IV doublet refits | `678e6cf24fbf` |
-| [#50](https://github.com/Patto1155/JWST_scnience_env_2/pull/50) | Logged toy wavelength sensitivity | `bbbd15288237` |
-| [#51](https://github.com/Patto1155/JWST_scnience_env_2/pull/51) | Version2 conditional yield bridge | `98e4e2ea48eb` |
-| [#52](https://github.com/Patto1155/JWST_scnience_env_2/pull/52) | Composed336 physical/noise/wavelength fits | `0bdb5337a9e2` |
-| [#53](https://github.com/Patto1155/JWST_scnience_env_2/pull/53) | Final independent GLS/atomic/formation/yield/WCS review | `a1568038ab2a` |
+## Highest-value next work
 
-## Prioritized next work
+1. Recover or independently calibrate source-specific geometry, wavelength,
+   LSF/pathloss and source-versus-control noise transport; inspect remaining
+   raw CAPERS trace geometry before asserting an archive limitation.
+2. Obtain ion-stage/density/He–O observables that survive normalization and
+   attenuation degeneracy, with source-specific detector coverage and an
+   instrument-specific sensitivity calculation.
+3. Recover the native count/resampling operator and labeled representative
+   held-out cohorts before enlarging injection surveys or evaluating cosmology.
+4. Use independent source46 data to resolve its specific SED ambiguity;
+   improve scene/background information before further 98/1043 classification.
 
-1. Obtain actual PIXTAB/extraction settings and source-specific wavelength/LSF
-   calibration; validate cross-group covariance, residual tails and consistent
-   point-source recalibration. Extend the merged336-fit composition to
-   source geometry, redshift, intrinsic width and He/O/C IV nuisance hypotheses
-   with each own covariance, without likelihood pooling.
-2. Build a complete N IV-inclusive, composition-aware photoionization grid.
-   Public Cloudy is accessible; its≈323MB release archive exceeds the present
-   atomic acquisition allocation, requiring a separately bounded model round.
-3. Separate N IV/C III density components and He II/O III with higher-resolution
-   observations; constrain other ion stages, gas mass, C/O and retention.
-4. Improve empirical PSF/neighbor modeling for98/1043, broader source 46 spectral
-   families, optical/medium-band constraints and a disjoint long-baseline motion test.
-5. Retrieve author SED mass/time-bin conventions and fit joint data. Acquire
-   representative selection/contamination/volume evidence before population or
-   cosmological inference. Historical untestability is not negative evidence.
+Expanded conditional grids, model-member counts and candidate counts alone
+cannot resolve these missing likelihood inputs.
