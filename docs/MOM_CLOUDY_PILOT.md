@@ -184,3 +184,72 @@ hash is `b399034fb64c0e89aaa38528a53c033b870951f3c1fb277b9b20560ddc67253f`;
 library identities and the comparison. The original LP64 executable remains
 the primary first-model contract. No physical conclusion changes from a runtime
 improvement. The enhanced thermal partner is still pending convergence.
+
+## Focused composition pair and conditional group predictions
+
+The+1dex partner completed with the unchanged original LP64 executable in
+378.811s wall time (353.89s CloudyCPU),236zones and3iterations, without warnings
+or convergence failures. Its H+ weighted temperature is13177.67K versus
+13462.39K for ordinary composition. Both actual printed/every-zone C/N/O
+abundances, all29line identities, intrinsic/emergent sums and final stops pass.
+
+Actual enhanced/ordinary intrinsic responses are N IV7.825, C IV0.7835,
+He II+O III0.8880, N III8.7837 and C III0.8850. Pure nitrogen-flux rescaling
+would predict[10,1,1,10,1] and is rejected as a measurement-model shortcut.
+This is a numerical physical response, not evidence for enhanced nitrogen in
+the source. `mom_cloudy_focused_pair.json` preserves both complete thermal
+models and separate full-covariant native likelihoods. The full20environmental
+grid is not represented as executed.
+
+Among these two fixed environmental models, ordinary composition has the
+smaller profiled chi2 for all six original-wavelength noise/resolution choices.
+The DUMMY wavelength/generic-point alternative weakly prefers enhanced
+nitrogen by only0.224chi2 under empirical row-plus-column noise (0.352formal).
+These differences are conditional comparisons; no grid counts, discovery
+significance, abundance odds or prior-independent interval follows. Ordinary
+composition remains adequate under the existing empirical transport. The
+new RATE-based variance audit is a separate pending measurement dependency;
+old noise alternatives do not become empirical truth by fitting this pilot.
+
+The held-out pilot took0.251s. Ordinary/enhanced predictive quadratics for
+RATE groups03,05,07 are respectively188.08/188.91,208.03/210.55 and
+158.60/156.43 for208continuum-projected dimensions per group. Normalization
+was learned only from the two other groups, and its nonnegative truncated
+uncertainty propagated. None of the six training amplitudes reaches the
+nonnegative fit boundary. These similar scores do not identify composition
+and cannot bound a shared calibration error. They are conditional
+moment-matched diagnostics, not calibrated p-values or population evidence.
+
+## Declared complete20pilot retry after validated pair
+
+After independent validation of the original nonlinear thermal pair and the
+OpenBLAS emitted-line/average-temperature equivalence, use one consistent
+OpenBLAS executable for the complete original20model pilot. Reuse only its
+validated ordinary control and rerun the enhanced partner once on OpenBLAS,
+comparing that actual output to the original LP64 partner before extending.
+Then execute the18remaining originally declared controls, with at most2workers
+and a hard1200s wall cap per model. This authorizes19new runs of existing
+parameter choices, no added physics, no new acquisitions and no grid growth.
+The expected remaining runtime is55–90minutes; the hard computation ceiling
+is19×1200process-wall seconds. Stop and cancel unstarted futures on the first
+failed convergence, identity, completeness or timing check, retaining already
+running outcomes separately. Never replace a capped line by zero.
+
+The question is whether density, ionization, hardness and metallicity controls
+change observational discrimination or supply ordinary alternatives, under a
+complete thermal solution. The dominant measurement uncertainty is being
+revised independently using RATE-stage variance provenance. Physical model
+execution can proceed while that audit runs, but the historical empirical
+noise alternatives must stay conditional controls. Connect this completed
+pilot to the independently validated new covariance before integrated
+interpretation; do not treat the old covariance as measured truth.
+
+The consistent-backend enhanced control completed in443.312s,236zones and
+3iterations, with exact saved58line-response/five-average-temperature equality
+to the original partner and exact input bytes. Adaptive profiles remain
+separately bounded in `mom_cloudy_enhanced_backend_control.json`. This second
+runtime differs from the earlier378.811s partner; a single benchmark cannot
+isolate host load or establish a universal backend speedup. The complete
+original20pilot now uses one executable; the original pair remains a versioned
+control and duplicate reductions are never pooled. The remaining18models
+started only after this declared cross-backend preflight passed.
