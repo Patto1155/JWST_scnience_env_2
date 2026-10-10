@@ -1,0 +1,12 @@
+{
+  "requested_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/mom-cos04-v4/mom-cos04-v4_prism-clear_5224_277193.pixtab.fits",
+  "resolved_url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/mom-cos04-v4/mom-cos04-v4_prism-clear_5224_277193.pixtab.fits",
+  "retrieved_utc": "2026-10-10T02:18:51.217568+00:00",
+  "bytes": 5457600,
+  "sha256": "c3566b0173e9b1808b7fd856d98ca1be96ff2d6a0959132c1c7b9791d10e7420",
+  "content_type": "binary/octet-stream",
+  "etag": "\"7b3d6b182029497eecbc760c93f01ca5\"",
+  "last_modified": "Wed, 16 Apr 2025 13:58:53 GMT",
+  "product_id": "mom-author-pixtab",
+  "max_bytes": 10485760
+}

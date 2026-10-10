@@ -1,0 +1,12 @@
+{
+  "requested_url": "https://raw.githubusercontent.com/gbrammer/msaexp/e2b237b/msaexp/slit_combine.py",
+  "resolved_url": "https://raw.githubusercontent.com/gbrammer/msaexp/e2b237b/msaexp/slit_combine.py",
+  "retrieved_utc": "2026-10-10T02:19:31.691825+00:00",
+  "bytes": 168970,
+  "sha256": "191bf8cda952bcdbfc72db18023cd3d3cb2ca3a2b65acaf13c0b5cf5ac6dfd9a",
+  "content_type": "text/plain; charset=utf-8",
+  "etag": "\"4b9c7c12956d5b0acb8e01644622d045f31aead1ecb65c92eb84d7d52678ed46\"",
+  "last_modified": null,
+  "product_id": "msaexp-exact-source",
+  "max_bytes": 2097152
+}

@@ -1,0 +1,282 @@
+{
+  "schema_version": 1,
+  "question": "Can public author intermediate/settings be recovered and numerically replayed?",
+  "input_pins": {
+    "mom-pixtab": {
+      "bytes": 5457600,
+      "sha256": "c3566b0173e9b1808b7fd856d98ca1be96ff2d6a0959132c1c7b9791d10e7420"
+    },
+    "mom-spectrum": {
+      "bytes": 688320,
+      "sha256": "42d95d348ebb55ca37eb31393b4603628ac13a4bca1f4f7f0ffba7b32d3125b1"
+    },
+    "msaexp-source": {
+      "bytes": 168970,
+      "sha256": "191bf8cda952bcdbfc72db18023cd3d3cb2ca3a2b65acaf13c0b5cf5ac6dfd9a"
+    }
+  },
+  "pixtab_rows": 56734,
+  "pixtab_fields": [
+    "sci",
+    "sky",
+    "var_total",
+    "var_rnoise",
+    "wave",
+    "dwave_dx",
+    "yslit",
+    "bar",
+    "profile",
+    "pathloss",
+    "exposure_index",
+    "exptime"
+  ],
+  "settings": {
+    "VERSION": "0.9.5.dev8+ge2b237b",
+    "PROFCEN": 0.000999999999999911,
+    "PROFSIG": 0.36213376323372604,
+    "PROFSTRT": 0,
+    "PROFSTOP": 473,
+    "YTRACE": 15.0,
+    "YMIN1D": -3,
+    "YMAX1D": 3,
+    "WITHPATH": true
+  },
+  "weight_type": "ivm",
+  "public_release_calibration": {
+    "CAL_VER": "0.1.dev8704+g9b678d4",
+    "CAL_VCS": "9b678d4",
+    "CRDS_CTX": "jwst_1298.pmap",
+    "CRDS_VER": "12.1.4"
+  },
+  "contributors": [
+    {
+      "exposure_index": 0,
+      "filename": "jw05224004001_03101_00002_nrs2_clear_prism_raw.21.5224_277193.fits",
+      "official_visit_group": "03",
+      "nod_position": 1,
+      "rows": 6308,
+      "uv_rows_2p15_to_3p20_um": 1001,
+      "exposure_time_s": 1750.667,
+      "planned_source_xpos": -0.10699999332427979
+    },
+    {
+      "exposure_index": 1,
+      "filename": "jw05224004001_03101_00003_nrs2_clear_prism_raw.21.5224_277193.fits",
+      "official_visit_group": "03",
+      "nod_position": 2,
+      "rows": 6307,
+      "uv_rows_2p15_to_3p20_um": 1001,
+      "exposure_time_s": 1750.667,
+      "planned_source_xpos": -0.09299999475479126
+    },
+    {
+      "exposure_index": 2,
+      "filename": "jw05224004001_03101_00004_nrs2_clear_prism_raw.21.5224_277193.fits",
+      "official_visit_group": "03",
+      "nod_position": 3,
+      "rows": 6308,
+      "uv_rows_2p15_to_3p20_um": 1000,
+      "exposure_time_s": 1750.667,
+      "planned_source_xpos": -0.12099999189376831
+    },
+    {
+      "exposure_index": 3,
+      "filename": "jw05224004001_05101_00001_nrs2_clear_prism_raw.21.5224_277193.fits",
+      "official_visit_group": "05",
+      "nod_position": 1,
+      "rows": 6298,
+      "uv_rows_2p15_to_3p20_um": 1000,
+      "exposure_time_s": 1750.667,
+      "planned_source_xpos": -0.10699999332427979
+    },
+    {
+      "exposure_index": 4,
+      "filename": "jw05224004001_05101_00002_nrs2_clear_prism_raw.21.5224_277193.fits",
+      "official_visit_group": "05",
+      "nod_position": 2,
+      "rows": 6302,
+      "uv_rows_2p15_to_3p20_um": 1000,
+      "exposure_time_s": 1750.667,
+      "planned_source_xpos": -0.09299999475479126
+    },
+    {
+      "exposure_index": 5,
+      "filename": "jw05224004001_05101_00003_nrs2_clear_prism_raw.21.5224_277193.fits",
+      "official_visit_group": "05",
+      "nod_position": 3,
+      "rows": 6303,
+      "uv_rows_2p15_to_3p20_um": 996,
+      "exposure_time_s": 1750.667,
+      "planned_source_xpos": -0.12099999189376831
+    },
+    {
+      "exposure_index": 6,
+      "filename": "jw05224004001_07101_00001_nrs2_clear_prism_raw.21.5224_277193.fits",
+      "official_visit_group": "07",
+      "nod_position": 1,
+      "rows": 6295,
+      "uv_rows_2p15_to_3p20_um": 1001,
+      "exposure_time_s": 1750.667,
+      "planned_source_xpos": -0.10699999332427979
+    },
+    {
+      "exposure_index": 7,
+      "filename": "jw05224004001_07101_00002_nrs2_clear_prism_raw.21.5224_277193.fits",
+      "official_visit_group": "07",
+      "nod_position": 2,
+      "rows": 6307,
+      "uv_rows_2p15_to_3p20_um": 1001,
+      "exposure_time_s": 1750.667,
+      "planned_source_xpos": -0.09299999475479126
+    },
+    {
+      "exposure_index": 8,
+      "filename": "jw05224004001_07101_00003_nrs2_clear_prism_raw.21.5224_277193.fits",
+      "official_visit_group": "07",
+      "nod_position": 3,
+      "rows": 6306,
+      "uv_rows_2p15_to_3p20_um": 1000,
+      "exposure_time_s": 1750.667,
+      "planned_source_xpos": -0.12099999189376831
+    }
+  ],
+  "replay": {
+    "flux": {
+      "finite_bins": 467,
+      "max_absolute_difference": 5.060551977464911e-11
+    },
+    "err": {
+      "finite_bins": 467,
+      "max_absolute_difference": 9.868450501215875e-11
+    },
+    "npix": {
+      "finite_bins": 473,
+      "max_absolute_difference": 0.0
+    },
+    "profile_sum": {
+      "finite_bins": 473,
+      "max_absolute_difference": 4.68247662865906e-12
+    },
+    "flux_sum": {
+      "finite_bins": 473,
+      "max_absolute_difference": 3.574918139293004e-14
+    },
+    "var_sum": {
+      "finite_bins": 473,
+      "max_absolute_difference": 2.90878432451791e-14
+    }
+  },
+  "exact_shared_sky_value_counts": [
+    [
+      6308,
+      0,
+      0,
+      6296,
+      0,
+      0,
+      6293,
+      0,
+      0
+    ],
+    [
+      0,
+      6307,
+      0,
+      0,
+      6299,
+      0,
+      0,
+      6304,
+      0
+    ],
+    [
+      0,
+      0,
+      6308,
+      0,
+      0,
+      6301,
+      0,
+      0,
+      6306
+    ],
+    [
+      6296,
+      0,
+      0,
+      6298,
+      0,
+      0,
+      6283,
+      0,
+      0
+    ],
+    [
+      0,
+      6299,
+      0,
+      0,
+      6302,
+      0,
+      0,
+      6300,
+      0
+    ],
+    [
+      0,
+      0,
+      6301,
+      0,
+      0,
+      6303,
+      0,
+      0,
+      6300
+    ],
+    [
+      6293,
+      0,
+      0,
+      6283,
+      0,
+      0,
+      6295,
+      0,
+      0
+    ],
+    [
+      0,
+      6304,
+      0,
+      0,
+      6300,
+      0,
+      0,
+      6307,
+      0
+    ],
+    [
+      0,
+      0,
+      6306,
+      0,
+      0,
+      6300,
+      0,
+      0,
+      6306
+    ]
+  ],
+  "profile_signed_negative_rows": 36520,
+  "pathloss_range": [
+    0.7950146708174887,
+    0.8285439083124567
+  ],
+  "limits": [
+    "Public author-release pixel-table reproduction, not original RATE recalibration or publication-likelihood reproduction",
+    "Exact shared stored sky values witness dependence across official visit groups; set intersections are not covariance estimates",
+    "Pixel table has no raw detector coordinates, negative contributor masks, full covariance, empirical LSF or measured dispersion-direction placement",
+    "Diagonal error replay neither calibrates interval coverage nor establishes independent line detections",
+    "The older public release calibration differs from the already reconstructed current official CAL alternative"
+  ]
+}

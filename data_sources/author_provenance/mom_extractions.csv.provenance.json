@@ -1,0 +1,12 @@
+{
+  "requested_url": "https://grizli-cutout.herokuapp.com/nirspec_extractions?ra=150.0933255&dec=2.2731627&radius=0.001&output=csv",
+  "resolved_url": "https://grizli-cutout.herokuapp.com/nirspec_extractions?ra=150.0933255&dec=2.2731627&radius=0.001&output=csv",
+  "retrieved_utc": "2026-10-10T02:19:15.870364+00:00",
+  "bytes": 591,
+  "sha256": "d856849376bb306a2727e84fd3cd4df38baef504153435b20104837d39e9a460",
+  "content_type": "text/html; charset=utf-8",
+  "etag": null,
+  "last_modified": null,
+  "product_id": "mom_extractions.csv",
+  "max_bytes": 5242880
+}
