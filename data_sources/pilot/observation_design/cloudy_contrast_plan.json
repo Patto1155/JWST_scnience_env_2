@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "experiment_id": "complete_Cloudy_UV_discrimination_v1",
+  "execution_state": "preregistered; actual model contrasts not executed",
+  "question": "Under explicit nominal response and noise assumptions, which four new UV observing bundles most strongly distinguish the frozen ordinary/+1dex thermal-balance model families after normalization and existing attenuation nuisances?",
+  "competing_predictions": [
+    "Increasing N/C at fixed environment changes both line strengths and thermal balance, rather than multiplying nitrogen flux by10",
+    "Density, ionization, ionizing spectrum and metallicity can imitate composition-driven UV changes",
+    "Intrinsic broadening and free attenuation can reduce line-shape/color information"
+  ],
+  "expected_information_gain": "Identify concrete missing line/component observables; determine whether the finite ordinary/enhanced families remain degenerate after new measurements. No elemental abundance inference, posterior model weights or stellar-yield ranking.",
+  "input_gate": "Merged independently validated complete Cloudy C23.01 pilot: all20 declared models, converged/reviewed line identities, actual abundances, separate intrinsic/emergent29line responses, thermal balance percomposition; exact artifact/source hashes frozen before calculation",
+  "model_family": "Ten declared environmental rows, each independently rerun at logNC=-0.60 and+0.40. No new physical models.",
+  "bundles": [
+    {"name": "NIV_plus_CIII", "groups": ["NIV", "CIII"]},
+    {"name": "NIII_plus_CIII", "groups": ["NIII", "CIII"]},
+    {"name": "HeO_plus_CIII", "groups": ["HeII_OIII", "CIII"]},
+    {"name": "complete_UV", "groups": ["NIV", "CIV", "HeII_OIII", "NIII", "CIII"]}
+  ],
+  "primary_prediction_contract": "Upstream native comparison line contract retained; emergent/intrinsic separated alternatives where available, never pooled. CIV escape/stellar transfer remains unresolved.",
+  "response": "Pinned primary G235H and G235M curves; source-specific LSF unmeasured, aperture-specific detector gaps unresolved. White constant variance perunit observed wavelength for each separate mode; mode-dependent noise normalization remains unavailable.",
+  "intrinsic_fwhm_km_s": [0,300,1000],
+  "attenuation_A1500_mag": [0,0.5,1],
+  "attenuation_law": "Reuse exact upstream Cloudy pilot law; no added attenuation scenarios",
+  "profiled_nuisances": ["free nonnegative total flux", "existing attenuation choices"],
+  "assumed_known_nuisances": ["redshift14.44", "centroid", "Gaussian width", "continuum", "spatial profile", "noise shape"],
+  "distance": "Continuous Gaussian-line Gram distance with nonnegative amplitude profiled for each alternative. Expected squared separation target9. Truth matched-template SNR defined for each bundle and mode separately.",
+  "comparisons": "Matched-environment ordinary/+1dex pairs plus closest crossenvironment/attenuation pair in frozen families; deterministic finite-model sensitivity, never independent trials or probabilities",
+  "extra_stage_design": "NV1239/1243 and Cloudy-air CII2323-2328 sums relative to CIII reported as modelpredicted range/overlap only. Air/vacuum convention explicit. Optical lines remain outofNIRSpec and require newresponse/ETC.",
+  "new_selected_download_cap_bytes": 0,
+  "computation_cap_seconds": 60,
+  "physical_model_expansion": false,
+  "absolute_exposure_seconds": null,
+  "stopping_rule": "Stop after4bundles finite-family shapecontrasts and stage ranges. If data are incomplete/nonconverged/unmerged stopdependentcalculation. Do not refinephysicalgrid or giveexposurefeasibility without source-specific calibration/ETC.",
+  "validation": "Separate reviewer independently quadratures selected spectralshapes, minimizes amplitude, verifies exactline mapping/modelidentity/attenuation and absenceofpooledlikelihoods. Author tests not solevalidation."
+}

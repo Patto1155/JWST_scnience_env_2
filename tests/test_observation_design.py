@@ -105,6 +105,7 @@ def test_actual_primary_curves_units_and_nominal_range():
 
 def test_pinned_replay():
     saved = json.loads((ROOT / "research_output/mom_observation_design.json").read_text())
+
     def compare(actual, expected):
         if isinstance(expected, dict):
             assert actual.keys() == expected.keys()
@@ -122,3 +123,20 @@ def test_pinned_replay():
             assert actual == expected
 
     compare(run(), saved)
+
+
+def test_cii_target_explicit_cloudy_air_convention():
+    data = run()
+    target = next(row for row in data["additional_stage_targets"] if row["ion"] == "CII")
+    assert target["rest_wavelength_convention"] == "Cloudy air wavelength; approximate target only"
+    assert target["rest_A"] == 2326.93
+    convention = json.loads(
+        (ROOT / "data_sources/pilot/observation_design/cloudy_line_convention.json").read_text()
+    )
+    assert convention["release"] == "Cloudy C23.01"
+    assert {row["member"] for row in convention["members"]} == {
+        "source/prt.h",
+        "source/init_defaults_preparse.cpp",
+        "source/lines_service.cpp",
+        "data/blends.ini",
+    }

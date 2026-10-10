@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "release": "Cloudy C23.01",
+  "archive_url": "https://data.nublado.org/cloudy_releases/c23/c23.01.tar.gz",
+  "archive_sha256": "a9ad2dc037e88f552389de0e483d68f54310976dee32154ed13830882aedae0b",
+  "members": [
+    {
+      "member": "source/prt.h",
+      "bytes": 10432,
+      "sha256": "b9913d3b34bcf1961b6a0a819b3554ff9e8a060a2a3f5ac3e9fbee4404d0cd31"
+    },
+    {
+      "member": "source/init_defaults_preparse.cpp",
+      "bytes": 21967,
+      "sha256": "1cb3cb99d20696ba7cf029d6226febd76dd83d14ce3e04493660b5dc42784c8f"
+    },
+    {
+      "member": "source/lines_service.cpp",
+      "bytes": 31431,
+      "sha256": "169dbe617f43c3adc3f92b9ac12ef778ad03c0d528126b911d52cac8e40169a2"
+    },
+    {
+      "member": "data/blends.ini",
+      "bytes": 6808,
+      "sha256": "3ccc11430e04a028ec797d414634ed3c4574769f798008158077e43cedefd8cf"
+    }
+  ],
+  "identity": "C  2 2326.93 is an air-wavelength label in the default Cloudy line-list convention; other CII blend members in data/blends.ini corroborate identity",
+  "default": "air for wavelengths>2000Angstrom; PRINT LINE VACUUM switches convention",
+  "scope": "existing verified primary source read; no new selected download, no line flux model or conversion executed"
+}
