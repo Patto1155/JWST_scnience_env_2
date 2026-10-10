@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "report_sha256": "80ad68c99411d46f8abae2dbce113596499041d15edb8efa81da0a5fb5ee4f1d",
+  "receipt_sha256": "6a70eb8130ad71155d65933840a51a8685f2ccf31371af18820917ae998078fe",
+  "actual_response_pins": [
+    {
+      "id": "author_extractions",
+      "bytes": 591,
+      "sha256": "d856849376bb306a2727e84fd3cd4df38baef504153435b20104837d39e9a460"
+    },
+    {
+      "id": "author_slits",
+      "bytes": 10590,
+      "sha256": "d070baae68ed45a3bc92a547212511a4c338e392315494533aa075ec2e11c21f"
+    },
+    {
+      "id": "mast_position",
+      "bytes": 10181,
+      "sha256": "ae11fd602ad528284ce70e686ff456e6e85b65a6c8c830ec5bbb1579fc634c81"
+    },
+    {
+      "id": "mast_program",
+      "bytes": 31553,
+      "sha256": "11ee2ef585fe89823f463f9028c7366ba2486a239a7dbcbf5a6ec78932c4d627"
+    },
+    {
+      "id": "crds_context",
+      "bytes": 580,
+      "sha256": "518aa425a40a1385a2cbb4e10fe882b7beff6d17bee6ac9c26bbddc7b2f19d68"
+    },
+    {
+      "id": "crds_context_table",
+      "bytes": 5177,
+      "sha256": "97058fbc66d30bec0163dc119cfe7daf9dc32d7c9a6bd65f18722890f83021b7"
+    },
+    {
+      "id": "crds_wavecorr_metadata",
+      "bytes": 22259,
+      "sha256": "b2f46040b122199e7bca29f3253cb33dac93ce9263b7ce772299b8435cc9d18e"
+    },
+    {
+      "id": "mast_capers_products",
+      "bytes": 60079,
+      "sha256": "dc9e21136449da12f751c90174c186a7422d908401e01b6471904a16e785014d"
+    },
+    {
+      "id": "mast_mom_products",
+      "bytes": 60087,
+      "sha256": "5613d0260d7c7c47737de73e5d9bf69aaafc467060bcdc8777ba3d2bff7ae214"
+    },
+    {
+      "id": "crds_nirspec_imap",
+      "bytes": 6177,
+      "sha256": "722041883b977034d05600751cbbb8ce98878acda81c9c4b4f065e74de56d004"
+    },
+    {
+      "id": "crds_home",
+      "bytes": 262144,
+      "sha256": "a4f89786fbd441af8cfe98f71c1ec6cf55269c6dc67115257b0a3c2fa765b687"
+    },
+    {
+      "id": "crds_wavecorr_rmap",
+      "bytes": 833,
+      "sha256": "27b5b2603b2432af17e45349b0457b4d052874ca2103663a2f0392848e6a4445"
+    }
+  ],
+  "actual_CAL_headers_and_hashes": [
+    {
+      "filename": "jw05224004001_03101_00002_nrs2_cal.fits",
+      "sha256": "c2d318f836570e3cc77463ec91a8b2a8982deb8df4762873dcad3bdfbd03bc9f",
+      "context": "jwst_1535.pmap",
+      "wavecorr": "crds://jwst_nirspec_wavecorr_0004.asdf"
+    },
+    {
+      "filename": "jw05224004001_03101_00003_nrs2_cal.fits",
+      "sha256": "7d60c48301e7020e897bc68de72d9103f27a4e3d4dec14f6e910bd76a6a68b39",
+      "context": "jwst_1535.pmap",
+      "wavecorr": "crds://jwst_nirspec_wavecorr_0004.asdf"
+    },
+    {
+      "filename": "jw05224004001_03101_00004_nrs2_cal.fits",
+      "sha256": "0180117830dcad9a562c3c462b1dd7d08ba8ac2683c95a06d1b5c5855b0967e0",
+      "context": "jwst_1535.pmap",
+      "wavecorr": "crds://jwst_nirspec_wavecorr_0004.asdf"
+    },
+    {
+      "filename": "jw05224004001_05101_00001_nrs2_cal.fits",
+      "sha256": "c4f576ff15f6d58b4fccf6ab4f5f97e82bb3472ebab6602d8f99a8b804d97695",
+      "context": "jwst_1535.pmap",
+      "wavecorr": "crds://jwst_nirspec_wavecorr_0004.asdf"
+    },
+    {
+      "filename": "jw05224004001_05101_00002_nrs2_cal.fits",
+      "sha256": "0078c56d4d50a720b11e5ccb3be84705104c9ae06a3ecd7d8c29f5ffa678f3c5",
+      "context": "jwst_1535.pmap",
+      "wavecorr": "crds://jwst_nirspec_wavecorr_0004.asdf"
+    },
+    {
+      "filename": "jw05224004001_05101_00003_nrs2_cal.fits",
+      "sha256": "b18c997fea94810da565d1044d02a6615862a8f1d9946e47506f9d60b2bccace",
+      "context": "jwst_1535.pmap",
+      "wavecorr": "crds://jwst_nirspec_wavecorr_0004.asdf"
+    },
+    {
+      "filename": "jw05224004001_07101_00001_nrs2_cal.fits",
+      "sha256": "43faf1fe96cff76eab3cc3e33c900864fa42c5bf053a12ddf3107cc191a4c5ea",
+      "context": "jwst_1535.pmap",
+      "wavecorr": "crds://jwst_nirspec_wavecorr_0004.asdf"
+    },
+    {
+      "filename": "jw05224004001_07101_00002_nrs2_cal.fits",
+      "sha256": "5b73760be206eef6891f37b33c3e8d973eef1522ece3b1a90ef4cc6506950a75",
+      "context": "jwst_1535.pmap",
+      "wavecorr": "crds://jwst_nirspec_wavecorr_0004.asdf"
+    },
+    {
+      "filename": "jw05224004001_07101_00003_nrs2_cal.fits",
+      "sha256": "b7b3af35080d1ddafcb1184f07733e56c278f936be0fd662643dde46be8b343c",
+      "context": "jwst_1535.pmap",
+      "wavecorr": "crds://jwst_nirspec_wavecorr_0004.asdf"
+    }
+  ],
+  "independent_summed_active_query_seconds": 100.32031869799903,
+  "recorded_cumulative_query_phase_seconds": 100.87483519700072,
+  "timing_scope": "Cumulative query phase; does not measure whole workflow wall time.",
+  "CAPERS_unique_source_exposure_roots": [
+    "jw06368007001_03101_00002",
+    "jw06368007001_03101_00003",
+    "jw06368007001_03101_00004",
+    "jw06368007001_05101_00001",
+    "jw06368007001_05101_00002",
+    "jw06368007001_05101_00003",
+    "jw06368007001_07101_00001",
+    "jw06368007001_07101_00002",
+    "jw06368007001_07101_00003",
+    "jw06368007001_09101_00001",
+    "jw06368007001_09101_00002",
+    "jw06368007001_09101_00003",
+    "jw06368007001_11101_00001",
+    "jw06368007001_11101_00002",
+    "jw06368007001_11101_00003",
+    "jw06368007001_13101_00001",
+    "jw06368007001_13101_00002",
+    "jw06368007001_13101_00003"
+  ],
+  "CAPERS_source_time_s": 17069.004,
+  "independent_SkyCoord_offset_arcsec": 0.030580241105698118,
+  "public_executed_CAPERS_source_record": {
+    "obsid": 266381037,
+    "obs_collection": "JWST",
+    "proposal_id": "6368",
+    "instrument_name": "NIRSPEC/MSA",
+    "t_min": 60815.0367522338,
+    "t_max": 60815.29754989583,
+    "dataRights": "PUBLIC",
+    "dataproduct_type": "spectrum",
+    "obs_id": "jw06368-o007_s000102896_nirspec_clear-prism",
+    "s_ra": 150.1300195833333,
+    "s_dec": 2.328708333333333
+  },
+  "timed_records": 6,
+  "null_time_records": 29,
+  "context_1535_mapping_names_present_in_capped_latest_page": {
+    "disperser": "jwst_nirspec_disperser_0028.rmap",
+    "pathloss": "jwst_nirspec_pathloss_0011.rmap",
+    "photom": "jwst_nirspec_photom_0013.rmap",
+    "wavecorr": "jwst_nirspec_wavecorr_0005.rmap",
+    "wavelengthrange": "jwst_nirspec_wavelengthrange_0024.rmap"
+  },
+  "nitrogen_carbon_UV_coverage_at_assumed_z14p44": false,
+  "scope": "Metadata/actual cached headers only. Positional coincidence is not identity; catalog fit is not a new redshift; selector applicability and pixels await followup. No independent acquisition or new spectral measurement."
+}

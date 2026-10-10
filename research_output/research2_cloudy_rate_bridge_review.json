@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "artifact_filename": "mom_cloudy_focused_pair_rate_v3.json",
+  "artifact_sha256": "3c4d1dfb18cb011b8640c7b8425c94c03773b5a42dcb8fa8c8b0e6ccc4f220f2",
+  "RATE_noise_report_sha256": "5e9cc7e5e46870f0221c42f762a1186a1396f440e6b34f2b42d5c5fb259d9fc7",
+  "RATE_compact_sha256": "4d679850b44b28ed3d8fc71f0e7fd41f0aa7a7cfcd95aff896de97b728bdfa5e",
+  "gain_coupling_max_difference": 4.440892098500626e-16,
+  "complete_component_records": 48,
+  "maximum_errors": {
+    "flux": 1.850715136697545e-10,
+    "covariance": 3.1389788546221098e-09,
+    "profiled_total_chi2": 3.8539837987627834e-11,
+    "amplitude": 8.785505656305759e-11,
+    "component_summed_prediction": 0.0
+  },
+  "heldout_checks": [
+    {
+      "group": "03",
+      "nitrogen_dex": 0.0,
+      "maximum_absolute_difference": 2.9171332016630913e-10
+    },
+    {
+      "group": "03",
+      "nitrogen_dex": 1.0,
+      "maximum_absolute_difference": 2.566480361565482e-10
+    },
+    {
+      "group": "05",
+      "nitrogen_dex": 0.0,
+      "maximum_absolute_difference": 4.36941149928316e-10
+    },
+    {
+      "group": "05",
+      "nitrogen_dex": 1.0,
+      "maximum_absolute_difference": 3.8113512346171774e-10
+    },
+    {
+      "group": "07",
+      "nitrogen_dex": 0.0,
+      "maximum_absolute_difference": 4.071907255820406e-10
+    },
+    {
+      "group": "07",
+      "nitrogen_dex": 1.0,
+      "maximum_absolute_difference": 2.4142821075656684e-10
+    }
+  ],
+  "approved": true,
+  "scope": "Independent component-CDF integration, actual CAL profile/RATE gain coupling, direct Gram GLS and constrained all14-component likelihood; truncated-amplitude heldouts via independent moments and full predictive covariance. Numerical bridge approval only: scalar source-wave convention, conditional empirical transport, ionizing spectrum, C IV transfer and common source calibration remain assumptions. No elemental posterior or interval coverage certification.",
+  "reviewed_author_commit": "6d6fd5e5a4e14677147fdf8e5937c04b25a73eb1"
+}

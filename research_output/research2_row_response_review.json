@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "frozen_author_commit": "dc9cb69",
+  "artifact_sha256": "ee0a79bcc65ff60da25cbd97ad8e9aca895a70d9c7f222dca7039da29036ab00",
+  "review_code_sha256": "82f759e48435f460b0ebefd06a00f95c48f7b8f27aab2063a0e5790339dfbd5e",
+  "actual_CAL_GWCS_checks": [
+    {
+      "filename": "jw05224004001_03101_00002_nrs2_cal.fits",
+      "GWCS_vs_WAVELENGTH_max_um": 2.3841237783983615e-07,
+      "GWCS_dispersion_max_difference_m": 0.0
+    },
+    {
+      "filename": "jw05224004001_03101_00003_nrs2_cal.fits",
+      "GWCS_vs_WAVELENGTH_max_um": 2.38353580428452e-07,
+      "GWCS_dispersion_max_difference_m": 0.0
+    },
+    {
+      "filename": "jw05224004001_03101_00004_nrs2_cal.fits",
+      "GWCS_vs_WAVELENGTH_max_um": 2.38292193088796e-07,
+      "GWCS_dispersion_max_difference_m": 0.0
+    },
+    {
+      "filename": "jw05224004001_05101_00001_nrs2_cal.fits",
+      "GWCS_vs_WAVELENGTH_max_um": 2.382972246195436e-07,
+      "GWCS_dispersion_max_difference_m": 0.0
+    },
+    {
+      "filename": "jw05224004001_05101_00002_nrs2_cal.fits",
+      "GWCS_vs_WAVELENGTH_max_um": 2.382993740113193e-07,
+      "GWCS_dispersion_max_difference_m": 0.0
+    },
+    {
+      "filename": "jw05224004001_05101_00003_nrs2_cal.fits",
+      "GWCS_vs_WAVELENGTH_max_um": 2.3840926122176143e-07,
+      "GWCS_dispersion_max_difference_m": 0.0
+    },
+    {
+      "filename": "jw05224004001_07101_00001_nrs2_cal.fits",
+      "GWCS_vs_WAVELENGTH_max_um": 2.384079840211939e-07,
+      "GWCS_dispersion_max_difference_m": 0.0
+    },
+    {
+      "filename": "jw05224004001_07101_00002_nrs2_cal.fits",
+      "GWCS_vs_WAVELENGTH_max_um": 2.3837635776402522e-07,
+      "GWCS_dispersion_max_difference_m": 0.0
+    },
+    {
+      "filename": "jw05224004001_07101_00003_nrs2_cal.fits",
+      "GWCS_vs_WAVELENGTH_max_um": 2.3831894413461896e-07,
+      "GWCS_dispersion_max_difference_m": 0.0
+    }
+  ],
+  "GWCS_redecoded_this_review": true,
+  "DUMMY_reference_transform_max_differences_um": [
+    8.881784197001252e-16,
+    1.7763568394002505e-15,
+    8.881784197001252e-16,
+    8.881784197001252e-16,
+    8.881784197001252e-16,
+    1.7763568394002505e-15,
+    8.881784197001252e-16,
+    8.881784197001252e-16,
+    1.7763568394002505e-15
+  ],
+  "GWCS_decoder_status": "available",
+  "extraction_max_difference_uJy": 1.8388068845354155e-16,
+  "four_fixed_families": [
+    {
+      "resolution": "nominal",
+      "wavelength": "original_native",
+      "max_flux_difference": 1.9891999158971885e-10,
+      "max_covariance_difference": 3.285123284513247e-09,
+      "chi2_difference": 7.287326297955588e-11,
+      "row_injected_NIV_recovery": 20.000000000000252,
+      "scalar_injected_NIV_recovery": 19.959570762038812,
+      "pixel_vs_matrix_closure_error": 1.734723475976807e-17,
+      "maximum_scalar_bias_over_sigma": 0.004637634022287928,
+      "declared_Gaussian_fixed_covariance_scalar_95_coverage": [
+        0.9499992395668008,
+        0.9499975362900668,
+        0.949999944355603,
+        0.9499997962902368,
+        0.9499990555392793
+      ]
+    },
+    {
+      "resolution": "generic_point",
+      "wavelength": "original_native",
+      "max_flux_difference": 1.3157119838069775e-10,
+      "max_covariance_difference": 1.1118572729174048e-09,
+      "chi2_difference": 3.524291969370097e-12,
+      "row_injected_NIV_recovery": 20.000000000000096,
+      "scalar_injected_NIV_recovery": 19.881895362206087,
+      "pixel_vs_matrix_closure_error": 1.734723475976807e-17,
+      "maximum_scalar_bias_over_sigma": 0.016526870783298238,
+      "declared_Gaussian_fixed_covariance_scalar_95_coverage": [
+        0.94998876153725,
+        0.949968711441664,
+        0.9499965994700971,
+        0.9499987062668596,
+        0.9499965279975794
+      ]
+    },
+    {
+      "resolution": "nominal",
+      "wavelength": "pinned_toy_prediction",
+      "max_flux_difference": 2.0108359422010835e-10,
+      "max_covariance_difference": 3.2988509701681323e-09,
+      "chi2_difference": 6.52562448522076e-11,
+      "row_injected_NIV_recovery": 20.000000000000192,
+      "scalar_injected_NIV_recovery": 19.96805039193976,
+      "pixel_vs_matrix_closure_error": 1.3877787807814457e-17,
+      "maximum_scalar_bias_over_sigma": 0.0037071853878067984,
+      "declared_Gaussian_fixed_covariance_scalar_95_coverage": [
+        0.9499995298105753,
+        0.9499984257090441,
+        0.949999954139433,
+        0.949999668219244,
+        0.9499990550331944
+      ]
+    },
+    {
+      "resolution": "generic_point",
+      "wavelength": "pinned_toy_prediction",
+      "max_flux_difference": 1.2889955769423977e-10,
+      "max_covariance_difference": 1.086476686396054e-09,
+      "chi2_difference": 6.0254023992456496e-12,
+      "row_injected_NIV_recovery": 20.00000000000008,
+      "scalar_injected_NIV_recovery": 19.900182499763012,
+      "pixel_vs_matrix_closure_error": 1.734723475976807e-17,
+      "maximum_scalar_bias_over_sigma": 0.012639081625115562,
+      "declared_Gaussian_fixed_covariance_scalar_95_coverage": [
+        0.949992103598434,
+        0.9499817008096637,
+        0.9499966522765813,
+        0.949997056905808,
+        0.9499933804141352
+      ]
+    }
+  ],
+  "three_RATE_group_predictions": [
+    {
+      "group": "03",
+      "conditional_predictive_chi2": 183.74305958239955,
+      "dof": 208,
+      "difference": 1.5234036254696548e-11
+    },
+    {
+      "group": "05",
+      "conditional_predictive_chi2": 210.4134228731161,
+      "dof": 208,
+      "difference": 3.0127011996228248e-12
+    },
+    {
+      "group": "07",
+      "conditional_predictive_chi2": 158.5320932074927,
+      "dof": 208,
+      "difference": 4.916955731459893e-12
+    }
+  ],
+  "new_download_bytes": 0,
+  "approval": "Approved conditional row-resolved response and scalar-approximation budget",
+  "independence": "Direct actual CAL WAVELENGTH checks, optional ASDF/GWCS decoding; explicit erf-integrated full pixel-row bins; donor-by-donor signed subtraction; SVD extraction; independent normal GLS and profiled held-out prediction. Production row response is not imported.",
+  "limits": [
+    "Point spatial profile/pathloss and generic LSF remain assumed; full-row WAVELENGTH is extended-source calibration",
+    "DUMMY reference is a sensitivity experiment; no empirical wavelength or LSF calibration",
+    "Coverage is analytic conditional Gaussian fixed-covariance, not measured source noise or empirical coverage",
+    "Three held-out RATE groups cannot bound shared systematic distributions",
+    "No elemental N/C identification or likelihood pooling"
+  ]
+}

@@ -3,8 +3,8 @@
 import numpy as np
 import pytest
 
-from discovery.survivor_flame import audit_units, fit_vectorized, parse_table
 from discovery.survivor_atmosphere import BANDS
+from discovery.survivor_flame import audit_units, fit_vectorized, parse_table
 
 
 def test_units_crosscheck_uses_independent_jy_zeropoints_and_rejects_wrong_units():

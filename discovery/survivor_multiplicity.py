@@ -155,7 +155,10 @@ def run(directory: Path, photometry: Path, output: Path):
         "schema_version": 1,
         "source_id": 46,
         "bands": BANDS,
-        "question": "Can positive multiplicity within the finite Bobcat grid rescue its seven-band discrepancy?",
+        "question": (
+            "Can positive multiplicity within the finite Bobcat grid rescue its "
+            "seven-band discrepancy?"
+        ),
         "new_selected_download_bytes": 0,
         "photometry_sha256": hashlib.sha256(photometry.read_bytes()).hexdigest(),
         "code_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),

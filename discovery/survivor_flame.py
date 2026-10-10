@@ -156,7 +156,10 @@ def load(directory, deep_directory):
             "unit_ratio_min_by_band": ratios.min(axis=0).tolist(),
             "unit_ratio_max_by_band": ratios.max(axis=0).tolist(),
             "unit_ratio_median_by_band": np.median(ratios, axis=0).tolist(),
-            "unit_resolution": "Independent paired-table/zeropoint consistency implies mJy; notebook F_lambda prose rejected for these table numbers.",
+            "unit_resolution": (
+                "Independent paired-table/zeropoint consistency implies mJy; "
+                "notebook F_lambda prose rejected for these table numbers."
+            ),
         },
     )
 
@@ -254,7 +257,10 @@ def run(directory, deep, photometry, output):
         "runtime_seconds": time.perf_counter() - start,
         "limits": [
             "Versioned finite cloudfree updated-opacity eq/deq family; not clouds or galaxies.",
-            "Unit interpretation independently cross-validated numerically; inconsistent notebook prose is not silently applied.",
+            (
+                "Unit interpretation independently cross-validated numerically; "
+                "inconsistent notebook prose is not silently applied."
+            ),
             "Zero points/passbands are nominal, not source-specific empirical calibration.",
             "Assumed covariance floors, source morphology and physical-model inadequacy remain.",
             "Tabulated evolution metadata are not fitted ages, distances or coevality evidence.",

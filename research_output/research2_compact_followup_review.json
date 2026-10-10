@@ -1,0 +1,97 @@
+{
+  "reviewed_commit": "ba99a31031deaa17ead2eb7cd95c40a31e25dbb8",
+  "independent_code_calls_author_module": false,
+  "passed": true,
+  "inputs_sha256": {
+    "data_sources/compact_followup/wavecorr0005.response": "f7a3cb1f062b7cab37a9c28ff1c4f0c84c6fbbbe198d4059b30aa51708c6a1b4",
+    "data_sources/compact_followup/latest1596.response": "6e28255aee3087c45da5ce953c3ac996f12ae7be39ee6ab63abf2dc641a53260",
+    "data_sources/compact_followup/latest_nirspec.response": "e88ef7eca4362d916feff1ec020c925e98765a1b561c3e373e77634b1a0ed58f",
+    "data_sources/compact_followup/applicable_wavecorr.response": "869d4279137b1c7dea5e8bb4b4980d72fd0aa8423c87814050bfa710cd2b58f3",
+    "data_sources/compact_followup/capers_spec.fits": "170200ad6d1ba556ec1ee83c5427bc7fa0cd643de024d2697953c164d4be9e1b"
+  },
+  "captured_context1596_selector_chain": [
+    "jwst_nirspec_0444.imap",
+    "jwst_nirspec_wavecorr_0005.rmap"
+  ],
+  "applicable_reference": "jwst_nirspec_wavecorr_0004.asdf",
+  "same_whole_reference_SHA256": "869d4279137b1c7dea5e8bb4b4980d72fd0aa8423c87814050bfa710cd2b58f3",
+  "pedigree": "DUMMY",
+  "exposure_roots_disjoint_MoM": true,
+  "unique_NRS2_exposures": 18,
+  "exposure_time_s": 17069.004,
+  "source_position_offset_arcsec": 0.030580241104996464,
+  "usable_bins": 195,
+  "usable_wavelength_range_um": [
+    3.9379894416595107,
+    5.501833324931415
+  ],
+  "units": [
+    "um",
+    "uJy",
+    "uJy"
+  ],
+  "UV_nitrogen_coverage_at_z14p44": false,
+  "MgII_2796_2803_prediction_um": [
+    4.317570576,
+    4.328651864
+  ],
+  "scope": "captured CRDS selector and actual compact FITS identity; no spectral fit or covariance reconstruction",
+  "new_CAPERS_PIXTAB_coverage_gate": {
+    "sha256": "2c0d315274d0d0c74252f6d584e80636ae49e3a1361c0976216a366e8dbe6430",
+    "bytes": 4475520,
+    "rows": 46519,
+    "schema": [
+      "sci",
+      "sky",
+      "var_total",
+      "var_rnoise",
+      "wave",
+      "dwave_dx",
+      "yslit",
+      "bar",
+      "profile",
+      "pathloss",
+      "exposure_index",
+      "exptime"
+    ],
+    "exposure_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "finite_fields": true,
+    "positive_pathloss": true,
+    "negative_profile_rows": 29275,
+    "wave_um_minmax": [
+      3.9408765176800333,
+      5.499729683840401
+    ],
+    "UV_2p15_to_3p2_rows": 0,
+    "settings": {
+      "VERSION": "0.9.5.dev8+ge2b237b",
+      "WITHPATH": true,
+      "PROFCEN": 0.000999987364997731,
+      "PROFSIG": 0.6978526781772028,
+      "YMIN1D": -3,
+      "YMAX1D": 3
+    },
+    "individual_raw_donor_pixel_mapping_available": false,
+    "NRS1_companion_coverage_established": false,
+    "scope": "actual NRS2 author intermediate coverage gate; no spectral fit or full covariance"
+  }
+}

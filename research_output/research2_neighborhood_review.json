@@ -1,0 +1,616 @@
+{
+  "schema_version": 1,
+  "frozen_author_commit": "2b050c0ae6f574944f7681b1f24a1eb7f18e588f",
+  "frozen_artifact_sha256": "10e74e8bd2c0b33b0a0e67927189580d5ac1e98561a6822924d8ed8b93a0b973",
+  "checked_input_sha256": {
+    "dja_98_F090W.fits": "870d2d3010718b2cdee541b0c179711faee6742dbcc9d41f3fe70487e80c8ab9",
+    "dja_98_F200W.fits": "5c7d7e3ac45c0c6d34a8f7d22190a2c2276a87b83cb59d11d6c21981bd41e67b",
+    "dja_98_F444W.fits": "dfc89663a051445a708eb29680f4521a29576df45efcca48af86f52b939e11b6",
+    "f090w_v5.0_mpsf.fits": "9f32676b77f9067594d5773027f0e01c86686c9121d005967fd8925ed265b1d4",
+    "f200w_v5.0_mpsf.fits": "1d6f1ae676990b9fc0b27bd5d53e5e6291663230dc10b503e16bbcf8b62de9cd",
+    "f444wa_v5.0_mpsf.fits": "b74abf676cd57f272ada642a27fbb6a8fcb6e0181407357784d812c7f5fd6db2",
+    "jw02736001001_02101_00004_nrca1_i2d.fits": "fb3929f8470dd5e012e66fd19868e32d9154f0a7a7b572fc6c66a0fd2badaefc",
+    "jw02736001001_02105_00004_nrca1_i2d.fits": "45020ba0b16a8819cafbcd7a2b9d5af8672c8cb13ab71c5896947f04775cef38",
+    "jw02736001001_02105_00004_nrcalong_i2d.fits": "0226bb8a980aa2770bb6e57e0f91812bbbe247358f0ae80611a788a5827e1b92"
+  },
+  "sources": [
+    {
+      "source_id": 98,
+      "fits": [
+        {
+          "band": "F090W",
+          "family": "extended_multineighbor_plane",
+          "checks": {
+            "coefficients_max_abs_njy": 2.611244553918368e-13,
+            "covariance_max_abs_njy2": 3.1086244689504383e-15,
+            "fold_rms_max_abs": 1.0658141036401503e-14,
+            "total_abs_njy": 2.611244553918368e-13,
+            "total_sigma_abs_njy": 8.881784197001252e-16,
+            "aperture_abs_njy": 1.438849039914203e-13,
+            "aperture_sigma_abs_njy": 4.440892098500626e-16,
+            "condition_abs": 2.220446049250313e-16,
+            "correlation_abs": 6.938893903907228e-17
+          }
+        },
+        {
+          "band": "F090W",
+          "family": "extended_multineighbor_halo_quadratic",
+          "checks": {
+            "coefficients_max_abs_njy": 6.252776074688882e-13,
+            "covariance_max_abs_njy2": 2.4868995751603507e-14,
+            "fold_rms_max_abs": 1.021405182655144e-14,
+            "total_abs_njy": 2.353672812205332e-14,
+            "total_sigma_abs_njy": 4.440892098500626e-16,
+            "aperture_abs_njy": 1.3100631690576847e-14,
+            "aperture_sigma_abs_njy": 2.220446049250313e-16,
+            "condition_abs": 3.1086244689504383e-15,
+            "correlation_abs": 4.440892098500626e-16
+          }
+        },
+        {
+          "band": "F090W",
+          "family": "target_core_envelope_multineighbor",
+          "checks": {
+            "coefficients_max_abs_njy": 2.4868995751603507e-13,
+            "covariance_max_abs_njy2": 1.314226505400029e-14,
+            "fold_rms_max_abs": 8.43769498715119e-15,
+            "total_abs_njy": 8.881784197001252e-16,
+            "total_sigma_abs_njy": 4.440892098500626e-16,
+            "aperture_abs_njy": 3.1086244689504383e-15,
+            "aperture_sigma_abs_njy": 0.0,
+            "condition_abs": 0.0,
+            "correlation_abs": 4.440892098500626e-16
+          }
+        },
+        {
+          "band": "F090W",
+          "family": "target_three_scales_multineighbor",
+          "checks": {
+            "coefficients_max_abs_njy": 3.1530333899354446e-13,
+            "covariance_max_abs_njy2": 1.2079226507921703e-13,
+            "fold_rms_max_abs": 2.4424906541753444e-14,
+            "total_abs_njy": 7.815970093361102e-14,
+            "total_sigma_abs_njy": 4.440892098500626e-15,
+            "aperture_abs_njy": 5.5067062021407764e-14,
+            "aperture_sigma_abs_njy": 4.440892098500626e-16,
+            "condition_abs": 6.217248937900877e-15,
+            "correlation_abs": 0.0
+          }
+        },
+        {
+          "band": "F090W",
+          "family": "target_three_scales_broad_neighbors",
+          "checks": {
+            "coefficients_max_abs_njy": 1.0516032489249483e-12,
+            "covariance_max_abs_njy2": 1.8474111129762605e-13,
+            "fold_rms_max_abs": 3.552713678800501e-15,
+            "total_abs_njy": 5.506706202140776e-13,
+            "total_sigma_abs_njy": 7.105427357601002e-15,
+            "aperture_abs_njy": 1.474376176702208e-13,
+            "aperture_sigma_abs_njy": 4.440892098500626e-16,
+            "condition_abs": 1.7763568394002505e-15,
+            "correlation_abs": 4.440892098500626e-16
+          }
+        },
+        {
+          "band": "F090W",
+          "family": "target_three_scales_rotated_psf",
+          "checks": {
+            "coefficients_max_abs_njy": 2.0250467969162855e-13,
+            "covariance_max_abs_njy2": 3.907985046680551e-14,
+            "fold_rms_max_abs": 7.460698725481052e-14,
+            "total_abs_njy": 8.260059303211165e-14,
+            "total_sigma_abs_njy": 5.329070518200751e-15,
+            "aperture_abs_njy": 4.8405723873656825e-14,
+            "aperture_sigma_abs_njy": 1.5543122344752192e-15,
+            "condition_abs": 1.7763568394002505e-15,
+            "correlation_abs": 2.220446049250313e-16
+          }
+        },
+        {
+          "band": "F200W",
+          "family": "extended_multineighbor_plane",
+          "checks": {
+            "coefficients_max_abs_njy": 5.684341886080801e-13,
+            "covariance_max_abs_njy2": 1.6653345369377348e-16,
+            "fold_rms_max_abs": 1.4210854715202004e-13,
+            "total_abs_njy": 5.684341886080802e-14,
+            "total_sigma_abs_njy": 1.1102230246251565e-16,
+            "aperture_abs_njy": 5.684341886080802e-14,
+            "aperture_sigma_abs_njy": 1.1102230246251565e-16,
+            "condition_abs": 1.7763568394002505e-15,
+            "correlation_abs": 5.551115123125783e-17
+          }
+        },
+        {
+          "band": "F200W",
+          "family": "extended_multineighbor_halo_quadratic",
+          "checks": {
+            "coefficients_max_abs_njy": 9.094947017729282e-13,
+            "covariance_max_abs_njy2": 2.6645352591003757e-15,
+            "fold_rms_max_abs": 1.2079226507921703e-13,
+            "total_abs_njy": 2.2737367544323206e-13,
+            "total_sigma_abs_njy": 2.220446049250313e-16,
+            "aperture_abs_njy": 9.947598300641403e-14,
+            "aperture_sigma_abs_njy": 2.220446049250313e-16,
+            "condition_abs": 1.7763568394002505e-15,
+            "correlation_abs": 5.551115123125783e-17
+          }
+        },
+        {
+          "band": "F200W",
+          "family": "target_core_envelope_multineighbor",
+          "checks": {
+            "coefficients_max_abs_njy": 1.0231815394945443e-12,
+            "covariance_max_abs_njy2": 3.552713678800501e-15,
+            "fold_rms_max_abs": 2.2737367544323206e-13,
+            "total_abs_njy": 1.0231815394945443e-12,
+            "total_sigma_abs_njy": 4.440892098500626e-16,
+            "aperture_abs_njy": 6.536993168992922e-13,
+            "aperture_sigma_abs_njy": 0.0,
+            "condition_abs": 4.884981308350689e-15,
+            "correlation_abs": 3.3306690738754696e-16
+          }
+        },
+        {
+          "band": "F200W",
+          "family": "target_three_scales_multineighbor",
+          "checks": {
+            "coefficients_max_abs_njy": 2.6147972675971687e-12,
+            "covariance_max_abs_njy2": 3.9968028886505635e-15,
+            "fold_rms_max_abs": 6.039613253960852e-14,
+            "total_abs_njy": 1.4779288903810084e-12,
+            "total_sigma_abs_njy": 0.0,
+            "aperture_abs_njy": 1.7053025658242404e-13,
+            "aperture_sigma_abs_njy": 1.1102230246251565e-16,
+            "condition_abs": 0.0,
+            "correlation_abs": 1.1102230246251565e-16
+          }
+        },
+        {
+          "band": "F200W",
+          "family": "target_three_scales_broad_neighbors",
+          "checks": {
+            "coefficients_max_abs_njy": 2.7284841053187847e-12,
+            "covariance_max_abs_njy2": 3.375077994860476e-14,
+            "fold_rms_max_abs": 1.8118839761882555e-13,
+            "total_abs_njy": 1.1368683772161603e-13,
+            "total_sigma_abs_njy": 1.3322676295501878e-15,
+            "aperture_abs_njy": 5.684341886080802e-14,
+            "aperture_sigma_abs_njy": 3.3306690738754696e-16,
+            "condition_abs": 1.0658141036401503e-14,
+            "correlation_abs": 2.220446049250313e-16
+          }
+        },
+        {
+          "band": "F200W",
+          "family": "target_three_scales_rotated_psf",
+          "checks": {
+            "coefficients_max_abs_njy": 1.2505552149377763e-12,
+            "covariance_max_abs_njy2": 7.105427357601002e-15,
+            "fold_rms_max_abs": 4.085620730620576e-14,
+            "total_abs_njy": 6.821210263296962e-13,
+            "total_sigma_abs_njy": 1.7763568394002505e-15,
+            "aperture_abs_njy": 5.684341886080802e-14,
+            "aperture_sigma_abs_njy": 1.2212453270876722e-15,
+            "condition_abs": 1.7763568394002505e-15,
+            "correlation_abs": 2.220446049250313e-16
+          }
+        },
+        {
+          "band": "F444W",
+          "family": "extended_multineighbor_plane",
+          "checks": {
+            "coefficients_max_abs_njy": 5.4569682106375694e-12,
+            "covariance_max_abs_njy2": 1.1102230246251565e-15,
+            "fold_rms_max_abs": 9.592326932761353e-14,
+            "total_abs_njy": 5.4569682106375694e-12,
+            "total_sigma_abs_njy": 4.440892098500626e-16,
+            "aperture_abs_njy": 2.2737367544323206e-12,
+            "aperture_sigma_abs_njy": 1.1102230246251565e-16,
+            "condition_abs": 4.440892098500626e-16,
+            "correlation_abs": 9.992007221626409e-16
+          }
+        },
+        {
+          "band": "F444W",
+          "family": "extended_multineighbor_halo_quadratic",
+          "checks": {
+            "coefficients_max_abs_njy": 1.546140993013978e-11,
+            "covariance_max_abs_njy2": 2.615963001773025e-14,
+            "fold_rms_max_abs": 1.1457501614131615e-13,
+            "total_abs_njy": 1.546140993013978e-11,
+            "total_sigma_abs_njy": 6.661338147750939e-16,
+            "aperture_abs_njy": 6.821210263296962e-12,
+            "aperture_sigma_abs_njy": 2.220446049250313e-16,
+            "condition_abs": 3.552713678800501e-15,
+            "correlation_abs": 5.551115123125783e-17
+          }
+        },
+        {
+          "band": "F444W",
+          "family": "target_core_envelope_multineighbor",
+          "checks": {
+            "coefficients_max_abs_njy": 8.640199666842818e-12,
+            "covariance_max_abs_njy2": 9.769962616701378e-15,
+            "fold_rms_max_abs": 1.616484723854228e-13,
+            "total_abs_njy": 3.637978807091713e-12,
+            "total_sigma_abs_njy": 1.3322676295501878e-15,
+            "aperture_abs_njy": 9.094947017729282e-13,
+            "aperture_sigma_abs_njy": 8.881784197001252e-16,
+            "condition_abs": 5.329070518200751e-15,
+            "correlation_abs": 3.885780586188048e-16
+          }
+        },
+        {
+          "band": "F444W",
+          "family": "target_three_scales_multineighbor",
+          "checks": {
+            "coefficients_max_abs_njy": 6.394884621840902e-12,
+            "covariance_max_abs_njy2": 2.842170943040401e-14,
+            "fold_rms_max_abs": 1.0302869668521453e-13,
+            "total_abs_njy": 9.094947017729282e-13,
+            "total_sigma_abs_njy": 0.0,
+            "aperture_abs_njy": 1.5916157281026244e-12,
+            "aperture_sigma_abs_njy": 1.3322676295501878e-15,
+            "condition_abs": 1.2434497875801753e-14,
+            "correlation_abs": 1.1102230246251565e-16
+          }
+        },
+        {
+          "band": "F444W",
+          "family": "target_three_scales_broad_neighbors",
+          "checks": {
+            "coefficients_max_abs_njy": 1.318767317570746e-11,
+            "covariance_max_abs_njy2": 1.4921397450962104e-13,
+            "fold_rms_max_abs": 1.5365486660812167e-13,
+            "total_abs_njy": 9.094947017729282e-12,
+            "total_sigma_abs_njy": 1.7763568394002505e-15,
+            "aperture_abs_njy": 1.5916157281026244e-12,
+            "aperture_sigma_abs_njy": 2.220446049250313e-15,
+            "condition_abs": 5.1514348342607263e-14,
+            "correlation_abs": 2.220446049250313e-16
+          }
+        },
+        {
+          "band": "F444W",
+          "family": "target_three_scales_rotated_psf",
+          "checks": {
+            "coefficients_max_abs_njy": 1.2732925824820995e-11,
+            "covariance_max_abs_njy2": 8.881784197001252e-14,
+            "fold_rms_max_abs": 5.773159728050814e-14,
+            "total_abs_njy": 5.4569682106375694e-12,
+            "total_sigma_abs_njy": 2.6645352591003757e-15,
+            "aperture_abs_njy": 3.410605131648481e-12,
+            "aperture_sigma_abs_njy": 2.220446049250313e-16,
+            "condition_abs": 2.3092638912203256e-14,
+            "correlation_abs": 3.3306690738754696e-16
+          }
+        }
+      ],
+      "decisions": [
+        {
+          "band": "F090W",
+          "passing_families": 3,
+          "minimum_rms": 1.5237625928916796
+        },
+        {
+          "band": "F200W",
+          "passing_families": 0,
+          "minimum_rms": 5.186242893220026
+        },
+        {
+          "band": "F444W",
+          "passing_families": 0,
+          "minimum_rms": 5.228778096918419
+        }
+      ],
+      "maximum_normalized_condition": 11.900821053704357,
+      "maximum_target_nuisance_correlation": 0.6504789196819386
+    },
+    {
+      "source_id": 1043,
+      "fits": [
+        {
+          "band": "F090W",
+          "family": "extended_multineighbor_plane",
+          "checks": {
+            "coefficients_max_abs_njy": 9.00968188943807e-12,
+            "covariance_max_abs_njy2": 2.842170943040401e-14,
+            "fold_rms_max_abs": 8.384404281969182e-13,
+            "total_abs_njy": 9.00968188943807e-12,
+            "total_sigma_abs_njy": 0.0,
+            "aperture_abs_njy": 4.391154106997419e-12,
+            "aperture_sigma_abs_njy": 0.0,
+            "condition_abs": 2.220446049250313e-16,
+            "correlation_abs": 2.7755575615628914e-16
+          }
+        },
+        {
+          "band": "F090W",
+          "family": "extended_multineighbor_halo_quadratic",
+          "checks": {
+            "coefficients_max_abs_njy": 2.2424728740588762e-11,
+            "covariance_max_abs_njy2": 7.958078640513122e-13,
+            "fold_rms_max_abs": 1.0302869668521453e-13,
+            "total_abs_njy": 1.1084466677857563e-12,
+            "total_sigma_abs_njy": 1.7763568394002505e-15,
+            "aperture_abs_njy": 5.400124791776761e-13,
+            "aperture_sigma_abs_njy": 8.881784197001252e-16,
+            "condition_abs": 3.552713678800501e-15,
+            "correlation_abs": 7.216449660063518e-16
+          }
+        },
+        {
+          "band": "F090W",
+          "family": "target_core_envelope_multineighbor",
+          "checks": {
+            "coefficients_max_abs_njy": 6.093614501878619e-11,
+            "covariance_max_abs_njy2": 1.3642420526593924e-12,
+            "fold_rms_max_abs": 5.542233338928781e-13,
+            "total_abs_njy": 8.58335624798201e-12,
+            "total_sigma_abs_njy": 1.2434497875801753e-14,
+            "aperture_abs_njy": 3.993250174971763e-12,
+            "aperture_sigma_abs_njy": 6.217248937900877e-15,
+            "condition_abs": 6.661338147750939e-15,
+            "correlation_abs": 8.326672684688674e-17
+          }
+        },
+        {
+          "band": "F090W",
+          "family": "target_three_scales_multineighbor",
+          "checks": {
+            "coefficients_max_abs_njy": 4.615685611497611e-11,
+            "covariance_max_abs_njy2": 7.958078640513122e-13,
+            "fold_rms_max_abs": 7.993605777301127e-14,
+            "total_abs_njy": 3.5697667044587433e-11,
+            "total_sigma_abs_njy": 7.105427357601002e-15,
+            "aperture_abs_njy": 2.6858515411731787e-12,
+            "aperture_sigma_abs_njy": 3.552713678800501e-15,
+            "condition_abs": 6.217248937900877e-15,
+            "correlation_abs": 9.992007221626409e-16
+          }
+        },
+        {
+          "band": "F090W",
+          "family": "target_three_scales_broad_neighbors",
+          "checks": {
+            "coefficients_max_abs_njy": 3.5652192309498787e-10,
+            "covariance_max_abs_njy2": 2.9103830456733704e-11,
+            "fold_rms_max_abs": 1.0125233984581428e-13,
+            "total_abs_njy": 2.376054908381775e-11,
+            "total_sigma_abs_njy": 1.0658141036401503e-14,
+            "aperture_abs_njy": 1.0373923942097463e-12,
+            "aperture_sigma_abs_njy": 2.6645352591003757e-15,
+            "condition_abs": 1.0658141036401503e-14,
+            "correlation_abs": 2.7755575615628914e-16
+          }
+        },
+        {
+          "band": "F090W",
+          "family": "target_three_scales_rotated_psf",
+          "checks": {
+            "coefficients_max_abs_njy": 5.638867150992155e-11,
+            "covariance_max_abs_njy2": 3.751665644813329e-12,
+            "fold_rms_max_abs": 3.268496584496461e-13,
+            "total_abs_njy": 2.6830093702301383e-11,
+            "total_sigma_abs_njy": 4.618527782440651e-14,
+            "aperture_abs_njy": 1.1368683772161603e-12,
+            "aperture_sigma_abs_njy": 1.7763568394002505e-15,
+            "condition_abs": 2.6645352591003757e-15,
+            "correlation_abs": 2.275957200481571e-15
+          }
+        },
+        {
+          "band": "F200W",
+          "family": "extended_multineighbor_plane",
+          "checks": {
+            "coefficients_max_abs_njy": 2.3646862246096134e-11,
+            "covariance_max_abs_njy2": 8.526512829121202e-14,
+            "fold_rms_max_abs": 1.5631940186722204e-13,
+            "total_abs_njy": 6.991740519879386e-12,
+            "total_sigma_abs_njy": 3.552713678800501e-15,
+            "aperture_abs_njy": 3.325340003357269e-12,
+            "aperture_sigma_abs_njy": 1.7763568394002505e-15,
+            "condition_abs": 6.661338147750939e-16,
+            "correlation_abs": 3.608224830031759e-16
+          }
+        },
+        {
+          "band": "F200W",
+          "family": "extended_multineighbor_halo_quadratic",
+          "checks": {
+            "coefficients_max_abs_njy": 8.731149137020111e-11,
+            "covariance_max_abs_njy2": 2.8421709430404007e-12,
+            "fold_rms_max_abs": 2.1316282072803006e-14,
+            "total_abs_njy": 3.637978807091713e-12,
+            "total_sigma_abs_njy": 1.7763568394002505e-15,
+            "aperture_abs_njy": 1.7621459846850485e-12,
+            "aperture_sigma_abs_njy": 1.7763568394002505e-15,
+            "condition_abs": 8.881784197001252e-16,
+            "correlation_abs": 5.551115123125783e-16
+          }
+        },
+        {
+          "band": "F200W",
+          "family": "target_core_envelope_multineighbor",
+          "checks": {
+            "coefficients_max_abs_njy": 1.546140993013978e-10,
+            "covariance_max_abs_njy2": 1.1368683772161603e-12,
+            "fold_rms_max_abs": 5.329070518200751e-15,
+            "total_abs_njy": 2.0691004465334117e-11,
+            "total_sigma_abs_njy": 1.7763568394002505e-15,
+            "aperture_abs_njy": 7.617018127348274e-12,
+            "aperture_sigma_abs_njy": 0.0,
+            "condition_abs": 8.881784197001252e-16,
+            "correlation_abs": 3.0531133177191805e-16
+          }
+        },
+        {
+          "band": "F200W",
+          "family": "target_three_scales_multineighbor",
+          "checks": {
+            "coefficients_max_abs_njy": 1.255102688446641e-10,
+            "covariance_max_abs_njy2": 9.094947017729282e-13,
+            "fold_rms_max_abs": 2.6645352591003757e-14,
+            "total_abs_njy": 8.253664418589324e-11,
+            "total_sigma_abs_njy": 1.4210854715202004e-14,
+            "aperture_abs_njy": 3.410605131648481e-12,
+            "aperture_sigma_abs_njy": 5.329070518200751e-15,
+            "condition_abs": 6.217248937900877e-15,
+            "correlation_abs": 8.881784197001252e-16
+          }
+        },
+        {
+          "band": "F200W",
+          "family": "target_three_scales_broad_neighbors",
+          "checks": {
+            "coefficients_max_abs_njy": 4.838511813431978e-10,
+            "covariance_max_abs_njy2": 2.546585164964199e-11,
+            "fold_rms_max_abs": 7.460698725481052e-14,
+            "total_abs_njy": 3.228706191293895e-11,
+            "total_sigma_abs_njy": 7.105427357601002e-15,
+            "aperture_abs_njy": 1.7053025658242404e-12,
+            "aperture_sigma_abs_njy": 8.881784197001252e-16,
+            "condition_abs": 5.329070518200751e-15,
+            "correlation_abs": 4.996003610813204e-16
+          }
+        },
+        {
+          "band": "F200W",
+          "family": "target_three_scales_rotated_psf",
+          "checks": {
+            "coefficients_max_abs_njy": 8.185452315956354e-11,
+            "covariance_max_abs_njy2": 1.7053025658242404e-12,
+            "fold_rms_max_abs": 4.440892098500626e-14,
+            "total_abs_njy": 4.638422979041934e-11,
+            "total_sigma_abs_njy": 0.0,
+            "aperture_abs_njy": 5.7980287238024175e-12,
+            "aperture_sigma_abs_njy": 3.552713678800501e-15,
+            "condition_abs": 0.0,
+            "correlation_abs": 1.609823385706477e-15
+          }
+        },
+        {
+          "band": "F444W",
+          "family": "extended_multineighbor_plane",
+          "checks": {
+            "coefficients_max_abs_njy": 7.639755494892597e-11,
+            "covariance_max_abs_njy2": 2.2715163083830703e-13,
+            "fold_rms_max_abs": 1.4210854715202004e-13,
+            "total_abs_njy": 2.000888343900442e-11,
+            "total_sigma_abs_njy": 1.7763568394002505e-15,
+            "aperture_abs_njy": 7.844391802791506e-12,
+            "aperture_sigma_abs_njy": 1.7763568394002505e-15,
+            "condition_abs": 2.220446049250313e-16,
+            "correlation_abs": 4.163336342344337e-16
+          }
+        },
+        {
+          "band": "F444W",
+          "family": "extended_multineighbor_halo_quadratic",
+          "checks": {
+            "coefficients_max_abs_njy": 7.457856554538012e-11,
+            "covariance_max_abs_njy2": 2.2737367544323206e-12,
+            "fold_rms_max_abs": 4.973799150320701e-14,
+            "total_abs_njy": 2.6830093702301383e-11,
+            "total_sigma_abs_njy": 0.0,
+            "aperture_abs_njy": 1.0459189070388675e-11,
+            "aperture_sigma_abs_njy": 8.881784197001252e-16,
+            "condition_abs": 1.7763568394002505e-15,
+            "correlation_abs": 6.106226635438361e-16
+          }
+        },
+        {
+          "band": "F444W",
+          "family": "target_core_envelope_multineighbor",
+          "checks": {
+            "coefficients_max_abs_njy": 1.0186340659856796e-10,
+            "covariance_max_abs_njy2": 1.3999912340523224e-12,
+            "fold_rms_max_abs": 4.973799150320701e-14,
+            "total_abs_njy": 1.864464138634503e-11,
+            "total_sigma_abs_njy": 1.7763568394002505e-15,
+            "aperture_abs_njy": 1.0231815394945443e-11,
+            "aperture_sigma_abs_njy": 4.440892098500626e-15,
+            "condition_abs": 8.881784197001252e-15,
+            "correlation_abs": 6.38378239159465e-16
+          }
+        },
+        {
+          "band": "F444W",
+          "family": "target_three_scales_multineighbor",
+          "checks": {
+            "coefficients_max_abs_njy": 1.0913936421275139e-10,
+            "covariance_max_abs_njy2": 5.4569682106375694e-12,
+            "fold_rms_max_abs": 8.704148513061227e-14,
+            "total_abs_njy": 4.547473508864641e-13,
+            "total_sigma_abs_njy": 7.105427357601002e-15,
+            "aperture_abs_njy": 8.640199666842818e-12,
+            "aperture_sigma_abs_njy": 1.3322676295501878e-14,
+            "condition_abs": 8.881784197001252e-15,
+            "correlation_abs": 8.326672684688674e-16
+          }
+        },
+        {
+          "band": "F444W",
+          "family": "target_three_scales_broad_neighbors",
+          "checks": {
+            "coefficients_max_abs_njy": 1.4915713109076023e-10,
+            "covariance_max_abs_njy2": 3.637978807091713e-11,
+            "fold_rms_max_abs": 7.105427357601002e-15,
+            "total_abs_njy": 4.1382008930668235e-11,
+            "total_sigma_abs_njy": 7.105427357601002e-15,
+            "aperture_abs_njy": 1.750777300912887e-11,
+            "aperture_sigma_abs_njy": 1.7763568394002505e-15,
+            "condition_abs": 7.105427357601002e-15,
+            "correlation_abs": 9.992007221626409e-16
+          }
+        },
+        {
+          "band": "F444W",
+          "family": "target_three_scales_rotated_psf",
+          "checks": {
+            "coefficients_max_abs_njy": 4.001776687800884e-11,
+            "covariance_max_abs_njy2": 4.092726157978177e-12,
+            "fold_rms_max_abs": 4.973799150320701e-14,
+            "total_abs_njy": 9.094947017729282e-13,
+            "total_sigma_abs_njy": 2.1316282072803006e-14,
+            "aperture_abs_njy": 5.229594535194337e-12,
+            "aperture_sigma_abs_njy": 1.1546319456101628e-14,
+            "condition_abs": 6.217248937900877e-15,
+            "correlation_abs": 5.551115123125783e-17
+          }
+        }
+      ],
+      "decisions": [
+        {
+          "band": "F090W",
+          "passing_families": 0,
+          "minimum_rms": 7.399548828100127
+        },
+        {
+          "band": "F200W",
+          "passing_families": 0,
+          "minimum_rms": 11.581381671119784
+        },
+        {
+          "band": "F444W",
+          "passing_families": 0,
+          "minimum_rms": 15.420378831388266
+        }
+      ],
+      "maximum_normalized_condition": 16.958948140039094,
+      "maximum_target_nuisance_correlation": 0.43306350677492783
+    }
+  ],
+  "review_code_sha256": "f09257fc77b6a771376282e351433e7becd2a460c95fd22e40d16fec31d3103e",
+  "approval": "Approved conditional numerical decomposition and stopping decisions; no identity or calibrated coverage claim",
+  "independence": "No candidate_neighborhood imports. Independent finite-PSF overlap integration, coordinate-map templates and unnormalized QR rather than author normalized SVD. Shared previously reviewed input loader/stamp calibration only.",
+  "limitations": [
+    "Diagonal conditional covariance; residual inadequacy can reflect model and noise errors",
+    "Guide and inherited source98 shape predate folds; same-image amplitude prediction is not unbiased pipeline cross-validation",
+    "Failed-model coefficient ranges are not astrophysical flux intervals; weak blue98 coefficient admits zero",
+    "Well-conditioned design does not guarantee scientific component identifiability; classification stops for both candidates"
+  ],
+  "new_download_bytes": 0
+}

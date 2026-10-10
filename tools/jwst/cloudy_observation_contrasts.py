@@ -221,7 +221,10 @@ def stage_ranges(models: list[dict], attenuations: list[float], response: str) -
                 "wavelength_medium": convention,
                 "ratio_to_CIII": families,
                 "finite_range_overlap": None if right < left else [left, right],
-                "interpretation": "Finite thermal-model/attenuation prediction ranges, not confidence intervals, stage corrections or sensitivity forecasts",
+                "interpretation": (
+                    "Finite thermal-model/attenuation prediction ranges, not "
+                    "confidence intervals, stage corrections or sensitivity forecasts"
+                ),
             }
         )
     return result
@@ -276,7 +279,11 @@ def run(pilot: dict) -> dict:
         "new_observations_obtained": False,
         "alternative_response_contracts_pooled": False,
         "absolute_exposure_seconds": None,
-        "interpretation": "Conditional discrimination among finite Cloudy thermal models with known nuisance assumptions; not an abundance likelihood, posterior, source calibration or guaranteed observing feasibility",
+        "interpretation": (
+            "Conditional discrimination among finite Cloudy thermal models "
+            "with known nuisance assumptions; not an abundance likelihood, "
+            "posterior, source calibration or guaranteed observing feasibility"
+        ),
     }
 
 

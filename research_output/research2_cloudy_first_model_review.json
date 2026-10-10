@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "report_sha256": "2cb95f12b0d8e0408ac7c1a44e9bd3c15ee7fd51f15c255e9cb4ac4c0228e7f9",
+  "actual_models": [
+    {
+      "model_id": "model000",
+      "file_pin_count": 7,
+      "composition": {
+        "expected_log_CNO_over_H": [
+          -4.378773924307505,
+          -4.978773924307505,
+          -4.008773924307505
+        ],
+        "actual_printed_log_CNO_over_H": [
+          [
+            -4.3788,
+            -4.9788,
+            -4.0088
+          ]
+        ],
+        "abundance_print_tolerance_dex": 6e-05,
+        "output_sha256": "1538b29d00d6aed0b25b749d3f53d63b0b4500bcb8090adb7eb8118f8b0bfd2c",
+        "zones": {
+          "actual_zone_rows": 234,
+          "maximum_log_CNO_over_H_error_dex": 0.001226075692495776,
+          "two_column_rounding_tolerance_dex": 0.0101
+        },
+        "zone_output_sha256": "7bb3e4d330c1fb684452c921c3990792e027028728e45e2e503603287c2ba0c5"
+      },
+      "complete_intrinsic_group_intensities": [
+        0.00148386,
+        0.0187079,
+        0.0327403,
+        0.00778052,
+        0.121306
+      ],
+      "complete_emergent_group_intensities": [
+        0.00147968,
+        0.018663700000000002,
+        0.032641,
+        0.00775525,
+        0.12087
+      ],
+      "Hplus_weighted_temperature_K": 13462.39,
+      "final_stop": "Calculation stopped because low electron fraction. Iteration 3 of 3",
+      "final_zones": 234
+    }
+  ],
+  "actual_line_list_count": 29,
+  "intensities_linear": true,
+  "units": "erg s^-1 cm^-2 in the printed Cloudy intensity geometry; no source distance conversion",
+  "wavelength_namespace": "Cloudy default vacuum below2000A, air above2000A; fitted14UV components allbelow2000",
+  "primary_source_files_sha256": {
+    "prt.h": "b9913d3b34bcf1961b6a0a819b3554ff9e8a060a2a3f5ac3e9fbee4404d0cd31",
+    "init_defaults_preparse.cpp": "1cb3cb99d20696ba7cf029d6226febd76dd83d14ce3e04493660b5dc42784c8f",
+    "cddrive.cpp": "886fd3fd953cbb46ef08433c34246fbfc54184a66b25a2a14af7efe102fc49b4"
+  },
+  "scope": "Actual converged code outputs and complete component/blend/abundance guards; not a code-independent thermal solver or measured source ionizing spectrum",
+  "actual_atomic_source_archive_audit": {
+    "archive_sha256": "a9ad2dc037e88f552389de0e483d68f54310976dee32154ed13830882aedae0b",
+    "actual_archive_members_verified": 27,
+    "receipt_sha256": "cb4561102fcf35f491ea561e0a5fddf80b5d636b3ba0a11e3f1c0f0aa08ff39c",
+    "extracted_cache_matches_archive": true
+  }
+}

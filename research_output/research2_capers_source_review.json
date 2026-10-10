@@ -1,0 +1,61 @@
+{
+  "reviewed_companion_commit": "a768eb3",
+  "reviewed_S2D_commit": "db0e170",
+  "passed": true,
+  "calls_author_analysis_functions": false,
+  "inputs_sha256": {
+    "data_sources/capers_companion/products_page2.response": "d0b06822e1f04c0e0deb6cc9f451eb3c0ace005642d4d3836fdd3420f46692ea",
+    "data_sources/capers_companion/products_page3.response": "d86ee298c343b68f9b9464e0b452a8b1baa6ebb1aa7e6793faad6a88f1919b6f",
+    "data_sources/capers_companion/products_page4.response": "34e97b205a53c32f2b51fe070c88f3dd1b301b673e2d563bc856a0ea4dcc6c97",
+    "data_sources/capers_companion/products_page5.response": "e6610942201a6da2549775bb79ddb0f9f7c406cff4fe8ad50195ebcb69866fff",
+    "data_sources/capers_companion/products_page6.response": "74a4c76c083a4e59fd5515a13fb77f10b1e0479753b8ad07019fbab89a1f8000",
+    "data_sources/capers_companion/products_page7.response": "f09dd17f7a31a4e3ca88a34990e178e559cfd5041e13bbfee587128ee19e915c",
+    "data_sources/capers_companion/source_x1d.fits": "06a925cf57715f392091679e548acb5a8a2c5248e79a241e56be8d3169e240e2",
+    "data_sources/capers_companion/source_association.json": "cb02abda385ef11e79aff1e50186b7f8561dc115e506059c31ef83b1f8dcd55a",
+    "data_sources/capers_s2d/source_s2d.fits": "e740bc3a803ecb3d24a19485c1674cf809faf948a5dd8c84c7575329db9de9cb"
+  },
+  "source": {
+    "SOURCEID": 102896,
+    "SRCRA": 150.0933178,
+    "SRCDEC": 2.2731591,
+    "SRCTYPE": "POINT"
+  },
+  "association_members": 44,
+  "science_contributors": 36,
+  "detector_science_counts": {
+    "nrs1": 18,
+    "nrs2": 18
+  },
+  "actual_S2D_HDRTAB_matches_source_ASN": true,
+  "X1D_units": {
+    "WAVELENGTH": "um",
+    "FLUX": "Jy",
+    "FLUX_ERROR": "Jy"
+  },
+  "S2D_spectral_frame_units": "um",
+  "S2D_SCI_ERR_units": "MJy",
+  "S2D_wavelength_BUNIT": null,
+  "X1D_S2D_wavelength_max_difference_um": 8.881784197001252e-16,
+  "X1D_coverage": {
+    "rows": 277,
+    "usable_rows": 249,
+    "uv_rows": 0,
+    "usable_uv_rows": 0,
+    "largest_adjacent_gap_um": [
+      1.8430534601211548,
+      3.8972241878509517
+    ]
+  },
+  "S2D_coverage": {
+    "pixels": 8587,
+    "finite_wavelength_pixels": 8587,
+    "uv_wavelength_pixels_before_quality_cuts": 0,
+    "finite_science_error_wavelength_pixels": 7049,
+    "positive_error_weight_context_supported_pixels": 7049,
+    "uv_supported_pixels_before_dq": 0,
+    "dq_array_present": false,
+    "uv_supported_pixels_after_supplied_dq": null
+  },
+  "rejected_explanation": "UV absence is solely an official X1D quality/extraction-mask omission",
+  "scope": "these exact pipeline source X1D/S2D products; no raw detector absence, flux limit or new observing necessity"
+}

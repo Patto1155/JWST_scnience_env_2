@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "author_science_commit": "ddcd23b",
+  "declared_plan_commit": "4e766b6",
+  "author_result_sha256": "df00194c821bc3ff4b17ffd95c9fe7ba885c8f297f2bbdb636baf5da8f582eec",
+  "manifest_sha256": "4c2eff902a1a554bbf48e0ce58279492959f4175e7e0e430016e04bcbc3de868",
+  "actual_input_hashes": {
+    "dja_46_F410M.fits": "c73de46f62b77d6506ec7aff95b88876543c5d01de285b366b2893f89b794221",
+    "f410ma_v5.0_mpsf.fits": "dcd738c74c5a851a7b833cb0896fe0a67a66e429677b8a7d57757daecd617fba",
+    "svo_F410M.xml": "01b9b8323c4491929b4b5990d1a4142d1ecc79b8cd5ae394c4cdfa1617f864a3",
+    "dja_46_F444W.fits": "20451ceedbfce2918e1161f63deff9a4db177898ead9f19ffd93b4f03dd2ee57",
+    "svo_F444W.xml": "390eca18429a9258d8442b2e8f0ca94edbea461e61c72d5df1ce5087997a3d6b"
+  },
+  "frozen_photometry_sha256": "32f7f9d9875ef21154fff8530c8dd465b06fceadbbe9afe474ba7226784a7a92",
+  "independent_pixel_center": [
+    240.21437669393345,
+    240.2413655482378
+  ],
+  "independent_finite_PSF_retained_fraction": 0.972316802082807,
+  "six_independent_spatial_SVD_fits": [
+    {
+      "radius": 0.35,
+      "rotation": 0,
+      "flux_error_njy": 0.0,
+      "sigma_error_njy": 2.220446049250313e-16,
+      "chi2_error": 1.4551915228366852e-11
+    },
+    {
+      "radius": 0.35,
+      "rotation": 30,
+      "flux_error_njy": 0.0,
+      "sigma_error_njy": 3.3306690738754696e-16,
+      "chi2_error": 1.4551915228366852e-11
+    },
+    {
+      "radius": 0.5,
+      "rotation": 0,
+      "flux_error_njy": 2.2737367544323206e-13,
+      "sigma_error_njy": 5.551115123125783e-16,
+      "chi2_error": 1.6370904631912708e-11
+    },
+    {
+      "radius": 0.5,
+      "rotation": 30,
+      "flux_error_njy": 0.0,
+      "sigma_error_njy": 2.220446049250313e-16,
+      "chi2_error": 7.275957614183426e-12
+    },
+    {
+      "radius": 0.65,
+      "rotation": 0,
+      "flux_error_njy": 0.0,
+      "sigma_error_njy": 1.1102230246251565e-16,
+      "chi2_error": 1.4551915228366852e-11
+    },
+    {
+      "radius": 0.65,
+      "rotation": 30,
+      "flux_error_njy": 0.0,
+      "sigma_error_njy": 2.220446049250313e-16,
+      "chi2_error": 9.094947017729282e-12
+    }
+  ],
+  "independent_pixel_aperture_background_checks": [
+    {
+      "radius": 0.15,
+      "annulus": [
+        0.4,
+        0.6
+      ],
+      "flux_njy": 331.7516336667836,
+      "diagonal_sigma_njy": 0.4849456064325792
+    },
+    {
+      "radius": 0.15,
+      "annulus": [
+        0.6,
+        0.9
+      ],
+      "flux_njy": 333.03322889697915,
+      "diagonal_sigma_njy": 0.4715516071858535
+    },
+    {
+      "radius": 0.2,
+      "annulus": [
+        0.4,
+        0.6
+      ],
+      "flux_njy": 364.57443243006736,
+      "diagonal_sigma_njy": 0.6874217007572866
+    },
+    {
+      "radius": 0.2,
+      "annulus": [
+        0.6,
+        0.9
+      ],
+      "flux_njy": 366.95453785757337,
+      "diagonal_sigma_njy": 0.65449415829559
+    },
+    {
+      "radius": 0.3,
+      "annulus": [
+        0.4,
+        0.6
+      ],
+      "flux_njy": 413.3768592051025,
+      "diagonal_sigma_njy": 1.107459944844958
+    },
+    {
+      "radius": 0.3,
+      "annulus": [
+        0.6,
+        0.9
+      ],
+      "flux_njy": 418.549011384106,
+      "diagonal_sigma_njy": 1.008865522820275
+    }
+  ],
+  "independent_Nelder_Mead_centroid_arcsec": [
+    0.014392591603912213,
+    0.04234316813299653
+  ],
+  "independent_centroid_displacement_arcsec": 0.004675662456281883,
+  "author_centroid_difference_arcsec": 7.431303279021164e-07,
+  "fraction_fiducial_diagonal_chi2_within_0p2arcsec": 0.8213115386433303,
+  "F410_model_flux_span_njy": [
+    544.8112924401935,
+    575.2663374153077
+  ],
+  "ratio_is_calibrated_measurement_interval": false,
+  "independent_conditional_f410_over_f444": 0.8448259063545117,
+  "independent_single_line_overlap_window_micron": [
+    4.307,
+    4.316
+  ],
+  "prescribed_overlap_tolerance_fraction": 0.15,
+  "explicit_narrow_line_center_micron": 4.3115000000000006,
+  "independently_integrated_narrow_line_band_ratio": 0.8353298739997591,
+  "shared_exact_contributors": [],
+  "approval_scope": "Positive adjacent-band counterpart, conditional finite-PSF fits and overlapping-line degeneracy",
+  "limitations": [
+    "Model residual/core structure dominates formal background-only errors; no precise calibrated flux ratio",
+    "No independent visit/calibration merely because filters have disjoint filenames",
+    "Single-line overlap window uses prescribed tolerance, not confidence or redshift interval",
+    "No source identity, proper motion, empirical PSF or stellar/galaxy classification"
+  ]
+}

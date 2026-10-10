@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "author_code_sha256": "6d25dc3376ed24bc0c1b5cae476472e0cbe46cb24a7884b1b9109e6c0bbb0825",
+  "synthetic_seed": 4595,
+  "synthetic_pair_count": 100,
+  "attenuation_pairs_per_comparison": 9,
+  "max_fraction_error": 1.6653345369377348e-16,
+  "scope": "Randomized synthetic all100 pair minima and ten matched pairs; independent numerical Gaussian quadrature and bounded amplitude optimization. No actual Cloudy output or observing forecast."
+}

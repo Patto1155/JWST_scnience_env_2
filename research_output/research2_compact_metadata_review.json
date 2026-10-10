@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "report_sha256": "fdd3d749ac25ddbb31db71cdc7148029437aa6cf3f59717f73acfab069d76053",
+  "receipt_sha256": "015488ed73223d1ce8878255e63eefd527754bcf431d29d0f8986197eac492ab",
+  "actual_input_pins": [
+    {
+      "id": "wavecorr0005",
+      "sha256": "f7a3cb1f062b7cab37a9c28ff1c4f0c84c6fbbbe198d4059b30aa51708c6a1b4",
+      "bytes": 884
+    },
+    {
+      "id": "latest1596",
+      "sha256": "6e28255aee3087c45da5ce953c3ac996f12ae7be39ee6ab63abf2dc641a53260",
+      "bytes": 580
+    },
+    {
+      "id": "latest_nirspec",
+      "sha256": "e88ef7eca4362d916feff1ec020c925e98765a1b561c3e373e77634b1a0ed58f",
+      "bytes": 6231
+    },
+    {
+      "id": "applicable_wavecorr",
+      "sha256": "869d4279137b1c7dea5e8bb4b4980d72fd0aa8423c87814050bfa710cd2b58f3",
+      "bytes": 16453
+    },
+    {
+      "id": "capers_spec",
+      "sha256": "170200ad6d1ba556ec1ee83c5427bc7fa0cd643de024d2697953c164d4be9e1b",
+      "bytes": 694080
+    }
+  ],
+  "exact_exposure_mode": "NRS_MSASPEC",
+  "actual_CAL_observation_ISO": "2025-04-16 03:54:27.628",
+  "selected_reference": "jwst_nirspec_wavecorr_0004.asdf",
+  "same_historical_reference_SHA256": "869d4279137b1c7dea5e8bb4b4980d72fd0aa8423c87814050bfa710cd2b58f3",
+  "pedigree": "DUMMY",
+  "actual_unique_NRS2_roots": [
+    "jw06368007001_03101_00002",
+    "jw06368007001_03101_00003",
+    "jw06368007001_03101_00004",
+    "jw06368007001_05101_00001",
+    "jw06368007001_05101_00002",
+    "jw06368007001_05101_00003",
+    "jw06368007001_07101_00001",
+    "jw06368007001_07101_00002",
+    "jw06368007001_07101_00003",
+    "jw06368007001_09101_00001",
+    "jw06368007001_09101_00002",
+    "jw06368007001_09101_00003",
+    "jw06368007001_11101_00001",
+    "jw06368007001_11101_00002",
+    "jw06368007001_11101_00003",
+    "jw06368007001_13101_00001",
+    "jw06368007001_13101_00002",
+    "jw06368007001_13101_00003"
+  ],
+  "actual_source_time_s": 17069.004,
+  "actual_usable_bins": 195,
+  "actual_usable_wavelength_range_um": [
+    3.9379894416595107,
+    5.501833324931415
+  ],
+  "units": {
+    "wave": "um",
+    "flux": "uJy",
+    "err": "uJy",
+    "sky": "uJy",
+    "path_corr": null,
+    "npix": null,
+    "flux_sum": null,
+    "profile_sum": null,
+    "var_sum": null
+  },
+  "independent_summed_active_query_seconds": 41.794527530670166,
+  "new_selected_body_transfer_bytes": 701775,
+  "pinned_reference_restoration_bytes_separate": 16453,
+  "scope": "Actual compact FITS, contributors and selected reference identities; no new line fit, raw reduction, empirical calibration or source identity."
+}
