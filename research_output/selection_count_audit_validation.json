@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "starting_master": "139c4c21160208cebdb7db9a92c50b8744bd3149",
+  "design_revision": "4f1f4c5",
+  "preregistered_cap_bytes": 8388608,
+  "actual_selected_bytes": 1544079,
+  "solver_cap_seconds": 120,
+  "observed_audit_runtime_seconds": 0.8344597100003739,
+  "checks": {
+    "tests/test_selection_count_audit.py": {
+      "passed": 6
+    },
+    "tests/test_selection_pilot.py": {
+      "passed": 8
+    },
+    "focused_ruff": "pass",
+    "actual_image_hash_verification": "all 3 prior SCI/WHT pins exact",
+    "released_source_ast_contract": "pass",
+    "bounded_network_read_guard": "pass",
+    "bounded_prefix_restoration": "offline original-pinned-prefix transport mock, exact4096-byte read and hash/ETag validation pass"
+  },
+  "artifacts": {
+    "data_sources/selection_count_audit/manifest.json": {
+      "bytes": 5480,
+      "sha256": "255eed9215ffddd62ed2c6ee21d02c7bcd1185c24a72e46bbb21afec1f8d7f09"
+    },
+    "research_output/selection_count_audit.json": {
+      "bytes": 53516,
+      "sha256": "c46b28bda61602b692f39c177eb9325329fd1a7a17440c1739da918b1bf28a46"
+    },
+    "research_output/selection_variance_public_probes.json": {
+      "bytes": 6422,
+      "sha256": "d4f283a7e40a07cff998a071a1d44c53224f3d22f9e1f6ab8a2b260a63128c89"
+    },
+    "research_output/selection_var_prefix_retention.json": {
+      "bytes": 912,
+      "sha256": "231cfd06ffc9b4863381a6c87b755aba3f0de393f6146e5635cd483caca8c892"
+    }
+  },
+  "numerical_replay_content_sha256": "26a02fa59f0431254d555cae08a5234f76f448835e5b35bcca491bea072a15dd",
+  "independent_review": "fd9918d approves original count/provenance/accessibility scope; retained raw-header geometry supplement pending reviewer validation",
+  "physical_source_poisson_reproduction": "not achieved; no calibrated pilot rerun",
+  "public_var_access": "confirmed bounded association VAR.gz prefix, complete43MB product not acquired",
+  "population_calibration": "not achieved; missing independently verified real class labels and selected-population denominators",
+  "repeat_prefix_transfer_bytes": 4096
+}

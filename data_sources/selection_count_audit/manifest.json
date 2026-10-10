@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "source_release": "grizli1.12.10",
+  "source_git_revision": "3c5b6beb620607993ddf9c300652980c59ed2fa1",
+  "source_scope": "public release-tag source matches logged version, not certified exact production runtime",
+  "acquisition_cap_bytes": 8388608,
+  "actual_selected_bytes": 1544079,
+  "products": [
+    {
+      "id": "grizli-1.12.10-release",
+      "filename": "grizli-1.12.10.json",
+      "url": "https://pypi.org/pypi/grizli/1.12.10/json",
+      "max_bytes": 1048576,
+      "sha256": "c3f02ae2cac94fff94cb58dde793dae2f668ab191289c42a01abbba344d5cf6f",
+      "expected_bytes": 9156
+    },
+    {
+      "id": "dja-exposure-center",
+      "filename": "dja_exposures_center.csv",
+      "url": "https://grizli-cutout.herokuapp.com/exposures?ra=53.120000&dec=-27.810000&arcmin=0.01",
+      "max_bytes": 2097152,
+      "sha256": "79eac0625de926dfa9d31f24f44f564ee5e16b33b5e8589ac5d0b2a8899d9542",
+      "expected_bytes": 436948
+    },
+    {
+      "id": "grizli-tag",
+      "filename": "grizli-tag-1.12.10.json",
+      "url": "https://api.github.com/repos/gbrammer/grizli/git/ref/tags/1.12.10",
+      "max_bytes": 100000,
+      "sha256": "4c438123bd1c10a9506f7edb77d105d1ae6d03a14ef90f9fba13ef2949abaff5",
+      "expected_bytes": 341
+    },
+    {
+      "id": "grizli/utils.py",
+      "filename": "grizli_utils.py",
+      "url": "https://raw.githubusercontent.com/gbrammer/grizli/3c5b6beb620607993ddf9c300652980c59ed2fa1/grizli/utils.py",
+      "max_bytes": 2097152,
+      "sha256": "a214e3271c6c75dab24cfc49c35b208cb1f6c876ddbb6c476abefbc1ef5f0c5e",
+      "expected_bytes": 386002
+    },
+    {
+      "id": "grizli/aws/aws_drizzler.py",
+      "filename": "grizli_aws_aws_drizzler.py",
+      "url": "https://raw.githubusercontent.com/gbrammer/grizli/3c5b6beb620607993ddf9c300652980c59ed2fa1/grizli/aws/aws_drizzler.py",
+      "max_bytes": 2097152,
+      "sha256": "fe30e6f0e843e059d5835851dc98e0efdf4be8017a475394c44b118f54312baa",
+      "expected_bytes": 46903
+    },
+    {
+      "id": "grizli/jwst_utils.py",
+      "filename": "grizli_jwst_utils.py",
+      "url": "https://raw.githubusercontent.com/gbrammer/grizli/3c5b6beb620607993ddf9c300652980c59ed2fa1/grizli/jwst_utils.py",
+      "max_bytes": 2097152,
+      "sha256": "0eed4ecccd3c4a5f745281e9add899875bb7612f0a6c7b29c6d89e6ede32177a",
+      "expected_bytes": 135049
+    },
+    {
+      "id": "dja-api-docs",
+      "filename": "dja-api-docs.html",
+      "url": "https://dawn-cph.github.io/dja/general/api_summary/",
+      "max_bytes": 1048576,
+      "sha256": "367b2bcfbe08152893a03211d4fa50510509a9c06fe6dc346b8b08bf6b446ee4",
+      "expected_bytes": 77051
+    },
+    {
+      "id": "grizli/aws/db.py",
+      "filename": "grizli_aws_db.py",
+      "url": "https://raw.githubusercontent.com/gbrammer/grizli/3c5b6beb620607993ddf9c300652980c59ed2fa1/grizli/aws/db.py",
+      "max_bytes": 2097152,
+      "expected_bytes": 133777,
+      "sha256": "e517bac15aff14b2d730586b25a9a3740db131fe494581a014589638bc8d6110"
+    },
+    {
+      "id": "grizli-source-tree",
+      "filename": "grizli_source_tree.json",
+      "url": "https://api.github.com/repos/gbrammer/grizli/git/trees/3c5b6beb620607993ddf9c300652980c59ed2fa1?recursive=1",
+      "max_bytes": 1048576,
+      "expected_bytes": 54678,
+      "sha256": "3c08ad6b48f04d033b8d5654cb354547d66bb4797b436a33c7b0606f019c5e70"
+    },
+    {
+      "id": "grizli/aws/tile_mosaic.py",
+      "filename": "grizli_aws_tile_mosaic.py",
+      "url": "https://raw.githubusercontent.com/gbrammer/grizli/3c5b6beb620607993ddf9c300652980c59ed2fa1/grizli/aws/tile_mosaic.py",
+      "max_bytes": 500000,
+      "expected_bytes": 56169,
+      "sha256": "7b40f1544f0d81950ce6fa1a9d985ec009d1e18147fdaac0078fd183cad939df"
+    },
+    {
+      "id": "grizli/aws/field_tiles.py",
+      "filename": "grizli_aws_field_tiles.py",
+      "url": "https://raw.githubusercontent.com/gbrammer/grizli/3c5b6beb620607993ddf9c300652980c59ed2fa1/grizli/aws/field_tiles.py",
+      "max_bytes": 500000,
+      "expected_bytes": 52043,
+      "sha256": "d392884fd9fbc682a4cdeaf489872bc980c90361119e714a4bbc33e5a0a123ef"
+    },
+    {
+      "id": "grizli/aws/visit_processor.py",
+      "filename": "grizli_aws_visit_processor.py",
+      "url": "https://raw.githubusercontent.com/gbrammer/grizli/3c5b6beb620607993ddf9c300652980c59ed2fa1/grizli/aws/visit_processor.py",
+      "max_bytes": 500000,
+      "expected_bytes": 110552,
+      "sha256": "7959a089bd6670eaa7766ca8dbcbee86d0506e1d6ce986f8201a43d2968087d5"
+    },
+    {
+      "id": "dja-center-assoc-mosaics",
+      "filename": "dja_center_assoc_mosaics.html",
+      "url": "https://grizli-cutout.herokuapp.com/assoc_mosaic?coords=53.120000,-27.810000,0.01&filters=F444W-CLEAR&output=table",
+      "max_bytes": 1048576,
+      "expected_bytes": 29761,
+      "sha256": "6243152015f2414eb171fe834bf01f804081f9e96a9ffe91ee2d9e1dada3c38b"
+    },
+    {
+      "id": "dja-f444w-association-var-prefix",
+      "filename": "dja_f444w_assoc_var_prefix4096.bin",
+      "url": "https://s3.amazonaws.com/grizli-v2/assoc_mosaic/v7.0/j033228m2748_goods-s-medium01-1180-f444w_00089-f444w-clear_drc_var.fits.gz",
+      "acquisition_kind": "bounded_http_prefix",
+      "max_bytes": 4096,
+      "expected_bytes": 4096,
+      "sha256": "88921ea0135dd62d619c1e0cb3dff8bccae2b17cf44bbecb7d1f3a9b990edcfe",
+      "etag": "\"2dd378dd38e8600b0faf242c6d04f3a6-6\""
+    }
+  ],
+  "metadata_source_bytes": 1532526,
+  "bounded_probe_body_bytes": 11553,
+  "repeat_transfer_bytes": 4096
+}

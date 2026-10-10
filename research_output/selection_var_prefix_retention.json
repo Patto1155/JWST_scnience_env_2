@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "original_body_prefix_sha256": "88921ea0135dd62d619c1e0cb3dff8bccae2b17cf44bbecb7d1f3a9b990edcfe",
+  "persisted_prefix_filename": "dja_f444w_assoc_var_prefix4096.bin",
+  "persisted_prefix_bytes": 4096,
+  "persisted_prefix_sha256": "88921ea0135dd62d619c1e0cb3dff8bccae2b17cf44bbecb7d1f3a9b990edcfe",
+  "original_etag": "\"2dd378dd38e8600b0faf242c6d04f3a6-6\"",
+  "observed_repeat_etag": "\"2dd378dd38e8600b0faf242c6d04f3a6-6\"",
+  "observed_repeat_status": 206,
+  "observed_repeat_content_range": "bytes 0-4095/43219789",
+  "additional_repeat_transfer_bytes": 4096,
+  "previous_round_selected_bytes": 1539983,
+  "updated_round_selected_bytes": 1544079,
+  "cap_bytes": 8388608,
+  "scope": "Exact original compressed4096-byte prefix retained outside git with pinned bounded Range restoration; header claims available for direct independent decoding, no VAR pixels or full map acquired"
+}
