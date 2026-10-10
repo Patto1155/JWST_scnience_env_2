@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "baseline_revision": "379ff35786aff31535335bbe7d1de114f91dd3c4",
+  "restored_native_originals": [
+    {
+      "bytes": 51563520,
+      "sha256": "c2d318f836570e3cc77463ec91a8b2a8982deb8df4762873dcad3bdfbd03bc9f",
+      "filename": "jw05224004001_03101_00002_nrs2_cal.fits"
+    },
+    {
+      "bytes": 51575040,
+      "sha256": "7d60c48301e7020e897bc68de72d9103f27a4e3d4dec14f6e910bd76a6a68b39",
+      "filename": "jw05224004001_03101_00003_nrs2_cal.fits"
+    },
+    {
+      "bytes": 51575040,
+      "sha256": "0180117830dcad9a562c3c462b1dd7d08ba8ac2683c95a06d1b5c5855b0967e0",
+      "filename": "jw05224004001_03101_00004_nrs2_cal.fits"
+    },
+    {
+      "bytes": 51560640,
+      "sha256": "c4f576ff15f6d58b4fccf6ab4f5f97e82bb3472ebab6602d8f99a8b804d97695",
+      "filename": "jw05224004001_05101_00001_nrs2_cal.fits"
+    },
+    {
+      "bytes": 51575040,
+      "sha256": "0078c56d4d50a720b11e5ccb3be84705104c9ae06a3ecd7d8c29f5ffa678f3c5",
+      "filename": "jw05224004001_05101_00002_nrs2_cal.fits"
+    },
+    {
+      "bytes": 51575040,
+      "sha256": "b18c997fea94810da565d1044d02a6615862a8f1d9946e47506f9d60b2bccace",
+      "filename": "jw05224004001_05101_00003_nrs2_cal.fits"
+    },
+    {
+      "bytes": 51560640,
+      "sha256": "43faf1fe96cff76eab3cc3e33c900864fa42c5bf053a12ddf3107cc191a4c5ea",
+      "filename": "jw05224004001_07101_00001_nrs2_cal.fits"
+    },
+    {
+      "bytes": 51575040,
+      "sha256": "5b73760be206eef6891f37b33c3e8d973eef1522ece3b1a90ef4cc6506950a75",
+      "filename": "jw05224004001_07101_00002_nrs2_cal.fits"
+    },
+    {
+      "bytes": 51575040,
+      "sha256": "b7b3af35080d1ddafcb1184f07733e56c278f936be0fd662643dde46be8b343c",
+      "filename": "jw05224004001_07101_00003_nrs2_cal.fits"
+    }
+  ],
+  "restored_bytes_separate_from_new_acquisition": 464135040,
+  "new_selected_download_bytes": 0,
+  "native_geometry_exact": true,
+  "actual_pixel_reduction_scenario_replay": [
+    {
+      "name": "nominal_shared_formal",
+      "maximum_flux_difference": 1.0658141036401503e-14,
+      "maximum_covariance_difference": 4.440892098500626e-16
+    },
+    {
+      "name": "point_shared_formal",
+      "maximum_flux_difference": 0.0,
+      "maximum_covariance_difference": 0.0
+    },
+    {
+      "name": "nominal_empirical_offtrace_transport",
+      "maximum_flux_difference": 1.7763568394002505e-14,
+      "maximum_covariance_difference": 2.842170943040401e-14
+    },
+    {
+      "name": "point_empirical_offtrace_transport",
+      "maximum_flux_difference": 1.7763568394002505e-15,
+      "maximum_covariance_difference": 2.842170943040401e-14
+    }
+  ],
+  "actual_pixel_compact_arrays": [
+    {
+      "key": "flux",
+      "shape": [
+        9,
+        70
+      ],
+      "exact_equal_nan": true,
+      "finite_maximum_absolute_difference": 0.0
+    },
+    {
+      "key": "covariance_blocks",
+      "shape": [
+        70,
+        9,
+        9
+      ],
+      "exact_equal_nan": true,
+      "finite_maximum_absolute_difference": 0.0
+    },
+    {
+      "key": "spectral_kernel",
+      "shape": [
+        70,
+        70
+      ],
+      "exact_equal_nan": true,
+      "finite_maximum_absolute_difference": 0.0
+    },
+    {
+      "key": "selected_columns",
+      "shape": [
+        70
+      ],
+      "exact_equal_nan": true,
+      "finite_maximum_absolute_difference": 0.0
+    },
+    {
+      "key": "native_wave",
+      "shape": [
+        9,
+        28,
+        423
+      ],
+      "exact_equal_nan": true,
+      "finite_maximum_absolute_difference": 0.0
+    },
+    {
+      "key": "native_good",
+      "shape": [
+        9,
+        28,
+        423
+      ],
+      "exact_equal_nan": true,
+      "finite_maximum_absolute_difference": 0.0
+    },
+    {
+      "key": "trace",
+      "shape": [
+        9,
+        423
+      ],
+      "exact_equal_nan": true,
+      "finite_maximum_absolute_difference": 0.0
+    },
+    {
+      "key": "sigma",
+      "shape": [
+        1
+      ],
+      "exact_equal_nan": true,
+      "finite_maximum_absolute_difference": 0.0
+    },
+    {
+      "key": "noise_scale_squared",
+      "shape": [
+        1
+      ],
+      "exact_equal_nan": true,
+      "finite_maximum_absolute_difference": 0.0
+    }
+  ],
+  "composed_compact_replay": {
+    "fits": 336,
+    "byte_exact": false,
+    "baseline_sha256": "fd14eb0028016c7c66c09cdae74a6474416e11c6a29003103e274887ab0fdc50",
+    "fresh_replay_sha256": "43703f3c4036a7938bf53ef33f6ed2588cc5c38fad1b719df4e9090285c55e10",
+    "maximum_flux_difference": 2.842170943040401e-14,
+    "maximum_covariance_difference": 1.1368683772161603e-13,
+    "scope": "Frozen compact numerical replay, not actual-pixel measurement"
+  },
+  "actual_pixel_reduction_scope": "Official CAL2.0.1 independent native alternative; existing point-pathloss/profile/sharednoise assumptions; no second subtraction. Metadatawording/newspatialflag and float roundoff prevent wholeJSONbyteidentity.",
+  "python_version": "3.12.14"
+}
