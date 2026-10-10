@@ -1,0 +1,318 @@
+{
+  "original_executable_sha256": "9833712a825ba23d96717c88481406df21b83e758655476358f63e2fa841abc5",
+  "new_executable_sha256": "b399034fb64c0e89aaa38528a53c033b870951f3c1fb277b9b20560ddc67253f",
+  "original_model": {
+    "id": "model001",
+    "parameters": {
+      "log_nH_cm3": 3.0,
+      "log_U": -2.0,
+      "blackbody_K": 60000.0,
+      "metallicity_scale": 0.2,
+      "log_CO": -0.37,
+      "log_NC_relative_minus060": 1.0
+    },
+    "actual_gas_abundances": {
+      "OXYG": {
+        "declared_log_XH": -4.008773924307505,
+        "actual_log_XH_range": [
+          -4.01,
+          -4.01
+        ],
+        "output_rounding_tolerance_dex": 0.0101,
+        "actual_printed_log_XH": -4.0088
+      },
+      "CARB": {
+        "declared_log_XH": -4.378773924307505,
+        "actual_log_XH_range": [
+          -4.38,
+          -4.38
+        ],
+        "output_rounding_tolerance_dex": 0.0101,
+        "actual_printed_log_XH": -4.3788
+      },
+      "NITR": {
+        "declared_log_XH": -3.9787739243075047,
+        "actual_log_XH_range": [
+          -3.98,
+          -3.98
+        ],
+        "output_rounding_tolerance_dex": 0.0101,
+        "actual_printed_log_XH": -3.9788
+      }
+    },
+    "runtime_seconds": 378.8112914209996,
+    "wall_time_cap_seconds": 1200,
+    "OPENBLAS_NUM_THREADS": 1,
+    "convergence_summary": "Cloudy ends: 236 zones, 3 iterations. (single thread) ExecTime(s) 353.89",
+    "intrinsic_line_values": [
+      0.0067761,
+      0.0048351,
+      0.0096452,
+      0.0050119,
+      0.0060774,
+      0.0058509,
+      0.017146,
+      0.0031374,
+      0.0068926,
+      0.029473,
+      0.021684,
+      0.0071544,
+      0.064171,
+      0.043186,
+      0.011611,
+      0.014657,
+      0.029074,
+      0.068341,
+      0.10736,
+      0.14104,
+      0.85038,
+      0.08983,
+      3.7135e-06,
+      1.8603e-06,
+      0.00035914,
+      0.00059529,
+      0.0037826,
+      0.0021747,
+      0.00067281
+    ],
+    "emergent_line_values": [
+      0.006757,
+      0.0048215,
+      0.0096223,
+      0.0049998,
+      0.0060596,
+      0.0058331,
+      0.017094,
+      0.0031272,
+      0.0068702,
+      0.029377,
+      0.021614,
+      0.007131,
+      0.06394,
+      0.043031,
+      0.011579,
+      0.014622,
+      0.028987,
+      0.068119,
+      0.10697,
+      0.14101,
+      0.85022,
+      0.089809,
+      3.7058e-06,
+      1.8564e-06,
+      0.00035758,
+      0.00059269,
+      0.003766,
+      0.0021652,
+      0.00066986
+    ],
+    "hydrogen_weighted_temperature_output": "#averages\t TEMP HYDR 2 0\t TEMP NITR 3 0\t TEMP NITR 4 0\t TEMP CARB 3 0\t TEMP CARB 4 0\n\t 1.317767e+04\t 1.322447e+04\t 1.309227e+04\t 1.320018e+04\t 1.308892e+04\n",
+    "zone_temperature_K_range": [
+      1093.3,
+      14442.0
+    ],
+    "zones": 236,
+    "refined_continuum_and_convergence": false,
+    "files": [
+      {
+        "name": "model001.in",
+        "bytes": 764,
+        "sha256": "7cb228bd4655d8fcf3a7eeb214de198ced569c32a4f7c698981c64473db4c9c9"
+      },
+      {
+        "name": "model001.out",
+        "bytes": 426308,
+        "sha256": "86cbd67fdac1a0550b0a8b27941b6b23a6e032ce2910ad1e371de039e59fecef"
+      },
+      {
+        "name": "model001.lin",
+        "bytes": 748,
+        "sha256": "40664bacb0cb7c42a3576955a8a2e521db2514b49d21d52f08b80a245ae19f96"
+      },
+      {
+        "name": "model001.emergent.lin",
+        "bytes": 748,
+        "sha256": "9ac94ed66c85feafd22c6cf39a4a68e22603015310be5e15b7f741fa0e632ad2"
+      },
+      {
+        "name": "model001.ovr",
+        "bytes": 66675,
+        "sha256": "151b5363fd874854f463c4589360edc58d8a0a5d34bd25c986ecfc5fcb7aa528"
+      },
+      {
+        "name": "model001.abn",
+        "bytes": 42162,
+        "sha256": "91dbf3e2d21158d9485bcef9457c0c5ddbc583cb6fa32a1718614ffd84131219"
+      },
+      {
+        "name": "model001.avr",
+        "bytes": 156,
+        "sha256": "323563bf9edc5e88aa54b278419d3a02735ac55dbdd6f148cba9d250ec28e1a4"
+      }
+    ]
+  },
+  "consistent_backend_model": {
+    "id": "model001",
+    "parameters": {
+      "log_nH_cm3": 3.0,
+      "log_U": -2.0,
+      "blackbody_K": 60000.0,
+      "metallicity_scale": 0.2,
+      "log_CO": -0.37,
+      "log_NC_relative_minus060": 1.0
+    },
+    "actual_gas_abundances": {
+      "OXYG": {
+        "declared_log_XH": -4.008773924307505,
+        "actual_log_XH_range": [
+          -4.01,
+          -4.01
+        ],
+        "output_rounding_tolerance_dex": 0.0101,
+        "actual_printed_log_XH": -4.0088
+      },
+      "CARB": {
+        "declared_log_XH": -4.378773924307505,
+        "actual_log_XH_range": [
+          -4.38,
+          -4.38
+        ],
+        "output_rounding_tolerance_dex": 0.0101,
+        "actual_printed_log_XH": -4.3788
+      },
+      "NITR": {
+        "declared_log_XH": -3.9787739243075047,
+        "actual_log_XH_range": [
+          -3.98,
+          -3.98
+        ],
+        "output_rounding_tolerance_dex": 0.0101,
+        "actual_printed_log_XH": -3.9788
+      }
+    },
+    "runtime_seconds": 443.3115328240001,
+    "executable_sha256": "b399034fb64c0e89aaa38528a53c033b870951f3c1fb277b9b20560ddc67253f",
+    "wall_time_cap_seconds": 1200,
+    "OPENBLAS_NUM_THREADS": 1,
+    "convergence_summary": "Cloudy ends: 236 zones, 3 iterations. (single thread) ExecTime(s) 429.34",
+    "intrinsic_line_values": [
+      0.0067761,
+      0.0048351,
+      0.0096452,
+      0.0050119,
+      0.0060774,
+      0.0058509,
+      0.017146,
+      0.0031374,
+      0.0068926,
+      0.029473,
+      0.021684,
+      0.0071544,
+      0.064171,
+      0.043186,
+      0.011611,
+      0.014657,
+      0.029074,
+      0.068341,
+      0.10736,
+      0.14104,
+      0.85038,
+      0.08983,
+      3.7135e-06,
+      1.8603e-06,
+      0.00035914,
+      0.00059529,
+      0.0037826,
+      0.0021747,
+      0.00067281
+    ],
+    "emergent_line_values": [
+      0.006757,
+      0.0048215,
+      0.0096223,
+      0.0049998,
+      0.0060596,
+      0.0058331,
+      0.017094,
+      0.0031272,
+      0.0068702,
+      0.029377,
+      0.021614,
+      0.007131,
+      0.06394,
+      0.043031,
+      0.011579,
+      0.014622,
+      0.028987,
+      0.068119,
+      0.10697,
+      0.14101,
+      0.85022,
+      0.089809,
+      3.7058e-06,
+      1.8564e-06,
+      0.00035758,
+      0.00059269,
+      0.003766,
+      0.0021652,
+      0.00066986
+    ],
+    "hydrogen_weighted_temperature_output": "#averages\t TEMP HYDR 2 0\t TEMP NITR 3 0\t TEMP NITR 4 0\t TEMP CARB 3 0\t TEMP CARB 4 0\n\t 1.317767e+04\t 1.322447e+04\t 1.309227e+04\t 1.320018e+04\t 1.308892e+04\n",
+    "zone_temperature_K_range": [
+      1093.3,
+      14442.0
+    ],
+    "zones": 236,
+    "refined_continuum_and_convergence": false,
+    "files": [
+      {
+        "name": "model001.in",
+        "bytes": 764,
+        "sha256": "7cb228bd4655d8fcf3a7eeb214de198ced569c32a4f7c698981c64473db4c9c9"
+      },
+      {
+        "name": "model001.out",
+        "bytes": 426308,
+        "sha256": "05c0a9ccea5710ab9d287c847907ae0d0b544fcfa912f97d7754c763497110e4"
+      },
+      {
+        "name": "model001.lin",
+        "bytes": 748,
+        "sha256": "40664bacb0cb7c42a3576955a8a2e521db2514b49d21d52f08b80a245ae19f96"
+      },
+      {
+        "name": "model001.emergent.lin",
+        "bytes": 748,
+        "sha256": "9ac94ed66c85feafd22c6cf39a4a68e22603015310be5e15b7f741fa0e632ad2"
+      },
+      {
+        "name": "model001.ovr",
+        "bytes": 66675,
+        "sha256": "5b9851337cfc04134bf96486dd1157e09fc40dd8e4301a551cb2af03ad56a01f"
+      },
+      {
+        "name": "model001.abn",
+        "bytes": 42162,
+        "sha256": "91dbf3e2d21158d9485bcef9457c0c5ddbc583cb6fa32a1718614ffd84131219"
+      },
+      {
+        "name": "model001.avr",
+        "bytes": 156,
+        "sha256": "323563bf9edc5e88aa54b278419d3a02735ac55dbdd6f148cba9d250ec28e1a4"
+      }
+    ]
+  },
+  "comparison": {
+    "intrinsic_line_values": 0.0,
+    "emergent_line_values": 0.0,
+    "max_relative_temperature_difference": 0.0,
+    "actual_input_bytes_equal": true,
+    "zone_profiles_byte_exact": false,
+    "max_zone_temperature_absolute_difference_K": 0.09999999999990905,
+    "max_zone_temperature_relative_difference": 7.427213309559495e-05,
+    "max_depth_relative_difference": 0.0,
+    "line_relative_tolerance": 0.0003,
+    "temperature_average_relative_tolerance": 0.0001
+  },
+  "scope": "Emitted line and ionic-weighted average-temperature outputs; adaptive zones are not required byte-identical."
+}

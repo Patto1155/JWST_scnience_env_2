@@ -269,6 +269,7 @@ def execute_model(
         "parameters": parameters,
         "actual_gas_abundances": abundances,
         "runtime_seconds": seconds,
+        "executable_sha256": digest(executable),
         "wall_time_cap_seconds": timeout_seconds,
         "OPENBLAS_NUM_THREADS": 1,
         "convergence_summary": summary[-1],
@@ -765,7 +766,8 @@ def main() -> None:
         failed = []
         cancelled = []
         if args.resume_models:
-            models = json.loads(args.resume_models.read_text())["models"]
+            resumed = json.loads(args.resume_models.read_text())
+            models = resumed["models"]
             identities = set()
             for model in models:
                 index = int(model["id"].removeprefix("model"))
@@ -776,6 +778,9 @@ def main() -> None:
                 ):
                     raise ValueError("resume model identity differs from declared pilot")
                 identities.add(model["id"])
+                model_executable = model.get("executable_sha256", resumed.get("executable_sha256"))
+                if model_executable is None or model_executable != digest(executable):
+                    raise ValueError("resume requires the same explicitly pinned executable")
                 for item in model["files"]:
                     path = args.run_directory / item["name"]
                     if digest(path) != item["sha256"]:
@@ -863,6 +868,7 @@ def main() -> None:
             "failed_models": failed,
             "cancelled_models": sorted(cancelled),
             "requested_models": args.limit,
+            "all_requested_models_converged": not failed and len(models) == args.limit,
             "wall_time_cap_seconds_per_model": args.timeout_seconds,
             "line_contract_version": 2,
             "lines": LINES,
