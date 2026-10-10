@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "approved": true,
+  "checked_remote_head": "9eb9c3737309298057b7fc68e326cd7e56e5e437",
+  "checked_coordinator_revision": "75a6527b8530f2ba0e9d0bcea83591bc62bdd561",
+  "canonical_science_artifacts": 46,
+  "historical_research_artifacts": 261,
+  "strict_json_count": 342,
+  "strict_new_science_modules": 53,
+  "quality_passed": 719,
+  "quality_explicit_skips": 3,
+  "independent_science_reviews_verified": 35,
+  "live_successful_science_heads_checked": 25,
+  "initial_document_head_CI_run_number": 302,
+  "scientific_conclusion_changed": "Signed nod response and target-only CAL variance contracts corrected using actual RATE pixels. Composition-dependent thermal predictions now available; ordinary declared composition remains conditionally adequate.",
+  "conclusions_not_established": [
+    "New high-redshift source",
+    "Elemental nitrogen abundance",
+    "Stellar polluter",
+    "Survey completeness or contamination",
+    "Cosmological population odds"
+  ],
+  "dominant_unresolved_assumptions": [
+    "Source-specific wavelength/LSF/pathloss/morphology",
+    "Source-versus-off-source noise transport and common systematics",
+    "Ionizing spectrum, ion fractions, He/O and C IV transfer",
+    "Native count/resampling operator and labeled representative populations"
+  ],
+  "final_integrity_receipt_sha256": "d41d242dca976075562f954415ca757564cc4ea58e67576e11a064fdbb1fb669",
+  "scope": "Independent initial PR80 scientific/document/publication acceptance. Later receipt-only update and merge require exact identity/CI checks; self-hash and future head exempt."
+}

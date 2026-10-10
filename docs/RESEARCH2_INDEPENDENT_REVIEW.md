@@ -644,3 +644,27 @@ requirements file, pyproject and pytest configuration matches the coordinator
 revision tested under the exact lock (`21605ea`). The independent detached
 worktree is clean. Authoritative release documents remain a separate final
 review before their merge.
+
+### Final independent acceptance
+
+Remote PR80 head `9eb9c3737309298057b7fc68e326cd7e56e5e437` was fetched into
+a clean detached worktree. All nine supplement files exactly match coordinator
+`75a6527`; all 46 canonical science artifacts, 261 historical research blobs,
+strict JSON and strict coverage of 53 new science modules pass. All 298
+code/configuration identities match the tested Git revision; 65 installed
+versions match the unchanged lock. Independent JUnit parsing confirms 719
+passes, three explicit baseline skips, zero errors/failures and 39.415 s.
+Log/XML identities, all 35 recorded independent reviews and ledger identities
+were checked. Fresh independent GitHub Actions reads confirm all 25 recorded
+PR55–79 heads and initial PR80 run302 successful; their merge/head ancestry
+is independently verified.
+
+The authoritative status/report/handover are scientifically acceptable: they
+identify the corrected measurement contracts, complete thermal pilot, bounded
+forecast and specific rejected explanations while preserving unresolved
+calibration, ionization and population limitations. Internal links and
+reproduction flags were inspected. The only planned missing link is the final
+audit receipt itself. The receipt specifies the exact head audited and excludes
+its self-hash/future publication head; subsequent receipt-only publication and
+merge still require exact byte and CI checks. No new discovery, elemental
+abundance, polluter or cosmological conclusion is accepted.
