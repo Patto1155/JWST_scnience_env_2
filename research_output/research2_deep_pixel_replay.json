@@ -7,7 +7,27 @@
   "byte_equal": false,
   "numerical_result_max_abs_diff": 0.0,
   "replay_command": "python -m discovery.survivor_deep_model --input /tmp/jwst-deep --output /tmp/deep-replay.json",
-  "non_byte_equivalence_reason": "84 acquisition-metadata differences only: restored UTC, dynamic API ETag/Last-Modified; all scientific values and byte hashes equal.",
-  "all_scientific_values_equal": true,
-  "differing_acquisition_metadata_leaves": 84
+  "non_byte_equivalence_reason": "84 acquisition-metadata differences in executed default-thread run only; reviewer thread1 run also shows numerical solver-trajectory differences.",
+  "differing_acquisition_metadata_leaves": 84,
+  "scope": "Actual-pixel replay in inherited/default BLAS thread environment only; does not claim thread-policy-independent exact reproduction.",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "thread_environment": {
+      "OPENBLAS_NUM_THREADS": null,
+      "OMP_NUM_THREADS": null,
+      "MKL_NUM_THREADS": null,
+      "BLIS_NUM_THREADS": null
+    }
+  },
+  "all_scientific_values_equal_in_executed_default_environment": true,
+  "independent_thread_policy_check": {
+    "OPENBLAS_NUM_THREADS": 1,
+    "reviewer_reported_numeric_leaf_differences": 1850,
+    "reviewer_reported_metadata_leaf_differences": 84,
+    "example_source46_sigma_arcsec_original": 0.22497421771914988,
+    "example_source46_sigma_arcsec_thread1": 0.222812,
+    "interpretation": "Degenerate spatial optimizer trajectories depend on BLAS threading; quantify flux/result stability separately, preserve frozen photometry contract. Not universally byte/numeric-identical."
+  }
 }

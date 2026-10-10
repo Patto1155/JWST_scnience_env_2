@@ -23,7 +23,13 @@ filter identities and exact bytes. The old deep model and atmosphere contracts
 remain unchanged. The independently restored atmosphere computation reproduces
 171.4926606425/49.3833505151 for the old5%/15% single-member best fits.
 A fresh actual-pixel deep-model replay is a separate restoration check; replaying
-compact photometry is never called independent image reproduction.
+compact photometry is never called independent image reproduction. Its executed
+inherited/default BLAS-thread environment reproduces all scientific values
+exactly, with84 acquisition-provenance leaf changes. Independent review using
+`OPENBLAS_NUM_THREADS=1` finds1850 numeric leaves changed by degenerate spatial
+optimizer trajectories. Exact numerical replay therefore has a thread-policy
+scope; frozen source photometry remains the versioned input for this experiment.
+The replay receipt records runtime/thread policy and the independent discrepancy.
 
 ## Exhaustive GLS pairs and a verifiable cone lower bound
 
