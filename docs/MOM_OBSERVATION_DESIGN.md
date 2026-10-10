@@ -37,7 +37,9 @@ For MOS, aperture-specific detector edges and gaps must be checked in an
 | N III multiplet |2.697095–2.708168|closest≈176.2|G235H; intrinsic width can blend members|
 | C III1907/1909 |2.943919 /2.947085|322.3|G235M/H; G395M/H alternative with gap check|
 
-N V1239/1243 falls at1.912738/1.918883µm and C II2327 at3.592780µm;
+N V1239/1243 falls at1.912738/1.918883µm. The Cloudy C II2326.93 **air**
+line-list label gives an approximate target3.592780µm; a vacuum conversion is
+required for exact instrumental wavelength assignment.
 additional stages have nominal near-IR wavelength access, but predicted flux,
 transfer and sensitivity are needed before feasibility. Hβ, [O III]5007 and
 [N II]6583 lie at≈7.506/7.731/10.165µm using Cloudy's air wavelengths as
@@ -125,3 +127,15 @@ Unique newly selected inputs total1,668,841bytes:83,520 dispersion products and
 page adds551,357transfer bytes, separately from unique input selection. There
 were no failed transfers or paid resources. Raw dynamic HTML is read/provenanced
 but not committed; exact scientific FITS are committed and bounded-regenerable.
+
+## Wavelength-convention correction
+
+The original C II target was incorrectly labeled vacuum. Independent review
+identified the Cloudy default air convention above2,000Å. Direct source inspection
+verifies `source/prt.h`, `init_defaults_preparse.cpp`, `lines_service.cpp` and
+`data/blends.ini` in the pinned C23.01 archive; exact member hashes are in
+[the convention receipt](../data_sources/pilot/observation_design/cloudy_line_convention.json).
+The corrected target is explicitly an approximate air-based wavelength, like the
+optical targets. Its numeric approximation is preserved. All36 density/UV
+response cases use vacuum wavelengths below2,000Å and remain exactly unchanged.
+No conversion or empirical calibration is claimed by this correction.

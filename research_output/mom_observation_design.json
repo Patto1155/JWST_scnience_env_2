@@ -1350,7 +1350,7 @@
     },
     {
       "ion": "CII",
-      "rest_wavelength_convention": "vacuum",
+      "rest_wavelength_convention": "Cloudy air wavelength; approximate target only",
       "rest_A": 2326.93,
       "observed_um": 3.5927799199999995,
       "inside_nominal_NIRSpec_0p6_5p3": true

@@ -204,7 +204,7 @@ def run() -> dict:
         for ion, wavelength, convention in [
             ("NV", 1238.82, "vacuum"),
             ("NV", 1242.80, "vacuum"),
-            ("CII", 2326.93, "vacuum"),
+            ("CII", 2326.93, "Cloudy air wavelength; approximate target only"),
             ("Hbeta", 4861.32, "Cloudy air wavelength; approximate target only"),
             ("OIII", 5006.84, "Cloudy air wavelength; approximate target only"),
             ("NII", 6583.45, "Cloudy air wavelength; approximate target only"),
