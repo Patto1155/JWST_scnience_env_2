@@ -1,0 +1,25 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_nirspec_wavecorr_0003.rmap',
+    'file_ext' : '.asdf',
+    'filekind' : 'WAVECORR',
+    'filetype' : 'WAVECORR',
+    'instrument' : 'NIRSPEC',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nirspec_wavecorr_0004.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.EXPOSURE.TYPE',), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '32dc391a4be56f22ae111b5687cad11203323974',
+    'suffix' : 'wavecorr',
+    'text_descr' : 'Wavelength Zero-point Correction',
+}
+
+selector = Match({
+    'N/A' : 'N/A',
+    'NRS_FIXEDSLIT|NRS_BRIGHTOBJ' : UseAfter({
+        '2015-11-01 00:00:00' : 'jwst_nirspec_wavecorr_0003.asdf',
+    }),
+    'NRS_MSASPEC' : UseAfter({
+        '2015-11-01 00:00:00' : 'jwst_nirspec_wavecorr_0004.asdf',
+    }),
+})

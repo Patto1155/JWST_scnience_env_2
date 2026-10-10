@@ -1,0 +1,18 @@
+header = {
+    'derived_from' : 'jwst_1534.pmap',
+    'description' : 'Hand-edit to define all step parameter reftypes for all instruments',
+    'mapping' : 'PIPELINE',
+    'name' : 'jwst_1535.pmap',
+    'observatory' : 'JWST',
+    'parkey' : ('META.INSTRUMENT.NAME',),
+    'sha1sum' : 'c9d3eb571cf453915ba108dd43bd4ef172c6a57e',
+}
+
+selector = {
+    'FGS' : 'jwst_fgs_0125.imap',
+    'MIRI' : 'jwst_miri_0487.imap',
+    'NIRCAM' : 'jwst_nircam_0354.imap',
+    'NIRISS' : 'jwst_niriss_0308.imap',
+    'NIRSPEC' : 'jwst_nirspec_0432.imap',
+    'SYSTEM' : 'jwst_system_0064.imap',
+}

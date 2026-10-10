@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JWST Calibration Reference Data System (CRDS)</title>
+
+     
+    
+    
+    
+
+    
+
+    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css" />      
+    <link rel="stylesheet" href="/static/jquery-ui/jquery-ui.min.css" />
+    <link rel="stylesheet" href="/static/jquery-ui/jquery-ui.structure.min.css" />
+    <link rel="stylesheet" href="/static/jquery-ui/jquery-ui.theme.min.css" />
+    <link rel="stylesheet" href="/static/fontawesome/css/all.min.css" />
+
+    
+    <link rel="stylesheet" href="/static/style.css" />
+
+    <script type="text/javascript" src="/static/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="/static/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/static/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/static/dj_parsley/js/parsley.js"></script>
+
+    
+
+    <script type="text/javascript" src="/static/crds_utils.js"></script> 
+    <script type="text/javascript" src="/static/fits-fc9b1946ff.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+
+    
+         
+  </head>
+
+  <body>
+<div class="container">
+    <noscript>
+      <h2>This page requires JavaScript to be enabled.</h2>
+    </noscript>
+
+    <div style="vertical-align: middle;">
+        <div style="margin: 0; padding: 3px; width:100%; background: darkblue; height: 30px;">
+
+            <div class="btn-toolbar pull-right" role="toolbar" aria-label="...">
+                
+ 
+                <div class="btn-group" role="group" aria-label="...">
+                    <a type="button" class="btn btn-xs btn-default" href="/">Home</a>
+                    
+                        <a type="button" class="btn btn-xs btn-default" href="/login/?next=/browse/jwst_nirspec_wavecorr_0004.asdf">Login</a>
+                    
+                    <a type="button" class="btn btn-xs btn-default"
+                    href="/static/users_guide/index.html">Guide</a>
+
+                    
+                </div> 
+                
+                <div class="btn-group" role="group" aria-label="...">
+                    <a type="button" class="btn btn-xs btn-default" title="Back" href="#" onclick="javascript:history.back(1);">&#11013;</a>
+                    <a type="button" class="btn btn-xs btn-default" title="Forward" href="#" onclick="javascript:history.forward(1);">&#10145;</a>
+                </div> 
+
+            </div>
+            
+        </div>
+
+        <h1 style="padding-left: 10px;">JWST Calibration Reference Data System (CRDS) 
+          
+        </h1>
+
+        
+        <div style="margin: 0 0 10px 0; padding: 3px; width:100%; background: darkblue; line-height: 0.5em;"> &nbsp; </div>
+    </div>
+
+    <div id="contents">
+        <script type="text/javascript">$("#contents").hide();</script>
+        
+        
+
+<h2>
+    Browse <span class='gray'>jwst_nirspec_wavecorr_0004.asdf</span>
+
+    
+
+    &nbsp;&nbsp;
+    <span style="font-size: 0.75em;">
+      <a href='https://jwst-crds.stsci.edu/unchecked_get/references/jwst/jwst_nirspec_wavecorr_0004.asdf' download>download</a>
+    </span>
+
+    
+
+        
+     
+
+
+</h2>
+
+
+<div class="accordion">
+    <h3>Database</h3>
+    <div>
+    
+        
+            <table border="1">
+                <tr>
+                    <td width="20%" align="left" class="tdlabel">CRDS Name</td>
+                    <td><span class='green'>jwst_nirspec_wavecorr_0004.asdf</span></td>
+                </tr>
+                 <tr>
+                    <td width="20%" align="left" class="tdlabel">Uploaded Name</td>
+                    <td>new_wavecorr_mos.asdf</td>
+                 </tr>
+                <tr>
+                    <td width="20%" align="left" class="tdlabel">Sha1sum</td>
+                    
+                        <td>87ce132ef5aed30211eedc8ae6128b9d5492a971</td>
+                    
+                </tr>
+                <tr>
+                    <td width="20%" align="left" class="tdlabel">Size (bytes)</td>
+                    <td>16453 ( 16.5 K)</td>
+                </tr>
+                <tr>
+                    <td width="20%" align="left" class="tdlabel">Status</td>
+                    <td class="darkgold">latest</td>
+                </tr>
+
+                 
+                 <tr>
+                    <td width="20%" align="left" class="tdlabel">Reject Flag</td>
+                    <td>False</td>
+                 </tr>
+                 <tr>
+                    <td width="20%" align="left" class="tdlabel">Replaced By File Name</td>
+                    <td></td>
+                 </tr>
+
+                
+
+                <tr>
+                    <td width="20%" align="left" class="tdlabel">Reason for Delivery</td>
+                    <td>While investigating anomalous pipeline results it was found that the wavecorr files in CRDS had the rows and columns flipped. These 2 new NIRSpec wavecorr files have corrected that problem for FS, BRIGHTOBJ and MOS modes for both detector 1 and 2. Delivered by Ubeda</td>
+                 </tr>
+                 <tr>
+                    <td width="20%" align="left" class="tdlabel">Derived From</td>
+                    <td>none</td>
+                 </tr>
+                 <tr>
+                    <td width="20%" align="left" class="tdlabel">Change Level</td>
+                    <td>SEVERE</td>
+                 </tr>
+                 <tr>
+                    <td width="20%" align="left" class="tdlabel">Delivery Date</td>
+                    <td>2021-12-07 14:51:22</td>
+                 </tr>
+                 <tr>
+                    <td width="20%" align="left" class="tdlabel">Activation Date</td>
+                    <td>2021-12-08 10:46:11</td>
+                 </tr>
+                 
+                     <tr>
+                        <td width="20%" align="left" class="tdlabel">History</td>
+                        <td class="simple_white">
+                          <pre class='simple_white'>2017-08-29 13:54:24 :: NIRSPEC wavelength zero-point correction.</p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td width="20%" align="left" class="tdlabel">Descrip</td>
+                        <td>wavelength zero-point reference file for MOS computed using a simple toy model</td>
+                     </tr>
+                     <tr>
+                        <td width="20%" align="left" class="tdlabel">Pedigree</td>
+                        <td>DUMMY</td>
+                     </tr>
+                      <tr>
+                        <td width="20%" align="left" class="tdlabel">Useafter Date</td>
+                        <td>2015-11-01 00:00:00</td>
+                     </tr>
+                     
+                 
+            </table>
+        
+
+    </div>
+</div>
+
+
+
+<div class="accordion">
+    <h3>Contents</h3>
+    <div>
+    
+    <div class="simple_white" id="file_contents">
+      <b>Header Parameters</b>
+<br/>
+<br/>
+<table border='1'>
+<tr><td class='tdlabel'>FILE_FORMAT</td><td>ASDF</td></tr>
+<tr><td class='tdlabel'>META.EXPOSURE.TYPE</td><td>NRS_MSASPEC</td></tr>
+<tr><td class='tdlabel'>META.INSTRUMENT.NAME</td><td>NIRSPEC</td></tr>
+<tr><td class='tdlabel'>REFTYPE</td><td>WAVECORR</td></tr>
+</table>
+<br/>
+<b>ASDF Tree</b>
+<br/><br/>
+<div class='simple_white'>
+<pre>
+#ASDF 1.0.0
+#ASDF_STANDARD 1.5.0
+%YAML 1.1
+%TAG ! tag:stsci.edu:asdf/
+--- !core/asdf-1.1.0
+asdf_library: !core/software-1.0.0 {author: The ASDF Developers, homepage: &#x27;http://github.com/asdf-format/asdf&#x27;,
+  name: asdf, version: 2.8.1}
+history:
+  entries:
+  - !core/history_entry-1.0.0
+    description: NIRSPEC wavelength zero-point correction.
+    software: !core/software-1.0.0 {author: N.Dencheva, homepage: &#x27;https://github.com/spacetelescope/jwreftools&#x27;,
+      name: jwstreftools, version: 0.7.1}
+    time: 2017-08-29 13:54:24.762240
+  extensions:
+  - !core/extension_metadata-1.0.0
+    extension_class: asdf.extension.BuiltinExtension
+    software: !core/software-1.0.0 {name: asdf, version: 2.8.1}
+  - !core/extension_metadata-1.0.0
+    extension_class: astropy.io.misc.asdf.extension.AstropyAsdfExtension
+    software: !core/software-1.0.0 {name: astropy, version: &#x27;5.0&#x27;}
+apertures:
+- aperture_name: MOS
+  variance: !core/ndarray-1.0.0
+    source: 0
+    datatype: float64
+    byteorder: big
+    shape: [21, 21]
+  width: 0.00010442
+  zero_point_offset: !transform/tabular-1.2.0
+    bounding_box:
+    - [-0.5, 0.5]
+    - [6.0e-07, 5.3e-06]
+    bounds_error: true
+    fill_value: .nan
+    inputs: [x, y]
+    lookup_table: !core/ndarray-1.0.0
+      source: 1
+      datatype: float64
+      byteorder: big
+      shape: [21, 21]
+      strides: [8, 168]
+    method: linear
+    outputs: [y]
+    points:
+    - !core/ndarray-1.0.0
+      source: 2
+      datatype: float64
+      byteorder: little
+      shape: [21]
+      strides: [16]
+    - !core/ndarray-1.0.0
+      source: 2
+      datatype: float64
+      byteorder: little
+      shape: [21]
+      offset: 8
+      strides: [336]
+meta:
+  author: ESA
+  date: &#x27;2016-03-30T11:16:54&#x27;
+  description: wavelength zero-point reference file for MOS computed using a simple
+    toy model
+  exposure: {type: NRS_MSASPEC}
+  filename: jwst_nirspec_wavecorr_0002.asdf
+  instrument: {name: NIRSPEC, p_detector: NRS1|NRS2|}
+  model_type: WaveCorrModel
+  origin: p_generateReferenceFile.py - version 1.0.0 - ESA
+  pedigree: DUMMY
+  reftype: wavecorr
+  telescope: JWST
+  useafter: &#x27;2015-11-01&#x27;
+...
+</pre>
+</div>
+
+      <br/>
+    </div>
+
+    </div>
+</div>
+
+
+
+
+
+<div class="accordion">
+    <h3>Past Actions</h3>
+    <div>
+    
+    <table border="1">
+        <tr>
+            <th width="15%" align="center">Date</th>
+            <th width="10%" align="center">Action</th>
+            <th width="10%" align="center">User</th>
+            <th width="30%" align="center">Why</th>
+            <th width="20%" align="center">Details</th>
+        </tr>
+        
+        <tr>
+            <td align="center">2021-12-07 14:53</td>
+            <td align="center">batch submit</td>
+            <td align="center">lubeda</td>
+            <td align="center">While investigating anomalous pipeline results it was found that the wavecorr files in CRDS had the rows and columns flipped. These 2 new NIRSpec wavecorr files have corrected that problem for FS, BRIGHTOBJ and MOS modes for both detector 1 and 2. Delivered by Ubeda</td>
+            <td align="center">[&#x27;jwst_807.cat&#x27;, &#x27;jwst_0777.pmap&#x27;, &#x27;jwst_nirspec_0234.imap&#x27;, &#x27;jwst_nirspec_wavecorr_0003.asdf&#x27;, &#x27;jwst_nirspec_wavecorr_0004.asdf&#x27;, &#x27;jwst_nirspec_wavecorr_0004.rmap&#x27;]</td>
+        </tr>
+        
+    </table>
+
+    </div>
+</div>
+
+
+
+<div class="accordion">
+    <h3>Used By Files</h3>
+    <div>
+    
+    <div class="uses_tag" filename="jwst_nirspec_wavecorr_0004.asdf"></div>
+
+    </div>
+</div>
+
+
+
+    
+<div class="accordion">
+    <h3>Lookup Patterns</h3>
+    <div>
+    
+    <table border="1">
+        
+            
+                <td><b>OBSERVATORY</b></td>
+            
+                <td><b>INSTRUMENT</b></td>
+            
+                <td><b>FILEKIND</b></td>
+            
+                <td><b>META.EXPOSURE.TYPE</b></td>
+            
+                <td><b>META.OBSERVATION.DATE</b></td>
+            
+                <td><b>META.OBSERVATION.TIME</b></td>
+            
+            
+                <tr>
+                
+                    <td>jwst</td>
+                
+                    <td>nirspec</td>
+                
+                    <td>wavecorr</td>
+                
+                    <td>NRS_MSASPEC</td>
+                
+                    <td>2015-11-01</td>
+                
+                    <td>00:00:00</td>
+                
+                </tr>
+            
+        
+    </table>
+    
+    </div>
+</div>
+
+</div>
+
+
+
+    
+<div class="accordion">
+    <h3>Reference Constraints (.tpn)</h3>
+    <div>
+    
+<div id="tpn_text">
+<pre class="program">
+From TPN: all_all.tpn
+---------------------
+META.TELESCOPE          H   C   R               JWST
+META.REFTYPE       H   C   R
+META.USEAFTER   H   C   R               &amp;JWSTDATE
+META.PEDIGREE   H   C   R               &amp;JWSTPEDIGREE
+META.AUTHOR     H   C   R
+META.DESCRIPTION H   C  R
+META.HISTORY     H   C  R
+META.MODEL_TYPE  H   C  (warning(not(META_REFTYPE.startswith(&#x27;pars-&#x27;))))
+EXP_TYPE               H    C   O
+META.EXPOSURE.READPATT      H    C    O   ACQ1,ACQ2,BRIGHT1,BRIGHT2,DEEP2,DEEP8,FAST,FASTGRPAVG,FASTGRPAVG8,FASTGRPAVG16,FASTGRPAVG32,FASTGRPAVG64,FASTR1,FASTR100,FGS,FGS60,FGS8370,FGS840,FGSRAPID,FINEGUIDE,ID,MEDIUM2,MEDIUM8,NIS,NISRAPID,NRS,NRSIRS2,NRSN16R4,NRSN32R8,NRSN8R2,NRSRAPID,NRSIRS2RAPID,NRSRAPIDD1,NRSRAPIDD2,NRSRAPIDD6,NRSSLOW,RAPID,SHALLOW2,SHALLOW4,SLOW,SLOWR1,TRACK,ANY,N/A
+META.INSTRUMENT.FILTER      H     C   O  CLEAR,F070LP,F070W,F090W,F1000W,F100LP,F1065C,F110W,F1130W,F1140C,F115W,F1280W,F140M,F140X,F1500W,F150W,F150W2,F1550C,F170LP,F1800W,F182M,F187N,F200W,F2100W,F210M,F212N,F2300C,F250M,F2550W,F2550WR,F277W,F290LP,F300M,F322W2,F335M,F356W,F360M,F380M,F410M,F430M,F444W,F460M,F480M,F560W,F770W,FLENS,FND,GR150C,GR150R,OPAQUE,P750L,WLP4,MULTIPLE,ANY,N/A
+META.INSTRUMENT.GRATING     H     C    O   G140M,G235M,G395M,G140H,G235H,G395H,PRISM,MIRROR,UNKNOWN,MULTIPLE,N/A,ANY
+META.INSTRUMENT.PUPIL      H       C   O  CLEAR,CLEARP,F090W,F115W,F140M,F150W,F158M,F162M,F164N,F200W,F323N,F405N,F466N,F470N,FLAT,GDHS0,GDHS60,GR700XD,GRISMC,GRISMR,GRISMV2,GRISMV3,MASKBAR,MASKIPR,MASKRND,NRM,PINHOLES,WLM8,WLP8,ANY,N/A
+META.INSTRUMENT.CORONAGRAPH    H    C   O  4QPM,4QPM_1065,4QPM_1140,4QPM_1550,LYOT,LYOT_2300,MASKA210R,MASKASWB,MASKA335R,MASKA430R,MASKALWB,NONE,ANY,N/A
+
+From TPN: nirspec_all.tpn
+-------------------------
+META.INSTRUMENT.NAME        H   C   R                   NIRSPEC
+META.INSTRUMENT.DETECTOR    H   C   O                   NRS1,NRS2,ANY,N/A
+META.EXPOSURE.TYPE          H   C   O   NRS_AUTOFLAT,NRS_AUTOWAVE,NRS_BRIGHTOBJ,NRS_CONFIRM,NRS_DARK,NRS_FIXEDSLIT,NRS_FOCUS,NRS_IFU,NRS_IMAGE,NRS_LAMP,NRS_MIMF,NRS_MSASPEC,NRS_MSATA,NRS_TACONFIRM,NRS_TACQ,NRS_TASLIT,NRS_VERIFY,NRS_WATA,ANY,N/A
+META.SUBARRAY.NAME          H   C   O
+META.SUBARRAY.XSTART        H   I    O  1:2048
+META.SUBARRAY.XSIZE         H   I    (optional(not(is_irs2(READPATT))))        1:2048
+META.SUBARRAY.XSIZE         H   I    (optional(is_irs2(READPATT)))             1:3200
+META.SUBARRAY.YSIZE         H   I    O  1:2048
+META.SUBARRAY.YSTART        H   I    O  1:2048
+META.SUBARRAY.FASTAXIS      H   I   O  1,-1,2,-2
+META.SUBARRAY.SLOWAXIS      H   I   O  1,-1,2,-2
+READPATT                    H   C   O
+META.EXPOSURE.GAIN_FACTOR     H   R   O  1.0:10.0
+META.SUBARRAY.NAME          H   C   O  ALLSLITS,SUBS200A1,SUBS200A2,SUBS200B1,SUBS400A1,SUB1024A,SUB1024B,SUB2048,SUB32,SUB512,SUB512S,STRIPE,SUB256M2_PRISM,SUB128M4_PRISM,SUB64M8_PRISM,SUB32M16_PRISM,FULL,GENERIC,ANY,N/A
+META.INSTRUMENT.LAMP_MODE   H   C   O  BRIGHTOBJ,FIXEDSLIT,GRATING-ONLY,IFU,MSASPEC,ANY,N/A
+
+From TPN: nirspec_wavecorr.tpn
+------------------------------
+
+
+</pre>
+</div>
+    
+    </div>
+</div>
+
+
+
+
+    
+<div class="accordion">
+    <h3>Rmap Constraints (_ld.tpn)</h3>
+    <div>
+    
+<div id="ld_tpn_text">
+<pre class="program">
+From TPN: all_all_ld.tpn
+------------------------
+META.TELESCOPE          H   C   R               JWST
+META.REFTYPE       H   C   R
+META.USEAFTER   H   C   R               &amp;JWSTDATE
+META.PEDIGREE   H   C   R               &amp;JWSTPEDIGREE
+META.AUTHOR     H   C   R
+META.DESCRIPTION H   C  R
+META.HISTORY     H   C  R
+META.MODEL_TYPE  H   C  (warning(not(META_REFTYPE.startswith(&#x27;pars-&#x27;))))
+EXP_TYPE               H    C   O
+META.EXPOSURE.READPATT      H    C    O   ACQ1,ACQ2,BRIGHT1,BRIGHT2,DEEP2,DEEP8,FAST,FASTGRPAVG,FASTGRPAVG8,FASTGRPAVG16,FASTGRPAVG32,FASTGRPAVG64,FASTR1,FASTR100,FGS,FGS60,FGS8370,FGS840,FGSRAPID,FINEGUIDE,ID,MEDIUM2,MEDIUM8,NIS,NISRAPID,NRS,NRSIRS2,NRSN16R4,NRSN32R8,NRSN8R2,NRSRAPID,NRSIRS2RAPID,NRSRAPIDD1,NRSRAPIDD2,NRSRAPIDD6,NRSSLOW,RAPID,SHALLOW2,SHALLOW4,SLOW,SLOWR1,TRACK,ANY,N/A
+META.INSTRUMENT.FILTER      H     C   O  CLEAR,F070LP,F070W,F090W,F1000W,F100LP,F1065C,F110W,F1130W,F1140C,F115W,F1280W,F140M,F140X,F1500W,F150W,F150W2,F1550C,F170LP,F1800W,F182M,F187N,F200W,F2100W,F210M,F212N,F2300C,F250M,F2550W,F2550WR,F277W,F290LP,F300M,F322W2,F335M,F356W,F360M,F380M,F410M,F430M,F444W,F460M,F480M,F560W,F770W,FLENS,FND,GR150C,GR150R,OPAQUE,P750L,WLP4,MULTIPLE,ANY,N/A
+META.INSTRUMENT.GRATING     H     C    O   G140M,G235M,G395M,G140H,G235H,G395H,PRISM,MIRROR,UNKNOWN,MULTIPLE,N/A,ANY
+META.INSTRUMENT.PUPIL      H       C   O  CLEAR,CLEARP,F090W,F115W,F140M,F150W,F158M,F162M,F164N,F200W,F323N,F405N,F466N,F470N,FLAT,GDHS0,GDHS60,GR700XD,GRISMC,GRISMR,GRISMV2,GRISMV3,MASKBAR,MASKIPR,MASKRND,NRM,PINHOLES,WLM8,WLP8,ANY,N/A
+META.INSTRUMENT.CORONAGRAPH    H    C   O  4QPM,4QPM_1065,4QPM_1140,4QPM_1550,LYOT,LYOT_2300,MASKA210R,MASKASWB,MASKA335R,MASKA430R,MASKALWB,NONE,ANY,N/A
+
+From TPN: nirspec_all.tpn
+-------------------------
+META.INSTRUMENT.NAME        H   C   R                   NIRSPEC
+META.INSTRUMENT.DETECTOR    H   C   O                   NRS1,NRS2,ANY,N/A
+META.EXPOSURE.TYPE          H   C   O   NRS_AUTOFLAT,NRS_AUTOWAVE,NRS_BRIGHTOBJ,NRS_CONFIRM,NRS_DARK,NRS_FIXEDSLIT,NRS_FOCUS,NRS_IFU,NRS_IMAGE,NRS_LAMP,NRS_MIMF,NRS_MSASPEC,NRS_MSATA,NRS_TACONFIRM,NRS_TACQ,NRS_TASLIT,NRS_VERIFY,NRS_WATA,ANY,N/A
+META.SUBARRAY.NAME          H   C   O
+META.SUBARRAY.XSTART        H   I    O  1:2048
+META.SUBARRAY.XSIZE         H   I    (optional(not(is_irs2(READPATT))))        1:2048
+META.SUBARRAY.XSIZE         H   I    (optional(is_irs2(READPATT)))             1:3200
+META.SUBARRAY.YSIZE         H   I    O  1:2048
+META.SUBARRAY.YSTART        H   I    O  1:2048
+META.SUBARRAY.FASTAXIS      H   I   O  1,-1,2,-2
+META.SUBARRAY.SLOWAXIS      H   I   O  1,-1,2,-2
+READPATT                    H   C   O
+META.EXPOSURE.GAIN_FACTOR     H   R   O  1.0:10.0
+META.SUBARRAY.NAME          H   C   O  ALLSLITS,SUBS200A1,SUBS200A2,SUBS200B1,SUBS400A1,SUB1024A,SUB1024B,SUB2048,SUB32,SUB512,SUB512S,STRIPE,SUB256M2_PRISM,SUB128M4_PRISM,SUB64M8_PRISM,SUB32M16_PRISM,FULL,GENERIC,ANY,N/A
+META.INSTRUMENT.LAMP_MODE   H   C   O  BRIGHTOBJ,FIXEDSLIT,GRATING-ONLY,IFU,MSASPEC,ANY,N/A
+
+From TPN: nirspec_wavecorr_ld.tpn
+---------------------------------
+
+</pre>
+</div>
+    
+    </div>
+</div>
+
+
+
+<br/><br/>
+
+
+        
+        
+        <br/>
+        <div id="crds_info_box" class="full_width">
+        </div>
+        
+
+        
+<div style="margin: 0 0 0 0; padding: 3px; width:100%; background: darkblue; line-height: 0.5em;"> &nbsp; </div>
+
+
+
+        <div class="help"></div>
+
+	<script type="text/javascript">$("#contents").show();</script>
+
+    </div>
+    
+    
+
+    
+<script type="text/javascript">
+$(function () {
+    $("#contents").hide();
+    $(".accordion").accordion({
+        activate: function( event, ui ) {
+            console.log(event);
+            var div = $(ui.newPanel).children("div.uses_tag");
+            if (!div) {
+               return;
+            };
+            if (div.html()) {
+                console.log("table already intialized")
+                return;
+            };
+            var filename = div.attr("filename");
+            var url = "/uses/" + filename;
+            if (!filename) {
+               console.log("no url,  skipping fetch.");
+               return;
+            };
+            console.log("Fetching " + url);
+            div.html($("<p class='green'>").html("Computing files using this one... (may take a long time)"));
+            $.ajax({
+                url : url,
+                context: document.body
+            }).done(function (json) {
+                div.hide();
+                var filelist = "";
+                for (var i=0; i<json.length; i++) {
+                       filelist += "<a href='/browse/" + json[i] + "' class='browse_a'>" + json[i] + "</a><span>,&nbsp;</span> ";
+                };
+                div.html("<p>" + filelist + "</p>");
+                div.show();
+            }).fail(function () {
+                div.hide();
+                div.html("Computation of used files failed.").css("color", "red");
+                div.show();
+            });
+        },
+    });
+    $("#contents").show();
+});
+</script>
+
+
+
+</div>
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <style>
+     #footer_div {
+         margin-top: 10px;
+     }
+     #footer_div ul {
+         list-style: none;
+     }
+     #footer_div div {
+         text-align: center;
+     }
+     #stsci_link {
+         background-color: #00008b;
+         background-image: url("/static/images/stsci_pri_combo_mark_white_bkgd.png");
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: 170px 107px;
+         display: block;
+         height: 114px;
+         margin: auto;
+         padding: 5px;
+         width: 180px;
+     }
+     #stsci_link:link, #stsci_link:visited {
+         color: transparent
+     }
+    </style>
+    </head>
+    <body>
+        <div id="footer_div" class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <ul>
+                        <li><a href="/static/users_guide/index.html">CRDS Users Guide</a></li>
+                        
+                            <li><a href="https://jwst-docs.stsci.edu/">JWST User Documentation</a></li>
+                            <li><a href="https://stsci.service-now.com/jwst">JWST Help Desk</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul>
+                        <li><a href="https://www.stsci.edu/copyright">Copyright</a></li>
+                        <li><a href="https://www.stsci.edu/privacy">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <a id="stsci_link" href="https://www.stsci.edu">Space Telescope Science Institute</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
+<script>
+  $( function () {
+    $( document ).tooltip();
+  });
+</script>
+                   
+  </body>
+</html>

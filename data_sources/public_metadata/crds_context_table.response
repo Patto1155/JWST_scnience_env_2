@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Calibration Reference Data System (CRDS)</title>
+
+     
+    
+    
+    
+
+    
+
+    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css" />      
+    <link rel="stylesheet" href="/static/jquery-ui/jquery-ui.min.css" />
+    <link rel="stylesheet" href="/static/jquery-ui/jquery-ui.structure.min.css" />
+    <link rel="stylesheet" href="/static/jquery-ui/jquery-ui.theme.min.css" />
+    <link rel="stylesheet" href="/static/fontawesome/css/all.min.css" />
+
+    
+    <link rel="stylesheet" href="/static/style.css" />
+
+    <script type="text/javascript" src="/static/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="/static/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/static/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/static/dj_parsley/js/parsley.js"></script>
+
+    
+
+    <script type="text/javascript" src="/static/crds_utils.js"></script> 
+    <script type="text/javascript" src="/static/fits-fc9b1946ff.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+
+    
+         
+  </head>
+
+  <body>
+<div class="container">
+    <noscript>
+      <h2>This page requires JavaScript to be enabled.</h2>
+    </noscript>
+
+    <div style="vertical-align: middle;">
+        <div style="margin: 0; padding: 3px; width:100%; background: darkblue; height: 30px;">
+
+            <div class="btn-toolbar pull-right" role="toolbar" aria-label="...">
+                
+ 
+                <div class="btn-group" role="group" aria-label="...">
+                    <a type="button" class="btn btn-xs btn-default" href="/">Home</a>
+                    
+                        <a type="button" class="btn btn-xs btn-default" href="/login/?next=">Login</a>
+                    
+                    <a type="button" class="btn btn-xs btn-default"
+                    href="/static/users_guide/index.html">Guide</a>
+
+                    
+                </div> 
+                
+                <div class="btn-group" role="group" aria-label="...">
+                    <a type="button" class="btn btn-xs btn-default" title="Back" href="#" onclick="javascript:history.back(1);">&#11013;</a>
+                    <a type="button" class="btn btn-xs btn-default" title="Forward" href="#" onclick="javascript:history.forward(1);">&#10145;</a>
+                </div> 
+
+            </div>
+            
+        </div>
+
+        <h1 style="padding-left: 10px;"> Calibration Reference Data System (CRDS) 
+          
+              <span style="font-size: 50%;" class="label label-sm label-success"></span> 
+          
+        </h1>
+
+        
+        <div style="margin: 0 0 10px 0; padding: 3px; width:100%; background: darkblue; line-height: 0.5em;"> &nbsp; </div>
+    </div>
+
+    <div id="contents">
+        <script type="text/javascript">$("#contents").hide();</script>
+        
+        
+<h1>Page not found</h1>
+
+<p>Sorry, but the requested page could not be found.</p>
+
+        
+        
+        <br/>
+        <div id="crds_info_box" class="full_width">
+        </div>
+        
+
+        
+<div style="margin: 0 0 0 0; padding: 3px; width:100%; background: darkblue; line-height: 0.5em;"> &nbsp; </div>
+
+
+
+        <div class="help"></div>
+
+	<script type="text/javascript">$("#contents").show();</script>
+
+    </div>
+    
+    
+
+    
+    
+
+</div>
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <style>
+     #footer_div {
+         margin-top: 10px;
+     }
+     #footer_div ul {
+         list-style: none;
+     }
+     #footer_div div {
+         text-align: center;
+     }
+     #stsci_link {
+         background-color: #00008b;
+         background-image: url("/static/images/stsci_pri_combo_mark_white_bkgd.png");
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: 170px 107px;
+         display: block;
+         height: 114px;
+         margin: auto;
+         padding: 5px;
+         width: 180px;
+     }
+     #stsci_link:link, #stsci_link:visited {
+         color: transparent
+     }
+    </style>
+    </head>
+    <body>
+        <div id="footer_div" class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <ul>
+                        <li><a href="/static/users_guide/index.html">CRDS Users Guide</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul>
+                        <li><a href="https://www.stsci.edu/copyright">Copyright</a></li>
+                        <li><a href="https://www.stsci.edu/privacy">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <a id="stsci_link" href="https://www.stsci.edu">Space Telescope Science Institute</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
+<script>
+  $( function () {
+    $( document ).tooltip();
+  });
+</script>
+                   
+  </body>
+</html>

@@ -1,0 +1,233 @@
+{
+  "snapshot_date_utc": "2026-10-10",
+  "cap_bytes": 1048576,
+  "endpoint_cap": 12,
+  "query_seconds_cap": 300,
+  "response_bytes": 470251,
+  "runtime_s": 100.87483519700072,
+  "queries": [
+    {
+      "id": "author_extractions",
+      "url": "https://grizli-cutout.herokuapp.com/nirspec_extractions?ra=150.0933255&dec=2.2731627&radius=0.001&output=csv",
+      "request": null,
+      "elapsed_start_s": 6.534000931424089e-06,
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "potentially_truncated": false,
+      "bytes": 591,
+      "sha256": "d856849376bb306a2727e84fd3cd4df38baef504153435b20104837d39e9a460",
+      "path": "data_sources/public_metadata/author_extractions.response",
+      "elapsed_end_s": 6.350978051999846
+    },
+    {
+      "id": "author_slits",
+      "url": "https://grizli-cutout.herokuapp.com/nirspec_slits?coords=150.0933255,2.2731627&size=0.2",
+      "request": null,
+      "elapsed_start_s": 6.3536499140009255,
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "potentially_truncated": false,
+      "bytes": 10590,
+      "sha256": "d070baae68ed45a3bc92a547212511a4c338e392315494533aa075ec2e11c21f",
+      "path": "data_sources/public_metadata/author_slits.response",
+      "elapsed_end_s": 12.452709270000923
+    },
+    {
+      "id": "mast_position",
+      "url": "https://mast.stsci.edu/api/v0/invoke",
+      "request": {
+        "service": "Mast.Caom.Filtered.Position",
+        "params": {
+          "columns": "obsid,obs_id,instrument_name,proposal_id,s_ra,s_dec,t_min,t_max,dataRights,dataproduct_type,obs_collection",
+          "position": "150.0933255,2.2731627,0.001",
+          "filters": [
+            {
+              "paramName": "obs_collection",
+              "values": [
+                "JWST"
+              ]
+            },
+            {
+              "paramName": "dataproduct_type",
+              "values": [
+                "spectrum"
+              ]
+            }
+          ]
+        },
+        "format": "json",
+        "pagesize": 100,
+        "page": 1
+      },
+      "elapsed_start_s": 12.453632665999976,
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "potentially_truncated": false,
+      "bytes": 10181,
+      "sha256": "ae11fd602ad528284ce70e686ff456e6e85b65a6c8c830ec5bbb1579fc634c81",
+      "path": "data_sources/public_metadata/mast_position.response",
+      "elapsed_end_s": 23.71763758400084
+    },
+    {
+      "id": "mast_program",
+      "url": "https://mast.stsci.edu/api/v0/invoke",
+      "request": {
+        "service": "Mast.Caom.Filtered",
+        "params": {
+          "columns": "obsid,obs_id,instrument_name,proposal_id,s_ra,s_dec,t_min,t_max,dataRights,dataproduct_type,obs_collection",
+          "filters": [
+            {
+              "paramName": "obs_collection",
+              "values": [
+                "JWST"
+              ]
+            },
+            {
+              "paramName": "proposal_id",
+              "values": [
+                "5224"
+              ]
+            },
+            {
+              "paramName": "dataproduct_type",
+              "values": [
+                "spectrum"
+              ]
+            }
+          ]
+        },
+        "format": "json",
+        "pagesize": 100,
+        "page": 1
+      },
+      "elapsed_start_s": 24.25227826400078,
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "potentially_truncated": false,
+      "bytes": 31553,
+      "sha256": "11ee2ef585fe89823f463f9028c7366ba2486a239a7dbcbf5a6ec78932c4d627",
+      "path": "data_sources/public_metadata/mast_program.response",
+      "elapsed_end_s": 33.04537657500077
+    },
+    {
+      "id": "crds_context",
+      "url": "https://jwst-crds.stsci.edu/unchecked_get/mappings/jwst/jwst_1535.pmap",
+      "request": null,
+      "elapsed_start_s": 33.04621395600043,
+      "status": 200,
+      "content_type": null,
+      "potentially_truncated": false,
+      "bytes": 580,
+      "sha256": "518aa425a40a1385a2cbb4e10fe882b7beff6d17bee6ac9c26bbddc7b2f19d68",
+      "path": "data_sources/public_metadata/crds_context.response",
+      "elapsed_end_s": 39.58993032699982
+    },
+    {
+      "id": "crds_context_table",
+      "url": "https://jwst-crds.stsci.edu/context_table/",
+      "request": null,
+      "elapsed_start_s": 39.59231518500019,
+      "status": 404,
+      "content_type": "text/html; charset=utf-8",
+      "potentially_truncated": false,
+      "bytes": 5177,
+      "sha256": "97058fbc66d30bec0163dc119cfe7daf9dc32d7c9a6bd65f18722890f83021b7",
+      "path": "data_sources/public_metadata/crds_context_table.response",
+      "elapsed_end_s": 45.77201520500057
+    },
+    {
+      "id": "crds_wavecorr_metadata",
+      "url": "https://jwst-crds.stsci.edu/browse/jwst_nirspec_wavecorr_0004.asdf",
+      "request": null,
+      "elapsed_start_s": 45.772695126001054,
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "potentially_truncated": false,
+      "bytes": 22259,
+      "sha256": "b2f46040b122199e7bca29f3253cb33dac93ce9263b7ce772299b8435cc9d18e",
+      "path": "data_sources/public_metadata/crds_wavecorr_metadata.response",
+      "elapsed_end_s": 61.819162753001365
+    },
+    {
+      "id": "mast_capers_products",
+      "url": "https://mast.stsci.edu/api/v0/invoke",
+      "request": {
+        "service": "Mast.Caom.Products",
+        "params": {
+          "obsid": "266381037"
+        },
+        "format": "json",
+        "pagesize": 100,
+        "page": 1
+      },
+      "elapsed_start_s": 61.826222513000175,
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "potentially_truncated": false,
+      "bytes": 60079,
+      "sha256": "dc9e21136449da12f751c90174c186a7422d908401e01b6471904a16e785014d",
+      "path": "data_sources/public_metadata/mast_capers_products.response",
+      "elapsed_end_s": 71.33967678299996
+    },
+    {
+      "id": "mast_mom_products",
+      "url": "https://mast.stsci.edu/api/v0/invoke",
+      "request": {
+        "service": "Mast.Caom.Products",
+        "params": {
+          "obsid": "254258482"
+        },
+        "format": "json",
+        "pagesize": 100,
+        "page": 1
+      },
+      "elapsed_start_s": 71.34046016399952,
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "potentially_truncated": false,
+      "bytes": 60087,
+      "sha256": "5613d0260d7c7c47737de73e5d9bf69aaafc467060bcdc8777ba3d2bff7ae214",
+      "path": "data_sources/public_metadata/mast_mom_products.response",
+      "elapsed_end_s": 80.89866874700056
+    },
+    {
+      "id": "crds_nirspec_imap",
+      "url": "https://jwst-crds.stsci.edu/unchecked_get/mappings/jwst/jwst_nirspec_0432.imap",
+      "request": null,
+      "elapsed_start_s": 80.90117043700047,
+      "status": 200,
+      "content_type": null,
+      "potentially_truncated": false,
+      "bytes": 6177,
+      "sha256": "722041883b977034d05600751cbbb8ce98878acda81c9c4b4f065e74de56d004",
+      "path": "data_sources/public_metadata/crds_nirspec_imap.response",
+      "elapsed_end_s": 88.13114958299957
+    },
+    {
+      "id": "crds_home",
+      "url": "https://jwst-crds.stsci.edu/",
+      "request": null,
+      "elapsed_start_s": 88.13191501999972,
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "potentially_truncated": true,
+      "bytes": 262144,
+      "sha256": "a4f89786fbd441af8cfe98f71c1ec6cf55269c6dc67115257b0a3c2fa765b687",
+      "path": "data_sources/public_metadata/crds_home.response",
+      "elapsed_end_s": 94.76988811800038
+    },
+    {
+      "id": "crds_wavecorr_rmap",
+      "url": "https://jwst-crds.stsci.edu/unchecked_get/mappings/jwst/jwst_nirspec_wavecorr_0004.rmap",
+      "request": null,
+      "elapsed_start_s": 94.77113056000053,
+      "status": 200,
+      "content_type": null,
+      "potentially_truncated": false,
+      "bytes": 833,
+      "sha256": "27b5b2603b2432af17e45349b0457b4d052874ca2103663a2f0392848e6a4445",
+      "path": "data_sources/public_metadata/crds_wavecorr_rmap.response",
+      "elapsed_end_s": 100.87481603999913
+    }
+  ]
+}
