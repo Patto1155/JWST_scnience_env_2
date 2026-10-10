@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "new_unique_selected_bytes": 77133810,
+  "download_products": [
+    {
+      "filename": "flame_photometry.zip",
+      "bytes": 73013302,
+      "sha256": "4ef41b43028e4fae91c3a74ed98d372f3e6c2d9229c22531088b7f85abd44ed3",
+      "receipt": {
+        "requested_url": "https://zenodo.org/api/records/20030439/files/photometry_tables.zip/content",
+        "resolved_url": "https://zenodo.org/api/records/20030439/files/photometry_tables.zip/content",
+        "retrieved_utc": "2026-10-10T02:26:17.174160+00:00",
+        "bytes": 73013302,
+        "sha256": "4ef41b43028e4fae91c3a74ed98d372f3e6c2d9229c22531088b7f85abd44ed3",
+        "content_type": "application/octet-stream",
+        "etag": null,
+        "last_modified": null,
+        "product_id": "flame-skimmer-v1-photometry",
+        "max_bytes": 104857600
+      }
+    },
+    {
+      "filename": "flame_author.ipynb",
+      "bytes": 410723,
+      "sha256": "fe7dfec9839b8d068ce14f03e715d7307deebb0f9560f0beffe3362379ee7e30",
+      "receipt": {
+        "requested_url": "https://zenodo.org/api/records/20030439/files/Using%20Flame%20Skimmer.ipynb/content",
+        "resolved_url": "https://zenodo.org/api/records/20030439/files/Using%20Flame%20Skimmer.ipynb/content",
+        "retrieved_utc": "2026-10-10T02:24:59.092474+00:00",
+        "bytes": 410723,
+        "sha256": "fe7dfec9839b8d068ce14f03e715d7307deebb0f9560f0beffe3362379ee7e30",
+        "content_type": "application/octet-stream",
+        "etag": null,
+        "last_modified": null,
+        "product_id": "flame-skimmer-v1-author-notebook",
+        "max_bytes": 1048576
+      }
+    },
+    {
+      "filename": "flame-paper.pdf",
+      "bytes": 3687767,
+      "sha256": "50109e43f6c1265f0d5fcf2801a72f905be7da98b0be464907c208d551578229",
+      "receipt": {
+        "requested_url": "https://arxiv.org/pdf/2608.06454v1",
+        "resolved_url": "https://arxiv.org/pdf/2608.06454v1",
+        "retrieved_utc": "2026-10-10T02:25:55.482264+00:00",
+        "bytes": 3687767,
+        "sha256": "50109e43f6c1265f0d5fcf2801a72f905be7da98b0be464907c208d551578229",
+        "content_type": "application/pdf",
+        "etag": "\"sha256:94e6bf2d1ec2f5f4f6288605f8ce2b93e185ac9fdfa74c7e3896eec64a17cdf7\"",
+        "last_modified": "Mon, 10 Aug 2026 00:03:42 GMT",
+        "product_id": "flame-paper-arxiv260806454v1",
+        "max_bytes": 15728640
+      }
+    },
+    {
+      "filename": "flame_metadata.json",
+      "bytes": 22018,
+      "sha256": "5b2a60bbc66a44117ce10a5703bec04fe8e721c973a271a857752759fa7350f8"
+    }
+  ],
+  "discarded_receipt_error_transfer_bytes": 73013302,
+  "actual_new_transfer_bytes": 150147112,
+  "cap_bytes": 209715200,
+  "restored_pinned_bytes_separate": 53282944,
+  "first_transfer_error": "Missing product id in temporary caller dictionary caused receipt KeyError after complete transfer; bounded downloader discarded temporary and corrected dictionary retry succeeded.",
+  "plan_before_outcomes": {
+    "schema_version": 1,
+    "before_fit": true,
+    "question": "Can updated chemistry and opacities explain source46 while passing held-out bands?",
+    "predictions": [
+      "Broad atmosphere grid succeeds at measured photometry including withheld-band predictions",
+      "Residual structure persists even with updated chemistry/composition"
+    ],
+    "parameter_bounds": {
+      "Teff_K": [
+        200,
+        1000
+      ],
+      "logg": [
+        3.5,
+        5.5
+      ],
+      "all_other_published_JWST_flux_rows": true
+    },
+    "budget": {
+      "unique_table_bytes": 73013302,
+      "rows": 37800,
+      "runtime_pilot_seconds": 120
+    },
+    "stopping_rule": "Do not refine grid if best15%-floor conditionalchi2 exceeds20 or a withheldband exceeds3 assumedsigma; passing retains family only, not identity."
+  }
+}
