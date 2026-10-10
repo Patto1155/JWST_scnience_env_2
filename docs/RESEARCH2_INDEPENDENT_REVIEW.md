@@ -610,3 +610,21 @@ The reviewed complete thermal family, its raw archive/manifest, default atomic
 provenance and original/capped raw preservation artifacts are now canonical
 release-gate inputs, bringing the gate to **44** exact artifacts. Actual derived
 forecasts await separate validation before inclusion.
+
+Fresh fetched live master `6b44032b82e550ed0f740a56830deed296b5c4e9` passes
+the 44-artifact exact SHA256/length gate, all 335 tracked strict JSON checks,
+all 261 historical research-artifact Git identities, supplied baseline ancestry
+and explicit strict-lint coverage for all 52 new scientific modules. The audit
+used a clean detached worktree and the published module with coverage required.
+This is accepted intermediate thermal-tree integrity; final release acceptance
+awaits actual forecast validation, authoritative documents and final quality.
+
+Following PSF's independent actual forecast approval `2d6bfa7`, the immutable
+forecast and execution receipt `12ee3b6` join the release gate: **46** canonical
+artifacts. The reviewer checked all 48 cases, 43,200 profiled distances, 96
+numerical Gaussian quadratures and extra-stage ranges. Forecast SHA256 is
+`a73b72229e2f20f87c14b29b84f88f50a8cb594cb0ff220eb22b93d4b8c65a29`;
+the exact input is the reviewed merged complete thermal family. N III+C III
+is the strongest bounded finite-family discriminator under the declared
+optimistic response assumptions; this is neither a posterior expected-gain
+ranking nor an empirical exposure/abundance result.

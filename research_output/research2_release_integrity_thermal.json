@@ -1,0 +1,322 @@
+{
+  "schema_version": 1,
+  "fetched_release_revision": "6b44032b82e550ed0f740a56830deed296b5c4e9",
+  "handover_baseline_ancestor": "379ff35786aff31535335bbe7d1de114f91dd3c4",
+  "strict_valid_tracked_json_count": 335,
+  "baseline_research_artifacts_preserved_count": 261,
+  "canonical_science_artifacts": [
+    {
+      "filename": "candidate_neighborhood_v1.json",
+      "frozen_science_revision": "2b050c0",
+      "bytes": 321806,
+      "sha256": "10e74e8bd2c0b33b0a0e67927189580d5ac1e98561a6822924d8ed8b93a0b973",
+      "published_git_blob": "07cef31e2799e9e9bba66351baa6ee6e6cb7f293"
+    },
+    {
+      "filename": "mom_author_provenance_v1.json",
+      "frozen_science_revision": "a4743ac",
+      "bytes": 6585,
+      "sha256": "e437c0de391c935d4d56ace5b9193db857135df1c6dabac464da9f79ddb4ec37",
+      "published_git_blob": "cb4715c5eababda76aa506ca847cfa038f36b9a7"
+    },
+    {
+      "filename": "mom_cloudy_first_model.json",
+      "frozen_science_revision": "04766f6",
+      "bytes": 259922,
+      "sha256": "0c6718059538fcdb3739697c0a6dd77d915b69f2c23e057171972da3b939f6b4",
+      "published_git_blob": "ccf1fe3b537ee9c5c2c5d2063c59e1b99a8fcedc"
+    },
+    {
+      "filename": "mom_cloudy_signed_coupling.json",
+      "frozen_science_revision": "04766f6",
+      "bytes": 1147,
+      "sha256": "4c8ca3718c0d40281f0e5c458db87ee840dabfe8439c7bab1b6d8d67df40deb4",
+      "published_git_blob": "f25d97ac766e199b22b5ffbf3347371ad6d148e2"
+    },
+    {
+      "filename": "mom_cloudy_signed_coupling.npz",
+      "frozen_science_revision": "04766f6",
+      "bytes": 15596,
+      "sha256": "fa68e7585ee4c800f9543ad336b011f73eafa0a2ab6b7ee4ae6f1a6b416e7da2",
+      "published_git_blob": "7f95e252d54d40fd815ef12d35c5566e8efce10f"
+    },
+    {
+      "filename": "mom_native_measurement_validation.json",
+      "frozen_science_revision": "4c65726",
+      "bytes": 136735,
+      "sha256": "c7e31e81a6bb6b9b4b81bf48661ccfa28475be5cf6b226f85113c78fe73074ca",
+      "published_git_blob": "e0cf9dae023b97d10997710bb433342c8ee7f29b"
+    },
+    {
+      "filename": "mom_observation_design.json",
+      "frozen_science_revision": "f94252a",
+      "bytes": 36377,
+      "sha256": "45b067f2b394692613181700e5574f1ad3ede94dd90d69980d875518dc23fc59",
+      "published_git_blob": "5eb5db22733c3f103869f83b763e4c93e950bddb"
+    },
+    {
+      "filename": "mom_shared_systematics_v1.json",
+      "frozen_science_revision": "7c6cb10",
+      "bytes": 8745,
+      "sha256": "1871b31010506955003a5a629077a59273ba7dd1a9e5dfb5b101ee2d7905a0f8",
+      "published_git_blob": "69241e3a01f69d3682225f7b950178469d17b456"
+    },
+    {
+      "filename": "survivor46_flame_v1.json",
+      "frozen_science_revision": "645174e",
+      "bytes": 55021,
+      "sha256": "7ed820f1482291db279c75445bd5e41403490aeada7a65c705eff9bb7b9d1c49",
+      "published_git_blob": "2eb9863cd309c16772355da441c25246dce02f98"
+    },
+    {
+      "filename": "survivor46_medium_v1.json",
+      "frozen_science_revision": "2a1247a",
+      "bytes": 19680,
+      "sha256": "df00194c821bc3ff4b17ffd95c9fe7ba885c8f297f2bbdb636baf5da8f582eec",
+      "published_git_blob": "77422a1f75fd1720852bc20ff012da9a2e712a7b"
+    },
+    {
+      "filename": "survivor46_multiplicity_v1.json",
+      "frozen_science_revision": "0eb1771",
+      "bytes": 31330,
+      "sha256": "767053b087f99b947103f6fbf0eb321ed0d652f7a9a7a64c3847a6fdae132834",
+      "published_git_blob": "ea12a3ce5085979c827f8cec0e93789e31190f35"
+    },
+    {
+      "filename": "mom_cloudy_focused_pair.json",
+      "frozen_science_revision": "62634bf",
+      "bytes": 427426,
+      "sha256": "50e63ba57d14c7cd664995ce1ec619f3118df2aa30f846551339a05ff0dd65fd",
+      "published_git_blob": "c261deee5fd201a56287fef3af9f9eae4e76b971"
+    },
+    {
+      "filename": "mom_cloudy_openblas_control.json",
+      "frozen_science_revision": "71f7011",
+      "bytes": 9181,
+      "sha256": "3b9444fe78925d99e91f50bf9fc850f1394bc361ba8f3ab671be0c4eb68077ee",
+      "published_git_blob": "ff5f813eaa9ff55d884362043f8722c56e018be6"
+    },
+    {
+      "filename": "mom_cloudy_enhanced_backend_control.json",
+      "frozen_science_revision": "5ebf3b2",
+      "bytes": 8357,
+      "sha256": "0d10acea141a94a911013fce551aa2e31b46450d89d26eafc94d5b3ecfdd1892",
+      "published_git_blob": "0dd7454f18f74500e93854fe10491e5d07b7460c"
+    },
+    {
+      "filename": "selection_count_audit.json",
+      "frozen_science_revision": "65d16cb",
+      "bytes": 53516,
+      "sha256": "c46b28bda61602b692f39c177eb9325329fd1a7a17440c1739da918b1bf28a46",
+      "published_git_blob": "e0cfd69131576903f624407f5580973d6e8828a2"
+    },
+    {
+      "filename": "mom_native_rate_noise.json",
+      "frozen_science_revision": "18ff94b",
+      "bytes": 48427,
+      "sha256": "5e9cc7e5e46870f0221c42f762a1186a1396f440e6b34f2b42d5c5fb259d9fc7",
+      "published_git_blob": "f5a1c236690e18cb18f10b338c619315a99f0565"
+    },
+    {
+      "filename": "mom_native_rate_noise_arrays.npz",
+      "frozen_science_revision": "18ff94b",
+      "bytes": 2181867,
+      "sha256": "4d679850b44b28ed3d8fc71f0e7fd41f0aa7a7cfcd95aff896de97b728bdfa5e",
+      "published_git_blob": "f014dbf10a605fbe403b6e21dc34bd319b1f4955"
+    },
+    {
+      "filename": "mom_native_row_response.json",
+      "frozen_science_revision": "dc9cb69",
+      "bytes": 42996,
+      "sha256": "ee0a79bcc65ff60da25cbd97ad8e9aca895a70d9c7f222dca7039da29036ab00",
+      "published_git_blob": "e120cefcaece4a91a22cd7077a5798e9aac48837"
+    },
+    {
+      "filename": "mom_native_local_identifiability.json",
+      "frozen_science_revision": "b44f219",
+      "bytes": 21243,
+      "sha256": "36538f611670eed232c07064fc731e90c88211e384a34b5054fa35441cb45ce2",
+      "published_git_blob": "9ce438c3bfea1d1905048fe27b5fd173e686fd66"
+    },
+    {
+      "filename": "mom_cloudy_focused_pair_rate_v3.json",
+      "frozen_science_revision": "6d6fd5e",
+      "bytes": 292222,
+      "sha256": "3c4d1dfb18cb011b8640c7b8425c94c03773b5a42dcb8fa8c8b0e6ccc4f220f2",
+      "published_git_blob": "1ad39832a6ef34a68383f2e31190b46d57646125"
+    },
+    {
+      "filename": "mom_public_metadata_v1.json",
+      "frozen_science_revision": "f9b22f9",
+      "bytes": 37452,
+      "sha256": "80ad68c99411d46f8abae2dbce113596499041d15edb8efa81da0a5fb5ee4f1d",
+      "published_git_blob": "aeed74775c8a71fd9e6ab8a5d86b9dc0adddc08b"
+    },
+    {
+      "filename": "mom_compact_followup_v1.json",
+      "frozen_science_revision": "ba99a31",
+      "bytes": 4514,
+      "sha256": "fdd3d749ac25ddbb31db71cdc7148029437aa6cf3f59717f73acfab069d76053",
+      "published_git_blob": "fe1d46f29d894f6c93917f119a9c3f94a642b363"
+    },
+    {
+      "filename": "capers_pixtab_coverage_v1.json",
+      "frozen_science_revision": "6ce04a5",
+      "bytes": 19505,
+      "sha256": "a22f30092bfb51149221733e4575cc4a6f3082f13c0e85ea62a751292558436c",
+      "published_git_blob": "df5bf613b20d98b81af5f6c19d584dd4c5b6b4b3"
+    },
+    {
+      "filename": "capers_companion_coverage_v1.json",
+      "frozen_science_revision": "a768eb3",
+      "bytes": 5077,
+      "sha256": "043de0ad96cf0d1c47e46fc74af591f13637c5755625f42f60109e505c3ff168",
+      "published_git_blob": "dc94393b3a7703e1189844a7126084be0d06cbfd"
+    },
+    {
+      "filename": "capers_s2d_coverage_v1.json",
+      "frozen_science_revision": "db0e170",
+      "bytes": 7212,
+      "sha256": "b0da433b8f1168006b38435b12c427aef86158efd61e21737b3304f042176570",
+      "published_git_blob": "ba6f4f6a114af9d7b24c0f18bb57626776f9b16b"
+    },
+    {
+      "filename": "cloudy_inputs.json",
+      "frozen_science_revision": "04766f6",
+      "bytes": 17023,
+      "sha256": "cb4561102fcf35f491ea561e0a5fddf80b5d636b3ba0a11e3f1c0f0aa08ff39c",
+      "published_git_blob": "39d9b2045ab0a4167e9f8ad45aee604ebf8f358f"
+    },
+    {
+      "filename": "mom_cloudy_capped_pilot.json",
+      "frozen_science_revision": "e6393e4",
+      "bytes": 12527,
+      "sha256": "639ad54753e7aa18d105ec6c8941c47f94ef8a9ed85b194d827aa7ed519b692e",
+      "published_git_blob": "0ad389d65865f3a3d2ef82860e4d1838e69b0e49"
+    },
+    {
+      "filename": "selection_pilot_response.json",
+      "frozen_science_revision": "ecc2c481ca8abbbb620f46520fcffdc666b6dbb7",
+      "bytes": 67681,
+      "sha256": "f1b19aea12e4623e1b3a6253399f9f4a12eaf629e760ac659020e5f5a7fc2b10",
+      "published_git_blob": "39c3d2bad5de3d58ac8c2f2629a6736b26a5248e"
+    },
+    {
+      "filename": "selection_pilot_validation.json",
+      "frozen_science_revision": "ecc2c481ca8abbbb620f46520fcffdc666b6dbb7",
+      "bytes": 1044,
+      "sha256": "a5f11a952618938aeaf27ac98620e5c55eec7d08326710b482a3b61ca6f324c3",
+      "published_git_blob": "d69439b35159e63a18dbf5cba992328e2e112321"
+    },
+    {
+      "filename": "selection_count_audit_validation.json",
+      "frozen_science_revision": "f6ee1a869a6cdb5ca1e5c2964e31239d20b1095e",
+      "bytes": 2078,
+      "sha256": "7caeb744a8a12702d2944068ee4e48cd00f4923088a8de6ebc55511109e4de3d",
+      "published_git_blob": "2ddc722836df05c742c3c5577f795ed1aa2f4048"
+    },
+    {
+      "filename": "selection_variance_public_probes.json",
+      "frozen_science_revision": "670d86737639202c359aa05f88af1d5257ef25da",
+      "bytes": 6422,
+      "sha256": "d4f283a7e40a07cff998a071a1d44c53224f3d22f9e1f6ab8a2b260a63128c89",
+      "published_git_blob": "3c6e5a7c78117e89f73f6db320e7fbd82f5d56bb"
+    },
+    {
+      "filename": "selection_var_prefix_retention.json",
+      "frozen_science_revision": "65d16cb",
+      "bytes": 912,
+      "sha256": "231cfd06ffc9b4863381a6c87b755aba3f0de393f6146e5635cd483caca8c892",
+      "published_git_blob": "e7c72eb4bca140ebdc531f82a8b8c325a3faa57f"
+    },
+    {
+      "filename": "survivor46_medium_v1.png",
+      "frozen_science_revision": "2a1247a",
+      "bytes": 142407,
+      "sha256": "437cacc6e1887e7095578124edb3ec9d7bf28b5b16fdd8ff2a8c94245d52c29c",
+      "published_git_blob": "67f4e439afe913c4c8ade423ebd115d03b7373e9"
+    },
+    {
+      "filename": "research2_download_ledger.json",
+      "frozen_science_revision": "360c0fb",
+      "bytes": 7034,
+      "sha256": "1a6a2f821ba35c6485cd6b66d12425b59d307d67bbebbee9e417f22b9dee706c",
+      "published_git_blob": "cf887cd2ca818255e54913294c7821176970362c"
+    },
+    {
+      "filename": "research2_download_ledger_v2.json",
+      "frozen_science_revision": "5f7e1c6",
+      "bytes": 8655,
+      "sha256": "2073a6ba008933a9f9963c258c9419cb178956ec0fab1fd0e0f5306982ebd176",
+      "published_git_blob": "6b031955196da1188efdbd02d060bb4e03035e49"
+    },
+    {
+      "filename": "research2_download_ledger_v3.json",
+      "frozen_science_revision": "2ef87ba",
+      "bytes": 10406,
+      "sha256": "09b9f42a2e708da32529e4244bcbb8f658cc7b4e3ffbf4c303ef1c37d2eae642",
+      "published_git_blob": "416ec7003135c3f0722fef764a57d8aa4d8d37da"
+    },
+    {
+      "filename": "mom_cloudy_atomic_provenance.json",
+      "frozen_science_revision": "97524d5",
+      "bytes": 3086,
+      "sha256": "1c18ee7532e63ba7c69374408d4c37fefdec29b894aa503f5af90a91e3cfa7fb",
+      "published_git_blob": "19576df758d4cf6931111328a51060091ccb0b66"
+    },
+    {
+      "filename": "mom_cloudy_original_pair_raw.json",
+      "frozen_science_revision": "56262de",
+      "bytes": 2920,
+      "sha256": "0b3d997a933c4a1c5e70c722b561686d5fb47823ac92fc71240c458d0c076c69",
+      "published_git_blob": "96df09286f998d3c1d65391a1b7fab38a3efa029"
+    },
+    {
+      "filename": "mom_cloudy_original_pair_raw.tar.gz",
+      "frozen_science_revision": "56262de",
+      "bytes": 228541,
+      "sha256": "0bfc0261772b5dd338518aaa6859bb2c39dd844557a5e3c40cca7bc0f5e4f2dd",
+      "published_git_blob": "823eb1eef0bf322f2084722d2d0abf8af043683f"
+    },
+    {
+      "filename": "mom_cloudy_capped_raw.json",
+      "frozen_science_revision": "df3150b",
+      "bytes": 7678,
+      "sha256": "f68fc2d9d01215f4fe840142ed7964724a55b914b517324ec0d15c75bfa76032",
+      "published_git_blob": "945a4d0f5ad8ac2ae051560be7c2645490009e07"
+    },
+    {
+      "filename": "mom_cloudy_capped_raw.tar.gz",
+      "frozen_science_revision": "df3150b",
+      "bytes": 316171,
+      "sha256": "173170e34feaca94eb4735f62fa417f921b387c7103ad2bffe0bce27ad068dec",
+      "published_git_blob": "b6c7dcb3c143da68890a00dc5e446c2a330c5650"
+    },
+    {
+      "filename": "mom_cloudy_pilot20_rate_v3.json",
+      "frozen_science_revision": "a49e7f3",
+      "bytes": 2221190,
+      "sha256": "7ef48626ddfb7c882d9725b17939c3a7752151de734e3ab4c46472b940127759",
+      "published_git_blob": "b2166f98db403bdba08691a8694c4c414e1b3e52"
+    },
+    {
+      "filename": "mom_cloudy_pilot20_raw.json",
+      "frozen_science_revision": "a49e7f3",
+      "bytes": 21869,
+      "sha256": "7e334f516463fbb0304c118b3822c468d2d84ba9b030afe75be85d9018dc50e2",
+      "published_git_blob": "6039ce26c2bbaee074d153465d5de7b2b62fc374"
+    },
+    {
+      "filename": "mom_cloudy_pilot20_raw.tar.gz",
+      "frozen_science_revision": "a49e7f3",
+      "bytes": 2276836,
+      "sha256": "5b36c11a1f9839e30d433198ad47ec7c69e977f476992aaa26beae853fcf4f4a",
+      "published_git_blob": "45bb253536845cf2fb92fad7bcac0436a64bce0d"
+    }
+  ],
+  "strict_new_science_lint_coverage": {
+    "new_scientific_module_count": 52,
+    "uncovered": []
+  },
+  "scope": "Exact Git/SHA256 artifact identities plus strict JSON across a fresh fetched tree; numerical review and executable test validation remain separate."
+}

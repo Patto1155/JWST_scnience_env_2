@@ -231,6 +231,16 @@ CANONICAL = {
         "5b36c11a1f9839e30d433198ad47ec7c69e977f476992aaa26beae853fcf4f4a",
         2276836,
     ),
+    "mom_cloudy_observation_contrasts.json": (
+        "12ee3b6",
+        "a73b72229e2f20f87c14b29b84f88f50a8cb594cb0ff220eb22b93d4b8c65a29",
+        310697,
+    ),
+    "mom_cloudy_observation_execution.json": (
+        "12ee3b6",
+        "f4d2e25846ca27fa1626bb6f7a46991b6fdf7ddb8dbd0ea8383af9ed4482b109",
+        1064,
+    ),
 }
 
 

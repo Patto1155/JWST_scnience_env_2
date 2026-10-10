@@ -1,0 +1,2361 @@
+{
+  "schema_version": 1,
+  "approval": "independent numerical and scope review passed",
+  "review_runtime_seconds": 4.978701166000974,
+  "author_commit": "5d1dc9340417be12c6b80f800f5edcb4ca7576cc",
+  "validated_merged_input_revision": "6b44032b82e550ed0f740a56830deed296b5c4e9",
+  "input_sha256": "7ef48626ddfb7c882d9725b17939c3a7752151de734e3ab4c46472b940127759",
+  "forecast_sha256": "a73b72229e2f20f87c14b29b84f88f50a8cb594cb0ff220eb22b93d4b8c65a29",
+  "review_code_sha256": "2e02bf88d59edde42920717c4b3daa1909565efbd3d7413e547742ed160e3933",
+  "plan_sha256": "ade6f18b9a55ed63ff3e2f7273309fa7616d6774068e1b855c894e423df3c62a",
+  "author_code_sha256": "8f93079201d6c72787b9d8aac167d6a85642f2801f25c4ae99e3409e506f000f",
+  "reviewed_author_report_sha256": "3e6c34de11001d60a90bb262698f482c3d090a1b989fa2d07f9864db942df1a5",
+  "cases": [
+    {
+      "bundle": "NIV_plus_CIII",
+      "mode": "g235m",
+      "response": "intrinsic_line_values",
+      "intrinsic_FWHM_km_s": 0,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 4.102621020685149e-16,
+      "maximum_amplitude_error": 4.440892098500626e-16,
+      "maximum_SNR_relative_error": 2.2962654000480143e-10,
+      "closest_pair": {
+        "truth": "model013",
+        "alternative": "model018",
+        "truth_attenuation": 0,
+        "alternative_attenuation": 1,
+        "fraction": 3.7348124386425333e-07,
+        "amplitude": 1.0005872678744017,
+        "same_environment": false,
+        "truth_index": 18,
+        "alternative_index": 29
+      },
+      "hardest_matched_pair": {
+        "truth": "model013",
+        "alternative": "model012",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 1,
+        "fraction": 1.0155753780527972e-05,
+        "amplitude": 0.9966688050889005,
+        "same_environment": true,
+        "truth_index": 20,
+        "alternative_index": 20
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model013",
+          "alternative": "model018",
+          "amplitude_error": 0.0,
+          "fraction_error": 2.9804971831510693e-20
+        },
+        {
+          "truth": "model013",
+          "alternative": "model012",
+          "amplitude_error": 2.220446049250313e-16,
+          "fraction_error": 7.030373462210693e-19
+        }
+      ]
+    },
+    {
+      "bundle": "NIV_plus_CIII",
+      "mode": "g235m",
+      "response": "intrinsic_line_values",
+      "intrinsic_FWHM_km_s": 300,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 2.918672248330978e-16,
+      "maximum_amplitude_error": 5.551115123125783e-16,
+      "maximum_SNR_relative_error": 2.9864544170976615e-10,
+      "closest_pair": {
+        "truth": "model013",
+        "alternative": "model018",
+        "truth_attenuation": 0,
+        "alternative_attenuation": 1,
+        "fraction": 3.0999718626295334e-07,
+        "amplitude": 1.0005600978251667,
+        "same_environment": false,
+        "truth_index": 18,
+        "alternative_index": 29
+      },
+      "hardest_matched_pair": {
+        "truth": "model013",
+        "alternative": "model012",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 9.24135419265942e-06,
+        "amplitude": 0.9968078293378823,
+        "same_environment": true,
+        "truth_index": 20,
+        "alternative_index": 18
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model013",
+          "alternative": "model018",
+          "amplitude_error": 0.0,
+          "fraction_error": 7.72917564369549e-21
+        },
+        {
+          "truth": "model013",
+          "alternative": "model012",
+          "amplitude_error": 0.0,
+          "fraction_error": 3.8963515573697816e-20
+        }
+      ]
+    },
+    {
+      "bundle": "NIV_plus_CIII",
+      "mode": "g235m",
+      "response": "intrinsic_line_values",
+      "intrinsic_FWHM_km_s": 1000,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 3.4954678040932663e-16,
+      "maximum_amplitude_error": 4.440892098500626e-16,
+      "maximum_SNR_relative_error": 7.104301591454032e-10,
+      "closest_pair": {
+        "truth": "model009",
+        "alternative": "model018",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0.5,
+        "fraction": 1.405508688787328e-07,
+        "amplitude": 1.0003173219086234,
+        "same_environment": false,
+        "truth_index": 14,
+        "alternative_index": 28
+      },
+      "hardest_matched_pair": {
+        "truth": "model013",
+        "alternative": "model012",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 1.0371583542493269e-05,
+        "amplitude": 0.9969135749404212,
+        "same_environment": true,
+        "truth_index": 20,
+        "alternative_index": 18
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model009",
+          "alternative": "model018",
+          "amplitude_error": 0.0,
+          "fraction_error": 4.7645603283054394e-21
+        },
+        {
+          "truth": "model013",
+          "alternative": "model012",
+          "amplitude_error": 2.220446049250313e-16,
+          "fraction_error": 2.659683454378503e-19
+        }
+      ]
+    },
+    {
+      "bundle": "NIV_plus_CIII",
+      "mode": "g235h",
+      "response": "intrinsic_line_values",
+      "intrinsic_FWHM_km_s": 0,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 5.198718182728064e-16,
+      "maximum_amplitude_error": 4.440892098500626e-16,
+      "maximum_SNR_relative_error": 6.443647837528488e-10,
+      "closest_pair": {
+        "truth": "model013",
+        "alternative": "model018",
+        "truth_attenuation": 0,
+        "alternative_attenuation": 1,
+        "fraction": 4.0339871210089746e-07,
+        "amplitude": 1.0005970595389924,
+        "same_environment": false,
+        "truth_index": 18,
+        "alternative_index": 29
+      },
+      "hardest_matched_pair": {
+        "truth": "model013",
+        "alternative": "model012",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 1,
+        "fraction": 1.0708093652570724e-05,
+        "amplitude": 0.9966419693634243,
+        "same_environment": true,
+        "truth_index": 20,
+        "alternative_index": 20
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model013",
+          "alternative": "model018",
+          "amplitude_error": 4.440892098500626e-16,
+          "fraction_error": 1.4171919998748513e-19
+        },
+        {
+          "truth": "model013",
+          "alternative": "model012",
+          "amplitude_error": 1.1102230246251565e-16,
+          "fraction_error": 3.1831498157816607e-18
+        }
+      ]
+    },
+    {
+      "bundle": "NIV_plus_CIII",
+      "mode": "g235h",
+      "response": "intrinsic_line_values",
+      "intrinsic_FWHM_km_s": 300,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 3.625572064791527e-16,
+      "maximum_amplitude_error": 6.661338147750939e-16,
+      "maximum_SNR_relative_error": 1.1256751086818895e-10,
+      "closest_pair": {
+        "truth": "model013",
+        "alternative": "model018",
+        "truth_attenuation": 0,
+        "alternative_attenuation": 1,
+        "fraction": 3.7415625278853375e-07,
+        "amplitude": 1.0005718088823048,
+        "same_environment": false,
+        "truth_index": 18,
+        "alternative_index": 29
+      },
+      "hardest_matched_pair": {
+        "truth": "model013",
+        "alternative": "model012",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 1.0971251822486875e-05,
+        "amplitude": 0.9967612553862377,
+        "same_environment": true,
+        "truth_index": 20,
+        "alternative_index": 18
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model013",
+          "alternative": "model018",
+          "amplitude_error": 2.220446049250313e-16,
+          "fraction_error": 3.324604317973129e-20
+        },
+        {
+          "truth": "model013",
+          "alternative": "model012",
+          "amplitude_error": 1.1102230246251565e-16,
+          "fraction_error": 1.4365678785432934e-18
+        }
+      ]
+    },
+    {
+      "bundle": "NIV_plus_CIII",
+      "mode": "g235h",
+      "response": "intrinsic_line_values",
+      "intrinsic_FWHM_km_s": 1000,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 2.1931038257129443e-16,
+      "maximum_amplitude_error": 3.3306690738754696e-16,
+      "maximum_SNR_relative_error": 3.6991743002090516e-11,
+      "closest_pair": {
+        "truth": "model009",
+        "alternative": "model018",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0.5,
+        "fraction": 1.4259193546080182e-07,
+        "amplitude": 1.0003177915459103,
+        "same_environment": false,
+        "truth_index": 14,
+        "alternative_index": 28
+      },
+      "hardest_matched_pair": {
+        "truth": "model013",
+        "alternative": "model012",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 1.0407119477290444e-05,
+        "amplitude": 0.9969126386217453,
+        "same_environment": true,
+        "truth_index": 20,
+        "alternative_index": 18
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model009",
+          "alternative": "model018",
+          "amplitude_error": 2.220446049250313e-16,
+          "fraction_error": 6.776263578034403e-21
+        },
+        {
+          "truth": "model013",
+          "alternative": "model012",
+          "amplitude_error": 2.220446049250313e-16,
+          "fraction_error": 4.404571325722362e-20
+        }
+      ]
+    },
+    {
+      "bundle": "NIII_plus_CIII",
+      "mode": "g235m",
+      "response": "intrinsic_line_values",
+      "intrinsic_FWHM_km_s": 0,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 2.498001805406602e-16,
+      "maximum_amplitude_error": 2.220446049250313e-16,
+      "maximum_SNR_relative_error": 1.4432899320127035e-15,
+      "closest_pair": {
+        "truth": "model009",
+        "alternative": "model016",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.07851090793714037,
+        "amplitude": 0.7580736845688404,
+        "same_environment": false,
+        "truth_index": 14,
+        "alternative_index": 24
+      },
+      "hardest_matched_pair": {
+        "truth": "model009",
+        "alternative": "model008",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.08822020887211805,
+        "amplitude": 0.740105724751741,
+        "same_environment": true,
+        "truth_index": 14,
+        "alternative_index": 12
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model009",
+          "alternative": "model016",
+          "amplitude_error": 2.220446049250313e-16,
+          "fraction_error": 3.469446951953614e-16
+        },
+        {
+          "truth": "model009",
+          "alternative": "model008",
+          "amplitude_error": 2.220446049250313e-16,
+          "fraction_error": 4.579669976578771e-16
+        }
+      ]
+    },
+    {
+      "bundle": "NIII_plus_CIII",
+      "mode": "g235m",
+      "response": "intrinsic_line_values",
+      "intrinsic_FWHM_km_s": 300,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 3.0531133177191805e-16,
+      "maximum_amplitude_error": 1.1102230246251565e-16,
+      "maximum_SNR_relative_error": 9.992007221626409e-16,
+      "closest_pair": {
+        "truth": "model009",
+        "alternative": "model016",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.08258094913251501,
+        "amplitude": 0.7592862636801182,
+        "same_environment": false,
+        "truth_index": 14,
+        "alternative_index": 24
+      },
+      "hardest_matched_pair": {
+        "truth": "model009",
+        "alternative": "model008",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.09286276211320334,
+        "amplitude": 0.7407245501863706,
+        "same_environment": true,
+        "truth_index": 14,
+        "alternative_index": 12
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model009",
+          "alternative": "model016",
+          "amplitude_error": 3.3306690738754696e-16,
+          "fraction_error": 6.245004513516506e-16
+        },
+        {
+          "truth": "model009",
+          "alternative": "model008",
+          "amplitude_error": 2.220446049250313e-16,
+          "fraction_error": 6.938893903907228e-16
+        }
+      ]
+    },
+    {
+      "bundle": "NIII_plus_CIII",
+      "mode": "g235m",
+      "response": "intrinsic_line_values",
+      "intrinsic_FWHM_km_s": 1000,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 3.0531133177191805e-16,
+      "maximum_amplitude_error": 2.220446049250313e-16,
+      "maximum_SNR_relative_error": 1.3322676295501878e-15,
+      "closest_pair": {
+        "truth": "model009",
+        "alternative": "model016",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.1045292520901167,
+        "amplitude": 0.7639763633120482,
+        "same_environment": false,
+        "truth_index": 14,
+        "alternative_index": 24
+      },
+      "hardest_matched_pair": {
+        "truth": "model009",
+        "alternative": "model008",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.11769961984509913,
+        "amplitude": 0.7438407577749464,
+        "same_environment": true,
+        "truth_index": 14,
+        "alternative_index": 12
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model009",
+          "alternative": "model016",
+          "amplitude_error": 1.1102230246251565e-16,
+          "fraction_error": 3.0531133177191805e-16
+        },
+        {
+          "truth": "model009",
+          "alternative": "model008",
+          "amplitude_error": 1.1102230246251565e-16,
+          "fraction_error": 3.608224830031759e-16
+        }
+      ]
+    },
+    {
+      "bundle": "NIII_plus_CIII",
+      "mode": "g235h",
+      "response": "intrinsic_line_values",
+      "intrinsic_FWHM_km_s": 0,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 4.163336342344337e-16,
+      "maximum_amplitude_error": 3.3306690738754696e-16,
+      "maximum_SNR_relative_error": 2.6645352591003757e-15,
+      "closest_pair": {
+        "truth": "model009",
+        "alternative": "model016",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.07030201606821398,
+        "amplitude": 0.7564261918084081,
+        "same_environment": false,
+        "truth_index": 14,
+        "alternative_index": 24
+      },
+      "hardest_matched_pair": {
+        "truth": "model009",
+        "alternative": "model008",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.0789467285331624,
+        "amplitude": 0.7390119221641563,
+        "same_environment": true,
+        "truth_index": 14,
+        "alternative_index": 12
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model009",
+          "alternative": "model016",
+          "amplitude_error": 1.2212453270876722e-15,
+          "fraction_error": 1.6667223157185163e-14
+        },
+        {
+          "truth": "model009",
+          "alternative": "model008",
+          "amplitude_error": 1.5543122344752192e-15,
+          "fraction_error": 1.867950238931826e-14
+        }
+      ]
+    },
+    {
+      "bundle": "NIII_plus_CIII",
+      "mode": "g235h",
+      "response": "intrinsic_line_values",
+      "intrinsic_FWHM_km_s": 300,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 2.498001805406602e-16,
+      "maximum_amplitude_error": 2.220446049250313e-16,
+      "maximum_SNR_relative_error": 7.771561172376096e-16,
+      "closest_pair": {
+        "truth": "model009",
+        "alternative": "model016",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.08195609275516658,
+        "amplitude": 0.7589630305620034,
+        "same_environment": false,
+        "truth_index": 14,
+        "alternative_index": 24
+      },
+      "hardest_matched_pair": {
+        "truth": "model009",
+        "alternative": "model008",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.09213141042450429,
+        "amplitude": 0.7406052826812921,
+        "same_environment": true,
+        "truth_index": 14,
+        "alternative_index": 12
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model009",
+          "alternative": "model016",
+          "amplitude_error": 1.2212453270876722e-15,
+          "fraction_error": 1.3877787807814457e-15
+        },
+        {
+          "truth": "model009",
+          "alternative": "model008",
+          "amplitude_error": 1.1102230246251565e-16,
+          "fraction_error": 1.5126788710517758e-15
+        }
+      ]
+    },
+    {
+      "bundle": "NIII_plus_CIII",
+      "mode": "g235h",
+      "response": "intrinsic_line_values",
+      "intrinsic_FWHM_km_s": 1000,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 3.608224830031759e-16,
+      "maximum_amplitude_error": 2.220446049250313e-16,
+      "maximum_SNR_relative_error": 8.881784197001252e-16,
+      "closest_pair": {
+        "truth": "model009",
+        "alternative": "model016",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.104271534478227,
+        "amplitude": 0.7639205048017201,
+        "same_environment": false,
+        "truth_index": 14,
+        "alternative_index": 24
+      },
+      "hardest_matched_pair": {
+        "truth": "model009",
+        "alternative": "model008",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.1174074531648377,
+        "amplitude": 0.7438029839613692,
+        "same_environment": true,
+        "truth_index": 14,
+        "alternative_index": 12
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model009",
+          "alternative": "model016",
+          "amplitude_error": 2.220446049250313e-16,
+          "fraction_error": 1.7069679003611782e-15
+        },
+        {
+          "truth": "model009",
+          "alternative": "model008",
+          "amplitude_error": 3.3306690738754696e-16,
+          "fraction_error": 1.915134717478395e-15
+        }
+      ]
+    },
+    {
+      "bundle": "HeO_plus_CIII",
+      "mode": "g235m",
+      "response": "intrinsic_line_values",
+      "intrinsic_FWHM_km_s": 0,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 2.9640393329859183e-16,
+      "maximum_amplitude_error": 2.220446049250313e-16,
+      "maximum_SNR_relative_error": 1.8662182910134106e-11,
+      "closest_pair": {
+        "truth": "model013",
+        "alternative": "model012",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 1,
+        "fraction": 5.90080410595761e-06,
+        "amplitude": 0.9989430473924882,
+        "same_environment": true,
+        "truth_index": 20,
+        "alternative_index": 20
+      },
+      "hardest_matched_pair": {
+        "truth": "model013",
+        "alternative": "model012",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 1,
+        "fraction": 5.90080410595761e-06,
+        "amplitude": 0.9989430473924882,
+        "same_environment": true,
+        "truth_index": 20,
+        "alternative_index": 20
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model013",
+          "alternative": "model012",
+          "amplitude_error": 0.0,
+          "fraction_error": 5.89534931288993e-19
+        },
+        {
+          "truth": "model013",
+          "alternative": "model012",
+          "amplitude_error": 0.0,
+          "fraction_error": 5.89534931288993e-19
+        }
+      ]
+    },
+    {
+      "bundle": "HeO_plus_CIII",
+      "mode": "g235m",
+      "response": "intrinsic_line_values",
+      "intrinsic_FWHM_km_s": 300,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 2.171995764667367e-16,
+      "maximum_amplitude_error": 4.440892098500626e-16,
+      "maximum_SNR_relative_error": 5.791700452562054e-12,
+      "closest_pair": {
+        "truth": "model013",
+        "alternative": "model012",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 1,
+        "fraction": 4.8855143907105175e-06,
+        "amplitude": 0.9990271734338928,
+        "same_environment": true,
+        "truth_index": 20,
+        "alternative_index": 20
+      },
+      "hardest_matched_pair": {
+        "truth": "model013",
+        "alternative": "model012",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 1,
+        "fraction": 4.8855143907105175e-06,
+        "amplitude": 0.9990271734338928,
+        "same_environment": true,
+        "truth_index": 20,
+        "alternative_index": 20
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model013",
+          "alternative": "model012",
+          "amplitude_error": 2.220446049250313e-16,
+          "fraction_error": 1.6686549060909717e-19
+        },
+        {
+          "truth": "model013",
+          "alternative": "model012",
+          "amplitude_error": 2.220446049250313e-16,
+          "fraction_error": 1.6686549060909717e-19
+        }
+      ]
+    },
+    {
+      "bundle": "HeO_plus_CIII",
+      "mode": "g235m",
+      "response": "intrinsic_line_values",
+      "intrinsic_FWHM_km_s": 1000,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 3.7391422423593834e-16,
+      "maximum_amplitude_error": 4.440892098500626e-16,
+      "maximum_SNR_relative_error": 2.0909274311975423e-11,
+      "closest_pair": {
+        "truth": "model013",
+        "alternative": "model012",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 1,
+        "fraction": 3.635462929310078e-06,
+        "amplitude": 0.9991043062955516,
+        "same_environment": true,
+        "truth_index": 20,
+        "alternative_index": 20
+      },
+      "hardest_matched_pair": {
+        "truth": "model013",
+        "alternative": "model012",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 1,
+        "fraction": 3.635462929310078e-06,
+        "amplitude": 0.9991043062955516,
+        "same_environment": true,
+        "truth_index": 20,
+        "alternative_index": 20
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model013",
+          "alternative": "model012",
+          "amplitude_error": 1.1102230246251565e-16,
+          "fraction_error": 8.936197593532869e-20
+        },
+        {
+          "truth": "model013",
+          "alternative": "model012",
+          "amplitude_error": 1.1102230246251565e-16,
+          "fraction_error": 8.936197593532869e-20
+        }
+      ]
+    },
+    {
+      "bundle": "HeO_plus_CIII",
+      "mode": "g235h",
+      "response": "intrinsic_line_values",
+      "intrinsic_FWHM_km_s": 0,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 4.898425415289509e-16,
+      "maximum_amplitude_error": 4.440892098500626e-16,
+      "maximum_SNR_relative_error": 1.1339817973521349e-11,
+      "closest_pair": {
+        "truth": "model013",
+        "alternative": "model012",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 1,
+        "fraction": 6.302519262582002e-06,
+        "amplitude": 0.9989121100616011,
+        "same_environment": true,
+        "truth_index": 20,
+        "alternative_index": 20
+      },
+      "hardest_matched_pair": {
+        "truth": "model013",
+        "alternative": "model012",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 1,
+        "fraction": 6.302519262582002e-06,
+        "amplitude": 0.9989121100616011,
+        "same_environment": true,
+        "truth_index": 20,
+        "alternative_index": 20
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model013",
+          "alternative": "model012",
+          "amplitude_error": 6.661338147750939e-16,
+          "fraction_error": 1.91260039490021e-18
+        },
+        {
+          "truth": "model013",
+          "alternative": "model012",
+          "amplitude_error": 6.661338147750939e-16,
+          "fraction_error": 1.91260039490021e-18
+        }
+      ]
+    },
+    {
+      "bundle": "HeO_plus_CIII",
+      "mode": "g235h",
+      "response": "intrinsic_line_values",
+      "intrinsic_FWHM_km_s": 300,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 2.6394901889159605e-16,
+      "maximum_amplitude_error": 2.220446049250313e-16,
+      "maximum_SNR_relative_error": 1.8321122396969258e-11,
+      "closest_pair": {
+        "truth": "model013",
+        "alternative": "model012",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 1,
+        "fraction": 5.7785416355762325e-06,
+        "amplitude": 0.9989836036203664,
+        "same_environment": true,
+        "truth_index": 20,
+        "alternative_index": 20
+      },
+      "hardest_matched_pair": {
+        "truth": "model013",
+        "alternative": "model012",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 1,
+        "fraction": 5.7785416355762325e-06,
+        "amplitude": 0.9989836036203664,
+        "same_environment": true,
+        "truth_index": 20,
+        "alternative_index": 20
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model013",
+          "alternative": "model012",
+          "amplitude_error": 1.1102230246251565e-16,
+          "fraction_error": 3.5575383784680614e-20
+        },
+        {
+          "truth": "model013",
+          "alternative": "model012",
+          "amplitude_error": 1.1102230246251565e-16,
+          "fraction_error": 3.5575383784680614e-20
+        }
+      ]
+    },
+    {
+      "bundle": "HeO_plus_CIII",
+      "mode": "g235h",
+      "response": "intrinsic_line_values",
+      "intrinsic_FWHM_km_s": 1000,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 3.397889608569571e-16,
+      "maximum_amplitude_error": 4.440892098500626e-16,
+      "maximum_SNR_relative_error": 3.8432590443449044e-11,
+      "closest_pair": {
+        "truth": "model013",
+        "alternative": "model012",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 1,
+        "fraction": 3.6731201101167664e-06,
+        "amplitude": 0.9991038358790029,
+        "same_environment": true,
+        "truth_index": 20,
+        "alternative_index": 20
+      },
+      "hardest_matched_pair": {
+        "truth": "model013",
+        "alternative": "model012",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 1,
+        "fraction": 3.6731201101167664e-06,
+        "amplitude": 0.9991038358790029,
+        "same_environment": true,
+        "truth_index": 20,
+        "alternative_index": 20
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model013",
+          "alternative": "model012",
+          "amplitude_error": 3.3306690738754696e-16,
+          "fraction_error": 7.284483346386983e-20
+        },
+        {
+          "truth": "model013",
+          "alternative": "model012",
+          "amplitude_error": 3.3306690738754696e-16,
+          "fraction_error": 7.284483346386983e-20
+        }
+      ]
+    },
+    {
+      "bundle": "complete_UV",
+      "mode": "g235m",
+      "response": "intrinsic_line_values",
+      "intrinsic_FWHM_km_s": 0,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 3.608224830031759e-16,
+      "maximum_amplitude_error": 4.440892098500626e-16,
+      "maximum_SNR_relative_error": 1.3322676295501878e-15,
+      "closest_pair": {
+        "truth": "model009",
+        "alternative": "model008",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.08630881978904395,
+        "amplitude": 0.7769447573760384,
+        "same_environment": true,
+        "truth_index": 14,
+        "alternative_index": 12
+      },
+      "hardest_matched_pair": {
+        "truth": "model009",
+        "alternative": "model008",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.08630881978904395,
+        "amplitude": 0.7769447573760384,
+        "same_environment": true,
+        "truth_index": 14,
+        "alternative_index": 12
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model009",
+          "alternative": "model008",
+          "amplitude_error": 3.3306690738754696e-16,
+          "fraction_error": 2.498001805406602e-16
+        },
+        {
+          "truth": "model009",
+          "alternative": "model008",
+          "amplitude_error": 3.3306690738754696e-16,
+          "fraction_error": 2.498001805406602e-16
+        }
+      ]
+    },
+    {
+      "bundle": "complete_UV",
+      "mode": "g235m",
+      "response": "intrinsic_line_values",
+      "intrinsic_FWHM_km_s": 300,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 6.106226635438361e-16,
+      "maximum_amplitude_error": 2.220446049250313e-16,
+      "maximum_SNR_relative_error": 1.7763568394002505e-15,
+      "closest_pair": {
+        "truth": "model009",
+        "alternative": "model008",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.09105643092987513,
+        "amplitude": 0.7774331270488427,
+        "same_environment": true,
+        "truth_index": 14,
+        "alternative_index": 12
+      },
+      "hardest_matched_pair": {
+        "truth": "model009",
+        "alternative": "model008",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.09105643092987513,
+        "amplitude": 0.7774331270488427,
+        "same_environment": true,
+        "truth_index": 14,
+        "alternative_index": 12
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model009",
+          "alternative": "model008",
+          "amplitude_error": 0.0,
+          "fraction_error": 8.465450562766819e-16
+        },
+        {
+          "truth": "model009",
+          "alternative": "model008",
+          "amplitude_error": 0.0,
+          "fraction_error": 8.465450562766819e-16
+        }
+      ]
+    },
+    {
+      "bundle": "complete_UV",
+      "mode": "g235m",
+      "response": "intrinsic_line_values",
+      "intrinsic_FWHM_km_s": 1000,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 2.220446049250313e-16,
+      "maximum_amplitude_error": 2.220446049250313e-16,
+      "maximum_SNR_relative_error": 7.771561172376096e-16,
+      "closest_pair": {
+        "truth": "model009",
+        "alternative": "model008",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.11561460715105602,
+        "amplitude": 0.7801165921895965,
+        "same_environment": true,
+        "truth_index": 14,
+        "alternative_index": 12
+      },
+      "hardest_matched_pair": {
+        "truth": "model009",
+        "alternative": "model008",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.11561460715105602,
+        "amplitude": 0.7801165921895965,
+        "same_environment": true,
+        "truth_index": 14,
+        "alternative_index": 12
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model009",
+          "alternative": "model008",
+          "amplitude_error": 1.1102230246251565e-16,
+          "fraction_error": 3.0531133177191805e-16
+        },
+        {
+          "truth": "model009",
+          "alternative": "model008",
+          "amplitude_error": 1.1102230246251565e-16,
+          "fraction_error": 3.0531133177191805e-16
+        }
+      ]
+    },
+    {
+      "bundle": "complete_UV",
+      "mode": "g235h",
+      "response": "intrinsic_line_values",
+      "intrinsic_FWHM_km_s": 0,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 2.220446049250313e-16,
+      "maximum_amplitude_error": 2.220446049250313e-16,
+      "maximum_SNR_relative_error": 7.771561172376096e-16,
+      "closest_pair": {
+        "truth": "model009",
+        "alternative": "model008",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.0772786057596361,
+        "amplitude": 0.7759034299995576,
+        "same_environment": true,
+        "truth_index": 14,
+        "alternative_index": 12
+      },
+      "hardest_matched_pair": {
+        "truth": "model009",
+        "alternative": "model008",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.0772786057596361,
+        "amplitude": 0.7759034299995576,
+        "same_environment": true,
+        "truth_index": 14,
+        "alternative_index": 12
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model009",
+          "alternative": "model008",
+          "amplitude_error": 3.6637359812630166e-15,
+          "fraction_error": 1.74721348500384e-14
+        },
+        {
+          "truth": "model009",
+          "alternative": "model008",
+          "amplitude_error": 3.6637359812630166e-15,
+          "fraction_error": 1.74721348500384e-14
+        }
+      ]
+    },
+    {
+      "bundle": "complete_UV",
+      "mode": "g235h",
+      "response": "intrinsic_line_values",
+      "intrinsic_FWHM_km_s": 300,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 2.220446049250313e-16,
+      "maximum_amplitude_error": 2.220446049250313e-16,
+      "maximum_SNR_relative_error": 8.881784197001252e-16,
+      "closest_pair": {
+        "truth": "model009",
+        "alternative": "model008",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.09005957018846127,
+        "amplitude": 0.7774978647667743,
+        "same_environment": true,
+        "truth_index": 14,
+        "alternative_index": 12
+      },
+      "hardest_matched_pair": {
+        "truth": "model009",
+        "alternative": "model008",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.09005957018846127,
+        "amplitude": 0.7774978647667743,
+        "same_environment": true,
+        "truth_index": 14,
+        "alternative_index": 12
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model009",
+          "alternative": "model008",
+          "amplitude_error": 1.1102230246251565e-16,
+          "fraction_error": 1.5126788710517758e-15
+        },
+        {
+          "truth": "model009",
+          "alternative": "model008",
+          "amplitude_error": 1.1102230246251565e-16,
+          "fraction_error": 1.5126788710517758e-15
+        }
+      ]
+    },
+    {
+      "bundle": "complete_UV",
+      "mode": "g235h",
+      "response": "intrinsic_line_values",
+      "intrinsic_FWHM_km_s": 1000,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 3.3306690738754696e-16,
+      "maximum_amplitude_error": 3.3306690738754696e-16,
+      "maximum_SNR_relative_error": 1.1102230246251565e-15,
+      "closest_pair": {
+        "truth": "model009",
+        "alternative": "model008",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.1153140118843499,
+        "amplitude": 0.7801061580476316,
+        "same_environment": true,
+        "truth_index": 14,
+        "alternative_index": 12
+      },
+      "hardest_matched_pair": {
+        "truth": "model009",
+        "alternative": "model008",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.1153140118843499,
+        "amplitude": 0.7801061580476316,
+        "same_environment": true,
+        "truth_index": 14,
+        "alternative_index": 12
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model009",
+          "alternative": "model008",
+          "amplitude_error": 2.220446049250313e-16,
+          "fraction_error": 1.7208456881689926e-15
+        },
+        {
+          "truth": "model009",
+          "alternative": "model008",
+          "amplitude_error": 2.220446049250313e-16,
+          "fraction_error": 1.7208456881689926e-15
+        }
+      ]
+    },
+    {
+      "bundle": "NIV_plus_CIII",
+      "mode": "g235m",
+      "response": "emergent_line_values",
+      "intrinsic_FWHM_km_s": 0,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 2.6123157837812665e-16,
+      "maximum_amplitude_error": 2.220446049250313e-16,
+      "maximum_SNR_relative_error": 3.679571092263245e-10,
+      "closest_pair": {
+        "truth": "model013",
+        "alternative": "model018",
+        "truth_attenuation": 0,
+        "alternative_attenuation": 1,
+        "fraction": 3.5497547175416415e-07,
+        "amplitude": 1.0005816991421659,
+        "same_environment": false,
+        "truth_index": 18,
+        "alternative_index": 29
+      },
+      "hardest_matched_pair": {
+        "truth": "model013",
+        "alternative": "model012",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 1,
+        "fraction": 1.0165887582365995e-05,
+        "amplitude": 0.9966668575261088,
+        "same_environment": true,
+        "truth_index": 20,
+        "alternative_index": 20
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model013",
+          "alternative": "model018",
+          "amplitude_error": 2.220446049250313e-16,
+          "fraction_error": 3.546950466627383e-21
+        },
+        {
+          "truth": "model013",
+          "alternative": "model012",
+          "amplitude_error": 0.0,
+          "fraction_error": 7.132017415881209e-19
+        }
+      ]
+    },
+    {
+      "bundle": "NIV_plus_CIII",
+      "mode": "g235m",
+      "response": "emergent_line_values",
+      "intrinsic_FWHM_km_s": 300,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 2.575132625583579e-16,
+      "maximum_amplitude_error": 3.3306690738754696e-16,
+      "maximum_SNR_relative_error": 2.0132762124092096e-10,
+      "closest_pair": {
+        "truth": "model013",
+        "alternative": "model018",
+        "truth_attenuation": 0,
+        "alternative_attenuation": 1,
+        "fraction": 2.995860525451875e-07,
+        "amplitude": 1.0005567655725849,
+        "same_environment": false,
+        "truth_index": 18,
+        "alternative_index": 29
+      },
+      "hardest_matched_pair": {
+        "truth": "model013",
+        "alternative": "model012",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 9.250754160157246e-06,
+        "amplitude": 0.9968058069343408,
+        "same_environment": true,
+        "truth_index": 20,
+        "alternative_index": 18
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model013",
+          "alternative": "model018",
+          "amplitude_error": 0.0,
+          "fraction_error": 8.046812998915853e-21
+        },
+        {
+          "truth": "model013",
+          "alternative": "model012",
+          "amplitude_error": 1.1102230246251565e-16,
+          "fraction_error": 2.202285662861181e-20
+        }
+      ]
+    },
+    {
+      "bundle": "NIV_plus_CIII",
+      "mode": "g235m",
+      "response": "emergent_line_values",
+      "intrinsic_FWHM_km_s": 1000,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 2.3612059844250327e-16,
+      "maximum_amplitude_error": 2.220446049250313e-16,
+      "maximum_SNR_relative_error": 4.4916426134022913e-10,
+      "closest_pair": {
+        "truth": "model009",
+        "alternative": "model018",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0.5,
+        "fraction": 1.3984144953361567e-07,
+        "amplitude": 1.0003208059629936,
+        "same_environment": false,
+        "truth_index": 14,
+        "alternative_index": 28
+      },
+      "hardest_matched_pair": {
+        "truth": "model013",
+        "alternative": "model012",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 1.03859667014803e-05,
+        "amplitude": 0.9969113958425531,
+        "same_environment": true,
+        "truth_index": 20,
+        "alternative_index": 18
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model009",
+          "alternative": "model018",
+          "amplitude_error": 0.0,
+          "fraction_error": 2.9116757561866574e-22
+        },
+        {
+          "truth": "model013",
+          "alternative": "model012",
+          "amplitude_error": 0.0,
+          "fraction_error": 2.574980159653073e-19
+        }
+      ]
+    },
+    {
+      "bundle": "NIV_plus_CIII",
+      "mode": "g235h",
+      "response": "emergent_line_values",
+      "intrinsic_FWHM_km_s": 0,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 3.864096542738338e-16,
+      "maximum_amplitude_error": 3.3306690738754696e-16,
+      "maximum_SNR_relative_error": 2.9939395407296843e-10,
+      "closest_pair": {
+        "truth": "model013",
+        "alternative": "model018",
+        "truth_attenuation": 0,
+        "alternative_attenuation": 1,
+        "fraction": 3.8199411404101253e-07,
+        "amplitude": 1.0005906791628878,
+        "same_environment": false,
+        "truth_index": 18,
+        "alternative_index": 29
+      },
+      "hardest_matched_pair": {
+        "truth": "model013",
+        "alternative": "model012",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 1,
+        "fraction": 1.0718298276570311e-05,
+        "amplitude": 0.9966400779514688,
+        "same_environment": true,
+        "truth_index": 20,
+        "alternative_index": 20
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model013",
+          "alternative": "model018",
+          "amplitude_error": 2.220446049250313e-16,
+          "fraction_error": 8.184455852844677e-20
+        },
+        {
+          "truth": "model013",
+          "alternative": "model012",
+          "amplitude_error": 3.3306690738754696e-16,
+          "fraction_error": 3.110304982317791e-18
+        }
+      ]
+    },
+    {
+      "bundle": "NIV_plus_CIII",
+      "mode": "g235h",
+      "response": "emergent_line_values",
+      "intrinsic_FWHM_km_s": 300,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 3.885780586188048e-16,
+      "maximum_amplitude_error": 2.220446049250313e-16,
+      "maximum_SNR_relative_error": 1.6199608321443293e-10,
+      "closest_pair": {
+        "truth": "model013",
+        "alternative": "model018",
+        "truth_attenuation": 0,
+        "alternative_attenuation": 1,
+        "fraction": 3.6006129348912525e-07,
+        "amplitude": 1.0005674846771662,
+        "same_environment": false,
+        "truth_index": 18,
+        "alternative_index": 29
+      },
+      "hardest_matched_pair": {
+        "truth": "model013",
+        "alternative": "model012",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 1.0981711541872555e-05,
+        "amplitude": 0.9967593028796656,
+        "same_environment": true,
+        "truth_index": 20,
+        "alternative_index": 18
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model013",
+          "alternative": "model018",
+          "amplitude_error": 0.0,
+          "fraction_error": 3.324604317973129e-20
+        },
+        {
+          "truth": "model013",
+          "alternative": "model012",
+          "amplitude_error": 1.1102230246251565e-16,
+          "fraction_error": 1.4416500762268192e-18
+        }
+      ]
+    },
+    {
+      "bundle": "NIV_plus_CIII",
+      "mode": "g235h",
+      "response": "emergent_line_values",
+      "intrinsic_FWHM_km_s": 1000,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 1.942890293094024e-16,
+      "maximum_amplitude_error": 2.220446049250313e-16,
+      "maximum_SNR_relative_error": 3.2650615544582706e-10,
+      "closest_pair": {
+        "truth": "model009",
+        "alternative": "model018",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0.5,
+        "fraction": 1.417241627423491e-07,
+        "amplitude": 1.0003212527691623,
+        "same_environment": false,
+        "truth_index": 14,
+        "alternative_index": 28
+      },
+      "hardest_matched_pair": {
+        "truth": "model013",
+        "alternative": "model012",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 1.0421523855452109e-05,
+        "amplitude": 0.9969104609324538,
+        "same_environment": true,
+        "truth_index": 20,
+        "alternative_index": 18
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model009",
+          "alternative": "model018",
+          "amplitude_error": 2.220446049250313e-16,
+          "fraction_error": 5.479244377551255e-21
+        },
+        {
+          "truth": "model013",
+          "alternative": "model012",
+          "amplitude_error": 0.0,
+          "fraction_error": 3.049318610115481e-20
+        }
+      ]
+    },
+    {
+      "bundle": "NIII_plus_CIII",
+      "mode": "g235m",
+      "response": "emergent_line_values",
+      "intrinsic_FWHM_km_s": 0,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 2.220446049250313e-16,
+      "maximum_amplitude_error": 1.1102230246251565e-16,
+      "maximum_SNR_relative_error": 8.881784197001252e-16,
+      "closest_pair": {
+        "truth": "model009",
+        "alternative": "model016",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.07851176662386669,
+        "amplitude": 0.758079558869599,
+        "same_environment": false,
+        "truth_index": 14,
+        "alternative_index": 24
+      },
+      "hardest_matched_pair": {
+        "truth": "model009",
+        "alternative": "model008",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.08823144172690743,
+        "amplitude": 0.7400933191453805,
+        "same_environment": true,
+        "truth_index": 14,
+        "alternative_index": 12
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model009",
+          "alternative": "model016",
+          "amplitude_error": 4.440892098500626e-16,
+          "fraction_error": 3.608224830031759e-16
+        },
+        {
+          "truth": "model009",
+          "alternative": "model008",
+          "amplitude_error": 1.1102230246251565e-16,
+          "fraction_error": 3.7470027081099033e-16
+        }
+      ]
+    },
+    {
+      "bundle": "NIII_plus_CIII",
+      "mode": "g235m",
+      "response": "emergent_line_values",
+      "intrinsic_FWHM_km_s": 300,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 2.7755575615628914e-16,
+      "maximum_amplitude_error": 4.440892098500626e-16,
+      "maximum_SNR_relative_error": 8.881784197001252e-16,
+      "closest_pair": {
+        "truth": "model009",
+        "alternative": "model016",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.08258145699724201,
+        "amplitude": 0.7592928494508585,
+        "same_environment": false,
+        "truth_index": 14,
+        "alternative_index": 24
+      },
+      "hardest_matched_pair": {
+        "truth": "model009",
+        "alternative": "model008",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.09287417442167664,
+        "amplitude": 0.7407123804809905,
+        "same_environment": true,
+        "truth_index": 14,
+        "alternative_index": 12
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model009",
+          "alternative": "model016",
+          "amplitude_error": 3.3306690738754696e-16,
+          "fraction_error": 6.38378239159465e-16
+        },
+        {
+          "truth": "model009",
+          "alternative": "model008",
+          "amplitude_error": 2.220446049250313e-16,
+          "fraction_error": 6.800116025829084e-16
+        }
+      ]
+    },
+    {
+      "bundle": "NIII_plus_CIII",
+      "mode": "g235m",
+      "response": "emergent_line_values",
+      "intrinsic_FWHM_km_s": 1000,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 2.7755575615628914e-16,
+      "maximum_amplitude_error": 2.220446049250313e-16,
+      "maximum_SNR_relative_error": 8.881784197001252e-16,
+      "closest_pair": {
+        "truth": "model009",
+        "alternative": "model016",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.10452896206310239,
+        "amplitude": 0.7639848462329046,
+        "same_environment": false,
+        "truth_index": 14,
+        "alternative_index": 24
+      },
+      "hardest_matched_pair": {
+        "truth": "model009",
+        "alternative": "model008",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.11771307286968083,
+        "amplitude": 0.7438290362520522,
+        "same_environment": true,
+        "truth_index": 14,
+        "alternative_index": 12
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model009",
+          "alternative": "model016",
+          "amplitude_error": 0.0,
+          "fraction_error": 2.636779683484747e-16
+        },
+        {
+          "truth": "model009",
+          "alternative": "model008",
+          "amplitude_error": 0.0,
+          "fraction_error": 3.608224830031759e-16
+        }
+      ]
+    },
+    {
+      "bundle": "NIII_plus_CIII",
+      "mode": "g235h",
+      "response": "emergent_line_values",
+      "intrinsic_FWHM_km_s": 0,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 3.469446951953614e-16,
+      "maximum_amplitude_error": 2.220446049250313e-16,
+      "maximum_SNR_relative_error": 1.7763568394002505e-15,
+      "closest_pair": {
+        "truth": "model009",
+        "alternative": "model016",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.07030310049144953,
+        "amplitude": 0.7564313994769716,
+        "same_environment": false,
+        "truth_index": 14,
+        "alternative_index": 24
+      },
+      "hardest_matched_pair": {
+        "truth": "model009",
+        "alternative": "model008",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.07895710570807549,
+        "amplitude": 0.7389993707167087,
+        "same_environment": true,
+        "truth_index": 14,
+        "alternative_index": 12
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model009",
+          "alternative": "model016",
+          "amplitude_error": 1.4432899320127035e-15,
+          "fraction_error": 1.6681100944992977e-14
+        },
+        {
+          "truth": "model009",
+          "alternative": "model008",
+          "amplitude_error": 1.5543122344752192e-15,
+          "fraction_error": 1.8735013540549517e-14
+        }
+      ]
+    },
+    {
+      "bundle": "NIII_plus_CIII",
+      "mode": "g235h",
+      "response": "emergent_line_values",
+      "intrinsic_FWHM_km_s": 300,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 3.3306690738754696e-16,
+      "maximum_amplitude_error": 2.220446049250313e-16,
+      "maximum_SNR_relative_error": 1.1102230246251565e-15,
+      "closest_pair": {
+        "truth": "model009",
+        "alternative": "model016",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.08195675894053327,
+        "amplitude": 0.7589693751340801,
+        "same_environment": false,
+        "truth_index": 14,
+        "alternative_index": 24
+      },
+      "hardest_matched_pair": {
+        "truth": "model009",
+        "alternative": "model008",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.09214291247185598,
+        "amplitude": 0.740593016430398,
+        "same_environment": true,
+        "truth_index": 14,
+        "alternative_index": 12
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model009",
+          "alternative": "model016",
+          "amplitude_error": 7.771561172376096e-16,
+          "fraction_error": 1.4016565685892601e-15
+        },
+        {
+          "truth": "model009",
+          "alternative": "model008",
+          "amplitude_error": 4.440892098500626e-16,
+          "fraction_error": 1.5543122344752192e-15
+        }
+      ]
+    },
+    {
+      "bundle": "NIII_plus_CIII",
+      "mode": "g235h",
+      "response": "emergent_line_values",
+      "intrinsic_FWHM_km_s": 1000,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 2.914335439641036e-16,
+      "maximum_amplitude_error": 2.220446049250313e-16,
+      "maximum_SNR_relative_error": 1.2212453270876722e-15,
+      "closest_pair": {
+        "truth": "model009",
+        "alternative": "model016",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.10427125536816183,
+        "amplitude": 0.7639289662107535,
+        "same_environment": false,
+        "truth_index": 14,
+        "alternative_index": 24
+      },
+      "hardest_matched_pair": {
+        "truth": "model009",
+        "alternative": "model008",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.11742088578875175,
+        "amplitude": 0.7437912568962307,
+        "same_environment": true,
+        "truth_index": 14,
+        "alternative_index": 12
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model009",
+          "alternative": "model016",
+          "amplitude_error": 1.1102230246251565e-16,
+          "fraction_error": 1.6930901125533637e-15
+        },
+        {
+          "truth": "model009",
+          "alternative": "model008",
+          "amplitude_error": 2.220446049250313e-16,
+          "fraction_error": 1.915134717478395e-15
+        }
+      ]
+    },
+    {
+      "bundle": "HeO_plus_CIII",
+      "mode": "g235m",
+      "response": "emergent_line_values",
+      "intrinsic_FWHM_km_s": 0,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 4.8908360000821105e-16,
+      "maximum_amplitude_error": 3.3306690738754696e-16,
+      "maximum_SNR_relative_error": 8.456124689359967e-12,
+      "closest_pair": {
+        "truth": "model013",
+        "alternative": "model012",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 1,
+        "fraction": 5.904835539177059e-06,
+        "amplitude": 0.9989451672171225,
+        "same_environment": true,
+        "truth_index": 20,
+        "alternative_index": 20
+      },
+      "hardest_matched_pair": {
+        "truth": "model013",
+        "alternative": "model012",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 1,
+        "fraction": 5.904835539177059e-06,
+        "amplitude": 0.9989451672171225,
+        "same_environment": true,
+        "truth_index": 20,
+        "alternative_index": 20
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model013",
+          "alternative": "model012",
+          "amplitude_error": 4.440892098500626e-16,
+          "fraction_error": 5.141489989833603e-19
+        },
+        {
+          "truth": "model013",
+          "alternative": "model012",
+          "amplitude_error": 4.440892098500626e-16,
+          "fraction_error": 5.141489989833603e-19
+        }
+      ]
+    },
+    {
+      "bundle": "HeO_plus_CIII",
+      "mode": "g235m",
+      "response": "emergent_line_values",
+      "intrinsic_FWHM_km_s": 300,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 3.282210318963051e-16,
+      "maximum_amplitude_error": 2.220446049250313e-16,
+      "maximum_SNR_relative_error": 3.355982158836923e-11,
+      "closest_pair": {
+        "truth": "model013",
+        "alternative": "model012",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 1,
+        "fraction": 4.89010939589548e-06,
+        "amplitude": 0.9990291888886846,
+        "same_environment": true,
+        "truth_index": 20,
+        "alternative_index": 20
+      },
+      "hardest_matched_pair": {
+        "truth": "model013",
+        "alternative": "model012",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 1,
+        "fraction": 4.89010939589548e-06,
+        "amplitude": 0.9990291888886846,
+        "same_environment": true,
+        "truth_index": 20,
+        "alternative_index": 20
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model013",
+          "alternative": "model012",
+          "amplitude_error": 1.1102230246251565e-16,
+          "fraction_error": 1.9820570965750628e-19
+        },
+        {
+          "truth": "model013",
+          "alternative": "model012",
+          "amplitude_error": 1.1102230246251565e-16,
+          "fraction_error": 1.9820570965750628e-19
+        }
+      ]
+    },
+    {
+      "bundle": "HeO_plus_CIII",
+      "mode": "g235m",
+      "response": "emergent_line_values",
+      "intrinsic_FWHM_km_s": 1000,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 4.814467509557663e-16,
+      "maximum_amplitude_error": 4.440892098500626e-16,
+      "maximum_SNR_relative_error": 1.2185807918285718e-11,
+      "closest_pair": {
+        "truth": "model013",
+        "alternative": "model012",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 1,
+        "fraction": 3.641000615899166e-06,
+        "amplitude": 0.9991061629231134,
+        "same_environment": true,
+        "truth_index": 20,
+        "alternative_index": 20
+      },
+      "hardest_matched_pair": {
+        "truth": "model013",
+        "alternative": "model012",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 1,
+        "fraction": 3.641000615899166e-06,
+        "amplitude": 0.9991061629231134,
+        "same_environment": true,
+        "truth_index": 20,
+        "alternative_index": 20
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model013",
+          "alternative": "model012",
+          "amplitude_error": 1.1102230246251565e-16,
+          "fraction_error": 6.776263578034403e-20
+        },
+        {
+          "truth": "model013",
+          "alternative": "model012",
+          "amplitude_error": 1.1102230246251565e-16,
+          "fraction_error": 6.776263578034403e-20
+        }
+      ]
+    },
+    {
+      "bundle": "HeO_plus_CIII",
+      "mode": "g235h",
+      "response": "emergent_line_values",
+      "intrinsic_FWHM_km_s": 0,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 3.7911839466386876e-16,
+      "maximum_amplitude_error": 4.440892098500626e-16,
+      "maximum_SNR_relative_error": 5.534128710849018e-12,
+      "closest_pair": {
+        "truth": "model013",
+        "alternative": "model012",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 1,
+        "fraction": 6.306406730854505e-06,
+        "amplitude": 0.998914265285545,
+        "same_environment": true,
+        "truth_index": 20,
+        "alternative_index": 20
+      },
+      "hardest_matched_pair": {
+        "truth": "model013",
+        "alternative": "model012",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 1,
+        "fraction": 6.306406730854505e-06,
+        "amplitude": 0.998914265285545,
+        "same_environment": true,
+        "truth_index": 20,
+        "alternative_index": 20
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model013",
+          "alternative": "model012",
+          "amplitude_error": 2.220446049250313e-16,
+          "fraction_error": 2.053207864144424e-18
+        },
+        {
+          "truth": "model013",
+          "alternative": "model012",
+          "amplitude_error": 2.220446049250313e-16,
+          "fraction_error": 2.053207864144424e-18
+        }
+      ]
+    },
+    {
+      "bundle": "HeO_plus_CIII",
+      "mode": "g235h",
+      "response": "emergent_line_values",
+      "intrinsic_FWHM_km_s": 300,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 3.8033812210791496e-16,
+      "maximum_amplitude_error": 2.220446049250313e-16,
+      "maximum_SNR_relative_error": 1.2705059226902904e-11,
+      "closest_pair": {
+        "truth": "model013",
+        "alternative": "model012",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 1,
+        "fraction": 5.783494065076573e-06,
+        "amplitude": 0.9989856371489885,
+        "same_environment": true,
+        "truth_index": 20,
+        "alternative_index": 20
+      },
+      "hardest_matched_pair": {
+        "truth": "model013",
+        "alternative": "model012",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 1,
+        "fraction": 5.783494065076573e-06,
+        "amplitude": 0.9989856371489885,
+        "same_environment": true,
+        "truth_index": 20,
+        "alternative_index": 20
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model013",
+          "alternative": "model012",
+          "amplitude_error": 2.220446049250313e-16,
+          "fraction_error": 2.286988957586611e-20
+        },
+        {
+          "truth": "model013",
+          "alternative": "model012",
+          "amplitude_error": 2.220446049250313e-16,
+          "fraction_error": 2.286988957586611e-20
+        }
+      ]
+    },
+    {
+      "bundle": "HeO_plus_CIII",
+      "mode": "g235h",
+      "response": "emergent_line_values",
+      "intrinsic_FWHM_km_s": 1000,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 2.478486166301863e-16,
+      "maximum_amplitude_error": 4.440892098500626e-16,
+      "maximum_SNR_relative_error": 4.979128220838902e-12,
+      "closest_pair": {
+        "truth": "model013",
+        "alternative": "model012",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 1,
+        "fraction": 3.6786495272480934e-06,
+        "amplitude": 0.9991056960767734,
+        "same_environment": true,
+        "truth_index": 20,
+        "alternative_index": 20
+      },
+      "hardest_matched_pair": {
+        "truth": "model013",
+        "alternative": "model012",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 1,
+        "fraction": 3.6786495272480934e-06,
+        "amplitude": 0.9991056960767734,
+        "same_environment": true,
+        "truth_index": 20,
+        "alternative_index": 20
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model013",
+          "alternative": "model012",
+          "amplitude_error": 0.0,
+          "fraction_error": 8.978549240895584e-20
+        },
+        {
+          "truth": "model013",
+          "alternative": "model012",
+          "amplitude_error": 0.0,
+          "fraction_error": 8.978549240895584e-20
+        }
+      ]
+    },
+    {
+      "bundle": "complete_UV",
+      "mode": "g235m",
+      "response": "emergent_line_values",
+      "intrinsic_FWHM_km_s": 0,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 4.440892098500626e-16,
+      "maximum_amplitude_error": 5.551115123125783e-16,
+      "maximum_SNR_relative_error": 1.3322676295501878e-15,
+      "closest_pair": {
+        "truth": "model009",
+        "alternative": "model008",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.08631909003194563,
+        "amplitude": 0.7769377782662354,
+        "same_environment": true,
+        "truth_index": 14,
+        "alternative_index": 12
+      },
+      "hardest_matched_pair": {
+        "truth": "model009",
+        "alternative": "model008",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.08631909003194563,
+        "amplitude": 0.7769377782662354,
+        "same_environment": true,
+        "truth_index": 14,
+        "alternative_index": 12
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model009",
+          "alternative": "model008",
+          "amplitude_error": 8.881784197001252e-16,
+          "fraction_error": 2.498001805406602e-16
+        },
+        {
+          "truth": "model009",
+          "alternative": "model008",
+          "amplitude_error": 8.881784197001252e-16,
+          "fraction_error": 2.498001805406602e-16
+        }
+      ]
+    },
+    {
+      "bundle": "complete_UV",
+      "mode": "g235m",
+      "response": "emergent_line_values",
+      "intrinsic_FWHM_km_s": 300,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 3.0531133177191805e-16,
+      "maximum_amplitude_error": 4.440892098500626e-16,
+      "maximum_SNR_relative_error": 1.1102230246251565e-15,
+      "closest_pair": {
+        "truth": "model009",
+        "alternative": "model008",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.09106697824935081,
+        "amplitude": 0.7774263827128438,
+        "same_environment": true,
+        "truth_index": 14,
+        "alternative_index": 12
+      },
+      "hardest_matched_pair": {
+        "truth": "model009",
+        "alternative": "model008",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.09106697824935081,
+        "amplitude": 0.7774263827128438,
+        "same_environment": true,
+        "truth_index": 14,
+        "alternative_index": 12
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model009",
+          "alternative": "model008",
+          "amplitude_error": 1.1102230246251565e-16,
+          "fraction_error": 8.465450562766819e-16
+        },
+        {
+          "truth": "model009",
+          "alternative": "model008",
+          "amplitude_error": 1.1102230246251565e-16,
+          "fraction_error": 8.465450562766819e-16
+        }
+      ]
+    },
+    {
+      "bundle": "complete_UV",
+      "mode": "g235m",
+      "response": "emergent_line_values",
+      "intrinsic_FWHM_km_s": 1000,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 2.498001805406602e-16,
+      "maximum_amplitude_error": 4.440892098500626e-16,
+      "maximum_SNR_relative_error": 6.661338147750939e-16,
+      "closest_pair": {
+        "truth": "model009",
+        "alternative": "model008",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.11562721505782314,
+        "amplitude": 0.7801102613625452,
+        "same_environment": true,
+        "truth_index": 14,
+        "alternative_index": 12
+      },
+      "hardest_matched_pair": {
+        "truth": "model009",
+        "alternative": "model008",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.11562721505782314,
+        "amplitude": 0.7801102613625452,
+        "same_environment": true,
+        "truth_index": 14,
+        "alternative_index": 12
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model009",
+          "alternative": "model008",
+          "amplitude_error": 2.220446049250313e-16,
+          "fraction_error": 2.7755575615628914e-16
+        },
+        {
+          "truth": "model009",
+          "alternative": "model008",
+          "amplitude_error": 2.220446049250313e-16,
+          "fraction_error": 2.7755575615628914e-16
+        }
+      ]
+    },
+    {
+      "bundle": "complete_UV",
+      "mode": "g235h",
+      "response": "emergent_line_values",
+      "intrinsic_FWHM_km_s": 0,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 3.191891195797325e-16,
+      "maximum_amplitude_error": 2.220446049250313e-16,
+      "maximum_SNR_relative_error": 2.1094237467877974e-15,
+      "closest_pair": {
+        "truth": "model009",
+        "alternative": "model008",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.0772880531422845,
+        "amplitude": 0.7758963070910212,
+        "same_environment": true,
+        "truth_index": 14,
+        "alternative_index": 12
+      },
+      "hardest_matched_pair": {
+        "truth": "model009",
+        "alternative": "model008",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.0772880531422845,
+        "amplitude": 0.7758963070910212,
+        "same_environment": true,
+        "truth_index": 14,
+        "alternative_index": 12
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model009",
+          "alternative": "model008",
+          "amplitude_error": 3.885780586188048e-15,
+          "fraction_error": 1.74721348500384e-14
+        },
+        {
+          "truth": "model009",
+          "alternative": "model008",
+          "amplitude_error": 3.885780586188048e-15,
+          "fraction_error": 1.74721348500384e-14
+        }
+      ]
+    },
+    {
+      "bundle": "complete_UV",
+      "mode": "g235h",
+      "response": "emergent_line_values",
+      "intrinsic_FWHM_km_s": 300,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 3.608224830031759e-16,
+      "maximum_amplitude_error": 4.440892098500626e-16,
+      "maximum_SNR_relative_error": 1.3322676295501878e-15,
+      "closest_pair": {
+        "truth": "model009",
+        "alternative": "model008",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.09007006877677808,
+        "amplitude": 0.7774910305402182,
+        "same_environment": true,
+        "truth_index": 14,
+        "alternative_index": 12
+      },
+      "hardest_matched_pair": {
+        "truth": "model009",
+        "alternative": "model008",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.09007006877677808,
+        "amplitude": 0.7774910305402182,
+        "same_environment": true,
+        "truth_index": 14,
+        "alternative_index": 12
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model009",
+          "alternative": "model008",
+          "amplitude_error": 0.0,
+          "fraction_error": 1.5404344466674047e-15
+        },
+        {
+          "truth": "model009",
+          "alternative": "model008",
+          "amplitude_error": 0.0,
+          "fraction_error": 1.5404344466674047e-15
+        }
+      ]
+    },
+    {
+      "bundle": "complete_UV",
+      "mode": "g235h",
+      "response": "emergent_line_values",
+      "intrinsic_FWHM_km_s": 1000,
+      "cross_environment_pairs": 100,
+      "attenuation_pairs_per_pair": 9,
+      "maximum_fraction_error": 3.0531133177191805e-16,
+      "maximum_amplitude_error": 5.551115123125783e-16,
+      "maximum_SNR_relative_error": 8.881784197001252e-16,
+      "closest_pair": {
+        "truth": "model009",
+        "alternative": "model008",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.11532659433753256,
+        "amplitude": 0.780099824697346,
+        "same_environment": true,
+        "truth_index": 14,
+        "alternative_index": 12
+      },
+      "hardest_matched_pair": {
+        "truth": "model009",
+        "alternative": "model008",
+        "truth_attenuation": 1,
+        "alternative_attenuation": 0,
+        "fraction": 0.11532659433753256,
+        "amplitude": 0.780099824697346,
+        "same_environment": true,
+        "truth_index": 14,
+        "alternative_index": 12
+      },
+      "direct_spectral_quadratures": [
+        {
+          "truth": "model009",
+          "alternative": "model008",
+          "amplitude_error": 4.440892098500626e-16,
+          "fraction_error": 1.762479051592436e-15
+        },
+        {
+          "truth": "model009",
+          "alternative": "model008",
+          "amplitude_error": 4.440892098500626e-16,
+          "fraction_error": 1.762479051592436e-15
+        }
+      ]
+    }
+  ],
+  "independent_extra_stage_ranges": [
+    {
+      "response": "intrinsic_line_values",
+      "ion_group": "NV",
+      "ratio_to_CIII": {
+        "0": {
+          "minimum": 0.0,
+          "maximum": 0.002415163457780666
+        },
+        "1": {
+          "minimum": 0.0,
+          "maximum": 0.015959331394315938
+        }
+      },
+      "finite_range_overlap": [
+        0.0,
+        0.002415163457780666
+      ]
+    },
+    {
+      "response": "intrinsic_line_values",
+      "ion_group": "CII",
+      "ratio_to_CIII": {
+        "0": {
+          "minimum": 0.02069812828472201,
+          "maximum": 0.5773980537471836
+        },
+        "1": {
+          "minimum": 0.020138548930864086,
+          "maximum": 0.6408077480961105
+        }
+      },
+      "finite_range_overlap": [
+        0.02069812828472201,
+        0.5773980537471836
+      ]
+    },
+    {
+      "response": "emergent_line_values",
+      "ion_group": "NV",
+      "ratio_to_CIII": {
+        "0": {
+          "minimum": 0.0,
+          "maximum": 0.0024185677369980016
+        },
+        "1": {
+          "minimum": 0.0,
+          "maximum": 0.015982786279952126
+        }
+      },
+      "finite_range_overlap": [
+        0.0,
+        0.0024185677369980016
+      ]
+    },
+    {
+      "response": "emergent_line_values",
+      "ion_group": "CII",
+      "ratio_to_CIII": {
+        "0": {
+          "minimum": 0.020631785154024463,
+          "maximum": 0.5773444741190782
+        },
+        "1": {
+          "minimum": 0.02007326895257458,
+          "maximum": 0.6407152631878006
+        }
+      },
+      "finite_range_overlap": [
+        0.020631785154024463,
+        0.5773444741190782
+      ]
+    }
+  ],
+  "total_distances_recomputed": 43200,
+  "direct_spectral_quadratures": 96,
+  "new_download_bytes": 0,
+  "scope": [
+    "Energy line shapes in continuous observed-micron coordinates; Gaussian profiles",
+    "White constant variance per wavelength; mode/template SNR normalizations differ",
+    "Enhanced composition is truth, ordinary is alternative; reverse SNR may differ",
+    "Free nonnegative total flux and finite attenuation alternatives; no nuisance prior",
+    "Nominal tabulated band coverage excludes aperture gaps and throughput/noise feasibility",
+    "Known continuum/centroid/width/spatial profile; source calibration remains unmeasured",
+    "Finite model/stage ranges are predictions, not posterior probabilities or intervals",
+    "All twenty models are unweighted; closest-family stress is not posterior-averaged expected information",
+    "NV wavelengths vacuum; CII Cloudy air labels are approximate target locations",
+    "No native measurement likelihood or calibrated exposure duration obtained",
+    "Different broadening changes template norms; lower matched-template SNR does not establish lower exposure time"
+  ]
+}

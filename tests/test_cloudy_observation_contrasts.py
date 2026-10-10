@@ -38,6 +38,7 @@ def synthetic_models():
                     "actual_gas_abundances": {
                         "NITR": {"actual_printed_log_XH": -4.6 + nitrogen},
                         "CARB": {"actual_printed_log_XH": -4.0},
+                        "OXYG": {"actual_printed_log_XH": -3.63},
                     },
                 }
             )
@@ -47,6 +48,8 @@ def synthetic_models():
 def synthetic_pilot():
     return {
         "cloudy_release": "C23.01",
+        "ordinary_reference_log_NC": -0.60,
+        "reference_log_CO": -0.37,
         "line_contract_version": 2,
         "complete_thermal_solution_per_composition": True,
         "intrinsic_line_unit": "erg s^-1 cm^-2; Cloudy intensity geometry",
@@ -154,3 +157,54 @@ def test_stage_convention_and_range_not_probabilities():
     assert output[0]["finite_range_overlap"] is None
     assert output[1]["wavelength_medium"].startswith("Cloudy air")
     assert output[1]["finite_range_overlap"] == [2.5, 2.5]
+
+
+def test_custom_CO_contract_not_unmodified_solar():
+    wrong = deepcopy(synthetic_pilot())
+    wrong["reference_log_CO"] = -0.26
+    with pytest.raises(ValueError):
+        validate_models(wrong)
+    wrong = deepcopy(synthetic_pilot())
+    wrong["models"][0]["actual_gas_abundances"]["OXYG"]["actual_printed_log_XH"] = -3.5
+    with pytest.raises(ValueError):
+        validate_models(wrong)
+
+
+def test_actual_frozen_complete_forecast_contract():
+    """Audit actual saved predictions; independent worker owns full numeric oracle."""
+    import hashlib
+    import json
+
+    from tools.jwst.observation_design import ROOT
+
+    model_path = ROOT / "research_output/mom_cloudy_pilot20_rate_v3.json"
+    forecast_path = ROOT / "research_output/mom_cloudy_observation_contrasts.json"
+    assert hashlib.sha256(model_path.read_bytes()).hexdigest() == (
+        "7ef48626ddfb7c882d9725b17939c3a7752151de734e3ab4c46472b940127759"
+    )
+    pilot = json.loads(model_path.read_text())
+    validate_models(pilot)
+    output = json.loads(forecast_path.read_text())
+    assert output["input_sha256"] == hashlib.sha256(model_path.read_bytes()).hexdigest()
+    assert output["validated_merged_input_revision"] == ("6b44032b82e550ed0f740a56830deed296b5c4e9")
+    assert len(output["cases"]) == 48
+    assert output["composition_reference"]["unmodified_solar_pattern"] is False
+    assert output["absolute_exposure_seconds"] is None
+    assert output["matched_native_observations_used"] is False
+    assert output["alternative_response_contracts_pooled"] is False
+    identifiers = {model["id"] for model in pilot["models"]}
+    for case in output["cases"]:
+        assert case["cross_environment_comparisons"] == 100
+        assert case["existing_attenuation_pairs_per_comparison"] == 9
+        assert len(case["matched_environment_pairs"]) == 10
+        assert case["finite_counts_are_probabilities"] is False
+        for record in case["matched_environment_pairs"] + [case["closest_cross_environment"]]:
+            assert record["enhanced_truth_model_id"] in identifiers
+            assert record["ordinary_alternative_model_id"] in identifiers
+            assert record["required_truth_matched_SNR"] ** 2 * record[
+                "shape_information_fraction"
+            ] == pytest.approx(9, rel=1e-12)
+    for response in ("intrinsic_line_values", "emergent_line_values"):
+        assert output["extra_stage_ranges"][response] == stage_ranges(
+            pilot["models"], [0, 0.5, 1], response
+        )

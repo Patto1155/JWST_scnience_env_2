@@ -95,8 +95,9 @@ ceiling becomes **78 MiB**, reserve becomes zero, and the aggregate remains
 **2 GiB**. This is a coordinator allocation change within the user's cap.
 Restored CALs and already-pinned imaging remain separately accounted.
 
-Seven Cloudy controls stopped at the declared 600-second limit without final
-line saves; twelve queued controls were not executed. No unfinished predictions
+Four Cloudy controls hit the declared 600-second limit without final line saves.
+Three more started during exception unwinding and were interrupted; twelve
+queued controls were not executed. No unfinished predictions
 were accepted. After merging the validated first model, a revised experiment
 declared a 600-second existing-OpenBLAS ordinary control and a 1,200-second
 serialized original-backend nitrogen partner. Both converged and received

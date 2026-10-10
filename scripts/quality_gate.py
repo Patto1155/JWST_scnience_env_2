@@ -136,6 +136,7 @@ SCIENCE_LINT_TARGETS = [
     "tests/test_continuation_yield_version_review.py",
 ]
 RESEARCH2_SCIENCE_LINT_TARGETS = [
+    "discovery/research2_cloudy_forecast_review.py",
     "discovery/research2_cloudy_grid_rate_review.py",
     "tests/test_cloudy_grid_rate_review.py",
     "tools/jwst/cloudy_atomic_provenance.py",
