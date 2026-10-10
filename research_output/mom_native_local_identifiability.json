@@ -1,0 +1,745 @@
+{
+  "schema_version": 1,
+  "noise_contract_version": 3,
+  "question": "Can local spectral alternatives separate line measurement from unknown calibration?",
+  "data_scope": "actual nine CAL wavelength/profile inputs; hash-verified RATE v3 compact covariance and gain operators",
+  "inputs_sha256": {
+    "research_output/mom_native_rate_noise.json": "5e9cc7e5e46870f0221c42f762a1186a1396f440e6b34f2b42d5c5fb259d9fc7",
+    "research_output/mom_native_wavecorr.json": "80ca86e7969e82bca424a963b39282f2fec42d589fb055238b4ac18510ab3fe6",
+    "research_output/mom_atomic_grid_niv_doublet_v2.json": "a48ea0076ae9f6ef4d76845644880776c266efce0a281b0866d12889e36b1e0e",
+    "research_output/mom_multiplet_components_niv_doublet_v2.json": "692ce2fe0ca5463708abfa3c232378f3aebe22ff9b96f97d779091d54ac5f474"
+  },
+  "native_metadata": {
+    "source_spectrum_sha256": "42d95d348ebb55ca37eb31393b4603628ac13a4bca1f4f7f0ffba7b32d3125b1",
+    "native_inventory_sha256": "2ef47329dd583dd00b57dd7d4fed5330c59d2142ff4bea973a0423783e361095",
+    "calibration": "official 2.0.1 / jwst_1535.pmap; EXTENDED/UNIFORM/barshadow; already nod-subtracted",
+    "native_geometry_seed": "versioned SLITS base polynomial; transformed old/new cutout origins; independently refined off UV lines",
+    "point_lsf_empirically_calibrated": false,
+    "wavelength_unit_contract": "Pinned JWST2.0.1 WAVELENGTH values in microns; BUNIT absent in exact originals; reject conflicting labels/range and misaligned detector grids"
+  },
+  "baseline_replay_max_flux_difference": 0.0,
+  "fits": [
+    {
+      "scenario": "baseline",
+      "redshift": 14.44,
+      "intrinsic_FWHM_km_s": 0.0,
+      "continuum_order": 1,
+      "fit": {
+        "line_order": [
+          "NIV",
+          "CIV",
+          "HeII_OIII",
+          "NIII",
+          "CIII"
+        ],
+        "line_contract_version": 2,
+        "flux_units": "1e-20 erg s^-1 cm^-2",
+        "fluxes": [
+          22.646122122527167,
+          22.454841956253848,
+          20.692088459138173,
+          5.046590033476671,
+          14.76308944547946
+        ],
+        "flux_covariance": [
+          [
+            137.32083301078706,
+            10.893214612387917,
+            11.320742633347518,
+            3.3736244725743756,
+            -0.09952451129863306
+          ],
+          [
+            10.893214612387917,
+            104.79578295205872,
+            9.105683523127702,
+            3.0343956004968944,
+            0.6015525422204178
+          ],
+          [
+            11.320742633347518,
+            9.105683523127702,
+            138.0985640025116,
+            4.707832069635798,
+            2.5978447367584114
+          ],
+          [
+            3.3736244725743756,
+            3.0343956004968944,
+            4.707832069635798,
+            55.73564726285454,
+            1.980502741304174
+          ],
+          [
+            -0.09952451129863306,
+            0.6015525422204178,
+            2.5978447367584114,
+            1.980502741304174,
+            43.204749578379655
+          ]
+        ],
+        "conditional_chi2": 549.2532530097229,
+        "dof": 623,
+        "continuum_coefficients": [
+          1.753501274515883,
+          0.08821525766365217
+        ],
+        "ionic_N_over_C": {
+          "value": 3.060150580067426,
+          "log_ratio_relative_to_solar_NC_minus_0_60": 1.0857427972277816,
+          "conditional_gaussian_95_fieller_set": {
+            "type": "bounded",
+            "interval": [
+              -0.15824300821318465,
+              9.905025558821881
+            ]
+          },
+          "scaled_numerator": 76.4442319473259,
+          "scaled_denominator": 24.980545874197333,
+          "scaled_covariance": [
+            [
+              1673.2556717942878,
+              24.409091591427305
+            ],
+            [
+              24.409091591427305,
+              65.44967402277683
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "scenario": "redshift_low",
+      "redshift": 14.42,
+      "intrinsic_FWHM_km_s": 0.0,
+      "continuum_order": 1,
+      "fit": {
+        "line_order": [
+          "NIV",
+          "CIV",
+          "HeII_OIII",
+          "NIII",
+          "CIII"
+        ],
+        "line_contract_version": 2,
+        "flux_units": "1e-20 erg s^-1 cm^-2",
+        "fluxes": [
+          18.313104672031912,
+          19.81663235468833,
+          22.40135590241155,
+          2.30434357332699,
+          14.22207888077861
+        ],
+        "flux_covariance": [
+          [
+            137.30891467932045,
+            11.052219436953571,
+            11.65538309795474,
+            3.464710373322548,
+            -0.07677037831130756
+          ],
+          [
+            11.052219436953571,
+            104.8734861914953,
+            9.313861883150171,
+            3.0859610648418583,
+            0.6097484118019969
+          ],
+          [
+            11.65538309795474,
+            9.313861883150171,
+            140.0062295185354,
+            4.811403681929952,
+            2.6127922785283832
+          ],
+          [
+            3.464710373322548,
+            3.0859610648418583,
+            4.811403681929952,
+            55.61576293585853,
+            1.9758057861380682
+          ],
+          [
+            -0.07677037831130756,
+            0.6097484118019969,
+            2.6127922785283832,
+            1.9758057861380682,
+            43.14627375460064
+          ]
+        ],
+        "conditional_chi2": 551.3758787436454,
+        "dof": 623,
+        "continuum_coefficients": [
+          1.769630793431054,
+          0.07448659062386798
+        ],
+        "ionic_N_over_C": {
+          "value": 2.391238877097364,
+          "log_ratio_relative_to_solar_NC_minus_0_60": 0.9786229629092791,
+          "conditional_gaussian_95_fieller_set": {
+            "type": "bounded",
+            "interval": [
+              -1.2170835407929461,
+              9.503578443111975
+            ]
+          },
+          "scaled_numerator": 55.570217398319606,
+          "scaled_denominator": 23.239090803748653,
+          "scaled_covariance": [
+            [
+              1673.353600576638,
+              24.72159240757921
+            ],
+            [
+              24.72159240757921,
+              65.41474490593652
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "scenario": "redshift_high",
+      "redshift": 14.46,
+      "intrinsic_FWHM_km_s": 0.0,
+      "continuum_order": 1,
+      "fit": {
+        "line_order": [
+          "NIV",
+          "CIV",
+          "HeII_OIII",
+          "NIII",
+          "CIII"
+        ],
+        "line_contract_version": 2,
+        "flux_units": "1e-20 erg s^-1 cm^-2",
+        "fluxes": [
+          26.17353575442483,
+          23.817600425427216,
+          18.38567267867138,
+          6.779342488696804,
+          13.18612547110291
+        ],
+        "flux_covariance": [
+          [
+            137.30938110728036,
+            10.800978071349983,
+            11.056000169089973,
+            3.3335531569118464,
+            -0.11668541640784864
+          ],
+          [
+            10.800978071349983,
+            104.83543362416941,
+            8.968890317543853,
+            3.033819273153058,
+            0.588203521001378
+          ],
+          [
+            11.056000169089973,
+            8.968890317543853,
+            136.3212324453564,
+            4.677474553353857,
+            2.5470356986279374
+          ],
+          [
+            3.3335531569118464,
+            3.033819273153058,
+            4.677474553353857,
+            56.68617787245316,
+            1.975274072100941
+          ],
+          [
+            -0.11668541640784864,
+            0.588203521001378,
+            2.5470356986279374,
+            1.975274072100941,
+            42.15336938202564
+          ]
+        ],
+        "conditional_chi2": 548.7783056119956,
+        "dof": 623,
+        "continuum_coefficients": [
+          1.7500279478868381,
+          0.10401714914527473
+        ],
+        "ionic_N_over_C": {
+          "value": 3.8162499076474385,
+          "log_ratio_relative_to_solar_NC_minus_0_60": 1.1816368067968699,
+          "conditional_gaussian_95_fieller_set": {
+            "type": "bounded",
+            "interval": [
+              0.47652841248404904,
+              12.316658015573283
+            ]
+          },
+          "scaled_numerator": 91.68031907032001,
+          "scaled_denominator": 24.02366755033534,
+          "scaled_covariance": [
+            [
+              1684.2018897837172,
+              24.236518019492436
+            ],
+            [
+              24.236518019492436,
+              64.39435510787662
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "scenario": "width_300",
+      "redshift": 14.44,
+      "intrinsic_FWHM_km_s": 300.0,
+      "continuum_order": 1,
+      "fit": {
+        "line_order": [
+          "NIV",
+          "CIV",
+          "HeII_OIII",
+          "NIII",
+          "CIII"
+        ],
+        "line_contract_version": 2,
+        "flux_units": "1e-20 erg s^-1 cm^-2",
+        "fluxes": [
+          22.72009005674446,
+          22.513681976092787,
+          20.774814407896134,
+          5.037497545613378,
+          14.80419532536595
+        ],
+        "flux_covariance": [
+          [
+            137.9239291912948,
+            11.002062465706324,
+            11.427408388054557,
+            3.4162753298080064,
+            -0.09878546407411226
+          ],
+          [
+            11.002062465706324,
+            105.32469369443136,
+            9.198608933324081,
+            3.0748086274473767,
+            0.6120248429758947
+          ],
+          [
+            11.427408388054557,
+            9.198608933324081,
+            138.69757729324985,
+            4.76624428645955,
+            2.635814345704029
+          ],
+          [
+            3.4162753298080064,
+            3.0748086274473767,
+            4.76624428645955,
+            56.14724250634894,
+            2.0145240123764654
+          ],
+          [
+            -0.09878546407411226,
+            0.6120248429758947,
+            2.635814345704029,
+            2.0145240123764654,
+            43.60280913412536
+          ]
+        ],
+        "conditional_chi2": 549.2681760690424,
+        "dof": 623,
+        "continuum_coefficients": [
+          1.7529856093928533,
+          0.08856907034286131
+        ],
+        "ionic_N_over_C": {
+          "value": 3.0582354417416338,
+          "log_ratio_relative_to_solar_NC_minus_0_60": 1.0854709170191212,
+          "conditional_gaussian_95_fieller_set": {
+            "type": "bounded",
+            "interval": [
+              -0.16118734236142498,
+              9.913920621882966
+            ]
+          },
+          "scaled_numerator": 76.60398195736579,
+          "scaled_denominator": 25.04842528204454,
+          "scaled_covariance": [
+            [
+              1683.1744710187997,
+              24.72367993829582
+            ],
+            [
+              24.72367993829582,
+              65.9667723772233
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "scenario": "width_1000",
+      "redshift": 14.44,
+      "intrinsic_FWHM_km_s": 1000.0,
+      "continuum_order": 1,
+      "fit": {
+        "line_order": [
+          "NIV",
+          "CIV",
+          "HeII_OIII",
+          "NIII",
+          "CIII"
+        ],
+        "line_contract_version": 2,
+        "flux_units": "1e-20 erg s^-1 cm^-2",
+        "fluxes": [
+          23.434526030057228,
+          23.052893149683264,
+          21.525420139973406,
+          4.953197403000289,
+          15.177018375940174
+        ],
+        "flux_covariance": [
+          [
+            143.90441225861315,
+            12.107597813680274,
+            12.490158211413757,
+            3.8501143175184014,
+            -0.08891784657626532
+          ],
+          [
+            12.107597813680274,
+            110.54501269992552,
+            10.126196020634156,
+            3.486442014642837,
+            0.7190691732152249
+          ],
+          [
+            12.490158211413757,
+            10.126196020634156,
+            144.3667540460106,
+            5.350095089102596,
+            3.0124275832983725
+          ],
+          [
+            3.8501143175184014,
+            3.486442014642837,
+            5.350095089102596,
+            60.1584403735716,
+            2.358832580568193
+          ],
+          [
+            -0.08891784657626532,
+            0.7190691732152249,
+            3.0124275832983725,
+            2.358832580568193,
+            47.44428530024208
+          ]
+        ],
+        "conditional_chi2": 549.4296553500604,
+        "dof": 623,
+        "continuum_coefficients": [
+          1.7482373412624916,
+          0.0919807800207905
+        ],
+        "ionic_N_over_C": {
+          "value": 3.045177106293438,
+          "log_ratio_relative_to_solar_NC_minus_0_60": 1.0836125560983512,
+          "conditional_gaussian_95_fieller_set": {
+            "type": "bounded",
+            "interval": [
+              -0.1891717222105349,
+              10.025518694213153
+            ]
+          },
+          "scaled_numerator": 78.15934729433143,
+          "scaled_denominator": 25.666601503341223,
+          "scaled_covariance": [
+            [
+              1780.8616322142816,
+              27.92250928347695
+            ],
+            [
+              27.92250928347695,
+              70.98650671257987
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "scenario": "quadratic_continuum",
+      "redshift": 14.44,
+      "intrinsic_FWHM_km_s": 0.0,
+      "continuum_order": 2,
+      "fit": {
+        "line_order": [
+          "NIV",
+          "CIV",
+          "HeII_OIII",
+          "NIII",
+          "CIII"
+        ],
+        "line_contract_version": 2,
+        "flux_units": "1e-20 erg s^-1 cm^-2",
+        "fluxes": [
+          23.533402336703727,
+          21.93273104593636,
+          18.03423837955603,
+          3.613866261340324,
+          14.525561569090232
+        ],
+        "flux_covariance": [
+          [
+            138.48348730898033,
+            10.209062656427138,
+            7.8380088029224515,
+            1.49624410819438,
+            -0.4107709495852608
+          ],
+          [
+            10.209062656427138,
+            105.1983651293855,
+            11.155062402024788,
+            4.139120754284172,
+            0.7847023055426152
+          ],
+          [
+            7.8380088029224515,
+            11.155062402024788,
+            148.53110181915793,
+            10.331529601879643,
+            3.5301842136817525
+          ],
+          [
+            1.49624410819438,
+            4.139120754284172,
+            10.331529601879643,
+            58.76712191360565,
+            2.4830837343221126
+          ],
+          [
+            -0.4107709495852608,
+            0.7847023055426152,
+            3.5301842136817525,
+            2.4830837343221126,
+            43.28807128931012
+          ]
+        ],
+        "conditional_chi2": 548.5761246666782,
+        "dof": 622,
+        "continuum_coefficients": [
+          1.761470028128692,
+          0.07599931098403284,
+          -0.18848154837095243
+        ],
+        "ionic_N_over_C": {
+          "value": 3.0077379777170306,
+          "log_ratio_relative_to_solar_NC_minus_0_60": 1.0782399995432201,
+          "conditional_gaussian_95_fieller_set": {
+            "type": "bounded",
+            "interval": [
+              -0.29540495273617495,
+              10.099782451468725
+            ]
+          },
+          "scaled_numerator": 73.70596008434215,
+          "scaled_denominator": 24.50544583018742,
+          "scaled_covariance": [
+            [
+              1684.3291010379903,
+              26.330371502360137
+            ],
+            [
+              26.330371502360137,
+              65.78302301656335
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "held_out_predictions": [
+    {
+      "scenario": "baseline",
+      "held_out_RATE_group": "03",
+      "prediction": {
+        "predictive_chi2": 185.15738546799648,
+        "dof": 208,
+        "conditional_gaussian_tail_probability": 0.8709285239891145,
+        "training_line_covariance_propagated": true,
+        "test_continuum_profiled": true,
+        "empirical_prediction_coverage_calibrated": false
+      }
+    },
+    {
+      "scenario": "width_1000",
+      "held_out_RATE_group": "03",
+      "prediction": {
+        "predictive_chi2": 185.35198027855014,
+        "dof": 208,
+        "conditional_gaussian_tail_probability": 0.8687461298469825,
+        "training_line_covariance_propagated": true,
+        "test_continuum_profiled": true,
+        "empirical_prediction_coverage_calibrated": false
+      }
+    },
+    {
+      "scenario": "baseline",
+      "held_out_RATE_group": "05",
+      "prediction": {
+        "predictive_chi2": 211.54124286869913,
+        "dof": 208,
+        "conditional_gaussian_tail_probability": 0.41867061659245125,
+        "training_line_covariance_propagated": true,
+        "test_continuum_profiled": true,
+        "empirical_prediction_coverage_calibrated": false
+      }
+    },
+    {
+      "scenario": "width_1000",
+      "held_out_RATE_group": "05",
+      "prediction": {
+        "predictive_chi2": 211.55392982410436,
+        "dof": 208,
+        "conditional_gaussian_tail_probability": 0.4184304390411001,
+        "training_line_covariance_propagated": true,
+        "test_continuum_profiled": true,
+        "empirical_prediction_coverage_calibrated": false
+      }
+    },
+    {
+      "scenario": "baseline",
+      "held_out_RATE_group": "07",
+      "prediction": {
+        "predictive_chi2": 158.4122450191142,
+        "dof": 208,
+        "conditional_gaussian_tail_probability": 0.9956467585242107,
+        "training_line_covariance_propagated": true,
+        "test_continuum_profiled": true,
+        "empirical_prediction_coverage_calibrated": false
+      }
+    },
+    {
+      "scenario": "width_1000",
+      "held_out_RATE_group": "07",
+      "prediction": {
+        "predictive_chi2": 158.56720847066785,
+        "dof": 208,
+        "conditional_gaussian_tail_probability": 0.9955287635747806,
+        "training_line_covariance_propagated": true,
+        "test_continuum_profiled": true,
+        "empirical_prediction_coverage_calibrated": false
+      }
+    }
+  ],
+  "width_LSF_counterexamples": [
+    {
+      "intrinsic_FWHM_km_s": 300.0,
+      "zero_intrinsic_unknown_LSF_max_response_difference": 1.0842021724855044e-19,
+      "effective_resolution_at_components": [
+        120.87102840650945,
+        121.27506806407833,
+        129.20778216042365,
+        129.5424940843728,
+        141.3728845069983,
+        144.11912859192873,
+        144.84217581354076,
+        155.9645083098961,
+        156.22034456433695,
+        156.3648542729264,
+        156.71431627383956,
+        156.97268761851456,
+        179.29761734737892,
+        179.609449864273
+      ]
+    },
+    {
+      "intrinsic_FWHM_km_s": 1000.0,
+      "zero_intrinsic_unknown_LSF_max_response_difference": 1.0842021724855044e-19,
+      "effective_resolution_at_components": [
+        112.81459196002498,
+        113.14289307583223,
+        119.50191503445818,
+        119.76657340020462,
+        128.92829032213135,
+        131.00104681459558,
+        131.5433693921292,
+        139.70622381603766,
+        139.8900133519202,
+        139.99374826996683,
+        140.24437041886236,
+        140.4294509346922,
+        155.73452198110655,
+        155.93873068681802
+      ]
+    }
+  ],
+  "centroid_redshift_counterexamples": [
+    {
+      "redshift": 14.42,
+      "fractional_centroid_calibration": -0.0012953367875647714,
+      "maximum_response_difference": 1.2522535092207576e-17
+    },
+    {
+      "redshift": 14.46,
+      "fractional_centroid_calibration": 0.0012953367875647714,
+      "maximum_response_difference": 2.0383000842727483e-17
+    }
+  ],
+  "centroid_convention": "assigned centers multiplied by 1+epsilon; fixed detector WAVE/Fnu bins; LSF evaluated at assigned center",
+  "local_plugin_diagnostics": {
+    "directions": [
+      "redshift_delta_0.02",
+      "broadening_finite_u_0.09",
+      "LSF_scale_delta_0.01",
+      "quadratic_continuum_unit_coefficient"
+    ],
+    "projected_plugin_SNR": [
+      0.9779318655637823,
+      0.019812701612582816,
+      0.016732878872792067,
+      4.365828338513613
+    ],
+    "projected_cosines": [
+      [
+        1.000000000000001,
+        -0.023680726407321356,
+        -0.005767237454436367,
+        -0.012053090451189316
+      ],
+      [
+        -0.023680726407321356,
+        0.9999999999999999,
+        0.9469661060626584,
+        -0.10420056084761291
+      ],
+      [
+        -0.005767237454436367,
+        0.9469661060626584,
+        1.0000000000000007,
+        -0.09723749285707921
+      ],
+      [
+        -0.012053090451189316,
+        -0.10420056084761291,
+        -0.09723749285707921,
+        1.0000000000000007
+      ]
+    ],
+    "projected_singular_values": [
+      4.365845881773525,
+      0.9778572079405342,
+      0.025457857801715587,
+      0.004154803271657967
+    ],
+    "interpretation": "amplitude-conditioned finite contrasts with declared scales; not invariant Fisher information, power or confidence"
+  },
+  "fitted_comparisons": 12,
+  "new_download_bytes": 0,
+  "runtime_seconds": 9.069522619000054,
+  "absolute_redshift_or_intrinsic_width_identified": false,
+  "empirical_coverage_or_power_established": false
+}
