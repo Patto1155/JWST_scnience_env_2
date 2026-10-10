@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "rejected": true,
+  "scope": "Engineering probe rejected before scientific grid expansion; no scientific predictions accepted",
+  "expected_log_O_over_H": -4.00877392431,
+  "actual_printed_log_O_over_H": -4.7077,
+  "independent_checks_failed_as_required": [
+    "Actual C/N/O composition disagrees with declared gas abundances",
+    "Actual zone C/N/O relative to H disagrees with declared composition"
+  ],
+  "probe_output_sha256": "20fbf491867823e242ffd30ed66b709220d79b83b53842c0b9b265e5b93c9ac3",
+  "probe_zone_abundances_sha256": "9cdb0deccf25893ed686424be6829fd48e0be22cb4525b8c2a8b5b923da2e069",
+  "parameters": {
+    "metallicity_scale": 0.2,
+    "log_CO": -0.37,
+    "log_NC_relative_minus060": 0.0
+  }
+}

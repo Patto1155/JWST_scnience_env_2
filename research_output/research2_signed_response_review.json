@@ -1,0 +1,275 @@
+{
+  "schema_version": 1,
+  "inputs_sha256": {
+    "research_output/mom_native_reduction.json": "88e3cdbf5b7759eaad84dc21ead0974c38f392292d71ce605fa0f5b5951637ec",
+    "research_output/mom_native_wavecorr.json": "80ca86e7969e82bca424a963b39282f2fec42d589fb055238b4ac18510ab3fe6",
+    "research_output/mom_multiplet_components_niv_doublet_v2.json": "692ce2fe0ca5463708abfa3c232378f3aebe22ff9b96f97d779091d54ac5f474",
+    "research_output/mom_native_wavecorr.npz": "6ac87fb9fcb527b951f9dccf6e4a40fcae5ee78c0f85a55bfb2d93ac55281cb0"
+  },
+  "actual_native_hashes": [
+    {
+      "filename": "jw05224004001_03101_00002_nrs2_cal.fits",
+      "sha256": "c2d318f836570e3cc77463ec91a8b2a8982deb8df4762873dcad3bdfbd03bc9f"
+    },
+    {
+      "filename": "jw05224004001_03101_00003_nrs2_cal.fits",
+      "sha256": "7d60c48301e7020e897bc68de72d9103f27a4e3d4dec14f6e910bd76a6a68b39"
+    },
+    {
+      "filename": "jw05224004001_03101_00004_nrs2_cal.fits",
+      "sha256": "0180117830dcad9a562c3c462b1dd7d08ba8ac2683c95a06d1b5c5855b0967e0"
+    },
+    {
+      "filename": "jw05224004001_05101_00001_nrs2_cal.fits",
+      "sha256": "c4f576ff15f6d58b4fccf6ab4f5f97e82bb3472ebab6602d8f99a8b804d97695"
+    },
+    {
+      "filename": "jw05224004001_05101_00002_nrs2_cal.fits",
+      "sha256": "0078c56d4d50a720b11e5ccb3be84705104c9ae06a3ecd7d8c29f5ffa678f3c5"
+    },
+    {
+      "filename": "jw05224004001_05101_00003_nrs2_cal.fits",
+      "sha256": "b18c997fea94810da565d1044d02a6615862a8f1d9946e47506f9d60b2bccace"
+    },
+    {
+      "filename": "jw05224004001_07101_00001_nrs2_cal.fits",
+      "sha256": "43faf1fe96cff76eab3cc3e33c900864fa42c5bf053a12ddf3107cc191a4c5ea"
+    },
+    {
+      "filename": "jw05224004001_07101_00002_nrs2_cal.fits",
+      "sha256": "5b73760be206eef6891f37b33c3e8d973eef1522ece3b1a90ef4cc6506950a75"
+    },
+    {
+      "filename": "jw05224004001_07101_00003_nrs2_cal.fits",
+      "sha256": "b7b3af35080d1ddafcb1184f07733e56c278f936be0fd662643dde46be8b343c"
+    }
+  ],
+  "independent_spatial_SVD_extraction_max_error_uJy": 1.8735013540549517e-16,
+  "positive_center_wavelength_um_first_UV_column": [
+    2.1502995989387346,
+    2.1633167199227197,
+    2.1372376867088363,
+    2.1502994108194486,
+    2.1633166589897113,
+    2.1372374578509907,
+    2.1502992980208675,
+    2.1633164813405825,
+    2.137237399314321
+  ],
+  "mixing_rank": 6,
+  "coupling_sum_to_one_max_error": 4.440892098500626e-15,
+  "absolute_coupling_weight_range": [
+    0.9999999999999992,
+    1.0000000000000044
+  ],
+  "direct_image_vs_coupled_response_max_error_uJy": 1.3877787807814457e-17,
+  "truth_fluxes": [
+    20.0,
+    15.0,
+    15.0,
+    5.0,
+    12.0
+  ],
+  "positive_only_response_recovery": [
+    13.776722905056646,
+    10.360984268997246,
+    11.101355504564697,
+    3.538836809224813,
+    8.896575812352237
+  ],
+  "formal_covariance_positive_only_response_recovery": [
+    13.93382721042151,
+    10.472304143441256,
+    11.237679950241368,
+    3.564412164908889,
+    9.005673793893811
+  ],
+  "formal_covariance_signed_contributor_response_recovery": [
+    19.99999999999989,
+    14.99999999999991,
+    14.999999999999854,
+    4.999999999999961,
+    11.999999999999973
+  ],
+  "all_signed_contributor_response_recovery": [
+    20.00000000000009,
+    15.00000000000007,
+    15.000000000000082,
+    5.00000000000006,
+    12.000000000000036
+  ],
+  "corrected_noise_free_max_flux_error": 8.881784197001252e-14,
+  "corrected_actual_conditional_fluxes": [
+    22.46184945213519,
+    22.26363328990456,
+    21.048835540076027,
+    4.825624480274291,
+    15.091605151222877
+  ],
+  "corrected_actual_conditional_flux_covariance": [
+    [
+      142.1758894875576,
+      10.94762106222622,
+      11.498210149166681,
+      3.4721725029591406,
+      -0.08798118930985721
+    ],
+    [
+      10.947621062226212,
+      106.53409036622874,
+      9.185635937906602,
+      3.0932332876918625,
+      0.5962856167529883
+    ],
+    [
+      11.498210149166677,
+      9.185635937906607,
+      140.6961540680893,
+      4.81267105761825,
+      2.5770138888190353
+    ],
+    [
+      3.4721725029591366,
+      3.0932332876918607,
+      4.812671057618241,
+      56.54435235298812,
+      1.985423826443546
+    ],
+    [
+      -0.08798118930985295,
+      0.5962856167529902,
+      2.577013888819031,
+      1.9854238264435453,
+      44.403047565715916
+    ]
+  ],
+  "corrected_actual_conditional_chi2": 547.3811188857571,
+  "author_corrected_artifact_sha256": "c7e31e81a6bb6b9b4b81bf48661ccfa28475be5cf6b226f85113c78fe73074ca",
+  "author_frozen_science_commit": "c9cf5b2",
+  "maximum_author_corrected_flux_difference": 1.355395795599179e-10,
+  "maximum_author_corrected_covariance_difference": 1.1287113466096343e-09,
+  "all_four_fixed_family_independent_validation": [
+    {
+      "resolution": "nominal",
+      "wavelength_hypothesis": "original",
+      "max_flux_difference": 2.0115109578000556e-10,
+      "max_covariance_difference": 3.292768724350026e-09,
+      "conditional_ionic_NC": 3.3571386123663705,
+      "conditional_signed_95_Fieller_interval": [
+        -0.29063701064362596,
+        11.960796945078535
+      ],
+      "solar_ionic_reference_in_set": true
+    },
+    {
+      "resolution": "generic_point",
+      "wavelength_hypothesis": "original",
+      "max_flux_difference": 1.355395795599179e-10,
+      "max_covariance_difference": 1.1287113466096343e-09,
+      "conditional_ionic_NC": 2.9811045625418644,
+      "conditional_signed_95_Fieller_interval": [
+        -0.2553413152891067,
+        9.76990370943918
+      ],
+      "solar_ionic_reference_in_set": true
+    },
+    {
+      "resolution": "nominal",
+      "wavelength_hypothesis": "DUMMY sensitivity",
+      "max_flux_difference": 2.0242651999069494e-10,
+      "max_covariance_difference": 3.3043647817976307e-09,
+      "conditional_ionic_NC": 3.5699330248605654,
+      "conditional_signed_95_Fieller_interval": [
+        0.1382600467884182,
+        11.421259948238458
+      ],
+      "solar_ionic_reference_in_set": true
+    },
+    {
+      "resolution": "generic_point",
+      "wavelength_hypothesis": "DUMMY sensitivity",
+      "max_flux_difference": 1.3222134498391824e-10,
+      "max_covariance_difference": 1.1000054200849263e-09,
+      "conditional_ionic_NC": 3.5708204300468234,
+      "conditional_signed_95_Fieller_interval": [
+        0.32439347362220966,
+        11.222021660747771
+      ],
+      "solar_ionic_reference_in_set": false
+    }
+  ],
+  "formal_signed_pixel_covariance_independent_validation": {
+    "active_set_reconciled_pixels": 43,
+    "max_extracted_covariance_difference": 7.047314121155779e-19,
+    "max_coefficient_covariance_closure_error": 2.842170943040401e-14,
+    "independent_projected_draws": 10000,
+    "seed": 7771483,
+    "conditional_coverage_cases": [
+      {
+        "name": "matched_signed_profile",
+        "independent_exact_conditional_coverage": [
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95
+        ],
+        "independent_projected_gaussian_coverage": [
+          0.9467,
+          0.9526,
+          0.9458,
+          0.9478,
+          0.9496
+        ],
+        "author_draw_count": 4000,
+        "author_coverage_max_sampling_sigma_from_exact": 1.2333096251870446,
+        "max_author_noiseless_recovery_difference": 1.687538997430238e-13,
+        "scope": "Declared fixed formal signed-pixel covariance, no source-Poisson/empirical calibration"
+      },
+      {
+        "name": "injected_broader_sigma0p95",
+        "independent_exact_conditional_coverage": [
+          0.946764540651575,
+          0.946364383884099,
+          0.9487646927998514,
+          0.9497549766898403,
+          0.9451211674843768
+        ],
+        "independent_projected_gaussian_coverage": [
+          0.9432,
+          0.9492,
+          0.9448,
+          0.9472,
+          0.9457
+        ],
+        "author_draw_count": 4000,
+        "author_coverage_max_sampling_sigma_from_exact": 1.1432148836519154,
+        "max_author_noiseless_recovery_difference": 1.4388490399142029e-12,
+        "scope": "Declared fixed formal signed-pixel covariance, no source-Poisson/empirical calibration"
+      },
+      {
+        "name": "injected_trace_offset_plus0p10",
+        "independent_exact_conditional_coverage": [
+          0.9499082600033968,
+          0.9499969669853088,
+          0.9499867888614493,
+          0.9499560817409575,
+          0.9499146049501851
+        ],
+        "independent_projected_gaussian_coverage": [
+          0.9463,
+          0.9529,
+          0.9458,
+          0.9473,
+          0.9488
+        ],
+        "author_draw_count": 4000,
+        "author_coverage_max_sampling_sigma_from_exact": 1.382065658685891,
+        "max_author_noiseless_recovery_difference": 1.7319479184152442e-12,
+        "scope": "Declared fixed formal signed-pixel covariance, no source-Poisson/empirical calibration"
+      }
+    ]
+  },
+  "conclusion": "Frozen positive-source-only design omits contributor-specific ghost spectra. All-signed coupled response closes the declared noiseless injection.",
+  "scope": "Independent SVD extraction, explicit image-level signed mixing and normal equations; known conditional source operator, not empirical source/LSF calibration. Scalar source-centered wavelengths do not calibrate full 2D wavelength response."
+}

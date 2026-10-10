@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "archive_sha256": "4ef41b43028e4fae91c3a74ed98d372f3e6c2d9229c22531088b7f85abd44ed3",
+  "report_sha256": "7ed820f1482291db279c75445bd5e41403490aeada7a65c705eff9bb7b9d1c49",
+  "rows": 37800,
+  "ratio_min_by_band": [
+    0.9949904790992092,
+    0.9950179358212448,
+    0.995076672385604,
+    0.9950274384897694,
+    0.9950635094374619,
+    0.9949839417267045,
+    0.995007056808104
+  ],
+  "ratio_max_by_band": [
+    1.0050252214733681,
+    1.0049766832089284,
+    1.0048986537566778,
+    1.0049358573288534,
+    1.0050068561967884,
+    1.0050338953521298,
+    1.0049063433422234
+  ],
+  "independent_scalar_GLS": [
+    {
+      "convention": "inferred_mjy",
+      "floor": 0.05,
+      "best_chi2": 105.6633657231989,
+      "independent_grid_and_all_heldout_minima_match": true
+    },
+    {
+      "convention": "inferred_mjy",
+      "floor": 0.15,
+      "best_chi2": 38.83763839221069,
+      "independent_grid_and_all_heldout_minima_match": true
+    },
+    {
+      "convention": "vega_svo",
+      "floor": 0.05,
+      "best_chi2": 105.48274502941108,
+      "independent_grid_and_all_heldout_minima_match": true
+    },
+    {
+      "convention": "vega_svo",
+      "floor": 0.15,
+      "best_chi2": 38.82817419321965,
+      "independent_grid_and_all_heldout_minima_match": true
+    }
+  ],
+  "scope": "Actual paired flux/magnitude table and independently decoded Vega/Jy audit; flux units inferred by consistency, not documented author unit confirmation; conditional finite single-row grid only"
+}

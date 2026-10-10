@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "baseline_review": {
+    "receipt_sha256": "1a579f74e4f5596f63a2f316686f9b00b6dd9e6b18851961b77572db3c4e7a96",
+    "hash_indexes": [
+      {
+        "index": "science_artifact_hash_index",
+        "verified": 68
+      },
+      {
+        "index": "tested_python_and_configuration_sha256",
+        "verified": 210
+      }
+    ],
+    "installed_versions_verified": 65,
+    "tests": 582,
+    "passed": 579,
+    "explicit_skips": 3,
+    "junit_sha256": "abb26bd2a7385de444095fe5c173462ca0ee5f1b0023822ec36ff3cafc1d8444",
+    "log_sha256": "aee77054660e19e55e6926e355f0e7d91b2e0f31113d8bcee88a49858c11ecf0",
+    "approval": "Preserved baseline and explicit artifact-versus-pixel scope"
+  },
+  "selection_review": {
+    "frozen_design_commit": "ca5e16e",
+    "scientific_response_commit": "7e941db",
+    "plan_sha256": "4239538b8682103e4fd0ce18e65e865a5436440e25f11f82b11c4e76dd3f98c6",
+    "response_sha256": "f1b19aea12e4623e1b3a6253399f9f4a12eaf629e760ac659020e5f5a7fc2b10",
+    "raw_trial_file_sha256": "4222fd7f676949258d4d45a0fa4680c98efc75e344ff7272ed3422f4979ccd2a",
+    "canonical_trials_sha256": "e290d6813cd7a6ec12212d7ec363fa99ae0a5767991ff98fbbd0fe0e0a6119e6",
+    "sites": 16,
+    "trials": 1152,
+    "independently_recomputed_groups": 72,
+    "all_bootstrap_intervals_reproduced": true,
+    "maximum_paired_arithmetic_error_njy": 0.0,
+    "joint_null_red_passes": 0,
+    "photon_transport_counterexample_covariance": [
+      [
+        5.0,
+        5.0
+      ],
+      [
+        5.0,
+        5.0
+      ]
+    ],
+    "approval": "Conditional bounded response pilot only",
+    "required_limitations": [
+      "Finite modeled PSFs and uncalibrated output-grid electrons/nJy",
+      "Spatial diagnostic strata share global threshold, no independent calibration validation",
+      "Repeated count realizations share background; intervals have no calibrated coverage",
+      "No true astronomical labels, survey completeness, contamination or cosmology likelihood"
+    ]
+  }
+}
