@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "design_commit_before_results": "ca5e16e386ecbc713e7c2411de14768ff171865d",
+  "starting_master": "379ff35786aff31535335bbe7d1de114f91dd3c4",
+  "selected_new_bytes": 15517440,
+  "bounded_pilot_first_run_runtime_s": 24.74885279299997,
+  "bounded_pilot_first_run_max_rss_kib": 229684,
+  "focused_tests_passed": 32,
+  "new_offline_tests": 8,
+  "full_trial_content_sha256": "e290d6813cd7a6ec12212d7ec363fa99ae0a5767991ff98fbbd0fe0e0a6119e6",
+  "artifacts_sha256": {
+    "research_output/selection_pilot_plan.json": "4239538b8682103e4fd0ce18e65e865a5436440e25f11f82b11c4e76dd3f98c6",
+    "research_output/selection_pilot_response.json": "f1b19aea12e4623e1b3a6253399f9f4a12eaf629e760ac659020e5f5a7fc2b10",
+    "data_sources/selection_pilot/manifest.json": "69f977d04d57b33e3158c2195372abdda5b8bd6b522b0022d2791439b73f24a0"
+  },
+  "scope": "actual selected input pixels plus explicit modeled source count sensitivity; no native source covariance calibration or survey selection likelihood; integrated CI coordinator-owned"
+}
