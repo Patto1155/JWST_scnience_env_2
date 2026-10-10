@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "new_unique_selected_bytes": 4272455,
+  "products": [
+    {
+      "requested_url": "https://grizli-cutout.herokuapp.com/thumb?ra=53.08403734137816&dec=-27.83935273338308&filters=f410m-clear&size=12&output=fits_weight",
+      "resolved_url": "https://grizli-cutout.herokuapp.com/thumb?ra=53.08403734137816&dec=-27.83935273338308&filters=f410m-clear&size=12&output=fits_weight",
+      "retrieved_utc": "2026-10-10T02:38:29.699844+00:00",
+      "bytes": 1866240,
+      "sha256": "c73de46f62b77d6506ec7aff95b88876543c5d01de285b366b2893f89b794221",
+      "content_type": "image/fits",
+      "etag": "\"1791599909.2190757-1866240-2607745558\"",
+      "last_modified": "Sat, 10 Oct 2026 02:38:29 GMT",
+      "product_id": "source46-F410M-cutout",
+      "max_bytes": 3145728
+    },
+    {
+      "requested_url": "https://slate.ucsc.edu/~brant/jades-dr5/GOODS-S/hlsp/images/submosaics/hlsp_jades_jwst_nircam_jw011800-deep_f410ma_v5.0_mpsf.fits",
+      "resolved_url": "https://slate.ucsc.edu/~brant/jades-dr5/GOODS-S/hlsp/images/submosaics/hlsp_jades_jwst_nircam_jw011800-deep_f410ma_v5.0_mpsf.fits",
+      "retrieved_utc": "2026-10-10T02:38:30.717716+00:00",
+      "bytes": 1800000,
+      "sha256": "dcd738c74c5a851a7b833cb0896fe0a67a66e429677b8a7d57757daecd617fba",
+      "content_type": null,
+      "etag": "\"1b7740-6490153ae7100\"",
+      "last_modified": "Thu, 22 Jan 2026 22:11:48 GMT",
+      "product_id": "source46-F410M-psf",
+      "max_bytes": 3145728
+    },
+    {
+      "requested_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=JWST/NIRCam.F410M",
+      "resolved_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=JWST/NIRCam.F410M",
+      "retrieved_utc": "2026-10-10T02:38:31.950661+00:00",
+      "bytes": 63607,
+      "sha256": "01b9b8323c4491929b4b5990d1a4142d1ecc79b8cd5ae394c4cdfa1617f864a3",
+      "content_type": "text/xml",
+      "etag": null,
+      "last_modified": null,
+      "product_id": "source46-F410M-throughput",
+      "max_bytes": 1048576
+    }
+  ],
+  "geometry_coverage": {
+    "requested_url": "https://grizli-cutout.herokuapp.com/exposures?ra=53.08403734137816&dec=-27.83935273338308&arcmin=0.05",
+    "resolved_url": "https://grizli-cutout.herokuapp.com/exposures?ra=53.08403734137816&dec=-27.83935273338308&arcmin=0.05",
+    "retrieved_utc": "2026-10-10T02:35:41.511718+00:00",
+    "bytes": 542608,
+    "sha256": "6874a2de9f35941808b63bedfdc9b4476b54203ef70998c18ffd5012de34af9e",
+    "content_type": "text/html; charset=utf-8",
+    "etag": null,
+    "last_modified": null,
+    "product_id": "source46-exposure-coverage",
+    "max_bytes": 1048576
+  },
+  "cap_bytes": 8388608,
+  "additional_restored_bytes": 0
+}

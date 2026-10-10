@@ -1,0 +1,472 @@
+{
+  "schema_version": 1,
+  "source_id": 46,
+  "filter": "F410M",
+  "manifest_sha256": "4c2eff902a1a554bbf48e0ce58279492959f4175e7e0e430016e04bcbc3de868",
+  "code_sha256": "f636cb5379ba49fdb96e44cf527bfaab1d84ff465dbe55e1c47700745e0f8199",
+  "photometry_sha256": "32f7f9d9875ef21154fff8530c8dd465b06fceadbbe9afe474ba7226784a7a92",
+  "input_receipts": [
+    {
+      "id": "source46-F410M-cutout",
+      "requested_url": "https://grizli-cutout.herokuapp.com/thumb?ra=53.08403734137816&dec=-27.83935273338308&filters=f410m-clear&size=12&output=fits_weight",
+      "resolved_url": "https://grizli-cutout.herokuapp.com/thumb?ra=53.08403734137816&dec=-27.83935273338308&filters=f410m-clear&size=12&output=fits_weight",
+      "retrieved_utc": "2026-10-10T02:38:29.699844+00:00",
+      "bytes": 1866240,
+      "sha256": "c73de46f62b77d6506ec7aff95b88876543c5d01de285b366b2893f89b794221",
+      "content_type": "image/fits",
+      "etag": "\"1791599909.2190757-1866240-2607745558\"",
+      "last_modified": "Sat, 10 Oct 2026 02:38:29 GMT",
+      "product_id": "source46-F410M-cutout",
+      "max_bytes": 3145728
+    },
+    {
+      "id": "source46-F410M-psf",
+      "requested_url": "https://slate.ucsc.edu/~brant/jades-dr5/GOODS-S/hlsp/images/submosaics/hlsp_jades_jwst_nircam_jw011800-deep_f410ma_v5.0_mpsf.fits",
+      "resolved_url": "https://slate.ucsc.edu/~brant/jades-dr5/GOODS-S/hlsp/images/submosaics/hlsp_jades_jwst_nircam_jw011800-deep_f410ma_v5.0_mpsf.fits",
+      "retrieved_utc": "2026-10-10T02:38:30.717716+00:00",
+      "bytes": 1800000,
+      "sha256": "dcd738c74c5a851a7b833cb0896fe0a67a66e429677b8a7d57757daecd617fba",
+      "content_type": null,
+      "etag": "\"1b7740-6490153ae7100\"",
+      "last_modified": "Thu, 22 Jan 2026 22:11:48 GMT",
+      "product_id": "source46-F410M-psf",
+      "max_bytes": 3145728
+    },
+    {
+      "id": "source46-F410M-throughput",
+      "requested_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=JWST/NIRCam.F410M",
+      "resolved_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=JWST/NIRCam.F410M",
+      "retrieved_utc": "2026-10-10T02:38:31.950661+00:00",
+      "bytes": 63607,
+      "sha256": "01b9b8323c4491929b4b5990d1a4142d1ecc79b8cd5ae394c4cdfa1617f864a3",
+      "content_type": "text/xml",
+      "etag": null,
+      "last_modified": null,
+      "product_id": "source46-F410M-throughput",
+      "max_bytes": 1048576
+    }
+  ],
+  "psf_provenance": {
+    "filter": "F410M",
+    "sha256": "dcd738c74c5a851a7b833cb0896fe0a67a66e429677b8a7d57757daecd617fba",
+    "bytes": 1800000,
+    "requested_url": "https://slate.ucsc.edu/~brant/jades-dr5/GOODS-S/hlsp/images/submosaics/hlsp_jades_jwst_nircam_jw011800-deep_f410ma_v5.0_mpsf.fits",
+    "retrieved_utc": "2026-10-10T02:38:30.717716+00:00",
+    "input_scale_arcsec": 0.029994758999999965,
+    "template_shape": [
+      669,
+      669
+    ],
+    "original_template_sum": 0.9995163135443876,
+    "normalization": "finite supplied template; unmodeled outer wings are unknown",
+    "origin": "official JADES DR5 modeled PSF, not observed-star measurement"
+  },
+  "medium_image": {
+    "filename": "dja_46_F410M.fits",
+    "receipt": {
+      "requested_url": "https://grizli-cutout.herokuapp.com/thumb?ra=53.08403734137816&dec=-27.83935273338308&filters=f410m-clear&size=12&output=fits_weight",
+      "resolved_url": "https://grizli-cutout.herokuapp.com/thumb?ra=53.08403734137816&dec=-27.83935273338308&filters=f410m-clear&size=12&output=fits_weight",
+      "retrieved_utc": "2026-10-10T02:38:29.699844+00:00",
+      "bytes": 1866240,
+      "sha256": "c73de46f62b77d6506ec7aff95b88876543c5d01de285b366b2893f89b794221",
+      "content_type": "image/fits",
+      "etag": "\"1791599909.2190757-1866240-2607745558\"",
+      "last_modified": "Sat, 10 Oct 2026 02:38:29 GMT",
+      "product_id": "source46-F410M-cutout",
+      "max_bytes": 3145728
+    },
+    "input_bunit": "10.0*nanoJansky",
+    "grid_pixel_scales_arcsec": [
+      0.049999999999996804,
+      0.0500000000000004
+    ],
+    "ndrizim": 44,
+    "header_exptime_s": 76961.16799999999,
+    "header_exptime_caveat": "Mosaic total header time is not necessarily local per-pixel depth",
+    "grizli_version": "1.12.10",
+    "crds_context": "jwst_1123.pmap",
+    "updated_context": "jwst_1293.pmap",
+    "contributors": [
+      "jw01180025001_03201_00001_nrcalong_rate.fits",
+      "jw01180025001_03201_00002_nrcalong_rate.fits",
+      "jw01180025001_03201_00003_nrcalong_rate.fits",
+      "jw01180025001_17201_00001_nrcalong_rate.fits",
+      "jw01180025001_17201_00002_nrcalong_rate.fits",
+      "jw01180025001_17201_00003_nrcalong_rate.fits",
+      "jw01180026001_03201_00001_nrcalong_rate.fits",
+      "jw01180026001_03201_00002_nrcalong_rate.fits",
+      "jw01180026001_03201_00003_nrcalong_rate.fits",
+      "jw01180026001_17201_00001_nrcalong_rate.fits",
+      "jw01180026001_17201_00002_nrcalong_rate.fits",
+      "jw01180026001_17201_00003_nrcalong_rate.fits",
+      "jw01180027001_03201_00001_nrcalong_rate.fits",
+      "jw01180027001_03201_00002_nrcalong_rate.fits",
+      "jw01180027001_03201_00003_nrcalong_rate.fits",
+      "jw01180027001_17201_00001_nrcalong_rate.fits",
+      "jw01180027001_17201_00002_nrcalong_rate.fits",
+      "jw01180027001_17201_00003_nrcalong_rate.fits",
+      "jw01180028001_03201_00001_nrcalong_rate.fits",
+      "jw01180028001_03201_00002_nrcalong_rate.fits",
+      "jw01180028001_03201_00003_nrcalong_rate.fits",
+      "jw01180028001_17201_00001_nrcalong_rate.fits",
+      "jw01180028001_17201_00002_nrcalong_rate.fits",
+      "jw01180028001_17201_00003_nrcalong_rate.fits",
+      "jw01210001001_15201_00001_nrcalong_rate.fits",
+      "jw01210001001_15201_00002_nrcalong_rate.fits",
+      "jw01210001001_15201_00003_nrcalong_rate.fits",
+      "jw01210001001_17201_00001_nrcalong_rate.fits",
+      "jw01210001001_17201_00002_nrcalong_rate.fits",
+      "jw01210001001_17201_00003_nrcalong_rate.fits",
+      "jw01210001002_03201_00001_nrcalong_rate.fits",
+      "jw01210001002_03201_00002_nrcalong_rate.fits",
+      "jw01210001002_03201_00003_nrcalong_rate.fits",
+      "jw01210001002_05201_00001_nrcalong_rate.fits",
+      "jw01210001002_05201_00002_nrcalong_rate.fits",
+      "jw01210001002_05201_00003_nrcalong_rate.fits",
+      "jw01210001003_15201_00001_nrcalong_rate.fits",
+      "jw01210001003_15201_00002_nrcalong_rate.fits",
+      "jw01210001003_15201_00003_nrcalong_rate.fits",
+      "jw01210001003_17201_00001_nrcalong_rate.fits",
+      "jw01210001003_17201_00002_nrcalong_rate.fits",
+      "jw01210001003_17201_00003_nrcalong_rate.fits",
+      "jw03990018001_07201_00001_nrcalong_rate.fits",
+      "jw03990018001_09201_00001_nrcalong_rate.fits"
+    ],
+    "weight_interpretation": "inverse variance of SCI stored units from documented fits_weight API"
+  },
+  "exact_center_pixel": [
+    240.21437669393345,
+    240.2413655482378
+  ],
+  "frozen_f444_morphology_in_medium_pixel_phase": [
+    0.016338481013353553,
+    0.03809165854094479,
+    0.011278958376748074,
+    0.22497421771914988,
+    -1.1982148365127707
+  ],
+  "signed_fixed_models": [
+    {
+      "radius_arcsec": 0.35,
+      "modeled_psf_rotation_deg": 0,
+      "flux_njy": 552.003226365163,
+      "diagonal_error_njy": 0.6680344440062155,
+      "background_njy_per_pixel": -0.2768113995825791,
+      "background_gradient_njy_per_pixel_per_arcsec": [
+        -0.4213737489746401,
+        0.18974138883148864
+      ],
+      "chi2_diagonal": 8472.631208436795,
+      "pixels": 149,
+      "dof_linear": 145,
+      "template_flux_fraction_in_fit": 0.8496321146554239
+    },
+    {
+      "radius_arcsec": 0.35,
+      "modeled_psf_rotation_deg": 30,
+      "flux_njy": 575.2663374153077,
+      "diagonal_error_njy": 0.6989703642663511,
+      "background_njy_per_pixel": -0.41518033256851317,
+      "background_gradient_njy_per_pixel_per_arcsec": [
+        -0.418448995290167,
+        0.04717477732651053
+      ],
+      "chi2_diagonal": 13898.740428664787,
+      "pixels": 149,
+      "dof_linear": 145,
+      "template_flux_fraction_in_fit": 0.8513723999650907
+    },
+    {
+      "radius_arcsec": 0.5,
+      "modeled_psf_rotation_deg": 0,
+      "flux_njy": 546.6081916877939,
+      "diagonal_error_njy": 0.6226213900900693,
+      "background_njy_per_pixel": -0.13379959548218529,
+      "background_gradient_njy_per_pixel_per_arcsec": [
+        -0.09221879694948604,
+        0.013290785098037074
+      ],
+      "chi2_diagonal": 9350.817843129222,
+      "pixels": 317,
+      "dof_linear": 313,
+      "template_flux_fraction_in_fit": 0.8799870618192538
+    },
+    {
+      "radius_arcsec": 0.5,
+      "modeled_psf_rotation_deg": 30,
+      "flux_njy": 566.1599508013685,
+      "diagonal_error_njy": 0.6474412641125822,
+      "background_njy_per_pixel": -0.19300242468804074,
+      "background_gradient_njy_per_pixel_per_arcsec": [
+        -0.09582225245916966,
+        -0.026377837584857733
+      ],
+      "chi2_diagonal": 15408.111240483644,
+      "pixels": 317,
+      "dof_linear": 313,
+      "template_flux_fraction_in_fit": 0.8831011656701867
+    },
+    {
+      "radius_arcsec": 0.65,
+      "modeled_psf_rotation_deg": 0,
+      "flux_njy": 544.8112924401935,
+      "diagonal_error_njy": 0.6087292589548566,
+      "background_njy_per_pixel": -0.08776869306397032,
+      "background_gradient_njy_per_pixel_per_arcsec": [
+        -0.06628503866268402,
+        -0.002293414693218367
+      ],
+      "chi2_diagonal": 9819.371893863081,
+      "pixels": 529,
+      "dof_linear": 525,
+      "template_flux_fraction_in_fit": 0.9074961056793622
+    },
+    {
+      "radius_arcsec": 0.65,
+      "modeled_psf_rotation_deg": 30,
+      "flux_njy": 563.1985846010649,
+      "diagonal_error_njy": 0.6317405419958733,
+      "background_njy_per_pixel": -0.12248491808696123,
+      "background_gradient_njy_per_pixel_per_arcsec": [
+        -0.06781930998475022,
+        -0.01462045950595199
+      ],
+      "chi2_diagonal": 16062.683559688438,
+      "pixels": 529,
+      "dof_linear": 525,
+      "template_flux_fraction_in_fit": 0.9106839389582518
+    }
+  ],
+  "background_operator_controls": {
+    "status": "measured_conditional_background_operator_scatter",
+    "count": 59,
+    "robust_sigma_njy": 1.045688529007976,
+    "ordinary_sigma_njy": 0.9354676541072907,
+    "median_flux_njy": 0.07961754443206781,
+    "diagonal_scale_factor": 1.7117821356368537,
+    "normalized_range": [
+      -4.200725778386052,
+      3.419767415060523
+    ],
+    "limitation": "Local source-mask/depth assumptions; not source shot-noise variance or calibrated Gaussian-tail probability"
+  },
+  "aperture_background_sensitivity": [
+    {
+      "radius_arcsec": 0.15,
+      "annulus_arcsec": [
+        0.4,
+        0.6
+      ],
+      "flux_njy": 331.7516336667835,
+      "diagonal_error_njy": 0.4849456064325792
+    },
+    {
+      "radius_arcsec": 0.15,
+      "annulus_arcsec": [
+        0.6,
+        0.9
+      ],
+      "flux_njy": 333.0332288969792,
+      "diagonal_error_njy": 0.47155160718585354
+    },
+    {
+      "radius_arcsec": 0.2,
+      "annulus_arcsec": [
+        0.4,
+        0.6
+      ],
+      "flux_njy": 364.57443243006736,
+      "diagonal_error_njy": 0.6874217007572867
+    },
+    {
+      "radius_arcsec": 0.2,
+      "annulus_arcsec": [
+        0.6,
+        0.9
+      ],
+      "flux_njy": 366.9545378575734,
+      "diagonal_error_njy": 0.65449415829559
+    },
+    {
+      "radius_arcsec": 0.3,
+      "annulus_arcsec": [
+        0.4,
+        0.6
+      ],
+      "flux_njy": 413.37685920510245,
+      "diagonal_error_njy": 1.107459944844958
+    },
+    {
+      "radius_arcsec": 0.3,
+      "annulus_arcsec": [
+        0.6,
+        0.9
+      ],
+      "flux_njy": 418.549011384106,
+      "diagonal_error_njy": 1.008865522820275
+    }
+  ],
+  "f444_frozen_njy": 644.8799549614853,
+  "fiducial_f410_njy": 544.8112924401935,
+  "fiducial_background_scaled_diagonal_error_njy": 1.0420118709183839,
+  "conditional_centroid_diagnostic": {
+    "fixed_position_arcsec": [
+      0.016338481013353553,
+      0.03809165854094479
+    ],
+    "free_position_arcsec": [
+      0.014393090978042282,
+      0.042342617798405154
+    ],
+    "displacement_arcsec": 0.004674954224169084,
+    "optimizer_success": true,
+    "interpretation": "Conditional same-mosaic registration, not a proper-motion measurement."
+  },
+  "f410_over_f444_conditional": 0.8448259063545117,
+  "contributor_audit": {
+    "medium_count": 44,
+    "wide_count": 68,
+    "shared_exact_filenames": [],
+    "medium_contributors": [
+      "jw01180025001_03201_00001_nrcalong_rate.fits",
+      "jw01180025001_03201_00002_nrcalong_rate.fits",
+      "jw01180025001_03201_00003_nrcalong_rate.fits",
+      "jw01180025001_17201_00001_nrcalong_rate.fits",
+      "jw01180025001_17201_00002_nrcalong_rate.fits",
+      "jw01180025001_17201_00003_nrcalong_rate.fits",
+      "jw01180026001_03201_00001_nrcalong_rate.fits",
+      "jw01180026001_03201_00002_nrcalong_rate.fits",
+      "jw01180026001_03201_00003_nrcalong_rate.fits",
+      "jw01180026001_17201_00001_nrcalong_rate.fits",
+      "jw01180026001_17201_00002_nrcalong_rate.fits",
+      "jw01180026001_17201_00003_nrcalong_rate.fits",
+      "jw01180027001_03201_00001_nrcalong_rate.fits",
+      "jw01180027001_03201_00002_nrcalong_rate.fits",
+      "jw01180027001_03201_00003_nrcalong_rate.fits",
+      "jw01180027001_17201_00001_nrcalong_rate.fits",
+      "jw01180027001_17201_00002_nrcalong_rate.fits",
+      "jw01180027001_17201_00003_nrcalong_rate.fits",
+      "jw01180028001_03201_00001_nrcalong_rate.fits",
+      "jw01180028001_03201_00002_nrcalong_rate.fits",
+      "jw01180028001_03201_00003_nrcalong_rate.fits",
+      "jw01180028001_17201_00001_nrcalong_rate.fits",
+      "jw01180028001_17201_00002_nrcalong_rate.fits",
+      "jw01180028001_17201_00003_nrcalong_rate.fits",
+      "jw01210001001_15201_00001_nrcalong_rate.fits",
+      "jw01210001001_15201_00002_nrcalong_rate.fits",
+      "jw01210001001_15201_00003_nrcalong_rate.fits",
+      "jw01210001001_17201_00001_nrcalong_rate.fits",
+      "jw01210001001_17201_00002_nrcalong_rate.fits",
+      "jw01210001001_17201_00003_nrcalong_rate.fits",
+      "jw01210001002_03201_00001_nrcalong_rate.fits",
+      "jw01210001002_03201_00002_nrcalong_rate.fits",
+      "jw01210001002_03201_00003_nrcalong_rate.fits",
+      "jw01210001002_05201_00001_nrcalong_rate.fits",
+      "jw01210001002_05201_00002_nrcalong_rate.fits",
+      "jw01210001002_05201_00003_nrcalong_rate.fits",
+      "jw01210001003_15201_00001_nrcalong_rate.fits",
+      "jw01210001003_15201_00002_nrcalong_rate.fits",
+      "jw01210001003_15201_00003_nrcalong_rate.fits",
+      "jw01210001003_17201_00001_nrcalong_rate.fits",
+      "jw01210001003_17201_00002_nrcalong_rate.fits",
+      "jw01210001003_17201_00003_nrcalong_rate.fits",
+      "jw03990018001_07201_00001_nrcalong_rate.fits",
+      "jw03990018001_09201_00001_nrcalong_rate.fits"
+    ],
+    "wide_contributors": [
+      "jw01180026001_09201_00001_nrcalong_rate.fits",
+      "jw01180026001_09201_00002_nrcalong_rate.fits",
+      "jw01180026001_09201_00003_nrcalong_rate.fits",
+      "jw01180026001_11201_00001_nrcalong_rate.fits",
+      "jw01180026001_11201_00002_nrcalong_rate.fits",
+      "jw01180026001_11201_00003_nrcalong_rate.fits",
+      "jw01180027001_09201_00001_nrcalong_rate.fits",
+      "jw01180027001_09201_00002_nrcalong_rate.fits",
+      "jw01180027001_09201_00003_nrcalong_rate.fits",
+      "jw01180027001_11201_00001_nrcalong_rate.fits",
+      "jw01180027001_11201_00002_nrcalong_rate.fits",
+      "jw01180027001_11201_00003_nrcalong_rate.fits",
+      "jw01180028001_09201_00001_nrcalong_rate.fits",
+      "jw01180028001_09201_00002_nrcalong_rate.fits",
+      "jw01180028001_09201_00003_nrcalong_rate.fits",
+      "jw01180028001_11201_00001_nrcalong_rate.fits",
+      "jw01180028001_11201_00002_nrcalong_rate.fits",
+      "jw01180028001_11201_00003_nrcalong_rate.fits",
+      "jw01210001001_11201_00001_nrcalong_rate.fits",
+      "jw01210001001_11201_00002_nrcalong_rate.fits",
+      "jw01210001001_11201_00003_nrcalong_rate.fits",
+      "jw01210001001_13201_00001_nrcalong_rate.fits",
+      "jw01210001001_13201_00002_nrcalong_rate.fits",
+      "jw01210001001_13201_00003_nrcalong_rate.fits",
+      "jw01210001002_07201_00001_nrcalong_rate.fits",
+      "jw01210001002_07201_00002_nrcalong_rate.fits",
+      "jw01210001002_07201_00003_nrcalong_rate.fits",
+      "jw01210001002_09201_00001_nrcalong_rate.fits",
+      "jw01210001002_09201_00002_nrcalong_rate.fits",
+      "jw01210001002_09201_00003_nrcalong_rate.fits",
+      "jw01210001003_11201_00001_nrcalong_rate.fits",
+      "jw01210001003_11201_00002_nrcalong_rate.fits",
+      "jw01210001003_11201_00003_nrcalong_rate.fits",
+      "jw01210001003_13201_00001_nrcalong_rate.fits",
+      "jw01210001003_13201_00002_nrcalong_rate.fits",
+      "jw01210001003_13201_00003_nrcalong_rate.fits",
+      "jw01895001005_05101_00001_nrcblong_rate.fits",
+      "jw01895001005_07101_00001_nrcblong_rate.fits",
+      "jw01895001005_07101_00002_nrcblong_rate.fits",
+      "jw01895001006_05101_00001_nrcblong_rate.fits",
+      "jw01895001006_07101_00001_nrcblong_rate.fits",
+      "jw01895001006_07101_00002_nrcblong_rate.fits",
+      "jw02198001001_03101_00001_nrcalong_rate.fits",
+      "jw02198001001_03101_00002_nrcalong_rate.fits",
+      "jw02198001001_03101_00003_nrcalong_rate.fits",
+      "jw02198001002_03101_00001_nrcalong_rate.fits",
+      "jw02198001002_03101_00001_nrcblong_rate.fits",
+      "jw02198001002_03101_00002_nrcalong_rate.fits",
+      "jw02198001002_03101_00002_nrcblong_rate.fits",
+      "jw02198001002_03101_00003_nrcalong_rate.fits",
+      "jw02198001003_02101_00001_nrcalong_rate.fits",
+      "jw02198001004_02101_00002_nrcalong_rate.fits",
+      "jw02198001004_02101_00003_nrcalong_rate.fits",
+      "jw02514238001_03201_00001_nrcblong_rate.fits",
+      "jw02514238001_03201_00002_nrcblong_rate.fits",
+      "jw02514238001_03201_00003_nrcblong_rate.fits",
+      "jw04540001001_07101_00001_nrcalong_rate.fits",
+      "jw04540001002_02101_00001_nrcalong_rate.fits",
+      "jw04540001003_02101_00001_nrcalong_rate.fits",
+      "jw04540001004_07101_00001_nrcalong_rate.fits",
+      "jw04540001005_02101_00001_nrcalong_rate.fits",
+      "jw04540001006_02101_00001_nrcalong_rate.fits",
+      "jw04540012001_05101_00001_nrcalong_rate.fits",
+      "jw04540012002_02101_00001_nrcalong_rate.fits",
+      "jw04540012003_02101_00001_nrcalong_rate.fits",
+      "jw04540012004_05101_00001_nrcalong_rate.fits",
+      "jw04540012005_02101_00001_nrcalong_rate.fits",
+      "jw04540012006_02101_00001_nrcalong_rate.fits"
+    ],
+    "interpretation": "Different filters may share visits/calibration; disjoint exact file names do not make measurement systematics independent."
+  },
+  "single_narrow_line_response_sensitivity": {
+    "assumed_ratio_fractional_tolerance": 0.15,
+    "ratio_not_a_calibrated_interval": true,
+    "matched_wavelengths_micron": [
+      4.307,
+      4.308,
+      4.309,
+      4.3100000000000005,
+      4.311,
+      4.312,
+      4.313,
+      4.314,
+      4.315,
+      4.316
+    ],
+    "maximum_f410_over_f444_single_line": 7.470601434491739,
+    "interpretation": "A single line inside both filters may mimic adjacent-band signal; positive F410 rejects only F444-only excess with negligible medium-band emission."
+  },
+  "limits": [
+    "Modeled official PSF transported to DAWN; source-specific empirical PSF, wings and rotation not calibrated.",
+    "Diagonal objective and background scatter are descriptive, not Gaussian-tail probability; source shot noise omitted.",
+    "Source shape frozen from F444 and nominal passbands; systematic floors remain assumed.",
+    "No broad-continuum versus overlapping-line identity or stellar/galaxy classification established."
+  ]
+}

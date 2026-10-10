@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "before_pixel_outcomes": true,
+  "products": [
+    {
+      "id": "source46-F410M-cutout",
+      "filename": "dja_46_F410M.fits",
+      "url": "https://grizli-cutout.herokuapp.com/thumb?ra=53.08403734137816&dec=-27.83935273338308&filters=f410m-clear&size=12&output=fits_weight",
+      "max_bytes": 3145728
+    },
+    {
+      "id": "source46-F410M-psf",
+      "filename": "f410ma_v5.0_mpsf.fits",
+      "url": "https://slate.ucsc.edu/~brant/jades-dr5/GOODS-S/hlsp/images/submosaics/hlsp_jades_jwst_nircam_jw011800-deep_f410ma_v5.0_mpsf.fits",
+      "max_bytes": 3145728
+    },
+    {
+      "id": "source46-F410M-throughput",
+      "filename": "svo_F410M.xml",
+      "url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=JWST/NIRCam.F410M",
+      "max_bytes": 1048576
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "evidence_kind": "actual-pixel-postmerge-reproduction",
+  "merged_dependency_pr": 62,
+  "merged_dependency_revision": "51d544b3d2854c5759914526cc4b791ed8621b59",
+  "verified_in_ancestry": true,
+  "original_artifact_sha256": "df00194c821bc3ff4b17ffd95c9fe7ba885c8f297f2bbdb636baf5da8f582eec",
+  "replay_artifact_sha256": "df00194c821bc3ff4b17ffd95c9fe7ba885c8f297f2bbdb636baf5da8f582eec",
+  "byte_identical": true,
+  "independent_review_commit": "82566ca",
+  "scope": "Same frozen photometry, actual new F410 inputs and inherited default thread policy; reviewed SVD/photometry/line-response controls independent."
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "before_pixel_outcomes": false,
+  "products": [
+    {
+      "id": "source46-F410M-cutout",
+      "filename": "dja_46_F410M.fits",
+      "url": "https://grizli-cutout.herokuapp.com/thumb?ra=53.08403734137816&dec=-27.83935273338308&filters=f410m-clear&size=12&output=fits_weight",
+      "max_bytes": 3145728,
+      "sha256": "c73de46f62b77d6506ec7aff95b88876543c5d01de285b366b2893f89b794221",
+      "expected_bytes": 1866240
+    },
+    {
+      "id": "source46-F410M-psf",
+      "filename": "f410ma_v5.0_mpsf.fits",
+      "url": "https://slate.ucsc.edu/~brant/jades-dr5/GOODS-S/hlsp/images/submosaics/hlsp_jades_jwst_nircam_jw011800-deep_f410ma_v5.0_mpsf.fits",
+      "max_bytes": 3145728,
+      "sha256": "dcd738c74c5a851a7b833cb0896fe0a67a66e429677b8a7d57757daecd617fba",
+      "expected_bytes": 1800000
+    },
+    {
+      "id": "source46-F410M-throughput",
+      "filename": "svo_F410M.xml",
+      "url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=JWST/NIRCam.F410M",
+      "max_bytes": 1048576,
+      "sha256": "01b9b8323c4491929b4b5990d1a4142d1ecc79b8cd5ae394c4cdfa1617f864a3",
+      "expected_bytes": 63607
+    }
+  ],
+  "snapshot": "2026-10-10",
+  "selection_plan_commit": "4e766b6",
+  "source_id": 46,
+  "ra_deg": 53.08403734137816,
+  "dec_deg": -27.83935273338308,
+  "photometry_sha256": "32f7f9d9875ef21154fff8530c8dd465b06fceadbbe9afe474ba7226784a7a92",
+  "reused_deep_products": [
+    {
+      "id": "46-F444W",
+      "source_id": 46,
+      "ra_deg": 53.084037341378156,
+      "dec_deg": -27.839352733383084,
+      "filter": "F444W",
+      "kind": "deep_science_inverse_variance_cutout",
+      "filename": "dja_46_F444W.fits",
+      "url": "https://grizli-cutout.herokuapp.com/thumb?ra=53.08403734137816&dec=-27.83935273338308&filters=f444w-clear&size=12&output=fits_weight",
+      "max_bytes": 5242880,
+      "expected_bytes": 1872000,
+      "sha256": "20451ceedbfce2918e1161f63deff9a4db177898ead9f19ffd93b4f03dd2ee57"
+    },
+    {
+      "id": "throughput-F444W",
+      "filter": "F444W",
+      "kind": "photon_throughput_votable",
+      "filename": "svo_F444W.xml",
+      "url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=JWST/NIRCam.F444W",
+      "max_bytes": 1048576,
+      "expected_bytes": 98993,
+      "sha256": "390eca18429a9258d8442b2e8f0ca94edbea461e61c72d5df1ce5087997a3d6b"
+    }
+  ]
+}
