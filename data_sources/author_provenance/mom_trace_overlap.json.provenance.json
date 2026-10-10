@@ -1,0 +1,12 @@
+{
+  "requested_url": "https://grizli-cutout.herokuapp.com/nirspec_trace_overlap?spec_file=mom-cos04-v4_prism-clear_5224_277193.spec.fits&output=json",
+  "resolved_url": "https://grizli-cutout.herokuapp.com/nirspec_trace_overlap?spec_file=mom-cos04-v4_prism-clear_5224_277193.spec.fits&output=json",
+  "retrieved_utc": "2026-10-10T02:19:17.148342+00:00",
+  "bytes": 146,
+  "sha256": "146de599b28bba3291ebf44835a797a7d7535d55b354c15b88b592bd2d8a38dd",
+  "content_type": "text/html; charset=utf-8",
+  "etag": null,
+  "last_modified": null,
+  "product_id": "mom_trace_overlap.json",
+  "max_bytes": 5242880
+}

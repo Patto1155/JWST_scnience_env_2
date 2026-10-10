@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "snapshot_utc": "2026-10-10",
+  "incoming_revision": "379ff35786aff31535335bbe7d1de114f91dd3c4",
+  "question": "Recover public MoM PIXTAB/extraction provenance, verify exact operator replay and shared contributors",
+  "new_acquisition_cap_bytes": 104857600,
+  "selected_payload_bytes": 5637897,
+  "probe_accounting": "Initial successful GET probes repeatedPIXTab5457600bytes,APIpage77051bytes,extractionCSV591bytes,source46exposureCSV542608bytes. The timedout exploratoryF410Mrequest has no accepted science input. A conservative5MiBauxiliary-probe allowance covers documentation and metadata probes separately from repeatedPIXTab.",
+  "conservative_total_transfer_budget_used_bytes": 16338377,
+  "products": [
+    {
+      "id": "mom-pixtab",
+      "filename": "mom-cos04-v4_prism-clear_5224_277193.pixtab.fits",
+      "url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/mom-cos04-v4/mom-cos04-v4_prism-clear_5224_277193.pixtab.fits",
+      "expected_bytes": 5457600,
+      "sha256": "c3566b0173e9b1808b7fd856d98ca1be96ff2d6a0959132c1c7b9791d10e7420",
+      "max_bytes": 10485760
+    },
+    {
+      "id": "msaexp-source",
+      "filename": "msaexp_slit_combine_e2b237b.py",
+      "url": "https://raw.githubusercontent.com/gbrammer/msaexp/e2b237b/msaexp/slit_combine.py",
+      "expected_bytes": 168970,
+      "sha256": "191bf8cda952bcdbfc72db18023cd3d3cb2ca3a2b65acaf13c0b5cf5ac6dfd9a",
+      "max_bytes": 2097152
+    },
+    {
+      "id": "mom-extraction-query",
+      "filename": "mom_extractions.csv",
+      "url": "https://grizli-cutout.herokuapp.com/nirspec_extractions?ra=150.0933255&dec=2.2731627&radius=0.001&output=csv",
+      "expected_bytes": 591,
+      "sha256": "d856849376bb306a2727e84fd3cd4df38baef504153435b20104837d39e9a460",
+      "max_bytes": 5242880
+    },
+    {
+      "id": "mom-shutter-query",
+      "filename": "mom_msa_slits.csv",
+      "url": "https://grizli-cutout.herokuapp.com/nirspec_slits?coords=150.0933255,2.2731627&size=0.2",
+      "expected_bytes": 10590,
+      "sha256": "d070baae68ed45a3bc92a547212511a4c338e392315494533aa075ec2e11c21f",
+      "max_bytes": 5242880
+    },
+    {
+      "id": "mom-trace-overlap",
+      "filename": "mom_trace_overlap.json",
+      "url": "https://grizli-cutout.herokuapp.com/nirspec_trace_overlap?spec_file=mom-cos04-v4_prism-clear_5224_277193.spec.fits&output=json",
+      "expected_bytes": 146,
+      "sha256": "146de599b28bba3291ebf44835a797a7d7535d55b354c15b88b592bd2d8a38dd",
+      "max_bytes": 5242880
+    },
+    {
+      "id": "mom-spectrum",
+      "filename": "mom_z14_dja_v4.spec.fits",
+      "repo_path": "data_sources/pilot/mom_z14_dja_v4.spec.fits",
+      "url": "https://s3.amazonaws.com/msaexp-nirspec/extractions/mom-cos04-v4/mom-cos04-v4_prism-clear_5224_277193.spec.fits",
+      "expected_bytes": 688320,
+      "sha256": "42d95d348ebb55ca37eb31393b4603628ac13a4bca1f4f7f0ffba7b32d3125b1",
+      "max_bytes": 5242880,
+      "reused_existing_input": true
+    }
+  ],
+  "scope": [
+    "Public author-release intermediates differ from current officialCALreduction",
+    "No public-source-specific measured LSF obtained",
+    "No author contact"
+  ]
+}

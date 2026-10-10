@@ -1,0 +1,12 @@
+{
+  "requested_url": "https://grizli-cutout.herokuapp.com/nirspec_slits?coords=150.0933255,2.2731627&size=0.2",
+  "resolved_url": "https://grizli-cutout.herokuapp.com/nirspec_slits?coords=150.0933255,2.2731627&size=0.2",
+  "retrieved_utc": "2026-10-10T02:19:15.621340+00:00",
+  "bytes": 10590,
+  "sha256": "d070baae68ed45a3bc92a547212511a4c338e392315494533aa075ec2e11c21f",
+  "content_type": "text/html; charset=utf-8",
+  "etag": null,
+  "last_modified": null,
+  "product_id": "mom_msa_slits.csv",
+  "max_bytes": 5242880
+}
