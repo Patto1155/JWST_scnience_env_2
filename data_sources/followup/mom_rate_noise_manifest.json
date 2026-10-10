@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "question": "target-only CAL variance and actual signed donor transport",
+  "JWST_release": "2.0.1",
+  "CRDS_context": "jwst_1535.pmap",
+  "products": [
+    {
+      "filename": "jw05224004001_03101_00002_nrs2_rate.fits",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00002_nrs2_rate.fits",
+      "bytes": 83963520,
+      "sha256": "31ed2fa75529e3baf277bc36d69e706f1de87e6e6bb74f288e4223526643f08d"
+    },
+    {
+      "filename": "jw05224004001_03101_00003_nrs2_rate.fits",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00003_nrs2_rate.fits",
+      "bytes": 83963520,
+      "sha256": "2f1561c6790864f05a46919fcc3e9ae4dac96c81e91efe5af74b270a427da838"
+    },
+    {
+      "filename": "jw05224004001_03101_00004_nrs2_rate.fits",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00004_nrs2_rate.fits",
+      "bytes": 83963520,
+      "sha256": "a2918776d507dfcec731336414e05ad7b52764fe9fecdb94ea1e212d228b5f6f"
+    },
+    {
+      "filename": "jw05224004001_05101_00001_nrs2_rate.fits",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00001_nrs2_rate.fits",
+      "bytes": 83963520,
+      "sha256": "33bdc8ae89279549b9a4aa3883405bae122873757c0d6ed507acea541aa3828e"
+    },
+    {
+      "filename": "jw05224004001_05101_00002_nrs2_rate.fits",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00002_nrs2_rate.fits",
+      "bytes": 83963520,
+      "sha256": "846033b2a7855e47657b9590d9d709695c6f3a0a8a8954c8fc4867ff133e8249"
+    },
+    {
+      "filename": "jw05224004001_05101_00003_nrs2_rate.fits",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00003_nrs2_rate.fits",
+      "bytes": 83963520,
+      "sha256": "41f508dc10a40855034d93ea5962dd718a7ddfc5d5502bd22182b62508985b7c"
+    },
+    {
+      "filename": "jw05224004001_07101_00001_nrs2_rate.fits",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00001_nrs2_rate.fits",
+      "bytes": 83963520,
+      "sha256": "4c05eb4e923a84dbcf81e6bcda274ddfdb91caaeacf9ac7bebe867e3dfd08b85"
+    },
+    {
+      "filename": "jw05224004001_07101_00002_nrs2_rate.fits",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00002_nrs2_rate.fits",
+      "bytes": 83963520,
+      "sha256": "db1a9fd5ecbc04fd71a3016a0527ab930583a11de6b6185260834be1a2ec3057"
+    },
+    {
+      "filename": "jw05224004001_07101_00003_nrs2_rate.fits",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00003_nrs2_rate.fits",
+      "bytes": 83963520,
+      "sha256": "9d5aa05a82c255d93cdaa760c18089f8cb921c86fb8b3f0a3a1574742732c1c6"
+    }
+  ],
+  "sources": [
+    {
+      "filename": "background_background_sub.py",
+      "url": "https://raw.githubusercontent.com/spacetelescope/jwst/2.0.1/jwst/background/background_sub.py",
+      "bytes": 10573,
+      "sha256": "f210bdf79136dcd939d50c04c002d817f4d0e464def6dca966282b146085ba29"
+    },
+    {
+      "filename": "background_background_step.py",
+      "url": "https://raw.githubusercontent.com/spacetelescope/jwst/2.0.1/jwst/background/background_step.py",
+      "bytes": 11263,
+      "sha256": "165fc33322c10d60eba0ac92604f02ae19c5df9bbc9d047daa04f83168a6be9b"
+    },
+    {
+      "filename": "pipeline_calwebb_spec2.py",
+      "url": "https://raw.githubusercontent.com/spacetelescope/jwst/2.0.1/jwst/pipeline/calwebb_spec2.py",
+      "bytes": 40470,
+      "sha256": "30ca37eebaf69978298ea05d218b80431994154c25de7d00d812f6b8df192a9b"
+    }
+  ],
+  "scientific_bytes": 755671680,
+  "source_bytes": 62306,
+  "acquisition_runs": [
+    {
+      "scientific_download_bytes": 251890560,
+      "source_bytes": 62306,
+      "range_bytes": 4096,
+      "runtime_seconds": 68.27871831300035,
+      "range_size": 4194304,
+      "workers": 8,
+      "range_identity_checks": [
+        "status206",
+        "exactContentRange",
+        "exactLength"
+      ],
+      "restoration_bytes_excluded": 464135040
+    },
+    {
+      "scientific_download_bytes": 503781120,
+      "source_bytes": 62306,
+      "range_bytes": 4096,
+      "runtime_seconds": 170.1424361999998,
+      "range_size": 4194304,
+      "workers": 8,
+      "range_identity_checks": [
+        "status206",
+        "exactContentRange",
+        "exactLength"
+      ],
+      "restoration_bytes_excluded": 464135040
+    }
+  ],
+  "selected_download_cap_bytes": 912261120,
+  "restored_CAL_bytes_separate": 464135040,
+  "rate_crop_zero_index_rows": [
+    1292,
+    1320
+  ],
+  "rate_crop_zero_index_columns": [
+    439,
+    862
+  ],
+  "acquisition_overhead_bytes": 4096,
+  "new_selected_actual_bytes": 755738082
+}

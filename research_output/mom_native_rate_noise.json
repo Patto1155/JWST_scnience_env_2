@@ -1,0 +1,1594 @@
+{
+  "schema_version": 3,
+  "kind": "actual_RATE_target_only_CAL_variance_contract",
+  "manifest_sha256": "33c436c9db321e3ca750f6605a552bf4489dee08a6ca593f52847ded66fa5094",
+  "inputs_sha256": {
+    "research_output/mom_native_wavecorr.json": "80ca86e7969e82bca424a963b39282f2fec42d589fb055238b4ac18510ab3fe6",
+    "research_output/mom_atomic_grid_niv_doublet_v2.json": "a48ea0076ae9f6ef4d76845644880776c266efce0a281b0866d12889e36b1e0e",
+    "research_output/mom_multiplet_components_niv_doublet_v2.json": "692ce2fe0ca5463708abfa3c232378f3aebe22ff9b96f97d779091d54ac5f474"
+  },
+  "primary_source_stub": {
+    "data": [
+      8.0
+    ],
+    "dq": [
+      4
+    ],
+    "err": [
+      3.0
+    ],
+    "var_poisson": [
+      5.0
+    ],
+    "var_rnoise": [
+      4.0
+    ]
+  },
+  "RATE_CAL_checks": [
+    {
+      "filename": "jw05224004001_03101_00002_nrs2_rate.fits",
+      "sha256": "31ed2fa75529e3baf277bc36d69e706f1de87e6e6bb74f288e4223526643f08d",
+      "exposure_start_mjd": 60781.16281976852,
+      "CALERR_target_only_confirmed": true,
+      "poisson_max_relative_difference": 2.4692999900377544e-07,
+      "total_error_max_relative_difference": 5.150311090940107e-07
+    },
+    {
+      "filename": "jw05224004001_03101_00003_nrs2_rate.fits",
+      "sha256": "2f1561c6790864f05a46919fcc3e9ae4dac96c81e91efe5af74b270a427da838",
+      "exposure_start_mjd": 60781.18426420139,
+      "CALERR_target_only_confirmed": true,
+      "poisson_max_relative_difference": 2.6866333879826954e-07,
+      "total_error_max_relative_difference": 4.6463508218685945e-07
+    },
+    {
+      "filename": "jw05224004001_03101_00004_nrs2_rate.fits",
+      "sha256": "a2918776d507dfcec731336414e05ad7b52764fe9fecdb94ea1e212d228b5f6f",
+      "exposure_start_mjd": 60781.205708622685,
+      "CALERR_target_only_confirmed": true,
+      "poisson_max_relative_difference": 2.6270911979153766e-07,
+      "total_error_max_relative_difference": 5.848303374911268e-07
+    },
+    {
+      "filename": "jw05224004001_05101_00001_nrs2_rate.fits",
+      "sha256": "33bdc8ae89279549b9a4aa3883405bae122873757c0d6ed507acea541aa3828e",
+      "exposure_start_mjd": 60781.23015971065,
+      "CALERR_target_only_confirmed": true,
+      "poisson_max_relative_difference": 2.3683312644351417e-07,
+      "total_error_max_relative_difference": 4.7010399506497436e-07
+    },
+    {
+      "filename": "jw05224004001_05101_00002_nrs2_rate.fits",
+      "sha256": "846033b2a7855e47657b9590d9d709695c6f3a0a8a8954c8fc4867ff133e8249",
+      "exposure_start_mjd": 60781.25160413195,
+      "CALERR_target_only_confirmed": true,
+      "poisson_max_relative_difference": 2.4039645241114016e-07,
+      "total_error_max_relative_difference": 4.661030682528988e-07
+    },
+    {
+      "filename": "jw05224004001_05101_00003_nrs2_rate.fits",
+      "sha256": "41f508dc10a40855034d93ea5962dd718a7ddfc5d5502bd22182b62508985b7c",
+      "exposure_start_mjd": 60781.27304855324,
+      "CALERR_target_only_confirmed": true,
+      "poisson_max_relative_difference": 2.5246627255448573e-07,
+      "total_error_max_relative_difference": 4.766932462096918e-07
+    },
+    {
+      "filename": "jw05224004001_07101_00001_nrs2_rate.fits",
+      "sha256": "4c05eb4e923a84dbcf81e6bcda274ddfdb91caaeacf9ac7bebe867e3dfd08b85",
+      "exposure_start_mjd": 60781.29750927084,
+      "CALERR_target_only_confirmed": true,
+      "poisson_max_relative_difference": 2.54608484961949e-07,
+      "total_error_max_relative_difference": 5.404783216533815e-07
+    },
+    {
+      "filename": "jw05224004001_07101_00002_nrs2_rate.fits",
+      "sha256": "db1a9fd5ecbc04fd71a3016a0527ab930583a11de6b6185260834be1a2ec3057",
+      "exposure_start_mjd": 60781.319122581015,
+      "CALERR_target_only_confirmed": true,
+      "poisson_max_relative_difference": 2.67366518147405e-07,
+      "total_error_max_relative_difference": 5.118556438699073e-07
+    },
+    {
+      "filename": "jw05224004001_07101_00003_nrs2_rate.fits",
+      "sha256": "9d5aa05a82c255d93cdaa760c18089f8cb921c86fb8b3f0a3a1574742732c1c6",
+      "exposure_start_mjd": 60781.3407358912,
+      "CALERR_target_only_confirmed": true,
+      "poisson_max_relative_difference": 2.8069673230213255e-07,
+      "total_error_max_relative_difference": 4.7583184881183627e-07
+    }
+  ],
+  "groups": [
+    {
+      "group": "03",
+      "members": [
+        0,
+        1,
+        2
+      ],
+      "common_usable_pixels": 7544,
+      "equal_half_SCI_closure_max_CAL_sigma": 1.4728817458056466e-06,
+      "new_post_over_target_variance_median": 1.5047108434444563,
+      "gain_max_relative_nod_spread": 0.0007294412396755545
+    },
+    {
+      "group": "05",
+      "members": [
+        3,
+        4,
+        5
+      ],
+      "common_usable_pixels": 7611,
+      "equal_half_SCI_closure_max_CAL_sigma": 1.7361473587788877e-06,
+      "new_post_over_target_variance_median": 1.50398297049874,
+      "gain_max_relative_nod_spread": 0.0007289709361069097
+    },
+    {
+      "group": "07",
+      "members": [
+        6,
+        7,
+        8
+      ],
+      "common_usable_pixels": 7368,
+      "equal_half_SCI_closure_max_CAL_sigma": 1.4614275236129572e-06,
+      "new_post_over_target_variance_median": 1.5039158489328166,
+      "gain_max_relative_nod_spread": 0.0007291286784791851
+    }
+  ],
+  "empirical_noise_after_donor_normalization": {
+    "controls": [
+      {
+        "filename": "jw05224004001_03101_00002_nrs2_cal.fits",
+        "off_trace_pixels": 305,
+        "off_trace_rows": 6,
+        "normalized_rms": 1.1697779296842221
+      },
+      {
+        "filename": "jw05224004001_03101_00003_nrs2_cal.fits",
+        "off_trace_pixels": 305,
+        "off_trace_rows": 6,
+        "normalized_rms": 1.1982723871424494
+      },
+      {
+        "filename": "jw05224004001_03101_00004_nrs2_cal.fits",
+        "off_trace_pixels": 305,
+        "off_trace_rows": 6,
+        "normalized_rms": 1.1909616169033217
+      },
+      {
+        "filename": "jw05224004001_05101_00001_nrs2_cal.fits",
+        "off_trace_pixels": 305,
+        "off_trace_rows": 6,
+        "normalized_rms": 1.1861570649281885
+      },
+      {
+        "filename": "jw05224004001_05101_00002_nrs2_cal.fits",
+        "off_trace_pixels": 305,
+        "off_trace_rows": 6,
+        "normalized_rms": 1.2498364529268702
+      },
+      {
+        "filename": "jw05224004001_05101_00003_nrs2_cal.fits",
+        "off_trace_pixels": 305,
+        "off_trace_rows": 6,
+        "normalized_rms": 1.1061197389294561
+      },
+      {
+        "filename": "jw05224004001_07101_00001_nrs2_cal.fits",
+        "off_trace_pixels": 305,
+        "off_trace_rows": 6,
+        "normalized_rms": 1.1964978175051308
+      },
+      {
+        "filename": "jw05224004001_07101_00002_nrs2_cal.fits",
+        "off_trace_pixels": 305,
+        "off_trace_rows": 6,
+        "normalized_rms": 1.292335250807828
+      },
+      {
+        "filename": "jw05224004001_07101_00003_nrs2_cal.fits",
+        "off_trace_pixels": 305,
+        "off_trace_rows": 6,
+        "normalized_rms": 1.1539577700377859
+      }
+    ],
+    "pooled_scale_squared": 1.4276159192111377,
+    "leave_one_group_out_scale_squared_range": [
+      1.4025312183490974,
+      1.4426637757178324
+    ],
+    "observed_same_pixel_nod_correlations": [
+      {
+        "group": "03",
+        "shared_control_pixels": 305,
+        "measured_same_pixel_nod_correlation": [
+          [
+            0.9999999999999998,
+            -0.5318336366604384,
+            -0.4591744159950424
+          ],
+          [
+            -0.5318336366604384,
+            1.0,
+            -0.49649005932118023
+          ],
+          [
+            -0.45917441599504233,
+            -0.4964900593211802,
+            1.0
+          ]
+        ]
+      },
+      {
+        "group": "05",
+        "shared_control_pixels": 305,
+        "measured_same_pixel_nod_correlation": [
+          [
+            0.9999999999999998,
+            -0.5860644705376955,
+            -0.39741835855013913
+          ],
+          [
+            -0.5860644705376954,
+            0.9999999999999998,
+            -0.5023741173784401
+          ],
+          [
+            -0.39741835855013913,
+            -0.5023741173784401,
+            1.0
+          ]
+        ]
+      },
+      {
+        "group": "07",
+        "shared_control_pixels": 305,
+        "measured_same_pixel_nod_correlation": [
+          [
+            1.0,
+            -0.5572149844845384,
+            -0.41450902862517625
+          ],
+          [
+            -0.5572149844845384,
+            0.9999999999999998,
+            -0.5128846035460395
+          ],
+          [
+            -0.41450902862517625,
+            -0.5128846035460395,
+            0.9999999999999998
+          ]
+        ]
+      }
+    ],
+    "measured_lag_correlations_0_to_3": [
+      1.0,
+      0.04671574341468436,
+      0.0422569328078564,
+      0.010364835793194914
+    ],
+    "lag_pair_counts": [
+      2691,
+      2637,
+      2583
+    ],
+    "measured_spatial_lag_correlations_0_to_3": [
+      1.0,
+      -0.009142409186783952,
+      0.09348492080410767,
+      0.11443675342861193
+    ],
+    "spatial_lag_pair_counts": [
+      1485,
+      819,
+      189
+    ],
+    "spatial_correlations_in_source_covariance": false,
+    "stationary_kernel_taper": "Bartlett through lag3; zero beyond3",
+    "identity_shrinkage_to_minimum_eigenvalue_0p1": 0.0,
+    "kernel_minimum_eigenvalue": 0.9481866443704701,
+    "scope": "Measured off-source+negative-ghost-union controls, conditional stationary transport to source extraction; correlated nods/rows are not independent draws; no calibrated interval"
+  },
+  "historical_empirical_scale_squared": 2.2206192172121764,
+  "spatial_kernel": {
+    "measured_lag_correlations": [
+      1.0,
+      -0.009142409186783952,
+      0.09348492080410767,
+      0.11443675342861193
+    ],
+    "taper": "Bartlett through largest measured lag",
+    "minimum_eigenvalue_before_guard": 0.8775500500536465,
+    "identity_shrinkage_to_min_eigenvalue0p1": 0.0,
+    "minimum_eigenvalue": 0.8775500500536465
+  },
+  "fits": [
+    {
+      "noise_contract": "target_only_RATE_formal_v3",
+      "wavelength_hypothesis": "original_native",
+      "resolution_family": "nominal",
+      "fit": {
+        "line_order": [
+          "NIV",
+          "CIV",
+          "HeII_OIII",
+          "NIII",
+          "CIII"
+        ],
+        "line_contract_version": 2,
+        "flux_units": "1e-20 erg s^-1 cm^-2",
+        "fluxes": [
+          30.64179891712465,
+          25.42792394431505,
+          24.64388329207943,
+          5.348305030737332,
+          17.138417482243607
+        ],
+        "flux_covariance": [
+          [
+            156.71889945997384,
+            22.88672280391545,
+            19.334078042144295,
+            7.263214192054142,
+            0.21367684023276623
+          ],
+          [
+            22.88672280391545,
+            117.86554173519289,
+            15.659071190502921,
+            6.467377014123286,
+            1.3837519457685512
+          ],
+          [
+            19.334078042144295,
+            15.659071190502921,
+            120.91593432773797,
+            7.725879535244006,
+            3.980261359253826
+          ],
+          [
+            7.263214192054142,
+            6.467377014123286,
+            7.725879535244006,
+            59.54278121248516,
+            3.584847660593174
+          ],
+          [
+            0.21367684023276623,
+            1.3837519457685512,
+            3.980261359253826,
+            3.584847660593174,
+            44.61494489779283
+          ]
+        ],
+        "conditional_chi2": 780.4901441161938,
+        "dof": 623,
+        "continuum_coefficients": [
+          1.7208365510600783,
+          0.12477127669483591
+        ],
+        "ionic_N_over_C": {
+          "value": 3.421604803516467,
+          "log_ratio_relative_to_solar_NC_minus_0_60": 1.1342298469457477,
+          "conditional_gaussian_95_fieller_set": {
+            "type": "bounded",
+            "interval": [
+              0.4534280533342539,
+              9.023144066711048
+            ]
+          },
+          "scaled_numerator": 98.22980138878808,
+          "scaled_denominator": 28.708692858928334,
+          "scaled_covariance": [
+            [
+              1921.5584673387557,
+              50.50067868825867
+            ],
+            [
+              50.50067868825867,
+              70.27773928442372
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "noise_contract": "target_only_RATE_control_transport_v3",
+      "wavelength_hypothesis": "original_native",
+      "resolution_family": "nominal",
+      "fit": {
+        "line_order": [
+          "NIV",
+          "CIV",
+          "HeII_OIII",
+          "NIII",
+          "CIII"
+        ],
+        "line_contract_version": 2,
+        "flux_units": "1e-20 erg s^-1 cm^-2",
+        "fluxes": [
+          31.151081581292207,
+          26.139717134875283,
+          25.308851204940257,
+          5.12281239593701,
+          17.04855987792366
+        ],
+        "flux_covariance": [
+          [
+            236.20720244499552,
+            32.74555683658107,
+            27.98878457495184,
+            10.333565864070772,
+            0.2850900844352378
+          ],
+          [
+            32.74555683658107,
+            177.63534627544374,
+            22.677368996348875,
+            9.217081270467089,
+            1.9784171676792393
+          ],
+          [
+            27.98878457495184,
+            22.677368996348875,
+            186.48946936669708,
+            11.236944414682236,
+            5.830224475802088
+          ],
+          [
+            10.333565864070772,
+            9.217081270467089,
+            11.236944414682236,
+            90.50873116030427,
+            5.173211580625379
+          ],
+          [
+            0.2850900844352378,
+            1.9784171676792393,
+            5.830224475802088,
+            5.173211580625379,
+            67.61727610365034
+          ]
+        ],
+        "conditional_chi2": 551.3734467942332,
+        "dof": 623,
+        "continuum_coefficients": [
+          1.715759600769198,
+          0.1254432451759061
+        ],
+        "ionic_N_over_C": {
+          "value": 3.41215095251825,
+          "log_ratio_relative_to_solar_NC_minus_0_60": 1.1330282359760113,
+          "conditional_gaussian_95_fieller_set": {
+            "type": "bounded",
+            "interval": [
+              -0.25908695063498816,
+              12.269183123038387
+            ]
+          },
+          "scaled_numerator": 98.75691976074572,
+          "scaled_denominator": 28.942717111580517,
+          "scaled_covariance": [
+            [
+              2894.461688121067,
+              72.29842722271107
+            ],
+            [
+              72.29842722271107,
+              106.1963055126115
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "noise_contract": "historical_demixed_control_transport",
+      "wavelength_hypothesis": "original_native",
+      "resolution_family": "nominal",
+      "fit": {
+        "line_order": [
+          "NIV",
+          "CIV",
+          "HeII_OIII",
+          "NIII",
+          "CIII"
+        ],
+        "line_contract_version": 2,
+        "flux_units": "1e-20 erg s^-1 cm^-2",
+        "fluxes": [
+          31.794528940046376,
+          26.828985660218247,
+          25.92769039990035,
+          5.184476981531482,
+          17.67863394534667
+        ],
+        "flux_covariance": [
+          [
+            247.13416822575917,
+            33.83405750518307,
+            28.957938119871798,
+            10.786644093233491,
+            0.33601200695499295
+          ],
+          [
+            33.83405750518307,
+            184.52379120856958,
+            23.413667499308104,
+            9.578992979766378,
+            2.0360104058169806
+          ],
+          [
+            28.957938119871798,
+            23.413667499308104,
+            191.1581315086188,
+            11.602322385999644,
+            5.914680770146114
+          ],
+          [
+            10.786644093233491,
+            9.578992979766378,
+            11.602322385999644,
+            91.85256907257416,
+            5.267977480243356
+          ],
+          [
+            0.33601200695499295,
+            2.0360104058169806,
+            5.914680770146114,
+            5.267977480243356,
+            70.01771507099838
+          ]
+        ],
+        "conditional_chi2": 549.0745191568212,
+        "dof": 623,
+        "continuum_coefficients": [
+          1.687310265576531,
+          0.12004722628932245
+        ],
+        "ionic_N_over_C": {
+          "value": 3.3674674674539187,
+          "log_ratio_relative_to_solar_NC_minus_0_60": 1.1273034087681508,
+          "conditional_gaussian_95_fieller_set": {
+            "type": "bounded",
+            "interval": [
+              -0.24609395242618526,
+              11.816845359072955
+            ]
+          },
+          "scaled_numerator": 100.6415598933207,
+          "scaled_denominator": 29.886423808398057,
+          "scaled_covariance": [
+            [
+              2992.7489649760387,
+              74.62651917890219
+            ],
+            [
+              74.62651917890219,
+              110.07537773619245
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "noise_contract": "target_only_RATE_formal_v3",
+      "wavelength_hypothesis": "original_native",
+      "resolution_family": "generic_point",
+      "fit": {
+        "line_order": [
+          "NIV",
+          "CIV",
+          "HeII_OIII",
+          "NIII",
+          "CIII"
+        ],
+        "line_contract_version": 2,
+        "flux_units": "1e-20 erg s^-1 cm^-2",
+        "fluxes": [
+          22.731769075232947,
+          22.04319119270596,
+          20.454292462535516,
+          5.0183988328640226,
+          14.841026807591282
+        ],
+        "flux_covariance": [
+          [
+            93.40624723168322,
+            8.092200850586273,
+            8.175070049422311,
+            2.5018025511200785,
+            -0.06774405937828987
+          ],
+          [
+            8.092200850586273,
+            71.40871588898759,
+            6.580445309445338,
+            2.2485412120868573,
+            0.4436944571345698
+          ],
+          [
+            8.175070049422311,
+            6.580445309445338,
+            91.06841414440629,
+            3.3786672872921093,
+            1.8502682318726913
+          ],
+          [
+            2.5018025511200785,
+            2.2485412120868573,
+            3.3786672872921093,
+            37.59772432010808,
+            1.4452998751050683
+          ],
+          [
+            -0.06774405937828987,
+            0.4436944571345698,
+            1.8502682318726913,
+            1.4452998751050683,
+            29.197452250096323
+          ]
+        ],
+        "conditional_chi2": 777.5347118116807,
+        "dof": 623,
+        "continuum_coefficients": [
+          1.7568554372653513,
+          0.09102402208654838
+        ],
+        "ionic_N_over_C": {
+          "value": 3.0785477858980093,
+          "log_ratio_relative_to_solar_NC_minus_0_60": 1.0883458991945947,
+          "conditional_gaussian_95_fieller_set": {
+            "type": "bounded",
+            "interval": [
+              0.42863543196859477,
+              7.762001103683933
+            ]
+          },
+          "scaled_numerator": 76.5670942993801,
+          "scaled_denominator": 24.87117291149845,
+          "scaled_covariance": [
+            [
+              1138.0486703179618,
+              18.04851051196985
+            ],
+            [
+              18.04851051196985,
+              44.386080148834054
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "noise_contract": "target_only_RATE_control_transport_v3",
+      "wavelength_hypothesis": "original_native",
+      "resolution_family": "generic_point",
+      "fit": {
+        "line_order": [
+          "NIV",
+          "CIV",
+          "HeII_OIII",
+          "NIII",
+          "CIII"
+        ],
+        "line_contract_version": 2,
+        "flux_units": "1e-20 erg s^-1 cm^-2",
+        "fluxes": [
+          22.646122122527167,
+          22.454841956253848,
+          20.692088459138173,
+          5.046590033476671,
+          14.76308944547946
+        ],
+        "flux_covariance": [
+          [
+            137.32083301078706,
+            10.893214612387917,
+            11.320742633347518,
+            3.3736244725743756,
+            -0.09952451129863306
+          ],
+          [
+            10.893214612387917,
+            104.79578295205872,
+            9.105683523127702,
+            3.0343956004968944,
+            0.6015525422204178
+          ],
+          [
+            11.320742633347518,
+            9.105683523127702,
+            138.0985640025116,
+            4.707832069635798,
+            2.5978447367584114
+          ],
+          [
+            3.3736244725743756,
+            3.0343956004968944,
+            4.707832069635798,
+            55.73564726285454,
+            1.980502741304174
+          ],
+          [
+            -0.09952451129863306,
+            0.6015525422204178,
+            2.5978447367584114,
+            1.980502741304174,
+            43.204749578379655
+          ]
+        ],
+        "conditional_chi2": 549.2532530097229,
+        "dof": 623,
+        "continuum_coefficients": [
+          1.753501274515883,
+          0.08821525766365217
+        ],
+        "ionic_N_over_C": {
+          "value": 3.060150580067426,
+          "log_ratio_relative_to_solar_NC_minus_0_60": 1.0857427972277816,
+          "conditional_gaussian_95_fieller_set": {
+            "type": "bounded",
+            "interval": [
+              -0.15824300821318465,
+              9.905025558821881
+            ]
+          },
+          "scaled_numerator": 76.4442319473259,
+          "scaled_denominator": 24.980545874197333,
+          "scaled_covariance": [
+            [
+              1673.2556717942878,
+              24.409091591427305
+            ],
+            [
+              24.409091591427305,
+              65.44967402277683
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "noise_contract": "historical_demixed_control_transport",
+      "wavelength_hypothesis": "original_native",
+      "resolution_family": "generic_point",
+      "fit": {
+        "line_order": [
+          "NIV",
+          "CIV",
+          "HeII_OIII",
+          "NIII",
+          "CIII"
+        ],
+        "line_contract_version": 2,
+        "flux_units": "1e-20 erg s^-1 cm^-2",
+        "fluxes": [
+          22.868634820623754,
+          22.799642605751377,
+          20.968836378024832,
+          4.970343137064199,
+          15.175391152280312
+        ],
+        "flux_covariance": [
+          [
+            143.6664397533055,
+            11.218136235307105,
+            11.69076048553996,
+            3.533939062526923,
+            -0.08550537581064958
+          ],
+          [
+            11.218136235307105,
+            108.78810209052328,
+            9.391766088486056,
+            3.1654077279402584,
+            0.6118958419276284
+          ],
+          [
+            11.69076048553996,
+            9.391766088486056,
+            141.5424111208623,
+            4.884552818256082,
+            2.613139806846921
+          ],
+          [
+            3.533939062526923,
+            3.1654077279402584,
+            4.884552818256082,
+            56.92831943408433,
+            2.0115956200667378
+          ],
+          [
+            -0.08550537581064958,
+            0.6118958419276284,
+            2.613139806846921,
+            2.0115956200667378,
+            44.63804528284029
+          ]
+        ],
+        "conditional_chi2": 547.2035886543837,
+        "dof": 623,
+        "continuum_coefficients": [
+          1.7280566031189182,
+          0.08103670065627748
+        ],
+        "ionic_N_over_C": {
+          "value": 3.004056539410336,
+          "log_ratio_relative_to_solar_NC_minus_0_60": 1.0777081022744892,
+          "conditional_gaussian_95_fieller_set": {
+            "type": "bounded",
+            "interval": [
+              -0.20178000955518519,
+              9.698351074890175
+            ]
+          },
+          "scaled_numerator": 76.75286234192612,
+          "scaled_denominator": 25.549739605430958,
+          "scaled_covariance": [
+            [
+              1733.557792871194,
+              25.14760688252493
+            ],
+            [
+              25.14760688252493,
+              67.71897390140683
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "noise_contract": "target_only_RATE_formal_v3",
+      "wavelength_hypothesis": "pinned_toy_prediction",
+      "resolution_family": "nominal",
+      "fit": {
+        "line_order": [
+          "NIV",
+          "CIV",
+          "HeII_OIII",
+          "NIII",
+          "CIII"
+        ],
+        "line_contract_version": 2,
+        "flux_units": "1e-20 erg s^-1 cm^-2",
+        "fluxes": [
+          33.19668649113939,
+          26.756555180338772,
+          24.080691576901707,
+          6.753805649247917,
+          18.06376855756693
+        ],
+        "flux_covariance": [
+          [
+            158.0188612293438,
+            22.814888498186438,
+            19.191016351170397,
+            7.265428043896777,
+            0.20543233853785328
+          ],
+          [
+            22.814888498186438,
+            118.0072836245159,
+            15.55267828137575,
+            6.487968756353907,
+            1.4029736256305476
+          ],
+          [
+            19.191016351170397,
+            15.55267828137575,
+            120.95222428912051,
+            7.76586935615598,
+            4.036058436689084
+          ],
+          [
+            7.265428043896777,
+            6.487968756353907,
+            7.76586935615598,
+            60.36578031877652,
+            3.6682098523395474
+          ],
+          [
+            0.20543233853785328,
+            1.4029736256305476,
+            4.036058436689084,
+            3.6682098523395474,
+            44.83352958837823
+          ]
+        ],
+        "conditional_chi2": 778.6984087256926,
+        "dof": 623,
+        "continuum_coefficients": [
+          1.7103169943904557,
+          0.12812710155497775
+        ],
+        "ionic_N_over_C": {
+          "value": 3.6309339753023613,
+          "log_ratio_relative_to_solar_NC_minus_0_60": 1.1600183517984455,
+          "conditional_gaussian_95_fieller_set": {
+            "type": "bounded",
+            "interval": [
+              0.8022768615587188,
+              8.91255897715629
+            ]
+          },
+          "scaled_numerator": 109.7943634776297,
+          "scaled_denominator": 30.23860092870092,
+          "scaled_covariance": [
+            [
+              1940.5090623546896,
+              50.72067299416133
+            ],
+            [
+              50.72067299416133,
+              70.54316357140067
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "noise_contract": "target_only_RATE_control_transport_v3",
+      "wavelength_hypothesis": "pinned_toy_prediction",
+      "resolution_family": "nominal",
+      "fit": {
+        "line_order": [
+          "NIV",
+          "CIV",
+          "HeII_OIII",
+          "NIII",
+          "CIII"
+        ],
+        "line_contract_version": 2,
+        "flux_units": "1e-20 erg s^-1 cm^-2",
+        "fluxes": [
+          33.793766357639015,
+          27.53276344561142,
+          24.66670935382937,
+          6.606907852949989,
+          17.927881669626874
+        ],
+        "flux_covariance": [
+          [
+            238.2686084633383,
+            32.68249756941984,
+            27.798586886198922,
+            10.346302806485667,
+            0.27429791033026435
+          ],
+          [
+            32.68249756941984,
+            177.97679350750855,
+            22.547529078635918,
+            9.259232962578796,
+            2.0083187055720404
+          ],
+          [
+            27.798586886198922,
+            22.547529078635918,
+            186.57768413702763,
+            11.305140278918236,
+            5.9144356399343
+          ],
+          [
+            10.346302806485667,
+            9.259232962578796,
+            11.305140278918236,
+            91.80916747105356,
+            5.2970479164452975
+          ],
+          [
+            0.27429791033026435,
+            2.0083187055720404,
+            5.9144356399343,
+            5.2970479164452975,
+            67.94499570711274
+          ]
+        ],
+        "conditional_chi2": 550.1732543864238,
+        "dof": 623,
+        "continuum_coefficients": [
+          1.705119025243111,
+          0.12922955347413403
+        ],
+        "ionic_N_over_C": {
+          "value": 3.638881179393479,
+          "log_ratio_relative_to_solar_NC_minus_0_60": 1.1609678747738585,
+          "conditional_gaussian_95_fieller_set": {
+            "type": "bounded",
+            "interval": [
+              0.17162548486321247,
+              11.782611110649743
+            ]
+          },
+          "scaled_numerator": 110.82542387484315,
+          "scaled_denominator": 30.455906200629308,
+          "scaled_covariance": [
+            [
+              2924.623417746489,
+              72.69898925967065
+            ],
+            [
+              72.69898925967065,
+              106.62193193437331
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "noise_contract": "historical_demixed_control_transport",
+      "wavelength_hypothesis": "pinned_toy_prediction",
+      "resolution_family": "nominal",
+      "fit": {
+        "line_order": [
+          "NIV",
+          "CIV",
+          "HeII_OIII",
+          "NIII",
+          "CIII"
+        ],
+        "line_contract_version": 2,
+        "flux_units": "1e-20 erg s^-1 cm^-2",
+        "fluxes": [
+          34.38136662665089,
+          28.220786140327892,
+          25.377174797087164,
+          6.677594293260736,
+          18.662400516349198
+        ],
+        "flux_covariance": [
+          [
+            249.4003141529496,
+            33.77844819321707,
+            28.76814807913926,
+            10.79066260968762,
+            0.3216869882085979
+          ],
+          [
+            33.77844819321707,
+            184.9725413323745,
+            23.31273227471429,
+            9.625540089030133,
+            2.0656257388190706
+          ],
+          [
+            28.76814807913926,
+            23.31273227471429,
+            191.50495685648053,
+            11.674277023688582,
+            6.002253315908219
+          ],
+          [
+            10.79066260968762,
+            9.625540089030133,
+            11.674277023688582,
+            93.23651377592294,
+            5.39225594873575
+          ],
+          [
+            0.3216869882085979,
+            2.0656257388190706,
+            6.002253315908219,
+            5.39225594873575,
+            70.44816397382124
+          ]
+        ],
+        "conditional_chi2": 547.8507363388101,
+        "dof": 623,
+        "continuum_coefficients": [
+          1.6764408674195428,
+          0.12321596691244313
+        ],
+        "ionic_N_over_C": {
+          "value": 3.5741129501053432,
+          "log_ratio_relative_to_solar_NC_minus_0_60": 1.153168273080753,
+          "conditional_gaussian_95_fieller_set": {
+            "type": "bounded",
+            "interval": [
+              0.1645356659547371,
+              11.320647558820705
+            ]
+          },
+          "scaled_numerator": 112.59703442709731,
+          "scaled_denominator": 31.50349079588507,
+          "scaled_covariance": [
+            [
+              3025.1598872363434,
+              75.0352983481052
+            ],
+            [
+              75.0352983481052,
+              110.62568956803455
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "noise_contract": "target_only_RATE_formal_v3",
+      "wavelength_hypothesis": "pinned_toy_prediction",
+      "resolution_family": "generic_point",
+      "fit": {
+        "line_order": [
+          "NIV",
+          "CIV",
+          "HeII_OIII",
+          "NIII",
+          "CIII"
+        ],
+        "line_contract_version": 2,
+        "flux_units": "1e-20 erg s^-1 cm^-2",
+        "fluxes": [
+          26.040187172562213,
+          23.223991928627612,
+          18.807677238796284,
+          6.491096095329635,
+          14.231265966781978
+        ],
+        "flux_covariance": [
+          [
+            94.89973629733666,
+            8.21307505071217,
+            8.165289894623141,
+            2.5316303678202714,
+            -0.07207367552397667
+          ],
+          [
+            8.21307505071217,
+            72.19633183336666,
+            6.598150385753803,
+            2.289124348779886,
+            0.45064219640302455
+          ],
+          [
+            8.165289894623141,
+            6.598150385753803,
+            90.76963431982202,
+            3.404863587402336,
+            1.8559494500455818
+          ],
+          [
+            2.5316303678202714,
+            2.289124348779886,
+            3.404863587402336,
+            38.45414621271462,
+            1.4701508465320177
+          ],
+          [
+            -0.07207367552397667,
+            0.45064219640302455,
+            1.8559494500455818,
+            1.4701508465320177,
+            29.069112045594135
+          ]
+        ],
+        "conditional_chi2": 776.4341237976643,
+        "dof": 623,
+        "continuum_coefficients": [
+          1.7516389005987614,
+          0.10282874229813738
+        ],
+        "ionic_N_over_C": {
+          "value": 3.642169637142482,
+          "log_ratio_relative_to_solar_NC_minus_0_60": 1.161360169564118,
+          "conditional_gaussian_95_fieller_set": {
+            "type": "bounded",
+            "interval": [
+              0.9453964928232641,
+              8.8199485013682
+            ]
+          },
+          "scaled_numerator": 90.32108264777641,
+          "scaled_denominator": 24.798702873883478,
+          "scaled_covariance": [
+            [
+              1159.2161077452054,
+              18.3321703782674
+            ],
+            [
+              18.3321703782674,
+              44.42713495576255
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "noise_contract": "target_only_RATE_control_transport_v3",
+      "wavelength_hypothesis": "pinned_toy_prediction",
+      "resolution_family": "generic_point",
+      "fit": {
+        "line_order": [
+          "NIV",
+          "CIV",
+          "HeII_OIII",
+          "NIII",
+          "CIII"
+        ],
+        "line_contract_version": 2,
+        "flux_units": "1e-20 erg s^-1 cm^-2",
+        "fluxes": [
+          26.069827633680067,
+          23.64626648090229,
+          18.865937065169835,
+          6.583245818720541,
+          14.011777354392143
+        ],
+        "flux_covariance": [
+          [
+            139.6254303725207,
+            11.074235654082695,
+            11.314524672050242,
+            3.4163835576259176,
+            -0.10535216774053628
+          ],
+          [
+            11.074235654082695,
+            106.07421299817825,
+            9.139320089634003,
+            3.092584613523512,
+            0.6113498828657457
+          ],
+          [
+            11.314524672050242,
+            9.139320089634003,
+            137.6249855780129,
+            4.7447505258847205,
+            2.6042903168698084
+          ],
+          [
+            3.4163835576259176,
+            3.092584613523512,
+            4.7447505258847205,
+            57.01641473626801,
+            2.013581110710135
+          ],
+          [
+            -0.10535216774053628,
+            0.6113498828657457,
+            2.6042903168698084,
+            2.013581110710135,
+            42.98526787864332
+          ]
+        ],
+        "conditional_chi2": 548.5552975231037,
+        "dof": 623,
+        "continuum_coefficients": [
+          1.748707683850755,
+          0.10066185652385365
+        ],
+        "ionic_N_over_C": {
+          "value": 3.6623727397667487,
+          "log_ratio_relative_to_solar_NC_minus_0_60": 1.163762542747206,
+          "conditional_gaussian_95_fieller_set": {
+            "type": "bounded",
+            "interval": [
+              0.4039272897345279,
+              11.485751868590516
+            ]
+          },
+          "scaled_numerator": 90.72194864056895,
+          "scaled_denominator": 24.77135864831358,
+          "scaled_covariance": [
+            [
+              1705.3553076716528,
+              24.81690773647484
+            ],
+            [
+              24.81690773647484,
+              65.5038014008542
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "noise_contract": "historical_demixed_control_transport",
+      "wavelength_hypothesis": "pinned_toy_prediction",
+      "resolution_family": "generic_point",
+      "fit": {
+        "line_order": [
+          "NIV",
+          "CIV",
+          "HeII_OIII",
+          "NIII",
+          "CIII"
+        ],
+        "line_contract_version": 2,
+        "flux_units": "1e-20 erg s^-1 cm^-2",
+        "fluxes": [
+          26.197175279218122,
+          24.091921497601568,
+          19.29994256074178,
+          6.562230527483257,
+          14.447648709043078
+        ],
+        "flux_covariance": [
+          [
+            145.78761468794096,
+            11.41548963541527,
+            11.656577598237112,
+            3.564314088273624,
+            -0.09197894964655633
+          ],
+          [
+            11.41548963541527,
+            110.64397479877103,
+            9.458015404243147,
+            3.231736400499868,
+            0.621379577129063
+          ],
+          [
+            11.656577598237112,
+            9.458015404243147,
+            141.2456639664615,
+            4.913731612733064,
+            2.60955240658719
+          ],
+          [
+            3.564314088273624,
+            3.231736400499868,
+            4.913731612733064,
+            58.17441924917399,
+            2.0353528328309505
+          ],
+          [
+            -0.09197894964655633,
+            0.621379577129063,
+            2.60955240658719,
+            2.0353528328309505,
+            44.41624931332086
+          ]
+        ],
+        "conditional_chi2": 546.5052606222883,
+        "dof": 623,
+        "continuum_coefficients": [
+          1.7229061679058628,
+          0.09323887027530524
+        ],
+        "ionic_N_over_C": {
+          "value": 3.58040477007927,
+          "log_ratio_relative_to_solar_NC_minus_0_60": 1.1539321270558478,
+          "conditional_gaussian_95_fieller_set": {
+            "type": "bounded",
+            "interval": [
+              0.34980738365287645,
+              11.153208233435263
+            ]
+          },
+          "scaled_numerator": 90.97813184314747,
+          "scaled_denominator": 25.41001302518464,
+          "scaled_covariance": [
+            [
+              1763.7707076387615,
+              25.5532580006062
+            ],
+            [
+              25.5532580006062,
+              67.89005846089056
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "fresh_raw_detector_noise_coverage": [
+    {
+      "wavelength_hypothesis": "original_native",
+      "resolution_family": "nominal",
+      "draws": 4000,
+      "seed": 522414,
+      "NIV_noise_standard_deviation_over_formal_sigma": 1.0044744431595507,
+      "NIV_nominal_95_coverage": 0.94525,
+      "noisefree_known_spectrum_max_coefficient_error": 7.105427357601002e-15,
+      "scope": "Fixed observed RATE_ERR Gaussian raw pixel realizations and independent flat-reference residual; no source-Poisson or empirical-transport coverage certification."
+    },
+    {
+      "wavelength_hypothesis": "original_native",
+      "resolution_family": "generic_point",
+      "draws": 4000,
+      "seed": 522414,
+      "NIV_noise_standard_deviation_over_formal_sigma": 1.0073583723825583,
+      "NIV_nominal_95_coverage": 0.94925,
+      "noisefree_known_spectrum_max_coefficient_error": 2.6645352591003757e-14,
+      "scope": "Fixed observed RATE_ERR Gaussian raw pixel realizations and independent flat-reference residual; no source-Poisson or empirical-transport coverage certification."
+    },
+    {
+      "wavelength_hypothesis": "pinned_toy_prediction",
+      "resolution_family": "nominal",
+      "draws": 4000,
+      "seed": 522414,
+      "NIV_noise_standard_deviation_over_formal_sigma": 1.0046233346225648,
+      "NIV_nominal_95_coverage": 0.95025,
+      "noisefree_known_spectrum_max_coefficient_error": 1.9539925233402755e-14,
+      "scope": "Fixed observed RATE_ERR Gaussian raw pixel realizations and independent flat-reference residual; no source-Poisson or empirical-transport coverage certification."
+    },
+    {
+      "wavelength_hypothesis": "pinned_toy_prediction",
+      "resolution_family": "generic_point",
+      "draws": 4000,
+      "seed": 522414,
+      "NIV_noise_standard_deviation_over_formal_sigma": 1.0046261208581222,
+      "NIV_nominal_95_coverage": 0.9495,
+      "noisefree_known_spectrum_max_coefficient_error": 2.1316282072803006e-14,
+      "scope": "Fixed observed RATE_ERR Gaussian raw pixel realizations and independent flat-reference residual; no source-Poisson or empirical-transport coverage certification."
+    }
+  ],
+  "recorded_flat_variance_budget": [
+    {
+      "wavelength_hypothesis": "original_native",
+      "resolution_family": "nominal",
+      "independent_flat_fraction_of_NIV_variance": 6.320875575085358e-05,
+      "same_detector_pixel_shared_flat_fraction_of_NIV_variance": 0.00019703067463805538,
+      "any_correlation_flat_upper_fraction_of_NIV_variance": 0.040133599797962737,
+      "scope": "Fixed GLS estimator and recorded VAR_FLAT diagonal; unrestricted covariance bound is not an empirical calibration prior. Does not bound unrecorded common calibration systematics."
+    },
+    {
+      "wavelength_hypothesis": "original_native",
+      "resolution_family": "generic_point",
+      "independent_flat_fraction_of_NIV_variance": 7.752449642258895e-05,
+      "same_detector_pixel_shared_flat_fraction_of_NIV_variance": 0.0002054506058500155,
+      "any_correlation_flat_upper_fraction_of_NIV_variance": 0.028938268322110987,
+      "scope": "Fixed GLS estimator and recorded VAR_FLAT diagonal; unrestricted covariance bound is not an empirical calibration prior. Does not bound unrecorded common calibration systematics."
+    },
+    {
+      "wavelength_hypothesis": "pinned_toy_prediction",
+      "resolution_family": "nominal",
+      "independent_flat_fraction_of_NIV_variance": 6.391293360318026e-05,
+      "same_detector_pixel_shared_flat_fraction_of_NIV_variance": 0.00019968594354633098,
+      "any_correlation_flat_upper_fraction_of_NIV_variance": 0.039739622648677066,
+      "scope": "Fixed GLS estimator and recorded VAR_FLAT diagonal; unrestricted covariance bound is not an empirical calibration prior. Does not bound unrecorded common calibration systematics."
+    },
+    {
+      "wavelength_hypothesis": "pinned_toy_prediction",
+      "resolution_family": "generic_point",
+      "independent_flat_fraction_of_NIV_variance": 7.739756261312306e-05,
+      "same_detector_pixel_shared_flat_fraction_of_NIV_variance": 0.00021528137397396407,
+      "any_correlation_flat_upper_fraction_of_NIV_variance": 0.029195359828150108,
+      "scope": "Fixed GLS estimator and recorded VAR_FLAT diagonal; unrestricted covariance bound is not an empirical calibration prior. Does not bound unrecorded common calibration systematics."
+    }
+  ],
+  "fresh_control_transport_heldout_predictions": [
+    {
+      "group": "03",
+      "wavelength_hypothesis": "original_native",
+      "resolution_family": "nominal",
+      "predictive_chi2": 187.07506781109697,
+      "dof": 208,
+      "conditional_gaussian_tail_probability": 0.8483841501130184,
+      "training_line_covariance_propagated": true,
+      "test_continuum_profiled": true,
+      "empirical_prediction_coverage_calibrated": false
+    },
+    {
+      "group": "05",
+      "wavelength_hypothesis": "original_native",
+      "resolution_family": "nominal",
+      "predictive_chi2": 211.3209528409126,
+      "dof": 208,
+      "conditional_gaussian_tail_probability": 0.42284723228943183,
+      "training_line_covariance_propagated": true,
+      "test_continuum_profiled": true,
+      "empirical_prediction_coverage_calibrated": false
+    },
+    {
+      "group": "07",
+      "wavelength_hypothesis": "original_native",
+      "resolution_family": "nominal",
+      "predictive_chi2": 159.20162313205103,
+      "dof": 208,
+      "conditional_gaussian_tail_probability": 0.9950162762313952,
+      "training_line_covariance_propagated": true,
+      "test_continuum_profiled": true,
+      "empirical_prediction_coverage_calibrated": false
+    },
+    {
+      "group": "03",
+      "wavelength_hypothesis": "original_native",
+      "resolution_family": "generic_point",
+      "predictive_chi2": 185.15738546799648,
+      "dof": 208,
+      "conditional_gaussian_tail_probability": 0.8709285239891145,
+      "training_line_covariance_propagated": true,
+      "test_continuum_profiled": true,
+      "empirical_prediction_coverage_calibrated": false
+    },
+    {
+      "group": "05",
+      "wavelength_hypothesis": "original_native",
+      "resolution_family": "generic_point",
+      "predictive_chi2": 211.54124286869913,
+      "dof": 208,
+      "conditional_gaussian_tail_probability": 0.41867061659245125,
+      "training_line_covariance_propagated": true,
+      "test_continuum_profiled": true,
+      "empirical_prediction_coverage_calibrated": false
+    },
+    {
+      "group": "07",
+      "wavelength_hypothesis": "original_native",
+      "resolution_family": "generic_point",
+      "predictive_chi2": 158.4122450191142,
+      "dof": 208,
+      "conditional_gaussian_tail_probability": 0.9956467585242107,
+      "training_line_covariance_propagated": true,
+      "test_continuum_profiled": true,
+      "empirical_prediction_coverage_calibrated": false
+    },
+    {
+      "group": "03",
+      "wavelength_hypothesis": "pinned_toy_prediction",
+      "resolution_family": "nominal",
+      "predictive_chi2": 186.30043065059272,
+      "dof": 208,
+      "conditional_gaussian_tail_probability": 0.8577686920570597,
+      "training_line_covariance_propagated": true,
+      "test_continuum_profiled": true,
+      "empirical_prediction_coverage_calibrated": false
+    },
+    {
+      "group": "05",
+      "wavelength_hypothesis": "pinned_toy_prediction",
+      "resolution_family": "nominal",
+      "predictive_chi2": 211.9249784261314,
+      "dof": 208,
+      "conditional_gaussian_tail_probability": 0.4114241254069764,
+      "training_line_covariance_propagated": true,
+      "test_continuum_profiled": true,
+      "empirical_prediction_coverage_calibrated": false
+    },
+    {
+      "group": "07",
+      "wavelength_hypothesis": "pinned_toy_prediction",
+      "resolution_family": "nominal",
+      "predictive_chi2": 158.9658071025418,
+      "dof": 208,
+      "conditional_gaussian_tail_probability": 0.9952124174864356,
+      "training_line_covariance_propagated": true,
+      "test_continuum_profiled": true,
+      "empirical_prediction_coverage_calibrated": false
+    },
+    {
+      "group": "03",
+      "wavelength_hypothesis": "pinned_toy_prediction",
+      "resolution_family": "generic_point",
+      "predictive_chi2": 184.1647593481889,
+      "dof": 208,
+      "conditional_gaussian_tail_probability": 0.8816914015772207,
+      "training_line_covariance_propagated": true,
+      "test_continuum_profiled": true,
+      "empirical_prediction_coverage_calibrated": false
+    },
+    {
+      "group": "05",
+      "wavelength_hypothesis": "pinned_toy_prediction",
+      "resolution_family": "generic_point",
+      "predictive_chi2": 212.59446915092056,
+      "dof": 208,
+      "conditional_gaussian_tail_probability": 0.39887554246738394,
+      "training_line_covariance_propagated": true,
+      "test_continuum_profiled": true,
+      "empirical_prediction_coverage_calibrated": false
+    },
+    {
+      "group": "07",
+      "wavelength_hypothesis": "pinned_toy_prediction",
+      "resolution_family": "generic_point",
+      "predictive_chi2": 158.9237775843041,
+      "dof": 208,
+      "conditional_gaussian_tail_probability": 0.995246664217688,
+      "training_line_covariance_propagated": true,
+      "test_continuum_profiled": true,
+      "empirical_prediction_coverage_calibrated": false
+    }
+  ],
+  "compact_replay": {
+    "filename": "mom_native_rate_noise_arrays.npz",
+    "sha256": "4d679850b44b28ed3d8fc71f0e7fd41f0aa7a7cfcd95aff896de97b728bdfa5e",
+    "bytes": 2181867
+  },
+  "scope": "All nine actual RATE/CAL pixels validate equal-half SCI and target-only variance. Empirical row/column transport remains a conditional stationary model; source Poisson correctness, calibration-reference correlations and source-specific LSF are uncalibrated. Historical contracts unchanged; no likelihood pooling.",
+  "runtime_seconds": 30.236915985999076
+}
