@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "retrieved_UTC": "2026-10-10",
+  "new_selected_bytes": 1668841,
+  "records": [
+    {
+      "name": "dispersers",
+      "url": "https://jwst-docs.stsci.edu/jwst-near-infrared-spectrograph/nirspec-instrumentation/nirspec-dispersers-and-filters",
+      "bytes": 551357,
+      "sha256": "417c88690344de818e90163db901588efb2a587bc80809e6b9d1a5565bd8e4c6",
+      "scope": "primary documentation read; raw HTML regenerable and not committed"
+    },
+    {
+      "name": "jwst_nirspec_g235h_disp.fits",
+      "url": "https://jwst-docs.stsci.edu/files/216455634/216455635/1/1762452060354/jwst_nirspec_g235h_disp.fits",
+      "bytes": 20160,
+      "sha256": "b699a70a8009f9adc1d1c55516b2731b43c7930de1df10534c64ba56bfb4a413",
+      "scope": "nominal fully illuminated 2.2pixel resolution; not source-specific LSF"
+    },
+    {
+      "name": "jwst_nirspec_g395h_disp.fits",
+      "url": "https://jwst-docs.stsci.edu/files/216455634/216455636/1/1762452060535/jwst_nirspec_g395h_disp.fits",
+      "bytes": 23040,
+      "sha256": "fc629587007cd8c0e86d803d8f98b5549a2a92993f6f5f73f907db5ceb6b48d8",
+      "scope": "nominal fully illuminated 2.2pixel resolution; not source-specific LSF"
+    },
+    {
+      "name": "jwst_nirspec_g395m_disp.fits",
+      "url": "https://jwst-docs.stsci.edu/files/216455634/216455644/1/1762452061971/jwst_nirspec_g395m_disp.fits",
+      "bytes": 20160,
+      "sha256": "93cb16a9e5eb71eb285b4bdbeb7fc34ec201176a7ab810232cfd24698a2806bb",
+      "scope": "nominal fully illuminated 2.2pixel resolution; not source-specific LSF"
+    },
+    {
+      "name": "jwst_nirspec_g235m_disp.fits",
+      "url": "https://jwst-docs.stsci.edu/files/216455634/216455645/1/1762452062162/jwst_nirspec_g235m_disp.fits",
+      "bytes": 20160,
+      "sha256": "470fe69d877407bbcc66df8376d2103ec3f495cbe588c65c440632757f6c250e",
+      "scope": "nominal fully illuminated 2.2pixel resolution; not source-specific LSF"
+    },
+    {
+      "name": "mos_gaps",
+      "url": "https://jwst-docs.stsci.edu/jwst-near-infrared-spectrograph/nirspec-operations/nirspec-mos-operations/nirspec-mos-wavelength-ranges-and-gaps",
+      "bytes": 513085,
+      "sha256": "cc3212a57374e768ada03a1c349c0d6f60fa24320e0b75e76fb00f109901eeea",
+      "scope": "primary documentation read; raw HTML regenerable and not committed"
+    },
+    {
+      "name": "sensitivity",
+      "url": "https://jwst-docs.stsci.edu/jwst-near-infrared-spectrograph/nirspec-performance/nirspec-sensitivity",
+      "bytes": 520879,
+      "sha256": "14e84a524a13e4252fe067cda21e1556d9b9fff56f56a099464305b182896843",
+      "scope": "primary documentation read; raw HTML regenerable and not committed"
+    }
+  ]
+}
