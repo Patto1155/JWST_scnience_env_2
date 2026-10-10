@@ -295,13 +295,22 @@ def execute_model(
 
 def group_predictions(model: dict, attenuation_A1500: float = 0.0) -> tuple[np.ndarray, list]:
     """Foreground screen sensitivity only; composition always changes thermal solution."""
-    values = np.asarray(model["intrinsic_line_values"])[:14].copy()
+    full_values = np.asarray(model["intrinsic_line_values"], dtype=float)
+    if (
+        full_values.shape != (len(LINES),)
+        or not np.all(np.isfinite(full_values))
+        or np.any(full_values < 0)
+    ):
+        raise ValueError("complete finite nonnegative29line thermal response required")
+    values = full_values[:14].copy()
     waves = np.asarray([wave for _, wave in LINES[:14]])
-    if attenuation_A1500 < 0:
+    if not np.isfinite(attenuation_A1500) or attenuation_A1500 < 0:
         raise ValueError("nonnegative attenuation required")
     # Explicit power-law UV screen; not a fitted attenuation law or dust depletion.
     values *= 10 ** (-0.4 * attenuation_A1500 * (waves / 1500.0) ** -1.2)
     totals = np.asarray([values[selection].sum() for selection in SLICES])
+    if np.any(totals <= 0):
+        raise ValueError("zero-response physical group requires an explicit direct-template fit")
     components = [
         (waves[selection].tolist(), (values[selection] / total).tolist())
         for selection, total in zip(SLICES, totals)

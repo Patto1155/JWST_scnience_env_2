@@ -59,6 +59,18 @@ def test_signed_flux_and_offdiagonal_covariance_are_retained():
     assert negative["profiled_group_chi2"] == 5
 
 
+def test_replayed_model_cannot_omit_a_line_or_substitute_zero_template():
+    from tools.jwst.cloudy_pilot import group_predictions
+
+    for values in (np.ones(13), np.ones(14), np.r_[np.ones(28), np.nan]):
+        with pytest.raises(ValueError, match="29line thermal response"):
+            group_predictions({"intrinsic_line_values": values})
+    values = np.ones(29)
+    values[:2] = 0
+    with pytest.raises(ValueError, match="explicit direct-template"):
+        group_predictions({"intrinsic_line_values": values})
+
+
 def _fixture(path: Path, *, missing=False, blend_error=False):
     values = np.ones(len(LINES))
     values[14:19] = [values[selection].sum() for selection in SLICES]
