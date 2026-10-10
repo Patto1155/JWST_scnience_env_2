@@ -1,0 +1,16 @@
+{
+  "filename": "mom_cloudy_signed_coupling.npz",
+  "bytes": 15596,
+  "sha256": "fa68e7585ee4c800f9543ad336b011f73eafa0a2ab6b7ee4ae6f1a6b416e7da2",
+  "wavecorr_sha256": "80ca86e7969e82bca424a963b39282f2fec42d589fb055238b4ac18510ab3fe6",
+  "geometry_sha256": "88e3cdbf5b7759eaad84dc21ead0974c38f392292d71ce605fa0f5b5951637ec",
+  "actual_pixel_generation": {
+    "source_spectrum_sha256": "42d95d348ebb55ca37eb31393b4603628ac13a4bca1f4f7f0ffba7b32d3125b1",
+    "native_inventory_sha256": "2ef47329dd583dd00b57dd7d4fed5330c59d2142ff4bea973a0423783e361095",
+    "calibration": "official 2.0.1 / jwst_1535.pmap; EXTENDED/UNIFORM/barshadow; already nod-subtracted",
+    "native_geometry_seed": "versioned SLITS base polynomial; transformed old/new cutout origins; independently refined off UV lines",
+    "point_lsf_empirically_calibrated": false,
+    "wavelength_unit_contract": "Pinned JWST2.0.1 WAVELENGTH values in microns; BUNIT absent in exact originals; reject conflicting labels/range and misaligned detector grids"
+  },
+  "scope": "Actual signed operators and source-plus-negative-nod response; no double subtraction or pathloss correction."
+}
