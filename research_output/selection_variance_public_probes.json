@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "bounded_probe_cap_body_bytes": 16384,
+  "actual_acquired_body_bytes": 11553,
+  "association_sci_url_from_pinned_api_table": "https://s3.amazonaws.com/grizli-v2/assoc_mosaic/v7.0/j033228m2748_goods-s-medium01-1180-f444w_00089-f444w-clear_drc_sci.fits.gz",
+  "records": [
+    {
+      "hypothesis": "association-variance-gzip-sibling",
+      "url": "https://s3.amazonaws.com/grizli-v2/assoc_mosaic/v7.0/j033228m2748_goods-s-medium01-1180-f444w_00089-f444w-clear_drc_var.fits.gz",
+      "requests": [
+        {
+          "method": "HEAD",
+          "status": 200,
+          "content_type": "image/fits",
+          "content_length": "43219789",
+          "content_range": null,
+          "etag": "\"2dd378dd38e8600b0faf242c6d04f3a6-6\"",
+          "acquired_body_bytes": 0,
+          "body_prefix_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "prefix_hex": ""
+        },
+        {
+          "method": "GET",
+          "status": 206,
+          "content_type": "image/fits",
+          "content_length": "4096",
+          "content_range": "bytes 0-4095/43219789",
+          "etag": "\"2dd378dd38e8600b0faf242c6d04f3a6-6\"",
+          "acquired_body_bytes": 4096,
+          "body_prefix_sha256": "88921ea0135dd62d619c1e0cb3dff8bccae2b17cf44bbecb7d1f3a9b990edcfe",
+          "prefix_hex": "1f8b08083ce3a36a00036a3033333232386d323734385f676f6f64732d732d6d656469756d30312d313138302d66343434775f30303038392d66343434772d636c6561725f6472635f7661722e666974",
+          "decompressed_first_cards": [
+            "SIMPLE  =                    T / conforms to FITS standard                      ",
+            "BITPIX  =                  -32 / array data type                                ",
+            "NAXIS   =                    2 / number of array dimensions                     ",
+            "NAXIS1  =                 3976                                                  ",
+            "NAXIS2  =                 4032                                                  ",
+            "WCSAXES =                    2 / Number of coordinate axes                      ",
+            "CRPIX1  =              76334.5 / Pixel coordinate of reference point            ",
+            "CRPIX2  =            -103479.5 / Pixel coordinate of reference point            ",
+            "CD1_1   = -1.1111111111111E-05 / Coordinate transformation matrix element       ",
+            "CD2_2   =  1.1111111111111E-05 / Coordinate transformation matrix element       "
+          ]
+        }
+      ]
+    },
+    {
+      "hypothesis": "association-variance-uncompressed-sibling",
+      "url": "https://s3.amazonaws.com/grizli-v2/assoc_mosaic/v7.0/j033228m2748_goods-s-medium01-1180-f444w_00089-f444w-clear_drc_var.fits",
+      "requests": [
+        {
+          "method": "HEAD",
+          "status": 403,
+          "content_type": "application/xml",
+          "content_length": null,
+          "content_range": null,
+          "etag": null,
+          "acquired_body_bytes": 0,
+          "body_prefix_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "prefix_hex": ""
+        },
+        {
+          "method": "GET",
+          "status": 403,
+          "content_type": "application/xml",
+          "content_length": null,
+          "content_range": null,
+          "etag": null,
+          "acquired_body_bytes": 243,
+          "body_prefix_sha256": "12a8b0f8ddc9adba7836777c9a6798b2b965ef2476aade8b532fb6308fc5861e",
+          "prefix_hex": "3c3f786d6c2076657273696f6e3d22312e302220656e636f64696e673d225554462d38223f3e0a3c4572726f723e3c436f64653e41636365737344656e6965643c2f436f64653e3c4d6573736167653e"
+        }
+      ]
+    },
+    {
+      "hypothesis": "undocumented-thumb-fits_var",
+      "url": "https://grizli-cutout.herokuapp.com/thumb?ra=53.120000&dec=-27.810000&filters=f444w-clear&size=2&output=fits_var",
+      "requests": [
+        {
+          "method": "HEAD",
+          "status": 200,
+          "content_type": "image/png",
+          "content_length": "3607",
+          "content_range": null,
+          "etag": "\"1791602206.219973-3607-3046902463\"",
+          "acquired_body_bytes": 0,
+          "body_prefix_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "prefix_hex": ""
+        },
+        {
+          "method": "GET",
+          "status": 206,
+          "content_type": "image/png",
+          "content_length": "3607",
+          "content_range": "bytes 0-3606/3607",
+          "etag": "\"1791602213.526849-3607-3213953879\"",
+          "acquired_body_bytes": 3607,
+          "body_prefix_sha256": "4499051993f663478894a13cde97b481b5e13daf372bc8d2939a6c70e670ccb8",
+          "prefix_hex": "89504e470d0a1a0a0000000d494844520000005100000051080200000025eddd6100000dde49444154789c759c5b76eb380c04415abbb8fb5fe5c4e27c202a179b8e3e72649902f16834404acef8f7ef"
+        }
+      ]
+    },
+    {
+      "hypothesis": "undocumented-thumb-fits_variance",
+      "url": "https://grizli-cutout.herokuapp.com/thumb?ra=53.120000&dec=-27.810000&filters=f444w-clear&size=2&output=fits_variance",
+      "requests": [
+        {
+          "method": "HEAD",
+          "status": 200,
+          "content_type": "image/png",
+          "content_length": "3607",
+          "content_range": null,
+          "etag": "\"1791602220.762727-3607-3189705557\"",
+          "acquired_body_bytes": 0,
+          "body_prefix_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "prefix_hex": ""
+        },
+        {
+          "method": "GET",
+          "status": 206,
+          "content_type": "image/png",
+          "content_length": "3607",
+          "content_range": "bytes 0-3606/3607",
+          "etag": "\"1791602228.5615954-3607-3185052489\"",
+          "acquired_body_bytes": 3607,
+          "body_prefix_sha256": "4499051993f663478894a13cde97b481b5e13daf372bc8d2939a6c70e670ccb8",
+          "prefix_hex": "89504e470d0a1a0a0000000d494844520000005100000051080200000025eddd6100000dde49444154789c759c5b76eb380c04415abbb8fb5fe5c4e27c202a179b8e3e72649902f16834404acef8f7ef"
+        }
+      ]
+    }
+  ],
+  "scope": "Guessed sibling/undocumented output flags tested by HEAD plus bounded prefix only; failure is not evidence that all public variance products are unavailable. No full image/map acquired.",
+  "result_content_sha256": "9a5176e4fb894674e62555d88fb197e4de147acb76b7786d5cf9aea25441ce5c"
+}

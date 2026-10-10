@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "starting_master": "139c4c21160208cebdb7db9a92c50b8744bd3149",
+  "question": "Are source-electron conversion and native count covariance identifiable from pinned selection SCI/WHT cutouts, exposure metadata and public drizzle provenance?",
+  "competing_predictions": [
+    "Exact per-input gain/time/calibration and overlap coefficients are recoverable; propagate known-source photon covariance and rerun <=4 fixed diagnostic sites",
+    "Published SCI/WHT summary collapses input weights/calibration; demonstrate missing information and constructive nonidentifiability, stop without enlarging gain grid"
+  ],
+  "expected_information_gain": "Resolve whether previous gain-dominated pilot can acquire physical uncertainty rather than merely assumed output-grid shot noise",
+  "budget": {
+    "new_metadata_or_source_bytes": 8388608,
+    "solver_runtime_seconds": 120,
+    "new_full_images": 0,
+    "maximum_conditional_rerun_sites": 4
+  },
+  "input_policy": "Reuse pinned actual selection/deep cutouts and primary FITS headers; <=bounded public source/headers, verify bytes/identities/hashes; no author contact",
+  "stopping": "No new scene selection, full-image downloads, broad trial expansion or population claims; if exact native source transport cannot be reconstructed identify required products/maps and mathematically supported uncertainty bounds",
+  "classification_audit": "Audit model-family truth labels and existing denominators; unknown observed stellar/galaxy/blend labels must remain unknown and no contamination fraction inferred"
+}
