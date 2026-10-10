@@ -129,3 +129,58 @@ For actual-pixel response regeneration, first restore the nine pinned CALs with
 `--native-directory /tmp/mom-native` to the likelihood command. Thermal
 reexecution is distinct from line-array replay and requires the pinned complete
 archive/build, input deck, PRNG seed319 and recorded convergence checks.
+
+## Revised backend and focused-pair experiment declared before outcomes
+
+After first-model PR66 merged at283b0730523fa8e3949726785dd3230d19a03f46,
+the four first600s parallel controls did not produce complete final outputs.
+Three additional queued controls started during executor exception unwinding
+and were interrupted;12remaining controls were unstarted. No incomplete line
+array is interpreted. The capped-run receipt retains identities and output hashes.
+The revised scheduler cancels pending futures on failure and records exceptions.
+
+The next question is whether an already-installed LP64 OpenBLAS backend removes
+the numerical runtime blocker while preserving the complete ordinary thermal
+solution, and how a newly solved nitrogen-enhanced partner differs from a simple
+nitrogen-flux rescaling. Expected gain is a validated nonlinear composition
+response, not a larger conditional grid. No software is downloaded. Use the
+publisher LAPACK wrapper with only its three external symbol names aliased to
+SciPy's existing32bit/LP64 exports. Pin the library/build hashes and force
+OPENBLAS_NUM_THREADS=1. Before using a new partner, rerun the exact ordinary
+input/atomic data/PRNG/convergence settings with this backend and compare all29
+line outputs, gas abundances, temperatures and convergence to the validated
+first model. The control cap remains600s; if it succeeds and matches, run the
+ordinary/+1dex focused pair serialized or at most2workers with a newly declared
+1200s maximum per model. Stop if either physics/identity check or convergence
+fails. If the OpenBLAS control caps or shows no useful speed gain, retain it as an
+engineering result and use the already independently validated original LP64
+binary for the focused+1dex partner at1200s, comparing to its saved ordinary
+model. That fallback changes no physics, input data or numerical backend.
+Expand to the remaining original controls only after a successful paired
+runtime/convergence preflight, preserving each failed or unexecuted alternative.
+
+A further60s likelihood-only pilot chooses the best ordinary and enhanced
+physical model using two RATE groups and predicts the third. It fixes the
+original wavelength, generic point response and empirical row-plus-column
+noise transport. Each test group has independently profiled continuum, while
+the common line normalization is trained only on the two training groups.
+Normalize the Gaussian amplitude likelihood on nonnegative amplitudes with an
+explicit flat amplitude measure, and propagate its truncated mean/variance.
+The resulting moment-matched predictive quadratic is a conditional diagnostic,
+not a calibrated Gaussian p-value near the boundary or a physical model prior.
+No model choice or amplitude refit sees the held-out group. Group agreement
+cannot bound common calibration errors. Stop this pilot if runtime exceeds60s.
+
+The completed OpenBLAS ordinary control used353.6575s wall time versus the
+reference460.1354s (1.301times faster). All29intrinsic and29emergent saved
+responses, all five saved ionic-weighted temperatures,234zones and3iterations
+match exactly at output precision. Input bytes match exactly. Adaptive zone
+profiles are not byte-identical: maximum zone-temperature difference5.8K
+(relative7.024e-4) and relative depth difference8.14e-6. Equivalence is
+validated for saved line responses and average temperatures; no stronger
+thermal-profile identity is claimed. The executable
+hash is `b399034fb64c0e89aaa38528a53c033b870951f3c1fb277b9b20560ddc67253f`;
+`mom_cloudy_openblas_control.json` records this actual control, existing dynamic
+library identities and the comparison. The original LP64 executable remains
+the primary first-model contract. No physical conclusion changes from a runtime
+improvement. The enhanced thermal partner is still pending convergence.

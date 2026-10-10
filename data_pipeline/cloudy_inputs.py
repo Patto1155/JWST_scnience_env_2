@@ -76,10 +76,14 @@ def acquire(root: Path, workers: int = 8) -> dict:
     return receipt
 
 
-def unpack_build(root: Path, jobs: int = 2, system_lapack: bool = False) -> dict:
+def unpack_build(
+    root: Path, jobs: int = 2, system_lapack: bool = False, scipy_openblas: bool = False
+) -> dict:
     """Trusted operator build; does not expose code execution to research workers."""
     if not 1 <= jobs <= 4:
         raise ValueError("bounded compilation parallelism required")
+    if system_lapack and scipy_openblas:
+        raise ValueError("choose one external LP64 backend")
     receipt = verify(root / "c23.01.tar.gz")
     source = root / "c23.01"
     if not source.exists():
@@ -103,8 +107,18 @@ def unpack_build(root: Path, jobs: int = 2, system_lapack: bool = False) -> dict
     if result.returncode:
         raise ValueError("Cloudy build failed; inspect external build.log")
     executable = build_dir / "cloudy.exe"
-    if system_lapack:
-        library = ctypes.util.find_library("lapack")
+    if system_lapack or scipy_openblas:
+        library_directory = None
+        if scipy_openblas:
+            import scipy
+
+            library_directory = Path(scipy.__file__).resolve().parent.parent / "scipy.libs"
+            libraries = list(library_directory.glob("libscipy_openblas-*.so"))
+            if len(libraries) != 1:
+                raise ValueError("one already installed SciPy LP64 OpenBLAS required")
+            library = libraries[0].name
+        else:
+            library = ctypes.util.find_library("lapack")
         if not library:
             raise ValueError("existing system LAPACK requested but unavailable")
         wrapper = build_dir / "thirdparty_lapack_external.o"
@@ -124,8 +138,14 @@ def unpack_build(root: Path, jobs: int = 2, system_lapack: bool = False) -> dict
             "-o",
             wrapper.name,
         ]
+        if scipy_openblas:
+            compile_args[1:1] = [
+                "-Ddgetrf_=scipy_dgetrf_",
+                "-Ddgetrs_=scipy_dgetrs_",
+                "-Ddgtsv_=scipy_dgtsv_",
+            ]
         subprocess.run(compile_args, cwd=build_dir, check=True, timeout=120)
-        executable = build_dir / "cloudy-lapack.exe"
+        executable = build_dir / ("cloudy-openblas.exe" if scipy_openblas else "cloudy-lapack.exe")
         link_args = [
             "g++",
             "-O2",
@@ -140,13 +160,32 @@ def unpack_build(root: Path, jobs: int = 2, system_lapack: bool = False) -> dict
             "-lcloudy",
             f"-l:{library}",
         ]
+        if library_directory:
+            link_args[-1:-1] = [f"-L{library_directory}", f"-Wl,-rpath,{library_directory}"]
         subprocess.run(link_args, cwd=build_dir, check=True, timeout=120)
         receipt["lapack_backend"] = {
             "library": library,
             "compile_args": compile_args,
             "link_args": link_args,
             "dynamic_links": subprocess.check_output(["ldd", str(executable)], text=True),
+            "integer_ABI": "LP64 int32, as declared by publisher wrapper",
+            "symbol_namespace_aliases": [
+                "dgetrf_->scipy_dgetrf_",
+                "dgetrs_->scipy_dgetrs_",
+                "dgtsv_->scipy_dgtsv_",
+            ]
+            if scipy_openblas
+            else [],
         }
+        if library_directory:
+            receipt["lapack_backend"]["existing_libraries"] = [
+                {
+                    "name": path.name,
+                    "sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
+                    "bytes": path.stat().st_size,
+                }
+                for path in sorted(library_directory.glob("*.so*"))
+            ]
     receipt.update(
         build_seconds=time.monotonic() - started,
         executable_sha256=hashlib.sha256(executable.read_bytes()).hexdigest(),
@@ -161,10 +200,16 @@ def main() -> None:
     parser.add_argument("directory", type=Path)
     parser.add_argument("--build", action="store_true")
     parser.add_argument("--system-lapack", action="store_true")
+    parser.add_argument("--scipy-openblas", action="store_true")
     args = parser.parse_args()
     receipt = acquire(args.directory)
     if args.build:
-        receipt["build"] = unpack_build(args.directory, jobs=4, system_lapack=args.system_lapack)
+        receipt["build"] = unpack_build(
+            args.directory,
+            jobs=4,
+            system_lapack=args.system_lapack,
+            scipy_openblas=args.scipy_openblas,
+        )
     (args.directory / "acquisition.json").write_text(json.dumps(receipt, indent=2) + "\n")
     print(json.dumps(receipt, indent=2))
 

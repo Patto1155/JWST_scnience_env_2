@@ -1,0 +1,259 @@
+{
+  "reference_artifact": "mom_cloudy_first_model.json",
+  "reference_sha256": "0c6718059538fcdb3739697c0a6dd77d915b69f2c23e057171972da3b939f6b4",
+  "reference_executable_sha256": "9833712a825ba23d96717c88481406df21b83e758655476358f63e2fa841abc5",
+  "openblas_build": {
+    "url": "https://data.nublado.org/cloudy_releases/c23/c23.01.tar.gz",
+    "doi": "https://doi.org/10.5281/zenodo.14142065",
+    "bytes": 338434070,
+    "md5": "73917420ab471497fa15750c751bbf1f",
+    "sha256": "a9ad2dc037e88f552389de0e483d68f54310976dee32154ed13830882aedae0b",
+    "lapack_backend": {
+      "library": "libscipy_openblas-5f890258.so",
+      "compile_args": [
+        "g++",
+        "-Ddgetrf_=scipy_dgetrf_",
+        "-Ddgetrs_=scipy_dgetrs_",
+        "-Ddgtsv_=scipy_dgtsv_",
+        "-std=c++11",
+        "-O2",
+        "-ftrapping-math",
+        "-fno-math-errno",
+        "-Wno-deprecated-declarations",
+        "-DLAPACK",
+        "-no-pie",
+        "-fno-pie",
+        "-DSYS_CONFIG=\"/workspace/scratch/7016fca60156/research-cache/cloudy/c23.01/source/sys_pilot/cloudyconfig.h\"",
+        "-c",
+        "../thirdparty_lapack.cpp",
+        "-o",
+        "thirdparty_lapack_external.o"
+      ],
+      "link_args": [
+        "g++",
+        "-O2",
+        "-no-pie",
+        "-fno-pie",
+        "-Wl,-export-dynamic",
+        "-o",
+        "cloudy-openblas.exe",
+        "maincl.o",
+        "thirdparty_lapack_external.o",
+        "-L.",
+        "-lcloudy",
+        "-L/workspace/scratch/7016fca60156/research-venv/lib/python3.12/site-packages/scipy.libs",
+        "-Wl,-rpath,/workspace/scratch/7016fca60156/research-venv/lib/python3.12/site-packages/scipy.libs",
+        "-l:libscipy_openblas-5f890258.so"
+      ],
+      "dynamic_links": "\tlinux-vdso.so.1 (0x00007f597eeb6000)\n\tlibscipy_openblas-5f890258.so => /workspace/scratch/7016fca60156/research-venv/lib/python3.12/site-packages/scipy.libs/libscipy_openblas-5f890258.so (0x00007f597d79f000)\n\tlibstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007f597d518000)\n\tlibm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007f597d42f000)\n\tlibgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007f597d401000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f597d1ef000)\n\tlibpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007f597d1e8000)\n\tlibgfortran-040039e1-0352e75f.so.5.0.0 => /workspace/scratch/7016fca60156/research-venv/lib/python3.12/site-packages/scipy.libs/libgfortran-040039e1-0352e75f.so.5.0.0 (0x00007f597cc00000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007f597eeb8000)\n\tlibquadmath-96973f99-934c22de.so.0.0.0 => /workspace/scratch/7016fca60156/research-venv/lib/python3.12/site-packages/scipy.libs/libquadmath-96973f99-934c22de.so.0.0.0 (0x00007f597c800000)\n\tlibz.so.1 => /lib/x86_64-linux-gnu/libz.so.1 (0x00007f597d1cc000)\n",
+      "integer_ABI": "LP64 int32, as declared by publisher wrapper",
+      "symbol_namespace_aliases": [
+        "dgetrf_->scipy_dgetrf_",
+        "dgetrs_->scipy_dgetrs_",
+        "dgtsv_->scipy_dgtsv_"
+      ],
+      "existing_libraries": [
+        {
+          "name": "libgfortran-040039e1-0352e75f.so.5.0.0",
+          "sha256": "c6090048eccc763522c12ef016f81da6b627cb3a044f55cf0479a839c41c0980",
+          "bytes": 2833617
+        },
+        {
+          "name": "libgfortran-83c28eba.so.5.0.0",
+          "sha256": "468e71e59e1d784821a76702e5ecd1e0dbcfc024499f74a552d1bea4b26f27ad",
+          "bytes": 2751569
+        },
+        {
+          "name": "libquadmath-2284e583.so.0.0.0",
+          "sha256": "a9307bbaa353623fa014e8b682d50c4629f5e5c7d61daa9a8652f7d165cd421a",
+          "bytes": 272193
+        },
+        {
+          "name": "libquadmath-96973f99-934c22de.so.0.0.0",
+          "sha256": "6ed5137f412781ad7863439fb543613f620b43c32b63292a0029246162f5bbc6",
+          "bytes": 250985
+        },
+        {
+          "name": "libscipy_openblas-5f890258.so",
+          "sha256": "2a5b4c1a6311873c59132b2ceaaf3c26258a17350b7cd27ea8782a47e3322981",
+          "bytes": 25094609
+        }
+      ]
+    },
+    "build_seconds": 2.759891151999909,
+    "executable_sha256": "b399034fb64c0e89aaa38528a53c033b870951f3c1fb277b9b20560ddc67253f",
+    "makefile_config": "OPT = -O1 -ftrapping-math -fno-math-errno -Wno-deprecated-declarations\nCXXFLAGS = $(STD) $(OPT) -Wall -W\nLDFLAGS = $(OPT) -Wall\n",
+    "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0"
+  },
+  "control_model": {
+    "id": "model000",
+    "parameters": {
+      "log_nH_cm3": 3.0,
+      "log_U": -2.0,
+      "blackbody_K": 60000.0,
+      "metallicity_scale": 0.2,
+      "log_CO": -0.37,
+      "log_NC_relative_minus060": 0.0
+    },
+    "actual_gas_abundances": {
+      "OXYG": {
+        "declared_log_XH": -4.008773924307505,
+        "actual_log_XH_range": [
+          -4.01,
+          -4.01
+        ],
+        "output_rounding_tolerance_dex": 0.0101,
+        "actual_printed_log_XH": -4.0088
+      },
+      "CARB": {
+        "declared_log_XH": -4.378773924307505,
+        "actual_log_XH_range": [
+          -4.38,
+          -4.38
+        ],
+        "output_rounding_tolerance_dex": 0.0101,
+        "actual_printed_log_XH": -4.3788
+      },
+      "NITR": {
+        "declared_log_XH": -4.978773924307505,
+        "actual_log_XH_range": [
+          -4.98,
+          -4.98
+        ],
+        "output_rounding_tolerance_dex": 0.0101,
+        "actual_printed_log_XH": -4.9788
+      }
+    },
+    "runtime_seconds": 353.6575393710009,
+    "wall_time_cap_seconds": 600,
+    "OPENBLAS_NUM_THREADS": 1,
+    "convergence_summary": "Cloudy ends: 234 zones, 3 iterations. (single thread) ExecTime(s) 345.64",
+    "intrinsic_line_values": [
+      0.00086635,
+      0.00061751,
+      0.012333,
+      0.0063749,
+      0.0061089,
+      0.0067754,
+      0.019856,
+      0.00035771,
+      0.00078862,
+      0.0033449,
+      0.002473,
+      0.00081629,
+      0.072532,
+      0.048774,
+      0.0014839,
+      0.018708,
+      0.03274,
+      0.0077806,
+      0.12131,
+      0.14105,
+      0.89958,
+      0.0093668,
+      3.8972e-07,
+      1.9449e-07,
+      0.00039519,
+      0.00065508,
+      0.0041612,
+      0.002393,
+      0.00074038
+    ],
+    "emergent_line_values": [
+      0.00086391,
+      0.00061577,
+      0.012304,
+      0.0063597,
+      0.0060911,
+      0.0067549,
+      0.019795,
+      0.00035655,
+      0.00078606,
+      0.0033341,
+      0.0024649,
+      0.00081364,
+      0.072271,
+      0.048599,
+      0.0014797,
+      0.018664,
+      0.032641,
+      0.0077553,
+      0.12087,
+      0.14102,
+      0.8994,
+      0.0093645,
+      3.8892e-07,
+      1.9409e-07,
+      0.00039346,
+      0.00065223,
+      0.004143,
+      0.0023825,
+      0.00073715
+    ],
+    "hydrogen_weighted_temperature_output": "#averages\t TEMP HYDR 2 0\t TEMP NITR 3 0\t TEMP NITR 4 0\t TEMP CARB 3 0\t TEMP CARB 4 0\n\t 1.346239e+04\t 1.351027e+04\t 1.339012e+04\t 1.348507e+04\t 1.338663e+04\n",
+    "zone_temperature_K_range": [
+      1146.0,
+      14792.0
+    ],
+    "zones": 234,
+    "refined_continuum_and_convergence": false,
+    "files": [
+      {
+        "name": "model000.in",
+        "bytes": 764,
+        "sha256": "9ab0d2de98c196322ba804dbbadbfc60f1d90ccd816fdd2c43b87b5e9cb7b13d"
+      },
+      {
+        "name": "model000.out",
+        "bytes": 419696,
+        "sha256": "bc89b5b536fce92b424a79437116faa4f021ebc9199f9bff17cda3fd4c651042"
+      },
+      {
+        "name": "model000.lin",
+        "bytes": 748,
+        "sha256": "5ecfc35d241cedbefb762a2845bf1b7f3d3f4321035d61a7f913219cc42f6ea4"
+      },
+      {
+        "name": "model000.emergent.lin",
+        "bytes": 748,
+        "sha256": "012590675c373c0ec9b50d243c0d49f34c578ca1fd9fa1fdc82ec5704dbfafb0"
+      },
+      {
+        "name": "model000.ovr",
+        "bytes": 66111,
+        "sha256": "d59b388e9556961a7eec6c417077ae8f982c68f6c29649dee95f59e0db62ac12"
+      },
+      {
+        "name": "model000.abn",
+        "bytes": 41806,
+        "sha256": "7bb3e4d330c1fb684452c921c3990792e027028728e45e2e503603287c2ba0c5"
+      },
+      {
+        "name": "model000.avr",
+        "bytes": 156,
+        "sha256": "0278c4f9399239abcdca8634ba64993facf80b939aa6895b74c8191fad91ab99"
+      }
+    ]
+  },
+  "equivalence": {
+    "max_relative_line_output_difference": {
+      "intrinsic_line_values": 0.0,
+      "emergent_line_values": 0.0
+    },
+    "max_relative_temperature_difference": 0.0,
+    "zone_count_equal": true,
+    "actual_input_bytes_equal": true,
+    "line_relative_tolerance": 0.0003,
+    "temperature_relative_tolerance": 0.0001,
+    "zone_profiles_byte_exact": false,
+    "max_zone_temperature_absolute_difference_K": 5.800000000001091,
+    "max_zone_temperature_relative_difference": 0.0007024172843095832,
+    "max_depth_relative_difference": 8.136961333159744e-06,
+    "scope": "Saved emitted line responses and ionic-weighted temperature averages match at output precision; adaptive zone profiles differ slightly and are not byte-identical."
+  },
+  "new_download_bytes": 0,
+  "reference_wall_seconds": 460.13542593999955,
+  "control_wall_seconds": 353.6575393710009,
+  "control_speed_ratio": 1.3010762523495905,
+  "authoritative_main_scientific_contract_executable": "9833712a825ba23d96717c88481406df21b83e758655476358f63e2fa841abc5"
+}

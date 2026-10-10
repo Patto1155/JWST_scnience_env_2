@@ -11,13 +11,16 @@ import concurrent.futures
 import hashlib
 import json
 import math
+import os
 import re
 import subprocess
+import sys
 import time
 from pathlib import Path
 
 import numpy as np
 from scipy.linalg import cholesky, solve_triangular
+from scipy.stats import truncnorm
 
 from data_pipeline.cloudy_inputs import verify
 from tools.jwst.line_sensitivity import read_resolution
@@ -195,8 +198,16 @@ def validate_abundances(path: Path, parameters: dict) -> dict:
 
 
 def execute_model(
-    executable: Path, run_dir: Path, parameters: dict, name: str, *, refinement: bool = False
+    executable: Path,
+    run_dir: Path,
+    parameters: dict,
+    name: str,
+    *,
+    refinement: bool = False,
+    timeout_seconds: int = 600,
 ) -> dict:
+    if not 1 <= timeout_seconds <= 1200:
+        raise ValueError("bounded model wall-time cap1..1200s required")
     run_dir.mkdir(parents=True, exist_ok=True)
     (run_dir / "pilot-lines.dat").write_text(
         "".join(f"{label} {wave:.2f}A\n" for label, wave in LINES)
@@ -204,14 +215,29 @@ def execute_model(
     input_path = run_dir / f"{name}.in"
     input_path.write_text(input_text(parameters, name, refinement=refinement))
     started = time.monotonic()
-    result = subprocess.run(
-        [str(executable.resolve()), "-s319", "-r", name],
-        cwd=run_dir,
-        capture_output=True,
-        text=True,
-        timeout=600,
-        check=False,
-    )
+    try:
+        result = subprocess.run(
+            [str(executable.resolve()), "-s319", "-r", name],
+            cwd=run_dir,
+            capture_output=True,
+            text=True,
+            timeout=timeout_seconds,
+            env={**os.environ, "OPENBLAS_NUM_THREADS": "1"},
+            check=False,
+        )
+    except subprocess.TimeoutExpired as error:
+        failure = {
+            "id": name,
+            "status": "hard_wall_time_cap",
+            "runtime_seconds": time.monotonic() - started,
+            "wall_time_cap_seconds": timeout_seconds,
+            "exception": str(error),
+            "input_sha256": digest(input_path),
+            "executable_sha256": digest(executable),
+            "complete_thermal_prediction_used": False,
+        }
+        (run_dir / f"{name}.failure.json").write_text(json.dumps(failure, indent=2) + "\n")
+        raise
     seconds = time.monotonic() - started
     (run_dir / f"{name}.console").write_text(result.stdout + result.stderr)
     output = run_dir / f"{name}.out"
@@ -243,6 +269,8 @@ def execute_model(
         "parameters": parameters,
         "actual_gas_abundances": abundances,
         "runtime_seconds": seconds,
+        "wall_time_cap_seconds": timeout_seconds,
+        "OPENBLAS_NUM_THREADS": 1,
         "convergence_summary": summary[-1],
         "intrinsic_line_values": values.tolist(),
         "emergent_line_values": emergent.tolist(),
@@ -279,6 +307,48 @@ def group_predictions(model: dict, attenuation_A1500: float = 0.0) -> tuple[np.n
         for selection, total in zip(SLICES, totals)
     ]
     return totals / totals[-1], components
+
+
+def thermal_pair_diagnostics(models: list[dict]) -> list[dict]:
+    """Actual paired thermal response, with no synthetic rescaled predictions."""
+    ordinary = [model for model in models if model["parameters"]["log_NC_relative_minus060"] == 0]
+    records = []
+    for base in ordinary:
+        matches = [
+            model
+            for model in models
+            if model["parameters"] == dict(base["parameters"], log_NC_relative_minus060=1.0)
+        ]
+        if len(matches) != 1:
+            continue
+        enhanced = matches[0]
+        x, y = (
+            np.asarray(base["intrinsic_line_values"]),
+            np.asarray(enhanced["intrinsic_line_values"]),
+        )
+        ratios = np.divide(y, x, out=np.full_like(y, np.nan), where=x > 0)
+        before = np.asarray([x[s].sum() for s in SLICES])
+        after = np.asarray([y[s].sum() for s in SLICES])
+        records.append(
+            {
+                "ordinary_model": base["id"],
+                "nitrogen_plus1dex_model": enhanced["id"],
+                "environment_parameters": {
+                    key: value
+                    for key, value in base["parameters"].items()
+                    if key != "log_NC_relative_minus060"
+                },
+                "actual_intrinsic_enhanced_over_ordinary_each_line": [
+                    float(value) if np.isfinite(value) else None for value in ratios
+                ],
+                "actual_intrinsic_enhanced_over_ordinary_groups": (after / before).tolist(),
+                "pure_nitrogen_flux_rescaling_prediction": [10.0, 1.0, 1.0, 10.0, 1.0],
+                "ordinary_temperature_output": base["hydrogen_weighted_temperature_output"],
+                "enhanced_temperature_output": enhanced["hydrogen_weighted_temperature_output"],
+                "thermal_balance_recomputed": True,
+            }
+        )
+    return records
 
 
 def profile_normalization(flux: np.ndarray, covariance: np.ndarray, prediction: np.ndarray) -> dict:
@@ -463,6 +533,118 @@ def native_likelihood(models: list[dict], native_directory: Path | None = None) 
     }
 
 
+def held_out_likelihood(models: list[dict]) -> dict:
+    """Choose the model on two RATE groups, predict the third without refitting it."""
+    started = time.monotonic()
+    coupling, _ = signed_coupling()
+    replay = load_wavecorr_replay(
+        ROOT / "research_output/mom_native_wavecorr.json", corrected=False
+    )
+    wave, resolution, _ = read_point_resolution(
+        ROOT / "data_sources/followup/unite_point_prism_resolution.csv"
+    )
+    selected = replay["selected"]
+    full_values = replay["flux"][:, selected].T
+    designs = []
+    for model in models:
+        for attenuation in (0.0, 0.5, 1.0):
+            prediction, components = group_predictions(model, attenuation)
+            direct = response(replay["data"], selected, wave, resolution, components)
+            design = apply_signed_response(direct, coupling).reshape(len(selected), 9, 7)
+            physical = np.concatenate(
+                (design[:, :, :2], (design[:, :, 2:] @ prediction)[:, :, None]), axis=2
+            )
+            designs.append((model, attenuation, physical))
+    records = []
+    for group, test_members in (("03", [0, 1, 2]), ("05", [3, 4, 5]), ("07", [6, 7, 8])):
+        train_members = [i for i in range(9) if i not in test_members]
+        prepared = {}
+        for label, members in (("train", train_members), ("test", test_members)):
+            covariance = transported_covariance(
+                replay["spatial_covariance_blocks"],
+                selected,
+                replay["spectral_kernel"],
+                replay["noise_scale_squared"],
+                members,
+            )
+            chol = cholesky(covariance, lower=True)
+            y = solve_triangular(chol, full_values[:, members].reshape(-1), lower=True)
+            prepared[label] = (members, chol, y)
+        candidates = []
+        members, chol, y = prepared["train"]
+        for model, attenuation, physical in designs:
+            a = solve_triangular(chol, physical[:, members].reshape(-1, 3), lower=True)
+            q, _ = np.linalg.qr(a[:, :2], mode="reduced")
+            residual = y - q @ (q.T @ y)
+            shape = a[:, 2] - q @ (q.T @ a[:, 2])
+            sigma = float(1 / np.linalg.norm(shape))
+            unrestricted = float(shape @ residual / (shape @ shape))
+            amplitude = max(0.0, unrestricted)
+            statistic = float(np.sum((residual - amplitude * shape) ** 2))
+            candidates.append((statistic, model, attenuation, physical, unrestricted, sigma))
+        for nitrogen in (0.0, 1.0):
+            family = [
+                item
+                for item in candidates
+                if item[1]["parameters"]["log_NC_relative_minus060"] == nitrogen
+            ]
+            if not family:
+                continue
+            statistic, model, attenuation, physical, unrestricted, sigma = min(
+                family, key=lambda item: item[0]
+            )
+            # Explicit nonnegative boundary: normalize the training Gaussian
+            # amplitude likelihood on [0,infinity) with a flat amplitude measure.
+            lower = -unrestricted / sigma
+            mean, variance = truncnorm.stats(
+                lower, np.inf, loc=unrestricted, scale=sigma, moments="mv"
+            )
+            interval = truncnorm.ppf([0.025, 0.975], lower, np.inf, loc=unrestricted, scale=sigma)
+            members, chol, y = prepared["test"]
+            a = solve_triangular(chol, physical[:, members].reshape(-1, 3), lower=True)
+            q, _ = np.linalg.qr(a[:, :2], mode="reduced")
+            residual = y - q @ (q.T @ y)
+            shape = a[:, 2] - q @ (q.T @ a[:, 2])
+            r = residual - float(mean) * shape
+            # Rank-one predictive covariance after profiling the test continuum.
+            predictive = float(
+                r @ r - variance * (shape @ r) ** 2 / (1 + variance * (shape @ shape))
+            )
+            records.append(
+                {
+                    "held_out_RATE_group": group,
+                    "training_exposures": train_members,
+                    "test_exposures": test_members,
+                    "nitrogen_enhancement_dex": nitrogen,
+                    "chosen_model_id": model["id"],
+                    "chosen_parameters": model["parameters"],
+                    "chosen_A1500_mag": attenuation,
+                    "training_profiled_chi2": statistic,
+                    "unrestricted_training_amplitude": unrestricted,
+                    "training_amplitude_sigma": sigma,
+                    "training_fit_at_nonnegative_boundary": unrestricted < 0,
+                    "truncated_training_amplitude_mean": float(mean),
+                    "truncated_training_amplitude_variance": float(variance),
+                    "truncated_training_amplitude_95_interval": interval.tolist(),
+                    "held_out_moment_matched_predictive_quadratic": predictive,
+                    "held_out_continuum_projected_dimensions": len(y) - 2,
+                }
+            )
+        if time.monotonic() - started > 60:
+            raise TimeoutError("held-out pilot exceeded declared60s budget")
+    return {
+        "records": records,
+        "runtime_seconds": time.monotonic() - started,
+        "configuration": "original_native/generic_point/empirical_rows_and_columns/signed_transport_v1",
+        "test_group_used_for_model_choice": False,
+        "amplitude_retrained_on_test": False,
+        "training_amplitude_weight": "Gaussian profile likelihood normalized on nonnegative amplitudes with explicit flat amplitude measure",
+        "predictive_distribution_approximation": "Moment-matched mean/covariance of truncated amplitude; quadratic is not a calibrated Gaussian p-value near the boundary",
+        "common_calibration_bounded_by_agreement": False,
+        "scope": "Conditional group prediction under fixed geometry, wavelength, instrumental response and stationary noise; no independent author PIXTAB pooling or elemental abundance posterior.",
+    }
+
+
 def legacy_native_likelihood(models: list[dict]) -> dict:
     wavecorr = ROOT / "research_output/mom_native_wavecorr.json"
     if digest(wavecorr) != WAVECORR_SHA256:
@@ -562,10 +744,12 @@ def main() -> None:
     )
     parser.add_argument("--limit", type=int, default=20)
     parser.add_argument("--workers", type=int, default=1)
+    parser.add_argument("--timeout-seconds", type=int, choices=(600, 1200), default=600)
     parser.add_argument("--executable", type=Path)
     parser.add_argument("--fit-native", action="store_true")
     parser.add_argument("--native-directory", type=Path)
     parser.add_argument("--legacy-control", action="store_true")
+    parser.add_argument("--held-out", action="store_true")
     parser.add_argument("--replay-models", type=Path)
     parser.add_argument("--resume-models", type=Path)
     args = parser.parse_args()
@@ -578,14 +762,20 @@ def main() -> None:
         if not 1 <= args.workers <= 4:
             parser.error("bounded workers1..4 required")
         models = []
+        failed = []
+        cancelled = []
         if args.resume_models:
             models = json.loads(args.resume_models.read_text())["models"]
-            for index, model in enumerate(models):
+            identities = set()
+            for model in models:
+                index = int(model["id"].removeprefix("model"))
                 if (
                     model["parameters"] != pilot_parameters()[index]
                     or model["id"] != f"model{index:03}"
+                    or model["id"] in identities
                 ):
                     raise ValueError("resume model identity differs from declared pilot")
+                identities.add(model["id"])
                 for item in model["files"]:
                     path = args.run_directory / item["name"]
                     if digest(path) != item["sha256"]:
@@ -599,13 +789,66 @@ def main() -> None:
 
         def calculate(item):
             index, parameters = item
-            return execute_model(executable, args.run_directory, parameters, f"model{index:03}")
+            name = f"model{index:03}"
+            try:
+                return execute_model(
+                    executable,
+                    args.run_directory,
+                    parameters,
+                    name,
+                    timeout_seconds=args.timeout_seconds,
+                )
+            except Exception as error:
+                path = args.run_directory / f"{name}.failure.json"
+                failure = (
+                    json.loads(path.read_text())
+                    if path.exists()
+                    else {"id": name, "status": "validation_or_execution_failure"}
+                )
+                failure.update(
+                    exception_type=type(error).__name__,
+                    exception=str(error),
+                    complete_thermal_prediction_used=False,
+                    files=[
+                        {"name": p.name, "bytes": p.stat().st_size, "sha256": digest(p)}
+                        for p in sorted(args.run_directory.glob(name + ".*"))
+                        if p != path
+                    ],
+                )
+                path.write_text(json.dumps(failure, indent=2) + "\n")
+                return {"failed_model": failure}
 
         with concurrent.futures.ThreadPoolExecutor(max_workers=args.workers) as executor:
-            for model in executor.map(
-                calculate, list(enumerate(pilot_parameters()[: args.limit]))[len(models) :]
-            ):
+            existing = {model["id"] for model in models}
+            futures = {
+                executor.submit(calculate, item): item[0]
+                for item in enumerate(pilot_parameters()[: args.limit])
+                if f"model{item[0]:03}" not in existing
+            }
+            for future in concurrent.futures.as_completed(futures):
+                if future.cancelled():
+                    cancelled.append(f"model{futures[future]:03}")
+                    continue
+                model = future.result()
+                if "failed_model" in model:
+                    failed.append(model["failed_model"])
+                    for pending in futures:
+                        pending.cancel()
+                    print("FAILED", model["failed_model"]["id"], flush=True)
+                    args.output.write_text(
+                        json.dumps(
+                            {
+                                "models": models,
+                                "failed_models": failed,
+                                "cancelled_models": cancelled,
+                            },
+                            indent=2,
+                        )
+                        + "\n"
+                    )
+                    continue
                 models.append(model)
+                models.sort(key=lambda item: item["id"])
                 print(
                     model["id"], model["runtime_seconds"], model["convergence_summary"], flush=True
                 )
@@ -617,6 +860,10 @@ def main() -> None:
             "random_seed_hex": "319",
             "executable_sha256": digest(executable),
             "models": models,
+            "failed_models": failed,
+            "cancelled_models": sorted(cancelled),
+            "requested_models": args.limit,
+            "wall_time_cap_seconds_per_model": args.timeout_seconds,
             "line_contract_version": 2,
             "lines": LINES,
             "line_wavelength_medium": ["vacuum" if wave < 2000 else "air" for _, wave in LINES],
@@ -635,7 +882,12 @@ def main() -> None:
         result["native_likelihood"] = native_likelihood(result["models"], args.native_directory)
     if args.legacy_control:
         result["legacy_positive_only_control"] = legacy_native_likelihood(result["models"])
+    if args.held_out:
+        result["held_out_likelihood"] = held_out_likelihood(result["models"])
+    result["thermal_pair_diagnostics"] = thermal_pair_diagnostics(result["models"])
     args.output.write_text(json.dumps(result, indent=2, allow_nan=False) + "\n")
+    if result.get("failed_models"):
+        sys.exit(1)
 
 
 if __name__ == "__main__":
