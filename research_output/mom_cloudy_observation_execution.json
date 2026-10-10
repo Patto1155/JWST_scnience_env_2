@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "execution_UTC": "2026-10-10",
+  "validated_merged_model_revision": "6b44032b82e550ed0f740a56830deed296b5c4e9",
+  "model_sha256": "7ef48626ddfb7c882d9725b17939c3a7752151de734e3ab4c46472b940127759",
+  "forecast_sha256": "a73b72229e2f20f87c14b29b84f88f50a8cb594cb0ff220eb22b93d4b8c65a29",
+  "cases": 48,
+  "wall_seconds": 12.169756218001567,
+  "computation_cap_seconds": 60,
+  "new_acquired_bytes": 0,
+  "new_physical_models": 0,
+  "code_inputs_sha256": {
+    "tools/jwst/cloudy_observation_contrasts.py": "8f93079201d6c72787b9d8aac167d6a85642f2801f25c4ae99e3409e506f000f",
+    "tools/jwst/observation_design.py": "edb98f0f97fa83b94490f3459344ed6904bb0e75f462ce41cc56fbaf7465c3d6",
+    "data_sources/pilot/observation_design/cloudy_contrast_plan.json": "ade6f18b9a55ed63ff3e2f7273309fa7616d6774068e1b855c894e423df3c62a"
+  },
+  "scope": "Actual model predictions from reviewed merged complete20 thermal inputs; conditional synthetic observing response, not new photons, native data likelihood, source calibration or absolute sensitivity"
+}

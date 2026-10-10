@@ -74,6 +74,8 @@ def validate_models(pilot: dict) -> None:
         or pilot.get("intrinsic_line_unit") != "erg s^-1 cm^-2; Cloudy intensity geometry"
         or pilot.get("line_wavelength_medium")
         != ["air" if wave > 2000 else "vacuum" for _, wave in EXPECTED_LINES]
+        or pilot.get("ordinary_reference_log_NC") != -0.60
+        or pilot.get("reference_log_CO") != -0.37
         or len(pilot.get("models", [])) != 20
     ):
         raise ValueError("complete version2 converged20model line contract required")
@@ -111,6 +113,12 @@ def validate_models(pilot: dict) -> None:
         )
         if not np.isclose(lognc, -0.60 + nitrogen, atol=0.0101, rtol=0):
             raise ValueError("actual N/C does not match declared composition")
+        logco = (
+            abundances["CARB"]["actual_printed_log_XH"]
+            - abundances["OXYG"]["actual_printed_log_XH"]
+        )
+        if not np.isclose(logco, -0.37, atol=0.0101, rtol=0):
+            raise ValueError("actual C/O does not match declared custom composition")
     if len(pairs) != 10 or any(set(pair) != {0, 1} for pair in pairs.values()):
         raise ValueError("ten paired environment rows required")
 
@@ -275,6 +283,22 @@ def run(pilot: dict) -> dict:
         "input_plan_sha256": hashlib.sha256(
             (SOURCE / "cloudy_contrast_plan.json").read_bytes()
         ).hexdigest(),
+        "composition_reference": {
+            "ordinary_log_NC": pilot["ordinary_reference_log_NC"],
+            "enhanced_log_NC": pilot["ordinary_reference_log_NC"] + 1.0,
+            "declared_log_CO": pilot["reference_log_CO"],
+            "unmodified_solar_pattern": False,
+            "scope": (
+                "GASS10 base with custom gas-phase C/N/O; ordinary is a declared model reference"
+            ),
+        },
+        "calibration_scope": {
+            "source_LSF_measured": False,
+            "source_centroid_calibration_measured": False,
+            "aperture_specific_gap_coverage_verified": False,
+            "model_emergent_intrinsic_difference_bounds_source_CIV_transfer": False,
+            "new_observing_time_demonstrated_essential": False,
+        },
         "matched_native_observations_used": False,
         "new_observations_obtained": False,
         "alternative_response_contracts_pooled": False,

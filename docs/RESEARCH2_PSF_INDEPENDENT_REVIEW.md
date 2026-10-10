@@ -448,3 +448,115 @@ OPENBLAS_NUM_THREADS=1 python -m discovery.research2_local_identifiability_revie
 The exact receipt is `research_output/research2_local_identifiability_review.json`.
 The reviewer downloaded zero bytes. Ruff and the actual-pixel numerical review
 pass; the frozen author report was independently checked against these results.
+
+## Complete twenty-model observing forecast: actual numerical review
+
+Approval applies to the frozen forecast in author commit
+`12ee3b685d30889ab2a4e8064ebf1c7d4476a8bc`, SHA256
+`a73b72229e2f20f87c14b29b84f88f50a8cb594cb0ff220eb22b93d4b8c65a29`.
+The complete twenty-model input is SHA256
+`7ef48626ddfb7c882d9725b17939c3a7752151de734e3ab4c46472b940127759`,
+independently validated and merged at
+`6b44032b82e550ed0f740a56830deed296b5c4e9`. The review enforces that
+revision's fetched-master ancestry and exact input bytes, and the exact author
+revision's forecast bytes. The separate numerical oracle was frozen before
+outcomes in reviewer commit `427d54c`. The final author report at
+`5d1dc9340417be12c6b80f800f5edcb4ca7576cc` is also independently reviewed and
+hash-pinned in the receipt; its forecast bytes remain unchanged. Report table
+values, unattenuated model N IV/C III ratios and base composition response
+factors were separately recomputed. The base nitrogen/C III change is 8.84171
+and He/O/C III change is 1.003410; a factor-ten nitrogen rescaling misses the
+recomputed thermal and anchor responses.
+
+All 48 declared intrinsic/emergent × four-bundle × two-mode × three-width cases
+are present without repeats or additions. The independent program recomputes
+all 43,200 cross-environment/attenuation distances, using Gaussian product
+integration by completing the square and profiling normalization through the
+residual vector. It identifies the same closest pairs, all ten matched
+pairs per case and their hardest pair. Maximum information-fraction and
+normalization discrepancies are 6.11e-16 and 6.67e-16; maximum required-SNR
+relative discrepancy is 7.11e-10. Separate adaptive wavelength quadrature of
+96 final closest/hardest profile pairs agrees in information fraction to
+1.88e-14. All four intrinsic/emergent N V/C II extrema and overlap contracts
+are independently reproduced. The final numerical review takes 4.979 seconds
+through its checks, downloads zero bytes, and passes Ruff.
+
+The energy-line identities, vacuum/air conventions, actual printed gas
+abundances and nominal response hashes are checked. Ordinary here means
+log(N/C)=-0.60 at log(C/O)=-0.37 with custom C/N/O overrides to the GASS10
+base; it is not an unmodified solar pattern. Each composition has its own
+completed thermal solution. Neither the input nor this review rescales
+nitrogen lines or replaces missing predictions with zero. Line energy is
+normalized within each bundle; the continuous white-noise inner product is
+in observed microns. Absolute Cloudy intensity geometry is not the observed
+source flux, and that normalization cannot provide an exposure time.
+
+The closest finite-family pairs for intrinsic narrow-line G235H illustrate
+what additional observables matter:
+
+| Bundle | Required enhanced-truth matched-template SNR for expected squared separation 9 |
+|---|---:|
+| N IV + C III | 4723.39 |
+| He II/O III + C III | 1194.99 |
+| N III + C III | 11.3146 |
+| Complete fourteen-component UV bundle | 10.7917 |
+
+The large N IV requirement comes from an enhanced cooler-spectrum model and
+an ordinary hotter-spectrum, higher-metallicity alternative with different
+attenuation; their information fraction is only 4.03e-7 after normalization.
+This rejects treating a precise N IV/C III measurement alone as a robust
+composition discriminator across even these bounded model alternatives.
+The complete-UV closest pair remains within one low-ionization environment
+but chooses different attenuation, with information fraction 0.07728.
+These are deterministic minima among ten-by-ten alternatives, not model
+probabilities or abundance intervals. All twenty models are unweighted,
+including nonbest native fits; this family stress diagnostic is not expected
+information averaged over a calibrated posterior. Additional physical families can
+remain more degenerate.
+
+N III plus C III, or the complete UV bundle, has the strongest composition
+information in this finite pilot. This does not make He/O separation unhelpful:
+it addresses ionizing-spectrum and blending ambiguities beyond this one
+composition-distance ranking. The N V/C III ordinary and enhanced ranges
+both include zero and overlap. The intrinsic C II/C III ranges overlap from
+0.02070 to 0.57740. Those additional stages can constrain joint ionization
+models, but neither range supplies a universal composition separator here.
+Predicted zero N V entries are explicit saved responses at printed precision
+in the complete thermal-line contract, not observational non-detections.
+
+Forecast SNR is specific to the enhanced truth's bundle, mode, line widths
+and template norm. Some wider N III/full-UV templates have lower quoted SNR
+thresholds; this does not establish that broader sources take less observing
+time. No source flux or mode-dependent detector noise/throughput has been
+calibrated. The expected squared separation of 9 is not a calibrated rejection
+probability. Fixed continuum, centroid, Gaussian width, spatial profile and
+white noise are optimistic assumptions; normalization and the finite three
+attenuation choices are the only profiled nuisances. Source-specific LSF,
+wavelength zero point, C IV transfer, optical-depth/multiplicity alternatives
+and spatial response remain unresolved. Nominal tabulated wavelength reach
+is checked, but source-specific aperture gaps and usable exposure coverage
+are not certified. Archive zero-coverage intervals are not flux upper limits.
+C II retains Cloudy air labels and needs vacuum conversion for exact targets.
+
+This experiment improves the ranking of discriminating observables. It does
+not use or pool the native likelihood, identify elemental N/C, guarantee
+observing feasibility, provide a new observation or establish population or
+cosmological odds. An archive exposure/trace coverage audit and measured source
+response should precede absolute exposure design. An instrument/noise model
+and a wider validated physical likelihood are needed before interpreting the
+optimistic SNR thresholds as a practical abundance experiment.
+
+The exact independent receipt is
+`research_output/research2_cloudy_forecast_review.json`. Reproduction uses
+only the pinned merged model and nominal-response inputs:
+
+```bash
+OPENBLAS_NUM_THREADS=1 python -m discovery.research2_cloudy_forecast_review \
+  --root "$ENRICHMENT_REPO" \
+  --input "$ENRICHMENT_REPO/research_output/mom_cloudy_pilot20_rate_v3.json" \
+  --forecast "$ENRICHMENT_REPO/research_output/mom_cloudy_observation_contrasts.json" \
+  --input-sha256 7ef48626ddfb7c882d9725b17939c3a7752151de734e3ab4c46472b940127759 \
+  --forecast-sha256 a73b72229e2f20f87c14b29b84f88f50a8cb594cb0ff220eb22b93d4b8c65a29 \
+  --author-commit 5d1dc9340417be12c6b80f800f5edcb4ca7576cc \
+  --output /tmp/research2_cloudy_forecast_review.json
+```
