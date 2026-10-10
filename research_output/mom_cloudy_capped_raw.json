@@ -1,0 +1,257 @@
+{
+  "schema_version": 1,
+  "source_capped_ledger_sha256": "639ad54753e7aa18d105ec6c8941c47f94ef8a9ed85b194d827aa7ed519b692e",
+  "archive": {
+    "name": "mom_cloudy_capped_raw.tar.gz",
+    "bytes": 316171,
+    "sha256": "173170e34feaca94eb4735f62fa417f921b387c7103ad2bffe0bce27ad068dec"
+  },
+  "members": [
+    {
+      "name": "model001.abn",
+      "bytes": 36864,
+      "sha256": "cf989f4170c4e0d3e5226fe10824f2c29810f5e1ed4371ea22fd959aebd8ca39"
+    },
+    {
+      "name": "model001.avr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "model001.emergent.lin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "model001.in",
+      "bytes": 764,
+      "sha256": "7cb228bd4655d8fcf3a7eeb214de198ced569c32a4f7c698981c64473db4c9c9"
+    },
+    {
+      "name": "model001.lin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "model001.out",
+      "bytes": 274968,
+      "sha256": "cb3580ba00f83489ca44d37a8d18a790fef3add8b15853f3e82f8a7de2ff2ef7"
+    },
+    {
+      "name": "model001.ovr",
+      "bytes": 61440,
+      "sha256": "b1594f87d589294094af84ce4f3f0ff58e5e410c52545895159ae74a78729b07"
+    },
+    {
+      "name": "model002.abn",
+      "bytes": 28672,
+      "sha256": "bff9706b10225440974de14bc5b043175bbc3577b56447e15603f9a1f081c7c5"
+    },
+    {
+      "name": "model002.avr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "model002.emergent.lin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "model002.in",
+      "bytes": 764,
+      "sha256": "9fb371197d818e5430988df7108eb4fdf25e9abdd7224e069ba14a0876bf14a1"
+    },
+    {
+      "name": "model002.lin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "model002.out",
+      "bytes": 269868,
+      "sha256": "9fa56f5c54d5782f5c5edfb4fb0acf361f45a10b42e17bda43ddd31d446a34ff"
+    },
+    {
+      "name": "model002.ovr",
+      "bytes": 45056,
+      "sha256": "a610bdab6d76def3efa39fcec7bf1ab1407dc272534cf4f4970ded004086cab2"
+    },
+    {
+      "name": "model003.abn",
+      "bytes": 32768,
+      "sha256": "a7b99f632d7d384c39327c980237c490850c907f62cfff77ce93091007d67c34"
+    },
+    {
+      "name": "model003.avr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "model003.emergent.lin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "model003.in",
+      "bytes": 764,
+      "sha256": "6e9ae1d4fe1586e243c23e2ca5ba35a54bb7ce2f08e53e1f6831264345edce91"
+    },
+    {
+      "name": "model003.lin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "model003.out",
+      "bytes": 273376,
+      "sha256": "1ef86ecff077c6b09242f7f6ce6daea33258fae6ca25fb72010e566f058f938d"
+    },
+    {
+      "name": "model003.ovr",
+      "bytes": 53248,
+      "sha256": "8efa37ce5b94358779936f2732988dd6527a819ca0246f89317764ca9779b31c"
+    },
+    {
+      "name": "model004.abn",
+      "bytes": 36864,
+      "sha256": "96d8c44a5ab42b0b3f6dadbe3ccc962356578fe12bc836860bca2a629cc8e89c"
+    },
+    {
+      "name": "model004.avr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "model004.emergent.lin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "model004.in",
+      "bytes": 764,
+      "sha256": "c632633ac8992ca0eeb543e63814a6ff870cc23467a506b662575ce35b431af9"
+    },
+    {
+      "name": "model004.lin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "model004.out",
+      "bytes": 274190,
+      "sha256": "d336b7f99160d6d8cf8129ffa1bea81986a689e2a469012d5bef89ecc7b69aa4"
+    },
+    {
+      "name": "model004.ovr",
+      "bytes": 61440,
+      "sha256": "dae7d54cced48754dd9547b51e751474536cf4928cb2c4f5b73db442ae70086d"
+    },
+    {
+      "name": "model005.abn",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "model005.avr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "model005.emergent.lin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "model005.in",
+      "bytes": 764,
+      "sha256": "92b977e073488ece35e799db91ec79850c96cec3bbf8d3b5fb6e3d2191dc0905"
+    },
+    {
+      "name": "model005.lin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "model005.out",
+      "bytes": 8192,
+      "sha256": "d34526debc6b2a7705d04244f503caba4a4101a360e5851032e363af31f7a96c"
+    },
+    {
+      "name": "model005.ovr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "model006.abn",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "model006.avr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "model006.emergent.lin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "model006.in",
+      "bytes": 764,
+      "sha256": "bbce658dc9795cbf6724eb92d8a3fb6293f360f5bd8aabddda27ea3132997d05"
+    },
+    {
+      "name": "model006.lin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "model006.out",
+      "bytes": 8192,
+      "sha256": "3668bcec0364cf1c868ebde4219616ca1ee5580e4ec9525be8fd5bd8cc599855"
+    },
+    {
+      "name": "model006.ovr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "model007.abn",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "model007.avr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "model007.emergent.lin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "model007.in",
+      "bytes": 764,
+      "sha256": "9b9f193005adb299dd35f718396309415e363ae6fdce841fa8cd49679cdc1b9d"
+    },
+    {
+      "name": "model007.lin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "model007.out",
+      "bytes": 8192,
+      "sha256": "f5f219ff4b99995eca54e6b5cbc0ddcf6d3ee0ba9524fb6fce5785f1f5d9c2ea"
+    },
+    {
+      "name": "model007.ovr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "scope": "Exact historical capped/interrupted engineering outputs only; no complete thermal prediction or likelihood use. Original failure identities remain in pinned ledger."
+}

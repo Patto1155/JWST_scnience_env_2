@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "author_commit": "df3150b",
+  "approved": true,
+  "archive_sha256": "173170e34feaca94eb4735f62fa417f921b387c7103ad2bffe0bce27ad068dec",
+  "archive_bytes": 316171,
+  "verified_capped_members": 49,
+  "original_capped_ledger_sha256": "639ad54753e7aa18d105ec6c8941c47f94ef8a9ed85b194d827aa7ed519b692e",
+  "scope": "Exact preservation of failed/cancelled engineering files only. No incomplete prediction accepted; safe sorted regular members and canonical container metadata independently checked."
+}

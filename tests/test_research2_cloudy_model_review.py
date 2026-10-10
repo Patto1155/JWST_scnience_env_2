@@ -2,6 +2,7 @@
 
 import json
 
+import numpy as np
 import pytest
 
 from discovery.research2_cloudy_model_review import (
@@ -11,6 +12,7 @@ from discovery.research2_cloudy_model_review import (
     complete_pilot20_audit,
     pilot20_parameters,
     read_actual_line_dictionary,
+    validate_final_physical_stop,
 )
 
 
@@ -113,3 +115,45 @@ def test_partial_and_duplicate_pilot_cannot_be_complete(tmp_path):
     path.write_text(json.dumps({"models": models}))
     with pytest.raises(ValueError, match="controls"):
         complete_pilot20_audit(path, tmp_path)
+
+
+def test_converged_physical_stops_require_declared_limit_and_actual_zone():
+    deck = "stop efrac -2\nstop temperature 1000 K\nstop zone 3000\n"
+    header = ["Te", "hden", "eden"]
+    assert (
+        validate_final_physical_stop(
+            "Calculation stopped because low electron fraction. Iteration 3 of 3",
+            deck,
+            np.array([[1146.0, 1000.0, 9.9307]]),
+            header,
+        )
+        == "electron_fraction_0.01"
+    )
+    assert (
+        validate_final_physical_stop(
+            "Calculation stopped because lowest Te reached. Iteration 3 of 3",
+            deck,
+            np.array([[999.0, 1000.0, 20.0]]),
+            header,
+        )
+        == "temperature_floor_1000K"
+    )
+    with pytest.raises(ValueError, match="actual zone"):
+        validate_final_physical_stop(
+            "lowest Te reached. Iteration 3 of 3", deck, np.array([[1100.0, 1000.0, 20.0]]), header
+        )
+    with pytest.raises(ValueError, match="declared limit"):
+        validate_final_physical_stop(
+            "lowest Te reached. Iteration 3 of 3",
+            "stop efrac -2",
+            np.array([[999.0, 1000.0, 20.0]]),
+            header,
+        )
+    with pytest.raises(ValueError, match="computation-limited"):
+        validate_final_physical_stop(
+            "too many zones. Iteration 3 of 3", deck, np.array([[999.0, 1000.0, 20.0]]), header
+        )
+    with pytest.raises(ValueError, match="not converged"):
+        validate_final_physical_stop(
+            "lowest Te reached. Iteration 2 of 10", deck, np.array([[999.0, 1000.0, 20.0]]), header
+        )

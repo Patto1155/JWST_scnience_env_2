@@ -495,3 +495,118 @@ OPENBLAS_NUM_THREADS=1 python -m discovery.research2_download_ledger \
   --manifest data_sources/research2_download_ledger/manifest_v2.json \
   --source-root . --output /tmp/research2_download_ledger_v2.json
 ```
+
+### Final bounded archive-transfer accounting
+
+The current accounting is `research2_download_ledger_v3.json`; versions 1 and 2
+remain immutable. The later PIXTAB, source-associated companion, and S2D
+responses contribute exactly 4,475,520 + 1,219,486 + 1,353,600 = 7,048,606
+additional body bytes, each fetched once. Their frozen receipt identities were
+checked against the integrated coordinator tree. Actual-pixel scientific review
+of these three inputs is separately owned by spectroscopy.
+
+All bounded archive followups transferred 8,237,085 accepted body bytes. Of
+these, 16,453 restore the already pinned wavelength reference, so 8,220,632 are
+charged to new transfers. Deduplicating 11,181 bytes of deliberately repeated
+author CSV queries gives 8,209,451 distinct payload bytes relative to those
+earlier pins; repeated requests still count toward transfer allocation. The
+recorded 5,177-byte metadata HTTP404 body is already included. No further
+retries or failures were reported; HTTP transport overhead was not instrumented.
+
+The final conservative new-transfer charge is **1,334,355,625 bytes**, leaving
+**813,128,023 bytes** below the 2-GiB cap. This includes conservative author-probe
+and software allocations rather than claiming every category is exactly
+measured. Separately restored pinned products remain **2,073,005,957 bytes**.
+Shared caches, repeated dependency counters and the restored reference are not
+charged again as new selections.
+
+```bash
+OPENBLAS_NUM_THREADS=1 python -m discovery.research2_download_ledger \
+  --manifest data_sources/research2_download_ledger/manifest_v3.json \
+  --source-root . --output /tmp/research2_download_ledger_v3.json
+```
+
+The exact-artifact release gate now pins **33** frozen scientific/data artifacts,
+including the empirical-RATE likelihood bridge, row-response and local
+identifiability experiments, selection pilot/audit outputs, and all bounded
+metadata/PIXTAB/X1D/S2D coverage receipts. Each added canonical identity was
+read from its frozen Git revision and matched against the integrated tree.
+The new thermal20 family and derived observation forecasts remain outside this
+acceptance scope until their independent review and final merge.
+
+The current ledger describes the reused JADES DR5 PSFs as **modeled**. The
+immutable earlier accounting notes used the word empirical; that wording
+does not establish empirical PSF calibration. No transfer total changes.
+
+### Default atomic provenance
+
+Approved metadata freeze `97524d5`: independently streamed and rehashed the
+complete 338,434,070-byte Cloudy archive, compared all ten retained default
+master/solver/recombination members with actual execution-cache bytes, and
+parsed uncommented species entries separately from the author implementation.
+N IV, C III, O III, N V and C II select Stout; N III and C IV select CHIANTI
+10.0.1 exclusively in these default masters. Source inspection confirms the
+internal hydrogen-like helium sequence and its H-like recombination table.
+All 20 actual pilot decks lack database overrides. This establishes versioned
+provenance, without certifying empirical atomic rates. The independent audit
+took 15.06 s and acquired no new input.
+
+Approved original raw preservation `56262de`: all 14 original Cloudy pair
+outputs in the 228,541-byte gzip/tar container exactly match the previously
+approved model receipt lengths and hashes. The saved line list is also pinned;
+the 15 sorted members are regular relative files with normalized owner, time
+and mode metadata, and gzip time is zero. This supports exact artifact
+restoration after scratch loss, separately from numerical rerun tolerances.
+
+All three immutable acquisition-ledger versions are also canonically pinned,
+bringing the current release gate to **36** artifacts. Current version 3 uses
+the corrected modeled-PSF wording.
+
+Approved capped-run preservation `df3150b`: all 49 incomplete engineering files
+match the approved failed-attempt ledger identities in a separate 316,171-byte
+archive with deterministic, safe regular members. This preserves failed
+experiments for audit without using any incomplete prediction.
+
+### Complete composition-aware pilot acceptance
+
+Approved thermal/output scope of frozen `a49e7f3`, artifact SHA256
+`7ef48626ddfb7c882d9725b17939c3a7752151de734e3ab4c46472b940127759`.
+All 20 actual converged models pass 140 raw-file identity checks, the complete
+29-line intrinsic/emergent identity and summed-blend contracts, printed/zone
+CNO composition guards, actual densities and the independently enumerated ten
+environments. Paired decks differ only in nitrogen abundance and model IDs.
+The actual executable and every model receipt share the validated OpenBLAS
+binary; each recorded execution fits its predeclared cap.
+
+Eleven models terminate at the declared electron-fraction threshold and nine
+at the declared 1,000-K temperature floor. Independent checks tie final
+physical stop labels to actual zone values and deck commands. These boundaries
+remain model assumptions, particularly for low-ionization predictions.
+The H+-weighted temperatures span 10,240.15–17,111.30 K; changing nitrogen
+recomputes the thermal solutions and all lines rather than rescaling emission.
+The 141-member raw archive independently matches all 140 model receipts and
+the saved line list, actual cache bytes and canonical safe container metadata
+(SHA256 `5b36c11a1f9839e30d433198ad47ec7c69e977f476992aaa26beae853fcf4f4a`).
+
+Independent minima selection from the frozen score table gives enhanced versus
+ordinary improvements of only 1.93–1.98 in full conditional chi-square for the
+original-wavelength empirical-noise alternatives; ordinary line-shape penalties
+are 3.60–4.86. Formal-noise improvements are 2.94–2.97, while DUMMY sensitivity
+alternatives span 2.65–4.60. Spectroscopy separately validates the actual native
+likelihood and held-out predictions. These finite-family differences establish
+neither a calibrated abundance interval nor posterior odds. Supported
+calibration, ionizing spectrum, transfer, thermal boundaries and priors remain
+material; no elemental nitrogen requirement or stellar-polluter claim is approved.
+
+```bash
+OPENBLAS_NUM_THREADS=1 python -m discovery.research2_cloudy_model_review \
+  --report research_output/mom_cloudy_pilot20_rate_v3.json \
+  --runs /path/to/restored/cloudy-pilot20 \
+  --source /path/to/verified/c23.01 --require-complete-pilot20 \
+  --output /tmp/research2_cloudy_pilot20_model_review.json
+```
+
+The reviewed complete thermal family, its raw archive/manifest, default atomic
+provenance and original/capped raw preservation artifacts are now canonical
+release-gate inputs, bringing the gate to **44** exact artifacts. Actual derived
+forecasts await separate validation before inclusion.

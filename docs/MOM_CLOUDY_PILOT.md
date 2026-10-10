@@ -1,5 +1,12 @@
 # Complete composition-aware photoionization: declared bounded pilot
 
+The authoritative completion is
+[MOM_CLOUDY_PILOT20_REPORT.md](MOM_CLOUDY_PILOT20_REPORT.md): all20 thermal
+models,480 fresh RATE-v3 fits and six held-out checks are complete and
+independently validated. The first-model/pair-only and pending-expansion
+sections below preserve their historical scope and are superseded by that
+complete report; the original failed600second attempts remain failures.
+
 ## Pre-outcome question and decision rules
 
 The question is whether a complete N IV-inclusive, composition-aware HII-region
@@ -318,3 +325,45 @@ python -m tools.jwst.cloudy_pilot \
 The14 component predictions use each nod's source-column wavelength response.
 Full row-dependent response is a separately validated sensitivity, rather
 than a hidden claim of source-specific empirical wavelength calibration.
+
+The default atomic-family receipt is
+`research_output/mom_cloudy_atomic_provenance.json`. The complete archived
+C23.01 master lists select Stout for N IV, C III, O III, N V and C II;
+CHIANTI10.0.1 for N III and C IV; and Cloudy's internal hydrogenic
+isoelectronic solver for He II. Ten additional master-list, solver and
+recombination-table members were checked byte-for-byte against the already
+pinned complete archive and actual execution cache in11.584seconds. This
+records versioned atomic provenance without establishing atomic-rate
+accuracy. No new acquisition was required. Reproduce the audit with:
+
+```sh
+python -m tools.jwst.cloudy_atomic_provenance \
+  --cloudy-directory /tmp/cloudy \
+  --output /tmp/cloudy-atomic-provenance.json
+```
+
+Original-output preservation uses `tools.jwst.cloudy_raw_archive`: the seven
+files per converged model and saved-line list must match their receipt hashes
+before a deterministic gzip/tar container is written and round-trip checked.
+The preserved original LP64 pair is `mom_cloudy_original_pair_raw.tar.gz`,
+with its member manifest in `mom_cloudy_original_pair_raw.json`. These files
+allow an exact raw audit independently of scratch-cache survival.
+The49 capped/interrupted historical files are separately preserved in
+`mom_cloudy_capped_raw.tar.gz` with exact manifest
+`mom_cloudy_capped_raw.json`; they remain failed engineering outputs and never
+enter a scientific prediction or likelihood.
+
+Restoring an original archive requires exact member hashes. Reexecuting Cloudy
+instead requires the declared deck, gas composition,29 line identities,
+intrinsic/emergent units and convergence stop to agree; runtime text and
+adaptive zone layout are not an exact-file contract. A preliminary numerical
+rerun acceptance contract is relative tolerance0.001 for every58 saved line
+intensity and five reported average temperatures, absolute tolerance0.00006dex
+for printed C/N/O abundances, and no substitution for missing outputs. This
+bound is deliberately wider than the independently measured backend controls;
+a failure requires investigation rather than automatic scientific acceptance.
+It is a numerical repeatability check, not a bound on atomic or physical-model
+accuracy. Compact native-likelihood replay requires relative tolerance1e-8
+and absolute tolerance1e-7 for fluxes, covariances, amplitudes and quadratics;
+execution runtimes are excluded. Actual-pixel measurement reproduction and
+conditional noise/calibration assumptions remain separate contracts.
