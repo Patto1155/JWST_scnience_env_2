@@ -26,8 +26,8 @@
     "OPENBLAS_NUM_THREADS": 1,
     "reviewer_reported_numeric_leaf_differences": 1850,
     "reviewer_reported_metadata_leaf_differences": 84,
-    "example_source46_sigma_arcsec_original": 0.22497421771914988,
-    "example_source46_sigma_arcsec_thread1": 0.222812,
-    "interpretation": "Degenerate spatial optimizer trajectories depend on BLAS threading; quantify flux/result stability separately, preserve frozen photometry contract. Not universally byte/numeric-identical."
+    "interpretation": "Degenerate spatial optimizer trajectories depend on BLAS threading; quantify flux/result stability separately, preserve frozen photometry contract. Not universally byte/numeric-identical.",
+    "example_source46_axial_ratio_original": 0.22497421771914988,
+    "example_source46_axial_ratio_thread1": 0.222812
   }
 }

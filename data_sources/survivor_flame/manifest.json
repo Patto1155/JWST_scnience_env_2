@@ -1,0 +1,611 @@
+{
+  "schema_version": 1,
+  "version_doi": "10.5281/zenodo.20030439",
+  "primary_source": "https://zenodo.org/records/20030439",
+  "paper": "https://arxiv.org/abs/2608.06454v1",
+  "product": {
+    "id": "flame-skimmer-v1-photometry",
+    "filename": "flame_photometry.zip",
+    "url": "https://zenodo.org/api/records/20030439/files/photometry_tables.zip/content",
+    "expected_bytes": 73013302,
+    "sha256": "4ef41b43028e4fae91c3a74ed98d372f3e6c2d9229c22531088b7f85abd44ed3",
+    "publisher_md5": "1a14aec657747413f3a33a65d1aec604",
+    "max_bytes": 104857600
+  },
+  "tables": [
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh+0.0_co0.5_flux.txt",
+      "bytes": 1543463,
+      "sha256": "343b41a03f2990a33d6c071e926f0a5ae5efcb9a8077154455fe84ae683d2738"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh+0.0_co0.5_mag.txt",
+      "bytes": 959743,
+      "sha256": "d26715e416ae7377c6540140849601b71d9be7f19d388b143a7ea0276fd8ccea"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh+0.0_co1.0_flux.txt",
+      "bytes": 1543358,
+      "sha256": "43f88d0bfc5cde65e31bf771a544e3d4cefe4de52febe4324a48658cbffe2052"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh+0.0_co1.0_mag.txt",
+      "bytes": 959245,
+      "sha256": "a2d71ed2031cf4fd518840e19146a6fde48f319455bebfdea05de041265e4f9c"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh+0.0_co1.5_flux.txt",
+      "bytes": 1543588,
+      "sha256": "af66d7cf0e854f464732cf434307ec76fcab4313bd92d6e87cc69a7ee12c48ec"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh+0.0_co1.5_mag.txt",
+      "bytes": 960112,
+      "sha256": "efff40f12dcbf9ff494ce903b1775345b7fca66a58485a0716c72f0dab391312"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh+0.0_co2.5_flux.txt",
+      "bytes": 1543453,
+      "sha256": "8e6c4287dba9b40add9dc489b535b4bc8ecf971f243317c8f50fd39830d181af"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh+0.0_co2.5_mag.txt",
+      "bytes": 959750,
+      "sha256": "ab4253b6c39f8e81e481eefe99441a1c762537c1081f12ad526570c0fe68fb11"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh+0.5_co0.5_flux.txt",
+      "bytes": 1543528,
+      "sha256": "44caea19650a268e254482dc58b1cfe789c5c8e1af725f6ae0984de505a5cbac"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh+0.5_co0.5_mag.txt",
+      "bytes": 959885,
+      "sha256": "d075e09e1c415a59db8c0d62753437abce5931811e2280595663f4891b9a1a98"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh+0.5_co1.0_flux.txt",
+      "bytes": 1543433,
+      "sha256": "5dabd13a22ac0df977e8e5cca22cd998a87a0ca7947b78ab86eca7c9f044b45f"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh+0.5_co1.0_mag.txt",
+      "bytes": 959677,
+      "sha256": "fee96de4f91594dfc8e74d2ee57f7a3e284be313c79a845ce456cbb14db483a7"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh+0.5_co1.5_flux.txt",
+      "bytes": 1543633,
+      "sha256": "893a58c5b563fac02131e02c38e87bf2287c3785e2a2d68dc163495c591233de"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh+0.5_co1.5_mag.txt",
+      "bytes": 959699,
+      "sha256": "4a5737b72606ecd9b61d3fb59137b77f522c3c6ab609f219f4882fc26536e7b5"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh+0.5_co2.5_flux.txt",
+      "bytes": 1543643,
+      "sha256": "93b451b4410948ee191188a0043ba3ffa46fea61f88a75f6336c6c72bb4a9efb"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh+0.5_co2.5_mag.txt",
+      "bytes": 959872,
+      "sha256": "2a62a7833e428e748d5b01e245c2940baa51a73223c76d1c17264818e83f991c"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh+1.0_co0.5_flux.txt",
+      "bytes": 1543693,
+      "sha256": "bfa1b6559a980c853a867e3bdd6243729fe48ea4e7959b948f63fd90a3d04634"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh+1.0_co0.5_mag.txt",
+      "bytes": 960058,
+      "sha256": "39a48680d1dde587dfa44f40c82e80f2de6282e5f021cd0abe6d378d26911cd2"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh+1.0_co1.0_flux.txt",
+      "bytes": 1543478,
+      "sha256": "c34ed6676f9c3f02d9eb32ac70b76142f5cda52eb0842f6e8a36b416f24efabe"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh+1.0_co1.0_mag.txt",
+      "bytes": 959706,
+      "sha256": "1bf260d4dab89fcc6daefcc2b57cc745751cb91b33ef52fab10f4b749850dcfc"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh+1.0_co1.5_flux.txt",
+      "bytes": 1543813,
+      "sha256": "13e35f90b9db470774be6d44d2c72fde56cad18f4a3d69bc999c0c1c07d8de4a"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh+1.0_co1.5_mag.txt",
+      "bytes": 959848,
+      "sha256": "9f9f637eecb81af16d86897ec69c6a347c3e57ded081261551d4b3d67ae63778"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh+1.0_co2.5_flux.txt",
+      "bytes": 1544048,
+      "sha256": "a77e7e46486fa784bf9f54719bf916e7e2d71576efd93d71ec8e03ea77e56878"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh+1.0_co2.5_mag.txt",
+      "bytes": 960229,
+      "sha256": "74f33c3da1236a8520fc52c15bbe23275c391a4641167363a82d17955ef86236"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh+1.5_co0.5_flux.txt",
+      "bytes": 1544378,
+      "sha256": "441e8a7a04a3d57bd77a4d2d838bf62d2de69c00e43885c41a8acbb1a3e15189"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh+1.5_co0.5_mag.txt",
+      "bytes": 960946,
+      "sha256": "87135a28238feb944c9d91115dceceaae1df9f3d0a6e0f9ab8331b3a4a580b06"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh+1.5_co1.0_flux.txt",
+      "bytes": 1544268,
+      "sha256": "e3192021d6b8ee51610e6a95d66fab9f65c743448b9aa4ffd176a0daeddb6442"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh+1.5_co1.0_mag.txt",
+      "bytes": 960407,
+      "sha256": "5b38538d27744d74ed9c71bfb90e7f7e9505cbb39627e747b54599fc87eb6ca6"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh+1.5_co1.5_flux.txt",
+      "bytes": 1544903,
+      "sha256": "4943c53dec1405d589d65ba5ba7665efe4dc4b93fc9aaab33778e834f62189f1"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh+1.5_co1.5_mag.txt",
+      "bytes": 960821,
+      "sha256": "a14d1964b0e54f3d46427910fc075be42f62b07b1cab542017433450662cad5c"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh+1.5_co2.5_flux.txt",
+      "bytes": 1545043,
+      "sha256": "42af7a1bebf903d965925e70ad6047e532c81b265b4a9e5a0d234e3898d5e48f"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh+1.5_co2.5_mag.txt",
+      "bytes": 961058,
+      "sha256": "e24564f040e8138f8c8058d2fa5556d5b063a50edc44f2415a3d1a649da9363b"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh+2.0_co0.5_flux.txt",
+      "bytes": 1545858,
+      "sha256": "29c4ca972b75084d36bc7f6ac1e3cafff65f443803f4f53abd0f94dff5329a61"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh+2.0_co0.5_mag.txt",
+      "bytes": 961951,
+      "sha256": "2fb5be1e3e2d8a649a9b8d0d79f157030043525218e33901c95cdd49c872385b"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh+2.0_co1.0_flux.txt",
+      "bytes": 1545803,
+      "sha256": "459ffc7b803e366a56c75fd9c1ddd3a5cbf305e4eefe67c1b5ef24ec1010432a"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh+2.0_co1.0_mag.txt",
+      "bytes": 961757,
+      "sha256": "686649341801b945e3abfe04a6be172fdb0dd7738d9ef871a5e1a4927facb0d9"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh+2.0_co1.5_flux.txt",
+      "bytes": 1546418,
+      "sha256": "2b1d2bfb8a60dcb5cb4173d823cc3b354a7568149b5c295b9b4fff59bc56a07a"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh+2.0_co1.5_mag.txt",
+      "bytes": 962285,
+      "sha256": "b85345e8b05a789e9b6ca87f6513f5d5a1207884d925db9157264e4da8655577"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh+2.0_co2.5_flux.txt",
+      "bytes": 1547313,
+      "sha256": "e10a06b9b74da48c61cd0bf803c83a9bfb4e34fb14fe3b0855b095b6007f497b"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh+2.0_co2.5_mag.txt",
+      "bytes": 963034,
+      "sha256": "0d665d19b4413733bd1951c2bc644e5809c08557da73a1302d905efca6ccdf20"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh-0.5_co0.5_flux.txt",
+      "bytes": 1543478,
+      "sha256": "a428a58d97cab7e7c8122d7b9f6c53041b7b95598b6d5d11f58bad435adb96b4"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh-0.5_co0.5_mag.txt",
+      "bytes": 959764,
+      "sha256": "ee9178f476ed1031e0e961800831cd5ed39cc73237296879d22676e1af33c45d"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh-0.5_co1.0_flux.txt",
+      "bytes": 1543823,
+      "sha256": "e909a63ae6efd5807fced8a40283169ca1567729b06e2bcce077a89a25f08420"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh-0.5_co1.0_mag.txt",
+      "bytes": 960155,
+      "sha256": "2b27bfbf59213db1bc8fdefa6f8f5758cf87b19782029bfd84e06219cfa94fd0"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh-0.5_co1.5_flux.txt",
+      "bytes": 1543543,
+      "sha256": "d95279a03f4a29b908b31c58005e62bb4d443678126106e44a37b84f7e325783"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh-0.5_co1.5_mag.txt",
+      "bytes": 959807,
+      "sha256": "a0649052ca0540f2768e182a91d2f72df05eea5f50bcd04b954d7356b32b33ef"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh-0.5_co2.5_flux.txt",
+      "bytes": 1543903,
+      "sha256": "e58712f57e9bb0b27124a5564ec217c4c505ece92f819284b0e0e776db2724fd"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh-0.5_co2.5_mag.txt",
+      "bytes": 960002,
+      "sha256": "0cc3028225e71f7cf1b0e41f03770f4fc1c5480d31a3a9de46b75693326de465"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh-1.0_co0.5_flux.txt",
+      "bytes": 1543773,
+      "sha256": "7952b7b0a59dc72a12094da7e9b1ba429a9196ff301524e47a7b7ddf3e7a59b7"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh-1.0_co0.5_mag.txt",
+      "bytes": 959667,
+      "sha256": "40ecf2a73156736cf4bb4dddbbb236441dbfd445ff3bf10a5804df5654e4b57e"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh-1.0_co1.0_flux.txt",
+      "bytes": 1544173,
+      "sha256": "e5245f5238dcc7500020f900e7b4b680c9cf736f945d0a94b34ffd43db96677d"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh-1.0_co1.0_mag.txt",
+      "bytes": 960063,
+      "sha256": "6a96c744adc6e10fb12a856a0099bc85f51463617dad05e493bfb2d5ffc29aaf"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh-1.0_co1.5_flux.txt",
+      "bytes": 1543978,
+      "sha256": "872ca58bb36651626605205c8d10f13449b2168cff66bff6e969166a47e250b7"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh-1.0_co1.5_mag.txt",
+      "bytes": 960257,
+      "sha256": "a608d1170cd219b49611243d88974e7eb1e5eb74cfe34dce5a0209f1277ca928"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh-1.0_co2.5_flux.txt",
+      "bytes": 1544063,
+      "sha256": "20cc6985a7431d79e5bc638836ca83f5f2271839a33abdbb15893221345c5c0e"
+    },
+    {
+      "member": "flame_skimmer_publication/deq/JWST/mh-1.0_co2.5_mag.txt",
+      "bytes": 960112,
+      "sha256": "45c98f49ccfc7f98be7eb6f1d07a4c45ba026894895fd6a536398e8bcc416002"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh+0.0_co0.5_flux.txt",
+      "bytes": 307649,
+      "sha256": "7a81a74e5fd329ca9247969cc49eb9c0629748878eb168e2a29888c474a67801"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh+0.0_co0.5_mag.txt",
+      "bytes": 190878,
+      "sha256": "433fd8aaa97fd74f36bae02098d861ea508ebea0d263dcc7cdcd4631b6ed223e"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh+0.0_co1.0_flux.txt",
+      "bytes": 307555,
+      "sha256": "a03329f74c84638ec18efed4a029f3935b848129f57e286bef010527847253be"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh+0.0_co1.0_mag.txt",
+      "bytes": 190799,
+      "sha256": "b5f8d3b64fef5b3b80b767c8558108c9056c35b5d4d1a4437e6a569cef22f109"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh+0.0_co1.5_flux.txt",
+      "bytes": 307602,
+      "sha256": "a6ce6c24da5f51baba253635373e75c1ee26421338bbf69bcb4cbac71e34c17a"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh+0.0_co1.5_mag.txt",
+      "bytes": 190805,
+      "sha256": "45389881fd650855024f0a21933e2c3c0a30c7f08ba04dde5a497427f3bb6131"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh+0.0_co2.5_flux.txt",
+      "bytes": 307653,
+      "sha256": "d518ec2dd94e4a7cb7c6f05cf7f5091e50fd49216b907be36976f128acc73971"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh+0.0_co2.5_mag.txt",
+      "bytes": 190916,
+      "sha256": "f28b72a5a40d1d40468dcf6bcefe69be0de962d72bf6b4c998e088c2ba2cdcca"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh+0.5_co0.5_flux.txt",
+      "bytes": 307538,
+      "sha256": "d0cb40497bc103790a6330a63fec6e23b14ffb0d35fbe60b1114d25b26d8a7a8"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh+0.5_co0.5_mag.txt",
+      "bytes": 190684,
+      "sha256": "1632727269d4bd1d4bbbd962d3433d5db80345d9a01da6885f56c6e2ca28eca7"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh+0.5_co1.0_flux.txt",
+      "bytes": 307543,
+      "sha256": "76fe69f2a7ee3b2b47b232c210b08f7d480e2476993eb92835566e8e475217da"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh+0.5_co1.0_mag.txt",
+      "bytes": 190696,
+      "sha256": "ad704cd778eb6b9647c5649b8f1bf357bdda943248d3e5bd1207f1ba39f0ea16"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh+0.5_co1.5_flux.txt",
+      "bytes": 307596,
+      "sha256": "1c9f78168a08b20d9f9d7cc0c5467412c5054472dd2f2a953f368d84b6df5702"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh+0.5_co1.5_mag.txt",
+      "bytes": 190701,
+      "sha256": "d99514308bcff6ac425a2f6867f6183b6db58a8c8880bf438c45fc626749ac0a"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh+0.5_co2.5_flux.txt",
+      "bytes": 307604,
+      "sha256": "5d15fc25452afd6a5ea41f41fd7a7d203445b5443f13f24ed45f5afd11c2c1fa"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh+0.5_co2.5_mag.txt",
+      "bytes": 191001,
+      "sha256": "bc3f72ebaf36f2e8e325c51497e2f76994c7152930de7ac3e7764025182c7a90"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh+1.0_co0.5_flux.txt",
+      "bytes": 307569,
+      "sha256": "926b7cdaf16e0088d5f63905864b98eec77446545d1f088538539d0fafe7bee8"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh+1.0_co0.5_mag.txt",
+      "bytes": 190893,
+      "sha256": "fd9de43ca6c785baeb086356d021becd40f239a4b186c6db51b079fc6b5c27e4"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh+1.0_co1.0_flux.txt",
+      "bytes": 307604,
+      "sha256": "1a669258c5473e81d4acc6c2a16943b6df88d544a459f89d406914398bb6bdda"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh+1.0_co1.0_mag.txt",
+      "bytes": 190855,
+      "sha256": "d386d00577e3caddf1c03a00dd87994b96f66870d1d9e9f82e1388260bb8b800"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh+1.0_co1.5_flux.txt",
+      "bytes": 307599,
+      "sha256": "b9894046d59aca707ac37b06adf92b7214ddcaaf650d4423e0bb253a4b3ffdfc"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh+1.0_co1.5_mag.txt",
+      "bytes": 190900,
+      "sha256": "229cd85d2cbba5c16d3f0932c055840fdf1e7cfacfeccb8effbfa94366b11132"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh+1.0_co2.5_flux.txt",
+      "bytes": 307668,
+      "sha256": "ff9a4d8a55de34e720e2a964ba0f8a0487b0c91696dfb33a2b6fd68782066617"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh+1.0_co2.5_mag.txt",
+      "bytes": 190914,
+      "sha256": "80037e56d138923481badec49bbafb48af8cbef1215a177344eb794330d26907"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh+1.5_co0.5_flux.txt",
+      "bytes": 307668,
+      "sha256": "41798ed60aaa14ddbe1849e1ab9cae1c80e2c35d1b99cc43abf9f51948181664"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh+1.5_co0.5_mag.txt",
+      "bytes": 190858,
+      "sha256": "4cf127f829f56355011fbe79b5f351ef33387cd32f2c823c372866e90423ff27"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh+1.5_co1.0_flux.txt",
+      "bytes": 307765,
+      "sha256": "cd7bc55a9c6fa7d0be6a8a5051f3a0cf7c74ddfd016cd056cc60d8db58283eb4"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh+1.5_co1.0_mag.txt",
+      "bytes": 190994,
+      "sha256": "2128576a45044fb49696fe6ef436fb4087b9da22db711902866a8b85995a15b4"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh+1.5_co1.5_flux.txt",
+      "bytes": 307810,
+      "sha256": "b665a81884c24b2e96e319caf391fed46b62dc1fbd9b7bcdbe0971868a0edcc9"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh+1.5_co1.5_mag.txt",
+      "bytes": 190994,
+      "sha256": "f0183a26425ffdbcafe59867f2f25378007f2d40a14c730a5909b722d7960533"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh+1.5_co2.5_flux.txt",
+      "bytes": 307900,
+      "sha256": "c59921867e5b2933a30c47692724ba40bf7020e275834abfba4abddde8ee91c9"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh+1.5_co2.5_mag.txt",
+      "bytes": 191081,
+      "sha256": "d653ca7cec91ee9d8e12e71b30006d3eb2a005cab3261cc0269c8880ab2ff252"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh+2.0_co0.5_flux.txt",
+      "bytes": 308026,
+      "sha256": "0f73c03801079e6aaf4f1255d1b42a8335fdaf0322fd03cece352d60b0a6fc7c"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh+2.0_co0.5_mag.txt",
+      "bytes": 191251,
+      "sha256": "d1384fda2ae777c4a5a1562d6371f30103b024e7b3be83b617ff1ccbcb6b64be"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh+2.0_co1.0_flux.txt",
+      "bytes": 308083,
+      "sha256": "aedba9310c6ab913fb3a5cc86e2de940c748ba9f04a2d622fe5aaca31b96f76c"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh+2.0_co1.0_mag.txt",
+      "bytes": 191339,
+      "sha256": "54057338d33c0ed77cdc83f9bec3c262ce3212ec45603a4669668bd1f9581def"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh+2.0_co1.5_flux.txt",
+      "bytes": 308155,
+      "sha256": "1097dbcaadcb48b356c4dbb4ab0fb168c6046c217545a35b5a44d7347bbbebca"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh+2.0_co1.5_mag.txt",
+      "bytes": 191262,
+      "sha256": "b7f03334c5ea697c6165e89356d08876a80d52c0e4c0356842c6fbc29d671cc6"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh+2.0_co2.5_flux.txt",
+      "bytes": 308346,
+      "sha256": "5c6ebe22c6b3888e076fdda8ac6d4ab1b95bc24991e54af61e6c48978553b5ee"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh+2.0_co2.5_mag.txt",
+      "bytes": 191573,
+      "sha256": "a5111453166094deabb13f65a7381594e7b8a3094d002b01033c2809b5b6dff3"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh-0.5_co0.5_flux.txt",
+      "bytes": 307667,
+      "sha256": "aa72734a59fba02ca8b551ea5bb08da68d2f0e3b6363261ff22f77868f09bcd9"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh-0.5_co0.5_mag.txt",
+      "bytes": 190839,
+      "sha256": "e7f82969130218218cd10ae1d1a94c96f36dc141e99682aae68e68fa1bbe1217"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh-0.5_co1.0_flux.txt",
+      "bytes": 307602,
+      "sha256": "b287ca81edb3924db245dc54e70e7b9616fa17c5660e927fe871cc8f9ce9279f"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh-0.5_co1.0_mag.txt",
+      "bytes": 190853,
+      "sha256": "372b6b5ced0589c5f918547a81e2890ed37dd6e9870ba91ea854fb88110d9304"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh-0.5_co1.5_flux.txt",
+      "bytes": 307677,
+      "sha256": "5d7b323f9ec08a0651fee42066640c9daa4b91d9b0af5aa472f15bc5b4125510"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh-0.5_co1.5_mag.txt",
+      "bytes": 190859,
+      "sha256": "3712fbb3a9456cbff6e3248009a1fe365df6d301ad5fec4afd302292ce469e5c"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh-0.5_co2.5_flux.txt",
+      "bytes": 307669,
+      "sha256": "3a34de0d26f9a4803e5e9b7e07c2fae43059aaf928a28403d966ff297fdbf41f"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh-0.5_co2.5_mag.txt",
+      "bytes": 190885,
+      "sha256": "637e1bdfb40c6427f69096a9ff1fc5fd3fff544610816f31c8c11b9be68c5c78"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh-1.0_co0.5_flux.txt",
+      "bytes": 307723,
+      "sha256": "569ffb55d3513f82384818a72426f7328b94f600654dc2410967950150efa8df"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh-1.0_co0.5_mag.txt",
+      "bytes": 191045,
+      "sha256": "053feb88a71d2fb6d008fc340245d59ee82df7a80a90d2b5310b0346384cfca7"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh-1.0_co1.0_flux.txt",
+      "bytes": 307756,
+      "sha256": "1a355dd96c047937750bac89a2ca93e33dfc3b73263fc5a2c0c73b663e85e576"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh-1.0_co1.0_mag.txt",
+      "bytes": 191063,
+      "sha256": "6c9efd8fa7d60b4f82844b5a1894ac0824ad9688ad456d23b665d66964ea1d82"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh-1.0_co1.5_flux.txt",
+      "bytes": 307680,
+      "sha256": "69691e10206d7b793489a57674893ac225190296560667f87b6cddf4712da909"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh-1.0_co1.5_mag.txt",
+      "bytes": 190895,
+      "sha256": "8001afb12cdaad676931283159c06da70749b38c769076a53b4cea4c39395b42"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh-1.0_co2.5_flux.txt",
+      "bytes": 307765,
+      "sha256": "fc4614f23bdfc5bb444859f6d954691b845288d7d2cbe4551a8b777a7056b9db"
+    },
+    {
+      "member": "flame_skimmer_publication/eq/JWST/mh-1.0_co2.5_mag.txt",
+      "bytes": 191163,
+      "sha256": "f1f5b3f7ce8ccefad69f0579f75f86b695f35dfd7fe073366e142a91c0583429"
+    }
+  ],
+  "pilot_bounds": {
+    "teff_k": [
+      200,
+      1000
+    ],
+    "logg_cgs": [
+      3.5,
+      5.5
+    ],
+    "metallicity_dex": [
+      -1,
+      -0.5,
+      0,
+      0.5,
+      1,
+      1.5,
+      2
+    ],
+    "co_relative_to_solar": [
+      0.5,
+      1,
+      1.5,
+      2.5
+    ],
+    "logkzz": [
+      2,
+      4,
+      7,
+      8,
+      9
+    ]
+  },
+  "photometry_sha256": "32f7f9d9875ef21154fff8530c8dd465b06fceadbbe9afe474ba7226784a7a92",
+  "photometry_convention": "Raw flux table numerically matches mJy and paired Vega magnitudes using independent SVO Jy zeropoints; notebook claimed F_lambda is inconsistent. Verify every retained row before fitting; retain second Vega/SVO convention sensitivity."
+}

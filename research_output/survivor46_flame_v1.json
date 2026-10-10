@@ -1,0 +1,1664 @@
+{
+  "schema_version": 1,
+  "source_id": 46,
+  "bands": [
+    "F090W",
+    "F115W",
+    "F150W",
+    "F200W",
+    "F277W",
+    "F356W",
+    "F444W"
+  ],
+  "observed_njy": [
+    0.43444517757502815,
+    3.906394052981229,
+    3.0030145824264807,
+    2.1197147610870255,
+    9.740246032697543,
+    68.6944056512774,
+    644.8799549614853
+  ],
+  "provenance": {
+    "archive_receipt": {
+      "requested_url": "https://zenodo.org/api/records/20030439/files/photometry_tables.zip/content",
+      "resolved_url": "https://zenodo.org/api/records/20030439/files/photometry_tables.zip/content",
+      "retrieved_utc": "2026-10-10T02:26:17.174160+00:00",
+      "bytes": 73013302,
+      "sha256": "4ef41b43028e4fae91c3a74ed98d372f3e6c2d9229c22531088b7f85abd44ed3",
+      "content_type": "application/octet-stream",
+      "etag": null,
+      "last_modified": null,
+      "product_id": "flame-skimmer-v1-photometry",
+      "max_bytes": 104857600
+    },
+    "zeropoints": [
+      {
+        "band": "F090W",
+        "zero_point_jy": 2244.9507457345,
+        "receipt": {
+          "requested_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=JWST/NIRCam.F090W",
+          "resolved_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=JWST/NIRCam.F090W",
+          "retrieved_utc": "2026-10-10T02:20:06.728687+00:00",
+          "bytes": 29234,
+          "sha256": "e543c0bd4e8e15f6b9b49a2b7d04a507fc1e9d36dbaa1dfda5248970a94faed3",
+          "content_type": "text/xml",
+          "etag": null,
+          "last_modified": null,
+          "product_id": "throughput-F090W",
+          "max_bytes": 1048576
+        }
+      },
+      {
+        "band": "F115W",
+        "zero_point_jy": 1746.1178757573,
+        "receipt": {
+          "requested_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=JWST/NIRCam.F115W",
+          "resolved_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=JWST/NIRCam.F115W",
+          "retrieved_utc": "2026-10-10T02:20:13.041189+00:00",
+          "bytes": 36619,
+          "sha256": "8b20845e7ad4f91063b867bdf4a85d68d37e85beb84c2f3fd3b6ec3d76c20575",
+          "content_type": "text/xml",
+          "etag": null,
+          "last_modified": null,
+          "product_id": "throughput-F115W",
+          "max_bytes": 1048576
+        }
+      },
+      {
+        "band": "F150W",
+        "zero_point_jy": 1172.057562686,
+        "receipt": {
+          "requested_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=JWST/NIRCam.F150W",
+          "resolved_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=JWST/NIRCam.F150W",
+          "retrieved_utc": "2026-10-10T02:20:19.614139+00:00",
+          "bytes": 46817,
+          "sha256": "0bdcfd2a9520091b1bab7c0ef0e406852a37f52cab718d74d478064556306637",
+          "content_type": "text/xml",
+          "etag": null,
+          "last_modified": null,
+          "product_id": "throughput-F150W",
+          "max_bytes": 1048576
+        }
+      },
+      {
+        "band": "F200W",
+        "zero_point_jy": 757.65380461946,
+        "receipt": {
+          "requested_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=JWST/NIRCam.F200W",
+          "resolved_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=JWST/NIRCam.F200W",
+          "retrieved_utc": "2026-10-10T02:20:26.230271+00:00",
+          "bytes": 60406,
+          "sha256": "ad13a8ec3957cf31ff8b3fed14e97473de48aabd25828e94ace4f30b123fb418",
+          "content_type": "text/xml",
+          "etag": null,
+          "last_modified": null,
+          "product_id": "throughput-F200W",
+          "max_bytes": 1048576
+        }
+      },
+      {
+        "band": "F277W",
+        "zero_point_jy": 430.1399020248,
+        "receipt": {
+          "requested_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=JWST/NIRCam.F277W",
+          "resolved_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=JWST/NIRCam.F277W",
+          "retrieved_utc": "2026-10-10T02:20:32.868505+00:00",
+          "bytes": 79095,
+          "sha256": "503870e4b115e9ad534dabb09b40b5d98b1f2834447aac4afb3e209a4d5056f8",
+          "content_type": "text/xml",
+          "etag": null,
+          "last_modified": null,
+          "product_id": "throughput-F277W",
+          "max_bytes": 1048576
+        }
+      },
+      {
+        "band": "F356W",
+        "zero_point_jy": 271.3926286675,
+        "receipt": {
+          "requested_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=JWST/NIRCam.F356W",
+          "resolved_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=JWST/NIRCam.F356W",
+          "retrieved_utc": "2026-10-10T02:20:39.107656+00:00",
+          "bytes": 89335,
+          "sha256": "9f1cd99657822fa5adbecc87ead7e81b8d628eb6f0eb4ce309c6a9e8a1a32734",
+          "content_type": "text/xml",
+          "etag": null,
+          "last_modified": null,
+          "product_id": "throughput-F356W",
+          "max_bytes": 1048576
+        }
+      },
+      {
+        "band": "F444W",
+        "zero_point_jy": 184.1022219016,
+        "receipt": {
+          "requested_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=JWST/NIRCam.F444W",
+          "resolved_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=JWST/NIRCam.F444W",
+          "retrieved_utc": "2026-10-10T02:20:45.552833+00:00",
+          "bytes": 98993,
+          "sha256": "390eca18429a9258d8442b2e8f0ca94edbea461e61c72d5df1ce5087997a3d6b",
+          "content_type": "text/xml",
+          "etag": null,
+          "last_modified": null,
+          "product_id": "throughput-F444W",
+          "max_bytes": 1048576
+        }
+      }
+    ],
+    "rows": 37800,
+    "unit_ratio_min_by_band": [
+      0.9949904790992092,
+      0.9950179358212448,
+      0.995076672385604,
+      0.9950274384897694,
+      0.9950635094374619,
+      0.9949839417267045,
+      0.995007056808104
+    ],
+    "unit_ratio_max_by_band": [
+      1.0050252214733681,
+      1.0049766832089284,
+      1.0048986537566778,
+      1.0049358573288534,
+      1.0050068561967884,
+      1.0050338953521298,
+      1.0049063433422234
+    ],
+    "unit_ratio_median_by_band": [
+      0.9999798710451321,
+      1.0000112911587542,
+      0.9999672841031142,
+      0.9999580783344183,
+      1.0000085507553866,
+      0.9999531662123526,
+      0.9999485453722348
+    ],
+    "unit_resolution": "Independent paired-table/zeropoint consistency implies mJy; notebook F_lambda prose rejected for these table numbers."
+  },
+  "manifest_sha256": "a36b7ab30b2d8ba1ff6a49a79cc1c525f34d6d5290d8e5d6564b40d48b434fe3",
+  "photometry_sha256": "32f7f9d9875ef21154fff8530c8dd465b06fceadbbe9afe474ba7226784a7a92",
+  "code_sha256": "0662c157c65a76cb1d17d982f4cd02946b87d6ed0da36a494d9f00a8c139814d",
+  "scenarios": [
+    {
+      "photometry_convention": "inferred_mjy",
+      "fractional_floor_assumed": 0.05,
+      "covariance_njy2": [
+        [
+          0.13893894701752763,
+          0.0015274026522229176,
+          0.0011741806831704043,
+          0.000828809870209975,
+          0.003808442625569773,
+          0.026859557935422208,
+          0.25214848789303673
+        ],
+        [
+          0.0015274026522229176,
+          0.13927720653875558,
+          0.01055786247522604,
+          0.0074523970230541935,
+          0.03424431525903332,
+          0.24151267593830714,
+          2.2672396988535137
+        ],
+        [
+          0.0011741806831704043,
+          0.01055786247522604,
+          0.1392795591905332,
+          0.005728980904316101,
+          0.026325090785351155,
+          0.18566127171171548,
+          1.742925517797485
+        ],
+        [
+          0.000828809870209975,
+          0.0074523970230541935,
+          0.005728980904316101,
+          0.11791635333857316,
+          0.018581888962915488,
+          0.13105129109680144,
+          1.2302654036948968
+        ],
+        [
+          0.003808442625569773,
+          0.03424431525903332,
+          0.026325090785351155,
+          0.018581888962915488,
+          0.5458721318313939,
+          0.6021903709020334,
+          5.6531604805918
+        ],
+        [
+          0.026859557935422208,
+          0.24151267593830714,
+          0.18566127171171548,
+          0.13105129109680144,
+          0.6021903709020334,
+          16.2355390409936,
+          39.86968070025159
+        ],
+        [
+          0.25214848789303673,
+          2.2672396988535137,
+          1.742925517797485,
+          1.2302654036948968,
+          5.6531604805918,
+          39.86968070025159,
+          1414.292204328161
+        ]
+      ],
+      "best_by_chemistry": [
+        {
+          "chemistry_subset": "all",
+          "grid_index": 29611,
+          "chi2_conditional": 105.6633657231989,
+          "f444_amplitude_njy": 620.5091982632193,
+          "prediction_njy": [
+            1.3665121951236618,
+            3.155831919663271,
+            3.93445895428729,
+            0.18591351653536625,
+            4.110628758210601,
+            59.37574872970868,
+            620.5091982632193
+          ],
+          "model": {
+            "table_member": "flame_skimmer_publication/deq/JWST/mh-1.0_co1.5_flux.txt",
+            "author_row": 1083,
+            "chemistry": "deq",
+            "teff_k": 400.0,
+            "logg_cgs": 3.5,
+            "metallicity_dex": -1.0,
+            "co_relative_to_solar": 1.5,
+            "logkzz": 4.0,
+            "tabulated_mass_mjup": 1.617,
+            "tabulated_radius_rjup": 1.126,
+            "tabulated_age_gyr": 0.06396
+          }
+        },
+        {
+          "chemistry_subset": "eq",
+          "grid_index": 37648,
+          "chi2_conditional": 118.77420692375318,
+          "f444_amplitude_njy": 662.1607594261574,
+          "prediction_njy": [
+            1.4846885777758372,
+            3.1485555996861674,
+            3.2919924119198165,
+            0.1975665731782164,
+            3.5553518048734016,
+            54.60004557484153,
+            662.1607594261574
+          ],
+          "model": {
+            "table_member": "flame_skimmer_publication/eq/JWST/mh-1.0_co2.5_flux.txt",
+            "author_row": 219,
+            "chemistry": "eq",
+            "teff_k": 400.0,
+            "logg_cgs": 3.75,
+            "metallicity_dex": -1.0,
+            "co_relative_to_solar": 2.5,
+            "logkzz": null,
+            "tabulated_mass_mjup": 2.888,
+            "tabulated_radius_rjup": 1.128,
+            "tabulated_age_gyr": 0.1615
+          }
+        },
+        {
+          "chemistry_subset": "deq",
+          "grid_index": 29611,
+          "chi2_conditional": 105.6633657231989,
+          "f444_amplitude_njy": 620.5091982632193,
+          "prediction_njy": [
+            1.3665121951236618,
+            3.155831919663271,
+            3.93445895428729,
+            0.18591351653536625,
+            4.110628758210601,
+            59.37574872970868,
+            620.5091982632193
+          ],
+          "model": {
+            "table_member": "flame_skimmer_publication/deq/JWST/mh-1.0_co1.5_flux.txt",
+            "author_row": 1083,
+            "chemistry": "deq",
+            "teff_k": 400.0,
+            "logg_cgs": 3.5,
+            "metallicity_dex": -1.0,
+            "co_relative_to_solar": 1.5,
+            "logkzz": 4.0,
+            "tabulated_mass_mjup": 1.617,
+            "tabulated_radius_rjup": 1.126,
+            "tabulated_age_gyr": 0.06396
+          }
+        }
+      ],
+      "held_out_predictions": [
+        {
+          "omitted_band": "F090W",
+          "chemistry_subset": "all",
+          "grid_index": 29611,
+          "chi2_conditional": 98.68534578965935,
+          "f444_amplitude_njy": 631.4802089337251,
+          "prediction_njy": [
+            1.3906730293482632,
+            3.2116291032696633,
+            4.004022775888919,
+            0.1892005897639496,
+            4.183307377794393,
+            60.42555101258568,
+            631.4802089337251
+          ],
+          "model": {
+            "table_member": "flame_skimmer_publication/deq/JWST/mh-1.0_co1.5_flux.txt",
+            "author_row": 1083,
+            "chemistry": "deq",
+            "teff_k": 400.0,
+            "logg_cgs": 3.5,
+            "metallicity_dex": -1.0,
+            "co_relative_to_solar": 1.5,
+            "logkzz": 4.0,
+            "tabulated_mass_mjup": 1.617,
+            "tabulated_radius_rjup": 1.126,
+            "tabulated_age_gyr": 0.06396
+          },
+          "conditional_residual_over_assumed_sigma": -2.6697422115243037
+        },
+        {
+          "omitted_band": "F115W",
+          "chemistry_subset": "all",
+          "grid_index": 11389,
+          "chi2_conditional": 29.693148121883855,
+          "f444_amplitude_njy": 688.5816526011673,
+          "prediction_njy": [
+            0.24537576066433334,
+            14.08583733603421,
+            2.3503073282284355,
+            2.459685989360519,
+            6.358190464182108,
+            67.70213063026544,
+            688.5816526011673
+          ],
+          "model": {
+            "table_member": "flame_skimmer_publication/deq/JWST/mh+1.0_co1.5_flux.txt",
+            "author_row": 711,
+            "chemistry": "deq",
+            "teff_k": 275.0,
+            "logg_cgs": 3.5,
+            "metallicity_dex": 1.0,
+            "co_relative_to_solar": 1.5,
+            "logkzz": 9.0,
+            "tabulated_mass_mjup": 1.349,
+            "tabulated_radius_rjup": 1.028,
+            "tabulated_age_gyr": 0.286
+          },
+          "conditional_residual_over_assumed_sigma": -28.260780301360843
+        },
+        {
+          "omitted_band": "F150W",
+          "chemistry_subset": "all",
+          "grid_index": 30694,
+          "chi2_conditional": 72.72804108324527,
+          "f444_amplitude_njy": 669.8587411174823,
+          "prediction_njy": [
+            1.654878677465618,
+            4.111780468242219,
+            5.625457893364353,
+            0.1912806298413047,
+            6.130017035071733,
+            57.836032959890545,
+            669.8587411174823
+          ],
+          "model": {
+            "table_member": "flame_skimmer_publication/deq/JWST/mh-1.0_co2.5_flux.txt",
+            "author_row": 1011,
+            "chemistry": "deq",
+            "teff_k": 375.0,
+            "logg_cgs": 3.5,
+            "metallicity_dex": -1.0,
+            "co_relative_to_solar": 2.5,
+            "logkzz": 9.0,
+            "tabulated_mass_mjup": 1.59,
+            "tabulated_radius_rjup": 1.116,
+            "tabulated_age_gyr": 0.0816
+          },
+          "conditional_residual_over_assumed_sigma": -7.668650433678332
+        },
+        {
+          "omitted_band": "F200W",
+          "chemistry_subset": "all",
+          "grid_index": 29611,
+          "chi2_conditional": 78.59445617310985,
+          "f444_amplitude_njy": 635.2382479635212,
+          "prediction_njy": [
+            1.3989491454450766,
+            3.2307420182091455,
+            4.027851351440623,
+            0.19032655252689026,
+            4.208202904490204,
+            60.7851530648585,
+            635.2382479635212
+          ],
+          "model": {
+            "table_member": "flame_skimmer_publication/deq/JWST/mh-1.0_co1.5_flux.txt",
+            "author_row": 1083,
+            "chemistry": "deq",
+            "teff_k": 400.0,
+            "logg_cgs": 3.5,
+            "metallicity_dex": -1.0,
+            "co_relative_to_solar": 1.5,
+            "logkzz": 4.0,
+            "tabulated_mass_mjup": 1.617,
+            "tabulated_radius_rjup": 1.126,
+            "tabulated_age_gyr": 0.06396
+          },
+          "conditional_residual_over_assumed_sigma": 5.228611463701878
+        },
+        {
+          "omitted_band": "F277W",
+          "chemistry_subset": "all",
+          "grid_index": 232,
+          "chi2_conditional": 32.785467515396576,
+          "f444_amplitude_njy": 627.8553263104201,
+          "prediction_njy": [
+            0.6787420894164939,
+            3.9752134743259715,
+            2.928927883069072,
+            0.1790273579903458,
+            1.7407303616978747,
+            65.63216838895605,
+            627.8553263104201
+          ],
+          "model": {
+            "table_member": "flame_skimmer_publication/deq/JWST/mh+0.0_co0.5_flux.txt",
+            "author_row": 864,
+            "chemistry": "deq",
+            "teff_k": 325.0,
+            "logg_cgs": 3.75,
+            "metallicity_dex": 0.0,
+            "co_relative_to_solar": 0.5,
+            "logkzz": 7.0,
+            "tabulated_mass_mjup": 2.824,
+            "tabulated_radius_rjup": 1.116,
+            "tabulated_age_gyr": 0.3859
+          },
+          "conditional_residual_over_assumed_sigma": 10.853427301854241
+        },
+        {
+          "omitted_band": "F356W",
+          "chemistry_subset": "all",
+          "grid_index": 21467,
+          "chi2_conditional": 71.02750626574544,
+          "f444_amplitude_njy": 586.339281942122,
+          "prediction_njy": [
+            0.0074058047956602315,
+            3.9590430148228752,
+            0.2504609772246596,
+            3.053641616496294,
+            7.712059881195053,
+            19.349753131518277,
+            586.339281942122
+          ],
+          "model": {
+            "table_member": "flame_skimmer_publication/deq/JWST/mh+2.0_co2.5_flux.txt",
+            "author_row": 634,
+            "chemistry": "deq",
+            "teff_k": 250.0,
+            "logg_cgs": 3.5,
+            "metallicity_dex": 2.0,
+            "co_relative_to_solar": 2.5,
+            "logkzz": 7.0,
+            "tabulated_mass_mjup": 0.5209,
+            "tabulated_radius_rjup": 0.6389,
+            "tabulated_age_gyr": 0.2039
+          },
+          "conditional_residual_over_assumed_sigma": 11.84182042039996
+        },
+        {
+          "omitted_band": "F444W",
+          "chemistry_subset": "all",
+          "grid_index": 16921,
+          "chi2_conditional": 50.60386994865546,
+          "f444_amplitude_njy": 22722.184807465583,
+          "prediction_njy": [
+            0.008630075746204465,
+            3.723396482823134,
+            0.4487008303876692,
+            2.4126347040394647,
+            9.885933203970236,
+            63.20307758554862,
+            22722.184807465583
+          ],
+          "model": {
+            "table_member": "flame_skimmer_publication/deq/JWST/mh+1.5_co2.5_flux.txt",
+            "author_row": 558,
+            "chemistry": "deq",
+            "teff_k": 225.0,
+            "logg_cgs": 3.5,
+            "metallicity_dex": 1.5,
+            "co_relative_to_solar": 2.5,
+            "logkzz": 4.0,
+            "tabulated_mass_mjup": 0.9036,
+            "tabulated_radius_rjup": 0.8414,
+            "tabulated_age_gyr": 0.4853
+          },
+          "conditional_residual_over_assumed_sigma": -624.2314854783899
+        }
+      ]
+    },
+    {
+      "photometry_convention": "inferred_mjy",
+      "fractional_floor_assumed": 0.15,
+      "covariance_njy2": [
+        [
+          0.14271379926389158,
+          0.0015274026522229176,
+          0.0011741806831704043,
+          0.000828809870209975,
+          0.003808442625569773,
+          0.026859557935422208,
+          0.25214848789303673
+        ],
+        [
+          0.0015274026522229176,
+          0.44447549648209783,
+          0.01055786247522604,
+          0.0074523970230541935,
+          0.03424431525903332,
+          0.24151267593830714,
+          2.2672396988535137
+        ],
+        [
+          0.0011741806831704043,
+          0.01055786247522604,
+          0.31964149083585497,
+          0.005728980904316101,
+          0.026325090785351155,
+          0.18566127171171548,
+          1.742925517797485
+        ],
+        [
+          0.000828809870209975,
+          0.0074523970230541935,
+          0.005728980904316101,
+          0.20778016670597765,
+          0.018581888962915488,
+          0.13105129109680144,
+          1.2302654036948968
+        ],
+        [
+          0.003808442625569773,
+          0.03424431525903332,
+          0.026325090785351155,
+          0.018581888962915488,
+          2.4433199873809985,
+          0.6021903709020334,
+          5.6531604805918
+        ],
+        [
+          0.026859557935422208,
+          0.24151267593830714,
+          0.18566127171171548,
+          0.13105129109680144,
+          0.6021903709020334,
+          110.61396639663866,
+          39.86968070025159
+        ],
+        [
+          0.25214848789303673,
+          2.2672396988535137,
+          1.742925517797485,
+          1.2302654036948968,
+          5.6531604805918,
+          39.86968070025159,
+          9731.695330550707
+        ]
+      ],
+      "best_by_chemistry": [
+        {
+          "chemistry_subset": "all",
+          "grid_index": 13592,
+          "chi2_conditional": 38.83763839221069,
+          "f444_amplitude_njy": 672.804294708105,
+          "prediction_njy": [
+            0.03361732244909331,
+            4.116033078887965,
+            0.5539933287491031,
+            1.9778935373521698,
+            2.971418763290644,
+            74.9264530990006,
+            672.804294708105
+          ],
+          "model": {
+            "table_member": "flame_skimmer_publication/deq/JWST/mh+1.5_co0.5_flux.txt",
+            "author_row": 634,
+            "chemistry": "deq",
+            "teff_k": 250.0,
+            "logg_cgs": 3.5,
+            "metallicity_dex": 1.5,
+            "co_relative_to_solar": 0.5,
+            "logkzz": 7.0,
+            "tabulated_mass_mjup": 0.9491,
+            "tabulated_radius_rjup": 0.8624,
+            "tabulated_age_gyr": 0.3099
+          }
+        },
+        {
+          "chemistry_subset": "eq",
+          "grid_index": 37647,
+          "chi2_conditional": 41.84632723111433,
+          "f444_amplitude_njy": 698.9956988691408,
+          "prediction_njy": [
+            1.5161350790165617,
+            3.5341910652196513,
+            3.0661700580144724,
+            0.22900141390385315,
+            3.7745261770277168,
+            53.27849952292474,
+            698.9956988691408
+          ],
+          "model": {
+            "table_member": "flame_skimmer_publication/eq/JWST/mh-1.0_co2.5_flux.txt",
+            "author_row": 218,
+            "chemistry": "eq",
+            "teff_k": 400.0,
+            "logg_cgs": 3.5,
+            "metallicity_dex": -1.0,
+            "co_relative_to_solar": 2.5,
+            "logkzz": null,
+            "tabulated_mass_mjup": 1.626,
+            "tabulated_radius_rjup": 1.129,
+            "tabulated_age_gyr": 0.06373
+          }
+        },
+        {
+          "chemistry_subset": "deq",
+          "grid_index": 13592,
+          "chi2_conditional": 38.83763839221069,
+          "f444_amplitude_njy": 672.804294708105,
+          "prediction_njy": [
+            0.03361732244909331,
+            4.116033078887965,
+            0.5539933287491031,
+            1.9778935373521698,
+            2.971418763290644,
+            74.9264530990006,
+            672.804294708105
+          ],
+          "model": {
+            "table_member": "flame_skimmer_publication/deq/JWST/mh+1.5_co0.5_flux.txt",
+            "author_row": 634,
+            "chemistry": "deq",
+            "teff_k": 250.0,
+            "logg_cgs": 3.5,
+            "metallicity_dex": 1.5,
+            "co_relative_to_solar": 0.5,
+            "logkzz": 7.0,
+            "tabulated_mass_mjup": 0.9491,
+            "tabulated_radius_rjup": 0.8624,
+            "tabulated_age_gyr": 0.3099
+          }
+        }
+      ],
+      "held_out_predictions": [
+        {
+          "omitted_band": "F090W",
+          "chemistry_subset": "all",
+          "grid_index": 37647,
+          "chi2_conditional": 32.359561688580506,
+          "f444_amplitude_njy": 762.2430954804471,
+          "prediction_njy": [
+            1.6533198954811144,
+            3.8539761287954564,
+            3.3436070637795945,
+            0.24972220413640994,
+            4.116057540560359,
+            58.09931086072463,
+            762.2430954804471
+          ],
+          "model": {
+            "table_member": "flame_skimmer_publication/eq/JWST/mh-1.0_co2.5_flux.txt",
+            "author_row": 218,
+            "chemistry": "eq",
+            "teff_k": 400.0,
+            "logg_cgs": 3.5,
+            "metallicity_dex": -1.0,
+            "co_relative_to_solar": 2.5,
+            "logkzz": null,
+            "tabulated_mass_mjup": 1.626,
+            "tabulated_radius_rjup": 1.129,
+            "tabulated_age_gyr": 0.06373
+          },
+          "conditional_residual_over_assumed_sigma": -3.260266150153501
+        },
+        {
+          "omitted_band": "F115W",
+          "chemistry_subset": "all",
+          "grid_index": 11389,
+          "chi2_conditional": 6.836048244264351,
+          "f444_amplitude_njy": 717.4545094383657,
+          "prediction_njy": [
+            0.25566459014768794,
+            14.676469345032775,
+            2.4488578585177794,
+            2.562822866689435,
+            6.624795190466183,
+            70.54094272738817,
+            717.4545094383657
+          ],
+          "model": {
+            "table_member": "flame_skimmer_publication/deq/JWST/mh+1.0_co1.5_flux.txt",
+            "author_row": 711,
+            "chemistry": "deq",
+            "teff_k": 275.0,
+            "logg_cgs": 3.5,
+            "metallicity_dex": 1.0,
+            "co_relative_to_solar": 1.5,
+            "logkzz": 9.0,
+            "tabulated_mass_mjup": 1.349,
+            "tabulated_radius_rjup": 1.028,
+            "tabulated_age_gyr": 0.286
+          },
+          "conditional_residual_over_assumed_sigma": -16.225813675381705
+        },
+        {
+          "omitted_band": "F150W",
+          "chemistry_subset": "all",
+          "grid_index": 13592,
+          "chi2_conditional": 20.795045271005087,
+          "f444_amplitude_njy": 666.6767974410268,
+          "prediction_njy": [
+            0.03331115607492848,
+            4.078546722691277,
+            0.5489478903733532,
+            1.959880071415608,
+            2.944356866547985,
+            74.24406798313986,
+            666.6767974410268
+          ],
+          "model": {
+            "table_member": "flame_skimmer_publication/deq/JWST/mh+1.5_co0.5_flux.txt",
+            "author_row": 634,
+            "chemistry": "deq",
+            "teff_k": 250.0,
+            "logg_cgs": 3.5,
+            "metallicity_dex": 1.5,
+            "co_relative_to_solar": 0.5,
+            "logkzz": 7.0,
+            "tabulated_mass_mjup": 0.9491,
+            "tabulated_radius_rjup": 0.8624,
+            "tabulated_age_gyr": 0.3099
+          },
+          "conditional_residual_over_assumed_sigma": 4.249049076480883
+        },
+        {
+          "omitted_band": "F200W",
+          "chemistry_subset": "all",
+          "grid_index": 23898,
+          "chi2_conditional": 21.15889084253526,
+          "f444_amplitude_njy": 650.3977881071839,
+          "prediction_njy": [
+            0.8224522398341458,
+            3.833671483216546,
+            3.7372570690909113,
+            0.1590571494912409,
+            3.217364979662073,
+            59.55321270301651,
+            650.3977881071839
+          ],
+          "model": {
+            "table_member": "flame_skimmer_publication/deq/JWST/mh-0.5_co1.0_flux.txt",
+            "author_row": 935,
+            "chemistry": "deq",
+            "teff_k": 350.0,
+            "logg_cgs": 3.5,
+            "metallicity_dex": -0.5,
+            "co_relative_to_solar": 1.0,
+            "logkzz": 8.0,
+            "tabulated_mass_mjup": 1.592,
+            "tabulated_radius_rjup": 1.117,
+            "tabulated_age_gyr": 0.1089
+          },
+          "conditional_residual_over_assumed_sigma": 4.218872174794524
+        },
+        {
+          "omitted_band": "F277W",
+          "chemistry_subset": "all",
+          "grid_index": 227,
+          "chi2_conditional": 18.35187967471156,
+          "f444_amplitude_njy": 596.5173653149155,
+          "prediction_njy": [
+            0.5623826943165949,
+            4.302274243586156,
+            2.9462138164944,
+            0.20928470415363828,
+            2.237406440572987,
+            66.38540660274498,
+            596.5173653149155
+          ],
+          "model": {
+            "table_member": "flame_skimmer_publication/deq/JWST/mh+0.0_co0.5_flux.txt",
+            "author_row": 859,
+            "chemistry": "deq",
+            "teff_k": 325.0,
+            "logg_cgs": 3.5,
+            "metallicity_dex": 0.0,
+            "co_relative_to_solar": 0.5,
+            "logkzz": 7.0,
+            "tabulated_mass_mjup": 1.585,
+            "tabulated_radius_rjup": 1.114,
+            "tabulated_age_gyr": 0.1519
+          },
+          "conditional_residual_over_assumed_sigma": 4.7083097166345835
+        },
+        {
+          "omitted_band": "F356W",
+          "chemistry_subset": "all",
+          "grid_index": 17011,
+          "chi2_conditional": 30.34283321545546,
+          "f444_amplitude_njy": 650.3054168237064,
+          "prediction_njy": [
+            0.024921813522462987,
+            4.298629026461788,
+            0.7317904176000426,
+            2.6795574892971974,
+            4.495452699834581,
+            16.39934846542107,
+            650.3054168237064
+          ],
+          "model": {
+            "table_member": "flame_skimmer_publication/deq/JWST/mh+1.5_co2.5_flux.txt",
+            "author_row": 708,
+            "chemistry": "deq",
+            "teff_k": 275.0,
+            "logg_cgs": 3.5,
+            "metallicity_dex": 1.5,
+            "co_relative_to_solar": 2.5,
+            "logkzz": 4.0,
+            "tabulated_mass_mjup": 0.9871,
+            "tabulated_radius_rjup": 0.8795,
+            "tabulated_age_gyr": 0.234
+          },
+          "conditional_residual_over_assumed_sigma": 4.8063252845073805
+        },
+        {
+          "omitted_band": "F444W",
+          "chemistry_subset": "all",
+          "grid_index": 16921,
+          "chi2_conditional": 22.40384643174221,
+          "f444_amplitude_njy": 22972.845296061252,
+          "prediction_njy": [
+            0.008725278695282255,
+            3.764471246959072,
+            0.4536506875572712,
+            2.4392497588346664,
+            9.994990183663365,
+            63.900304302195096,
+            22972.845296061252
+          ],
+          "model": {
+            "table_member": "flame_skimmer_publication/deq/JWST/mh+1.5_co2.5_flux.txt",
+            "author_row": 558,
+            "chemistry": "deq",
+            "teff_k": 225.0,
+            "logg_cgs": 3.5,
+            "metallicity_dex": 1.5,
+            "co_relative_to_solar": 2.5,
+            "logkzz": 4.0,
+            "tabulated_mass_mjup": 0.9036,
+            "tabulated_radius_rjup": 0.8414,
+            "tabulated_age_gyr": 0.4853
+          },
+          "conditional_residual_over_assumed_sigma": -227.05556670825285
+        }
+      ]
+    },
+    {
+      "photometry_convention": "vega_svo",
+      "fractional_floor_assumed": 0.05,
+      "covariance_njy2": [
+        [
+          0.13893894701752763,
+          0.0015274026522229176,
+          0.0011741806831704043,
+          0.000828809870209975,
+          0.003808442625569773,
+          0.026859557935422208,
+          0.25214848789303673
+        ],
+        [
+          0.0015274026522229176,
+          0.13927720653875558,
+          0.01055786247522604,
+          0.0074523970230541935,
+          0.03424431525903332,
+          0.24151267593830714,
+          2.2672396988535137
+        ],
+        [
+          0.0011741806831704043,
+          0.01055786247522604,
+          0.1392795591905332,
+          0.005728980904316101,
+          0.026325090785351155,
+          0.18566127171171548,
+          1.742925517797485
+        ],
+        [
+          0.000828809870209975,
+          0.0074523970230541935,
+          0.005728980904316101,
+          0.11791635333857316,
+          0.018581888962915488,
+          0.13105129109680144,
+          1.2302654036948968
+        ],
+        [
+          0.003808442625569773,
+          0.03424431525903332,
+          0.026325090785351155,
+          0.018581888962915488,
+          0.5458721318313939,
+          0.6021903709020334,
+          5.6531604805918
+        ],
+        [
+          0.026859557935422208,
+          0.24151267593830714,
+          0.18566127171171548,
+          0.13105129109680144,
+          0.6021903709020334,
+          16.2355390409936,
+          39.86968070025159
+        ],
+        [
+          0.25214848789303673,
+          2.2672396988535137,
+          1.742925517797485,
+          1.2302654036948968,
+          5.6531604805918,
+          39.86968070025159,
+          1414.292204328161
+        ]
+      ],
+      "best_by_chemistry": [
+        {
+          "chemistry_subset": "all",
+          "grid_index": 29611,
+          "chi2_conditional": 105.48274502941108,
+          "f444_amplitude_njy": 621.463675956348,
+          "prediction_njy": [
+            1.3663549566724162,
+            3.1508684966257534,
+            3.920176862675349,
+            0.18527956738926218,
+            4.1111796166815715,
+            59.42302648255162,
+            621.463675956348
+          ],
+          "model": {
+            "table_member": "flame_skimmer_publication/deq/JWST/mh-1.0_co1.5_flux.txt",
+            "author_row": 1083,
+            "chemistry": "deq",
+            "teff_k": 400.0,
+            "logg_cgs": 3.5,
+            "metallicity_dex": -1.0,
+            "co_relative_to_solar": 1.5,
+            "logkzz": 4.0,
+            "tabulated_mass_mjup": 1.617,
+            "tabulated_radius_rjup": 1.126,
+            "tabulated_age_gyr": 0.06396
+          }
+        },
+        {
+          "chemistry_subset": "eq",
+          "grid_index": 37648,
+          "chi2_conditional": 118.1874616141702,
+          "f444_amplitude_njy": 662.6333890369655,
+          "prediction_njy": [
+            1.4839562680589284,
+            3.1498352866125914,
+            3.289752510587836,
+            0.19755366630160537,
+            3.5795136046619893,
+            54.67796379436205,
+            662.6333890369655
+          ],
+          "model": {
+            "table_member": "flame_skimmer_publication/eq/JWST/mh-1.0_co2.5_flux.txt",
+            "author_row": 219,
+            "chemistry": "eq",
+            "teff_k": 400.0,
+            "logg_cgs": 3.75,
+            "metallicity_dex": -1.0,
+            "co_relative_to_solar": 2.5,
+            "logkzz": null,
+            "tabulated_mass_mjup": 2.888,
+            "tabulated_radius_rjup": 1.128,
+            "tabulated_age_gyr": 0.1615
+          }
+        },
+        {
+          "chemistry_subset": "deq",
+          "grid_index": 29611,
+          "chi2_conditional": 105.48274502941108,
+          "f444_amplitude_njy": 621.463675956348,
+          "prediction_njy": [
+            1.3663549566724162,
+            3.1508684966257534,
+            3.920176862675349,
+            0.18527956738926218,
+            4.1111796166815715,
+            59.42302648255162,
+            621.463675956348
+          ],
+          "model": {
+            "table_member": "flame_skimmer_publication/deq/JWST/mh-1.0_co1.5_flux.txt",
+            "author_row": 1083,
+            "chemistry": "deq",
+            "teff_k": 400.0,
+            "logg_cgs": 3.5,
+            "metallicity_dex": -1.0,
+            "co_relative_to_solar": 1.5,
+            "logkzz": 4.0,
+            "tabulated_mass_mjup": 1.617,
+            "tabulated_radius_rjup": 1.126,
+            "tabulated_age_gyr": 0.06396
+          }
+        }
+      ],
+      "held_out_predictions": [
+        {
+          "omitted_band": "F090W",
+          "chemistry_subset": "all",
+          "grid_index": 29611,
+          "chi2_conditional": 98.50810583899828,
+          "f444_amplitude_njy": 632.4425419740552,
+          "prediction_njy": [
+            1.390493178393665,
+            3.206532189295538,
+            3.989431266763886,
+            0.18855274267670785,
+            4.1838083026893536,
+            60.47280215144273,
+            632.4425419740552
+          ],
+          "model": {
+            "table_member": "flame_skimmer_publication/deq/JWST/mh-1.0_co1.5_flux.txt",
+            "author_row": 1083,
+            "chemistry": "deq",
+            "teff_k": 400.0,
+            "logg_cgs": 3.5,
+            "metallicity_dex": -1.0,
+            "co_relative_to_solar": 1.5,
+            "logkzz": 4.0,
+            "tabulated_mass_mjup": 1.617,
+            "tabulated_radius_rjup": 1.126,
+            "tabulated_age_gyr": 0.06396
+          },
+          "conditional_residual_over_assumed_sigma": -2.6690735725633283
+        },
+        {
+          "omitted_band": "F115W",
+          "chemistry_subset": "all",
+          "grid_index": 11389,
+          "chi2_conditional": 29.784014503684116,
+          "f444_amplitude_njy": 688.3661794390324,
+          "prediction_njy": [
+            0.24658537309393713,
+            14.152528985583213,
+            2.3643373128336815,
+            2.4673530870317597,
+            6.344103015788106,
+            67.66413622697034,
+            688.3661794390324
+          ],
+          "model": {
+            "table_member": "flame_skimmer_publication/deq/JWST/mh+1.0_co1.5_flux.txt",
+            "author_row": 711,
+            "chemistry": "deq",
+            "teff_k": 275.0,
+            "logg_cgs": 3.5,
+            "metallicity_dex": 1.0,
+            "co_relative_to_solar": 1.5,
+            "logkzz": 9.0,
+            "tabulated_mass_mjup": 1.349,
+            "tabulated_radius_rjup": 1.028,
+            "tabulated_age_gyr": 0.286
+          },
+          "conditional_residual_over_assumed_sigma": -28.44493202755255
+        },
+        {
+          "omitted_band": "F150W",
+          "chemistry_subset": "all",
+          "grid_index": 30694,
+          "chi2_conditional": 72.24775132857881,
+          "f444_amplitude_njy": 669.5225163371938,
+          "prediction_njy": [
+            1.6592543853981292,
+            4.118885464841252,
+            5.6189491082502245,
+            0.19238755066450666,
+            6.1704365233258045,
+            57.850112078811726,
+            669.5225163371938
+          ],
+          "model": {
+            "table_member": "flame_skimmer_publication/deq/JWST/mh-1.0_co2.5_flux.txt",
+            "author_row": 1011,
+            "chemistry": "deq",
+            "teff_k": 375.0,
+            "logg_cgs": 3.5,
+            "metallicity_dex": -1.0,
+            "co_relative_to_solar": 2.5,
+            "logkzz": 9.0,
+            "tabulated_mass_mjup": 1.59,
+            "tabulated_radius_rjup": 1.116,
+            "tabulated_age_gyr": 0.0816
+          },
+          "conditional_residual_over_assumed_sigma": -7.647413106099661
+        },
+        {
+          "omitted_band": "F200W",
+          "chemistry_subset": "all",
+          "grid_index": 29611,
+          "chi2_conditional": 78.38261942429185,
+          "f444_amplitude_njy": 636.2383576744469,
+          "prediction_njy": [
+            1.3988386888353876,
+            3.22577726599444,
+            4.01337517444402,
+            0.1896844051021516,
+            4.208918829241233,
+            60.8357499239576,
+            636.2383576744469
+          ],
+          "model": {
+            "table_member": "flame_skimmer_publication/deq/JWST/mh-1.0_co1.5_flux.txt",
+            "author_row": 1083,
+            "chemistry": "deq",
+            "teff_k": 400.0,
+            "logg_cgs": 3.5,
+            "metallicity_dex": -1.0,
+            "co_relative_to_solar": 1.5,
+            "logkzz": 4.0,
+            "tabulated_mass_mjup": 1.617,
+            "tabulated_radius_rjup": 1.126,
+            "tabulated_age_gyr": 0.06396
+          },
+          "conditional_residual_over_assumed_sigma": 5.2316857722487144
+        },
+        {
+          "omitted_band": "F277W",
+          "chemistry_subset": "all",
+          "grid_index": 232,
+          "chi2_conditional": 32.7510334341806,
+          "f444_amplitude_njy": 627.3624019826119,
+          "prediction_njy": [
+            0.6786819121730793,
+            3.967646908668217,
+            2.920171777070659,
+            0.1786200745093487,
+            1.7461003107178839,
+            65.77449241898815,
+            627.3624019826119
+          ],
+          "model": {
+            "table_member": "flame_skimmer_publication/deq/JWST/mh+0.0_co0.5_flux.txt",
+            "author_row": 864,
+            "chemistry": "deq",
+            "teff_k": 325.0,
+            "logg_cgs": 3.75,
+            "metallicity_dex": 0.0,
+            "co_relative_to_solar": 0.5,
+            "logkzz": 7.0,
+            "tabulated_mass_mjup": 2.824,
+            "tabulated_radius_rjup": 1.116,
+            "tabulated_age_gyr": 0.3859
+          },
+          "conditional_residual_over_assumed_sigma": 10.846294861636924
+        },
+        {
+          "omitted_band": "F356W",
+          "chemistry_subset": "all",
+          "grid_index": 21467,
+          "chi2_conditional": 71.04633527821365,
+          "f444_amplitude_njy": 585.7364577159788,
+          "prediction_njy": [
+            0.007410543202495581,
+            3.9510887492801654,
+            0.25095287067342087,
+            3.062767534510617,
+            7.731307702453065,
+            19.41964444079095,
+            585.7364577159788
+          ],
+          "model": {
+            "table_member": "flame_skimmer_publication/deq/JWST/mh+2.0_co2.5_flux.txt",
+            "author_row": 634,
+            "chemistry": "deq",
+            "teff_k": 250.0,
+            "logg_cgs": 3.5,
+            "metallicity_dex": 2.0,
+            "co_relative_to_solar": 2.5,
+            "logkzz": 7.0,
+            "tabulated_mass_mjup": 0.5209,
+            "tabulated_radius_rjup": 0.6389,
+            "tabulated_age_gyr": 0.2039
+          },
+          "conditional_residual_over_assumed_sigma": 11.82310268564334
+        },
+        {
+          "omitted_band": "F444W",
+          "chemistry_subset": "all",
+          "grid_index": 16921,
+          "chi2_conditional": 50.710677505735056,
+          "f444_amplitude_njy": 22691.379352450975,
+          "prediction_njy": [
+            0.0085903069704715,
+            3.7057440913575332,
+            0.4484879799552679,
+            2.411418979697282,
+            9.91771441075321,
+            63.153862024278496,
+            22691.379352450975
+          ],
+          "model": {
+            "table_member": "flame_skimmer_publication/deq/JWST/mh+1.5_co2.5_flux.txt",
+            "author_row": 558,
+            "chemistry": "deq",
+            "teff_k": 225.0,
+            "logg_cgs": 3.5,
+            "metallicity_dex": 1.5,
+            "co_relative_to_solar": 2.5,
+            "logkzz": 4.0,
+            "tabulated_mass_mjup": 0.9036,
+            "tabulated_radius_rjup": 0.8414,
+            "tabulated_age_gyr": 0.4853
+          },
+          "conditional_residual_over_assumed_sigma": -623.3633748855631
+        }
+      ]
+    },
+    {
+      "photometry_convention": "vega_svo",
+      "fractional_floor_assumed": 0.15,
+      "covariance_njy2": [
+        [
+          0.14271379926389158,
+          0.0015274026522229176,
+          0.0011741806831704043,
+          0.000828809870209975,
+          0.003808442625569773,
+          0.026859557935422208,
+          0.25214848789303673
+        ],
+        [
+          0.0015274026522229176,
+          0.44447549648209783,
+          0.01055786247522604,
+          0.0074523970230541935,
+          0.03424431525903332,
+          0.24151267593830714,
+          2.2672396988535137
+        ],
+        [
+          0.0011741806831704043,
+          0.01055786247522604,
+          0.31964149083585497,
+          0.005728980904316101,
+          0.026325090785351155,
+          0.18566127171171548,
+          1.742925517797485
+        ],
+        [
+          0.000828809870209975,
+          0.0074523970230541935,
+          0.005728980904316101,
+          0.20778016670597765,
+          0.018581888962915488,
+          0.13105129109680144,
+          1.2302654036948968
+        ],
+        [
+          0.003808442625569773,
+          0.03424431525903332,
+          0.026325090785351155,
+          0.018581888962915488,
+          2.4433199873809985,
+          0.6021903709020334,
+          5.6531604805918
+        ],
+        [
+          0.026859557935422208,
+          0.24151267593830714,
+          0.18566127171171548,
+          0.13105129109680144,
+          0.6021903709020334,
+          110.61396639663866,
+          39.86968070025159
+        ],
+        [
+          0.25214848789303673,
+          2.2672396988535137,
+          1.742925517797485,
+          1.2302654036948968,
+          5.6531604805918,
+          39.86968070025159,
+          9731.695330550707
+        ]
+      ],
+      "best_by_chemistry": [
+        {
+          "chemistry_subset": "all",
+          "grid_index": 23898,
+          "chi2_conditional": 38.82817419321965,
+          "f444_amplitude_njy": 643.9168796722143,
+          "prediction_njy": [
+            0.8146622585580814,
+            3.8180739726945796,
+            3.704415744644559,
+            0.15821278968972569,
+            3.201699083924499,
+            59.342908418891405,
+            643.9168796722143
+          ],
+          "model": {
+            "table_member": "flame_skimmer_publication/deq/JWST/mh-0.5_co1.0_flux.txt",
+            "author_row": 935,
+            "chemistry": "deq",
+            "teff_k": 350.0,
+            "logg_cgs": 3.5,
+            "metallicity_dex": -0.5,
+            "co_relative_to_solar": 1.0,
+            "logkzz": 8.0,
+            "tabulated_mass_mjup": 1.592,
+            "tabulated_radius_rjup": 1.117,
+            "tabulated_age_gyr": 0.1089
+          }
+        },
+        {
+          "chemistry_subset": "eq",
+          "grid_index": 37647,
+          "chi2_conditional": 42.000407955202874,
+          "f444_amplitude_njy": 697.7711076602135,
+          "prediction_njy": [
+            1.5200601366944138,
+            3.537753027317173,
+            3.0732854109885483,
+            0.22809972478083226,
+            3.7693258657548196,
+            52.99708715442462,
+            697.7711076602135
+          ],
+          "model": {
+            "table_member": "flame_skimmer_publication/eq/JWST/mh-1.0_co2.5_flux.txt",
+            "author_row": 218,
+            "chemistry": "eq",
+            "teff_k": 400.0,
+            "logg_cgs": 3.5,
+            "metallicity_dex": -1.0,
+            "co_relative_to_solar": 2.5,
+            "logkzz": null,
+            "tabulated_mass_mjup": 1.626,
+            "tabulated_radius_rjup": 1.129,
+            "tabulated_age_gyr": 0.06373
+          }
+        },
+        {
+          "chemistry_subset": "deq",
+          "grid_index": 23898,
+          "chi2_conditional": 38.82817419321965,
+          "f444_amplitude_njy": 643.9168796722143,
+          "prediction_njy": [
+            0.8146622585580814,
+            3.8180739726945796,
+            3.704415744644559,
+            0.15821278968972569,
+            3.201699083924499,
+            59.342908418891405,
+            643.9168796722143
+          ],
+          "model": {
+            "table_member": "flame_skimmer_publication/deq/JWST/mh-0.5_co1.0_flux.txt",
+            "author_row": 935,
+            "chemistry": "deq",
+            "teff_k": 350.0,
+            "logg_cgs": 3.5,
+            "metallicity_dex": -0.5,
+            "co_relative_to_solar": 1.0,
+            "logkzz": 8.0,
+            "tabulated_mass_mjup": 1.592,
+            "tabulated_radius_rjup": 1.117,
+            "tabulated_age_gyr": 0.1089
+          }
+        }
+      ],
+      "held_out_predictions": [
+        {
+          "omitted_band": "F090W",
+          "chemistry_subset": "all",
+          "grid_index": 37647,
+          "chi2_conditional": 32.43708448882842,
+          "f444_amplitude_njy": 761.4302491176917,
+          "prediction_njy": [
+            1.658738454273628,
+            3.860509756472651,
+            3.35366777215188,
+            0.24890974756169212,
+            4.113209477233133,
+            57.83212407550146,
+            761.4302491176917
+          ],
+          "model": {
+            "table_member": "flame_skimmer_publication/eq/JWST/mh-1.0_co2.5_flux.txt",
+            "author_row": 218,
+            "chemistry": "eq",
+            "teff_k": 400.0,
+            "logg_cgs": 3.5,
+            "metallicity_dex": -1.0,
+            "co_relative_to_solar": 2.5,
+            "logkzz": null,
+            "tabulated_mass_mjup": 1.626,
+            "tabulated_radius_rjup": 1.129,
+            "tabulated_age_gyr": 0.06373
+          },
+          "conditional_residual_over_assumed_sigma": -3.2746911384249184
+        },
+        {
+          "omitted_band": "F115W",
+          "chemistry_subset": "all",
+          "grid_index": 11389,
+          "chi2_conditional": 6.852116952729376,
+          "f444_amplitude_njy": 716.6311838966906,
+          "prediction_njy": [
+            0.2567104153721229,
+            14.733645993961856,
+            2.461419369859074,
+            2.5686650748757907,
+            6.6045982367578855,
+            70.44249339965636,
+            716.6311838966906
+          ],
+          "model": {
+            "table_member": "flame_skimmer_publication/deq/JWST/mh+1.0_co1.5_flux.txt",
+            "author_row": 711,
+            "chemistry": "deq",
+            "teff_k": 275.0,
+            "logg_cgs": 3.5,
+            "metallicity_dex": 1.0,
+            "co_relative_to_solar": 1.5,
+            "logkzz": 9.0,
+            "tabulated_mass_mjup": 1.349,
+            "tabulated_radius_rjup": 1.028,
+            "tabulated_age_gyr": 0.286
+          },
+          "conditional_residual_over_assumed_sigma": -16.311847112094462
+        },
+        {
+          "omitted_band": "F150W",
+          "chemistry_subset": "all",
+          "grid_index": 13592,
+          "chi2_conditional": 20.82829430857826,
+          "f444_amplitude_njy": 665.9144640651857,
+          "prediction_njy": [
+            0.03323274653175046,
+            4.0591301503253305,
+            0.5486663931572744,
+            1.9671171583895375,
+            2.9374409842501876,
+            74.46590393161868,
+            665.9144640651857
+          ],
+          "model": {
+            "table_member": "flame_skimmer_publication/deq/JWST/mh+1.5_co0.5_flux.txt",
+            "author_row": 634,
+            "chemistry": "deq",
+            "teff_k": 250.0,
+            "logg_cgs": 3.5,
+            "metallicity_dex": 1.5,
+            "co_relative_to_solar": 0.5,
+            "logkzz": 7.0,
+            "tabulated_mass_mjup": 0.9491,
+            "tabulated_radius_rjup": 0.8624,
+            "tabulated_age_gyr": 0.3099
+          },
+          "conditional_residual_over_assumed_sigma": 4.249388655774716
+        },
+        {
+          "omitted_band": "F200W",
+          "chemistry_subset": "all",
+          "grid_index": 23898,
+          "chi2_conditional": 21.039543931050524,
+          "f444_amplitude_njy": 648.7600783675442,
+          "prediction_njy": [
+            0.8207897127565045,
+            3.8467914849496405,
+            3.7322783804408983,
+            0.15940278175360795,
+            3.225780553622879,
+            59.78925406645039,
+            648.7600783675442
+          ],
+          "model": {
+            "table_member": "flame_skimmer_publication/deq/JWST/mh-0.5_co1.0_flux.txt",
+            "author_row": 935,
+            "chemistry": "deq",
+            "teff_k": 350.0,
+            "logg_cgs": 3.5,
+            "metallicity_dex": -0.5,
+            "co_relative_to_solar": 1.0,
+            "logkzz": 8.0,
+            "tabulated_mass_mjup": 1.592,
+            "tabulated_radius_rjup": 1.117,
+            "tabulated_age_gyr": 0.1089
+          },
+          "conditional_residual_over_assumed_sigma": 4.218613041414041
+        },
+        {
+          "omitted_band": "F277W",
+          "chemistry_subset": "all",
+          "grid_index": 227,
+          "chi2_conditional": 18.31116073878543,
+          "f444_amplitude_njy": 595.6839062128371,
+          "prediction_njy": [
+            0.5612594338182699,
+            4.285785145331234,
+            2.9573707851161735,
+            0.20961755220366793,
+            2.2468111408194402,
+            66.61236979726306,
+            595.6839062128371
+          ],
+          "model": {
+            "table_member": "flame_skimmer_publication/deq/JWST/mh+0.0_co0.5_flux.txt",
+            "author_row": 859,
+            "chemistry": "deq",
+            "teff_k": 325.0,
+            "logg_cgs": 3.5,
+            "metallicity_dex": 0.0,
+            "co_relative_to_solar": 0.5,
+            "logkzz": 7.0,
+            "tabulated_mass_mjup": 1.585,
+            "tabulated_radius_rjup": 1.114,
+            "tabulated_age_gyr": 0.1519
+          },
+          "conditional_residual_over_assumed_sigma": 4.70250750747186
+        },
+        {
+          "omitted_band": "F356W",
+          "chemistry_subset": "all",
+          "grid_index": 17011,
+          "chi2_conditional": 30.28678688780016,
+          "f444_amplitude_njy": 650.2017887935436,
+          "prediction_njy": [
+            0.025072402262109206,
+            4.3058875951812805,
+            0.73272004299223,
+            2.6758387485030326,
+            4.504004978011683,
+            16.50392257450646,
+            650.2017887935436
+          ],
+          "model": {
+            "table_member": "flame_skimmer_publication/deq/JWST/mh+1.5_co2.5_flux.txt",
+            "author_row": 708,
+            "chemistry": "deq",
+            "teff_k": 275.0,
+            "logg_cgs": 3.5,
+            "metallicity_dex": 1.5,
+            "co_relative_to_solar": 2.5,
+            "logkzz": 4.0,
+            "tabulated_mass_mjup": 0.9871,
+            "tabulated_radius_rjup": 0.8795,
+            "tabulated_age_gyr": 0.234
+          },
+          "conditional_residual_over_assumed_sigma": 4.796686817199819
+        },
+        {
+          "omitted_band": "F444W",
+          "chemistry_subset": "all",
+          "grid_index": 16921,
+          "chi2_conditional": 22.425055290387917,
+          "f444_amplitude_njy": 22949.809007221334,
+          "prediction_njy": [
+            0.008688141043502877,
+            3.747948408306357,
+            0.45359576084545766,
+            2.438882368535411,
+            10.030666182942639,
+            63.87311449927563,
+            22949.809007221334
+          ],
+          "model": {
+            "table_member": "flame_skimmer_publication/deq/JWST/mh+1.5_co2.5_flux.txt",
+            "author_row": 558,
+            "chemistry": "deq",
+            "teff_k": 225.0,
+            "logg_cgs": 3.5,
+            "metallicity_dex": 1.5,
+            "co_relative_to_solar": 2.5,
+            "logkzz": 4.0,
+            "tabulated_mass_mjup": 0.9036,
+            "tabulated_radius_rjup": 0.8414,
+            "tabulated_age_gyr": 0.4853
+          },
+          "conditional_residual_over_assumed_sigma": -226.821569568768
+        }
+      ]
+    }
+  ],
+  "runtime_seconds": 34.011777265999626,
+  "limits": [
+    "Versioned finite cloudfree updated-opacity eq/deq family; not clouds or galaxies.",
+    "Unit interpretation independently cross-validated numerically; inconsistent notebook prose is not silently applied.",
+    "Zero points/passbands are nominal, not source-specific empirical calibration.",
+    "Assumed covariance floors, source morphology and physical-model inadequacy remain.",
+    "Tabulated evolution metadata are not fitted ages, distances or coevality evidence.",
+    "No class probabilities, posterior grid-member counts or identity."
+  ],
+  "execution_status": "final scientific rerun after merged multiplicity dependency",
+  "multiplicity_dependency_revision": "bc7abf06378ecb02859df0e172637dbf9c6863f4",
+  "merged_dependency_present_in_ancestry": true
+}

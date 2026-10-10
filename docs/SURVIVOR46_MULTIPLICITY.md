@@ -67,9 +67,9 @@ are not newly established.
 All pairs are refitted with each omitted band removed from the likelihood.
 Predictions retain the same F444-derived morphology and are not independent
 imaging validations. Under15% floors, holding outF277 gives2.122nJy versus
-9.739nJy observed, with descriptive conditional residual4.852 assumed sigma.
-Holding outF115 predicts10.131nJy versus3.907nJy measured (−9.477 assumed sigma),
-and holding outF090 predicts3.275nJy versus0.432nJy (−7.544 assumed sigma).
+9.740nJy observed, with descriptive conditional residual4.852 assumed sigma.
+Holding outF115 predicts10.131nJy versus3.906nJy measured (−9.477 assumed sigma),
+and holding outF090 predicts3.275nJy versus0.434nJy (−7.544 assumed sigma).
 Adding a hotter object to recover short-wave flux forces too much blue emission;
 the positive mixture cannot freely repair all of these bands. Full predictions,
 components, fresh residuals, covariance, input hashes and dual weights are in
