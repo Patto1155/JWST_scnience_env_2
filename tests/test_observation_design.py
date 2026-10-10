@@ -105,4 +105,20 @@ def test_actual_primary_curves_units_and_nominal_range():
 
 def test_pinned_replay():
     saved = json.loads((ROOT / "research_output/mom_observation_design.json").read_text())
-    assert run() == saved
+    def compare(actual, expected):
+        if isinstance(expected, dict):
+            assert actual.keys() == expected.keys()
+            for key in expected:
+                compare(actual[key], expected[key])
+        elif isinstance(expected, list):
+            assert len(actual) == len(expected)
+            for left, right in zip(actual, expected, strict=True):
+                compare(left, right)
+        elif isinstance(expected, float):
+            # Cross-platform eigensolvers differ at floating-point roundoff.
+            # Preserve structure and metadata exactly, scientific values tightly.
+            assert actual == pytest.approx(expected, rel=2e-10, abs=1e-12)
+        else:
+            assert actual == expected
+
+    compare(run(), saved)
