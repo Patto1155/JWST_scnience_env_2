@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "scope": "intermediate second-round integrated quality check, not final release",
+  "code_revision": "9381152",
+  "tests": 679,
+  "skips": 3,
+  "passed": 676,
+  "errors": 0,
+  "failures": 0,
+  "pytest_runtime_seconds": 56.147,
+  "log_sha256": "85d68107450a811b48009cfce3ce58bc52a1a851a7b0c6fc27512dfcaa4e3444",
+  "junit_sha256": "48f53794c83fac7dfc348e0c360044f45d716cdfde3889320a5eede2c21e2866",
+  "strict_new_science_lint_passed_separately": true,
+  "final_followups_pending": [
+    "complete20Cloudy",
+    "boundedmeasurementalternatives",
+    "gatedobservationcontrasts",
+    "finalindependentreleasegate"
+  ]
+}

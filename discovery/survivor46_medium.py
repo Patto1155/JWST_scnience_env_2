@@ -173,20 +173,39 @@ def run(directory, deep, photometry, output):
             "shared_exact_filenames": overlap,
             "medium_contributors": cmedium,
             "wide_contributors": cwide,
-            "interpretation": "Different filters may share visits/calibration; disjoint exact file names do not make measurement systematics independent.",
+            "interpretation": (
+                "Different filters may share visits/calibration; disjoint exact file "
+                "names do not make measurement systematics independent."
+            ),
         },
         "single_narrow_line_response_sensitivity": {
             "assumed_ratio_fractional_tolerance": 0.15,
             "ratio_not_a_calibrated_interval": True,
             "matched_wavelengths_micron": wavelengths[matches].tolist(),
             "maximum_f410_over_f444_single_line": float(np.nanmax(responses[supported])),
-            "interpretation": "A single line inside both filters may mimic adjacent-band signal; positive F410 rejects only F444-only excess with negligible medium-band emission.",
+            "interpretation": (
+                "A single line inside both filters may mimic adjacent-band signal; "
+                "positive F410 rejects only F444-only excess with negligible "
+                "medium-band emission."
+            ),
         },
         "limits": [
-            "Modeled official PSF transported to DAWN; source-specific empirical PSF, wings and rotation not calibrated.",
-            "Diagonal objective and background scatter are descriptive, not Gaussian-tail probability; source shot noise omitted.",
-            "Source shape frozen from F444 and nominal passbands; systematic floors remain assumed.",
-            "No broad-continuum versus overlapping-line identity or stellar/galaxy classification established.",
+            (
+                "Modeled official PSF transported to DAWN; source-specific empirical "
+                "PSF, wings and rotation not calibrated."
+            ),
+            (
+                "Diagonal objective and background scatter are descriptive, not "
+                "Gaussian-tail probability; source shot noise omitted."
+            ),
+            (
+                "Source shape frozen from F444 and nominal passbands; "
+                "systematic floors remain assumed."
+            ),
+            (
+                "No broad-continuum versus overlapping-line identity or "
+                "stellar/galaxy classification established."
+            ),
         ],
     }
     output.write_text(json.dumps(result, indent=2, allow_nan=False) + "\n")

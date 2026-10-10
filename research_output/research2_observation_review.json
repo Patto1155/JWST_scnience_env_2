@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "report_sha256": "b31a84b9ff375a52c07dca3c072bc1dfcc578ebf6b68a9591e4a89ca31cddbb4",
+  "report_sha256": "45b067f2b394692613181700e5574f1ad3ede94dd90d69980d875518dc23fc59",
   "four_primary_response_curves_verified": true,
   "actual_cases": [
     [
@@ -187,5 +187,7 @@
   "maximum_quadrature_correlation_error": 1.6819878823071122e-14,
   "maximum_profiled_SNR_error": 3.375077994860476e-13,
   "independent_fixed_floor_time_ratio": 28.80000000000009,
-  "scope": "Continuous white-noise Gaussian design under nominal curves; no empirical source LSF, detector-gap coverage, line sensitivity or absolute time"
+  "scope": "Continuous white-noise Gaussian design under nominal curves; no empirical source LSF, detector-gap coverage, line sensitivity or absolute time",
+  "cloudy_line_convention_sha256": "8915da75d9e21ff7d26e99678f1dc8e97c494069472acc36dccad20c1937f1f7",
+  "four_cloudy_source_members_verified": true
 }

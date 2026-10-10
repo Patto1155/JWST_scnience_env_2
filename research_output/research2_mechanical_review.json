@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "reviews": [
+    {
+      "frozen_commit": "52f473150ef0bcfe91f08d3962dc0814164d168a",
+      "files": [
+        {
+          "path": "tools/jwst/cloudy_observation_contrasts.py",
+          "before_sha256": "6d25dc3376ed24bc0c1b5cae476472e0cbe46cb24a7884b1b9109e6c0bbb0825",
+          "after_sha256": "70fb122981ac3f80faea1b3daa74450ae0d55ace3d0c79dcde70ea956d52a1aa",
+          "exact_AST_with_literals": true,
+          "same_flattened_import_symbols_and_remaining_AST": true
+        },
+        {
+          "path": "tools/jwst/observation_design.py",
+          "before_sha256": "006a7a8817890ef4dff96d353d1d2f5a192695d9530831265d01b561c83e85d6",
+          "after_sha256": "edb98f0f97fa83b94490f3459344ed6904bb0e75f462ce41cc56fbaf7465c3d6",
+          "exact_AST_with_literals": true,
+          "same_flattened_import_symbols_and_remaining_AST": true
+        }
+      ]
+    },
+    {
+      "frozen_commit": "836e300cff4b852d1d9a6e40acd6990852108083",
+      "files": [
+        {
+          "path": "data_pipeline/mom_author_provenance.py",
+          "before_sha256": "9be3e756bd58747112284d72c2b9ec8aa805069963f7a15d70f5246137b3b000",
+          "after_sha256": "161fd1a21a7424d2df40a1f97e0f909bcc3b3af3a6d63d98512eeb76e759d55c",
+          "exact_AST_with_literals": true,
+          "same_flattened_import_symbols_and_remaining_AST": true
+        },
+        {
+          "path": "discovery/candidate_neighborhood.py",
+          "before_sha256": "10cba9ba430e86319b3bde9e409d71f7397d87532427d8e45f5b71cdcf52b0f6",
+          "after_sha256": "9d42e2b2ac126c2877f1c7ad109a8d23285954b5ac500834d32d6e84b9eda500",
+          "exact_AST_with_literals": true,
+          "same_flattened_import_symbols_and_remaining_AST": true
+        },
+        {
+          "path": "tests/test_mom_author_provenance.py",
+          "before_sha256": "42942373eb07650772a364ce1be7fa697cbe1f325b8c47c4cf7bf8c45fc28da9",
+          "after_sha256": "0f1c04212f44f5cbe3ec8c46bc7e086c459dd9f095818a1960e260694bf6007b",
+          "exact_AST_with_literals": true,
+          "same_flattened_import_symbols_and_remaining_AST": true
+        }
+      ]
+    },
+    {
+      "frozen_commit": "21f76df0f6ff213286a2143cb7e9a6ce5b9549d5",
+      "files": [
+        {
+          "path": "discovery/survivor46_medium.py",
+          "before_sha256": "f636cb5379ba49fdb96e44cf527bfaab1d84ff465dbe55e1c47700745e0f8199",
+          "after_sha256": "e49c2b873abdb1ea4f18970f338483c20e8bcea1ab5786f950621e6d3e48e63c",
+          "exact_AST_with_literals": true,
+          "same_flattened_import_symbols_and_remaining_AST": true
+        },
+        {
+          "path": "discovery/survivor_flame.py",
+          "before_sha256": "0662c157c65a76cb1d17d982f4cd02946b87d6ed0da36a494d9f00a8c139814d",
+          "after_sha256": "b2d3729a48835bcec2173c4cb0cea8381289027104d4a21c0997c9b4e0326099",
+          "exact_AST_with_literals": true,
+          "same_flattened_import_symbols_and_remaining_AST": true
+        },
+        {
+          "path": "discovery/survivor_multiplicity.py",
+          "before_sha256": "ad7ecb727fb4ce8a2823f6659aa8a2e07b1f8679fbf7200277de36291e40779a",
+          "after_sha256": "abc4b177d06514a66ff4bc2a46c63cd22e67982b328d18dd3ac02d487763803b",
+          "exact_AST_with_literals": true,
+          "same_flattened_import_symbols_and_remaining_AST": true
+        },
+        {
+          "path": "tests/test_survivor_flame.py",
+          "before_sha256": "04f8a4a4ee7b86f672429931eca814061e1a7af5a221b2793e00eb7b027b8255",
+          "after_sha256": "996a519c75cddb1c2dccdd178722b2e74b568f748544ae89d60974b458aa92fc",
+          "exact_AST_with_literals": false,
+          "same_flattened_import_symbols_and_remaining_AST": true
+        }
+      ]
+    },
+    {
+      "frozen_commit": "82ab6fc86d73be99be46bef98c378471dfc957ad",
+      "files": [
+        {
+          "path": "data_pipeline/cloudy_inputs.py",
+          "before_sha256": "7742b5a755f4d955f80d8a9453c41a9ad3c55359eefeceee46edc18f41b4da05",
+          "after_sha256": "b1041a02dcb09a7168a7ded46fd7e7a62bea1031f1e9d06527b931e273195038",
+          "exact_AST_with_literals": true,
+          "same_flattened_import_symbols_and_remaining_AST": true
+        },
+        {
+          "path": "tests/test_cloudy_pilot.py",
+          "before_sha256": "6ed3677223d153e89bad754a44dd50baa32a4cd2d154418835dc7f9f46b3d786",
+          "after_sha256": "eaaed69d33e1c17dc42921845a57b8791f5485262629a5b4156a4bff26f365be",
+          "exact_AST_with_literals": true,
+          "same_flattened_import_symbols_and_remaining_AST": true
+        },
+        {
+          "path": "tools/jwst/cloudy_pilot.py",
+          "before_sha256": "2f7b0839e4eb08439bbf370abe28ac06972d1b842a4643866b651b089b5a5356",
+          "after_sha256": "27b43e6c1555bb288c80dd9dd53d589a8f29b7806a41c3fdc42de1e3f7b683ae",
+          "exact_AST_with_literals": false,
+          "same_flattened_import_symbols_and_remaining_AST": true
+        }
+      ]
+    }
+  ],
+  "scope": "Source positions excluded; all computation and interpretation AST/literals preserved. Import statement ordering/grouping may change while symbol/module/alias imports remain identical."
+}

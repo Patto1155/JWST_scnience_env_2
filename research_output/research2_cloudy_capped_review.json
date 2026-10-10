@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "source_receipt_sha256": "639ad54753e7aa18d105ec6c8941c47f94ef8a9ed85b194d827aa7ed519b692e",
+  "records": [
+    {
+      "model_id": "model001",
+      "observed_complete_thermal_summary": false,
+      "line_table_bytes": 0,
+      "temperature_average_bytes": 0,
+      "all_file_hashes_match": true
+    },
+    {
+      "model_id": "model002",
+      "observed_complete_thermal_summary": false,
+      "line_table_bytes": 0,
+      "temperature_average_bytes": 0,
+      "all_file_hashes_match": true
+    },
+    {
+      "model_id": "model003",
+      "observed_complete_thermal_summary": false,
+      "line_table_bytes": 0,
+      "temperature_average_bytes": 0,
+      "all_file_hashes_match": true
+    },
+    {
+      "model_id": "model004",
+      "observed_complete_thermal_summary": false,
+      "line_table_bytes": 0,
+      "temperature_average_bytes": 0,
+      "all_file_hashes_match": true
+    },
+    {
+      "model_id": "model005",
+      "observed_complete_thermal_summary": false,
+      "line_table_bytes": 0,
+      "temperature_average_bytes": 0,
+      "all_file_hashes_match": true
+    },
+    {
+      "model_id": "model006",
+      "observed_complete_thermal_summary": false,
+      "line_table_bytes": 0,
+      "temperature_average_bytes": 0,
+      "all_file_hashes_match": true
+    },
+    {
+      "model_id": "model007",
+      "observed_complete_thermal_summary": false,
+      "line_table_bytes": 0,
+      "temperature_average_bytes": 0,
+      "all_file_hashes_match": true
+    },
+    {
+      "model_id": "model008",
+      "raw_files_declared": false
+    },
+    {
+      "model_id": "model009",
+      "raw_files_declared": false
+    },
+    {
+      "model_id": "model010",
+      "raw_files_declared": false
+    },
+    {
+      "model_id": "model011",
+      "raw_files_declared": false
+    },
+    {
+      "model_id": "model012",
+      "raw_files_declared": false
+    },
+    {
+      "model_id": "model013",
+      "raw_files_declared": false
+    },
+    {
+      "model_id": "model014",
+      "raw_files_declared": false
+    },
+    {
+      "model_id": "model015",
+      "raw_files_declared": false
+    },
+    {
+      "model_id": "model016",
+      "raw_files_declared": false
+    },
+    {
+      "model_id": "model017",
+      "raw_files_declared": false
+    },
+    {
+      "model_id": "model018",
+      "raw_files_declared": false
+    },
+    {
+      "model_id": "model019",
+      "raw_files_declared": false
+    }
+  ],
+  "scope": "Independent raw-file hashes and observed incompleteness verified. Execution wallcap/cancellation timing cannot be reconstructed from these files alone; no incomplete prediction accepted."
+}

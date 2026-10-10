@@ -82,3 +82,31 @@ pilot do not supply survey completeness, contamination or cosmological odds.
 Updated status/report must identify what changed, what was rejected, what remains
 assumption-dependent, actual checks/skips, input hashes, acquisition ledger,
 merged PRs and executable reproduction commands.
+
+## Recorded budget and stopping amendments
+
+The first three newly acquired RATE products closed the target-only CAL
+variance and equal-half donor SCI identities. This justified acquiring the
+remaining six RATEs to test all three groups, rather than assuming the first
+group's gain relation. Their nine-product payload is 755,671,680 bytes.
+Spectroscopy's new-selection ceiling increases from 350 to **870 MiB** using
+448 MiB reserve and 72 MiB of the real-source allocation. The real-source
+ceiling becomes **78 MiB**, reserve becomes zero, and the aggregate remains
+**2 GiB**. This is a coordinator allocation change within the user's cap.
+Restored CALs and already-pinned imaging remain separately accounted.
+
+Seven Cloudy controls stopped at the declared 600-second limit without final
+line saves; twelve queued controls were not executed. No unfinished predictions
+were accepted. After merging the validated first model, a revised experiment
+declared a 600-second existing-OpenBLAS ordinary control and a 1,200-second
+serialized original-backend nitrogen partner. Both converged and received
+independent validation. The unchanged 20-member physical pilot can then retry
+with one pinned backend, at most two workers and a 1,200-second per-model cap.
+Fail closed on incomplete output or failed convergence; cancel queued work.
+Record backend and raw-profile differences, and do not rescale nitrogen lines.
+
+A publication defect truncated the large candidate-neighborhood JSON after
+its numerical validation. PR #67 restores the exact frozen artifact. Subsequent
+publication reads bounded chunks and requires every created remote Git blob
+to match its immutable local Git identity before opening a PR. Independent
+remote-tree JSON/hash validation remains required alongside CI.

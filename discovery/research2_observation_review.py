@@ -40,7 +40,7 @@ def numeric_gram(wavelength, resolving_power, intrinsic_width):
     return gram
 
 
-def audit(root):
+def audit(root, cloudy_source=None):
     report_path = root / "research_output/mom_observation_design.json"
     report = json.loads(report_path.read_text())
     base = root / "data_sources/pilot/observation_design"
@@ -102,7 +102,7 @@ def audit(root):
     assert abs(time - exposure["fixed_floor_SNR30_t_over_t0"]) < 1e-10
     assert exposure["fixed_floor_SNR10_t_over_t0"] is None
     assert exposure["absolute_seconds"] is None
-    return {
+    reviewed = {
         "schema_version": 1,
         "report_sha256": hashlib.sha256(report_path.read_bytes()).hexdigest(),
         "four_primary_response_curves_verified": True,
@@ -116,14 +116,31 @@ def audit(root):
             "line sensitivity or absolute time"
         ),
     }
+    if cloudy_source is not None:
+        convention_path = base / "cloudy_line_convention.json"
+        convention = json.loads(convention_path.read_text())
+        for item in convention["members"]:
+            raw = (cloudy_source / item["member"]).read_bytes()
+            assert len(raw) == item["bytes"]
+            assert hashlib.sha256(raw).hexdigest() == item["sha256"]
+        target = next(row for row in report["additional_stage_targets"] if row["ion"] == "CII")
+        assert (
+            target["rest_wavelength_convention"] == "Cloudy air wavelength; approximate target only"
+        )
+        reviewed["cloudy_line_convention_sha256"] = hashlib.sha256(
+            convention_path.read_bytes()
+        ).hexdigest()
+        reviewed["four_cloudy_source_members_verified"] = True
+    return reviewed
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--cloudy-source", type=Path)
     args = parser.parse_args()
-    args.output.write_text(json.dumps(audit(args.root), indent=2) + "\n")
+    args.output.write_text(json.dumps(audit(args.root, args.cloudy_source), indent=2) + "\n")
 
 
 if __name__ == "__main__":

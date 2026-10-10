@@ -1,0 +1,516 @@
+{
+  "schema_version": 1,
+  "frozen_author_commit": "d2958d3d87e725b3e3159b461f75e4c51bb73610",
+  "author_artifact_sha256": "5e9cc7e5e46870f0221c42f762a1186a1396f440e6b34f2b42d5c5fb259d9fc7",
+  "author_compact_sha256": "4d679850b44b28ed3d8fc71f0e7fd41f0aa7a7cfcd95aff896de97b728bdfa5e",
+  "review_code_sha256": "2c47ca8c8ad2a89063a05e8ea2d49c01eec2ffafc2b252c587a0f2b834d5b437",
+  "source_contract": {
+    "stored_attributes": [
+      "input_model.data",
+      "input_model.dq"
+    ],
+    "ERR_VAR_identity_preserved": true,
+    "independent_donor_error": 999.0,
+    "wrapper_stored_attributes": {
+      "background_background_step.py": [
+        "model.meta.cal_step.bkg_subtract",
+        "result.meta.cal_step.bkg_subtract",
+        "sci.meta.direct_image",
+        "sci.meta.segmentation_map",
+        "sci.meta.source_catalog"
+      ],
+      "pipeline_calwebb_spec2.py": [
+        "asn.filename",
+        "calib_fss.meta.exposure.type",
+        "calib_mos.meta.wcsinfo",
+        "calibrated.meta.asn.pool_name",
+        "calibrated.meta.asn.table_name",
+        "calibrated.meta.filename",
+        "resamp_fss.meta.exposure.type",
+        "science.meta.direct_image",
+        "science.meta.segmentation_map",
+        "science.meta.source_catalog",
+        "self.barshadow.skip",
+        "self.bkg_subtract.save_results",
+        "self.bkg_subtract.skip",
+        "self.bkg_subtract.suffix",
+        "self.clean_flicker_noise.output_file",
+        "self.clean_flicker_noise.skip",
+        "self.cube_build.output_type",
+        "self.cube_build.pipeline",
+        "self.cube_build.save_results",
+        "self.cube_build.skip_dqflagging",
+        "self.extract_1d.save_results",
+        "self.extract_1d.skip",
+        "self.extract_1d.suffix",
+        "self.fringe.skip",
+        "self.imprint_subtract.output_file",
+        "self.imprint_subtract.skip",
+        "self.master_background_mos.skip",
+        "self.msa_flagging.skip",
+        "self.output_file",
+        "self.output_use_model",
+        "self.pathloss.skip",
+        "self.photom.save_results",
+        "self.photom.suffix",
+        "self.resample_spec.save_results",
+        "self.resample_spec.suffix",
+        "self.residual_fringe.skip",
+        "self.straylight.skip",
+        "self.suffix",
+        "self.targ_centroid.skip",
+        "self.targ_centroid.ta_file",
+        "self.wfss_contam.skip",
+        "slit.meta.exposure.type",
+        "step.flat_suffix",
+        "step.suffix",
+        "wfss_esec.data",
+        "wfss_esec.err",
+        "wfss_esec.var_flat",
+        "wfss_esec.var_poisson",
+        "wfss_esec.var_rnoise",
+        "x1d.meta.exposure.type"
+      ]
+    },
+    "excluded_unrelated_branch": "Spec2 updates wfss_esec variance in its WFSS electron-conversion helper; all nine actual inputs are NRS_MSASPEC, so that branch is inapplicable"
+  },
+  "RATE_CAL_checks": [
+    {
+      "filename": "jw05224004001_03101_00002_nrs2_rate.fits",
+      "RATE_sha256": "31ed2fa75529e3baf277bc36d69e706f1de87e6e6bb74f288e4223526643f08d",
+      "target_only_poisson_relative_error": 2.4692999900377544e-07,
+      "target_only_total_variance_relative_error": 5.150311090940107e-07
+    },
+    {
+      "filename": "jw05224004001_03101_00003_nrs2_rate.fits",
+      "RATE_sha256": "2f1561c6790864f05a46919fcc3e9ae4dac96c81e91efe5af74b270a427da838",
+      "target_only_poisson_relative_error": 2.6866333879826954e-07,
+      "target_only_total_variance_relative_error": 4.6463508218685945e-07
+    },
+    {
+      "filename": "jw05224004001_03101_00004_nrs2_rate.fits",
+      "RATE_sha256": "a2918776d507dfcec731336414e05ad7b52764fe9fecdb94ea1e212d228b5f6f",
+      "target_only_poisson_relative_error": 2.6270911979153766e-07,
+      "target_only_total_variance_relative_error": 5.848303374911268e-07
+    },
+    {
+      "filename": "jw05224004001_05101_00001_nrs2_rate.fits",
+      "RATE_sha256": "33bdc8ae89279549b9a4aa3883405bae122873757c0d6ed507acea541aa3828e",
+      "target_only_poisson_relative_error": 2.3683312644351417e-07,
+      "target_only_total_variance_relative_error": 4.7010399506497436e-07
+    },
+    {
+      "filename": "jw05224004001_05101_00002_nrs2_rate.fits",
+      "RATE_sha256": "846033b2a7855e47657b9590d9d709695c6f3a0a8a8954c8fc4867ff133e8249",
+      "target_only_poisson_relative_error": 2.4039645241114016e-07,
+      "target_only_total_variance_relative_error": 4.661030682528988e-07
+    },
+    {
+      "filename": "jw05224004001_05101_00003_nrs2_rate.fits",
+      "RATE_sha256": "41f508dc10a40855034d93ea5962dd718a7ddfc5d5502bd22182b62508985b7c",
+      "target_only_poisson_relative_error": 2.5246627255448573e-07,
+      "target_only_total_variance_relative_error": 4.766932462096918e-07
+    },
+    {
+      "filename": "jw05224004001_07101_00001_nrs2_rate.fits",
+      "RATE_sha256": "4c05eb4e923a84dbcf81e6bcda274ddfdb91caaeacf9ac7bebe867e3dfd08b85",
+      "target_only_poisson_relative_error": 2.54608484961949e-07,
+      "target_only_total_variance_relative_error": 5.404783216533815e-07
+    },
+    {
+      "filename": "jw05224004001_07101_00002_nrs2_rate.fits",
+      "RATE_sha256": "db1a9fd5ecbc04fd71a3016a0527ab930583a11de6b6185260834be1a2ec3057",
+      "target_only_poisson_relative_error": 2.67366518147405e-07,
+      "target_only_total_variance_relative_error": 5.118556438699073e-07
+    },
+    {
+      "filename": "jw05224004001_07101_00003_nrs2_rate.fits",
+      "RATE_sha256": "9d5aa05a82c255d93cdaa760c18089f8cb921c86fb8b3f0a3a1574742732c1c6",
+      "target_only_poisson_relative_error": 2.8069673230213255e-07,
+      "target_only_total_variance_relative_error": 4.7583184881183627e-07
+    }
+  ],
+  "group_checks": [
+    {
+      "group": "03",
+      "common_pixels": 7544,
+      "maximum_SCI_error_CAL_sigma": 1.4728817458056466e-06,
+      "full_over_target_variance_median": 1.5047108434444563
+    },
+    {
+      "group": "05",
+      "common_pixels": 7611,
+      "maximum_SCI_error_CAL_sigma": 1.7361473587788877e-06,
+      "full_over_target_variance_median": 1.5039829704987397
+    },
+    {
+      "group": "07",
+      "common_pixels": 7368,
+      "maximum_SCI_error_CAL_sigma": 1.4614275236129572e-06,
+      "full_over_target_variance_median": 1.5039158489328166
+    }
+  ],
+  "compact_max_differences": {
+    "formal_blocks": 1.1384122811097797e-18,
+    "spatial_blocks": 1.1384122811097797e-18,
+    "post_variance": 3.469446951953614e-18,
+    "operators": 1.8096635301390052e-14,
+    "flux": 1.8388068845354155e-16,
+    "noise_scale": 0.0,
+    "spectral_kernel": 1.3877787807814457e-17
+  },
+  "signed_gain_response_coupling_max_difference": 2.9976021664879227e-15,
+  "fresh_offsource_scale_squared": 1.4276159192111377,
+  "fresh_spectral_and_spatial_lags": [
+    [
+      1.0,
+      0.046715743414684374,
+      0.042256932807856404,
+      0.010364835793194908
+    ],
+    [
+      1.0,
+      -0.009142409186783954,
+      0.09348492080410767,
+      0.11443675342861193
+    ]
+  ],
+  "twelve_fixed_likelihoods": [
+    {
+      "noise_contract": "target_only_RATE_formal_v3",
+      "wavelength": "original_native",
+      "resolution": "nominal",
+      "flux_max_difference": 1.6937562463681388e-10,
+      "covariance_max_difference": 2.0016841517644934e-09,
+      "chi2_difference": 1.0959411156363785e-10,
+      "signed_ionic_NC_95_Fieller_interval": [
+        0.45342805333497493,
+        9.02314406667202
+      ],
+      "ambient_ionic_reference_in_interval": false
+    },
+    {
+      "noise_contract": "target_only_RATE_control_transport_v3",
+      "wavelength": "original_native",
+      "resolution": "nominal",
+      "flux_max_difference": 1.851496733706881e-10,
+      "covariance_max_difference": 3.139120963169262e-09,
+      "chi2_difference": 7.935341272968799e-11,
+      "signed_ionic_NC_95_Fieller_interval": [
+        -0.259086950630021,
+        12.269183122955258
+      ],
+      "ambient_ionic_reference_in_interval": true
+    },
+    {
+      "noise_contract": "historical_demixed_control_transport",
+      "wavelength": "original_native",
+      "resolution": "nominal",
+      "flux_max_difference": 1.9891999158971885e-10,
+      "covariance_max_difference": 3.285123284513247e-09,
+      "chi2_difference": 7.287326297955588e-11,
+      "signed_ionic_NC_95_Fieller_interval": [
+        -0.2460939524232017,
+        11.816845359001599
+      ],
+      "ambient_ionic_reference_in_interval": true
+    },
+    {
+      "noise_contract": "target_only_RATE_formal_v3",
+      "wavelength": "original_native",
+      "resolution": "generic_point",
+      "flux_max_difference": 1.213642519815039e-10,
+      "covariance_max_difference": 6.861000656499527e-10,
+      "chi2_difference": 8.86757334228605e-12,
+      "signed_ionic_NC_95_Fieller_interval": [
+        0.4286354319678079,
+        7.762001103675121
+      ],
+      "ambient_ionic_reference_in_interval": false
+    },
+    {
+      "noise_contract": "target_only_RATE_control_transport_v3",
+      "wavelength": "original_native",
+      "resolution": "generic_point",
+      "flux_max_difference": 1.2789769243681803e-10,
+      "covariance_max_difference": 1.0622613899613498e-09,
+      "chi2_difference": 6.366462912410498e-12,
+      "signed_ionic_NC_95_Fieller_interval": [
+        -0.1582430082128773,
+        9.905025558806948
+      ],
+      "ambient_ionic_reference_in_interval": true
+    },
+    {
+      "noise_contract": "historical_demixed_control_transport",
+      "wavelength": "original_native",
+      "resolution": "generic_point",
+      "flux_max_difference": 1.3157119838069775e-10,
+      "covariance_max_difference": 1.1118572729174048e-09,
+      "chi2_difference": 3.524291969370097e-12,
+      "signed_ionic_NC_95_Fieller_interval": [
+        -0.2017800095552983,
+        9.69835107487656
+      ],
+      "ambient_ionic_reference_in_interval": true
+    },
+    {
+      "noise_contract": "target_only_RATE_formal_v3",
+      "wavelength": "pinned_toy_prediction",
+      "resolution": "nominal",
+      "flux_max_difference": 1.6889600829017581e-10,
+      "covariance_max_difference": 2.004185262194369e-09,
+      "chi2_difference": 1.0095391189679503e-10,
+      "signed_ionic_NC_95_Fieller_interval": [
+        0.8022768615616369,
+        8.912558977138236
+      ],
+      "ambient_ionic_reference_in_interval": false
+    },
+    {
+      "noise_contract": "target_only_RATE_control_transport_v3",
+      "wavelength": "pinned_toy_prediction",
+      "resolution": "nominal",
+      "flux_max_difference": 1.8563639514468377e-10,
+      "covariance_max_difference": 3.145828486594837e-09,
+      "chi2_difference": 7.275957614183426e-11,
+      "signed_ionic_NC_95_Fieller_interval": [
+        0.1716254848692565,
+        11.782611110611354
+      ],
+      "ambient_ionic_reference_in_interval": true
+    },
+    {
+      "noise_contract": "historical_demixed_control_transport",
+      "wavelength": "pinned_toy_prediction",
+      "resolution": "nominal",
+      "flux_max_difference": 2.0108359422010835e-10,
+      "covariance_max_difference": 3.2988509701681323e-09,
+      "chi2_difference": 6.52562448522076e-11,
+      "signed_ionic_NC_95_Fieller_interval": [
+        0.1645356659591605,
+        11.32064755878893
+      ],
+      "ambient_ionic_reference_in_interval": true
+    },
+    {
+      "noise_contract": "target_only_RATE_formal_v3",
+      "wavelength": "pinned_toy_prediction",
+      "resolution": "generic_point",
+      "flux_max_difference": 1.1307577096886234e-10,
+      "covariance_max_difference": 6.662048690486699e-10,
+      "chi2_difference": 4.206412995699793e-12,
+      "signed_ionic_NC_95_Fieller_interval": [
+        0.9453964928263009,
+        8.819948501383532
+      ],
+      "ambient_ionic_reference_in_interval": false
+    },
+    {
+      "noise_contract": "target_only_RATE_control_transport_v3",
+      "wavelength": "pinned_toy_prediction",
+      "resolution": "generic_point",
+      "flux_max_difference": 1.241886593561503e-10,
+      "covariance_max_difference": 1.0323901733499952e-09,
+      "chi2_difference": 3.069544618483633e-12,
+      "signed_ionic_NC_95_Fieller_interval": [
+        0.40392728973813374,
+        11.485751868615111
+      ],
+      "ambient_ionic_reference_in_interval": false
+    },
+    {
+      "noise_contract": "historical_demixed_control_transport",
+      "wavelength": "pinned_toy_prediction",
+      "resolution": "generic_point",
+      "flux_max_difference": 1.2889955769423977e-10,
+      "covariance_max_difference": 1.086476686396054e-09,
+      "chi2_difference": 6.0254023992456496e-12,
+      "signed_ionic_NC_95_Fieller_interval": [
+        0.34980738365610925,
+        11.153208233460013
+      ],
+      "ambient_ionic_reference_in_interval": false
+    }
+  ],
+  "twelve_fresh_heldout_predictions": [
+    {
+      "group": "03",
+      "wavelength": "original_native",
+      "resolution": "nominal",
+      "predictive_chi2": 187.07506781104252,
+      "dof": 208,
+      "author_difference": 5.445599526865408e-11
+    },
+    {
+      "group": "05",
+      "wavelength": "original_native",
+      "resolution": "nominal",
+      "predictive_chi2": 211.3209528409222,
+      "dof": 208,
+      "author_difference": 9.57811607804615e-12
+    },
+    {
+      "group": "07",
+      "wavelength": "original_native",
+      "resolution": "nominal",
+      "predictive_chi2": 159.2016231320247,
+      "dof": 208,
+      "author_difference": 2.631850293255411e-11
+    },
+    {
+      "group": "03",
+      "wavelength": "original_native",
+      "resolution": "generic_point",
+      "predictive_chi2": 185.15738546797945,
+      "dof": 208,
+      "author_difference": 1.7024603948812e-11
+    },
+    {
+      "group": "05",
+      "wavelength": "original_native",
+      "resolution": "generic_point",
+      "predictive_chi2": 211.5412428686958,
+      "dof": 208,
+      "author_difference": 3.325340003357269e-12
+    },
+    {
+      "group": "07",
+      "wavelength": "original_native",
+      "resolution": "generic_point",
+      "predictive_chi2": 158.41224501910813,
+      "dof": 208,
+      "author_difference": 6.0822458181064576e-12
+    },
+    {
+      "group": "03",
+      "wavelength": "pinned_toy_prediction",
+      "resolution": "nominal",
+      "predictive_chi2": 186.30043065053434,
+      "dof": 208,
+      "author_difference": 5.837819117004983e-11
+    },
+    {
+      "group": "05",
+      "wavelength": "pinned_toy_prediction",
+      "resolution": "nominal",
+      "predictive_chi2": 211.92497842615577,
+      "dof": 208,
+      "author_difference": 2.4385826691286638e-11
+    },
+    {
+      "group": "07",
+      "wavelength": "pinned_toy_prediction",
+      "resolution": "nominal",
+      "predictive_chi2": 158.96580710251868,
+      "dof": 208,
+      "author_difference": 2.3106849766918458e-11
+    },
+    {
+      "group": "03",
+      "wavelength": "pinned_toy_prediction",
+      "resolution": "generic_point",
+      "predictive_chi2": 184.16475934816714,
+      "dof": 208,
+      "author_difference": 2.177102942368947e-11
+    },
+    {
+      "group": "05",
+      "wavelength": "pinned_toy_prediction",
+      "resolution": "generic_point",
+      "predictive_chi2": 212.5944691509166,
+      "dof": 208,
+      "author_difference": 3.950617610826157e-12
+    },
+    {
+      "group": "07",
+      "wavelength": "pinned_toy_prediction",
+      "resolution": "generic_point",
+      "predictive_chi2": 158.9237775843229,
+      "dof": 208,
+      "author_difference": 1.878674993349705e-11
+    }
+  ],
+  "independent_raw_Gaussian_coverage": [
+    {
+      "wavelength": "original_native",
+      "resolution": "nominal",
+      "draws": 5000,
+      "seed": 811205,
+      "NIV_95_coverage": 0.948,
+      "binomial_sigma_from_95": 0.6488856845230507,
+      "noise_sd_over_formal_sigma": 1.0048815577538932,
+      "known_spectrum_coefficient_error": 1.1546319456101628e-13
+    },
+    {
+      "wavelength": "original_native",
+      "resolution": "generic_point",
+      "draws": 5000,
+      "seed": 811205,
+      "NIV_95_coverage": 0.9504,
+      "binomial_sigma_from_95": 0.12977713690463175,
+      "noise_sd_over_formal_sigma": 1.008763802668613,
+      "known_spectrum_coefficient_error": 5.3290705182007514e-14
+    },
+    {
+      "wavelength": "pinned_toy_prediction",
+      "resolution": "nominal",
+      "draws": 5000,
+      "seed": 811205,
+      "NIV_95_coverage": 0.948,
+      "binomial_sigma_from_95": 0.6488856845230507,
+      "noise_sd_over_formal_sigma": 1.0025088136783262,
+      "known_spectrum_coefficient_error": 8.171241461241152e-14
+    },
+    {
+      "wavelength": "pinned_toy_prediction",
+      "resolution": "generic_point",
+      "draws": 5000,
+      "seed": 811205,
+      "NIV_95_coverage": 0.9518,
+      "binomial_sigma_from_95": 0.5839971160707529,
+      "noise_sd_over_formal_sigma": 1.0039542991768529,
+      "known_spectrum_coefficient_error": 3.197442310920451e-14
+    }
+  ],
+  "recorded_flat_variance_bounds": [
+    {
+      "wavelength": "original_native",
+      "resolution": "nominal",
+      "independent_fraction": 6.32087557510912e-05,
+      "same_pixel_shared_fraction": 0.00019703067463842846,
+      "arbitrary_correlation_upper_fraction": 0.04013359979771601
+    },
+    {
+      "wavelength": "original_native",
+      "resolution": "generic_point",
+      "independent_fraction": 7.752449642289609e-05,
+      "same_pixel_shared_fraction": 0.00020545060585002722,
+      "arbitrary_correlation_upper_fraction": 0.028938268321963025
+    },
+    {
+      "wavelength": "pinned_toy_prediction",
+      "resolution": "nominal",
+      "independent_fraction": 6.391293360343205e-05,
+      "same_pixel_shared_fraction": 0.00019968594354683082,
+      "arbitrary_correlation_upper_fraction": 0.03973962264840047
+    },
+    {
+      "wavelength": "pinned_toy_prediction",
+      "resolution": "generic_point",
+      "independent_fraction": 7.739756261336573e-05,
+      "same_pixel_shared_fraction": 0.00021528137397408534,
+      "arbitrary_correlation_upper_fraction": 0.029195359828016083
+    }
+  ],
+  "approval": "Conditional target-only variance and fresh donor-noise transport validated; empirical source covariance remains assumed",
+  "new_download_bytes": 0,
+  "scope": [
+    "Exact pipeline source and actual RATE/CAL falsify post-subtraction CALERR demixing",
+    "Measured target calibration gains transported through source ghosts and raw donor variance; no second CAL subtraction",
+    "RATE ERR Gaussian and independent recorded VAR_FLAT are fixed noise assumptions, not source Poisson recalibration",
+    "Off-source stationary row/column kernel transported to source is conditional; three groups do not calibrate shared systematics",
+    "Recorded diagonal VAR_FLAT bounds do not bound unrecorded common calibration errors",
+    "No empirical absolute wavelength/LSF or elemental abundance identification"
+  ]
+}

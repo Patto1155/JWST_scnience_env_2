@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "report_sha256": "50e63ba57d14c7cd664995ce1ec619f3118df2aa30f846551339a05ff0dd65fd",
+  "records": [
+    {
+      "group": "03",
+      "nitrogen": 0.0,
+      "chosen_model_id": "model000",
+      "A1500_mag": 0.0,
+      "predictive_quadratic": 188.07657799668235,
+      "max_numerical_error": 2.9818636448908364e-10
+    },
+    {
+      "group": "03",
+      "nitrogen": 1.0,
+      "chosen_model_id": "model001",
+      "A1500_mag": 0.0,
+      "predictive_quadratic": 188.9100412302709,
+      "max_numerical_error": 2.6910385031442274e-10
+    },
+    {
+      "group": "05",
+      "nitrogen": 0.0,
+      "chosen_model_id": "model000",
+      "A1500_mag": 0.0,
+      "predictive_quadratic": 208.0316914134354,
+      "max_numerical_error": 4.587619173435087e-10
+    },
+    {
+      "group": "05",
+      "nitrogen": 1.0,
+      "chosen_model_id": "model001",
+      "A1500_mag": 0.0,
+      "predictive_quadratic": 210.5479247387623,
+      "max_numerical_error": 3.94273058645922e-10
+    },
+    {
+      "group": "07",
+      "nitrogen": 0.0,
+      "chosen_model_id": "model000",
+      "A1500_mag": 0.0,
+      "predictive_quadratic": 158.5992182305296,
+      "max_numerical_error": 4.100826345165842e-10
+    },
+    {
+      "group": "07",
+      "nitrogen": 1.0,
+      "chosen_model_id": "model001",
+      "A1500_mag": 1.0,
+      "predictive_quadratic": 156.42650071548738,
+      "max_numerical_error": 2.410658339613292e-10
+    }
+  ],
+  "max_numerical_error": 4.587619173435087e-10,
+  "scope": "Direct constrained training SVD; numerically normalized nonnegative amplitude moments/quantiles; independent full predictive covariance and nuisance precision projector. Moment-matched quadratic is not a calibrated p-value."
+}

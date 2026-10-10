@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "control_receipt_sha256": "3b9444fe78925d99e91f50bf9fc850f1394bc361ba8f3ab671be0c4eb68077ee",
+  "reference_sha256": "0c6718059538fcdb3739697c0a6dd77d915b69f2c23e057171972da3b939f6b4",
+  "exact_saved_files": {
+    "model000.in": true,
+    "model000.lin": true,
+    "model000.emergent.lin": true,
+    "model000.avr": true,
+    "model000.abn": true
+  },
+  "actual_composition": {
+    "expected_log_CNO_over_H": [
+      -4.378773924307505,
+      -4.978773924307505,
+      -4.008773924307505
+    ],
+    "actual_printed_log_CNO_over_H": [
+      [
+        -4.3788,
+        -4.9788,
+        -4.0088
+      ]
+    ],
+    "abundance_print_tolerance_dex": 6e-05,
+    "output_sha256": "bc89b5b536fce92b424a79437116faa4f021ebc9199f9bff17cda3fd4c651042",
+    "zones": {
+      "actual_zone_rows": 234,
+      "maximum_log_CNO_over_H_error_dex": 0.001226075692495776,
+      "two_column_rounding_tolerance_dex": 0.0101
+    },
+    "zone_output_sha256": "7bb3e4d330c1fb684452c921c3990792e027028728e45e2e503603287c2ba0c5"
+  },
+  "zone_overview_byte_exact": false,
+  "maximum_zone_temperature_difference_K": 5.800000000001091,
+  "maximum_zone_temperature_relative_difference": 0.0007024172843095832,
+  "maximum_overview_relative_difference": 0.002867611916520672,
+  "zone_overview_relative_difference_by_column": [
+    8.136961333159744e-06,
+    0.0007024172843095832,
+    0.0012640772236267115,
+    0.0,
+    0.001101598515236769,
+    0.002867611916520672,
+    8.60131815200346e-05,
+    0.0011872916875277117,
+    0.00019712719961098062,
+    0.000627431296272989,
+    0.001556258753955432,
+    0.0007545271629778048,
+    0.0010562106633870713,
+    1.0564905496989543e-05,
+    0.0010508554851696667,
+    7.75434243176237e-05,
+    7.421701053883086e-05,
+    0.0011440237956949954,
+    0.0027842607378291313,
+    0.0,
+    0.0,
+    0.0,
+    0.0018274853801169694,
+    0.0,
+    0.0,
+    0.0002051282051282129
+  ],
+  "openblas_executable_sha256": "b399034fb64c0e89aaa38528a53c033b870951f3c1fb277b9b20560ddc67253f",
+  "scope": "Ordinary control printed-line and weighted-temperature equivalence only; slight zone-profile changes recorded. Not universal backend equivalence or a code-independent thermal solution."
+}

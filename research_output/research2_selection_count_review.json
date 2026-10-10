@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "artifact_sha256": "c46b28bda61602b692f39c177eb9325329fd1a7a17440c1739da918b1bf28a46",
+  "manifest_sha256": "255eed9215ffddd62ed2c6ee21d02c7bcd1185c24a72e46bbb21afec1f8d7f09",
+  "actual_source_metadata_pins_verified": 14,
+  "actual_headers_and_csv": [
+    {
+      "filename": "selection_F090W.fits",
+      "contributor_header_counts": [
+        208,
+        47,
+        32
+      ],
+      "geometric_exptime_sum_s": 41400.998
+    },
+    {
+      "filename": "selection_F200W.fits",
+      "contributor_header_counts": [
+        262,
+        72,
+        43
+      ],
+      "geometric_exptime_sum_s": 45888.965
+    },
+    {
+      "filename": "selection_F444W.fits",
+      "contributor_header_counts": [
+        106,
+        62,
+        48
+      ],
+      "geometric_exptime_sum_s": 49893.783
+    }
+  ],
+  "source_poisson_simulated_counterexample": [
+    {
+      "source_variance": 4.000000000000001,
+      "background_variance": 10.0,
+      "full_variance": 14.0,
+      "simulated_full_variance": 14.026735615825118
+    },
+    {
+      "source_variance": 13.000000000000004,
+      "background_variance": 1.0,
+      "full_variance": 14.0,
+      "simulated_full_variance": 13.995865207782405
+    }
+  ],
+  "independent_constrained_minimum_checks": 40,
+  "maximum_scalar_bound_error": 4.8905324234738146e-14,
+  "class_denominator_absent": true,
+  "scope": "Pinned released code, actual cutout/CSV headers, independent scalar optimization and Poisson simulation, independently decoded public VAR prefix. Generic coadd witness, not exact DJA duplication or native count calibration/population odds.",
+  "independent_zero_body_public_HEAD": {
+    "url": "https://s3.amazonaws.com/grizli-v2/assoc_mosaic/v7.0/j033228m2748_goods-s-medium01-1180-f444w_00089-f444w-clear_drc_var.fits.gz",
+    "status": 200,
+    "content_length": "43219789",
+    "etag": "\"2dd378dd38e8600b0faf242c6d04f3a6-6\"",
+    "body_bytes_acquired": 0
+  },
+  "actual_public_VAR_prefix": {
+    "bytes": 4096,
+    "sha256": "88921ea0135dd62d619c1e0cb3dff8bccae2b17cf44bbecb7d1f3a9b990edcfe",
+    "decoded_primary_shape": [
+      3976,
+      4032
+    ],
+    "decoded_BITPIX": -32,
+    "scope": "Only retained primary FITS header decoded; full variance image not acquired."
+  }
+}

@@ -163,7 +163,10 @@ def neighborhood_fit(
         "heldout_standardized_rms": float(cv_rms),
         "spatial_block_folds": tests,
         "conditional_predictive_gate_pass": bool(cv_rms <= 2),
-        "scope": "Same-image spatial prediction; diagonal errors are not a calibrated covariance/coverage model",
+        "scope": (
+            "Same-image spatial prediction; diagonal errors are not a calibrated "
+            "covariance/coverage model"
+        ),
     }
 
 
@@ -182,7 +185,8 @@ def run_source(source_id, coordinate, products, directory, psf_directory, *, tar
             bundle["wcs"] = celestial_wcs(bundle)
             provenance = {"contributors": [path.name.replace("_i2d", "_uncal")]}
             provenance["contributor_status"] = (
-                "Filename-inferred singleton with primary NDRIZ checked; association members not separately acquired"
+                "Filename-inferred singleton with primary NDRIZ checked; association "
+                "members not separately acquired"
             )
             if bundle["primary_header"].get("NDRIZ") != 1:
                 raise ValueError("Expected a singleton native image product")
@@ -359,7 +363,9 @@ def run(deep_directory, originals_directory, output):
                 "source_id": 1043,
                 "status": "bounded_experiment_waiting_pinned_original_pixels",
                 "required_missing_filenames": missing,
-                "classification_decision": "stop classification; prior patch/background ambiguity retained",
+                "classification_decision": (
+                    "stop classification; prior patch/background ambiguity retained"
+                ),
             }
         )
     else:
@@ -376,7 +382,10 @@ def run(deep_directory, originals_directory, output):
     report = {
         "schema_version": 1,
         "starting_revision": "bc7abf0",
-        "question": "Do broader neighbor/halo models produce identifiable fluxes and held-out spatial predictions?",
+        "question": (
+            "Do broader neighbor/halo models produce identifiable fluxes and "
+            "held-out spatial predictions?"
+        ),
         "design": {
             "families": 6,
             "bands": list(BANDS),
@@ -389,7 +398,10 @@ def run(deep_directory, originals_directory, output):
             "predictive_rms_gate": 2,
             "stable_flux_relative_tolerance": 0.2,
             "stable_flux_diagonal_error_multiple": 2,
-            "stopping": "Stop classification when no family predicts held-out pixels or accepted component assignment is unstable",
+            "stopping": (
+                "Stop classification when no family predicts held-out pixels or accepted "
+                "component assignment is unstable"
+            ),
         },
         "new_selected_input_bytes": 0,
         "input_manifest_hashes": {
@@ -404,12 +416,31 @@ def run(deep_directory, originals_directory, output):
         "runtime_s": perf_counter() - start,
         "sources": sources,
         "limits": [
-            "No empirical PSF calibration; JADES modeled PSF transport/orientation remains conditional",
-            "Guide geometry selected from F200 same scene, not a completeness-controlled neighbor catalog",
-            "Spatial folds share one image and are not independent exposures; correlated noise can change RMS interpretation",
-            "F200 guide geometry and inherited F444 source98 shape used pixels before amplitude-fold assignment: conditional amplitude prediction, not unbiased end-to-end cross-validation",
-            "Signed component sums and excursions are template sensitivities, not physical totals or confidence intervals",
-            "No likelihood pooling with previous extractions; source identity/redshift unestablished",
+            (
+                "No empirical PSF calibration; JADES modeled PSF transport/orientation "
+                "remains conditional"
+            ),
+            (
+                "Guide geometry selected from F200 same scene, not a "
+                "completeness-controlled neighbor catalog"
+            ),
+            (
+                "Spatial folds share one image and are not independent exposures; "
+                "correlated noise can change RMS interpretation"
+            ),
+            (
+                "F200 guide geometry and inherited F444 source98 shape used pixels "
+                "before amplitude-fold assignment: conditional amplitude prediction, not "
+                "unbiased end-to-end cross-validation"
+            ),
+            (
+                "Signed component sums and excursions are template sensitivities, not "
+                "physical totals or confidence intervals"
+            ),
+            (
+                "No likelihood pooling with previous extractions; source "
+                "identity/redshift unestablished"
+            ),
         ],
     }
     output.parent.mkdir(parents=True, exist_ok=True)

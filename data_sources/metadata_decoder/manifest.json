@@ -1,0 +1,222 @@
+{
+  "schema_version": 1,
+  "purpose": "Optional runtime-only full-CAL ASDF/GWCS metadata decoding; isolated target, locked65-package environment untouched",
+  "final_packages": [
+    {
+      "name": "asdf",
+      "version": "4.2.0",
+      "METADATA_sha256": "3d1e3ebe0cec5f7bb71acb7414f22cd49d44152639ffbaa4a400c2090622b635",
+      "installed_content_sha256": "43975d3d9e651344c04b6c8ed5c8213240fa83e7583631ef43ba2e484b633fd5",
+      "installed_content_hash_convention": "sha256 compact sorted JSON [(RECORD path,sha256 bytes)] excluding pyc",
+      "recorded_files": 823
+    },
+    {
+      "name": "asdf-astropy",
+      "version": "0.11.0",
+      "METADATA_sha256": "209098a4ac4755049f88cd5b33d24780848248cd6397060d7dac8e5fbaf9758d",
+      "installed_content_sha256": "6b4ed4ece8a6203079b071259502a2b9253c506090186760608e078ae4909eca",
+      "installed_content_hash_convention": "sha256 compact sorted JSON [(RECORD path,sha256 bytes)] excluding pyc",
+      "recorded_files": 129
+    },
+    {
+      "name": "asdf_coordinates_schemas",
+      "version": "0.5.1",
+      "METADATA_sha256": "ab5bb892b5db75dfd1c0b4285d2c89122653eaeb48ec16ecab4b388ea6d1d106",
+      "installed_content_sha256": "b35c8000a63aec1341d61b4719eab02a07b66acd008586fa56c56044f2450550",
+      "installed_content_hash_convention": "sha256 compact sorted JSON [(RECORD path,sha256 bytes)] excluding pyc",
+      "recorded_files": 70
+    },
+    {
+      "name": "asdf_standard",
+      "version": "1.5.0",
+      "METADATA_sha256": "d754538ad5243cc47c07527f27e9324a11f98cc4179c80ebf9f37cc1cc6c3ae5",
+      "installed_content_sha256": "047113cc54caba5114516baf5eb978a8993e3d78c7d58a7d7bfd41614402de22",
+      "installed_content_hash_convention": "sha256 compact sorted JSON [(RECORD path,sha256 bytes)] excluding pyc",
+      "recorded_files": 88
+    },
+    {
+      "name": "asdf_transform_schemas",
+      "version": "0.6.0",
+      "METADATA_sha256": "cab7d039fd776ad1e34bd3380c3a530f6a76a6d958cb729ab5039618fa08e039",
+      "installed_content_sha256": "33af1ecc4cde5cde9c1347cf782c1b7f35bca7085b8e2c4cbd0d40a1ad9f6efb",
+      "installed_content_hash_convention": "sha256 compact sorted JSON [(RECORD path,sha256 bytes)] excluding pyc",
+      "recorded_files": 437
+    },
+    {
+      "name": "asdf_wcs_schemas",
+      "version": "0.5.0",
+      "METADATA_sha256": "c9f9309663bd845e564620431a734cd5f2899061b8e6a9c9f39b78f5a423e904",
+      "installed_content_sha256": "9c8ce7c6c28b2c575bceff6553542855329b0f5a4bc9c341bb68b69f17865e32",
+      "installed_content_hash_convention": "sha256 compact sorted JSON [(RECORD path,sha256 bytes)] excluding pyc",
+      "recorded_files": 77
+    },
+    {
+      "name": "attrs",
+      "version": "25.3.0",
+      "METADATA_sha256": "5b7f1c4448fbb35c2a35fd5f838855c1998bd7187401d4a9e0886d4cc44e8a7c",
+      "installed_content_sha256": "5ad1c2afdc6d1350c7230b7105a9f1a7a96b609255679aba0003a3878f621e5a",
+      "installed_content_hash_convention": "sha256 compact sorted JSON [(RECORD path,sha256 bytes)] excluding pyc",
+      "recorded_files": 37
+    },
+    {
+      "name": "gwcs",
+      "version": "1.0.3",
+      "METADATA_sha256": "cc409d18e1cb1dc53fe8e6ea716779ab3f39dcb0ec38e88ef40bca1069439aaa",
+      "installed_content_sha256": "e7d651bf8fae57ee5830cee6ee09d1046991f1fe99a576f2508ce795f0ef933d",
+      "installed_content_hash_convention": "sha256 compact sorted JSON [(RECORD path,sha256 bytes)] excluding pyc",
+      "recorded_files": 96
+    },
+    {
+      "name": "importlib_metadata",
+      "version": "8.7.0",
+      "METADATA_sha256": "40932e75fa960e37e86ddce2a60507e60b242da85d5ee788832e37de68e4fd0c",
+      "installed_content_sha256": "920de7ba33ad2448c854ead71941b08660b8e0f3b13a555e4e9b8bd357484875",
+      "installed_content_hash_convention": "sha256 compact sorted JSON [(RECORD path,sha256 bytes)] excluding pyc",
+      "recorded_files": 21
+    },
+    {
+      "name": "jmespath",
+      "version": "1.0.1",
+      "METADATA_sha256": "80988328de27cd8a43af8a980a5f3c16a26568a7a798de70d3165cb67e0be110",
+      "installed_content_sha256": "37b186f6dc9a8383e09cd127ba764791875940ca2ecd50584eeea4672c81c60b",
+      "installed_content_hash_convention": "sha256 compact sorted JSON [(RECORD path,sha256 bytes)] excluding pyc",
+      "recorded_files": 16
+    },
+    {
+      "name": "semantic-version",
+      "version": "2.10.0",
+      "METADATA_sha256": "7414d469a569046b6a246bfb1f105aab1b7abfdc32a95253f15432ea30159aa6",
+      "installed_content_sha256": "78700849c4cd3f06e1aff563c8474ebf867f21a809f20155a122e35a10de9870",
+      "installed_content_hash_convention": "sha256 compact sorted JSON [(RECORD path,sha256 bytes)] excluding pyc",
+      "recorded_files": 10
+    },
+    {
+      "name": "stdatamodels",
+      "version": "6.0.0",
+      "METADATA_sha256": "e8514278dbb0e47a230447301c964da4e27c517019910db16c422ac8323198f0",
+      "installed_content_sha256": "52fc705b95c44a869dd63f3dd21aa3a86c7f2af34a46d4dacb896419f99da9fd",
+      "installed_content_hash_convention": "sha256 compact sorted JSON [(RECORD path,sha256 bytes)] excluding pyc",
+      "recorded_files": 375
+    },
+    {
+      "name": "zipp",
+      "version": "3.21.0",
+      "METADATA_sha256": "1680362f4cd6da16093222a485f3579cd2ef4c038713137e5949e982f34c2364",
+      "installed_content_sha256": "4b38e96d8f868353a5c72a8fb7301bbda897a6168ec2191a297eb5cf37695c75",
+      "installed_content_hash_convention": "sha256 compact sorted JSON [(RECORD path,sha256 bytes)] excluding pyc",
+      "recorded_files": 13
+    }
+  ],
+  "initial_older_decoder_wheels_verified": [
+    {
+      "name": "asdf",
+      "version": "4.2.0",
+      "filename": "asdf-4.2.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/f8/be/aeb59393bf7f322845cb98ad633393320993d9de15cb9a1e8d5e74612b70/asdf-4.2.0-py3-none-any.whl",
+      "size": 962184,
+      "sha256": "233247c3e7e33c86b7444be0453890ec3b99ef45bbf36023fb98ce51aba72d95"
+    },
+    {
+      "name": "gwcs",
+      "version": "0.24.0",
+      "filename": "gwcs-0.24.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/e2/e3/5c4e32c05ad6a6577530a053a84ff4bf43efd52f55a1ca36031a31fca3b1/gwcs-0.24.0-py3-none-any.whl",
+      "size": 169782,
+      "sha256": "19c6f68193bf17468d8f0cbe1ec36235a6c380e766576595f891d6037ef3c694"
+    },
+    {
+      "name": "asdf-astropy",
+      "version": "0.7.0",
+      "filename": "asdf_astropy-0.7.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/88/3e/0ff407b1d7f2024ada74451c5f86ad07a3bcf387d334ae52ecd37ff3e87a/asdf_astropy-0.7.0-py3-none-any.whl",
+      "size": 92422,
+      "sha256": "77ac1055c9439ae121b418b2fcc19117ee3f726e0fbd2d73ea8b173761788f0b"
+    },
+    {
+      "name": "asdf-standard",
+      "version": "1.2.0",
+      "filename": "asdf_standard-1.2.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/e4/27/fe79c2c3159314ef68dd2bc76d9aaf79db9887d8436fc257e5fa7d43f138/asdf_standard-1.2.0-py3-none-any.whl",
+      "size": 81184,
+      "sha256": "749244a1778f8c4a6a3c9843ca2eb566a1868f5ecad7e82445d9290e0411b5aa"
+    },
+    {
+      "name": "asdf-transform-schemas",
+      "version": "0.6.0",
+      "filename": "asdf_transform_schemas-0.6.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/4f/1b/b6696f03e2320509ad9526190061ec7acf62330bddeb639d37a0a77e20a8/asdf_transform_schemas-0.6.0-py3-none-any.whl",
+      "size": 350338,
+      "sha256": "f63a5cc90c421209fd8e3b064c9cca8372220aa1c932676cad558942dc6153b0"
+    },
+    {
+      "name": "asdf-coordinates-schemas",
+      "version": "0.3.0",
+      "filename": "asdf_coordinates_schemas-0.3.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/cf/f7/059e6e9e93b2ad110dc75a82c7b84cc133dfa375bb851b719e8f2ae89e9e/asdf_coordinates_schemas-0.3.0-py3-none-any.whl",
+      "size": 33673,
+      "sha256": "9afe55443b9e6ab80c95fe57befef353ead0a95c5714904da29965c63ca81451"
+    },
+    {
+      "name": "stdatamodels",
+      "version": "3.0.2",
+      "filename": "stdatamodels-3.0.2-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/62/0e/ac81ca5b42daec31cd551b906d21ef6855799b9b8c69de2bcc292b9f0197/stdatamodels-3.0.2-py3-none-any.whl",
+      "size": 327918,
+      "sha256": "facd2796a06726459d03bcce4aed0b21de8c9085e5fa44838c89b9e1648c17c2"
+    },
+    {
+      "name": "attrs",
+      "version": "25.3.0",
+      "filename": "attrs-25.3.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/77/06/bb80f5f86020c4551da315d78b3ab75e8228f89f0162f2c3a819e407941a/attrs-25.3.0-py3-none-any.whl",
+      "size": 63815,
+      "sha256": "427318ce031701fea540783410126f03899a97ffc6f61596ad581ac2e40e3bc3"
+    },
+    {
+      "name": "semantic-version",
+      "version": "2.10.0",
+      "filename": "semantic_version-2.10.0-py2.py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/6a/23/8146aad7d88f4fcb3a6218f41a60f6c2d4e3a72de72da1825dc7c8f7877c/semantic_version-2.10.0-py2.py3-none-any.whl",
+      "size": 15552,
+      "sha256": "de78a3b8e0feda74cabc54aab2da702113e33ac9d9eb9d2389bcf1f58b7d9177"
+    },
+    {
+      "name": "jmespath",
+      "version": "1.0.1",
+      "filename": "jmespath-1.0.1-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/31/b4/b9b800c45527aadd64d5b442f9b932b00648617eb5d63d2c7a6587b7cafc/jmespath-1.0.1-py3-none-any.whl",
+      "size": 20256,
+      "sha256": "02e2e4cc71b5bcab88332eebf907519190dd9e6e82107fa7f83b1003a6252980"
+    },
+    {
+      "name": "importlib-metadata",
+      "version": "8.7.0",
+      "filename": "importlib_metadata-8.7.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/20/b0/36bd937216ec521246249be3bf9855081de4c5e06a0c9b4219dbeda50373/importlib_metadata-8.7.0-py3-none-any.whl",
+      "size": 27656,
+      "sha256": "e5dd1551894c77868a30651cef00984d50e1002d06942a7101d34870c5f02afd"
+    },
+    {
+      "name": "zipp",
+      "version": "3.21.0",
+      "filename": "zipp-3.21.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/b7/1a/7e4798e9339adc931158c9d69ecc34f5e6791489d469f5e50ec15e35f458/zipp-3.21.0-py3-none-any.whl",
+      "size": 9630,
+      "sha256": "ac1bbe05fd2991f160ebce24ffbac5f6d11d83dc90891255885223d42b3cd931"
+    },
+    {
+      "name": "asdf-wcs-schemas",
+      "version": "0.4.0",
+      "filename": "asdf_wcs_schemas-0.4.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/79/89/d952bc874e9aeb5b907d5258e66a9a89386946c73d0d3a53b9ee27970005/asdf_wcs_schemas-0.4.0-py3-none-any.whl",
+      "size": 45865,
+      "sha256": "ffd0dc9d01ff453c8e81793f93a76c4cdd7780b0156d39c93b8017df49180a01"
+    }
+  ],
+  "verified_extra_wheel_transfer_bytes": 2200275,
+  "UV_network_wheel_transfer_bytes_measured": false,
+  "UV_network_wheel_transfer_allocation_bytes": 25165824,
+  "total_selected_software_transfer_allocation_bytes": 27366099,
+  "final_installed_file_bytes": 10333597,
+  "attempt_history": "Initial older schemas rejected CAL2.0.1 tags; final compatible converter/schema set installed in a clean target. Extra updated wheel archival request cancelled before network approval; final installed contents are independently hashed here."
+}

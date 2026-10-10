@@ -1,0 +1,196 @@
+{
+  "schema_version": 1,
+  "approval": "independent numerical and scope review passed",
+  "author_commit": "b44f2192538ae23ccc822901d2d20982ca750d87",
+  "author_artifact_sha256": "36538f611670eed232c07064fc731e90c88211e384a34b5054fa35441cb45ce2",
+  "review_code_sha256": "632f310e6da481c67c1b0ff0a62a2b0289a4a2cc2874811c4b09abbae2923cd8",
+  "frozen_RATE_json_sha256": "5e9cc7e5e46870f0221c42f762a1186a1396f440e6b34f2b42d5c5fb259d9fc7",
+  "frozen_RATE_npz_sha256": "4d679850b44b28ed3d8fc71f0e7fd41f0aa7a7cfcd95aff896de97b728bdfa5e",
+  "six_full_likelihoods": [
+    {
+      "scenario": "baseline",
+      "flux_max_difference": 1.2786216530003003e-10,
+      "covariance_max_difference": 1.062204546542489e-09,
+      "chi2_difference": 6.366462912410498e-12,
+      "NIV_flux": 22.646122122399305,
+      "NIV_conditional_sigma": 11.718397203104393,
+      "signed_ionic_Fieller_roots": [
+        -0.15824300821287238,
+        9.905025558806944
+      ],
+      "denominator_quadratic_coefficient": 372.60544458467336
+    },
+    {
+      "scenario": "redshift_low",
+      "flux_max_difference": 1.4989609553595074e-10,
+      "covariance_max_difference": 1.0815028872457333e-09,
+      "chi2_difference": 1.1254996934439987e-11,
+      "NIV_flux": 18.313104671882016,
+      "NIV_conditional_sigma": 11.717888661283608,
+      "signed_ionic_Fieller_roots": [
+        -1.2170835407973633,
+        9.503578443062043
+      ],
+      "denominator_quadratic_coefficient": 288.76729256206187
+    },
+    {
+      "scenario": "redshift_high",
+      "flux_max_difference": 1.2178702490928117e-10,
+      "covariance_max_difference": 1.0209362244495424e-09,
+      "chi2_difference": 7.275957614183426e-12,
+      "NIV_flux": 26.17353575432692,
+      "NIV_conditional_sigma": 11.717908563658424,
+      "signed_ionic_Fieller_roots": [
+        0.4765284124880164,
+        12.316658015614976
+      ],
+      "denominator_quadratic_coefficient": 329.76833913340977
+    },
+    {
+      "scenario": "width_300",
+      "flux_max_difference": 1.2879297628387576e-10,
+      "covariance_max_difference": 1.0741416645032587e-09,
+      "chi2_difference": 7.275957614183426e-12,
+      "NIV_flux": 22.720090056615668,
+      "NIV_conditional_sigma": 11.74410188946863,
+      "signed_ionic_Fieller_roots": [
+        -0.16118734236104165,
+        9.913920621867213
+      ],
+      "denominator_quadratic_coefficient": 374.014969487129
+    },
+    {
+      "scenario": "width_1000",
+      "flux_max_difference": 1.369002688988985e-10,
+      "covariance_max_difference": 1.1919212283828529e-09,
+      "chi2_difference": 1.602984411874786e-11,
+      "NIV_flux": 23.434526029920328,
+      "NIV_conditional_sigma": 11.996016516219925,
+      "signed_ionic_Fieller_roots": [
+        -0.18917172220953865,
+        10.025518694190891
+      ],
+      "denominator_quadratic_coefficient": 386.0826903683086
+    },
+    {
+      "scenario": "quadratic_continuum",
+      "flux_max_difference": 1.31905153466505e-10,
+      "covariance_max_difference": 1.0757048585219309e-09,
+      "chi2_difference": 7.958078640513122e-12,
+      "NIV_flux": 23.53340233657182,
+      "NIV_conditional_sigma": 11.767900717965997,
+      "signed_ionic_Fieller_roots": [
+        -0.2954049527347905,
+        10.099782451451404
+      ],
+      "denominator_quadratic_coefficient": 347.81410131581333
+    }
+  ],
+  "six_heldout_predictions": [
+    {
+      "scenario": "baseline",
+      "group": "03",
+      "predictive_chi2": 185.15738546797948,
+      "difference": 1.6996182239381596e-11
+    },
+    {
+      "scenario": "width_1000",
+      "group": "03",
+      "predictive_chi2": 185.3519802785264,
+      "difference": 2.3732127374387346e-11
+    },
+    {
+      "scenario": "baseline",
+      "group": "05",
+      "predictive_chi2": 211.5412428686958,
+      "difference": 3.325340003357269e-12
+    },
+    {
+      "scenario": "width_1000",
+      "group": "05",
+      "predictive_chi2": 211.55392982410376,
+      "difference": 5.968558980384842e-13
+    },
+    {
+      "scenario": "baseline",
+      "group": "07",
+      "predictive_chi2": 158.41224501910818,
+      "difference": 6.0254023992456496e-12
+    },
+    {
+      "scenario": "width_1000",
+      "group": "07",
+      "predictive_chi2": 158.56720847065878,
+      "difference": 9.066525308298878e-12
+    }
+  ],
+  "independent_width_LSF_counterexamples": [
+    {
+      "intrinsic_FWHM_kms": 300.0,
+      "equivalent_response_error": 5.421010862427522e-20
+    },
+    {
+      "intrinsic_FWHM_kms": 1000.0,
+      "equivalent_response_error": 2.168404344971009e-19
+    }
+  ],
+  "independent_centroid_counterexamples": [
+    {
+      "redshift": 14.42,
+      "epsilon": -0.0012953367875647714,
+      "equivalent_response_error": 1.235990476633475e-17
+    },
+    {
+      "redshift": 14.46,
+      "epsilon": 0.0012953367875647714,
+      "equivalent_response_error": 2.0491421059976034e-17
+    }
+  ],
+  "local_plugin_projected_SNR": [
+    0.9779318655707169,
+    0.01981270161242148,
+    0.016732878872634898,
+    4.365828338515651
+  ],
+  "local_plugin_cosines": [
+    [
+      1.0000000000000002,
+      -0.02368072640861865,
+      -0.005767237455315809,
+      -0.012053090450869431
+    ],
+    [
+      -0.02368072640861865,
+      0.9999999999999999,
+      0.9469661060626741,
+      -0.10420056084721246
+    ],
+    [
+      -0.005767237455315809,
+      0.9469661060626741,
+      0.9999999999999997,
+      -0.0972374928568532
+    ],
+    [
+      -0.012053090450869431,
+      -0.10420056084721246,
+      -0.0972374928568532,
+      0.9999999999999992
+    ]
+  ],
+  "local_plugin_singular_values": [
+    4.3658458817755585,
+    0.977857207947472,
+    0.02545785780149567,
+    0.004154803271620233
+  ],
+  "new_download_bytes": 0,
+  "scope": [
+    "Actual nine CAL wavelength rows/profiles; reused exact RATE gain/operator/covariance snapshot already independently reproduced from nine RATE/CAL pairs",
+    "Independent erf bin integration, donor contraction, normal GLS, precision-profile predictions and normal nuisance projection",
+    "The Gaussian LSF and centroid conventions are mathematical confounders, not empirical calibration",
+    "Sensitivity scales and line amplitudes are conditional plug-in choices; no invariant Fisher or calibrated posterior",
+    "Pooled off-source covariance uses all groups; amplitude prediction is not wholly held-out calibration",
+    "No source Poisson coverage, elemental abundance, source-specific LSF or absolute redshift identified"
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "scope": "Independent pre-outcome conceptual and executable design review",
+  "review_status": "Approved exact executable design before scientific outcomes",
+  "question": "What can redshift, intrinsic broadening and local continuum curvature change under the reviewed original-native point-resolution RATE v3 likelihood?",
+  "fixed_full_cases": [
+    {
+      "model": "baseline",
+      "redshift": 14.44,
+      "intrinsic_fwhm_kms": 0,
+      "continuum_order": 1
+    },
+    {
+      "model": "redshift_low",
+      "redshift": 14.42,
+      "intrinsic_fwhm_kms": 0,
+      "continuum_order": 1
+    },
+    {
+      "model": "redshift_high",
+      "redshift": 14.46,
+      "intrinsic_fwhm_kms": 0,
+      "continuum_order": 1
+    },
+    {
+      "model": "width300",
+      "redshift": 14.44,
+      "intrinsic_fwhm_kms": 300,
+      "continuum_order": 1
+    },
+    {
+      "model": "width1000",
+      "redshift": 14.44,
+      "intrinsic_fwhm_kms": 1000,
+      "continuum_order": 1
+    },
+    {
+      "model": "quadratic",
+      "redshift": 14.44,
+      "intrinsic_fwhm_kms": 0,
+      "continuum_order": 2
+    }
+  ],
+  "heldout_training_cases": "Baseline and width1000, each trained on two of three official RATE groups; independent group continuum profiled when predicting the third",
+  "budget": {
+    "scientific_GLS_fits_maximum": 12,
+    "runtime_seconds_maximum": 180,
+    "new_download_bytes": 0
+  },
+  "dependencies": [
+    "Reviewed RATE noise version 3, gain-corrected full-row signed donor operator and fresh empirical control transport",
+    "Fixed Te20000K/ne1000cm-3 physical multiplet cell and original-native generic-point curve",
+    "Existing masks, extraction geometry and source covariance; no independent calibration prior inferred from these same spectra"
+  ],
+  "expected_information": [
+    "Transport previously tested width/continuum sensitivities onto the corrected physical donor-noise and signed full-row response rather than repeat the old scenario grid",
+    "Compare specified alternatives by conditional flux/covariance and held-out pixel predictions",
+    "Demonstrate source-width versus instrumental Gaussian LSF and redshift versus common fractional centroid-error nonidentifiability"
+  ],
+  "required_conventions": [
+    "v is intrinsic FWHM in km/s; R_eff^-2=R^-2+(v/c)^2 then applies to Gaussian FWHM quadrature",
+    "The first derivative with respect to v at zero is zero: use u=v^2 or label width changes finite contrasts rather than regular Fisher derivatives",
+    "An exact redshift/calibration claim must define the centroid convention; complete wavelength-grid dilation also changes bin widths, Fnu units and LSF sampling",
+    "Projected whitened sensitivity evaluated with fitted amplitudes is a plug-in local diagnostic, not calibrated power or a confidence bound",
+    "The published redshift range comes from the same source analysis and supplies a sensitivity range, not an independent prior",
+    "No scenario counts or best members are probabilities; unknown source LSF and common wavelength systematics remain uncalibrated",
+    "Projected singular values and SNR depend on the declared contrast scaling, including the unit quadratic-continuum coefficient; they are not an invariant Fisher analysis"
+  ],
+  "stopping": "Stop after the six fixed full cases, six held-out training cases and declared algebraic diagnostics, or earlier on identity/operator/runtime failure; do not expand the scan based on outcomes",
+  "outcomes_examined": false,
+  "author_proposal_provenance": "Spectroscopy agent pre-outcome proposal delivered before code/results freeze; parent requested independent design review",
+  "frozen_author_design_commit": "0fb32c4",
+  "frozen_design_sha256": {
+    "tools/jwst/native_local_identifiability.py": "690f0f0f93b088f3484e791272656e2641945894fb386a0ec52f9448cc258ec3",
+    "docs/RESEARCH2_LOCAL_IDENTIFIABILITY.md": "237a28f488049c464046fae2fec0a491ddfdc4e08826ed8b4493153790a82614"
+  }
+}

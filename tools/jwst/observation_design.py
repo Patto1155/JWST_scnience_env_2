@@ -230,7 +230,11 @@ def run() -> dict:
             "absolute_seconds": None,
             "illustrative_inputs_not_ETC": True,
         },
-        "interpretation": "Optimistic conditional design, not empirically calibrated response, density inference, new observation or exposure feasibility. No elemental abundance/polluter/cosmology inference.",
+        "interpretation": (
+            "Optimistic conditional design, not empirically calibrated "
+            "response, density inference, new observation or exposure "
+            "feasibility. No elemental abundance/polluter/cosmology inference."
+        ),
     }
 
 

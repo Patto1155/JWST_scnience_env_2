@@ -1,0 +1,159 @@
+{
+  "schema_version": 2,
+  "initial_new_transfer_cap_bytes": 2147483648,
+  "exact_transfer_body_subtotal_bytes": 1283602543,
+  "upper_bound_category_charges_bytes": 43704476,
+  "conservative_new_transfer_charge_bytes": 1327307019,
+  "new_transfer_charge_is_exact_measurement": false,
+  "remaining_cap_bytes": 820176629,
+  "known_distinct_selected_payload_bytes_excluding_unmeasured_software": 1201095720,
+  "restored_unique_pinned_product_bytes_separate": 2073005957,
+  "restoration_transfer_retry_accounting_complete": false,
+  "new_transfers": [
+    {
+      "role": "native_RATE",
+      "source": "data_sources/followup/mom_rate_noise_manifest.json",
+      "source_sha256": "33c436c9db321e3ca750f6605a552bf4489dee08a6ca593f52847ded66fa5094",
+      "source_bytes": 4911,
+      "transfer_charge_bytes": 755738082,
+      "transfer_kind": "exact",
+      "distinct_selected_payload_bytes": 755733986,
+      "note": "Nine RATE products (755,671,680 bytes), source (62,306) and range probe (4,096). Source/probe counters repeat in expansion metadata but were fetched once and reused; no RANGE retries recorded. CAL restoration excluded."
+    },
+    {
+      "role": "Cloudy",
+      "source": "research_output/cloudy_inputs.json",
+      "source_sha256": "cb4561102fcf35f491ea561e0a5fddf80b5d636b3ba0a11e3f1c0f0aa08ff39c",
+      "source_bytes": 17023,
+      "transfer_charge_bytes": 352991151,
+      "transfer_kind": "exact",
+      "distinct_selected_payload_bytes": 338434070,
+      "note": "Includes 14,557,081 bytes of failed/prefix probe payload. Atomic/source files extracted from the same archive incur no additional download."
+    },
+    {
+      "role": "FLAME",
+      "source": "research_output/research2_flame_acquisition.json",
+      "source_sha256": "a09d6fb745e4abc7ded936d27f2ef2a2f3f699f9e8b1a77b4cb2fc37374f3e58",
+      "source_bytes": 3788,
+      "transfer_charge_bytes": 150147112,
+      "transfer_kind": "exact",
+      "distinct_selected_payload_bytes": 77133810,
+      "note": "Includes duplicate full 73,013,302-byte archive transfer following a receipt error."
+    },
+    {
+      "role": "medium_band",
+      "source": "research_output/research2_medium_acquisition.json",
+      "source_sha256": "6a130410e06f59772fe8a2886b53264bdf5a104eac62ff50e9ba5ba127a23e26",
+      "source_bytes": 2685,
+      "transfer_charge_bytes": 4272455,
+      "transfer_kind": "exact",
+      "distinct_selected_payload_bytes": 4272455,
+      "note": "Each fetched once: cutout 1,866,240 + PSF 1,800,000 + passband 63,607 + coverage CSV 542,608. No retries, failed bodies or probes."
+    },
+    {
+      "role": "selection_pilot",
+      "source": "data_sources/selection_pilot/manifest.json",
+      "source_sha256": "69f977d04d57b33e3158c2195372abdda5b8bd6b522b0022d2791439b73f24a0",
+      "source_bytes": 1522,
+      "transfer_charge_bytes": 15517440,
+      "transfer_kind": "exact",
+      "distinct_selected_payload_bytes": 15517440,
+      "note": "Three image bodies, no failed/repeated image reads; restored empirical PSF/SVO reused without additional charge."
+    },
+    {
+      "role": "selection_count",
+      "source": "data_sources/selection_count_audit/manifest.json",
+      "source_sha256": "255eed9215ffddd62ed2c6ee21d02c7bcd1185c24a72e46bbb21afec1f8d7f09",
+      "source_bytes": 5480,
+      "transfer_charge_bytes": 1544079,
+      "transfer_kind": "exact",
+      "distinct_selected_payload_bytes": 1536376,
+      "note": "Original metadata/source 1,528,430 + original probes 11,553 + repeated VAR prefix 4,096. Strict content dedup also removes an identical 3,607-byte PNG returned for a second distinct flag query. One gain-document HTTP404 had no explicit body read; wire traffic was not instrumented. Full 43,219,789-byte VAR map not acquired."
+    },
+    {
+      "role": "observation_references",
+      "source": "data_sources/pilot/observation_design/receipt.json",
+      "source_sha256": "7feb6b422a42f11256cd494a8a64803bee1a2da369bf1778361b0c81c59fceac",
+      "source_bytes": 2682,
+      "transfer_charge_bytes": 2220198,
+      "transfer_kind": "exact",
+      "distinct_selected_payload_bytes": 1668841,
+      "note": "Includes duplicate exploratory 551,357-byte HTML. Four reference curves and three pages are unique; all requests successful."
+    },
+    {
+      "role": "author_provenance",
+      "source": "data_sources/author_provenance/manifest.json",
+      "source_sha256": "995e9eb4051c0f96dd1da855521e34f45e63ccb4c6b87db6c11169332ba885a5",
+      "source_bytes": 3162,
+      "transfer_charge_bytes": 16338377,
+      "transfer_kind": "upper_bound",
+      "distinct_selected_payload_bytes": 5637897,
+      "note": "Includes duplicate 5,457,600-byte PIXTAB and conservative 5,242,880 auxiliary-probe allowance. Exact failed payload not measured. Candidate-neighborhood analysis reused restored caches and acquired zero bytes."
+    },
+    {
+      "role": "decoder_software",
+      "source": "data_sources/metadata_decoder/manifest.json",
+      "source_sha256": "09488a28cd4f1cd0aa05d3a510fbfbe278e020f436d79ff63ee174473e8d9282",
+      "source_bytes": 11153,
+      "transfer_charge_bytes": 27366099,
+      "transfer_kind": "upper_bound",
+      "distinct_selected_payload_bytes": null,
+      "note": "Known extra-wheel body 2,200,275 + conservative 25,165,824 UV network allocation. Installed-file bytes are not transfer bytes."
+    },
+    {
+      "role": "public_metadata_round3",
+      "source": "data_sources/public_metadata/receipt.json",
+      "source_sha256": "6a70eb8130ad71155d65933840a51a8685f2ccf31371af18820917ae998078fe",
+      "source_bytes": 8089,
+      "transfer_charge_bytes": 470251,
+      "transfer_kind": "exact",
+      "distinct_selected_payload_bytes": 459070,
+      "note": "Twelve fresh query responses, including 5,177-byte HTTP404 body and capped homepage. Fresh author CSV re-queries repeat 11,181 previously pinned bytes. Recorded payloads charged; no full FITS acquisition."
+    },
+    {
+      "role": "compact_CAPERS_and_selector",
+      "source": "data_sources/compact_followup/receipt.json",
+      "source_sha256": "015488ed73223d1ce8878255e63eefd527754bcf431d29d0f8986197eac492ab",
+      "source_bytes": 7899,
+      "transfer_charge_bytes": 701775,
+      "transfer_kind": "exact",
+      "distinct_selected_payload_bytes": 701775,
+      "note": "Seven endpoints, five accepted GET bodies plus zero-body HEADs. Total response 718,228 minus 16,453-byte pinned reference restoration. No retries/failures; public PIXTAB 4,475,520 bytes excluded without GET."
+    }
+  ],
+  "pinned_restorations": [
+    {
+      "role": "original13images",
+      "source": "research_output/research2_original_pixel_reproduction.json",
+      "source_sha256": "36e998eb0a03d48759f0b8dc7f3d1cfa080d2fed800e7f713d1fd70c9d42d374",
+      "source_bytes": 11723,
+      "unique_restored_product_bytes": 1555571520,
+      "note": "Pinned restoration, counted once; this is retained-product size, not an assertion of complete historical retry transfer accounting."
+    },
+    {
+      "role": "nine_CAL",
+      "source": "research_output/research2_native_reproduction.json",
+      "source_sha256": "75b1c008dc0cb62876af63e87265e00f4f0ee8bad27c6902fa4b9574f8f71e61",
+      "source_bytes": 4911,
+      "unique_restored_product_bytes": 464135040,
+      "note": "Pinned restoration, counted once; this is retained-product size, not an assertion of complete historical retry transfer accounting."
+    },
+    {
+      "role": "deep_PSF_SVO_Sonora",
+      "source": "research_output/research2_photometry_restoration.json",
+      "source_sha256": "a58547d53b2d9ece90055d32c2b9934dedc4fd507a5865a9961b367caf9f1d69",
+      "source_bytes": 26731,
+      "unique_restored_product_bytes": 53282944,
+      "note": "Pinned restoration, counted once; this is retained-product size, not an assertion of complete historical retry transfer accounting."
+    },
+    {
+      "role": "wavecorr0004_reference",
+      "source": "data_sources/compact_followup/receipt.json",
+      "source_sha256": "015488ed73223d1ce8878255e63eefd527754bcf431d29d0f8986197eac492ab",
+      "source_bytes": 7899,
+      "unique_restored_product_bytes": 16453,
+      "note": "Restored whole reference matches the historical SHA256; excluded from compact new-selection subtotal. Previously absent from the three original restoration categories."
+    }
+  ],
+  "scope": "All new science, model, reference and isolated software transfers charged; selected cap uses conservative upper-bound charges where actual body transfer was not measured. Restored historical pinned products separately reported. No reused cache charged twice. HTTP headers and zero-body HEADs excluded from body-byte accounting."
+}
