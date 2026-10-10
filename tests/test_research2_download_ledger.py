@@ -85,3 +85,20 @@ def test_final_ledger_keeps_original_interim_and_adds_only_followup_transfers():
         revised["restored_unique_pinned_product_bytes_separate"]
         - original["restored_unique_pinned_product_bytes_separate"]
     ) == 16453
+
+
+def test_bounded_archive_followups_charge_bodies_once_and_preserve_restoration():
+    previous = aggregate(json.loads(MANIFEST.with_name("manifest_v2.json").read_text()))
+    final = aggregate(json.loads(MANIFEST.with_name("manifest_v3.json").read_text()))
+    assert final["schema_version"] == 3
+    assert final["conservative_new_transfer_charge_bytes"] == 1334355625
+    assert final["remaining_cap_bytes"] == 813128023
+    assert final["restored_unique_pinned_product_bytes_separate"] == 2073005957
+    assert (
+        final["conservative_new_transfer_charge_bytes"]
+        - previous["conservative_new_transfer_charge_bytes"]
+    ) == 4475520 + 1219486 + 1353600
+    assert (
+        final["restored_unique_pinned_product_bytes_separate"]
+        == previous["restored_unique_pinned_product_bytes_separate"]
+    )

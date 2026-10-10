@@ -136,6 +136,11 @@ SCIENCE_LINT_TARGETS = [
     "tests/test_continuation_yield_version_review.py",
 ]
 RESEARCH2_SCIENCE_LINT_TARGETS = [
+    "discovery/research2_cloudy_grid_rate_review.py",
+    "tests/test_cloudy_grid_rate_review.py",
+    "tools/jwst/cloudy_atomic_provenance.py",
+    "tools/jwst/cloudy_raw_archive.py",
+    "tests/test_cloudy_raw_archive.py",
     "discovery/research2_capers_source_review.py",
     "tests/test_capers_source_review.py",
     "data_pipeline/capers_companion_coverage.py",

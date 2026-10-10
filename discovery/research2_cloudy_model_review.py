@@ -93,6 +93,22 @@ def read_actual_line_dictionary(path, expected):
     return values, sums
 
 
+def validate_final_physical_stop(summary, deck, overview, header):
+    """Check a converged physical stop against declared limits and actual last zone."""
+    if not re.search(r"Iteration (\d+) of \1$", summary):
+        raise ValueError("Final model iteration has not converged")
+    final = dict(zip(header, overview[-1], strict=True))
+    if "low electron fraction." in summary:
+        if "stop efrac -2" not in deck.splitlines() or final["eden"] / final["hden"] > 0.010001:
+            raise ValueError("Electron-fraction stop disagrees with declared limit or actual zone")
+        return "electron_fraction_0.01"
+    if "lowest Te reached." in summary:
+        if "stop temperature 1000 K" not in deck.splitlines() or final["Te"] > 1000.1:
+            raise ValueError("Temperature stop disagrees with declared limit or actual zone")
+        return "temperature_floor_1000K"
+    raise ValueError("Undeclared or computation-limited final stop")
+
+
 def audit(report_path, run_directory, source_directory, run_overrides=None):
     report = json.loads(report_path.read_text())
     assert report["line_contract_version"] == 2
@@ -113,7 +129,6 @@ def audit(report_path, run_directory, source_directory, run_overrides=None):
         assert not re.search(r"warning|failure|disaster|problem", summaries[0], re.I)
         stops = re.findall(r"Calculation stopped because[^\n]+", text)
         assert stops and re.search(r"Iteration (\d+) of \1$", stops[-1])
-        assert "low electron fraction" in stops[-1]
         assert "Intensity (erg/s/cm^2)." in text
         assert "iterate to convergence" in (run_directory / (name + ".in")).read_text()
         composition = composition_audit(
@@ -129,6 +144,10 @@ def audit(report_path, run_directory, source_directory, run_overrides=None):
         assert np.array_equal(emergent, model["emergent_line_values"])
         overview = np.loadtxt(run_directory / (name + ".ovr"))
         assert len(overview) == model["zones"]
+        header = (run_directory / (name + ".ovr")).read_text().splitlines()[0].split()
+        stop_contract = validate_final_physical_stop(
+            stops[-1], (run_directory / (name + ".in")).read_text(), overview, header
+        )
         assert np.array_equal(
             [overview[:, 1].min(), overview[:, 1].max()], model["zone_temperature_K_range"]
         )
@@ -147,6 +166,7 @@ def audit(report_path, run_directory, source_directory, run_overrides=None):
                 "complete_emergent_group_intensities": emergent_sums.tolist(),
                 "Hplus_weighted_temperature_K": float(averages[0]),
                 "final_stop": stops[-1],
+                "physical_stop_contract": stop_contract,
                 "final_zones": len(overview),
             }
         )
@@ -172,7 +192,7 @@ def audit(report_path, run_directory, source_directory, run_overrides=None):
         ),
         "primary_source_files_sha256": {
             name: sha(source_directory / "source" / name)
-            for name in ("prt.h", "init_defaults_preparse.cpp", "cddrive.cpp")
+            for name in ("prt.h", "init_defaults_preparse.cpp", "cddrive.cpp", "iter_end_chk.cpp")
         },
         "scope": (
             "Actual converged code outputs and complete component/blend/abundance guards; "

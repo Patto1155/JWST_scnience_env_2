@@ -1,0 +1,162 @@
+{
+  "schema_version": 2,
+  "expected_models": 20,
+  "family_profile_reviews": [
+    {
+      "wavelength_hypothesis": "original_native",
+      "noise": "RATE_formal_v3",
+      "resolution": "nominal",
+      "global_minimum_chi2": 784.8825655128782,
+      "best_model_id": "model015",
+      "ordinary_minimum_chi2": 787.8251707270825,
+      "ordinary_model_id": "model014",
+      "enhanced_minimum_chi2": 784.8825655128782,
+      "enhanced_model_id": "model015",
+      "ordinary_minus_enhanced_profile_chi2": 2.9426052142043773,
+      "ordinary_minus_global_profile_chi2": 2.9426052142043773
+    },
+    {
+      "wavelength_hypothesis": "original_native",
+      "noise": "RATE_formal_v3",
+      "resolution": "generic_point",
+      "global_minimum_chi2": 782.2237326607282,
+      "best_model_id": "model015",
+      "ordinary_minimum_chi2": 785.1974079579142,
+      "ordinary_model_id": "model010",
+      "enhanced_minimum_chi2": 782.2237326607282,
+      "enhanced_model_id": "model015",
+      "ordinary_minus_enhanced_profile_chi2": 2.9736752971859914,
+      "ordinary_minus_global_profile_chi2": 2.9736752971859914
+    },
+    {
+      "wavelength_hypothesis": "original_native",
+      "noise": "RATE_empirical_rows_and_columns_v3",
+      "resolution": "nominal",
+      "global_minimum_chi2": 554.5274904120595,
+      "best_model_id": "model015",
+      "ordinary_minimum_chi2": 556.4588858056459,
+      "ordinary_model_id": "model014",
+      "enhanced_minimum_chi2": 554.5274904120595,
+      "enhanced_model_id": "model015",
+      "ordinary_minus_enhanced_profile_chi2": 1.9313953935863992,
+      "ordinary_minus_global_profile_chi2": 1.9313953935863992
+    },
+    {
+      "wavelength_hypothesis": "original_native",
+      "noise": "RATE_empirical_rows_and_columns_v3",
+      "resolution": "generic_point",
+      "global_minimum_chi2": 552.5517923137436,
+      "best_model_id": "model015",
+      "ordinary_minimum_chi2": 554.5335141997033,
+      "ordinary_model_id": "model010",
+      "enhanced_minimum_chi2": 552.5517923137436,
+      "enhanced_model_id": "model015",
+      "ordinary_minus_enhanced_profile_chi2": 1.9817218859597006,
+      "ordinary_minus_global_profile_chi2": 1.9817218859597006
+    },
+    {
+      "wavelength_hypothesis": "pinned_toy_prediction",
+      "noise": "RATE_formal_v3",
+      "resolution": "nominal",
+      "global_minimum_chi2": 782.5465905555253,
+      "best_model_id": "model015",
+      "ordinary_minimum_chi2": 786.5302044163843,
+      "ordinary_model_id": "model014",
+      "enhanced_minimum_chi2": 782.5465905555253,
+      "enhanced_model_id": "model015",
+      "ordinary_minus_enhanced_profile_chi2": 3.983613860859009,
+      "ordinary_minus_global_profile_chi2": 3.983613860859009
+    },
+    {
+      "wavelength_hypothesis": "pinned_toy_prediction",
+      "noise": "RATE_formal_v3",
+      "resolution": "generic_point",
+      "global_minimum_chi2": 780.6668818489243,
+      "best_model_id": "model015",
+      "ordinary_minimum_chi2": 785.265511826724,
+      "ordinary_model_id": "model014",
+      "enhanced_minimum_chi2": 780.6668818489243,
+      "enhanced_model_id": "model015",
+      "ordinary_minus_enhanced_profile_chi2": 4.59862997779976,
+      "ordinary_minus_global_profile_chi2": 4.59862997779976
+    },
+    {
+      "wavelength_hypothesis": "pinned_toy_prediction",
+      "noise": "RATE_empirical_rows_and_columns_v3",
+      "resolution": "nominal",
+      "global_minimum_chi2": 552.9401382114424,
+      "best_model_id": "model015",
+      "ordinary_minimum_chi2": 555.5909607585274,
+      "ordinary_model_id": "model014",
+      "enhanced_minimum_chi2": 552.9401382114424,
+      "enhanced_model_id": "model015",
+      "ordinary_minus_enhanced_profile_chi2": 2.6508225470849993,
+      "ordinary_minus_global_profile_chi2": 2.6508225470849993
+    },
+    {
+      "wavelength_hypothesis": "pinned_toy_prediction",
+      "noise": "RATE_empirical_rows_and_columns_v3",
+      "resolution": "generic_point",
+      "global_minimum_chi2": 551.5470105342711,
+      "best_model_id": "model015",
+      "ordinary_minimum_chi2": 554.6874881470115,
+      "ordinary_model_id": "model014",
+      "enhanced_minimum_chi2": 551.5470105342711,
+      "enhanced_model_id": "model015",
+      "ordinary_minus_enhanced_profile_chi2": 3.140477612740483,
+      "ordinary_minus_global_profile_chi2": 3.140477612740483
+    }
+  ],
+  "selected_minimum_fixed_dof_tail_probabilities_computed": false,
+  "model_counts_are_probabilities": false,
+  "runtime_seconds": 14.861396996999247,
+  "artifact_filename": "mom_cloudy_pilot20_rate_v3.json",
+  "artifact_sha256": "7ef48626ddfb7c882d9725b17939c3a7752151de734e3ab4c46472b940127759",
+  "RATE_noise_report_sha256": "5e9cc7e5e46870f0221c42f762a1186a1396f440e6b34f2b42d5c5fb259d9fc7",
+  "RATE_compact_sha256": "4d679850b44b28ed3d8fc71f0e7fd41f0aa7a7cfcd95aff896de97b728bdfa5e",
+  "gain_coupling_max_difference": 4.440892098500626e-16,
+  "complete_component_records": 480,
+  "maximum_errors": {
+    "flux": 1.9240076198911993e-10,
+    "covariance": 3.1731417493574554e-09,
+    "profiled_total_chi2": 7.742073648842052e-11,
+    "amplitude": 9.659473221290682e-11,
+    "component_summed_prediction": 0.0
+  },
+  "heldout_checks": [
+    {
+      "group": "03",
+      "nitrogen_dex": 0.0,
+      "maximum_absolute_difference": 2.61032084836188e-10
+    },
+    {
+      "group": "03",
+      "nitrogen_dex": 1.0,
+      "maximum_absolute_difference": 2.4647306418046355e-10
+    },
+    {
+      "group": "05",
+      "nitrogen_dex": 0.0,
+      "maximum_absolute_difference": 3.801048364948656e-10
+    },
+    {
+      "group": "05",
+      "nitrogen_dex": 1.0,
+      "maximum_absolute_difference": 2.6413005116410204e-10
+    },
+    {
+      "group": "07",
+      "nitrogen_dex": 0.0,
+      "maximum_absolute_difference": 3.53047369117121e-10
+    },
+    {
+      "group": "07",
+      "nitrogen_dex": 1.0,
+      "maximum_absolute_difference": 2.3712942720521824e-10
+    }
+  ],
+  "approved": true,
+  "scope": "Independent component-CDF integration, actual CAL profile/RATE gain coupling, direct Gram GLS and constrained all14-component likelihood; truncated-amplitude heldouts via independent moments and full predictive covariance. Numerical bridge approval only: scalar source-wave convention, conditional empirical transport, ionizing spectrum, C IV transfer and common source calibration remain assumptions. No elemental posterior or interval coverage certification.",
+  "reviewed_author_commit": "a49e7f33cbc2073aecd6e0854e54aee5b97ff349",
+  "reviewed_artifact_bytes": 2221190
+}

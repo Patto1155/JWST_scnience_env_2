@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "archive": {
+    "url": "https://data.nublado.org/cloudy_releases/c23/c23.01.tar.gz",
+    "doi": "https://doi.org/10.5281/zenodo.14142065",
+    "bytes": 338434070,
+    "md5": "73917420ab471497fa15750c751bbf1f",
+    "sha256": "a9ad2dc037e88f552389de0e483d68f54310976dee32154ed13830882aedae0b"
+  },
+  "default_atomic_selections": {
+    "NIV": {
+      "species": "n_4",
+      "database": "Stout"
+    },
+    "NIII": {
+      "species": "n_3",
+      "database": "CHIANTI"
+    },
+    "CIII": {
+      "species": "c_3",
+      "database": "Stout"
+    },
+    "CIV": {
+      "species": "c_4",
+      "database": "CHIANTI"
+    },
+    "OIII": {
+      "species": "o_3",
+      "database": "Stout"
+    },
+    "NV": {
+      "species": "n_5",
+      "database": "Stout"
+    },
+    "CII": {
+      "species": "c_2",
+      "database": "Stout"
+    }
+  },
+  "CHIANTI_version": "10.0.1",
+  "HeII": {
+    "family": "Internal H-like isoelectronic solver, including He+",
+    "recombination_table": "data/h_iso_recomb.dat",
+    "scope": "Whole archive pins all other rates; selected source pins document the solver"
+  },
+  "members_verified_against_archive_and_actual_cache": [
+    {
+      "member": "c23.01/data/chianti/VERSION",
+      "bytes": 7,
+      "sha256": "54acbfdb31a2a82cd15f8a83956781cc821222b3902828d5a79d8a9a7a59e334"
+    },
+    {
+      "member": "c23.01/data/chianti/masterlist/CloudyChianti.ini",
+      "bytes": 1551,
+      "sha256": "64099a2e746d354370391bfae057c6a341d352c350857f19a3855ff40a7cdd03"
+    },
+    {
+      "member": "c23.01/data/h_iso_recomb.dat",
+      "bytes": 3447300,
+      "sha256": "3f630f5bd13c297259e0fd174833a62853f31b837c664f30559c7baf9303fb6f"
+    },
+    {
+      "member": "c23.01/data/stout/masterlist/Stout.ini",
+      "bytes": 5012,
+      "sha256": "b751a38a73ce5111aa29f6b58da83e901f056054ac430a2e4e1e0d4a8c923e0e"
+    },
+    {
+      "member": "c23.01/source/hydrocollid.cpp",
+      "bytes": 36921,
+      "sha256": "e0bb65f49bb566460e6b38e9743f63d96d9c1ffbed1f8d3a98868c2b6adc8a8a"
+    },
+    {
+      "member": "c23.01/source/init_defaults_preparse.cpp",
+      "bytes": 21967,
+      "sha256": "1cb3cb99d20696ba7cf029d6226febd76dd83d14ce3e04493660b5dc42784c8f"
+    },
+    {
+      "member": "c23.01/source/iso_create.cpp",
+      "bytes": 50573,
+      "sha256": "ac03eb649290fbe7c7696649ead86b7610fb64e96987d5592e32adc67a8577e6"
+    },
+    {
+      "member": "c23.01/source/iso_radiative_recomb.cpp",
+      "bytes": 47295,
+      "sha256": "774f9b162624f0b5c258a36ae5643959ec6a5a78951ec988fc76ac895ecff9fa"
+    },
+    {
+      "member": "c23.01/source/iso_solve.cpp",
+      "bytes": 17997,
+      "sha256": "3fdc957767b11efb0149bb7b20ca1535604cb7f98e8abe70872562e8237ad667"
+    },
+    {
+      "member": "c23.01/source/species.cpp",
+      "bytes": 29757,
+      "sha256": "d31908d058c0d6bec26c3dfb991d031db48b40a4995b9f224d7af12899e27451"
+    }
+  ],
+  "runtime_seconds": 11.584055535999141,
+  "scope": "Default families apply to the declared decks with no database override. This establishes versioned provenance, not empirical atomic-rate accuracy."
+}

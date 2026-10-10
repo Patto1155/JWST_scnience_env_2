@@ -1,0 +1,1363 @@
+{
+  "schema_version": 1,
+  "report_sha256": "7ef48626ddfb7c882d9725b17939c3a7752151de734e3ab4c46472b940127759",
+  "actual_models": [
+    {
+      "model_id": "model000",
+      "file_pin_count": 7,
+      "composition": {
+        "expected_log_CNO_over_H": [
+          -4.378773924307505,
+          -4.978773924307505,
+          -4.008773924307505
+        ],
+        "actual_printed_log_CNO_over_H": [
+          [
+            -4.3788,
+            -4.9788,
+            -4.0088
+          ]
+        ],
+        "abundance_print_tolerance_dex": 6e-05,
+        "output_sha256": "bc89b5b536fce92b424a79437116faa4f021ebc9199f9bff17cda3fd4c651042",
+        "zones": {
+          "actual_zone_rows": 234,
+          "maximum_log_CNO_over_H_error_dex": 0.001226075692495776,
+          "two_column_rounding_tolerance_dex": 0.0101
+        },
+        "zone_output_sha256": "7bb3e4d330c1fb684452c921c3990792e027028728e45e2e503603287c2ba0c5"
+      },
+      "complete_intrinsic_group_intensities": [
+        0.00148386,
+        0.0187079,
+        0.0327403,
+        0.00778052,
+        0.121306
+      ],
+      "complete_emergent_group_intensities": [
+        0.00147968,
+        0.018663700000000002,
+        0.032641,
+        0.00775525,
+        0.12087
+      ],
+      "Hplus_weighted_temperature_K": 13462.39,
+      "final_stop": "Calculation stopped because low electron fraction. Iteration 3 of 3",
+      "physical_stop_contract": "electron_fraction_0.01",
+      "final_zones": 234
+    },
+    {
+      "model_id": "model001",
+      "file_pin_count": 7,
+      "composition": {
+        "expected_log_CNO_over_H": [
+          -4.378773924307505,
+          -3.9787739243075047,
+          -4.008773924307505
+        ],
+        "actual_printed_log_CNO_over_H": [
+          [
+            -4.3788,
+            -3.9788,
+            -4.0088
+          ]
+        ],
+        "abundance_print_tolerance_dex": 6e-05,
+        "output_sha256": "05c0a9ccea5710ab9d287c847907ae0d0b544fcfa912f97d7754c763497110e4",
+        "zones": {
+          "actual_zone_rows": 236,
+          "maximum_log_CNO_over_H_error_dex": 0.001226075692495332,
+          "two_column_rounding_tolerance_dex": 0.0101
+        },
+        "zone_output_sha256": "91dbf3e2d21158d9485bcef9457c0c5ddbc583cb6fa32a1718614ffd84131219"
+      },
+      "complete_intrinsic_group_intensities": [
+        0.0116112,
+        0.0146571,
+        0.0290743,
+        0.0683414,
+        0.10735700000000001
+      ],
+      "complete_emergent_group_intensities": [
+        0.0115785,
+        0.0146221,
+        0.0289867,
+        0.06811940000000001,
+        0.106971
+      ],
+      "Hplus_weighted_temperature_K": 13177.67,
+      "final_stop": "Calculation stopped because low electron fraction. Iteration 3 of 3",
+      "physical_stop_contract": "electron_fraction_0.01",
+      "final_zones": 236
+    },
+    {
+      "model_id": "model002",
+      "file_pin_count": 7,
+      "composition": {
+        "expected_log_CNO_over_H": [
+          -4.378773924307505,
+          -4.978773924307505,
+          -4.008773924307505
+        ],
+        "actual_printed_log_CNO_over_H": [
+          [
+            -4.3788,
+            -4.9788,
+            -4.0088
+          ]
+        ],
+        "abundance_print_tolerance_dex": 6e-05,
+        "output_sha256": "c600f80797831ea63591668def6703591a816ae83e95e8113c753c6ed538cfe0",
+        "zones": {
+          "actual_zone_rows": 234,
+          "maximum_log_CNO_over_H_error_dex": 0.001226075692495776,
+          "two_column_rounding_tolerance_dex": 0.0101
+        },
+        "zone_output_sha256": "d2b8e4b10f97853eb61a69922cd95519e4df67d6c61fe33425c61cc7e6b7b08c"
+      },
+      "complete_intrinsic_group_intensities": [
+        7.2706e-05,
+        0.0009164100000000001,
+        0.0024982399999999997,
+        0.0005931510000000001,
+        0.0096741
+      ],
+      "complete_emergent_group_intensities": [
+        7.2659e-05,
+        0.0009159299999999999,
+        0.00249723,
+        0.000592904,
+        0.0096696
+      ],
+      "Hplus_weighted_temperature_K": 12995.14,
+      "final_stop": "Calculation stopped because lowest Te reached. Iteration 3 of 3",
+      "physical_stop_contract": "temperature_floor_1000K",
+      "final_zones": 234
+    },
+    {
+      "model_id": "model003",
+      "file_pin_count": 7,
+      "composition": {
+        "expected_log_CNO_over_H": [
+          -4.378773924307505,
+          -3.9787739243075047,
+          -4.008773924307505
+        ],
+        "actual_printed_log_CNO_over_H": [
+          [
+            -4.3788,
+            -3.9788,
+            -4.0088
+          ]
+        ],
+        "abundance_print_tolerance_dex": 6e-05,
+        "output_sha256": "0e0bcdb12a10cb64be64dfaa476241bdfabcfb22f6c5b1cd378d08534691a66e",
+        "zones": {
+          "actual_zone_rows": 231,
+          "maximum_log_CNO_over_H_error_dex": 0.001226075692495332,
+          "two_column_rounding_tolerance_dex": 0.0101
+        },
+        "zone_output_sha256": "bae61adbbe8de511d3b8981b640fa0b226b090028ddd953b36d0aba8e57348f8"
+      },
+      "complete_intrinsic_group_intensities": [
+        0.0005286,
+        0.00067385,
+        0.0020645100000000003,
+        0.00465388,
+        0.0077302
+      ],
+      "complete_emergent_group_intensities": [
+        0.00052826,
+        0.00067349,
+        0.00206375,
+        0.0046518900000000005,
+        0.0077266999999999995
+      ],
+      "Hplus_weighted_temperature_K": 12536.57,
+      "final_stop": "Calculation stopped because lowest Te reached. Iteration 3 of 3",
+      "physical_stop_contract": "temperature_floor_1000K",
+      "final_zones": 231
+    },
+    {
+      "model_id": "model004",
+      "file_pin_count": 7,
+      "composition": {
+        "expected_log_CNO_over_H": [
+          -4.378773924307505,
+          -4.978773924307505,
+          -4.008773924307505
+        ],
+        "actual_printed_log_CNO_over_H": [
+          [
+            -4.3788,
+            -4.9788,
+            -4.0088
+          ]
+        ],
+        "abundance_print_tolerance_dex": 6e-05,
+        "output_sha256": "19384eab470700d98be36cc1fc8c19f331026afad4a90b58c637c4aa722d8802",
+        "zones": {
+          "actual_zone_rows": 231,
+          "maximum_log_CNO_over_H_error_dex": 0.001226075692495776,
+          "two_column_rounding_tolerance_dex": 0.0101
+        },
+        "zone_output_sha256": "e2d4c2ceed631e2e7db61ccec053efd16bb65ba5b194bbf40a69ccf37c175884"
+      },
+      "complete_intrinsic_group_intensities": [
+        0.0180221,
+        0.23277199999999998,
+        0.35479,
+        0.0837962,
+        1.28372
+      ],
+      "complete_emergent_group_intensities": [
+        0.0178904,
+        0.231331,
+        0.351891,
+        0.083059,
+        1.27127
+      ],
+      "Hplus_weighted_temperature_K": 13649.24,
+      "final_stop": "Calculation stopped because low electron fraction. Iteration 3 of 3",
+      "physical_stop_contract": "electron_fraction_0.01",
+      "final_zones": 231
+    },
+    {
+      "model_id": "model005",
+      "file_pin_count": 7,
+      "composition": {
+        "expected_log_CNO_over_H": [
+          -4.378773924307505,
+          -3.9787739243075047,
+          -4.008773924307505
+        ],
+        "actual_printed_log_CNO_over_H": [
+          [
+            -4.3788,
+            -3.9788,
+            -4.0088
+          ]
+        ],
+        "abundance_print_tolerance_dex": 6e-05,
+        "output_sha256": "81a58a8f5ca8538bd3a48a2d250c6c894b248f63e72d06d9f6e02e2a95b48a8f",
+        "zones": {
+          "actual_zone_rows": 241,
+          "maximum_log_CNO_over_H_error_dex": 0.001226075692495332,
+          "two_column_rounding_tolerance_dex": 0.0101
+        },
+        "zone_output_sha256": "4650b3e03eea30c4ba9a61b6dcca3fedc68ae4f1d5e49ef9d2c44b3a7a83f150"
+      },
+      "complete_intrinsic_group_intensities": [
+        0.147895,
+        0.19090600000000002,
+        0.327809,
+        0.7742439999999999,
+        1.1904400000000002
+      ],
+      "complete_emergent_group_intensities": [
+        0.146816,
+        0.189717,
+        0.325113,
+        0.7674200000000001,
+        1.17884
+      ],
+      "Hplus_weighted_temperature_K": 13457.57,
+      "final_stop": "Calculation stopped because lowest Te reached. Iteration 3 of 3",
+      "physical_stop_contract": "temperature_floor_1000K",
+      "final_zones": 241
+    },
+    {
+      "model_id": "model006",
+      "file_pin_count": 7,
+      "composition": {
+        "expected_log_CNO_over_H": [
+          -4.378773924307505,
+          -4.978773924307505,
+          -4.008773924307505
+        ],
+        "actual_printed_log_CNO_over_H": [
+          [
+            -4.3788,
+            -4.9788,
+            -4.0088
+          ]
+        ],
+        "abundance_print_tolerance_dex": 6e-05,
+        "output_sha256": "2082615addf3732f39de04dfcf9c634f24eab62c59fb22d9436739f486b61d98",
+        "zones": {
+          "actual_zone_rows": 230,
+          "maximum_log_CNO_over_H_error_dex": 0.001226075692495776,
+          "two_column_rounding_tolerance_dex": 0.0101
+        },
+        "zone_output_sha256": "dc24471bdbb9b5b783435bd0a19ade397ddf7479c15d1f475f0ce09af85043ba"
+      },
+      "complete_intrinsic_group_intensities": [
+        0.213432,
+        2.92233,
+        4.01443,
+        0.962554,
+        14.0652
+      ],
+      "complete_emergent_group_intensities": [
+        0.21157,
+        2.9004700000000003,
+        3.97474,
+        0.9523419999999999,
+        13.900599999999999
+      ],
+      "Hplus_weighted_temperature_K": 13938.47,
+      "final_stop": "Calculation stopped because low electron fraction. Iteration 3 of 3",
+      "physical_stop_contract": "electron_fraction_0.01",
+      "final_zones": 230
+    },
+    {
+      "model_id": "model007",
+      "file_pin_count": 7,
+      "composition": {
+        "expected_log_CNO_over_H": [
+          -4.378773924307505,
+          -3.9787739243075047,
+          -4.008773924307505
+        ],
+        "actual_printed_log_CNO_over_H": [
+          [
+            -4.3788,
+            -3.9788,
+            -4.0088
+          ]
+        ],
+        "abundance_print_tolerance_dex": 6e-05,
+        "output_sha256": "b01f524bc3b1ed641f42e4988492aa6693e1758399e5e47178f7354c193a54a4",
+        "zones": {
+          "actual_zone_rows": 260,
+          "maximum_log_CNO_over_H_error_dex": 0.001226075692495332,
+          "two_column_rounding_tolerance_dex": 0.0101
+        },
+        "zone_output_sha256": "58bd27f70f28cebd0722c1db4c8842a9444364273f0d09c41cea00fde782964a"
+      },
+      "complete_intrinsic_group_intensities": [
+        1.76623,
+        2.41602,
+        3.74248,
+        9.0108,
+        13.2092
+      ],
+      "complete_emergent_group_intensities": [
+        1.75074,
+        2.3978,
+        3.70534,
+        8.914980000000002,
+        13.053999999999998
+      ],
+      "Hplus_weighted_temperature_K": 13765.65,
+      "final_stop": "Calculation stopped because low electron fraction. Iteration 3 of 3",
+      "physical_stop_contract": "electron_fraction_0.01",
+      "final_zones": 260
+    },
+    {
+      "model_id": "model008",
+      "file_pin_count": 7,
+      "composition": {
+        "expected_log_CNO_over_H": [
+          -4.378773924307505,
+          -4.978773924307505,
+          -4.008773924307505
+        ],
+        "actual_printed_log_CNO_over_H": [
+          [
+            -4.3788,
+            -4.9788,
+            -4.0088
+          ]
+        ],
+        "abundance_print_tolerance_dex": 6e-05,
+        "output_sha256": "ccfb84b2e801490f0932d121f5252f375f1b9eb42d177b00f8eba33b2dbd9bc4",
+        "zones": {
+          "actual_zone_rows": 203,
+          "maximum_log_CNO_over_H_error_dex": 0.001226075692495776,
+          "two_column_rounding_tolerance_dex": 0.0101
+        },
+        "zone_output_sha256": "02748c0065f44bc5b069337a2b3e499a61843d6979075e28fa17bbfe05a5780f"
+      },
+      "complete_intrinsic_group_intensities": [
+        4.0087e-06,
+        7.3061e-05,
+        0.0012641100000000001,
+        0.00026571,
+        0.0054852
+      ],
+      "complete_emergent_group_intensities": [
+        4.0055e-06,
+        7.3014e-05,
+        0.00126348,
+        0.000265558,
+        0.0054819
+      ],
+      "Hplus_weighted_temperature_K": 12136.93,
+      "final_stop": "Calculation stopped because low electron fraction. Iteration 3 of 3",
+      "physical_stop_contract": "electron_fraction_0.01",
+      "final_zones": 203
+    },
+    {
+      "model_id": "model009",
+      "file_pin_count": 7,
+      "composition": {
+        "expected_log_CNO_over_H": [
+          -4.378773924307505,
+          -3.9787739243075047,
+          -4.008773924307505
+        ],
+        "actual_printed_log_CNO_over_H": [
+          [
+            -4.3788,
+            -3.9788,
+            -4.0088
+          ]
+        ],
+        "abundance_print_tolerance_dex": 6e-05,
+        "output_sha256": "5f3bff2c8cfde339588019c6a72156d8326e6bf18733421054f0c51f6279e725",
+        "zones": {
+          "actual_zone_rows": 201,
+          "maximum_log_CNO_over_H_error_dex": 0.001226075692495332,
+          "two_column_rounding_tolerance_dex": 0.0101
+        },
+        "zone_output_sha256": "ad0dd2f367e937ec5876cf37904de92a829a430f7432d9bf7f2c1325152c0a89"
+      },
+      "complete_intrinsic_group_intensities": [
+        2.6424e-05,
+        5.2879999999999995e-05,
+        0.00103454,
+        0.001795721,
+        0.0038394
+      ],
+      "complete_emergent_group_intensities": [
+        2.6402999999999998e-05,
+        5.2847000000000004e-05,
+        0.00103402,
+        0.001794756,
+        0.0038370999999999995
+      ],
+      "Hplus_weighted_temperature_K": 11536.58,
+      "final_stop": "Calculation stopped because low electron fraction. Iteration 3 of 3",
+      "physical_stop_contract": "electron_fraction_0.01",
+      "final_zones": 201
+    },
+    {
+      "model_id": "model010",
+      "file_pin_count": 7,
+      "composition": {
+        "expected_log_CNO_over_H": [
+          -4.378773924307505,
+          -4.978773924307505,
+          -4.008773924307505
+        ],
+        "actual_printed_log_CNO_over_H": [
+          [
+            -4.3788,
+            -4.9788,
+            -4.0088
+          ]
+        ],
+        "abundance_print_tolerance_dex": 6e-05,
+        "output_sha256": "26d662bfeabc3d59efbac9011e35f3927f1eee524662d01281c0dad52f05db21",
+        "zones": {
+          "actual_zone_rows": 261,
+          "maximum_log_CNO_over_H_error_dex": 0.001226075692495776,
+          "two_column_rounding_tolerance_dex": 0.0101
+        },
+        "zone_output_sha256": "5cf858ce4741f93f98afe9d032b90cb690469712f418b89e8dfdf9f83387a2aa"
+      },
+      "complete_intrinsic_group_intensities": [
+        0.076296,
+        1.00523,
+        0.457559,
+        0.081769,
+        1.30148
+      ],
+      "complete_emergent_group_intensities": [
+        0.075411,
+        0.99627,
+        0.451549,
+        0.08061610000000001,
+        1.2812899999999998
+      ],
+      "Hplus_weighted_temperature_K": 13926.37,
+      "final_stop": "Calculation stopped because lowest Te reached. Iteration 3 of 3",
+      "physical_stop_contract": "temperature_floor_1000K",
+      "final_zones": 261
+    },
+    {
+      "model_id": "model011",
+      "file_pin_count": 7,
+      "composition": {
+        "expected_log_CNO_over_H": [
+          -4.378773924307505,
+          -3.9787739243075047,
+          -4.008773924307505
+        ],
+        "actual_printed_log_CNO_over_H": [
+          [
+            -4.3788,
+            -3.9788,
+            -4.0088
+          ]
+        ],
+        "abundance_print_tolerance_dex": 6e-05,
+        "output_sha256": "c6a85f6793a200fba65b577abe40441926bea27d5afd5173244a5aec534c7f19",
+        "zones": {
+          "actual_zone_rows": 249,
+          "maximum_log_CNO_over_H_error_dex": 0.001226075692495332,
+          "two_column_rounding_tolerance_dex": 0.0101
+        },
+        "zone_output_sha256": "2ba8b0b208fe85427c81b32ed5113511abba5249e20a01d2ab98816ba40e6c24"
+      },
+      "complete_intrinsic_group_intensities": [
+        0.48149,
+        0.626,
+        0.41233,
+        0.834799,
+        1.29918
+      ],
+      "complete_emergent_group_intensities": [
+        0.47587999999999997,
+        0.6201,
+        0.406877,
+        0.82298,
+        1.2788499999999998
+      ],
+      "Hplus_weighted_temperature_K": 13666.85,
+      "final_stop": "Calculation stopped because lowest Te reached. Iteration 3 of 3",
+      "physical_stop_contract": "temperature_floor_1000K",
+      "final_zones": 249
+    },
+    {
+      "model_id": "model012",
+      "file_pin_count": 7,
+      "composition": {
+        "expected_log_CNO_over_H": [
+          -4.378773924307505,
+          -4.978773924307505,
+          -4.008773924307505
+        ],
+        "actual_printed_log_CNO_over_H": [
+          [
+            -4.3788,
+            -4.9788,
+            -4.0088
+          ]
+        ],
+        "abundance_print_tolerance_dex": 6e-05,
+        "output_sha256": "45865a78a00f42b9e3ca9c77e8d5c640b9a89a2eeaa8be7deaa4ef9daa9b6703",
+        "zones": {
+          "actual_zone_rows": 221,
+          "maximum_log_CNO_over_H_error_dex": 0.001226075692495776,
+          "two_column_rounding_tolerance_dex": 0.0101
+        },
+        "zone_output_sha256": "46cef21fc653852daac3945ed88c7f5d17fd6f69d3aadff339168bdfa29393b8"
+      },
+      "complete_intrinsic_group_intensities": [
+        1.7672899999999998e-05,
+        0.00117669,
+        0.00527138,
+        0.00203673,
+        0.037193000000000004
+      ],
+      "complete_emergent_group_intensities": [
+        1.7628300000000002e-05,
+        0.00117365,
+        0.00525678,
+        0.002030704,
+        0.037071
+      ],
+      "Hplus_weighted_temperature_K": 11512.74,
+      "final_stop": "Calculation stopped because lowest Te reached. Iteration 3 of 3",
+      "physical_stop_contract": "temperature_floor_1000K",
+      "final_zones": 221
+    },
+    {
+      "model_id": "model013",
+      "file_pin_count": 7,
+      "composition": {
+        "expected_log_CNO_over_H": [
+          -4.378773924307505,
+          -3.9787739243075047,
+          -4.008773924307505
+        ],
+        "actual_printed_log_CNO_over_H": [
+          [
+            -4.3788,
+            -3.9788,
+            -4.0088
+          ]
+        ],
+        "abundance_print_tolerance_dex": 6e-05,
+        "output_sha256": "23675c31b3e26f0c8e663a7f90768d6426e100541efb4c53ea39f118734727e9",
+        "zones": {
+          "actual_zone_rows": 220,
+          "maximum_log_CNO_over_H_error_dex": 0.001226075692495332,
+          "two_column_rounding_tolerance_dex": 0.0101
+        },
+        "zone_output_sha256": "c40e71bbc7d8e3a2c1616f332e1c4216dd195bf45ea652568258cc27555fb6d6"
+      },
+      "complete_intrinsic_group_intensities": [
+        0.000114954,
+        0.00106358,
+        0.00362441,
+        0.01392045,
+        0.025382000000000002
+      ],
+      "complete_emergent_group_intensities": [
+        0.000114666,
+        0.00106083,
+        0.00361447,
+        0.01387937,
+        0.0253
+      ],
+      "Hplus_weighted_temperature_K": 10848.98,
+      "final_stop": "Calculation stopped because lowest Te reached. Iteration 3 of 3",
+      "physical_stop_contract": "temperature_floor_1000K",
+      "final_zones": 220
+    },
+    {
+      "model_id": "model014",
+      "file_pin_count": 7,
+      "composition": {
+        "expected_log_CNO_over_H": [
+          -4.378773924307505,
+          -4.978773924307505,
+          -4.008773924307505
+        ],
+        "actual_printed_log_CNO_over_H": [
+          [
+            -4.3788,
+            -4.9788,
+            -4.0088
+          ]
+        ],
+        "abundance_print_tolerance_dex": 6e-05,
+        "output_sha256": "54befd3e8acc048cfced963b6954c11ff54f59abc25b87a00f04dc5610d791e3",
+        "zones": {
+          "actual_zone_rows": 246,
+          "maximum_log_CNO_over_H_error_dex": 0.001226075692495776,
+          "two_column_rounding_tolerance_dex": 0.0101
+        },
+        "zone_output_sha256": "ca795cda28811485cd03de9c4e7e90c477598d83833d340158537e60d8596cc8"
+      },
+      "complete_intrinsic_group_intensities": [
+        0.0209032,
+        0.276807,
+        0.166634,
+        0.013204790000000001,
+        0.21237899999999998
+      ],
+      "complete_emergent_group_intensities": [
+        0.02085,
+        0.276175,
+        0.16618,
+        0.01316558,
+        0.211679
+      ],
+      "Hplus_weighted_temperature_K": 15765.96,
+      "final_stop": "Calculation stopped because low electron fraction. Iteration 3 of 3",
+      "physical_stop_contract": "electron_fraction_0.01",
+      "final_zones": 246
+    },
+    {
+      "model_id": "model015",
+      "file_pin_count": 7,
+      "composition": {
+        "expected_log_CNO_over_H": [
+          -4.378773924307505,
+          -3.9787739243075047,
+          -4.008773924307505
+        ],
+        "actual_printed_log_CNO_over_H": [
+          [
+            -4.3788,
+            -3.9788,
+            -4.0088
+          ]
+        ],
+        "abundance_print_tolerance_dex": 6e-05,
+        "output_sha256": "625eb03acdf81ee8d6c4eb206dc93d7af992704bfe0885c103b84f8fd8d485e2",
+        "zones": {
+          "actual_zone_rows": 246,
+          "maximum_log_CNO_over_H_error_dex": 0.001226075692495332,
+          "two_column_rounding_tolerance_dex": 0.0101
+        },
+        "zone_output_sha256": "9b975cb34d0aaf311c67aa17d352669f4bcecced447263ddb07eba240106b098"
+      },
+      "complete_intrinsic_group_intensities": [
+        0.17677500000000002,
+        0.23430499999999999,
+        0.159559,
+        0.123047,
+        0.197007
+      ],
+      "complete_emergent_group_intensities": [
+        0.176317,
+        0.233766,
+        0.15912199999999999,
+        0.12267810000000001,
+        0.196355
+      ],
+      "Hplus_weighted_temperature_K": 15458.57,
+      "final_stop": "Calculation stopped because low electron fraction. Iteration 3 of 3",
+      "physical_stop_contract": "electron_fraction_0.01",
+      "final_zones": 246
+    },
+    {
+      "model_id": "model016",
+      "file_pin_count": 7,
+      "composition": {
+        "expected_log_CNO_over_H": [
+          -4.9808339156354675,
+          -5.580833915635467,
+          -4.610833915635467
+        ],
+        "actual_printed_log_CNO_over_H": [
+          [
+            -4.9808,
+            -5.5808,
+            -4.6108
+          ]
+        ],
+        "abundance_print_tolerance_dex": 6e-05,
+        "output_sha256": "b3d36faa3e836f6a09c53c2dedc609f26dedb73de30adea978d13547c24b0953",
+        "zones": {
+          "actual_zone_rows": 205,
+          "maximum_log_CNO_over_H_error_dex": 0.0008339156354670862,
+          "two_column_rounding_tolerance_dex": 0.0101
+        },
+        "zone_output_sha256": "7c62f5d08405923f33b24701422a6b740edb62f2c87a55cb43b0668596a4b585"
+      },
+      "complete_intrinsic_group_intensities": [
+        0.00217301,
+        0.0253491,
+        0.0356327,
+        0.00778486,
+        0.11081200000000001
+      ],
+      "complete_emergent_group_intensities": [
+        0.0021672799999999997,
+        0.025288199999999997,
+        0.0355282,
+        0.007760339999999999,
+        0.110426
+      ],
+      "Hplus_weighted_temperature_K": 17111.3,
+      "final_stop": "Calculation stopped because low electron fraction. Iteration 3 of 3",
+      "physical_stop_contract": "electron_fraction_0.01",
+      "final_zones": 205
+    },
+    {
+      "model_id": "model017",
+      "file_pin_count": 7,
+      "composition": {
+        "expected_log_CNO_over_H": [
+          -4.9808339156354675,
+          -4.580833915635467,
+          -4.610833915635467
+        ],
+        "actual_printed_log_CNO_over_H": [
+          [
+            -4.9808,
+            -4.5808,
+            -4.6108
+          ]
+        ],
+        "abundance_print_tolerance_dex": 6e-05,
+        "output_sha256": "eb4b1de3c9ccf422e7a65de08303cb5ee3384c8798638962f9ca34af759db0c3",
+        "zones": {
+          "actual_zone_rows": 205,
+          "maximum_log_CNO_over_H_error_dex": 0.0008339156354670862,
+          "two_column_rounding_tolerance_dex": 0.0101
+        },
+        "zone_output_sha256": "bc869928b5db796aa9538c2ac2418f751ca64f124ab79eb5326497f2040b0a82"
+      },
+      "complete_intrinsic_group_intensities": [
+        0.0194123,
+        0.022968000000000002,
+        0.0335241,
+        0.0727979,
+        0.10389000000000001
+      ],
+      "complete_emergent_group_intensities": [
+        0.0193615,
+        0.0229121,
+        0.0334252,
+        0.0725687,
+        0.103526
+      ],
+      "Hplus_weighted_temperature_K": 16881.84,
+      "final_stop": "Calculation stopped because low electron fraction. Iteration 3 of 3",
+      "physical_stop_contract": "electron_fraction_0.01",
+      "final_zones": 205
+    },
+    {
+      "model_id": "model018",
+      "file_pin_count": 7,
+      "composition": {
+        "expected_log_CNO_over_H": [
+          -3.9808339156354675,
+          -4.580833915635467,
+          -3.6108339156354674
+        ],
+        "actual_printed_log_CNO_over_H": [
+          [
+            -3.9808,
+            -4.5808,
+            -3.6108
+          ]
+        ],
+        "abundance_print_tolerance_dex": 6e-05,
+        "output_sha256": "9c46dfd0f828140bbfcb96086a278a39d9ec4bd7505b2c93c6e359cfc3e6aef4",
+        "zones": {
+          "actual_zone_rows": 220,
+          "maximum_log_CNO_over_H_error_dex": 0.0008339156354675303,
+          "two_column_rounding_tolerance_dex": 0.0101
+        },
+        "zone_output_sha256": "acb9ccfceaa51e966c6f9bcfab7e817d9aa171c0e32844ceff84ef884251d81a"
+      },
+      "complete_intrinsic_group_intensities": [
+        0.00041335000000000005,
+        0.0052749,
+        0.0168508,
+        0.00353551,
+        0.064099
+      ],
+      "complete_emergent_group_intensities": [
+        0.00041204,
+        0.0052621000000000005,
+        0.0167989,
+        0.00352363,
+        0.063863
+      ],
+      "Hplus_weighted_temperature_K": 10588.2,
+      "final_stop": "Calculation stopped because lowest Te reached. Iteration 3 of 3",
+      "physical_stop_contract": "temperature_floor_1000K",
+      "final_zones": 220
+    },
+    {
+      "model_id": "model019",
+      "file_pin_count": 7,
+      "composition": {
+        "expected_log_CNO_over_H": [
+          -3.9808339156354675,
+          -3.580833915635467,
+          -3.6108339156354674
+        ],
+        "actual_printed_log_CNO_over_H": [
+          [
+            -3.9808,
+            -3.5808,
+            -3.6108
+          ]
+        ],
+        "abundance_print_tolerance_dex": 6e-05,
+        "output_sha256": "b8beb9f8649ce86987d842dad15921ea37c6e80fcebdcef71568abf0824db00a",
+        "zones": {
+          "actual_zone_rows": 217,
+          "maximum_log_CNO_over_H_error_dex": 0.0008339156354675303,
+          "two_column_rounding_tolerance_dex": 0.0101
+        },
+        "zone_output_sha256": "8f8e57f821bfbb5080415189659bf4db6f239552a0f409b96a2ef3a950c8ce07"
+      },
+      "complete_intrinsic_group_intensities": [
+        0.002532,
+        0.0033778000000000002,
+        0.014057299999999998,
+        0.0271287,
+        0.049698
+      ],
+      "complete_emergent_group_intensities": [
+        0.0025241,
+        0.0033691,
+        0.014014000000000002,
+        0.027037199999999997,
+        0.049515
+      ],
+      "Hplus_weighted_temperature_K": 10240.15,
+      "final_stop": "Calculation stopped because lowest Te reached. Iteration 3 of 3",
+      "physical_stop_contract": "temperature_floor_1000K",
+      "final_zones": 217
+    }
+  ],
+  "actual_line_list_count": 29,
+  "intensities_linear": true,
+  "units": "erg s^-1 cm^-2 in the printed Cloudy intensity geometry; no source distance conversion",
+  "wavelength_namespace": "Cloudy default vacuum below2000A, air above2000A; fitted14UV components allbelow2000",
+  "primary_source_files_sha256": {
+    "prt.h": "b9913d3b34bcf1961b6a0a819b3554ff9e8a060a2a3f5ac3e9fbee4404d0cd31",
+    "init_defaults_preparse.cpp": "1cb3cb99d20696ba7cf029d6226febd76dd83d14ce3e04493660b5dc42784c8f",
+    "cddrive.cpp": "886fd3fd953cbb46ef08433c34246fbfc54184a66b25a2a14af7efe102fc49b4",
+    "iter_end_chk.cpp": "c1a5bc5dc4502454a0bc6a37204adedca3bbf8c83660365550aeaf81bcd6d0e8"
+  },
+  "scope": "Actual converged code outputs and complete component/blend/abundance guards; not a code-independent thermal solver or measured source ionizing spectrum",
+  "complete_pilot20": {
+    "actual_environment_controls": [
+      {
+        "model_id": "model000",
+        "actual_zone_hydrogen_density_cm3": [
+          1000.0,
+          1000.0
+        ]
+      },
+      {
+        "model_id": "model001",
+        "actual_zone_hydrogen_density_cm3": [
+          1000.0,
+          1000.0
+        ]
+      },
+      {
+        "model_id": "model002",
+        "actual_zone_hydrogen_density_cm3": [
+          100.0,
+          100.0
+        ]
+      },
+      {
+        "model_id": "model003",
+        "actual_zone_hydrogen_density_cm3": [
+          100.0,
+          100.0
+        ]
+      },
+      {
+        "model_id": "model004",
+        "actual_zone_hydrogen_density_cm3": [
+          10000.0,
+          10000.0
+        ]
+      },
+      {
+        "model_id": "model005",
+        "actual_zone_hydrogen_density_cm3": [
+          10000.0,
+          10000.0
+        ]
+      },
+      {
+        "model_id": "model006",
+        "actual_zone_hydrogen_density_cm3": [
+          100000.0,
+          100000.0
+        ]
+      },
+      {
+        "model_id": "model007",
+        "actual_zone_hydrogen_density_cm3": [
+          100000.0,
+          100000.0
+        ]
+      },
+      {
+        "model_id": "model008",
+        "actual_zone_hydrogen_density_cm3": [
+          1000.0,
+          1000.0
+        ]
+      },
+      {
+        "model_id": "model009",
+        "actual_zone_hydrogen_density_cm3": [
+          1000.0,
+          1000.0
+        ]
+      },
+      {
+        "model_id": "model010",
+        "actual_zone_hydrogen_density_cm3": [
+          1000.0,
+          1000.0
+        ]
+      },
+      {
+        "model_id": "model011",
+        "actual_zone_hydrogen_density_cm3": [
+          1000.0,
+          1000.0
+        ]
+      },
+      {
+        "model_id": "model012",
+        "actual_zone_hydrogen_density_cm3": [
+          1000.0,
+          1000.0
+        ]
+      },
+      {
+        "model_id": "model013",
+        "actual_zone_hydrogen_density_cm3": [
+          1000.0,
+          1000.0
+        ]
+      },
+      {
+        "model_id": "model014",
+        "actual_zone_hydrogen_density_cm3": [
+          1000.0,
+          1000.0
+        ]
+      },
+      {
+        "model_id": "model015",
+        "actual_zone_hydrogen_density_cm3": [
+          1000.0,
+          1000.0
+        ]
+      },
+      {
+        "model_id": "model016",
+        "actual_zone_hydrogen_density_cm3": [
+          1000.0,
+          1000.0
+        ]
+      },
+      {
+        "model_id": "model017",
+        "actual_zone_hydrogen_density_cm3": [
+          1000.0,
+          1000.0
+        ]
+      },
+      {
+        "model_id": "model018",
+        "actual_zone_hydrogen_density_cm3": [
+          1000.0,
+          1000.0
+        ]
+      },
+      {
+        "model_id": "model019",
+        "actual_zone_hydrogen_density_cm3": [
+          1000.0,
+          1000.0
+        ]
+      }
+    ],
+    "complete_environment_count": 10,
+    "nitrogen_only_deck_pair_count": 10,
+    "scope": "Actual declared input controls and zone densities; does not expand model coverage."
+  },
+  "author_commit": "a49e7f33cbc2073aecd6e0854e54aee5b97ff349",
+  "approved": true,
+  "validated_raw_file_count": 140,
+  "preserved_raw_archive": {
+    "sha256": "5b36c11a1f9839e30d433198ad47ec7c69e977f476992aaa26beae853fcf4f4a",
+    "bytes": 2276836,
+    "manifest_sha256": "7e334f516463fbb0304c118b3822c468d2d84ba9b030afe75be85d9018dc50e2",
+    "actual_member_count": 141,
+    "all_members_match_actual_cache": true,
+    "all140_model_members_match_scientific_receipt": true,
+    "safe_canonical_container_metadata": true
+  },
+  "independent_selection_from_frozen_scores": [
+    {
+      "wavelength_hypothesis": "original_native",
+      "noise": "RATE_formal_v3",
+      "resolution": "nominal",
+      "selected_finite_family_minima": [
+        {
+          "nitrogen_dex": 0.0,
+          "model_id": "model014",
+          "A1500_mag": 0.0,
+          "full_native_profiled_chi2": 787.82517072716,
+          "profiled_group_chi2": 5.29318163045441
+        },
+        {
+          "nitrogen_dex": 1.0,
+          "model_id": "model015",
+          "A1500_mag": 0.0,
+          "full_native_profiled_chi2": 784.8825655129549,
+          "profiled_group_chi2": 2.1871441371039277
+        }
+      ],
+      "ordinary_minus_enhanced_minimum_chi2": 2.9426052142050594
+    },
+    {
+      "wavelength_hypothesis": "original_native",
+      "noise": "RATE_formal_v3",
+      "resolution": "generic_point",
+      "selected_finite_family_minima": [
+        {
+          "nitrogen_dex": 0.0,
+          "model_id": "model010",
+          "A1500_mag": 0.0,
+          "full_native_profiled_chi2": 785.1974079579466,
+          "profiled_group_chi2": 7.024912502555837
+        },
+        {
+          "nitrogen_dex": 1.0,
+          "model_id": "model015",
+          "A1500_mag": 0.0,
+          "full_native_profiled_chi2": 782.2237326607473,
+          "profiled_group_chi2": 1.4989330313483973
+        }
+      ],
+      "ordinary_minus_enhanced_minimum_chi2": 2.973675297199293
+    },
+    {
+      "wavelength_hypothesis": "original_native",
+      "noise": "RATE_empirical_rows_and_columns_v3",
+      "resolution": "nominal",
+      "selected_finite_family_minima": [
+        {
+          "nitrogen_dex": 0.0,
+          "model_id": "model014",
+          "A1500_mag": 0.0,
+          "full_native_profiled_chi2": 556.4588858057024,
+          "profiled_group_chi2": 3.600629295831645
+        },
+        {
+          "nitrogen_dex": 1.0,
+          "model_id": "model015",
+          "A1500_mag": 0.0,
+          "full_native_profiled_chi2": 554.5274904121168,
+          "profiled_group_chi2": 1.5521272778211752
+        }
+      ],
+      "ordinary_minus_enhanced_minimum_chi2": 1.9313953935856034
+    },
+    {
+      "wavelength_hypothesis": "original_native",
+      "noise": "RATE_empirical_rows_and_columns_v3",
+      "resolution": "generic_point",
+      "selected_finite_family_minima": [
+        {
+          "nitrogen_dex": 0.0,
+          "model_id": "model010",
+          "A1500_mag": 0.0,
+          "full_native_profiled_chi2": 554.5335141997274,
+          "profiled_group_chi2": 4.858498557866453
+        },
+        {
+          "nitrogen_dex": 1.0,
+          "model_id": "model015",
+          "A1500_mag": 0.0,
+          "full_native_profiled_chi2": 552.5517923137585,
+          "profiled_group_chi2": 1.0216166652181353
+        }
+      ],
+      "ordinary_minus_enhanced_minimum_chi2": 1.9817218859689092
+    },
+    {
+      "wavelength_hypothesis": "pinned_toy_prediction",
+      "noise": "RATE_formal_v3",
+      "resolution": "nominal",
+      "selected_finite_family_minima": [
+        {
+          "nitrogen_dex": 0.0,
+          "model_id": "model014",
+          "A1500_mag": 0.0,
+          "full_native_profiled_chi2": 786.5302044164515,
+          "profiled_group_chi2": 6.454930677639111
+        },
+        {
+          "nitrogen_dex": 1.0,
+          "model_id": "model015",
+          "A1500_mag": 0.0,
+          "full_native_profiled_chi2": 782.5465905556022,
+          "profiled_group_chi2": 2.358674629424815
+        }
+      ],
+      "ordinary_minus_enhanced_minimum_chi2": 3.9836138608493457
+    },
+    {
+      "wavelength_hypothesis": "pinned_toy_prediction",
+      "noise": "RATE_formal_v3",
+      "resolution": "generic_point",
+      "selected_finite_family_minima": [
+        {
+          "nitrogen_dex": 0.0,
+          "model_id": "model014",
+          "A1500_mag": 0.0,
+          "full_native_profiled_chi2": 785.2655118267094,
+          "profiled_group_chi2": 6.687268774964436
+        },
+        {
+          "nitrogen_dex": 1.0,
+          "model_id": "model015",
+          "A1500_mag": 0.0,
+          "full_native_profiled_chi2": 780.6668818489183,
+          "profiled_group_chi2": 1.9561082734351691
+        }
+      ],
+      "ordinary_minus_enhanced_minimum_chi2": 4.59862997779112
+    },
+    {
+      "wavelength_hypothesis": "pinned_toy_prediction",
+      "noise": "RATE_empirical_rows_and_columns_v3",
+      "resolution": "nominal",
+      "selected_finite_family_minima": [
+        {
+          "nitrogen_dex": 0.0,
+          "model_id": "model014",
+          "A1500_mag": 0.0,
+          "full_native_profiled_chi2": 555.5909607585759,
+          "profiled_group_chi2": 4.405347075950108
+        },
+        {
+          "nitrogen_dex": 1.0,
+          "model_id": "model015",
+          "A1500_mag": 0.0,
+          "full_native_profiled_chi2": 552.9401382114988,
+          "profiled_group_chi2": 1.6726173314716786
+        }
+      ],
+      "ordinary_minus_enhanced_minimum_chi2": 2.6508225470770412
+    },
+    {
+      "wavelength_hypothesis": "pinned_toy_prediction",
+      "noise": "RATE_empirical_rows_and_columns_v3",
+      "resolution": "generic_point",
+      "selected_finite_family_minima": [
+        {
+          "nitrogen_dex": 0.0,
+          "model_id": "model014",
+          "A1500_mag": 0.0,
+          "full_native_profiled_chi2": 554.6874881470009,
+          "profiled_group_chi2": 4.599466955713436
+        },
+        {
+          "nitrogen_dex": 1.0,
+          "model_id": "model015",
+          "A1500_mag": 0.0,
+          "full_native_profiled_chi2": 551.5470105342673,
+          "profiled_group_chi2": 1.3681933153030852
+        }
+      ],
+      "ordinary_minus_enhanced_minimum_chi2": 3.140477612733548
+    }
+  ],
+  "likelihood_scope": "Only minima arithmetic checked here; spectroscopy owns independent full native/held-out likelihood validation. Finite conditional family minima are not posterior probabilities or elemental constraints.",
+  "thermal_response_ratios": [
+    {
+      "ordinary_model": "model000",
+      "enhanced_model": "model001",
+      "Hplus_temperature_change_K": -284.71999999999935,
+      "intrinsic_enhanced_to_ordinary_group_ratios": [
+        7.8249969673688895,
+        0.7834711538975513,
+        0.888027904448035,
+        8.783654562934096,
+        0.8850098099022308
+      ]
+    },
+    {
+      "ordinary_model": "model002",
+      "enhanced_model": "model003",
+      "Hplus_temperature_change_K": -458.5699999999997,
+      "intrinsic_enhanced_to_ordinary_group_ratios": [
+        7.270376585151156,
+        0.7353149791032397,
+        0.8263857755860128,
+        7.84602908871434,
+        0.7990614113974427
+      ]
+    },
+    {
+      "ordinary_model": "model004",
+      "enhanced_model": "model005",
+      "Hplus_temperature_change_K": -191.67000000000007,
+      "intrinsic_enhanced_to_ordinary_group_ratios": [
+        8.206313359708359,
+        0.8201415977866755,
+        0.9239521970743257,
+        9.239607523968866,
+        0.9273361792291155
+      ]
+    },
+    {
+      "ordinary_model": "model006",
+      "enhanced_model": "model007",
+      "Hplus_temperature_change_K": -172.8199999999997,
+      "intrinsic_enhanced_to_ordinary_group_ratios": [
+        8.275375763709285,
+        0.8267444128486516,
+        0.9322568832935186,
+        9.361344921947236,
+        0.9391405738987002
+      ]
+    },
+    {
+      "ordinary_model": "model008",
+      "enhanced_model": "model009",
+      "Hplus_temperature_change_K": -600.3500000000004,
+      "intrinsic_enhanced_to_ordinary_group_ratios": [
+        6.591663132686406,
+        0.7237787602140676,
+        0.8183939688792905,
+        6.758198788152496,
+        0.6999562458980529
+      ]
+    },
+    {
+      "ordinary_model": "model010",
+      "enhanced_model": "model011",
+      "Hplus_temperature_change_K": -259.52000000000044,
+      "intrinsic_enhanced_to_ordinary_group_ratios": [
+        6.31081577015833,
+        0.6227430538284771,
+        0.9011515454837518,
+        10.209235773948562,
+        0.9982327811414697
+      ]
+    },
+    {
+      "ordinary_model": "model012",
+      "enhanced_model": "model013",
+      "Hplus_temperature_change_K": -663.7600000000002,
+      "intrinsic_enhanced_to_ordinary_group_ratios": [
+        6.504535192300076,
+        0.9038744274192863,
+        0.6875637878506197,
+        6.8347056310851215,
+        0.6824402441319602
+      ]
+    },
+    {
+      "ordinary_model": "model014",
+      "enhanced_model": "model015",
+      "Hplus_temperature_change_K": -307.3899999999994,
+      "intrinsic_enhanced_to_ordinary_group_ratios": [
+        8.456839144245858,
+        0.8464561951106726,
+        0.9575416781689211,
+        9.318360988701826,
+        0.9276199624256636
+      ]
+    },
+    {
+      "ordinary_model": "model016",
+      "enhanced_model": "model017",
+      "Hplus_temperature_change_K": -229.45999999999913,
+      "intrinsic_enhanced_to_ordinary_group_ratios": [
+        8.93336892144997,
+        0.9060676710415756,
+        0.9408240183876045,
+        9.351215050752357,
+        0.9375338411002418
+      ]
+    },
+    {
+      "ordinary_model": "model018",
+      "enhanced_model": "model019",
+      "Hplus_temperature_change_K": -348.0500000000011,
+      "intrinsic_enhanced_to_ordinary_group_ratios": [
+        6.125559453247853,
+        0.6403533716278982,
+        0.8342215206399696,
+        7.673206977211208,
+        0.77533190845411
+      ]
+    }
+  ],
+  "actual_consistent_executable_sha256": "b399034fb64c0e89aaa38528a53c033b870951f3c1fb277b9b20560ddc67253f",
+  "total_recorded_model_runtime_seconds": 8779.586418163002,
+  "runtime_range_seconds": [
+    323.0206444189989,
+    583.5458575569992
+  ]
+}

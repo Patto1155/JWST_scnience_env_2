@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "author_commit": "56262de",
+  "approved": true,
+  "archive_sha256": "0bfc0261772b5dd338518aaa6859bb2c39dd844557a5e3c40cca7bc0f5e4f2dd",
+  "archive_bytes": 228541,
+  "verified_original_model_members": 14,
+  "verified_saved_line_lists": 1,
+  "member_identity_contract": "All14 exact byte lengths and SHA256s equal independently approved original thermal pair receipts; canonical sorted regular relative paths and deterministic uid/gid/mtime/mode verified.",
+  "scope": "Exact original artifact restoration only. New executions compare numerical lines/thermal outputs under declared tolerance rather than byte-identical runtimes/adaptive zones."
+}
