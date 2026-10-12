@@ -224,6 +224,19 @@ RESEARCH2_SCIENCE_LINT_TARGETS = [
 ]
 
 
+RESEARCH3_SCIENCE_LINT_TARGETS = [
+    "tools/jwst/cloudy_ion_gain.py",
+    "tools/jwst/validate_ion_gain.py",
+    "tools/jwst/jades_balmer_pilot.py",
+    "tools/jwst/jades_balmer_figure.py",
+    "discovery/research3_jades_review.py",
+    "discovery/research3_jades_catalog_review.py",
+    "discovery/research3_jades_spectrum_review.py",
+    "tests/test_cloudy_ion_gain.py",
+    "tests/test_jades_balmer_pilot.py",
+]
+
+
 def _module_available(module_name: str) -> bool:
     return importlib.util.find_spec(module_name) is not None
 
@@ -267,6 +280,16 @@ def main() -> int:
         "research2-strict-science-lint",
         [sys.executable, "-m", "ruff", "check", "--select", "E,F,I",
          *RESEARCH2_SCIENCE_LINT_TARGETS],
+    )
+    ok &= _run_step(
+        "research3-strict-science-lint",
+        [sys.executable, "-m", "ruff", "check", "--select", "E,F,I",
+         *RESEARCH3_SCIENCE_LINT_TARGETS],
+    )
+    ok &= _run_step(
+        "research3-format-check",
+        [sys.executable, "-m", "ruff", "format", "--check",
+         *RESEARCH3_SCIENCE_LINT_TARGETS],
     )
     ok &= _run_step(
         "ruff-format-check",

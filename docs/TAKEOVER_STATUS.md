@@ -1,5 +1,19 @@
 # JWST research takeover: verified current status
 
+## 12 October discovery continuation
+
+[The discovery-pilot checkpoint](RESEARCH3_DISCOVERY_PILOTS.md) records the new
+target search, independent remeasurement and stopping decisions. The strongest
+selected JADES Balmer-ratio lead fails grating consistency; a second is
+unconfirmed. GOODS-N outcomes remain unopened. A bounded relative-ion-response
+test supports the existing finite-model observing forecast under modest gain
+freedom, without establishing source calibration or abundance. The documented
+NEXUS processed-data endpoint supplied no demonstrated independent post-study
+epoch. No new astrophysical discovery is established. The 10 October evidence
+and limitations below remain applicable.
+
+## 10 October verified baseline
+
 10 October 2026. This status supersedes the PR54 inference summary. The exact
 incoming status and report are preserved in [TAKEOVER_BASELINE_PR54.md](TAKEOVER_BASELINE_PR54.md)
 and [FINAL_RESEARCH_REPORT_PR54.md](FINAL_RESEARCH_REPORT_PR54.md). Live master

@@ -1,0 +1,17 @@
+{
+  "url": "https://jades.herts.ac.uk/DR4/Combined_DR4_external_v1.2.1.fits",
+  "bytes": 94124160,
+  "sha256": "4b4e7fd4306208ee801406c7ed73fdab895a2e67184af7f639a91e5f9c8ab7d4",
+  "elapsed_s": 21.8674213886261,
+  "retrieved_date_utc": "2026-10-12",
+  "headers": {
+    "Date": "Mon, 12 Oct 2026 00:53:44 GMT",
+    "Server": "Apache/2.4.62 (Rocky Linux) OpenSSL/3.5.5 mod_wsgi/4.7.1 Python/3.9",
+    "Last-Modified": "Wed, 01 Oct 2025 14:44:10 GMT",
+    "ETag": "\"59c3880-64019e6c08280\"",
+    "Accept-Ranges": "bytes",
+    "Content-Length": "94124160",
+    "Connection": "close",
+    "Content-Type": "image/fits"
+  }
+}

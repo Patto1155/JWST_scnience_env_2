@@ -3,6 +3,9 @@
 See **[NORTH_STAR.md](NORTH_STAR.md)** for the vision and goals of Science OS.
 
 For scientific claims, start with [the current verified status](TAKEOVER_STATUS.md) and [consolidated research report](FINAL_RESEARCH_REPORT.md). The incoming PR29 status/report are preserved as historical snapshots.
+The [12 October discovery pilots](RESEARCH3_DISCOVERY_PILOTS.md) add a new-target
+JADES screen and rejected candidate, a bounded ion-response robustness test,
+and a stopped NEXUS feasibility track; they establish no new astrophysical discovery.
 It supersedes stronger historical claims where the original images, independent
 controls or calibration have not been reproduced. [The current research protocol](RESEARCH_PROTOCOL.md)
 defines evidence labels, role ownership and the frozen environment.

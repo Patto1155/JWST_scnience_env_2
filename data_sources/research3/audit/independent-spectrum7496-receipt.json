@@ -1,0 +1,323 @@
+{
+  "source_id": "7496",
+  "method": "Unweighted flux-density box summation with inverse-variance constant continuum from red sideband; explicit bin edges; reported diagonal errors plus continuum-estimation variance; no gap interpolation.",
+  "caveats": "Post-triage diagnostic, not a calibrated likelihood. Wide Ha boxes can include NII wings. Apertures and nod choices share photons. Configurations share calibration/model assumptions. No cause inferred from coverage edge.",
+  "spectra": {
+    "f070lp-g140m": {
+      "filename": "hlsp_jades_jwst_nirspec_goods-s-deepjwst-00007496_f070lp-g140m_v1.0_x1d.fits",
+      "sha256": "ef153838903f7dc084f25d4cdce34a7327b7d0cf565101707d583c12fee85fca",
+      "RA": 53.0670414,
+      "DEC": -27.8989151,
+      "TARGET": "00007496",
+      "HLSPTIER": "goods-s-deepjwst",
+      "date_begin": "2024-01-11T23:14:06.418",
+      "date_end": "2025-01-13T01:49:12.309",
+      "first_valid_wave_um": 0.7,
+      "hb_expected_wave_um": 1.6987604078324985,
+      "all_flux_below_first_valid_is_nonfinite": true
+    },
+    "f170lp-g235m": {
+      "filename": "hlsp_jades_jwst_nirspec_goods-s-deepjwst-00007496_f170lp-g235m_v1.0_x1d.fits",
+      "sha256": "b81e7b7d25ed7170b99ac9bfe1bf86542cb9ae869ac32256eaef609850d7e51f",
+      "RA": 53.0670414,
+      "DEC": -27.8989151,
+      "TARGET": "00007496",
+      "HLSPTIER": "goods-s-deepjwst",
+      "date_begin": "2024-01-12T01:43:38.634",
+      "date_end": "2025-01-13T02:42:12.658",
+      "first_valid_wave_um": 1.69524994,
+      "hb_expected_wave_um": 1.6987604078324985,
+      "all_flux_below_first_valid_is_nonfinite": true
+    }
+  },
+  "results": {
+    "f070lp-g140m_5pix_FLUX_Hb_0.0025": {
+      "flux_1e20": 232.1776933062276,
+      "conditional_diagonal_error_1e20": 15.34912335951512,
+      "contributing_bins": 8,
+      "continuum_bins": 11,
+      "finite_window_fraction": 0.9999999999999787,
+      "continuum_1e20_per_A": 0.757591195356416
+    },
+    "f070lp-g140m_5pix_FLUX_Hb_0.0035": {
+      "flux_1e20": 225.22993026747633,
+      "conditional_diagonal_error_1e20": 19.14074471740153,
+      "contributing_bins": 12,
+      "continuum_bins": 11,
+      "finite_window_fraction": 1.0000000000000167,
+      "continuum_1e20_per_A": 0.757591195356416
+    },
+    "f070lp-g140m_5pix_FLUX_Hb_0.0045": {
+      "flux_1e20": 228.5884592890695,
+      "conditional_diagonal_error_1e20": 23.006541859528618,
+      "contributing_bins": 16,
+      "continuum_bins": 11,
+      "finite_window_fraction": 0.9999999999999887,
+      "continuum_1e20_per_A": 0.757591195356416
+    },
+    "f070lp-g140m_5pix_FLUX_NOD2_Hb_0.0025": {
+      "flux_1e20": 207.64604834563272,
+      "conditional_diagonal_error_1e20": 22.365308064580827,
+      "contributing_bins": 8,
+      "continuum_bins": 11,
+      "finite_window_fraction": 0.9999999999999787,
+      "continuum_1e20_per_A": 0.767520861096448
+    },
+    "f070lp-g140m_5pix_FLUX_NOD2_Hb_0.0035": {
+      "flux_1e20": 197.44550255392414,
+      "conditional_diagonal_error_1e20": 27.30291438151017,
+      "contributing_bins": 12,
+      "continuum_bins": 11,
+      "finite_window_fraction": 1.0000000000000167,
+      "continuum_1e20_per_A": 0.767520861096448
+    },
+    "f070lp-g140m_5pix_FLUX_NOD2_Hb_0.0045": {
+      "flux_1e20": 188.92309692591246,
+      "conditional_diagonal_error_1e20": 32.44757899754518,
+      "contributing_bins": 16,
+      "continuum_bins": 11,
+      "finite_window_fraction": 0.9999999999999887,
+      "continuum_1e20_per_A": 0.767520861096448
+    },
+    "f070lp-g140m_3pix_FLUX_Hb_0.0025": {
+      "flux_1e20": 208.2606133296993,
+      "conditional_diagonal_error_1e20": 12.376514893064398,
+      "contributing_bins": 8,
+      "continuum_bins": 11,
+      "finite_window_fraction": 0.9999999999999787,
+      "continuum_1e20_per_A": 0.889609996231776
+    },
+    "f070lp-g140m_3pix_FLUX_Hb_0.0035": {
+      "flux_1e20": 201.56444294692338,
+      "conditional_diagonal_error_1e20": 15.114583132609493,
+      "contributing_bins": 12,
+      "continuum_bins": 11,
+      "finite_window_fraction": 1.0000000000000167,
+      "continuum_1e20_per_A": 0.889609996231776
+    },
+    "f070lp-g140m_3pix_FLUX_Hb_0.0045": {
+      "flux_1e20": 188.2459404285329,
+      "conditional_diagonal_error_1e20": 17.92707677401192,
+      "contributing_bins": 16,
+      "continuum_bins": 11,
+      "finite_window_fraction": 0.9999999999999887,
+      "continuum_1e20_per_A": 0.889609996231776
+    },
+    "f070lp-g140m_3pix_FLUX_NOD2_Hb_0.0025": {
+      "flux_1e20": 203.7372873327695,
+      "conditional_diagonal_error_1e20": 16.774736107351536,
+      "contributing_bins": 8,
+      "continuum_bins": 11,
+      "finite_window_fraction": 0.9999999999999787,
+      "continuum_1e20_per_A": 1.109633796920597
+    },
+    "f070lp-g140m_3pix_FLUX_NOD2_Hb_0.0035": {
+      "flux_1e20": 186.88282215211046,
+      "conditional_diagonal_error_1e20": 20.596786681963845,
+      "contributing_bins": 12,
+      "continuum_bins": 11,
+      "finite_window_fraction": 1.0000000000000167,
+      "continuum_1e20_per_A": 1.109633796920597
+    },
+    "f070lp-g140m_3pix_FLUX_NOD2_Hb_0.0045": {
+      "flux_1e20": 168.7058241560843,
+      "conditional_diagonal_error_1e20": 24.644209821613334,
+      "contributing_bins": 16,
+      "continuum_bins": 11,
+      "finite_window_fraction": 0.9999999999999887,
+      "continuum_1e20_per_A": 1.109633796920597
+    },
+    "f170lp-g235m_5pix_FLUX_Hb_0.0025": {
+      "flux_1e20": 386.2244544384043,
+      "conditional_diagonal_error_1e20": 19.408704204160554,
+      "contributing_bins": 6,
+      "continuum_bins": 7,
+      "finite_window_fraction": 0.9999999999999787,
+      "continuum_1e20_per_A": 0.658665177300366
+    },
+    "f170lp-g235m_5pix_FLUX_Hb_0.0035": {
+      "flux_1e20": 420.5000814510788,
+      "conditional_diagonal_error_1e20": 25.941430312522726,
+      "contributing_bins": 8,
+      "continuum_bins": 7,
+      "finite_window_fraction": 1.0000000000000167,
+      "continuum_1e20_per_A": 0.658665177300366
+    },
+    "f170lp-g235m_5pix_FLUX_Hb_0.0045": {
+      "flux_1e20": 442.81346647619796,
+      "conditional_diagonal_error_1e20": 33.64948972764976,
+      "contributing_bins": 8,
+      "continuum_bins": 7,
+      "finite_window_fraction": 0.9493953147220335,
+      "continuum_1e20_per_A": 0.658665177300366
+    },
+    "f170lp-g235m_5pix_FLUX_Ha_0.0025": {
+      "flux_1e20": 639.5298660340527,
+      "conditional_diagonal_error_1e20": 8.124941117432952,
+      "contributing_bins": 5,
+      "continuum_bins": 7,
+      "finite_window_fraction": 0.9999999999999787,
+      "continuum_1e20_per_A": 0.6035079802477316
+    },
+    "f170lp-g235m_5pix_FLUX_Ha_0.0035": {
+      "flux_1e20": 645.0500080646049,
+      "conditional_diagonal_error_1e20": 9.392011343645562,
+      "contributing_bins": 7,
+      "continuum_bins": 7,
+      "finite_window_fraction": 0.9999999999999533,
+      "continuum_1e20_per_A": 0.6035079802477316
+    },
+    "f170lp-g235m_5pix_FLUX_Ha_0.0045": {
+      "flux_1e20": 642.8078621471765,
+      "conditional_diagonal_error_1e20": 10.75030766606097,
+      "contributing_bins": 9,
+      "continuum_bins": 7,
+      "finite_window_fraction": 1.000000000000038,
+      "continuum_1e20_per_A": 0.6035079802477316
+    },
+    "f170lp-g235m_5pix_FLUX_NOD2_Hb_0.0025": {
+      "flux_1e20": 412.6061321475092,
+      "conditional_diagonal_error_1e20": 27.28671711946302,
+      "contributing_bins": 6,
+      "continuum_bins": 7,
+      "finite_window_fraction": 0.9999999999999787,
+      "continuum_1e20_per_A": 0.6849763283952467
+    },
+    "f170lp-g235m_5pix_FLUX_NOD2_Hb_0.0035": {
+      "flux_1e20": 440.03222079346386,
+      "conditional_diagonal_error_1e20": 36.228596498768304,
+      "contributing_bins": 8,
+      "continuum_bins": 7,
+      "finite_window_fraction": 1.0000000000000167,
+      "continuum_1e20_per_A": 0.6849763283952467
+    },
+    "f170lp-g235m_5pix_FLUX_NOD2_Hb_0.0045": {
+      "flux_1e20": 452.435511611027,
+      "conditional_diagonal_error_1e20": 46.37231078285359,
+      "contributing_bins": 8,
+      "continuum_bins": 7,
+      "finite_window_fraction": 0.9493953147220335,
+      "continuum_1e20_per_A": 0.6849763283952467
+    },
+    "f170lp-g235m_5pix_FLUX_NOD2_Ha_0.0025": {
+      "flux_1e20": 673.0652915355827,
+      "conditional_diagonal_error_1e20": 11.114838613906763,
+      "contributing_bins": 5,
+      "continuum_bins": 7,
+      "finite_window_fraction": 0.9999999999999787,
+      "continuum_1e20_per_A": 0.3853013218513739
+    },
+    "f170lp-g235m_5pix_FLUX_NOD2_Ha_0.0035": {
+      "flux_1e20": 681.8895316550163,
+      "conditional_diagonal_error_1e20": 13.0927138755193,
+      "contributing_bins": 7,
+      "continuum_bins": 7,
+      "finite_window_fraction": 0.9999999999999533,
+      "continuum_1e20_per_A": 0.3853013218513739
+    },
+    "f170lp-g235m_5pix_FLUX_NOD2_Ha_0.0045": {
+      "flux_1e20": 683.362177401772,
+      "conditional_diagonal_error_1e20": 15.226453469766197,
+      "contributing_bins": 9,
+      "continuum_bins": 7,
+      "finite_window_fraction": 1.000000000000038,
+      "continuum_1e20_per_A": 0.3853013218513739
+    },
+    "f170lp-g235m_3pix_FLUX_Hb_0.0025": {
+      "flux_1e20": 356.47223705198377,
+      "conditional_diagonal_error_1e20": 16.027155396010826,
+      "contributing_bins": 6,
+      "continuum_bins": 7,
+      "finite_window_fraction": 0.9999999999999787,
+      "continuum_1e20_per_A": 0.5940660225877686
+    },
+    "f170lp-g235m_3pix_FLUX_Hb_0.0035": {
+      "flux_1e20": 377.01964489029615,
+      "conditional_diagonal_error_1e20": 20.995096392215572,
+      "contributing_bins": 8,
+      "continuum_bins": 7,
+      "finite_window_fraction": 1.0000000000000167,
+      "continuum_1e20_per_A": 0.5940660225877686
+    },
+    "f170lp-g235m_3pix_FLUX_Hb_0.0045": {
+      "flux_1e20": 407.02555979599236,
+      "conditional_diagonal_error_1e20": 39.88913245121951,
+      "contributing_bins": 9,
+      "continuum_bins": 7,
+      "finite_window_fraction": 0.9999999999999885,
+      "continuum_1e20_per_A": 0.5940660225877686
+    },
+    "f170lp-g235m_3pix_FLUX_Ha_0.0025": {
+      "flux_1e20": 600.1500881964021,
+      "conditional_diagonal_error_1e20": 7.25023062141008,
+      "contributing_bins": 5,
+      "continuum_bins": 7,
+      "finite_window_fraction": 0.9999999999999787,
+      "continuum_1e20_per_A": 0.48028614223885985
+    },
+    "f170lp-g235m_3pix_FLUX_Ha_0.0035": {
+      "flux_1e20": 606.436982923957,
+      "conditional_diagonal_error_1e20": 8.212416513349456,
+      "contributing_bins": 7,
+      "continuum_bins": 7,
+      "finite_window_fraction": 0.9999999999999533,
+      "continuum_1e20_per_A": 0.48028614223885985
+    },
+    "f170lp-g235m_3pix_FLUX_Ha_0.0045": {
+      "flux_1e20": 605.6669620693187,
+      "conditional_diagonal_error_1e20": 9.23584629384285,
+      "contributing_bins": 9,
+      "continuum_bins": 7,
+      "finite_window_fraction": 1.000000000000038,
+      "continuum_1e20_per_A": 0.48028614223885985
+    },
+    "f170lp-g235m_3pix_FLUX_NOD2_Hb_0.0025": {
+      "flux_1e20": 386.01314851919386,
+      "conditional_diagonal_error_1e20": 22.128077080055686,
+      "contributing_bins": 6,
+      "continuum_bins": 7,
+      "finite_window_fraction": 0.9999999999999787,
+      "continuum_1e20_per_A": 0.8412513912115658
+    },
+    "f170lp-g235m_3pix_FLUX_NOD2_Hb_0.0035": {
+      "flux_1e20": 413.0768610397936,
+      "conditional_diagonal_error_1e20": 28.882017257618024,
+      "contributing_bins": 8,
+      "continuum_bins": 7,
+      "finite_window_fraction": 1.0000000000000167,
+      "continuum_1e20_per_A": 0.8412513912115658
+    },
+    "f170lp-g235m_3pix_FLUX_NOD2_Hb_0.0045": {
+      "flux_1e20": 437.7767616150474,
+      "conditional_diagonal_error_1e20": 53.45717314716122,
+      "contributing_bins": 9,
+      "continuum_bins": 7,
+      "finite_window_fraction": 0.9999999999999885,
+      "continuum_1e20_per_A": 0.8412513912115658
+    },
+    "f170lp-g235m_3pix_FLUX_NOD2_Ha_0.0025": {
+      "flux_1e20": 591.1620316789591,
+      "conditional_diagonal_error_1e20": 10.076432956296133,
+      "contributing_bins": 5,
+      "continuum_bins": 7,
+      "finite_window_fraction": 0.9999999999999787,
+      "continuum_1e20_per_A": 0.4219798271768978
+    },
+    "f170lp-g235m_3pix_FLUX_NOD2_Ha_0.0035": {
+      "flux_1e20": 600.7294523361253,
+      "conditional_diagonal_error_1e20": 11.442402391611557,
+      "contributing_bins": 7,
+      "continuum_bins": 7,
+      "finite_window_fraction": 0.9999999999999533,
+      "continuum_1e20_per_A": 0.4219798271768978
+    },
+    "f170lp-g235m_3pix_FLUX_NOD2_Ha_0.0045": {
+      "flux_1e20": 601.257808391385,
+      "conditional_diagonal_error_1e20": 12.959495875277662,
+      "contributing_bins": 9,
+      "continuum_bins": 7,
+      "finite_window_fraction": 1.000000000000038,
+      "continuum_1e20_per_A": 0.4219798271768978
+    }
+  }
+}

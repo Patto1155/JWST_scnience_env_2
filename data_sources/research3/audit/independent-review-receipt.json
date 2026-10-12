@@ -1,0 +1,109 @@
+{
+  "inputs_sha256": {
+    "Combined_DR4_external_v1.2.1.fits": "4b4e7fd4306208ee801406c7ed73fdab895a2e67184af7f639a91e5f9c8ab7d4",
+    "pilot.py": "01ac70a4c78cb7c0389e92578f5401298a7e500b8dfdfbd97ac03a83fd802450",
+    "catalog-pilot.json": "b678e0ebd2d67e470c6c80641aab800c261d019080a594c6351215cd7314823c",
+    "frozen-design.txt": "d807f022c18c74b4bce572c7b2cbb019e52e1e484d3df49ce9359755d88bfed0"
+  },
+  "scope": "Independent catalogue triage; GOODS-S outcome rows only. GOODS-N outcome holdout unopened.",
+  "selected_observation_rows": 135,
+  "representative_rows": 132,
+  "below_2p65": 11,
+  "below_2p65_in_both_apertures": 7,
+  "diagonal_residual_below_minus3": 1,
+  "matches_pilot_indices": true,
+  "units": {
+    "HBaA_6563_flux": "10**-20 erg s-1 cm-2",
+    "HBaB_4861_flux": "10**-20 erg s-1 cm-2",
+    "HBaA_6563_flux_err": "10**-20 erg s-1 cm-2",
+    "HBaB_4861_flux_err": "10**-20 erg s-1 cm-2"
+  },
+  "duplicate_pairs": [
+    {
+      "ids": [
+        "goods-s-mediumhst_9833",
+        "goods-s-mediumjwst_30148179"
+      ],
+      "separation_arcsec": 0.014054443781766544,
+      "dr5_ids": [
+        208145,
+        208145
+      ],
+      "redshifts": [
+        5.920725450583491,
+        5.919773537758692
+      ]
+    },
+    {
+      "ids": [
+        "goods-s-mediumhst_9881",
+        "goods-s-mediumjwst_132638"
+      ],
+      "separation_arcsec": 0.039060114255029955,
+      "dr5_ids": [
+        132638,
+        132638
+      ],
+      "redshifts": [
+        3.322856463769643,
+        3.3239508287751143
+      ]
+    },
+    {
+      "ids": [
+        "goods-s-mediumjwst_53648",
+        "goods-s-ultradeep_210003"
+      ],
+      "separation_arcsec": 0.13240365034196264,
+      "dr5_ids": [
+        210003,
+        210003
+      ],
+      "redshifts": [
+        5.779428184845941,
+        5.778092000053711
+      ]
+    }
+  ],
+  "shared_positive_dr5": [
+    {
+      "dr5_id": 132638,
+      "count": 2,
+      "max_separation_arcsec": 0.039060114255029955
+    },
+    {
+      "dr5_id": 208145,
+      "count": 2,
+      "max_separation_arcsec": 0.014054443782801847
+    },
+    {
+      "dr5_id": 210003,
+      "count": 2,
+      "max_separation_arcsec": 0.13240365035156393
+    }
+  ],
+  "canonical_filter_extra_eligible_rows": 0,
+  "all_selected_stored_snr_ge10": true,
+  "stored_snr_max_difference": {
+    "HBaA_6563": 14.131980764215598,
+    "HBaB_4861": 4.2840807771266896
+  },
+  "lead": {
+    "unique_id": "goods-s-deepjwst_7496",
+    "z": 2.493465347981974,
+    "flag": "A",
+    "RA_deg": 53.0670414,
+    "Dec_deg": -27.8989151,
+    "ratio_5": 1.8532404923688615,
+    "ratio_3": 1.8710659540112309,
+    "diag_residual": -6.7699693546578,
+    "conditional_unknown_correlation_residual_range": [
+      -5.7602427717459745,
+      -8.606982251574339
+    ],
+    "ha_multiplier_to_reach_threshold": 1.4299277459735942,
+    "hb_fraction_reduction_to_reach_threshold": 0.3006639651438259,
+    "other_gs_targets_within_1_arcsec": 0,
+    "other_gs_targets_shared_positive_dr5": 0
+  }
+}

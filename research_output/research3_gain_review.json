@@ -1,0 +1,192 @@
+{
+  "scope": "independent full finite-comparison NNLS on boundary-ray spectra; Gram from direct numerical Gaussian quadrature; no observed likelihood/thermal replay",
+  "comparisons": 10800,
+  "maximum_information_error": 1.6014967130217883e-14,
+  "maximum_ion_amplitude_error": 7.105427357601002e-14,
+  "maximum_gram_quadrature_error": 1.7200818547280505e-10,
+  "saved_closest_and_paired_records_checked": 132,
+  "cases": [
+    {
+      "response": "intrinsic_line_values",
+      "h": 0,
+      "info": 0.07030201606822062,
+      "snr": 11.314552057483994,
+      "gain": 1.0,
+      "pair": [
+        "model009",
+        "model016",
+        1,
+        0
+      ]
+    },
+    {
+      "response": "intrinsic_line_values",
+      "h": 0.05,
+      "info": 0.06893714725280113,
+      "snr": 11.426010029897538,
+      "gain": 1.05,
+      "pair": [
+        "model009",
+        "model016",
+        1,
+        0
+      ]
+    },
+    {
+      "response": "intrinsic_line_values",
+      "h": 0.1,
+      "info": 0.0675850942831158,
+      "snr": 11.539733857165146,
+      "gain": 1.1,
+      "pair": [
+        "model009",
+        "model016",
+        1,
+        0
+      ]
+    },
+    {
+      "response": "intrinsic_line_values",
+      "h": 0.2,
+      "info": 0.06491962103801738,
+      "snr": 11.774250375863538,
+      "gain": 1.2,
+      "pair": [
+        "model009",
+        "model016",
+        1,
+        0
+      ]
+    },
+    {
+      "response": "intrinsic_line_values",
+      "h": 0.5,
+      "info": 0.05723538363042869,
+      "snr": 12.539752236102355,
+      "gain": 1.5,
+      "pair": [
+        "model009",
+        "model016",
+        1,
+        0
+      ]
+    },
+    {
+      "response": "intrinsic_line_values",
+      "h": null,
+      "info": 4.9044386500178524e-08,
+      "snr": 13546.484411668065,
+      "gain": 8.53865635312225,
+      "pair": [
+        "model009",
+        "model012",
+        1,
+        1
+      ]
+    },
+    {
+      "response": "emergent_line_values",
+      "h": 0,
+      "info": 0.07030310049145617,
+      "snr": 11.314464793832883,
+      "gain": 1.0,
+      "pair": [
+        "model009",
+        "model016",
+        1,
+        0
+      ]
+    },
+    {
+      "response": "emergent_line_values",
+      "h": 0.05,
+      "info": 0.06893776958416348,
+      "snr": 11.425958455989077,
+      "gain": 1.05,
+      "pair": [
+        "model009",
+        "model016",
+        1,
+        0
+      ]
+    },
+    {
+      "response": "emergent_line_values",
+      "h": 0.1,
+      "info": 0.06758526319980068,
+      "snr": 11.539719436456304,
+      "gain": 1.1,
+      "pair": [
+        "model009",
+        "model016",
+        1,
+        0
+      ]
+    },
+    {
+      "response": "emergent_line_values",
+      "h": 0.2,
+      "info": 0.06491890932624265,
+      "snr": 11.774314916763492,
+      "gain": 1.2,
+      "pair": [
+        "model009",
+        "model016",
+        1,
+        0
+      ]
+    },
+    {
+      "response": "emergent_line_values",
+      "h": 0.5,
+      "info": 0.05723224239972442,
+      "snr": 12.540096357812608,
+      "gain": 1.5,
+      "pair": [
+        "model009",
+        "model016",
+        1,
+        0
+      ]
+    },
+    {
+      "response": "emergent_line_values",
+      "h": null,
+      "info": 4.896163361417561e-08,
+      "snr": 13557.927426598137,
+      "gain": 8.536412509747214,
+      "pair": [
+        "model009",
+        "model012",
+        1,
+        1
+      ]
+    }
+  ],
+  "input_sha256": "7ef48626ddfb7c882d9725b17939c3a7752151de734e3ab4c46472b940127759",
+  "plan_sha256": "4d1d1d7fc2300ddb9af71340a204e510bddd669024a0a6ca728cafceba41cb82",
+  "author_output_sha256": "84cf26a3921574c264105b496961957a02c53e04e3b88c3910a18763a4a93781",
+  "status": "passed",
+  "tests": {
+    "passed": 28,
+    "failed": 0,
+    "skipped": 0,
+    "command": "python -m pytest tests/test_cloudy_ion_gain.py tests/test_cloudy_observation_contrasts.py tests/test_observation_design.py",
+    "junit_sha256": "91b636e720e14591352479fa508cdf9cc293358b488dbea02a03d8b418058575"
+  },
+  "ruff_lint": "passed",
+  "ruff_format": "passed",
+  "reviewed_files_sha256": {
+    "tools/jwst/cloudy_ion_gain.py": "db4fd2caa3f18e1cc0c60432f1a24ba1d0dd130a7697ab1e07fc8350fd567585",
+    "tests/test_cloudy_ion_gain.py": "24a302766334ce4170b7409bd518afc028dfe63b43734c2d3d7c7bbc3ff05d1e",
+    "docs/MOM_CLOUDY_ION_GAIN.md": "46a2f3bd632a26620933919d9a4b87f223e276aed8538b15c01bb0dca9510063",
+    "data_sources/pilot/observation_design/ion_gain_plan.json": "4d1d1d7fc2300ddb9af71340a204e510bddd669024a0a6ca728cafceba41cb82",
+    "research_output/mom_cloudy_ion_gain.json": "84cf26a3921574c264105b496961957a02c53e04e3b88c3910a18763a4a93781"
+  },
+  "reviewer_script_sha256": "35ac2dce24212c36bd4cdf8d25ac3229bdfff3728c2d0cf0344a01fd03d3d4bf",
+  "novelty_scope": "New explicit relative-ion-response robustness quantification in this repository; no independent observed data, abundance identification, or astrophysical discovery.",
+  "scientific_interpretation": "Finite-family hardest-pair matched SNR rises 10.83 percent under alternative-only relative gain envelope 0.5 to1.5; independent nonnegative ion amplitudes leave only tiny component-shape distinction. Lambda9 is expected separation, not significance or model probability. Hypothetical bounds are neither measured calibration nor physical transfer certification.",
+  "reviewer_source": "tools/jwst/validate_ion_gain.py",
+  "reproduction_command": "python -m tools.jwst.validate_ion_gain --root . --output /tmp/gain-review.json",
+  "reproduction_environment": "Python 3.12.14; all 65 distributions match requirements-research.lock; OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 BLIS_NUM_THREADS=1"
+}
