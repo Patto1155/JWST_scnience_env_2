@@ -1,0 +1,194 @@
+{
+  "schema_version": 1,
+  "date_utc": "2026-10-12",
+  "scope": "Round 1 trusted coding-agent baseline; focused gate and compact released-coadd replay only",
+  "baseline_revision": "e272d516bc3ac5f2dc7f6f4897dc42097a3dfebe",
+  "incoming_worktree_clean": true,
+  "rules_read": [
+    "docs/AGENT_RULES.md",
+    "docs/RESEARCH3_DISCOVERY_PILOTS.md"
+  ],
+  "environment": {
+    "executable": "/tmp/jwst-handover-env/bin/python",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "lock_path": "requirements-research.lock",
+    "lock_sha256": "ff25f0785e7d5a3a1a0515075d28bf9c90272ce6cbf6f8b23cf88f317c6fd31c",
+    "locked_distribution_count": 65,
+    "mismatches": [],
+    "thread_limits": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "BLIS_NUM_THREADS": "1"
+    }
+  },
+  "focused_tests": {
+    "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 BLIS_NUM_THREADS=1 /tmp/jwst-handover-env/bin/python -m pytest tests/test_jades_balmer_pilot.py tests/test_cloudy_ion_gain.py tests/test_research_sources.py -q --junitxml=/tmp/research4-baseline-focused.xml",
+    "exit_code": 0,
+    "tests": 22,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "junit_path": "/tmp/research4-baseline-focused.xml",
+    "junit_sha256": "8ff96fd0fd2dad166ecdef27759a24bc182a7ba6d85db950764c15d47b77cd23"
+  },
+  "compact_jades_replay": {
+    "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 BLIS_NUM_THREADS=1 /tmp/jwst-handover-env/bin/python -m tools.jwst.jades_balmer_pilot --directory research_output --output /tmp/research4-jades-compact-replay --replay",
+    "exit_code": 0,
+    "kind": "released-coadd numerical replay, not raw-exposure reduction",
+    "results": [
+      {
+        "source_id": "7496",
+        "line_fit_count": 20,
+        "all_result_fields_exactly_equal": true,
+        "reference_sha256": "a0ea81f10b80d7f3b22ed7f5363272e116a98c4064d945de2612efb47c2a8b20",
+        "replay_path": "/tmp/research4-jades-compact-replay/jades_balmer_7496_compact_replay.json",
+        "replay_sha256": "8760c38357859423d0748b60b05ffeb34576c5fb86a9b94fcc17e0eebd86fbed"
+      },
+      {
+        "source_id": "8656",
+        "line_fit_count": 20,
+        "all_result_fields_exactly_equal": true,
+        "reference_sha256": "53090c7d748908ade5d39610da73e37a601412a48d43f76504c177ca2b09b556",
+        "replay_path": "/tmp/research4-jades-compact-replay/jades_balmer_8656_compact_replay.json",
+        "replay_sha256": "52ac8b157f6538517740bffaa41e4c06b59cf6c38212de0dc625600f6588bc18"
+      }
+    ]
+  },
+  "verified_local_jades_products": [
+    {
+      "path": "/tmp/jades-dr4-pilot/Combined_DR4_external_v1.2.1.fits",
+      "kind": "released_catalog",
+      "bytes": 94124160,
+      "sha256": "4b4e7fd4306208ee801406c7ed73fdab895a2e67184af7f639a91e5f9c8ab7d4",
+      "matches_receipt": true
+    },
+    {
+      "path": "/tmp/jades-dr4-pilot/hlsp_jades_jwst_nirspec_goods-s-deepjwst-00007496_f070lp-g140m_v1.0_x1d.fits",
+      "kind": "released_spectrum_coadd",
+      "bytes": 685440,
+      "sha256": "ef153838903f7dc084f25d4cdce34a7327b7d0cf565101707d583c12fee85fca",
+      "matches_receipt": true
+    },
+    {
+      "path": "/tmp/jades-dr4-pilot/hlsp_jades_jwst_nirspec_goods-s-deepjwst-00007496_f170lp-g235m_v1.0_x1d.fits",
+      "kind": "released_spectrum_coadd",
+      "bytes": 642240,
+      "sha256": "b81e7b7d25ed7170b99ac9bfe1bf86542cb9ae869ac32256eaef609850d7e51f",
+      "matches_receipt": true
+    },
+    {
+      "path": "/tmp/jades-dr4-pilot/hlsp_jades_jwst_nirspec_goods-s-deepjwst-00007496_f170lp-g235m_v1.0_s2d.fits",
+      "kind": "released_spectrum_coadd",
+      "bytes": 2076480,
+      "sha256": "9e73e25979647b475728f0ad68f8d537c3d0048788cd725539949bf99047cb59",
+      "matches_receipt": true
+    },
+    {
+      "path": "/tmp/jades-dr4-pilot/hlsp_jades_jwst_nirspec_goods-s-deepjwst-00007496_clear-prism_v1.0_x1d.fits",
+      "kind": "released_spectrum_coadd",
+      "bytes": 1108800,
+      "sha256": "fadf895f182797beb17dbe77f70b1af8af342bc128ebd3d937557bf19e0092db",
+      "matches_receipt": true
+    },
+    {
+      "path": "/tmp/jades-dr4-pilot/hlsp_jades_jwst_nirspec_goods-s-deepjwst-00007496_clear-prism_v1.0_s2d.fits",
+      "kind": "released_spectrum_coadd",
+      "bytes": 679680,
+      "sha256": "c84326a3e30b13713b86ba77268ccb31d07f1216b8ab08c347df59379e7b2748",
+      "matches_receipt": true
+    },
+    {
+      "path": "/tmp/jades-dr4-pilot/hlsp_jades_jwst_nirspec_goods-s-mediumjwst-00008656_f070lp-g140m_v1.0_x1d.fits",
+      "kind": "released_spectrum_coadd",
+      "bytes": 570240,
+      "sha256": "d7811ec02cff48d9a6102f6da58964c08ce4d8f1b96b2b8feaecd67aa1545cc0",
+      "matches_receipt": true
+    },
+    {
+      "path": "/tmp/jades-dr4-pilot/hlsp_jades_jwst_nirspec_goods-s-mediumjwst-00008656_f170lp-g235m_v1.0_x1d.fits",
+      "kind": "released_spectrum_coadd",
+      "bytes": 532800,
+      "sha256": "f9d6a6ce66ee0ab9c24e609006dbfd8b9eebe3d4f521f50759e32b355121506d",
+      "matches_receipt": true
+    },
+    {
+      "path": "/tmp/jades-dr4-pilot/hlsp_jades_jwst_nirspec_goods-s-mediumjwst-00008656_clear-prism_v1.0_x1d.fits",
+      "kind": "released_spectrum_coadd",
+      "bytes": 648000,
+      "sha256": "2ade3baa6678bcf86ec01558690df1158138eecd96c2ef16952f8320f2bf13ba",
+      "matches_receipt": true
+    }
+  ],
+  "verified_product_total_bytes": 101067840,
+  "local_data_inventory": [
+    {
+      "root": "/workspace/scratch/6531fbc6f033/JWST_scnience_env_2/data_sources",
+      "exists": true,
+      "counts_by_suffix": {
+        ".asdf": 1,
+        ".csv": 6,
+        ".fits": 13
+      },
+      "bytes": 10117422
+    },
+    {
+      "root": "/workspace/scratch/6531fbc6f033/JWST_scnience_env_2/data",
+      "exists": false,
+      "counts_by_suffix": {},
+      "bytes": 0
+    },
+    {
+      "root": "/tmp/jwst-pilot/data_sources",
+      "exists": true,
+      "counts_by_suffix": {
+        ".asdf": 1,
+        ".csv": 6,
+        ".fits": 13
+      },
+      "bytes": 10117422
+    },
+    {
+      "root": "/tmp/jwst-pilot/data",
+      "exists": false,
+      "counts_by_suffix": {},
+      "bytes": 0
+    }
+  ],
+  "other_usable_paths": [
+    "/workspace/scratch/6531fbc6f033/JWST_scnience_env_2/data_sources/capers_companion/source_x1d.fits",
+    "/workspace/scratch/6531fbc6f033/JWST_scnience_env_2/data_sources/pilot/f444wa_v5.0_mpsf.fits",
+    "/workspace/scratch/6531fbc6f033/JWST_scnience_env_2/data_sources/pilot/mom_z14_dja_spatial_query.csv",
+    "/workspace/scratch/6531fbc6f033/JWST_scnience_env_2/data_sources/pilot/jades_dr4_reference.csv",
+    "/workspace/scratch/6531fbc6f033/JWST_scnience_env_2/data_sources/pilot/mom_z14_dja_v4.spec.fits",
+    "/workspace/scratch/6531fbc6f033/JWST_scnience_env_2/data_sources/pilot/jwst_nirspec_prism_disp.fits",
+    "/workspace/scratch/6531fbc6f033/JWST_scnience_env_2/data_sources/pilot/f277wa_v5.0_mpsf.fits",
+    "/workspace/scratch/6531fbc6f033/JWST_scnience_env_2/data_sources/pilot/f356wa_v5.0_mpsf.fits",
+    "/workspace/scratch/6531fbc6f033/JWST_scnience_env_2/data_sources/author_provenance/mom_msa_slits.csv",
+    "/workspace/scratch/6531fbc6f033/JWST_scnience_env_2/data_sources/author_provenance/mom_extractions.csv",
+    "/workspace/scratch/6531fbc6f033/JWST_scnience_env_2/data_sources/capers_s2d/source_s2d.fits",
+    "/workspace/scratch/6531fbc6f033/JWST_scnience_env_2/data_sources/compact_followup/capers_spec.fits",
+    "/workspace/scratch/6531fbc6f033/JWST_scnience_env_2/data_sources/followup/jwst_nirspec_wavecorr_0004.asdf",
+    "/workspace/scratch/6531fbc6f033/JWST_scnience_env_2/data_sources/followup/unite_point_prism_resolution.fits",
+    "/workspace/scratch/6531fbc6f033/JWST_scnience_env_2/data_sources/followup/nandal_rotating_mixed_ism_v1.csv",
+    "/workspace/scratch/6531fbc6f033/JWST_scnience_env_2/data_sources/followup/unite_point_prism_resolution.csv",
+    "/workspace/scratch/6531fbc6f033/JWST_scnience_env_2/data_sources/pilot/observation_design/jwst_nirspec_g395m_disp.fits",
+    "/workspace/scratch/6531fbc6f033/JWST_scnience_env_2/data_sources/pilot/observation_design/jwst_nirspec_g395h_disp.fits",
+    "/workspace/scratch/6531fbc6f033/JWST_scnience_env_2/data_sources/pilot/observation_design/jwst_nirspec_g235m_disp.fits",
+    "/workspace/scratch/6531fbc6f033/JWST_scnience_env_2/data_sources/pilot/observation_design/jwst_nirspec_g235h_disp.fits"
+  ],
+  "holdout": {
+    "GOODS_N_outcomes_opened": false,
+    "catalogue_rows_decoded": false,
+    "operations": "Full file byte/hash verification only. Compact replay uses existing GOODS-S arrays. No catalogue selection run."
+  },
+  "blockers_and_limits": [
+    "No environment or replay blocker for retained JADES released coadds.",
+    "Repository data/ and /tmp/jwst-pilot/data/ directories absent; no restored original imaging archive demonstrated.",
+    "Pinned author Cue weights not verified or provisioned by this baseline.",
+    "No full-suite, release-audit, raw-exposure reduction or Cloudy thermal-solver rerun performed.",
+    "Compact replay cannot certify calibrated line ratios or scientific novelty."
+  ],
+  "software_modified": false,
+  "network_download_bytes": 0
+}
