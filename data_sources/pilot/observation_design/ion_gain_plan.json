@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "experiment_id": "research3-NIII-CIII-relative-gain-robustness",
+  "question": "Does the retained finite-model NIII+CIII discrimination survive uncertainty in their relative multiplicative response?",
+  "selected_bundle": "NIII+CIII",
+  "mode": "g235h",
+  "intrinsic_fwhm_km_s": 0,
+  "attenuation_A1500_mag": [0, 0.5, 1],
+  "fractional_gain_half_widths": [0, 0.05, 0.1, 0.2, 0.5, null],
+  "gain_convention": "Truth has unit NIII/CIII response. Alternative NIII gain relative to CIII is in [1-h,1+h]; null independently profiles both nonnegative ion amplitudes. These are counterexamples/stress bounds, not measured calibration errors or priors.",
+  "response_contracts": ["intrinsic_line_values", "emergent_line_values"],
+  "new_download_budget_bytes": 0,
+  "computation_cap_seconds": 120,
+  "stopping_rule": "Execute this fixed nuisance test only; no thermal grid or response-family expansion. Stop on input identity/contract failure or compute cap.",
+  "expected_output": "Hardest enhanced-versus-ordinary model separation and matched total SNR by relative-gain freedom, with paired-environment controls and an independent ion-amplitude limit.",
+  "input_sha256": "7ef48626ddfb7c882d9725b17939c3a7752151de734e3ab4c46472b940127759"
+}

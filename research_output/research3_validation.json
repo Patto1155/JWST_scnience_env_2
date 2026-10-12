@@ -1,0 +1,26 @@
+{
+  "baseline_revision": "1191bae5911d4983206e225764f0ef7108690683",
+  "quality_gate_exit_code": 0,
+  "tests": 735,
+  "passed": 732,
+  "skipped": 3,
+  "failures": 0,
+  "errors": 0,
+  "scope": "Full local quality gate after final scientific code changes; skips require external imaging archive or pinned author Cue weights. Actual JADES coadd remeasurements and independent numerical reviews have separate receipts.",
+  "code_sha256": {
+    "data_sources/research3/audit/frozen_inputs/pilot.py": "01ac70a4c78cb7c0389e92578f5401298a7e500b8dfdfbd97ac03a83fd802450",
+    "discovery/research3_jades_catalog_review.py": "a878ee47eb682e08075a78b8cba810888c6d917ee5ef680fb1753c4190256a46",
+    "discovery/research3_jades_review.py": "3df31c03f6514de3edea67872ca7c50a8aa7c72d5df2da3410a8f648fe043213",
+    "discovery/research3_jades_spectrum_review.py": "a6c3417efd3ba997f78c1465a5f95c5f842c21eb7ce7f4a19699deeed1d223f9",
+    "scripts/quality_gate.py": "ab85c3a6de4fe7588512dbd3d1cce606db8995c9b766b8aeeb0a9ddf448a75db",
+    "tests/test_cloudy_ion_gain.py": "24a302766334ce4170b7409bd518afc028dfe63b43734c2d3d7c7bbc3ff05d1e",
+    "tests/test_jades_balmer_pilot.py": "fc445eed68a48c0e67e6973f97a170aa3a5897c387f122325211e907451f6e7a",
+    "tools/jwst/cloudy_ion_gain.py": "db4fd2caa3f18e1cc0c60432f1a24ba1d0dd130a7697ab1e07fc8350fd567585",
+    "tools/jwst/jades_balmer_figure.py": "a36d7b5fcfb0119702d366df0dfc901d38eb09e8ba210ac5da30a320bbe5d862",
+    "tools/jwst/jades_balmer_pilot.py": "1521f924619064595968dfc064509153f9a23367c3d2ae99c8fabf18a4d55532",
+    "tools/jwst/validate_ion_gain.py": "35ac2dce24212c36bd4cdf8d25ac3229bdfff3728c2d0cf0344a01fd03d3d4bf"
+  },
+  "quality_log_sha256": "2bee0fc495c00f7d70e17c1539cc09811ad5ae6523752f63c0e1f8c04eea85a5",
+  "junit_sha256": "34a67c85c5722cb6bbe328bd65d0b148c017b37fd2b538d503ecc15672b49da3",
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 BLIS_NUM_THREADS=1 PYTEST_ADDOPTS='--junitxml=/tmp/jwst-research3-final-tests.xml' python scripts/quality_gate.py"
+}
