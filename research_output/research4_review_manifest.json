@@ -1,0 +1,29 @@
+{
+  "scope": "Independent metadata-only GOODS-S selection replay; GOODS-N outcome rows not indexed",
+  "manifest_sha256": "3c181df81355e35afd738f0b390981e4dae7b1e92b11d0cd5cda4688676e2872",
+  "eligible_counts": {
+    "lower_z": 71,
+    "interior_z": 83
+  },
+  "reproduced_target_ids": [
+    "goods-s-deepjwst_54611",
+    "goods-s-deephst_10011378",
+    "goods-s-mediumjwst_203602",
+    "goods-s-mediumjwst_42645",
+    "goods-s-mediumjwst_43697",
+    "goods-s-mediumjwst_48912",
+    "goods-s-deephst_20313",
+    "goods-s-deepjwst_283952",
+    "goods-s-deepjwst_7586",
+    "goods-s-deephst_8102",
+    "goods-s-deepjwst_52538",
+    "goods-s-mediumjwst_10009703"
+  ],
+  "exact_target_order_matches": true,
+  "dedup_method": "Astropy great-circle separation <=0.2arcsec or positive shared DR5",
+  "metadata_values_checked": [
+    "catalog_index",
+    "z"
+  ],
+  "line_outcomes_read": false
+}

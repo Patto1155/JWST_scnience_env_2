@@ -1,0 +1,17 @@
+{
+  "url": "https://www.canfar.net/storage/vault/file/AstroDataCitationDOI/CISTI.CANFAR/25.0066/data/table/chimefrbcat2.csv",
+  "bytes": 4057396,
+  "sha256": "5108ada779d279a2547d9f9e73ae25bfdd40d8496d6ba7255ec29c6629057a48",
+  "duration_seconds": 22.31036544000017,
+  "artifact_type": "actual_public_catalog",
+  "freeze_sha256": "45aa555099ae50554188230da2efe736af8735ad98025e3952ca78de3fbd064c",
+  "utc_date": "2026-10-12",
+  "metadata_bytes_accounted_separately": true,
+  "retained_gzip": {
+    "path": "data_sources/research4/chimefrbcat2.csv.gz",
+    "bytes": 1664400,
+    "sha256": "f1e954fd05c128d45a1a8af8a9f011393cffd3370f6dbb7a46c421a7033114be",
+    "uncompressed_sha256": "5108ada779d279a2547d9f9e73ae25bfdd40d8496d6ba7255ec29c6629057a48",
+    "mtime": 0
+  }
+}

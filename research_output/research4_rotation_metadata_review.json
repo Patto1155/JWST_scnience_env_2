@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "scope": "Identifier/astrometry/photometry-only pair feasibility; no period or classification outcomes inspected",
+  "files": [
+    {
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/675/A180/ReadMe",
+      "path": "data_sources/research4/rotation_pairs/ReadMe",
+      "bytes": 7681,
+      "sha256": "dfefce41b8a4a80962e11b3e213ca8cceec50668d18c8c7c97ed7953fe4b9a73",
+      "duration_seconds": 6.74693477299661
+    },
+    {
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/675/A180/tablec1.dat",
+      "path": "data_sources/research4/rotation_pairs/tablec1.dat",
+      "bytes": 249984,
+      "sha256": "9be15c613e7e34459eff0057972bed1b2c0c12daf6bc376879eac949bcd8fe94",
+      "duration_seconds": 8.398907716000394
+    }
+  ],
+  "direct_body_bytes_this_call": 257665,
+  "earlier_ReadMe_body_bytes": 7681,
+  "metadata_row_count": 744,
+  "binary_id_count": 372,
+  "component_count_histogram": {
+    "2": 372
+  },
+  "pairs_both_parallax_gt2mas": 287,
+  "pairs_both_parallax_gt2mas_and_G_lt16": 207,
+  "TESS_magnitude_verified": false,
+  "TARS_crossmatch_executed": false,
+  "rotation_outcomes_opened": false,
+  "GOODS_N_outcomes_opened": false
+}

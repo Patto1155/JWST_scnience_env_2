@@ -1,5 +1,18 @@
 # JWST research takeover: verified current status
 
+## 12 October multi-round discovery continuation
+
+See [the research4 campaign](RESEARCH4_CAMPAIGN.md) for the subsequent frozen
+designs, actual-data pilots and independent checks. A new twelve-target GOODS-S
+paired-grating experiment failed its predeclared usable-sample threshold; an
+independent integration method corroborated the stopping decision. A repeatable
+configuration contrast in source 54611 remains a measurement discrepancy, not
+an intrinsic anomaly. A separate CHIME/FRB Catalog 2 temporal-plasma pilot
+retained only 29 qualifying events with at most 4 per repeating source, failing
+its six-event/six-source gate before any covariance was computed. GOODS-N remains
+unopened. No astrophysical discovery was established and the earlier physical
+inference limits remain in force.
+
 ## 12 October discovery continuation
 
 [The discovery-pilot checkpoint](RESEARCH3_DISCOVERY_PILOTS.md) records the new

@@ -1,0 +1,178 @@
+{
+  "scope": "Zero-download actual released-coadd-array replay; GOODS-N unopened",
+  "original_receipt_sha256": "353d307b31917b54425b7b1152a0de8926a60feb965b4fb54375540e697923d3",
+  "all_measurements_match_exactly": true,
+  "measurement_count": 576,
+  "products": [
+    {
+      "name": "research4_jades_goods-s-deepjwst_54611_f070lp-g140m_inputs.npz",
+      "sha256": "00566b80f16cc2e4b33bf9312ba0c7acc8356d7ceeee8df96a2522871a9eae43",
+      "bytes": 169667
+    },
+    {
+      "name": "research4_jades_goods-s-deepjwst_54611_f170lp-g235m_inputs.npz",
+      "sha256": "e92f3fb25066f7f0b9313a5a098110714a3f6d89d1ef8d569b7667ddd5a02a23",
+      "bytes": 154069
+    },
+    {
+      "name": "research4_jades_goods-s-deephst_10011378_f070lp-g140m_inputs.npz",
+      "sha256": "3f1824090499a6285f1e035768c4de5b5c4507040bdb5715d574f2131458adf4",
+      "bytes": 170213
+    },
+    {
+      "name": "research4_jades_goods-s-deephst_10011378_f170lp-g235m_inputs.npz",
+      "sha256": "6e7ed9e18df69810f678e29b6a2036e336a1942dedda987f1dae0d96c10af2f5",
+      "bytes": 156403
+    },
+    {
+      "name": "research4_jades_goods-s-mediumjwst_203602_f070lp-g140m_inputs.npz",
+      "sha256": "268caf51d27a39f07e9f3e6a4394840fc13361f6e6be45f8942b1d7dabc48664",
+      "bytes": 170741
+    },
+    {
+      "name": "research4_jades_goods-s-mediumjwst_203602_f170lp-g235m_inputs.npz",
+      "sha256": "982407a8caa1bc8ae932b10da940c1673e0f4cff5698d27806635e8f89ec33ff",
+      "bytes": 148830
+    },
+    {
+      "name": "research4_jades_goods-s-mediumjwst_42645_f070lp-g140m_inputs.npz",
+      "sha256": "471fd7d56bfcc2af69b4dd613c0845d654999df3170f84e43a6e04ffc4cf1a60",
+      "bytes": 179697
+    },
+    {
+      "name": "research4_jades_goods-s-mediumjwst_42645_f170lp-g235m_inputs.npz",
+      "sha256": "cb2a1c669e7d856cf38df9a45b3fe6191136b76da3a1f47c727141b90218e635",
+      "bytes": 166018
+    },
+    {
+      "name": "research4_jades_goods-s-mediumjwst_43697_f070lp-g140m_inputs.npz",
+      "sha256": "6d1fbba6d3336076675ed64c8e0350d45ad36aabfda1fb489fa98203d92d91e6",
+      "bytes": 170630
+    },
+    {
+      "name": "research4_jades_goods-s-mediumjwst_43697_f170lp-g235m_inputs.npz",
+      "sha256": "f80efae5ff90ac8f50ffd382441d96edc372e42f45b59e193ace4eea8483d1a7",
+      "bytes": 156126
+    },
+    {
+      "name": "research4_jades_goods-s-mediumjwst_48912_f070lp-g140m_inputs.npz",
+      "sha256": "7cda377694ec57a37ed6357d9fce1023c011b39b754c9e5fd8a2765825e92f4b",
+      "bytes": 169790
+    },
+    {
+      "name": "research4_jades_goods-s-mediumjwst_48912_f170lp-g235m_inputs.npz",
+      "sha256": "362f73dab14df464e813d3ccfbc3998a0fe341ebb464bc6a1a683d4c9a649442",
+      "bytes": 147957
+    },
+    {
+      "name": "research4_jades_goods-s-deephst_20313_f070lp-g140m_inputs.npz",
+      "sha256": "fbd5e081d1cfe251857d994400b9e34cecdae1c75ebcc0fd8ebfbf404467b397",
+      "bytes": 170305
+    },
+    {
+      "name": "research4_jades_goods-s-deephst_20313_f170lp-g235m_inputs.npz",
+      "sha256": "a8ed8314ddf5656411c6aac31f4c55a2e29ea42369581069bfddc7ef18d43f37",
+      "bytes": 153567
+    },
+    {
+      "name": "research4_jades_goods-s-deepjwst_283952_f070lp-g140m_inputs.npz",
+      "sha256": "815599059a0ab007c71cb3f136498227537043e86aa3f03e842852c27a0e38d7",
+      "bytes": 170688
+    },
+    {
+      "name": "research4_jades_goods-s-deepjwst_283952_f170lp-g235m_inputs.npz",
+      "sha256": "13244837a8915c7b6c7de4fa53ae9f1db2a38d23e51c8dc4c6c33f43037fdca6",
+      "bytes": 154144
+    },
+    {
+      "name": "research4_jades_goods-s-deepjwst_7586_f070lp-g140m_inputs.npz",
+      "sha256": "6e379c3b38b566c9276553f17e1660a494f593d1f80d718d1331006b68c4dea8",
+      "bytes": 170550
+    },
+    {
+      "name": "research4_jades_goods-s-deepjwst_7586_f170lp-g235m_inputs.npz",
+      "sha256": "e82e302e900de4c3021263855bc28f2ddb21bace242b5dc7f7ebc163c1264e2c",
+      "bytes": 157040
+    },
+    {
+      "name": "research4_jades_goods-s-deephst_8102_f070lp-g140m_inputs.npz",
+      "sha256": "139c18a478cb412ce9721afa8c1cfcb119e1430da27f15d48a08f87c0b32d2cf",
+      "bytes": 170853
+    },
+    {
+      "name": "research4_jades_goods-s-deephst_8102_f170lp-g235m_inputs.npz",
+      "sha256": "6a399258bb21a6bbc44b8e0a11bc1485b583837a5888bd2782b925ac18610460",
+      "bytes": 157148
+    },
+    {
+      "name": "research4_jades_goods-s-deepjwst_52538_f070lp-g140m_inputs.npz",
+      "sha256": "3c4e35043a14ca8ed10c843af67af438cc2db10b71683f368125067ed8de6f72",
+      "bytes": 169955
+    },
+    {
+      "name": "research4_jades_goods-s-deepjwst_52538_f170lp-g235m_inputs.npz",
+      "sha256": "cb9ae8816f2bf954916de25f3d216badbb0c05f9022a07536e2ace9df13f90ad",
+      "bytes": 157621
+    },
+    {
+      "name": "research4_jades_goods-s-mediumjwst_10009703_f070lp-g140m_inputs.npz",
+      "sha256": "14f6056be3a360f1199c75b7ba6de90705b7e134cf9ec226be85c1362d4f9ea4",
+      "bytes": 171377
+    },
+    {
+      "name": "research4_jades_goods-s-mediumjwst_10009703_f170lp-g235m_inputs.npz",
+      "sha256": "f15bab922f63059468485cac2a9cabbd6c308c30dee1af86de779105c6253589",
+      "bytes": 147038
+    }
+  ],
+  "targets": [
+    {
+      "unique_id": "goods-s-deepjwst_54611",
+      "exact_measurements": 48
+    },
+    {
+      "unique_id": "goods-s-deephst_10011378",
+      "exact_measurements": 48
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_203602",
+      "exact_measurements": 48
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_42645",
+      "exact_measurements": 48
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_43697",
+      "exact_measurements": 48
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_48912",
+      "exact_measurements": 48
+    },
+    {
+      "unique_id": "goods-s-deephst_20313",
+      "exact_measurements": 48
+    },
+    {
+      "unique_id": "goods-s-deepjwst_283952",
+      "exact_measurements": 48
+    },
+    {
+      "unique_id": "goods-s-deepjwst_7586",
+      "exact_measurements": 48
+    },
+    {
+      "unique_id": "goods-s-deephst_8102",
+      "exact_measurements": 48
+    },
+    {
+      "unique_id": "goods-s-deepjwst_52538",
+      "exact_measurements": 48
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_10009703",
+      "exact_measurements": 48
+    }
+  ]
+}

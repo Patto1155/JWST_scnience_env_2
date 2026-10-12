@@ -1,0 +1,133 @@
+J/A+A/675/A180      Rotation of wide binaries                  (Gruner+, 2023)
+================================================================================
+Wide binaries demonstrate the consistency of rotational evolution between open
+cluster and field stars.
+    Gruner D., Barnes S.A., Janes K.A.
+    <Astron. Astrophys. 675, A180 (2023)>
+    =2023A&A...675A.180G        (SIMBAD/NED BibCode)
+================================================================================
+ADC_Keywords: Stars, double and multiple ; Stars, late-type ; Stars, variable ;
+              Stars, nearby ; Stars, ages ; Photometry ; Optical
+Keywords: binaries: general  - stars: late-type - stars: rotation - starspots
+
+Abstract:
+    Gyrochronology allows the derivation of ages of late-type main
+    sequence stars from their rotation periods and a mass proxy such as
+    color. It has been explored in open clusters, but a connection to
+    field stars has yet to be established successfully. We explore the
+    rotation rates of wide binaries, representing enlightening
+    intermediaries between clusters and field stars, and their overlap
+    with those of open cluster stars. We investigate a recently created
+    catalog of wide binaries, match them to observations by the Kepler
+    mission (and its K2 extension), validate or rederive their rotation
+    periods, identify 283 systems where both stars are on the main
+    sequence and have vetted rotation periods, and compare them with open
+    cluster data. We find that the vast majority of these wide binaries
+    (236) line up directly along the curvilinear ribs defined by open
+    clusters in color-period diagrams or along the equivalent interstitial
+    gaps between successive open clusters. The parallelism in shape is
+    remarkable. 12 additional systems are clearly rotationally older. The
+    deviant systems, a minority, are mostly demonstrably hierarchical.
+    Furthermore, the position in the color-magnitude diagram of the
+    evolved component in the additional wide binary systems containing one
+    is consistent with the main sequence component's rotational age.
+
+Description:
+    We present a compilation of wide binaries from El-Badry et al.
+    (2021MNRAS.506.2269E) crossmatched with Kepler and K2 observations.
+    The wide binaries are subsequently investigated for consistency of
+    rotation of the individual components in comparison to stellar open
+    clusters.
+
+File Summary:
+--------------------------------------------------------------------------------
+ FileName      Lrecl  Records   Explanations
+--------------------------------------------------------------------------------
+ReadMe            80        .   This file
+tablec1.dat      335      744   Compilation of wide binaries
+--------------------------------------------------------------------------------
+
+See also:
+        II/246 : 2MASS All-Sky Catalog of Point Sources (Cutri+ 2003)
+        V/133  : Kepler Input Catalog (KIC) (Kepler Mission Team, 2009)
+        IV/34  : K2 Ecliptic Plane Input Catalog (EPIC) (Huber+, 2017)
+        I/355  : Gaia DR3 Part 1 (Gaia Collaboration, 2022)
+ J/ApJS/211/24 : Rotation periods of Kepler MS stars (McQuillan+, 2014)
+ J/A+A/635/A43 : Stellar rotation periods from K2 Campaigns 0-18
+                                                     (Reinhold+, 2020)
+
+Byte-by-byte Description of file: tablec1.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units    Label       Explanations
+--------------------------------------------------------------------------------
+   1-  3  I3    ---      Binary      Sample binary
+       5  I1    ---      Agegroup    [1/7] Assigned age group (1)
+       7  A1    ---      Class       [CEFSW] Assign binary class (2)
+   9- 20  A12   ---      Problem     Note on a contradicting WB system (3)
+  22- 40  I19   ---      GaiaDR3     Gaia DR3 identifier
+  42- 58  A17   ---      2MASS       2MASS identifier
+  60- 68  I9    ---      EPIC        ? EPIC identifier
+  70- 77  I8    ---      KIC         ? KIC identifier
+  79- 89  A11   ---      Notes       Notes on the individual stars (4)
+  91- 95  F5.2  d        Prot        ? Rotation period
+  97-101  F5.2  d      e_Prot        ? Error on rotation period
+ 103-109  F7.4  mag      Gmag        Gaia DR3 Gmag
+ 111-116  F6.4  mag    e_Gmag        Error on Gaia DR3 Gmag
+ 118-124  F7.4  mag      BPmag       Gaia DR3 BPmag
+ 126-131  F6.4  mag    e_BPmag       Error on Gaia DR3 BPmag
+ 133-139  F7.4  mag      RPmag       Gaia DR3 RPmag
+ 141-146  F6.4  mag    e_RPmag       Error on Gaia DR3 RPmag
+ 148-154  F7.4  mag      BP-RP       Gaia DR3 BP-RP color
+ 156-161  F6.4  mag    e_BP-RP       Error on Gaia DR3 BP-RP color
+ 163-169  F7.4  mag      G-RP        Gaia DR3 G-RP color
+ 171-176  F6.4  mag    e_G-RP        Error on Gaia DR3 G-RP color
+ 178-187  F10.6 deg      RAdeg       Gaia DR3 Right Ascension (ICRS)
+                                      at Ep=2016.0
+ 189-198  F10.6 deg      DEdeg       Gaia DR3 Declination (ICRS) at Ep=2016.0
+ 200-207  F8.3  mas/yr   pmRA        Gaia DR3 proper motion in RA
+ 209-213  F5.3  mas/yr e_pmRA        Error on Gaia DR3 proper motion in RA
+ 215-222  F8.3  mas/yr   pmDE        Gaia DR3 proper motion in DE
+ 224-228  F5.3  mas/yr e_pmDE        Error on Gaia DR3 proper motion in DE
+ 230-236  F7.4  mas      plx         Gaia DR3 parallax
+ 238-243  F6.4  mas    e_plx         Error on Gaia DR3 parallax
+ 245-250  F6.2  km/s     RV          ? Gaia DR3 radial velocity
+ 252-256  F5.2  km/s   e_RV          ? Error on Gaia DR3 radial velocity
+ 258-262  F5.2  d        ProtMQ14    ? Rotation period in MQ14 [d]
+ 264-267  F4.2  d      e_ProtMQ14    ? Error on Rotation period in MQ14
+ 269-273  F5.2  d        ProtRH20    ? Rotation period in RH20
+ 275-279  F5.2  d      e_ProtRH20    ? Error on Rotation period in RH20
+ 281-286  F6.3  ---      [Fe/H]gaia3 ? Iron abundance in Gaia DR3
+ 288-292  F5.3  ---    e_[Fe/H]gaia3 ? Error on Iron abundance in Gaia DR3
+ 294-299  F6.3  ---      [M/H]TIC    ? Metallicity in TIC
+ 301-305  F5.3  ---    e_[M/H]TIC    ? Error on Metallicity in TIC
+ 307-313  F7.2  Myr      AgeBPH23    ? Age calculated with gyrointerp
+ 315-321  F7.2  Myr    e_AgeBPH23    ? Lower error on gyrointerp age
+ 323-335  F13.9 Myr    E_AgeBPH23    ? Upper error on gyrointerp age
+--------------------------------------------------------------------------------
+Note (1): Age grouping according to Sect. 2.3 of the paper as follows:
+            1 = 0 <= t < 500Myr,
+            2 = 500Myr <= t <= 1Gyr
+            3 = 1Gyr < t < 2.5Gyr
+            4 = 2.5Gyr <= t <= 2.7Gyr
+            5 = 2.7Gyr < t < 4Gyr
+            6 = t = 4Gyr
+            7 = t > 4Gyr
+Note (2): Binary system classification according to Sect. 3 of the paper
+           as follows:
+            S = MS+MS binary, both on slow rotator sequence
+            F = MS+MS binary, at least one star is a fast rotator
+            C = MS+MS binary, system contradicts open cluster behavior
+            E = MS+(sub)giant system
+            W = MS+WD system
+Note (3): If system is class C, indication for disagreement as follows:
+            hierarchical = one star is a double
+            unknown      = no indication
+Note (4): Additional note on individual stars. Indicates whether a star is a
+  (sub)giant or a white dwarf. "Double" means a star is a binary itself.
+--------------------------------------------------------------------------------
+
+Acknowledgements:
+    David Gruner, dgruner(at)aip.de
+
+================================================================================
+(End)                                        Patricia Vannier [CDS]  23-May-2023
