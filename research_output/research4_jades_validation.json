@@ -1,0 +1,151 @@
+{
+  "scope": "GS actual released-coadd pilot; no GN outcomes; stop insufficient valid lower-z group",
+  "manifest_sha256": "3c181df81355e35afd738f0b390981e4dae7b1e92b11d0cd5cda4688676e2872",
+  "initial_acquisition_bytes": 17475840,
+  "final_replay_download_bytes": 0,
+  "final_replay_exact_targets_and_download_receipts": true,
+  "fit_compute_seconds": 7.633172663023288,
+  "groups": {
+    "lower_z": {
+      "selected": 6,
+      "valid": 2,
+      "median_D": -0.1679634035069219,
+      "positive_D": 1
+    },
+    "interior_z": {
+      "selected": 6,
+      "valid": 4,
+      "median_D": 0.2961221700787707,
+      "positive_D": 4
+    }
+  },
+  "source_sha256": {
+    "tools/jwst/research4_jades_pilot.py": "b9d3769323ed891e94cdc36bcc8f7735089c13b37adf77e60da276df43179c69",
+    "tools/jwst/research4_jades_figure.py": "e476d48466453764d519771debf28cabe8972484d4fba3ee4f40bd56d5a6f6e2",
+    "tests/test_research4_jades_pilot.py": "ac3cddd96281151f9a62f8e1d01fd2e828b587b56a95c5e47744f9de329b3089",
+    "docs/RESEARCH4_JADES_PROTOCOL_DRAFT.md": "e94e5987d4aa3607f4324ba742e578c141271a229f0ebb4ab72e0f72265ee551",
+    "docs/RESEARCH4_JADES_PILOT.md": "8d9303f8af251ee6b563b579e0d9e20e0443c6716429ba85b2de260fa2cb377f"
+  },
+  "artifacts": {
+    "research4_jades_acquisition_run.json": {
+      "bytes": 185462,
+      "sha256": "fa4f8dc4c37b258feeab955dd57e3e1ae0829ae1a80262ba9cb2458c4451bb67"
+    },
+    "research4_jades_goods-s-deephst_10011378_f070lp-g140m_inputs.npz": {
+      "bytes": 170213,
+      "sha256": "3f1824090499a6285f1e035768c4de5b5c4507040bdb5715d574f2131458adf4"
+    },
+    "research4_jades_goods-s-deephst_10011378_f170lp-g235m_inputs.npz": {
+      "bytes": 156403,
+      "sha256": "6e7ed9e18df69810f678e29b6a2036e336a1942dedda987f1dae0d96c10af2f5"
+    },
+    "research4_jades_goods-s-deephst_20313_f070lp-g140m_inputs.npz": {
+      "bytes": 170305,
+      "sha256": "fbd5e081d1cfe251857d994400b9e34cecdae1c75ebcc0fd8ebfbf404467b397"
+    },
+    "research4_jades_goods-s-deephst_20313_f170lp-g235m_inputs.npz": {
+      "bytes": 153567,
+      "sha256": "a8ed8314ddf5656411c6aac31f4c55a2e29ea42369581069bfddc7ef18d43f37"
+    },
+    "research4_jades_goods-s-deephst_8102_f070lp-g140m_inputs.npz": {
+      "bytes": 170853,
+      "sha256": "139c18a478cb412ce9721afa8c1cfcb119e1430da27f15d48a08f87c0b32d2cf"
+    },
+    "research4_jades_goods-s-deephst_8102_f170lp-g235m_inputs.npz": {
+      "bytes": 157148,
+      "sha256": "6a399258bb21a6bbc44b8e0a11bc1485b583837a5888bd2782b925ac18610460"
+    },
+    "research4_jades_goods-s-deepjwst_283952_f070lp-g140m_inputs.npz": {
+      "bytes": 170688,
+      "sha256": "815599059a0ab007c71cb3f136498227537043e86aa3f03e842852c27a0e38d7"
+    },
+    "research4_jades_goods-s-deepjwst_283952_f170lp-g235m_inputs.npz": {
+      "bytes": 154144,
+      "sha256": "13244837a8915c7b6c7de4fa53ae9f1db2a38d23e51c8dc4c6c33f43037fdca6"
+    },
+    "research4_jades_goods-s-deepjwst_52538_f070lp-g140m_inputs.npz": {
+      "bytes": 169955,
+      "sha256": "3c4e35043a14ca8ed10c843af67af438cc2db10b71683f368125067ed8de6f72"
+    },
+    "research4_jades_goods-s-deepjwst_52538_f170lp-g235m_inputs.npz": {
+      "bytes": 157621,
+      "sha256": "cb9ae8816f2bf954916de25f3d216badbb0c05f9022a07536e2ace9df13f90ad"
+    },
+    "research4_jades_goods-s-deepjwst_54611_f070lp-g140m_inputs.npz": {
+      "bytes": 169667,
+      "sha256": "00566b80f16cc2e4b33bf9312ba0c7acc8356d7ceeee8df96a2522871a9eae43"
+    },
+    "research4_jades_goods-s-deepjwst_54611_f170lp-g235m_inputs.npz": {
+      "bytes": 154069,
+      "sha256": "e92f3fb25066f7f0b9313a5a098110714a3f6d89d1ef8d569b7667ddd5a02a23"
+    },
+    "research4_jades_goods-s-deepjwst_7586_f070lp-g140m_inputs.npz": {
+      "bytes": 170550,
+      "sha256": "6e379c3b38b566c9276553f17e1660a494f593d1f80d718d1331006b68c4dea8"
+    },
+    "research4_jades_goods-s-deepjwst_7586_f170lp-g235m_inputs.npz": {
+      "bytes": 157040,
+      "sha256": "e82e302e900de4c3021263855bc28f2ddb21bace242b5dc7f7ebc163c1264e2c"
+    },
+    "research4_jades_goods-s-mediumjwst_10009703_f070lp-g140m_inputs.npz": {
+      "bytes": 171377,
+      "sha256": "14f6056be3a360f1199c75b7ba6de90705b7e134cf9ec226be85c1362d4f9ea4"
+    },
+    "research4_jades_goods-s-mediumjwst_10009703_f170lp-g235m_inputs.npz": {
+      "bytes": 147038,
+      "sha256": "f15bab922f63059468485cac2a9cabbd6c308c30dee1af86de779105c6253589"
+    },
+    "research4_jades_goods-s-mediumjwst_203602_f070lp-g140m_inputs.npz": {
+      "bytes": 170741,
+      "sha256": "268caf51d27a39f07e9f3e6a4394840fc13361f6e6be45f8942b1d7dabc48664"
+    },
+    "research4_jades_goods-s-mediumjwst_203602_f170lp-g235m_inputs.npz": {
+      "bytes": 148830,
+      "sha256": "982407a8caa1bc8ae932b10da940c1673e0f4cff5698d27806635e8f89ec33ff"
+    },
+    "research4_jades_goods-s-mediumjwst_42645_f070lp-g140m_inputs.npz": {
+      "bytes": 179697,
+      "sha256": "471fd7d56bfcc2af69b4dd613c0845d654999df3170f84e43a6e04ffc4cf1a60"
+    },
+    "research4_jades_goods-s-mediumjwst_42645_f170lp-g235m_inputs.npz": {
+      "bytes": 166018,
+      "sha256": "cb2a1c669e7d856cf38df9a45b3fe6191136b76da3a1f47c727141b90218e635"
+    },
+    "research4_jades_goods-s-mediumjwst_43697_f070lp-g140m_inputs.npz": {
+      "bytes": 170630,
+      "sha256": "6d1fbba6d3336076675ed64c8e0350d45ad36aabfda1fb489fa98203d92d91e6"
+    },
+    "research4_jades_goods-s-mediumjwst_43697_f170lp-g235m_inputs.npz": {
+      "bytes": 156126,
+      "sha256": "f80efae5ff90ac8f50ffd382441d96edc372e42f45b59e193ace4eea8483d1a7"
+    },
+    "research4_jades_goods-s-mediumjwst_48912_f070lp-g140m_inputs.npz": {
+      "bytes": 169790,
+      "sha256": "7cda377694ec57a37ed6357d9fce1023c011b39b754c9e5fd8a2765825e92f4b"
+    },
+    "research4_jades_goods-s-mediumjwst_48912_f170lp-g235m_inputs.npz": {
+      "bytes": 147957,
+      "sha256": "362f73dab14df464e813d3ccfbc3998a0fe341ebb464bc6a1a683d4c9a649442"
+    },
+    "research4_jades_manifest.json": {
+      "bytes": 5502,
+      "sha256": "3c181df81355e35afd738f0b390981e4dae7b1e92b11d0cd5cda4688676e2872"
+    },
+    "research4_jades_methods.pdf": {
+      "bytes": 26720,
+      "sha256": "c9b88d9e2099e8185ceb684e5db861526951fbe00d4751305e40b0911b99024e"
+    },
+    "research4_jades_methods.png": {
+      "bytes": 149042,
+      "sha256": "0d9b4de3a5d04584fda452c088e36fcb9502f740e6e236e597852b4533a8f8a9"
+    },
+    "research4_jades_pilot.json": {
+      "bytes": 185499,
+      "sha256": "e02b75ccf9f9d8e0e214579675d24d752ec384911a507943f094e037cbbe5e16"
+    }
+  },
+  "focused_tests_passed": 6,
+  "lint": "passed",
+  "format": "passed",
+  "independent_compact_replay": "research4_review_replay.json:576 exact measurements,24 archive hashes"
+}

@@ -1,0 +1,262 @@
+{
+  "schema_version": 1,
+  "catalog_path": "/workspace/scratch/6531fbc6f033/JWST_scnience_env_2/data_sources/research4/chimefrbcat2.csv.gz",
+  "catalog_bytes": 4057396,
+  "catalog_sha256": "5108ada779d279a2547d9f9e73ae25bfdd40d8496d6ba7255ec29c6629057a48",
+  "catalog_identity_scope": "Decompressed source CSV bytes",
+  "input_artifact_bytes": 1664400,
+  "input_artifact_sha256": "f1e954fd05c128d45a1a8af8a9f011393cffd3370f6dbb7a46c421a7033114be",
+  "scope": "Independent conditional feasibility oracle; no physical discovery inference",
+  "row_count": 5045,
+  "unique_event_count": 4539,
+  "component_count_histogram": {
+    "1": 4199,
+    "2": 231,
+    "3": 74,
+    "4": 25,
+    "5": 4,
+    "6": 2,
+    "7": 3,
+    "9": 1
+  },
+  "inconsistent_shared_event_parameters": [],
+  "selection_attrition": [
+    {
+      "stage": "unique_events",
+      "remaining": 4539
+    },
+    {
+      "stage": "identified_repeater",
+      "remaining": 981
+    },
+    {
+      "stage": "nominal_flags",
+      "remaining": 876
+    },
+    {
+      "stage": "single_component",
+      "remaining": 715
+    },
+    {
+      "stage": "fit_snr_20",
+      "remaining": 347
+    },
+    {
+      "stage": "finite_positive_fit_errors",
+      "remaining": 139
+    },
+    {
+      "stage": "scattering_snr_5",
+      "remaining": 137
+    },
+    {
+      "stage": "bandwidth_200_mhz",
+      "remaining": 33
+    },
+    {
+      "stage": "resolved_scattering_at_peak",
+      "remaining": 29
+    },
+    {
+      "stage": "finite_chronology",
+      "remaining": 29
+    }
+  ],
+  "source_counts": [
+    {
+      "source": "FRB20180910A",
+      "events": 1,
+      "early": 0,
+      "late": 1,
+      "qualifies": false
+    },
+    {
+      "source": "FRB20181017A",
+      "events": 3,
+      "early": 1,
+      "late": 2,
+      "qualifies": false
+    },
+    {
+      "source": "FRB20190117A",
+      "events": 1,
+      "early": 0,
+      "late": 1,
+      "qualifies": false
+    },
+    {
+      "source": "FRB20190224D",
+      "events": 1,
+      "early": 0,
+      "late": 1,
+      "qualifies": false
+    },
+    {
+      "source": "FRB20190320E",
+      "events": 1,
+      "early": 0,
+      "late": 1,
+      "qualifies": false
+    },
+    {
+      "source": "FRB20190905A",
+      "events": 1,
+      "early": 0,
+      "late": 1,
+      "qualifies": false
+    },
+    {
+      "source": "FRB20190915D",
+      "events": 1,
+      "early": 0,
+      "late": 1,
+      "qualifies": false
+    },
+    {
+      "source": "FRB20191013D",
+      "events": 1,
+      "early": 0,
+      "late": 1,
+      "qualifies": false
+    },
+    {
+      "source": "FRB20191106C",
+      "events": 2,
+      "early": 1,
+      "late": 1,
+      "qualifies": false
+    },
+    {
+      "source": "FRB20200510A",
+      "events": 2,
+      "early": 1,
+      "late": 1,
+      "qualifies": false
+    },
+    {
+      "source": "FRB20201124A",
+      "events": 4,
+      "early": 2,
+      "late": 2,
+      "qualifies": false
+    },
+    {
+      "source": "FRB20201130A",
+      "events": 2,
+      "early": 1,
+      "late": 1,
+      "qualifies": false
+    },
+    {
+      "source": "FRB20210219C",
+      "events": 1,
+      "early": 0,
+      "late": 1,
+      "qualifies": false
+    },
+    {
+      "source": "FRB20210504D",
+      "events": 2,
+      "early": 1,
+      "late": 1,
+      "qualifies": false
+    },
+    {
+      "source": "FRB20210601A",
+      "events": 1,
+      "early": 0,
+      "late": 1,
+      "qualifies": false
+    },
+    {
+      "source": "FRB20211120C",
+      "events": 1,
+      "early": 0,
+      "late": 1,
+      "qualifies": false
+    },
+    {
+      "source": "FRB20220207A",
+      "events": 1,
+      "early": 0,
+      "late": 1,
+      "qualifies": false
+    },
+    {
+      "source": "FRB20220428C",
+      "events": 2,
+      "early": 1,
+      "late": 1,
+      "qualifies": false
+    },
+    {
+      "source": "FRB20220912A",
+      "events": 1,
+      "early": 0,
+      "late": 1,
+      "qualifies": false
+    }
+  ],
+  "selected_event_ids": [
+    "148957878",
+    "165803079",
+    "166028328",
+    "166462644",
+    "166990144",
+    "168239699",
+    "170103438",
+    "171386016",
+    "172714730",
+    "183226337",
+    "183321538",
+    "194112048",
+    "195584658",
+    "197679985",
+    "210456524",
+    "217536219",
+    "221910985",
+    "222752988",
+    "222752991",
+    "226660981",
+    "250187663",
+    "295145064",
+    "30749404",
+    "54720885",
+    "68252213",
+    "69683977",
+    "83744922",
+    "84271986",
+    "94585180"
+  ],
+  "chronology_field": "mjd_inf",
+  "scattering_reference_mhz": 400.1953125,
+  "scattering_frequency_exponent": -4,
+  "qualified_source_count": 0,
+  "gate_requires_sources": 6,
+  "gate_requires_each_temporal_half_events": 3,
+  "feasibility_gate_passed": false,
+  "covariances_computed": false,
+  "source_statistics": [],
+  "equal_source_mean_covariance": null,
+  "limitations": [
+    "Detection-conditioned sample: missing errors/nondetections are not zero scattering or a population denominator.",
+    "Joint DM/scattering fits share data; scalar errors omit cross covariance.",
+    "Noise bound assumes independent unbiased errors and a first-order log transform. It does not bound model/morphology or time-correlated systematic bias.",
+    "Fivefold error inflation is a sensitivity, not a calibrated systematic upper bound.",
+    "Chronological halves are internal checks, not independently calibrated observations."
+  ],
+  "GOODS_N_outcomes_opened": false,
+  "implementation_sha256": "118fe70ba2d4e1b2daadd481538f5e65dab118023d59de43c5e70af5e665763d",
+  "freeze_sha256": "45aa555099ae50554188230da2efe736af8735ad98025e3952ca78de3fbd064c",
+  "author_comparison": {
+    "catalog_sha256": true,
+    "catalog_rows": true,
+    "unique_events": true,
+    "selected_counts_by_source": true,
+    "selected_events": true,
+    "qualified_sources": true,
+    "associations_computed": true,
+    "selected_event_ids": true
+  },
+  "author_results_sha256": "0af0c66b829592975abb972c0ea067b02542f080f7c3668d447b834312155f16"
+}

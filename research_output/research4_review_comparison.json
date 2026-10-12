@@ -1,0 +1,169 @@
+{
+  "decision": "Accept executed selected-cohort measurement receipts; reject group-pattern/physical inference; frozen gate fails by both methods",
+  "all24_hashes_and_sizes_match_author": true,
+  "author_results_sha256": "e02b75ccf9f9d8e0e214579675d24d752ec384911a507943f094e037cbbe5e16",
+  "independent_results_sha256": "353d307b31917b54425b7b1152a0de8926a60feb965b4fb54375540e697923d3",
+  "comparisons": [
+    {
+      "unique_id": "goods-s-deepjwst_54611",
+      "group": "lower_z",
+      "Gaussian_D": -0.3621457414957124,
+      "box_primary_D": -0.4021757224105727,
+      "finite_box_sensitivities": 12,
+      "box_min_D": -0.5891735590702329,
+      "box_max_D": -0.22777082769847867,
+      "box_positive_D_count": 0,
+      "box_negative_D_count": 12,
+      "gaussian_primary_failures": []
+    },
+    {
+      "unique_id": "goods-s-deephst_10011378",
+      "group": "lower_z",
+      "Gaussian_D": null,
+      "box_primary_D": null,
+      "finite_box_sensitivities": 0,
+      "box_min_D": null,
+      "box_max_D": null,
+      "box_positive_D_count": 0,
+      "box_negative_D_count": 0,
+      "gaussian_primary_failures": [
+        "f070lp-g140m_5pix_FLUX_Hb:coverage_failure"
+      ]
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_203602",
+      "group": "lower_z",
+      "Gaussian_D": null,
+      "box_primary_D": 2.3863244063294236,
+      "finite_box_sensitivities": 5,
+      "box_min_D": 0.822098707884145,
+      "box_max_D": 5.945278226016544,
+      "box_positive_D_count": 5,
+      "box_negative_D_count": 0,
+      "gaussian_primary_failures": [
+        "f070lp-g140m_5pix_FLUX_Hb:fit_unidentifiable_or_boundary"
+      ]
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_42645",
+      "group": "lower_z",
+      "Gaussian_D": null,
+      "box_primary_D": null,
+      "finite_box_sensitivities": 0,
+      "box_min_D": null,
+      "box_max_D": null,
+      "box_positive_D_count": 0,
+      "box_negative_D_count": 0,
+      "gaussian_primary_failures": [
+        "f170lp-g235m_5pix_FLUX_Hb:nonpositive_flux",
+        "f170lp-g235m_5pix_FLUX_OIII:fit_unidentifiable_or_boundary"
+      ]
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_43697",
+      "group": "lower_z",
+      "Gaussian_D": 0.026218934481868544,
+      "box_primary_D": -0.8442763810761958,
+      "finite_box_sensitivities": 12,
+      "box_min_D": -2.140521805776782,
+      "box_max_D": -0.25158893689055506,
+      "box_positive_D_count": 0,
+      "box_negative_D_count": 12,
+      "gaussian_primary_failures": []
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_48912",
+      "group": "lower_z",
+      "Gaussian_D": null,
+      "box_primary_D": null,
+      "finite_box_sensitivities": 0,
+      "box_min_D": null,
+      "box_max_D": null,
+      "box_positive_D_count": 0,
+      "box_negative_D_count": 0,
+      "gaussian_primary_failures": [
+        "f170lp-g235m_5pix_FLUX_Hb:coverage_failure"
+      ]
+    },
+    {
+      "unique_id": "goods-s-deephst_20313",
+      "group": "interior_z",
+      "Gaussian_D": 0.1252515092090545,
+      "box_primary_D": -0.6741599042862461,
+      "finite_box_sensitivities": 12,
+      "box_min_D": -0.8458506480403898,
+      "box_max_D": 1.5307536206703796,
+      "box_positive_D_count": 6,
+      "box_negative_D_count": 6,
+      "gaussian_primary_failures": []
+    },
+    {
+      "unique_id": "goods-s-deepjwst_283952",
+      "group": "interior_z",
+      "Gaussian_D": 0.32187691067991303,
+      "box_primary_D": 0.8316337311812383,
+      "finite_box_sensitivities": 12,
+      "box_min_D": -0.0013154589202903078,
+      "box_max_D": 1.9304544619597654,
+      "box_positive_D_count": 11,
+      "box_negative_D_count": 1,
+      "gaussian_primary_failures": []
+    },
+    {
+      "unique_id": "goods-s-deepjwst_7586",
+      "group": "interior_z",
+      "Gaussian_D": 0.2703674294776283,
+      "box_primary_D": 0.29182553176338816,
+      "finite_box_sensitivities": 12,
+      "box_min_D": -0.11204391552721063,
+      "box_max_D": 0.7391363203776988,
+      "box_positive_D_count": 9,
+      "box_negative_D_count": 3,
+      "gaussian_primary_failures": []
+    },
+    {
+      "unique_id": "goods-s-deephst_8102",
+      "group": "interior_z",
+      "Gaussian_D": null,
+      "box_primary_D": null,
+      "finite_box_sensitivities": 3,
+      "box_min_D": -1.5459470860153084,
+      "box_max_D": 0.5162821022828143,
+      "box_positive_D_count": 2,
+      "box_negative_D_count": 1,
+      "gaussian_primary_failures": [
+        "f070lp-g140m_5pix_FLUX_Hb:fit_unidentifiable_or_boundary"
+      ]
+    },
+    {
+      "unique_id": "goods-s-deepjwst_52538",
+      "group": "interior_z",
+      "Gaussian_D": 0.45956644745006403,
+      "box_primary_D": 0.40544202832126014,
+      "finite_box_sensitivities": 12,
+      "box_min_D": -0.42039148014736616,
+      "box_max_D": 0.46331765717857115,
+      "box_positive_D_count": 8,
+      "box_negative_D_count": 4,
+      "gaussian_primary_failures": []
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_10009703",
+      "group": "interior_z",
+      "Gaussian_D": null,
+      "box_primary_D": -2.50457066215114,
+      "finite_box_sensitivities": 3,
+      "box_min_D": -2.50457066215114,
+      "box_max_D": -1.7108788196198494,
+      "box_positive_D_count": 0,
+      "box_negative_D_count": 3,
+      "gaussian_primary_failures": [
+        "f170lp-g235m_5pix_FLUX_Hb:fit_unidentifiable_or_boundary"
+      ]
+    }
+  ],
+  "reviewer_code_sha256": {
+    "discovery/research4_review_integration.py": "8133fef09fed79e400f9f9da76f54cc53b044eb849ca054e632d1c98d24a763d",
+    "discovery/research4_review_replay.py": "c576a806097a11dc4a3736dedb2fdf79fcb66a34a17587e64e711c5bbaf7111f"
+  }
+}
