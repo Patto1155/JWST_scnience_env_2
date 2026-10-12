@@ -1,0 +1,49 @@
+{
+  "target": "DDE 54 / VarWISE J035034.07+353508.5 / Gaia DR3 219690291611604480",
+  "budget_bytes": 5000000,
+  "measured_successful_metadata_response_bytes": 144677,
+  "response_files": [
+    {
+      "path": "research_output/research5_identity_gaia_quality.tsv",
+      "body_bytes": 46950,
+      "sha256": "383eb7de9bc5ee9ed19fec3ac86c003e4470d1556641d099bb5e8e11043093f2"
+    },
+    {
+      "path": "research_output/research5_identity_prior_events.tsv",
+      "body_bytes": 14808,
+      "sha256": "4ab0dd12dbbaaafc14ea01245d89cc9353db867c360165018cb82ad37e475f0b"
+    },
+    {
+      "path": "research_output/research5_identity_region.tsv",
+      "body_bytes": 8601,
+      "sha256": "4db94caa4abde6c1a3a41825e67486c58b2357afa83723751c6a11532ef8d5de"
+    },
+    {
+      "path": "research_output/research5_identity_vsx.html",
+      "body_bytes": 41139,
+      "sha256": "30658c5201adca8531b95f57e3234a85d8161bffd4694abc9d59c5d578c12d36"
+    },
+    {
+      "path": "research_output/research5_identity_vsx.tsv",
+      "body_bytes": 4484,
+      "sha256": "dc4b294a71305a5b48e6a14fe01445c396d96190dbb3b76358b540e39e42f562"
+    },
+    {
+      "path": "research_output/research5_identity_yso_gaia.tsv",
+      "body_bytes": 10632,
+      "sha256": "d2471a947642847ee54f0c3b29ed31b650e60662a72c429b2c715a753e59ca1b"
+    },
+    {
+      "path": "research_output/research5_identity_ysocat.tsv",
+      "body_bytes": 18063,
+      "sha256": "e259ec9d6903fea9eb56f45ceb99dddd7f405b68f21a8938e72b5e7cfb5a9889"
+    }
+  ],
+  "parsed_rows": [
+    "research_output/research5_identity_allwise_row.json",
+    "research_output/research5_identity_gaia_row.json"
+  ],
+  "report": "docs/RESEARCH5_IDENTITY.md",
+  "report_sha256": "3eb84a738d50136b3d7bff41f8c2bb5615beb29a4c08a262a5b68a9ce2abd497",
+  "status": "identity review complete; prior DDE54 optical variability established; IR temporal characterization novelty unresolved"
+}

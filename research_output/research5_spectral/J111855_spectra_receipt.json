@@ -1,0 +1,13 @@
+{
+  "status": 200,
+  "response_bytes": 2194486,
+  "sha256": "6f98dc8d048d4d450fc843a6db5a8626830885c484e0eb281a2ad95ad7c6d948",
+  "url": "https://astrosparcl.datalab.noirlab.edu/api/spectras/?include=sparcl_id%2Cspecid%2Cdata_release%2Ctargetid%2Cwavelength%2Cflux%2Civar%2Cmask%2Cwave_sigma%2Cdateobs%2Cexptime%2Csurvey&format=json",
+  "request_ids": [
+    "27a4e980-5e21-11f0-9aca-525400f334e1",
+    "2bf205a7-87cb-11ef-8f00-525400f334e1",
+    "6acc3cce-884f-11ef-9a35-525400f334e1",
+    "a6d1bcbc-885a-11ef-bbe3-525400f334e1"
+  ],
+  "freeze_sha256": "82802aeb3dc2d15104831f15317b3f98c40e3ea4b3678a0d3ba949d2756b03b6"
+}

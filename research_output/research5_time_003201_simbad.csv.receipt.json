@@ -1,0 +1,8 @@
+{
+  "url": "https://simbad.cds.unistra.fr/simbad/sim-tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+main_id%2Cotype%2Cra%2Cdec+FROM+basic+WHERE+CONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C8.00495%2C65.4919%2C0.001388889%29%29%3D1",
+  "status": 200,
+  "bytes": 93,
+  "sha256": "56910edf6e1fd6e08604a7efba152e73325ad89172f9d56df49ddf7804eeb084",
+  "elapsed_seconds": 7.303889989852905,
+  "exploratory": true
+}

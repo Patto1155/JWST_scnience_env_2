@@ -1,0 +1,8 @@
+{
+  "url": "https://irsa.ipac.caltech.edu/TAP/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+TOP+100+designation%2Cra%2Cdec%2Cw1mpro%2Cw2mpro%2Cext_flg%2Ccc_flags+FROM+allwise_p3as_psd+WHERE+CONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C308.7488%2C47.7017%2C0.002777778%29%29%3D1",
+  "status": 200,
+  "bytes": 114,
+  "sha256": "1257244155409ddd617c2e1cae7bf4e8512bb036717ba66315665f5557ff3fbc",
+  "elapsed_seconds": 13.502151727676392,
+  "exploratory": true
+}

@@ -1,0 +1,238 @@
+{
+  "recorded_response_body_bytes": 78862376,
+  "receipts": [
+    {
+      "receipt": "research5_time_003201_allwise_p3as_psd.csv.receipt.json",
+      "bytes": 112,
+      "status": 200,
+      "scope": "observations/metadata"
+    },
+    {
+      "receipt": "research5_time_003201_gaia_dr3_source.csv.receipt.json",
+      "bytes": 173,
+      "status": 200,
+      "scope": "observations/metadata"
+    },
+    {
+      "receipt": "research5_time_003201_gator.tbl.receipt.json",
+      "bytes": 107471,
+      "status": 200,
+      "scope": "observations/metadata"
+    },
+    {
+      "receipt": "research5_time_003201_simbad.csv.receipt.json",
+      "bytes": 93,
+      "status": 200,
+      "scope": "observations/metadata"
+    },
+    {
+      "receipt": "research5_time_003201_ztf.csv.receipt.json",
+      "bytes": 515133,
+      "status": 200,
+      "scope": "observations/metadata"
+    },
+    {
+      "receipt": "research5_time_035030_control_gator.tbl.receipt.json",
+      "bytes": 70117,
+      "status": 200,
+      "scope": "observations/metadata"
+    },
+    {
+      "receipt": "research5_time_035034_allwise_p3as_psd.csv.receipt.json",
+      "bytes": 113,
+      "status": 200,
+      "scope": "observations/metadata"
+    },
+    {
+      "receipt": "research5_time_035034_gaia_dr3_source.csv.receipt.json",
+      "bytes": 173,
+      "status": 200,
+      "scope": "observations/metadata"
+    },
+    {
+      "receipt": "research5_time_035034_gator.tbl.receipt.json",
+      "bytes": 70599,
+      "status": 200,
+      "scope": "observations/metadata"
+    },
+    {
+      "receipt": "research5_time_035034_neighbors60.csv.receipt.json",
+      "bytes": 995,
+      "status": 200,
+      "scope": "observations/metadata"
+    },
+    {
+      "receipt": "research5_time_035034_simbad.csv.receipt.json",
+      "bytes": 92,
+      "status": 200,
+      "scope": "observations/metadata"
+    },
+    {
+      "receipt": "research5_time_035034_ztf.csv.receipt.json",
+      "bytes": 404794,
+      "status": 200,
+      "scope": "observations/metadata"
+    },
+    {
+      "receipt": "research5_time_203459_allwise_p3as_psd.csv.receipt.json",
+      "bytes": 114,
+      "status": 200,
+      "scope": "observations/metadata"
+    },
+    {
+      "receipt": "research5_time_203459_gaia_dr3_source.csv.receipt.json",
+      "bytes": 374,
+      "status": 200,
+      "scope": "observations/metadata"
+    },
+    {
+      "receipt": "research5_time_203459_gator.tbl.receipt.json",
+      "bytes": 135429,
+      "status": 200,
+      "scope": "observations/metadata"
+    },
+    {
+      "receipt": "research5_time_203459_simbad.csv.receipt.json",
+      "bytes": 21,
+      "status": 200,
+      "scope": "observations/metadata"
+    },
+    {
+      "receipt": "research5_time_203459_ztf.csv.receipt.json",
+      "bytes": 80881,
+      "status": 200,
+      "scope": "observations/metadata"
+    },
+    {
+      "receipt": "research5_time_gaia_tables.csv.receipt.json",
+      "bytes": 1485,
+      "status": 200,
+      "scope": "observations/metadata"
+    },
+    {
+      "receipt": "research5_time_paz2026.pdf.receipt.json",
+      "bytes": 22420197,
+      "status": 200,
+      "scope": "documentation"
+    },
+    {
+      "receipt": "research5_time_schema.csv.receipt.json",
+      "bytes": 2820,
+      "status": 200,
+      "scope": "observations/metadata"
+    },
+    {
+      "receipt": "research5_time_screen.csv.receipt.json",
+      "bytes": 9861,
+      "status": 200,
+      "scope": "observations/metadata"
+    },
+    {
+      "receipt": "research5_time_spherex_000.fits.receipt.json",
+      "bytes": 4979504,
+      "status": "actual observational pixel slice, faithful header-offset update; no measured photometry",
+      "scope": "observations/metadata"
+    },
+    {
+      "receipt": "research5_time_spherex_004.fits.receipt.json",
+      "bytes": 5001680,
+      "status": "actual observational pixel slice, faithful header-offset update; no measured photometry",
+      "scope": "observations/metadata"
+    },
+    {
+      "receipt": "research5_time_spherex_008.fits.receipt.json",
+      "bytes": 5001680,
+      "status": "actual observational pixel slice, faithful header-offset update; no measured photometry",
+      "scope": "observations/metadata"
+    },
+    {
+      "receipt": "research5_time_spherex_012.fits.receipt.json",
+      "bytes": 5001680,
+      "status": "actual observational pixel slice, faithful header-offset update; no measured photometry",
+      "scope": "observations/metadata"
+    },
+    {
+      "receipt": "research5_time_spherex_014.fits.receipt.json",
+      "bytes": 5001680,
+      "status": "actual observational pixel slice, faithful header-offset update; no measured photometry",
+      "scope": "observations/metadata"
+    },
+    {
+      "receipt": "research5_time_spherex_018.fits.receipt.json",
+      "bytes": 5001680,
+      "status": "actual observational pixel slice, faithful header-offset update; no measured photometry",
+      "scope": "observations/metadata"
+    },
+    {
+      "receipt": "research5_time_spherex_019.fits.receipt.json",
+      "bytes": 5001680,
+      "status": "actual observational pixel slice, faithful header-offset update; no measured photometry",
+      "scope": "observations/metadata"
+    },
+    {
+      "receipt": "research5_time_spherex_021.fits.receipt.json",
+      "bytes": 5001680,
+      "status": "actual observational pixel slice, faithful header-offset update; no measured photometry",
+      "scope": "observations/metadata"
+    },
+    {
+      "receipt": "research5_time_spherex_023.fits.receipt.json",
+      "bytes": 5001680,
+      "status": "actual observational pixel slice, faithful header-offset update; no measured photometry",
+      "scope": "observations/metadata"
+    },
+    {
+      "receipt": "research5_time_spherex_029.fits.receipt.json",
+      "bytes": 5001680,
+      "status": "actual observational pixel slice, faithful header-offset update; no measured photometry",
+      "scope": "observations/metadata"
+    },
+    {
+      "receipt": "research5_time_spherex_040.fits.receipt.json",
+      "bytes": 5001680,
+      "status": "actual observational pixel slice, faithful header-offset update; no measured photometry",
+      "scope": "observations/metadata"
+    },
+    {
+      "receipt": "research5_time_spherex_api.html.receipt.json",
+      "bytes": 6684,
+      "status": 200,
+      "scope": "observations/metadata"
+    },
+    {
+      "receipt": "research5_time_spherex_cutout_d.fits.receipt.json",
+      "bytes": 190,
+      "status": 503,
+      "scope": "observations/metadata"
+    },
+    {
+      "receipt": "research5_time_spherex_qr3_sia.csv.receipt.json",
+      "bytes": 37961,
+      "status": 200,
+      "scope": "observations/metadata"
+    },
+    {
+      "receipt": "research5_time_spherex_test_cutout.fits.receipt.json",
+      "bytes": 190,
+      "status": 503,
+      "scope": "observations/metadata"
+    }
+  ],
+  "initial_probe_caveat": "EarlyIRSAoverview5345bytes,TAPtable132bytes,S3range2880bytesandSIMBADaliasCSV were printedbefore receiptworkflow. An arXivsearchHTML response lengthwasnotrecorded; donotclaimcompleteexactbyteledger. ThreeTAPNEOWISEcones timedoutbeforeanybodywasobserved.",
+  "failed_requests": [
+    {
+      "endpoint": "IRSA TAP NEOWISEcone",
+      "count": 3,
+      "outcome": "90secondtimeout beforeanybodyreceived",
+      "response_bytes_measured": 0
+    },
+    {
+      "endpoint": "IRSA IBE SPHERExcutout",
+      "count": 2,
+      "outcome": "HTTP503",
+      "response_bytes_measured": 380
+    }
+  ],
+  "allocation_bytes": 300000000,
+  "claim": "recordedresponsevolume78.86MBplusinitialprobes; ampleallocationmargin, initialarXivHTMLunmeasured"
+}

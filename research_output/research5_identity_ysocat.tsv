@@ -1,0 +1,210 @@
+#
+#   VizieR Astronomical Server vizier.cds.unistra.fr
+#    Date: 2026-10-12T02:34:06 [V7.6.1]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	service_protocol=ASU	  IVOID of the protocol through which the data was retrieved
+#INFO	request_date=2026-10-12T02:34:06	  Query execution date
+#INFO	request=https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-c=57.6419783+%2B35.5856917&-c.rs=2&-out.max=10&-out.all=1&-source=J%2FApJS%2F224%2F28%2CJ%2FMNRAS%2F487%2F2522%2CI%2F358%2Fvclassre%2CI%2F358%2Fvysos%2CII%2F328	  Full request URL
+#INFO	contact=cds-question@unistra.fr	  Email or URL to contact publisher
+#INFO	server_software=VizieR/7.6.1	  Software version
+#INFO	publisher=CDS	  Data centre that produced the VOTable
+#INFO	CatalogsExamined=3	
+#  3 catalogues with potential matches were examined.
+#
+#INFO	-c=057.641978+35.585692,rs=2.	
+#Constraint -source=J/ApJS/224/28,J/MNRAS/487/2522,I/358/vclassre,I/358/vysos,II/328
+
+#RESOURCE=yCat_2360
+#Name: II/360
+#Title: Gaia DR2 x AllWISE catalogue (Marton+, 2019)
+#INFO	ivoid=ivo://cds.vizier/ii/360	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/ii/360	    IVOID of underlying data collection
+#INFO	creator=Marton G.	    First author or institution
+#INFO	cites=bibcode:2019MNRAS.487.2522M	    Article or Data origin sources
+#INFO	journal=MNRA	    Journal name
+#INFO	original_date=2019	    Year of the article publication
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/II/360	    Dataset landing page
+#INFO	publication_date=2024-01-08	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Coosys	H_2015.500:	ICRS
+#Table	II_360_catalog:
+#Name: II/360/catalog
+#Title: Gaia DR2 X AllWise catalog
+#Column	_r	(F5.3)	Distance from center (057.641978+35.585692)[ICRS], at Epoch=J2015.5	[ucd=pos.angDistance]
+#Column	Source	(I19)	Gaia DR2 source ID (gid)	[ucd=meta.id;meta.main]
+#Column	RA_ICRS	(F10.6)	Barycentric right ascension (ICRS) at Ep=2015.5 (ra)	[ucd=pos.eq.ra;meta.main]
+#Column	DE_ICRS	(F10.6)	Barycentric declination (ICRS) at Ep=2015.5 (dec)	[ucd=pos.eq.dec;meta.main]
+#Column	LE	(F8.5)	Probability of the source being an evolved star using all WISE bands (LE)	[ucd=stat.fit.goodness]
+#Column	e_LE	(F8.5)	Error of the LE probability (LEerr)	[ucd=stat.error]
+#Column	LEG	(F8.5)	Probability of the source being an extragalactic object using all WISE bands (LEG)	[ucd=stat.fit.goodness]
+#Column	e_LEG	(F8.5)	Error of the LEG probability (LEGerr)	[ucd=stat.error]
+#Column	LMS	(F8.5)	Probability of the source being a main-sequence star using all WISE bands (LMS)	[ucd=stat.fit.goodness]
+#Column	e_LMS	(F8.5)	Error of the LMS probability (LMSerr)	[ucd=stat.error]
+#Column	LY	(F8.5)	Probability of the source being a YSO using all WISE bands (LY)	[ucd=stat.fit.goodness]
+#Column	e_LY	(F8.5)	Error of the LY probability (LYerr)	[ucd=stat.error]
+#Column	Gmag	(F9.6)	G-band mean magnitude (Vega) (gmean)	[ucd=phot.mag;em.opt]
+#Column	tau	(F8.5)	353GHz R2.01 Planck dust opacity value (tau)	[ucd=phys.absorption.coeff]
+#Column	AllWISE	(a19)	AllWISE designation (wid)	[ucd=meta.id.cross]
+#Column	RAAdeg	(F10.6)	AllWISE Right ascension (J2000) (raw)	[ucd=pos.eq.ra]
+#Column	DEAdeg	(F10.6)	AllWISE Declination (J2000) (decw)	[ucd=pos.eq.dec]
+#Column	W1mag	(F6.3)	AllWISE W1 magnitude (W1mag)	[ucd=phot.mag;em.IR.3-4um]
+#Column	W2mag	(F6.3)	AllWISE W2 magnitude (W2mag)	[ucd=phot.mag;em.IR.4-8um]
+#Column	W3mag	(F6.3)	AllWISE W3 magnitude (W3mag)	[ucd=phot.flux.density;em.IR.8-15um]
+#Column	W4mag	(F6.3)	AllWISE W4 magnitude (W4mag)	[ucd=phot.flux.density;em.IR.15-30um]
+#Column	Jmag	(F6.3)	2MASS J magnitude (Jmag)	[ucd=phot.mag;em.IR.J]
+#Column	Hmag	(F6.3)	2MASS H magnitude (Hmag)	[ucd=phot.mag;em.IR.J]
+#Column	Kmag	(F6.3)	2MASS K magnitude (Kmag)	[ucd=phot.mag;em.IR.K]
+#Column	e_W1mag	(F6.3)	? AllWISE W1 Magnitude error (e_W1mag)	[ucd=stat.error;phot.mag;em.IR]
+#Column	e_W2mag	(F6.3)	? AllWISE W2 Magnitude error (e_W2mag)	[ucd=stat.error;phot.mag;em.IR]
+#Column	e_W3mag	(F6.3)	? AllWISE W3 Magnitude error (e_W3mag)	[ucd=stat.error;phot.mag;em.IR]
+#Column	e_W4mag	(F6.3)	? AllWISE W4 Magnitude error (e_W4mag)	[ucd=stat.error;phot.mag;em.IR]
+#Column	e_Jmag	(F6.3)	? 2MASS J magnitude error (e_Jmag)	[ucd=stat.error;phot.mag;em.IR.J]
+#Column	e_Hmag	(F6.3)	? 2MASS H magnitude error (e_Hmag)	[ucd=stat.error;phot.mag;em.IR.J]
+#Column	e_Kmag	(F6.3)	? 2MASS K magnitude error (e_Kmag)	[ucd=stat.error;phot.mag;em.IR.K]
+#Column	R	(F6.3)	Probability that WISE W3 and W4 detections are real (R)	[ucd=phot.mag;em.opt.R]
+#Column	SE	(F8.5)	Probability of the source being an evolved star without W3 and W4 WISE bands (SE)	[ucd=stat.fit.goodness]
+#Column	e_SE	(F8.5)	Error of the SE probability (SEerr)	[ucd=stat.error]
+#Column	SEG	(F8.5)	Probability of the source being an extragalactic object without W3 and W4 WISE bands (SEG)	[ucd=stat.fit.goodness]
+#Column	e_SEG	(F8.5)	Error of the SEG probability (SEGerr)	[ucd=stat.error]
+#Column	SMS	(F8.5)	Probability of the source being a main-sequence star without W3 and W4 WISE bands (SMS)	[ucd=stat.fit.goodness]
+#Column	e_SMS	(F8.5)	Error of the SMS probability (SMSerr)	[ucd=stat.error]
+#Column	SY	(F8.5)	Probability of the source being a YSO without W3 and W4 WISE bands (SY)	[ucd=stat.fit.goodness]
+#Column	e_SY	(F8.5)	Error of the SY probability (SYerr)	[ucd=stat.error]
+_r	Source	RA_ICRS	DE_ICRS	LE	e_LE	LEG	e_LEG	LMS	e_LMS	LY	e_LY	Gmag	tau	AllWISE	RAAdeg	DEAdeg	W1mag	W2mag	W3mag	W4mag	Jmag	Hmag	Kmag	e_W1mag	e_W2mag	e_W3mag	e_W4mag	e_Jmag	e_Hmag	e_Kmag	R	SE	e_SE	SEG	e_SEG	SMS	e_SMS	SY	e_SY
+arcsec	 	deg	deg	 	 	 	 	 	 	 	 	mag	 	 	deg	deg	mag	mag	mag	mag	mag	mag	mag	mag	mag	mag	mag	mag	mag	mag	 	 	 	 	 	 	 	 	
+-----	-------------------	----------	----------	--------	--------	--------	--------	--------	--------	--------	--------	---------	--------	-------------------	----------	----------	------	------	------	------	------	------	------	------	------	------	------	------	------	------	------	--------	--------	--------	--------	--------	--------	--------	--------
+0.001	 219690291611604480	057.641978	+35.585692	 0.01380	 0.00466	 0.68840	 0.03438	 0.00040	 0.00084	 0.29740	 0.03423	18.116247	 0.00002	J035034.07+353508.5	 57.641970	 35.585700	11.871	11.132	 9.332	 7.699	14.471	13.591	12.854	 0.024	 0.021	 0.036	 0.137	 0.032	 0.028	 0.027	 0.524	 0.00020	 0.00063	 0.95060	 0.02239	 0.00000	 0.00000	 0.04920	 0.02210
+
+
+#RESOURCE=yCat_1358
+#Name: I/358
+#Title: Gaia DR3 Part 4. Variability (Gaia Collaboration, 2022)
+#INFO	ivoid=ivo://cds.vizier/i/358	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/i/358	    IVOID of underlying data collection
+#INFO	creator=Gaia collaboration	    First author or institution
+#INFO	cites=bibcode:2022yCat.1358....0G	    Bibcode of the dataset
+#INFO	journal=yCat	    Journal name
+#INFO	original_date=2022	    Year of the article publication
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/I/358	    Dataset landing page
+#INFO	citation=doi:10.26093/cds/vizier.1358	    Dataset identifier that can be used for citation
+#INFO	publication_date=2023-12-19	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Coosys	H_2016.000:	ICRS
+#Table	I_358_vclassre:
+#Name: I/358/vclassre
+#Title: Variability classification results of all classifiers (vari_classifier_result)
+#Column	_r	(F5.3)	Distance from center ( 57.64197830000+35.58569170000)[ICRS], at Epoch=J2016.0	[ucd=pos.angDistance]
+#Column	recno	(I8)	Record number assigned by the VizieR team. Should Not be used for identification.	[ucd=meta.record]
+#Column	Source	(I19)	Unique source identifier (source_id)	[ucd=meta.id;meta.main]
+#Column	SolID	(I18)	Solution Identifier (solution_id)	[ucd=meta.version]
+#Column	Classifier	(A12)	[nTransits:5+] Classifier name used to produce this result (classifier_name)	[ucd=meta.title]
+#Column	Class	(a26)	Name of best class (in vcclassd.dat table) (best_class_name)	[ucd=meta.code.class]
+#Column	ClassSc	(D14.7)	Score of the best class (best_class_score)	[ucd=meta.code.qual]
+#Column	RA_ICRS	(F15.11)	Right ascension (ICRS) at Ep=2016.0 (ra)	[ucd=pos.eq.ra;meta.main]
+#Column	DE_ICRS	(F15.11)	Declination (ICRS) at Ep=2016.0(dec)	[ucd=pos.eq.dec;meta.main]
+_r	recno	Source	SolID	Classifier	Class	ClassSc	RA_ICRS	DE_ICRS
+arcsec	 	 	 	 	 	 	deg	deg
+-----	--------	-------------------	------------------	------------	--------------------------	--------------	---------------	---------------
+0.000	 1489626	 219690291611604480	375316653866487564	nTransits:5+	YSO                       	 6.4426870e-01	 57.64197830092	+35.58569174346
+
+
+#RESOURCE=yCat_2328
+#Name: II/328
+#Title: AllWISE Data Release (Cutri+ 2013)
+#INFO	ivoid=ivo://cds.vizier/ii/328	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/ii/328	    IVOID of underlying data collection
+#INFO	creator=Cutri R.M.	    First author or institution
+#INFO	cites=bibcode:2014yCat.2328....0C	    Bibcode of the dataset
+#INFO	journal=yCat	    Journal name
+#INFO	original_date=2014	    Year of the article publication
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/II/328	    Dataset landing page
+#INFO	publication_date=2024-07-15	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Table	II_328_allwise:
+#Name: II/328/allwise
+#Title: *the AllWISE data release (among 747,634,026 sources) (updated version, 16-Feb-2021)
+#Column	_r	(F5.3)	Distance from center (057.6419783+35.5856917)[FK5/J2000]	[ucd=pos.angDistance]
+#Column	AllWISE	(a19)	WISE All-Sky Release Catalog name, based on J2000 position, <WISEA JHHMMSS.ss+DDMMSS.s> (designation)	[ucd=meta.id;meta.main]
+#Column	RAJ2000	(F11.7)	Right ascension (J2000)	[ucd=pos.eq.ra;meta.main]
+#Column	DEJ2000	(F11.7)	Declination (J2000)	[ucd=pos.eq.dec;meta.main]
+#Column	eeMaj	(F7.4)	Semi-major axis of the error ellipse (1)	[ucd=stat.error]
+#Column	eeMin	(F7.4)	Semi-minor axis of the error ellipse (1)	[ucd=stat.error]
+#Column	eePA	(F5.1)	Position angle of the error ellipse (1)	[ucd=pos.posAng;pos.errorEllipse]
+#Column	Im	(A2)	Image of the 4 bands from the IRSA server (IPAC)	[ucd=meta.ref.url]
+#Column	W1mag	(F6.3)	? W1 magnitude (3.35um)	[ucd=phot.mag;em.IR.3-4um]
+#Column	e_W1mag	(F6.3)	? Mean error on W1 magnitude	[ucd=stat.error;phot.mag]
+#Column	W2mag	(F6.3)	? W2 magnitude (4.6um)	[ucd=phot.mag;em.IR.4-8um]
+#Column	e_W2mag	(F6.3)	? Mean error on W2 magnitude	[ucd=stat.error;phot.mag]
+#Column	W3mag	(F6.3)	? W3 magnitude (11.6um)	[ucd=phot.flux.density;em.IR.8-15um]
+#Column	e_W3mag	(F6.3)	? Mean error on W3 magnitude	[ucd=stat.error;phot.mag]
+#Column	W4mag	(F6.3)	? W4 magnitude (22.1um)	[ucd=phot.flux.density;em.IR.15-30um]
+#Column	e_W4mag	(F6.3)	? Mean error on W4 magnitude	[ucd=stat.error;phot.mag]
+#Column	Jmag	(F6.3)	? 2MASS J magnitude (1.25um)	[ucd=phot.mag;em.IR.J]
+#Column	e_Jmag	(F6.3)	? Mean error on J magnitude	[ucd=stat.error;phot.mag]
+#Column	Hmag	(F6.3)	? 2MASS H magnitude (1.65um)	[ucd=phot.mag;em.IR.H]
+#Column	e_Hmag	(F6.3)	? Mean error on H magnitude	[ucd=stat.error;phot.mag]
+#Column	Kmag	(F6.3)	? 2MASS Ks magnitude (2.17um)	[ucd=phot.mag;em.IR.K]
+#Column	e_Kmag	(F6.3)	? Mean error on Ks magnitude	[ucd=stat.error;phot.mag]
+#Column	wx	(F8.3)	x-pixel coordinate on the Atlas Image	[ucd=pos.cartesian.x;instr.det]
+#Column	wy	(F8.3)	y-pixel coordinate on the Atlas Image	[ucd=pos.cartesian.y;instr.det]
+#Column	ID	(I19)	Unique source ID	[ucd=meta.id.part;meta.main]
+#Column	snr1	(F7.1)	? Signal to noise ratio for W1 filter	[ucd=stat.snr]
+#Column	chi2W1	(E9.2)	? Reduced {chi}^2^ of the W1 profile fit	[ucd=stat.fit.chi2]
+#Column	snr2	(F7.1)	? Signal to noise ratio for W2 filter	[ucd=stat.snr]
+#Column	chi2W2	(E9.2)	? Reduced {chi}^2^ of the W2 profile fit	[ucd=stat.fit.chi2]
+#Column	snr3	(F7.1)	? Signal to noise ratio for W3 filter	[ucd=stat.snr]
+#Column	chi2W3	(E9.2)	? Reduced {chi}^2^ of the W3 profile fit	[ucd=stat.fit.chi2]
+#Column	snr4	(F8.1)	? Signal to noise ratio for W4 filter	[ucd=stat.snr]
+#Column	chi2W4	(E9.2)	? Reduced {chi}^2^ of the W4 profile fit	[ucd=stat.fit.chi2]
+#Column	chi2	(E9.2)	All-band combined reduced {chi}^2^	[ucd=stat.fit.chi2]
+#Column	nb	(I1)	[1/4] Number of PSF components used simultaneously in the profile-fitting	[ucd=meta.number]
+#Column	na	(I1)	[0/1] Active deblending flag (1 if a detection was split into multiple sources)	[ucd=meta.number]
+#Column	sat1	(F6.3)	? Saturated pixel fraction in W1 (w1sat)	[ucd=instr.saturation]
+#Column	sat2	(F6.3)	? Saturated pixel fraction in W2 (w2sat)	[ucd=instr.saturation]
+#Column	sat3	(F6.3)	? Saturated pixel fraction in W3 (w3sat)	[ucd=instr.saturation]
+#Column	sat4	(F6.3)	? Saturated pixel fraction in W4 (w4sat)	[ucd=instr.saturation]
+#Column	ccf	(A4)	[0DHOPdhop] Contamination and confusion flag, one per band (cc_flags) (2)	[ucd=meta.code]
+#Column	ex	(I1)	[0-5] Extended source flag (ext_flg) (3)	[ucd=meta.code]
+#Column	var	(A4)	Variability flag, one per band (var_flg) (4)	[ucd=meta.code;src.var]
+#Column	nW1	(I3)	? Frame detection count in W1 (w1nm) (5)	[ucd=meta.number]
+#Column	mW1	(I3)	? Integer frame coverage in W1 (w1m) (6)	[ucd=meta.number]
+#Column	nW2	(I3)	? Frame detection count in W2 (w2nm) (5)	[ucd=meta.number]
+#Column	mW2	(I3)	? Integer frame coverage in W2 (w2m) (6)	[ucd=meta.number]
+#Column	nW3	(I3)	? Frame detection count in W3 (w3nm) (5)	[ucd=meta.number]
+#Column	mW3	(I3)	? Integer frame coverage in W3 (w3m) (6)	[ucd=meta.number]
+#Column	nW4	(I3)	? Frame detection count in W4 (w4nm) (5)	[ucd=meta.number]
+#Column	mW4	(I3)	? Integer frame coverage in W4 (w4m) (6)	[ucd=meta.number]
+#Column	satnum	(I4)	Minimum sample at which saturation occurs in each band	[ucd=instr.saturation]
+#Column	RA_pm	(F11.7)	? Right ascension at epoch MJD=55400.0 (2010.5589) from the profile-fitting measurement model that includes motion.	[ucd=pos.eq.ra]
+#Column	e_RA_pm	(F7.4)	? Error on RA_pm	[ucd=stat.error;pos.eq.ra]
+#Column	DE_pm	(F11.7)	? Declination at epoch MJD=55400.0 (2010.5589) from the profile-fitting measurement model that includes motion.	[ucd=pos.eq.dec]
+#Column	e_DE_pm	(F7.4)	? Error on DE_pm	[ucd=stat.error;pos.eq.dec]
+#Column	cosig_pm	(F8.4)	? co-sigma of the equatorial position uncertainties	[ucd=pos.posAng]
+#Column	pmRA	(I7)	? Apparent motion in RA (9)	[ucd=pos.pm]
+#Column	e_pmRA	(I7)	? Mean error on pmRA (9)	[ucd=stat.error;pos.pm;pos.eq.ra]
+#Column	pmDE	(I7)	? Apparent motion in DE (9)	[ucd=pos.pm]
+#Column	e_pmDE	(I7)	? Mean error on pmDE (9)	[ucd=stat.error;pos.pm;pos.eq.dec]
+#Column	chi2W1_pm	(E9.2)	? Reduced {chi}^2^ of the W1 profile fit including motion estimation	[ucd=stat.fit.chi2]
+#Column	chi2W2_pm	(E9.2)	? Reduced {chi}^2^ of the W2 profile fit including motion estimation	[ucd=stat.fit.chi2]
+#Column	chi2W3_pm	(E9.2)	? Reduced {chi}^2^ of the W3 profile fit including motion estimation	[ucd=stat.fit.chi2]
+#Column	chi2W4_pm	(E9.2)	? Reduced {chi}^2^ of the W4 profile fit including motion estimation	[ucd=stat.fit.chi2]
+#Column	chi2pm	(E9.2)	? Combined reduced {chi}^2^ profile fit including motion estimation	[ucd=stat.fit.chi2]
+#Column	qpm	(a5)	? Motion estimation quality (pmcode) (7)	[ucd=meta.code.qual]
+#Column	qph	(A4)	[ABCUXZ] Photometric quality flag (8)	[ucd=meta.code.qual;phot]
+#Column	fdet	(I2)	[0/15] Bit-encoded integer indicating bands in which a source has a w?snr>2 detection	[ucd=meta.code]
+#Column	fmoon	(I4)	Scattered moonlight contamination flag	[ucd=meta.code]
+#Column	covW1	(F7.3)	? Mean pixel coverage in W1	[ucd=src.sample;stat.mean]
+#Column	covW2	(F7.3)	? Mean pixel coverage in W2	[ucd=src.sample;stat.mean]
+#Column	covW3	(F7.3)	? Mean pixel coverage in W3	[ucd=src.sample;stat.mean]
+#Column	covW4	(F7.3)	? Mean pixel coverage in W4	[ucd=src.sample;stat.mean]
+#Column	2Mkey	(I10)	? 2MASS PSC association (not identification)	[ucd=meta.id.assoc]
+#Column	d2M	(F6.3)	? Distance separating the positions of the WISE source and associated 2MASS PSC source	[ucd=pos;arith.diff]
+#Column	2M	(A2)	Display the 2MASS data (Cutri et al. 2003, Cat. II/246)	[ucd=meta.ref.url]
+_r	AllWISE	RAJ2000	DEJ2000	eeMaj	eeMin	eePA	Im	W1mag	e_W1mag	W2mag	e_W2mag	W3mag	e_W3mag	W4mag	e_W4mag	Jmag	e_Jmag	Hmag	e_Hmag	Kmag	e_Kmag	wx	wy	ID	snr1	chi2W1	snr2	chi2W2	snr3	chi2W3	snr4	chi2W4	chi2	nb	na	sat1	sat2	sat3	sat4	ccf	ex	var	nW1	mW1	nW2	mW2	nW3	mW3	nW4	mW4	satnum	RA_pm	e_RA_pm	DE_pm	e_DE_pm	cosig_pm	pmRA	e_pmRA	pmDE	e_pmDE	chi2W1_pm	chi2W2_pm	chi2W3_pm	chi2W4_pm	chi2pm	qpm	qph	fdet	fmoon	covW1	covW2	covW3	covW4	2Mkey	d2M	2M
+arcsec	 	deg	deg	arcsec	arcsec	deg	 	mag	mag	mag	mag	mag	mag	mag	mag	mag	mag	mag	mag	mag	mag	pix	pix	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	deg	arcsec	deg	arcsec	arcsec	mas/yr	mas/yr	mas/yr	mas/yr	 	 	 	 	 	 	 	 	 	 	 	 	 	 	arcsec	
+-----	-------------------	-----------	-----------	-------	-------	-----	--	------	------	------	------	------	------	------	------	------	------	------	------	------	------	--------	--------	-------------------	-------	---------	-------	---------	-------	---------	--------	---------	---------	-	-	------	------	------	------	----	-	----	---	---	---	---	---	---	---	---	----	-----------	-------	-----------	-------	--------	-------	-------	-------	-------	---------	---------	---------	---------	---------	-----	----	--	----	-------	-------	-------	-------	----------	------	--
+0.040	J035034.07+353508.5	057.6419696	+35.5857002	 0.0388	 0.0362	 59.0	Im	11.871	 0.024	11.132	 0.021	 9.332	 0.036	 7.699	 0.137	14.471	 0.032	13.591	 0.028	12.854	 0.027	3826.378	4028.090	 584134801351054480	   45.7	 9.93e-01	   52.1	 1.01e+00	   30.1	 1.07e+00	     7.9	 1.21e+00	 1.04e+00	1	0	 0.000	 0.000	 0.000	 0.000	0o00	0	110n	 26	 26	 26	 26	 13	 13	  3	 13	   0	057.6419711	 0.0514	+35.5857092	 0.0438	  0.0147	     22	     54	    136	     50	 9.85e-01	 1.00e+00	 1.07e+00	 1.21e+00	 1.04e+00	2N000	AAAB	15	1111	 24.757	 25.578	 12.961	 12.870	 217992927	 0.071	2M
+

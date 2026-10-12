@@ -1,0 +1,541 @@
+{
+  "original_strict_failure_preserved": true,
+  "label": "exploratory advisory-mask diagnostic",
+  "heldout5720": "unmeasured",
+  "records": [
+    {
+      "id": "27a4e980-5e21-11f0-9aca-525400f334e1",
+      "survey": "sdss",
+      "measurements": {
+        "FeVII6087": {
+          "center_vacuum_A": 6088.64,
+          "halfwidth_rest_A": 8.0,
+          "sidebands_rest_A": [
+            20.0,
+            40.0
+          ],
+          "coverage_after_fixed_sky_exclusion": 1.0,
+          "sky_excluded_fraction": 0.08322783868896069,
+          "n_line_pixels": 11,
+          "n_sideband_pixels": [
+            14,
+            15
+          ],
+          "status": "measured",
+          "flux_1e17_erg_cm2_s": 39.252237449260605,
+          "error_1e17_erg_cm2_s": 5.518661778037118,
+          "snr": 7.112636908729324,
+          "upper_bound_3sigma": 55.80822278337196,
+          "sideband_reduced_chi2": 0.7281365406854784,
+          "variance_inflation": 1.0,
+          "continuum_coefficients": [
+            13.976365614952554,
+            -0.019857230722585592
+          ]
+        },
+        "OI6300": {
+          "center_vacuum_A": 6302.05,
+          "halfwidth_rest_A": 8.0,
+          "sidebands_rest_A": [
+            20.0,
+            40.0
+          ],
+          "coverage_after_fixed_sky_exclusion": 1.0,
+          "sky_excluded_fraction": 0.0,
+          "n_line_pixels": 11,
+          "n_sideband_pixels": [
+            14,
+            13
+          ],
+          "status": "measured",
+          "flux_1e17_erg_cm2_s": 2.203436507549532,
+          "error_1e17_erg_cm2_s": 3.38014801793439,
+          "snr": 0.6518757450438674,
+          "upper_bound_3sigma": 12.343880561352702,
+          "sideband_reduced_chi2": 0.8306994165722247,
+          "variance_inflation": 1.0,
+          "continuum_coefficients": [
+            13.187092601809717,
+            -0.0001252718635655856
+          ]
+        },
+        "SII6716": {
+          "center_vacuum_A": 6718.29,
+          "halfwidth_rest_A": 8.0,
+          "sidebands_rest_A": [
+            20.0,
+            40.0
+          ],
+          "coverage_after_fixed_sky_exclusion": 0.909195535895733,
+          "sky_excluded_fraction": 0.0,
+          "n_line_pixels": 10,
+          "n_sideband_pixels": [
+            13,
+            11
+          ],
+          "status": "measured",
+          "flux_1e17_erg_cm2_s": 24.240375875235113,
+          "error_1e17_erg_cm2_s": 3.9530549353667856,
+          "snr": 6.132061474371077,
+          "upper_bound_3sigma": 36.09954068133547,
+          "sideband_reduced_chi2": 0.4875913697802537,
+          "variance_inflation": 1.0,
+          "continuum_coefficients": [
+            13.147292346061889,
+            -0.004406375082475965
+          ]
+        },
+        "SII6731": {
+          "center_vacuum_A": 6732.67,
+          "halfwidth_rest_A": 8.0,
+          "sidebands_rest_A": [
+            20.0,
+            40.0
+          ],
+          "coverage_after_fixed_sky_exclusion": 0.699758191474649,
+          "sky_excluded_fraction": 0.0,
+          "n_line_pixels": 7,
+          "n_sideband_pixels": [
+            8,
+            13
+          ],
+          "status": "unavailable_coverage"
+        },
+        "OIII5007": {
+          "center_vacuum_A": 5008.24,
+          "halfwidth_rest_A": 8.0,
+          "sidebands_rest_A": [
+            20.0,
+            40.0
+          ],
+          "coverage_after_fixed_sky_exclusion": 1.0,
+          "sky_excluded_fraction": 0.0,
+          "n_line_pixels": 14,
+          "n_sideband_pixels": [
+            17,
+            17
+          ],
+          "status": "measured",
+          "flux_1e17_erg_cm2_s": 14.707497496555824,
+          "error_1e17_erg_cm2_s": 4.7257115412507105,
+          "snr": 3.1122292099664057,
+          "upper_bound_3sigma": 28.884632120307955,
+          "sideband_reduced_chi2": 0.8616189778123511,
+          "variance_inflation": 1.0,
+          "continuum_coefficients": [
+            12.619370893771269,
+            0.0005772467712400977
+          ]
+        }
+      }
+    },
+    {
+      "id": "2bf205a7-87cb-11ef-8f00-525400f334e1",
+      "survey": "sv1",
+      "measurements": {
+        "FeVII6087": {
+          "center_vacuum_A": 6088.64,
+          "halfwidth_rest_A": 8.0,
+          "sidebands_rest_A": [
+            20.0,
+            40.0
+          ],
+          "coverage_after_fixed_sky_exclusion": 1.0,
+          "sky_excluded_fraction": 0.04761904761899606,
+          "n_line_pixels": 20,
+          "n_sideband_pixels": [
+            27,
+            27
+          ],
+          "status": "measured",
+          "flux_1e17_erg_cm2_s": 0.6239515491961776,
+          "error_1e17_erg_cm2_s": 1.4671658037786701,
+          "snr": 0.425276780299266,
+          "upper_bound_3sigma": 5.025448960532188,
+          "sideband_reduced_chi2": 0.9344056967837442,
+          "variance_inflation": 1.0,
+          "continuum_coefficients": [
+            8.141979561224609,
+            -0.004221061519572857
+          ]
+        },
+        "OI6300": {
+          "center_vacuum_A": 6302.05,
+          "halfwidth_rest_A": 8.0,
+          "sidebands_rest_A": [
+            20.0,
+            40.0
+          ],
+          "coverage_after_fixed_sky_exclusion": 1.0,
+          "sky_excluded_fraction": 0.0,
+          "n_line_pixels": 22,
+          "n_sideband_pixels": [
+            27,
+            27
+          ],
+          "status": "measured",
+          "flux_1e17_erg_cm2_s": 2.922843326919687,
+          "error_1e17_erg_cm2_s": 1.359456965047493,
+          "snr": 2.150007982648849,
+          "upper_bound_3sigma": 7.001214222062166,
+          "sideband_reduced_chi2": 0.7947939081962718,
+          "variance_inflation": 1.0,
+          "continuum_coefficients": [
+            7.9243319413999105,
+            -0.00027138974562827904
+          ]
+        },
+        "SII6716": {
+          "center_vacuum_A": 6718.29,
+          "halfwidth_rest_A": 8.0,
+          "sidebands_rest_A": [
+            20.0,
+            40.0
+          ],
+          "coverage_after_fixed_sky_exclusion": 1.0,
+          "sky_excluded_fraction": 0.0,
+          "n_line_pixels": 22,
+          "n_sideband_pixels": [
+            27,
+            27
+          ],
+          "status": "measured",
+          "flux_1e17_erg_cm2_s": 18.472662329511422,
+          "error_1e17_erg_cm2_s": 1.461610194851221,
+          "snr": 12.638569705236474,
+          "upper_bound_3sigma": 22.857492914065084,
+          "sideband_reduced_chi2": 0.9480433167321672,
+          "variance_inflation": 1.0,
+          "continuum_coefficients": [
+            7.771617666177789,
+            -0.0034003161070526138
+          ]
+        },
+        "SII6731": {
+          "center_vacuum_A": 6732.67,
+          "halfwidth_rest_A": 8.0,
+          "sidebands_rest_A": [
+            20.0,
+            40.0
+          ],
+          "coverage_after_fixed_sky_exclusion": 1.0,
+          "sky_excluded_fraction": 0.0,
+          "n_line_pixels": 22,
+          "n_sideband_pixels": [
+            27,
+            27
+          ],
+          "status": "measured",
+          "flux_1e17_erg_cm2_s": 17.068488514409974,
+          "error_1e17_erg_cm2_s": 1.5618385483768107,
+          "snr": 10.928458983259782,
+          "upper_bound_3sigma": 21.754004159540408,
+          "sideband_reduced_chi2": 1.0156538186022372,
+          "variance_inflation": 1.0156538186022372,
+          "continuum_coefficients": [
+            7.87936469932158,
+            -0.0017375981909761823
+          ]
+        },
+        "OIII5007": {
+          "center_vacuum_A": 5008.24,
+          "halfwidth_rest_A": 8.0,
+          "sidebands_rest_A": [
+            20.0,
+            40.0
+          ],
+          "coverage_after_fixed_sky_exclusion": 1.0,
+          "sky_excluded_fraction": 0.0,
+          "n_line_pixels": 22,
+          "n_sideband_pixels": [
+            27,
+            27
+          ],
+          "status": "measured",
+          "flux_1e17_erg_cm2_s": 6.720447863624553,
+          "error_1e17_erg_cm2_s": 2.6190680550581282,
+          "snr": 2.5659691624452265,
+          "upper_bound_3sigma": 14.577652028798937,
+          "sideband_reduced_chi2": 1.3007525633679649,
+          "variance_inflation": 1.3007525633679649,
+          "continuum_coefficients": [
+            7.426992698312802,
+            -0.003451280595368981
+          ]
+        }
+      }
+    },
+    {
+      "id": "6acc3cce-884f-11ef-9a35-525400f334e1",
+      "survey": "main",
+      "measurements": {
+        "FeVII6087": {
+          "center_vacuum_A": 6088.64,
+          "halfwidth_rest_A": 8.0,
+          "sidebands_rest_A": [
+            20.0,
+            40.0
+          ],
+          "coverage_after_fixed_sky_exclusion": 1.0,
+          "sky_excluded_fraction": 0.04761904761899606,
+          "n_line_pixels": 20,
+          "n_sideband_pixels": [
+            27,
+            27
+          ],
+          "status": "measured",
+          "flux_1e17_erg_cm2_s": -3.8261109561536286,
+          "error_1e17_erg_cm2_s": 3.958167553021715,
+          "snr": -0.9666369361329151,
+          "upper_bound_3sigma": 11.874502659065145,
+          "sideband_reduced_chi2": 1.1569013926189882,
+          "variance_inflation": 1.1569013926189882,
+          "continuum_coefficients": [
+            8.573450689345227,
+            -0.0032297536901513533
+          ]
+        },
+        "OI6300": {
+          "center_vacuum_A": 6302.05,
+          "halfwidth_rest_A": 8.0,
+          "sidebands_rest_A": [
+            20.0,
+            40.0
+          ],
+          "coverage_after_fixed_sky_exclusion": 1.0,
+          "sky_excluded_fraction": 0.0,
+          "n_line_pixels": 22,
+          "n_sideband_pixels": [
+            27,
+            27
+          ],
+          "status": "measured",
+          "flux_1e17_erg_cm2_s": 0.04317658842741911,
+          "error_1e17_erg_cm2_s": 3.5688394582103244,
+          "snr": 0.012098215381498552,
+          "upper_bound_3sigma": 10.749694963058394,
+          "sideband_reduced_chi2": 0.8010006873504809,
+          "variance_inflation": 1.0,
+          "continuum_coefficients": [
+            8.141616512652675,
+            0.005902645156740646
+          ]
+        },
+        "SII6716": {
+          "center_vacuum_A": 6718.29,
+          "halfwidth_rest_A": 8.0,
+          "sidebands_rest_A": [
+            20.0,
+            40.0
+          ],
+          "coverage_after_fixed_sky_exclusion": 1.0,
+          "sky_excluded_fraction": 0.0,
+          "n_line_pixels": 22,
+          "n_sideband_pixels": [
+            25,
+            27
+          ],
+          "status": "measured",
+          "flux_1e17_erg_cm2_s": 19.182244220013757,
+          "error_1e17_erg_cm2_s": 3.583013261051355,
+          "snr": 5.353662636008542,
+          "upper_bound_3sigma": 29.93128400316782,
+          "sideband_reduced_chi2": 1.058698864496778,
+          "variance_inflation": 1.058698864496778,
+          "continuum_coefficients": [
+            7.7915514409809035,
+            -0.005030920186345622
+          ]
+        },
+        "SII6731": {
+          "center_vacuum_A": 6732.67,
+          "halfwidth_rest_A": 8.0,
+          "sidebands_rest_A": [
+            20.0,
+            40.0
+          ],
+          "coverage_after_fixed_sky_exclusion": 1.0,
+          "sky_excluded_fraction": 0.0,
+          "n_line_pixels": 22,
+          "n_sideband_pixels": [
+            23,
+            27
+          ],
+          "status": "measured",
+          "flux_1e17_erg_cm2_s": 18.404024943537614,
+          "error_1e17_erg_cm2_s": 3.8496218383678364,
+          "snr": 4.780735801140549,
+          "upper_bound_3sigma": 29.95289045864112,
+          "sideband_reduced_chi2": 1.0506890382722573,
+          "variance_inflation": 1.0506890382722573,
+          "continuum_coefficients": [
+            7.84908011754133,
+            -0.0037197245166660435
+          ]
+        },
+        "OIII5007": {
+          "center_vacuum_A": 5008.24,
+          "halfwidth_rest_A": 8.0,
+          "sidebands_rest_A": [
+            20.0,
+            40.0
+          ],
+          "coverage_after_fixed_sky_exclusion": 1.0,
+          "sky_excluded_fraction": 0.0,
+          "n_line_pixels": 22,
+          "n_sideband_pixels": [
+            27,
+            27
+          ],
+          "status": "measured",
+          "flux_1e17_erg_cm2_s": 1.2545852615716806,
+          "error_1e17_erg_cm2_s": 5.904265045814107,
+          "snr": 0.21248796452000956,
+          "upper_bound_3sigma": 18.967380399014,
+          "sideband_reduced_chi2": 1.0615858432985092,
+          "variance_inflation": 1.0615858432985092,
+          "continuum_coefficients": [
+            7.108879534366117,
+            0.0033898889259669487
+          ]
+        }
+      }
+    },
+    {
+      "id": "a6d1bcbc-885a-11ef-bbe3-525400f334e1",
+      "survey": "sv2",
+      "measurements": {
+        "FeVII6087": {
+          "center_vacuum_A": 6088.64,
+          "halfwidth_rest_A": 8.0,
+          "sidebands_rest_A": [
+            20.0,
+            40.0
+          ],
+          "coverage_after_fixed_sky_exclusion": 1.0,
+          "sky_excluded_fraction": 0.04761904761899606,
+          "n_line_pixels": 20,
+          "n_sideband_pixels": [
+            27,
+            27
+          ],
+          "status": "measured",
+          "flux_1e17_erg_cm2_s": 2.0007886534850643,
+          "error_1e17_erg_cm2_s": 2.6595840481054265,
+          "snr": 0.7522938238820992,
+          "upper_bound_3sigma": 9.979540797801345,
+          "sideband_reduced_chi2": 0.8000043699240553,
+          "variance_inflation": 1.0,
+          "continuum_coefficients": [
+            8.062910680000964,
+            -0.00132413511850355
+          ]
+        },
+        "OI6300": {
+          "center_vacuum_A": 6302.05,
+          "halfwidth_rest_A": 8.0,
+          "sidebands_rest_A": [
+            20.0,
+            40.0
+          ],
+          "coverage_after_fixed_sky_exclusion": 1.0,
+          "sky_excluded_fraction": 0.0,
+          "n_line_pixels": 22,
+          "n_sideband_pixels": [
+            27,
+            27
+          ],
+          "status": "measured",
+          "flux_1e17_erg_cm2_s": 4.755063161660954,
+          "error_1e17_erg_cm2_s": 2.6415725900084173,
+          "snr": 1.8000880156186818,
+          "upper_bound_3sigma": 12.679780931686206,
+          "sideband_reduced_chi2": 0.9598646497021839,
+          "variance_inflation": 1.0,
+          "continuum_coefficients": [
+            7.734705993777113,
+            0.0007085491571923137
+          ]
+        },
+        "SII6716": {
+          "center_vacuum_A": 6718.29,
+          "halfwidth_rest_A": 8.0,
+          "sidebands_rest_A": [
+            20.0,
+            40.0
+          ],
+          "coverage_after_fixed_sky_exclusion": 1.0,
+          "sky_excluded_fraction": 0.0,
+          "n_line_pixels": 22,
+          "n_sideband_pixels": [
+            27,
+            27
+          ],
+          "status": "measured",
+          "flux_1e17_erg_cm2_s": 12.024395681383615,
+          "error_1e17_erg_cm2_s": 2.7506893906458614,
+          "snr": 4.371411662208901,
+          "upper_bound_3sigma": 20.276463853321196,
+          "sideband_reduced_chi2": 1.0469669858978343,
+          "variance_inflation": 1.0469669858978343,
+          "continuum_coefficients": [
+            7.837473625780962,
+            -0.001066410653806569
+          ]
+        },
+        "SII6731": {
+          "center_vacuum_A": 6732.67,
+          "halfwidth_rest_A": 8.0,
+          "sidebands_rest_A": [
+            20.0,
+            40.0
+          ],
+          "coverage_after_fixed_sky_exclusion": 1.0,
+          "sky_excluded_fraction": 0.0,
+          "n_line_pixels": 22,
+          "n_sideband_pixels": [
+            27,
+            27
+          ],
+          "status": "measured",
+          "flux_1e17_erg_cm2_s": 8.843259565871485,
+          "error_1e17_erg_cm2_s": 2.8955537027369926,
+          "snr": 3.0540823875973993,
+          "upper_bound_3sigma": 17.52992067408246,
+          "sideband_reduced_chi2": 0.949060646791676,
+          "variance_inflation": 1.0,
+          "continuum_coefficients": [
+            7.858721927942681,
+            -0.004594363855872159
+          ]
+        },
+        "OIII5007": {
+          "center_vacuum_A": 5008.24,
+          "halfwidth_rest_A": 8.0,
+          "sidebands_rest_A": [
+            20.0,
+            40.0
+          ],
+          "coverage_after_fixed_sky_exclusion": 1.0,
+          "sky_excluded_fraction": 0.0,
+          "n_line_pixels": 22,
+          "n_sideband_pixels": [
+            27,
+            27
+          ],
+          "status": "measured",
+          "flux_1e17_erg_cm2_s": 18.685437985881958,
+          "error_1e17_erg_cm2_s": 4.311505098173862,
+          "snr": 4.333855013599815,
+          "upper_bound_3sigma": 31.619953280403543,
+          "sideband_reduced_chi2": 0.9205187398534023,
+          "variance_inflation": 1.0,
+          "continuum_coefficients": [
+            7.462500615881421,
+            -0.00702965732062985
+          ]
+        }
+      }
+    }
+  ]
+}

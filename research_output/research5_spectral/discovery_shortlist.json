@@ -1,0 +1,11 @@
+{
+  "status": "frozen empty complete-gate shortlist",
+  "n_screened_unique_objects": 36,
+  "n_identity_passing": 35,
+  "selected_ids": [],
+  "diagnostic_only_ids": [
+    39633274733070169
+  ],
+  "holdout5720": "unmeasured",
+  "reason": "No object passes complete adequately powered local-control normalized discovery contract"
+}

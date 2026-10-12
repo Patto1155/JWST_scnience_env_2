@@ -1,0 +1,1858 @@
+{
+  "status": "independent QR3 narrowband measurement; W1 contract not evaluated",
+  "coordinate_deg": [
+    57.641990555,
+    35.585678371
+  ],
+  "frames": [
+    {
+      "path": "research_output/research5_time_spherex_000.fits.gz",
+      "sha256": "20b91db27fd6b03ad27333477aa99192f86865711630cb46e535bf04f922e1ee",
+      "bytes": 61016,
+      "acquisition_receipt_sha256": "06a47be57d77ae6572424ae298ebaf8bd3edd9ec5d194158bd143f6aa787d624",
+      "original_url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W34_1A/l2b-v27-2026-243/4/level2_2026W34_1A_0017_1D4_spx_l2b-v27-2026-243.fits",
+      "original_epsf_sha256": "497f255170f4b32220affc7b7f6794fb46afe4e7d9995244f627103708fe6cd7",
+      "kind": "actual data independent measurement",
+      "image_shape": [
+        25,
+        25
+      ],
+      "source_pixel": [
+        12.074174416964723,
+        12.239848786701538
+      ],
+      "parent_pixel": [
+        300.07417441696475,
+        1367.2398487867015
+      ],
+      "edge_distance_pixels": 11.760151213298462,
+      "detector": "4",
+      "mjd": 61269.077386667,
+      "wavelength_um": 2.795478774600533,
+      "bandwidth_um": 0.07992473156462483,
+      "epsf_zone": 0,
+      "epsf_original_zone": 297,
+      "epsf_zone_wavelength_um": 2.766453266143799,
+      "epsf_raw_native_sum": 0.039590919970904886,
+      "epsf_native_sum": 1.0,
+      "psf_good_fraction": 1.0,
+      "central_flags": 2097152,
+      "flag_counts": {
+        "0": 70,
+        "69": 1,
+        "524288": 4,
+        "2097152": 544,
+        "2097216": 2,
+        "2097221": 3,
+        "270532608": 1
+      },
+      "benign_flag_mask": 2101248,
+      "solid_angle_sr": 8.973328438043763e-10,
+      "mjy_per_mjy_sr_pixel": 0.8973328438043763,
+      "solid_angle_method": "approximate local SIP-aware WCS; not calibration SAPM",
+      "psf_fits": {
+        "constant_r6": {
+          "amplitude": 5.734782946373752,
+          "formal_error": 0.08769150052478283,
+          "residual_scaled_error": 0.16232448896332646,
+          "background_coefficients": [
+            0.18605582774184662
+          ],
+          "reduced_chi2": 3.426518536000408,
+          "dof": 109,
+          "usable_psf_fraction": 1.0,
+          "flux_mjy": 5.1460090898703985,
+          "error_mjy": 0.14565909530055382
+        },
+        "plane_r6": {
+          "amplitude": 5.734194569183064,
+          "formal_error": 0.08769542109577726,
+          "residual_scaled_error": 0.16347041100685142,
+          "background_coefficients": [
+            0.1861147324035491,
+            -0.00025452329097479237,
+            -0.0005452217918563107
+          ],
+          "reduced_chi2": 3.4747572796975397,
+          "dof": 107,
+          "usable_psf_fraction": 1.0,
+          "flux_mjy": 5.145481119692649,
+          "error_mjy": 0.1466873687866482
+        },
+        "constant_r4": {
+          "amplitude": 5.759347237208528,
+          "formal_error": 0.08895539919900149,
+          "residual_scaled_error": 0.17258404347382328,
+          "background_coefficients": [
+            0.18316719121453634
+          ],
+          "reduced_chi2": 3.7640610072442353,
+          "dof": 48,
+          "usable_psf_fraction": 0.9986314351785133,
+          "flux_mjy": 5.168051434821207,
+          "error_mjy": 0.15486533052562396
+        }
+      },
+      "aperture_checks": {
+        "2": {
+          "amplitude": 5.69972751872954,
+          "formal_error": 0.09601963045381562,
+          "background_median": 0.18678030371665955,
+          "background_mad_sigma": 0.018731855745613573,
+          "psf_fraction": 0.9580474746030678,
+          "annulus_pixels": 148,
+          "flux_mjy": 5.11455270329164,
+          "error_mjy": 0.08616156805616766
+        },
+        "3": {
+          "amplitude": 5.518287955805816,
+          "formal_error": 0.12069149911580045,
+          "background_median": 0.18678030371665955,
+          "background_mad_sigma": 0.018731855745613573,
+          "psf_fraction": 0.9905682733590307,
+          "annulus_pixels": 148,
+          "flux_mjy": 4.951741024314671,
+          "error_mjy": 0.10830044612459458
+        }
+      },
+      "centroid_diagnostic": {
+        "offset_pixels": [
+          0.008096029812147057,
+          0.009133678323042842
+        ],
+        "optimizer_success": true,
+        "at_search_boundary": false,
+        "amplitude": 5.7438864513956,
+        "reduced_chi2": 3.457677370489508,
+        "status": "centroid sensitivity diagnostic, not alternative selection",
+        "flux_mjy": 5.154177963920241
+      },
+      "neighbor_zone_diagnostics": [
+        {
+          "zone": 0,
+          "original_zone": 297,
+          "distance_pixels": 56.75922393798828,
+          "flux_mjy": 5.145481119692649,
+          "reduced_chi2": 3.4747572796975397
+        },
+        {
+          "zone": 1,
+          "original_zone": 276,
+          "distance_pixels": 68.74121856689453,
+          "flux_mjy": 5.122554547908264,
+          "reduced_chi2": 3.505036895716512
+        },
+        {
+          "zone": 2,
+          "original_zone": 296,
+          "distance_pixels": 70.69986724853516,
+          "flux_mjy": 5.128165243230177,
+          "reduced_chi2": 3.469603109149004
+        },
+        {
+          "zone": 3,
+          "original_zone": 275,
+          "distance_pixels": 80.63632202148438,
+          "flux_mjy": 5.148819022665321,
+          "reduced_chi2": 3.4758363944596726
+        },
+        {
+          "zone": 4,
+          "original_zone": 298,
+          "distance_pixels": 142.54197692871094,
+          "flux_mjy": 5.1088220838390175,
+          "reduced_chi2": 3.420785146985265
+        }
+      ],
+      "limitations": [
+        "ePSF truncated calibration support; wings uncertain",
+        "diagonal variance; residual rescaling omits noise covariance",
+        "no instrument calibration floor imposed",
+        "narrowband flux is not WISE W1"
+      ]
+    },
+    {
+      "path": "research_output/research5_time_spherex_004.fits.gz",
+      "sha256": "4ee593d63a0f0bf9f496db395de07fe527f4dbc843e788169593e57e5a2f06dd",
+      "bytes": 61142,
+      "acquisition_receipt_sha256": "2a39fd249ea23bb06d1d253eefec6c2ecb4edac174647a531ae991971ae76094",
+      "original_url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W34_2A/l2b-v27-2026-243/4/level2_2026W34_2A_0202_1D4_spx_l2b-v27-2026-243.fits",
+      "original_epsf_sha256": "497f255170f4b32220affc7b7f6794fb46afe4e7d9995244f627103708fe6cd7",
+      "kind": "actual data independent measurement",
+      "image_shape": [
+        25,
+        25
+      ],
+      "source_pixel": [
+        12.256260935675893,
+        12.938811654707361
+      ],
+      "parent_pixel": [
+        1897.256260935676,
+        1738.9388116547073
+      ],
+      "edge_distance_pixels": 11.061188345292639,
+      "detector": "4",
+      "mjd": 61273.49238265,
+      "wavelength_um": 2.570462547828024,
+      "bandwidth_um": 0.073615614668214,
+      "epsf_zone": 0,
+      "epsf_original_zone": 376,
+      "epsf_zone_wavelength_um": 2.593160629272461,
+      "epsf_raw_native_sum": 0.03978234377571851,
+      "epsf_native_sum": 1.0,
+      "psf_good_fraction": 1.0,
+      "central_flags": 2097152,
+      "flag_counts": {
+        "0": 71,
+        "64": 1,
+        "524288": 3,
+        "2097152": 542,
+        "2097216": 1,
+        "2097221": 1,
+        "270532608": 5,
+        "270532609": 1
+      },
+      "benign_flag_mask": 2101248,
+      "solid_angle_sr": 8.942394239000385e-10,
+      "mjy_per_mjy_sr_pixel": 0.8942394239000385,
+      "solid_angle_method": "approximate local SIP-aware WCS; not calibration SAPM",
+      "psf_fits": {
+        "constant_r6": {
+          "amplitude": 5.429129409290269,
+          "formal_error": 0.08449850755871656,
+          "residual_scaled_error": 0.36256504560043507,
+          "background_coefficients": [
+            0.20167151108124803
+          ],
+          "reduced_chi2": 18.410847782879916,
+          "dof": 108,
+          "usable_psf_fraction": 1.0,
+          "flux_mjy": 4.854941555242487,
+          "error_mjy": 0.32421995750402427
+        },
+        "plane_r6": {
+          "amplitude": 5.428026341507976,
+          "formal_error": 0.08450999081518147,
+          "residual_scaled_error": 0.365386727700354,
+          "background_coefficients": [
+            0.20185039619231146,
+            0.0009536516848596023,
+            0.0007505404537094581
+          ],
+          "reduced_chi2": 18.69344854903188,
+          "dof": 106,
+          "usable_psf_fraction": 1.0,
+          "flux_mjy": 4.853955148544326,
+          "error_mjy": 0.3267432168794848
+        },
+        "constant_r4": {
+          "amplitude": 5.419854475436713,
+          "formal_error": 0.08582455023383033,
+          "residual_scaled_error": 0.17581452145183465,
+          "background_coefficients": [
+            0.20272428958088903
+          ],
+          "reduced_chi2": 4.196492134569612,
+          "dof": 47,
+          "usable_psf_fraction": 0.999372784298021,
+          "flux_mjy": 4.846647543736572,
+          "error_mjy": 0.15722027637634958
+        }
+      },
+      "aperture_checks": {
+        "2": {
+          "amplitude": 5.495664195862898,
+          "formal_error": 0.0936296640782138,
+          "background_median": 0.19736658781766891,
+          "background_mad_sigma": 0.019956076365709303,
+          "psf_fraction": 0.9628285984949164,
+          "annulus_pixels": 150,
+          "flux_mjy": 4.914439584456506,
+          "error_mjy": 0.08372733686525603
+        },
+        "3": {
+          "amplitude": 5.70241953832446,
+          "formal_error": 0.12075059667569682,
+          "background_median": 0.19736658781766891,
+          "background_mad_sigma": 0.019956076365709303,
+          "psf_fraction": 0.9943377316210726,
+          "annulus_pixels": 150,
+          "flux_mjy": 5.099328362787588,
+          "error_mjy": 0.10797994400686103
+        }
+      },
+      "centroid_diagnostic": {
+        "offset_pixels": [
+          -0.0008358522871178156,
+          -0.06925693564758316
+        ],
+        "optimizer_success": true,
+        "at_search_boundary": false,
+        "amplitude": 5.497089604260038,
+        "reduced_chi2": 18.382875840191836,
+        "status": "centroid sensitivity diagnostic, not alternative selection",
+        "flux_mjy": 4.915714240840387
+      },
+      "neighbor_zone_diagnostics": [
+        {
+          "zone": 0,
+          "original_zone": 376,
+          "distance_pixels": 39.591243743896484,
+          "flux_mjy": 4.853955148544326,
+          "reduced_chi2": 18.69344854903188
+        },
+        {
+          "zone": 1,
+          "original_zone": 397,
+          "distance_pixels": 57.80824661254883,
+          "flux_mjy": 4.859190693938858,
+          "reduced_chi2": 18.354592471874465
+        },
+        {
+          "zone": 2,
+          "original_zone": 377,
+          "distance_pixels": 101.63628387451172,
+          "flux_mjy": 4.901573449079173,
+          "reduced_chi2": 18.65750429303381
+        },
+        {
+          "zone": 3,
+          "original_zone": 375,
+          "distance_pixels": 108.06700897216797,
+          "flux_mjy": 4.880331787108739,
+          "reduced_chi2": 18.40671113441998
+        },
+        {
+          "zone": 4,
+          "original_zone": 398,
+          "distance_pixels": 110.01936340332031,
+          "flux_mjy": 4.897055913287926,
+          "reduced_chi2": 18.434638793038758
+        }
+      ],
+      "limitations": [
+        "ePSF truncated calibration support; wings uncertain",
+        "diagonal variance; residual rescaling omits noise covariance",
+        "no instrument calibration floor imposed",
+        "narrowband flux is not WISE W1"
+      ]
+    },
+    {
+      "path": "research_output/research5_time_spherex_008.fits.gz",
+      "sha256": "f3c58ea6f8e6789a6ea0e4e078400dc794024c7583bccc7f5fd1dbdebc141fa6",
+      "bytes": 61325,
+      "acquisition_receipt_sha256": "306b80c5d7a3efb5a5394f7c3e40664e7f98a320cf39c2be7dcf9f4b21ed7088",
+      "original_url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W34_1A/l2b-v27-2026-243/4/level2_2026W34_1A_0271_1D4_spx_l2b-v27-2026-243.fits",
+      "original_epsf_sha256": "497f255170f4b32220affc7b7f6794fb46afe4e7d9995244f627103708fe6cd7",
+      "kind": "actual data independent measurement",
+      "image_shape": [
+        25,
+        25
+      ],
+      "source_pixel": [
+        12.607068245137834,
+        12.778584861705767
+      ],
+      "parent_pixel": [
+        279.60706824513784,
+        679.7785848617058
+      ],
+      "edge_distance_pixels": 11.221415138294233,
+      "detector": "4",
+      "mjd": 61270.370798657,
+      "wavelength_um": 3.28710198861332,
+      "bandwidth_um": 0.09561368802059941,
+      "epsf_zone": 0,
+      "epsf_original_zone": 149,
+      "epsf_zone_wavelength_um": 3.251150369644165,
+      "epsf_raw_native_sum": 0.03978650025318749,
+      "epsf_native_sum": 1.0,
+      "psf_good_fraction": 0.9977045228208433,
+      "central_flags": 2097152,
+      "flag_counts": {
+        "0": 57,
+        "69": 1,
+        "524288": 1,
+        "655362": 1,
+        "2097152": 517,
+        "2097216": 1,
+        "2097221": 3,
+        "268435456": 1,
+        "268435457": 1,
+        "268435461": 2,
+        "268959744": 4,
+        "270532608": 22,
+        "270532609": 11,
+        "270532613": 3
+      },
+      "benign_flag_mask": 2101248,
+      "solid_angle_sr": 8.921553406828527e-10,
+      "mjy_per_mjy_sr_pixel": 0.8921553406828526,
+      "solid_angle_method": "approximate local SIP-aware WCS; not calibration SAPM",
+      "psf_fits": {
+        "constant_r6": {
+          "amplitude": 7.25565197596724,
+          "formal_error": 0.09749215061777396,
+          "residual_scaled_error": 0.15742657872547217,
+          "background_coefficients": [
+            0.2819410998278342
+          ],
+          "reduced_chi2": 2.6074549455466784,
+          "dof": 110,
+          "usable_psf_fraction": 0.9977045228208432,
+          "flux_mjy": 6.473168660495266,
+          "error_mjy": 0.14044896297535953
+        },
+        "plane_r6": {
+          "amplitude": 7.252845137602998,
+          "formal_error": 0.0974950076633155,
+          "residual_scaled_error": 0.14058317093664557,
+          "background_coefficients": [
+            0.2820654489559402,
+            -0.0014783099458061547,
+            -0.0038955214076340687
+          ],
+          "reduced_chi2": 2.0792270388489498,
+          "dof": 108,
+          "usable_psf_fraction": 0.9977045228208432,
+          "flux_mjy": 6.470664524658174,
+          "error_mjy": 0.12542202676125874
+        },
+        "constant_r4": {
+          "amplitude": 7.2845984438083535,
+          "formal_error": 0.099263342236781,
+          "residual_scaled_error": 0.14745522161163943,
+          "background_coefficients": [
+            0.2787011055105966
+          ],
+          "reduced_chi2": 2.2066960844897907,
+          "dof": 46,
+          "usable_psf_fraction": 0.9977045228208432,
+          "flux_mjy": 6.49899340637362,
+          "error_mjy": 0.1315529634723977
+        }
+      },
+      "aperture_checks": {
+        "2": {
+          "amplitude": 7.010081132788462,
+          "formal_error": 0.10996825832271874,
+          "background_median": 0.29280802607536316,
+          "background_mad_sigma": 0.025626106631755827,
+          "psf_fraction": 0.9661286892693028,
+          "annulus_pixels": 143,
+          "flux_mjy": 6.254081321237328,
+          "error_mjy": 0.09810876896820508
+        },
+        "3": {
+          "amplitude": 6.902816238740729,
+          "formal_error": 0.14291363287092593,
+          "background_median": 0.29280802607536316,
+          "background_mad_sigma": 0.025626106631755827,
+          "psf_fraction": 0.9935425715091424,
+          "annulus_pixels": 143,
+          "flux_mjy": 6.158384373144862,
+          "error_mjy": 0.12750116082218504
+        }
+      },
+      "centroid_diagnostic": {
+        "offset_pixels": [
+          0.023868725632290342,
+          0.006864467819378869
+        ],
+        "optimizer_success": true,
+        "at_search_boundary": false,
+        "amplitude": 7.267420586279139,
+        "reduced_chi2": 1.9832789921880456,
+        "status": "centroid sensitivity diagnostic, not alternative selection",
+        "flux_mjy": 6.483668089037441
+      },
+      "neighbor_zone_diagnostics": [
+        {
+          "zone": 0,
+          "original_zone": 149,
+          "distance_pixels": 60.98979187011719,
+          "flux_mjy": 6.470664524658174,
+          "reduced_chi2": 2.0792270388489498
+        },
+        {
+          "zone": 1,
+          "original_zone": 128,
+          "distance_pixels": 61.43187713623047,
+          "flux_mjy": 6.4777318360328096,
+          "reduced_chi2": 2.1727691616214058
+        },
+        {
+          "zone": 2,
+          "original_zone": 150,
+          "distance_pixels": 76.9374008178711,
+          "flux_mjy": 6.451473457100589,
+          "reduced_chi2": 1.9831810816191575
+        },
+        {
+          "zone": 3,
+          "original_zone": 129,
+          "distance_pixels": 77.28832244873047,
+          "flux_mjy": 6.424772325145067,
+          "reduced_chi2": 2.2271056791015713
+        },
+        {
+          "zone": 4,
+          "original_zone": 148,
+          "distance_pixels": 142.8062286376953,
+          "flux_mjy": 6.472863196386218,
+          "reduced_chi2": 2.2310763934875304
+        }
+      ],
+      "limitations": [
+        "ePSF truncated calibration support; wings uncertain",
+        "diagonal variance; residual rescaling omits noise covariance",
+        "no instrument calibration floor imposed",
+        "narrowband flux is not WISE W1"
+      ]
+    },
+    {
+      "path": "research_output/research5_time_spherex_012.fits.gz",
+      "sha256": "90691b26b23aa3247d7d0fffa40b51adf61448048cf0d3981120a8738c473179",
+      "bytes": 61345,
+      "acquisition_receipt_sha256": "09819d472b9b4cf28036234cd2018ae4c47c9e815eb55cddf0ced2be2ccda195",
+      "original_url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W34_1A/l2b-v27-2026-243/4/level2_2026W34_1A_0332_1D4_spx_l2b-v27-2026-243.fits",
+      "original_epsf_sha256": "497f255170f4b32220affc7b7f6794fb46afe4e7d9995244f627103708fe6cd7",
+      "kind": "actual data independent measurement",
+      "image_shape": [
+        25,
+        25
+      ],
+      "source_pixel": [
+        12.242609668047677,
+        12.61161497185406
+      ],
+      "parent_pixel": [
+        266.2426096680477,
+        220.61161497185407
+      ],
+      "edge_distance_pixels": 11.38838502814594,
+      "detector": "4",
+      "mjd": 61270.709327338,
+      "wavelength_um": 3.6555065219658722,
+      "bandwidth_um": 0.10190939201026289,
+      "epsf_zone": 0,
+      "epsf_original_zone": 44,
+      "epsf_zone_wavelength_um": 3.6385767459869385,
+      "epsf_raw_native_sum": 0.04012978272485891,
+      "epsf_native_sum": 1.0,
+      "psf_good_fraction": 0.3861845272366921,
+      "central_flags": 270532608,
+      "flag_counts": {
+        "0": 75,
+        "524288": 4,
+        "2097152": 511,
+        "2097216": 1,
+        "2097221": 1,
+        "268435456": 1,
+        "270532608": 23,
+        "270532609": 8,
+        "270532613": 1
+      },
+      "benign_flag_mask": 2101248,
+      "solid_angle_sr": 8.888557426503926e-10,
+      "mjy_per_mjy_sr_pixel": 0.8888557426503926,
+      "solid_angle_method": "approximate local SIP-aware WCS; not calibration SAPM",
+      "psf_fits": {
+        "constant_r6": {
+          "amplitude": 7.824066123711999,
+          "formal_error": 0.16945846197433242,
+          "residual_scaled_error": 0.2765359922387982,
+          "background_coefficients": [
+            0.2117116846986019
+          ],
+          "reduced_chi2": 2.6630345938250923,
+          "dof": 107,
+          "usable_psf_fraction": 0.3861845272366921,
+          "flux_mjy": 6.954466104937807,
+          "error_mjy": 0.24580060475098017
+        },
+        "plane_r6": {
+          "amplitude": 7.8220286628503874,
+          "formal_error": 0.16956553301444824,
+          "residual_scaled_error": 0.2778364485835479,
+          "background_coefficients": [
+            0.21169426036578282,
+            -0.00012523504097735054,
+            -0.0007845735932236593
+          ],
+          "reduced_chi2": 2.6847464651848174,
+          "dof": 105,
+          "usable_psf_fraction": 0.3861845272366921,
+          "flux_mjy": 6.952655096150538,
+          "error_mjy": 0.24695652284107708
+        },
+        "constant_r4": {
+          "amplitude": 7.824447733175417,
+          "formal_error": 0.17300236669349542,
+          "residual_scaled_error": 0.25847800524291625,
+          "background_coefficients": [
+            0.21169040941536652
+          ],
+          "reduced_chi2": 2.232251369738179,
+          "dof": 41,
+          "usable_psf_fraction": 0.3861845272366921,
+          "flux_mjy": 6.954805300700817,
+          "error_mjy": 0.2297496593089844
+        }
+      },
+      "aperture_checks": {
+        "2": {
+          "status": "insufficient aperture/background coverage"
+        },
+        "3": {
+          "status": "insufficient aperture/background coverage"
+        }
+      },
+      "centroid_diagnostic": {
+        "offset_pixels": [
+          -0.0015148347355626512,
+          -0.02233200094006567
+        ],
+        "optimizer_success": true,
+        "at_search_boundary": false,
+        "amplitude": 7.538630421836452,
+        "reduced_chi2": 2.667935801471498,
+        "status": "centroid sensitivity diagnostic, not alternative selection",
+        "flux_mjy": 6.700754942168282
+      },
+      "neighbor_zone_diagnostics": [
+        {
+          "zone": 0,
+          "original_zone": 44,
+          "distance_pixels": 32.301448822021484,
+          "flux_mjy": 6.952655096150538,
+          "reduced_chi2": 2.6847464651848174
+        },
+        {
+          "zone": 1,
+          "original_zone": 45,
+          "distance_pixels": 76.41670227050781,
+          "flux_mjy": 6.598706291928877,
+          "reduced_chi2": 2.750359662516975
+        },
+        {
+          "zone": 2,
+          "original_zone": 23,
+          "distance_pixels": 79.09029388427734,
+          "flux_mjy": 6.882462334839253,
+          "reduced_chi2": 2.7462578665932424
+        },
+        {
+          "zone": 3,
+          "original_zone": 24,
+          "distance_pixels": 105.12565612792969,
+          "flux_mjy": 6.743988335348491,
+          "reduced_chi2": 2.8256676447835005
+        },
+        {
+          "zone": 4,
+          "original_zone": 65,
+          "distance_pixels": 121.26402282714844,
+          "flux_mjy": 6.747605609656779,
+          "reduced_chi2": 2.6529990482091974
+        }
+      ],
+      "limitations": [
+        "ePSF truncated calibration support; wings uncertain",
+        "diagonal variance; residual rescaling omits noise covariance",
+        "no instrument calibration floor imposed",
+        "narrowband flux is not WISE W1"
+      ]
+    },
+    {
+      "path": "research_output/research5_time_spherex_014.fits.gz",
+      "sha256": "4704b04ce325a433cfa00e1ae55e879d678d803fa4cb72f5699b6977ac7af3b0",
+      "bytes": 61067,
+      "acquisition_receipt_sha256": "c586d6419e959131c3feb35c33d0398af7b28547b69b357303b6560446364216",
+      "original_url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W34_1A/l2b-v27-2026-243/4/level2_2026W34_1A_0372_1D4_spx_l2b-v27-2026-243.fits",
+      "original_epsf_sha256": "497f255170f4b32220affc7b7f6794fb46afe4e7d9995244f627103708fe6cd7",
+      "kind": "actual data independent measurement",
+      "image_shape": [
+        25,
+        25
+      ],
+      "source_pixel": [
+        12.294416257342185,
+        12.670764591575292
+      ],
+      "parent_pixel": [
+        15.294416257342185,
+        1974.6707645915753
+      ],
+      "edge_distance_pixels": 11.329235408424708,
+      "detector": "4",
+      "mjd": 61270.913268819,
+      "wavelength_um": 2.4493210288987872,
+      "bandwidth_um": 0.06023598362407862,
+      "epsf_zone": 0,
+      "epsf_original_zone": 420,
+      "epsf_zone_wavelength_um": 2.441135883331299,
+      "epsf_raw_native_sum": 0.03962680407444885,
+      "epsf_native_sum": 1.0,
+      "psf_good_fraction": 1.0000000000000002,
+      "central_flags": 2097152,
+      "flag_counts": {
+        "0": 67,
+        "524288": 4,
+        "2097152": 548,
+        "2097221": 1,
+        "270532608": 4,
+        "270663685": 1
+      },
+      "benign_flag_mask": 2101248,
+      "solid_angle_sr": 9.03519658651658e-10,
+      "mjy_per_mjy_sr_pixel": 0.903519658651658,
+      "solid_angle_method": "approximate local SIP-aware WCS; not calibration SAPM",
+      "psf_fits": {
+        "constant_r6": {
+          "amplitude": 6.633530039763128,
+          "formal_error": 0.1043472210868842,
+          "residual_scaled_error": 0.17797817716787412,
+          "background_coefficients": [
+            0.21796117016452915
+          ],
+          "reduced_chi2": 2.9091876386826847,
+          "dof": 109,
+          "usable_psf_fraction": 1.0,
+          "flux_mjy": 5.9935247971823005,
+          "error_mjy": 0.16080678188216194
+        },
+        "plane_r6": {
+          "amplitude": 6.636999852515121,
+          "formal_error": 0.10437833239748785,
+          "residual_scaled_error": 0.17849822137093552,
+          "background_coefficients": [
+            0.2177043902420776,
+            0.00027957229252717584,
+            -0.0010588270424316147
+          ],
+          "reduced_chi2": 2.9244693753120825,
+          "dof": 107,
+          "usable_psf_fraction": 1.0,
+          "flux_mjy": 5.996659841215567,
+          "error_mjy": 0.16127665204299574
+        },
+        "constant_r4": {
+          "amplitude": 6.6015136606474965,
+          "formal_error": 0.1059109115292929,
+          "residual_scaled_error": 0.18582232427750406,
+          "background_coefficients": [
+            0.22164876670290648
+          ],
+          "reduced_chi2": 3.078324254755097,
+          "dof": 48,
+          "usable_psf_fraction": 1.0,
+          "flux_mjy": 5.964597369252483,
+          "error_mjy": 0.16789412300106815
+        }
+      },
+      "aperture_checks": {
+        "2": {
+          "amplitude": 6.704877453893373,
+          "formal_error": 0.11718691114933526,
+          "background_median": 0.2173849493265152,
+          "background_mad_sigma": 0.02444237044751644,
+          "psf_fraction": 0.9671132246996937,
+          "annulus_pixels": 145,
+          "flux_mjy": 6.057988588442938,
+          "error_mjy": 0.10588067796008956
+        },
+        "3": {
+          "amplitude": 6.780803176119702,
+          "formal_error": 0.14961675907963562,
+          "background_median": 0.2173849493265152,
+          "background_mad_sigma": 0.02444237044751644,
+          "psf_fraction": 0.9967288350276147,
+          "annulus_pixels": 145,
+          "flux_mjy": 6.126588971071751,
+          "error_mjy": 0.13518168309219972
+        }
+      },
+      "centroid_diagnostic": {
+        "offset_pixels": [
+          0.014354356682119549,
+          -0.06647639816411448
+        ],
+        "optimizer_success": true,
+        "at_search_boundary": false,
+        "amplitude": 6.729535518273815,
+        "reduced_chi2": 2.4717274585549673,
+        "status": "centroid sensitivity diagnostic, not alternative selection",
+        "flux_mjy": 6.080267634354966
+      },
+      "neighbor_zone_diagnostics": [
+        {
+          "zone": 0,
+          "original_zone": 420,
+          "distance_pixels": 36.587554931640625,
+          "flux_mjy": 5.996659841215567,
+          "reduced_chi2": 2.9244693753120825
+        },
+        {
+          "zone": 1,
+          "original_zone": 399,
+          "distance_pixels": 87.27381134033203,
+          "flux_mjy": 5.996305633296841,
+          "reduced_chi2": 2.8757868359146883
+        },
+        {
+          "zone": 2,
+          "original_zone": 421,
+          "distance_pixels": 130.93313598632812,
+          "flux_mjy": 6.028444763785127,
+          "reduced_chi2": 2.9177538231513025
+        },
+        {
+          "zone": 3,
+          "original_zone": 400,
+          "distance_pixels": 153.041015625,
+          "flux_mjy": 5.978380587198129,
+          "reduced_chi2": 2.7612414998124017
+        },
+        {
+          "zone": 4,
+          "original_zone": 378,
+          "distance_pixels": 181.02012634277344,
+          "flux_mjy": 5.990986651806481,
+          "reduced_chi2": 2.877939277051537
+        }
+      ],
+      "limitations": [
+        "ePSF truncated calibration support; wings uncertain",
+        "diagonal variance; residual rescaling omits noise covariance",
+        "no instrument calibration floor imposed",
+        "narrowband flux is not WISE W1"
+      ]
+    },
+    {
+      "path": "research_output/research5_time_spherex_018.fits.gz",
+      "sha256": "6fce281c497a5c57984af80988b813fe073230ee7c98e87eda4279a954f9c730",
+      "bytes": 61122,
+      "acquisition_receipt_sha256": "58dba61a6cddcf451790e5cbce4671b9aa6147c1bed283cb77de1063a63a8a81",
+      "original_url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W34_1A/l2b-v27-2026-243/4/level2_2026W34_1A_0532_1D4_spx_l2b-v27-2026-243.fits",
+      "original_epsf_sha256": "497f255170f4b32220affc7b7f6794fb46afe4e7d9995244f627103708fe6cd7",
+      "kind": "actual data independent measurement",
+      "image_shape": [
+        25,
+        25
+      ],
+      "source_pixel": [
+        0.6846505071448243,
+        12.15548505071159
+      ],
+      "parent_pixel": [
+        0.6846505071448243,
+        1518.1554850507116
+      ],
+      "edge_distance_pixels": 0.6846505071448243,
+      "detector": "4",
+      "mjd": 61271.726849745,
+      "wavelength_um": 2.718644397788719,
+      "bandwidth_um": 0.075950352722941,
+      "epsf_zone": 0,
+      "epsf_original_zone": 315,
+      "epsf_zone_wavelength_um": 2.723461866378784,
+      "epsf_raw_native_sum": 0.039645268632338374,
+      "epsf_native_sum": 0.9676940531171287,
+      "psf_good_fraction": 0.9676940531171289,
+      "central_flags": 2097152,
+      "flag_counts": {
+        "0": 125,
+        "524288": 9,
+        "2097152": 471,
+        "2097216": 1,
+        "268435456": 3,
+        "268435461": 4,
+        "268959744": 2,
+        "270532608": 7,
+        "270532613": 3
+      },
+      "benign_flag_mask": 2101248,
+      "solid_angle_sr": 8.999904858276426e-10,
+      "mjy_per_mjy_sr_pixel": 0.8999904858276426,
+      "solid_angle_method": "approximate local SIP-aware WCS; not calibration SAPM",
+      "psf_fits": {
+        "constant_r6": {
+          "amplitude": 7.617548847386645,
+          "formal_error": 0.0969049435960993,
+          "residual_scaled_error": 0.1976294428118304,
+          "background_coefficients": [
+            0.18744632502637146
+          ],
+          "reduced_chi2": 4.1592155317758115,
+          "dof": 69,
+          "usable_psf_fraction": 0.9676940531171287,
+          "flux_mjy": 6.8557214879753055,
+          "error_mjy": 0.17786461825006555
+        },
+        "plane_r6": {
+          "amplitude": 7.59900332217334,
+          "formal_error": 0.09817335415414569,
+          "residual_scaled_error": 0.20150802125267583,
+          "background_coefficients": [
+            0.18974326953295267,
+            -0.000947991693859195,
+            -0.0010758547299562723
+          ],
+          "reduced_chi2": 4.213057810230811,
+          "dof": 67,
+          "usable_psf_fraction": 0.9676940531171287,
+          "flux_mjy": 6.839030691728655,
+          "error_mjy": 0.18135530194536267
+        },
+        "constant_r4": {
+          "amplitude": 7.606714434141845,
+          "formal_error": 0.09851849641280491,
+          "residual_scaled_error": 0.21469663687379734,
+          "background_coefficients": [
+            0.18870740100445632
+          ],
+          "reduced_chi2": 4.7491395683588165,
+          "dof": 33,
+          "usable_psf_fraction": 0.9676940531171287,
+          "flux_mjy": 6.8459706191354615,
+          "error_mjy": 0.19322493052560985
+        }
+      },
+      "aperture_checks": {
+        "2": {
+          "amplitude": 7.699136042092422,
+          "formal_error": 0.10504183930432216,
+          "background_median": 0.18822115659713745,
+          "background_mad_sigma": 0.01891790741086006,
+          "psf_fraction": 0.9468119203069335,
+          "annulus_pixels": 85,
+          "flux_mjy": 6.929149186975873,
+          "error_mjy": 0.09453665598772606
+        },
+        "3": {
+          "amplitude": 7.69971280331506,
+          "formal_error": 0.12330894126442335,
+          "background_median": 0.18822115659713745,
+          "background_mad_sigma": 0.01891790741086006,
+          "psf_fraction": 0.9634735453684602,
+          "annulus_pixels": 85,
+          "flux_mjy": 6.929668266588841,
+          "error_mjy": 0.11097687395546062
+        }
+      },
+      "centroid_diagnostic": {
+        "offset_pixels": [
+          0.04067012253852601,
+          -0.008271315158259763
+        ],
+        "optimizer_success": true,
+        "at_search_boundary": false,
+        "amplitude": 7.661149554111168,
+        "reduced_chi2": 3.6293520846368508,
+        "status": "centroid sensitivity diagnostic, not alternative selection",
+        "flux_mjy": 6.894961709202738
+      },
+      "neighbor_zone_diagnostics": [
+        {
+          "zone": 0,
+          "original_zone": 315,
+          "distance_pixels": 49.12213134765625,
+          "flux_mjy": 6.839030691728655,
+          "reduced_chi2": 4.213057810230811
+        },
+        {
+          "zone": 1,
+          "original_zone": 336,
+          "distance_pixels": 96.62001037597656,
+          "flux_mjy": 6.81580835927437,
+          "reduced_chi2": 4.657344967591831
+        },
+        {
+          "zone": 2,
+          "original_zone": 294,
+          "distance_pixels": 119.84998321533203,
+          "flux_mjy": 6.852394069712916,
+          "reduced_chi2": 4.248108548186347
+        },
+        {
+          "zone": 3,
+          "original_zone": 316,
+          "distance_pixels": 145.1078643798828,
+          "flux_mjy": 6.752949701877237,
+          "reduced_chi2": 4.6859504516234045
+        },
+        {
+          "zone": 4,
+          "original_zone": 337,
+          "distance_pixels": 167.26844787597656,
+          "flux_mjy": 6.75869457258986,
+          "reduced_chi2": 4.701650469378321
+        }
+      ],
+      "limitations": [
+        "ePSF truncated calibration support; wings uncertain",
+        "diagonal variance; residual rescaling omits noise covariance",
+        "no instrument calibration floor imposed",
+        "narrowband flux is not WISE W1"
+      ]
+    },
+    {
+      "path": "research_output/research5_time_spherex_019.fits.gz",
+      "sha256": "5e0d21148220e4ce24abcc945057a08df81609566b0b1e5c8da969f2ef95c9a7",
+      "bytes": 60974,
+      "acquisition_receipt_sha256": "4fca33a92fc2389ed1f7bbb3a84a607923625e350491333d4e65e4fe9c5a321e",
+      "original_url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W34_1A/l2b-v27-2026-243/4/level2_2026W34_1A_0545_1D4_spx_l2b-v27-2026-243.fits",
+      "original_epsf_sha256": "497f255170f4b32220affc7b7f6794fb46afe4e7d9995244f627103708fe6cd7",
+      "kind": "actual data independent measurement",
+      "image_shape": [
+        25,
+        25
+      ],
+      "source_pixel": [
+        12.10840600782451,
+        12.211292950576937
+      ],
+      "parent_pixel": [
+        286.1084060078245,
+        909.211292950577
+      ],
+      "edge_distance_pixels": 11.788707049423063,
+      "detector": "4",
+      "mjd": 61271.795973113,
+      "wavelength_um": 3.1140873723069626,
+      "bandwidth_um": 0.09166958181490246,
+      "epsf_zone": 0,
+      "epsf_original_zone": 191,
+      "epsf_zone_wavelength_um": 3.107076644897461,
+      "epsf_raw_native_sum": 0.040235080709556774,
+      "epsf_native_sum": 1.0000000000000002,
+      "psf_good_fraction": 1.0000000000000002,
+      "central_flags": 2097152,
+      "flag_counts": {
+        "0": 70,
+        "524288": 3,
+        "2097152": 546,
+        "2097216": 1,
+        "268435456": 2,
+        "268435457": 1,
+        "270532608": 2
+      },
+      "benign_flag_mask": 2101248,
+      "solid_angle_sr": 8.93803540378135e-10,
+      "mjy_per_mjy_sr_pixel": 0.8938035403781349,
+      "solid_angle_method": "approximate local SIP-aware WCS; not calibration SAPM",
+      "psf_fits": {
+        "constant_r6": {
+          "amplitude": 8.133617850826244,
+          "formal_error": 0.11790048164006692,
+          "residual_scaled_error": 0.23036067780947722,
+          "background_coefficients": [
+            0.17046365577551736
+          ],
+          "reduced_chi2": 3.8175570589085264,
+          "dof": 110,
+          "usable_psf_fraction": 1.0,
+          "flux_mjy": 7.269856431151294,
+          "error_mjy": 0.2058971893900176
+        },
+        "plane_r6": {
+          "amplitude": 8.133419236355344,
+          "formal_error": 0.11790651288571441,
+          "residual_scaled_error": 0.23048233183687702,
+          "background_coefficients": [
+            0.1705616495552788,
+            -3.936335537646459e-05,
+            -0.0011403211244377823
+          ],
+          "reduced_chi2": 3.821199285791139,
+          "dof": 108,
+          "usable_psf_fraction": 1.0,
+          "flux_mjy": 7.269678908834033,
+          "error_mjy": 0.2060059241904088
+        },
+        "constant_r4": {
+          "amplitude": 8.135608719138391,
+          "formal_error": 0.12054040752030848,
+          "residual_scaled_error": 0.2711908398178894,
+          "background_coefficients": [
+            0.17049794985196776
+          ],
+          "reduced_chi2": 5.0615638678935335,
+          "dof": 48,
+          "usable_psf_fraction": 1.0007951607161119,
+          "flux_mjy": 7.271635876297117,
+          "error_mjy": 0.24239133274734923
+        }
+      },
+      "aperture_checks": {
+        "2": {
+          "amplitude": 8.487547851132883,
+          "formal_error": 0.1291354120991064,
+          "background_median": 0.16991104930639267,
+          "background_mad_sigma": 0.019706851306557655,
+          "psf_fraction": 0.9558579558569759,
+          "annulus_pixels": 150,
+          "flux_mjy": 7.586200318471402,
+          "error_mjy": 0.11542168852237074
+        },
+        "3": {
+          "amplitude": 8.483209123438085,
+          "formal_error": 0.14581882182274994,
+          "background_median": 0.16991104930639267,
+          "background_mad_sigma": 0.019706851306557655,
+          "psf_fraction": 0.9918146453494792,
+          "annulus_pixels": 150,
+          "flux_mjy": 7.582322348297055,
+          "error_mjy": 0.13033337919894233
+        }
+      },
+      "centroid_diagnostic": {
+        "offset_pixels": [
+          -0.018206631062693407,
+          0.028953296042639243
+        ],
+        "optimizer_success": true,
+        "at_search_boundary": false,
+        "amplitude": 8.116931761678924,
+        "reduced_chi2": 3.6563172506684016,
+        "status": "centroid sensitivity diagnostic, not alternative selection",
+        "flux_mjy": 7.254942345596354
+      },
+      "neighbor_zone_diagnostics": [
+        {
+          "zone": 0,
+          "original_zone": 191,
+          "distance_pixels": 45.68352508544922,
+          "flux_mjy": 7.269678908834033,
+          "reduced_chi2": 3.821199285791139
+        },
+        {
+          "zone": 1,
+          "original_zone": 192,
+          "distance_pixels": 54.986141204833984,
+          "flux_mjy": 7.352814809655936,
+          "reduced_chi2": 3.2641483597563647
+        },
+        {
+          "zone": 2,
+          "original_zone": 170,
+          "distance_pixels": 94.70834350585938,
+          "flux_mjy": 7.403779059112477,
+          "reduced_chi2": 3.393560622896721
+        },
+        {
+          "zone": 3,
+          "original_zone": 171,
+          "distance_pixels": 99.52969360351562,
+          "flux_mjy": 7.318721194421757,
+          "reduced_chi2": 3.442543115921504
+        },
+        {
+          "zone": 4,
+          "original_zone": 212,
+          "distance_pixels": 118.64977264404297,
+          "flux_mjy": 7.362496930826826,
+          "reduced_chi2": 2.9479545691753106
+        }
+      ],
+      "limitations": [
+        "ePSF truncated calibration support; wings uncertain",
+        "diagonal variance; residual rescaling omits noise covariance",
+        "no instrument calibration floor imposed",
+        "narrowband flux is not WISE W1"
+      ]
+    },
+    {
+      "path": "research_output/research5_time_spherex_021.fits.gz",
+      "sha256": "ce38390a0a2ec204d24d8d6785771d6dfb227b93c61c5263faa9157294f6d2ff",
+      "bytes": 61165,
+      "acquisition_receipt_sha256": "34d49e1269904d0e29f95d33f4674b9f1b2fb77d3c933a99048a77be3ab0f2be",
+      "original_url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W34_1A/l2b-v27-2026-243/4/level2_2026W34_1A_0559_3D4_spx_l2b-v27-2026-243.fits",
+      "original_epsf_sha256": "497f255170f4b32220affc7b7f6794fb46afe4e7d9995244f627103708fe6cd7",
+      "kind": "actual data independent measurement",
+      "image_shape": [
+        25,
+        25
+      ],
+      "source_pixel": [
+        12.314853031150172,
+        12.649078919856581
+      ],
+      "parent_pixel": [
+        1903.3148530311503,
+        1967.6490789198565
+      ],
+      "edge_distance_pixels": 11.350921080143419,
+      "detector": "4",
+      "mjd": 61271.866695347,
+      "wavelength_um": 2.4436351420460176,
+      "bandwidth_um": 0.056374255175816075,
+      "epsf_zone": 0,
+      "epsf_original_zone": 439,
+      "epsf_zone_wavelength_um": 2.434705972671509,
+      "epsf_raw_native_sum": 0.03965748867047195,
+      "epsf_native_sum": 0.9999999999999997,
+      "psf_good_fraction": 0.9996518083322998,
+      "central_flags": 2097152,
+      "flag_counts": {
+        "0": 73,
+        "524288": 1,
+        "2097152": 547,
+        "2097216": 1,
+        "2097222": 1,
+        "2228230": 1,
+        "270532608": 1
+      },
+      "benign_flag_mask": 2101248,
+      "solid_angle_sr": 8.959227633443621e-10,
+      "mjy_per_mjy_sr_pixel": 0.895922763344362,
+      "solid_angle_method": "approximate local SIP-aware WCS; not calibration SAPM",
+      "psf_fits": {
+        "constant_r6": {
+          "amplitude": 7.812043901905533,
+          "formal_error": 0.11801854129009696,
+          "residual_scaled_error": 0.18651982396234104,
+          "background_coefficients": [
+            0.22499548419128904
+          ],
+          "reduced_chi2": 2.4977531128205586,
+          "dof": 113,
+          "usable_psf_fraction": 0.9996518083322998,
+          "flux_mjy": 6.998987959962678,
+          "error_mjy": 0.16710735610284455
+        },
+        "plane_r6": {
+          "amplitude": 7.8145515480914645,
+          "formal_error": 0.11802218925708895,
+          "residual_scaled_error": 0.18554185220401373,
+          "background_coefficients": [
+            0.22487448539904056,
+            0.0014486502911530477,
+            -0.0007470688456529961
+          ],
+          "reduced_chi2": 2.47147625754268,
+          "dof": 111,
+          "usable_psf_fraction": 0.9996518083322998,
+          "flux_mjy": 7.0012346172630675,
+          "error_mjy": 0.1662311689426512
+        },
+        "constant_r4": {
+          "amplitude": 7.795052128339483,
+          "formal_error": 0.11999177979448399,
+          "residual_scaled_error": 0.1945100847606411,
+          "background_coefficients": [
+            0.22683919610596792
+          ],
+          "reduced_chi2": 2.627733126218923,
+          "dof": 47,
+          "usable_psf_fraction": 0.9996518083322998,
+          "flux_mjy": 6.9837646432352605,
+          "error_mjy": 0.17426601263709968
+        }
+      },
+      "aperture_checks": {
+        "2": {
+          "amplitude": 7.677922687377438,
+          "formal_error": 0.12973124760413787,
+          "background_median": 0.2305634468793869,
+          "background_mad_sigma": 0.026416696415841576,
+          "psf_fraction": 0.9688400531573969,
+          "annulus_pixels": 152,
+          "flux_mjy": 6.878825710819565,
+          "error_mjy": 0.11622917784561085
+        },
+        "3": {
+          "amplitude": 7.6506310969579365,
+          "formal_error": 0.16365915367746717,
+          "background_median": 0.2305634468793869,
+          "background_mad_sigma": 0.026416696415841576,
+          "psf_fraction": 0.9972256291551288,
+          "annulus_pixels": 152,
+          "flux_mjy": 6.854374553714862,
+          "error_mjy": 0.146625961209316
+        }
+      },
+      "centroid_diagnostic": {
+        "offset_pixels": [
+          -0.012965302821204115,
+          0.01054029054748031
+        ],
+        "optimizer_success": true,
+        "at_search_boundary": false,
+        "amplitude": 7.817118635877007,
+        "reduced_chi2": 2.441901245754151,
+        "status": "centroid sensitivity diagnostic, not alternative selection",
+        "flux_mjy": 7.003534529645638
+      },
+      "neighbor_zone_diagnostics": [
+        {
+          "zone": 0,
+          "original_zone": 439,
+          "distance_pixels": 25.154321670532227,
+          "flux_mjy": 7.0012346172630675,
+          "reduced_chi2": 2.47147625754268
+        },
+        {
+          "zone": 1,
+          "original_zone": 418,
+          "distance_pixels": 74.47541046142578,
+          "flux_mjy": 6.997646421513231,
+          "reduced_chi2": 2.4821977628880565
+        },
+        {
+          "zone": 2,
+          "original_zone": 440,
+          "distance_pixels": 90.6537857055664,
+          "flux_mjy": 7.002557740367882,
+          "reduced_chi2": 2.437319066173538
+        },
+        {
+          "zone": 3,
+          "original_zone": 438,
+          "distance_pixels": 109.18265533447266,
+          "flux_mjy": 7.0219757453203835,
+          "reduced_chi2": 2.466380851324646
+        },
+        {
+          "zone": 4,
+          "original_zone": 419,
+          "distance_pixels": 114.5947494506836,
+          "flux_mjy": 6.976995147641401,
+          "reduced_chi2": 2.6968212372258735
+        }
+      ],
+      "limitations": [
+        "ePSF truncated calibration support; wings uncertain",
+        "diagonal variance; residual rescaling omits noise covariance",
+        "no instrument calibration floor imposed",
+        "narrowband flux is not WISE W1"
+      ]
+    },
+    {
+      "path": "research_output/research5_time_spherex_023.fits.gz",
+      "sha256": "6c1bd8263d5ac76ace58d16827e2d7f7453bf73b7c5c5c5188f177aa3c280f06",
+      "bytes": 60310,
+      "acquisition_receipt_sha256": "8463c5580c9090caae800566838771ebbca5dbfc2e183e62760f63a3d4aa4590",
+      "original_url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W34_2A/l2b-v27-2026-243/5/level2_2026W34_2A_0643_1D5_spx_l2b-v27-2026-243.fits",
+      "original_epsf_sha256": "8482e31172153e7c407cdab0d6ac54d90d687447d0584b6cf7e0ed1b31148aec",
+      "kind": "actual data independent measurement",
+      "image_shape": [
+        25,
+        25
+      ],
+      "source_pixel": [
+        12.038148046150615,
+        12.462884419301345
+      ],
+      "parent_pixel": [
+        1527.0381480461506,
+        1369.4628844193014
+      ],
+      "edge_distance_pixels": 11.537115580698655,
+      "detector": "5",
+      "mjd": 61275.464521551,
+      "wavelength_um": 3.999477747282774,
+      "bandwidth_um": 0.03638041068338976,
+      "epsf_zone": 0,
+      "epsf_original_zone": 309,
+      "epsf_zone_wavelength_um": 3.9808011054992676,
+      "epsf_raw_native_sum": 0.039681326267515506,
+      "epsf_native_sum": 1.0,
+      "psf_good_fraction": 1.0,
+      "central_flags": 2097152,
+      "flag_counts": {
+        "0": 174,
+        "69": 1,
+        "524288": 6,
+        "2097152": 443,
+        "2097221": 1
+      },
+      "benign_flag_mask": 2101248,
+      "solid_angle_sr": 8.904494749807489e-10,
+      "mjy_per_mjy_sr_pixel": 0.8904494749807489,
+      "solid_angle_method": "approximate local SIP-aware WCS; not calibration SAPM",
+      "psf_fits": {
+        "constant_r6": {
+          "amplitude": 6.038438779396083,
+          "formal_error": 0.17946512253611255,
+          "residual_scaled_error": 0.2186875745869568,
+          "background_coefficients": [
+            0.2608822512066664
+          ],
+          "reduced_chi2": 1.4848688489224053,
+          "dof": 109,
+          "usable_psf_fraction": 1.0,
+          "flux_mjy": 5.376924640816636,
+          "error_mjy": 0.19473023597576905
+        },
+        "plane_r6": {
+          "amplitude": 6.036542076478057,
+          "formal_error": 0.17948190852748522,
+          "residual_scaled_error": 0.2198595763868199,
+          "background_coefficients": [
+            0.26104607266358326,
+            -0.0011457676941269285,
+            0.0005494856664467593
+          ],
+          "reduced_chi2": 1.5005463534357313,
+          "dof": 107,
+          "usable_psf_fraction": 1.0,
+          "flux_mjy": 5.3752357226990854,
+          "error_mjy": 0.19577384436313364
+        },
+        "constant_r4": {
+          "amplitude": 6.034545078471854,
+          "formal_error": 0.18261660742085523,
+          "residual_scaled_error": 0.23716449859927935,
+          "background_coefficients": [
+            0.2613548966572485
+          ],
+          "reduced_chi2": 1.6866261069139319,
+          "dof": 49,
+          "usable_psf_fraction": 1.0,
+          "flux_mjy": 5.373457496872925,
+          "error_mjy": 0.21118300326180084
+        }
+      },
+      "aperture_checks": {
+        "2": {
+          "amplitude": 6.04939390002589,
+          "formal_error": 0.20757596712740922,
+          "background_median": 0.26039108633995056,
+          "background_mad_sigma": 0.0458435368180275,
+          "psf_fraction": 0.9575004371350022,
+          "annulus_pixels": 146,
+          "flux_mjy": 5.386679622229798,
+          "error_mjy": 0.18483591094722274
+        },
+        "3": {
+          "amplitude": 6.147193799196495,
+          "formal_error": 0.269009890716059,
+          "background_median": 0.26039108633995056,
+          "background_mad_sigma": 0.0458435368180275,
+          "psf_fraction": 0.9949677268315743,
+          "annulus_pixels": 146,
+          "flux_mjy": 5.473765491099434,
+          "error_mjy": 0.2395397159527434
+        }
+      },
+      "centroid_diagnostic": {
+        "offset_pixels": [
+          0.0017993183786004718,
+          0.0014849080514710326
+        ],
+        "optimizer_success": true,
+        "at_search_boundary": false,
+        "amplitude": 6.036131252059382,
+        "reduced_chi2": 1.500390456604523,
+        "status": "centroid sensitivity diagnostic, not alternative selection",
+        "flux_mjy": 5.374869904311168
+      },
+      "neighbor_zone_diagnostics": [
+        {
+          "zone": 0,
+          "original_zone": 309,
+          "distance_pixels": 44.349788665771484,
+          "flux_mjy": 5.3752357226990854,
+          "reduced_chi2": 1.5005463534357313
+        },
+        {
+          "zone": 1,
+          "original_zone": 288,
+          "distance_pixels": 62.470394134521484,
+          "flux_mjy": 5.327730711374173,
+          "reduced_chi2": 1.4609082810373761
+        },
+        {
+          "zone": 2,
+          "original_zone": 310,
+          "distance_pixels": 84.63784790039062,
+          "flux_mjy": 5.364397153605056,
+          "reduced_chi2": 1.495815660598167
+        },
+        {
+          "zone": 3,
+          "original_zone": 289,
+          "distance_pixels": 95.38978576660156,
+          "flux_mjy": 5.3457794880643,
+          "reduced_chi2": 1.4716530416949836
+        },
+        {
+          "zone": 4,
+          "original_zone": 308,
+          "distance_pixels": 125.07484436035156,
+          "flux_mjy": 5.294768353378547,
+          "reduced_chi2": 1.4402356506590532
+        }
+      ],
+      "limitations": [
+        "ePSF truncated calibration support; wings uncertain",
+        "diagonal variance; residual rescaling omits noise covariance",
+        "no instrument calibration floor imposed",
+        "narrowband flux is not WISE W1"
+      ]
+    },
+    {
+      "path": "research_output/research5_time_spherex_029.fits.gz",
+      "sha256": "fb757dffdc920e6a7b519f65ba6101584d94d6e65a04cc6ec5418a85117486ad",
+      "bytes": 60184,
+      "acquisition_receipt_sha256": "694d1b38b88741ba508b362d80d802d75d6c66db7ba06e7f6a17a77c13f0469d",
+      "original_url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W34_2A/l2b-v27-2026-243/5/level2_2026W34_2A_0753_1D5_spx_l2b-v27-2026-243.fits",
+      "original_epsf_sha256": "8482e31172153e7c407cdab0d6ac54d90d687447d0584b6cf7e0ed1b31148aec",
+      "kind": "actual data independent measurement",
+      "image_shape": [
+        25,
+        25
+      ],
+      "source_pixel": [
+        12.510481175261516,
+        12.640875730168222
+      ],
+      "parent_pixel": [
+        1865.5104811752615,
+        1095.6408757301683
+      ],
+      "edge_distance_pixels": 11.359124269831778,
+      "detector": "5",
+      "mjd": 61275.936464861,
+      "wavelength_um": 4.090424374799431,
+      "bandwidth_um": 0.036607931105534494,
+      "epsf_zone": 0,
+      "epsf_original_zone": 250,
+      "epsf_zone_wavelength_um": 4.078179836273193,
+      "epsf_raw_native_sum": 0.039797135868050545,
+      "epsf_native_sum": 0.9999999999999998,
+      "psf_good_fraction": 0.9999999999999998,
+      "central_flags": 2097152,
+      "flag_counts": {
+        "0": 180,
+        "524288": 6,
+        "2097152": 438,
+        "2097221": 1
+      },
+      "benign_flag_mask": 2101248,
+      "solid_angle_sr": 8.889265104955108e-10,
+      "mjy_per_mjy_sr_pixel": 0.8889265104955107,
+      "solid_angle_method": "approximate local SIP-aware WCS; not calibration SAPM",
+      "psf_fits": {
+        "constant_r6": {
+          "amplitude": 6.246297584597541,
+          "formal_error": 0.18441513884552788,
+          "residual_scaled_error": 0.20369257160493592,
+          "background_coefficients": [
+            0.29351323997735423
+          ],
+          "reduced_chi2": 1.2199927294367374,
+          "dof": 113,
+          "usable_psf_fraction": 0.9999999999999998,
+          "flux_mjy": 5.55249951539283,
+          "error_mjy": 0.18106772689063264
+        },
+        "plane_r6": {
+          "amplitude": 6.245763293814613,
+          "formal_error": 0.18441549648973454,
+          "residual_scaled_error": 0.20380902456770597,
+          "background_coefficients": [
+            0.29349361053439,
+            -0.0017119502689957628,
+            0.00010953740233139423
+          ],
+          "reduced_chi2": 1.2213833535073886,
+          "dof": 111,
+          "usable_psf_fraction": 0.9999999999999998,
+          "flux_mjy": 5.552024570151572,
+          "error_mjy": 0.1811712450164647
+        },
+        "constant_r4": {
+          "amplitude": 6.264577999572756,
+          "formal_error": 0.18772837801371198,
+          "residual_scaled_error": 0.2368650159019961,
+          "background_coefficients": [
+            0.2913156202618258
+          ],
+          "reduced_chi2": 1.5919960572802443,
+          "dof": 50,
+          "usable_psf_fraction": 0.9999999999999999,
+          "flux_mjy": 5.568749460887157,
+          "error_mjy": 0.21055559204422505
+        }
+      },
+      "aperture_checks": {
+        "2": {
+          "amplitude": 6.17808768275429,
+          "formal_error": 0.20795850073552585,
+          "background_median": 0.29967108368873596,
+          "background_mad_sigma": 0.0432835949242115,
+          "psf_fraction": 0.9555068493443437,
+          "annulus_pixels": 149,
+          "flux_mjy": 5.491865925366067,
+          "error_mjy": 0.18485982438670912
+        },
+        "3": {
+          "amplitude": 6.104176638977235,
+          "formal_error": 0.2866934933035805,
+          "background_median": 0.29967108368873596,
+          "background_mad_sigma": 0.0432835949242115,
+          "psf_fraction": 0.9975105408570581,
+          "annulus_pixels": 149,
+          "flux_mjy": 5.426164439134249,
+          "error_mjy": 0.2548494465841199
+        }
+      },
+      "centroid_diagnostic": {
+        "offset_pixels": [
+          0.041575849727918,
+          0.025571712350447844
+        ],
+        "optimizer_success": true,
+        "at_search_boundary": false,
+        "amplitude": 6.266530214721404,
+        "reduced_chi2": 1.1555997318423212,
+        "status": "centroid sensitivity diagnostic, not alternative selection",
+        "flux_mjy": 5.5704848366869815
+      },
+      "neighbor_zone_diagnostics": [
+        {
+          "zone": 0,
+          "original_zone": 250,
+          "distance_pixels": 35.221763610839844,
+          "flux_mjy": 5.552024570151572,
+          "reduced_chi2": 1.2213833535073886
+        },
+        {
+          "zone": 1,
+          "original_zone": 249,
+          "distance_pixels": 71.9988784790039,
+          "flux_mjy": 5.537442717370057,
+          "reduced_chi2": 1.2034091882210576
+        },
+        {
+          "zone": 2,
+          "original_zone": 229,
+          "distance_pixels": 81.22144317626953,
+          "flux_mjy": 5.501905954786362,
+          "reduced_chi2": 1.292963800013999
+        },
+        {
+          "zone": 3,
+          "original_zone": 228,
+          "distance_pixels": 102.6654281616211,
+          "flux_mjy": 5.529606733281387,
+          "reduced_chi2": 1.2689957247775094
+        },
+        {
+          "zone": 4,
+          "original_zone": 271,
+          "distance_pixels": 121.48130798339844,
+          "flux_mjy": 5.550807261579399,
+          "reduced_chi2": 1.3041023451318479
+        }
+      ],
+      "limitations": [
+        "ePSF truncated calibration support; wings uncertain",
+        "diagonal variance; residual rescaling omits noise covariance",
+        "no instrument calibration floor imposed",
+        "narrowband flux is not WISE W1"
+      ]
+    },
+    {
+      "path": "research_output/research5_time_spherex_040.fits.gz",
+      "sha256": "ad7013b8bf24ef82911973af95e05925e7fba70af83bba27d539a69088ed3b58",
+      "bytes": 60430,
+      "acquisition_receipt_sha256": "585fc61bbb2283e159071003bfa6b2a9b63c3ff7330a5abe50e7d0730b70f497",
+      "original_url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W35_1A/l2b-v27-2026-243/5/level2_2026W35_1A_0244_1D5_spx_l2b-v27-2026-243.fits",
+      "original_epsf_sha256": "8482e31172153e7c407cdab0d6ac54d90d687447d0584b6cf7e0ed1b31148aec",
+      "kind": "actual data independent measurement",
+      "image_shape": [
+        25,
+        25
+      ],
+      "source_pixel": [
+        12.73567612625275,
+        12.467425916938872
+      ],
+      "parent_pixel": [
+        1851.7356761262527,
+        174.46742591693888
+      ],
+      "edge_distance_pixels": 11.26432387374725,
+      "detector": "5",
+      "mjd": 61277.224458449,
+      "wavelength_um": 4.37868394305515,
+      "bandwidth_um": 0.03819021782582309,
+      "epsf_zone": 0,
+      "epsf_original_zone": 40,
+      "epsf_zone_wavelength_um": 4.3826680183410645,
+      "epsf_raw_native_sum": 0.03943193508553658,
+      "epsf_native_sum": 0.9999999999999998,
+      "psf_good_fraction": 0.9999999999999998,
+      "central_flags": 2097152,
+      "flag_counts": {
+        "0": 177,
+        "2117": 1,
+        "524288": 3,
+        "2097152": 429,
+        "2097222": 1,
+        "268435456": 3,
+        "268435461": 1,
+        "270532608": 8,
+        "270532613": 2
+      },
+      "benign_flag_mask": 2101248,
+      "solid_angle_sr": 8.830040038689477e-10,
+      "mjy_per_mjy_sr_pixel": 0.8830040038689476,
+      "solid_angle_method": "approximate local SIP-aware WCS; not calibration SAPM",
+      "psf_fits": {
+        "constant_r6": {
+          "amplitude": 6.593181070087615,
+          "formal_error": 0.19977965624612523,
+          "residual_scaled_error": 0.20972354518317776,
+          "background_coefficients": [
+            0.42209133573075064
+          ],
+          "reduced_chi2": 1.1020260430350606,
+          "dof": 114,
+          "usable_psf_fraction": 0.9999999999999998,
+          "flux_mjy": 5.821805283120317,
+          "error_mjy": 0.1851867301023361
+        },
+        "plane_r6": {
+          "amplitude": 6.592953407813878,
+          "formal_error": 0.19978114802709318,
+          "residual_scaled_error": 0.2108768840287691,
+          "background_coefficients": [
+            0.4222411853607986,
+            0.0004279849531930757,
+            -0.0011429532555120275
+          ],
+          "reduced_chi2": 1.1141635402266628,
+          "dof": 112,
+          "usable_psf_fraction": 0.9999999999999998,
+          "flux_mjy": 5.821604256421077,
+          "error_mjy": 0.18620513292081087
+        },
+        "constant_r4": {
+          "amplitude": 6.565029313505477,
+          "formal_error": 0.20405040891902906,
+          "residual_scaled_error": 0.21719391006830477,
+          "background_coefficients": [
+            0.4256345616597996
+          ],
+          "reduced_chi2": 1.1329750570995007,
+          "dof": 48,
+          "usable_psf_fraction": 0.9999999999999999,
+          "flux_mjy": 5.796947169342345,
+          "error_mjy": 0.19178309220626524
+        }
+      },
+      "aperture_checks": {
+        "2": {
+          "amplitude": 6.650082916740093,
+          "formal_error": 0.23946275988737337,
+          "background_median": 0.42216208577156067,
+          "background_mad_sigma": 0.04440478734970092,
+          "psf_fraction": 0.9633071075872061,
+          "annulus_pixels": 151,
+          "flux_mjy": 5.872049841541991,
+          "error_mjy": 0.2114465757580591
+        },
+        "3": {
+          "amplitude": 6.822519375370657,
+          "formal_error": 0.3077191160927362,
+          "background_median": 0.42216208577156067,
+          "background_mad_sigma": 0.04440478734970092,
+          "psf_fraction": 0.994043398895056,
+          "annulus_pixels": 151,
+          "flux_mjy": 6.024311924925762,
+          "error_mjy": 0.2717172115768996
+        }
+      },
+      "centroid_diagnostic": {
+        "offset_pixels": [
+          0.022046368066949068,
+          -0.012038884025379839
+        ],
+        "optimizer_success": true,
+        "at_search_boundary": false,
+        "amplitude": 6.5970589899484136,
+        "reduced_chi2": 1.1008353881371995,
+        "status": "centroid sensitivity diagnostic, not alternative selection",
+        "flux_mjy": 5.825229501884085
+      },
+      "neighbor_zone_diagnostics": [
+        {
+          "zone": 0,
+          "original_zone": 40,
+          "distance_pixels": 51.22453689575195,
+          "flux_mjy": 5.821604256421077,
+          "reduced_chi2": 1.1141635402266628
+        },
+        {
+          "zone": 1,
+          "original_zone": 39,
+          "distance_pixels": 62.37766647338867,
+          "flux_mjy": 5.757569585119733,
+          "reduced_chi2": 1.1980406445654512
+        },
+        {
+          "zone": 2,
+          "original_zone": 61,
+          "distance_pixels": 79.85750579833984,
+          "flux_mjy": 5.740852025013478,
+          "reduced_chi2": 1.1663584226477683
+        },
+        {
+          "zone": 3,
+          "original_zone": 60,
+          "distance_pixels": 87.43135070800781,
+          "flux_mjy": 5.69642580234218,
+          "reduced_chi2": 1.2767024994374114
+        },
+        {
+          "zone": 4,
+          "original_zone": 19,
+          "distance_pixels": 133.20718383789062,
+          "flux_mjy": 5.75731050600444,
+          "reduced_chi2": 1.10018439742062
+        }
+      ],
+      "limitations": [
+        "ePSF truncated calibration support; wings uncertain",
+        "diagonal variance; residual rescaling omits noise covariance",
+        "no instrument calibration floor imposed",
+        "narrowband flux is not WISE W1"
+      ]
+    }
+  ],
+  "failures": [],
+  "w1_response_input": {
+    "path": "research_output/research5_spherex_review_w1_response.txt.gz",
+    "sha256": "9662e8ecd6bde10a7bd58e1c4df12847639f9fc3e0d8948e3d064977237db963"
+  },
+  "w1_coverage": {
+    "nominal_support_response_fraction": 0.3176893516849346,
+    "nominal_support_flat_fnu_photon_fraction": 0.3175941604329138,
+    "interpolation_hull_response_fraction": 0.9999998280645709,
+    "interpolation_hull_flat_fnu_photon_fraction": 0.9999998964773089,
+    "nonoverlapping_nominal_channel_count": 9,
+    "status": "bandpass diagnostic; widths approximate; no flux extrapolation"
+  },
+  "w1_quality_diagnostic": {
+    "criterion": "after-outcome diagnostic: >=85%usable PSF; >=4pixel edge distance",
+    "accepted_frames": 9,
+    "excluded_paths": [
+      "research_output/research5_time_spherex_012.fits.gz",
+      "research_output/research5_time_spherex_018.fits.gz"
+    ],
+    "coverage": {
+      "nominal_support_response_fraction": 0.18033238803026252,
+      "nominal_support_flat_fnu_photon_fraction": 0.19123954792689418,
+      "interpolation_hull_response_fraction": 0.9999998280645709,
+      "interpolation_hull_flat_fnu_photon_fraction": 0.9999998964773089,
+      "nonoverlapping_nominal_channel_count": 8,
+      "status": "bandpass diagnostic; widths approximate; no flux extrapolation"
+    }
+  }
+}

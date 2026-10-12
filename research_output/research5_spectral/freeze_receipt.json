@@ -1,0 +1,14 @@
+{
+  "sha256": "0606cee5774b41ccb90b2c563e7db79f9abe5e5f9b59784254fc2a1486b2e488",
+  "ids": [
+    "27a4e980-5e21-11f0-9aca-525400f334e1",
+    "2bf205a7-87cb-11ef-8f00-525400f334e1",
+    "6acc3cce-884f-11ef-9a35-525400f334e1",
+    "a6d1bcbc-885a-11ef-bbe3-525400f334e1"
+  ],
+  "status": "frozen before spectrum retrieval",
+  "original_sha256": "dc59c5204efd1750a32f001d581278ed72ddcca1f505a0a74938302cedb034ee",
+  "amendment": "reviewer-approved sky mask and +/-8 primary, before spectra",
+  "pre_measurement_previous_sha256": "82802aeb3dc2d15104831f15317b3f98c40e3ea4b3678a0d3ba949d2756b03b6",
+  "coverage_clarification": "independent reviewer accepted denominator after fixed sky exclusion before any line aggregation"
+}

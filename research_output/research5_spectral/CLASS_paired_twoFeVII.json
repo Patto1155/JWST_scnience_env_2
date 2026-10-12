@@ -1,0 +1,1825 @@
+[
+  {
+    "baseline": {
+      "Plate": " 896",
+      "MJD": "52592",
+      "Fiber": " 34",
+      "RAJ2000": "133.19564",
+      "DEJ2000": "+42.83491",
+      "z": " 5.418e-02",
+      "Ndet": "3",
+      "MassP50": "10.879",
+      "K01AGN": "true ",
+      "logLFEX": "39.886",
+      "logLFEVII60": "39.785",
+      "logLFEVII57": "39.550",
+      "logLFEXI": "      ",
+      "logLFEXIV": ""
+    },
+    "records": [
+      {
+        "dec": 42.834909,
+        "redshift_warning": 0,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2002-11-06T00:00:00Z",
+        "ra": 133.19564,
+        "sparcl_id": "dc2261bf-5e22-11f0-8302-525400f334e1",
+        "redshift": 0.054175857454538345,
+        "targetid": 1237657769629712422,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 42.834909594886,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2022-01-22T06:44:24.356544Z",
+        "ra": 133.19567247288475,
+        "sparcl_id": "7867c35d-8895-11ef-8329-525400f334e1",
+        "redshift": 0.05438578941273287,
+        "targetid": 39633126317622234,
+        "_dr": "DESI-DR1"
+      }
+    ]
+  },
+  {
+    "baseline": {
+      "Plate": " 915",
+      "MJD": "52443",
+      "Fiber": "437",
+      "RAJ2000": "210.16903",
+      "DEJ2000": "-01.92174",
+      "z": " 2.505e-02",
+      "Ndet": "2",
+      "MassP50": " 9.698",
+      "K01AGN": "true ",
+      "logLFEX": "      ",
+      "logLFEVII60": "39.134",
+      "logLFEVII57": "38.786",
+      "logLFEXI": "      ",
+      "logLFEXIV": ""
+    },
+    "records": [
+      {
+        "dec": -1.9217443,
+        "redshift_warning": 16,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2002-06-18T00:00:00Z",
+        "ra": 210.16903,
+        "sparcl_id": "d5419ceb-5e24-11f0-8ea2-525400f334e1",
+        "redshift": 0.025048578158020973,
+        "targetid": 1237655499204132923,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": -1.9217309631974404,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2022-02-08T12:01:56.489664Z",
+        "ra": 210.16904004357164,
+        "sparcl_id": "18be09ef-891c-11ef-aeff-525400f334e1",
+        "redshift": 0.02507221347246064,
+        "targetid": 39627739933707635,
+        "_dr": "DESI-DR1"
+      }
+    ]
+  },
+  {
+    "baseline": {
+      "Plate": " 970",
+      "MJD": "52413",
+      "Fiber": "543",
+      "RAJ2000": "184.70784",
+      "DEJ2000": "+50.43824",
+      "z": " 1.992e-01",
+      "Ndet": "4",
+      "MassP50": "11.081",
+      "K01AGN": "true ",
+      "logLFEX": "      ",
+      "logLFEVII60": "40.616",
+      "logLFEVII57": "40.308",
+      "logLFEXI": "      ",
+      "logLFEXIV": ""
+    },
+    "records": [
+      {
+        "dec": 50.438237,
+        "redshift_warning": 0,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2002-05-19T00:00:00Z",
+        "ra": 184.70784,
+        "sparcl_id": "5db14384-5e2a-11f0-a710-525400f334e1",
+        "redshift": 0.19920341670513153,
+        "targetid": 1237658613596029008,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 50.438224221375144,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2022-04-15T05:21:15.448608Z",
+        "ra": 184.70787257274017,
+        "sparcl_id": "3ade407c-87d7-11ef-99b5-525400f334e1",
+        "redshift": 0.1992975380279852,
+        "targetid": 39633255871283346,
+        "_dr": "DESI-DR1"
+      }
+    ]
+  },
+  {
+    "baseline": {
+      "Plate": "1307",
+      "MJD": "52999",
+      "Fiber": " 27",
+      "RAJ2000": "151.37986",
+      "DEJ2000": "+09.88292",
+      "z": " 1.433e-01",
+      "Ndet": "3",
+      "MassP50": "10.217",
+      "K01AGN": "true ",
+      "logLFEX": "      ",
+      "logLFEVII60": "40.586",
+      "logLFEVII57": "40.330",
+      "logLFEXI": "      ",
+      "logLFEXIV": ""
+    },
+    "records": [
+      {
+        "dec": 9.8829212,
+        "redshift_warning": 0,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2003-12-26T00:00:00Z",
+        "ra": 151.37986,
+        "sparcl_id": "d499d8a5-5dec-11f0-8261-525400f334e1",
+        "redshift": 0.1432563066482544,
+        "targetid": 1237661064417050722,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 9.883277824177867,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2021-12-16T10:33:58.432033Z",
+        "ra": 151.37961740361365,
+        "sparcl_id": "e2d3e160-887f-11ef-95e1-525400f334e1",
+        "redshift": 0.14328379519720216,
+        "targetid": 39628027826537207,
+        "_dr": "DESI-DR1"
+      }
+    ]
+  },
+  {
+    "baseline": {
+      "Plate": "1311",
+      "MJD": "52765",
+      "Fiber": "262",
+      "RAJ2000": "173.95449",
+      "DEJ2000": "+56.95229",
+      "z": " 5.141e-02",
+      "Ndet": "3",
+      "MassP50": "11.028",
+      "K01AGN": "true ",
+      "logLFEX": "39.485",
+      "logLFEVII60": "40.203",
+      "logLFEVII57": "39.932",
+      "logLFEXI": "      ",
+      "logLFEXIV": ""
+    },
+    "records": [
+      {
+        "dec": 56.952287,
+        "redshift_warning": 0,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2003-05-06T00:00:00Z",
+        "ra": 173.95449,
+        "sparcl_id": "3e28f8c1-5ded-11f0-b30d-525400f334e1",
+        "redshift": 0.051407378166913986,
+        "targetid": 1237657611801657347,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 56.95229280506786,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2022-03-18T18:37:44.352624Z",
+        "ra": 173.95453498605028,
+        "sparcl_id": "ad3c1fc7-86fd-11ef-848d-525400f334e1",
+        "redshift": 0.051644558584969746,
+        "targetid": 2305843015513542272,
+        "_dr": "DESI-DR1"
+      }
+    ]
+  },
+  {
+    "baseline": {
+      "Plate": "1338",
+      "MJD": "52765",
+      "Fiber": "184",
+      "RAJ2000": "246.88891",
+      "DEJ2000": "+36.07183",
+      "z": " 9.778e-02",
+      "Ndet": "3",
+      "MassP50": "10.234",
+      "K01AGN": "true ",
+      "logLFEX": "39.656",
+      "logLFEVII60": "40.384",
+      "logLFEVII57": "40.208",
+      "logLFEXI": "      ",
+      "logLFEXIV": ""
+    },
+    "records": [
+      {
+        "dec": 36.071833,
+        "redshift_warning": 0,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2003-05-06T00:00:00Z",
+        "ra": 246.88891,
+        "sparcl_id": "fa6c0111-5def-11f0-ac06-525400f334e1",
+        "redshift": 0.09777899831533432,
+        "targetid": 1237659162277642697,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 36.07182500451136,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2022-04-20T10:29:11.843232Z",
+        "ra": 246.88889620636587,
+        "sparcl_id": "333f1e7a-8a2d-11ef-bb43-525400f334e1",
+        "redshift": 0.09778950949135888,
+        "targetid": 39633001474162785,
+        "_dr": "DESI-DR1"
+      }
+    ]
+  },
+  {
+    "baseline": {
+      "Plate": "1346",
+      "MJD": "52822",
+      "Fiber": "372",
+      "RAJ2000": "209.15434",
+      "DEJ2000": "+43.06771",
+      "z": " 1.932e-01",
+      "Ndet": "4",
+      "MassP50": "10.314",
+      "K01AGN": "true ",
+      "logLFEX": "      ",
+      "logLFEVII60": "40.189",
+      "logLFEVII57": "40.038",
+      "logLFEXI": "      ",
+      "logLFEXIV": ""
+    },
+    "records": [
+      {
+        "dec": 43.067708,
+        "redshift_warning": 0,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2003-07-02T00:00:00Z",
+        "ra": 209.15434,
+        "sparcl_id": "c7599201-5df0-11f0-bb11-525400f334e1",
+        "redshift": 0.19322603940963745,
+        "targetid": 1237661852013887597,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 43.067712642506386,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2022-03-18T09:17:15.807264Z",
+        "ra": 209.15435980976204,
+        "sparcl_id": "82e85720-87aa-11ef-b333-525400f334e1",
+        "redshift": 0.19323554309434418,
+        "targetid": 39633131690526615,
+        "_dr": "DESI-DR1"
+      }
+    ]
+  },
+  {
+    "baseline": {
+      "Plate": "1379",
+      "MJD": "53063",
+      "Fiber": "443",
+      "RAJ2000": "211.42171",
+      "DEJ2000": "+40.44238",
+      "z": " 8.063e-02",
+      "Ndet": "2",
+      "MassP50": "      ",
+      "K01AGN": "     ",
+      "logLFEX": "      ",
+      "logLFEVII60": "40.479",
+      "logLFEVII57": "40.400",
+      "logLFEXI": "      ",
+      "logLFEXIV": ""
+    },
+    "records": [
+      {
+        "dec": 40.442376,
+        "redshift_warning": 0,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2004-02-28T00:00:00Z",
+        "ra": 211.42171,
+        "sparcl_id": "1a0533a1-5df4-11f0-9349-525400f334e1",
+        "redshift": 0.0806272104382515,
+        "targetid": 1237662307798679682,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 40.442376,
+        "redshift_warning": 16,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2004-03-20T00:00:00Z",
+        "ra": 211.42171,
+        "sparcl_id": "32d9c3e5-5df4-11f0-883d-525400f334e1",
+        "redshift": 0.08062179386615753,
+        "targetid": 1237662307798679682,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 40.442371143191664,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2021-06-21T03:40:22.783008Z",
+        "ra": 211.4217302318893,
+        "sparcl_id": "73b389cb-87a7-11ef-b3bf-525400f334e1",
+        "redshift": 0.08065109432431461,
+        "targetid": 39633086538845193,
+        "_dr": "DESI-DR1"
+      }
+    ]
+  },
+  {
+    "baseline": {
+      "Plate": "1379",
+      "MJD": "53084",
+      "Fiber": "443",
+      "RAJ2000": "211.42171",
+      "DEJ2000": "+40.44238",
+      "z": " 8.062e-02",
+      "Ndet": "2",
+      "MassP50": "10.447",
+      "K01AGN": "true ",
+      "logLFEX": "      ",
+      "logLFEVII60": "40.387",
+      "logLFEVII57": "40.217",
+      "logLFEXI": "      ",
+      "logLFEXIV": ""
+    },
+    "records": [
+      {
+        "dec": 40.442376,
+        "redshift_warning": 0,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2004-02-28T00:00:00Z",
+        "ra": 211.42171,
+        "sparcl_id": "1a0533a1-5df4-11f0-9349-525400f334e1",
+        "redshift": 0.0806272104382515,
+        "targetid": 1237662307798679682,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 40.442376,
+        "redshift_warning": 16,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2004-03-20T00:00:00Z",
+        "ra": 211.42171,
+        "sparcl_id": "32d9c3e5-5df4-11f0-883d-525400f334e1",
+        "redshift": 0.08062179386615753,
+        "targetid": 1237662307798679682,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 40.442371143191664,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2021-06-21T03:40:22.783008Z",
+        "ra": 211.4217302318893,
+        "sparcl_id": "73b389cb-87a7-11ef-b3bf-525400f334e1",
+        "redshift": 0.08065109432431461,
+        "targetid": 39633086538845193,
+        "_dr": "DESI-DR1"
+      }
+    ]
+  },
+  {
+    "baseline": {
+      "Plate": "1401",
+      "MJD": "53144",
+      "Fiber": "517",
+      "RAJ2000": "233.40846",
+      "DEJ2000": "+35.95226",
+      "z": " 1.286e-01",
+      "Ndet": "3",
+      "MassP50": "10.798",
+      "K01AGN": "true ",
+      "logLFEX": "      ",
+      "logLFEVII60": "39.864",
+      "logLFEVII57": "39.901",
+      "logLFEXI": "      ",
+      "logLFEXIV": ""
+    },
+    "records": [
+      {
+        "dec": 35.952256,
+        "redshift_warning": 0,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2004-05-19T00:00:00Z",
+        "ra": 233.40846,
+        "sparcl_id": "70d4cfe3-5df6-11f0-9bd5-525400f334e1",
+        "redshift": 0.1285598874092102,
+        "targetid": 1237662336789053726,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 35.95225867042749,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2021-05-16T07:21:07.421760Z",
+        "ra": 233.40846969119548,
+        "sparcl_id": "b66b0b1d-85fb-11ef-81ed-525400f334e1",
+        "redshift": 0.12855001069278812,
+        "targetid": 39633001289614398,
+        "_dr": "DESI-DR1"
+      }
+    ]
+  },
+  {
+    "baseline": {
+      "Plate": "1418",
+      "MJD": "53142",
+      "Fiber": "370",
+      "RAJ2000": "239.62236",
+      "DEJ2000": "+35.22463",
+      "z": " 1.195e-01",
+      "Ndet": "3",
+      "MassP50": "10.665",
+      "K01AGN": "true ",
+      "logLFEX": "      ",
+      "logLFEVII60": "40.119",
+      "logLFEVII57": "40.034",
+      "logLFEXI": "      ",
+      "logLFEXIV": ""
+    },
+    "records": [
+      {
+        "dec": 35.224625,
+        "redshift_warning": 16,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2004-05-17T00:00:00Z",
+        "ra": 239.62236,
+        "sparcl_id": "b17bd761-5df7-11f0-aebf-525400f334e1",
+        "redshift": 0.11952295899391174,
+        "targetid": 1237662474765860967,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 35.22463582099843,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2021-05-24T07:20:48.730848Z",
+        "ra": 239.62233842051543,
+        "sparcl_id": "7ad29546-85f4-11ef-9867-525400f334e1",
+        "redshift": 0.11955611196385282,
+        "targetid": 39632986613744052,
+        "_dr": "DESI-DR1"
+      }
+    ]
+  },
+  {
+    "baseline": {
+      "Plate": "1424",
+      "MJD": "52912",
+      "Fiber": "515",
+      "RAJ2000": "253.31272",
+      "DEJ2000": "+23.82860",
+      "z": " 1.034e-01",
+      "Ndet": "2",
+      "MassP50": "11.039",
+      "K01AGN": "true ",
+      "logLFEX": "      ",
+      "logLFEVII60": "40.249",
+      "logLFEVII57": "40.032",
+      "logLFEXI": "      ",
+      "logLFEXIV": ""
+    },
+    "records": [
+      {
+        "dec": 23.8286,
+        "redshift_warning": 16,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2003-09-25T00:00:00Z",
+        "ra": 253.31272,
+        "sparcl_id": "319b5041-5df8-11f0-b030-525400f334e1",
+        "redshift": 0.10344377160072327,
+        "targetid": 1237662474236199477,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 23.828592875705173,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2021-06-29T06:32:59.197632Z",
+        "ra": 253.31275709321088,
+        "sparcl_id": "020c9968-86e6-11ef-8ec2-525400f334e1",
+        "redshift": 0.10350785691853193,
+        "targetid": 39628346992103858,
+        "_dr": "DESI-DR1"
+      }
+    ]
+  },
+  {
+    "baseline": {
+      "Plate": "1451",
+      "MJD": "53117",
+      "Fiber": "190",
+      "RAJ2000": "184.66417",
+      "DEJ2000": "+47.10768",
+      "z": " 9.389e-02",
+      "Ndet": "2",
+      "MassP50": "10.673",
+      "K01AGN": "true ",
+      "logLFEX": "      ",
+      "logLFEVII60": "40.211",
+      "logLFEVII57": "40.028",
+      "logLFEXI": "      ",
+      "logLFEXIV": ""
+    },
+    "records": [
+      {
+        "dec": 47.107684,
+        "redshift_warning": 0,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2004-04-22T00:00:00Z",
+        "ra": 184.66417,
+        "sparcl_id": "cb082194-5dfa-11f0-8edc-525400f334e1",
+        "redshift": 0.09389159083366394,
+        "targetid": 1237661357007437976,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 47.10768872844719,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2022-04-22T05:09:35.623296Z",
+        "ra": 184.66421937156323,
+        "sparcl_id": "d66f4e72-87d3-11ef-b809-525400f334e1",
+        "redshift": 0.093963015690399,
+        "targetid": 39633199931854136,
+        "_dr": "DESI-DR1"
+      }
+    ]
+  },
+  {
+    "baseline": {
+      "Plate": "1602",
+      "MJD": "53117",
+      "Fiber": "117",
+      "RAJ2000": "163.98062",
+      "DEJ2000": "+11.04784",
+      "z": " 1.453e-01",
+      "Ndet": "4",
+      "MassP50": "11.002",
+      "K01AGN": "true ",
+      "logLFEX": "      ",
+      "logLFEVII60": "40.278",
+      "logLFEVII57": "40.035",
+      "logLFEXI": "      ",
+      "logLFEXIV": ""
+    },
+    "records": [
+      {
+        "dec": 11.047838,
+        "redshift_warning": 16,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2004-04-22T00:00:00Z",
+        "ra": 163.98062,
+        "sparcl_id": "ff968401-5e05-11f0-a344-525400f334e1",
+        "redshift": 0.14533628523349762,
+        "targetid": 1237661811728973925,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 11.047806239050932,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2021-12-01T13:04:00.343488Z",
+        "ra": 163.9805816722486,
+        "sparcl_id": "8dd4c103-8bb3-11ef-b06b-525400f334e1",
+        "redshift": 0.14531600516007187,
+        "targetid": 39628051813766875,
+        "_dr": "DESI-DR1"
+      }
+    ]
+  },
+  {
+    "baseline": {
+      "Plate": "1701",
+      "MJD": "53142",
+      "Fiber": " 95",
+      "RAJ2000": "206.76816",
+      "DEJ2000": "+11.10628",
+      "z": " 2.280e-02",
+      "Ndet": "2",
+      "MassP50": "10.385",
+      "K01AGN": "true ",
+      "logLFEX": "      ",
+      "logLFEVII60": "39.789",
+      "logLFEVII57": "39.703",
+      "logLFEXI": "      ",
+      "logLFEXIV": ""
+    },
+    "records": [
+      {
+        "dec": 11.10628,
+        "redshift_warning": 16,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2004-05-17T00:00:00Z",
+        "ra": 206.76816,
+        "sparcl_id": "dbaea640-5e0f-11f0-beea-525400f334e1",
+        "redshift": 0.022797998040914536,
+        "targetid": 1237661949190144099,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 11.106268794282768,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2021-06-03T03:28:47.055648Z",
+        "ra": 206.76817421187394,
+        "sparcl_id": "e7565537-89c7-11ef-8cd4-525400f334e1",
+        "redshift": 0.02280863340907502,
+        "targetid": 39628052522599926,
+        "_dr": "DESI-DR1"
+      }
+    ]
+  },
+  {
+    "baseline": {
+      "Plate": "1734",
+      "MJD": "53034",
+      "Fiber": "129",
+      "RAJ2000": "112.92656",
+      "DEJ2000": "+39.43993",
+      "z": " 1.103e-01",
+      "Ndet": "3",
+      "MassP50": "10.545",
+      "K01AGN": "true ",
+      "logLFEX": "39.337",
+      "logLFEVII60": "40.373",
+      "logLFEVII57": "40.125",
+      "logLFEXI": "      ",
+      "logLFEXIV": ""
+    },
+    "records": [
+      {
+        "dec": 39.439933,
+        "redshift_warning": 16,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2004-01-30T00:00:00Z",
+        "ra": 112.92656,
+        "sparcl_id": "147b26a4-5e13-11f0-bfdd-525400f334e1",
+        "redshift": 0.11033279448747635,
+        "targetid": 1237663530252435738,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 39.43991354776394,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2021-02-07T16:34:01.268111Z",
+        "ra": 112.92659528570778,
+        "sparcl_id": "92307be0-87cd-11ef-9e00-525400f334e1",
+        "redshift": 0.11029427012747545,
+        "targetid": 39633066712369198,
+        "_dr": "DESI-DR1"
+      }
+    ]
+  },
+  {
+    "baseline": {
+      "Plate": "1736",
+      "MJD": "53052",
+      "Fiber": "318",
+      "RAJ2000": "114.16193",
+      "DEJ2000": "+43.88792",
+      "z": " 1.140e-01",
+      "Ndet": "2",
+      "MassP50": "10.695",
+      "K01AGN": "true ",
+      "logLFEX": "      ",
+      "logLFEVII60": "40.742",
+      "logLFEVII57": "40.533",
+      "logLFEXI": "      ",
+      "logLFEXIV": ""
+    },
+    "records": [
+      {
+        "dec": 43.88792,
+        "redshift_warning": 0,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2004-02-17T00:00:00Z",
+        "ra": 114.16193,
+        "sparcl_id": "4b032ac1-5e13-11f0-a0fb-525400f334e1",
+        "redshift": 0.11395880579948425,
+        "targetid": 1237663786877649361,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 43.88792690211648,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2022-01-09T05:10:29.937792Z",
+        "ra": 114.16192366934028,
+        "sparcl_id": "19251acf-8b38-11ef-8a04-525400f334e1",
+        "redshift": 0.11430141827532098,
+        "targetid": 39633148115422500,
+        "_dr": "DESI-DR1"
+      }
+    ]
+  },
+  {
+    "baseline": {
+      "Plate": "1850",
+      "MJD": "53786",
+      "Fiber": "209",
+      "RAJ2000": "237.58314",
+      "DEJ2000": "+24.54410",
+      "z": " 1.430e-01",
+      "Ndet": "3",
+      "MassP50": "10.051",
+      "K01AGN": "true ",
+      "logLFEX": "      ",
+      "logLFEVII60": "39.958",
+      "logLFEVII57": "39.788",
+      "logLFEXI": "      ",
+      "logLFEXIV": ""
+    },
+    "records": [
+      {
+        "dec": 24.544102,
+        "redshift_warning": 16,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2006-02-20T00:00:00Z",
+        "ra": 237.58314,
+        "sparcl_id": "7cb1fb96-5e1e-11f0-8af3-525400f334e1",
+        "redshift": 0.14297884702682495,
+        "targetid": 1237662697036972070,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 24.544093973434197,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2021-06-19T05:30:26.106048Z",
+        "ra": 237.58314830257305,
+        "sparcl_id": "d3e2e035-89a0-11ef-b889-525400f334e1",
+        "redshift": 0.14294117831305012,
+        "targetid": 39628363312140460,
+        "_dr": "DESI-DR1"
+      }
+    ]
+  },
+  {
+    "baseline": {
+      "Plate": "1984",
+      "MJD": "53433",
+      "Fiber": "442",
+      "RAJ2000": "188.62603",
+      "DEJ2000": "+41.15964",
+      "z": " 1.909e-01",
+      "Ndet": "4",
+      "MassP50": "11.027",
+      "K01AGN": "true ",
+      "logLFEX": "      ",
+      "logLFEVII60": "40.545",
+      "logLFEVII57": "40.280",
+      "logLFEXI": "      ",
+      "logLFEXIV": ""
+    },
+    "records": [
+      {
+        "dec": 41.159645,
+        "redshift_warning": 0,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2005-03-03T00:00:00Z",
+        "ra": 188.62603,
+        "sparcl_id": "baa91228-5e2a-11f0-bf5e-525400f334e1",
+        "redshift": 0.190933495759964,
+        "targetid": 1237664670057431173,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 41.1596554098301,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2022-05-14T04:09:20.585952Z",
+        "ra": 188.62602630629073,
+        "sparcl_id": "0f5f53f2-87d1-11ef-a380-525400f334e1",
+        "redshift": 0.19098108094242341,
+        "targetid": 39633099989975145,
+        "_dr": "DESI-DR1"
+      }
+    ]
+  },
+  {
+    "baseline": {
+      "Plate": "2011",
+      "MJD": "53499",
+      "Fiber": "492",
+      "RAJ2000": "195.35528",
+      "DEJ2000": "+29.31374",
+      "z": " 2.340e-02",
+      "Ndet": "2",
+      "MassP50": "10.695",
+      "K01AGN": "true ",
+      "logLFEX": "      ",
+      "logLFEVII60": "39.168",
+      "logLFEVII57": "38.951",
+      "logLFEXI": "      ",
+      "logLFEXIV": ""
+    },
+    "records": [
+      {
+        "dec": 29.313739,
+        "redshift_warning": 16,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2005-05-09T00:00:00Z",
+        "ra": 195.35528,
+        "sparcl_id": "7bc24074-5e2d-11f0-9659-525400f334e1",
+        "redshift": 0.02339724451303482,
+        "targetid": 1237665441515962401,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 29.3138553177969,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2021-04-07T05:53:37.406544Z",
+        "ra": 195.35527512107356,
+        "sparcl_id": "3eacd4f9-88a1-11ef-811c-525400f334e1",
+        "redshift": 0.023516796389377356,
+        "targetid": 39628465170813469,
+        "_dr": "DESI-DR1"
+      }
+    ]
+  },
+  {
+    "baseline": {
+      "Plate": "2089",
+      "MJD": "53498",
+      "Fiber": "176",
+      "RAJ2000": "181.88719",
+      "DEJ2000": "+33.87782",
+      "z": " 7.907e-02",
+      "Ndet": "2",
+      "MassP50": "11.242",
+      "K01AGN": "true ",
+      "logLFEX": "      ",
+      "logLFEVII60": "39.961",
+      "logLFEVII57": "39.853",
+      "logLFEXI": "      ",
+      "logLFEXIV": ""
+    },
+    "records": [
+      {
+        "dec": 33.877821,
+        "redshift_warning": 0,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2005-05-05T00:00:00Z",
+        "ra": 181.88719,
+        "sparcl_id": "1092b4dd-5e35-11f0-98fd-525400f334e1",
+        "redshift": 0.07906854152679443,
+        "targetid": 1237665126932218043,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 33.87779894266882,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2022-04-29T04:32:34.814976Z",
+        "ra": 181.88717772101174,
+        "sparcl_id": "a3e80e04-85e4-11ef-9051-525400f334e1",
+        "redshift": 0.07902056215395073,
+        "targetid": 39632960911049681,
+        "_dr": "DESI-DR1"
+      }
+    ]
+  },
+  {
+    "baseline": {
+      "Plate": "2097",
+      "MJD": "53491",
+      "Fiber": "183",
+      "RAJ2000": "176.18705",
+      "DEJ2000": "+33.32096",
+      "z": " 3.107e-02",
+      "Ndet": "3",
+      "MassP50": "10.486",
+      "K01AGN": "true ",
+      "logLFEX": "38.874",
+      "logLFEVII60": "39.721",
+      "logLFEVII57": "39.568",
+      "logLFEXI": "      ",
+      "logLFEXIV": ""
+    },
+    "records": [
+      {
+        "dec": 33.32096,
+        "redshift_warning": 0,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2005-05-01T00:00:00Z",
+        "ra": 176.18705,
+        "sparcl_id": "d7f7e3b0-5e35-11f0-9e16-525400f334e1",
+        "redshift": 0.031065193936228752,
+        "targetid": 1237665370120847399,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 33.32098386300874,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2022-04-17T05:56:17.245248Z",
+        "ra": 176.18707843974303,
+        "sparcl_id": "473bcbbc-85e2-11ef-9030-525400f334e1",
+        "redshift": 0.03108240719828603,
+        "targetid": 39632945710891896,
+        "_dr": "DESI-DR1"
+      }
+    ]
+  },
+  {
+    "baseline": {
+      "Plate": "2271",
+      "MJD": "53726",
+      "Fiber": "102",
+      "RAJ2000": "126.05963",
+      "DEJ2000": "+17.33197",
+      "z": " 3.725e-02",
+      "Ndet": "3",
+      "MassP50": "10.457",
+      "K01AGN": "true ",
+      "logLFEX": "39.464",
+      "logLFEVII60": "39.734",
+      "logLFEVII57": "39.530",
+      "logLFEXI": "      ",
+      "logLFEXIV": ""
+    },
+    "records": [
+      {
+        "dec": 17.331967,
+        "redshift_warning": 16,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2005-12-21T00:00:00Z",
+        "ra": 126.05963,
+        "sparcl_id": "94cd2819-5de8-11f0-a822-525400f334e1",
+        "redshift": 0.037251826375722885,
+        "targetid": 1237667107426402363,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 17.331960784426773,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2021-12-16T08:32:36.018816Z",
+        "ra": 126.059612076311,
+        "sparcl_id": "486c9530-87be-11ef-916a-525400f334e1",
+        "redshift": 0.03723209034961422,
+        "targetid": 39628197741988227,
+        "_dr": "DESI-DR1"
+      }
+    ]
+  },
+  {
+    "baseline": {
+      "Plate": "2580",
+      "MJD": "54092",
+      "Fiber": "470",
+      "RAJ2000": "144.50682",
+      "DEJ2000": "+13.88808",
+      "z": " 1.006e-01",
+      "Ndet": "6",
+      "MassP50": "10.580",
+      "K01AGN": "false",
+      "logLFEX": "40.337",
+      "logLFEVII60": "40.380",
+      "logLFEVII57": "40.132",
+      "logLFEXI": "40.271",
+      "logLFEXIV": "39.883"
+    },
+    "records": [
+      {
+        "dec": 13.888076,
+        "redshift_warning": 0,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2006-12-18T00:00:00Z",
+        "ra": 144.50682,
+        "sparcl_id": "6478ef01-5e04-11f0-971e-525400f334e1",
+        "redshift": 0.10060184448957443,
+        "targetid": 1237671261740466324,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 13.888045793819893,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2022-03-23T03:52:31.844352Z",
+        "ra": 144.50683783450566,
+        "sparcl_id": "f8e171b6-879c-11ef-b948-525400f334e1",
+        "redshift": 0.10049856527396918,
+        "targetid": 39628122332594898,
+        "_dr": "DESI-DR1"
+      }
+    ]
+  },
+  {
+    "baseline": {
+      "Plate": " 271",
+      "MJD": "51883",
+      "Fiber": "439",
+      "RAJ2000": "154.22425",
+      "DEJ2000": "+00.48254",
+      "z": " 1.163e-01",
+      "Ndet": "3",
+      "MassP50": "11.028",
+      "K01AGN": "true ",
+      "logLFEX": "      ",
+      "logLFEVII60": "40.228",
+      "logLFEVII57": "40.064",
+      "logLFEXI": "      ",
+      "logLFEXIV": ""
+    },
+    "records": [
+      {
+        "dec": 0.48254172,
+        "redshift_warning": 0,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2000-12-01T00:00:00Z",
+        "ra": 154.22425,
+        "sparcl_id": "903ce8ac-5ddf-11f0-8a0b-525400f334e1",
+        "redshift": 0.11629799753427505,
+        "targetid": 1237654670811201558,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 0.4826999215998787,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2022-02-01T07:44:21.665472Z",
+        "ra": 154.2243591631571,
+        "sparcl_id": "1fa2186c-87ff-11ef-b5f6-525400f334e1",
+        "redshift": 0.11652274989889252,
+        "targetid": 39627799392162167,
+        "_dr": "DESI-DR1"
+      }
+    ]
+  },
+  {
+    "baseline": {
+      "Plate": "2787",
+      "MJD": "54552",
+      "Fiber": "572",
+      "RAJ2000": "217.04558",
+      "DEJ2000": "+21.95589",
+      "z": " 1.299e-01",
+      "Ndet": "3",
+      "MassP50": "10.984",
+      "K01AGN": "true ",
+      "logLFEX": "      ",
+      "logLFEVII60": "40.241",
+      "logLFEVII57": "40.185",
+      "logLFEXI": "      ",
+      "logLFEXIV": ""
+    },
+    "records": [
+      {
+        "dec": 21.955891,
+        "redshift_warning": 0,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2008-03-27T00:00:00Z",
+        "ra": 217.04558,
+        "sparcl_id": "a0399ed7-5e14-11f0-901f-525400f334e1",
+        "redshift": 0.12990719079971313,
+        "targetid": 1237665566608064643,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 21.95592474835699,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2022-01-27T13:25:09.504192Z",
+        "ra": 217.04556700960597,
+        "sparcl_id": "51ef3f13-89ae-11ef-bc3f-525400f334e1",
+        "redshift": 0.12989948190879766,
+        "targetid": 39628307431427563,
+        "_dr": "DESI-DR1"
+      }
+    ]
+  },
+  {
+    "baseline": {
+      "Plate": "2829",
+      "MJD": "54623",
+      "Fiber": " 15",
+      "RAJ2000": "257.01279",
+      "DEJ2000": "+27.53226",
+      "z": " 6.385e-02",
+      "Ndet": "2",
+      "MassP50": "10.117",
+      "K01AGN": "true ",
+      "logLFEX": "      ",
+      "logLFEVII60": "39.559",
+      "logLFEVII57": "39.293",
+      "logLFEXI": "      ",
+      "logLFEXIV": ""
+    },
+    "records": [
+      {
+        "dec": 27.532263,
+        "redshift_warning": 16,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2008-06-04T00:00:00Z",
+        "ra": 257.01279,
+        "sparcl_id": "e50435e9-5e17-11f0-8af4-525400f334e1",
+        "redshift": 0.06384577602148056,
+        "targetid": 1237666209776534056,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 27.53224743192137,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2021-06-21T07:07:20.324064Z",
+        "ra": 257.012782501747,
+        "sparcl_id": "2e0eca0c-86f7-11ef-b74d-525400f334e1",
+        "redshift": 0.06399091692036463,
+        "targetid": 39628428835557841,
+        "_dr": "DESI-DR1"
+      }
+    ]
+  },
+  {
+    "baseline": {
+      "Plate": " 309",
+      "MJD": "51994",
+      "Fiber": "481",
+      "RAJ2000": "223.70260",
+      "DEJ2000": "+00.64133",
+      "z": " 4.356e-02",
+      "Ndet": "3",
+      "MassP50": "10.632",
+      "K01AGN": "true ",
+      "logLFEX": "39.389",
+      "logLFEVII60": "39.828",
+      "logLFEVII57": "39.705",
+      "logLFEXI": "      ",
+      "logLFEXIV": ""
+    },
+    "records": [
+      {
+        "dec": 0.64133277,
+        "redshift_warning": 16,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2000-05-02T00:00:00Z",
+        "ra": 223.7026,
+        "sparcl_id": "0db430c1-5de5-11f0-bfbc-525400f334e1",
+        "redshift": 0.04357951879501343,
+        "targetid": 1237648722323636240,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 0.64133277,
+        "redshift_warning": 16,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2001-03-24T00:00:00Z",
+        "ra": 223.7026,
+        "sparcl_id": "268e78ff-5de5-11f0-9200-525400f334e1",
+        "redshift": 0.04355745017528534,
+        "targetid": 1237648722323636240,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 0.6413350792963262,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2022-04-18T07:54:18.201312Z",
+        "ra": 223.70259393005952,
+        "sparcl_id": "386d2080-8653-11ef-9085-525400f334e1",
+        "redshift": 0.04353231760837423,
+        "targetid": 2305843036413770893,
+        "_dr": "DESI-DR1"
+      },
+      {
+        "dec": 0.6413350839189655,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2022-03-25T10:43:09.125760Z",
+        "ra": 223.70259527369487,
+        "sparcl_id": "d60935e2-85d9-11ef-ba72-525400f334e1",
+        "redshift": 0.043520832703357104,
+        "targetid": 2842545579098112,
+        "_dr": "DESI-DR1"
+      }
+    ]
+  },
+  {
+    "baseline": {
+      "Plate": " 309",
+      "MJD": "51666",
+      "Fiber": "487",
+      "RAJ2000": "223.70260",
+      "DEJ2000": "+00.64133",
+      "z": " 4.358e-02",
+      "Ndet": "3",
+      "MassP50": "10.632",
+      "K01AGN": "true ",
+      "logLFEX": "39.657",
+      "logLFEVII60": "39.789",
+      "logLFEVII57": "39.613",
+      "logLFEXI": "      ",
+      "logLFEXIV": ""
+    },
+    "records": [
+      {
+        "dec": 0.64133277,
+        "redshift_warning": 16,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2000-05-02T00:00:00Z",
+        "ra": 223.7026,
+        "sparcl_id": "0db430c1-5de5-11f0-bfbc-525400f334e1",
+        "redshift": 0.04357951879501343,
+        "targetid": 1237648722323636240,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 0.64133277,
+        "redshift_warning": 16,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2001-03-24T00:00:00Z",
+        "ra": 223.7026,
+        "sparcl_id": "268e78ff-5de5-11f0-9200-525400f334e1",
+        "redshift": 0.04355745017528534,
+        "targetid": 1237648722323636240,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 0.6413350792963262,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2022-04-18T07:54:18.201312Z",
+        "ra": 223.70259393005952,
+        "sparcl_id": "386d2080-8653-11ef-9085-525400f334e1",
+        "redshift": 0.04353231760837423,
+        "targetid": 2305843036413770893,
+        "_dr": "DESI-DR1"
+      },
+      {
+        "dec": 0.6413350839189655,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2022-03-25T10:43:09.125760Z",
+        "ra": 223.70259527369487,
+        "sparcl_id": "d60935e2-85d9-11ef-ba72-525400f334e1",
+        "redshift": 0.043520832703357104,
+        "targetid": 2842545579098112,
+        "_dr": "DESI-DR1"
+      }
+    ]
+  },
+  {
+    "baseline": {
+      "Plate": " 311",
+      "MJD": "51665",
+      "Fiber": "367",
+      "RAJ2000": "226.97660",
+      "DEJ2000": "+01.13799",
+      "z": " 6.102e-02",
+      "Ndet": "3",
+      "MassP50": "10.758",
+      "K01AGN": "true ",
+      "logLFEX": "40.095",
+      "logLFEVII60": "39.881",
+      "logLFEVII57": "39.752",
+      "logLFEXI": "      ",
+      "logLFEXIV": ""
+    },
+    "records": [
+      {
+        "dec": 1.1382632,
+        "redshift_warning": 0,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2001-03-28T00:00:00Z",
+        "ra": 226.97646,
+        "sparcl_id": "1e08ae60-5dfe-11f0-9679-525400f334e1",
+        "redshift": 0.06102757900953293,
+        "targetid": 1237655468061425932,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 1.1379897,
+        "redshift_warning": 0,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2000-05-01T00:00:00Z",
+        "ra": 226.9766,
+        "sparcl_id": "6ebb90a0-5de5-11f0-81d8-525400f334e1",
+        "redshift": 0.061024900525808334,
+        "targetid": 1237655468061425932,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 1.1379827923188066,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2022-04-14T08:49:43.327776Z",
+        "ra": 226.97661208960346,
+        "sparcl_id": "359a1c33-8622-11ef-8c9d-525400f334e1",
+        "redshift": 0.061075542095463994,
+        "targetid": 39627818732099429,
+        "_dr": "DESI-DR1"
+      }
+    ]
+  },
+  {
+    "baseline": {
+      "Plate": " 348",
+      "MJD": "51696",
+      "Fiber": "264",
+      "RAJ2000": "248.12034",
+      "DEJ2000": "-00.47886",
+      "z": " 7.042e-02",
+      "Ndet": "3",
+      "MassP50": "10.736",
+      "K01AGN": "true ",
+      "logLFEX": "39.188",
+      "logLFEVII60": "40.183",
+      "logLFEVII57": "39.961",
+      "logLFEXI": "      ",
+      "logLFEXIV": ""
+    },
+    "records": [
+      {
+        "dec": -0.47886063,
+        "redshift_warning": 0,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2000-05-07T00:00:00Z",
+        "ra": 248.12034,
+        "sparcl_id": "5d56b201-5de8-11f0-a318-525400f334e1",
+        "redshift": 0.07038988173007965,
+        "targetid": 1237655560403354055,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": -0.47886063,
+        "redshift_warning": 0,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2000-06-01T00:00:00Z",
+        "ra": 248.12034,
+        "sparcl_id": "76067600-5de8-11f0-bb03-525400f334e1",
+        "redshift": 0.07041513919830322,
+        "targetid": 1237655560403354055,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": -0.47885143628377647,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2021-06-19T06:19:03.018432Z",
+        "ra": 248.12034826344643,
+        "sparcl_id": "bb43207a-85fa-11ef-b6f2-525400f334e1",
+        "redshift": 0.07041336627993944,
+        "targetid": 39627776810028968,
+        "_dr": "DESI-DR1"
+      }
+    ]
+  },
+  {
+    "baseline": {
+      "Plate": " 467",
+      "MJD": "51901",
+      "Fiber": "358",
+      "RAJ2000": "130.39621",
+      "DEJ2000": "+01.03231",
+      "z": " 1.106e-01",
+      "Ndet": "3",
+      "MassP50": "10.549",
+      "K01AGN": "true ",
+      "logLFEX": "39.887",
+      "logLFEVII60": "40.343",
+      "logLFEVII57": "40.118",
+      "logLFEXI": "      ",
+      "logLFEXIV": ""
+    },
+    "records": [
+      {
+        "dec": 1.0323072,
+        "redshift_warning": 16,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2000-12-23T00:00:00Z",
+        "ra": 130.39621,
+        "sparcl_id": "b766e280-5df6-11f0-ad2f-525400f334e1",
+        "redshift": 0.11060308665037155,
+        "targetid": 1237650797286850905,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 1.032285525709801,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2022-01-26T06:07:18.526656Z",
+        "ra": 130.39619284941944,
+        "sparcl_id": "a88d88f5-8837-11ef-aa16-525400f334e1",
+        "redshift": 0.11061255347064218,
+        "targetid": 39627811073297798,
+        "_dr": "DESI-DR1"
+      },
+      {
+        "dec": 1.032285525709801,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2022-02-10T05:01:53.033808Z",
+        "ra": 130.39619284941944,
+        "sparcl_id": "e12c7979-8981-11ef-8f3f-525400f334e1",
+        "redshift": 0.11062980507013091,
+        "targetid": 39627811073297798,
+        "_dr": "DESI-DR1"
+      }
+    ]
+  },
+  {
+    "baseline": {
+      "Plate": " 514",
+      "MJD": "51994",
+      "Fiber": " 92",
+      "RAJ2000": "176.45877",
+      "DEJ2000": "+01.71552",
+      "z": " 5.944e-02",
+      "Ndet": "2",
+      "MassP50": "10.255",
+      "K01AGN": "true ",
+      "logLFEX": "      ",
+      "logLFEVII60": "39.937",
+      "logLFEVII57": "39.793",
+      "logLFEXI": "      ",
+      "logLFEXIV": ""
+    },
+    "records": [
+      {
+        "dec": 1.7155159,
+        "redshift_warning": 0,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2001-03-26T00:00:00Z",
+        "ra": 176.45877,
+        "sparcl_id": "76ee3768-5dfb-11f0-b10c-525400f334e1",
+        "redshift": 0.05943889915943146,
+        "targetid": 1237671142018580575,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 1.715510463423359,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2021-12-19T12:50:14.545248Z",
+        "ra": 176.45876604095494,
+        "sparcl_id": "ffe8828b-8a20-11ef-8e62-525400f334e1",
+        "redshift": 0.059341510308041544,
+        "targetid": 39627829964443349,
+        "_dr": "DESI-DR1"
+      }
+    ]
+  },
+  {
+    "baseline": {
+      "Plate": " 536",
+      "MJD": "52024",
+      "Fiber": "575",
+      "RAJ2000": "220.05291",
+      "DEJ2000": "+02.79542",
+      "z": " 2.986e-02",
+      "Ndet": "3",
+      "MassP50": " 9.424",
+      "K01AGN": "true ",
+      "logLFEX": "38.740",
+      "logLFEVII60": "39.199",
+      "logLFEVII57": "39.001",
+      "logLFEXI": "      ",
+      "logLFEXIV": ""
+    },
+    "records": [
+      {
+        "dec": 2.7954239,
+        "redshift_warning": 16,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2001-04-25T00:00:00Z",
+        "ra": 220.05291,
+        "sparcl_id": "c1cbd499-5dfd-11f0-92b9-525400f334e1",
+        "redshift": 0.029864467680454254,
+        "targetid": 1237651737385107544,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 2.7954442342790076,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2021-06-28T03:54:16.787520Z",
+        "ra": 220.052916911422,
+        "sparcl_id": "35f0ce10-8916-11ef-b304-525400f334e1",
+        "redshift": 0.029899779637159504,
+        "targetid": 39627854857634733,
+        "_dr": "DESI-DR1"
+      }
+    ]
+  },
+  {
+    "baseline": {
+      "Plate": " 538",
+      "MJD": "52029",
+      "Fiber": "359",
+      "RAJ2000": "222.57935",
+      "DEJ2000": "+01.86813",
+      "z": " 6.938e-02",
+      "Ndet": "2",
+      "MassP50": "10.648",
+      "K01AGN": "true ",
+      "logLFEX": "      ",
+      "logLFEVII60": "40.230",
+      "logLFEVII57": "40.105",
+      "logLFEXI": "      ",
+      "logLFEXIV": ""
+    },
+    "records": [
+      {
+        "dec": 1.8681279,
+        "redshift_warning": 0,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2001-04-30T00:00:00Z",
+        "ra": 222.57935,
+        "sparcl_id": "ee9ae53d-5dfd-11f0-b46a-525400f334e1",
+        "redshift": 0.06938174366950989,
+        "targetid": 1237651736312479795,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 1.8681476502610717,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2022-02-11T13:06:40.778784Z",
+        "ra": 222.5793532240805,
+        "sparcl_id": "b2a39d4c-890c-11ef-8c88-525400f334e1",
+        "redshift": 0.06940159473904549,
+        "targetid": 39627830740387592,
+        "_dr": "DESI-DR1"
+      }
+    ]
+  },
+  {
+    "baseline": {
+      "Plate": " 540",
+      "MJD": "51996",
+      "Fiber": "253",
+      "RAJ2000": "226.97646",
+      "DEJ2000": "+01.13826",
+      "z": " 6.103e-02",
+      "Ndet": "3",
+      "MassP50": "10.650",
+      "K01AGN": "true ",
+      "logLFEX": "39.176",
+      "logLFEVII60": "39.903",
+      "logLFEVII57": "39.677",
+      "logLFEXI": "      ",
+      "logLFEXIV": ""
+    },
+    "records": [
+      {
+        "dec": 1.1382632,
+        "redshift_warning": 0,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2001-03-28T00:00:00Z",
+        "ra": 226.97646,
+        "sparcl_id": "1e08ae60-5dfe-11f0-9679-525400f334e1",
+        "redshift": 0.06102757900953293,
+        "targetid": 1237655468061425932,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 1.1379897,
+        "redshift_warning": 0,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2000-05-01T00:00:00Z",
+        "ra": 226.9766,
+        "sparcl_id": "6ebb90a0-5de5-11f0-81d8-525400f334e1",
+        "redshift": 0.061024900525808334,
+        "targetid": 1237655468061425932,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 1.1379827923188066,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2022-04-14T08:49:43.327776Z",
+        "ra": 226.97661208960346,
+        "sparcl_id": "359a1c33-8622-11ef-8c9d-525400f334e1",
+        "redshift": 0.061075542095463994,
+        "targetid": 39627818732099429,
+        "_dr": "DESI-DR1"
+      }
+    ]
+  },
+  {
+    "baseline": {
+      "Plate": " 541",
+      "MJD": "51959",
+      "Fiber": "100",
+      "RAJ2000": "114.31555",
+      "DEJ2000": "+31.51970",
+      "z": " 2.693e-02",
+      "Ndet": "3",
+      "MassP50": "10.226",
+      "K01AGN": "true ",
+      "logLFEX": "38.750",
+      "logLFEVII60": "39.269",
+      "logLFEVII57": "39.101",
+      "logLFEXI": "      ",
+      "logLFEXIV": ""
+    },
+    "records": [
+      {
+        "dec": 31.519703,
+        "redshift_warning": 16,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2001-02-13T00:00:00Z",
+        "ra": 114.31555,
+        "sparcl_id": "33856bf4-5dfe-11f0-8637-525400f334e1",
+        "redshift": 0.02692941203713417,
+        "targetid": 1237674365380657316,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 31.519701167113464,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2021-11-17T09:33:14.289984Z",
+        "ra": 114.31555158038228,
+        "sparcl_id": "39ac5a1c-887e-11ef-8402-525400f334e1",
+        "redshift": 0.02687741597224452,
+        "targetid": 39628510989389121,
+        "_dr": "DESI-DR1"
+      }
+    ]
+  },
+  {
+    "baseline": {
+      "Plate": " 641",
+      "MJD": "52176",
+      "Fiber": "476",
+      "RAJ2000": "323.38881",
+      "DEJ2000": "-07.21367",
+      "z": " 8.654e-02",
+      "Ndet": "2",
+      "MassP50": "      ",
+      "K01AGN": "     ",
+      "logLFEX": "      ",
+      "logLFEVII60": "40.170",
+      "logLFEVII57": "39.983",
+      "logLFEXI": "      ",
+      "logLFEXIV": ""
+    },
+    "records": [
+      {
+        "dec": -7.2136745,
+        "redshift_warning": 0,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2001-10-17T00:00:00Z",
+        "ra": 323.38881,
+        "sparcl_id": "148d8c6f-5e09-11f0-a020-525400f334e1",
+        "redshift": 0.08654071390628815,
+        "targetid": 1237652600102977763,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": -7.2136745,
+        "redshift_warning": 0,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2001-09-24T00:00:00Z",
+        "ra": 323.38881,
+        "sparcl_id": "fb7d09ab-5e08-11f0-a392-525400f334e1",
+        "redshift": 0.08654411137104034,
+        "targetid": 1237652600102977763,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": -7.213699426328976,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2021-10-25T01:55:45.942240Z",
+        "ra": 323.38880428405,
+        "sparcl_id": "d71f4e73-87dd-11ef-afef-525400f334e1",
+        "redshift": 0.0867651717866636,
+        "targetid": 39627615329324559,
+        "_dr": "DESI-DR1"
+      }
+    ]
+  },
+  {
+    "baseline": {
+      "Plate": " 858",
+      "MJD": "52316",
+      "Fiber": "438",
+      "RAJ2000": "117.45138",
+      "DEJ2000": "+26.79283",
+      "z": " 1.315e-01",
+      "Ndet": "3",
+      "MassP50": "10.688",
+      "K01AGN": "true ",
+      "logLFEX": "      ",
+      "logLFEVII60": "40.306",
+      "logLFEVII57": "40.236",
+      "logLFEXI": "      ",
+      "logLFEXIV": ""
+    },
+    "records": [
+      {
+        "dec": 26.792828,
+        "redshift_warning": 0,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2002-02-10T00:00:00Z",
+        "ra": 117.45138,
+        "sparcl_id": "97c0cf71-5e1f-11f0-8635-525400f334e1",
+        "redshift": 0.131524920463562,
+        "targetid": 1237657775534309823,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 26.79284187651904,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2021-12-16T08:12:35.985888Z",
+        "ra": 117.45138289931452,
+        "sparcl_id": "038760b6-8876-11ef-bb2f-525400f334e1",
+        "redshift": 0.13158976614866688,
+        "targetid": 39628410594526658,
+        "_dr": "DESI-DR1"
+      }
+    ]
+  },
+  {
+    "baseline": {
+      "Plate": " 878",
+      "MJD": "52353",
+      "Fiber": "545",
+      "RAJ2000": "169.72972",
+      "DEJ2000": "+51.81310",
+      "z": " 8.007e-02",
+      "Ndet": "2",
+      "MassP50": "10.324",
+      "K01AGN": "false",
+      "logLFEX": "      ",
+      "logLFEVII60": "40.071",
+      "logLFEVII57": "39.308",
+      "logLFEXI": "      ",
+      "logLFEXIV": ""
+    },
+    "records": [
+      {
+        "dec": 51.813104,
+        "redshift_warning": 0,
+        "data_release": "SDSS-DR17",
+        "dateobs_center": "2002-03-20T00:00:00Z",
+        "ra": 169.72972,
+        "sparcl_id": "27a4e980-5e21-11f0-9aca-525400f334e1",
+        "redshift": 0.08006536215543747,
+        "targetid": 1237657857143996603,
+        "_dr": "SDSS-DR17"
+      },
+      {
+        "dec": 51.81308923626325,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2021-01-17T10:28:32.229264Z",
+        "ra": 169.72971058994654,
+        "sparcl_id": "2bf205a7-87cb-11ef-8f00-525400f334e1",
+        "redshift": 0.08004473288833605,
+        "targetid": 39633274733070169,
+        "_dr": "DESI-DR1"
+      },
+      {
+        "dec": 51.81308923626325,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2022-02-19T08:08:16.345248Z",
+        "ra": 169.72971058994654,
+        "sparcl_id": "6acc3cce-884f-11ef-9a35-525400f334e1",
+        "redshift": 0.080099777173044,
+        "targetid": 39633274733070169,
+        "_dr": "DESI-DR1"
+      },
+      {
+        "dec": 51.81308923626325,
+        "redshift_warning": 0,
+        "data_release": "DESI-DR1",
+        "dateobs_center": "2021-03-25T05:20:09.014784Z",
+        "ra": 169.72971058994654,
+        "sparcl_id": "a6d1bcbc-885a-11ef-bbe3-525400f334e1",
+        "redshift": 0.08001174958814729,
+        "targetid": 39633274733070169,
+        "_dr": "DESI-DR1"
+      }
+    ]
+  }
+]

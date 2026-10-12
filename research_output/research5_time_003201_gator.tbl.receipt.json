@@ -1,0 +1,8 @@
+{
+  "url": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query?catalog=neowiser_p1bs_psd&spatial=Cone&objstr=8.00495+65.4919&radius=3&radunits=arcsec&outfmt=1&selcols=ra%2Cdec%2Cmjd%2Cw1mpro%2Cw1sigmpro%2Cw2mpro%2Cw2sigmpro%2Ccc_flags%2Cph_qual%2Cqual_frame%2Cmoon_masked%2Csaa_sep%2Cw1rchi2%2Cw2rchi2%2Ccntr",
+  "status": 200,
+  "bytes": 107471,
+  "sha256": "72ad6acf928bb0998e4e27cbd3b69da2ae81a4cb4f69e564d98ab7fb7aee7458",
+  "elapsed_seconds": 24.541921615600586,
+  "exploratory": true
+}

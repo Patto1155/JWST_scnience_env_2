@@ -1,0 +1,8 @@
+{
+  "url": "https://irsa.ipac.caltech.edu/TAP/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+TOP+100+source_id%2Cra%2Cdec%2Cpmra%2Cpmdec%2Cref_epoch%2Cphot_g_mean_mag%2Cparallax%2Cparallax_error+FROM+gaia_dr3_source+WHERE+CONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C57.64199%2C35.5857%2C0.002777778%29%29%3D1",
+  "status": 200,
+  "bytes": 173,
+  "sha256": "42293156c937aca333178d09b1212489a302a331f15bd9da1eb5bf131cc890e0",
+  "elapsed_seconds": 9.194247722625732,
+  "exploratory": true
+}

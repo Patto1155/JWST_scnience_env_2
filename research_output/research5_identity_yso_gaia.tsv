@@ -1,0 +1,122 @@
+#
+#   VizieR Astronomical Server vizier.cds.unistra.fr
+#    Date: 2026-10-12T02:35:00 [V7.6.1]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	service_protocol=ASU	  IVOID of the protocol through which the data was retrieved
+#INFO	request_date=2026-10-12T02:35:00	  Query execution date
+#INFO	request=https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-c=57.6419783+%2B35.5856917&-c.rs=5&-out.max=10&-out.all=1&-source=I%2F358%2Fvyso%2CJ%2FApJS%2F224%2F28%2Ftable1%2CII%2F347	  Full request URL
+#INFO	contact=cds-question@unistra.fr	  Email or URL to contact publisher
+#INFO	server_software=VizieR/7.6.1	  Software version
+#INFO	publisher=CDS	  Data centre that produced the VOTable
+#INFO	-c=057.641978+35.585692,rs=5.	
+#Constraint -source=I/358/vyso,J/ApJS/224/28/table1,II/347
+
+#RESOURCE=yCat_2347
+#Name: II/347
+#Title: KiDS-ESO-DR3 multi-band source catalog (de Jong+, 2017)
+#INFO	ivoid=ivo://cds.vizier/ii/347	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/ii/347	    IVOID of underlying data collection
+#INFO	creator=de Jong J.T.A.	    First author or institution
+#INFO	cites=bibcode:2017A&A...604A.134D	    Article or Data origin sources
+#INFO	journal=A&A	    Journal name
+#INFO	original_date=2017	    Year of the article publication
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/II/347	    Dataset landing page
+#INFO	publication_date=2023-12-20	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Table	II_347_kids_dr3:
+#Name: II/347/kids_dr3
+#Title: *KiDS-ESO-DR3 multi-band source catalog
+#Column	_r	(F5.3)	Distance from center (057.641978+35.585692)[FK5/J2000]	[ucd=pos.angDistance]
+#Column	KiDS	(a25)	Source identifier (KIDS JHHMMSS.ss+DDMMSS.ss) (ID)	[ucd=meta.id;meta.main]
+#Column	RAJ2000	(F10.6)	Right ascension (J2000) (RAJ2000)	[ucd=pos.eq.ra;meta.main]
+#Column	DEJ2000	(F10.6)	Declination (J2000) (DECJ2000)	[ucd=pos.eq.dec;meta.main]
+#Column	CollID	(I7)	Astro-WISE SourceCollection identifier (SCID)	[ucd=meta.id]
+#Column	ListID	(I8)	Astro-WISE SourceList identifier (SLID)	[ucd=meta.id]
+#Column	SrcID	(I6)	[0/586899] Astro-WISE Source identifier (SID)	[ucd=meta.id]
+#Column	mClass	(I1)	[0/6] Star/galaxy separation (SG2DPHOT) (1)	[ucd=src.class.starGalaxy]
+#Column	A	(F9.4)	[0.4/1227] Linear semi major axis	[ucd=phys.angSize.smajAxis]
+#Column	B	(F8.4)	[0.03/360] Linear semi minor axis	[ucd=phys.angSize.sminAxis]
+#Column	S/G	(F6.3)	SExtractor star/galaxy classifier (0=galaxy) (CLASS_STAR)	[ucd=src.class.starGalaxy]
+#Column	Ell	(F6.3)	Ellipticity (ELLIPTICITY)	[ucd=src.ellipticity]
+#Column	Rad	(F7.4)	[3/33] Kron-radius used for MAG_AUTO (KRON_RADIUS)	[ucd=phys.angSize;src]
+#Column	PA	(F7.3)	[-90/90] Position angle (POSANG)	[ucd=pos.posAng]
+#Column	urad	(F13.4)	? u-band SExtractor FLUX_RADIUS (FLUX_RADIUS_U)	[ucd=phys.angSize;src]
+#Column	grad	(F12.4)	? g-band SExtractor FLUX_RADIUS (FLUX_RADIUS_G)	[ucd=phys.angSize;src]
+#Column	rrad	(F15.4)	? r-band SExtractor FLUX_RADIUS (FLUX_RADIUS_R)	[ucd=phys.angSize;src]
+#Column	irad	(F13.4)	? i-band SExtractor FLUX_RADIUS (FLUX_RADIUS_I)	[ucd=phys.angSize;src]
+#Column	uFWHM	(F14.4)	? u-band SExtractor FWHM_IMAGE (FWHM_IMAGE_U)	[ucd=phys.angSize;src]
+#Column	gFWHM	(F14.4)	? g-band SExtractor FWHM_IMAGE (FWHM_IMAGE_G)	[ucd=phys.angSize;src]
+#Column	rFWHM	(F11.4)	? r-band SExtractor FWHM_IMAGE (FWHM_IMAGE_R)	[ucd=phys.angSize;src]
+#Column	iFWHM	(F12.4)	? i-band SExtractor FWHM_IMAGE (FWHM_IMAGE_I)	[ucd=phys.angSize;src]
+#Column	uflg	(I3)	[0/120] u-band SExtractor extraction flag (0=most reliable) (FLAG_U) (2)	[ucd=meta.code]
+#Column	gflg	(I3)	g-band SExtractor extraction flag (FLAG_G) (2)	[ucd=meta.code]
+#Column	rflg	(I3)	r-band SExtractor extraction flag (FLAG_R) (2)	[ucd=meta.code]
+#Column	iflg	(I3)	i-band SExtractor extraction flag (FLAG_I) (2)	[ucd=meta.code]
+#Column	uflgISO	(I3)	u-band mask flag (IMAFLAGS_ISO_U) (3)	[ucd=meta.code]
+#Column	gflgISO	(I3)	g-band mask flag (IMAFLAGS_ISO_G) (3)	[ucd=meta.code]
+#Column	rflgISO	(I3)	r-band mask flag (IMAFLAGS_ISO_R) (3)	[ucd=meta.code]
+#Column	iflgISO	(I3)	[0/255] i-band mask flag (IMAFLAGS_ISO_I) (3)	[ucd=meta.code]
+#Column	umag	(F8.5)	[8/41]? u-band MAG_AUTO (MAG_AUTO_U)	[ucd=phot.mag;em.opt.U]
+#Column	e_umag	(F8.5)	[0/100]? u-band error in MAG_AUTO (MAGERR_AUTO_U) (4)	[ucd=stat.error;phot.mag;em.opt.U]
+#Column	gmag	(F8.5)	[8/44]? g-band MAG_AUTO (MAG_AUTO_G)	[ucd=phot.mag;em.opt.B]
+#Column	e_gmag	(F8.5)	[0/100]? g-band error in MAG_AUTO (MAGERR_AUTO_G) (4)	[ucd=stat.error;phot.mag;em.opt.B]
+#Column	rmag	(F8.5)	[9/42]? r-band MAG_AUTO (MAG_AUTO_R)	[ucd=phot.mag;em.opt.R]
+#Column	e_rmag	(F8.5)	[0/100]? r-band error in MAG_AUTO (MAGERR_AUTO_R) (4)	[ucd=stat.error;phot.mag;em.opt.R]
+#Column	imag	(F8.5)	[8/42]? i-band MAG_AUTO (MAG_AUTO_I)	[ucd=phot.mag;em.opt.I]
+#Column	e_imag	(F8.5)	[0/100]? i-band error in MAG_AUTO (MAGERR_AUTO_I) (4)	[ucd=stat.error;phot.mag;em.opt.I]
+#Column	umagISO	(F8.5)	[10/47]? u-band MAG_ISO (MAG_ISO_U)	[ucd=phot.mag;em.opt.U]
+#Column	e_umagISO	(F8.5)	[0/100]? u-band error in MAG_ISO (MAGERR_ISO_U) (4)	[ucd=stat.error;phot.mag;em.opt.U]
+#Column	gmagISO	(F8.5)	[9/45]? g-band MAG_ISO (MAG_ISO_G)	[ucd=phot.mag;em.opt.B]
+#Column	e_gmagISO	(F8.5)	[0/100]? g-band error in MAG_ISO (MAGERR_ISO_G) (4)	[ucd=stat.error;phot.mag;em.opt.B]
+#Column	rmagISO	(F8.5)	[9/30]? r-band MAG_ISO (MAG_ISO_R)	[ucd=phot.mag;em.opt.R]
+#Column	e_rmagISO	(F8.5)	[0/6]? r-band error in MAG_ISO (MAGERR_ISO_R) (4)	[ucd=stat.error;phot.mag;em.opt.R]
+#Column	imagISO	(F8.5)	[10/46]? i-band MAG_ISO (MAG_ISO_I)	[ucd=phot.mag;em.opt.I]
+#Column	e_imagISO	(F8.5)	[0/100]? i-band error in MAG_ISO (MAGERR_ISO_I) (4)	[ucd=stat.error;phot.mag;em.opt.I]
+#Column	uNmp	(I7)	u-band number of masked pixels (NIMAFLAGS_ISO_U)	[ucd=meta.code]
+#Column	gNmp	(I7)	g-band number of masked pixels (NIMAFLAGS_ISO_G)	[ucd=meta.code]
+#Column	rNmp	(I7)	r-band number of masked pixels (NIMAFLAGS_ISO_R)	[ucd=meta.code]
+#Column	iNmp	(I7)	i-band number of masked pixels (NIMAFLAGS_ISO_I)	[ucd=meta.code]
+#Column	uisoA	(I6)	u-band isophotal aperture (ISOAREA_IMAGE_U)	[ucd=meta.code]
+#Column	gisoA	(I7)	g-band isophotal aperture (ISOAREA_IMAGE_G)	[ucd=meta.code]
+#Column	risoA	(I7)	r-band isophotal aperture (ISOAREA_IMAGE_R)	[ucd=meta.code]
+#Column	iisoA	(I7)	i-band isophotal aperture (ISOAREA_IMAGE_I)	[ucd=meta.code]
+#Column	uXpos	(F10.4)	X pixel position in u-band image (XPOS_U)	[ucd=pos.cartesian.x]
+#Column	gXpos	(F10.4)	X pixel position in g-band image (XPOS_G)	[ucd=pos.cartesian.x]
+#Column	rXpos	(F10.4)	X pixel position in r-band image (XPOS_R)	[ucd=pos.cartesian.x]
+#Column	iXpos	(F10.4)	X pixel position in i-band image (XPOS_I)	[ucd=pos.cartesian.x]
+#Column	uYpos	(F10.4)	Y pixel position in u-band image (YPOS_U)	[ucd=pos.cartesian.y]
+#Column	gYpos	(F10.4)	Y pixel position in g-band image (YPOS_G)	[ucd=pos.cartesian.y]
+#Column	rYpos	(F10.4)	Y pixel position in r-band image (YPOS_R)	[ucd=pos.cartesian.y]
+#Column	iYPpos	(F10.4)	Y pixel position in i-band image (YPOS_I)	[ucd=pos.cartesian.y]
+#Column	amaj	(F5.2)	[0.7/2] Linear semi major axis of GAaP aperture (A_GAAP)	[ucd=phys.angSize.smajAxis]
+#Column	bmin	(F5.2)	[0.7/2]? Linear semi minor axis of GAaP aperture (B_GAAP)	[ucd=phys.angSize.sminAxis]
+#Column	PAGAAP	(F5.1)	[-90/90] Position angle of GAaP aperture (POSANG_GAAP)	[ucd=pos.posAng]
+#Column	umagGAAP	(F8.5)	[12/44]? GAaP u-band magnitude (MAG_GAAP_U) (5)	[ucd=phot.mag;em.opt.U]
+#Column	e_umagGAAP	(F8.5)	[0/100]? error in GAaP u-band magnitude (MAGERR_GAAP_U) (4)	[ucd=stat.error;phot.mag;em.opt.U]
+#Column	gmagGAAP	(F8.5)	[12/46]? GAaP g-band magnitude (MAG_GAAP_G) (5)	[ucd=phot.mag;em.opt.B]
+#Column	e_gmagGAAP	(F8.5)	[0/100]? error in GAaP g-band magnitude (MAGERR_GAAP_G) (4)	[ucd=stat.error;phot.mag;em.opt.B]
+#Column	rmagGAAP	(F8.5)	[13/42]? GAaP r-band magnitude (MAG_GAAP_R) (5)	[ucd=phot.mag;em.opt.R]
+#Column	e_rmagGAAP	(F8.5)	[0/100]? error in GAaP r-band magnitude (MAGERR_GAAP_R) (4)	[ucd=stat.error;phot.mag;em.opt.R]
+#Column	imagGAAP	(F8.5)	[12/48]? GAaP i-band magnitude (MAG_GAAP_I) (5)	[ucd=phot.mag;em.opt.I]
+#Column	e_imagGAAP	(F8.5)	[0/100]? error in GAaP i-band magnitude (MAGERR_GAAP_I) (4)	[ucd=stat.error;phot.mag;em.opt.I]
+#Column	dumag	(F7.4)	[-0.7/0.3] u-band photometric homogenization ZPT offset (ZPT_OFFSET_U) (6)	[ucd=arith.zp;phot.mag;em.opt.U]
+#Column	dgmag	(F7.4)	[-0.4/0.7] g-band photometric homogenization ZPT offset (ZPT_OFFSET_G) (6)	[ucd=arith.zp;phot.mag;em.opt.B]
+#Column	drmag	(F7.4)	[-0.3/0.2] r-band photometric homogenization ZPT offset (ZPT_OFFSET_R) (6)	[ucd=arith.zp;phot.mag;em.opt.R]
+#Column	dimag	(F7.4)	[-0.4/0.5] i-band photometric homogenization ZPT offset (ZPT_OFFSET_I) (6)	[ucd=arith.zp;phot.mag;em.opt.I]
+#Column	Au	(F7.4)	[0.03/1] u-band Galactic foreground extinction following Schlegel et al. maps (EXT_SFD_U)	[ucd=obs.atmos.extinction;phot.mag;em.opt.U]
+#Column	Ag	(F7.4)	[0.02/0.7] g-band Galactic foreground extinction following Schlegel et al. maps (EXT_SFD_G)	[ucd=obs.atmos.extinction;phot.mag;em.opt.B]
+#Column	Ar	(F7.4)	[0.02/0.6] r-band Galactic foreground extinction following Schlegel et al. maps (EXT_SFD_R)	[ucd=obs.atmos.extinction;phot.mag;em.opt.R]
+#Column	Ai	(F7.4)	[0.01/0.4] i-band Galactic foreground extinction following Schlegel et al. maps (EXT_SFD_I)	[ucd=obs.atmos.extinction;phot.mag;em.opt.I]
+#Column	zbest	(F5.2)	[0/3.5] Best-fitting BPZ photometric redshift (Z_B_BPZ)	[ucd=src.redshift.phot]
+#Column	Odds	(F6.3)	[0.02/1] Empirical ODDS of Z_B_BPZ (ODDS_BPZ) (7)	[ucd=stat.probability]
+#Column	TB	(F6.3)	[1/6] Best-fitting BPZ spectral type (T_B_BPZ) (8)	[ucd=src.morph.type]
+#Column	Tflg	(I2)	[0/12] Tile quality warning flag (TILE_FLAG) (9)	[ucd=meta.code]
+#Column	u-g	(F9.5)	[-22/19.4]? Homogenized and Extinction corrected GAaP u-g band color (COLOR_GAAPHOM_U_G)	[ucd=phot.color.reddFree;em.opt]
+#Column	u-r	(F9.5)	[-16/21]? Homogenized and Extinction corrected GAaP u-r band color (COLOR_GAAPHOM_U_R)	[ucd=phot.color.reddFree;em.opt]
+#Column	u-i	(F9.5)	[-25/22]? Homogenized and Extinction corrected GAaP u-i band color (COLOR_GAAPHOM_U_I)	[ucd=phot.color.reddFree;em.opt]
+#Column	g-r	(F9.5)	[-16/24]? Homogenized and Extinction corrected GAaP g-r band color (COLOR_GAAPHOM_G_R)	[ucd=phot.color.reddFree;em.opt]
+#Column	g-i	(F9.5)	[-25/24.3]? Homogenized and Extinction corrected GAaP g-i band color (COLOR_GAAPHOM_G_I)	[ucd=phot.color.reddFree;em.opt]
+#Column	r-i	(F9.5)	[-24.2/16]? Homogenized and Extinction corrected GAaP r-i band color (COLOR_GAAPHOM_R_I)	[ucd=phot.color.reddFree;em.opt]

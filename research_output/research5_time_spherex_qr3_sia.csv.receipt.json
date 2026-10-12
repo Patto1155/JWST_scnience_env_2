@@ -1,0 +1,8 @@
+{
+  "url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_qr3&POS=CIRCLE+57.6419783+35.5856917+0.000277778&TIME=61090+61310&BAND=2.8e-6+3.9e-6&CALIB=2&RESPONSEFORMAT=CSV&MAXREC=1000",
+  "status": 200,
+  "bytes": 37961,
+  "sha256": "baf112b1365b994fc40eccae38d27c2a6598fc7489b22d622e84677e4dfcfc70",
+  "elapsed_seconds": 7.09722375869751,
+  "exploratory": true
+}

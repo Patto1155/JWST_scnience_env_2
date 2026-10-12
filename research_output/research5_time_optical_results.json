@@ -1,0 +1,205 @@
+{
+  "035034": {
+    "designation": "VarWISE J035034.07+353508.5",
+    "total_rows": 1574,
+    "quality_identity_rows": 1311,
+    "oid_comparisons": {
+      "655213300010614": {
+        "a_obs": 536,
+        "b_obs": 185,
+        "a_bins": 19,
+        "b_bins": 19,
+        "contrast_b_minus_a": -0.04890064999999666,
+        "ci95_conditional_30day": [
+          -0.15283869999999666,
+          0.09382629999999992
+        ],
+        "eligible": true,
+        "a_median": 18.98288155,
+        "b_median": 18.9339809
+      },
+      "1698205400006747": {
+        "a_obs": 56,
+        "b_obs": 28,
+        "a_bins": 4,
+        "b_bins": 8,
+        "contrast_b_minus_a": -0.2891449750000028,
+        "ci95_conditional_30day": [
+          -0.34270380000000245,
+          0.050339699999998544
+        ],
+        "eligible": true,
+        "a_median": 19.161792275,
+        "b_median": 18.872647299999997
+      }
+    },
+    "selected_oid": "655213300010614",
+    "selected_comparison": {
+      "a_obs": 536,
+      "b_obs": 185,
+      "a_bins": 19,
+      "b_bins": 19,
+      "contrast_b_minus_a": -0.04890064999999666,
+      "ci95_conditional_30day": [
+        -0.15283869999999666,
+        0.09382629999999992
+      ],
+      "eligible": true,
+      "a_median": 18.98288155,
+      "b_median": 18.9339809
+    },
+    "all_filter_counts": {
+      "zg": 125,
+      "zr": 1186,
+      "zi": 0
+    },
+    "g_minus_r_ancillary": {
+      "a_obs": 45,
+      "b_obs": 6,
+      "a_bins": 16,
+      "b_bins": 5,
+      "contrast_b_minus_a": 0.28741307500000257,
+      "ci95_conditional_30day": [
+        -0.08320239999999757,
+        0.4339560999999996
+      ],
+      "eligible": false,
+      "a_median": 1.1766486249999994,
+      "b_median": 1.464061700000002
+    },
+    "g_minus_r_pairs": 84,
+    "individual_cycles": [
+      {
+        "a_obs": 475,
+        "b_obs": 63,
+        "a_bins": 14,
+        "b_bins": 10,
+        "contrast_b_minus_a": -0.09682559999999896,
+        "ci95_conditional_30day": [
+          -0.2536924818750019,
+          0.12774769562499763
+        ],
+        "eligible": true,
+        "a_median": 18.969902025,
+        "b_median": 18.873076425
+      },
+      {
+        "a_obs": 61,
+        "b_obs": 122,
+        "a_bins": 5,
+        "b_bins": 9,
+        "contrast_b_minus_a": 0.013431549999999959,
+        "ci95_conditional_30day": [
+          -0.16118145000000084,
+          0.09286309999999887
+        ],
+        "eligible": true,
+        "a_median": 18.9909859,
+        "b_median": 19.00441745
+      }
+    ]
+  },
+  "003201": {
+    "designation": "VarWISE J003201.18+652930.8",
+    "total_rows": 1991,
+    "quality_identity_rows": 1566,
+    "oid_comparisons": {
+      "806214200026852": {
+        "a_obs": 734,
+        "b_obs": 163,
+        "a_bins": 22,
+        "b_bins": 22,
+        "contrast_b_minus_a": 0.028924424999999587,
+        "ci95_conditional_30day": [
+          -0.027790100000000706,
+          0.08247090000000412
+        ],
+        "eligible": true,
+        "a_median": 18.161983975,
+        "b_median": 18.190908399999998
+      },
+      "1839207100004047": {
+        "a_obs": 80,
+        "b_obs": 9,
+        "a_bins": 10,
+        "b_bins": 4,
+        "contrast_b_minus_a": 0.021619299999997565,
+        "ci95_conditional_30day": [
+          -0.07723660000000265,
+          0.10633374999999745
+        ],
+        "eligible": false,
+        "a_median": 18.1505742,
+        "b_median": 18.1721935
+      }
+    },
+    "selected_oid": "806214200026852",
+    "selected_comparison": {
+      "a_obs": 734,
+      "b_obs": 163,
+      "a_bins": 22,
+      "b_bins": 22,
+      "contrast_b_minus_a": 0.028924424999999587,
+      "ci95_conditional_30day": [
+        -0.027790100000000706,
+        0.08247090000000412
+      ],
+      "eligible": true,
+      "a_median": 18.161983975,
+      "b_median": 18.190908399999998
+    },
+    "all_filter_counts": {
+      "zg": 326,
+      "zr": 1166,
+      "zi": 74
+    }
+  },
+  "203459": {
+    "designation": "VarWISE J203459.71+474206.1",
+    "total_rows": 311,
+    "quality_identity_rows": 281,
+    "oid_comparisons": {
+      "1768216100004759": {
+        "a_obs": 79,
+        "b_obs": 0,
+        "a_bins": 14,
+        "b_bins": 0,
+        "eligible": false
+      },
+      "1804204400034936": {
+        "a_obs": 81,
+        "b_obs": 13,
+        "a_bins": 12,
+        "b_bins": 3,
+        "contrast_b_minus_a": 0.30535837500000085,
+        "ci95_conditional_30day": [
+          0.0503959000000016,
+          0.5971478999999995
+        ],
+        "eligible": false,
+        "a_median": 18.461983225,
+        "b_median": 18.7673416
+      }
+    },
+    "selected_oid": "1804204400034936",
+    "selected_comparison": {
+      "a_obs": 81,
+      "b_obs": 13,
+      "a_bins": 12,
+      "b_bins": 3,
+      "contrast_b_minus_a": 0.30535837500000085,
+      "ci95_conditional_30day": [
+        0.0503959000000016,
+        0.5971478999999995
+      ],
+      "eligible": false,
+      "a_median": 18.461983225,
+      "b_median": 18.7673416
+    },
+    "all_filter_counts": {
+      "zg": 96,
+      "zr": 173,
+      "zi": 12
+    }
+  }
+}

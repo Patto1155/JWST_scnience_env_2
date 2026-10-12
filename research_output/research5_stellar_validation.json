@@ -1,0 +1,14 @@
+{
+  "sha256": {
+    "discovery/research5_stellar_measure.py": "74225ced65d0314ddf033bee67f3d1c621cf21264bd3a6c1faee0e7a5c2a3146",
+    "tests/test_research5_stellar_measure.py": "9766edcb5d209a59da95b2bdf993684dcb1548b656fc3a63557f7a606b4cad28",
+    "docs/RESEARCH5_STELLAR.md": "114c8c2e5504c643489a76cf12dc8de15a64bc932c5cde56238e085d08900b4c",
+    "research_output/research5_stellar_inputs.json": "e302a643493d9b8e3cd1f4c7e884de0f09df901a070cac3ffd3518932f089b44",
+    "research_output/research5_stellar_measurements.json": "dce5023a4200b5b8186a2d3791664209f6b1629eeffb4c1e46be311b7efcefc3"
+  },
+  "body_bytes_scientific_products": 3467520,
+  "test": "tests/test_research5_stellar_measure.py: 1 passed",
+  "lint": "ruff clean",
+  "status": "frozen stopped pilot; independent QR review complete, no physical evolution established",
+  "review": "docs/RESEARCH5_STELLAR_REVIEW.md"
+}

@@ -1,0 +1,180 @@
+{
+  "status": "independent QR3 narrowband measurement; W1 contract not evaluated",
+  "coordinate_deg": [
+    57.641985,
+    35.585679
+  ],
+  "frames": [
+    {
+      "path": "research_output/research5_time_spherex_000.fits.gz",
+      "sha256": "7eca3dbb0865d0bbb029907627087d37efa02cf4d0641f8925880bcdb3bceced",
+      "bytes": 3722372,
+      "kind": "actual data independent measurement",
+      "image_shape": [
+        25,
+        25
+      ],
+      "source_pixel": [
+        12.076705540212808,
+        12.24078617863927
+      ],
+      "parent_pixel": [
+        300.0767055402128,
+        1367.2407861786394
+      ],
+      "detector": "4",
+      "mjd": 61269.077386667,
+      "wavelength_um": 2.7954780179352205,
+      "bandwidth_um": 0.07992473336678063,
+      "epsf_zone": 297,
+      "epsf_original_zone": 297,
+      "epsf_zone_wavelength_um": 2.766453266143799,
+      "epsf_raw_native_sum": 0.03959351705491807,
+      "epsf_native_sum": 1.0,
+      "psf_good_fraction": 1.0,
+      "central_flags": 2097152,
+      "flag_counts": {
+        "0": 70,
+        "69": 1,
+        "524288": 4,
+        "2097152": 544,
+        "2097216": 2,
+        "2097221": 3,
+        "270532608": 1
+      },
+      "benign_flag_mask": 2101248,
+      "solid_angle_sr": 8.973328404975112e-10,
+      "mjy_per_mjy_sr_pixel": 0.8973328404975112,
+      "solid_angle_method": "approximate local SIP-aware WCS; not calibration SAPM",
+      "psf_fits": {
+        "constant_r6": {
+          "amplitude": 5.736675481403581,
+          "formal_error": 0.0877145919419823,
+          "residual_scaled_error": 0.16224323157626583,
+          "background_coefficients": [
+            0.1860419525168671
+          ],
+          "reduced_chi2": 3.421286797314465,
+          "dof": 109,
+          "usable_psf_fraction": 1.0,
+          "flux_mjy": 5.147707304740303,
+          "error_mjy": 0.14558617984182612
+        },
+        "plane_r6": {
+          "amplitude": 5.736093555184489,
+          "formal_error": 0.08771836992171665,
+          "residual_scaled_error": 0.16338251920282348,
+          "background_coefficients": [
+            0.18610040254764035,
+            -0.0002595228912454824,
+            -0.0005475556815294577
+          ],
+          "reduced_chi2": 3.469205859711005,
+          "dof": 107,
+          "usable_psf_fraction": 1.0,
+          "flux_mjy": 5.1471851232331645,
+          "error_mjy": 0.14660850004390877
+        },
+        "constant_r4": {
+          "amplitude": 5.761464171139215,
+          "formal_error": 0.08898148505086739,
+          "residual_scaled_error": 0.17233680664088122,
+          "background_coefficients": [
+            0.1831318769807588
+          ],
+          "reduced_chi2": 3.7510839462388166,
+          "dof": 48,
+          "usable_psf_fraction": 0.9986391070673029,
+          "flux_mjy": 5.169951010112991,
+          "error_mjy": 0.15464347622533228
+        }
+      },
+      "aperture_checks": {
+        "2": {
+          "amplitude": 5.699746871772588,
+          "formal_error": 0.09601995648203986,
+          "background_median": 0.18678030371665955,
+          "background_mad_sigma": 0.018731855745613573,
+          "psf_fraction": 0.9580442216280788,
+          "annulus_pixels": 148,
+          "flux_mjy": 5.1145700505645,
+          "error_mjy": 0.08616186029447623
+        },
+        "3": {
+          "amplitude": 5.5181500305213325,
+          "formal_error": 0.12068848252632856,
+          "background_median": 0.18678030371665955,
+          "background_mad_sigma": 0.018731855745613573,
+          "psf_fraction": 0.9905930324558563,
+          "annulus_pixels": 148,
+          "flux_mjy": 4.951617241179135,
+          "error_mjy": 0.10829773884068465
+        }
+      },
+      "centroid_diagnostic": {
+        "offset_pixels": [
+          0.00556419672357329,
+          0.00819634845533756
+        ],
+        "optimizer_success": true,
+        "at_search_boundary": false,
+        "amplitude": 5.7438862954689265,
+        "reduced_chi2": 3.4576773689706566,
+        "status": "centroid sensitivity diagnostic, not alternative selection",
+        "flux_mjy": 5.154177805007858
+      },
+      "neighbor_zone_diagnostics": [
+        {
+          "zone": 297,
+          "distance_pixels": 56.75678253173828,
+          "flux_mjy": 5.1471851232331645,
+          "reduced_chi2": 3.469205859711005
+        },
+        {
+          "zone": 276,
+          "distance_pixels": 68.74058532714844,
+          "flux_mjy": 5.1235022920098325,
+          "reduced_chi2": 3.503420171714177
+        },
+        {
+          "zone": 296,
+          "distance_pixels": 70.70134735107422,
+          "flux_mjy": 5.129385518030377,
+          "reduced_chi2": 3.4629179828150067
+        },
+        {
+          "zone": 275,
+          "distance_pixels": 80.63880157470703,
+          "flux_mjy": 5.150654141116996,
+          "reduced_chi2": 3.4717608521024883
+        },
+        {
+          "zone": 298,
+          "distance_pixels": 142.53929138183594,
+          "flux_mjy": 5.110514803110803,
+          "reduced_chi2": 3.41481520768176
+        }
+      ],
+      "limitations": [
+        "ePSF truncated calibration support; wings uncertain",
+        "diagonal variance; residual rescaling omits noise covariance",
+        "no instrument calibration floor imposed",
+        "narrowband flux is not WISE W1"
+      ]
+    }
+  ],
+  "failures": [],
+  "w1_response_input": {
+    "path": "research_output/research5_spherex_review_w1_response.txt.gz",
+    "sha256": "9662e8ecd6bde10a7bd58e1c4df12847639f9fc3e0d8948e3d064977237db963"
+  },
+  "w1_coverage": {
+    "nominal_support_response_fraction": 0.020990637029821128,
+    "nominal_support_flat_fnu_photon_fraction": 0.02505826072621473,
+    "interpolation_hull_response_fraction": 0.0,
+    "interpolation_hull_flat_fnu_photon_fraction": 0.0,
+    "nonoverlapping_nominal_channel_count": 1,
+    "status": "bandpass diagnostic; widths approximate; no flux extrapolation"
+  },
+  "receipt_role": "Historical untrimmed000intermediate measured at approximatequerycenter; originalinputhash no longer localpublishedfile. Finalresults+manifest bindcompactpublisheddata."
+}

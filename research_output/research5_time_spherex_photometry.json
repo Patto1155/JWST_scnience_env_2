@@ -1,0 +1,354 @@
+[
+  {
+    "file": "research5_time_spherex_000.fits.gz",
+    "mjd": 61269.077387,
+    "wavelength_um": 2.7954787685786364,
+    "channel_width_um": 0.07992473146128448,
+    "xy_cutout": [
+      12.074178723540086,
+      12.239857707849033
+    ],
+    "psf_zone_within_trim": 0,
+    "psf_original_zone": 297,
+    "good_psf_fraction": 0.9986314449060014,
+    "edge_margin_pixels": 11.760142292150967,
+    "pixel_unit_mjy_per_mjysr": 0.8973328471785712,
+    "fits": {
+      "constant": {
+        "flux_mjy": 5.168061139052615,
+        "sigma_mjy": 0.1548642847177002,
+        "reduced_chi2": 3.763998718998644,
+        "eligible": true,
+        "n_pixels": 50
+      },
+      "plane": {
+        "flux_mjy": 5.16843522669512,
+        "sigma_mjy": 0.15820535676557626,
+        "reduced_chi2": 3.926497664347001,
+        "eligible": true,
+        "n_pixels": 50
+      }
+    },
+    "interpretation": "actual narrow-channel measurements; never direct WISEW1 magnitudes or independent visit replication"
+  },
+  {
+    "file": "research5_time_spherex_004.fits.gz",
+    "mjd": 61273.492383,
+    "wavelength_um": 2.5704625484934427,
+    "channel_width_um": 0.07361561467459472,
+    "xy_cutout": [
+      12.256260243697051,
+      12.938810471829708
+    ],
+    "psf_zone_within_trim": 0,
+    "psf_original_zone": 376,
+    "good_psf_fraction": 0.9993727858625858,
+    "edge_margin_pixels": 11.061189528170292,
+    "pixel_unit_mjy_per_mjysr": 0.8942394144822408,
+    "fits": {
+      "constant": {
+        "flux_mjy": 4.846648660756685,
+        "sigma_mjy": 0.15721993387705535,
+        "reduced_chi2": 4.196472869211161,
+        "eligible": true,
+        "n_pixels": 49
+      },
+      "plane": {
+        "flux_mjy": 4.846768758950453,
+        "sigma_mjy": 0.1578610507055469,
+        "reduced_chi2": 4.22925558406324,
+        "eligible": true,
+        "n_pixels": 49
+      }
+    },
+    "interpretation": "actual narrow-channel measurements; never direct WISEW1 magnitudes or independent visit replication"
+  },
+  {
+    "file": "research5_time_spherex_008.fits.gz",
+    "mjd": 61270.370799,
+    "wavelength_um": 3.2871019838517825,
+    "channel_width_um": 0.09561368788544058,
+    "xy_cutout": [
+      12.607071085943229,
+      12.778590831069813
+    ],
+    "psf_zone_within_trim": 0,
+    "psf_original_zone": 149,
+    "good_psf_fraction": 0.99770668344035,
+    "edge_margin_pixels": 11.221409168930187,
+    "pixel_unit_mjy_per_mjysr": 0.8921553408187829,
+    "fits": {
+      "constant": {
+        "flux_mjy": 6.498994090198446,
+        "sigma_mjy": 0.13155110313732835,
+        "reduced_chi2": 2.2066343724118007,
+        "eligible": true,
+        "n_pixels": 48
+      },
+      "plane": {
+        "flux_mjy": 6.498784089568953,
+        "sigma_mjy": 0.12819665709717168,
+        "reduced_chi2": 2.095248788335866,
+        "eligible": true,
+        "n_pixels": 48
+      }
+    },
+    "interpretation": "actual narrow-channel measurements; never direct WISEW1 magnitudes or independent visit replication"
+  },
+  {
+    "file": "research5_time_spherex_012.fits.gz",
+    "mjd": 61270.709327,
+    "wavelength_um": 3.6555065174288006,
+    "channel_width_um": 0.10190939192925716,
+    "xy_cutout": [
+      12.24261212575038,
+      12.61162017065974
+    ],
+    "psf_zone_within_trim": 0,
+    "psf_original_zone": 44,
+    "good_psf_fraction": 0.3865867511771555,
+    "edge_margin_pixels": 11.38837982934026,
+    "pixel_unit_mjy_per_mjysr": 0.888855742049801,
+    "fits": {
+      "constant": {
+        "flux_mjy": 6.9548783383422474,
+        "sigma_mjy": 0.22975309841628208,
+        "reduced_chi2": 2.2322704591910876,
+        "eligible": false,
+        "n_pixels": 43
+      },
+      "plane": {
+        "flux_mjy": 6.938828717279186,
+        "sigma_mjy": 0.23331862089195196,
+        "reduced_chi2": 2.2873236313418133,
+        "eligible": false,
+        "n_pixels": 43
+      }
+    },
+    "interpretation": "actual narrow-channel measurements; never direct WISEW1 magnitudes or independent visit replication"
+  },
+  {
+    "file": "research5_time_spherex_014.fits.gz",
+    "mjd": 61270.913269,
+    "wavelength_um": 2.449321026930936,
+    "channel_width_um": 0.06023598174804821,
+    "xy_cutout": [
+      12.294418490045182,
+      12.670769304561674
+    ],
+    "psf_zone_within_trim": 0,
+    "psf_original_zone": 420,
+    "good_psf_fraction": 1.0,
+    "edge_margin_pixels": 11.329230695438326,
+    "pixel_unit_mjy_per_mjysr": 0.903519660870983,
+    "fits": {
+      "constant": {
+        "flux_mjy": 5.9645872519757335,
+        "sigma_mjy": 0.16789721427930956,
+        "reduced_chi2": 3.078443519808049,
+        "eligible": true,
+        "n_pixels": 50
+      },
+      "plane": {
+        "flux_mjy": 5.965038640022523,
+        "sigma_mjy": 0.17131703521366273,
+        "reduced_chi2": 3.2011958445231143,
+        "eligible": true,
+        "n_pixels": 50
+      }
+    },
+    "interpretation": "actual narrow-channel measurements; never direct WISEW1 magnitudes or independent visit replication"
+  },
+  {
+    "file": "research5_time_spherex_018.fits.gz",
+    "mjd": 61271.72685,
+    "wavelength_um": 2.71864439591998,
+    "channel_width_um": 0.07595035272417074,
+    "xy_cutout": [
+      0.6846518108211033,
+      12.155487904944373
+    ],
+    "psf_zone_within_trim": 0,
+    "psf_original_zone": 315,
+    "good_psf_fraction": 1.0000000000000002,
+    "edge_margin_pixels": 0.6846518108211033,
+    "pixel_unit_mjy_per_mjysr": 0.8999904903087786,
+    "fits": {
+      "constant": {
+        "flux_mjy": 6.624809455018321,
+        "sigma_mjy": 0.18698174530211814,
+        "reduced_chi2": 4.7490903173819055,
+        "eligible": false,
+        "n_pixels": 35
+      },
+      "plane": {
+        "flux_mjy": 6.655972131859592,
+        "sigma_mjy": 0.1937475152211564,
+        "reduced_chi2": 4.898304583706058,
+        "eligible": false,
+        "n_pixels": 35
+      }
+    },
+    "interpretation": "actual narrow-channel measurements; never direct WISEW1 magnitudes or independent visit replication"
+  },
+  {
+    "file": "research5_time_spherex_019.fits.gz",
+    "mjd": 61271.795973,
+    "wavelength_um": 3.11408737026478,
+    "channel_width_um": 0.09166958170575515,
+    "xy_cutout": [
+      12.108407225267692,
+      12.211295649126837
+    ],
+    "psf_zone_within_trim": 0,
+    "psf_original_zone": 191,
+    "good_psf_fraction": 0.9992069154720866,
+    "edge_margin_pixels": 11.788704350873163,
+    "pixel_unit_mjy_per_mjysr": 0.8938035426867188,
+    "fits": {
+      "constant": {
+        "flux_mjy": 7.27162790918392,
+        "sigma_mjy": 0.24239077318208016,
+        "reduced_chi2": 5.061552211464768,
+        "eligible": true,
+        "n_pixels": 50
+      },
+      "plane": {
+        "flux_mjy": 7.2742165803111325,
+        "sigma_mjy": 0.24555366539125012,
+        "reduced_chi2": 5.192959015716044,
+        "eligible": true,
+        "n_pixels": 50
+      }
+    },
+    "interpretation": "actual narrow-channel measurements; never direct WISEW1 magnitudes or independent visit replication"
+  },
+  {
+    "file": "research5_time_spherex_021.fits.gz",
+    "mjd": 61271.866695,
+    "wavelength_um": 2.443635141197445,
+    "channel_width_um": 0.05637425433140859,
+    "xy_cutout": [
+      12.314854121409146,
+      12.649081439665437
+    ],
+    "psf_zone_within_trim": 0,
+    "psf_original_zone": 439,
+    "good_psf_fraction": 0.9996519595545039,
+    "edge_margin_pixels": 11.350918560334563,
+    "pixel_unit_mjy_per_mjysr": 0.8959227560526563,
+    "fits": {
+      "constant": {
+        "flux_mjy": 6.983764945653485,
+        "sigma_mjy": 0.1742657528549799,
+        "reduced_chi2": 2.6277252934338144,
+        "eligible": true,
+        "n_pixels": 49
+      },
+      "plane": {
+        "flux_mjy": 6.9857550064684535,
+        "sigma_mjy": 0.1758430039256315,
+        "reduced_chi2": 2.675188210561572,
+        "eligible": true,
+        "n_pixels": 49
+      }
+    },
+    "interpretation": "actual narrow-channel measurements; never direct WISEW1 magnitudes or independent visit replication"
+  },
+  {
+    "file": "research5_time_spherex_023.fits.gz",
+    "mjd": 61275.464522,
+    "wavelength_um": 3.9994777489526037,
+    "channel_width_um": 0.036380410694545284,
+    "xy_cutout": [
+      12.03814531218605,
+      12.462878765355775
+    ],
+    "psf_zone_within_trim": 0,
+    "psf_original_zone": 309,
+    "good_psf_fraction": 1.0,
+    "edge_margin_pixels": 11.537121234644225,
+    "pixel_unit_mjy_per_mjysr": 0.8904494519998589,
+    "fits": {
+      "constant": {
+        "flux_mjy": 5.373458550719863,
+        "sigma_mjy": 0.21118314915864414,
+        "reduced_chi2": 1.6866276583571458,
+        "eligible": true,
+        "n_pixels": 51
+      },
+      "plane": {
+        "flux_mjy": 5.370942464791423,
+        "sigma_mjy": 0.21452659617203287,
+        "reduced_chi2": 1.73827203990064,
+        "eligible": true,
+        "n_pixels": 51
+      }
+    },
+    "interpretation": "actual narrow-channel measurements; never direct WISEW1 magnitudes or independent visit replication"
+  },
+  {
+    "file": "research5_time_spherex_029.fits.gz",
+    "mjd": 61275.936465,
+    "wavelength_um": 4.09042437676012,
+    "channel_width_um": 0.0366079310862729,
+    "xy_cutout": [
+      12.510477971656677,
+      12.64086900267083
+    ],
+    "psf_zone_within_trim": 0,
+    "psf_original_zone": 250,
+    "good_psf_fraction": 1.0,
+    "edge_margin_pixels": 11.35913099732917,
+    "pixel_unit_mjy_per_mjysr": 0.888926489888928,
+    "fits": {
+      "constant": {
+        "flux_mjy": 5.568743196085184,
+        "sigma_mjy": 0.2105582432429331,
+        "reduced_chi2": 1.5920368170392265,
+        "eligible": true,
+        "n_pixels": 52
+      },
+      "plane": {
+        "flux_mjy": 5.562896526860601,
+        "sigma_mjy": 0.20003040910799816,
+        "reduced_chi2": 1.4360932830847568,
+        "eligible": true,
+        "n_pixels": 52
+      }
+    },
+    "interpretation": "actual narrow-channel measurements; never direct WISEW1 magnitudes or independent visit replication"
+  },
+  {
+    "file": "research5_time_spherex_040.fits.gz",
+    "mjd": 61277.224458,
+    "wavelength_um": 4.378683946044578,
+    "channel_width_um": 0.03819021781525988,
+    "xy_cutout": [
+      12.735671565729897,
+      12.467416228905122
+    ],
+    "psf_zone_within_trim": 0,
+    "psf_original_zone": 40,
+    "good_psf_fraction": 1.0000000000000002,
+    "edge_margin_pixels": 11.264328434270103,
+    "pixel_unit_mjy_per_mjysr": 0.8830039853645892,
+    "fits": {
+      "constant": {
+        "flux_mjy": 5.796943018368835,
+        "sigma_mjy": 0.19178289010816088,
+        "reduced_chi2": 1.132974330033718,
+        "eligible": true,
+        "n_pixels": 50
+      },
+      "plane": {
+        "flux_mjy": 5.7978915616152245,
+        "sigma_mjy": 0.19171379399039773,
+        "reduced_chi2": 1.1321415563948907,
+        "eligible": true,
+        "n_pixels": 50
+      }
+    },
+    "interpretation": "actual narrow-channel measurements; never direct WISEW1 magnitudes or independent visit replication"
+  }
+]

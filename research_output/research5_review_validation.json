@@ -1,0 +1,28 @@
+{
+  "scope": "Independent numerical/identity checks only; prior full repository746-pass gate reused; new fullcampaign gate owned by baseline agent",
+  "focused_tests_passed": 2,
+  "focused_tests_skipped": 0,
+  "ruff_check_passed": true,
+  "code_sha256": {
+    "discovery/research5_review_spectral.py": "ac89d4704111350c7188a2a8b377a84195e2ad3068cd75fe7e7e80602157f61f",
+    "discovery/research5_review_time.py": "c0137696986421a02b0da64e38b79e38c555eab52475530a9b06ca98e725e2f0",
+    "discovery/research5_review_time_control.py": "ad8a22cfc29102b2d0f270bbd59b74f9dea2f74571d98fc96ec53fc72294cf10",
+    "tests/test_research5_review_spectral.py": "d5b0cd8b69a4af9ca41efb98ed112d7a2d3203ff081d045064a8547cf2465c88"
+  },
+  "output_sha256": {
+    "research_output/research5_review_spectral_5720.json": "9aa68f6c81412cc60358272fff3ed7bca8795b8a98d529b751e8b5b00fb2121b",
+    "research_output/research5_review_spectral_6087.json": "a1792eb4640e123e7a5409feeca0d4638390068a534bfa3e78af4f4833676e7d",
+    "research_output/research5_review_time.json": "aa18d9fafc6855ee8dee85779b848c879e88945e72eb1ca6a28724ea52ca6954",
+    "research_output/research5_review_time_control.json": "b2a3c5f5bffa47a0e2677c61ab46a98ed20abf6e27dd26499b12d27453aba5c0"
+  },
+  "raw_receipts_verified": [
+    "research5_time_035034_gator.tbl",
+    "research5_time_035034_ztf.csv",
+    "research5_time_003201_ztf.csv",
+    "research5_time_203459_ztf.csv",
+    "research5_time_035030_control_gator.tbl",
+    "J111855_spectra.json.gz"
+  ],
+  "unopened_boundaries": "No GOODS-N products; SPHEREx target pixels not measured by this reviewer;5720 explicitly opened only in new authorized exploratory extension",
+  "limitations": "Conditionaldiagonal spectral uncertainties and30daybin opticalbootstrap do not certifycalibrated significance/independentcycles"
+}

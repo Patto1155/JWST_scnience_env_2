@@ -1,0 +1,1368 @@
+{
+  "scope": "New explicitly exploratory 5720 diagnostic; original gate failure preserved",
+  "raw_body_sha256": "6f98dc8d048d4d450fc843a6db5a8626830885c484e0eb281a2ad95ad7c6d948",
+  "fixed_z": 0.08006536215543747,
+  "limits": "Pixel and continuum covariance are diagonal conditional estimates; persistent SDSS nearbadpixel/manybadcolumns flags remain a caveat; partial masked line flux is not certified total flux",
+  "targets": [
+    {
+      "sparcl_id": "27a4e980-5e21-11f0-9aca-525400f334e1",
+      "survey": "sdss",
+      "dateobs": "[\"2002-03-20 00:00:00+00\",\"2002-03-20 00:00:00+00\"]",
+      "data_release": "SDSS-DR17",
+      "measurements": {
+        "FeVII5720_strict_8.0_20.0_40.0_linear": {
+          "covered_unmasked_fraction": 0.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 0,
+          "sideband_pixels": 15,
+          "raw_line_mask_values": [
+            65552
+          ],
+          "status": "coverage_or_continuum_failure",
+          "flux_1e17": null,
+          "conditional_diagonal_error_1e17": null
+        },
+        "FeVII5720_strict_8.0_20.0_40.0_constant": {
+          "covered_unmasked_fraction": 0.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 0,
+          "sideband_pixels": 15,
+          "raw_line_mask_values": [
+            65552
+          ],
+          "status": "coverage_or_continuum_failure",
+          "flux_1e17": null,
+          "conditional_diagonal_error_1e17": null
+        },
+        "FeVII5720_strict_8.0_30.0_60.0_linear": {
+          "covered_unmasked_fraction": 0.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 0,
+          "sideband_pixels": 23,
+          "raw_line_mask_values": [
+            65552
+          ],
+          "status": "coverage_or_continuum_failure",
+          "flux_1e17": null,
+          "conditional_diagonal_error_1e17": null
+        },
+        "FeVII5720_strict_8.0_30.0_60.0_constant": {
+          "covered_unmasked_fraction": 0.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 0,
+          "sideband_pixels": 23,
+          "raw_line_mask_values": [
+            65552
+          ],
+          "status": "coverage_or_continuum_failure",
+          "flux_1e17": null,
+          "conditional_diagonal_error_1e17": null
+        },
+        "FeVII5720_strict_12.0_20.0_40.0_linear": {
+          "covered_unmasked_fraction": 0.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 0,
+          "sideband_pixels": 15,
+          "raw_line_mask_values": [
+            65552
+          ],
+          "status": "coverage_or_continuum_failure",
+          "flux_1e17": null,
+          "conditional_diagonal_error_1e17": null
+        },
+        "FeVII5720_strict_12.0_20.0_40.0_constant": {
+          "covered_unmasked_fraction": 0.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 0,
+          "sideband_pixels": 15,
+          "raw_line_mask_values": [
+            65552
+          ],
+          "status": "coverage_or_continuum_failure",
+          "flux_1e17": null,
+          "conditional_diagonal_error_1e17": null
+        },
+        "FeVII5720_strict_12.0_30.0_60.0_linear": {
+          "covered_unmasked_fraction": 0.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 0,
+          "sideband_pixels": 23,
+          "raw_line_mask_values": [
+            65552
+          ],
+          "status": "coverage_or_continuum_failure",
+          "flux_1e17": null,
+          "conditional_diagonal_error_1e17": null
+        },
+        "FeVII5720_strict_12.0_30.0_60.0_constant": {
+          "covered_unmasked_fraction": 0.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 0,
+          "sideband_pixels": 23,
+          "raw_line_mask_values": [
+            65552
+          ],
+          "status": "coverage_or_continuum_failure",
+          "flux_1e17": null,
+          "conditional_diagonal_error_1e17": null
+        },
+        "FeVII5720_strict_16.0_20.0_40.0_linear": {
+          "covered_unmasked_fraction": 0.10108781050184752,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 3,
+          "sideband_pixels": 15,
+          "raw_line_mask_values": [
+            0,
+            65552
+          ],
+          "status": "coverage_or_continuum_failure",
+          "flux_1e17": null,
+          "conditional_diagonal_error_1e17": null
+        },
+        "FeVII5720_strict_16.0_20.0_40.0_constant": {
+          "covered_unmasked_fraction": 0.10108781050184752,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 3,
+          "sideband_pixels": 15,
+          "raw_line_mask_values": [
+            0,
+            65552
+          ],
+          "status": "coverage_or_continuum_failure",
+          "flux_1e17": null,
+          "conditional_diagonal_error_1e17": null
+        },
+        "FeVII5720_strict_16.0_30.0_60.0_linear": {
+          "covered_unmasked_fraction": 0.10108781050184752,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 3,
+          "sideband_pixels": 23,
+          "raw_line_mask_values": [
+            0,
+            65552
+          ],
+          "status": "coverage_or_continuum_failure",
+          "flux_1e17": null,
+          "conditional_diagonal_error_1e17": null
+        },
+        "FeVII5720_strict_16.0_30.0_60.0_constant": {
+          "covered_unmasked_fraction": 0.10108781050184752,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 3,
+          "sideband_pixels": 23,
+          "raw_line_mask_values": [
+            0,
+            65552
+          ],
+          "status": "coverage_or_continuum_failure",
+          "flux_1e17": null,
+          "conditional_diagonal_error_1e17": null
+        },
+        "FeVII5720_advisory_diagnostic_8.0_20.0_40.0_linear": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 13,
+          "sideband_pixels": 30,
+          "raw_line_mask_values": [
+            65552
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": 16.689967270480384,
+          "conditional_diagonal_error_1e17": 4.563115007762021,
+          "sideband_residual_chi2_scale": 1.0,
+          "residual_scaled_error_1e17": 4.563115007762021
+        },
+        "FeVII5720_advisory_diagnostic_8.0_20.0_40.0_constant": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 13,
+          "sideband_pixels": 30,
+          "raw_line_mask_values": [
+            65552
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": 16.688848254485546,
+          "conditional_diagonal_error_1e17": 4.563114918106952,
+          "sideband_residual_chi2_scale": 1.0,
+          "residual_scaled_error_1e17": 4.563114918106952
+        },
+        "FeVII5720_advisory_diagnostic_8.0_30.0_60.0_linear": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 13,
+          "sideband_pixels": 46,
+          "raw_line_mask_values": [
+            65552
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": 19.668447930142214,
+          "conditional_diagonal_error_1e17": 4.35333735259362,
+          "sideband_residual_chi2_scale": 1.0,
+          "residual_scaled_error_1e17": 4.35333735259362
+        },
+        "FeVII5720_advisory_diagnostic_8.0_30.0_60.0_constant": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 13,
+          "sideband_pixels": 46,
+          "raw_line_mask_values": [
+            65552
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": 19.674484713069923,
+          "conditional_diagonal_error_1e17": 4.352120033073689,
+          "sideband_residual_chi2_scale": 1.0,
+          "residual_scaled_error_1e17": 4.352120033073689
+        },
+        "FeVII5720_advisory_diagnostic_12.0_20.0_40.0_linear": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 19,
+          "sideband_pixels": 30,
+          "raw_line_mask_values": [
+            65552
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": 9.306600259578488,
+          "conditional_diagonal_error_1e17": 5.743254514221978,
+          "sideband_residual_chi2_scale": 1.0,
+          "residual_scaled_error_1e17": 5.743254514221978
+        },
+        "FeVII5720_advisory_diagnostic_12.0_20.0_40.0_constant": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 19,
+          "sideband_pixels": 30,
+          "raw_line_mask_values": [
+            65552
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": 9.304932600114515,
+          "conditional_diagonal_error_1e17": 5.743254356016922,
+          "sideband_residual_chi2_scale": 1.0,
+          "residual_scaled_error_1e17": 5.743254356016922
+        },
+        "FeVII5720_advisory_diagnostic_12.0_30.0_60.0_linear": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 19,
+          "sideband_pixels": 46,
+          "raw_line_mask_values": [
+            65552
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": 13.774331839169461,
+          "conditional_diagonal_error_1e17": 5.364364904614851,
+          "sideband_residual_chi2_scale": 1.0,
+          "residual_scaled_error_1e17": 5.364364904614851
+        },
+        "FeVII5720_advisory_diagnostic_12.0_30.0_60.0_constant": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 19,
+          "sideband_pixels": 46,
+          "raw_line_mask_values": [
+            65552
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": 13.783387287991093,
+          "conditional_diagonal_error_1e17": 5.362141867516875,
+          "sideband_residual_chi2_scale": 1.0,
+          "residual_scaled_error_1e17": 5.362141867516875
+        },
+        "FeVII5720_advisory_diagnostic_16.0_20.0_40.0_linear": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 25,
+          "sideband_pixels": 30,
+          "raw_line_mask_values": [
+            0,
+            65552
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": 8.900430357536756,
+          "conditional_diagonal_error_1e17": 6.915155112488167,
+          "sideband_residual_chi2_scale": 1.0,
+          "residual_scaled_error_1e17": 6.915155112488167
+        },
+        "FeVII5720_advisory_diagnostic_16.0_20.0_40.0_constant": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 25,
+          "sideband_pixels": 30,
+          "raw_line_mask_values": [
+            0,
+            65552
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": 8.898227090434021,
+          "conditional_diagonal_error_1e17": 6.915154883139589,
+          "sideband_residual_chi2_scale": 1.0,
+          "residual_scaled_error_1e17": 6.915154883139589
+        },
+        "FeVII5720_advisory_diagnostic_16.0_30.0_60.0_linear": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 25,
+          "sideband_pixels": 46,
+          "raw_line_mask_values": [
+            0,
+            65552
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": 14.857425563611693,
+          "conditional_diagonal_error_1e17": 6.3511799394052355,
+          "sideband_residual_chi2_scale": 1.0,
+          "residual_scaled_error_1e17": 6.3511799394052355
+        },
+        "FeVII5720_advisory_diagnostic_16.0_30.0_60.0_constant": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 25,
+          "sideband_pixels": 46,
+          "raw_line_mask_values": [
+            0,
+            65552
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": 14.869500007602786,
+          "conditional_diagonal_error_1e17": 6.347841457025668,
+          "sideband_residual_chi2_scale": 1.0,
+          "residual_scaled_error_1e17": 6.347841457025668
+        }
+      }
+    },
+    {
+      "sparcl_id": "2bf205a7-87cb-11ef-8f00-525400f334e1",
+      "survey": "sv1",
+      "dateobs": "[\"2021-01-02 09:35:04.79+00\",\"2021-02-01 11:21:59.669+00\"]",
+      "data_release": "DESI-DR1",
+      "measurements": {
+        "FeVII5720_strict_8.0_20.0_40.0_linear": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 22,
+          "sideband_pixels": 54,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": 1.6765975425704418,
+          "conditional_diagonal_error_1e17": 1.6991047439200866,
+          "sideband_residual_chi2_scale": 1.455439999271274,
+          "residual_scaled_error_1e17": 2.0498274545133897
+        },
+        "FeVII5720_strict_8.0_20.0_40.0_constant": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 22,
+          "sideband_pixels": 54,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": 1.6626966223745219,
+          "conditional_diagonal_error_1e17": 1.6990387922520747,
+          "sideband_residual_chi2_scale": 1.444247225449985,
+          "residual_scaled_error_1e17": 2.0418510872249134
+        },
+        "FeVII5720_strict_8.0_30.0_60.0_linear": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 22,
+          "sideband_pixels": 81,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": 1.2242614287836997,
+          "conditional_diagonal_error_1e17": 1.6161123821501044,
+          "sideband_residual_chi2_scale": 1.427450033579085,
+          "residual_scaled_error_1e17": 1.9308654665843947
+        },
+        "FeVII5720_strict_8.0_30.0_60.0_constant": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 22,
+          "sideband_pixels": 81,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": 1.2361546158048473,
+          "conditional_diagonal_error_1e17": 1.6161067627736319,
+          "sideband_residual_chi2_scale": 1.5069527897019952,
+          "residual_scaled_error_1e17": 1.9839004275915662
+        },
+        "FeVII5720_strict_12.0_20.0_40.0_linear": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 34,
+          "sideband_pixels": 54,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -0.6849744712710617,
+          "conditional_diagonal_error_1e17": 2.233313763316581,
+          "sideband_residual_chi2_scale": 1.455439999271274,
+          "residual_scaled_error_1e17": 2.6943058589943276
+        },
+        "FeVII5720_strict_12.0_20.0_40.0_constant": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 34,
+          "sideband_pixels": 54,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -0.7057410489035572,
+          "conditional_diagonal_error_1e17": 2.2332017830716544,
+          "sideband_residual_chi2_scale": 1.444247225449985,
+          "residual_scaled_error_1e17": 2.6837912763094565
+        },
+        "FeVII5720_strict_12.0_30.0_60.0_linear": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 34,
+          "sideband_pixels": 81,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -1.3635327073951031,
+          "conditional_diagonal_error_1e17": 2.090128052173955,
+          "sideband_residual_chi2_scale": 1.427450033579085,
+          "residual_scaled_error_1e17": 2.497200146015065
+        },
+        "FeVII5720_strict_12.0_30.0_60.0_constant": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 34,
+          "sideband_pixels": 81,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -1.3455540587580688,
+          "conditional_diagonal_error_1e17": 2.090118123193351,
+          "sideband_residual_chi2_scale": 1.5069527897019952,
+          "residual_scaled_error_1e17": 2.565787319151874
+        },
+        "FeVII5720_strict_16.0_20.0_40.0_linear": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 44,
+          "sideband_pixels": 54,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -1.2858116914254465,
+          "conditional_diagonal_error_1e17": 2.7422073389927397,
+          "sideband_residual_chi2_scale": 1.455439999271274,
+          "residual_scaled_error_1e17": 3.308243302568165
+        },
+        "FeVII5720_strict_16.0_20.0_40.0_constant": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 44,
+          "sideband_pixels": 54,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -1.3135569967096954,
+          "conditional_diagonal_error_1e17": 2.7420445436315526,
+          "sideband_residual_chi2_scale": 1.444247225449985,
+          "residual_scaled_error_1e17": 3.295302413438107
+        },
+        "FeVII5720_strict_16.0_30.0_60.0_linear": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 44,
+          "sideband_pixels": 81,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -2.1905199626282124,
+          "conditional_diagonal_error_1e17": 2.533605040756015,
+          "sideband_residual_chi2_scale": 1.427450033579085,
+          "residual_scaled_error_1e17": 3.0270484486057008
+        },
+        "FeVII5720_strict_16.0_30.0_60.0_constant": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 44,
+          "sideband_pixels": 81,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -2.1666410098490436,
+          "conditional_diagonal_error_1e17": 2.5335905911730663,
+          "sideband_residual_chi2_scale": 1.5069527897019952,
+          "residual_scaled_error_1e17": 3.1101852754725847
+        },
+        "FeVII5720_advisory_diagnostic_8.0_20.0_40.0_linear": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 22,
+          "sideband_pixels": 54,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": 1.6765975425704418,
+          "conditional_diagonal_error_1e17": 1.6991047439200866,
+          "sideband_residual_chi2_scale": 1.455439999271274,
+          "residual_scaled_error_1e17": 2.0498274545133897
+        },
+        "FeVII5720_advisory_diagnostic_8.0_20.0_40.0_constant": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 22,
+          "sideband_pixels": 54,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": 1.6626966223745219,
+          "conditional_diagonal_error_1e17": 1.6990387922520747,
+          "sideband_residual_chi2_scale": 1.444247225449985,
+          "residual_scaled_error_1e17": 2.0418510872249134
+        },
+        "FeVII5720_advisory_diagnostic_8.0_30.0_60.0_linear": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 22,
+          "sideband_pixels": 81,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": 1.2242614287836997,
+          "conditional_diagonal_error_1e17": 1.6161123821501044,
+          "sideband_residual_chi2_scale": 1.427450033579085,
+          "residual_scaled_error_1e17": 1.9308654665843947
+        },
+        "FeVII5720_advisory_diagnostic_8.0_30.0_60.0_constant": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 22,
+          "sideband_pixels": 81,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": 1.2361546158048473,
+          "conditional_diagonal_error_1e17": 1.6161067627736319,
+          "sideband_residual_chi2_scale": 1.5069527897019952,
+          "residual_scaled_error_1e17": 1.9839004275915662
+        },
+        "FeVII5720_advisory_diagnostic_12.0_20.0_40.0_linear": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 34,
+          "sideband_pixels": 54,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -0.6849744712710617,
+          "conditional_diagonal_error_1e17": 2.233313763316581,
+          "sideband_residual_chi2_scale": 1.455439999271274,
+          "residual_scaled_error_1e17": 2.6943058589943276
+        },
+        "FeVII5720_advisory_diagnostic_12.0_20.0_40.0_constant": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 34,
+          "sideband_pixels": 54,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -0.7057410489035572,
+          "conditional_diagonal_error_1e17": 2.2332017830716544,
+          "sideband_residual_chi2_scale": 1.444247225449985,
+          "residual_scaled_error_1e17": 2.6837912763094565
+        },
+        "FeVII5720_advisory_diagnostic_12.0_30.0_60.0_linear": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 34,
+          "sideband_pixels": 81,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -1.3635327073951031,
+          "conditional_diagonal_error_1e17": 2.090128052173955,
+          "sideband_residual_chi2_scale": 1.427450033579085,
+          "residual_scaled_error_1e17": 2.497200146015065
+        },
+        "FeVII5720_advisory_diagnostic_12.0_30.0_60.0_constant": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 34,
+          "sideband_pixels": 81,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -1.3455540587580688,
+          "conditional_diagonal_error_1e17": 2.090118123193351,
+          "sideband_residual_chi2_scale": 1.5069527897019952,
+          "residual_scaled_error_1e17": 2.565787319151874
+        },
+        "FeVII5720_advisory_diagnostic_16.0_20.0_40.0_linear": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 44,
+          "sideband_pixels": 54,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -1.2858116914254465,
+          "conditional_diagonal_error_1e17": 2.7422073389927397,
+          "sideband_residual_chi2_scale": 1.455439999271274,
+          "residual_scaled_error_1e17": 3.308243302568165
+        },
+        "FeVII5720_advisory_diagnostic_16.0_20.0_40.0_constant": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 44,
+          "sideband_pixels": 54,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -1.3135569967096954,
+          "conditional_diagonal_error_1e17": 2.7420445436315526,
+          "sideband_residual_chi2_scale": 1.444247225449985,
+          "residual_scaled_error_1e17": 3.295302413438107
+        },
+        "FeVII5720_advisory_diagnostic_16.0_30.0_60.0_linear": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 44,
+          "sideband_pixels": 81,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -2.1905199626282124,
+          "conditional_diagonal_error_1e17": 2.533605040756015,
+          "sideband_residual_chi2_scale": 1.427450033579085,
+          "residual_scaled_error_1e17": 3.0270484486057008
+        },
+        "FeVII5720_advisory_diagnostic_16.0_30.0_60.0_constant": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 44,
+          "sideband_pixels": 81,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -2.1666410098490436,
+          "conditional_diagonal_error_1e17": 2.5335905911730663,
+          "sideband_residual_chi2_scale": 1.5069527897019952,
+          "residual_scaled_error_1e17": 3.1101852754725847
+        }
+      }
+    },
+    {
+      "sparcl_id": "6acc3cce-884f-11ef-9a35-525400f334e1",
+      "survey": "main",
+      "dateobs": "[\"2022-02-19 08:08:16.345+00\",\"2022-02-19 08:08:16.345+00\"]",
+      "data_release": "DESI-DR1",
+      "measurements": {
+        "FeVII5720_strict_8.0_20.0_40.0_linear": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 22,
+          "sideband_pixels": 54,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -0.8283657459680939,
+          "conditional_diagonal_error_1e17": 4.459051115856681,
+          "sideband_residual_chi2_scale": 1.0,
+          "residual_scaled_error_1e17": 4.459051115856681
+        },
+        "FeVII5720_strict_8.0_20.0_40.0_constant": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 22,
+          "sideband_pixels": 54,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -0.7861309974530929,
+          "conditional_diagonal_error_1e17": 4.455449748640965,
+          "sideband_residual_chi2_scale": 1.0,
+          "residual_scaled_error_1e17": 4.455449748640965
+        },
+        "FeVII5720_strict_8.0_30.0_60.0_linear": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 22,
+          "sideband_pixels": 81,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -1.7018826989976263,
+          "conditional_diagonal_error_1e17": 4.223327737724733,
+          "sideband_residual_chi2_scale": 1.0474847865623143,
+          "residual_scaled_error_1e17": 4.322436748161608
+        },
+        "FeVII5720_strict_8.0_30.0_60.0_constant": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 22,
+          "sideband_pixels": 81,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -1.736523453017725,
+          "conditional_diagonal_error_1e17": 4.2220370984542015,
+          "sideband_residual_chi2_scale": 1.035767362854281,
+          "residual_scaled_error_1e17": 4.296879317137281
+        },
+        "FeVII5720_strict_12.0_20.0_40.0_linear": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 34,
+          "sideband_pixels": 54,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -4.772747223261304,
+          "conditional_diagonal_error_1e17": 5.843740159978304,
+          "sideband_residual_chi2_scale": 1.0,
+          "residual_scaled_error_1e17": 5.843740159978304
+        },
+        "FeVII5720_strict_12.0_20.0_40.0_constant": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 34,
+          "sideband_pixels": 54,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -4.709452946648141,
+          "conditional_diagonal_error_1e17": 5.837567646788977,
+          "sideband_residual_chi2_scale": 1.0,
+          "residual_scaled_error_1e17": 5.837567646788977
+        },
+        "FeVII5720_strict_12.0_30.0_60.0_linear": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 34,
+          "sideband_pixels": 81,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -6.083123689702611,
+          "conditional_diagonal_error_1e17": 5.435480741539495,
+          "sideband_residual_chi2_scale": 1.0474847865623143,
+          "residual_scaled_error_1e17": 5.563035397724641
+        },
+        "FeVII5720_strict_12.0_30.0_60.0_constant": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 34,
+          "sideband_pixels": 81,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -6.135041629995089,
+          "conditional_diagonal_error_1e17": 5.4332280300452656,
+          "sideband_residual_chi2_scale": 1.035767362854281,
+          "residual_scaled_error_1e17": 5.5295405045444985
+        },
+        "FeVII5720_strict_16.0_20.0_40.0_linear": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 44,
+          "sideband_pixels": 54,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -6.7981233268637595,
+          "conditional_diagonal_error_1e17": 7.184113158334496,
+          "sideband_residual_chi2_scale": 1.0,
+          "residual_scaled_error_1e17": 7.184113158334496
+        },
+        "FeVII5720_strict_16.0_20.0_40.0_constant": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 44,
+          "sideband_pixels": 54,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -6.713692393939985,
+          "conditional_diagonal_error_1e17": 7.175178153682962,
+          "sideband_residual_chi2_scale": 1.0,
+          "residual_scaled_error_1e17": 7.175178153682962
+        },
+        "FeVII5720_strict_16.0_30.0_60.0_linear": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 44,
+          "sideband_pixels": 81,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -8.545224590854168,
+          "conditional_diagonal_error_1e17": 6.5897651076732,
+          "sideband_residual_chi2_scale": 1.0474847865623143,
+          "residual_scaled_error_1e17": 6.74440740384148
+        },
+        "FeVII5720_strict_16.0_30.0_60.0_constant": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 44,
+          "sideband_pixels": 81,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -8.61447730506925,
+          "conditional_diagonal_error_1e17": 6.586458891492771,
+          "sideband_residual_chi2_scale": 1.035767362854281,
+          "residual_scaled_error_1e17": 6.70321418880759
+        },
+        "FeVII5720_advisory_diagnostic_8.0_20.0_40.0_linear": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 22,
+          "sideband_pixels": 54,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -0.8283657459680939,
+          "conditional_diagonal_error_1e17": 4.459051115856681,
+          "sideband_residual_chi2_scale": 1.0,
+          "residual_scaled_error_1e17": 4.459051115856681
+        },
+        "FeVII5720_advisory_diagnostic_8.0_20.0_40.0_constant": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 22,
+          "sideband_pixels": 54,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -0.7861309974530929,
+          "conditional_diagonal_error_1e17": 4.455449748640965,
+          "sideband_residual_chi2_scale": 1.0,
+          "residual_scaled_error_1e17": 4.455449748640965
+        },
+        "FeVII5720_advisory_diagnostic_8.0_30.0_60.0_linear": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 22,
+          "sideband_pixels": 81,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -1.7018826989976263,
+          "conditional_diagonal_error_1e17": 4.223327737724733,
+          "sideband_residual_chi2_scale": 1.0474847865623143,
+          "residual_scaled_error_1e17": 4.322436748161608
+        },
+        "FeVII5720_advisory_diagnostic_8.0_30.0_60.0_constant": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 22,
+          "sideband_pixels": 81,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -1.736523453017725,
+          "conditional_diagonal_error_1e17": 4.2220370984542015,
+          "sideband_residual_chi2_scale": 1.035767362854281,
+          "residual_scaled_error_1e17": 4.296879317137281
+        },
+        "FeVII5720_advisory_diagnostic_12.0_20.0_40.0_linear": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 34,
+          "sideband_pixels": 54,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -4.772747223261304,
+          "conditional_diagonal_error_1e17": 5.843740159978304,
+          "sideband_residual_chi2_scale": 1.0,
+          "residual_scaled_error_1e17": 5.843740159978304
+        },
+        "FeVII5720_advisory_diagnostic_12.0_20.0_40.0_constant": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 34,
+          "sideband_pixels": 54,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -4.709452946648141,
+          "conditional_diagonal_error_1e17": 5.837567646788977,
+          "sideband_residual_chi2_scale": 1.0,
+          "residual_scaled_error_1e17": 5.837567646788977
+        },
+        "FeVII5720_advisory_diagnostic_12.0_30.0_60.0_linear": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 34,
+          "sideband_pixels": 81,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -6.083123689702611,
+          "conditional_diagonal_error_1e17": 5.435480741539495,
+          "sideband_residual_chi2_scale": 1.0474847865623143,
+          "residual_scaled_error_1e17": 5.563035397724641
+        },
+        "FeVII5720_advisory_diagnostic_12.0_30.0_60.0_constant": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 34,
+          "sideband_pixels": 81,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -6.135041629995089,
+          "conditional_diagonal_error_1e17": 5.4332280300452656,
+          "sideband_residual_chi2_scale": 1.035767362854281,
+          "residual_scaled_error_1e17": 5.5295405045444985
+        },
+        "FeVII5720_advisory_diagnostic_16.0_20.0_40.0_linear": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 44,
+          "sideband_pixels": 54,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -6.7981233268637595,
+          "conditional_diagonal_error_1e17": 7.184113158334496,
+          "sideband_residual_chi2_scale": 1.0,
+          "residual_scaled_error_1e17": 7.184113158334496
+        },
+        "FeVII5720_advisory_diagnostic_16.0_20.0_40.0_constant": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 44,
+          "sideband_pixels": 54,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -6.713692393939985,
+          "conditional_diagonal_error_1e17": 7.175178153682962,
+          "sideband_residual_chi2_scale": 1.0,
+          "residual_scaled_error_1e17": 7.175178153682962
+        },
+        "FeVII5720_advisory_diagnostic_16.0_30.0_60.0_linear": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 44,
+          "sideband_pixels": 81,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -8.545224590854168,
+          "conditional_diagonal_error_1e17": 6.5897651076732,
+          "sideband_residual_chi2_scale": 1.0474847865623143,
+          "residual_scaled_error_1e17": 6.74440740384148
+        },
+        "FeVII5720_advisory_diagnostic_16.0_30.0_60.0_constant": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 44,
+          "sideband_pixels": 81,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -8.61447730506925,
+          "conditional_diagonal_error_1e17": 6.586458891492771,
+          "sideband_residual_chi2_scale": 1.035767362854281,
+          "residual_scaled_error_1e17": 6.70321418880759
+        }
+      }
+    },
+    {
+      "sparcl_id": "a6d1bcbc-885a-11ef-bbe3-525400f334e1",
+      "survey": "sv2",
+      "dateobs": "[\"2021-03-25 05:13:04.284+00\",\"2021-03-25 05:27:13.745+00\"]",
+      "data_release": "DESI-DR1",
+      "measurements": {
+        "FeVII5720_strict_8.0_20.0_40.0_linear": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 22,
+          "sideband_pixels": 54,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -1.5729046106869766,
+          "conditional_diagonal_error_1e17": 3.3706485655652187,
+          "sideband_residual_chi2_scale": 1.0,
+          "residual_scaled_error_1e17": 3.3706485655652187
+        },
+        "FeVII5720_strict_8.0_20.0_40.0_constant": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 22,
+          "sideband_pixels": 54,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -1.5424787845378607,
+          "conditional_diagonal_error_1e17": 3.3706121748106006,
+          "sideband_residual_chi2_scale": 1.0102705512370815,
+          "residual_scaled_error_1e17": 3.3878769808048257
+        },
+        "FeVII5720_strict_8.0_30.0_60.0_linear": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 22,
+          "sideband_pixels": 81,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -0.6665387107848276,
+          "conditional_diagonal_error_1e17": 3.2359133710558434,
+          "sideband_residual_chi2_scale": 1.0,
+          "residual_scaled_error_1e17": 3.2359133710558434
+        },
+        "FeVII5720_strict_8.0_30.0_60.0_constant": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 22,
+          "sideband_pixels": 81,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -0.6619401571564414,
+          "conditional_diagonal_error_1e17": 3.235879425192529,
+          "sideband_residual_chi2_scale": 1.0,
+          "residual_scaled_error_1e17": 3.235879425192529
+        },
+        "FeVII5720_strict_12.0_20.0_40.0_linear": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 34,
+          "sideband_pixels": 54,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -7.675852174350953,
+          "conditional_diagonal_error_1e17": 4.324897016666427,
+          "sideband_residual_chi2_scale": 1.0,
+          "residual_scaled_error_1e17": 4.324897016666427
+        },
+        "FeVII5720_strict_12.0_20.0_40.0_constant": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 34,
+          "sideband_pixels": 54,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -7.629888958598913,
+          "conditional_diagonal_error_1e17": 4.324832292610712,
+          "sideband_residual_chi2_scale": 1.0102705512370815,
+          "residual_scaled_error_1e17": 4.346984764214385
+        },
+        "FeVII5720_strict_12.0_30.0_60.0_linear": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 34,
+          "sideband_pixels": 81,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -6.316007657606129,
+          "conditional_diagonal_error_1e17": 4.086798691991673,
+          "sideband_residual_chi2_scale": 1.0,
+          "residual_scaled_error_1e17": 4.086798691991673
+        },
+        "FeVII5720_strict_12.0_30.0_60.0_constant": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 34,
+          "sideband_pixels": 81,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -6.309081017526785,
+          "conditional_diagonal_error_1e17": 4.086737709636492,
+          "sideband_residual_chi2_scale": 1.0,
+          "residual_scaled_error_1e17": 4.086737709636492
+        },
+        "FeVII5720_strict_16.0_20.0_40.0_linear": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 44,
+          "sideband_pixels": 54,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -10.608081958707796,
+          "conditional_diagonal_error_1e17": 5.236937604592201,
+          "sideband_residual_chi2_scale": 1.0,
+          "residual_scaled_error_1e17": 5.236937604592201
+        },
+        "FeVII5720_strict_16.0_20.0_40.0_constant": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 44,
+          "sideband_pixels": 54,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -10.547013988723982,
+          "conditional_diagonal_error_1e17": 5.236843248290141,
+          "sideband_residual_chi2_scale": 1.0102705512370815,
+          "residual_scaled_error_1e17": 5.263667183532402
+        },
+        "FeVII5720_strict_16.0_30.0_60.0_linear": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 44,
+          "sideband_pixels": 81,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -8.795153047642428,
+          "conditional_diagonal_error_1e17": 4.885178249484824,
+          "sideband_residual_chi2_scale": 1.0,
+          "residual_scaled_error_1e17": 4.885178249484824
+        },
+        "FeVII5720_strict_16.0_30.0_60.0_constant": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 44,
+          "sideband_pixels": 81,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -8.785936733961144,
+          "conditional_diagonal_error_1e17": 4.885087930915222,
+          "sideband_residual_chi2_scale": 1.0,
+          "residual_scaled_error_1e17": 4.885087930915222
+        },
+        "FeVII5720_advisory_diagnostic_8.0_20.0_40.0_linear": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 22,
+          "sideband_pixels": 54,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -1.5729046106869766,
+          "conditional_diagonal_error_1e17": 3.3706485655652187,
+          "sideband_residual_chi2_scale": 1.0,
+          "residual_scaled_error_1e17": 3.3706485655652187
+        },
+        "FeVII5720_advisory_diagnostic_8.0_20.0_40.0_constant": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 22,
+          "sideband_pixels": 54,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -1.5424787845378607,
+          "conditional_diagonal_error_1e17": 3.3706121748106006,
+          "sideband_residual_chi2_scale": 1.0102705512370815,
+          "residual_scaled_error_1e17": 3.3878769808048257
+        },
+        "FeVII5720_advisory_diagnostic_8.0_30.0_60.0_linear": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 22,
+          "sideband_pixels": 81,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -0.6665387107848276,
+          "conditional_diagonal_error_1e17": 3.2359133710558434,
+          "sideband_residual_chi2_scale": 1.0,
+          "residual_scaled_error_1e17": 3.2359133710558434
+        },
+        "FeVII5720_advisory_diagnostic_8.0_30.0_60.0_constant": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 22,
+          "sideband_pixels": 81,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -0.6619401571564414,
+          "conditional_diagonal_error_1e17": 3.235879425192529,
+          "sideband_residual_chi2_scale": 1.0,
+          "residual_scaled_error_1e17": 3.235879425192529
+        },
+        "FeVII5720_advisory_diagnostic_12.0_20.0_40.0_linear": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 34,
+          "sideband_pixels": 54,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -7.675852174350953,
+          "conditional_diagonal_error_1e17": 4.324897016666427,
+          "sideband_residual_chi2_scale": 1.0,
+          "residual_scaled_error_1e17": 4.324897016666427
+        },
+        "FeVII5720_advisory_diagnostic_12.0_20.0_40.0_constant": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 34,
+          "sideband_pixels": 54,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -7.629888958598913,
+          "conditional_diagonal_error_1e17": 4.324832292610712,
+          "sideband_residual_chi2_scale": 1.0102705512370815,
+          "residual_scaled_error_1e17": 4.346984764214385
+        },
+        "FeVII5720_advisory_diagnostic_12.0_30.0_60.0_linear": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 34,
+          "sideband_pixels": 81,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -6.316007657606129,
+          "conditional_diagonal_error_1e17": 4.086798691991673,
+          "sideband_residual_chi2_scale": 1.0,
+          "residual_scaled_error_1e17": 4.086798691991673
+        },
+        "FeVII5720_advisory_diagnostic_12.0_30.0_60.0_constant": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 34,
+          "sideband_pixels": 81,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -6.309081017526785,
+          "conditional_diagonal_error_1e17": 4.086737709636492,
+          "sideband_residual_chi2_scale": 1.0,
+          "residual_scaled_error_1e17": 4.086737709636492
+        },
+        "FeVII5720_advisory_diagnostic_16.0_20.0_40.0_linear": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 44,
+          "sideband_pixels": 54,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -10.608081958707796,
+          "conditional_diagonal_error_1e17": 5.236937604592201,
+          "sideband_residual_chi2_scale": 1.0,
+          "residual_scaled_error_1e17": 5.236937604592201
+        },
+        "FeVII5720_advisory_diagnostic_16.0_20.0_40.0_constant": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 44,
+          "sideband_pixels": 54,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -10.547013988723982,
+          "conditional_diagonal_error_1e17": 5.236843248290141,
+          "sideband_residual_chi2_scale": 1.0102705512370815,
+          "residual_scaled_error_1e17": 5.263667183532402
+        },
+        "FeVII5720_advisory_diagnostic_16.0_30.0_60.0_linear": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 44,
+          "sideband_pixels": 81,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -8.795153047642428,
+          "conditional_diagonal_error_1e17": 4.885178249484824,
+          "sideband_residual_chi2_scale": 1.0,
+          "residual_scaled_error_1e17": 4.885178249484824
+        },
+        "FeVII5720_advisory_diagnostic_16.0_30.0_60.0_constant": {
+          "covered_unmasked_fraction": 1.0,
+          "predefined_sky_excluded_fraction": 0.0,
+          "line_pixels": 44,
+          "sideband_pixels": 81,
+          "raw_line_mask_values": [
+            0
+          ],
+          "status": "conditional_partial_line_measurement",
+          "flux_1e17": -8.785936733961144,
+          "conditional_diagonal_error_1e17": 4.885087930915222,
+          "sideband_residual_chi2_scale": 1.0,
+          "residual_scaled_error_1e17": 4.885087930915222
+        }
+      }
+    }
+  ]
+}

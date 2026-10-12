@@ -1,0 +1,8 @@
+{
+  "url": "https://irsa.ipac.caltech.edu/TAP/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+table_name+FROM+TAP_SCHEMA.tables+WHERE+table_name+LIKE+%27%25gaia%25%27",
+  "status": 200,
+  "bytes": 1485,
+  "sha256": "3485a163828245a2dd435ffcfb2a6225b9d6ac08471993ec4a095e69a3df0e26",
+  "elapsed_seconds": 6.8336501121521,
+  "exploratory": true
+}

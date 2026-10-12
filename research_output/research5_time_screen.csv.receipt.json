@@ -1,0 +1,8 @@
+{
+  "url": "https://irsa.ipac.caltech.edu/TAP/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+TOP+200+%2A+FROM+varwisepure+WHERE+w1_amp%3E1+AND+dec%3E0+AND+dec%3C70+AND+w1mag%3C14+AND+gmag%3C19+AND+plx%3E3%2Ae_plx+AND+blended_source%3C0.1+AND+latent_artifact%3C0.1+AND+%28vartype%3D%27yso%27+OR+vartype%3D%27unclear%27+OR+vartype%3D%27cv%27+OR+vartype%3D%27sn%27%29+ORDER+BY+w1_amp+DESC",
+  "status": 200,
+  "bytes": 9861,
+  "sha256": "d1c24b2c4262ca146a4e90c84a2cf6860a34293f9e7ba9f6a92a6f4df3c77d7a",
+  "elapsed_seconds": 19.352063417434692,
+  "exploratory": true
+}
