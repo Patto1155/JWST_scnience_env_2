@@ -1,0 +1,8 @@
+{
+  "url": "https://irsa.ipac.caltech.edu/TAP/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+column_name%2Cdatatype%2Cdescription+FROM+TAP_SCHEMA.columns+WHERE+table_name%3D%27varwisepure%27",
+  "status": 200,
+  "bytes": 2820,
+  "sha256": "ab6ff4c59105bd9994d42020c37769bbd6e690054682627a793d746ccb7d8c14",
+  "elapsed_seconds": 7.423017978668213,
+  "exploratory": true
+}

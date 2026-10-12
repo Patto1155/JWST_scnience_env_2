@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "scope": "Independent QLP remeasurement focused numerical/code validation; no full suite",
+  "tests": {
+    "tests": 3,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "junit_sha256": "bf6f61cfcc0a06af0005f196971c1d703f2b975121247325f31a9ccb5dd28017",
+  "junit_path": "/tmp/research5-stellar-review-tests.xml",
+  "lint_passed": true,
+  "format_passed": true,
+  "mypy_explicit_package_bases_passed": true,
+  "compared_author_primary_flux_fits": 36,
+  "max_author_primary_amplitude_difference_ppm": 2.000888343900442e-11,
+  "all_source_products_hash_verified": true,
+  "original_light_curve_body_bytes": 3467520,
+  "files": {
+    "discovery/research5_stellar_review.py": "c44f5d11db6bfdfcc5b9601b5aff6412716d06c538aabd0d12fc2c74261085bf",
+    "tests/test_research5_stellar_review.py": "d987b0c332a03dadd151aff0360606d3f2faa0106092fceb284166f1b476a7d3",
+    "docs/RESEARCH5_STELLAR_REVIEW.md": "dd9d70e22d94442cf478eb8b579bf2f2b8b462174c15f3ef37a333967bffae24",
+    "research_output/research5_stellar_review.json": "f46a602d969eb4fb47b775fa6af2f15dd41c0d1a15c51b9ae19ba86ecdcd229d",
+    "research_output/research5_stellar_inputs.json": "e302a643493d9b8e3cd1f4c7e884de0f09df901a070cac3ffd3518932f089b44",
+    "research_output/research5_stellar_measurements.json": "dce5023a4200b5b8186a2d3791664209f6b1629eeffb4c1e46be311b7efcefc3"
+  },
+  "independent_literature_body_bytes": 1563787,
+  "additional_light_curve_download_bytes": 0,
+  "physical_mode_evolution_confirmed": false,
+  "GOODS_N_outcomes_opened": false
+}

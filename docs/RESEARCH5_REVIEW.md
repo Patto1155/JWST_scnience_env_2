@@ -1,0 +1,56 @@
+# Research5 independent scientific review
+
+Goal: find and independently test a useful new empirical result. A conditional pattern can be publishable without identifying its unique physical cause. GOODS-N outcomes remain unopened. The research4 quality receipt (746 passed, three missing-input skips) is the baseline; do not rerun it merely to start this campaign.
+
+## Three short gates
+
+1. **A concrete added observable.** Name the exact free public products, object/time identity, usable coverage and the specific empirical question added beyond the primary literature. New data or a new predictive contrast matters; generic topic saturation is not a rejection criterion. Initial metadata-only allocation is <=30 MB; larger acquisition needs the coordinator's explicit allocation.
+2. **An informative bounded measurement.** Before the new test outcomes, declare the target/cohort, primary contrast, controls and a practical success/failure criterion. Exploratory inspection may develop the question, but a selected extreme is not its own independent confirmation. Acquisition or coverage failures stay visible; do not rescue a result through undeclared replacement or changed cuts.
+3. **An independently executed challenge.** Reproduce input identity and the primary contrast using an independent implementation or measurement; add a held-out epoch, independent observable, matched control or injection/null test that addresses the dominant plausible measurement alternative. Shared photons are not independent data. Quantify relevant uncertainty and multiple screening opportunities sufficiently for the claim, rather than requiring every unknown systematic to be solved.
+
+A small robust source-specific event or relation can pass. A broad causal, population or cosmological claim needs broader evidence. Lack of a unique mechanism need not block a clearly stated empirical discovery. Conversely, a repeated released-product discrepancy alone is a measurement result until a discriminating observable supports the stronger interpretation.
+
+## Current promising direction
+
+The coordinator identified VarWISE 2026 infrared variables with actual NEOWISE associations and separate optical ZTF follow-up as the first promising lead, with an explicit 300 MB author allocation. The reviewer requested exact products, the new empirical contrast, sample/epoch count and dominant instrumental alternative directly from the time-domain author. Necessary controls should address point-source identity, blending/contamination, time sampling and photometric quality for the actual proposed measurement; they should not demand universal causal identification.
+
+DESI DR1 cross-epoch/second-line confirmation of CLASS iron emitters is a second plausible route if exact products and an added prediction are available. No new scientific outcomes have been inspected by this reviewer at this stage.
+
+## Proposal-specific review before outcomes
+
+- **VarWISE → ZTF:** provisionally accept. A >1-mag infrared variable is already selected by the discovery catalog; the added claim must concern independent optical/infrared timing or color. Freeze <=3 source identities, infrared event windows and the optical contrast before inspecting ZTF outcomes. Propagate Gaia proper motion, inspect WISE-PSF neighbors, use visit-level quality and a local constant-source scan control, and preserve independent optical epochs. These checks target contamination and sampling, not universal mechanism identification.
+- **CLASS → DESI:** provisionally accept if the exact source/epoch products exist. Freeze discovery and held-out coronal lines plus narrow-line controls before DESI outcomes. Audit vacuum/air wavelengths, masks, continuum/absorption, FeX–[OI] blending and nondetection limits. SDSS/DESI fiber differences remain a specific spatial-sampling alternative even with stable narrow controls; a repeated same-fiber DESI epoch can test it. Without that check, allow a conditional aperture-normalized coronal-line contrast rather than claiming unique intrinsic fading.
+- **KIC 8164262 → TESS:** provisionally accept if multiple real sectors cover an identifiable tide-driven signal. Same-sector orbit halves and SAP/PDC are dependent sensitivity checks; distinct held-out sectors add evidence. Neighboring orbital harmonics can be unresolved in a 27-day window. Bound that concrete beating alternative using nearby-harmonic fits or injections with actual timestamps before interpreting an amplitude jump as temporal mode evolution.
+
+All three decisions permit exploratory measurement. None treats prior literature breadth alone as an impossibility result. Exact executable confirmation contracts and independent numerical checks await the scouts' candidate/product manifests.
+
+## Executed independent checks
+
+The independent optical reader reproduces all three author ZTF state comparisons exactly. DDE 54 (VarWISE J035034.07+353508.5; Gaia DR3 219690291611604480) has frozen faint-minus-bright r contrast -0.04890065 mag, with conditional 30-day-bin interval [-0.15284,+0.09383]; both individual-cycle median contrasts are null. This constrains the declared long-window statistic, not optical constancy or physical decoupling. Its quality-selected 30-day optical medians span 1.228 mag; wide windows can dilute short flares or lagged relations.
+
+An independent NEOWISE audit retains all 21 visits under moon-clear/best-frame cuts and a stricter reduced-chi2<2 diagnostic. Faint August visits in 2014/2018/2022 remain near W1=13.03–13.09; bright August visits in 2015/2019/2023 lie near W1=11.68–11.92 at the same annual scan phase. Median visit centroids stay within approximately 0.1 arcsec of propagated Gaia. A separate local star independently reproduces the author's 21 matched control visits: control W1/W2 ranges are 0.050/0.071 mag, while target-minus-control ranges are 1.3885/1.5685 mag. These reject a simple local common scan offset or moon/frame explanation, not a target-specific ghost/blend. Three postselected minima still do not certify a four-year period. DDE 54 was already registered as a variable in 2017 and has documented substantial historical optical variability; a new-object or new-YSO claim is unsupported.
+
+SPHEREx metadata independently contains 41 distinct exposures over MJD 61269.077–61277.226 (8.15 days), including minute-separated four-dither sequences: one August 2026 campaign, not 41 epochs. Each claimed independent broad-band visit must use disjoint exposure IDs and itself cover the required wavelength-response fraction; dithers do not provide independent channels. One assembled campaign spectrum may furnish a conditional independent-facility flux test while failing the original two-visit gate. No narrow-band flux alone establishes a WISE W1 state.
+
+### CLASS J111855 primary line and next bounded diagnostic
+
+An independent clipped-bin implementation verifies the exploratory Fe VII 6087 contrast. With the transparent advisory-bit mask, SDSS partial line flux is 38.152 +/- 5.368, versus DESI SV1 0.683 +/- 1.464, SV2 2.168 +/- 2.655 and main -3.537 +/- 3.676, in 1e-17 erg/cm2/s. All twelve baseline window/continuum variants remain positive (36.20–51.22). The stricter original mask fails. Official SDSS SPPIXMASK documentation identifies 65552 as MANYBADCOLUMNS plus NEARBADPIXEL; severe unusable pixels have zero inverse variance. Native verification shows these flags persist in the AND mask, so the quality caveat is real and not removed by relabeling it advisory. SDSS also documents untracked adjacent-pixel covariance.
+
+Independent narrow controls reproduce the limitations: [OI] is weak, [SII]6716 baseline is approximately six conditional error units, and [SII]6731 has only 71% usable coverage. Thus the original control-qualified gate and the 36-object cohort's formal discovery shortlist remain failed/empty. The plotted 6087 feature lies near the frozen geocoronal exclusion and needs cautious interpretation.
+
+**Before measuring 5720:** the coordinator explicitly authorized one new, exploratory diagnostic, separate from the failed original gate. Use vacuum 5722.29 A, the same fixed redshift, +/-8/12/16 rest-A boxes, both existing sideband choices, linear/constant continua and strict/advisory masks. Report every SDSS/DESI result, including nulls; do not label it independent confirmation or reopen the original gate. The catalog luminosity ratio predicts only about 0.172 of the 6087 baseline flux (approximately 6.6 units), so inadequate second-line power is plausible. The question is whether an independently implemented second-line measurement supports or challenges coordinated line consistency and the baseline feature's credibility. No new acquisition or target replacement is authorized by this diagnostic.
+
+### Result of the explicitly new 5720 diagnostic
+
+The new exploratory test is executed and the old confirmation wavelength is now opened. The primary +/-8-rest-A, two-sided linear-continuum result is SDSS 16.690 +/- 4.563, DESI SV1 1.677 +/- 1.699, SV2 -1.573 +/- 3.371 and main -0.828 +/- 4.459, in the same integrated units. SDSS remains positive in all twelve window/continuum variants (8.898–19.674), but its maximum conditional signal/error is only 4.52 and the broad-box result is much weaker. The SV1 sidebands require a residual scale of approximately 1.46 in variance. Thus the result is compatible with qualitative coronal-line weakening, while it fails the original baseline-S/N and robust confirmation requirements. Persistent baseline extraction flags, missing strong narrow controls, aperture differences, sample selection and untracked covariance remain. No intrinsic fading, TDE, population incidence or formal discovery is established.
+
+This bounded extension added information rather than changing the original success criterion: the 36-object metadata-defined screen's formal shortlist remains empty. The independent tool defaults to 6087/controls; `--confirmation` explicitly selects the separate exploratory 5720 mode. Scientific receipts are `research5_review_spectral_6087.json` and `research5_review_spectral_5720.json`; time-domain receipts are `research5_review_time.json` and `research5_review_time_control.json`. Both mask semantics and exact integrated-flux recovery are checked by two focused numerical tests.
+
+Primary mask and covariance documentation checked directly:
+- https://www.sdss3.org/dr10/algorithms/bitmask_sppixmask.php
+- https://www.sdss3.org/dr10/spectro/spectro_catalog_quality.php
+- https://www.sdss3.org/dr10/spectro/caveats.php
+
+## Current signoff
+
+Accept the executed selected-source measurements and their explicitly conditional limits. Preserve the original null/failed-gate results. The IR common-scan and quality challenges support genuine source-specific infrared modulation, but do not yet establish the selected four-year recurrence or a new physical mechanism; the known DDE 54 identity and substantial optical variation must be stated. The independent SPHEREx broad-band test remains pending, with visit and band-coverage requirements fixed before flux interpretation. The spectral diagnostic supports a cautious candidate direction and a feasible follow-up question, with no formally accepted discovery under this contract. Do not expand targets or relax gates to manufacture a positive claim.

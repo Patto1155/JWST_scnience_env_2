@@ -1,0 +1,19 @@
+{
+  "declared_budget_bytes": 300000000,
+  "J111855_spectrum_response_bytes": 2194486,
+  "native_SDSS_response_bytes": 748800,
+  "additional_77_spectrum_response_bytes": 35943619,
+  "initial131_metadata_response_bytes": 176783,
+  "CLASS_filtered_response_bytes": 15502,
+  "CLASS_ReadMe_response_bytes": 196720,
+  "known_small_extra_metadata_response_bytes": 7361,
+  "n_unique_objects": 36,
+  "n_identity_passing_objects": 35,
+  "n_baseline_measured": 34,
+  "n_baseline_snr_ge5": 30,
+  "heldout5720": "unmeasured",
+  "science_outcome": "no complete-gate candidate; J111855 diagnostic partial contrast needs controls/quality",
+  "recorded_response_body_bytes": 39283421,
+  "failed_old_SPARCL_host_response_bytes": 150,
+  "accounting_scope": "Measured direct data/metadata HTTP response bodies; web-search/primary-literature browsing not included in this data acquisition ledger."
+}

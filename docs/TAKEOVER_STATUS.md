@@ -1,5 +1,22 @@
 # JWST research takeover: verified current status
 
+## 12 October new-observable campaign
+
+[Research5](RESEARCH5_CAMPAIGN.md) extends the search to NEOWISE/ZTF,
+SPHEREx, TESS and SDSS/DESI through four rounds and independent numerical
+reviews. DDE 54 has robust historical infrared modulation, but the selected
+four-year recurrence is unconfirmed. Its frozen optical median-state contrast
+is null despite substantial optical variability. Eleven August 2026 SPHEREx
+extractions provide a partial spectrum; inadequate W1 coverage and one
+observing campaign prevent the frozen broad-band confirmation.
+
+A 36-galaxy coronal-line screen has no full-gate discovery. J111855 remains an
+unconfirmed weakening lead with flagged baseline pixels and weak comparison
+lines. Eight TESS epochs extend KIC 8164262's amplitude baseline without
+establishing evolution. The earlier GOODS-N holdout remains unopened.
+No new astrophysical discovery is established; the campaign report preserves
+actual measurements, failed gates and specific next observations.
+
 ## 12 October multi-round discovery continuation
 
 See [the research4 campaign](RESEARCH4_CAMPAIGN.md) for the subsequent frozen

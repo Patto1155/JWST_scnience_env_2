@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "checked_utc": "2026-10-12T03:02:22.159388+00:00",
+  "scope": "Read-only publication linkage: current artifacts, independent numerical receipts and final trimmed SPHEREx000. Does not turn software success into a physical discovery claim.",
+  "checks": {
+    "time_domain": {
+      "receipt_path": "research_output/research5_time_binding.json",
+      "receipt_sha256": "2b2c82a3cd082bf8f7e981adaa382a0fb0346cfb510994d8aaeab8da25c79f1a",
+      "file_pin_count": 88,
+      "all_current": true
+    },
+    "spherex": {
+      "manifest_path": "research_output/research5_spherex_review_manifest.json",
+      "manifest_sha256": "6aa4252413b8fa6dd940cb7d599d5d5769e054bf0373e8d432996d183a9d3d66",
+      "file_pin_count": 8,
+      "input_pin_count": 11,
+      "all_current": true,
+      "trimmed_000_matches_final_measurement": true
+    },
+    "research5_review_validation.json:code_sha256": {
+      "receipt_sha256": "cda1d6fdbe510387e26a257fa24b68e85b514cf5fd3b7a3ebd80ff717a4bd4d1",
+      "file_pin_count": 4,
+      "all_current": true
+    },
+    "research5_review_validation.json:output_sha256": {
+      "receipt_sha256": "cda1d6fdbe510387e26a257fa24b68e85b514cf5fd3b7a3ebd80ff717a4bd4d1",
+      "file_pin_count": 4,
+      "all_current": true
+    },
+    "research5_stellar_validation.json:sha256": {
+      "receipt_sha256": "07a1ea1dbe42af10c6c37360896b793e3344b888293302889db82a0d221e02a5",
+      "file_pin_count": 5,
+      "all_current": true
+    },
+    "research5_stellar_review_validation.json:files": {
+      "receipt_sha256": "40858fb1fa16a3e65c2536e2c2c27c8ff6fde8ab7fabce4e96bb2bc718341ce5",
+      "file_pin_count": 6,
+      "all_current": true
+    }
+  },
+  "mismatches": [],
+  "all_bindings_current": true,
+  "GOODS_N_outcomes_opened": false
+}

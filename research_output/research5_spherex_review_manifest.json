@@ -1,0 +1,152 @@
+{
+  "status": "final independent11frame measurement; W1confirmation contract unmet",
+  "kind": "actualsource measurements plus explicitly identified model tests and after-outcome quality diagnostics",
+  "coordinate": "Gaia2016proper motion propagated to campaign midpointMJD61273; <=4day difference has negligible astrometric effect",
+  "owned_code_frozen": true,
+  "tests": "10focused tests passed; full gate767passed3expected skips; rufflint passed; formatting applied without behavior change",
+  "files": {
+    "discovery/research5_spherex_review.py": "75cafff6e9bb13a8e0c6df18813b2b27f2faa70b087c3acebfa6e8ed2f379806",
+    "tests/test_research5_spherex_review.py": "04a8dcfb02116ee5a3c48c9d56639f2825784efb0abbdf288f68d3268003cfe2",
+    "research_output/research5_time_spherex_freeze.json": "974a3bc652cf20fd594003e1a010dd91c07538e444fc24b71ff0362ee4205f86",
+    "research_output/research5_time_spherex_qr3_sia.csv.gz": "a60c4b5dae349012aada0427a7cbfa1c5f1dbf10c0c6631003990dcb4dad7e46",
+    "research_output/research5_time_spherex_photometry.json": "20808ded9d3e64abd0cfca5c6e7c18293619211c59bc0936cf57074774ebfd89",
+    "research_output/research5_spherex_review_results.json": "3737fd5f5ed53d857777693b721161d9695772d01acdf438a9382ebb2b0b297c",
+    "research_output/research5_spherex_review_w1_response.txt.gz": "9662e8ecd6bde10a7bd58e1c4df12847639f9fc3e0d8948e3d064977237db963",
+    "docs/RESEARCH5_SPHEREX_REVIEW.md": "d574d1e8f22019173ef1fa57f87c57a74d489e69ea61305e3da4a6caff7a1c1a"
+  },
+  "inputs": [
+    {
+      "path": "research_output/research5_time_spherex_000.fits.gz",
+      "cutout_sha256_gzip": "20b91db27fd6b03ad27333477aa99192f86865711630cb46e535bf04f922e1ee",
+      "cutout_sha256_uncompressed": "11f19691d14745ab616e7f28a240543057d7b9743a72c75f3f961bcf4cee1766",
+      "receipt_sha256": "06a47be57d77ae6572424ae298ebaf8bd3edd9ec5d194158bd143f6aa787d624",
+      "original_url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W34_1A/l2b-v27-2026-243/4/level2_2026W34_1A_0017_1D4_spx_l2b-v27-2026-243.fits",
+      "original_epsf_sha256": "497f255170f4b32220affc7b7f6794fb46afe4e7d9995244f627103708fe6cd7",
+      "original_epsf_zone": 297,
+      "independent_vs_author_r4_flux_relative_difference": -1.8777315413665008e-06
+    },
+    {
+      "path": "research_output/research5_time_spherex_004.fits.gz",
+      "cutout_sha256_gzip": "4ee593d63a0f0bf9f496db395de07fe527f4dbc843e788169593e57e5a2f06dd",
+      "cutout_sha256_uncompressed": "0d5bb0a7a0893ac09fbdee0921f04bca8cec8fbfeb706ee2396849d7ba9c8a87",
+      "receipt_sha256": "2a39fd249ea23bb06d1d253eefec6c2ecb4edac174647a531ae991971ae76094",
+      "original_url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W34_2A/l2b-v27-2026-243/4/level2_2026W34_2A_0202_1D4_spx_l2b-v27-2026-243.fits",
+      "original_epsf_sha256": "497f255170f4b32220affc7b7f6794fb46afe4e7d9995244f627103708fe6cd7",
+      "original_epsf_zone": 376,
+      "independent_vs_author_r4_flux_relative_difference": -2.3047268149500866e-07
+    },
+    {
+      "path": "research_output/research5_time_spherex_008.fits.gz",
+      "cutout_sha256_gzip": "f3c58ea6f8e6789a6ea0e4e078400dc794024c7583bccc7f5fd1dbdebc141fa6",
+      "cutout_sha256_uncompressed": "cf0b323edbfe48593cdda8dd0bdb4195705876bd2e52144fa2f5d75c332da75c",
+      "receipt_sha256": "306b80c5d7a3efb5a5394f7c3e40664e7f98a320cf39c2be7dcf9f4b21ed7088",
+      "original_url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W34_1A/l2b-v27-2026-243/4/level2_2026W34_1A_0271_1D4_spx_l2b-v27-2026-243.fits",
+      "original_epsf_sha256": "497f255170f4b32220affc7b7f6794fb46afe4e7d9995244f627103708fe6cd7",
+      "original_epsf_zone": 149,
+      "independent_vs_author_r4_flux_relative_difference": -1.0522010274183202e-07
+    },
+    {
+      "path": "research_output/research5_time_spherex_012.fits.gz",
+      "cutout_sha256_gzip": "90691b26b23aa3247d7d0fffa40b51adf61448048cf0d3981120a8738c473179",
+      "cutout_sha256_uncompressed": "3dfb4298879e404ef70a7560e4be72e9193306edb8ee89f5fd88a65c87dcae6d",
+      "receipt_sha256": "09819d472b9b4cf28036234cd2018ae4c47c9e815eb55cddf0ced2be2ccda195",
+      "original_url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W34_1A/l2b-v27-2026-243/4/level2_2026W34_1A_0332_1D4_spx_l2b-v27-2026-243.fits",
+      "original_epsf_sha256": "497f255170f4b32220affc7b7f6794fb46afe4e7d9995244f627103708fe6cd7",
+      "original_epsf_zone": 44,
+      "independent_vs_author_r4_flux_relative_difference": -1.0501641851567989e-05
+    },
+    {
+      "path": "research_output/research5_time_spherex_014.fits.gz",
+      "cutout_sha256_gzip": "4704b04ce325a433cfa00e1ae55e879d678d803fa4cb72f5699b6977ac7af3b0",
+      "cutout_sha256_uncompressed": "a5c5b4c1677b9f1eae25e1b5e0f4e44a99bbd2aa5efc95a6c9f5e6061a2830fc",
+      "receipt_sha256": "c586d6419e959131c3feb35c33d0398af7b28547b69b357303b6560446364216",
+      "original_url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W34_1A/l2b-v27-2026-243/4/level2_2026W34_1A_0372_1D4_spx_l2b-v27-2026-243.fits",
+      "original_epsf_sha256": "497f255170f4b32220affc7b7f6794fb46afe4e7d9995244f627103708fe6cd7",
+      "original_epsf_zone": 420,
+      "independent_vs_author_r4_flux_relative_difference": 1.6962241178308801e-06
+    },
+    {
+      "path": "research_output/research5_time_spherex_018.fits.gz",
+      "cutout_sha256_gzip": "6fce281c497a5c57984af80988b813fe073230ee7c98e87eda4279a954f9c730",
+      "cutout_sha256_uncompressed": "beec495d2a2776bbe3a02daf74a6227ec36c9a951e168330652c249fdb958ad2",
+      "receipt_sha256": "58dba61a6cddcf451790e5cbce4671b9aa6147c1bed283cb77de1063a63a8a81",
+      "original_url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W34_1A/l2b-v27-2026-243/4/level2_2026W34_1A_0532_1D4_spx_l2b-v27-2026-243.fits",
+      "original_epsf_sha256": "497f255170f4b32220affc7b7f6794fb46afe4e7d9995244f627103708fe6cd7",
+      "original_epsf_zone": 315,
+      "independent_vs_author_r4_flux_relative_difference": 0.03338377739296483
+    },
+    {
+      "path": "research_output/research5_time_spherex_019.fits.gz",
+      "cutout_sha256_gzip": "5e0d21148220e4ce24abcc945057a08df81609566b0b1e5c8da969f2ef95c9a7",
+      "cutout_sha256_uncompressed": "251349ab51b558b1112004577f3a07a969046ed1b6d1875ea1f7ea268366cd31",
+      "receipt_sha256": "4fca33a92fc2389ed1f7bbb3a84a607923625e350491333d4e65e4fe9c5a321e",
+      "original_url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W34_1A/l2b-v27-2026-243/4/level2_2026W34_1A_0545_1D4_spx_l2b-v27-2026-243.fits",
+      "original_epsf_sha256": "497f255170f4b32220affc7b7f6794fb46afe4e7d9995244f627103708fe6cd7",
+      "original_epsf_zone": 191,
+      "independent_vs_author_r4_flux_relative_difference": 1.09564368488968e-06
+    },
+    {
+      "path": "research_output/research5_time_spherex_021.fits.gz",
+      "cutout_sha256_gzip": "ce38390a0a2ec204d24d8d6785771d6dfb227b93c61c5263faa9157294f6d2ff",
+      "cutout_sha256_uncompressed": "a3680f8936e8c0a2c5ab5856a4f02d7a194526d0fc2f469f991593b8285507cf",
+      "receipt_sha256": "34d49e1269904d0e29f95d33f4674b9f1b2fb77d3c933a99048a77be3ab0f2be",
+      "original_url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W34_1A/l2b-v27-2026-243/4/level2_2026W34_1A_0559_3D4_spx_l2b-v27-2026-243.fits",
+      "original_epsf_sha256": "497f255170f4b32220affc7b7f6794fb46afe4e7d9995244f627103708fe6cd7",
+      "original_epsf_zone": 439,
+      "independent_vs_author_r4_flux_relative_difference": -4.330303593480522e-08
+    },
+    {
+      "path": "research_output/research5_time_spherex_023.fits.gz",
+      "cutout_sha256_gzip": "6c1bd8263d5ac76ace58d16827e2d7f7453bf73b7c5c5c5188f177aa3c280f06",
+      "cutout_sha256_uncompressed": "a20e511339c234ae1099f3aa9b703cba80dbdc40843efeea506b9da5e7d185e9",
+      "receipt_sha256": "8463c5580c9090caae800566838771ebbca5dbfc2e183e62760f63a3d4aa4590",
+      "original_url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W34_2A/l2b-v27-2026-243/5/level2_2026W34_2A_0643_1D5_spx_l2b-v27-2026-243.fits",
+      "original_epsf_sha256": "8482e31172153e7c407cdab0d6ac54d90d687447d0584b6cf7e0ed1b31148aec",
+      "original_epsf_zone": 309,
+      "independent_vs_author_r4_flux_relative_difference": -1.9612079027453433e-07
+    },
+    {
+      "path": "research_output/research5_time_spherex_029.fits.gz",
+      "cutout_sha256_gzip": "fb757dffdc920e6a7b519f65ba6101584d94d6e65a04cc6ec5418a85117486ad",
+      "cutout_sha256_uncompressed": "ecd15f11b9ff13f153f871e7177edf2591f66e42dd0a709f06908c8b384b7589",
+      "receipt_sha256": "694d1b38b88741ba508b362d80d802d75d6c66db7ba06e7f6a17a77c13f0469d",
+      "original_url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W34_2A/l2b-v27-2026-243/5/level2_2026W34_2A_0753_1D5_spx_l2b-v27-2026-243.fits",
+      "original_epsf_sha256": "8482e31172153e7c407cdab0d6ac54d90d687447d0584b6cf7e0ed1b31148aec",
+      "original_epsf_zone": 250,
+      "independent_vs_author_r4_flux_relative_difference": 1.1249938725033104e-06
+    },
+    {
+      "path": "research_output/research5_time_spherex_040.fits.gz",
+      "cutout_sha256_gzip": "ad7013b8bf24ef82911973af95e05925e7fba70af83bba27d539a69088ed3b58",
+      "cutout_sha256_uncompressed": "241081982d86b6d76951b41c6046f3f03be1897419602570456713b61e576b40",
+      "receipt_sha256": "585fc61bbb2283e159071003bfa6b2a9b63c3ff7330a5abe50e7d0730b70f497",
+      "original_url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W35_1A/l2b-v27-2026-243/5/level2_2026W35_1A_0244_1D5_spx_l2b-v27-2026-243.fits",
+      "original_epsf_sha256": "8482e31172153e7c407cdab0d6ac54d90d687447d0584b6cf7e0ed1b31148aec",
+      "original_epsf_zone": 40,
+      "independent_vs_author_r4_flux_relative_difference": 7.160624999613674e-07
+    }
+  ],
+  "w1_quality_diagnostic": {
+    "criterion": "after-outcome diagnostic: >=85%usable PSF; >=4pixel edge distance",
+    "accepted_frames": 9,
+    "excluded_paths": [
+      "research_output/research5_time_spherex_012.fits.gz",
+      "research_output/research5_time_spherex_018.fits.gz"
+    ],
+    "coverage": {
+      "nominal_support_response_fraction": 0.18033238803026252,
+      "nominal_support_flat_fnu_photon_fraction": 0.19123954792689418,
+      "interpolation_hull_response_fraction": 0.9999998280645709,
+      "interpolation_hull_flat_fnu_photon_fraction": 0.9999998964773089,
+      "nonoverlapping_nominal_channel_count": 8,
+      "status": "bandpass diagnostic; widths approximate; no flux extrapolation"
+    }
+  },
+  "no_synthetic_w1": true,
+  "claims": [
+    "no independent faint-state confirmation",
+    "reliable3.114/3.287micron fluxes bright-like conditional on SED/bandpass comparability",
+    "no validated periodic recurrence failure",
+    "2.44micron difference is exploratory and unvalidated"
+  ]
+}

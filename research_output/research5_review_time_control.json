@@ -1,0 +1,339 @@
+{
+  "scope": "Independent local NEOWISE control plus post-frozen-test descriptive optical timing audit",
+  "matched_visit_count": 21,
+  "matched_visits": [
+    {
+      "mjd": 56707.94930458,
+      "target_n": 11,
+      "control_n": 10,
+      "target_w1": 12.977,
+      "target_w2": 12.346,
+      "control_w1": 12.9595,
+      "control_w2": 13.0465,
+      "differential_w1": 0.01750000000000007,
+      "differential_w2": -0.7004999999999999
+    },
+    {
+      "mjd": 56898.72480382,
+      "target_n": 14,
+      "control_n": 13,
+      "target_w1": 13.032499999999999,
+      "target_w2": 12.4805,
+      "control_w1": 12.968,
+      "control_w2": 12.992,
+      "differential_w1": 0.06449999999999889,
+      "differential_w2": -0.5115000000000016
+    },
+    {
+      "mjd": 57067.07763981,
+      "target_n": 13,
+      "control_n": 12,
+      "target_w1": 11.944,
+      "target_w2": 11.288,
+      "control_w1": 12.959,
+      "control_w2": 13.0185,
+      "differential_w1": -1.0149999999999988,
+      "differential_w2": -1.7304999999999993
+    },
+    {
+      "mjd": 57260.58456049,
+      "target_n": 13,
+      "control_n": 12,
+      "target_w1": 11.924,
+      "target_w2": 11.175,
+      "control_w1": 12.982,
+      "control_w2": 13.035499999999999,
+      "differential_w1": -1.0579999999999998,
+      "differential_w2": -1.8604999999999983
+    },
+    {
+      "mjd": 57426.17508101,
+      "target_n": 12,
+      "control_n": 13,
+      "target_w1": 11.843499999999999,
+      "target_w2": 11.0705,
+      "control_w1": 12.974,
+      "control_w2": 13.016,
+      "differential_w1": -1.1305000000000014,
+      "differential_w2": -1.945500000000001
+    },
+    {
+      "mjd": 57627.136174375,
+      "target_n": 22,
+      "control_n": 22,
+      "target_w1": 12.1325,
+      "target_w2": 11.399,
+      "control_w1": 12.9725,
+      "control_w2": 13.0505,
+      "differential_w1": -0.8399999999999999,
+      "differential_w2": -1.6515000000000004
+    },
+    {
+      "mjd": 57793.19030721,
+      "target_n": 12,
+      "control_n": 12,
+      "target_w1": 11.915,
+      "target_w2": 11.1465,
+      "control_w1": 12.991,
+      "control_w2": 13.001999999999999,
+      "differential_w1": -1.0760000000000005,
+      "differential_w2": -1.8554999999999993
+    },
+    {
+      "mjd": 57991.739868245,
+      "target_n": 12,
+      "control_n": 12,
+      "target_w1": 12.423,
+      "target_w2": 11.692499999999999,
+      "control_w1": 12.9875,
+      "control_w2": 13.059999999999999,
+      "differential_w1": -0.5645000000000007,
+      "differential_w2": -1.3674999999999997
+    },
+    {
+      "mjd": 58150.295097335,
+      "target_n": 10,
+      "control_n": 10,
+      "target_w1": 12.592500000000001,
+      "target_w2": 11.9145,
+      "control_w1": 13.003,
+      "control_w2": 13.0455,
+      "differential_w1": -0.410499999999999,
+      "differential_w2": -1.1310000000000002
+    },
+    {
+      "mjd": 58356.00445427,
+      "target_n": 15,
+      "control_n": 15,
+      "target_w1": 13.089,
+      "target_w2": 12.554,
+      "control_w1": 12.995,
+      "control_w2": 13.016,
+      "differential_w1": 0.0940000000000012,
+      "differential_w2": -0.46199999999999974
+    },
+    {
+      "mjd": 58514.494004145,
+      "target_n": 10,
+      "control_n": 12,
+      "target_w1": 12.8475,
+      "target_w2": 12.0965,
+      "control_w1": 12.992,
+      "control_w2": 13.0495,
+      "differential_w1": -0.14450000000000074,
+      "differential_w2": -0.9529999999999994
+    },
+    {
+      "mjd": 58723.138787975,
+      "target_n": 12,
+      "control_n": 12,
+      "target_w1": 11.687000000000001,
+      "target_w2": 11.0605,
+      "control_w1": 12.9815,
+      "control_w2": 13.0395,
+      "differential_w1": -1.2944999999999993,
+      "differential_w2": -1.979000000000001
+    },
+    {
+      "mjd": 58878.795580574995,
+      "target_n": 12,
+      "control_n": 13,
+      "target_w1": 11.7585,
+      "target_w2": 11.096499999999999,
+      "control_w1": 12.99,
+      "control_w2": 13.026,
+      "differential_w1": -1.2315000000000005,
+      "differential_w2": -1.9295000000000009
+    },
+    {
+      "mjd": 59087.175910645004,
+      "target_n": 12,
+      "control_n": 12,
+      "target_w1": 11.97,
+      "target_w2": 11.280999999999999,
+      "control_w1": 12.991499999999998,
+      "control_w2": 13.013,
+      "differential_w1": -1.0214999999999979,
+      "differential_w2": -1.732000000000001
+    },
+    {
+      "mjd": 59245.782924165,
+      "target_n": 12,
+      "control_n": 11,
+      "target_w1": 11.864,
+      "target_w2": 11.184000000000001,
+      "control_w1": 12.982,
+      "control_w2": 13.003,
+      "differential_w1": -1.1179999999999986,
+      "differential_w2": -1.818999999999999
+    },
+    {
+      "mjd": 59451.443357594995,
+      "target_n": 14,
+      "control_n": 13,
+      "target_w1": 12.078,
+      "target_w2": 11.328,
+      "control_w1": 13.003,
+      "control_w2": 13.001,
+      "differential_w1": -0.9250000000000007,
+      "differential_w2": -1.673
+    },
+    {
+      "mjd": 59610.03670199,
+      "target_n": 11,
+      "control_n": 12,
+      "target_w1": 12.256,
+      "target_w2": 11.544,
+      "control_w1": 12.9905,
+      "control_w2": 13.0475,
+      "differential_w1": -0.7345000000000006,
+      "differential_w2": -1.503499999999999
+    },
+    {
+      "mjd": 59818.554340115,
+      "target_n": 12,
+      "control_n": 11,
+      "target_w1": 13.0425,
+      "target_w2": 12.474,
+      "control_w1": 13.009,
+      "control_w2": 13.028,
+      "differential_w1": 0.033500000000000085,
+      "differential_w2": -0.5540000000000003
+    },
+    {
+      "mjd": 59976.58219336,
+      "target_n": 18,
+      "control_n": 17,
+      "target_w1": 12.0,
+      "target_w2": 11.3635,
+      "control_w1": 12.996,
+      "control_w2": 13.045,
+      "differential_w1": -0.9960000000000004,
+      "differential_w2": -1.6814999999999998
+    },
+    {
+      "mjd": 60182.808800119994,
+      "target_n": 12,
+      "control_n": 11,
+      "target_w1": 11.7095,
+      "target_w2": 11.0325,
+      "control_w1": 12.986,
+      "control_w2": 13.063,
+      "differential_w1": -1.2765000000000004,
+      "differential_w2": -2.0305
+    },
+    {
+      "mjd": 60341.30798641,
+      "target_n": 13,
+      "control_n": 13,
+      "target_w1": 12.127,
+      "target_w2": 11.456,
+      "control_w1": 12.986,
+      "control_w2": 13.047,
+      "differential_w1": -0.859,
+      "differential_w2": -1.591000000000001
+    }
+  ],
+  "ranges": {
+    "target_w1_range": 1.4019999999999992,
+    "target_w2_range": 1.5214999999999996,
+    "control_w1_range": 0.05000000000000071,
+    "control_w2_range": 0.07099999999999973,
+    "differential_w1_range": 1.3885000000000005,
+    "differential_w2_range": 1.5685000000000002
+  },
+  "optical_oid": "655213300010614",
+  "optical_30day_bin_count": 73,
+  "optical_30day_median_range": 1.2276029500000014,
+  "optical_30day_median_extrema": [
+    18.34908775,
+    19.5766907
+  ],
+  "contemporaneous_ir_optical": [
+    {
+      "ir_mjd": 58356.00445427,
+      "ir_w1": 13.089,
+      "ir_w2": 12.554,
+      "optical_r_n": 21,
+      "optical_r_median": 18.8867092
+    },
+    {
+      "ir_mjd": 58514.494004145,
+      "ir_w1": 12.8475,
+      "ir_w2": 12.0965,
+      "optical_r_n": 8,
+      "optical_r_median": 18.80169295
+    },
+    {
+      "ir_mjd": 58723.138787975,
+      "ir_w1": 11.687000000000001,
+      "ir_w2": 11.0605,
+      "optical_r_n": 15,
+      "optical_r_median": 18.9984703
+    },
+    {
+      "ir_mjd": 58878.795580574995,
+      "ir_w1": 11.7585,
+      "ir_w2": 11.096499999999999,
+      "optical_r_n": 23,
+      "optical_r_median": 18.8268089
+    },
+    {
+      "ir_mjd": 59087.175910645004,
+      "ir_w1": 11.97,
+      "ir_w2": 11.280999999999999,
+      "optical_r_n": 30,
+      "optical_r_median": 18.5979004
+    },
+    {
+      "ir_mjd": 59245.782924165,
+      "ir_w1": 11.864,
+      "ir_w2": 11.184000000000001,
+      "optical_r_n": 22,
+      "optical_r_median": 18.9703646
+    },
+    {
+      "ir_mjd": 59451.443357594995,
+      "ir_w1": 12.078,
+      "ir_w2": 11.328,
+      "optical_r_n": 20,
+      "optical_r_median": 18.87746145
+    },
+    {
+      "ir_mjd": 59610.03670199,
+      "ir_w1": 12.256,
+      "ir_w2": 11.544,
+      "optical_r_n": 6,
+      "optical_r_median": 18.661016449999998
+    },
+    {
+      "ir_mjd": 59818.554340115,
+      "ir_w1": 13.0425,
+      "ir_w2": 12.474,
+      "optical_r_n": 14,
+      "optical_r_median": 18.9802847
+    },
+    {
+      "ir_mjd": 59976.58219336,
+      "ir_w1": 12.0,
+      "ir_w2": 11.3635,
+      "optical_r_n": 3,
+      "optical_r_median": 19.5501366
+    },
+    {
+      "ir_mjd": 60182.808800119994,
+      "ir_w1": 11.7095,
+      "ir_w2": 11.0325,
+      "optical_r_n": 14,
+      "optical_r_median": 18.9886436
+    },
+    {
+      "ir_mjd": 60341.30798641,
+      "ir_w1": 12.127,
+      "ir_w2": 11.456,
+      "optical_r_n": 9,
+      "optical_r_median": 19.1726894
+    }
+  ],
+  "limits": "Null frozen long-window median does not establish optical constancy or decoupling; scan control bounds common local effects, not target-specific ghost/blend; three postselected minima do not certify periodicity"
+}

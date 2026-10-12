@@ -1,0 +1,1887 @@
+{
+  "target": "KIC8164262/TIC159649612",
+  "frequency_per_day": 2.6184922,
+  "status": "exploratory measurement; white errors are not total uncertainties",
+  "rows": [
+    {
+      "sector": 15,
+      "camera": 2,
+      "ccd": 3,
+      "apertures": {
+        "BESTAP": "2.5:4.0:3.0",
+        "SMALLAP": "1.75:4.0:3.0",
+        "LARGEAP": "3.0:4.0:3.0"
+      },
+      "timedel_days": 0.02083333333333333,
+      "all_rows": 1197,
+      "kept_after_quality_periastron": 414,
+      "quality_rejected": 458,
+      "periastron_rejected": 325,
+      "time_min": 1711.3849804636377,
+      "time_max": 1737.3855718314999,
+      "fits": {
+        "SAP_FLUX": {
+          "n": 414,
+          "baseline_days": 22.313008118537482,
+          "segments": 3,
+          "amplitude_ppm": 1187.5842592382578,
+          "white_error_ppm": 798.8251822346331,
+          "phase_rad": -1.7328800047588466,
+          "rms_ppm": 10856.84894679115,
+          "design_condition": 1551.9531429920055,
+          "rank": 11,
+          "adjacent_harmonics": {
+            "n": 414,
+            "baseline_days": 22.313008118537482,
+            "segments": 3,
+            "amplitude_ppm": 8047.077966104427,
+            "white_error_ppm": 12049.70894115718,
+            "phase_rad": 1.8641388550108777,
+            "rms_ppm": 10837.48195417537,
+            "design_condition": 1985.1802738087242,
+            "rank": 15
+          },
+          "halves": [
+            {
+              "n": 207,
+              "baseline_days": 4.666770366764013,
+              "segments": 1,
+              "amplitude_ppm": 1873.8224277511913,
+              "white_error_ppm": 906.3456563797494,
+              "phase_rad": -1.7613602792131025,
+              "rms_ppm": 8874.115669064111,
+              "design_condition": 13.318392915447903,
+              "rank": 5
+            },
+            {
+              "n": 207,
+              "baseline_days": 17.62540396477243,
+              "segments": 3,
+              "amplitude_ppm": 721.2313653689571,
+              "white_error_ppm": 1110.3134381074076,
+              "phase_rad": -1.3576821672795534,
+              "rms_ppm": 10303.972009865356,
+              "design_condition": 1057.9758911592837,
+              "rank": 11
+            }
+          ],
+          "known_neighbor_worst_linear_leakage_ppm": 32.01123285734942,
+          "1000ppm_integration_aware_window_recovery_ppm": 999.9999999999995
+        },
+        "KSPSAP_FLUX": {
+          "n": 414,
+          "baseline_days": 22.313008118537482,
+          "segments": 3,
+          "amplitude_ppm": 995.6011040806503,
+          "white_error_ppm": 595.5810599576603,
+          "phase_rad": -1.8365448829049094,
+          "rms_ppm": 8113.623241812378,
+          "design_condition": 1551.9531429920055,
+          "rank": 11,
+          "adjacent_harmonics": {
+            "n": 414,
+            "baseline_days": 22.313008118537482,
+            "segments": 3,
+            "amplitude_ppm": 7815.087111894665,
+            "white_error_ppm": 8986.74100722311,
+            "phase_rad": 1.870574603339711,
+            "rms_ppm": 8093.181017377466,
+            "design_condition": 1985.1802738087242,
+            "rank": 15
+          },
+          "halves": [
+            {
+              "n": 207,
+              "baseline_days": 4.666770366764013,
+              "segments": 1,
+              "amplitude_ppm": 1355.92924692215,
+              "white_error_ppm": 723.7576505052359,
+              "phase_rad": -1.9490353522483372,
+              "rms_ppm": 7137.301036354064,
+              "design_condition": 13.318392915447903,
+              "rank": 5
+            },
+            {
+              "n": 207,
+              "baseline_days": 17.62540396477243,
+              "segments": 3,
+              "amplitude_ppm": 614.2139307404406,
+              "white_error_ppm": 965.7498162839236,
+              "phase_rad": -1.443658401203217,
+              "rms_ppm": 8963.3914142257,
+              "design_condition": 1057.9758911592837,
+              "rank": 11
+            }
+          ],
+          "known_neighbor_worst_linear_leakage_ppm": 32.01123285734942,
+          "1000ppm_integration_aware_window_recovery_ppm": 999.9999999999995
+        },
+        "KSPSAP_FLUX_SML": {
+          "n": 414,
+          "baseline_days": 22.313008118537482,
+          "segments": 3,
+          "amplitude_ppm": 681.9312970363694,
+          "white_error_ppm": 267.7745764184336,
+          "phase_rad": -2.0868225025503664,
+          "rms_ppm": 3673.854083220662,
+          "design_condition": 1551.9531429920055,
+          "rank": 11,
+          "adjacent_harmonics": {
+            "n": 414,
+            "baseline_days": 22.313008118537482,
+            "segments": 3,
+            "amplitude_ppm": 4552.950645309423,
+            "white_error_ppm": 3824.8546315515496,
+            "phase_rad": 2.1023587367818104,
+            "rms_ppm": 3661.5557091672354,
+            "design_condition": 1985.1802738087242,
+            "rank": 15
+          },
+          "halves": [
+            {
+              "n": 207,
+              "baseline_days": 4.666770366764013,
+              "segments": 1,
+              "amplitude_ppm": 855.0338218598691,
+              "white_error_ppm": 329.38674332357687,
+              "phase_rad": -2.1668218944045403,
+              "rms_ppm": 3281.875643619286,
+              "design_condition": 13.318392915447903,
+              "rank": 5
+            },
+            {
+              "n": 207,
+              "baseline_days": 17.62540396477243,
+              "segments": 3,
+              "amplitude_ppm": 484.6438552889966,
+              "white_error_ppm": 432.1760035558284,
+              "phase_rad": -1.8769153195551587,
+              "rms_ppm": 4018.842457224674,
+              "design_condition": 1057.9758911592837,
+              "rank": 11
+            }
+          ],
+          "known_neighbor_worst_linear_leakage_ppm": 32.01123285734942,
+          "1000ppm_integration_aware_window_recovery_ppm": 999.9999999999995
+        },
+        "KSPSAP_FLUX_LAG": {
+          "n": 414,
+          "baseline_days": 22.313008118537482,
+          "segments": 3,
+          "amplitude_ppm": 1277.8267779141318,
+          "white_error_ppm": 884.6045797626455,
+          "phase_rad": -1.410512732556223,
+          "rms_ppm": 11976.085881488818,
+          "design_condition": 1551.9531429920055,
+          "rank": 11,
+          "adjacent_harmonics": {
+            "n": 414,
+            "baseline_days": 22.313008118537482,
+            "segments": 3,
+            "amplitude_ppm": 12933.961199015843,
+            "white_error_ppm": 13536.188383648834,
+            "phase_rad": 1.758905154397307,
+            "rms_ppm": 11956.067466693452,
+            "design_condition": 1985.1802738087242,
+            "rank": 15
+          },
+          "halves": [
+            {
+              "n": 207,
+              "baseline_days": 4.666770366764013,
+              "segments": 1,
+              "amplitude_ppm": 1376.7083628789737,
+              "white_error_ppm": 1091.2263919240318,
+              "phase_rad": -1.6006340518300823,
+              "rms_ppm": 10640.380115259557,
+              "design_condition": 13.318392915447903,
+              "rank": 5
+            },
+            {
+              "n": 207,
+              "baseline_days": 17.62540396477243,
+              "segments": 3,
+              "amplitude_ppm": 1239.2986810304503,
+              "white_error_ppm": 1419.3684981660178,
+              "phase_rad": -1.1827567557062477,
+              "rms_ppm": 13173.267763393838,
+              "design_condition": 1057.9758911592837,
+              "rank": 11
+            }
+          ],
+          "known_neighbor_worst_linear_leakage_ppm": 32.01123285734942,
+          "1000ppm_integration_aware_window_recovery_ppm": 999.9999999999995
+        }
+      }
+    },
+    {
+      "sector": 40,
+      "camera": 2,
+      "ccd": 4,
+      "apertures": {
+        "BESTAP": "2.5:4.0:3.0",
+        "SMALLAP": "1.75:4.0:3.0",
+        "LARGEAP": "3.0:4.0:3.0"
+      },
+      "timedel_days": 0.006944444444444444,
+      "all_rows": 3927,
+      "kept_after_quality_periastron": 3672,
+      "quality_rejected": 255,
+      "periastron_rejected": 0,
+      "time_min": 2390.6584694794565,
+      "time_max": 2418.853310931502,
+      "fits": {
+        "SAP_FLUX": {
+          "n": 3672,
+          "baseline_days": 27.9726153651618,
+          "segments": 2,
+          "amplitude_ppm": 1108.2607611502817,
+          "white_error_ppm": 334.07757459064925,
+          "phase_rad": -2.3772409226171596,
+          "rms_ppm": 14258.591236350912,
+          "design_condition": 13.697709426407933,
+          "rank": 8,
+          "adjacent_harmonics": {
+            "n": 3672,
+            "baseline_days": 27.9726153651618,
+            "segments": 2,
+            "amplitude_ppm": 1012.6437406013865,
+            "white_error_ppm": 1981.849327264539,
+            "phase_rad": -1.89394533474634,
+            "rms_ppm": 14252.070968805705,
+            "design_condition": 21.07211065228343,
+            "rank": 12
+          },
+          "halves": [
+            {
+              "n": 1836,
+              "baseline_days": 13.500254674891039,
+              "segments": 1,
+              "amplitude_ppm": 1211.801678442082,
+              "white_error_ppm": 480.18545587676255,
+              "phase_rad": -2.533207013476579,
+              "rms_ppm": 14479.726648337957,
+              "design_condition": 13.61087040540554,
+              "rank": 5
+            },
+            {
+              "n": 1836,
+              "baseline_days": 14.465416129597997,
+              "segments": 2,
+              "amplitude_ppm": 986.9639414598294,
+              "white_error_ppm": 463.7455874665068,
+              "phase_rad": -2.166816394257227,
+              "rms_ppm": 13977.166369595683,
+              "design_condition": 6.368640065556219e+17,
+              "rank": 6
+            }
+          ],
+          "known_neighbor_worst_linear_leakage_ppm": 31.991245455000488,
+          "1000ppm_integration_aware_window_recovery_ppm": 1000.0
+        },
+        "KSPSAP_FLUX": {
+          "n": 3672,
+          "baseline_days": 27.9726153651618,
+          "segments": 2,
+          "amplitude_ppm": 722.8514770576536,
+          "white_error_ppm": 218.68832967188723,
+          "phase_rad": -2.7458331103366103,
+          "rms_ppm": 9333.445584774645,
+          "design_condition": 13.697709426407933,
+          "rank": 8,
+          "adjacent_harmonics": {
+            "n": 3672,
+            "baseline_days": 27.9726153651618,
+            "segments": 2,
+            "amplitude_ppm": 1787.1702231224665,
+            "white_error_ppm": 1304.9764782342552,
+            "phase_rad": -2.8972084387640673,
+            "rms_ppm": 9330.23828514682,
+            "design_condition": 21.07211065228343,
+            "rank": 12
+          },
+          "halves": [
+            {
+              "n": 1836,
+              "baseline_days": 13.500254674891039,
+              "segments": 1,
+              "amplitude_ppm": 793.5144627617561,
+              "white_error_ppm": 328.0873730714127,
+              "phase_rad": -2.9456392275229923,
+              "rms_ppm": 9887.084355302868,
+              "design_condition": 13.61087040540554,
+              "rank": 5
+            },
+            {
+              "n": 1836,
+              "baseline_days": 14.465416129597997,
+              "segments": 2,
+              "amplitude_ppm": 683.5642228193926,
+              "white_error_ppm": 289.9567347287832,
+              "phase_rad": -2.5131832478489518,
+              "rms_ppm": 8742.812455889376,
+              "design_condition": 6.368640065556219e+17,
+              "rank": 6
+            }
+          ],
+          "known_neighbor_worst_linear_leakage_ppm": 31.991245455000488,
+          "1000ppm_integration_aware_window_recovery_ppm": 1000.0
+        },
+        "KSPSAP_FLUX_SML": {
+          "n": 3672,
+          "baseline_days": 27.9726153651618,
+          "segments": 2,
+          "amplitude_ppm": 665.6359687166,
+          "white_error_ppm": 84.10626869023481,
+          "phase_rad": -2.7856503933444965,
+          "rms_ppm": 3589.833290434022,
+          "design_condition": 13.697709426407933,
+          "rank": 8,
+          "adjacent_harmonics": {
+            "n": 3672,
+            "baseline_days": 27.9726153651618,
+            "segments": 2,
+            "amplitude_ppm": 838.3726279697722,
+            "white_error_ppm": 501.9088307931176,
+            "phase_rad": -2.9220568365140385,
+            "rms_ppm": 3588.9144970530892,
+            "design_condition": 21.07211065228343,
+            "rank": 12
+          },
+          "halves": [
+            {
+              "n": 1836,
+              "baseline_days": 13.500254674891039,
+              "segments": 1,
+              "amplitude_ppm": 640.5071957702868,
+              "white_error_ppm": 121.76748567211543,
+              "phase_rad": -2.8753995544280317,
+              "rms_ppm": 3669.366624452131,
+              "design_condition": 13.61087040540554,
+              "rank": 5
+            },
+            {
+              "n": 1836,
+              "baseline_days": 14.465416129597997,
+              "segments": 2,
+              "amplitude_ppm": 693.5849780900537,
+              "white_error_ppm": 116.2476796238012,
+              "phase_rad": -2.7024778680946726,
+              "rms_ppm": 3507.557699703302,
+              "design_condition": 6.368640065556219e+17,
+              "rank": 6
+            }
+          ],
+          "known_neighbor_worst_linear_leakage_ppm": 31.991245455000488,
+          "1000ppm_integration_aware_window_recovery_ppm": 1000.0
+        },
+        "KSPSAP_FLUX_LAG": {
+          "n": 3672,
+          "baseline_days": 27.9726153651618,
+          "segments": 2,
+          "amplitude_ppm": 949.2212068946545,
+          "white_error_ppm": 269.1925282065979,
+          "phase_rad": -2.5480440106819735,
+          "rms_ppm": 11487.385742519462,
+          "design_condition": 13.697709426407933,
+          "rank": 8,
+          "adjacent_harmonics": {
+            "n": 3672,
+            "baseline_days": 27.9726153651618,
+            "segments": 2,
+            "amplitude_ppm": 2183.3243786419175,
+            "white_error_ppm": 1603.6126479485142,
+            "phase_rad": -3.133802162019519,
+            "rms_ppm": 11483.220121849943,
+            "design_condition": 21.07211065228343,
+            "rank": 12
+          },
+          "halves": [
+            {
+              "n": 1836,
+              "baseline_days": 13.500254674891039,
+              "segments": 1,
+              "amplitude_ppm": 1265.0400298887662,
+              "white_error_ppm": 413.3667423790596,
+              "phase_rad": -2.5448827406650336,
+              "rms_ppm": 12464.28022469339,
+              "design_condition": 13.61087040540554,
+              "rank": 5
+            },
+            {
+              "n": 1836,
+              "baseline_days": 14.465416129597997,
+              "segments": 2,
+              "amplitude_ppm": 633.7214910563541,
+              "white_error_ppm": 345.3520900888036,
+              "phase_rad": -2.557876234324978,
+              "rms_ppm": 10414.545258898115,
+              "design_condition": 6.368640065556219e+17,
+              "rank": 6
+            }
+          ],
+          "known_neighbor_worst_linear_leakage_ppm": 31.991245455000488,
+          "1000ppm_integration_aware_window_recovery_ppm": 1000.0
+        }
+      }
+    },
+    {
+      "sector": 41,
+      "camera": 2,
+      "ccd": 3,
+      "apertures": {
+        "BESTAP": "2.5:4.0:3.0",
+        "SMALLAP": "1.75:4.0:3.0",
+        "LARGEAP": "3.0:4.0:3.0"
+      },
+      "timedel_days": 0.006944444444444444,
+      "all_rows": 3668,
+      "kept_after_quality_periastron": 2603,
+      "quality_rejected": 156,
+      "periastron_rejected": 909,
+      "time_min": 2419.9922027357275,
+      "time_max": 2446.575386970036,
+      "fits": {
+        "SAP_FLUX": {
+          "n": 2603,
+          "baseline_days": 26.374852547379305,
+          "segments": 2,
+          "amplitude_ppm": 694.8495013528986,
+          "white_error_ppm": 231.5556245493481,
+          "phase_rad": -2.8866167937933565,
+          "rms_ppm": 8309.218186775619,
+          "design_condition": 19.75209530287571,
+          "rank": 8,
+          "adjacent_harmonics": {
+            "n": 2603,
+            "baseline_days": 26.374852547379305,
+            "segments": 2,
+            "amplitude_ppm": 791.636766590115,
+            "white_error_ppm": 1526.1303895519727,
+            "phase_rad": 1.7885527859265278,
+            "rms_ppm": 8305.387269019735,
+            "design_condition": 26.076259761029025,
+            "rank": 12
+          },
+          "halves": [
+            {
+              "n": 1302,
+              "baseline_days": 17.03467424055725,
+              "segments": 2,
+              "amplitude_ppm": 911.0633350152395,
+              "white_error_ppm": 329.38151827834616,
+              "phase_rad": -2.8783772488372086,
+              "rms_ppm": 8302.7891120471,
+              "design_condition": 17.950023661127293,
+              "rank": 8
+            },
+            {
+              "n": 1301,
+              "baseline_days": 9.333233931670293,
+              "segments": 1,
+              "amplitude_ppm": 667.9541463630175,
+              "white_error_ppm": 305.0272180854405,
+              "phase_rad": -2.819503176009372,
+              "rms_ppm": 7751.658009390642,
+              "design_condition": 13.418237651451811,
+              "rank": 5
+            }
+          ],
+          "known_neighbor_worst_linear_leakage_ppm": 31.994351006977638,
+          "1000ppm_integration_aware_window_recovery_ppm": 999.9999999999998
+        },
+        "KSPSAP_FLUX": {
+          "n": 2603,
+          "baseline_days": 26.374852547379305,
+          "segments": 2,
+          "amplitude_ppm": 613.1970998866112,
+          "white_error_ppm": 178.25855676573227,
+          "phase_rad": -2.819056087831664,
+          "rms_ppm": 6397.0379475945265,
+          "design_condition": 19.75209530287571,
+          "rank": 8,
+          "adjacent_harmonics": {
+            "n": 2603,
+            "baseline_days": 26.374852547379305,
+            "segments": 2,
+            "amplitude_ppm": 1259.6593148753723,
+            "white_error_ppm": 1175.2347645702384,
+            "phase_rad": 1.6783369693975168,
+            "rms_ppm": 6390.823957173582,
+            "design_condition": 26.076259761029025,
+            "rank": 12
+          },
+          "halves": [
+            {
+              "n": 1302,
+              "baseline_days": 17.03467424055725,
+              "segments": 2,
+              "amplitude_ppm": 574.9238464599481,
+              "white_error_ppm": 257.4096728365578,
+              "phase_rad": -2.9779012437504844,
+              "rms_ppm": 6494.486418313249,
+              "design_condition": 17.950023661127293,
+              "rank": 8
+            },
+            {
+              "n": 1301,
+              "baseline_days": 9.333233931670293,
+              "segments": 1,
+              "amplitude_ppm": 667.4552475268085,
+              "white_error_ppm": 247.52884355545578,
+              "phase_rad": -2.680002140455638,
+              "rms_ppm": 6296.994572375655,
+              "design_condition": 13.418237651451811,
+              "rank": 5
+            }
+          ],
+          "known_neighbor_worst_linear_leakage_ppm": 31.994351006977638,
+          "1000ppm_integration_aware_window_recovery_ppm": 999.9999999999998
+        },
+        "KSPSAP_FLUX_SML": {
+          "n": 2603,
+          "baseline_days": 26.374852547379305,
+          "segments": 2,
+          "amplitude_ppm": 427.80791119853455,
+          "white_error_ppm": 95.83237908245982,
+          "phase_rad": -2.691050623285797,
+          "rms_ppm": 3439.8798412115552,
+          "design_condition": 19.75209530287571,
+          "rank": 8,
+          "adjacent_harmonics": {
+            "n": 2603,
+            "baseline_days": 26.374852547379305,
+            "segments": 2,
+            "amplitude_ppm": 374.22223375992706,
+            "white_error_ppm": 632.0088156619356,
+            "phase_rad": 3.1415134635652455,
+            "rms_ppm": 3437.889604593378,
+            "design_condition": 26.076259761029025,
+            "rank": 12
+          },
+          "halves": [
+            {
+              "n": 1302,
+              "baseline_days": 17.03467424055725,
+              "segments": 2,
+              "amplitude_ppm": 433.64462000604186,
+              "white_error_ppm": 137.7314006211697,
+              "phase_rad": -2.8132944348241047,
+              "rms_ppm": 3470.213365952564,
+              "design_condition": 17.950023661127293,
+              "rank": 8
+            },
+            {
+              "n": 1301,
+              "baseline_days": 9.333233931670293,
+              "segments": 1,
+              "amplitude_ppm": 418.4469243068866,
+              "white_error_ppm": 133.8393980576824,
+              "phase_rad": -2.5622896384568126,
+              "rms_ppm": 3407.668910156258,
+              "design_condition": 13.418237651451811,
+              "rank": 5
+            }
+          ],
+          "known_neighbor_worst_linear_leakage_ppm": 31.994351006977638,
+          "1000ppm_integration_aware_window_recovery_ppm": 999.9999999999998
+        },
+        "KSPSAP_FLUX_LAG": {
+          "n": 2603,
+          "baseline_days": 26.374852547379305,
+          "segments": 2,
+          "amplitude_ppm": 756.2369790504672,
+          "white_error_ppm": 288.99519366959964,
+          "phase_rad": -2.853302442250151,
+          "rms_ppm": 10370.613610928549,
+          "design_condition": 19.75209530287571,
+          "rank": 8,
+          "adjacent_harmonics": {
+            "n": 2603,
+            "baseline_days": 26.374852547379305,
+            "segments": 2,
+            "amplitude_ppm": 2802.215083347444,
+            "white_error_ppm": 1908.6125326249398,
+            "phase_rad": 1.3975727865697047,
+            "rms_ppm": 10358.887115717962,
+            "design_condition": 26.076259761029025,
+            "rank": 12
+          },
+          "halves": [
+            {
+              "n": 1302,
+              "baseline_days": 17.03467424055725,
+              "segments": 2,
+              "amplitude_ppm": 637.1986757773409,
+              "white_error_ppm": 417.01325675905304,
+              "phase_rad": -2.9529609625852133,
+              "rms_ppm": 10518.687115127439,
+              "design_condition": 17.950023661127293,
+              "rank": 8
+            },
+            {
+              "n": 1301,
+              "baseline_days": 9.333233931670293,
+              "segments": 1,
+              "amplitude_ppm": 880.351372103963,
+              "white_error_ppm": 402.0115827655793,
+              "phase_rad": -2.781049719542908,
+              "rms_ppm": 10219.252673913006,
+              "design_condition": 13.418237651451811,
+              "rank": 5
+            }
+          ],
+          "known_neighbor_worst_linear_leakage_ppm": 31.994351006977638,
+          "1000ppm_integration_aware_window_recovery_ppm": 999.9999999999998
+        }
+      }
+    },
+    {
+      "sector": 54,
+      "camera": 3,
+      "ccd": 2,
+      "apertures": {
+        "BESTAP": "2.5:4.0:3.0",
+        "SMALLAP": "1.75:4.0:3.0",
+        "LARGEAP": "3.0:4.0:3.0"
+      },
+      "timedel_days": 0.006944444444444444,
+      "all_rows": 3605,
+      "kept_after_quality_periastron": 2540,
+      "quality_rejected": 165,
+      "periastron_rejected": 900,
+      "time_min": 2769.901615532634,
+      "time_max": 2796.1239759698456,
+      "fits": {
+        "SAP_FLUX": {
+          "n": 2540,
+          "baseline_days": 26.069581575214215,
+          "segments": 2,
+          "amplitude_ppm": 645.173567716652,
+          "white_error_ppm": 356.5252119111878,
+          "phase_rad": 2.987451591109835,
+          "rms_ppm": 12678.436645229569,
+          "design_condition": 20.094329272898708,
+          "rank": 8,
+          "adjacent_harmonics": {
+            "n": 2540,
+            "baseline_days": 26.069581575214215,
+            "segments": 2,
+            "amplitude_ppm": 2097.5354522844855,
+            "white_error_ppm": 2429.183880728148,
+            "phase_rad": -1.2330398331488825,
+            "rms_ppm": 12672.288095400936,
+            "design_condition": 26.453291559345622,
+            "rank": 12
+          },
+          "halves": [
+            {
+              "n": 1270,
+              "baseline_days": 16.930689359235203,
+              "segments": 2,
+              "amplitude_ppm": 1087.6799602014412,
+              "white_error_ppm": 397.5997802630859,
+              "phase_rad": 1.9348498427972878,
+              "rms_ppm": 9985.313428687266,
+              "design_condition": 17.636460758130344,
+              "rank": 8
+            },
+            {
+              "n": 1270,
+              "baseline_days": 9.131947764445158,
+              "segments": 1,
+              "amplitude_ppm": 1181.2869575786226,
+              "white_error_ppm": 571.2658908643554,
+              "phase_rad": -2.399906999401747,
+              "rms_ppm": 14368.09651313125,
+              "design_condition": 13.407462646881834,
+              "rank": 5
+            }
+          ],
+          "known_neighbor_worst_linear_leakage_ppm": 31.991468988298312,
+          "1000ppm_integration_aware_window_recovery_ppm": 999.9999999999995
+        },
+        "KSPSAP_FLUX": {
+          "n": 2540,
+          "baseline_days": 26.069581575214215,
+          "segments": 2,
+          "amplitude_ppm": 679.0278160016655,
+          "white_error_ppm": 272.52574058934346,
+          "phase_rad": 3.063119983562798,
+          "rms_ppm": 9691.44096524995,
+          "design_condition": 20.094329272898708,
+          "rank": 8,
+          "adjacent_harmonics": {
+            "n": 2540,
+            "baseline_days": 26.069581575214215,
+            "segments": 2,
+            "amplitude_ppm": 4726.776265987553,
+            "white_error_ppm": 1856.5238810599583,
+            "phase_rad": -2.242238665444985,
+            "rms_ppm": 9672.218502618713,
+            "design_condition": 26.453291559345622,
+            "rank": 12
+          },
+          "halves": [
+            {
+              "n": 1270,
+              "baseline_days": 16.930689359235203,
+              "segments": 2,
+              "amplitude_ppm": 844.0234598185231,
+              "white_error_ppm": 353.96823780042973,
+              "phase_rad": 1.7543483471596741,
+              "rms_ppm": 8885.999762556761,
+              "design_condition": 17.636460758130344,
+              "rank": 8
+            },
+            {
+              "n": 1270,
+              "baseline_days": 9.131947764445158,
+              "segments": 1,
+              "amplitude_ppm": 1413.8265477494097,
+              "white_error_ppm": 408.8246029313975,
+              "phase_rad": -2.578411618941889,
+              "rms_ppm": 10287.029443033804,
+              "design_condition": 13.407462646881834,
+              "rank": 5
+            }
+          ],
+          "known_neighbor_worst_linear_leakage_ppm": 31.991468988298312,
+          "1000ppm_integration_aware_window_recovery_ppm": 999.9999999999995
+        },
+        "KSPSAP_FLUX_SML": {
+          "n": 2540,
+          "baseline_days": 26.069581575214215,
+          "segments": 2,
+          "amplitude_ppm": 552.6860380099349,
+          "white_error_ppm": 106.98805945090878,
+          "phase_rad": -2.9853963069687297,
+          "rms_ppm": 3804.485042033352,
+          "design_condition": 20.094329272898708,
+          "rank": 8,
+          "adjacent_harmonics": {
+            "n": 2540,
+            "baseline_days": 26.069581575214215,
+            "segments": 2,
+            "amplitude_ppm": 848.3990010643151,
+            "white_error_ppm": 727.5458058348529,
+            "phase_rad": -2.5713279360572505,
+            "rms_ppm": 3801.7633686672293,
+            "design_condition": 26.453291559345622,
+            "rank": 12
+          },
+          "halves": [
+            {
+              "n": 1270,
+              "baseline_days": 16.930689359235203,
+              "segments": 2,
+              "amplitude_ppm": 396.6018282948256,
+              "white_error_ppm": 144.36574943491817,
+              "phase_rad": 2.862705680885061,
+              "rms_ppm": 3618.090275164812,
+              "design_condition": 17.636460758130344,
+              "rank": 8
+            },
+            {
+              "n": 1270,
+              "baseline_days": 9.131947764445158,
+              "segments": 1,
+              "amplitude_ppm": 757.0492540625482,
+              "white_error_ppm": 157.84232715119143,
+              "phase_rad": -2.761113487933621,
+              "rms_ppm": 3972.631023169185,
+              "design_condition": 13.407462646881834,
+              "rank": 5
+            }
+          ],
+          "known_neighbor_worst_linear_leakage_ppm": 31.991468988298312,
+          "1000ppm_integration_aware_window_recovery_ppm": 999.9999999999995
+        },
+        "KSPSAP_FLUX_LAG": {
+          "n": 2540,
+          "baseline_days": 26.069581575214215,
+          "segments": 2,
+          "amplitude_ppm": 1516.217097101735,
+          "white_error_ppm": 688.455208179572,
+          "phase_rad": -3.0051283085080147,
+          "rms_ppm": 24481.61483807374,
+          "design_condition": 20.094329272898708,
+          "rank": 8,
+          "adjacent_harmonics": {
+            "n": 2540,
+            "baseline_days": 26.069581575214215,
+            "segments": 2,
+            "amplitude_ppm": 11383.735941964294,
+            "white_error_ppm": 4694.135365649921,
+            "phase_rad": -2.2203715123502925,
+            "rms_ppm": 24451.820943234885,
+            "design_condition": 26.453291559345622,
+            "rank": 12
+          },
+          "halves": [
+            {
+              "n": 1270,
+              "baseline_days": 16.930689359235203,
+              "segments": 2,
+              "amplitude_ppm": 1519.23550656284,
+              "white_error_ppm": 844.5781670154535,
+              "phase_rad": 2.1609404586698697,
+              "rms_ppm": 21212.90497413825,
+              "design_condition": 17.636460758130344,
+              "rank": 8
+            },
+            {
+              "n": 1270,
+              "baseline_days": 9.131947764445158,
+              "segments": 1,
+              "amplitude_ppm": 2972.332957487615,
+              "white_error_ppm": 1039.386079134096,
+              "phase_rad": -2.445680689274381,
+              "rms_ppm": 26145.359035492816,
+              "design_condition": 13.407462646881834,
+              "rank": 5
+            }
+          ],
+          "known_neighbor_worst_linear_leakage_ppm": 31.991468988298312,
+          "1000ppm_integration_aware_window_recovery_ppm": 999.9999999999995
+        }
+      }
+    },
+    {
+      "sector": 81,
+      "camera": 3,
+      "ccd": 2,
+      "apertures": {
+        "BESTAP": "2.5:4.0:3.0",
+        "SMALLAP": "1.75:4.0:3.0",
+        "LARGEAP": "3.0:4.0:3.0"
+      },
+      "timedel_days": 0.002314814814814814,
+      "all_rows": 11076,
+      "kept_after_quality_periastron": 10421,
+      "quality_rejected": 655,
+      "periastron_rejected": 0,
+      "time_min": 3506.550450235881,
+      "time_max": 3533.17778749221,
+      "fits": {
+        "SAP_FLUX": {
+          "n": 10421,
+          "baseline_days": 26.49539258111099,
+          "segments": 2,
+          "amplitude_ppm": 725.7355032248757,
+          "white_error_ppm": 201.29233446006887,
+          "phase_rad": 2.603959220453895,
+          "rms_ppm": 14520.469970227283,
+          "design_condition": 14.994856423584922,
+          "rank": 8,
+          "adjacent_harmonics": {
+            "n": 10421,
+            "baseline_days": 26.49539258111099,
+            "segments": 2,
+            "amplitude_ppm": 3570.7824477409945,
+            "white_error_ppm": 1357.4791557028584,
+            "phase_rad": 0.285569951361786,
+            "rms_ppm": 14511.843619998153,
+            "design_condition": 22.478631521077258,
+            "rank": 12
+          },
+          "halves": [
+            {
+              "n": 5211,
+              "baseline_days": 14.215351821198055,
+              "segments": 2,
+              "amplitude_ppm": 630.519274029921,
+              "white_error_ppm": 315.33501018254583,
+              "phase_rad": 1.984411444834627,
+              "rms_ppm": 15993.702280816997,
+              "design_condition": 48.80372778943251,
+              "rank": 8
+            },
+            {
+              "n": 5210,
+              "baseline_days": 12.277725946639293,
+              "segments": 1,
+              "amplitude_ppm": 785.2546066958317,
+              "white_error_ppm": 240.43692544894,
+              "phase_rad": 3.079178264043395,
+              "rms_ppm": 12297.837806935837,
+              "design_condition": 13.535107501241706,
+              "rank": 5
+            }
+          ],
+          "known_neighbor_worst_linear_leakage_ppm": 31.99273256657694,
+          "1000ppm_integration_aware_window_recovery_ppm": 1000.0000000000009
+        },
+        "DET_FLUX": {
+          "n": 10421,
+          "baseline_days": 26.49539258111099,
+          "segments": 2,
+          "amplitude_ppm": 644.562959842129,
+          "white_error_ppm": 151.24529264485244,
+          "phase_rad": 2.9251710712433385,
+          "rms_ppm": 10913.556416593521,
+          "design_condition": 14.994856423584922,
+          "rank": 8,
+          "adjacent_harmonics": {
+            "n": 10421,
+            "baseline_days": 26.49539258111099,
+            "segments": 2,
+            "amplitude_ppm": 1433.7406801798365,
+            "white_error_ppm": 1022.1025982830167,
+            "phase_rad": 0.05943875714499175,
+            "rms_ppm": 10911.263372130556,
+            "design_condition": 22.478631521077258,
+            "rank": 12
+          },
+          "halves": [
+            {
+              "n": 5211,
+              "baseline_days": 14.215351821198055,
+              "segments": 2,
+              "amplitude_ppm": 752.269678609975,
+              "white_error_ppm": 229.16441004593074,
+              "phase_rad": 2.6980430467553216,
+              "rms_ppm": 11603.066474716174,
+              "design_condition": 48.80372778943251,
+              "rank": 8
+            },
+            {
+              "n": 5210,
+              "baseline_days": 12.277725946639293,
+              "segments": 1,
+              "amplitude_ppm": 610.07890751163,
+              "white_error_ppm": 198.83200072962785,
+              "phase_rad": -3.139391225679785,
+              "rms_ppm": 10169.628482474707,
+              "design_condition": 13.535107501241706,
+              "rank": 5
+            }
+          ],
+          "known_neighbor_worst_linear_leakage_ppm": 31.99273256657694,
+          "1000ppm_integration_aware_window_recovery_ppm": 1000.0000000000009
+        },
+        "DET_FLUX_SML": {
+          "n": 10421,
+          "baseline_days": 26.49539258111099,
+          "segments": 2,
+          "amplitude_ppm": 600.7254983782072,
+          "white_error_ppm": 76.32552829029436,
+          "phase_rad": -3.116388540249816,
+          "rms_ppm": 5508.178292643499,
+          "design_condition": 14.994856423584922,
+          "rank": 8,
+          "adjacent_harmonics": {
+            "n": 10421,
+            "baseline_days": 26.49539258111099,
+            "segments": 2,
+            "amplitude_ppm": 501.33147212975825,
+            "white_error_ppm": 517.0934786541347,
+            "phase_rad": -0.2562468422051152,
+            "rms_ppm": 5506.544830554966,
+            "design_condition": 22.478631521077258,
+            "rank": 12
+          },
+          "halves": [
+            {
+              "n": 5211,
+              "baseline_days": 14.215351821198055,
+              "segments": 2,
+              "amplitude_ppm": 698.3142967136517,
+              "white_error_ppm": 111.66677922358221,
+              "phase_rad": 3.0923494182381646,
+              "rms_ppm": 5665.3870640300565,
+              "design_condition": 48.80372778943251,
+              "rank": 8
+            },
+            {
+              "n": 5210,
+              "baseline_days": 12.277725946639293,
+              "segments": 1,
+              "amplitude_ppm": 518.0989091916848,
+              "white_error_ppm": 104.49252708495526,
+              "phase_rad": -3.0490826148732326,
+              "rms_ppm": 5343.859263687095,
+              "design_condition": 13.535107501241706,
+              "rank": 5
+            }
+          ],
+          "known_neighbor_worst_linear_leakage_ppm": 31.99273256657694,
+          "1000ppm_integration_aware_window_recovery_ppm": 1000.0000000000009
+        },
+        "DET_FLUX_LAG": {
+          "n": 10421,
+          "baseline_days": 26.49539258111099,
+          "segments": 2,
+          "amplitude_ppm": 578.1384323024175,
+          "white_error_ppm": 243.79366150108524,
+          "phase_rad": 2.7173163586079365,
+          "rms_ppm": 17588.438716197885,
+          "design_condition": 14.994856423584922,
+          "rank": 8,
+          "adjacent_harmonics": {
+            "n": 10421,
+            "baseline_days": 26.49539258111099,
+            "segments": 2,
+            "amplitude_ppm": 1341.1060849097842,
+            "white_error_ppm": 1649.4034252275126,
+            "phase_rad": -0.09921709445465351,
+            "rms_ppm": 17586.551259513464,
+            "design_condition": 22.478631521077258,
+            "rank": 12
+          },
+          "halves": [
+            {
+              "n": 5211,
+              "baseline_days": 14.215351821198055,
+              "segments": 2,
+              "amplitude_ppm": 666.3773796327433,
+              "white_error_ppm": 362.5834265179898,
+              "phase_rad": 2.314941456252993,
+              "rms_ppm": 18359.435540059658,
+              "design_condition": 48.80372778943251,
+              "rank": 8
+            },
+            {
+              "n": 5210,
+              "baseline_days": 12.277725946639293,
+              "segments": 1,
+              "amplitude_ppm": 643.466397399989,
+              "white_error_ppm": 327.91558811326536,
+              "phase_rad": 3.0675901618540076,
+              "rms_ppm": 16772.155910671696,
+              "design_condition": 13.535107501241706,
+              "rank": 5
+            }
+          ],
+          "known_neighbor_worst_linear_leakage_ppm": 31.99273256657694,
+          "1000ppm_integration_aware_window_recovery_ppm": 1000.0000000000009
+        },
+        "SYS_RM_FLUX": {
+          "n": 10421,
+          "baseline_days": 26.49539258111099,
+          "segments": 2,
+          "amplitude_ppm": 656.2935677649035,
+          "white_error_ppm": 176.370849200426,
+          "phase_rad": 2.8926373226164084,
+          "rms_ppm": 12726.251171427783,
+          "design_condition": 14.994856423584922,
+          "rank": 8,
+          "adjacent_harmonics": {
+            "n": 10421,
+            "baseline_days": 26.49539258111099,
+            "segments": 2,
+            "amplitude_ppm": 3460.206320620381,
+            "white_error_ppm": 1190.9885086691838,
+            "phase_rad": 0.09496547611725131,
+            "rms_ppm": 12717.375833985232,
+            "design_condition": 22.478631521077258,
+            "rank": 12
+          },
+          "halves": [
+            {
+              "n": 5211,
+              "baseline_days": 14.215351821198055,
+              "segments": 2,
+              "amplitude_ppm": 425.20414384784664,
+              "white_error_ppm": 261.8120475908299,
+              "phase_rad": 2.638603647282457,
+              "rms_ppm": 13254.282724500321,
+              "design_condition": 48.80372778943251,
+              "rank": 8
+            },
+            {
+              "n": 5210,
+              "baseline_days": 12.277725946639293,
+              "segments": 1,
+              "amplitude_ppm": 692.9219695014839,
+              "white_error_ppm": 224.52403004283204,
+              "phase_rad": -3.123617305892847,
+              "rms_ppm": 11483.54918689028,
+              "design_condition": 13.535107501241706,
+              "rank": 5
+            }
+          ],
+          "known_neighbor_worst_linear_leakage_ppm": 31.99273256657694,
+          "1000ppm_integration_aware_window_recovery_ppm": 1000.0000000000009
+        }
+      }
+    },
+    {
+      "sector": 82,
+      "camera": 3,
+      "ccd": 1,
+      "apertures": {
+        "BESTAP": "2.5:4.0:3.0",
+        "SMALLAP": "1.75:4.0:3.0",
+        "LARGEAP": "3.0:4.0:3.0"
+      },
+      "timedel_days": 0.002314814814814814,
+      "all_rows": 10778,
+      "kept_after_quality_periastron": 10611,
+      "quality_rejected": 167,
+      "periastron_rejected": 0,
+      "time_min": 3533.3907488485393,
+      "time_max": 3559.2467806721597,
+      "fits": {
+        "SAP_FLUX": {
+          "n": 10611,
+          "baseline_days": 25.731033950612527,
+          "segments": 1,
+          "amplitude_ppm": 264.33403331539995,
+          "white_error_ppm": 277.4368212482793,
+          "phase_rad": -2.9107545859913184,
+          "rms_ppm": 20162.421600281137,
+          "design_condition": 13.7117242804039,
+          "rank": 5,
+          "adjacent_harmonics": {
+            "n": 10611,
+            "baseline_days": 25.731033950612527,
+            "segments": 1,
+            "amplitude_ppm": 4136.3471105646095,
+            "white_error_ppm": 2051.382761625768,
+            "phase_rad": -1.870120981175811,
+            "rms_ppm": 20158.299793026923,
+            "design_condition": 15.613498009393343,
+            "rank": 9
+          },
+          "halves": [
+            {
+              "n": 5306,
+              "baseline_days": 12.94658840277043,
+              "segments": 1,
+              "amplitude_ppm": 476.67431760851804,
+              "white_error_ppm": 357.27228899385955,
+              "phase_rad": -1.4281746792930647,
+              "rms_ppm": 18420.289276619635,
+              "design_condition": 13.80720846571448,
+              "rank": 5
+            },
+            {
+              "n": 5305,
+              "baseline_days": 12.782130772887285,
+              "segments": 1,
+              "amplitude_ppm": 615.8775664673446,
+              "white_error_ppm": 246.78695246906364,
+              "phase_rad": -2.965151799496593,
+              "rms_ppm": 12672.17424587202,
+              "design_condition": 14.07658946089957,
+              "rank": 5
+            }
+          ],
+          "known_neighbor_worst_linear_leakage_ppm": 31.99438700833617,
+          "1000ppm_integration_aware_window_recovery_ppm": 1000.0
+        },
+        "DET_FLUX": {
+          "n": 10611,
+          "baseline_days": 25.731033950612527,
+          "segments": 1,
+          "amplitude_ppm": 759.5848708721766,
+          "white_error_ppm": 145.02498783459527,
+          "phase_rad": -2.9496268901109697,
+          "rms_ppm": 10540.364680885647,
+          "design_condition": 13.7117242804039,
+          "rank": 5,
+          "adjacent_harmonics": {
+            "n": 10611,
+            "baseline_days": 25.731033950612527,
+            "segments": 1,
+            "amplitude_ppm": 1275.0451776763855,
+            "white_error_ppm": 1058.4976445977727,
+            "phase_rad": -0.8974350658765987,
+            "rms_ppm": 10537.347070425036,
+            "design_condition": 15.613498009393343,
+            "rank": 9
+          },
+          "halves": [
+            {
+              "n": 5306,
+              "baseline_days": 12.94658840277043,
+              "segments": 1,
+              "amplitude_ppm": 1036.344279312344,
+              "white_error_ppm": 196.462693582606,
+              "phase_rad": -2.9739578779266456,
+              "rms_ppm": 10092.389133565668,
+              "design_condition": 13.80720846571448,
+              "rank": 5
+            },
+            {
+              "n": 5305,
+              "baseline_days": 12.782130772887285,
+              "segments": 1,
+              "amplitude_ppm": 496.7628470182609,
+              "white_error_ppm": 213.41911703154653,
+              "phase_rad": -2.933584924294782,
+              "rms_ppm": 10957.813920061182,
+              "design_condition": 14.07658946089957,
+              "rank": 5
+            }
+          ],
+          "known_neighbor_worst_linear_leakage_ppm": 31.99438700833617,
+          "1000ppm_integration_aware_window_recovery_ppm": 1000.0
+        },
+        "DET_FLUX_SML": {
+          "n": 10611,
+          "baseline_days": 25.731033950612527,
+          "segments": 1,
+          "amplitude_ppm": 620.636871812992,
+          "white_error_ppm": 71.85629386982116,
+          "phase_rad": -2.8968304210009355,
+          "rms_ppm": 5221.944594506328,
+          "design_condition": 13.7117242804039,
+          "rank": 5,
+          "adjacent_harmonics": {
+            "n": 10611,
+            "baseline_days": 25.731033950612527,
+            "segments": 1,
+            "amplitude_ppm": 645.7850405171546,
+            "white_error_ppm": 525.0958011571357,
+            "phase_rad": -0.6887255480532682,
+            "rms_ppm": 5220.42439442369,
+            "design_condition": 15.613498009393343,
+            "rank": 9
+          },
+          "halves": [
+            {
+              "n": 5306,
+              "baseline_days": 12.94658840277043,
+              "segments": 1,
+              "amplitude_ppm": 714.3215194493217,
+              "white_error_ppm": 100.19432506786355,
+              "phase_rad": -2.8464580047519354,
+              "rms_ppm": 5147.178516316174,
+              "design_condition": 13.80720846571448,
+              "rank": 5
+            },
+            {
+              "n": 5305,
+              "baseline_days": 12.782130772887285,
+              "segments": 1,
+              "amplitude_ppm": 530.3196320792545,
+              "white_error_ppm": 103.1077894395648,
+              "phase_rad": -2.9691340575544203,
+              "rms_ppm": 5294.505438320268,
+              "design_condition": 14.07658946089957,
+              "rank": 5
+            }
+          ],
+          "known_neighbor_worst_linear_leakage_ppm": 31.99438700833617,
+          "1000ppm_integration_aware_window_recovery_ppm": 1000.0
+        },
+        "DET_FLUX_LAG": {
+          "n": 10611,
+          "baseline_days": 25.731033950612527,
+          "segments": 1,
+          "amplitude_ppm": 816.2750040934282,
+          "white_error_ppm": 235.37337853887308,
+          "phase_rad": -2.8746230610653196,
+          "rms_ppm": 17104.41601798961,
+          "design_condition": 13.7117242804039,
+          "rank": 5,
+          "adjacent_harmonics": {
+            "n": 10611,
+            "baseline_days": 25.731033950612527,
+            "segments": 1,
+            "amplitude_ppm": 1449.8997322859536,
+            "white_error_ppm": 1717.8062215462849,
+            "phase_rad": -0.9991822054705362,
+            "rms_ppm": 17100.819131492823,
+            "design_condition": 15.613498009393343,
+            "rank": 9
+          },
+          "halves": [
+            {
+              "n": 5306,
+              "baseline_days": 12.94658840277043,
+              "segments": 1,
+              "amplitude_ppm": 1220.0959545598764,
+              "white_error_ppm": 312.8625623169027,
+              "phase_rad": -3.080817039418949,
+              "rms_ppm": 16072.991100728881,
+              "design_condition": 13.80720846571448,
+              "rank": 5
+            },
+            {
+              "n": 5305,
+              "baseline_days": 12.782130772887285,
+              "segments": 1,
+              "amplitude_ppm": 509.9204328604388,
+              "white_error_ppm": 351.2975645734503,
+              "phase_rad": -2.4757244243757612,
+              "rms_ppm": 18026.353314967324,
+              "design_condition": 14.07658946089957,
+              "rank": 5
+            }
+          ],
+          "known_neighbor_worst_linear_leakage_ppm": 31.99438700833617,
+          "1000ppm_integration_aware_window_recovery_ppm": 1000.0
+        },
+        "SYS_RM_FLUX": {
+          "n": 10611,
+          "baseline_days": 25.731033950612527,
+          "segments": 1,
+          "amplitude_ppm": 397.86334098688724,
+          "white_error_ppm": 269.13353807458384,
+          "phase_rad": -2.8505169558850296,
+          "rms_ppm": 19557.01368720257,
+          "design_condition": 13.7117242804039,
+          "rank": 5,
+          "adjacent_harmonics": {
+            "n": 10611,
+            "baseline_days": 25.731033950612527,
+            "segments": 1,
+            "amplitude_ppm": 3477.7272304966946,
+            "white_error_ppm": 1993.823760031431,
+            "phase_rad": -1.9759105678540239,
+            "rms_ppm": 19553.78678228654,
+            "design_condition": 15.613498009393343,
+            "rank": 9
+          },
+          "halves": [
+            {
+              "n": 5306,
+              "baseline_days": 12.94658840277043,
+              "segments": 1,
+              "amplitude_ppm": 622.6914675065894,
+              "white_error_ppm": 343.0583170625491,
+              "phase_rad": -1.890667551423263,
+              "rms_ppm": 17671.58423327155,
+              "design_condition": 13.80720846571448,
+              "rank": 5
+            },
+            {
+              "n": 5305,
+              "baseline_days": 12.782130772887285,
+              "segments": 1,
+              "amplitude_ppm": 537.3146437962437,
+              "white_error_ppm": 241.40568058748684,
+              "phase_rad": -2.877275406316048,
+              "rms_ppm": 12392.962426963775,
+              "design_condition": 14.07658946089957,
+              "rank": 5
+            }
+          ],
+          "known_neighbor_worst_linear_leakage_ppm": 31.99438700833617,
+          "1000ppm_integration_aware_window_recovery_ppm": 1000.0
+        }
+      }
+    },
+    {
+      "sector": 74,
+      "camera": 4,
+      "ccd": 1,
+      "apertures": {
+        "BESTAP": "2.5:4.0:3.0",
+        "SMALLAP": "1.75:4.0:3.0",
+        "LARGEAP": "3.0:4.0:3.0"
+      },
+      "timedel_days": 0.002314814814814814,
+      "all_rows": 11284,
+      "kept_after_quality_periastron": 11084,
+      "quality_rejected": 200,
+      "periastron_rejected": 0,
+      "time_min": 3312.857492733011,
+      "time_max": 3339.565575727153,
+      "fits": {
+        "SAP_FLUX": {
+          "n": 11084,
+          "baseline_days": 26.548362809074206,
+          "segments": 1,
+          "amplitude_ppm": 771.5990085871156,
+          "white_error_ppm": 268.10894241896284,
+          "phase_rad": -2.5839525575768465,
+          "rms_ppm": 19950.740555694607,
+          "design_condition": 13.425436739134813,
+          "rank": 5,
+          "adjacent_harmonics": {
+            "n": 11084,
+            "baseline_days": 26.548362809074206,
+            "segments": 1,
+            "amplitude_ppm": 2414.3685589410575,
+            "white_error_ppm": 1811.2744370438566,
+            "phase_rad": 0.9004032737834431,
+            "rms_ppm": 19946.816026648932,
+            "design_condition": 14.934507974162218,
+            "rank": 9
+          },
+          "halves": [
+            {
+              "n": 5542,
+              "baseline_days": 13.458142866894377,
+              "segments": 1,
+              "amplitude_ppm": 1035.5401408776816,
+              "white_error_ppm": 355.2720107158955,
+              "phase_rad": -2.8707862840683993,
+              "rms_ppm": 18649.049218527245,
+              "design_condition": 13.967814959237524,
+              "rank": 5
+            },
+            {
+              "n": 5542,
+              "baseline_days": 13.087905149002381,
+              "segments": 1,
+              "amplitude_ppm": 614.7571189477685,
+              "white_error_ppm": 297.37757216079876,
+              "phase_rad": -2.7498308634767397,
+              "rms_ppm": 15673.630791275466,
+              "design_condition": 13.510972375438932,
+              "rank": 5
+            }
+          ],
+          "known_neighbor_worst_linear_leakage_ppm": 31.993685197357898,
+          "1000ppm_integration_aware_window_recovery_ppm": 999.9999999999991
+        },
+        "DET_FLUX": {
+          "n": 11084,
+          "baseline_days": 26.548362809074206,
+          "segments": 1,
+          "amplitude_ppm": 796.5400398617112,
+          "white_error_ppm": 148.08435333593548,
+          "phase_rad": -2.647333501751954,
+          "rms_ppm": 11019.832148353617,
+          "design_condition": 13.425436739134813,
+          "rank": 5,
+          "adjacent_harmonics": {
+            "n": 11084,
+            "baseline_days": 26.548362809074206,
+            "segments": 1,
+            "amplitude_ppm": 647.629683789307,
+            "white_error_ppm": 999.494635537247,
+            "phase_rad": 0.07346140555308826,
+            "rms_ppm": 11018.376110764564,
+            "design_condition": 14.934507974162218,
+            "rank": 9
+          },
+          "halves": [
+            {
+              "n": 5542,
+              "baseline_days": 13.458142866894377,
+              "segments": 1,
+              "amplitude_ppm": 693.6339502220037,
+              "white_error_ppm": 209.66561710192917,
+              "phase_rad": -2.76634767601318,
+              "rms_ppm": 11008.209351177939,
+              "design_condition": 13.967814959237524,
+              "rank": 5
+            },
+            {
+              "n": 5542,
+              "baseline_days": 13.087905149002381,
+              "segments": 1,
+              "amplitude_ppm": 908.3765807641561,
+              "white_error_ppm": 209.43343029248138,
+              "phase_rad": -2.5517531849103228,
+              "rms_ppm": 11029.380360475336,
+              "design_condition": 13.510972375438932,
+              "rank": 5
+            }
+          ],
+          "known_neighbor_worst_linear_leakage_ppm": 31.993685197357898,
+          "1000ppm_integration_aware_window_recovery_ppm": 999.9999999999991
+        },
+        "DET_FLUX_SML": {
+          "n": 11084,
+          "baseline_days": 26.548362809074206,
+          "segments": 1,
+          "amplitude_ppm": 614.3003520372725,
+          "white_error_ppm": 81.3977345125131,
+          "phase_rad": -2.7799114825639886,
+          "rms_ppm": 6057.805845546324,
+          "design_condition": 13.425436739134813,
+          "rank": 5,
+          "adjacent_harmonics": {
+            "n": 11084,
+            "baseline_days": 26.548362809074206,
+            "segments": 1,
+            "amplitude_ppm": 168.1630108737311,
+            "white_error_ppm": 548.1481735720819,
+            "phase_rad": 2.337369717824023,
+            "rms_ppm": 6056.825038310171,
+            "design_condition": 14.934507974162218,
+            "rank": 9
+          },
+          "halves": [
+            {
+              "n": 5542,
+              "baseline_days": 13.458142866894377,
+              "segments": 1,
+              "amplitude_ppm": 508.619054813869,
+              "white_error_ppm": 113.97076992682587,
+              "phase_rad": -2.8301457387030933,
+              "rms_ppm": 5983.028407541344,
+              "design_condition": 13.967814959237524,
+              "rank": 5
+            },
+            {
+              "n": 5542,
+              "baseline_days": 13.087905149002381,
+              "segments": 1,
+              "amplitude_ppm": 718.6871697225932,
+              "white_error_ppm": 116.29874496192639,
+              "phase_rad": -2.7380576016887472,
+              "rms_ppm": 6129.4124427957495,
+              "design_condition": 13.510972375438932,
+              "rank": 5
+            }
+          ],
+          "known_neighbor_worst_linear_leakage_ppm": 31.993685197357898,
+          "1000ppm_integration_aware_window_recovery_ppm": 999.9999999999991
+        },
+        "DET_FLUX_LAG": {
+          "n": 11084,
+          "baseline_days": 26.548362809074206,
+          "segments": 1,
+          "amplitude_ppm": 721.9413216410846,
+          "white_error_ppm": 231.9049701542502,
+          "phase_rad": -2.60251421457821,
+          "rms_ppm": 17256.911247976564,
+          "design_condition": 13.425436739134813,
+          "rank": 5,
+          "adjacent_harmonics": {
+            "n": 11084,
+            "baseline_days": 26.548362809074206,
+            "segments": 1,
+            "amplitude_ppm": 840.1416479308077,
+            "white_error_ppm": 1566.9314783465127,
+            "phase_rad": 0.5774838210292331,
+            "rms_ppm": 17254.150453902697,
+            "design_condition": 14.934507974162218,
+            "rank": 9
+          },
+          "halves": [
+            {
+              "n": 5542,
+              "baseline_days": 13.458142866894377,
+              "segments": 1,
+              "amplitude_ppm": 792.3405190020765,
+              "white_error_ppm": 335.43397195092496,
+              "phase_rad": -3.07978054099883,
+              "rms_ppm": 17605.09655803413,
+              "design_condition": 13.967814959237524,
+              "rank": 5
+            },
+            {
+              "n": 5542,
+              "baseline_days": 13.087905149002381,
+              "segments": 1,
+              "amplitude_ppm": 828.8869768943375,
+              "white_error_ppm": 321.55725058294666,
+              "phase_rad": -2.1421599165542906,
+              "rms_ppm": 16897.487039249743,
+              "design_condition": 13.510972375438932,
+              "rank": 5
+            }
+          ],
+          "known_neighbor_worst_linear_leakage_ppm": 31.993685197357898,
+          "1000ppm_integration_aware_window_recovery_ppm": 999.9999999999991
+        },
+        "SYS_RM_FLUX": {
+          "n": 11084,
+          "baseline_days": 26.548362809074206,
+          "segments": 1,
+          "amplitude_ppm": 692.6603562066001,
+          "white_error_ppm": 192.24202854479546,
+          "phase_rad": -2.553206738048991,
+          "rms_ppm": 14304.9830123553,
+          "design_condition": 13.425436739134813,
+          "rank": 5,
+          "adjacent_harmonics": {
+            "n": 11084,
+            "baseline_days": 26.548362809074206,
+            "segments": 1,
+            "amplitude_ppm": 1010.8439877903926,
+            "white_error_ppm": 1298.7691789063044,
+            "phase_rad": 0.935521084761434,
+            "rms_ppm": 14303.579845406246,
+            "design_condition": 14.934507974162218,
+            "rank": 9
+          },
+          "halves": [
+            {
+              "n": 5542,
+              "baseline_days": 13.458142866894377,
+              "segments": 1,
+              "amplitude_ppm": 748.021656777317,
+              "white_error_ppm": 279.1527652309655,
+              "phase_rad": -2.9120316417584626,
+              "rms_ppm": 14652.493516908373,
+              "design_condition": 13.967814959237524,
+              "rank": 5
+            },
+            {
+              "n": 5542,
+              "baseline_days": 13.087905149002381,
+              "segments": 1,
+              "amplitude_ppm": 739.7092705863391,
+              "white_error_ppm": 226.57187914694222,
+              "phase_rad": -2.504966149986382,
+              "rms_ppm": 11929.205075890357,
+              "design_condition": 13.510972375438932,
+              "rank": 5
+            }
+          ],
+          "known_neighbor_worst_linear_leakage_ppm": 31.993685197357898,
+          "1000ppm_integration_aware_window_recovery_ppm": 999.9999999999991
+        }
+      }
+    },
+    {
+      "sector": 75,
+      "camera": 4,
+      "ccd": 2,
+      "apertures": {
+        "BESTAP": "2.5:4.0:3.0",
+        "SMALLAP": "1.75:4.0:3.0",
+        "LARGEAP": "3.0:4.0:3.0"
+      },
+      "timedel_days": 0.002314814814814814,
+      "all_rows": 11694,
+      "kept_after_quality_periastron": 11497,
+      "quality_rejected": 197,
+      "periastron_rejected": 0,
+      "time_min": 3339.7785382330667,
+      "time_max": 3367.4779120080743,
+      "fits": {
+        "SAP_FLUX": {
+          "n": 11437,
+          "baseline_days": 27.618354322353753,
+          "segments": 1,
+          "amplitude_ppm": 764.6345134401881,
+          "white_error_ppm": 201.43830705768949,
+          "phase_rad": 3.139438762933619,
+          "rms_ppm": 15221.380917776927,
+          "design_condition": 13.365790151170597,
+          "rank": 5,
+          "adjacent_harmonics": {
+            "n": 11437,
+            "baseline_days": 27.618354322353753,
+            "segments": 1,
+            "amplitude_ppm": 1151.8817332145636,
+            "white_error_ppm": 1250.3670135712605,
+            "phase_rad": 1.0847015615149944,
+            "rms_ppm": 15219.275030216191,
+            "design_condition": 14.73898172564954,
+            "rank": 9
+          },
+          "halves": [
+            {
+              "n": 5719,
+              "baseline_days": 13.627393656355252,
+              "segments": 1,
+              "amplitude_ppm": 824.7283044173579,
+              "white_error_ppm": 227.14517256314616,
+              "phase_rad": -2.9085789150296515,
+              "rms_ppm": 12156.883719235839,
+              "design_condition": 13.547761866378751,
+              "rank": 5
+            },
+            {
+              "n": 5718,
+              "baseline_days": 13.988645823164461,
+              "segments": 1,
+              "amplitude_ppm": 733.2025556545628,
+              "white_error_ppm": 273.22713530784876,
+              "phase_rad": 2.416873823194117,
+              "rms_ppm": 14630.055853219654,
+              "design_condition": 14.053227879712521,
+              "rank": 5
+            }
+          ],
+          "known_neighbor_worst_linear_leakage_ppm": 31.99162469942814,
+          "1000ppm_integration_aware_window_recovery_ppm": 1000.0000000000002
+        },
+        "DET_FLUX": {
+          "n": 11437,
+          "baseline_days": 27.618354322353753,
+          "segments": 1,
+          "amplitude_ppm": 714.2931020975888,
+          "white_error_ppm": 135.45898770376704,
+          "phase_rad": -3.127236882692165,
+          "rms_ppm": 10235.48246475175,
+          "design_condition": 13.365790151170597,
+          "rank": 5,
+          "adjacent_harmonics": {
+            "n": 11437,
+            "baseline_days": 27.618354322353753,
+            "segments": 1,
+            "amplitude_ppm": 1000.9712793172678,
+            "white_error_ppm": 840.946792449429,
+            "phase_rad": 1.021873530032245,
+            "rms_ppm": 10233.252891617587,
+            "design_condition": 14.73898172564954,
+            "rank": 9
+          },
+          "halves": [
+            {
+              "n": 5719,
+              "baseline_days": 13.627393656355252,
+              "segments": 1,
+              "amplitude_ppm": 820.888914028158,
+              "white_error_ppm": 191.63601185163168,
+              "phase_rad": -2.997581210631411,
+              "rms_ppm": 10256.109656401708,
+              "design_condition": 13.547761866378751,
+              "rank": 5
+            },
+            {
+              "n": 5718,
+              "baseline_days": 13.988645823164461,
+              "segments": 1,
+              "amplitude_ppm": 622.7986529036269,
+              "white_error_ppm": 191.38111826744586,
+              "phase_rad": 2.986125256227437,
+              "rms_ppm": 10213.596828676928,
+              "design_condition": 14.053227879712521,
+              "rank": 5
+            }
+          ],
+          "known_neighbor_worst_linear_leakage_ppm": 31.99162469942814,
+          "1000ppm_integration_aware_window_recovery_ppm": 1000.0000000000002
+        },
+        "DET_FLUX_SML": {
+          "n": 11437,
+          "baseline_days": 27.618354322353753,
+          "segments": 1,
+          "amplitude_ppm": 589.7484136515309,
+          "white_error_ppm": 76.96008777025656,
+          "phase_rad": -3.018161237527643,
+          "rms_ppm": 5814.2659677252595,
+          "design_condition": 13.365790151170597,
+          "rank": 5,
+          "adjacent_harmonics": {
+            "n": 11437,
+            "baseline_days": 27.618354322353753,
+            "segments": 1,
+            "amplitude_ppm": 432.1094469247846,
+            "white_error_ppm": 473.3448131630552,
+            "phase_rad": 2.014898046892064,
+            "rms_ppm": 5813.517249151371,
+            "design_condition": 14.73898172564954,
+            "rank": 9
+          },
+          "halves": [
+            {
+              "n": 5719,
+              "baseline_days": 13.627393656355252,
+              "segments": 1,
+              "amplitude_ppm": 681.3646188844262,
+              "white_error_ppm": 109.34604097611593,
+              "phase_rad": -3.1040793842908228,
+              "rms_ppm": 5851.473291601705,
+              "design_condition": 13.547761866378751,
+              "rank": 5
+            },
+            {
+              "n": 5718,
+              "baseline_days": 13.988645823164461,
+              "segments": 1,
+              "amplitude_ppm": 503.68744215392263,
+              "white_error_ppm": 108.42077436583801,
+              "phase_rad": -2.903398530569558,
+              "rms_ppm": 5775.7945987923,
+              "design_condition": 14.053227879712521,
+              "rank": 5
+            }
+          ],
+          "known_neighbor_worst_linear_leakage_ppm": 31.99162469942814,
+          "1000ppm_integration_aware_window_recovery_ppm": 1000.0000000000002
+        },
+        "DET_FLUX_LAG": {
+          "n": 11437,
+          "baseline_days": 27.618354322353753,
+          "segments": 1,
+          "amplitude_ppm": 805.420520129457,
+          "white_error_ppm": 204.24851692405895,
+          "phase_rad": 3.037395958098865,
+          "rms_ppm": 15436.362087642976,
+          "design_condition": 13.365790151170597,
+          "rank": 5,
+          "adjacent_harmonics": {
+            "n": 11437,
+            "baseline_days": 27.618354322353753,
+            "segments": 1,
+            "amplitude_ppm": 1722.8605095253088,
+            "white_error_ppm": 1268.492120251901,
+            "phase_rad": 0.8531088163121041,
+            "rms_ppm": 15431.951682589997,
+            "design_condition": 14.73898172564954,
+            "rank": 9
+          },
+          "halves": [
+            {
+              "n": 5719,
+              "baseline_days": 13.627393656355252,
+              "segments": 1,
+              "amplitude_ppm": 1052.5371610925538,
+              "white_error_ppm": 285.3882588339301,
+              "phase_rad": -3.0104521872044643,
+              "rms_ppm": 15273.478670952265,
+              "design_condition": 13.547761866378751,
+              "rank": 5
+            },
+            {
+              "n": 5718,
+              "baseline_days": 13.988645823164461,
+              "segments": 1,
+              "amplitude_ppm": 633.543865547777,
+              "white_error_ppm": 291.57708385590075,
+              "phase_rad": 2.6435145774807665,
+              "rms_ppm": 15593.927271683428,
+              "design_condition": 14.053227879712521,
+              "rank": 5
+            }
+          ],
+          "known_neighbor_worst_linear_leakage_ppm": 31.99162469942814,
+          "1000ppm_integration_aware_window_recovery_ppm": 1000.0000000000002
+        },
+        "SYS_RM_FLUX": {
+          "n": 11437,
+          "baseline_days": 27.618354322353753,
+          "segments": 1,
+          "amplitude_ppm": 854.6068103759385,
+          "white_error_ppm": 173.58465799861904,
+          "phase_rad": 3.1146671592346595,
+          "rms_ppm": 13117.191907880742,
+          "design_condition": 13.365790151170597,
+          "rank": 5,
+          "adjacent_harmonics": {
+            "n": 11437,
+            "baseline_days": 27.618354322353753,
+            "segments": 1,
+            "amplitude_ppm": 1321.1300153211032,
+            "white_error_ppm": 1077.604546747922,
+            "phase_rad": 0.6910593399692853,
+            "rms_ppm": 13114.349555462712,
+            "design_condition": 14.73898172564954,
+            "rank": 9
+          },
+          "halves": [
+            {
+              "n": 5719,
+              "baseline_days": 13.627393656355252,
+              "segments": 1,
+              "amplitude_ppm": 927.1374727774883,
+              "white_error_ppm": 214.8913328396622,
+              "phase_rad": -2.924427000280433,
+              "rms_ppm": 11501.033361335725,
+              "design_condition": 13.547761866378751,
+              "rank": 5
+            },
+            {
+              "n": 5718,
+              "baseline_days": 13.988645823164461,
+              "segments": 1,
+              "amplitude_ppm": 845.6675181138257,
+              "white_error_ppm": 227.66408516963185,
+              "phase_rad": 2.5523339073664797,
+              "rms_ppm": 12182.142270564545,
+              "design_condition": 14.053227879712521,
+              "rank": 5
+            }
+          ],
+          "known_neighbor_worst_linear_leakage_ppm": 31.99162469942814,
+          "1000ppm_integration_aware_window_recovery_ppm": 1000.0000000000002
+        }
+      }
+    }
+  ]
+}

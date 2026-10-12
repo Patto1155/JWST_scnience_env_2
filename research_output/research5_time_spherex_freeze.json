@@ -1,0 +1,10 @@
+{
+ "status":"prospective independent facility followup; no SPHEREx target outcomes viewed",
+ "target":"VarWISE J035034.07+353508.5 / Gaia DR3 219690291611604480",
+ "ra":57.64197830092,"dec":35.58569174346,"pmra_masyr":3.373,"pmdec_masyr":-4.526,"epoch":2016,
+ "exploratory_recurrence_days":1460,
+ "prediction":"Continued recurrence predicts a fourth IR-faint state near MJD61279 (2026August), unlike its contemporaneous opticalr≈19.0 state. Independent SPHEREx coverage of MJD61090–61310 should be IR-faint ratherthan the bright2015/2019/2023 state.",
+ "confirmatory_windows_mjd":[61090,61310],
+ "measurement_contract":"Prefer synthesize observed SPHERExfnu through publicWISEW1response with≥8 independent wavelengthchannels spanning≥80percentW1response and two separatevisits. Compare againstNEOWISEfaintstateW1≈13.03 and brightW1≈11.84; supportfaintstate only if synthesizedW1>12.6 with measurement95percentlowerbound>12.3. Insufficientbandcoverage, quality, calibration, orvisitcount yieldsnoindependentIRconfirmation. Individualnarrowbandflux is feasibility only, notdirectW1measurement.",
+ "caveats":"1460daypattern selectedafterIRexploration; undersampled and alias-degenerate. SPHERExQR3is reprocessing ofsomeoldphotons; report actualobsdates and do notcountQR2/QR3asindependentexposures. Sourceopticalnull doesn'tproveconstantphotosphere or aunique physicalcause."
+}

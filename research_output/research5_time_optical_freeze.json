@@ -1,0 +1,88 @@
+{
+  "frozen_at_utc": "2026-10-12",
+  "exploration_scope": "VarWISE catalog and full NEOWISE2013-2024 inspected; no ZTF photometric outcomes inspected",
+  "status": "exploratory candidate selection, prospectively specified independent-facility followup",
+  "primary": {
+    "designation": "VarWISE J035034.07+353508.5",
+    "gaia_dr3_source_id": "219690291611604480",
+    "ra": 57.64197830092,
+    "dec": 35.58569174346,
+    "prediction": "Optical r is fainter during the recurring IR-faint state than the IR-bright state, as expected for a common luminosity driver; the independently measured g-r contrast characterizes whether variable extinction is compatible.",
+    "ir_faint_windows_mjd": [
+      [
+        58206,
+        58564
+      ],
+      [
+        59660,
+        59968
+      ]
+    ],
+    "ir_bright_windows_mjd": [
+      [
+        58623,
+        59187
+      ],
+      [
+        60082,
+        60283
+      ]
+    ],
+    "statistic": "difference of median per-30day optical r bins, faint minus bright; g-r from pairs within1day per same optical object when available",
+    "candidate_threshold": "r contrast >=0.3mag, independent seasonal/block bootstrap 95% lower bound>0; at least3 optical30day bins and15 quality observations per state. Report directional reversal if upperbound<0 with absolute contrast>=0.3 rather than suppressing it.",
+    "motivation": "IR low states near2014,2018,2022 separated roughly4years; approximate cycles are not a confirmed periodicity and published catalogperiod387.5d is explicitly suspect. Added claim is optical recurrence and color relation; IR variability itself was published.",
+    "systematic_flag": "AllWISE W2 cc_flag o optical ghost requires raw-epoch/imagecontrol before physical interpretation"
+  },
+  "secondary": [
+    {
+      "designation": "VarWISE J003201.18+652930.8",
+      "gaia_dr3_source_id": "527381198940178560",
+      "ra": 8.00492806254,
+      "dec": 65.4919041624,
+      "baseline_windows_mjd": [
+        [
+          58200,
+          59050
+        ]
+      ],
+      "followup_windows_mjd": [
+        [
+          59400,
+          60380
+        ]
+      ],
+      "prediction": "r brightens with secular IRbrightening; difference followup minus baseline<=-0.3mag",
+      "systematic_flag": "AllWISE ext_flg1; known emissionline star, source not newly discovered"
+    },
+    {
+      "designation": "VarWISE J203459.71+474206.1",
+      "gaia_dr3_source_id": "2071634044516610432",
+      "ra": 308.74876800137,
+      "dec": 47.70172250021,
+      "baseline_windows_mjd": [
+        [
+          58200,
+          58850
+        ]
+      ],
+      "followup_windows_mjd": [
+        [
+          59900,
+          60520
+        ]
+      ],
+      "prediction": "r fades with secular IRfading; difference followup minus baseline>=0.3mag",
+      "systematic_flag": "WISE-PSF optical neighbors within10arcsec; inspect exact optical association"
+    }
+  ],
+  "common_quality": "ZTFcatflags0, finitepositiveerrors, magerr<0.15; never pool distinctobject/filter/readoutchannel zero points without withinobject sensitivity; propagated Gaia identity within1arcsec and closestsource checked; epoch blocks ratherthan independent exposures for uncertainty",
+  "multiplicity": "Primaryone directional comparison, secondaries explicitly exploratory; report all3 even fail or unavailable; no populationclaim",
+  "causal_limit": "Independentfacility agreement supports empirical sourcevariation only; dust/accretion mechanisms remain hypotheses. NEOWISEcentroid,moonmask,scancomparison,neighbor and imagechecks required for noteworthy physicalcandidate.",
+  "implementation_clarification": {
+    "timing": "after lightcurve acquisition, schema/firstfewrawrows viewed, before aggregate optical outcomes",
+    "bin_anchor": "floor(MJD/30)",
+    "bootstrap": "10000 resamples of30daybin medians independently withinstate, numpy default_rng20261012; percentile2.5/97.5. Conditional uncertainty, doesnotestablish independentcycles.",
+    "oid_rule": "Select largestnumberquality r observations ononeoid acrossbothfrozenstates; report each otheroid separately, neverpool; sameprocedureg for colorpairs; positionwithin1arcsec propagatedGaia perobservation.",
+    "quality": "catflags==0, 0<magerr<0.15, finitephotometry, filtercodezr, perobservation positionwithin1arcsec propagatedGaia. No additionoutcomecuts."
+  }
+}

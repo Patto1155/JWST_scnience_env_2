@@ -1,0 +1,58 @@
+[
+  {
+    "sector": 15,
+    "uri": "mast:HLSP/qlp/s0015/0000/0001/5964/9612/hlsp_qlp_tess_ffi_s0015-0000000159649612_tess_v01_llc.fits",
+    "body_bytes": 77760,
+    "sha256": "25c08263be05216d3a0a8d326236dbc3427076921890a13272c4b529b8fe33ed",
+    "compressed_path": "research_output/research5_stellar_s0015.fits.gz"
+  },
+  {
+    "sector": 40,
+    "uri": "mast:HLSP/qlp/s0040/0000/0001/5964/9612/hlsp_qlp_tess_ffi_s0040-0000000159649612_tess_v01_llc.fits",
+    "body_bytes": 230400,
+    "sha256": "9042dbd1547ce64fea856c0e2164aaa3de8da45b3817792b37f6b06c7e9d1dd3",
+    "compressed_path": "research_output/research5_stellar_s0040.fits.gz"
+  },
+  {
+    "sector": 41,
+    "uri": "mast:HLSP/qlp/s0041/0000/0001/5964/9612/hlsp_qlp_tess_ffi_s0041-0000000159649612_tess_v01_llc.fits",
+    "body_bytes": 216000,
+    "sha256": "fb320c469083eea1c513ec7b9456fa604bd61f65672e2b598c5295ebba18dfe1",
+    "compressed_path": "research_output/research5_stellar_s0041.fits.gz"
+  },
+  {
+    "sector": 54,
+    "uri": "mast:HLSP/qlp/s0054/0000/0001/5964/9612/hlsp_qlp_tess_ffi_s0054-0000000159649612_tess_v01_llc.fits",
+    "body_bytes": 213120,
+    "sha256": "664de1ec2ef3115c2e5f3184539496fdb2e7d7bc332e86da21dc03f4886bc5b4",
+    "compressed_path": "research_output/research5_stellar_s0054.fits.gz"
+  },
+  {
+    "sector": 81,
+    "uri": "mast:HLSP/qlp/s0081/0000/0001/5964/9612/hlsp_qlp_tess_ffi_s0081-0000000159649612_tess_v01_llc.fits",
+    "body_bytes": 673920,
+    "sha256": "bab2f50215740c2a944b9808e3bd227eb11fbb2aa28ec56d8f6370ae92e7c9da",
+    "compressed_path": "research_output/research5_stellar_s0081.fits.gz"
+  },
+  {
+    "sector": 82,
+    "uri": "mast:HLSP/qlp/s0082/0000/0001/5964/9612/hlsp_qlp_tess_ffi_s0082-0000000159649612_tess_v01_llc.fits",
+    "body_bytes": 656640,
+    "sha256": "013153669ebc2329a60424a45ef80159082a977be4c3ff5a6df323cd1a23cef3",
+    "compressed_path": "research_output/research5_stellar_s0082.fits.gz"
+  },
+  {
+    "sector": 74,
+    "uri": "mast:HLSP/qlp/s0074/0000/0001/5964/9612/hlsp_qlp_tess_ffi_s0074-0000000159649612_tess_v02_llc.fits",
+    "body_bytes": 688320,
+    "sha256": "4f0b8924c16fa1b882ddcfad0fcd8065c4fc088674826d767b8ddfaa7ce77e5b",
+    "compressed_path": "research_output/research5_stellar_s0074.fits.gz"
+  },
+  {
+    "sector": 75,
+    "uri": "mast:HLSP/qlp/s0075/0000/0001/5964/9612/hlsp_qlp_tess_ffi_s0075-0000000159649612_tess_v02_llc.fits",
+    "body_bytes": 711360,
+    "sha256": "f65e6c1d69ae46d77c61ab0ce4330e76ed87a9718d62a9c0d0356c2884fa5902",
+    "compressed_path": "research_output/research5_stellar_s0075.fits.gz"
+  }
+]

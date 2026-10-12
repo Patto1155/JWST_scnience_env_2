@@ -1,0 +1,125 @@
+#
+#   VizieR Astronomical Server vizier.cds.unistra.fr
+#    Date: 2026-10-12T02:34:54 [V7.6.1]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	service_protocol=ASU	  IVOID of the protocol through which the data was retrieved
+#INFO	request_date=2026-10-12T02:34:54	  Query execution date
+#INFO	request=https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-c=57.6419783+%2B35.5856917&-c.rs=5&-out.max=10&-out.all=1&-source=J%2FApJ%2F786%2F37%2CJ%2FApJ%2F764%2F133%2CJ%2FApJS%2F224%2F28	  Full request URL
+#INFO	contact=cds-question@unistra.fr	  Email or URL to contact publisher
+#INFO	server_software=VizieR/7.6.1	  Software version
+#INFO	publisher=CDS	  Data centre that produced the VOTable
+#INFO	CatalogsExamined=2	
+#  2 catalogues with potential matches were examined.
+#
+#INFO	-c=057.641978+35.585692,rs=5.	
+#Constraint -source=J/ApJ/786/37,J/ApJ/764/133,J/ApJS/224/28
+
+#RESOURCE=yCat_17860037
+#Name: J/ApJ/786/37
+#Title: The Auriga-California molecular cloud (Broekhoven-Fiene+, 2014)
+#INFO	ivoid=ivo://cds.vizier/j/apj/786/37	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/j/apj/786/37	    IVOID of underlying data collection
+#INFO	creator=Broekhoven-Fiene H.	    First author or institution
+#INFO	cites=bibcode:2014ApJ...786...37B	    Article or Data origin sources
+#INFO	journal=ApJ	    Journal name
+#INFO	original_date=2014	    Year of the article publication
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/J/ApJ/786/37	    Dataset landing page
+#INFO	citation=doi:10.26093/cds/vizier.17860037	    Dataset identifier that can be used for citation
+#INFO	publication_date=2018-01-23	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Table	J_ApJ_786_37_sample:
+#Name: J/ApJ/786/37/sample
+#Title: YSOs (table 4) and YSO Candidates (table 5)in the AMC Based on WISE and MIPS
+#Column	_r	(F4.2)	Distance from center (057.64198+35.58569)[FK5/J2000]	[ucd=pos.angDistance]
+#Column	recno	(I8)	Record number assigned by the VizieR team. Should Not be used for identification.	[ucd=meta.record]
+#Column	Flag	(A1)	confirmed (*) (table4) or candidate (c) (table 5) YSO	[ucd=meta.code]
+#Column	sed	(A1)	indicates SED modelling results in sed table	[ucd=meta.ref.url]
+#Column	ID	(I3)	[1/166] YSO ID number	[ucd=meta.id]
+#Column	Name	(A16)	Name specifying J2000 coordinates (HHMMSSss+DDMMSSs)	[ucd=meta.id;meta.main]
+#Column	Class	(A3)	[I II III F] YSO SED Class	[ucd=meta.code.class]
+#Column	alpha	(F5.2)	Infrared spectral slope	[ucd=arith.grad]
+#Column	Flux3.6	(F8.3)	? Flux at IRAC1 3.6 micron band	[ucd=phot.mag;em.IR.3-4um]
+#Column	e_Flux3.6	(F6.3)	? Error in Flux3.6	[ucd=stat.error]
+#Column	Flux4.5	(F7.2)	? Flux at IRAC2 4.5 micron band	[ucd=phot.mag;em.IR.4-8um]
+#Column	e_Flux4.5	(F6.2)	? Error in Flux4.5	[ucd=stat.error]
+#Column	Flux5.8	(F7.2)	? Flux at IRAC3 5.8 micron band	[ucd=phot.flux.density;em.IR.4-8um]
+#Column	e_Flux5.8	(F6.2)	? Error in Flux5.8	[ucd=stat.error]
+#Column	Flux8.0	(F7.2)	? Flux at IRAC4 8.0 micron band	[ucd=phot.flux.density;em.IR.8-15um]
+#Column	e_Flux8.0	(F6.2)	? Error in Flux8.0	[ucd=stat.error]
+#Column	Flux3.4	(F7.2)	? Flux at WISE1 3.4 micron band	[ucd=phot.mag;em.IR.3-4um]
+#Column	e_Flux3.4	(F6.2)	? Error in Flux3.4	[ucd=stat.error]
+#Column	Flux4.6	(F7.2)	? Flux at WISE2 4.6 micron band	[ucd=phot.mag;em.IR.4-8um]
+#Column	e_Flux4.6	(F6.2)	? Error in Flux4.6	[ucd=stat.error]
+#Column	Flux12	(F7.2)	? Flux at WISE3 12 micron band	[ucd=phot.flux.density;em.IR.8-15um]
+#Column	e_Flux12	(F5.2)	? Error in Flux12	[ucd=stat.error]
+#Column	l_Flux12	(A1)	[<] Limit flag on Flux12	[ucd=meta.code.error]
+#Column	Flux22	(F6.2)	? Flux at WISE4 22 micron band	[ucd=phot.flux.density;em.IR.15-30um]
+#Column	e_Flux22	(F5.2)	? Error in Flux22	[ucd=stat.error]
+#Column	l_Flux24	(A1)	[<] Limit flag on Flux24	[ucd=meta.code.error]
+#Column	Flux24	(F8.2)	? Flux at MIPS1 24 micron band	[ucd=phot.flux.density;em.IR.15-30um]
+#Column	e_Flux24	(F7.2)	? Error in Flux24	[ucd=stat.error]
+#Column	Flux70	(F7.1)	? Flux at MIPS2 70 micron band	[ucd=phot.flux.density;em.IR.30-60um]
+#Column	e_Flux70	(F8.3)	? Error in Flux70	[ucd=stat.error]
+#Column	lowNH2	(A1)	[LN] Low column density flag (1)	[ucd=meta.code]
+#Column	Simbad	(a6)	Simbad column added by the CDS	[ucd=meta.ref.url]
+#Column	_RA	(F9.5)	Position from Name (right ascension part)	[ucd=pos.eq.ra;meta.main]
+#Column	_DE	(F9.5)	Position from Name (declination part)	[ucd=pos.eq.dec;meta.main]
+
+#RESOURCE=yCat_17640133
+#Name: J/ApJ/764/133
+#Title: Auriga-California giant molecular cloud (Harvey+, 2013)
+#INFO	ivoid=ivo://cds.vizier/j/apj/764/133	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/j/apj/764/133	    IVOID of underlying data collection
+#INFO	creator=Harvey P.M.	    First author or institution
+#INFO	cites=bibcode:2013ApJ...764..133H	    Article or Data origin sources
+#INFO	journal=ApJ	    Journal name
+#INFO	original_date=2013	    Year of the article publication
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/J/ApJ/764/133	    Dataset landing page
+#INFO	citation=doi:10.26093/cds/vizier.17640133	    Dataset identifier that can be used for citation
+#INFO	publication_date=2018-05-30	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Table	J_ApJ_764_133_table2:
+#Name: J/ApJ/764/133/table2
+#Title: Herschel source fluxes and derived quantities
+#Column	_r	(F4.2)	Distance from center (057.64198+35.58569)[FK5/J2000]	[ucd=pos.angDistance]
+#Column	SRC	(I2)	[1/60] Running number (<[HFG2013] NN> in Simbad)	[ucd=meta.id;meta.main]
+#Column	YSO	(A1)	[Y] Y = YSO candidate identified by H. Broekhoven-Fiene et al. (2014ApJ...786...37B and 2015ApJ...798...65B)	[ucd=meta.note]
+#Column	OType	(A3)	SIMBAD object type	[ucd=src.class]
+#Column	RAJ2000	(F9.5)	Right Ascension (J2000)	[ucd=pos.eq.ra;meta.main]
+#Column	DEJ2000	(F9.5)	Declination (J2000)	[ucd=pos.eq.dec;meta.main]
+#Column	MIR	(A4)	[SpGB,WISE] Source of MIR data: SpGB=Spitzer 24{mu}m, WISE=22{mu}m	[ucd=meta.code]
+#Column	alpha	(F5.2)	Spectral slope {alpha} = dlog({lambda}F_{lambda}_)/dlog({lambda})	[ucd=arith.grad]
+#Column	Class	(A3)	YSO Class (1)	[ucd=meta.code.class]
+#Column	Lbol	(F5.2)	Total Luminosity (2)	[ucd=phys.luminosity]
+#Column	Tbol	(I3)	Bolometric Temperature (2)	[ucd=phys.temperature]
+#Column	F24	(F8.2)	PSF flux density F_{nu}_ 22/24{mu}m	[ucd=phot.flux.density;em.IR.15-30um]
+#Column	e_F24	(F7.2)	Mean error on F24	[ucd=stat.error]
+#Column	F70	(F7.1)	Herschel PSF flux density F_{nu}_ 70{mu}m (3)	[ucd=phot.flux.density;em.IR.30-60um]
+#Column	e_F70	(F6.1)	Mean error on F70	[ucd=stat.error]
+#Column	F70a	(F7.1)	? Aperture flux density F_{nu}_ 70{mu}m (3)	[ucd=phot.flux.density;em.IR.30-60um]
+#Column	e_F70a	(I4)	? Mean error on F70a	[ucd=stat.error]
+#Column	F160	(F7.1)	? PSF flux density F_{nu}_ 160{mu}m PSF (3)	[ucd=phot.flux.density;em.mm.1500-3000GHz]
+#Column	e_F160	(I4)	? Mean error on F160	[ucd=stat.error]
+#Column	F160a	(I5)	? Aperture flux density F_{nu}_ 160{mu}m (3)	[ucd=phot.flux.density;em.mm.1500-3000GHz]
+#Column	e_F160a	(I4)	? Mean error on F160a	[ucd=stat.error]
+#Column	Simbad	(a6)	Simbad column added by the CDS	[ucd=meta.ref.url]
+#Table	J_ApJ_764_133_table3:
+#Name: J/ApJ/764/133/table3
+#Title: Compact source fluxes detected at 1.1mm with peak S/N>2
+#Column	_r	(F3.1)	Distance from center (03 50 34.1+35 35 08)[FK5/J2000]	[ucd=pos.angDistance]
+#Column	CSO	(a5)	Source number or SSTGB (<[HFG2013] CSO NN> in Simbad) (1)	[ucd=meta.id;meta.main]
+#Column	RAJ2000	(A10)	Hour of right ascension (J2000)	[ucd=pos.eq.ra;meta.main]
+#Column	DEJ2000	(A9)	Degree of declination (J2000)	[ucd=pos.eq.dec;meta.main]
+#Column	SRC	(a11)	Herschel source(s)	[ucd=meta.id.cross]
+#Column	Fnu	(F5.2)	[0.4/7.5] 1.1mm flux density fit	[ucd=phot.flux.density;em.mm.200-400GHz]
+#Column	e_Fnu	(F5.2)	[0.07/0.8] Fnu uncertainty	[ucd=stat.error]
+#Column	Fnu40	(F5.2)	[0.1/1.3] 1.1mm flux density at 40" aperture	[ucd=phot.flux.density;em.mm.200-400GHz]
+#Column	e_Fnu40	(F6.3)	[0.02/0.2] Fnu40 uncertainty	[ucd=stat.error]
+#Column	Fnu80	(F5.2)	[0.4/2.3] 1.1mm flux density at 80" aperture	[ucd=phot.flux.density;em.mm.200-400GHz]
+#Column	e_Fnu80	(F6.3)	[0.05/0.4] Fnu80 uncertainty	[ucd=stat.error]
+#Column	Fnu120	(F5.2)	[0.6/4] 1.1mm flux density at 120" aperture	[ucd=phot.flux.density;em.mm.200-400GHz]
+#Column	e_Fnu120	(F6.3)	[0.08/0.6] Fnu120 uncertainty	[ucd=stat.error]
+#Column	Simbad	(a6)	Simbad column added by the CDS	[ucd=meta.ref.url]

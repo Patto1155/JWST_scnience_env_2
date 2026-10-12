@@ -1,0 +1,8 @@
+{
+  "url": "https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves?POS=CIRCLE+308.7488+47.7017+0.000555556&FORMAT=csv",
+  "status": 200,
+  "bytes": 80881,
+  "sha256": "cb80f6845dbe3aff029d4db4fcda524d4b9b3bc97ff380b9439fc3f20ed29f1f",
+  "elapsed_seconds": 23.472382068634033,
+  "exploratory": true
+}

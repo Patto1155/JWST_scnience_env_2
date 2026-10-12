@@ -1,0 +1,133 @@
+#
+#   VizieR Astronomical Server vizier.cds.unistra.fr
+#    Date: 2026-10-12T02:37:05 [V7.6.1]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	service_protocol=ASU	  IVOID of the protocol through which the data was retrieved
+#INFO	request_date=2026-10-12T02:37:05	  Query execution date
+#INFO	request=https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-c=57.6419783+%2B35.5856917&-c.rs=5&-out.max=10&-out.all=1&-source=J%2FA%2BA%2F674%2FA21%2CI%2F358%2Fscalerts%2CJ%2FA%2BA%2F674%2FA22	  Full request URL
+#INFO	contact=cds-question@unistra.fr	  Email or URL to contact publisher
+#INFO	server_software=VizieR/7.6.1	  Software version
+#INFO	publisher=CDS	  Data centre that produced the VOTable
+#INFO	CatalogsExamined=3	
+#  3 catalogues with potential matches were examined.
+#
+#INFO	-c=057.641978+35.585692,rs=5.	
+#Constraint -source=J/A+A/674/A21,I/358/scalerts,J/A+A/674/A22
+
+#RESOURCE=yCat_36740021
+#Name: J/A+A/674/A21
+#Title: KYSO - The Konkoly Optical YSO catalogue (Marton+, 2023)
+#INFO	ivoid=ivo://cds.vizier/j/a+a/674/a21	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/j/a+a/674/a21	    IVOID of underlying data collection
+#INFO	creator=Marton G.	    First author or institution
+#INFO	cites=bibcode:2023A&A...674A..21M	    Article or Data origin sources
+#INFO	journal=A&A	    Journal name
+#INFO	original_date=2023	    Year of the article publication
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/J/A+A/674/A21	    Dataset landing page
+#INFO	citation=doi:10.26093/cds/vizier.36740021	    Dataset identifier that can be used for citation
+#INFO	publication_date=2025-07-03	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Table	J_A_A_674_A21_kyso:
+#Name: J/A+A/674/A21/kyso
+#Title: *KYSO catalog
+#Column	_r	(F5.3)	Distance from center (057.641978+35.585692)[FK5/J2000]	[ucd=pos.angDistance]
+#Column	recno	(I8)	Record number assigned by the VizieR team. Should Not be used for identification.	[ucd=meta.record]
+#Column	RAJ2000	(F10.6)	Right ascension as in Ref (J2000.0) (1)	[ucd=pos.eq.ra;meta.main]
+#Column	DEJ2000	(F10.6)	Declination as in Ref (J2000.0) (1)	[ucd=pos.eq.dec;meta.main]
+#Column	GLON	(F10.6)	Galactic longitude	[ucd=pos.galactic.lon]
+#Column	GLAT	(F10.6)	Galactic latitude	[ucd=pos.galactic.lat]
+#Column	SFR	(A29)	Name of Star Forming Region as in Ref (1)	[ucd=obs.field]
+#Column	Name	(A20)	Object name as in Ref (1)	[ucd=meta.id;meta.main]
+#Column	Ref	(A19)	Reference to object data	[ucd=meta.ref;pos.frame]
+#Column	Method	(a46)	YSO identification method as in Ref (1)	[ucd=meta.note]
+#Column	YSOtype	(a9)	YSO type	[ucd=src.class]
+#Column	vartype	(A9)	Variability type	[ucd=meta.note]
+#Column	RAGdeg	(F16.12)	? Gaia DR3 Right ascension (J2000.0)	[ucd=pos.eq.ra]
+#Column	DEGdeg	(F17.13)	? Gaia DR3 Declination (J2000.0)	[ucd=pos.eq.dec]
+#Column	GaiaDR3	(I19)	? Gaia DR3 source id	[ucd=meta.id]
+#Column	plx	(F7.4)	? Gaia DR3 parallax	[ucd=pos.parallax.trig]
+#Column	e_plx	(F7.4)	? Gaia DR3 parallax error	[ucd=stat.error;pos.parallax]
+#Column	ruwe	(F7.4)	? Gaia DR3 renormalised unit weight error	[ucd=stat.error]
+#Column	Gmag	(F10.7)	? Gaia DR3 mean G band magnitude	[ucd=phot.mag;em.opt]
+#Column	BP-RP	(F10.7)	? Gaia DR3 mean BP-RP colour	[ucd=phot.color;em.opt.B;em.opt.R]
+#Column	angDist	(F10.6)	? Angular distance between Gaia DR3 and reference position	[ucd=meta.ref;pos.angDistance]
+#Column	rgeo	(F14.8)	? Median of the geometric distance posterior (2)	[ucd=pos.distance]
+#Column	b_rgeo	(F16.10)	? 16th percentile of the geometric distance posterior(2)	[ucd=pos.distance]
+#Column	B_rgeo	(F14.8)	? 84th percentile of the geometric distance posterior(2)	[ucd=pos.distance]
+#Column	rpgeo	(F14.8)	? Median of the photogeometric distance posterior (2)	[ucd=pos.distance]
+#Column	b_rpgeo	(F14.8)	? 16th percentile of the photogeometric distance posterior (2)	[ucd=pos.distance]
+#Column	B_rpgeo	(F14.8)	? 84th percentile of the photogeometric distance posterior (2)	[ucd=pos.distance]
+#Column	Simbad	(a6)	Simbad column added by the CDS	[ucd=meta.ref.url]
+
+#RESOURCE=yCat_1358
+#Name: I/358
+#Title: Gaia DR3 Part 4. Variability (Gaia Collaboration, 2022)
+#INFO	ivoid=ivo://cds.vizier/i/358	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/i/358	    IVOID of underlying data collection
+#INFO	creator=Gaia collaboration	    First author or institution
+#INFO	cites=bibcode:2022yCat.1358....0G	    Bibcode of the dataset
+#INFO	journal=yCat	    Journal name
+#INFO	original_date=2022	    Year of the article publication
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/I/358	    Dataset landing page
+#INFO	citation=doi:10.26093/cds/vizier.1358	    Dataset identifier that can be used for citation
+#INFO	publication_date=2023-12-19	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Coosys	H_2016.000:	ICRS
+#Table	I_358_scalerts:
+#Name: I/358/scalerts
+#Title: All Gaia Photometric Science Alerts triggered in the period 25-07-2014 to 28-05-2017, i.e. the time span covered by DR3 (science_alerts)
+#Column	_r	(F5.3)	Distance from center ( 57.64197830000+35.58569170000)[ICRS], at Epoch=J2016.0	[ucd=pos.angDistance]
+#Column	recno	(I8)	Record number assigned by the VizieR team. Should Not be used for identification.	[ucd=meta.record]
+#Column	Source	(I19)	Unique source identifier (unique within a particular Data Release) (source_id)	[ucd=meta.id;meta.main]
+#Column	TransitID	(I17)	Alerting transit identifier (transit_id)	[ucd=meta.id]
+#Column	Name	(A9)	Name of alert, GaiaNNaaa (name)	[ucd=meta.id]
+#Column	SolID	(I19)	Solution Identifier (solution_id)	[ucd=meta.version]
+#Column	RA_ICRS	(F15.11)	? Right ascension (ICRS) at Ep=2016.0 (ra)	[ucd=pos.eq.ra;meta.main]
+#Column	DE_ICRS	(F15.11)	? Declination (ICRS) at Ep=2016.0 (dec)	[ucd=pos.eq.dec;meta.main]
+
+#RESOURCE=yCat_36740022
+#Name: J/A+A/674/A22
+#Title: Gaia DR3. Cross-match with known variable objects (Gavras+, 2023)
+#INFO	ivoid=ivo://cds.vizier/j/a+a/674/a22	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/j/a+a/674/a22	    IVOID of underlying data collection
+#INFO	creator=Gavras P.	    First author or institution
+#INFO	cites=bibcode:2023A&A...674A..22G	    Article or Data origin sources
+#INFO	journal=A&A	    Journal name
+#INFO	original_date=2023	    Year of the article publication
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/J/A+A/674/A22	    Dataset landing page
+#INFO	citation=doi:10.26093/cds/vizier.36740022	    Dataset identifier that can be used for citation
+#INFO	publication_date=2026-05-22	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Table	J_A_A_674_A22_catalog:
+#Name: J/A+A/674/A22/catalog
+#Title: Cross-match catalog of 17841723 of Gaia sources
+#Column	_r	(F5.3)	Distance from center (057.641978+35.585692)[FK5/J2000]	[ucd=pos.angDistance]
+#Column	recno	(I8)	Record number assigned by the VizieR team. Should Not be used for identification.	[ucd=meta.record]
+#Column	GaiaDR3	(I19)	Gaia DR3 source id (gaia_dr3_source_id)	[ucd=meta.id;meta.main]
+#Column	ONames	(a206)	Identifications from literature catalogues (non_gaia_ids) (1)	[ucd=meta.id]
+#Column	OPos	(a321)	Coordinates from literature catalogues (non_gaia_coordinates) (1) (2)	[ucd=meta.note]
+#Column	RAJ2000	(F10.6)	Right Ascension from the higher ranked catalogue (J2000) (primary_ra) (3)	[ucd=pos.eq.ra;meta.main]
+#Column	DEJ2000	(F10.6)	Declination from the higher ranked catalogue (J2000) (primary_dec) (3)	[ucd=pos.eq.dec;meta.main]
+#Column	Omags	(a88)	Magnitude(s) from literature (non_gaia_mags) (1)	[ucd=phot.mag]
+#Column	Dists	(a124)	Synthetic astrometric-photometric distance (see Eq. 1) (synthetic_distances) (1)	[ucd=pos.distance]
+#Column	psuperclass	(a12)	Generic superclass label corresponding to primary_var_type (primary_superclass)	[ucd=src.class]
+#Column	pvarTypes	(a12)	Variability type from the highest ranked catalogue for a given source (primary_var_type)	[ucd=src.var]
+#Column	VarTypes	(a69)	Variability type(s) from literature, sorted by catalogue rank (var_types) (1)	[ucd=meta.note;src.var]
+#Column	VarTypesOri	(a73)	Original variability (sub)type(s) from literature (original_var_types) (1)	[ucd=meta.note;src.var]
+#Column	AltVarTypesOri	(a52)	Alternative variable type(s) from literature (original_alt_var_types) (1)	[ucd=meta.code;src.var]
+#Column	pPer	(F26.19)	? Variability period from the highest ranked catalogue for a given source (primary_period)	[ucd=src.var]
+#Column	Pers	(a134)	Variability period(s) from the literature (periods) (1) (3)	[ucd=meta.note]
+#Column	OPers	(a78)	Other period(s) from the literature (other_periods) (1)	[ucd=meta.note]
+#Column	ORefEpoch	(a54)	Approximate reference epochs (J2000) of the literature (ref_Epochs) (1)	[ucd=meta.note]
+#Column	pCat	(a50)	Label of the highest ranked catalogue for a given source in notes.dat file (primary_catalogue_label)	[ucd=meta.id;meta.table]
+#Column	Cats	(a354)	Label(s) of the literature catalogue(s) (catalogue_labels) (1)	[ucd=meta.code]
+#Column	RefsCats	(a842)	Reference(s) of the literature (references) (1)	[ucd=meta.ref;pos.frame]
+#Column	Sel	(A5)	[false/true] Selection of the most reliable catalogues or classes (selection)	[ucd=meta.code]
+_r	recno	GaiaDR3	ONames	OPos	RAJ2000	DEJ2000	Omags	Dists	psuperclass	pvarTypes	VarTypes	VarTypesOri	AltVarTypesOri	pPer	Pers	OPers	ORefEpoch	pCat	Cats	RefsCats	Sel
+arcsec	 	 	 	 	deg	deg	 	 	 	 	 	 	 	d	 	 	 	 	 	 	
+-----	--------	-------------------	--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	----------	----------	----------------------------------------------------------------------------------------	----------------------------------------------------------------------------------------------------------------------------	------------	------------	---------------------------------------------------------------------	-------------------------------------------------------------------------	----------------------------------------------------	--------------------------	--------------------------------------------------------------------------------------------------------------------------------------	------------------------------------------------------------------------------	------------------------------------------------------	--------------------------------------------------	------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	-----
+0.054	 7249829	 219690291611604480	476580                                                                                                                                                                                                        	057.641960_035.585690                                                                                                                                                                                                                                                                                                            	057.641960	+35.585690	17.0                                                                                    	0                                                                                                                           	YSO         	YSO         	YSO                                                                  	                                                                         	                                                    	                          	                                                                                                                                      	                                                                              	                                                      	COMP_VAR_VSX_2019                                 	COMP_VAR_VSX_2019                                                                                                                                                                                                                                                                                                                                                 	2006SASS...25...47W                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       	true
+

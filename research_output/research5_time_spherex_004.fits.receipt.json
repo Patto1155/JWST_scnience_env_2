@@ -1,0 +1,125 @@
+{
+  "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W34_2A/l2b-v27-2026-243/4/level2_2026W34_2A_0202_1D4_spx_l2b-v27-2026-243.fits",
+  "source_bytes": 5001680,
+  "source_ranges": [
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W34_2A/l2b-v27-2026-243/4/level2_2026W34_2A_0202_1D4_spx_l2b-v27-2026-243.fits",
+      "range": "bytes 0-65535/65609280",
+      "bytes": 65536,
+      "etag": "\"84de450d16e5e132d0d6b2a6e04cb698\"",
+      "sha256": "52655f6239efc1e7c6e8fa36de674062dc2241af3ae863cc56fa6d339b66b491"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W34_2A/l2b-v27-2026-243/4/level2_2026W34_2A_0202_1D4_spx_l2b-v27-2026-243.fits",
+      "range": "bytes 14110080-14314079/65609280",
+      "bytes": 204000,
+      "etag": "\"84de450d16e5e132d0d6b2a6e04cb698\"",
+      "sha256": "e08e2e8ea0f57c463d6a2515a29a6cb22df553716a996156276882c27a46e2e6"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W34_2A/l2b-v27-2026-243/4/level2_2026W34_2A_0202_1D4_spx_l2b-v27-2026-243.fits",
+      "range": "bytes 16672320-16737855/65609280",
+      "bytes": 65536,
+      "etag": "\"84de450d16e5e132d0d6b2a6e04cb698\"",
+      "sha256": "d6a54cb589b67a09ce434c088ba8e9b771935f45299149bdac8b038f55878eee"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W34_2A/l2b-v27-2026-243/4/level2_2026W34_2A_0202_1D4_spx_l2b-v27-2026-243.fits",
+      "range": "bytes 28419840-28485375/65609280",
+      "bytes": 65536,
+      "etag": "\"84de450d16e5e132d0d6b2a6e04cb698\"",
+      "sha256": "e7008ea7827fd5f02c6e1ffa34c29478def260c5b21e3b1e16b1f548aa5a788a"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W34_2A/l2b-v27-2026-243/4/level2_2026W34_2A_0202_1D4_spx_l2b-v27-2026-243.fits",
+      "range": "bytes 42515520-42719519/65609280",
+      "bytes": 204000,
+      "etag": "\"84de450d16e5e132d0d6b2a6e04cb698\"",
+      "sha256": "77db8265f1a2b15d10a5ebb2ea2d83d1421e1990c1caabcd372bdcc5466701f1"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W34_2A/l2b-v27-2026-243/4/level2_2026W34_2A_0202_1D4_spx_l2b-v27-2026-243.fits",
+      "range": "bytes 26704434-26769969/65609280",
+      "bytes": 65536,
+      "etag": "\"84de450d16e5e132d0d6b2a6e04cb698\"",
+      "sha256": "97d3ff9c9ae4b8e21c314cdd41bcc19c4143054d21d83019d2f95eaf05d62264"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W34_2A/l2b-v27-2026-243/4/level2_2026W34_2A_0202_1D4_spx_l2b-v27-2026-243.fits",
+      "range": "bytes 26769243-26834778/65609280",
+      "bytes": 65536,
+      "etag": "\"84de450d16e5e132d0d6b2a6e04cb698\"",
+      "sha256": "94b9aa63c9df4201e10b91ca4216eb85006ff5ee005f835ff2a7e796a5522a22"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W34_2A/l2b-v27-2026-243/4/level2_2026W34_2A_0202_1D4_spx_l2b-v27-2026-243.fits",
+      "range": "bytes 26834580-26900115/65609280",
+      "bytes": 65536,
+      "etag": "\"84de450d16e5e132d0d6b2a6e04cb698\"",
+      "sha256": "4617594330e5201fc8130304eae30f2513cd500e7a265644c4636e7e48a031af"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W34_2A/l2b-v27-2026-243/4/level2_2026W34_2A_0202_1D4_spx_l2b-v27-2026-243.fits",
+      "range": "bytes 45077760-45143295/65609280",
+      "bytes": 65536,
+      "etag": "\"84de450d16e5e132d0d6b2a6e04cb698\"",
+      "sha256": "574de820938e27b66c1021b35016bc5e541eb15812ef8ac83fa99089807c17a5"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W34_2A/l2b-v27-2026-243/4/level2_2026W34_2A_0202_1D4_spx_l2b-v27-2026-243.fits",
+      "range": "bytes 59173440-59377439/65609280",
+      "bytes": 204000,
+      "etag": "\"84de450d16e5e132d0d6b2a6e04cb698\"",
+      "sha256": "d54d051e8cf5bdb46fd3b2e8ff097f4e73bda8a99d92d285bfcd0927cae2aefe"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W34_2A/l2b-v27-2026-243/4/level2_2026W34_2A_0202_1D4_spx_l2b-v27-2026-243.fits",
+      "range": "bytes 61735680-61801215/65609280",
+      "bytes": 65536,
+      "etag": "\"84de450d16e5e132d0d6b2a6e04cb698\"",
+      "sha256": "efbfa44ddba2449f5145f31d15ddd1347ea6a45315ec3cf16d9e0299958ab374"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W34_2A/l2b-v27-2026-243/4/level2_2026W34_2A_0202_1D4_spx_l2b-v27-2026-243.fits",
+      "range": "bytes 61741440-65601071/65609280",
+      "bytes": 3859632,
+      "etag": "\"84de450d16e5e132d0d6b2a6e04cb698\"",
+      "sha256": "497f255170f4b32220affc7b7f6794fb46afe4e7d9995244f627103708fe6cd7"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr3/level2/2026W34_2A/l2b-v27-2026-243/4/level2_2026W34_2A_0202_1D4_spx_l2b-v27-2026-243.fits",
+      "range": "bytes 65603520-65609279/65609280",
+      "bytes": 5760,
+      "etag": "\"84de450d16e5e132d0d6b2a6e04cb698\"",
+      "sha256": "9c63a38175655cc544da1b2b87a69eabed799a8fe20b6bfa238b7d4286201314"
+    }
+  ],
+  "original_epsf_sha256": "497f255170f4b32220affc7b7f6794fb46afe4e7d9995244f627103708fe6cd7",
+  "original_epsf_header": "XTENSION= 'BINTABLE'           / binary table extension                         BITPIX  =                    8 / array data type                                NAXIS   =                    2 / number of array dimensions                     NAXIS1  =                 8752 / length of dimension 1                          NAXIS2  =                  441 / length of dimension 2                          PCOUNT  =                    0 / number of group parameters                     GCOUNT  =                    1 / number of groups                               TFIELDS =                   11 / number of table fields                         TTYPE1  = 'BINX    '                                                            TFORM1  = 'J       '                                                            TTYPE2  = 'BINY    '                                                            TFORM2  = 'J       '                                                            TTYPE3  = 'XCENTER '                                                            TFORM3  = 'E       '                                                            TUNIT3  = 'pixel   '                                                            TTYPE4  = 'YCENTER '                                                            TFORM4  = 'E       '                                                            TUNIT4  = 'pixel   '                                                            TTYPE5  = 'XWIDTH  '                                                            TFORM5  = 'E       '                                                            TUNIT5  = 'pixel   '                                                            TTYPE6  = 'YWIDTH  '                                                            TFORM6  = 'E       '                                                            TUNIT6  = 'pixel   '                                                            TTYPE7  = 'NSTAR   '                                                            TFORM7  = 'J       '                                                            TTYPE8  = 'NEFF_MEAN'                                                           TFORM8  = 'E       '                                                            TTYPE9  = 'CWAVE   '                                                            TFORM9  = 'E       '                                                            TUNIT9  = 'um      '                                                            TTYPE10 = 'CBAND   '                                                            TFORM10 = 'E       '                                                            TUNIT10 = 'um      '                                                            TTYPE11 = 'EPSF    '                                                            TFORM11 = '1089D   '                                                            TDIM11  = '(33,33) '                                                            EXTNAME = 'EPSF    '           / extension name                                 DETECTOR= '4       '           / 1-3: SWIR, 4-6: MWIR                           OVSMPX  =                    5                                                  OVSMPY  =                    5                                                  MAXIT   =                   10                                                  SMOOTH  = 'quartic '                                                            JUNKCLN =                    1                                                  KEEPNAT =                  3.5                                                  KEEPOS  =                 17.5                                                  DETCOORD= 'sky     '           / MWIR pixels flipped on X to match SWIR view    ORDERING= 'x-fast then y'                                                       BINSRC  = 'filename'                                                            GEOMSRC = 'uniform active-pixel tiling'                                         NEFFSRC = 'stats table exact filename match'                                    WVMSRC  = 'stats table exact filename match'                                    CWAVESRC= 'spectral_wcs CWAVE'                                                  CBANDSRC= 'spectral_wcs CBAND'                                                  HISTORY Headers standardized by SSDC on 2026-06-26T22:53:36.094 (UTC)           HISTORY Calibration source file: epsf_4_20260507.fits                           END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ",
+  "epsf_original_indices": [
+    376,
+    397,
+    377,
+    375,
+    398
+  ],
+  "cutout_sha256": "0d5bb0a7a0893ac09fbdee0921f04bca8cec8fbfeb706ee2396849d7ba9c8a87",
+  "cutout_bytes": 135360,
+  "original_xy": [
+    1897.2587843259694,
+    1738.939726524069
+  ],
+  "slice": [
+    1885,
+    1910,
+    1726,
+    1751
+  ],
+  "metadata": {
+    "t_min": "61273.492383",
+    "t_max": "61273.493715",
+    "obs_id": "2026W34_2A_0202_1",
+    "energy_bandpassname": "SPHEREx-D4"
+  },
+  "status": "actual observational pixel slice, faithful header-offset update; no measured photometry"
+}
