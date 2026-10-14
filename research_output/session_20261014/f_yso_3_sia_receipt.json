@@ -1,0 +1,18 @@
+{
+  "name": "yso_3_sia",
+  "requested_url": "https://irsa.ipac.caltech.edu/SIA",
+  "params": {
+    "COLLECTION": "spherex_qr3",
+    "POS": "CIRCLE 71.77589648386 16.97855940905 0.000277778",
+    "BAND": "2.8e-6 3.9e-6",
+    "CALIB": "2",
+    "RESPONSEFORMAT": "CSV",
+    "MAXREC": "10000"
+  },
+  "utc_started": "2026-10-14T01:31:38.849706+00:00",
+  "status": 200,
+  "bytes": 17950,
+  "url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_qr3&POS=CIRCLE+71.77589648386+16.97855940905+0.000277778&BAND=2.8e-6+3.9e-6&CALIB=2&RESPONSEFORMAT=CSV&MAXREC=10000",
+  "sha256_consumed_body": "7acd6fda05420531d1b73572e4342fe4d95f5e7e1d302133f875565ba43a6203",
+  "elapsed_seconds": 6.574703420999867
+}

@@ -1,0 +1,22 @@
+{
+  "annulus": {
+    "flux_absolute_difference_njy": 1.3964358913653996e-07,
+    "control_mad_absolute_difference_njy": 9.129600186952302e-09,
+    "same_rank_counts_and_decision": true
+  },
+  "poly0": {
+    "flux_absolute_difference_njy": 1.4113766155787744e-07,
+    "control_mad_absolute_difference_njy": 1.5858301338766978e-08,
+    "same_rank_counts_and_decision": true
+  },
+  "poly1": {
+    "flux_absolute_difference_njy": 1.4120200830802787e-07,
+    "control_mad_absolute_difference_njy": 2.1634527058722597e-08,
+    "same_rank_counts_and_decision": true
+  },
+  "poly2": {
+    "flux_absolute_difference_njy": 1.8941454982268624e-07,
+    "control_mad_absolute_difference_njy": 2.0514351461997649e-07,
+    "same_rank_counts_and_decision": true
+  }
+}

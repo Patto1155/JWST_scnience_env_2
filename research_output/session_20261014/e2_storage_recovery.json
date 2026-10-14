@@ -1,0 +1,49 @@
+{
+  "retained_dark_prefix_bytes": 3662675968,
+  "retained_dark_prefix_sha256": "1046507de2615ef3f54e1215b3fd03b74e50d5b51c29716ec8f48bfcf2ea3266",
+  "cache_resolved_path": "/tmp/jwst_smacs_e2_cache",
+  "workspace_cache_path": "/workspace/scratch/337bba29e79a/e2_smacs_cache",
+  "removed_synchronization_copies": [
+    {
+      "name": ".jwst_nircam_dark_0424.fits.partial.5sDwCq",
+      "logical_bytes": 2854223872
+    },
+    {
+      "name": ".rsync-tmp",
+      "logical_bytes": 2218786816
+    },
+    {
+      "name": ".jwst_nircam_dark_0424.fits.partial.DLjMp7",
+      "logical_bytes": 3044802560
+    },
+    {
+      "name": ".jwst_nircam_dark_0424.fits.partial.A6hmjd.O7HWRF.GR74Tl",
+      "logical_bytes": 1914175488
+    },
+    {
+      "name": ".jwst_nircam_dark_0424.fits.partial.UZ9n0Q",
+      "logical_bytes": 3435134976
+    },
+    {
+      "name": ".jwst_nircam_dark_0424.fits.partial.QKYZjy",
+      "logical_bytes": 944766976
+    },
+    {
+      "name": ".jwst_nircam_dark_0424.fits.partial.UZ9n0Q.hdyaym",
+      "logical_bytes": 2499543040
+    },
+    {
+      "name": ".jwst_nircam_dark_0424.fits.partial.A6hmjd",
+      "logical_bytes": 3115319296
+    },
+    {
+      "name": ".jwst_nircam_dark_0424.fits.partial.A6hmjd.O7HWRF",
+      "logical_bytes": 2107899904
+    },
+    {
+      "name": ".jwst_nircam_dark_0424.fits.partial.A6hmjd.O7HWRF.GR74Tl.kLZwYv",
+      "logical_bytes": 1909719040
+    }
+  ],
+  "note": "Growing input relocated outside workspace synchronization; failed initial request remains fully reserved. No new network body access."
+}

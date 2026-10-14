@@ -50,7 +50,8 @@ confirmation. Distinguish metadata feasibility work from outcome inspection.
 ## Data and independence
 
 Pilots are <=300 MB and selected original imaging <=1.5 GiB, with the more specific
-allocations in `docs/RESEARCH5_CAMPAIGN.md` still binding. Account for bytes before
+allocations in `docs/RESEARCH5_CAMPAIGN.md` binding unless the user explicitly
+authorizes a separately frozen budget amendment recorded in the session protocol. Account for bytes before
 transfer, enforce download caps, preserve product identities, hashes and compact
 receipts, reduce then delete raw downloads. Never commit raw downloads. Disk is
 a fixed allowance. Missing coverage is missing data, never zero flux or an upper

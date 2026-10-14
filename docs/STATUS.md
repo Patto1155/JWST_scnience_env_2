@@ -7,6 +7,44 @@ preserved, not converted into discoveries. Current grades belong only in
 assumptions. The 2026-10-09 ending correction in `HANDOVER.md` controls its earlier
 artifact/selection interpretations.
 
+## 14 October executed calibration and acquisition evidence
+
+The separately frozen current-release JADES known-answer check recovers
+28.3642 +/- 0.7192 versus 29.4971 +/- 0.6002 (1e-19 erg/s/cm2): it fails
+at the published 1-sigma tolerance and passes at 2 sigma. The original-release
+check is blocked at the tested endpoints. Current applicable MoM wavecorr is
+still the hash-identical DUMMY reference. Raw end-to-end and source-specific
+spectral calibration remain unmet; no spectral grade is promoted. See
+[KNOWN_ANSWER_TEST.md](KNOWN_ANSWER_TEST.md).
+
+The fresh MoM empirical-noise attempt consumed 299,991,808 response-body bytes
+and stopped at its pilot allowance during overfetch. No fresh noise calibration
+or N/C interval was computed. Astropy's subsequent ASDF KeyError is a parser
+side effect, not evidence that archive ASDF metadata is absent. The old interval
+remains historical/conditional. An optimized reader has synthetic tests only;
+see [MOM_EMPIRICAL_NOISE_TEST.md](MOM_EMPIRICAL_NOISE_TEST.md).
+
+SMACS E1 stopped because the required current dark is 4,378,878,720 bytes.
+The user approved a separately frozen 6 GiB E2 allowance after a space check.
+The actual JWST 3.0.0 / CRDS jwst_1596.pmap raw reduction completed: the patch
+persists, but three of four frozen structured-light null gates and the separate
+source-centroid association gate fail. Injection recovery was not run after
+these required gates failed. This leaves the physical-source claim Unconfirmed,
+not physically rejected. Conservative cumulative transfer reservations are
+5,826,074,168 of 6,442,450,944 bytes, including the failed transfer; bounded
+resume recovered from synchronization-related ENOSPC. Raw/reference files were
+deleted and about 25 GB free remained. See
+[SMACS1043_E2_INDEPENDENT_TEST.md](SMACS1043_E2_INDEPENDENT_TEST.md).
+
+The frozen six-YSO cohort is not estimable under its matched-control requirement.
+AA Tau has actual W1-scope channel counts 7/8/7 across three campaigns: only one
+passes the wavelength component, so no qualifying repeat pair exists. The other
+five targets fail the minimum control count even before further screening.
+No W1 flux, variability statistic, or NEOWISE/ZTF outcome was measured. DDE 54
+has no new post-August QR3 exposures; the older QR2 frames do not satisfy its
+unchanged W1 contract. This is a coverage/control stop, not a variability null.
+See [YSO_TIME_DOMAIN_PILOT.md](YSO_TIME_DOMAIN_PILOT.md). GOODS-N remains sealed.
+
 ## Live questions and stop rules
 
 - DDE 54: historical IR modulation is credible; recurrence and SPHEREx W1 state
@@ -29,15 +67,21 @@ artifact/selection interpretations.
 Only STATUS and CLAIM_LEDGER track scientific state; the lead owns their grades.
 Freeze designs in commits before new outcomes; edits after access are void.
 GOODS-N remains sealed. Pilots <=300 MB, original imaging <=1.5 GiB, subject to
-specific campaign allocations. Delete raw downloads after reduction and never
+specific campaign allocations. A user-approved, separately frozen SMACS E2
+exception permits 6 GiB including its prior transfer charge; all other pilots
+retain their caps. Delete raw downloads after reduction and never
 commit them. Same-lineage reviewer agreement is not independent corroboration.
 Runtime quotas default to zero; supervisor escalation only queues a statistical
 gate. Software health uses `python scripts/quality_gate.py`; SKIP is not PASS.
 Known data-absent skips remain explicit and do not validate pixels or calibration.
 
 The recorded 767-pass/3-skip audit is a starting receipt, not an execution claim
-for this worktree. The lead must append the integrated quality receipt and exact
-Phase 2 frozen commits, access receipts, tested verdicts and not-run limitations.
+for this worktree. The integrated validation receipt and original frozen-design
+history are linked from [SESSION_20261014.md](SESSION_20261014.md). Computational
+replay reproduces the released-data fit, SMACS compact control decisions and
+YSO W1-scope arithmetic; it is not independent astrophysical corroboration.
+Historical worker peak memory, full-field astrometry replay and complete early
+metadata-transfer accounting remain unverified.
 
 # Historical baseline and executed campaign evidence
 

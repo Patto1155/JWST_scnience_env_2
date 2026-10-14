@@ -1,0 +1,1895 @@
+{
+  "freeze_commit": "93a1f07ad583b9743d79004878ed9fc1cd505f3a",
+  "first_science_access_utc": "2026-10-14T01:40:39.138155+00:00",
+  "metadata_sha256": "ec1c5807835847f3765e52781940c0c774e915b9fb1aa76dc5de0716fc923f53",
+  "code_sha256": "a17a42606dd59cc5ab8511e49406d7942858387193b906faf39d62046b01bd84",
+  "target": "AA Tau",
+  "family_trials": 6,
+  "visits": [
+    {
+      "label": "earliest",
+      "selected_exposure_count": 32,
+      "channels": [
+        {
+          "obs_id": "2025W35_1A_0529_1",
+          "detector": "SPHEREx-D4",
+          "mjd_start": 60914.728566,
+          "collection": "spherex_qr2",
+          "access_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_1D4_spx_l2b-v20-2025-270.fits",
+          "status": "source spectral WCS measured",
+          "parent_xy": [
+            900.8343797864042,
+            1054.8774657323402
+          ],
+          "wavelength_um": 2.9860172978039285,
+          "width_um": 0.08525306952212686,
+          "edge_pixels": 900.8343797864042,
+          "source_range_receipts": [
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_1D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=0-65535",
+              "utc": "2026-10-14T01:40:39.138155+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 0-65535/71634240",
+              "etag": "\"205e8c6879f9e6ad45769e5a1a292504\"",
+              "sha256": "e6c4d076f47ca8774dadb14213a828f0255034c93cc7a40ffb9d852cce34c929"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_1D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=16669440-16734975",
+              "utc": "2026-10-14T01:40:45.916230+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 16669440-16734975/71634240",
+              "etag": "\"205e8c6879f9e6ad45769e5a1a292504\"",
+              "sha256": "d41e65259ed20ef39b73ffe73c415c0f6b2b993891ecb05f670e8c49fbc7ef21"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_1D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=33330240-33395775",
+              "utc": "2026-10-14T01:40:52.890183+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 33330240-33395775/71634240",
+              "etag": "\"205e8c6879f9e6ad45769e5a1a292504\"",
+              "sha256": "3c5346a0156f64535581bb4662b6f94e36750b72244bc6b4b34144806ce70331"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_1D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=49988160-50053695",
+              "utc": "2026-10-14T01:40:59.855951+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 49988160-50053695/71634240",
+              "etag": "\"205e8c6879f9e6ad45769e5a1a292504\"",
+              "sha256": "d62a0d08e8dbf6727723f4504b88704d69177be1d20ae9cf0eca11f7e707c26a"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_1D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=66646080-66711615",
+              "utc": "2026-10-14T01:41:06.731431+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 66646080-66711615/71634240",
+              "etag": "\"205e8c6879f9e6ad45769e5a1a292504\"",
+              "sha256": "f6ec7bd674fb0146bff9c8365b5030ccc41f83232bd71bbdb6d0f2b798f7a6b9"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_1D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=71628480-71634239",
+              "utc": "2026-10-14T01:41:13.479211+00:00",
+              "bytes": 5760,
+              "status": 206,
+              "content_range": "bytes 71628480-71634239/71634240",
+              "etag": "\"205e8c6879f9e6ad45769e5a1a292504\"",
+              "sha256": "827b96ca5aca47e0ab4dfa3dc2c9565a542c6f8ed786f99e073bc2b16a879089"
+            }
+          ],
+          "no_pixels_measured": true
+        },
+        {
+          "obs_id": "2025W35_1A_0529_2",
+          "detector": "SPHEREx-D4",
+          "mjd_start": 60914.730058,
+          "collection": "spherex_qr2",
+          "access_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_2D4_spx_l2b-v20-2025-270.fits",
+          "status": "source spectral WCS measured",
+          "parent_xy": [
+            899.0983462726383,
+            939.9390136448109
+          ],
+          "wavelength_um": 3.069382250712295,
+          "width_um": 0.08841910907184389,
+          "edge_pixels": 899.0983462726383,
+          "source_range_receipts": [
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_2D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=0-65535",
+              "utc": "2026-10-14T01:41:20.137967+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 0-65535/71634240",
+              "etag": "\"334f4ace28273b2837e823a48b4b502e\"",
+              "sha256": "aa256aa3e2197b9c879943438910679079b38772853d08ec35b1dff7ab7c0e91"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_2D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=16669440-16734975",
+              "utc": "2026-10-14T01:41:26.535674+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 16669440-16734975/71634240",
+              "etag": "\"334f4ace28273b2837e823a48b4b502e\"",
+              "sha256": "c16bd7a5297c9962439a4c2a0f24ffd17e0ef65e565ed992357ce9dd4301b59f"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_2D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=33330240-33395775",
+              "utc": "2026-10-14T01:41:33.369816+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 33330240-33395775/71634240",
+              "etag": "\"334f4ace28273b2837e823a48b4b502e\"",
+              "sha256": "e68dfc975558229e218b1bc5af78410640d8e087aa1805e8a1e2678720441905"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_2D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=49988160-50053695",
+              "utc": "2026-10-14T01:41:39.165584+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 49988160-50053695/71634240",
+              "etag": "\"334f4ace28273b2837e823a48b4b502e\"",
+              "sha256": "831aa9dc470a1f4cf2dc05ff6a36a85d2af8e2714c11769bb7097d86d8b793e3"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_2D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=66646080-66711615",
+              "utc": "2026-10-14T01:41:45.853561+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 66646080-66711615/71634240",
+              "etag": "\"334f4ace28273b2837e823a48b4b502e\"",
+              "sha256": "f6ec7bd674fb0146bff9c8365b5030ccc41f83232bd71bbdb6d0f2b798f7a6b9"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_2D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=71628480-71634239",
+              "utc": "2026-10-14T01:41:52.975766+00:00",
+              "bytes": 5760,
+              "status": 206,
+              "content_range": "bytes 71628480-71634239/71634240",
+              "etag": "\"334f4ace28273b2837e823a48b4b502e\"",
+              "sha256": "827b96ca5aca47e0ab4dfa3dc2c9565a542c6f8ed786f99e073bc2b16a879089"
+            }
+          ],
+          "no_pixels_measured": true
+        },
+        {
+          "obs_id": "2025W35_1A_0529_3",
+          "detector": "SPHEREx-D4",
+          "mjd_start": 60914.731551,
+          "collection": "spherex_qr2",
+          "access_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_3D4_spx_l2b-v20-2025-270.fits",
+          "status": "source spectral WCS measured",
+          "parent_xy": [
+            896.8985081002165,
+            824.9613815017901
+          ],
+          "wavelength_um": 3.153898123186501,
+          "width_um": 0.09137461666708106,
+          "edge_pixels": 824.9613815017901,
+          "source_range_receipts": [
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_3D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=0-65535",
+              "utc": "2026-10-14T01:41:59.709212+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 0-65535/71634240",
+              "etag": "\"e0b1fc3bf1e566b3a4b7e1d7d256acfe\"",
+              "sha256": "30968a174888a700d293b9b0c98e45d7cc9d5f537d90ee10173c98dcc2781a63"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_3D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=16669440-16734975",
+              "utc": "2026-10-14T01:42:06.631208+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 16669440-16734975/71634240",
+              "etag": "\"e0b1fc3bf1e566b3a4b7e1d7d256acfe\"",
+              "sha256": "e516024d9bd6984075f295c375115964e06c7301dc3f1aee8bc2bfd4d7cc0e49"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_3D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=33330240-33395775",
+              "utc": "2026-10-14T01:42:14.334690+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 33330240-33395775/71634240",
+              "etag": "\"e0b1fc3bf1e566b3a4b7e1d7d256acfe\"",
+              "sha256": "287d9bb1b6566ddb69405ad8caf5576a9bc943d704cc1d1c4a4ca6cb0c425e4e"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_3D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=49988160-50053695",
+              "utc": "2026-10-14T01:42:22.542608+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 49988160-50053695/71634240",
+              "etag": "\"e0b1fc3bf1e566b3a4b7e1d7d256acfe\"",
+              "sha256": "6189bd50a7b28d06e228a6485a15903228714521e5d12a7835ff29cca5d710e1"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_3D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=66646080-66711615",
+              "utc": "2026-10-14T01:42:29.017591+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 66646080-66711615/71634240",
+              "etag": "\"e0b1fc3bf1e566b3a4b7e1d7d256acfe\"",
+              "sha256": "f6ec7bd674fb0146bff9c8365b5030ccc41f83232bd71bbdb6d0f2b798f7a6b9"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_3D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=71628480-71634239",
+              "utc": "2026-10-14T01:42:35.746381+00:00",
+              "bytes": 5760,
+              "status": 206,
+              "content_range": "bytes 71628480-71634239/71634240",
+              "etag": "\"e0b1fc3bf1e566b3a4b7e1d7d256acfe\"",
+              "sha256": "827b96ca5aca47e0ab4dfa3dc2c9565a542c6f8ed786f99e073bc2b16a879089"
+            }
+          ],
+          "no_pixels_measured": true
+        },
+        {
+          "obs_id": "2025W35_1A_0529_4",
+          "detector": "SPHEREx-D4",
+          "mjd_start": 60914.733043,
+          "collection": "spherex_qr2",
+          "access_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_4D4_spx_l2b-v20-2025-270.fits",
+          "status": "source spectral WCS measured",
+          "parent_xy": [
+            894.3968939621309,
+            709.991422570035
+          ],
+          "wavelength_um": 3.2398791084041214,
+          "width_um": 0.09318860136504861,
+          "edge_pixels": 709.991422570035,
+          "source_range_receipts": [
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_4D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=0-65535",
+              "utc": "2026-10-14T01:42:42.307881+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 0-65535/71634240",
+              "etag": "\"3660c3308c517488d0113ebc4a29e8d0\"",
+              "sha256": "ad960fa75e60a6536db623f882103fa6dcc20055c780b9ec0e26a65dd6b36c95"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_4D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=16669440-16734975",
+              "utc": "2026-10-14T01:42:51.646855+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 16669440-16734975/71634240",
+              "etag": "\"3660c3308c517488d0113ebc4a29e8d0\"",
+              "sha256": "7040d68abffe46dcc026bd7c2c8a0d577087bb3602c41a516b947eb0d0b52416"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_4D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=33330240-33395775",
+              "utc": "2026-10-14T01:42:58.886337+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 33330240-33395775/71634240",
+              "etag": "\"3660c3308c517488d0113ebc4a29e8d0\"",
+              "sha256": "ca461a4d9a84f0064cee3cb851a788a3c480734953bed479828cca80decd51b5"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_4D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=49988160-50053695",
+              "utc": "2026-10-14T01:43:05.420913+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 49988160-50053695/71634240",
+              "etag": "\"3660c3308c517488d0113ebc4a29e8d0\"",
+              "sha256": "27317bcb062857c3a2a3d1c1de12cc562ea68234d5425e865d2046c13d6dd2ef"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_4D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=66646080-66711615",
+              "utc": "2026-10-14T01:43:12.270412+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 66646080-66711615/71634240",
+              "etag": "\"3660c3308c517488d0113ebc4a29e8d0\"",
+              "sha256": "f6ec7bd674fb0146bff9c8365b5030ccc41f83232bd71bbdb6d0f2b798f7a6b9"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_4D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=71628480-71634239",
+              "utc": "2026-10-14T01:43:27.088815+00:00",
+              "bytes": 5760,
+              "status": 206,
+              "content_range": "bytes 71628480-71634239/71634240",
+              "etag": "\"3660c3308c517488d0113ebc4a29e8d0\"",
+              "sha256": "827b96ca5aca47e0ab4dfa3dc2c9565a542c6f8ed786f99e073bc2b16a879089"
+            }
+          ],
+          "no_pixels_measured": true
+        },
+        {
+          "obs_id": "2025W35_1A_0639_1",
+          "detector": "SPHEREx-D4",
+          "mjd_start": 60915.335772,
+          "collection": "spherex_qr2",
+          "access_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0639_1D4_spx_l2b-v20-2025-270.fits",
+          "status": "source spectral WCS measured",
+          "parent_xy": [
+            888.7801495900802,
+            595.6908371051558
+          ],
+          "wavelength_um": 3.327363979724324,
+          "width_um": 0.09325905310361153,
+          "edge_pixels": 595.6908371051558,
+          "source_range_receipts": [
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0639_1D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=0-65535",
+              "utc": "2026-10-14T01:43:34.147563+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 0-65535/71634240",
+              "etag": "\"a5841c0d88be046ea0aa279f216943f2\"",
+              "sha256": "f1c0c37e4a5110faa7e42445e72eedaf6026f47d0992fd08d394c4aed3dacb6f"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0639_1D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=16669440-16734975",
+              "utc": "2026-10-14T01:43:41.437016+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 16669440-16734975/71634240",
+              "etag": "\"a5841c0d88be046ea0aa279f216943f2\"",
+              "sha256": "734df0c785f4c32001189803cc651011a58ebbb09637fa8d6f030ff6fc466a12"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0639_1D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=33330240-33395775",
+              "utc": "2026-10-14T01:43:48.701868+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 33330240-33395775/71634240",
+              "etag": "\"a5841c0d88be046ea0aa279f216943f2\"",
+              "sha256": "327e1ad0510d39e2b3ccd184709ffc691c98ac53bc4fb77b16844786e9d3248c"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0639_1D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=49988160-50053695",
+              "utc": "2026-10-14T01:43:56.113863+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 49988160-50053695/71634240",
+              "etag": "\"a5841c0d88be046ea0aa279f216943f2\"",
+              "sha256": "da31f5c84994a0266451b74b16a7e425006fcd6a95da44268e9d4b97c3e1a05a"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0639_1D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=66646080-66711615",
+              "utc": "2026-10-14T01:44:03.485671+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 66646080-66711615/71634240",
+              "etag": "\"a5841c0d88be046ea0aa279f216943f2\"",
+              "sha256": "f6ec7bd674fb0146bff9c8365b5030ccc41f83232bd71bbdb6d0f2b798f7a6b9"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0639_1D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=71628480-71634239",
+              "utc": "2026-10-14T01:44:10.702673+00:00",
+              "bytes": 5760,
+              "status": 206,
+              "content_range": "bytes 71628480-71634239/71634240",
+              "etag": "\"a5841c0d88be046ea0aa279f216943f2\"",
+              "sha256": "827b96ca5aca47e0ab4dfa3dc2c9565a542c6f8ed786f99e073bc2b16a879089"
+            }
+          ],
+          "no_pixels_measured": true
+        },
+        {
+          "obs_id": "2025W35_1A_0639_2",
+          "detector": "SPHEREx-D4",
+          "mjd_start": 60915.337264,
+          "collection": "spherex_qr2",
+          "access_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0639_2D4_spx_l2b-v20-2025-270.fits",
+          "status": "source spectral WCS measured",
+          "parent_xy": [
+            886.9898824406894,
+            480.60599071085664
+          ],
+          "wavelength_um": 3.4182149233108667,
+          "width_um": 0.09614375730366871,
+          "edge_pixels": 480.60599071085664,
+          "source_range_receipts": [
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0639_2D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=0-65535",
+              "utc": "2026-10-14T01:44:18.455817+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 0-65535/71634240",
+              "etag": "\"4d96a0f7b1f3ede3492217b4d2ee6ec0\"",
+              "sha256": "30cef452861f48fd415e957f6517bb744e8eddd3a4e01da7d6d9304d010b849d"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0639_2D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=16669440-16734975",
+              "utc": "2026-10-14T01:44:25.981304+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 16669440-16734975/71634240",
+              "etag": "\"4d96a0f7b1f3ede3492217b4d2ee6ec0\"",
+              "sha256": "beba763e325976df5b3618a39cddff71573c5888958980e9125f730c07a8c363"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0639_2D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=33330240-33395775",
+              "utc": "2026-10-14T01:44:33.327609+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 33330240-33395775/71634240",
+              "etag": "\"4d96a0f7b1f3ede3492217b4d2ee6ec0\"",
+              "sha256": "65ac19cb902a9851646d942f37f06cddc1e8470981d18f52edab8368ae0fbf7c"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0639_2D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=49988160-50053695",
+              "utc": "2026-10-14T01:44:40.709487+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 49988160-50053695/71634240",
+              "etag": "\"4d96a0f7b1f3ede3492217b4d2ee6ec0\"",
+              "sha256": "22886766e79401a445595d863f82e619a5192e9a15ba7ca2b3c626712e77e620"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0639_2D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=66646080-66711615",
+              "utc": "2026-10-14T01:44:48.417580+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 66646080-66711615/71634240",
+              "etag": "\"4d96a0f7b1f3ede3492217b4d2ee6ec0\"",
+              "sha256": "f6ec7bd674fb0146bff9c8365b5030ccc41f83232bd71bbdb6d0f2b798f7a6b9"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0639_2D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=71628480-71634239",
+              "utc": "2026-10-14T01:44:55.714490+00:00",
+              "bytes": 5760,
+              "status": 206,
+              "content_range": "bytes 71628480-71634239/71634240",
+              "etag": "\"4d96a0f7b1f3ede3492217b4d2ee6ec0\"",
+              "sha256": "827b96ca5aca47e0ab4dfa3dc2c9565a542c6f8ed786f99e073bc2b16a879089"
+            }
+          ],
+          "no_pixels_measured": true
+        },
+        {
+          "obs_id": "2025W35_1A_0639_3",
+          "detector": "SPHEREx-D4",
+          "mjd_start": 60915.338756,
+          "collection": "spherex_qr2",
+          "access_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0639_3D4_spx_l2b-v20-2025-270.fits",
+          "status": "source spectral WCS measured",
+          "parent_xy": [
+            884.7120584946989,
+            365.44618682719243
+          ],
+          "wavelength_um": 3.5103627477014565,
+          "width_um": 0.0971658131451748,
+          "edge_pixels": 365.44618682719243,
+          "source_range_receipts": [
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0639_3D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=0-65535",
+              "utc": "2026-10-14T01:45:03.048511+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 0-65535/71634240",
+              "etag": "\"b301bb14accdc569b59f43c1b32836fc\"",
+              "sha256": "152f7d7da6f8182fe9d062aad218718ddac0de846d9730ffe5b817d3a37deebb"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0639_3D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=16669440-16734975",
+              "utc": "2026-10-14T01:45:10.465703+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 16669440-16734975/71634240",
+              "etag": "\"b301bb14accdc569b59f43c1b32836fc\"",
+              "sha256": "d462c7dcb62e04d83a9925d1a8c0fe1b33b3283fd83cc3c9446b9680342f261a"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0639_3D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=33330240-33395775",
+              "utc": "2026-10-14T01:45:18.130009+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 33330240-33395775/71634240",
+              "etag": "\"b301bb14accdc569b59f43c1b32836fc\"",
+              "sha256": "19eac8201434a6a912ccd6008f493cf231dae1381c00572fadfbf5d0c1790a68"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0639_3D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=49988160-50053695",
+              "utc": "2026-10-14T01:45:25.429849+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 49988160-50053695/71634240",
+              "etag": "\"b301bb14accdc569b59f43c1b32836fc\"",
+              "sha256": "236e36fc397aef7d5c7ccbc50518f3bfa393589a586aea86814503f1386ccf28"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0639_3D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=66646080-66711615",
+              "utc": "2026-10-14T01:45:32.661634+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 66646080-66711615/71634240",
+              "etag": "\"b301bb14accdc569b59f43c1b32836fc\"",
+              "sha256": "f6ec7bd674fb0146bff9c8365b5030ccc41f83232bd71bbdb6d0f2b798f7a6b9"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0639_3D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=71628480-71634239",
+              "utc": "2026-10-14T01:45:47.122647+00:00",
+              "bytes": 5760,
+              "status": 206,
+              "content_range": "bytes 71628480-71634239/71634240",
+              "etag": "\"b301bb14accdc569b59f43c1b32836fc\"",
+              "sha256": "827b96ca5aca47e0ab4dfa3dc2c9565a542c6f8ed786f99e073bc2b16a879089"
+            }
+          ],
+          "no_pixels_measured": true
+        },
+        {
+          "obs_id": "2025W35_1A_0654_1",
+          "detector": "SPHEREx-D4",
+          "mjd_start": 60915.404025,
+          "collection": "spherex_qr2",
+          "access_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0654_1D4_spx_l2b-v20-2025-270.fits",
+          "status": "source spectral WCS measured",
+          "parent_xy": [
+            879.5269519990939,
+            250.48681032550533
+          ],
+          "wavelength_um": 3.6046270026609655,
+          "width_um": 0.09886578710363844,
+          "edge_pixels": 250.48681032550533,
+          "source_range_receipts": [
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0654_1D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=0-65535",
+              "utc": "2026-10-14T01:45:53.708406+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 0-65535/71634240",
+              "etag": "\"2a9f2e7b3d6619a9b6097a007500273a\"",
+              "sha256": "d150aaa1370b1bb5b5baed77bd6674d381500fe094f7153a372646a1e0111e2d"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0654_1D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=16669440-16734975",
+              "utc": "2026-10-14T01:46:01.994372+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 16669440-16734975/71634240",
+              "etag": "\"2a9f2e7b3d6619a9b6097a007500273a\"",
+              "sha256": "45cdbe35f97fb3fa72c0cdca4448a72b872682faf8f75dfb3bda4dd11046a704"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0654_1D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=33330240-33395775",
+              "utc": "2026-10-14T01:46:08.496416+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 33330240-33395775/71634240",
+              "etag": "\"2a9f2e7b3d6619a9b6097a007500273a\"",
+              "sha256": "71cd141f64e727f00d80f707a9ef4034c7c936f168cb013a125001784ec9fb49"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0654_1D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=49988160-50053695",
+              "utc": "2026-10-14T01:46:15.041022+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 49988160-50053695/71634240",
+              "etag": "\"2a9f2e7b3d6619a9b6097a007500273a\"",
+              "sha256": "845dadc0d670075aa6f9a4fd032c02088ed703c920686dad243f1477930c3b2f"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0654_1D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=66646080-66711615",
+              "utc": "2026-10-14T01:46:21.815877+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 66646080-66711615/71634240",
+              "etag": "\"2a9f2e7b3d6619a9b6097a007500273a\"",
+              "sha256": "f6ec7bd674fb0146bff9c8365b5030ccc41f83232bd71bbdb6d0f2b798f7a6b9"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0654_1D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=71628480-71634239",
+              "utc": "2026-10-14T01:46:28.467344+00:00",
+              "bytes": 5760,
+              "status": 206,
+              "content_range": "bytes 71628480-71634239/71634240",
+              "etag": "\"2a9f2e7b3d6619a9b6097a007500273a\"",
+              "sha256": "827b96ca5aca47e0ab4dfa3dc2c9565a542c6f8ed786f99e073bc2b16a879089"
+            }
+          ],
+          "no_pixels_measured": true
+        },
+        {
+          "obs_id": "2025W35_1A_0654_2",
+          "detector": "SPHEREx-D4",
+          "mjd_start": 60915.405517,
+          "collection": "spherex_qr2",
+          "access_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0654_2D4_spx_l2b-v20-2025-270.fits",
+          "status": "source spectral WCS measured",
+          "parent_xy": [
+            877.83882089529,
+            135.2334991923535
+          ],
+          "wavelength_um": 3.701841195368366,
+          "width_um": 0.10207136361503087,
+          "edge_pixels": 135.2334991923535,
+          "source_range_receipts": [
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0654_2D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=0-65535",
+              "utc": "2026-10-14T01:46:34.913835+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 0-65535/71634240",
+              "etag": "\"cad58e63813113299251e63ba6222d8d\"",
+              "sha256": "2043e49f7f875f4c02b6528301278cd80dce9e6638de296af6c4a89c26ce1432"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0654_2D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=16669440-16734975",
+              "utc": "2026-10-14T01:46:41.663200+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 16669440-16734975/71634240",
+              "etag": "\"cad58e63813113299251e63ba6222d8d\"",
+              "sha256": "e8a11c320c110362bcf572ba504f6cb9325a2c3f05d815bb25c9e21147487fc0"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0654_2D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=33330240-33395775",
+              "utc": "2026-10-14T01:46:48.028806+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 33330240-33395775/71634240",
+              "etag": "\"cad58e63813113299251e63ba6222d8d\"",
+              "sha256": "a6aea054712eb05aa76e0f99ee3fa11c8df342e7d157d37b105a1a6d4eb09638"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0654_2D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=49988160-50053695",
+              "utc": "2026-10-14T01:46:54.521623+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 49988160-50053695/71634240",
+              "etag": "\"cad58e63813113299251e63ba6222d8d\"",
+              "sha256": "c719e08d6bac086201e3f81ec4e9fea3328c953ed47ff3bb8d1d3aa70860565c"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0654_2D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=66646080-66711615",
+              "utc": "2026-10-14T01:47:01.305512+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 66646080-66711615/71634240",
+              "etag": "\"cad58e63813113299251e63ba6222d8d\"",
+              "sha256": "f6ec7bd674fb0146bff9c8365b5030ccc41f83232bd71bbdb6d0f2b798f7a6b9"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0654_2D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=71628480-71634239",
+              "utc": "2026-10-14T01:47:07.914702+00:00",
+              "bytes": 5760,
+              "status": 206,
+              "content_range": "bytes 71628480-71634239/71634240",
+              "etag": "\"cad58e63813113299251e63ba6222d8d\"",
+              "sha256": "827b96ca5aca47e0ab4dfa3dc2c9565a542c6f8ed786f99e073bc2b16a879089"
+            }
+          ],
+          "no_pixels_measured": true
+        },
+        {
+          "obs_id": "2025W35_1A_0654_3",
+          "detector": "SPHEREx-D4",
+          "mjd_start": 60915.407009,
+          "collection": "spherex_qr2",
+          "access_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0654_3D4_spx_l2b-v20-2025-270.fits",
+          "status": "source spectral WCS measured",
+          "parent_xy": [
+            875.6623475808691,
+            19.938085366710784
+          ],
+          "wavelength_um": 3.8010019034881304,
+          "width_um": 0.10320655006744386,
+          "edge_pixels": 19.938085366710784,
+          "source_range_receipts": [
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0654_3D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=0-65535",
+              "utc": "2026-10-14T01:47:14.452138+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 0-65535/71634240",
+              "etag": "\"be7110715f71e9608bb1edfa0e2a7a1e\"",
+              "sha256": "047a0e1eb11c157b4994e5246a72a3972f53286586192ab6ec47366f25d9adef"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0654_3D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=16669440-16734975",
+              "utc": "2026-10-14T01:47:21.331810+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 16669440-16734975/71634240",
+              "etag": "\"be7110715f71e9608bb1edfa0e2a7a1e\"",
+              "sha256": "bc106deafcdacbb8dd9244648529151c2fb068485b23352e843810c1142c3656"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0654_3D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=33330240-33395775",
+              "utc": "2026-10-14T01:47:27.970581+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 33330240-33395775/71634240",
+              "etag": "\"be7110715f71e9608bb1edfa0e2a7a1e\"",
+              "sha256": "3f67c4e499cb12c515d837adafc7eced691b14eae0374fca1f21378a2e65512e"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0654_3D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=49988160-50053695",
+              "utc": "2026-10-14T01:47:34.481869+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 49988160-50053695/71634240",
+              "etag": "\"be7110715f71e9608bb1edfa0e2a7a1e\"",
+              "sha256": "19d4fb7e823d734c90d16527e0079b6cf7e5eb85d851a689a4911185b9e5b3db"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0654_3D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=66646080-66711615",
+              "utc": "2026-10-14T01:47:41.151484+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 66646080-66711615/71634240",
+              "etag": "\"be7110715f71e9608bb1edfa0e2a7a1e\"",
+              "sha256": "f6ec7bd674fb0146bff9c8365b5030ccc41f83232bd71bbdb6d0f2b798f7a6b9"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0654_3D4_spx_l2b-v20-2025-270.fits",
+              "requested_range": "bytes=71628480-71634239",
+              "utc": "2026-10-14T01:47:47.796555+00:00",
+              "bytes": 5760,
+              "status": 206,
+              "content_range": "bytes 71628480-71634239/71634240",
+              "etag": "\"be7110715f71e9608bb1edfa0e2a7a1e\"",
+              "sha256": "827b96ca5aca47e0ab4dfa3dc2c9565a542c6f8ed786f99e073bc2b16a879089"
+            }
+          ],
+          "no_pixels_measured": true
+        },
+        {
+          "obs_id": "2025W35_2A_0075_1",
+          "detector": "SPHEREx-D4",
+          "mjd_start": 60915.880498,
+          "collection": "spherex_qr2",
+          "access_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W35_2A/l2b-v20-2025-271/4/level2_2025W35_2A_0075_1D4_spx_l2b-v20-2025-271.fits",
+          "status": "source spectral WCS measured",
+          "parent_xy": [
+            921.2408504769871,
+            1779.1940948551487
+          ],
+          "wavelength_um": 2.51957623546352,
+          "width_um": 0.07267809275715555,
+          "edge_pixels": 259.8059051448513,
+          "source_range_receipts": [
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_2A/l2b-v20-2025-271/4/level2_2025W35_2A_0075_1D4_spx_l2b-v20-2025-271.fits",
+              "requested_range": "bytes=0-65535",
+              "utc": "2026-10-14T01:47:54.292799+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 0-65535/71634240",
+              "etag": "\"31e5ce5fe0d529b9eea53957e1da8191\"",
+              "sha256": "21daaf6ab0566b6cb2b9692275ecc2fedda65582bd206fa72d73751f4423ad19"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_2A/l2b-v20-2025-271/4/level2_2025W35_2A_0075_1D4_spx_l2b-v20-2025-271.fits",
+              "requested_range": "bytes=16669440-16734975",
+              "utc": "2026-10-14T01:48:00.996791+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 16669440-16734975/71634240",
+              "etag": "\"31e5ce5fe0d529b9eea53957e1da8191\"",
+              "sha256": "43ae366842267c469e0807aa44b6f23c6f202e1a15335888044ebc5697df6ce5"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_2A/l2b-v20-2025-271/4/level2_2025W35_2A_0075_1D4_spx_l2b-v20-2025-271.fits",
+              "requested_range": "bytes=33330240-33395775",
+              "utc": "2026-10-14T01:48:07.408589+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 33330240-33395775/71634240",
+              "etag": "\"31e5ce5fe0d529b9eea53957e1da8191\"",
+              "sha256": "22ba2ed199b5fcf712f8ccf6af3c27e21629dd600ce3e9e03f543b7f6b9b1667"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_2A/l2b-v20-2025-271/4/level2_2025W35_2A_0075_1D4_spx_l2b-v20-2025-271.fits",
+              "requested_range": "bytes=49988160-50053695",
+              "utc": "2026-10-14T01:48:14.199111+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 49988160-50053695/71634240",
+              "etag": "\"31e5ce5fe0d529b9eea53957e1da8191\"",
+              "sha256": "6d967092e477ac2950172e2ab5d667fa06dfabc841dc3ef36f4dea5b5d254264"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_2A/l2b-v20-2025-271/4/level2_2025W35_2A_0075_1D4_spx_l2b-v20-2025-271.fits",
+              "requested_range": "bytes=66646080-66711615",
+              "utc": "2026-10-14T01:48:22.345666+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 66646080-66711615/71634240",
+              "etag": "\"31e5ce5fe0d529b9eea53957e1da8191\"",
+              "sha256": "f6ec7bd674fb0146bff9c8365b5030ccc41f83232bd71bbdb6d0f2b798f7a6b9"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_2A/l2b-v20-2025-271/4/level2_2025W35_2A_0075_1D4_spx_l2b-v20-2025-271.fits",
+              "requested_range": "bytes=71628480-71634239",
+              "utc": "2026-10-14T01:48:28.966822+00:00",
+              "bytes": 5760,
+              "status": 206,
+              "content_range": "bytes 71628480-71634239/71634240",
+              "etag": "\"31e5ce5fe0d529b9eea53957e1da8191\"",
+              "sha256": "827b96ca5aca47e0ab4dfa3dc2c9565a542c6f8ed786f99e073bc2b16a879089"
+            }
+          ],
+          "no_pixels_measured": true
+        },
+        {
+          "obs_id": "2025W35_2A_0075_2",
+          "detector": "SPHEREx-D4",
+          "mjd_start": 60915.88199,
+          "collection": "spherex_qr2",
+          "access_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W35_2A/l2b-v20-2025-271/4/level2_2025W35_2A_0075_2D4_spx_l2b-v20-2025-271.fits",
+          "status": "source spectral WCS measured",
+          "parent_xy": [
+            919.390851225411,
+            1664.6365471703523
+          ],
+          "wavelength_um": 2.5879281343303044,
+          "width_um": 0.07396345339133731,
+          "edge_pixels": 374.3634528296477,
+          "source_range_receipts": [
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_2A/l2b-v20-2025-271/4/level2_2025W35_2A_0075_2D4_spx_l2b-v20-2025-271.fits",
+              "requested_range": "bytes=0-65535",
+              "utc": "2026-10-14T01:48:35.527897+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 0-65535/71634240",
+              "etag": "\"8d9ea156fbd4fc861bb096efdc0bfc15\"",
+              "sha256": "bbb510051a12e6bb22e9fc1a22cf479e5b5aca64ef3ecd2e46d92ec36e4713ca"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_2A/l2b-v20-2025-271/4/level2_2025W35_2A_0075_2D4_spx_l2b-v20-2025-271.fits",
+              "requested_range": "bytes=16669440-16734975",
+              "utc": "2026-10-14T01:48:41.972233+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 16669440-16734975/71634240",
+              "etag": "\"8d9ea156fbd4fc861bb096efdc0bfc15\"",
+              "sha256": "c3d5ec50a79b477ace61aa2000e242e7f88b66506027b853adf9412c9f2481a9"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_2A/l2b-v20-2025-271/4/level2_2025W35_2A_0075_2D4_spx_l2b-v20-2025-271.fits",
+              "requested_range": "bytes=33330240-33395775",
+              "utc": "2026-10-14T01:48:48.517856+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 33330240-33395775/71634240",
+              "etag": "\"8d9ea156fbd4fc861bb096efdc0bfc15\"",
+              "sha256": "9b861db159a59941a4fe93f0612d4abbcad00ef486e089f44cd7927933ba45b4"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_2A/l2b-v20-2025-271/4/level2_2025W35_2A_0075_2D4_spx_l2b-v20-2025-271.fits",
+              "requested_range": "bytes=49988160-50053695",
+              "utc": "2026-10-14T01:48:55.257791+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 49988160-50053695/71634240",
+              "etag": "\"8d9ea156fbd4fc861bb096efdc0bfc15\"",
+              "sha256": "3b28b061afd9b7fad97dc51ac1c77617982b879098a1246167058d31852b2ef1"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_2A/l2b-v20-2025-271/4/level2_2025W35_2A_0075_2D4_spx_l2b-v20-2025-271.fits",
+              "requested_range": "bytes=66646080-66711615",
+              "utc": "2026-10-14T01:49:01.777534+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 66646080-66711615/71634240",
+              "etag": "\"8d9ea156fbd4fc861bb096efdc0bfc15\"",
+              "sha256": "f6ec7bd674fb0146bff9c8365b5030ccc41f83232bd71bbdb6d0f2b798f7a6b9"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_2A/l2b-v20-2025-271/4/level2_2025W35_2A_0075_2D4_spx_l2b-v20-2025-271.fits",
+              "requested_range": "bytes=71628480-71634239",
+              "utc": "2026-10-14T01:49:08.956475+00:00",
+              "bytes": 5760,
+              "status": 206,
+              "content_range": "bytes 71628480-71634239/71634240",
+              "etag": "\"8d9ea156fbd4fc861bb096efdc0bfc15\"",
+              "sha256": "827b96ca5aca47e0ab4dfa3dc2c9565a542c6f8ed786f99e073bc2b16a879089"
+            }
+          ],
+          "no_pixels_measured": true
+        },
+        {
+          "obs_id": "2025W35_2A_0075_3",
+          "detector": "SPHEREx-D4",
+          "mjd_start": 60915.883483,
+          "collection": "spherex_qr2",
+          "access_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W35_2A/l2b-v20-2025-271/4/level2_2025W35_2A_0075_3D4_spx_l2b-v20-2025-271.fits",
+          "status": "source spectral WCS measured",
+          "parent_xy": [
+            917.0909480888056,
+            1550.000693960061
+          ],
+          "wavelength_um": 2.6589939823156277,
+          "width_um": 0.07581238914403449,
+          "edge_pixels": 488.99930603993903,
+          "source_range_receipts": [
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_2A/l2b-v20-2025-271/4/level2_2025W35_2A_0075_3D4_spx_l2b-v20-2025-271.fits",
+              "requested_range": "bytes=0-65535",
+              "utc": "2026-10-14T01:49:15.458004+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 0-65535/71634240",
+              "etag": "\"21b6d6353ddfd0a5c94437d7224821fe\"",
+              "sha256": "1a3ecd373d5f7c921178b805961ee9602f5488c3ae581d42e2c37a7f2dfcb9dd"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_2A/l2b-v20-2025-271/4/level2_2025W35_2A_0075_3D4_spx_l2b-v20-2025-271.fits",
+              "requested_range": "bytes=16669440-16734975",
+              "utc": "2026-10-14T01:49:24.437947+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 16669440-16734975/71634240",
+              "etag": "\"21b6d6353ddfd0a5c94437d7224821fe\"",
+              "sha256": "1b72fbfd52fa788d02de241f228138a65ae29c98f72a5aab274a6e05ef4aaafd"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_2A/l2b-v20-2025-271/4/level2_2025W35_2A_0075_3D4_spx_l2b-v20-2025-271.fits",
+              "requested_range": "bytes=33330240-33395775",
+              "utc": "2026-10-14T01:49:31.433631+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 33330240-33395775/71634240",
+              "etag": "\"21b6d6353ddfd0a5c94437d7224821fe\"",
+              "sha256": "fa2eca3588be7a1b76a7aef519660b590ee078f413f12bbfc0c4cf747dbbc538"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_2A/l2b-v20-2025-271/4/level2_2025W35_2A_0075_3D4_spx_l2b-v20-2025-271.fits",
+              "requested_range": "bytes=49988160-50053695",
+              "utc": "2026-10-14T01:49:38.065941+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 49988160-50053695/71634240",
+              "etag": "\"21b6d6353ddfd0a5c94437d7224821fe\"",
+              "sha256": "d3fa6452e1cc71fc448436552c81ede816e2d28468a158cc3df76065012cd644"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_2A/l2b-v20-2025-271/4/level2_2025W35_2A_0075_3D4_spx_l2b-v20-2025-271.fits",
+              "requested_range": "bytes=66646080-66711615",
+              "utc": "2026-10-14T01:49:44.957516+00:00",
+              "bytes": 65536,
+              "status": 206,
+              "content_range": "bytes 66646080-66711615/71634240",
+              "etag": "\"21b6d6353ddfd0a5c94437d7224821fe\"",
+              "sha256": "f6ec7bd674fb0146bff9c8365b5030ccc41f83232bd71bbdb6d0f2b798f7a6b9"
+            },
+            {
+              "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_2A/l2b-v20-2025-271/4/level2_2025W35_2A_0075_3D4_spx_l2b-v20-2025-271.fits",
+              "requested_range": "bytes=71628480-71634239",
+              "utc": "2026-10-14T01:49:51.442971+00:00",
+              "bytes": 5760,
+              "status": 206,
+              "content_range": "bytes 71628480-71634239/71634240",
+              "etag": "\"21b6d6353ddfd0a5c94437d7224821fe\"",
+              "sha256": "827b96ca5aca47e0ab4dfa3dc2c9565a542c6f8ed786f99e073bc2b16a879089"
+            }
+          ],
+          "no_pixels_measured": true
+        },
+        {
+          "obs_id": "2025W35_2A_0203_1",
+          "detector": "SPHEREx-D5",
+          "mjd_start": 60916.56253,
+          "collection": "spherex_qr2",
+          "access_url": "https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W35_2A/l2b-v20-2025-271/5/level2_2025W35_2A_0203_1D5_spx_l2b-v20-2025-271.fits",
+          "status": "blocked: Frozen 600-second numerical-run limit reached"
+        }
+      ],
+      "coverage": {
+        "nominal_support_response_fraction": 0.9218785111852998,
+        "nominal_support_flat_fnu_photon_fraction": 0.9087919359967462,
+        "interpolation_hull_response_fraction": 0.9918428549786007,
+        "interpolation_hull_flat_fnu_photon_fraction": 0.9928387088066083,
+        "nonoverlapping_nominal_channel_count": 7,
+        "status": "bandpass diagnostic; widths approximate; no flux extrapolation"
+      },
+      "coverage_gate_passes": false,
+      "all_selected_headers_measured": false
+    }
+  ],
+  "prior_instrumented_body_bytes": 900810,
+  "unverified_probe_reserve_bytes": 1000000,
+  "official_response_sha256": "6ade5b074dc7652e08c4de7767969126b7e48fdf4b6295bbf7f44e22d33ec1e9",
+  "not_run": [
+    "flux photometry",
+    "NEOWISE",
+    "ZTF",
+    "field-star null",
+    "injection recovery",
+    "other five YSOs",
+    "GOODS-N"
+  ],
+  "elapsed_seconds": 601.5749770379989,
+  "range_response_body_bytes": 4662400,
+  "range_receipts": [
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_1D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=0-65535",
+      "utc": "2026-10-14T01:40:39.138155+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 0-65535/71634240",
+      "etag": "\"205e8c6879f9e6ad45769e5a1a292504\"",
+      "sha256": "e6c4d076f47ca8774dadb14213a828f0255034c93cc7a40ffb9d852cce34c929"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_1D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=16669440-16734975",
+      "utc": "2026-10-14T01:40:45.916230+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 16669440-16734975/71634240",
+      "etag": "\"205e8c6879f9e6ad45769e5a1a292504\"",
+      "sha256": "d41e65259ed20ef39b73ffe73c415c0f6b2b993891ecb05f670e8c49fbc7ef21"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_1D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=33330240-33395775",
+      "utc": "2026-10-14T01:40:52.890183+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 33330240-33395775/71634240",
+      "etag": "\"205e8c6879f9e6ad45769e5a1a292504\"",
+      "sha256": "3c5346a0156f64535581bb4662b6f94e36750b72244bc6b4b34144806ce70331"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_1D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=49988160-50053695",
+      "utc": "2026-10-14T01:40:59.855951+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 49988160-50053695/71634240",
+      "etag": "\"205e8c6879f9e6ad45769e5a1a292504\"",
+      "sha256": "d62a0d08e8dbf6727723f4504b88704d69177be1d20ae9cf0eca11f7e707c26a"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_1D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=66646080-66711615",
+      "utc": "2026-10-14T01:41:06.731431+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 66646080-66711615/71634240",
+      "etag": "\"205e8c6879f9e6ad45769e5a1a292504\"",
+      "sha256": "f6ec7bd674fb0146bff9c8365b5030ccc41f83232bd71bbdb6d0f2b798f7a6b9"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_1D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=71628480-71634239",
+      "utc": "2026-10-14T01:41:13.479211+00:00",
+      "bytes": 5760,
+      "status": 206,
+      "content_range": "bytes 71628480-71634239/71634240",
+      "etag": "\"205e8c6879f9e6ad45769e5a1a292504\"",
+      "sha256": "827b96ca5aca47e0ab4dfa3dc2c9565a542c6f8ed786f99e073bc2b16a879089"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_2D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=0-65535",
+      "utc": "2026-10-14T01:41:20.137967+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 0-65535/71634240",
+      "etag": "\"334f4ace28273b2837e823a48b4b502e\"",
+      "sha256": "aa256aa3e2197b9c879943438910679079b38772853d08ec35b1dff7ab7c0e91"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_2D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=16669440-16734975",
+      "utc": "2026-10-14T01:41:26.535674+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 16669440-16734975/71634240",
+      "etag": "\"334f4ace28273b2837e823a48b4b502e\"",
+      "sha256": "c16bd7a5297c9962439a4c2a0f24ffd17e0ef65e565ed992357ce9dd4301b59f"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_2D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=33330240-33395775",
+      "utc": "2026-10-14T01:41:33.369816+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 33330240-33395775/71634240",
+      "etag": "\"334f4ace28273b2837e823a48b4b502e\"",
+      "sha256": "e68dfc975558229e218b1bc5af78410640d8e087aa1805e8a1e2678720441905"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_2D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=49988160-50053695",
+      "utc": "2026-10-14T01:41:39.165584+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 49988160-50053695/71634240",
+      "etag": "\"334f4ace28273b2837e823a48b4b502e\"",
+      "sha256": "831aa9dc470a1f4cf2dc05ff6a36a85d2af8e2714c11769bb7097d86d8b793e3"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_2D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=66646080-66711615",
+      "utc": "2026-10-14T01:41:45.853561+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 66646080-66711615/71634240",
+      "etag": "\"334f4ace28273b2837e823a48b4b502e\"",
+      "sha256": "f6ec7bd674fb0146bff9c8365b5030ccc41f83232bd71bbdb6d0f2b798f7a6b9"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_2D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=71628480-71634239",
+      "utc": "2026-10-14T01:41:52.975766+00:00",
+      "bytes": 5760,
+      "status": 206,
+      "content_range": "bytes 71628480-71634239/71634240",
+      "etag": "\"334f4ace28273b2837e823a48b4b502e\"",
+      "sha256": "827b96ca5aca47e0ab4dfa3dc2c9565a542c6f8ed786f99e073bc2b16a879089"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_3D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=0-65535",
+      "utc": "2026-10-14T01:41:59.709212+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 0-65535/71634240",
+      "etag": "\"e0b1fc3bf1e566b3a4b7e1d7d256acfe\"",
+      "sha256": "30968a174888a700d293b9b0c98e45d7cc9d5f537d90ee10173c98dcc2781a63"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_3D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=16669440-16734975",
+      "utc": "2026-10-14T01:42:06.631208+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 16669440-16734975/71634240",
+      "etag": "\"e0b1fc3bf1e566b3a4b7e1d7d256acfe\"",
+      "sha256": "e516024d9bd6984075f295c375115964e06c7301dc3f1aee8bc2bfd4d7cc0e49"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_3D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=33330240-33395775",
+      "utc": "2026-10-14T01:42:14.334690+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 33330240-33395775/71634240",
+      "etag": "\"e0b1fc3bf1e566b3a4b7e1d7d256acfe\"",
+      "sha256": "287d9bb1b6566ddb69405ad8caf5576a9bc943d704cc1d1c4a4ca6cb0c425e4e"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_3D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=49988160-50053695",
+      "utc": "2026-10-14T01:42:22.542608+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 49988160-50053695/71634240",
+      "etag": "\"e0b1fc3bf1e566b3a4b7e1d7d256acfe\"",
+      "sha256": "6189bd50a7b28d06e228a6485a15903228714521e5d12a7835ff29cca5d710e1"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_3D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=66646080-66711615",
+      "utc": "2026-10-14T01:42:29.017591+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 66646080-66711615/71634240",
+      "etag": "\"e0b1fc3bf1e566b3a4b7e1d7d256acfe\"",
+      "sha256": "f6ec7bd674fb0146bff9c8365b5030ccc41f83232bd71bbdb6d0f2b798f7a6b9"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_3D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=71628480-71634239",
+      "utc": "2026-10-14T01:42:35.746381+00:00",
+      "bytes": 5760,
+      "status": 206,
+      "content_range": "bytes 71628480-71634239/71634240",
+      "etag": "\"e0b1fc3bf1e566b3a4b7e1d7d256acfe\"",
+      "sha256": "827b96ca5aca47e0ab4dfa3dc2c9565a542c6f8ed786f99e073bc2b16a879089"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_4D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=0-65535",
+      "utc": "2026-10-14T01:42:42.307881+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 0-65535/71634240",
+      "etag": "\"3660c3308c517488d0113ebc4a29e8d0\"",
+      "sha256": "ad960fa75e60a6536db623f882103fa6dcc20055c780b9ec0e26a65dd6b36c95"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_4D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=16669440-16734975",
+      "utc": "2026-10-14T01:42:51.646855+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 16669440-16734975/71634240",
+      "etag": "\"3660c3308c517488d0113ebc4a29e8d0\"",
+      "sha256": "7040d68abffe46dcc026bd7c2c8a0d577087bb3602c41a516b947eb0d0b52416"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_4D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=33330240-33395775",
+      "utc": "2026-10-14T01:42:58.886337+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 33330240-33395775/71634240",
+      "etag": "\"3660c3308c517488d0113ebc4a29e8d0\"",
+      "sha256": "ca461a4d9a84f0064cee3cb851a788a3c480734953bed479828cca80decd51b5"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_4D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=49988160-50053695",
+      "utc": "2026-10-14T01:43:05.420913+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 49988160-50053695/71634240",
+      "etag": "\"3660c3308c517488d0113ebc4a29e8d0\"",
+      "sha256": "27317bcb062857c3a2a3d1c1de12cc562ea68234d5425e865d2046c13d6dd2ef"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_4D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=66646080-66711615",
+      "utc": "2026-10-14T01:43:12.270412+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 66646080-66711615/71634240",
+      "etag": "\"3660c3308c517488d0113ebc4a29e8d0\"",
+      "sha256": "f6ec7bd674fb0146bff9c8365b5030ccc41f83232bd71bbdb6d0f2b798f7a6b9"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0529_4D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=71628480-71634239",
+      "utc": "2026-10-14T01:43:27.088815+00:00",
+      "bytes": 5760,
+      "status": 206,
+      "content_range": "bytes 71628480-71634239/71634240",
+      "etag": "\"3660c3308c517488d0113ebc4a29e8d0\"",
+      "sha256": "827b96ca5aca47e0ab4dfa3dc2c9565a542c6f8ed786f99e073bc2b16a879089"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0639_1D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=0-65535",
+      "utc": "2026-10-14T01:43:34.147563+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 0-65535/71634240",
+      "etag": "\"a5841c0d88be046ea0aa279f216943f2\"",
+      "sha256": "f1c0c37e4a5110faa7e42445e72eedaf6026f47d0992fd08d394c4aed3dacb6f"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0639_1D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=16669440-16734975",
+      "utc": "2026-10-14T01:43:41.437016+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 16669440-16734975/71634240",
+      "etag": "\"a5841c0d88be046ea0aa279f216943f2\"",
+      "sha256": "734df0c785f4c32001189803cc651011a58ebbb09637fa8d6f030ff6fc466a12"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0639_1D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=33330240-33395775",
+      "utc": "2026-10-14T01:43:48.701868+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 33330240-33395775/71634240",
+      "etag": "\"a5841c0d88be046ea0aa279f216943f2\"",
+      "sha256": "327e1ad0510d39e2b3ccd184709ffc691c98ac53bc4fb77b16844786e9d3248c"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0639_1D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=49988160-50053695",
+      "utc": "2026-10-14T01:43:56.113863+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 49988160-50053695/71634240",
+      "etag": "\"a5841c0d88be046ea0aa279f216943f2\"",
+      "sha256": "da31f5c84994a0266451b74b16a7e425006fcd6a95da44268e9d4b97c3e1a05a"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0639_1D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=66646080-66711615",
+      "utc": "2026-10-14T01:44:03.485671+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 66646080-66711615/71634240",
+      "etag": "\"a5841c0d88be046ea0aa279f216943f2\"",
+      "sha256": "f6ec7bd674fb0146bff9c8365b5030ccc41f83232bd71bbdb6d0f2b798f7a6b9"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0639_1D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=71628480-71634239",
+      "utc": "2026-10-14T01:44:10.702673+00:00",
+      "bytes": 5760,
+      "status": 206,
+      "content_range": "bytes 71628480-71634239/71634240",
+      "etag": "\"a5841c0d88be046ea0aa279f216943f2\"",
+      "sha256": "827b96ca5aca47e0ab4dfa3dc2c9565a542c6f8ed786f99e073bc2b16a879089"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0639_2D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=0-65535",
+      "utc": "2026-10-14T01:44:18.455817+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 0-65535/71634240",
+      "etag": "\"4d96a0f7b1f3ede3492217b4d2ee6ec0\"",
+      "sha256": "30cef452861f48fd415e957f6517bb744e8eddd3a4e01da7d6d9304d010b849d"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0639_2D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=16669440-16734975",
+      "utc": "2026-10-14T01:44:25.981304+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 16669440-16734975/71634240",
+      "etag": "\"4d96a0f7b1f3ede3492217b4d2ee6ec0\"",
+      "sha256": "beba763e325976df5b3618a39cddff71573c5888958980e9125f730c07a8c363"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0639_2D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=33330240-33395775",
+      "utc": "2026-10-14T01:44:33.327609+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 33330240-33395775/71634240",
+      "etag": "\"4d96a0f7b1f3ede3492217b4d2ee6ec0\"",
+      "sha256": "65ac19cb902a9851646d942f37f06cddc1e8470981d18f52edab8368ae0fbf7c"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0639_2D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=49988160-50053695",
+      "utc": "2026-10-14T01:44:40.709487+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 49988160-50053695/71634240",
+      "etag": "\"4d96a0f7b1f3ede3492217b4d2ee6ec0\"",
+      "sha256": "22886766e79401a445595d863f82e619a5192e9a15ba7ca2b3c626712e77e620"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0639_2D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=66646080-66711615",
+      "utc": "2026-10-14T01:44:48.417580+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 66646080-66711615/71634240",
+      "etag": "\"4d96a0f7b1f3ede3492217b4d2ee6ec0\"",
+      "sha256": "f6ec7bd674fb0146bff9c8365b5030ccc41f83232bd71bbdb6d0f2b798f7a6b9"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0639_2D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=71628480-71634239",
+      "utc": "2026-10-14T01:44:55.714490+00:00",
+      "bytes": 5760,
+      "status": 206,
+      "content_range": "bytes 71628480-71634239/71634240",
+      "etag": "\"4d96a0f7b1f3ede3492217b4d2ee6ec0\"",
+      "sha256": "827b96ca5aca47e0ab4dfa3dc2c9565a542c6f8ed786f99e073bc2b16a879089"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0639_3D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=0-65535",
+      "utc": "2026-10-14T01:45:03.048511+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 0-65535/71634240",
+      "etag": "\"b301bb14accdc569b59f43c1b32836fc\"",
+      "sha256": "152f7d7da6f8182fe9d062aad218718ddac0de846d9730ffe5b817d3a37deebb"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0639_3D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=16669440-16734975",
+      "utc": "2026-10-14T01:45:10.465703+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 16669440-16734975/71634240",
+      "etag": "\"b301bb14accdc569b59f43c1b32836fc\"",
+      "sha256": "d462c7dcb62e04d83a9925d1a8c0fe1b33b3283fd83cc3c9446b9680342f261a"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0639_3D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=33330240-33395775",
+      "utc": "2026-10-14T01:45:18.130009+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 33330240-33395775/71634240",
+      "etag": "\"b301bb14accdc569b59f43c1b32836fc\"",
+      "sha256": "19eac8201434a6a912ccd6008f493cf231dae1381c00572fadfbf5d0c1790a68"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0639_3D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=49988160-50053695",
+      "utc": "2026-10-14T01:45:25.429849+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 49988160-50053695/71634240",
+      "etag": "\"b301bb14accdc569b59f43c1b32836fc\"",
+      "sha256": "236e36fc397aef7d5c7ccbc50518f3bfa393589a586aea86814503f1386ccf28"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0639_3D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=66646080-66711615",
+      "utc": "2026-10-14T01:45:32.661634+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 66646080-66711615/71634240",
+      "etag": "\"b301bb14accdc569b59f43c1b32836fc\"",
+      "sha256": "f6ec7bd674fb0146bff9c8365b5030ccc41f83232bd71bbdb6d0f2b798f7a6b9"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0639_3D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=71628480-71634239",
+      "utc": "2026-10-14T01:45:47.122647+00:00",
+      "bytes": 5760,
+      "status": 206,
+      "content_range": "bytes 71628480-71634239/71634240",
+      "etag": "\"b301bb14accdc569b59f43c1b32836fc\"",
+      "sha256": "827b96ca5aca47e0ab4dfa3dc2c9565a542c6f8ed786f99e073bc2b16a879089"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0654_1D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=0-65535",
+      "utc": "2026-10-14T01:45:53.708406+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 0-65535/71634240",
+      "etag": "\"2a9f2e7b3d6619a9b6097a007500273a\"",
+      "sha256": "d150aaa1370b1bb5b5baed77bd6674d381500fe094f7153a372646a1e0111e2d"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0654_1D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=16669440-16734975",
+      "utc": "2026-10-14T01:46:01.994372+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 16669440-16734975/71634240",
+      "etag": "\"2a9f2e7b3d6619a9b6097a007500273a\"",
+      "sha256": "45cdbe35f97fb3fa72c0cdca4448a72b872682faf8f75dfb3bda4dd11046a704"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0654_1D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=33330240-33395775",
+      "utc": "2026-10-14T01:46:08.496416+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 33330240-33395775/71634240",
+      "etag": "\"2a9f2e7b3d6619a9b6097a007500273a\"",
+      "sha256": "71cd141f64e727f00d80f707a9ef4034c7c936f168cb013a125001784ec9fb49"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0654_1D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=49988160-50053695",
+      "utc": "2026-10-14T01:46:15.041022+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 49988160-50053695/71634240",
+      "etag": "\"2a9f2e7b3d6619a9b6097a007500273a\"",
+      "sha256": "845dadc0d670075aa6f9a4fd032c02088ed703c920686dad243f1477930c3b2f"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0654_1D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=66646080-66711615",
+      "utc": "2026-10-14T01:46:21.815877+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 66646080-66711615/71634240",
+      "etag": "\"2a9f2e7b3d6619a9b6097a007500273a\"",
+      "sha256": "f6ec7bd674fb0146bff9c8365b5030ccc41f83232bd71bbdb6d0f2b798f7a6b9"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0654_1D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=71628480-71634239",
+      "utc": "2026-10-14T01:46:28.467344+00:00",
+      "bytes": 5760,
+      "status": 206,
+      "content_range": "bytes 71628480-71634239/71634240",
+      "etag": "\"2a9f2e7b3d6619a9b6097a007500273a\"",
+      "sha256": "827b96ca5aca47e0ab4dfa3dc2c9565a542c6f8ed786f99e073bc2b16a879089"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0654_2D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=0-65535",
+      "utc": "2026-10-14T01:46:34.913835+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 0-65535/71634240",
+      "etag": "\"cad58e63813113299251e63ba6222d8d\"",
+      "sha256": "2043e49f7f875f4c02b6528301278cd80dce9e6638de296af6c4a89c26ce1432"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0654_2D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=16669440-16734975",
+      "utc": "2026-10-14T01:46:41.663200+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 16669440-16734975/71634240",
+      "etag": "\"cad58e63813113299251e63ba6222d8d\"",
+      "sha256": "e8a11c320c110362bcf572ba504f6cb9325a2c3f05d815bb25c9e21147487fc0"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0654_2D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=33330240-33395775",
+      "utc": "2026-10-14T01:46:48.028806+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 33330240-33395775/71634240",
+      "etag": "\"cad58e63813113299251e63ba6222d8d\"",
+      "sha256": "a6aea054712eb05aa76e0f99ee3fa11c8df342e7d157d37b105a1a6d4eb09638"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0654_2D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=49988160-50053695",
+      "utc": "2026-10-14T01:46:54.521623+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 49988160-50053695/71634240",
+      "etag": "\"cad58e63813113299251e63ba6222d8d\"",
+      "sha256": "c719e08d6bac086201e3f81ec4e9fea3328c953ed47ff3bb8d1d3aa70860565c"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0654_2D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=66646080-66711615",
+      "utc": "2026-10-14T01:47:01.305512+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 66646080-66711615/71634240",
+      "etag": "\"cad58e63813113299251e63ba6222d8d\"",
+      "sha256": "f6ec7bd674fb0146bff9c8365b5030ccc41f83232bd71bbdb6d0f2b798f7a6b9"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0654_2D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=71628480-71634239",
+      "utc": "2026-10-14T01:47:07.914702+00:00",
+      "bytes": 5760,
+      "status": 206,
+      "content_range": "bytes 71628480-71634239/71634240",
+      "etag": "\"cad58e63813113299251e63ba6222d8d\"",
+      "sha256": "827b96ca5aca47e0ab4dfa3dc2c9565a542c6f8ed786f99e073bc2b16a879089"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0654_3D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=0-65535",
+      "utc": "2026-10-14T01:47:14.452138+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 0-65535/71634240",
+      "etag": "\"be7110715f71e9608bb1edfa0e2a7a1e\"",
+      "sha256": "047a0e1eb11c157b4994e5246a72a3972f53286586192ab6ec47366f25d9adef"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0654_3D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=16669440-16734975",
+      "utc": "2026-10-14T01:47:21.331810+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 16669440-16734975/71634240",
+      "etag": "\"be7110715f71e9608bb1edfa0e2a7a1e\"",
+      "sha256": "bc106deafcdacbb8dd9244648529151c2fb068485b23352e843810c1142c3656"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0654_3D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=33330240-33395775",
+      "utc": "2026-10-14T01:47:27.970581+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 33330240-33395775/71634240",
+      "etag": "\"be7110715f71e9608bb1edfa0e2a7a1e\"",
+      "sha256": "3f67c4e499cb12c515d837adafc7eced691b14eae0374fca1f21378a2e65512e"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0654_3D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=49988160-50053695",
+      "utc": "2026-10-14T01:47:34.481869+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 49988160-50053695/71634240",
+      "etag": "\"be7110715f71e9608bb1edfa0e2a7a1e\"",
+      "sha256": "19d4fb7e823d734c90d16527e0079b6cf7e5eb85d851a689a4911185b9e5b3db"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0654_3D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=66646080-66711615",
+      "utc": "2026-10-14T01:47:41.151484+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 66646080-66711615/71634240",
+      "etag": "\"be7110715f71e9608bb1edfa0e2a7a1e\"",
+      "sha256": "f6ec7bd674fb0146bff9c8365b5030ccc41f83232bd71bbdb6d0f2b798f7a6b9"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_1A/l2b-v20-2025-270/4/level2_2025W35_1A_0654_3D4_spx_l2b-v20-2025-270.fits",
+      "requested_range": "bytes=71628480-71634239",
+      "utc": "2026-10-14T01:47:47.796555+00:00",
+      "bytes": 5760,
+      "status": 206,
+      "content_range": "bytes 71628480-71634239/71634240",
+      "etag": "\"be7110715f71e9608bb1edfa0e2a7a1e\"",
+      "sha256": "827b96ca5aca47e0ab4dfa3dc2c9565a542c6f8ed786f99e073bc2b16a879089"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_2A/l2b-v20-2025-271/4/level2_2025W35_2A_0075_1D4_spx_l2b-v20-2025-271.fits",
+      "requested_range": "bytes=0-65535",
+      "utc": "2026-10-14T01:47:54.292799+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 0-65535/71634240",
+      "etag": "\"31e5ce5fe0d529b9eea53957e1da8191\"",
+      "sha256": "21daaf6ab0566b6cb2b9692275ecc2fedda65582bd206fa72d73751f4423ad19"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_2A/l2b-v20-2025-271/4/level2_2025W35_2A_0075_1D4_spx_l2b-v20-2025-271.fits",
+      "requested_range": "bytes=16669440-16734975",
+      "utc": "2026-10-14T01:48:00.996791+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 16669440-16734975/71634240",
+      "etag": "\"31e5ce5fe0d529b9eea53957e1da8191\"",
+      "sha256": "43ae366842267c469e0807aa44b6f23c6f202e1a15335888044ebc5697df6ce5"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_2A/l2b-v20-2025-271/4/level2_2025W35_2A_0075_1D4_spx_l2b-v20-2025-271.fits",
+      "requested_range": "bytes=33330240-33395775",
+      "utc": "2026-10-14T01:48:07.408589+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 33330240-33395775/71634240",
+      "etag": "\"31e5ce5fe0d529b9eea53957e1da8191\"",
+      "sha256": "22ba2ed199b5fcf712f8ccf6af3c27e21629dd600ce3e9e03f543b7f6b9b1667"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_2A/l2b-v20-2025-271/4/level2_2025W35_2A_0075_1D4_spx_l2b-v20-2025-271.fits",
+      "requested_range": "bytes=49988160-50053695",
+      "utc": "2026-10-14T01:48:14.199111+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 49988160-50053695/71634240",
+      "etag": "\"31e5ce5fe0d529b9eea53957e1da8191\"",
+      "sha256": "6d967092e477ac2950172e2ab5d667fa06dfabc841dc3ef36f4dea5b5d254264"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_2A/l2b-v20-2025-271/4/level2_2025W35_2A_0075_1D4_spx_l2b-v20-2025-271.fits",
+      "requested_range": "bytes=66646080-66711615",
+      "utc": "2026-10-14T01:48:22.345666+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 66646080-66711615/71634240",
+      "etag": "\"31e5ce5fe0d529b9eea53957e1da8191\"",
+      "sha256": "f6ec7bd674fb0146bff9c8365b5030ccc41f83232bd71bbdb6d0f2b798f7a6b9"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_2A/l2b-v20-2025-271/4/level2_2025W35_2A_0075_1D4_spx_l2b-v20-2025-271.fits",
+      "requested_range": "bytes=71628480-71634239",
+      "utc": "2026-10-14T01:48:28.966822+00:00",
+      "bytes": 5760,
+      "status": 206,
+      "content_range": "bytes 71628480-71634239/71634240",
+      "etag": "\"31e5ce5fe0d529b9eea53957e1da8191\"",
+      "sha256": "827b96ca5aca47e0ab4dfa3dc2c9565a542c6f8ed786f99e073bc2b16a879089"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_2A/l2b-v20-2025-271/4/level2_2025W35_2A_0075_2D4_spx_l2b-v20-2025-271.fits",
+      "requested_range": "bytes=0-65535",
+      "utc": "2026-10-14T01:48:35.527897+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 0-65535/71634240",
+      "etag": "\"8d9ea156fbd4fc861bb096efdc0bfc15\"",
+      "sha256": "bbb510051a12e6bb22e9fc1a22cf479e5b5aca64ef3ecd2e46d92ec36e4713ca"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_2A/l2b-v20-2025-271/4/level2_2025W35_2A_0075_2D4_spx_l2b-v20-2025-271.fits",
+      "requested_range": "bytes=16669440-16734975",
+      "utc": "2026-10-14T01:48:41.972233+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 16669440-16734975/71634240",
+      "etag": "\"8d9ea156fbd4fc861bb096efdc0bfc15\"",
+      "sha256": "c3d5ec50a79b477ace61aa2000e242e7f88b66506027b853adf9412c9f2481a9"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_2A/l2b-v20-2025-271/4/level2_2025W35_2A_0075_2D4_spx_l2b-v20-2025-271.fits",
+      "requested_range": "bytes=33330240-33395775",
+      "utc": "2026-10-14T01:48:48.517856+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 33330240-33395775/71634240",
+      "etag": "\"8d9ea156fbd4fc861bb096efdc0bfc15\"",
+      "sha256": "9b861db159a59941a4fe93f0612d4abbcad00ef486e089f44cd7927933ba45b4"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_2A/l2b-v20-2025-271/4/level2_2025W35_2A_0075_2D4_spx_l2b-v20-2025-271.fits",
+      "requested_range": "bytes=49988160-50053695",
+      "utc": "2026-10-14T01:48:55.257791+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 49988160-50053695/71634240",
+      "etag": "\"8d9ea156fbd4fc861bb096efdc0bfc15\"",
+      "sha256": "3b28b061afd9b7fad97dc51ac1c77617982b879098a1246167058d31852b2ef1"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_2A/l2b-v20-2025-271/4/level2_2025W35_2A_0075_2D4_spx_l2b-v20-2025-271.fits",
+      "requested_range": "bytes=66646080-66711615",
+      "utc": "2026-10-14T01:49:01.777534+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 66646080-66711615/71634240",
+      "etag": "\"8d9ea156fbd4fc861bb096efdc0bfc15\"",
+      "sha256": "f6ec7bd674fb0146bff9c8365b5030ccc41f83232bd71bbdb6d0f2b798f7a6b9"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_2A/l2b-v20-2025-271/4/level2_2025W35_2A_0075_2D4_spx_l2b-v20-2025-271.fits",
+      "requested_range": "bytes=71628480-71634239",
+      "utc": "2026-10-14T01:49:08.956475+00:00",
+      "bytes": 5760,
+      "status": 206,
+      "content_range": "bytes 71628480-71634239/71634240",
+      "etag": "\"8d9ea156fbd4fc861bb096efdc0bfc15\"",
+      "sha256": "827b96ca5aca47e0ab4dfa3dc2c9565a542c6f8ed786f99e073bc2b16a879089"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_2A/l2b-v20-2025-271/4/level2_2025W35_2A_0075_3D4_spx_l2b-v20-2025-271.fits",
+      "requested_range": "bytes=0-65535",
+      "utc": "2026-10-14T01:49:15.458004+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 0-65535/71634240",
+      "etag": "\"21b6d6353ddfd0a5c94437d7224821fe\"",
+      "sha256": "1a3ecd373d5f7c921178b805961ee9602f5488c3ae581d42e2c37a7f2dfcb9dd"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_2A/l2b-v20-2025-271/4/level2_2025W35_2A_0075_3D4_spx_l2b-v20-2025-271.fits",
+      "requested_range": "bytes=16669440-16734975",
+      "utc": "2026-10-14T01:49:24.437947+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 16669440-16734975/71634240",
+      "etag": "\"21b6d6353ddfd0a5c94437d7224821fe\"",
+      "sha256": "1b72fbfd52fa788d02de241f228138a65ae29c98f72a5aab274a6e05ef4aaafd"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_2A/l2b-v20-2025-271/4/level2_2025W35_2A_0075_3D4_spx_l2b-v20-2025-271.fits",
+      "requested_range": "bytes=33330240-33395775",
+      "utc": "2026-10-14T01:49:31.433631+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 33330240-33395775/71634240",
+      "etag": "\"21b6d6353ddfd0a5c94437d7224821fe\"",
+      "sha256": "fa2eca3588be7a1b76a7aef519660b590ee078f413f12bbfc0c4cf747dbbc538"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_2A/l2b-v20-2025-271/4/level2_2025W35_2A_0075_3D4_spx_l2b-v20-2025-271.fits",
+      "requested_range": "bytes=49988160-50053695",
+      "utc": "2026-10-14T01:49:38.065941+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 49988160-50053695/71634240",
+      "etag": "\"21b6d6353ddfd0a5c94437d7224821fe\"",
+      "sha256": "d3fa6452e1cc71fc448436552c81ede816e2d28468a158cc3df76065012cd644"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_2A/l2b-v20-2025-271/4/level2_2025W35_2A_0075_3D4_spx_l2b-v20-2025-271.fits",
+      "requested_range": "bytes=66646080-66711615",
+      "utc": "2026-10-14T01:49:44.957516+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 66646080-66711615/71634240",
+      "etag": "\"21b6d6353ddfd0a5c94437d7224821fe\"",
+      "sha256": "f6ec7bd674fb0146bff9c8365b5030ccc41f83232bd71bbdb6d0f2b798f7a6b9"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_2A/l2b-v20-2025-271/4/level2_2025W35_2A_0075_3D4_spx_l2b-v20-2025-271.fits",
+      "requested_range": "bytes=71628480-71634239",
+      "utc": "2026-10-14T01:49:51.442971+00:00",
+      "bytes": 5760,
+      "status": 206,
+      "content_range": "bytes 71628480-71634239/71634240",
+      "etag": "\"21b6d6353ddfd0a5c94437d7224821fe\"",
+      "sha256": "827b96ca5aca47e0ab4dfa3dc2c9565a542c6f8ed786f99e073bc2b16a879089"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_2A/l2b-v20-2025-271/5/level2_2025W35_2A_0203_1D5_spx_l2b-v20-2025-271.fits",
+      "requested_range": "bytes=0-65535",
+      "utc": "2026-10-14T01:49:58.219912+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 0-65535/71634240",
+      "etag": "\"655bcdcdd91c84210a1019a4fd61f809\"",
+      "sha256": "c1fd58d650c8f2e9fd80fa25f8d063312970c8c230ca9b10d9799ed38d9a1dbe"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_2A/l2b-v20-2025-271/5/level2_2025W35_2A_0203_1D5_spx_l2b-v20-2025-271.fits",
+      "requested_range": "bytes=16669440-16734975",
+      "utc": "2026-10-14T01:50:05.487677+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 16669440-16734975/71634240",
+      "etag": "\"655bcdcdd91c84210a1019a4fd61f809\"",
+      "sha256": "a9eefc57474bdfa7ec9eb78c1df786db7a0b1c84e7386977a04ee82f3e3a6408"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_2A/l2b-v20-2025-271/5/level2_2025W35_2A_0203_1D5_spx_l2b-v20-2025-271.fits",
+      "requested_range": "bytes=33330240-33395775",
+      "utc": "2026-10-14T01:50:19.058516+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 33330240-33395775/71634240",
+      "etag": "\"655bcdcdd91c84210a1019a4fd61f809\"",
+      "sha256": "00c797d67277874417ad1d5bb0cd079d6d0d06c31d105401f3664a1e0768036e"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_2A/l2b-v20-2025-271/5/level2_2025W35_2A_0203_1D5_spx_l2b-v20-2025-271.fits",
+      "requested_range": "bytes=49988160-50053695",
+      "utc": "2026-10-14T01:50:27.301551+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 49988160-50053695/71634240",
+      "etag": "\"655bcdcdd91c84210a1019a4fd61f809\"",
+      "sha256": "7e089c1b72007a4ecfe89827f600248a5d8561dacf1e2c456b04b7104d712bd9"
+    },
+    {
+      "url": "https://nasa-irsa-spherex.s3.us-east-1.amazonaws.com/qr2/level2/2025W35_2A/l2b-v20-2025-271/5/level2_2025W35_2A_0203_1D5_spx_l2b-v20-2025-271.fits",
+      "requested_range": "bytes=66646080-66711615",
+      "utc": "2026-10-14T01:50:33.781770+00:00",
+      "bytes": 65536,
+      "status": 206,
+      "content_range": "bytes 66646080-66711615/71634240",
+      "etag": "\"655bcdcdd91c84210a1019a4fd61f809\"",
+      "sha256": "24a2d949f7158f2d0e7fbfec47921f1142faffa5996eba86294912ae84102abc"
+    }
+  ],
+  "coverage_verdict": "frozen W1 coverage gate not satisfied by measured visits; no W1 variability statistic"
+}

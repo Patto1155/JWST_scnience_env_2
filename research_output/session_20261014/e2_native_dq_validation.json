@@ -1,0 +1,73 @@
+{
+  "checked_utc": "2026-10-14T02:22:54.108350+00:00",
+  "products": [
+    {
+      "filename": "jw02736001001_02105_00003_nrcalong_cal.fits",
+      "native_target_xy": [
+        367.2355075819922,
+        840.0459289670321
+      ],
+      "aperture_pixels": 28,
+      "saturated_aperture_pixels": 0,
+      "invalid_aperture_pixels": 0,
+      "aperture_valid_fraction": 1.0,
+      "calibration_gate_passed": true,
+      "ref_context": "jwst_1596.pmap",
+      "embedded_calibration_logs": {
+        "calwebb_detector1": [
+          "2026-10-14T02:17:21.850 - stdatamodels.dynamicdq - WARNING - Keyword RESERVED_4 does not correspond to an existing DQ mnemonic, so will be ignored",
+          "2026-10-14T02:17:21.851 - stdatamodels.dynamicdq - WARNING - Keyword UNRELIABLE_ERROR does not correspond to an existing DQ mnemonic, so will be ignored",
+          "2026-10-14T02:17:21.900 - stdatamodels.dynamicdq - WARNING - Keyword UNRELIABLE_RESET does not correspond to an existing DQ mnemonic, so will be ignored",
+          "2026-10-14T02:17:31.057 - stdatamodels.dynamicdq - WARNING - Keyword RESERVED_4 does not correspond to an existing DQ mnemonic, so will be ignored",
+          "2026-10-14T02:17:31.057 - stdatamodels.dynamicdq - WARNING - Keyword UNRELIABLE_ERROR does not correspond to an existing DQ mnemonic, so will be ignored",
+          "2026-10-14T02:17:31.099 - stdatamodels.dynamicdq - WARNING - Keyword UNRELIABLE_RESET does not correspond to an existing DQ mnemonic, so will be ignored",
+          "2026-10-14T02:17:31.179 - stdatamodels.dynamicdq - WARNING - Keyword UNRELIABLE_ERROR does not correspond to an existing DQ mnemonic, so will be ignored",
+          "2026-10-14T02:17:32.466 - stdatamodels.dynamicdq - WARNING - Keyword UNRELIABLE_ERROR does not correspond to an existing DQ mnemonic, so will be ignored",
+          "2026-10-14T02:17:33.984 - stdatamodels.dynamicdq - WARNING - Keyword UAZ_DO_NOT_USE does not correspond to an existing DQ mnemonic, so will be ignored",
+          "2026-10-14T02:17:33.984 - stdatamodels.dynamicdq - WARNING - Keyword UAZ_NO_LIN_SAMP does not correspond to an existing DQ mnemonic, so will be ignored",
+          "2026-10-14T02:17:33.984 - stdatamodels.dynamicdq - WARNING - Keyword UAZ_BAD_LIN_FIT does not correspond to an existing DQ mnemonic, so will be ignored",
+          "2026-10-14T02:17:33.985 - stdatamodels.dynamicdq - WARNING - Keyword UAZ_NO_WELL_SAMP does not correspond to an existing DQ mnemonic, so will be ignored",
+          "2026-10-14T02:17:33.985 - stdatamodels.dynamicdq - WARNING - Keyword UAZ_MODEL_FIT_FAIL does not correspond to an existing DQ mnemonic, so will be ignored",
+          "2026-10-14T02:17:33.985 - stdatamodels.dynamicdq - WARNING - Keyword UAZ_WELL_NOT_DEFINED does not correspond to an existing DQ mnemonic, so will be ignored",
+          "2026-10-14T02:17:33.985 - stdatamodels.dynamicdq - WARNING - Keyword UAZ_MASTER_MASK does not correspond to an existing DQ mnemonic, so will be ignored",
+          "2026-10-14T02:17:36.375 - stdatamodels.dynamicdq - WARNING - Keyword UNRELIABLE_ERROR does not correspond to an existing DQ mnemonic, so will be ignored"
+        ],
+        "calwebb_image2": []
+      }
+    },
+    {
+      "filename": "jw02736001001_02105_00004_nrcalong_cal.fits",
+      "native_target_xy": [
+        371.18688889967547,
+        745.0930274199997
+      ],
+      "aperture_pixels": 27,
+      "saturated_aperture_pixels": 0,
+      "invalid_aperture_pixels": 0,
+      "aperture_valid_fraction": 1.0,
+      "calibration_gate_passed": true,
+      "ref_context": "jwst_1596.pmap",
+      "embedded_calibration_logs": {
+        "calwebb_detector1": [
+          "2026-10-14T02:17:53.296 - stdatamodels.dynamicdq - WARNING - Keyword RESERVED_4 does not correspond to an existing DQ mnemonic, so will be ignored",
+          "2026-10-14T02:17:53.297 - stdatamodels.dynamicdq - WARNING - Keyword UNRELIABLE_ERROR does not correspond to an existing DQ mnemonic, so will be ignored",
+          "2026-10-14T02:17:53.342 - stdatamodels.dynamicdq - WARNING - Keyword UNRELIABLE_RESET does not correspond to an existing DQ mnemonic, so will be ignored",
+          "2026-10-14T02:17:53.568 - stdatamodels.dynamicdq - WARNING - Keyword RESERVED_4 does not correspond to an existing DQ mnemonic, so will be ignored",
+          "2026-10-14T02:17:53.568 - stdatamodels.dynamicdq - WARNING - Keyword UNRELIABLE_ERROR does not correspond to an existing DQ mnemonic, so will be ignored",
+          "2026-10-14T02:17:53.611 - stdatamodels.dynamicdq - WARNING - Keyword UNRELIABLE_RESET does not correspond to an existing DQ mnemonic, so will be ignored",
+          "2026-10-14T02:17:53.682 - stdatamodels.dynamicdq - WARNING - Keyword UNRELIABLE_ERROR does not correspond to an existing DQ mnemonic, so will be ignored",
+          "2026-10-14T02:17:54.858 - stdatamodels.dynamicdq - WARNING - Keyword UNRELIABLE_ERROR does not correspond to an existing DQ mnemonic, so will be ignored",
+          "2026-10-14T02:17:56.482 - stdatamodels.dynamicdq - WARNING - Keyword UAZ_DO_NOT_USE does not correspond to an existing DQ mnemonic, so will be ignored",
+          "2026-10-14T02:17:56.483 - stdatamodels.dynamicdq - WARNING - Keyword UAZ_NO_LIN_SAMP does not correspond to an existing DQ mnemonic, so will be ignored",
+          "2026-10-14T02:17:56.483 - stdatamodels.dynamicdq - WARNING - Keyword UAZ_BAD_LIN_FIT does not correspond to an existing DQ mnemonic, so will be ignored",
+          "2026-10-14T02:17:56.483 - stdatamodels.dynamicdq - WARNING - Keyword UAZ_NO_WELL_SAMP does not correspond to an existing DQ mnemonic, so will be ignored",
+          "2026-10-14T02:17:56.483 - stdatamodels.dynamicdq - WARNING - Keyword UAZ_MODEL_FIT_FAIL does not correspond to an existing DQ mnemonic, so will be ignored",
+          "2026-10-14T02:17:56.484 - stdatamodels.dynamicdq - WARNING - Keyword UAZ_WELL_NOT_DEFINED does not correspond to an existing DQ mnemonic, so will be ignored",
+          "2026-10-14T02:17:56.484 - stdatamodels.dynamicdq - WARNING - Keyword UAZ_MASTER_MASK does not correspond to an existing DQ mnemonic, so will be ignored",
+          "2026-10-14T02:17:58.460 - stdatamodels.dynamicdq - WARNING - Keyword UNRELIABLE_ERROR does not correspond to an existing DQ mnemonic, so will be ignored"
+        ],
+        "calwebb_image2": []
+      }
+    }
+  ]
+}

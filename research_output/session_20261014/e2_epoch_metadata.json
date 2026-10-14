@@ -1,0 +1,36 @@
+{
+  "freeze_commit": "19f2702294b680d2961045c55a508a6edcd157b4",
+  "request": {
+    "service": "Mast.Caom.Filtered.Position",
+    "params": {
+      "columns": "obsid,obs_id,obs_collection,instrument_name,filters,t_min,t_max,dataURL,s_region,target_name,calib_level",
+      "filters": [
+        {
+          "paramName": "obs_collection",
+          "values": [
+            "JWST"
+          ]
+        },
+        {
+          "paramName": "instrument_name",
+          "values": [
+            "NIRCAM/IMAGE"
+          ]
+        },
+        {
+          "paramName": "filters",
+          "values": [
+            "F444W"
+          ]
+        }
+      ],
+      "position": "110.63858928243717,-73.48487214542632,0.001"
+    },
+    "format": "json",
+    "pagesize": 1000,
+    "page": 1
+  },
+  "started_utc": "2026-10-14T02:13:10.795867+00:00",
+  "response_body_bytes": 0,
+  "error": "TimeoutError: The read operation timed out"
+}

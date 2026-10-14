@@ -1,0 +1,75 @@
+{
+  "status": "blocked",
+  "freeze_commit": "d50fa97",
+  "first_data_access_utc": "2026-10-14T01:34:51.829896+00:00",
+  "error": "KeyError: \"Extension 'ASDF' not found.\"",
+  "calibration_verdict": "fail",
+  "body_bytes": 299988928,
+  "fragment_sum": 299988928,
+  "per_product": {
+    "jw05224004001_03101_00002_nrs2_cal.fits": {
+      "body_bytes": 51563520,
+      "requests": 787
+    },
+    "jw05224004001_03101_00002_nrs2_rate.fits": {
+      "body_bytes": 1769472,
+      "requests": 27
+    },
+    "jw05224004001_03101_00003_nrs2_cal.fits": {
+      "body_bytes": 51575040,
+      "requests": 787
+    },
+    "jw05224004001_03101_00003_nrs2_rate.fits": {
+      "body_bytes": 1769472,
+      "requests": 27
+    },
+    "jw05224004001_03101_00004_nrs2_cal.fits": {
+      "body_bytes": 51575040,
+      "requests": 787
+    },
+    "jw05224004001_03101_00004_nrs2_rate.fits": {
+      "body_bytes": 1769472,
+      "requests": 27
+    },
+    "jw05224004001_05101_00001_nrs2_cal.fits": {
+      "body_bytes": 51560640,
+      "requests": 787
+    },
+    "jw05224004001_05101_00001_nrs2_rate.fits": {
+      "body_bytes": 1769472,
+      "requests": 27
+    },
+    "jw05224004001_05101_00002_nrs2_cal.fits": {
+      "body_bytes": 51575040,
+      "requests": 787
+    },
+    "jw05224004001_05101_00002_nrs2_rate.fits": {
+      "body_bytes": 1769472,
+      "requests": 27
+    },
+    "jw05224004001_05101_00003_nrs2_cal.fits": {
+      "body_bytes": 33292288,
+      "requests": 508
+    }
+  },
+  "fragment_count": 4578,
+  "accepted_scientific_body_bytes": 299988928,
+  "accepted_probe_body_bytes": 2880,
+  "total_accepted_body_bytes": 299991808,
+  "cap_bytes": 300000000,
+  "measurement_computed": false,
+  "source_noise_validated": false,
+  "stopping_reason": "Frozen pilot cap stopped further header acquisition; Astropy then reported ASDF not found.",
+  "archive_absence_inferred": false,
+  "not_run": [
+    "complete nine-product controls",
+    "empirical scale fit",
+    "UV line fit",
+    "fresh ionic interval",
+    "G235H outcomes",
+    "GOODS-N outcomes"
+  ],
+  "published_receipt": "research_output/session_20261014/d_noise_receipt.json.gz",
+  "receipt_uncompressed_sha256": "99a321b7c799d9962b1b93577651843eae021917193776a6709ad449c9a17a70",
+  "receipt_compressed_sha256": "94948967bfa6753058190d088d7605603093e89c6f816d20e933263f34e1a184"
+}

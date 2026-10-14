@@ -1,0 +1,181 @@
+{
+  "freeze_commit": "19f2702294b680d2961045c55a508a6edcd157b4",
+  "deleted_utc": "2026-10-14T02:26:43.919886+00:00",
+  "verified_compact_replay": "e2_replay_verification.json",
+  "deleted_files": [
+    {
+      "name": "jw02736001001_02105_00003_nrcalong_uncal.fits",
+      "bytes": 75556800,
+      "kind": "verified input or pipeline product",
+      "sha256": "4711e54967820c8dc86811ecd3fbf813fd18806012fa397b1e6ad34910ac81e4"
+    },
+    {
+      "name": "jw02736001001_02105_00003_nrcalong_uncal.fits.partial",
+      "bytes": 71303168,
+      "kind": "task intermediate/partial/log"
+    },
+    {
+      "name": "jw02736001001_02105_00004_nrcalong_uncal.fits",
+      "bytes": 75556800,
+      "kind": "verified input or pipeline product",
+      "sha256": "5bd6819845c9b9be341b7a677f55eabc0885683f903fce72c4030ca9fd4c5d8d"
+    },
+    {
+      "name": "jw02736001001_02105_00004_nrcalong_uncal.fits.partial",
+      "bytes": 74448896,
+      "kind": "task intermediate/partial/log"
+    },
+    {
+      "name": "jwst_nircam_area_0261.fits",
+      "bytes": 16787520,
+      "kind": "verified input or pipeline product",
+      "sha256": "ee1b48d67f49bb7e34e1b0af0564003fee3376e96fb81bd02d0d6efcee0fabd8"
+    },
+    {
+      "name": "jwst_nircam_dark_0424.fits",
+      "bytes": 4378878720,
+      "kind": "verified input or pipeline product",
+      "sha256": "af24ffc9d8c55c9b69dad989cb6a7a14b6314ca3f6a11b2047d08acb4ec40179"
+    },
+    {
+      "name": "jwst_nircam_distortion_0277.asdf",
+      "bytes": 12718,
+      "kind": "verified input or pipeline product",
+      "sha256": "43e447fac34b84063ae722907e97e643f026dd42082e7ee42a4cfcd0363bdf47"
+    },
+    {
+      "name": "jwst_nircam_filteroffset_0007.asdf",
+      "bytes": 11437,
+      "kind": "verified input or pipeline product",
+      "sha256": "ca295608187ac429c6a0e357c5da48e399665a1b462d7d0dd624e3ebc11abdf2"
+    },
+    {
+      "name": "jwst_nircam_flat_0761.fits",
+      "bytes": 50356800,
+      "kind": "verified input or pipeline product",
+      "sha256": "06bdc15c679c562051585f110b0869039a8ad352c68564eaaa449765b3ea09a2"
+    },
+    {
+      "name": "jwst_nircam_gain_0097.fits",
+      "bytes": 16787520,
+      "kind": "verified input or pipeline product",
+      "sha256": "a6e7d0927e3c6a8b64bf9c3812e0abe5e2d821dce06fd80e699e4a3e6cbe6dac"
+    },
+    {
+      "name": "jwst_nircam_ipc_0028.fits",
+      "bytes": 11520,
+      "kind": "verified input or pipeline product",
+      "sha256": "7fc715dc938e86f83190b713517779433c194f4bbd548fa3490dadc79a41885d"
+    },
+    {
+      "name": "jwst_nircam_linearity_0052.fits",
+      "bytes": 151015680,
+      "kind": "verified input or pipeline product",
+      "sha256": "3a55e85c0b837b34b96e7c1bc4f46f06faf0e244a53c796ffce5aaabbbbb9d9a"
+    },
+    {
+      "name": "jwst_nircam_mask_0063.fits",
+      "bytes": 16796160,
+      "kind": "verified input or pipeline product",
+      "sha256": "5e453d448e45df1d9f4f8a8b52da85b3ea6b34903e0ac636eae601e016413aaa"
+    },
+    {
+      "name": "jwst_nircam_photom_0168.fits",
+      "bytes": 40320,
+      "kind": "verified input or pipeline product",
+      "sha256": "e930ea04baeefb3df092b9606353c2fb1a419e088c333a20e750feef09fd56cb"
+    },
+    {
+      "name": "jwst_nircam_readnoise_0266.fits",
+      "bytes": 16787520,
+      "kind": "verified input or pipeline product",
+      "sha256": "ccc8fda02094d5a17e2ee3dcf5b39409b098c4c01b7798f6a034b00f97f183d4"
+    },
+    {
+      "name": "jwst_nircam_saturation_0097.fits",
+      "bytes": 33580800,
+      "kind": "verified input or pipeline product",
+      "sha256": "72ca0696874af47a630a3f56c946517883cb0729cef69361980d6b5445109e72"
+    },
+    {
+      "name": "jwst_nircam_sirskernel_0002.asdf",
+      "bytes": 661021,
+      "kind": "verified input or pipeline product",
+      "sha256": "89081d1c79862bff543fb1f4d706d4dd7d6e2a8b5da21042667651daa75a6541"
+    },
+    {
+      "name": "jwst_nircam_superbias_0220.fits",
+      "bytes": 50359680,
+      "kind": "verified input or pipeline product",
+      "sha256": "1303a9503399b6dba2277ab25f26c564e0d42ef3ca7e5c167e6ed6e548edb57e"
+    },
+    {
+      "name": "pipeline/jw02736001001_02105_00003_nrcalong_cal.fits",
+      "bytes": 117541440,
+      "kind": "verified input or pipeline product",
+      "sha256": "fc48c38b8f9cd23a0caf30a7361585f04ddca7bfee15b67940958f5b1653dff7"
+    },
+    {
+      "name": "pipeline/jw02736001001_02105_00003_nrcalong_i2d.fits",
+      "bytes": 120222720,
+      "kind": "verified input or pipeline product",
+      "sha256": "5f3346429b4876bde4e5715c046daebc35f2cc9b532830259f6374fd686818c1"
+    },
+    {
+      "name": "pipeline/jw02736001001_02105_00003_nrcalong_rate.fits",
+      "bytes": 83949120,
+      "kind": "verified input or pipeline product",
+      "sha256": "4d051afc2117eaa52d511a3d304b3617e2058f95e4e6d5077312f0d06652e579"
+    },
+    {
+      "name": "pipeline/jw02736001001_02105_00003_nrcalong_rateints.fits",
+      "bytes": 83957760,
+      "kind": "verified input or pipeline product",
+      "sha256": "e3751497674d28a69824c42d90da5e362f6dd0afb5fd0fc3739844f8ae6402ca"
+    },
+    {
+      "name": "pipeline/jw02736001001_02105_00004_nrcalong_cal.fits",
+      "bytes": 117541440,
+      "kind": "verified input or pipeline product",
+      "sha256": "9f15bc3ccca733ba658379a6b5a69b652482b5f7a4b57846365ce6b6454add84"
+    },
+    {
+      "name": "pipeline/jw02736001001_02105_00004_nrcalong_i2d.fits",
+      "bytes": 120222720,
+      "kind": "verified input or pipeline product",
+      "sha256": "0900738a68dcb29efbd171970621629fbf447ce24f7e01b85a9c8f19f4edbc68"
+    },
+    {
+      "name": "pipeline/jw02736001001_02105_00004_nrcalong_rate.fits",
+      "bytes": 83949120,
+      "kind": "verified input or pipeline product",
+      "sha256": "fc0df01452a7e59066c058ed4c4631ed30701433f8b723b951167271c8a28fb5"
+    },
+    {
+      "name": "pipeline/jw02736001001_02105_00004_nrcalong_rateints.fits",
+      "bytes": 83957760,
+      "kind": "verified input or pipeline product",
+      "sha256": "1e1d9e4c08673af99542b6e35cfd18ff097b3006e2dfcdc33f38cf64e9a9cb00"
+    },
+    {
+      "name": "pipeline/metadata_network.json",
+      "bytes": 360,
+      "kind": "task intermediate/partial/log"
+    },
+    {
+      "name": "pipeline/steps.json",
+      "bytes": 39200,
+      "kind": "task intermediate/partial/log"
+    },
+    {
+      "name": "pipeline.log",
+      "bytes": 0,
+      "kind": "task intermediate/partial/log"
+    }
+  ],
+  "task_cache_exists": false,
+  "workspace_cache_link_exists": false,
+  "raw_reference_generated_large_files_remaining": 0,
+  "compact_calibrated_cutout_bytes": 1658880,
+  "conservative_transfer_reservations_unchanged_bytes": 5826074168
+}

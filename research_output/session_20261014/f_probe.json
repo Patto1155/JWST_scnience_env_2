@@ -1,0 +1,6 @@
+{
+  "url": "https://irsa.ipac.caltech.edu/data/SPHEREx/docs/overview_qr.html",
+  "error": "HTTPSConnectionPool(host='irsa.ipac.caltech.edu', port=443): Read timed out. (read timeout=15)",
+  "utc": "2026-10-14T01:28:49.617672+00:00",
+  "body_bytes_received": 0
+}

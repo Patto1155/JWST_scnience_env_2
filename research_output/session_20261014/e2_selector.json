@@ -1,0 +1,67 @@
+{
+  "freeze_commit": "19f2702294b680d2961045c55a508a6edcd157b4",
+  "approval_utc": "2026-10-14T01:45:14Z",
+  "started_utc": "2026-10-14T01:49:13.184139+00:00",
+  "context": "jwst_1596.pmap",
+  "references": {
+    "area": "jwst_nircam_area_0261.fits",
+    "bkg": "NOT FOUND n/a",
+    "camera": "NOT FOUND n/a",
+    "chromcorr": "NOT FOUND n/a",
+    "collimator": "NOT FOUND n/a",
+    "dark": "jwst_nircam_dark_0424.fits",
+    "dflat": "NOT FOUND n/a",
+    "disperser": "NOT FOUND n/a",
+    "distortion": "jwst_nircam_distortion_0277.asdf",
+    "fflat": "NOT FOUND n/a",
+    "filteroffset": "jwst_nircam_filteroffset_0007.asdf",
+    "flat": "jwst_nircam_flat_0761.fits",
+    "fore": "NOT FOUND n/a",
+    "fpa": "NOT FOUND n/a",
+    "gain": "jwst_nircam_gain_0097.fits",
+    "ifufore": "NOT FOUND n/a",
+    "ifupost": "NOT FOUND n/a",
+    "ifuslicer": "NOT FOUND n/a",
+    "ipc": "jwst_nircam_ipc_0028.fits",
+    "linearity": "jwst_nircam_linearity_0052.fits",
+    "mask": "jwst_nircam_mask_0063.fits",
+    "msa": "NOT FOUND n/a",
+    "ote": "NOT FOUND n/a",
+    "photom": "jwst_nircam_photom_0168.fits",
+    "readnoise": "jwst_nircam_readnoise_0266.fits",
+    "refpix": "NOT FOUND n/a",
+    "regions": "NOT FOUND n/a",
+    "reset": "NOT FOUND n/a",
+    "rscd": "NOT FOUND n/a",
+    "saturation": "jwst_nircam_saturation_0097.fits",
+    "sflat": "NOT FOUND n/a",
+    "sirskernel": "jwst_nircam_sirskernel_0002.asdf",
+    "specwcs": "NOT FOUND n/a",
+    "superbias": "jwst_nircam_superbias_0220.fits",
+    "wavelengthrange": "NOT FOUND n/a"
+  },
+  "status": "unchanged current selector",
+  "metadata_response_reads": [
+    {
+      "url": "https://jwst-crds.stsci.edu/json/get_default_context/--14.0.3-d21f69ab-b652-4681-a56c-44dd2459a1af-00000001/",
+      "bytes": 125,
+      "sha256": "719cf547c1f47b25772f08d4280c3bcb8ccc51bc2cb16e1c9ee679a23baee193"
+    },
+    {
+      "url": "https://jwst-crds.stsci.edu/json/get_server_info/--14.0.3-d21f69ab-b652-4681-a56c-44dd2459a1af-00000002/",
+      "bytes": 1161458,
+      "sha256": "998f3c352de7d59016833fd0c6495858d7ac3998667b85b8c4fbb16c113a7cd6"
+    },
+    {
+      "url": "https://jwst-crds.stsci.edu/json/get_best_references/--14.0.3-d21f69ab-b652-4681-a56c-44dd2459a1af-00000003/",
+      "bytes": 1298,
+      "sha256": "068c3e42ffa66da5f540d025379daad9e4cc33df2927807d842ce80d69cee4d1"
+    },
+    {
+      "url": "https://jwst-crds.stsci.edu/json/get_mapping_names/--14.0.3-d21f69ab-b652-4681-a56c-44dd2459a1af-00000004/",
+      "bytes": 8290,
+      "sha256": "0669fb219399dc12c9f85f6c6e8fa421cf0d9343dd946e9663d670cceb663f5f"
+    }
+  ],
+  "metadata_body_bytes": 1171171
+}

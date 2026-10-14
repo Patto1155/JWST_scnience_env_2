@@ -1,0 +1,14 @@
+{
+  "context": "jwst_1596.pmap",
+  "imap": "jwst_nirspec_0444.imap",
+  "rmap": "jwst_nirspec_wavecorr_0005.rmap",
+  "mode": "NRS_MSASPEC",
+  "observation_date": "2025-04-14",
+  "selected_reference": "jwst_nirspec_wavecorr_0004.asdf",
+  "reference_bytes": 16453,
+  "reference_sha256": "869d4279137b1c7dea5e8bb4b4980d72fd0aa8423c87814050bfa710cd2b58f3",
+  "dummy": true,
+  "empirical_upgrade_gained": false,
+  "total_body_bytes": 294192,
+  "executed_utc": "2026-10-14T01:33:25.021902+00:00"
+}

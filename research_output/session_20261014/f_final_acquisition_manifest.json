@@ -1,0 +1,736 @@
+{
+  "freeze_commit": "93a1f07ad583b9743d79004878ed9fc1cd505f3a",
+  "metadata_response_body_bytes": 939842,
+  "science_range_response_body_bytes": 17441920,
+  "all_instrumented_response_body_bytes": 18381762,
+  "cap_bytes": 300000000,
+  "metadata_cap_bytes": 30000000,
+  "recorded_instrumented_bodies_within_caps": true,
+  "entire_session_exact_total_certified": false,
+  "unreceipted_documentation_probe": "Exact body bytes unknown; no science output uses it. Budget reserve1MB is assumption, not certified bound.",
+  "prior_slow_run_elapsed_seconds": 601.5749770379989,
+  "prior_slow_run_timing_breach": true,
+  "optimized_run_elapsed_seconds": 228.60905645399907,
+  "files": [
+    {
+      "path": "research_output/session_20261014/f_aa_tau_coverage.json",
+      "bytes": 99992,
+      "sha256": "cf1aca3f44599ec0807a050966ae8b094b2591bb8830f3e135c383151525a0a3"
+    },
+    {
+      "path": "research_output/session_20261014/f_aa_tau_coverage_fast.json",
+      "bytes": 204544,
+      "sha256": "ab127681cfb65e3836c92a54a9c1ba7240d8f22d8592d7ff452ca9d20f99e9a4"
+    },
+    {
+      "path": "research_output/session_20261014/f_aa_tau_fast_range_journal.jsonl",
+      "bytes": 89570,
+      "sha256": "58dc71e7720961c26a9544b1e8b73c114bc0558dbda38bc828345561e699783d"
+    },
+    {
+      "path": "research_output/session_20261014/f_aa_tau_fast_validation.json",
+      "bytes": 1099,
+      "sha256": "4b8a771e37d58e28de7672d5f6147b214828773e72de162521817c8d2d706415"
+    },
+    {
+      "path": "research_output/session_20261014/f_aa_tau_source_scope.json",
+      "bytes": 1960,
+      "sha256": "a3e60274fc051784add3cfff73ca226ff9b3b64f9f06696382cffd71ee811e1a"
+    },
+    {
+      "path": "research_output/session_20261014/f_control/f_aa_tau_adjudicated_controls.json",
+      "bytes": 4354,
+      "sha256": "26cb9f02dc59b6525ae9106fe0606b54fde7014d6c89bd8580eed9741c6c00e4"
+    },
+    {
+      "path": "research_output/session_20261014/f_control/f_aa_tau_allwise_gator_receipt.json",
+      "bytes": 691,
+      "sha256": "12345370f4a654c1c88795d4137bfb3575c3841ac955ab22d0b87af38bea0098"
+    },
+    {
+      "path": "research_output/session_20261014/f_control/f_aa_tau_allwise_identity_receipt.json",
+      "bytes": 938,
+      "sha256": "ee951b510e4cbc774383b495c374391dd2ed52bced6a6ed18dd1e63b85141293"
+    },
+    {
+      "path": "research_output/session_20261014/f_control/f_aa_tau_field_gaia_receipt.json",
+      "bytes": 3818,
+      "sha256": "e7ca24e03895070f70731b741299b5983d2165c97d72f234ff5396a507bf9fc1"
+    },
+    {
+      "path": "research_output/session_20261014/f_control/f_aa_tau_field_gaia_yso_labels_receipt.json",
+      "bytes": 1308,
+      "sha256": "3855b96d8427c99e4c43794eb9cfd045bf92f87128acfb0991fb665e4caf09d1"
+    },
+    {
+      "path": "research_output/session_20261014/f_control/f_aa_tau_field_identity_receipt.json",
+      "bytes": 3473,
+      "sha256": "1feed2638f30bb85d1bb23af8b693bdff51ce1b9925586db183242358fe9b280"
+    },
+    {
+      "path": "research_output/session_20261014/f_control/f_aa_tau_matched_allwise_field_receipt.json",
+      "bytes": 980,
+      "sha256": "f301aa41b6f5b183d1b7a5b0323f86283cc190b6e1fab2e56f4c619282abc60f"
+    },
+    {
+      "path": "research_output/session_20261014/f_control/f_allwise_control_upper_bound.json",
+      "bytes": 6123,
+      "sha256": "01e8e462ab64749b736b9b92d426c5b578602828bda8d9cd1f9681b2c87a5095"
+    },
+    {
+      "path": "research_output/session_20261014/f_control/f_gaia_controls.json",
+      "bytes": 3269,
+      "sha256": "b4458d4604bce5d5e7f22fca539053d949c31156e9b5a60e4569a75d7484b990"
+    },
+    {
+      "path": "research_output/session_20261014/f_control/f_gaia_yso_control_labels.json",
+      "bytes": 373,
+      "sha256": "9bd9cfe21e30c972060bd9aa138e94bf4e54224ac38b799ae729fafd67b178a8"
+    },
+    {
+      "path": "research_output/session_20261014/f_control/f_simbad_controls.json",
+      "bytes": 1984,
+      "sha256": "2ba7799a961ae90b3e1fd3fb9818ae4abc10a03650edb86f1c2a81ad0180459d"
+    },
+    {
+      "path": "research_output/session_20261014/f_control/f_target_allwise.json",
+      "bytes": 174,
+      "sha256": "41d8d5a474cfc8bc2dd6315c23649acdef47cc152c212ce5e2038d4b198f1e86"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_dde54_spherex_qr2_receipt.json",
+      "bytes": 690,
+      "sha256": "b98ad11d06d61521258265226e2be2adb585df2e9a7b2115f2a27adb1238433a"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_dde54_spherex_qr3_receipt.json",
+      "bytes": 690,
+      "sha256": "65b5f0b2ff6304805b15671f6daec8cc4b96eb8b13da9a1d0e3def3f2607adb9"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_identity_0_receipt.json",
+      "bytes": 810,
+      "sha256": "d22fe2fc9e9f13a0550b8640d950f2edd4518103b959ff474fb8b2d8a1660148"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_identity_1_receipt.json",
+      "bytes": 810,
+      "sha256": "44b8eb21c4811bdf12f7458ec094e85867edabe922e46b11e055837d5cf7d626"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_identity_2_receipt.json",
+      "bytes": 810,
+      "sha256": "63e42c622582f460c3737324938ecac2aaaad185e90e0b3c175abb4c8403c76c"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_identity_3_receipt.json",
+      "bytes": 810,
+      "sha256": "13538f4d82ad939de3858761fc0a7468af9f9d7a2a9162a80a3d96514dd599ca"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_identity_4_receipt.json",
+      "bytes": 810,
+      "sha256": "e5f33bd9e955045a1e8bc989fe8ff78cf71b942dcbc04f78e622b12c876c220d"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_identity_5_receipt.json",
+      "bytes": 806,
+      "sha256": "92ba5baf75de818617f383fcdfa6120f97a16e2c0cd1b7f7d6ded0151c58dedd"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_metadata_summary.json",
+      "bytes": 673236,
+      "sha256": "ec1c5807835847f3765e52781940c0c774e915b9fb1aa76dc5de0716fc923f53"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_spherex_overview_receipt.json",
+      "bytes": 436,
+      "sha256": "00eb0fe7cc155e44a08977eebe7bceb4c2482824f0ec582a170eed53c523802e"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_yso_0_spherex_qr2_sia_receipt.json",
+      "bytes": 718,
+      "sha256": "53d407ccd0bd4a796f22894d2334e367588a13cd889c2282d3396705f1ccb692"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_yso_0_spherex_qr3_sia_receipt.json",
+      "bytes": 718,
+      "sha256": "11a5996a9b99be40e90df8377d1d158ce0ace4de43a053cb4e9f336a1638ef69"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_yso_1_spherex_qr2_sia_receipt.json",
+      "bytes": 711,
+      "sha256": "e6cb70db6c9c3a93b81b7bb5e792521819c481715759b03b0d691f8d1778bd17"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_yso_1_spherex_qr3_sia_receipt.json",
+      "bytes": 710,
+      "sha256": "67821c2a7efe43d71586b5bd9f41edae6c482e07a68c5f989d6d1af3559ebfd4"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_yso_2_spherex_qr2_sia_receipt.json",
+      "bytes": 711,
+      "sha256": "de62da84ac686d2eb9779727ece0f2261b31ed487d2192e5325ef68373081414"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_yso_2_spherex_qr3_sia_receipt.json",
+      "bytes": 710,
+      "sha256": "8ac3a76403e33fff94614161c6b249311ceb5dc285f6623ccb9cc4ff5b4f4bba"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_yso_3_spherex_qr2_sia_receipt.json",
+      "bytes": 709,
+      "sha256": "7abf9b1607febb7d3eb1d5331bc282aa27bb846f8794fb7cf1900435a9695a27"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_yso_3_spherex_qr3_sia_receipt.json",
+      "bytes": 710,
+      "sha256": "30d48f91cd20cbc52f63d2e4b0b8f1d8deb59a482afa4ec10bee948266b0f7ee"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_yso_4_spherex_qr2_sia_receipt.json",
+      "bytes": 710,
+      "sha256": "a37eb6ebcb15e079382ed8bd2d540cba8feba5bf8d9ece93aaa1aad0304cd7b8"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_yso_4_spherex_qr3_sia_receipt.json",
+      "bytes": 711,
+      "sha256": "6d0205127a1db7afbd302c9ab84e0d2b7182b7eb537c0f1e3360083faca79e20"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_yso_5_spherex_qr2_sia_receipt.json",
+      "bytes": 717,
+      "sha256": "8e506180ffa87c6f3956828de8e89df8aeb8ee26904104818089ad648794a4dc"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_yso_5_spherex_qr3_sia_receipt.json",
+      "bytes": 718,
+      "sha256": "e62ad6a74a8416d30bf88fa4fd38e9f93dc0daf28e32332de02086b0f3b10827"
+    },
+    {
+      "path": "research_output/session_20261014/f_dde54_spherex_qr3_receipt.json",
+      "bytes": 690,
+      "sha256": "381a613b38d8151065114140974f586d12a2311377736e27231cb11350dfaf62"
+    },
+    {
+      "path": "research_output/session_20261014/f_extra/f_official_release_discovery_receipt.json",
+      "bytes": 446,
+      "sha256": "dedaec7b358bc415497f979dce7a652acfc2bf5a1599c73617fa8eaec2d5c4e9"
+    },
+    {
+      "path": "research_output/session_20261014/f_identity_0_receipt.json",
+      "bytes": 750,
+      "sha256": "ca9152679b5c49a33ed5e6e426c203d34143f197c98f31f2ec5763bd96fe4518"
+    },
+    {
+      "path": "research_output/session_20261014/f_identity_1_receipt.json",
+      "bytes": 750,
+      "sha256": "520020c698c0fb3167a729bbda3b2a9fd7a48509fae410fb11f30875af908201"
+    },
+    {
+      "path": "research_output/session_20261014/f_identity_2_receipt.json",
+      "bytes": 750,
+      "sha256": "ef72448bb3fa58671b37c128d39b8bb7bdd0206654f18507839afbe792d824e8"
+    },
+    {
+      "path": "research_output/session_20261014/f_identity_3_receipt.json",
+      "bytes": 750,
+      "sha256": "25aba616a1abb9b9f21113d3f97fa5cd8d816e1536150262ef6c78fb687ffeda"
+    },
+    {
+      "path": "research_output/session_20261014/f_identity_4_receipt.json",
+      "bytes": 750,
+      "sha256": "2a4f878b2e9c71e1be8de209803f232bed69ad78f9e4b375cc5e9230c7bd83a0"
+    },
+    {
+      "path": "research_output/session_20261014/f_identity_5_receipt.json",
+      "bytes": 748,
+      "sha256": "9ff4bce35def9005384f07c8e8328091b771c7ace3d4f85eed32232382af28bc"
+    },
+    {
+      "path": "research_output/session_20261014/f_metadata_summary.json",
+      "bytes": 204354,
+      "sha256": "dfa97769d98213745c31e6e3ca68e862091dbc0df1c60ece2dd1a9f6948d5336"
+    },
+    {
+      "path": "research_output/session_20261014/f_other_controls/f_field_1_receipt.json",
+      "bytes": 971,
+      "sha256": "db0b8d1317c80f314f739242e3913a1a3e725eae5c4c614c61a76df88779998f"
+    },
+    {
+      "path": "research_output/session_20261014/f_other_controls/f_field_2_receipt.json",
+      "bytes": 971,
+      "sha256": "6fa9551938bea07528ac0288d86ae54bfd792c1b214ba9cca08c47eed349508c"
+    },
+    {
+      "path": "research_output/session_20261014/f_other_controls/f_field_3_receipt.json",
+      "bytes": 971,
+      "sha256": "ffb8dc399fff88ef073f5fd5539b16913b26ce239f1fa8035fd7e8e816c0edb1"
+    },
+    {
+      "path": "research_output/session_20261014/f_other_controls/f_field_4_receipt.json",
+      "bytes": 971,
+      "sha256": "cd3871cd36ff8bbe810c6100b03ece60f75afbed2f6e73637a608beb369f3529"
+    },
+    {
+      "path": "research_output/session_20261014/f_other_controls/f_field_5_receipt.json",
+      "bytes": 979,
+      "sha256": "c299548a8d8d8fec468d711abfb433d7b7e4b5de8b1bdb2df042cf16649928d0"
+    },
+    {
+      "path": "research_output/session_20261014/f_other_controls/f_other_target_control_screen.json",
+      "bytes": 19369,
+      "sha256": "a9e1cea18c799faa280c66fb06c43262e8a45f9a3ef9d0b8098ee2097ad05319"
+    },
+    {
+      "path": "research_output/session_20261014/f_other_controls/f_target_1_receipt.json",
+      "bytes": 855,
+      "sha256": "d9532284fedebfc93f547786e026047c95ac597bbc736c55680f907c86907df6"
+    },
+    {
+      "path": "research_output/session_20261014/f_other_controls/f_target_2_receipt.json",
+      "bytes": 856,
+      "sha256": "908afc06e15c359a902cd3a9aad3096c3c911b519913a399b2cea27a0d2ee9eb"
+    },
+    {
+      "path": "research_output/session_20261014/f_other_controls/f_target_3_receipt.json",
+      "bytes": 856,
+      "sha256": "b08dcc1842d108c0f7747bbc1f9f8e4465fb640eb84b1c595069e6e2f8c3e14f"
+    },
+    {
+      "path": "research_output/session_20261014/f_other_controls/f_target_4_receipt.json",
+      "bytes": 855,
+      "sha256": "1804efb09518487ccc54a483f1a4e7e1617d884712e8c1f01d4c972b89771a7f"
+    },
+    {
+      "path": "research_output/session_20261014/f_other_controls/f_target_5_receipt.json",
+      "bytes": 862,
+      "sha256": "24ebaedbcb1232220a9ba9ad31122c9768f90e391f71efb5d7d555cc62933305"
+    },
+    {
+      "path": "research_output/session_20261014/f_probe.json",
+      "bytes": 261,
+      "sha256": "31c57cd1d92b6d32a216ac918b8a69d1b5c74da04ca9cb1b04cd4026cc497939"
+    },
+    {
+      "path": "research_output/session_20261014/f_session_receipts.json",
+      "bytes": 16880,
+      "sha256": "64104a445ccd645cc275a8161b6320b9f51db7f3b84c3c318cf92e2d34191668"
+    },
+    {
+      "path": "research_output/session_20261014/f_spherex_overview_receipt.json",
+      "bytes": 436,
+      "sha256": "254ac6210a5dbd4985df7f275a6ae75e525e11beec862a322d4fabc78051868a"
+    },
+    {
+      "path": "research_output/session_20261014/f_yso_0_sia_receipt.json",
+      "bytes": 706,
+      "sha256": "be7afc6a5b19160f431d63208d3d0917ed32093b21493612ac5cdc31977f4fd9"
+    },
+    {
+      "path": "research_output/session_20261014/f_yso_1_sia_receipt.json",
+      "bytes": 624,
+      "sha256": "95248f987e29873ae04712277a19857f56fc1b1fa088c658994e84867df9427f"
+    },
+    {
+      "path": "research_output/session_20261014/f_yso_2_sia_receipt.json",
+      "bytes": 698,
+      "sha256": "3b826aa3ee8b9b8c3dcc8d9e4b6d9631cecb04a96620737a948845c21d7a028d"
+    },
+    {
+      "path": "research_output/session_20261014/f_yso_3_sia_receipt.json",
+      "bytes": 698,
+      "sha256": "8da0d610451479f24f46bac204a337ae896fa0468d598799a9588850212c8746"
+    },
+    {
+      "path": "research_output/session_20261014/f_yso_4_sia_receipt.json",
+      "bytes": 698,
+      "sha256": "de51d62315a909db0794b2a1e5cd2fb3819cdd46cef58ec1e13044e650244389"
+    },
+    {
+      "path": "research_output/session_20261014/f_yso_5_sia_receipt.json",
+      "bytes": 706,
+      "sha256": "13fa77a0fc0c414470a6a878bbf3550da3f5ece3c0b9bf1ef31c82166b373c96"
+    }
+  ],
+  "metadata_receipts": [
+    {
+      "path": "research_output/session_20261014/f_control/f_aa_tau_allwise_gator_receipt.json",
+      "bytes": 6525,
+      "url": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query?catalog=allwise_p3as_psd&spatial=cone&objstr=68.73091745933+24.48139822905&radius=3&radunits=arcsec&outfmt=1",
+      "status": 200,
+      "body_sha256": "f5e704db877338f1ad77ee8e28e26e0174760f71f669814657c4f329e914d496"
+    },
+    {
+      "path": "research_output/session_20261014/f_control/f_aa_tau_allwise_identity_receipt.json",
+      "bytes": 160,
+      "url": "https://irsa.ipac.caltech.edu/TAP/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+TOP+10+designation%2Cra%2Cdec%2Cw1mpro%2Cw1sigmpro%2Ccc_flags+FROM+allwise_p3as_psd+WHERE+CONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C68.73091745933%2C24.48139822905%2C0.000833333%29%29%3D1",
+      "status": 504,
+      "body_sha256": "c9c89d274726b86306e1c97d80360f820bce86042c34c9bb2487aac4ada6d606"
+    },
+    {
+      "path": "research_output/session_20261014/f_control/f_aa_tau_field_gaia_receipt.json",
+      "bytes": 1275,
+      "url": "https://tapvizier.cds.unistra.fr/TAPVizieR/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+Source%2CRA_ICRS%2CDE_ICRS%2CPlx%2Ce_Plx%2CRUWE%2CpmRA%2CpmDE+FROM+%22I%2F355%2Fgaiadr3%22+WHERE+CONTAINS%28POINT%28%27ICRS%27%2CRA_ICRS%2CDE_ICRS%29%2CCIRCLE%28%27ICRS%27%2C68.7309349%2C24.4813498%2C0.000833333%29%29%3D1+OR+CONTAINS%28POINT%28%27ICRS%27%2CRA_ICRS%2CDE_ICRS%29%2CCIRCLE%28%27ICRS%27%2C68.6879488%2C24.4119921%2C0.000833333%29%29%3D1+OR+CONTAINS%28POINT%28%27ICRS%27%2CRA_ICRS%2CDE_ICRS%29%2CCIRCLE%28%27ICRS%27%2C68.6174131%2C24.4823926%2C0.000833333%29%29%3D1+OR+CONTAINS%28POINT%28%27ICRS%27%2CRA_ICRS%2CDE_ICRS%29%2CCIRCLE%28%27ICRS%27%2C68.7796635%2C24.6931187%2C0.000833333%29%29%3D1+OR+CONTAINS%28POINT%28%27ICRS%27%2CRA_ICRS%2CDE_ICRS%29%2CCIRCLE%28%27ICRS%27%2C68.7091112%2C24.2444745%2C0.000833333%29%29%3D1+OR+CONTAINS%28POINT%28%27ICRS%27%2CRA_ICRS%2CDE_ICRS%29%2CCIRCLE%28%27ICRS%27%2C68.4659506%2C24.5018324%2C0.000833333%29%29%3D1+OR+CONTAINS%28POINT%28%27ICRS%27%2CRA_ICRS%2CDE_ICRS%29%2CCIRCLE%28%27ICRS%27%2C68.8351642%2C24.2381333%2C0.000833333%29%29%3D1+OR+CONTAINS%28POINT%28%27ICRS%27%2CRA_ICRS%2CDE_ICRS%29%2CCIRCLE%28%27ICRS%27%2C68.8640785%2C24.249637%2C0.000833333%29%29%3D1+OR+CONTAINS%28POINT%28%27ICRS%27%2CRA_ICRS%2CDE_ICRS%29%2CCIRCLE%28%27ICRS%27%2C68.3847334%2C24.4200798%2C0.000833333%29%29%3D1+OR+CONTAINS%28POINT%28%27ICRS%27%2CRA_ICRS%2CDE_ICRS%29%2CCIRCLE%28%27ICRS%27%2C68.909314%2C24.7697612%2C0.000833333%29%29%3D1+OR+CONTAINS%28POINT%28%27ICRS%27%2CRA_ICRS%2CDE_ICRS%29%2CCIRCLE%28%27ICRS%27%2C68.3919187%2C24.3547155%2C0.000833333%29%29%3D1+OR+CONTAINS%28POINT%28%27ICRS%27%2CRA_ICRS%2CDE_ICRS%29%2CCIRCLE%28%27ICRS%27%2C68.9206581%2C24.1856605%2C0.000833333%29%29%3D1+OR+CONTAINS%28POINT%28%27ICRS%27%2CRA_ICRS%2CDE_ICRS%29%2CCIRCLE%28%27ICRS%27%2C69.1145568%2C24.649228%2C0.000833333%29%29%3D1+OR+CONTAINS%28POINT%28%27ICRS%27%2CRA_ICRS%2CDE_ICRS%29%2CCIRCLE%28%27ICRS%27%2C68.310049%2C24.3600612%2C0.000833333%29%29%3D1",
+      "status": 200,
+      "body_sha256": "b4ec59fd3cb30decad30e7142c7986c0c05b2e73551c398ba04a1c3d6ae9710d"
+    },
+    {
+      "path": "research_output/session_20261014/f_control/f_aa_tau_field_gaia_yso_labels_receipt.json",
+      "bytes": 164,
+      "url": "https://tapvizier.cds.unistra.fr/TAPVizieR/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+Source%2C%22Class%22%2CClassSc+FROM+%22I%2F358%2Fvclassre%22+WHERE+Source+IN+%28147605278502447744%2C147605282796916992%2C147606657186323712%2C147617961540254976%2C147618270777894784%2C147624249371196288%2C147725370082177280%2C147789657152584064%2C147790202612482560%2C147791615657665152%2C147813292357116672%2C147815903697232256%2C147818450613367424%2C147825597438860672%2C147917200501938176%29",
+      "status": 200,
+      "body_sha256": "ed58ba2c9b51086d98d0ccbca308b54abcffbe47dcc4005d9bdf7c6a429db5e8"
+    },
+    {
+      "path": "research_output/session_20261014/f_control/f_aa_tau_field_identity_receipt.json",
+      "bytes": 898,
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+main_id%2Cotype%2Cra%2Cdec+FROM+basic+WHERE+CONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C68.7309349%2C24.4813498%2C0.000833333%29%29%3D1+OR+CONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C68.6879488%2C24.4119921%2C0.000833333%29%29%3D1+OR+CONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C68.6174131%2C24.4823926%2C0.000833333%29%29%3D1+OR+CONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C68.7796635%2C24.6931187%2C0.000833333%29%29%3D1+OR+CONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C68.7091112%2C24.2444745%2C0.000833333%29%29%3D1+OR+CONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C68.4659506%2C24.5018324%2C0.000833333%29%29%3D1+OR+CONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C68.8351642%2C24.2381333%2C0.000833333%29%29%3D1+OR+CONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C68.8640785%2C24.249637%2C0.000833333%29%29%3D1+OR+CONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C68.3847334%2C24.4200798%2C0.000833333%29%29%3D1+OR+CONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C68.909314%2C24.7697612%2C0.000833333%29%29%3D1+OR+CONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C68.3919187%2C24.3547155%2C0.000833333%29%29%3D1+OR+CONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C68.9206581%2C24.1856605%2C0.000833333%29%29%3D1+OR+CONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C69.1145568%2C24.649228%2C0.000833333%29%29%3D1+OR+CONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C68.310049%2C24.3600612%2C0.000833333%29%29%3D1",
+      "status": 200,
+      "body_sha256": "29ba679682bbcae2a64a05dd7d147a8f8b6741a83dc60e68c8483735eacdd923"
+    },
+    {
+      "path": "research_output/session_20261014/f_control/f_aa_tau_matched_allwise_field_receipt.json",
+      "bytes": 4434,
+      "url": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query?catalog=allwise_p3as_psd&spatial=cone&objstr=68.73091745933+24.48139822905&radius=0.5&radunits=deg&outfmt=1&constraints=w1mpro%3E%3D6.947+AND+w1mpro%3C%3D7.947&selcols=designation%2Cra%2Cdec%2Cw1mpro%2Cw1sigmpro%2Ccc_flags%2Cw1rchi2%2Cw1sat%2Cext_flg",
+      "status": 200,
+      "body_sha256": "cd528286452e5edf5bc6af85f1c3ebd684d58ea85540ce11b6d6801f6957580a"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_dde54_spherex_qr2_receipt.json",
+      "bytes": 68483,
+      "url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_qr2&POS=CIRCLE+57.6419783+35.5856917+0.000277778&BAND=2.8e-6+3.9e-6&CALIB=2&RESPONSEFORMAT=CSV&MAXREC=10000",
+      "status": 200,
+      "body_sha256": "ce0a02427ef236ead29d13684b322a6f620702a7d5e3dc8d904b80204f28e0cd"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_dde54_spherex_qr3_receipt.json",
+      "bytes": 37961,
+      "url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_qr3&POS=CIRCLE+57.6419783+35.5856917+0.000277778&BAND=2.8e-6+3.9e-6&CALIB=2&RESPONSEFORMAT=CSV&MAXREC=10000",
+      "status": 200,
+      "body_sha256": "baf112b1365b994fc40eccae38d27c2a6598fc7489b22d622e84677e4dfcfc70"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_identity_0_receipt.json",
+      "bytes": 73,
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+DISTINCT+b.main_id%2Cb.otype%2Cb.ra%2Cb.dec+FROM+basic+AS+b+JOIN+ident+AS+i+ON+b.oid%3Di.oidref+WHERE+i.id+IN+%28%27AA+Tau%27%2C%27%2A+AA+Tau%27%29",
+      "status": 200,
+      "body_sha256": "f3c3180ebf5df53cf24abdd17aea0482608d8d578174e0f0da3db5a0df154f6c"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_identity_1_receipt.json",
+      "bytes": 69,
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+DISTINCT+b.main_id%2Cb.otype%2Cb.ra%2Cb.dec+FROM+basic+AS+b+JOIN+ident+AS+i+ON+b.oid%3Di.oidref+WHERE+i.id+IN+%28%27BP+Tau%27%2C%27%2A+BP+Tau%27%29",
+      "status": 200,
+      "body_sha256": "707ff505fe2bb148ebadaf634adb7f1bd80726e44682abf2d84d10e6ebf066bd"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_identity_2_receipt.json",
+      "bytes": 69,
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+DISTINCT+b.main_id%2Cb.otype%2Cb.ra%2Cb.dec+FROM+basic+AS+b+JOIN+ident+AS+i+ON+b.oid%3Di.oidref+WHERE+i.id+IN+%28%27DG+Tau%27%2C%27%2A+DG+Tau%27%29",
+      "status": 200,
+      "body_sha256": "6d5689358ba050b448d6d4596ce2fbc35ce53d2d31c46a4b37ba627030aac64e"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_identity_3_receipt.json",
+      "bytes": 69,
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+DISTINCT+b.main_id%2Cb.otype%2Cb.ra%2Cb.dec+FROM+basic+AS+b+JOIN+ident+AS+i+ON+b.oid%3Di.oidref+WHERE+i.id+IN+%28%27DR+Tau%27%2C%27%2A+DR+Tau%27%29",
+      "status": 200,
+      "body_sha256": "a6046c004a8f6809593c1b22d4c7e5f8e8c1f6ee31c9b3810abc07b7db6e8733"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_identity_4_receipt.json",
+      "bytes": 69,
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+DISTINCT+b.main_id%2Cb.otype%2Cb.ra%2Cb.dec+FROM+basic+AS+b+JOIN+ident+AS+i+ON+b.oid%3Di.oidref+WHERE+i.id+IN+%28%27HL+Tau%27%2C%27%2A+HL+Tau%27%29",
+      "status": 200,
+      "body_sha256": "9ef7e85271c528daa51421518a97b6439bec7ca6a90c8b61dba544a7de979f73"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_identity_5_receipt.json",
+      "bytes": 72,
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+DISTINCT+b.main_id%2Cb.otype%2Cb.ra%2Cb.dec+FROM+basic+AS+b+JOIN+ident+AS+i+ON+b.oid%3Di.oidref+WHERE+i.id+IN+%28%27T+Tau%27%2C%27%2A+T+Tau%27%29",
+      "status": 200,
+      "body_sha256": "d2ee6bbef36b27b5719751872865f87eba7fc21fe72e9ca58e0e92a3757934dd"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_spherex_overview_receipt.json",
+      "bytes": 6684,
+      "url": "https://irsa.ipac.caltech.edu/data/SPHEREx/docs/overview_qr.html",
+      "status": 200,
+      "body_sha256": "8d0afdd5400357b14fd5cb97bf179db57ce88c4efb1b97966ca2fe8908d53d57"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_yso_0_spherex_qr2_sia_receipt.json",
+      "bytes": 63989,
+      "url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_qr2&POS=CIRCLE+68.73091745933+24.481398229049997+0.000277778&BAND=2.8e-6+3.9e-6&CALIB=2&RESPONSEFORMAT=CSV&MAXREC=10000",
+      "status": 200,
+      "body_sha256": "cc8f43debe190e683d4d4b264f5ebc31bbcc3f895a62ed5a4a0b32a78be8fa80"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_yso_0_spherex_qr3_sia_receipt.json",
+      "bytes": 27942,
+      "url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_qr3&POS=CIRCLE+68.73091745933+24.481398229049997+0.000277778&BAND=2.8e-6+3.9e-6&CALIB=2&RESPONSEFORMAT=CSV&MAXREC=10000",
+      "status": 200,
+      "body_sha256": "e84af80368fab957b6ba1adb59a7cf887b335e92b065a77b21c30a403c26a8b4"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_yso_1_spherex_qr2_sia_receipt.json",
+      "bytes": 66744,
+      "url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_qr2&POS=CIRCLE+64.81597492818+29.10747971097+0.000277778&BAND=2.8e-6+3.9e-6&CALIB=2&RESPONSEFORMAT=CSV&MAXREC=10000",
+      "status": 200,
+      "body_sha256": "43d3c4bed3ae818e9545bc920f362a289292dd23e8bef6ca17e0ad43c2eaf315"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_yso_1_spherex_qr3_sia_receipt.json",
+      "bytes": 35277,
+      "url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_qr3&POS=CIRCLE+64.81597492818+29.10747971097+0.000277778&BAND=2.8e-6+3.9e-6&CALIB=2&RESPONSEFORMAT=CSV&MAXREC=10000",
+      "status": 200,
+      "body_sha256": "6fcb7dfe25b2b3c563114d2d97d6761ece04823bc08190ce6c5fbf6cd5d1d65c"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_yso_2_spherex_qr2_sia_receipt.json",
+      "bytes": 68488,
+      "url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_qr2&POS=CIRCLE+66.76955053162+26.10446115813+0.000277778&BAND=2.8e-6+3.9e-6&CALIB=2&RESPONSEFORMAT=CSV&MAXREC=10000",
+      "status": 200,
+      "body_sha256": "2da82d595f9b71599045d59f825a382c2ee6139bf0f98f098b35793203486741"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_yso_2_spherex_qr3_sia_receipt.json",
+      "bytes": 27041,
+      "url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_qr3&POS=CIRCLE+66.76955053162+26.10446115813+0.000277778&BAND=2.8e-6+3.9e-6&CALIB=2&RESPONSEFORMAT=CSV&MAXREC=10000",
+      "status": 200,
+      "body_sha256": "f9b7b4e48bc60b426618c930d09b71f616896ef670d015ff7a41df8f064bb828"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_yso_3_spherex_qr2_sia_receipt.json",
+      "bytes": 65911,
+      "url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_qr2&POS=CIRCLE+71.77589648386+16.97855940905+0.000277778&BAND=2.8e-6+3.9e-6&CALIB=2&RESPONSEFORMAT=CSV&MAXREC=10000",
+      "status": 200,
+      "body_sha256": "d9df161452e64c6b6d9e11ffd317493b8f4b2d7edf936f576d975694d7bbd9f5"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_yso_3_spherex_qr3_sia_receipt.json",
+      "bytes": 17950,
+      "url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_qr3&POS=CIRCLE+71.77589648386+16.97855940905+0.000277778&BAND=2.8e-6+3.9e-6&CALIB=2&RESPONSEFORMAT=CSV&MAXREC=10000",
+      "status": 200,
+      "body_sha256": "7acd6fda05420531d1b73572e4342fe4d95f5e7e1d302133f875565ba43a6203"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_yso_4_spherex_qr2_sia_receipt.json",
+      "bytes": 65893,
+      "url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_qr2&POS=CIRCLE+67.91046150388+18.23273881888+0.000277778&BAND=2.8e-6+3.9e-6&CALIB=2&RESPONSEFORMAT=CSV&MAXREC=10000",
+      "status": 200,
+      "body_sha256": "3de297b58aef8e7ebf899cf9128a62e2637ab8a9be74d55de56e2232bbb6dfab"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_yso_4_spherex_qr3_sia_receipt.json",
+      "bytes": 46155,
+      "url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_qr3&POS=CIRCLE+67.91046150388+18.23273881888+0.000277778&BAND=2.8e-6+3.9e-6&CALIB=2&RESPONSEFORMAT=CSV&MAXREC=10000",
+      "status": 200,
+      "body_sha256": "9c19370ba3f9090a443aafc4c279628327e977a69041ffc84ba26ca5f2f839e7"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_yso_5_spherex_qr2_sia_receipt.json",
+      "bytes": 64143,
+      "url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_qr2&POS=CIRCLE+65.49763328083+19.535120109259996+0.000277778&BAND=2.8e-6+3.9e-6&CALIB=2&RESPONSEFORMAT=CSV&MAXREC=10000",
+      "status": 200,
+      "body_sha256": "73dce7ea1cf9b36f68ddbcdad45f12f8fd475402182cf2477ae214e3cd67acc9"
+    },
+    {
+      "path": "research_output/session_20261014/f_current/f_yso_5_spherex_qr3_sia_receipt.json",
+      "bytes": 33445,
+      "url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_qr3&POS=CIRCLE+65.49763328083+19.535120109259996+0.000277778&BAND=2.8e-6+3.9e-6&CALIB=2&RESPONSEFORMAT=CSV&MAXREC=10000",
+      "status": 200,
+      "body_sha256": "4b085f8ddf0eeb566bf1e6d0d9f9da63376c60a42f6019fdc6f9ad21121d741f"
+    },
+    {
+      "path": "research_output/session_20261014/f_dde54_spherex_qr3_receipt.json",
+      "bytes": 37961,
+      "url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_qr3&POS=CIRCLE+57.6419783+35.5856917+0.000277778&BAND=2.8e-6+3.9e-6&CALIB=2&RESPONSEFORMAT=CSV&MAXREC=10000",
+      "status": 200,
+      "body_sha256": "baf112b1365b994fc40eccae38d27c2a6598fc7489b22d622e84677e4dfcfc70"
+    },
+    {
+      "path": "research_output/session_20261014/f_extra/f_official_release_discovery_receipt.json",
+      "bytes": 6684,
+      "url": "https://irsa.ipac.caltech.edu/data/SPHEREx/docs/overview_qr.html",
+      "status": 200,
+      "body_sha256": "8d0afdd5400357b14fd5cb97bf179db57ce88c4efb1b97966ca2fe8908d53d57"
+    },
+    {
+      "path": "research_output/session_20261014/f_identity_0_receipt.json",
+      "bytes": 73,
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+b.main_id%2Cb.otype%2Cb.ra%2Cb.dec+FROM+basic+AS+b+JOIN+ident+AS+i+ON+b.oid%3Di.oidref+WHERE+i.id%3D%27AA+Tau%27",
+      "status": 200,
+      "body_sha256": "f3c3180ebf5df53cf24abdd17aea0482608d8d578174e0f0da3db5a0df154f6c"
+    },
+    {
+      "path": "research_output/session_20261014/f_identity_1_receipt.json",
+      "bytes": 69,
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+b.main_id%2Cb.otype%2Cb.ra%2Cb.dec+FROM+basic+AS+b+JOIN+ident+AS+i+ON+b.oid%3Di.oidref+WHERE+i.id%3D%27BP+Tau%27",
+      "status": 200,
+      "body_sha256": "707ff505fe2bb148ebadaf634adb7f1bd80726e44682abf2d84d10e6ebf066bd"
+    },
+    {
+      "path": "research_output/session_20261014/f_identity_2_receipt.json",
+      "bytes": 69,
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+b.main_id%2Cb.otype%2Cb.ra%2Cb.dec+FROM+basic+AS+b+JOIN+ident+AS+i+ON+b.oid%3Di.oidref+WHERE+i.id%3D%27DG+Tau%27",
+      "status": 200,
+      "body_sha256": "6d5689358ba050b448d6d4596ce2fbc35ce53d2d31c46a4b37ba627030aac64e"
+    },
+    {
+      "path": "research_output/session_20261014/f_identity_3_receipt.json",
+      "bytes": 69,
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+b.main_id%2Cb.otype%2Cb.ra%2Cb.dec+FROM+basic+AS+b+JOIN+ident+AS+i+ON+b.oid%3Di.oidref+WHERE+i.id%3D%27DR+Tau%27",
+      "status": 200,
+      "body_sha256": "a6046c004a8f6809593c1b22d4c7e5f8e8c1f6ee31c9b3810abc07b7db6e8733"
+    },
+    {
+      "path": "research_output/session_20261014/f_identity_4_receipt.json",
+      "bytes": 69,
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+b.main_id%2Cb.otype%2Cb.ra%2Cb.dec+FROM+basic+AS+b+JOIN+ident+AS+i+ON+b.oid%3Di.oidref+WHERE+i.id%3D%27HL+Tau%27",
+      "status": 200,
+      "body_sha256": "9ef7e85271c528daa51421518a97b6439bec7ca6a90c8b61dba544a7de979f73"
+    },
+    {
+      "path": "research_output/session_20261014/f_identity_5_receipt.json",
+      "bytes": 72,
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+b.main_id%2Cb.otype%2Cb.ra%2Cb.dec+FROM+basic+AS+b+JOIN+ident+AS+i+ON+b.oid%3Di.oidref+WHERE+i.id%3D%27T+Tau%27",
+      "status": 200,
+      "body_sha256": "d2ee6bbef36b27b5719751872865f87eba7fc21fe72e9ca58e0e92a3757934dd"
+    },
+    {
+      "path": "research_output/session_20261014/f_other_controls/f_field_1_receipt.json",
+      "bytes": 3438,
+      "url": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query?catalog=allwise_p3as_psd&spatial=cone&objstr=64.81597492818+29.10747971097&radius=0.5&radunits=deg&outfmt=1&selcols=designation%2Cra%2Cdec%2Cw1mpro%2Cw1sigmpro%2Ccc_flags%2Cw1rchi2%2Cw1sat%2Cext_flg&constraints=w1mpro%3E%3D6.613000+AND+w1mpro%3C%3D7.613000",
+      "status": 200,
+      "body_sha256": "12ae74d2f8c36a96caa9a8ebc855a2116c69cf62d6d95e9db58da30c9decd415"
+    },
+    {
+      "path": "research_output/session_20261014/f_other_controls/f_field_2_receipt.json",
+      "bytes": 2770,
+      "url": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query?catalog=allwise_p3as_psd&spatial=cone&objstr=66.76955053162+26.10446115813&radius=0.5&radunits=deg&outfmt=1&selcols=designation%2Cra%2Cdec%2Cw1mpro%2Cw1sigmpro%2Ccc_flags%2Cw1rchi2%2Cw1sat%2Cext_flg&constraints=w1mpro%3E%3D5.683000+AND+w1mpro%3C%3D6.683000",
+      "status": 200,
+      "body_sha256": "4a148d2adf46dde9ea87aec70a465cde2aa1f9ed46cc9f676d19ead991813e84"
+    },
+    {
+      "path": "research_output/session_20261014/f_other_controls/f_field_3_receipt.json",
+      "bytes": 3605,
+      "url": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query?catalog=allwise_p3as_psd&spatial=cone&objstr=71.77589648386+16.97855940905&radius=0.5&radunits=deg&outfmt=1&selcols=designation%2Cra%2Cdec%2Cw1mpro%2Cw1sigmpro%2Ccc_flags%2Cw1rchi2%2Cw1sat%2Cext_flg&constraints=w1mpro%3E%3D5.334000+AND+w1mpro%3C%3D6.334000",
+      "status": 200,
+      "body_sha256": "bf06b62328264dde329dc37d4d5fde44059b9de1c18b581e40dbc003e00303b5"
+    },
+    {
+      "path": "research_output/session_20261014/f_other_controls/f_field_4_receipt.json",
+      "bytes": 2269,
+      "url": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query?catalog=allwise_p3as_psd&spatial=cone&objstr=67.91046150388+18.23273881888&radius=0.5&radunits=deg&outfmt=1&selcols=designation%2Cra%2Cdec%2Cw1mpro%2Cw1sigmpro%2Ccc_flags%2Cw1rchi2%2Cw1sat%2Cext_flg&constraints=w1mpro%3E%3D4.742000+AND+w1mpro%3C%3D5.742000",
+      "status": 200,
+      "body_sha256": "266625f7d67aca002b50b3d1b98fc152e38b445dc1bbff4c0bfd27f482ea562f"
+    },
+    {
+      "path": "research_output/session_20261014/f_other_controls/f_field_5_receipt.json",
+      "bytes": 2269,
+      "url": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query?catalog=allwise_p3as_psd&spatial=cone&objstr=65.49763328083+19.535120109259996&radius=0.5&radunits=deg&outfmt=1&selcols=designation%2Cra%2Cdec%2Cw1mpro%2Cw1sigmpro%2Ccc_flags%2Cw1rchi2%2Cw1sat%2Cext_flg&constraints=w1mpro%3E%3D3.392000+AND+w1mpro%3C%3D4.392000",
+      "status": 200,
+      "body_sha256": "f60f5205a292b193812afd9b14ae2a2f51ee99e2f0a9de825b64365b9575f8ce"
+    },
+    {
+      "path": "research_output/session_20261014/f_other_controls/f_target_1_receipt.json",
+      "bytes": 2245,
+      "url": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query?catalog=allwise_p3as_psd&spatial=cone&objstr=64.81597492818+29.10747971097&radius=3&radunits=arcsec&outfmt=1&selcols=designation%2Cra%2Cdec%2Cw1mpro%2Cw1sigmpro%2Ccc_flags%2Cw1rchi2%2Cw1sat%2Cext_flg",
+      "status": 200,
+      "body_sha256": "8d74e8bea0cffbf4df3a04ec237f7b1be7121cbbe96210a47a545769b7a4c260"
+    },
+    {
+      "path": "research_output/session_20261014/f_other_controls/f_target_2_receipt.json",
+      "bytes": 2245,
+      "url": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query?catalog=allwise_p3as_psd&spatial=cone&objstr=66.76955053162+26.10446115813&radius=3&radunits=arcsec&outfmt=1&selcols=designation%2Cra%2Cdec%2Cw1mpro%2Cw1sigmpro%2Ccc_flags%2Cw1rchi2%2Cw1sat%2Cext_flg",
+      "status": 200,
+      "body_sha256": "8404bfd43d301024a521d2855352f1fd44d79b64f84d95959328ea01cbb05002"
+    },
+    {
+      "path": "research_output/session_20261014/f_other_controls/f_target_3_receipt.json",
+      "bytes": 2245,
+      "url": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query?catalog=allwise_p3as_psd&spatial=cone&objstr=71.77589648386+16.97855940905&radius=3&radunits=arcsec&outfmt=1&selcols=designation%2Cra%2Cdec%2Cw1mpro%2Cw1sigmpro%2Ccc_flags%2Cw1rchi2%2Cw1sat%2Cext_flg",
+      "status": 200,
+      "body_sha256": "e45ed44907e36ae970685bf54ea05d7f14f70c09c7ff8e4b5576521a0e64a983"
+    },
+    {
+      "path": "research_output/session_20261014/f_other_controls/f_target_4_receipt.json",
+      "bytes": 2245,
+      "url": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query?catalog=allwise_p3as_psd&spatial=cone&objstr=67.91046150388+18.23273881888&radius=3&radunits=arcsec&outfmt=1&selcols=designation%2Cra%2Cdec%2Cw1mpro%2Cw1sigmpro%2Ccc_flags%2Cw1rchi2%2Cw1sat%2Cext_flg",
+      "status": 200,
+      "body_sha256": "c11d7d011665f849e18b85155f41284124574182885f9504aa570e118b693048"
+    },
+    {
+      "path": "research_output/session_20261014/f_other_controls/f_target_5_receipt.json",
+      "bytes": 2245,
+      "url": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query?catalog=allwise_p3as_psd&spatial=cone&objstr=65.49763328083+19.535120109259996&radius=3&radunits=arcsec&outfmt=1&selcols=designation%2Cra%2Cdec%2Cw1mpro%2Cw1sigmpro%2Ccc_flags%2Cw1rchi2%2Cw1sat%2Cext_flg",
+      "status": 200,
+      "body_sha256": "b683af862577187ae8d1222e45c9842dd7f1c787b9075b8d52f5e9bddaddf388"
+    },
+    {
+      "path": "research_output/session_20261014/f_spherex_overview_receipt.json",
+      "bytes": 6684,
+      "url": "https://irsa.ipac.caltech.edu/data/SPHEREx/docs/overview_qr.html",
+      "status": 200,
+      "body_sha256": "8d0afdd5400357b14fd5cb97bf179db57ce88c4efb1b97966ca2fe8908d53d57"
+    },
+    {
+      "path": "research_output/session_20261014/f_yso_0_sia_receipt.json",
+      "bytes": 27942,
+      "url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_qr3&POS=CIRCLE+68.73091745933+24.481398229049997+0.000277778&BAND=2.8e-6+3.9e-6&CALIB=2&RESPONSEFORMAT=CSV&MAXREC=10000",
+      "status": 200,
+      "body_sha256": "e84af80368fab957b6ba1adb59a7cf887b335e92b065a77b21c30a403c26a8b4"
+    },
+    {
+      "path": "research_output/session_20261014/f_yso_1_sia_receipt.json",
+      "bytes": 0,
+      "url": "https://irsa.ipac.caltech.edu/SIA",
+      "status": null,
+      "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research_output/session_20261014/f_yso_2_sia_receipt.json",
+      "bytes": 27041,
+      "url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_qr3&POS=CIRCLE+66.76955053162+26.10446115813+0.000277778&BAND=2.8e-6+3.9e-6&CALIB=2&RESPONSEFORMAT=CSV&MAXREC=10000",
+      "status": 200,
+      "body_sha256": "f9b7b4e48bc60b426618c930d09b71f616896ef670d015ff7a41df8f064bb828"
+    },
+    {
+      "path": "research_output/session_20261014/f_yso_3_sia_receipt.json",
+      "bytes": 17950,
+      "url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_qr3&POS=CIRCLE+71.77589648386+16.97855940905+0.000277778&BAND=2.8e-6+3.9e-6&CALIB=2&RESPONSEFORMAT=CSV&MAXREC=10000",
+      "status": 200,
+      "body_sha256": "7acd6fda05420531d1b73572e4342fe4d95f5e7e1d302133f875565ba43a6203"
+    },
+    {
+      "path": "research_output/session_20261014/f_yso_4_sia_receipt.json",
+      "bytes": 46155,
+      "url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_qr3&POS=CIRCLE+67.91046150388+18.23273881888+0.000277778&BAND=2.8e-6+3.9e-6&CALIB=2&RESPONSEFORMAT=CSV&MAXREC=10000",
+      "status": 200,
+      "body_sha256": "9c19370ba3f9090a443aafc4c279628327e977a69041ffc84ba26ca5f2f839e7"
+    },
+    {
+      "path": "research_output/session_20261014/f_yso_5_sia_receipt.json",
+      "bytes": 33445,
+      "url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_qr3&POS=CIRCLE+65.49763328083+19.535120109259996+0.000277778&BAND=2.8e-6+3.9e-6&CALIB=2&RESPONSEFORMAT=CSV&MAXREC=10000",
+      "status": 200,
+      "body_sha256": "4b085f8ddf0eeb566bf1e6d0d9f9da63376c60a42f6019fdc6f9ad21121d741f"
+    }
+  ],
+  "raw_large_products_retained": false,
+  "not_run": [
+    "all source flux/variability statistics",
+    "NEOWISE/ZTF lightcurves",
+    "measured field-star nulls",
+    "injection-recovery",
+    "science-product measurements for BP/DG/DR/HL/T Tau",
+    "GOODS-N"
+  ],
+  "source_code_versions": {
+    "slow_acquisition_commit": "e16f74b",
+    "optimized_acquisition_commit": "2b30537",
+    "current_scope_module_sha256": "7dff994bfc66f3e253e1a0a769f842ed24d7cd224718816f2caeb3079ae741c0"
+  }
+}

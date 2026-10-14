@@ -1,0 +1,31 @@
+{
+  "freeze_commit": "90110ef1913beff9d8537f5fc05361655cbdee6f",
+  "data_cap_bytes": 1610612736,
+  "charged_body_bytes": 151113600,
+  "receipts": [
+    {
+      "requested_url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast%3AJWST%2Fproduct%2Fjw02736001001_02105_00003_nrcalong_uncal.fits",
+      "resolved_url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast%3AJWST%2Fproduct%2Fjw02736001001_02105_00003_nrcalong_uncal.fits",
+      "retrieved_utc": "2026-10-14T01:33:45.176279+00:00",
+      "bytes": 75556800,
+      "sha256": "4711e54967820c8dc86811ecd3fbf813fd18806012fa397b1e6ad34910ac81e4",
+      "content_type": "application/octet-stream",
+      "etag": "\"6a6f9673-480e7c0\"",
+      "last_modified": "Sun, 02 Aug 2026 19:11:47 GMT",
+      "product_id": "jw02736001001_02105_00003_nrcalong_uncal.fits",
+      "max_bytes": 75556800
+    },
+    {
+      "requested_url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast%3AJWST%2Fproduct%2Fjw02736001001_02105_00004_nrcalong_uncal.fits",
+      "resolved_url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast%3AJWST%2Fproduct%2Fjw02736001001_02105_00004_nrcalong_uncal.fits",
+      "retrieved_utc": "2026-10-14T01:33:46.008839+00:00",
+      "bytes": 75556800,
+      "sha256": "5bd6819845c9b9be341b7a677f55eabc0885683f903fce72c4030ca9fd4c5d8d",
+      "content_type": "application/octet-stream",
+      "etag": "\"6a6f8daa-480e7c0\"",
+      "last_modified": "Sun, 02 Aug 2026 18:34:18 GMT",
+      "product_id": "jw02736001001_02105_00004_nrcalong_uncal.fits",
+      "max_bytes": 75556800
+    }
+  ]
+}

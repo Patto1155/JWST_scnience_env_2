@@ -1,0 +1,56 @@
+{
+  "freeze_commit": "90110ef1913beff9d8537f5fc05361655cbdee6f",
+  "retrieved_utc": "2026-10-14T01:33:02.962453+00:00",
+  "environment": {
+    "jwst": "3.0.0",
+    "crds": "14.0.3",
+    "astropy": "8.0.1",
+    "numpy": "2.5.4"
+  },
+  "raw_metadata": [
+    {
+      "filename": "jw02736001001_02105_00003_nrcalong_uncal.fits",
+      "requested_url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast%3AJWST%2Fproduct%2Fjw02736001001_02105_00003_nrcalong_uncal.fits",
+      "status": 200,
+      "resolved_url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast%3AJWST%2Fproduct%2Fjw02736001001_02105_00003_nrcalong_uncal.fits",
+      "content_length": "75556800",
+      "content_type": "text/plain"
+    },
+    {
+      "filename": "jw02736001001_02105_00004_nrcalong_uncal.fits",
+      "requested_url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast%3AJWST%2Fproduct%2Fjw02736001001_02105_00004_nrcalong_uncal.fits",
+      "status": 200,
+      "resolved_url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast%3AJWST%2Fproduct%2Fjw02736001001_02105_00004_nrcalong_uncal.fits",
+      "content_length": "75556800",
+      "content_type": "text/plain"
+    }
+  ],
+  "cone_metadata": {
+    "request": {
+      "service": "Mast.Caom.Cone",
+      "params": {
+        "ra": 110.63858928243717,
+        "dec": -73.48487214542632,
+        "radius": 0.001
+      },
+      "format": "json",
+      "pagesize": 1000,
+      "page": 1
+    },
+    "requested_url": "https://mast.stsci.edu/api/v0/invoke",
+    "error": "TimeoutError: The read operation timed out"
+  },
+  "budget": {
+    "raw_planned_bytes": 151113600,
+    "already_charged_bytes": 0,
+    "remaining_for_calibration_and_epoch_bytes": 1459499136
+  },
+  "raw_body_bytes": 0,
+  "outcome_arrays_opened": false,
+  "scientific_verdict": "not measured",
+  "limitations": [
+    "HEAD response does not verify body identity, raw calibration or coverage.",
+    "Cone metadata does not establish target coverage or epoch usability.",
+    "No raw repeat, null control or injection recovery is executed by this preflight."
+  ]
+}

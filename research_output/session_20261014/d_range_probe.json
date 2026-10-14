@@ -1,0 +1,9 @@
+{
+  "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00002_nrs2_cal.fits",
+  "range": "bytes=0-2879",
+  "utc": "2026-10-14T01:39:02.871493+00:00",
+  "status": 206,
+  "content_range": "bytes 0-2879/51563520",
+  "body_bytes": 2880,
+  "sha256": "9facecbfcdc8c6da09caac9fa804bdd3b82e2120ed25718e6bc964cb42bad572"
+}

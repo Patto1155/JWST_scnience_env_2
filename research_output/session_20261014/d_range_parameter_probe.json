@@ -1,0 +1,14 @@
+{
+  "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00002_nrs2_cal.fits&range_offset=0",
+  "requested_range": [
+    0,
+    65535
+  ],
+  "utc": "2026-10-14T01:49:51.571181+00:00",
+  "scope": "header-only transport diagnostic",
+  "status": 206,
+  "content_range": "bytes 0-65535/51563520",
+  "content_length": "65536",
+  "redirect_count": 0,
+  "body_bytes": 0
+}

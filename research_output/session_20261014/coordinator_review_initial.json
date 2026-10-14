@@ -1,0 +1,51 @@
+{
+  "C_fit_replay_exact": true,
+  "C_comparison_replay_exact": true,
+  "C_raw_end_to_end_verified": false,
+  "C_MoM_source_calibration_verified": false,
+  "E1_metadata_gate_replay": "blocked: required reference exceeds frozen transfer cap",
+  "E1_own_dark_HEAD": {
+    "url": "https://jwst-crds.stsci.edu/unchecked_get/references/jwst/jwst_nircam_dark_0424.fits",
+    "status": 200,
+    "content_length": "4378878720",
+    "utc": "2026-10-14T01:47:16.155554+00:00",
+    "body_bytes": 0,
+    "coordinator_independent_metadata_check": true
+  },
+  "independence": "Same photons/receipts; computational replay and metadata challenge are not independent astrophysical corroboration",
+  "unverified": [
+    "C unmetered astroquery schema metadata",
+    "E1 unattributed temporary-file provenance and CRDS RPC wire totals",
+    "Original raw bodies not independently reacquired by coordinator after cleanup",
+    "E2 historical worker peak-memory telemetry",
+    "E2 full-field astrometry cannot be regenerated from target/control cutouts alone"
+  ],
+  "D_fragment_bytes_verified": true,
+  "D_total_science_body_bytes": 299991808,
+  "D_new_noise_model_or_interval_verified": false,
+  "D_actual_stop": "300MB pilot allowance exhausted during overfetch; subsequent ASDF KeyError is not absence evidence",
+  "E2_compact_rank_counts_reproduced": true,
+  "E2_null_gate_arithmetic_independently_verified": {
+    "annulus": {
+      "p": 0.010714285714285714,
+      "passes": true,
+      "ratio": 1.0494626671832912
+    },
+    "poly0": {
+      "p": 0.025,
+      "passes": false,
+      "ratio": 1.0490437110775204
+    },
+    "poly1": {
+      "p": 0.02142857142857143,
+      "passes": false,
+      "ratio": 1.0459338257172464
+    },
+    "poly2": {
+      "p": 0.017857142857142856,
+      "passes": false,
+      "ratio": 1.0528071078869043
+    }
+  },
+  "E2_full_field_astrometry_independently_reproduced": false
+}

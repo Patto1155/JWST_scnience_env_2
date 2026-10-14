@@ -1,0 +1,20 @@
+{
+  "name": "aa_tau_matched_allwise_field",
+  "requested_url": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query",
+  "params": {
+    "catalog": "allwise_p3as_psd",
+    "spatial": "cone",
+    "objstr": "68.73091745933 24.48139822905",
+    "radius": 0.5,
+    "radunits": "deg",
+    "outfmt": 1,
+    "constraints": "w1mpro>=6.947 AND w1mpro<=7.947",
+    "selcols": "designation,ra,dec,w1mpro,w1sigmpro,cc_flags,w1rchi2,w1sat,ext_flg"
+  },
+  "utc_started": "2026-10-14T02:04:36.368077+00:00",
+  "status": 200,
+  "bytes": 4434,
+  "url": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query?catalog=allwise_p3as_psd&spatial=cone&objstr=68.73091745933+24.48139822905&radius=0.5&radunits=deg&outfmt=1&constraints=w1mpro%3E%3D6.947+AND+w1mpro%3C%3D7.947&selcols=designation%2Cra%2Cdec%2Cw1mpro%2Cw1sigmpro%2Ccc_flags%2Cw1rchi2%2Cw1sat%2Cext_flg",
+  "sha256_consumed_body": "cd528286452e5edf5bc6af85f1c3ebd684d58ea85540ce11b6d6801f6957580a",
+  "elapsed_seconds": 8.496456860000762
+}

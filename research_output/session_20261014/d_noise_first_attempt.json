@@ -1,0 +1,14 @@
+{
+  "status": "blocked",
+  "freeze_commit": "d50fa97",
+  "first_data_access_utc": null,
+  "error": "AttributeError: 'FITS_record' object has no attribute 'copy'",
+  "calibration_verdict": "fail",
+  "source_noise_validated": false,
+  "elemental_inference": false,
+  "acquisition": {
+    "cap_bytes": 300000000,
+    "body_bytes": 0,
+    "fragments": []
+  }
+}

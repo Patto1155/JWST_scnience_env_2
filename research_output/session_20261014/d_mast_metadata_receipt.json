@@ -1,0 +1,17 @@
+{
+  "url": "https://mast.stsci.edu/api/v0/invoke",
+  "request": {
+    "service": "Mast.Caom.Cone",
+    "params": {
+      "ra": 150.0933255,
+      "dec": 2.2731627,
+      "radius": 0.001
+    },
+    "format": "json",
+    "pagesize": 1000,
+    "page": 1
+  },
+  "utc": "2026-10-14T01:34:19.274700+00:00",
+  "scope": "metadata-only, no G235H outcomes opened",
+  "error": "ReadTimeout: HTTPSConnectionPool(host='mast.stsci.edu', port=443): Read timed out. (read timeout=40)"
+}

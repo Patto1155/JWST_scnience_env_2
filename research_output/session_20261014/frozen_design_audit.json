@@ -1,0 +1,51 @@
+[
+  {
+    "path": "docs/frozen/C_KNOWN_ANSWER_DESIGN.md",
+    "commit": "50a711a6060c6fd5667fb1150c0821dccc566ea3",
+    "commit_author_time": "2026-10-14T03:27:06+02:00",
+    "unchanged": true,
+    "sha256": "7310c4fbcc452d6116ce9e0720691e9c877a265828939f98dedd9375c1ca3a63"
+  },
+  {
+    "path": "docs/frozen/C2_CURRENT_RELEASE_KNOWN_ANSWER_DESIGN.md",
+    "commit": "8ac3d15391277b2143a9a05498528981391e729c",
+    "commit_author_time": "2026-10-14T03:40:56+02:00",
+    "unchanged": true,
+    "sha256": "44383b02fc7ffd149ae7b122e699c444ed7e09ed886861af14dea22b509c1167"
+  },
+  {
+    "path": "docs/frozen/D_NITROGEN_DESIGN.md",
+    "commit": "d50fa97d8346f1d44cb6d9c36fabddb30e3163a8",
+    "commit_author_time": "2026-10-14T03:26:54+02:00",
+    "unchanged": true,
+    "sha256": "da6282f746074f47f72e6dd8d527ddea2aeb7c374c54a33d2e5f9e61661f55b7"
+  },
+  {
+    "path": "docs/frozen/D_G235H_NEXT_DESIGN.md",
+    "commit": "f482216a8d29fb858f52b348ff0b6b97d098fc29",
+    "commit_author_time": "2026-10-14T03:42:01+02:00",
+    "unchanged": true,
+    "sha256": "f593e7ae876e9316e2d326a79e46988565669d238ec4745a7a60e3b03c4f4570"
+  },
+  {
+    "path": "docs/frozen/E_SMACS1043_DESIGN.md",
+    "commit": "90110ef1913beff9d8537f5fc05361655cbdee6f",
+    "commit_author_time": "2026-10-14T03:27:10+02:00",
+    "unchanged": true,
+    "sha256": "fd49d6ee40ab25e74c8ee6d06ad00b7739aa472fcdccf7a9b619fcda9cb2962a"
+  },
+  {
+    "path": "docs/frozen/E2_SMACS1043_BUDGET_DESIGN.md",
+    "commit": "19f2702294b680d2961045c55a508a6edcd157b4",
+    "commit_author_time": "2026-10-14T03:47:05+02:00",
+    "unchanged": true,
+    "sha256": "d3614e2afc2475d6a39c86ade65278fe9ad79e68514d5153d0a8db0835cd9c68"
+  },
+  {
+    "path": "docs/frozen/F_YSO_DESIGN.md",
+    "commit": "93a1f07ad583b9743d79004878ed9fc1cd505f3a",
+    "commit_author_time": "2026-10-14T03:27:30+02:00",
+    "unchanged": true,
+    "sha256": "8dcded7c6a33d984de93ae4874a6d04a8fe2b73c5036d7c84a553a4f1463da3d"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "name": "identity_4",
+  "requested_url": "https://simbad.cds.unistra.fr/simbad/sim-tap/sync",
+  "params": {
+    "REQUEST": "doQuery",
+    "LANG": "ADQL",
+    "FORMAT": "csv",
+    "QUERY": "SELECT DISTINCT b.main_id,b.otype,b.ra,b.dec FROM basic AS b JOIN ident AS i ON b.oid=i.oidref WHERE i.id IN ('HL Tau','* HL Tau')"
+  },
+  "utc_started": "2026-10-14T01:35:47.641685+00:00",
+  "status": 200,
+  "bytes": 69,
+  "url": "https://simbad.cds.unistra.fr/simbad/sim-tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+DISTINCT+b.main_id%2Cb.otype%2Cb.ra%2Cb.dec+FROM+basic+AS+b+JOIN+ident+AS+i+ON+b.oid%3Di.oidref+WHERE+i.id+IN+%28%27HL+Tau%27%2C%27%2A+HL+Tau%27%29",
+  "sha256_consumed_body": "9ef7e85271c528daa51421518a97b6439bec7ca6a90c8b61dba544a7de979f73",
+  "elapsed_seconds": 6.938666453999758
+}
