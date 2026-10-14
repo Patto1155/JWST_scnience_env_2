@@ -141,5 +141,5 @@ def test_build_discovery_run_payload_includes_minimum_activity_constraints(monke
     )
 
     constraints = payload["spec"]["constraints"]
-    assert constraints["min_successful_tool_calls"] == 12
-    assert constraints["min_reflections"] == 2
+    assert constraints["min_successful_tool_calls"] == 0
+    assert constraints["min_reflections"] == 0

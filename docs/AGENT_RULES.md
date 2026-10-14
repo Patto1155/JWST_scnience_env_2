@@ -2,6 +2,21 @@
 
 This document defines rules for how LLM agents interact with this system.
 
+Current scientific state lives only in `docs/STATUS.md` and `docs/CLAIM_LEDGER.md`.
+The lead researcher owns those files; subagents submit evidence and proposed grades
+without editing them. Code-changing subagents use isolated worktrees. Every task
+names inputs, output path, acceptance command, exclusions and "list what you did
+not run". Freeze hypothesis, data selection, statistic, null, threshold and
+multiplicity correction in a commit before downloading or opening new outcome
+data. An edited-after-access design is void; GOODS-N remains sealed.
+
+Null-control, injection-recovery and independent-repeat or holdout artifacts are
+required before Candidate/Validated promotion. Shared-model reviewer agreement
+is not corroboration: independence comes from different epochs, instruments,
+reductions or held-out fields, or a different provider when an OpenRouter key is
+available. Runtime tool-call/reflection minima default to zero and are opt-in;
+scientific stopping depends on evidence and declared budgets, not activity.
+
 **See [NORTH_STAR.md](NORTH_STAR.md) for the vision of autonomous research agents.**
 
 ---
@@ -89,7 +104,7 @@ The `ScientificResearchAgent` class in `runner/scientific_agent.py` implements t
 - Work with summaries, not raw data
 - Generate plots or evidence artifacts when useful
 - Report uncertainty and limitations
-- Stop when confidence is high or limits are reached
+- Stop when the frozen question is answered, a prerequisite fails or limits are reached
 
 **Usage:** create a run with `spec.steps = None` or an empty list to enable agent mode.
 
@@ -103,7 +118,9 @@ This layer should:
 - Restrict cheap workers with `constraints.allowed_tools` when they only need a small tool surface
 - Persist session telemetry as `event_stream.jsonl` and `live_state.json`
 - Persist `session_manifest.json`, `operator_inbox.jsonl`, and `supervisor_outbox.jsonl` as the stable local GUI/control boundary
-- Track per-worker tool usage so the supervisor and GUI can compare worker depth
+- Track per-worker tool usage for resource accounting; it is not evidence quality
+- Treat worker `promote` and judge `escalate` as queueing statistical-gate review only
+- Persist `statistical_gate_queue.json`; never let runtime workers or judges change scientific grades
 - Avoid giving worker agents direct filesystem authority beyond registered tools
 
 If something is missing:

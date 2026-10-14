@@ -1,4 +1,5 @@
 @echo off
+cd /d "%~dp0"
 REM Start JWST Discovery System - All-in-One
 
 echo Starting API server...
@@ -18,7 +19,7 @@ echo Run a discovery:
 echo   python run_discovery.py --stream --model deepseek-v3.2
 echo.
 echo OR watch a specific run:
-echo   python stream_discovery_win.py RUN_ID
+echo   python stream_discovery.py RUN_ID
 echo.
 
 pause

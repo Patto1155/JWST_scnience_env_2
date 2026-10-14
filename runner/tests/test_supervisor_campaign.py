@@ -10,12 +10,15 @@ from discovery.session_schemas import CandidateSummary, normalize_worker_report
 from discovery.supervisor_campaign import (
     DEFAULT_ALLOWED_WORKER_TOOLS,
     WORKER_REPORT_PREFIX,
-    build_worker_payload,
+    build_judge_prompt,
+    build_statistical_gate_queue,
     build_worker_objective,
+    build_worker_payload,
     extract_structured_worker_report,
     normalize_candidate_record,
-    select_top_reports_for_judge,
+    render_judge_markdown,
     run_supervisor_campaign,
+    select_top_reports_for_judge,
 )
 from discovery.telemetry import SessionTelemetry
 
@@ -71,6 +74,8 @@ def test_build_worker_payload_uses_qwen_worker_model() -> None:
     constraints = payload["spec"]["constraints"]
     assert constraints["max_steps"] == 7
     assert constraints["strict_real_data"] is True
+    assert constraints["min_successful_tool_calls"] == 0
+    assert constraints["min_reflections"] == 0
     assert constraints["allowed_tools"] == DEFAULT_ALLOWED_WORKER_TOOLS
     assert WORKER_REPORT_PREFIX in payload["spec"]["objective"]
 
@@ -265,3 +270,24 @@ def test_run_supervisor_campaign_survives_judge_failure(
     assert summary["status"] == "completed_with_errors"
     assert summary["judge_report_path"] is None
     assert summary["tool_call_count_total"] == 3
+
+
+def test_judge_escalation_only_queues_statistical_gate() -> None:
+    report = {
+        "session_id": "demo",
+        "top_candidates": [
+            {"candidate_id": "one", "decision": "escalate", "rationale": "check controls"},
+            {"candidate_id": "two", "decision": "watch", "rationale": "wait"},
+        ],
+    }
+    original = json.loads(json.dumps(report))
+    queue = build_statistical_gate_queue(report)
+    assert report == original
+    assert [task["candidate_id"] for task in queue["tasks"]] == ["one"]
+    assert queue["tasks"][0]["required_artifacts"] == [
+        "null_control", "injection_recovery", "independent_repeat_or_holdout"
+    ]
+    assert "grade" not in queue["tasks"][0]
+    prompt = build_judge_prompt("demo", "demo", [])[0]["content"]
+    assert "never a scientific status change" in prompt
+    assert "do not change scientific grades" in render_judge_markdown(report)

@@ -1,4 +1,5 @@
 @echo off
+cd /d "%~dp0"
 echo.
 echo ================================================
 echo JWST Deep Discovery System
@@ -14,14 +15,14 @@ pause
 
 REM Start API in background
 echo Starting API server...
-start /B python run_api.py > api.log 2>&1
+start "JWST API" cmd /c "python run_api.py > api.log 2>&1"
 
 REM Wait for API to start
 echo Waiting for API to initialize...
 timeout /t 8 /nobreak > nul
 
 REM Test if API is up
-python -c "import requests; requests.get('http://localhost:8000/health', timeout=2)" 2>nul
+python -c "import requests; requests.get('http://localhost:8000/health', timeout=2).raise_for_status()" 2>nul
 if errorlevel 1 (
     echo.
     echo ERROR: API failed to start!
@@ -51,6 +52,6 @@ echo Press any key to stop it...
 pause > nul
 
 REM Kill API server
-taskkill /F /FI "WINDOWTITLE eq python run_api.py*" > nul 2>&1
+taskkill /F /T /FI "WINDOWTITLE eq JWST API*" > nul 2>&1
 
 echo API server stopped.

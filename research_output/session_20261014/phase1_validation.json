@@ -1,0 +1,23 @@
+{
+  "phase1_revision": "f7115ac",
+  "phase1_gate_exit": 0,
+  "phase1_gate_log_sha256": "b178d5a425575ee8fa94e8aac37b50c2531686596ddc61e7c7f9cd4b12076ac3",
+  "negative_control": {
+    "exit": 1,
+    "tests": 784,
+    "passes": 780,
+    "failures": 0,
+    "errors": 0,
+    "skips": 4,
+    "reason": "Only additional unapproved injected skip caused gate failure",
+    "log_sha256": "26fe2cf8062ad21b4f9b8d0e81774cef6430383291e88d921edf0b425b5abc46"
+  },
+  "skip_is_not_pass": true,
+  "baseline_environment": "requirements-dev.txt; fresh Python3.12 venv; baseline gate exit0",
+  "not_run": [
+    "Windows launchers",
+    "Docker build/startup",
+    "live PostgreSQL",
+    "external provider review"
+  ]
+}

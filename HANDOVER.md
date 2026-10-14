@@ -1,5 +1,13 @@
 # Handover: multi-epoch capability, and what this pipeline can actually discover
 
+> **Historical record.** Current scientific state is only in `docs/STATUS.md` and
+> `docs/CLAIM_LEDGER.md`. The 2026-10-09 correction at the end supersedes stronger
+> interpretations above it. The ~15% artifact fraction was not reproduced.
+> Every "1000–1250 artifacts per genuine high-redshift source" comparison below
+> is uncalibrated: its populations, depths and selection functions differ; neither
+> it nor the derived ~360 figure is an accepted contamination estimate.
+
+
 Current verified results and corrections are in [docs/TAKEOVER_STATUS.md](docs/TAKEOVER_STATUS.md).
 The historical measurements below retain their original scope and reduction version.
 In particular, older statements about absent F444W repeat coverage or unavailable
@@ -310,9 +318,8 @@ quality checks; missing blue coverage is not a non-detection.
 Against a genuine z > 10 surface density of order 0.03 per arcmin², the measured
 artifact density implies roughly **1000-1250 artifacts per real high-redshift
 source** in a single-exposure dropout search. This order-of-magnitude comparison is not a calibrated contamination estimate
-for the shipped catalog; rates, depths and selection functions differ. Even with the cross-filter pairing
-bug fixed, a single-exposure search of this kind is contaminated by three orders
-of magnitude.
+for the shipped catalog; rates, depths and selection functions differ. A calibrated contamination estimate still requires matched populations, depths
+and selection-function recovery; this comparison cannot establish it.
 
 ### A flaw found in this method, and fixed
 
@@ -466,9 +473,9 @@ done.
 
 ### What this does not change
 
-The 15% artifact rate stands — it comes from repeat-exposure vetting, not from
-the classifier. So does the conclusion that a single-exposure dropout search
-carries ~1000-1250 artifacts per genuine high-redshift source. The classifier
+Historical interpretation, superseded by the 2026-10-09 correction: the ~15%
+single-epoch-only fraction was not reproduced and is not a calibrated artifact
+rate. The ~1000-1250 comparison is uncalibrated and cannot establish contamination. The classifier
 was the proposed mitigation, and it does not work for that purpose. Deep mosaics with cross-dither rejection are a strong practical route;
 properly validated individual-exposure/ramp analyses remain possible.
 
@@ -589,12 +596,11 @@ stellar field, or an independently generated PSF model.
 | ramp statistic, null-calibrated | mostly (1.5x) | too weak (AUC 0.791) |
 | **morphology classifier, retrained** | **yes (0-5%)** | **yes, at 2.9x mitigation** |
 
-The measurements are untouched throughout: the 15% artifact rate, the 31-38 per
-arcmin² per exposure density, and the ~1000-1250 artifacts per genuine
-high-redshift source all come from repeat-exposure vetting and use no classifier
-at all. With the retrained cut applied that last number falls to roughly 360 per
-genuine source — better, and still hopeless for a single-exposure dropout
-search. Deep mosaics with cross-dither rejection remain the preferred recovery benchmark.
+These are historical measurements and uncalibrated extrapolations, superseded
+by the 2026-10-09 correction: the ~15% single-epoch-only fraction and 31-38 per
+arcmin² density were not reproduced there. The ~1000-1250 and derived ~360
+artifacts-per-genuine-source figures do not use matched calibrated selection
+functions and must not be quoted as accepted contamination rates. Deep mosaics with cross-dither rejection remain the preferred recovery benchmark.
 
 ---
 

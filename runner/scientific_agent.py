@@ -376,6 +376,7 @@ class ScientificResearchAgent:
             constraints.get("max_tokens_per_call", 4096)
         )
         strict_real_data = bool(constraints.get("strict_real_data", False))
+        # Activity quotas are opt-in; evidence, not call count, decides when to stop.
         min_successful_tool_calls = self._parse_non_negative_int(
             constraints.get("min_successful_tool_calls", 0)
         )

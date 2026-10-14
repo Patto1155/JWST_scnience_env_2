@@ -1,4 +1,4 @@
-FROM python:3.11-slim
+FROM python:3.12-slim
 
 WORKDIR /app
 
@@ -21,5 +21,5 @@ RUN mkdir -p artifacts runner_work
 EXPOSE 8000
 
 # Default command
-CMD ["uvicorn", "core-api.app:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "core_api.app:app", "--host", "0.0.0.0", "--port", "8000"]
 
