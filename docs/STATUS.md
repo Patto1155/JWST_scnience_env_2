@@ -13,15 +13,24 @@ No grade is promoted. A fresh MoM signed ionic N/C moment-Fieller set is
 [0.10155, 13.48043], including ambient 0.25119 and the headline boundary 2.51189.
 The frozen practical noise diagnostics pass, but source coverage, raw known-answer
 calibration and the assumed geometric wavelength-prior distribution remain
-unvalidated. This neither replicates nor refutes elemental enrichment. See
-[MOM_CALIBRATED_CHALLENGE.md](MOM_CALIBRATED_CHALLENGE.md).
+unvalidated. This neither replicates nor refutes elemental enrichment, and the
+cross-lineage audit found the PRISM arm cannot discriminate: the wavelength prior
+decides ambient membership and no PRISM analysis can test the headline boundary.
+**The PRISM arm is paused until G235H data.** See
+[MOM_CALIBRATED_CHALLENGE.md](MOM_CALIBRATED_CHALLENGE.md) and
+[AUDIT_20261014.md](AUDIT_20261014.md).
 
-The amended historical 1.2094 combined-error comparison passes its descriptive
-criterion. Raw end-to-end recovery remains blocked on contributor/operator/prior
+The amended 1.2094 combined-error comparison is **not passing evidence**: the
+criterion was set after the result was known, and shared-photon covariance makes
+a combined-error pull lean toward passing. Under the original published-error
+criterion it is 1.89σ, in the same direction as the population deficit below. Raw end-to-end recovery remains blocked on contributor/operator/prior
 prerequisites. Released-1D training covers 15 GOODS-S lines; the sole authorized
 GOODS-N confirmation covers 14/15 lines and fails its frozen descriptive N(0,1)
 mean/SD prediction (mean -0.97093, SD 0.48843). Shared photons and operator/prior
-mismatch prevent identifying a published-error scale. The southern fallback
+mismatch prevent identifying a published-error scale. What the test does show is a
+replicated systematic deficit: this operator's fluxes are about 8–15% below the
+JADES catalogue in both fields (13/14 GN pulls negative). Finding its cause is
+now the first calibration task. The southern fallback
 spectra remain unopened. Earlier sealed-GOODS-N statements below are historical;
 only B accessed the northern confirmation after committing the GS prediction.
 See [CALIBRATED_KNOWN_ANSWER.md](CALIBRATED_KNOWN_ANSWER.md).

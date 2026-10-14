@@ -124,7 +124,7 @@ received overlength chunks are charged before rejection.
 ## Final single northern result: prescribed prediction fails
 
 **The descriptive N(0,1) prediction fails; raw calibration remains unmet.**
-GN has14usable of15selected measurements: one metadata HEAD timeout contributes
+GN has14usable of15selected measurements: one spectrum GET timeout (its HEAD returned 200) contributes
 no flux or pull and is retained, with no replacement. The source-group counts
 are15GS/14GN, so these achieved samples contain one selected line per object.
 GN mean pull is **-0.970935**, sample SD **0.488430**, diagnostic KS p
@@ -133,11 +133,16 @@ range +/-0.523832 and SD95% range [0.620716,1.379398]; both diagnostic interval
 checks fail. The originally frozen n15 numerical intervals are also preserved
 and give the same failure decision. The mean is a repeatable conditional
 estimator discrepancy; the narrower pulls do not identify overestimated errors,
-just as broad pulls would not identify underestimated errors.
+just as broad pulls would not identify underestimated errors. The cross-lineage
+audit (`docs/AUDIT_20261014.md`) quantified the discrepancy as a systematic flux
+deficit: median pipeline/JADES ratio 0.92 (GS) and 0.86 (GN), 13/14 GN pulls
+negative, and insensitive to the width cap and centroid prior.
 
 The northern result therefore provides no population-calibration pass. Its
 comparison to the empirical GS prediction is descriptive, with different field
-selection and estimator covariance unresolved. No prior, window, width rule,
+selection and estimator covariance unresolved; descriptively, the GN mean is
+consistent with the GS training mean (Welch p=0.47), so the deficit replicates
+across fields. No prior, window, width rule,
 line set, target or acceptance rule changed after northern outcomes. The failed
 prediction cannot be rescued using the unused southern half.
 

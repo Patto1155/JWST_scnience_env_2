@@ -31,7 +31,7 @@ rerun results of this note.
 | Partly circular classifier validation | `HANDOVER.md` classifier retraining section; `research_output/artifact_classifier.json`; `research_output/injection_recovery.json` | Injection recovery exposed strong rejection of faint unresolved sources by the original morphology classifier. Retraining improved recovery for its injected population, but training and test injections share a generator. Held-out visits test visit transfer; they do not supply independent representative real-source labels or certify survey completeness. |
 | Missing-coverage and injection-recovery traps | `docs/FINAL_RESEARCH_REPORT.md`; `docs/YSO_TIME_DOMAIN_PILOT.md`; `docs/SMACS1043_E2_INDEPENDENT_TEST.md`; `research_output/session_20261014/e2_photometry.json` | Source-coordinate coverage checks reject inference from detector-wide wavelength spans or off-array zeros. The imaging injection pilot exposes morphology, association and assumed count-gain dependence; released mosaic variance does not identify native source-Poisson transport. SMACS 1043 persists after a new raw reduction, but three of four frozen structured-light gates and the separate-source centroid gate fail. Injection recovery and another epoch were not run. Persistence alone does not identify a separate source, while gate failure does not physically reject the patch. |
 | DUMMY MOS wavelength reference | `docs/KNOWN_ANSWER_TEST.md`; `research_output/session_20261014/c_crds_verdict.json`; `research_output/session_20261014/c_crds_reference_header.txt` | The actual CRDS applicability chain and reference header establish that `jwst_1596.pmap` still selects `jwst_nirspec_wavecorr_0004.asdf`, marked DUMMY. A newer mapping number or a fixed-slit reference is not an empirical MOS calibration. Absolute wavelength uncertainty remains unresolved; a future spectroscopic inference must declare a source-relevant zero-point nuisance prior and marginalize it rather than silently substitute a reference. This note has not estimated that prior. |
-| Incorrect known-answer comparison criterion | `docs/KNOWN_ANSWER_TEST.md`; `research_output/session_20261014/c2_known_answer.json` | The historical current-release comparison recovers 28.3642 ± 0.7192 against 29.4971 ± 0.6002, in units of 10^-19 erg s^-1 cm^-2. Dividing only by the published error gives 1.8876; using the specified combined-error discrepancy gives 1.2094. The latter passes the session's less-than-two criterion. A dated amendment must preserve the original design and historical verdict. This released-1D check does not satisfy the raw end-to-end calibration requirement. |
+| Incorrect known-answer comparison criterion | `docs/KNOWN_ANSWER_TEST.md`; `research_output/session_20261014/c2_known_answer.json` | The historical current-release comparison recovers 28.3642 ± 0.7192 against 29.4971 ± 0.6002, in units of 10^-19 erg s^-1 cm^-2. Dividing only by the published error gives 1.8876; using the specified combined-error discrepancy gives 1.2094. The latter passes the session's less-than-two criterion, but that criterion was adopted after the result was known, and for shared photons the combined-error denominator ignores positive covariance and so leans toward passing (see the safeguard below). It is therefore not passing evidence. A dated amendment must preserve the original design and historical verdict. This released-1D check does not satisfy the raw end-to-end calibration requirement. |
 
 ## Interpretation safeguards
 
@@ -60,10 +60,12 @@ measured; this is a completed feasibility stop for that design, not evidence
 of constant brightness or constant ice depth.
 
 **Conditional spectroscopy.** `docs/MOM_EMPIRICAL_NOISE_TEST.md` records an
-acquisition-cap stop before a fresh empirical noise fit or N/C interval.
-The resulting parser error does not establish missing archive metadata. The
-older MoM-z14 interval is a conditional observed-stage ionic constraint,
-not elemental N/C. Source noise, wavelength, line-spread function and
+acquisition-cap stop; the follow-up `docs/MOM_CALIBRATED_CHALLENGE.md` then
+produced a fresh conditional interval [0.10155, 13.48043]. That interval is
+non-discriminating: it contains both the ambient reference and the headline
+boundary, its lower end depends on the interval method, and the assumed
+wavelength prior decides ambient membership. Both MoM-z14 intervals are
+conditional observed-stage ionic constraints, not elemental N/C. Source noise, wavelength, line-spread function and
 ionization corrections must remain explicit. Synthetic Gaussian coverage
 and successful range-reader tests validate specified numerical contracts,
 not observed source-noise transport.
