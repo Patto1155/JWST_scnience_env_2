@@ -2,7 +2,7 @@
 
 See **[NORTH_STAR.md](NORTH_STAR.md)** for the vision and goals of Science OS.
 
-For scientific claims, start with [the current verified status](TAKEOVER_STATUS.md) and [consolidated research report](FINAL_RESEARCH_REPORT.md). The incoming PR29 status/report are preserved as historical snapshots.
+For scientific claims, start with [CLAUDE.md](../CLAUDE.md), [the current verified status](STATUS.md), [the claim ledger](CLAIM_LEDGER.md) and [consolidated research report](FINAL_RESEARCH_REPORT.md). The incoming PR29 status/report are preserved as historical snapshots.
 The [12 October discovery pilots](RESEARCH3_DISCOVERY_PILOTS.md) add a new-target
 JADES screen and rejected candidate, a bounded ion-response robustness test,
 and a stopped NEXUS feasibility track; they establish no new astrophysical discovery.
@@ -51,7 +51,9 @@ See **[JWST_DISCOVERY_INDEX.md](JWST_DISCOVERY_INDEX.md)** for the consolidated 
 - Worker loops constrain their tool surface with `constraints.allowed_tools`
 - Sessions persist GUI-ready telemetry in `event_stream.jsonl` and `live_state.json`
 - Sessions also persist `session_manifest.json`, `operator_inbox.jsonl`, and `supervisor_outbox.jsonl`
-- Top worker outputs can be escalated to a judge model for final ranking
+- Top worker outputs can be reviewed by a judge for resource prioritization
+- Judge `escalate` writes `statistical_gate_queue.json`; it never changes a scientific grade
+- Activity minima are opt-in, default zero; same-model agreement is not independent data
 
 See `docs/AGENT_PROMPTS.md` for agent behavior guidelines.
 

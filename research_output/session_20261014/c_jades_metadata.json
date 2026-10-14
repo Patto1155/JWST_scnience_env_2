@@ -1,0 +1,18 @@
+{
+  "url": "https://archive.stsci.edu/hlsp/jades",
+  "status": 200,
+  "bytes": 132814,
+  "sha256": "a1b18f85f8da44557bc480dc66b7d24224fc2486e55eee3356de88bfde1c700d",
+  "executed_utc": "2026-10-14T01:33:03.193005+00:00",
+  "relevant_links": [
+    "https://archive.stsci.edu/hlsps/jades/hlsp_jades_readme.txt",
+    "https://archive.stsci.edu/hlsps/jades/hlsp_jades_jwst_nircam_goods-s-deep_photometry_v2.0_catalog-ext-readme.pdf",
+    "http://archive.stsci.edu/hlsps/jades/hlsp_jades_jwst_nircam_goods-s-deep_photometry_v2.0_catalog-ext-readme.pdf",
+    "https://archive.stsci.edu/hlsps/jades/dr1/goods-s/catalogs/hlsp_jades_jwst_nirspec_goods-s-deephst_clear-prism_line-fluxes_v1.0_catalog.fits",
+    "https://archive.stsci.edu/hlsps/jades/dr1/goods-s/catalogs/hlsp_jades_jwst_nirspec_goods-s-deephst_gratings_line-fluxes_v1.0_catalog.fits",
+    "https://archive.stsci.edu/hlsps/jades/dr3/goods-n/catalogs/hlsp_jades_jwst_nirspec_goods-n_gratings-line-fluxes_v1.1_catalog.fits",
+    "https://archive.stsci.edu/hlsps/jades/dr3/goods-s/catalogs/hlsp_jades_jwst_nirspec_goods-s_gratings-line-fluxes_v1.1_catalog.fits",
+    "https://archive.stsci.edu/hlsps/jades/dr4/goods-s/catalogs/hlsp_jades_jwst_nirspec_goods-n_clear-prism-gratings-line-fluxes_v1.2_catalog.fits",
+    "https://archive.stsci.edu/hlsps/jades/dr4/goods-s/catalogs/hlsp_jades_jwst_nirspec_goods-s_clear-prism-gratings-line-fluxes_v1.2_catalog.fits"
+  ]
+}

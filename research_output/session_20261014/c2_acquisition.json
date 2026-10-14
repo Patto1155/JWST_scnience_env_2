@@ -1,0 +1,34 @@
+{
+  "freeze": "8ac3d15391277b2143a9a05498528981391e729c",
+  "entries": [
+    {
+      "url": "https://archive.stsci.edu/hlsps/jades/dr4/goods-s/catalogs/hlsp_jades_jwst_nirspec_goods-s_clear-prism-gratings-line-fluxes_v1.2_catalog.fits",
+      "status": 200,
+      "started_utc": "2026-10-14T01:41:12.143929+00:00",
+      "completed_utc": "2026-10-14T01:41:28.476660+00:00",
+      "bytes": 62752320,
+      "sha256": "66ace5283627cf4bc67f0a62a778f1463375d0937eb27d5700ff120163e22b2f",
+      "raw_path": "/tmp/jwst-c-raw/hlsp_jades_jwst_nirspec_goods-s_clear-prism-gratings-line-fluxes_v1.2_catalog.fits"
+    },
+    {
+      "url": "https://archive.stsci.edu/hlsps/jades/dr4/goods-s/spectra/f290lp-g395m/goods-s-deephst/hlsp_jades_jwst_nirspec_goods-s-deephst-10058975_f290lp-g395m_v2.0_x1d.fits",
+      "status": 200,
+      "started_utc": "2026-10-14T01:41:28.477195+00:00",
+      "completed_utc": "2026-10-14T01:41:36.448755+00:00",
+      "bytes": 642240,
+      "sha256": "1657ee456610ddd0765e1e229b1b2d55467ce8e134bac758ee4aa8cc0fa11eaf",
+      "raw_path": "/tmp/jwst-c-raw/hlsp_jades_jwst_nirspec_goods-s-deephst-10058975_f290lp-g395m_v2.0_x1d.fits"
+    },
+    {
+      "url": "https://archive.stsci.edu/hlsps/jades/dr4/goods-s/spectra/f290lp-g395m/goods-s-deephst/hlsp_jades_jwst_nirspec_goods-s-deephst-10058975_f290lp-g395m_v2.0_s2d.fits",
+      "status": 200,
+      "started_utc": "2026-10-14T01:41:36.449372+00:00",
+      "completed_utc": "2026-10-14T01:41:44.148572+00:00",
+      "bytes": 1938240,
+      "sha256": "1aae7b36a178c4029a797275d096fc8937b6e649b3d5598c83689114e33c01c0",
+      "raw_path": "/tmp/jwst-c-raw/hlsp_jades_jwst_nirspec_goods-s-deephst-10058975_f290lp-g395m_v2.0_s2d.fits"
+    }
+  ],
+  "total_body_bytes": 65332800,
+  "raw_deleted_utc": "2026-10-14T01:46:14.419851+00:00"
+}

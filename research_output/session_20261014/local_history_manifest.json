@@ -1,0 +1,16 @@
+{
+  "bundle_sha256": "8d3f6191d593c433bc314158e02bd8c601d4d9aa20cf08b6af7d8ce6269daac6",
+  "bundle_bytes": 2601215,
+  "included_head": "502a002e8ca13b7928a324064daa497918a94b4d",
+  "prerequisite_master": "a25d656aa40239bdbc8b18b4bf151139f24e01bb",
+  "original_frozen_commits_preserved": true,
+  "largest_history_blobs": [
+    "44b842f92c8bb9b84ad2b08f186930ac671bfd4d blob 2439866 research_output/session_20261014/d_noise_receipt.json",
+    "a93fef39dc7f090b0b496e88a945e2b025094acd blob 829440 research_output/session_20261014/jw02736001001_02105_00003_nrcalong_i2d_compact.fits",
+    "eca08353ca31da6cd99ac719ffc1bbf2d9a8cf40 blob 829440 research_output/session_20261014/jw02736001001_02105_00004_nrcalong_i2d_compact.fits",
+    "da060c488b1223abf536b7de3dc8ad4fba977fff blob 737508 research_output/session_20261014/e2_photometry.json",
+    "d7fc992677fead80551a29506f622bd9400c92e4 blob 735329 research_output/session_20261014/e2_compact_replay.json"
+  ],
+  "git_bundle_verify_exit_code": 0,
+  "publication_tree_identity_verified_separately": true
+}

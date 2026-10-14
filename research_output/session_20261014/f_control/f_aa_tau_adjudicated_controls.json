@@ -1,0 +1,165 @@
+{
+  "raw_matched_sources": 14,
+  "identity_quality_eligible": 10,
+  "controls": [
+    {
+      "designation": "J043455.42+242852.8",
+      "gaia_source": "147818450613367424",
+      "sim_names": [
+        "V* AA Tau"
+      ],
+      "reasons_excluded": [
+        "target",
+        "SIMBAD YSO association",
+        "Gaia quality",
+        "Gaia YSO association"
+      ],
+      "identity_quality_eligible": false,
+      "angular_distance_arcsec": 0.187186
+    },
+    {
+      "designation": "J043445.10+242443.1",
+      "gaia_source": "147624249371196288",
+      "sim_names": [
+        "TYC 1833-574-1"
+      ],
+      "reasons_excluded": [],
+      "identity_quality_eligible": true,
+      "angular_distance_arcsec": 286.821471
+    },
+    {
+      "designation": "J043428.17+242856.6",
+      "gaia_source": "147813292357116672",
+      "sim_names": [
+        "2MASS J04342818+2428565"
+      ],
+      "reasons_excluded": [],
+      "identity_quality_eligible": true,
+      "angular_distance_arcsec": 371.903459
+    },
+    {
+      "designation": "J043507.11+244135.2",
+      "gaia_source": "147825597438860672",
+      "sim_names": [
+        "TYC 1833-1014-1"
+      ],
+      "reasons_excluded": [],
+      "identity_quality_eligible": true,
+      "angular_distance_arcsec": 778.710948
+    },
+    {
+      "designation": "J043450.18+241440.1",
+      "gaia_source": "147617961540254976",
+      "sim_names": [
+        "HD  28975"
+      ],
+      "reasons_excluded": [],
+      "identity_quality_eligible": true,
+      "angular_distance_arcsec": 855.925109
+    },
+    {
+      "designation": "J043351.82+243006.5",
+      "gaia_source": "147815903697232256",
+      "sim_names": [
+        "HD  28866"
+      ],
+      "reasons_excluded": [],
+      "identity_quality_eligible": true,
+      "angular_distance_arcsec": 871.171445
+    },
+    {
+      "designation": "J043520.43+241417.2",
+      "gaia_source": "147618270777894784",
+      "sim_names": [
+        "GSC 01829-00018"
+      ],
+      "reasons_excluded": [],
+      "identity_quality_eligible": true,
+      "angular_distance_arcsec": 940.12241
+    },
+    {
+      "designation": "J043527.37+241458.6",
+      "gaia_source": "147606657186323712",
+      "sim_names": [
+        "V* DN Tau"
+      ],
+      "reasons_excluded": [
+        "SIMBAD YSO association",
+        "Gaia YSO association"
+      ],
+      "identity_quality_eligible": false,
+      "angular_distance_arcsec": 941.710355
+    },
+    {
+      "designation": "J043332.33+242512.2",
+      "gaia_source": "147791615657665152",
+      "sim_names": [
+        "UCAC4 573-011626"
+      ],
+      "reasons_excluded": [],
+      "identity_quality_eligible": true,
+      "angular_distance_arcsec": 1155.780188
+    },
+    {
+      "designation": "J043538.23+244611.1",
+      "gaia_source": "147917200501938176",
+      "sim_names": [
+        "TYC 1833-720-1"
+      ],
+      "reasons_excluded": [],
+      "identity_quality_eligible": true,
+      "angular_distance_arcsec": 1191.001134
+    },
+    {
+      "designation": "J043334.06+242116.9",
+      "gaia_source": "147790202612482560",
+      "sim_names": [
+        "GN 04.30.5",
+        "V* GI Tau"
+      ],
+      "reasons_excluded": [
+        "W1 flag",
+        "SIMBAD YSO association",
+        "Gaia YSO association"
+      ],
+      "identity_quality_eligible": false,
+      "angular_distance_arcsec": 1201.189237
+    },
+    {
+      "designation": "J043540.95+241108.3",
+      "gaia_source": "147605282796916992",
+      "sim_names": [
+        "GN 04.32.6",
+        "** CHN    8B",
+        "CoKu Tau-Aur Star 3",
+        "** CHN    8A"
+      ],
+      "reasons_excluded": [
+        "SIMBAD YSO association",
+        "Gaia YSO association"
+      ],
+      "identity_quality_eligible": false,
+      "angular_distance_arcsec": 1233.229886
+    },
+    {
+      "designation": "J043627.49+243857.2",
+      "gaia_source": "147725370082177280",
+      "sim_names": [],
+      "reasons_excluded": [],
+      "identity_quality_eligible": true,
+      "angular_distance_arcsec": 1393.838608
+    },
+    {
+      "designation": "J043314.41+242136.2",
+      "gaia_source": "147789657152584064",
+      "sim_names": [
+        "V* V1106 Tau"
+      ],
+      "reasons_excluded": [],
+      "identity_quality_eligible": true,
+      "angular_distance_arcsec": 1447.085757
+    }
+  ],
+  "actual_usable_measured_controls": null,
+  "primary_null_not_measured": true
+}

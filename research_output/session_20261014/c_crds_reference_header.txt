@@ -1,0 +1,72 @@
+#ASDF 1.0.0
+#ASDF_STANDARD 1.5.0
+%YAML 1.1
+%TAG ! tag:stsci.edu:asdf/
+--- !core/asdf-1.1.0
+asdf_library: !core/software-1.0.0 {author: The ASDF Developers, homepage: 'http://github.com/asdf-format/asdf',
+  name: asdf, version: 2.8.1}
+history:
+  entries:
+  - !core/history_entry-1.0.0
+    description: NIRSPEC wavelength zero-point correction.
+    software: !core/software-1.0.0 {author: N.Dencheva, homepage: 'https://github.com/spacetelescope/jwreftools',
+      name: jwstreftools, version: 0.7.1}
+    time: 2017-08-29 13:54:24.762240
+  extensions:
+  - !core/extension_metadata-1.0.0
+    extension_class: asdf.extension.BuiltinExtension
+    software: !core/software-1.0.0 {name: asdf, version: 2.8.1}
+  - !core/extension_metadata-1.0.0
+    extension_class: astropy.io.misc.asdf.extension.AstropyAsdfExtension
+    software: !core/software-1.0.0 {name: astropy, version: '5.0'}
+apertures:
+- aperture_name: MOS
+  variance: !core/ndarray-1.0.0
+    source: 0
+    datatype: float64
+    byteorder: big
+    shape: [21, 21]
+  width: 0.00010442
+  zero_point_offset: !transform/tabular-1.2.0
+    bounding_box:
+    - [-0.5, 0.5]
+    - [6.0e-07, 5.3e-06]
+    bounds_error: true
+    fill_value: .nan
+    inputs: [x, y]
+    lookup_table: !core/ndarray-1.0.0
+      source: 1
+      datatype: float64
+      byteorder: big
+      shape: [21, 21]
+      strides: [8, 168]
+    method: linear
+    outputs: [y]
+    points:
+    - !core/ndarray-1.0.0
+      source: 2
+      datatype: float64
+      byteorder: little
+      shape: [21]
+      strides: [16]
+    - !core/ndarray-1.0.0
+      source: 2
+      datatype: float64
+      byteorder: little
+      shape: [21]
+      offset: 8
+      strides: [336]
+meta:
+  author: ESA
+  date: '2016-03-30T11:16:54'
+  description: wavelength zero-point reference file for MOS computed using a simple
+    toy model
+  exposure: {type: NRS_MSASPEC}
+  filename: jwst_nirspec_wavecorr_0002.asdf
+  instrument: {name: NIRSPEC, p_detector: NRS1|NRS2|}
+  model_type: WaveCorrModel
+  origin: p_generateReferenceFile.py - version 1.0.0 - ESA
+  pedigree: DUMMY
+  reftype: wavecorr
+  telescope: JWST
+  useafter: '2015-11-01'

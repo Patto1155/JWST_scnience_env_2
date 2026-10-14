@@ -1,0 +1,18 @@
+{
+  "name": "yso_1_sia",
+  "requested_url": "https://irsa.ipac.caltech.edu/SIA",
+  "params": {
+    "COLLECTION": "spherex_qr3",
+    "POS": "CIRCLE 64.81597492818 29.10747971097 0.000277778",
+    "BAND": "2.8e-6 3.9e-6",
+    "CALIB": "2",
+    "RESPONSEFORMAT": "CSV",
+    "MAXREC": "10000"
+  },
+  "utc_started": "2026-10-14T01:31:12.493604+00:00",
+  "status": null,
+  "bytes": 0,
+  "error": "HTTPSConnectionPool(host='irsa.ipac.caltech.edu', port=443): Read timed out. (read timeout=6.0)",
+  "sha256_consumed_body": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "elapsed_seconds": 6.007848510002077
+}

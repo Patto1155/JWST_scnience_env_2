@@ -1,0 +1,58 @@
+{
+  "count": 13,
+  "comparisons": [
+    {
+      "obs_id": "2025W35_1A_0529_1",
+      "agrees_at_1e_10": true
+    },
+    {
+      "obs_id": "2025W35_1A_0529_2",
+      "agrees_at_1e_10": true
+    },
+    {
+      "obs_id": "2025W35_1A_0529_3",
+      "agrees_at_1e_10": true
+    },
+    {
+      "obs_id": "2025W35_1A_0529_4",
+      "agrees_at_1e_10": true
+    },
+    {
+      "obs_id": "2025W35_1A_0639_1",
+      "agrees_at_1e_10": true
+    },
+    {
+      "obs_id": "2025W35_1A_0639_2",
+      "agrees_at_1e_10": true
+    },
+    {
+      "obs_id": "2025W35_1A_0639_3",
+      "agrees_at_1e_10": true
+    },
+    {
+      "obs_id": "2025W35_1A_0654_1",
+      "agrees_at_1e_10": true
+    },
+    {
+      "obs_id": "2025W35_1A_0654_2",
+      "agrees_at_1e_10": true
+    },
+    {
+      "obs_id": "2025W35_1A_0654_3",
+      "agrees_at_1e_10": true
+    },
+    {
+      "obs_id": "2025W35_2A_0075_1",
+      "agrees_at_1e_10": true
+    },
+    {
+      "obs_id": "2025W35_2A_0075_2",
+      "agrees_at_1e_10": true
+    },
+    {
+      "obs_id": "2025W35_2A_0075_3",
+      "agrees_at_1e_10": true
+    }
+  ],
+  "passes": true
+}

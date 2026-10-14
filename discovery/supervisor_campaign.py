@@ -282,7 +282,8 @@ def build_worker_objective(candidate: CandidateRecord) -> str:
     return f"""
 You are a low-cost autonomous discovery worker operating under a supervisor.
 Evaluate exactly one JWST candidate and decide whether it is interesting enough
-to escalate to an expensive judge model.
+to queue for statistical-gate review. Worker and judge opinions never change
+a scientific grade.
 
 Candidate identity:
 - candidate_id: {candidate.candidate_id}
@@ -315,10 +316,11 @@ Recommended plan:
 2. Use `candidate_evidence_bundle` for a fresh evidence panel at the exact source.
 3. Re-check dropout-like behavior with `extract_photometry` in the blue and reference bands.
 4. Use `compute_color_index` only if you have positive background-subtracted fluxes.
-5. Prefer 3 to 5 successful tool calls total. Do not over-explore.
+5. Stop when the question is answered or inputs fail; activity minima are opt-in.
 
 Finish rule:
-- Promote only if the source still looks interesting after re-checking coverage, S/N, and artifacts.
+- A worker verdict of `promote` means recommend statistical-gate review only.
+- No worker or judge verdict modifies docs/STATUS.md or docs/CLAIM_LEDGER.md.
 - Reject or mark uncertain if evidence is weak, off-chip, low-coverage, or inconsistent.
 
 When you finish, the findings string MUST begin with:
@@ -366,8 +368,8 @@ def build_worker_payload(
                 "max_steps": max_steps,
                 "max_cost": 0.6,
                 "strict_real_data": True,
-                "min_successful_tool_calls": 3,
-                "min_reflections": 1,
+                "min_successful_tool_calls": 0,
+                "min_reflections": 0,
                 "allowed_tools": list(allowed_tools or DEFAULT_ALLOWED_WORKER_TOOLS),
             },
             "model": worker_model,
@@ -577,7 +579,11 @@ def build_judge_prompt(
     """Build a strict JSON judge prompt from top worker outputs."""
     system_prompt = """
 You are a supervising scientific judge. Review worker reports from a JWST
-discovery campaign and decide which candidates deserve expensive follow-up.
+discovery campaign and decide which leads deserve statistical-gate review.
+`escalate` means queue for the statistical gate, never a scientific status change.
+Shared-model reviewer agreement is not independent corroboration. Promotion
+requires null-control, injection-recovery and independent-repeat or holdout
+artifacts, followed by the lead researcher's decision. You may not change grades.
 
 Return exactly one JSON object with this schema:
 {
@@ -608,14 +614,36 @@ Return exactly one JSON object with this schema:
     ]
 
 
+def build_statistical_gate_queue(judge_payload: Dict[str, Any]) -> Dict[str, Any]:
+    """Convert judge escalations into review tasks without assigning grades."""
+    return {
+        "session_id": judge_payload.get("session_id"),
+        "purpose": "queue for the statistical gate; never a scientific status change",
+        "tasks": [
+            {
+                "candidate_id": item["candidate_id"],
+                "priority": item.get("priority", 1),
+                "rationale": item.get("rationale", ""),
+                "required_artifacts": [
+                    "null_control", "injection_recovery", "independent_repeat_or_holdout"
+                ],
+            }
+            for item in judge_payload.get("top_candidates", [])
+            if item.get("decision") == "escalate"
+        ],
+    }
+
+
 def render_judge_markdown(judge_payload: Dict[str, Any]) -> str:
     """Render a compact markdown summary for human review."""
     lines = [
-        f"# Supervisor Judge Report",
+        "# Supervisor Judge Report",
         "",
         f"Session: `{judge_payload.get('session_id')}`",
         "",
         judge_payload.get("summary") or "No summary returned.",
+        "",
+        "Escalations queue statistical-gate review; they do not change scientific grades.",
         "",
         "## Top Candidates",
     ]
@@ -958,6 +986,12 @@ def run_supervisor_campaign(
             render_judge_markdown(normalized_judge.model_dump()),
             encoding="utf-8",
         )
+        gate_queue_path = session_dir / "statistical_gate_queue.json"
+        gate_queue_path.write_text(
+            json.dumps(build_statistical_gate_queue(normalized_judge.model_dump()), indent=2),
+            encoding="utf-8",
+        )
+        telemetry.set_artifact("statistical_gate_queue", str(gate_queue_path))
         telemetry.set_artifact("judge_report", str(judge_report_path))
         telemetry.set_artifact("judge_markdown", str(judge_markdown_path))
         telemetry.emit(

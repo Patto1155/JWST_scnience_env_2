@@ -1,0 +1,6 @@
+{
+  "requested_url": "https://mast.stsci.edu/api/v0/invoke?request=%7B%22service%22%3A+%22Mast.Caom.Cone%22%2C+%22params%22%3A+%7B%22ra%22%3A+110.63858928243717%2C+%22dec%22%3A+-73.48487214542632%2C+%22radius%22%3A+0.001%7D%2C+%22format%22%3A+%22json%22%2C+%22pagesize%22%3A+1000%2C+%22page%22%3A+1%7D",
+  "mode": "GET metadata retry",
+  "raw_arrays_opened": false,
+  "error": "TimeoutError: The read operation timed out"
+}

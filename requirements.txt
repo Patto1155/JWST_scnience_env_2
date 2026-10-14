@@ -17,3 +17,5 @@ astropy>=5.3
 photutils>=1.13
 # photutils deblending imports watershed from this optional dependency.
 scikit-image>=0.22
+astroquery>=0.4.7
+psycopg[binary]>=3.1

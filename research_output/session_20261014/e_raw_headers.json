@@ -1,0 +1,120 @@
+{
+  "first_header_access_utc": "2026-10-14T01:34:33.472787+00:00",
+  "outcome_arrays_opened": false,
+  "products": [
+    {
+      "filename": "jw02736001001_02105_00003_nrcalong_uncal.fits",
+      "header": {
+        "FILENAME": "jw02736001001_02105_00003_nrcalong_uncal.fits",
+        "INSTRUME": "NIRCAM",
+        "DETECTOR": "NRCALONG",
+        "FILTER": "F444W",
+        "PUPIL": "CLEAR",
+        "DATE-OBS": "2022-06-07",
+        "TIME-OBS": "05:49:39.915",
+        "EXP_TYPE": "NRC_IMAGE",
+        "READPATT": "MEDIUM8",
+        "NINTS": 1,
+        "NGROUPS": 8,
+        "NFRAMES": 8,
+        "SUBARRAY": "FULL",
+        "EXPSTART": 59737.24282309028,
+        "EXPMID": 59737.24766954861,
+        "EXPEND": 59737.25251600694,
+        "EFFEXPTM": 837.468
+      },
+      "hdu_metadata": [
+        {
+          "name": "PRIMARY",
+          "shape": []
+        },
+        {
+          "name": "SCI",
+          "shape": [
+            1,
+            8,
+            2048,
+            2048
+          ]
+        },
+        {
+          "name": "ZEROFRAME",
+          "shape": [
+            1,
+            2048,
+            2048
+          ]
+        },
+        {
+          "name": "GROUP",
+          "shape": null
+        },
+        {
+          "name": "INT_TIMES",
+          "shape": null
+        },
+        {
+          "name": "ASDF",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "filename": "jw02736001001_02105_00004_nrcalong_uncal.fits",
+      "header": {
+        "FILENAME": "jw02736001001_02105_00004_nrcalong_uncal.fits",
+        "INSTRUME": "NIRCAM",
+        "DETECTOR": "NRCALONG",
+        "FILTER": "F444W",
+        "PUPIL": "CLEAR",
+        "DATE-OBS": "2022-06-07",
+        "TIME-OBS": "06:05:03.242",
+        "EXP_TYPE": "NRC_IMAGE",
+        "READPATT": "MEDIUM8",
+        "NINTS": 1,
+        "NGROUPS": 8,
+        "NFRAMES": 8,
+        "SUBARRAY": "FULL",
+        "EXPSTART": 59737.25350974537,
+        "EXPMID": 59737.2583562037,
+        "EXPEND": 59737.263202662034,
+        "EFFEXPTM": 837.468
+      },
+      "hdu_metadata": [
+        {
+          "name": "PRIMARY",
+          "shape": []
+        },
+        {
+          "name": "SCI",
+          "shape": [
+            1,
+            8,
+            2048,
+            2048
+          ]
+        },
+        {
+          "name": "ZEROFRAME",
+          "shape": [
+            1,
+            2048,
+            2048
+          ]
+        },
+        {
+          "name": "GROUP",
+          "shape": null
+        },
+        {
+          "name": "INT_TIMES",
+          "shape": null
+        },
+        {
+          "name": "ASDF",
+          "shape": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "deleted_utc": "2026-10-14T01:40:39.064530+00:00",
+  "raw_cache_files_remaining": 0,
+  "raw_and_receipt_files": [
+    {
+      "name": "jw02736001001_02105_00003_nrcalong_uncal.fits",
+      "bytes": 75556800,
+      "sha256": "4711e54967820c8dc86811ecd3fbf813fd18806012fa397b1e6ad34910ac81e4",
+      "kind": "completed raw"
+    },
+    {
+      "name": "jw02736001001_02105_00003_nrcalong_uncal.fits.provenance.json",
+      "bytes": 664,
+      "sha256": "6c05279d365f1eb9035eb5ee8b09a52e67f8da19fa5fe0c546aebdb61bcbbc56",
+      "kind": "receipt"
+    },
+    {
+      "name": "jw02736001001_02105_00004_nrcalong_uncal.fits",
+      "bytes": 75556800,
+      "sha256": "5bd6819845c9b9be341b7a677f55eabc0885683f903fce72c4030ca9fd4c5d8d",
+      "kind": "completed raw"
+    },
+    {
+      "name": "jw02736001001_02105_00004_nrcalong_uncal.fits.provenance.json",
+      "bytes": 664,
+      "sha256": "cd4966c778d3bc7ee7f299a9cf7c7bd64baf8ca1768ad058e9aae0a8816c2f98",
+      "kind": "receipt"
+    },
+    {
+      "name": "tmphncr6knx",
+      "bytes": 60293120,
+      "sha256": "5b0959bf0794b72798e7fee8159b7382b1dfb0b39524db1c67a53239e56dfe94",
+      "kind": "unattributed partial file"
+    }
+  ],
+  "verified_complete_raw_body_bytes": 151113600,
+  "partial_transfer_upper_bound_bytes": 75556800,
+  "conservative_science_transfer_charge_bytes": 226670400,
+  "partial_file_note": "Unattributed 60,293,120-byte temporary file existed after downloads; charged at one full 75,556,800-byte raw product rather than assume zero transfer. No wire-level retry accounting available.",
+  "crds_cached_metadata_files": [
+    {
+      "relative_path": "mappings/jwst/.tmp_jwst_nirspec_sirskernel_0002.rmap_6",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "relative_path": "mappings/jwst/.tmp_jwst_nirspec_superbias_0090.rmap_6",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "relative_path": "mappings/jwst/.tmp_jwst_nirspec_wavecorr_0005.rmap_6",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "relative_path": "mappings/jwst/.tmp_jwst_nirspec_wavelengthrange_0024.rmap_6",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "relative_path": "mappings/jwst/.tmp_jwst_system_0068.imap_6",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "relative_path": "mappings/jwst/.tmp_jwst_system_calver_0075.rmap_6",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "relative_path": "mappings/jwst/.tmp_jwst_system_datalvl_0002.rmap_6",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "relative_path": "mappings/jwst/jwst_nirspec_sirskernel_0002.rmap.lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "relative_path": "mappings/jwst/jwst_nirspec_superbias_0090.rmap",
+      "bytes": 39514,
+      "sha256": "fcf01e06b71e4f7e5c3fbbbd0e69c85f8120d3b3d2322731a74facb6bf7120d6"
+    },
+    {
+      "relative_path": "mappings/jwst/jwst_nirspec_superbias_0090.rmap.lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "relative_path": "mappings/jwst/jwst_nirspec_wavecorr_0005.rmap",
+      "bytes": 884,
+      "sha256": "f7a3cb1f062b7cab37a9c28ff1c4f0c84c6fbbbe198d4059b30aa51708c6a1b4"
+    },
+    {
+      "relative_path": "mappings/jwst/jwst_nirspec_wavecorr_0005.rmap.lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "relative_path": "mappings/jwst/jwst_nirspec_wavelengthrange_0024.rmap",
+      "bytes": 1381,
+      "sha256": "a43ec91d8d3953995cbcd23d76fe79f7e1a37deaf1a26c9b221798154517c666"
+    },
+    {
+      "relative_path": "mappings/jwst/jwst_nirspec_wavelengthrange_0024.rmap.lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "relative_path": "mappings/jwst/jwst_system_0068.imap",
+      "bytes": 385,
+      "sha256": "c32640fe0701ddf456d5e43ad836f3782e0836324691d2c0718848979aa859a2"
+    },
+    {
+      "relative_path": "mappings/jwst/jwst_system_0068.imap.lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "relative_path": "mappings/jwst/jwst_system_calver_0075.rmap",
+      "bytes": 5996,
+      "sha256": "bab291e8cef41f660f061e2483c2cc5605cfd3bba6649a9c6d945ffc67a562e9"
+    },
+    {
+      "relative_path": "mappings/jwst/jwst_system_calver_0075.rmap.lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "relative_path": "mappings/jwst/jwst_system_datalvl_0002.rmap",
+      "bytes": 694,
+      "sha256": "64d1abafb0adfd387c18dca73e754acd03d378d1580e9581584fb8b14de0a19e"
+    },
+    {
+      "relative_path": "mappings/jwst/jwst_system_datalvl_0002.rmap.lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "crds_cached_metadata_bytes": 48854,
+  "metadata_wire_accounting": "Cached mapping file bodies hashed. CRDS RPC response wire totals not instrumented; no scientific reference bodies downloaded."
+}

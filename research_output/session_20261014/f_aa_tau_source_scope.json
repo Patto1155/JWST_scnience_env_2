@@ -1,0 +1,64 @@
+{
+  "freeze_commit": "93a1f07ad583b9743d79004878ed9fc1cd505f3a",
+  "role": "root-adjudicated original W1 scope; frozen design unchanged",
+  "input_sha256": "ab127681cfb65e3836c92a54a9c1ba7240d8f22d8592d7ff452ca9d20f99e9a4",
+  "reduction_code_sha256": "7dff994bfc66f3e253e1a0a769f842ed24d7cd224718816f2caeb3079ae741c0",
+  "source_scope_um": [
+    2.8,
+    3.9
+  ],
+  "visits": [
+    {
+      "campaign": 0,
+      "selected": 32,
+      "measured": 32,
+      "source_scope_um": [
+        2.8,
+        3.9
+      ],
+      "within_scope_channel_count": 13,
+      "within_scope_nonoverlapping_channels": 7,
+      "whole_spectrum_photon_coverage": 0.9095310104375421,
+      "within_scope_photon_coverage": 0.909123669903824,
+      "all_frames_measured": true,
+      "spectral_coverage_gate": false,
+      "quality_flux_calibration": "not measured"
+    },
+    {
+      "campaign": 1,
+      "selected": 38,
+      "measured": 38,
+      "source_scope_um": [
+        2.8,
+        3.9
+      ],
+      "within_scope_channel_count": 16,
+      "within_scope_nonoverlapping_channels": 8,
+      "whole_spectrum_photon_coverage": 0.9990192702814907,
+      "within_scope_photon_coverage": 0.9967455711875527,
+      "all_frames_measured": true,
+      "spectral_coverage_gate": true,
+      "quality_flux_calibration": "not measured"
+    },
+    {
+      "campaign": 2,
+      "selected": 30,
+      "measured": 30,
+      "source_scope_um": [
+        2.8,
+        3.9
+      ],
+      "within_scope_channel_count": 12,
+      "within_scope_nonoverlapping_channels": 7,
+      "whole_spectrum_photon_coverage": 0.9971707371965273,
+      "within_scope_photon_coverage": 0.9780799045065734,
+      "all_frames_measured": true,
+      "spectral_coverage_gate": false,
+      "quality_flux_calibration": "not measured"
+    }
+  ],
+  "eligible_spectral_visit_count": 1,
+  "two_visit_gate": false,
+  "verdict": "not estimable under frozen contract",
+  "postoutcome_one_percent_diagnostic_not_used": true
+}

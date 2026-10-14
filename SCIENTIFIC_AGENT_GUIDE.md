@@ -1,5 +1,12 @@
 # Scientific Research Agent Guide
 
+> **Superseded as scientific guidance (2026-10-14).** Read [CLAUDE.md](CLAUDE.md),
+> [docs/STATUS.md](docs/STATUS.md) and [docs/CLAIM_LEDGER.md](docs/CLAIM_LEDGER.md)
+> first. No new astrophysical result has survived verification in this repository.
+> The material below is historical implementation guidance; discovery language,
+> suggested call counts and publication suggestions confer no scientific grade.
+
+
 ## What Changed
 
 The system now uses a **ScientificResearchAgent** that thinks deeper and follows the scientific method rigorously.

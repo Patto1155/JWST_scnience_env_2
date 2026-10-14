@@ -1,0 +1,68 @@
+{
+  "request": {
+    "service": "Mast.Caom.Filtered",
+    "format": "json",
+    "params": {
+      "columns": "obsid,obs_id,dataURL,obs_collection,instrument_name,filters",
+      "filters": [
+        {
+          "paramName": "provenance_name",
+          "values": [
+            "jades"
+          ]
+        },
+        {
+          "paramName": "obs_id",
+          "values": [
+            "*10058975*"
+          ]
+        }
+      ]
+    },
+    "pagesize": 100,
+    "page": 1
+  },
+  "status": 200,
+  "bytes": 368,
+  "sha256": "a3b20aee1fdf0d2b47d5cf2188aa2f6055f3c5a40645168488635427da411a40",
+  "response": {
+    "status": "COMPLETE",
+    "msg": "",
+    "data": [],
+    "fields": [
+      {
+        "name": "obsid",
+        "type": "string"
+      },
+      {
+        "name": "obs_collection",
+        "type": "string"
+      },
+      {
+        "name": "dataURL",
+        "type": "string"
+      },
+      {
+        "name": "instrument_name",
+        "type": "string"
+      },
+      {
+        "name": "filters",
+        "type": "string"
+      },
+      {
+        "name": "obs_id",
+        "type": "string"
+      }
+    ],
+    "paging": {
+      "page": 0,
+      "pageSize": 0,
+      "pagesFiltered": 0,
+      "rows": 0,
+      "rowsFiltered": 0,
+      "rowsTotal": 0
+    }
+  },
+  "executed_utc": "2026-10-14T01:37:11.932259+00:00"
+}

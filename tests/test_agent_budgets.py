@@ -137,3 +137,18 @@ def test_network_guard_rejects_accidental_http():
 
     with pytest.raises(AssertionError, match="Tests are offline"):
         requests.get("https://example.com", timeout=1)
+
+
+def test_activity_minimum_is_opt_in(agent, monkeypatch):
+    post = Mock(return_value=response('{"action":"finish","findings":"Prerequisite absent"}'))
+    monkeypatch.setattr("runner.scientific_agent.requests.post", post)
+    result, _ = agent.run("Stop when inputs fail", constraints={"max_steps": 1})
+    assert result.status == "success"
+    assert result.summary_metrics["min_successful_tool_calls"] == 0
+    assert result.summary_metrics["successful_tool_calls"] == 0
+
+    result, _ = agent.run(
+        "Explicit activity constraint", constraints={"max_steps": 1, "min_successful_tool_calls": 1}
+    )
+    assert result.status == "failed"
+    assert result.error.startswith("AGENT_MINIMUM_ACTIVITY_NOT_MET")

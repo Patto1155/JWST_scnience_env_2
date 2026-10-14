@@ -1,0 +1,185 @@
+{
+  "request": {
+    "service": "Mast.Caom.Filtered.Position",
+    "format": "json",
+    "params": {
+      "columns": "obsid,obs_id,dataURL,obs_collection,instrument_name,filters,t_exptime",
+      "filters": [
+        {
+          "paramName": "provenance_name",
+          "values": [
+            "JADES"
+          ]
+        }
+      ],
+      "position": "53.11243, -27.77461, 0.0001"
+    },
+    "pagesize": 100,
+    "page": 1
+  },
+  "status": 200,
+  "bytes": 4631,
+  "sha256": "4e97ff5ff342e74540c7833aeca3acf3411e00413138b282b24da87ffe45294b",
+  "response": {
+    "status": "COMPLETE",
+    "msg": "",
+    "data": [
+      {
+        "obsid": 214338099,
+        "obs_collection": "HLSP",
+        "dataURL": "mast:HLSP/jades/dr2/goods-s/images/hlsp_jades_jwst_nircam_goods-s-deep_f182m_v2.0_drz.fits",
+        "instrument_name": "NIRCAM/IMAGE",
+        "t_exptime": 9534.248000000001,
+        "filters": "F182M",
+        "obs_id": "hlsp_jades_jwst_nircam_goods-s-deep_f182m_v2.0"
+      },
+      {
+        "obsid": 214338101,
+        "obs_collection": "HLSP",
+        "dataURL": "mast:HLSP/jades/dr2/goods-s/images/hlsp_jades_jwst_nircam_goods-s-deep_f210m_v2.0_drz.fits",
+        "instrument_name": "NIRCAM/IMAGE",
+        "t_exptime": 10564.98,
+        "filters": "F210M",
+        "obs_id": "hlsp_jades_jwst_nircam_goods-s-deep_f210m_v2.0"
+      },
+      {
+        "obsid": 214338107,
+        "obs_collection": "HLSP",
+        "dataURL": "mast:HLSP/jades/dr2/goods-s/images/hlsp_jades_jwst_nircam_goods-s-deep_f444w_v2.0_drz.fits",
+        "instrument_name": "NIRCAM/IMAGE",
+        "t_exptime": 24350.990999999998,
+        "filters": "F444W",
+        "obs_id": "hlsp_jades_jwst_nircam_goods-s-deep_f444w_v2.0"
+      },
+      {
+        "obsid": 214338212,
+        "obs_collection": "HLSP",
+        "dataURL": "mast:HLSP/jades/dr2/goods-s/images/hlsp_jades_jwst_nircam_goods-s-deep_segmentation_v2.0_drz.fits",
+        "instrument_name": "NIRCam",
+        "t_exptime": 27829.703999999998,
+        "filters": "MULTI",
+        "obs_id": "hlsp_jades_jwst_nircam_goods-s-deep_segmentation_v2.0"
+      },
+      {
+        "obsid": 214338232,
+        "obs_collection": "HLSP",
+        "dataURL": "mast:HLSP/jades/dr2/goods-s/images/hlsp_jades_jwst_nircam_goods-s-deep_detection_v2.0_drz.fits",
+        "instrument_name": "NIRCam",
+        "t_exptime": 27829.703999999998,
+        "filters": "MULTI",
+        "obs_id": "hlsp_jades_jwst_nircam_goods-s-deep_detection_v2.0"
+      },
+      {
+        "obsid": 454181928,
+        "obs_collection": "HLSP",
+        "dataURL": "mast:HLSP/jades/dr4/goods-s/spectra/clear-prism/goods-s-deephst/hlsp_jades_jwst_nirspec_goods-s-deephst-10058975_clear-prism_v2.0_x1d.fits",
+        "instrument_name": "NIRSpec",
+        "t_exptime": 99788.0076,
+        "filters": "CLEAR;PRISM",
+        "obs_id": "hlsp_jades_jwst_nirspec_goods-s-deephst-10058975_clear-prism"
+      },
+      {
+        "obsid": 454185023,
+        "obs_collection": "HLSP",
+        "dataURL": "mast:HLSP/jades/dr4/goods-s/spectra/clear-prism/goods-s-ultradeep/hlsp_jades_jwst_nirspec_goods-s-ultradeep-00265801_clear-prism_v2.0_x1d.fits",
+        "instrument_name": "NIRSpec",
+        "t_exptime": 157997.6787,
+        "filters": "CLEAR;PRISM",
+        "obs_id": "hlsp_jades_jwst_nirspec_goods-s-ultradeep-00265801_clear-prism"
+      },
+      {
+        "obsid": 454185258,
+        "obs_collection": "HLSP",
+        "dataURL": "mast:HLSP/jades/dr4/goods-s/spectra/f070lp-g140m/goods-s-deephst/hlsp_jades_jwst_nirspec_goods-s-deephst-10058975_f070lp-g140m_v2.0_x1d.fits",
+        "instrument_name": "NIRSpec",
+        "t_exptime": 24947.0019,
+        "filters": "F070LP;G140M",
+        "obs_id": "hlsp_jades_jwst_nirspec_goods-s-deephst-10058975_f070lp-g140m"
+      },
+      {
+        "obsid": 454188240,
+        "obs_collection": "HLSP",
+        "dataURL": "mast:HLSP/jades/dr4/goods-s/spectra/f070lp-g140m/goods-s-ultradeep/hlsp_jades_jwst_nirspec_goods-s-ultradeep-00265801_f070lp-g140m_v2.0_x1d.fits",
+        "instrument_name": "NIRSpec",
+        "t_exptime": 33262.66919999999,
+        "filters": "F070LP;G140M",
+        "obs_id": "hlsp_jades_jwst_nirspec_goods-s-ultradeep-00265801_f070lp-g140m"
+      },
+      {
+        "obsid": 454188470,
+        "obs_collection": "HLSP",
+        "dataURL": "mast:HLSP/jades/dr4/goods-s/spectra/f170lp-g235m/goods-s-deephst/hlsp_jades_jwst_nirspec_goods-s-deephst-10058975_f170lp-g235m_v2.0_x1d.fits",
+        "instrument_name": "NIRSpec",
+        "t_exptime": 24947.0019,
+        "filters": "F170LP;G235M",
+        "obs_id": "hlsp_jades_jwst_nirspec_goods-s-deephst-10058975_f170lp-g235m"
+      },
+      {
+        "obsid": 454191328,
+        "obs_collection": "HLSP",
+        "dataURL": "mast:HLSP/jades/dr4/goods-s/spectra/f290lp-g395h/goods-s-deephst/hlsp_jades_jwst_nirspec_goods-s-deephst-10058975_f290lp-g395h_v2.0_x1d.fits",
+        "instrument_name": "NIRSpec",
+        "t_exptime": 24947.0019,
+        "filters": "F290LP;G395H",
+        "obs_id": "hlsp_jades_jwst_nirspec_goods-s-deephst-10058975_f290lp-g395h"
+      },
+      {
+        "obsid": 454193248,
+        "obs_collection": "HLSP",
+        "dataURL": "mast:HLSP/jades/dr4/goods-s/spectra/f290lp-g395m/goods-s-deephst/hlsp_jades_jwst_nirspec_goods-s-deephst-10058975_f290lp-g395m_v2.0_x1d.fits",
+        "instrument_name": "NIRSpec",
+        "t_exptime": 24947.0019,
+        "filters": "F290LP;G395M",
+        "obs_id": "hlsp_jades_jwst_nirspec_goods-s-deephst-10058975_f290lp-g395m"
+      },
+      {
+        "obsid": 454196261,
+        "obs_collection": "HLSP",
+        "dataURL": "mast:HLSP/jades/dr4/goods-s/spectra/f290lp-g395m/goods-s-ultradeep/hlsp_jades_jwst_nirspec_goods-s-ultradeep-00265801_f290lp-g395m_v2.0_x1d.fits",
+        "instrument_name": "NIRSpec",
+        "t_exptime": 133050.6768,
+        "filters": "F290LP;G395M",
+        "obs_id": "hlsp_jades_jwst_nirspec_goods-s-ultradeep-00265801_f290lp-g395m"
+      }
+    ],
+    "fields": [
+      {
+        "name": "obsid",
+        "type": "string"
+      },
+      {
+        "name": "obs_collection",
+        "type": "string"
+      },
+      {
+        "name": "dataURL",
+        "type": "string"
+      },
+      {
+        "name": "instrument_name",
+        "type": "string"
+      },
+      {
+        "name": "t_exptime",
+        "type": "float"
+      },
+      {
+        "name": "filters",
+        "type": "string"
+      },
+      {
+        "name": "obs_id",
+        "type": "string"
+      }
+    ],
+    "paging": {
+      "page": 1,
+      "pageSize": 100,
+      "pagesFiltered": 1,
+      "rows": 13,
+      "rowsFiltered": 13,
+      "rowsTotal": 13
+    }
+  },
+  "executed_utc": "2026-10-14T01:36:50.690123+00:00"
+}

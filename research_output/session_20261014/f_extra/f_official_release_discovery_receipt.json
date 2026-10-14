@@ -1,0 +1,11 @@
+{
+  "name": "official_release_discovery",
+  "requested_url": "https://irsa.ipac.caltech.edu/data/SPHEREx/docs/overview_qr.html",
+  "params": null,
+  "utc_started": "2026-10-14T01:33:07.194193+00:00",
+  "status": 200,
+  "bytes": 6684,
+  "url": "https://irsa.ipac.caltech.edu/data/SPHEREx/docs/overview_qr.html",
+  "sha256_consumed_body": "8d0afdd5400357b14fd5cb97bf179db57ce88c4efb1b97966ca2fe8908d53d57",
+  "elapsed_seconds": 6.994584864998615
+}

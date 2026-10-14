@@ -1,0 +1,54 @@
+{
+  "request": {
+    "service": "Mast.Caom.Filtered",
+    "format": "json",
+    "params": {
+      "columns": "obsid,obs_id,dataURL,obs_collection",
+      "filters": [
+        {
+          "paramName": "obs_id",
+          "values": [
+            "hlsp_jades_jwst_nirspec_goods-s-deephst-10058975_f290lp-g395m_v1.0*"
+          ]
+        }
+      ]
+    },
+    "pagesize": 100,
+    "page": 1
+  },
+  "status": 200,
+  "bytes": 290,
+  "sha256": "b0f5022a79b1166c717844061d3aead652bf18b5cc967ed6adfdeb8561285357",
+  "response": {
+    "status": "COMPLETE",
+    "msg": "",
+    "data": [],
+    "fields": [
+      {
+        "name": "obsid",
+        "type": "string"
+      },
+      {
+        "name": "obs_collection",
+        "type": "string"
+      },
+      {
+        "name": "dataURL",
+        "type": "string"
+      },
+      {
+        "name": "obs_id",
+        "type": "string"
+      }
+    ],
+    "paging": {
+      "page": 0,
+      "pageSize": 0,
+      "pagesFiltered": 0,
+      "rows": 0,
+      "rowsFiltered": 0,
+      "rowsTotal": 0
+    }
+  },
+  "executed_utc": "2026-10-14T01:34:32.181096+00:00"
+}

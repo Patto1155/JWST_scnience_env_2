@@ -1,0 +1,146 @@
+[
+  {
+    "filename": "jw02736001001_02105_00003_nrcalong_cal.fits",
+    "bytes": 117541440,
+    "sha256": "fc48c38b8f9cd23a0caf30a7361585f04ddca7bfee15b67940958f5b1653dff7",
+    "primary": {
+      "FILENAME": "jw02736001001_02105_00003_nrcalong_cal.fits",
+      "CAL_VER": "3.0.0",
+      "CRDS_CTX": "jwst_1596.pmap",
+      "FILTER": "F444W",
+      "DETECTOR": "NRCALONG",
+      "EXPMID": 59737.24766954861,
+      "EFFEXPTM": 837.468,
+      "S_RESAMP": null,
+      "R_DARK": "/tmp/jwst_smacs_e2_cache/jwst_nircam_dark_0424.fits",
+      "R_FLAT": "/tmp/jwst_smacs_e2_cache/jwst_nircam_flat_0761.fits",
+      "R_PHOTOM": "/tmp/jwst_smacs_e2_cache/jwst_nircam_photom_0168.fits"
+    }
+  },
+  {
+    "filename": "jw02736001001_02105_00003_nrcalong_i2d.fits",
+    "bytes": 120222720,
+    "sha256": "5f3346429b4876bde4e5715c046daebc35f2cc9b532830259f6374fd686818c1",
+    "primary": {
+      "FILENAME": "jw02736001001_02105_00003_nrcalong_i2d.fits",
+      "CAL_VER": "3.0.0",
+      "CRDS_CTX": "jwst_1596.pmap",
+      "FILTER": "F444W",
+      "DETECTOR": "NRCALONG",
+      "EXPMID": 59737.24766954861,
+      "EFFEXPTM": 837.468,
+      "S_RESAMP": "COMPLETE",
+      "R_DARK": "/tmp/jwst_smacs_e2_cache/jwst_nircam_dark_0424.fits",
+      "R_FLAT": "/tmp/jwst_smacs_e2_cache/jwst_nircam_flat_0761.fits",
+      "R_PHOTOM": "/tmp/jwst_smacs_e2_cache/jwst_nircam_photom_0168.fits"
+    }
+  },
+  {
+    "filename": "jw02736001001_02105_00003_nrcalong_rate.fits",
+    "bytes": 83949120,
+    "sha256": "4d051afc2117eaa52d511a3d304b3617e2058f95e4e6d5077312f0d06652e579",
+    "primary": {
+      "FILENAME": "jw02736001001_02105_00003_nrcalong_rate.fits",
+      "CAL_VER": "3.0.0",
+      "CRDS_CTX": "jwst_1596.pmap",
+      "FILTER": "F444W",
+      "DETECTOR": "NRCALONG",
+      "EXPMID": 59737.24766954861,
+      "EFFEXPTM": 837.468,
+      "S_RESAMP": null,
+      "R_DARK": "/tmp/jwst_smacs_e2_cache/jwst_nircam_dark_0424.fits",
+      "R_FLAT": null,
+      "R_PHOTOM": null
+    }
+  },
+  {
+    "filename": "jw02736001001_02105_00003_nrcalong_rateints.fits",
+    "bytes": 83957760,
+    "sha256": "e3751497674d28a69824c42d90da5e362f6dd0afb5fd0fc3739844f8ae6402ca",
+    "primary": {
+      "FILENAME": "jw02736001001_02105_00003_nrcalong_rateints.fits",
+      "CAL_VER": "3.0.0",
+      "CRDS_CTX": "jwst_1596.pmap",
+      "FILTER": "F444W",
+      "DETECTOR": "NRCALONG",
+      "EXPMID": 59737.24766954861,
+      "EFFEXPTM": 837.468,
+      "S_RESAMP": null,
+      "R_DARK": "/tmp/jwst_smacs_e2_cache/jwst_nircam_dark_0424.fits",
+      "R_FLAT": null,
+      "R_PHOTOM": null
+    }
+  },
+  {
+    "filename": "jw02736001001_02105_00004_nrcalong_cal.fits",
+    "bytes": 117541440,
+    "sha256": "9f15bc3ccca733ba658379a6b5a69b652482b5f7a4b57846365ce6b6454add84",
+    "primary": {
+      "FILENAME": "jw02736001001_02105_00004_nrcalong_cal.fits",
+      "CAL_VER": "3.0.0",
+      "CRDS_CTX": "jwst_1596.pmap",
+      "FILTER": "F444W",
+      "DETECTOR": "NRCALONG",
+      "EXPMID": 59737.2583562037,
+      "EFFEXPTM": 837.468,
+      "S_RESAMP": null,
+      "R_DARK": "/tmp/jwst_smacs_e2_cache/jwst_nircam_dark_0424.fits",
+      "R_FLAT": "/tmp/jwst_smacs_e2_cache/jwst_nircam_flat_0761.fits",
+      "R_PHOTOM": "/tmp/jwst_smacs_e2_cache/jwst_nircam_photom_0168.fits"
+    }
+  },
+  {
+    "filename": "jw02736001001_02105_00004_nrcalong_i2d.fits",
+    "bytes": 120222720,
+    "sha256": "0900738a68dcb29efbd171970621629fbf447ce24f7e01b85a9c8f19f4edbc68",
+    "primary": {
+      "FILENAME": "jw02736001001_02105_00004_nrcalong_i2d.fits",
+      "CAL_VER": "3.0.0",
+      "CRDS_CTX": "jwst_1596.pmap",
+      "FILTER": "F444W",
+      "DETECTOR": "NRCALONG",
+      "EXPMID": 59737.2583562037,
+      "EFFEXPTM": 837.468,
+      "S_RESAMP": "COMPLETE",
+      "R_DARK": "/tmp/jwst_smacs_e2_cache/jwst_nircam_dark_0424.fits",
+      "R_FLAT": "/tmp/jwst_smacs_e2_cache/jwst_nircam_flat_0761.fits",
+      "R_PHOTOM": "/tmp/jwst_smacs_e2_cache/jwst_nircam_photom_0168.fits"
+    }
+  },
+  {
+    "filename": "jw02736001001_02105_00004_nrcalong_rate.fits",
+    "bytes": 83949120,
+    "sha256": "fc0df01452a7e59066c058ed4c4631ed30701433f8b723b951167271c8a28fb5",
+    "primary": {
+      "FILENAME": "jw02736001001_02105_00004_nrcalong_rate.fits",
+      "CAL_VER": "3.0.0",
+      "CRDS_CTX": "jwst_1596.pmap",
+      "FILTER": "F444W",
+      "DETECTOR": "NRCALONG",
+      "EXPMID": 59737.2583562037,
+      "EFFEXPTM": 837.468,
+      "S_RESAMP": null,
+      "R_DARK": "/tmp/jwst_smacs_e2_cache/jwst_nircam_dark_0424.fits",
+      "R_FLAT": null,
+      "R_PHOTOM": null
+    }
+  },
+  {
+    "filename": "jw02736001001_02105_00004_nrcalong_rateints.fits",
+    "bytes": 83957760,
+    "sha256": "1e1d9e4c08673af99542b6e35cfd18ff097b3006e2dfcdc33f38cf64e9a9cb00",
+    "primary": {
+      "FILENAME": "jw02736001001_02105_00004_nrcalong_rateints.fits",
+      "CAL_VER": "3.0.0",
+      "CRDS_CTX": "jwst_1596.pmap",
+      "FILTER": "F444W",
+      "DETECTOR": "NRCALONG",
+      "EXPMID": 59737.2583562037,
+      "EFFEXPTM": 837.468,
+      "S_RESAMP": null,
+      "R_DARK": "/tmp/jwst_smacs_e2_cache/jwst_nircam_dark_0424.fits",
+      "R_FLAT": null,
+      "R_PHOTOM": null
+    }
+  }
+]

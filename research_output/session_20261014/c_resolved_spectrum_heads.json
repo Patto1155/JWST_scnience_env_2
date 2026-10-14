@@ -1,0 +1,58 @@
+[
+  {
+    "url": "https://archive.stsci.edu/hlsps/jades/dr1/goods-s/spectra/f290lp-g395m/goods-s-deephst/hlsp_jades_jwst_nirspec_goods-s-deephst-10058975_f290lp-g395m_v1.0_x1d.fits",
+    "status": 404,
+    "headers": {
+      "Date": "Wed, 14 Oct 2026 01:37:30 GMT",
+      "Server": "Apache",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Headers": "x-requested-with",
+      "Keep-Alive": "timeout=5, max=100",
+      "Connection": "Keep-Alive",
+      "Content-Type": "text/html; charset=iso-8859-1"
+    },
+    "bytes": 0,
+    "utc": "2026-10-14T01:37:30.307199+00:00"
+  },
+  {
+    "url": "https://archive.stsci.edu/hlsps/jades/dr3/goods-s/spectra/f290lp-g395m/goods-s-deephst/hlsp_jades_jwst_nirspec_goods-s-deephst-10058975_f290lp-g395m_v1.0_x1d.fits",
+    "status": 404,
+    "headers": {
+      "Date": "Wed, 14 Oct 2026 01:37:37 GMT",
+      "Server": "Apache",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Headers": "x-requested-with",
+      "Keep-Alive": "timeout=5, max=100",
+      "Connection": "Keep-Alive",
+      "Content-Type": "text/html; charset=iso-8859-1"
+    },
+    "bytes": 0,
+    "utc": "2026-10-14T01:37:37.544186+00:00"
+  },
+  {
+    "url": "https://jades.herts.ac.uk/DR1/goods-s/spectra/f290lp-g395m/goods-s-deephst/hlsp_jades_jwst_nirspec_goods-s-deephst-10058975_f290lp-g395m_v1.0_x1d.fits",
+    "status": 404,
+    "headers": {
+      "Date": "Wed, 14 Oct 2026 01:37:45 GMT",
+      "Server": "Apache/2.4.62 (Rocky Linux) OpenSSL/3.5.5 mod_wsgi/4.7.1 Python/3.9",
+      "Keep-Alive": "timeout=5, max=100",
+      "Connection": "Keep-Alive",
+      "Content-Type": "text/html; charset=iso-8859-1"
+    },
+    "bytes": 0,
+    "utc": "2026-10-14T01:37:45.497352+00:00"
+  },
+  {
+    "url": "https://jades.herts.ac.uk/DR3/goods-s/spectra/f290lp-g395m/goods-s-deephst/hlsp_jades_jwst_nirspec_goods-s-deephst-10058975_f290lp-g395m_v1.0_x1d.fits",
+    "status": 404,
+    "headers": {
+      "Date": "Wed, 14 Oct 2026 01:37:53 GMT",
+      "Server": "Apache/2.4.62 (Rocky Linux) OpenSSL/3.5.5 mod_wsgi/4.7.1 Python/3.9",
+      "Keep-Alive": "timeout=5, max=100",
+      "Connection": "Keep-Alive",
+      "Content-Type": "text/html; charset=iso-8859-1"
+    },
+    "bytes": 0,
+    "utc": "2026-10-14T01:37:53.801537+00:00"
+  }
+]

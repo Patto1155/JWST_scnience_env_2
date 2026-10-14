@@ -96,10 +96,9 @@ Treat `highz_shortlist.json` as the main entrypoint for follow-up review. It is 
 - `STRICT_DATA_LOAD_FAILURE`
 
 ## Runtime Activity Signals
-- Discovery runs now enforce:
-- `min_successful_tool_calls=12`
-- `min_reflections=2`
-- Premature finishes fail loudly with:
+- Discovery runs default to `min_successful_tool_calls=0` and `min_reflections=0`.
+- Operators may explicitly opt into activity minima; they are not scientific acceptance criteria.
+- Finishes below an explicitly configured minimum fail with:
 - `AGENT_MINIMUM_ACTIVITY_NOT_MET`
 
 ## Troubleshooting

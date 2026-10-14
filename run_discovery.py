@@ -30,7 +30,7 @@ RICH_AVAILABLE = importlib.util.find_spec("discovery_monitor") is not None
 
 # Try to import stream printer
 try:
-    from stream_discovery_win import DiscoveryStreamer
+    from stream_discovery import DiscoveryStreamer
 
     STREAM_AVAILABLE = True
 except ImportError:
@@ -55,8 +55,8 @@ DISCOVERY_DATASET_TARGETS = [
     ("GS-MEDIUM-HST", "F444W"),
 ]
 
-DISCOVERY_MIN_SUCCESSFUL_TOOL_CALLS = 12
-DISCOVERY_MIN_REFLECTIONS = 2
+DISCOVERY_MIN_SUCCESSFUL_TOOL_CALLS = 0
+DISCOVERY_MIN_REFLECTIONS = 0
 
 # Legacy aliases (kept as permissive fallback only when strict mode is disabled).
 LEGACY_DEFAULT_DATASETS = [
@@ -89,54 +89,26 @@ def normalize_base_url(base_url: Optional[str]) -> str:
 # ============================================================================
 
 DEFAULT_OBJECTIVES = [
-    # High-z Galaxy Discovery (Primary)
     """
-    Discover high-redshift galaxy candidates in JWST data using comprehensive tool exploration.
-
-    PRIMARY GOAL: Find new z>7 candidates beyond the existing 56 in highz_candidates.json
-
-    APPROACH:
-    1. Load existing candidates and analyze their properties systematically
-    2. Test unconventional selection criteria (not just F090W dropout)
-    3. Explore source-level clustering, morphological features, and multi-band colors
-    4. Investigate anomaly catalog for potential missed candidates
-    5. Cross-validate with multiple independent methods
-
-    REQUIREMENTS:
-    - Minimum 25 tool calls
-    - Test at least 3 different high-z identification methods
-    - Generate evidence bundles, field overviews, and color diagnostics
-    - Quantify confidence levels for all candidates
-    - Document what didn't work and why
-
-    Be creative. Try weird hypotheses. Trade tokens for insights.
+    Test a bounded high-redshift selection hypothesis using identity-verified JWST data.
+    Read docs/STATUS.md and docs/CLAIM_LEDGER.md first. Historical candidate counts
+    are proposals, not confirmed sources. Freeze the data selection, statistic,
+    null, threshold and multiplicity correction before opening new outcomes.
+    GOODS-N remains sealed. Stop when the test is answered or prerequisites fail;
+    report missing coverage, nulls, uncertainty and what you did not run.
     """,
-    # Systematic Analysis
     """
-    Conduct systematic analysis of instrumental effects and data quality across JWST fields.
-
-    INVESTIGATE:
-    1. Spatial variations in background, noise, PSF quality
-    2. Filter-dependent systematics
-    3. Anomaly patterns (cosmic rays vs real sources)
-    4. Aperture corrections and photometric biases with evidence panels
-
-    Use quadrant analysis, source catalogs, evidence panels, and multi-aperture photometry.
-    Minimum 20 tool calls.
+    Test a bounded instrumental or photometric systematic using registered tools.
+    Declare the target, matched controls and decision rule before new outcomes.
+    Use calibrated units and matched sky apertures, and distinguish missing data
+    from nondetection. Report conditional limitations and what you did not run.
     """,
-    # Multi-Method Discovery
     """
-    Test multiple independent high-z selection methods and compare results.
-
-    METHODS TO TEST:
-    1. Color dropout (F090W/F444W < threshold)
-    2. Source-level peaks in red filters
-    3. Color-color diagram selection
-    4. Morphological compactness
-    5. Spatial clustering with known candidates
-
-    Cross-match results. Find consensus candidates (detected by 3+ methods) and save evidence bundles for the strongest ones.
-    Minimum 30 tool calls.
+    Challenge one existing source-level lead with a frozen independent-data test.
+    Agreement between methods on shared photons is a sensitivity check, not
+    independent corroboration. Require null-control, injection-recovery and
+    independent-repeat or held-out artifacts before proposing promotion.
+    Keep GOODS-N sealed. Report failed gates and what you did not run.
     """,
 ]
 

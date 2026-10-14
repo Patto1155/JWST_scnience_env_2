@@ -1,0 +1,52 @@
+{
+  "c1_status": "BLOCKED_AT_TESTED_ORIGINAL_RELEASE_ENDPOINTS",
+  "c1_primary_comparison": null,
+  "c2_status": "RELEASED_1D_FAIL_1SIGMA_PASS_2SIGMA",
+  "c2_primary_comparison": {
+    "published_flux_1e19": 29.497120610149363,
+    "published_error_1e19": 0.6001887401265343,
+    "recovered_flux_1e19": 28.364212058299408,
+    "recovered_diagonal_error_1e19": 0.7192162959110355,
+    "delta_published_sigma": -1.8875871473548638,
+    "pass_1sigma": false,
+    "pass_2sigma": true,
+    "descriptive_delta_combined_errors": -1.2094046608751319,
+    "combined_error_caveat": "Shared photons; covariance unknown, not independent evidence"
+  },
+  "secondary_original_paper_release_mismatched": {
+    "published_flux_1e19": 35.8,
+    "published_error_1e19": 0.8,
+    "recovered_flux_1e19": 28.364212058299408,
+    "recovered_diagonal_error_1e19": 0.7192162959110355,
+    "delta_published_sigma": -9.294734927125736,
+    "pass_1sigma": false,
+    "pass_2sigma": false,
+    "descriptive_delta_combined_errors": -6.912087988914728,
+    "combined_error_caveat": "Shared photons; covariance unknown, not independent evidence"
+  },
+  "raw_detector_end_to_end_completed": false,
+  "mom_empirical_wavecorr_upgrade": false,
+  "s2d_reextraction_completed": false,
+  "s2d_reason": "No frozen identifiable spatial5-row/pathloss operator recovered from inspected headermetadata; no aperture/correction tuned after data access.",
+  "c1_freeze": "50a711a6060c6fd5667fb1150c0821dccc566ea3",
+  "c2_freeze": "8ac3d15391277b2143a9a05498528981391e729c",
+  "first_c2_outcome_acquisition_utc": "2026-10-14T01:41:12.143929+00:00",
+  "code_sha256": "afda0ec6156a93f20bb0d109bb4f4d7cc3a705d510aed3c0dec3e290dcaf9100",
+  "compact_input_sha256": "c851691e26b2edebf08fd134ba9ed618d747518921f55b651b57e7485ab44bff",
+  "numeric_replay_identical": true,
+  "not_run": [
+    "Original v1 spectrum measurement (404 at tested endpoints)",
+    "Raw JWST detector-to-spectrum pipeline",
+    "2D spatial reextraction and independent pathloss calibration",
+    "MoM-specific empirical wavelength/LSF or source-noise coverage calibration",
+    "Independent photons/holdout/control validation",
+    "Any GOODS-N outcomes",
+    "Full integrated quality gate (coordinator-owned)",
+    "Automatic grade/state modification"
+  ],
+  "goods_n_data_opened": false,
+  "scientific_body_bytes": 65349253,
+  "metadata_body_bytes": 466674,
+  "accounting_scope": "Recorded CLI HTTP response bodies incl recorded HTTPerrorbodies/restorations; HEAD bodieszero. One rejected optional astroquery criteria probe fetched unmetered service schema; webtooltransports and HTTPheaders also unmetered. Sciencebytes exact; full metadatabytecompliance notcertified.",
+  "metadata_body_bytes_unmetered_schema_probe": true
+}

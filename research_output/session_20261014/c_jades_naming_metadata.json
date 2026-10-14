@@ -1,0 +1,17 @@
+[
+  {
+    "url": "https://archive.stsci.edu/hlsps/jades/hlsp_jades_readme.txt",
+    "status": 200,
+    "bytes": 47747,
+    "sha256": "a2bbb97d5976366bbf09803b14cef187ea3008f32170cdc919fd805097a3a02a",
+    "executed_utc": "2026-10-14T01:33:41.208664+00:00",
+    "original_release_units_excerpt": "The NIRSpec 1D spectra have this structure:\r\n\r\nNo.\tName  \t\tType  \t \t          Format\r\n  0  \tPRIMARY   \t     PrimaryHDU \t\t\u2013 \t \r\n  1  \tEXTRACT1D\t     BinTableHDU                  [D, D, D]\r\n\r\nThe fits binary table in the EXTRACT1D extension contains 3 columns:\r\nFlux in units of W m-3\r\nFlux uncertainty in units of W m-3\r\nWavelength in units of m\r\n\r\nThe NIRSpec 2D spectra have this structure:\r\n\r\nNo.\tName  \t\tType  \t \t          Format\r\n  0  \tPRIMARY   \t      PrimaryHDU \t\t\u2013 \t \r\n  1  \tFLUX       \t      ImageHDU    \t\tfloat64     Flux in units of W m-3\r\n  2  \tFLUX_ERR          ImageHDU    \t\tfloat64     Flux uncertainty in units of W m-3\r\n  3  \tWAVELENGTH    ImageHDU   \t\tfloat64     Wavelength in units of m\r\n  4  \tRA                        ImageHDU   \t\tfloat64     Right Ascension along the slitlet\r\n  5  \tDEC                     ImageHDU   \t\tfloat64     Declination along the slitlet\r\n\r\nThe JADES processed prism spectra are output on an irregular pixel grid due to the variable spectral resolution of the prism. Therefore one must use the WAVELENGTH array rather than header wcs parameters.\r\nThe ASDF extensions in the NIRSpec files are empty and are included for compatibility with software that understands the MAST JWST product format.\r\n\r\n### Catalog Contents\r\n\r\n#### NIRCam Deep Photometric/Photo-z Catalog\r\n\r\nThe hlsp_jades_jwst_nircam_goods-s-deep_photometry_v1.0_catalog.f"
+  },
+  {
+    "url": "https://archive.stsci.edu/hlsps/jades/dr1/goods-s/spectra/f290lp-g395m/goods-s-deephst/",
+    "status": 404,
+    "bytes": 196,
+    "sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880",
+    "executed_utc": "2026-10-14T01:33:48.567289+00:00"
+  }
+]

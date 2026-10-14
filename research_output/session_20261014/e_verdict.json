@@ -1,0 +1,38 @@
+{
+  "freeze_commit": "90110ef1913beff9d8537f5fc05361655cbdee6f",
+  "target": {
+    "source_id": 1043,
+    "ra_deg": 110.63858928243717,
+    "dec_deg": -73.48487214542632
+  },
+  "status": "blocked: required reference exceeds frozen transfer cap",
+  "scientific_verdict": "independent-reduction persistence not measured",
+  "grade_proposal_for_parent": "Unconfirmed lead",
+  "new_context": "jwst_1596.pmap",
+  "old_context": "jwst_1535.pmap",
+  "required_dark_reference": "jwst_nircam_dark_0424.fits",
+  "dark_reference_bytes": 4378878720,
+  "verified_raw_body_bytes": 151113600,
+  "dark_plus_raw_minimum_bytes": 4529992320,
+  "data_cap_bytes": 1610612736,
+  "control_artifacts": {
+    "null": null,
+    "injection_recovery": null,
+    "independent_repeat": null
+  },
+  "first_datamodel_open_started_utc": "2026-10-14T01:36:53.930331+00:00",
+  "not_run": [
+    "Detector1 or Image2 raw reprocessing",
+    "new calibrated photometry, centroid association or held-out astrometry",
+    "structured-light rank null under four frozen background operators",
+    "same-field measured-PSF calibration and positive/negative injection recovery",
+    "other-epoch forced photometry (both cone queries timed out)",
+    "source identity, high-redshift/dropout classification or variability inference"
+  ],
+  "receipt_sha256": {
+    "e_raw_downloads.json": "efb122bd77127d67edb7435cf81aab2ec3289c911243ad7ccd6de64cecea17fd",
+    "e_raw_headers.json": "07a94d43a12f7c183588aba0a06ed287587fdda4526fff97be724fc474cafe9f",
+    "e_crds_remote.json": "b979ab83fc7466cba1bb3422a47ccb82ba7d94ad0db68d76dd1c00fb64c65923",
+    "e_reference_heads.json": "0bf28447bc2fd5c4cfe7e2f3b40bbc2189d249b1f1507a87ac95f543ff281827"
+  }
+}

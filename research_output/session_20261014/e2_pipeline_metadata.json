@@ -1,0 +1,11 @@
+{
+  "freeze_commit": "19f2702294b680d2961045c55a508a6edcd157b4",
+  "body_bytes": 1161469,
+  "reads": [
+    {
+      "url": "https://jwst-crds.stsci.edu/json/get_server_info/smacs_e2_run-14.0.3-77bd4c05-e5b6-40c2-a775-01f8e99f8f02-00000001/",
+      "bytes": 1161469,
+      "sha256": "a3f7e05e172c47c01bee0a8c6ee12bb62e8745d7ce8fb87f4f7099ccee8e4f85"
+    }
+  ]
+}

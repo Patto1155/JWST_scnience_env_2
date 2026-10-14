@@ -1,0 +1,14 @@
+{
+  "target": 10058975,
+  "tier": "goods-s-deephst",
+  "unique_id": "goods-s-deephst_10058975",
+  "row_index": 3114,
+  "redshift": 9.4327,
+  "configuration": "g395m_f290lp",
+  "flux_1e19": 29.497120610149363,
+  "error_1e19": 0.6001887401265343,
+  "catalogue_sha256": "66ace5283627cf4bc67f0a62a778f1463375d0937eb27d5700ff120163e22b2f",
+  "catalogue_unit": "1e-20 erg / (s cm2)",
+  "RA": 53.112434,
+  "DEC": -27.774609
+}

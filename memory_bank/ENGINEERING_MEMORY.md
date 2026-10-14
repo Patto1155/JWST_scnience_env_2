@@ -1,6 +1,6 @@
 # Engineering Memory (Science OS)
 
-Last updated: 2026-03-07
+Governance corrected: 2026-10-14; historical implementation notes below.
 Audience: coding agents working on this repository.
 
 ## System Shape
@@ -14,7 +14,7 @@ Audience: coding agents working on this repository.
 - Dataset registration from FITS files with metadata in DB.
 - Strict dataset filtering and preflight validation for canonical `jwst_*` datasets.
 - `run_discovery.py` can target isolated API instances via `--base-url` / `SCIENCE_OS_API_BASE_URL`.
-- Discovery payloads now enforce minimum agent activity (`12` successful tool calls, `2` reflections).
+- Activity minima default to zero; explicit constraints may opt in. Call count is not evidence.
 - Deterministic build pipeline producing:
 - `research_output/universe_table_summary.json`
 - `research_output/highz_candidates.json`
@@ -25,11 +25,11 @@ Audience: coding agents working on this repository.
 ## What Is Not Reliable Yet
 - Prompt instructions and registry are misaligned (prompt references unregistered tools).
 - Loader fallback to dummy data can hide dataset lookup problems.
-- Deep discovery runs now fail if minimum activity is not met, but tool quality/coverage still depends on prompt and registry alignment.
+- Opt-in activity constraints do not establish scientific quality; coverage and controls decide it.
 
-## Current Data Snapshot (from existing artifacts)
+## Historical Artifact Snapshot (not current scientific state)
 - Universe table entries: 150
-- High-z candidates: 56
+- The historical file listed 56 high-z proposals; none are confirmed by that count. The corrected 1732-record dropout audit has zero survivors because complete configured coverage is absent. See `FINDINGS.md`; current grades live only in `docs/CLAIM_LEDGER.md`.
 - Anomalies: 56
 - High-z entries are concentrated in two targets: `SMACS-J0723.3-7327` and `GS-MEDIUM-HST`.
 
