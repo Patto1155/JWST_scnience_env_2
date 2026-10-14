@@ -3,10 +3,13 @@
 from __future__ import annotations
 
 import argparse
+import io
 import json
 import re
+import shutil
 import signal
 import threading
+import traceback
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
@@ -31,7 +34,9 @@ from tools.jwst.point_resolution import read_point_resolution
 from tools.jwst.ranged_fits import HeaderRangedFITS, RangeBudget, RangedFITS
 
 
-def ranged_inputs(budget: RangeBudget) -> tuple[list[dict], list[dict], list[dict]]:
+def ranged_inputs(
+    budget: RangeBudget, *, coalesced_cal: bool = False
+) -> tuple[list[dict], list[dict], list[dict]]:
     inventory = json.loads((ROOT / "data_sources/followup/mom_native_inventory.json").read_text())
     manifest = json.loads((ROOT / "data_sources/followup/mom_rate_noise_manifest.json").read_text())
     rate_pins = {x["filename"]: x for x in manifest["products"]}
@@ -48,6 +53,10 @@ def ranged_inputs(budget: RangeBudget) -> tuple[list[dict], list[dict], list[dic
     def read_pair(pin):
         row = rows[pin["source_slits_filename"]]
         stream = HeaderRangedFITS(pin["url"], pin["expected_bytes"], budget)
+        if coalesced_cal:
+            remote = stream
+            stream = io.BytesIO(remote._fetch(0, remote.size))
+            remote.close()
         with fits.open(stream, memmap=False) as hdul:
             primary = dict(hdul[0].header)
             sci = next(
@@ -178,18 +187,45 @@ def ranged_inputs(budget: RangeBudget) -> tuple[list[dict], list[dict], list[dic
     return (data, pixels, identities)
 
 
+def red_window_indices(waves: np.ndarray) -> np.ndarray:
+    """Frozen windows on finite positive wavelength coverage, never missing=zero."""
+    good = np.isfinite(waves) & (waves > 0)
+    count = good.sum(axis=(0, 1))
+    wave = np.divide(
+        np.where(good, waves, 0).sum(axis=(0, 1)),
+        count,
+        out=np.full(count.shape, np.nan, dtype=float),
+        where=count > 0,
+    )
+    return np.flatnonzero(
+        (wave >= 3.35) & (wave <= 3.6)
+        | (wave >= 3.9) & (wave <= 4.1)
+        | (wave >= 4.25) & (wave <= 4.45)
+    )
+
+
 def run(
     output: Path,
     compact: Path,
     *,
     calibration_verdict: str,
     cancel_event: threading.Event | None = None,
+    cap_bytes: int = 300_000_000,
+    geometric_wavelength_prior: bool = False,
+    freeze_commit: str = "d50fa97",
+    coalesced_cal: bool = False,
 ) -> dict:
+    if cap_bytes <= 0 or cap_bytes > 1_610_612_736:
+        raise ValueError("cap must be positive and within authorized 1.5 GiB")
+    if shutil.disk_usage(ROOT).free < 5_000_000_000:
+        raise ValueError("less than required 5 GB free")
     budget = RangeBudget(
-        journal=output.with_name(output.stem + "_ranges.jsonl"), cancel_event=cancel_event
+        cap=cap_bytes,
+        journal=output.with_name(output.stem + "_ranges.jsonl"),
+        cancel_event=cancel_event,
     )
     try:
-        data, pixels, identities = ranged_inputs(budget)
+        data, pixels, identities = ranged_inputs(budget, coalesced_cal=coalesced_cal)
         baseline = json.loads((ROOT / "research_output/mom_native_reduction.json").read_text())
         geom = baseline["geometry"]
         selected = np.array(baseline["selected_native_columns"], dtype=int)
@@ -266,39 +302,113 @@ def run(
         covariance = transported_covariance(
             blocks, selected, cal["kernel"], cal["training_scale_squared"], list(range(9))
         )
+        # Preserve compact normalized measurement inputs before inference/control code.
+        compact.parent.mkdir(parents=True, exist_ok=True)
+        np.savez_compressed(
+            compact.with_name(compact.stem + "_normalized.npz"),
+            controls=controls,
+            selected_columns=selected,
+            source_flux=flux[:, selected],
+            transported_covariance=covariance,
+            source_wave=np.array([d["wave"] for d in data]),
+            source_good=np.array([d["good"] for d in data]),
+            source_point_pathloss=np.array([d["point_pathloss"] for d in data]),
+            source_trace_seed=np.array([d["trace_seed"] for d in data]),
+            groups=np.array([d["group"] for d in data]),
+            gains=gains,
+            operators=operators,
+            resolution_wave=rw,
+            resolution=rr,
+            components_json=np.array(json.dumps(components)),
+            geometry_json=np.array(json.dumps(geom)),
+            emissivity_json=np.array(json.dumps(emissivity)),
+        )
+        marginal = None
+        nuisance_designs = None
+        if geometric_wavelength_prior:
+            from tools.jwst.wavelength_mixture import (
+                marginal_coefficient_moments,
+                shift_row_wavelength,
+            )
+
+            nodes, prior_weights = np.polynomial.legendre.leggauss(41)
+            prior_weights /= 2
+            nuisance_designs = []
+            for node in nodes:
+                shifted = [dict(d, wave=shift_row_wavelength(d["wave"], node - 0.25)) for d in data]
+                node_positive = row_source_design(
+                    shifted, rw, rr, components, geom["sigma_pixels"], geom["offset_pixels"]
+                )
+                nuisance_designs.append(
+                    rate_signed_response(shifted, node_positive, gains, operators, selected)
+                )
+            nuisance_designs = np.array(nuisance_designs)
+            marginal = marginal_coefficient_moments(
+                nuisance_designs, covariance, flux[:, selected].T.reshape(-1), prior_weights
+            )
         fitted = serial_fit(
             solve_measurement(design, covariance, flux[:, selected].T.reshape(-1)), emissivity, 1
         )
+        if marginal is not None:
+            fitted = serial_fit(marginal, emissivity, 1)
+            fitted["method"] = (
+                "Fieller on marginalized coefficient moments; approximate mixture coverage"
+            )
+            fitted["node_fits"] = [
+                serial_fit(
+                    {"coefficients": m, "covariance": v, "chi2": c, "dof": marginal["dof"]},
+                    emissivity,
+                    1,
+                )
+                for m, v, c in zip(
+                    marginal["node_coefficients"],
+                    marginal["node_covariance"],
+                    marginal["node_chi2"],
+                    strict=True,
+                )
+            ]
+            fitted["wavelength_prior"] = {
+                "kind": "assumed uniform slit-position geometric bound",
+                "centering_detector_pixels": [-1, 1],
+                "global_detector_pixel_correction": -0.25,
+                "common_across_exposures": True,
+                "nodes": nodes.tolist(),
+                "prior_weights": prior_weights.tolist(),
+                "posterior_weights": marginal["weights"].tolist(),
+                "empirical_prior_validated": False,
+            }
         ratio = fitted["ionic_N_over_C"]
         direct = reference_contrast(
             ratio["scaled_numerator"],
             ratio["scaled_denominator"],
             np.array(ratio["scaled_covariance"]),
         )
-        wave = np.mean(np.array([d["wave"] for d in data]), axis=(0, 1))
-        red = np.flatnonzero(
-            (wave >= 3.35) & (wave <= 3.6)
-            | (wave >= 3.9) & (wave <= 4.1)
-            | (wave >= 4.25) & (wave <= 4.45)
-        )
+        red = red_window_indices(np.array([d["wave"] for d in data]))
         separation = np.abs(red[:, None] - red[None, :])
         kernel = np.zeros_like(separation, dtype=float)
         for lag, corr in enumerate(cal["spectral_lag_correlations"]):
             kernel[separation == lag] = corr * (1 - lag / 4)
         kernel = (1 - cal["shrinkage"]) * kernel + cal["shrinkage"] * np.eye(len(red))
-        red_cov = transported_covariance(
-            blocks, red, kernel, cal["training_scale_squared"], list(range(9))
-        )
-        red_design = rate_signed_response(data, positive, gains, operators, red)[:, :2]
-        red_fit = solve_measurement(red_design, red_cov, flux[:, red].T.reshape(-1))
-        red_reduced = red_fit["chi2"] / red_fit["dof"]
-        red_check = {
-            "native_columns": len(red),
-            "chi2": red_fit["chi2"],
-            "dof": red_fit["dof"],
-            "reduced_chi2": red_reduced,
-            "passes": len(red) >= 30 and 0.7 <= red_reduced <= 1.3,
-        }
+        if len(red) < 30:
+            red_check = {
+                "native_columns": len(red),
+                "passes": False,
+                "reason": "frozen minimum30 red-continuum columns unmet",
+            }
+        else:
+            red_cov = transported_covariance(
+                blocks, red, kernel, cal["training_scale_squared"], list(range(9))
+            )
+            red_design = rate_signed_response(data, positive, gains, operators, red)[:, :2]
+            red_fit = solve_measurement(red_design, red_cov, flux[:, red].T.reshape(-1))
+            red_reduced = red_fit["chi2"] / red_fit["dof"]
+            red_check = {
+                "native_columns": len(red),
+                "chi2": red_fit["chi2"],
+                "dof": red_fit["dof"],
+                "reduced_chi2": red_reduced,
+                "passes": 0.7 <= red_reduced <= 1.3,
+            }
         kernel_array = cal.pop("kernel")
         np.savez_compressed(
             compact,
@@ -308,10 +418,13 @@ def run(
             covariance_blocks=blocks[selected],
             source_flux=flux[:, selected],
             design=design,
+            nuisance_designs=nuisance_designs if nuisance_designs is not None else np.empty((0,)),
+            emissivity_json=np.array(json.dumps(emissivity)),
+            transported_covariance=covariance,
         )
         result = {
             "status": "measured_conditional",
-            "freeze_commit": "d50fa97",
+            "freeze_commit": freeze_commit,
             "first_data_access_utc": budget.first_access,
             "calibration_verdict": calibration_verdict,
             "identities": identities,
@@ -332,9 +445,10 @@ def run(
             "status": "interrupted"
             if isinstance(error, (KeyboardInterrupt, SystemExit, InterruptedError))
             else "blocked",
-            "freeze_commit": "d50fa97",
+            "freeze_commit": freeze_commit,
             "first_data_access_utc": budget.first_access,
             "error": f"{type(error).__name__}: {error}",
+            "traceback": traceback.format_exc(),
             "calibration_verdict": calibration_verdict,
             "source_noise_validated": False,
             "elemental_inference": False,
@@ -361,6 +475,10 @@ def main():
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--compact", type=Path, required=True)
     parser.add_argument("--calibration-verdict", choices=("pass", "fail", "blocked"), required=True)
+    parser.add_argument("--coalesced-cal", action="store_true")
+    parser.add_argument("--geometric-wavelength-prior", action="store_true")
+    parser.add_argument("--cap-bytes", type=int, default=300_000_000)
+    parser.add_argument("--freeze-commit", default="d50fa97")
     args = parser.parse_args()
 
     cancel_event = threading.Event()
@@ -376,6 +494,10 @@ def main():
             args.compact,
             calibration_verdict=args.calibration_verdict,
             cancel_event=cancel_event,
+            cap_bytes=args.cap_bytes,
+            geometric_wavelength_prior=args.geometric_wavelength_prior,
+            freeze_commit=args.freeze_commit,
+            coalesced_cal=args.coalesced_cal,
         )
     finally:
         signal.signal(signal.SIGTERM, previous)

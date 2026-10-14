@@ -1,0 +1,19 @@
+{
+  "source": "https://arxiv.org/html/2409.05948v2",
+  "section": "3.3, Figure9",
+  "published_summary": {
+    "prism_minus_g395m_mean_pixel": 0.25,
+    "approximately_two_detector_pixel_slit": true,
+    "approximate_edge_offset_absolute_pixel": 1
+  },
+  "not_supplied": "A centring-offset probability distribution for these JADES targets",
+  "assumptions": [
+    "Uniform centring density over slit bound",
+    "Transport of PRISM-minus-G395M mean to G140M/G235M/G395M",
+    "Linear local wavelength dispersion",
+    "Uniform Gaussian-width prior from0.2 to3 medianbins"
+  ],
+  "operator": "center=vacuum_rest*(1+catalogue_z)+(-0.25+u)*medianbin;u~Uniform[-1,1]",
+  "different_from_C": "C shifts calibrated wave grid w(j+delta); B fixed nominal wavelength and shifted model center. Opposite sign convention; do not call identical correction.",
+  "scope": "Conditional centroid stress prior; not empirical absolute wavelength calibration"
+}

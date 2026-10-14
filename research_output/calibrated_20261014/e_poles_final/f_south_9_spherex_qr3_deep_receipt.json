@@ -1,0 +1,18 @@
+{
+  "name": "south_9_spherex_qr3_deep",
+  "requested_url": "https://irsa.ipac.caltech.edu/SIA",
+  "params": {
+    "COLLECTION": "spherex_qr3_deep",
+    "POS": "CIRCLE 86.1817375 -67.29075277777778 0.000277778",
+    "BAND": "2.8e-6 3.9e-6",
+    "CALIB": "2",
+    "RESPONSEFORMAT": "CSV",
+    "MAXREC": "10000"
+  },
+  "utc_started": "2026-10-14T04:20:14.945300+00:00",
+  "status": 200,
+  "bytes": 641,
+  "url": "https://irsa.ipac.caltech.edu/SIA?COLLECTION=spherex_qr3_deep&POS=CIRCLE+86.1817375+-67.29075277777778+0.000277778&BAND=2.8e-6+3.9e-6&CALIB=2&RESPONSEFORMAT=CSV&MAXREC=10000",
+  "sha256_consumed_body": "f199e99ee1d76d29bb1596173ddb2d15286a07da2e017ffa8ac4f2bb374ccdcd",
+  "elapsed_seconds": 7.00521817200206
+}

@@ -1,0 +1,18 @@
+{
+  "name": "2mass_gator_retry_12",
+  "requested_url": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query",
+  "params": {
+    "catalog": "fp_psc",
+    "spatial": "Cone",
+    "objstr": "86.1817375 -67.29075277777778",
+    "radius": "1",
+    "radunits": "arcsec",
+    "outfmt": "1"
+  },
+  "utc_started": "2026-10-14T04:25:06.364319+00:00",
+  "status": 200,
+  "bytes": 5237,
+  "url": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query?catalog=fp_psc&spatial=Cone&objstr=86.1817375+-67.29075277777778&radius=1&radunits=arcsec&outfmt=1",
+  "sha256_consumed_body": "d607c0e44f8b3fe8b7165c851f7b9350b0867cbb67929f51eed6fb4ac6686dd0",
+  "elapsed_seconds": 7.344499699000153
+}

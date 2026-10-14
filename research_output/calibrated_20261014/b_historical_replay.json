@@ -1,0 +1,41 @@
+{
+  "target": 10058975,
+  "redshift": 9.4327,
+  "vacuum_rest_angstrom": 5008.24,
+  "frozen_window_um": 0.015,
+  "scope": "Released 1D recovery; raw detector end-to-end NOT executed",
+  "fit": {
+    "covariance_valid": true,
+    "jacobian_rank": 5,
+    "n_parameters": 5,
+    "NII6585_flux_1e20": null,
+    "flux_1e20": 283.6421205829941,
+    "diagonal_err_1e20": 7.192162959110355,
+    "center_um": 5.22418635752478,
+    "sigma_um": 0.0017634335365361617,
+    "chi2_diag": 4.304121231924379,
+    "dof": 11,
+    "n": 16,
+    "success": true,
+    "continuum_at_line_1e20": 0.07190345604444076,
+    "outcome": "conditional_fit"
+  },
+  "comparison": {
+    "published_flux_1e19": 29.497120610149363,
+    "published_error_1e19": 0.6001887401265343,
+    "recovered_flux_1e19": 28.364212058299408,
+    "recovered_diagonal_error_1e19": 0.7192162959110355,
+    "delta_published_sigma": -1.8875871473548638,
+    "pass_1sigma": false,
+    "pass_2sigma": true,
+    "pass_combined_2sigma_amendment": true,
+    "descriptive_delta_combined_errors": -1.2094046608751319,
+    "combined_error_caveat": "Shared photons; covariance unknown, not independent evidence"
+  },
+  "input": {
+    "replay": "research_output/session_20261014/c2_known_answer_inputs.npz",
+    "bytes": 31049,
+    "sha256": "c851691e26b2edebf08fd134ba9ed618d747518921f55b651b57e7485ab44bff",
+    "scope": "Compact released-1D input replay; not fresh raw data or independent evidence"
+  }
+}

@@ -1,0 +1,309 @@
+{
+  "seed": 20261014,
+  "eligible": 1989,
+  "training": [
+    {
+      "unique_id": "goods-s-mediumjwst_86986",
+      "line": "O3_5007",
+      "rest_a": 5008.24,
+      "z": 3.239557397393571,
+      "configuration": "g235m_f170lp",
+      "published_flux": 419.4530889863229,
+      "published_error": 23.955452920674624,
+      "unit": "10**-20 erg s-1 cm-2"
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_35715",
+      "line": "O3_5007",
+      "rest_a": 5008.24,
+      "z": 3.0334726456231795,
+      "configuration": "g235m_f170lp",
+      "published_flux": 385.76020951874136,
+      "published_error": 18.636227411969333,
+      "unit": "10**-20 erg s-1 cm-2"
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_10004929",
+      "line": "O3_5007",
+      "rest_a": 5008.24,
+      "z": 3.756040777776274,
+      "configuration": "g235m_f170lp",
+      "published_flux": 84.23912848769211,
+      "published_error": 9.469891685495396,
+      "unit": "10**-20 erg s-1 cm-2"
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_41833",
+      "line": "O3_5007",
+      "rest_a": 5008.24,
+      "z": 3.737684055808181,
+      "configuration": "g235m_f170lp",
+      "published_flux": 159.0226095404638,
+      "published_error": 19.633041971775935,
+      "unit": "10**-20 erg s-1 cm-2"
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_204125",
+      "line": "O3_5007",
+      "rest_a": 5008.24,
+      "z": 3.883049758915581,
+      "configuration": "g235m_f170lp",
+      "published_flux": 80.12790561138591,
+      "published_error": 15.031760572425327,
+      "unit": "10**-20 erg s-1 cm-2"
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_51236",
+      "line": "O3_5007",
+      "rest_a": 5008.24,
+      "z": 2.5819484767928254,
+      "configuration": "g235m_f170lp",
+      "published_flux": 149.52283745845298,
+      "published_error": 21.643851875982296,
+      "unit": "10**-20 erg s-1 cm-2"
+    },
+    {
+      "unique_id": "goods-s-mediumhst_9569",
+      "line": "HBaB_4861",
+      "rest_a": 4862.68,
+      "z": 4.756141092802089,
+      "configuration": "g235m_f170lp",
+      "published_flux": 94.02010037748313,
+      "published_error": 16.69972329200381,
+      "unit": "10**-20 erg s-1 cm-2"
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_20046866",
+      "line": "O3_5007",
+      "rest_a": 5008.24,
+      "z": 7.262005200850931,
+      "configuration": "g395m_f290lp",
+      "published_flux": 116.7063395590188,
+      "published_error": 5.622073551839899,
+      "unit": "10**-20 erg s-1 cm-2"
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_187034",
+      "line": "HBaG_4340",
+      "rest_a": 4341.68,
+      "z": 3.6524314015118255,
+      "configuration": "g235m_f170lp",
+      "published_flux": 107.01278773475691,
+      "published_error": 15.193247712251727,
+      "unit": "10**-20 erg s-1 cm-2"
+    },
+    {
+      "unique_id": "goods-s-mediumhst_12402",
+      "line": "O3_5007",
+      "rest_a": 5008.24,
+      "z": 3.1896557892075696,
+      "configuration": "g235m_f170lp",
+      "published_flux": 447.6842256340946,
+      "published_error": 23.74759942154716,
+      "unit": "10**-20 erg s-1 cm-2"
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_192368",
+      "line": "HBaG_4340",
+      "rest_a": 4341.68,
+      "z": 1.7655694425109254,
+      "configuration": "g140m_f070lp",
+      "published_flux": 147.08370547090098,
+      "published_error": 18.88330986037553,
+      "unit": "10**-20 erg s-1 cm-2"
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_41457",
+      "line": "HBaG_4340",
+      "rest_a": 4341.68,
+      "z": 3.3256511860106546,
+      "configuration": "g235m_f170lp",
+      "published_flux": 116.61305794335419,
+      "published_error": 15.362591544301774,
+      "unit": "10**-20 erg s-1 cm-2"
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_188720",
+      "line": "HBaB_4861",
+      "rest_a": 4862.68,
+      "z": 2.3225975501419724,
+      "configuration": "g140m_f070lp",
+      "published_flux": 310.8784442167066,
+      "published_error": 17.2956196291409,
+      "unit": "10**-20 erg s-1 cm-2"
+    },
+    {
+      "unique_id": "goods-s-mediumhst_15353",
+      "line": "HBaG_4340",
+      "rest_a": 4341.68,
+      "z": 4.705913117497602,
+      "configuration": "g235m_f170lp",
+      "published_flux": 41.61163770025668,
+      "published_error": 7.871471904628473,
+      "unit": "10**-20 erg s-1 cm-2"
+    },
+    {
+      "unique_id": "goods-s-ultradeep_201127",
+      "line": "HBaB_4861",
+      "rest_a": 4862.68,
+      "z": 5.8285005958851,
+      "configuration": "g395m_f290lp",
+      "published_flux": 38.0855839519733,
+      "published_error": 2.165494166683583,
+      "unit": "10**-20 erg s-1 cm-2"
+    }
+  ],
+  "heldout": [
+    {
+      "unique_id": "goods-s-mediumjwst_176652",
+      "line": "O3_5007",
+      "rest_a": 5008.24,
+      "z": 3.613826963852948,
+      "configuration": "g235m_f170lp",
+      "published_flux": 998.3534750092168,
+      "published_error": 34.11098782955975,
+      "unit": "10**-20 erg s-1 cm-2"
+    },
+    {
+      "unique_id": "goods-s-deephst_18846",
+      "line": "HBaG_4340",
+      "rest_a": 4341.68,
+      "z": 6.333072075962347,
+      "configuration": "g395m_f290lp",
+      "published_flux": 37.22616619411277,
+      "published_error": 3.3380033209384505,
+      "unit": "10**-20 erg s-1 cm-2"
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_147993",
+      "line": "HBaB_4861",
+      "rest_a": 4862.68,
+      "z": 3.3206771919943217,
+      "configuration": "g235m_f170lp",
+      "published_flux": 66.91731884858504,
+      "published_error": 10.862109437648629,
+      "unit": "10**-20 erg s-1 cm-2"
+    },
+    {
+      "unique_id": "goods-s-ultradeep_99671",
+      "line": "HBaB_4861",
+      "rest_a": 4862.68,
+      "z": 5.921151016214746,
+      "configuration": "g395m_f290lp",
+      "published_flux": 24.536828026712794,
+      "published_error": 1.1017667521415302,
+      "unit": "10**-20 erg s-1 cm-2"
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_132595",
+      "line": "O3_5007",
+      "rest_a": 5008.24,
+      "z": 2.9417734427744415,
+      "configuration": "g235m_f170lp",
+      "published_flux": 543.7527954273243,
+      "published_error": 20.44395676260358,
+      "unit": "10**-20 erg s-1 cm-2"
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_27341",
+      "line": "O3_5007",
+      "rest_a": 5008.24,
+      "z": 2.0468966281378806,
+      "configuration": "g140m_f070lp",
+      "published_flux": 480.07234777438026,
+      "published_error": 32.23694518836708,
+      "unit": "10**-20 erg s-1 cm-2"
+    },
+    {
+      "unique_id": "goods-s-mediumhst_9842",
+      "line": "O3_5007",
+      "rest_a": 5008.24,
+      "z": 5.797118376261354,
+      "configuration": "g395m_f290lp",
+      "published_flux": 232.75883320517335,
+      "published_error": 14.980848320783883,
+      "unit": "10**-20 erg s-1 cm-2"
+    },
+    {
+      "unique_id": "goods-s-deepjwst_9366",
+      "line": "HBaG_4340",
+      "rest_a": 4341.68,
+      "z": 6.473175938772345,
+      "configuration": "g395m_f290lp",
+      "published_flux": 16.999859674569898,
+      "published_error": 2.0850814927600974,
+      "unit": "10**-20 erg s-1 cm-2"
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_10013560",
+      "line": "HBaB_4861",
+      "rest_a": 4862.68,
+      "z": 3.9381440146265967,
+      "configuration": "g235m_f170lp",
+      "published_flux": 63.90456152877018,
+      "published_error": 4.627299099828576,
+      "unit": "10**-20 erg s-1 cm-2"
+    },
+    {
+      "unique_id": "goods-s-deepjwst_24638",
+      "line": "HBaB_4861",
+      "rest_a": 4862.68,
+      "z": 3.6323658953388502,
+      "configuration": "g235m_f170lp",
+      "published_flux": 94.5456348182885,
+      "published_error": 6.007310477491766,
+      "unit": "10**-20 erg s-1 cm-2"
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_191250",
+      "line": "HBaB_4861",
+      "rest_a": 4862.68,
+      "z": 5.387361743140348,
+      "configuration": "g395m_f290lp",
+      "published_flux": 162.74316734916042,
+      "published_error": 16.713758877865303,
+      "unit": "10**-20 erg s-1 cm-2"
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_173246",
+      "line": "HBaB_4861",
+      "rest_a": 4862.68,
+      "z": 3.700023118500885,
+      "configuration": "g235m_f170lp",
+      "published_flux": 185.10378343778885,
+      "published_error": 9.072659993870172,
+      "unit": "10**-20 erg s-1 cm-2"
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_167512",
+      "line": "HBaB_4861",
+      "rest_a": 4862.68,
+      "z": 2.3257153707822105,
+      "configuration": "g140m_f070lp",
+      "published_flux": 363.8352457961397,
+      "published_error": 19.58461347937312,
+      "unit": "10**-20 erg s-1 cm-2"
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_163927",
+      "line": "O3_5007",
+      "rest_a": 5008.24,
+      "z": 1.2646299428896954,
+      "configuration": "g140m_f070lp",
+      "published_flux": 256.03756206923646,
+      "published_error": 42.74813430059883,
+      "unit": "10**-20 erg s-1 cm-2"
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_143405",
+      "line": "HBaB_4861",
+      "rest_a": 4862.68,
+      "z": 2.295684228222661,
+      "configuration": "g140m_f070lp",
+      "published_flux": 175.11682733958096,
+      "published_error": 28.96189872994614,
+      "unit": "10**-20 erg s-1 cm-2"
+    }
+  ],
+  "scope": "Conditional shared-photon estimator agreement"
+}

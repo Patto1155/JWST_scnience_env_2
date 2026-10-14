@@ -1,0 +1,20 @@
+{
+  "freeze_commit": "4fbf419",
+  "science_bodies_bytes": 0,
+  "raw_cap_bytes": 1073741824,
+  "population_cap_bytes": 300000000,
+  "science_accessed": false,
+  "receipts": [
+    {
+      "url": "https://archive.stsci.edu/hlsps/jades/dr4/goods-n/catalogs/hlsp_jades_jwst_nirspec_goods-n_clear-prism-gratings-line-fluxes_v1.2_catalog.fits",
+      "method": "HEAD",
+      "started_utc": "2026-10-14T04:21:25.882540+00:00",
+      "disk_free_bytes": 19711184896,
+      "body_bytes": 0,
+      "status": 200,
+      "content_length": "33471360",
+      "elapsed_seconds": 6.632853995997721,
+      "completed_utc": "2026-10-14T04:21:32.515434+00:00"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "status": "interrupted_before_reduction",
+  "body_bytes": 1537984,
+  "charged_body_bytes": 1549508,
+  "requests_finished": 447,
+  "unresolved_request_reservations": [
+    {
+      "event": "request_started",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00003_nrs2_cal.fits&range_offset=5106240",
+      "requested_range": [
+        5106240,
+        5109119
+      ],
+      "utc": "2026-10-14T04:15:24.889306+00:00",
+      "body_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "fullfile_hash_verified": false,
+      "status": "request_started"
+    },
+    {
+      "event": "request_started",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00001_nrs2_cal.fits&range_offset=5051520",
+      "requested_range": [
+        5051520,
+        5054399
+      ],
+      "utc": "2026-10-14T04:15:25.021144+00:00",
+      "body_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "fullfile_hash_verified": false,
+      "status": "request_started"
+    },
+    {
+      "event": "request_started",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00004_nrs2_cal.fits&range_offset=4832640",
+      "requested_range": [
+        4832640,
+        4835519
+      ],
+      "utc": "2026-10-14T04:15:25.022139+00:00",
+      "body_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "fullfile_hash_verified": false,
+      "status": "request_started"
+    },
+    {
+      "event": "request_started",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00002_nrs2_cal.fits&range_offset=5160960",
+      "requested_range": [
+        5160960,
+        5163839
+      ],
+      "utc": "2026-10-14T04:15:25.117098+00:00",
+      "body_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "fullfile_hash_verified": false,
+      "status": "request_started"
+    }
+  ],
+  "reason": "SIGINT before inference: implement frozen wavelength nuisance first",
+  "first_data_access_utc": "2026-10-14T04:14:42.622019+00:00",
+  "freeze_commit": "43a2b84",
+  "remaining_bytes": 1609063228
+}

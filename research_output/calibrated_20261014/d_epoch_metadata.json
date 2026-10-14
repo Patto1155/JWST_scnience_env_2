@@ -1,0 +1,45 @@
+{
+  "arm": "SMACS",
+  "freeze_commit": "ba11dc147e726ca078a8363e63c34023a19bdfa5",
+  "session_amendment_commit": "35656592eeb56a58419bdbd86cc5579ca10819a5",
+  "started_utc": "2026-10-14T04:13:54.070062+00:00",
+  "request": {
+    "service": "Mast.Caom.Filtered.Position",
+    "params": {
+      "columns": "obsid,obs_id,obs_collection,instrument_name,filters,t_min,t_max,dataURL,s_region,target_name,calib_level",
+      "filters": [
+        {
+          "paramName": "obs_collection",
+          "values": [
+            "JWST"
+          ]
+        },
+        {
+          "paramName": "instrument_name",
+          "values": [
+            "NIRCAM/IMAGE"
+          ]
+        },
+        {
+          "paramName": "filters",
+          "values": [
+            "F444W"
+          ]
+        }
+      ],
+      "position": "110.63858928243717,-73.48487214542632,0.001"
+    },
+    "format": "json",
+    "pagesize": 1000,
+    "page": 1
+  },
+  "metadata_cap_bytes": 5000000,
+  "response_body_bytes": 0,
+  "science_body_bytes": 0,
+  "prior_conservative_science_reservation_bytes": 5826074168,
+  "remaining_science_bytes": 616376776,
+  "disk_free_before_bytes": 24653549568,
+  "error": "TimeoutError: The read operation timed out",
+  "finished_utc": "2026-10-14T04:14:29.376359+00:00",
+  "other_epoch_forced_photometry": "not run: epoch identity/coverage feasibility not established"
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://archive.stsci.edu/hlsps/jades/dr4/goods-s/catalogs/hlsp_jades_jwst_nirspec_goods-s_clear-prism-gratings-line-fluxes_v1.2_catalog.fits",
+  "freeze_commit": "9811e4c",
+  "started_utc": "2026-10-14T04:15:58.668829+00:00",
+  "bytes": 62752320,
+  "disk_free_bytes": 22494486528,
+  "cap": 300000000,
+  "status": 200,
+  "sha256": "66ace5283627cf4bc67f0a62a778f1463375d0937eb27d5700ff120163e22b2f",
+  "completed_utc": "2026-10-14T04:16:15.228270+00:00"
+}
