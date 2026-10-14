@@ -53,3 +53,17 @@ def test_pixel_integrated_signed_line_recovery():
     assert report["comparison"]["recovered_flux_1e19"] == pytest.approx(35.8, rel=1e-7)
     assert report["comparison"]["pass_1sigma"]
     assert (3e-13 * u.W / u.m**3).to_value(u.erg / u.s / u.cm**2 / u.AA) == pytest.approx(3e-20)
+
+
+def test_combined_error_amendment_is_strict_and_keeps_original_contract():
+    from data_pipeline.session_known_answer import compare
+
+    # Combined-error recovery can pass while the immutable original test fails.
+    report = compare(28.36421, 0.71922, valid=True, published=29.49712, published_error=0.60019)
+    assert not report["pass_1sigma"]
+    assert report["pass_combined_2sigma_amendment"]
+    # Exact 2 sigma is excluded by the user's strict inequality.
+    boundary = compare(10.0, 4.0, valid=True, published=0.0, published_error=3.0)
+    assert not boundary["pass_combined_2sigma_amendment"]
+    invalid = compare(0.0, 1.0, valid=False, published=0.0, published_error=1.0)
+    assert not invalid["pass_combined_2sigma_amendment"]

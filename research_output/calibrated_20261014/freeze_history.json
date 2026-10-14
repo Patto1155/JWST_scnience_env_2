@@ -1,0 +1,76 @@
+{
+  "base": "85d8f170593bace56ee0e6a873fbb355c184fed1",
+  "refs": [
+    {
+      "name": "a",
+      "sha": "efe2f437911b7ad5c541f6868884f3d34d8340a1",
+      "committer": "2026-10-14T06:12:48+02:00"
+    },
+    {
+      "name": "b_raw",
+      "sha": "a44f7564d282935afb564529921ff5cda0775ce8",
+      "committer": "2026-10-14T06:14:06+02:00"
+    },
+    {
+      "name": "b_prior",
+      "sha": "9811e4ca46ab6b6682082404f70b4a17c9f7fcd4",
+      "committer": "2026-10-14T06:15:49+02:00"
+    },
+    {
+      "name": "b_draw",
+      "sha": "877a02b4288fc6d78febac135d5148f17ffa3518",
+      "committer": "2026-10-14T06:16:55+02:00"
+    },
+    {
+      "name": "b_prediction",
+      "sha": "4fbf4192004cef8ffe506716e293be2851abd8e9",
+      "committer": "2026-10-14T06:21:16+02:00"
+    },
+    {
+      "name": "b_north_scope",
+      "sha": "e2b7b78e139f8523b9c86e3f98ffe85bd715e183",
+      "committer": "2026-10-14T06:22:26+02:00"
+    },
+    {
+      "name": "b_north_draw",
+      "sha": "e55ce37a46db9e7ad7a01c6b817d573862f2c1dc",
+      "committer": "2026-10-14T06:23:03+02:00"
+    },
+    {
+      "name": "c_design",
+      "sha": "43a2b84f2d2d2543c1418718a276764d2e971a30",
+      "committer": "2026-10-14T06:14:12+02:00"
+    },
+    {
+      "name": "c_io",
+      "sha": "6b269aa0641c77147dcc1f6c0d3774e9bf0503e1",
+      "committer": "2026-10-14T06:18:01+02:00"
+    },
+    {
+      "name": "c_implementation",
+      "sha": "1e880102b1c0f4dcd7690694474be02602473fa1",
+      "committer": "2026-10-14T06:24:47+02:00"
+    },
+    {
+      "name": "d_design",
+      "sha": "ba11dc147e726ca078a8363e63c34023a19bdfa5",
+      "committer": "2026-10-14T06:13:43+02:00"
+    },
+    {
+      "name": "d_patch",
+      "sha": "e6c7eadd3d318167b5e046ff3b1d7aba72dac30f",
+      "committer": "2026-10-14T06:16:06+02:00"
+    },
+    {
+      "name": "e_design",
+      "sha": "264a875deb9f272a9e7a31f1b12175598151a8c4",
+      "committer": "2026-10-14T06:14:11+02:00"
+    },
+    {
+      "name": "e_association",
+      "sha": "722803ec9fa495ea0f40d50a6c86e2e70f39cefc",
+      "committer": "2026-10-14T06:22:38+02:00"
+    }
+  ],
+  "scope": "Original freeze and implementation commits; publication may use a single API commit. Scientific thresholds remained unchanged during code fixes."
+}

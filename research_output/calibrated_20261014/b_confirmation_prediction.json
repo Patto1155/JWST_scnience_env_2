@@ -1,0 +1,32 @@
+{
+  "training_summary": {
+    "usable": 15,
+    "gate": "DESCRIPTIVE_ONLY",
+    "mean": -0.7110990589254784,
+    "sd": 1.2516935060189613,
+    "ks_d": 0.28344906380060575,
+    "ks_p": 0.14699574588925224,
+    "error_scale_identified": false,
+    "caveat": "Shared photons, unknown covariance, different estimators and S/N selection; SD is not published-error scale"
+  },
+  "numerical_reference_prediction": {
+    "mean": 0,
+    "sd": 1,
+    "n": 15,
+    "mean_95_interval": [
+      -0.5060698239044358,
+      0.5060698239044358
+    ],
+    "sd_95_interval": [
+      0.6340755984130267,
+      1.365884016333048
+    ]
+  },
+  "empirical_sensitivity_prediction": {
+    "mean": -0.7110990589254784,
+    "sd": 1.2516935060189613,
+    "scope": "Conditional estimator discrepancy, no error scale identified"
+  },
+  "rule": "No spectrum replacements; no northern outcome before this commit; if no applicable northern catalogue demonstrated use frozen GS half",
+  "raw_calibration": "UNMET"
+}

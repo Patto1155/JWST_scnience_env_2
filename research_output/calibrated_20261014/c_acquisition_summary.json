@@ -1,0 +1,28 @@
+{
+  "arm": "MoM noise",
+  "fresh_cap_bytes": 1610612736,
+  "recorded_complete_response_body_bytes": 1446220352,
+  "conservative_total_charge_bytes": 1446243400,
+  "remaining_bytes": 164369336,
+  "unresolved_header_requests": 4,
+  "unresolved_requests_conservatively_reserved_not_released": true,
+  "first_data_access_utc": "2026-10-14T04:14:42.622019+00:00",
+  "freeze_commit": "43a2b84",
+  "io_amendment_commit": "6b269aa",
+  "implementation_commit_before_successful_retry": "1e88010",
+  "science_status": "measured_conditional",
+  "calibration_verdict": "blocked",
+  "source_coverage_certified": false,
+  "requests_body_accounting_complete_in_successful_run": true,
+  "historical_response_bodies_excluded_from_fresh_counter": true,
+  "metadata_limitation": "Literature web-search provider transport is unmetered; no separate CLI metadata requests this arm.",
+  "receipt_paths": [
+    "c_initial_acquisition.json",
+    "c_header_scan_acquisition.json",
+    "c_fullcal_receipt.json",
+    "c_final_receipt.json",
+    "c_completed_receipt.json"
+  ],
+  "no_raw_bodies_committed": true,
+  "finished_interrupted_header_requests": 4
+}

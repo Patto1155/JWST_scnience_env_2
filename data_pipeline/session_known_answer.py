@@ -148,6 +148,9 @@ def compare(
         "delta_published_sigma": delta,
         "pass_1sigma": bool(valid and abs(delta) <= 1),
         "pass_2sigma": bool(valid and abs(delta) <= 2),
+        "pass_combined_2sigma_amendment": bool(
+            valid and abs(flux_1e19 - published) / np.hypot(published_error, error_1e19) < 2
+        ),
         "descriptive_delta_combined_errors": float(
             (flux_1e19 - published) / np.hypot(published_error, error_1e19)
         ),

@@ -1,0 +1,3797 @@
+{
+  "status": "blocked",
+  "freeze_commit": "43a2b84",
+  "first_data_access_utc": "2026-10-14T04:20:31.482124+00:00",
+  "error": "ValueError: einstein sum subscripts string contains too many subscripts for operand 0",
+  "calibration_verdict": "blocked",
+  "source_noise_validated": false,
+  "elemental_inference": false,
+  "acquisition": {
+    "cap_bytes": 1124489912,
+    "body_bytes": 480060288,
+    "charged_body_bytes": 480060288,
+    "body_accounting_complete": true,
+    "fragments": [
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00002_nrs2_cal.fits&range_offset=0",
+        "requested_range": [
+          0,
+          51563519
+        ],
+        "utc": "2026-10-14T04:20:31.482124+00:00",
+        "body_bytes": 51563520,
+        "sha256": "c2d318f836570e3cc77463ec91a8b2a8982deb8df4762873dcad3bdfbd03bc9f",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 0-51563519/51563520",
+        "charged_body_bytes": 51563520,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00003_nrs2_cal.fits&range_offset=0",
+        "requested_range": [
+          0,
+          51575039
+        ],
+        "utc": "2026-10-14T04:20:31.482765+00:00",
+        "body_bytes": 51575040,
+        "sha256": "7d60c48301e7020e897bc68de72d9103f27a4e3d4dec14f6e910bd76a6a68b39",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 0-51575039/51575040",
+        "charged_body_bytes": 51575040,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00004_nrs2_cal.fits&range_offset=0",
+        "requested_range": [
+          0,
+          51575039
+        ],
+        "utc": "2026-10-14T04:20:31.483276+00:00",
+        "body_bytes": 51575040,
+        "sha256": "0180117830dcad9a562c3c462b1dd7d08ba8ac2683c95a06d1b5c5855b0967e0",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 0-51575039/51575040",
+        "charged_body_bytes": 51575040,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00001_nrs2_cal.fits&range_offset=0",
+        "requested_range": [
+          0,
+          51560639
+        ],
+        "utc": "2026-10-14T04:20:31.486467+00:00",
+        "body_bytes": 51560640,
+        "sha256": "c4f576ff15f6d58b4fccf6ab4f5f97e82bb3472ebab6602d8f99a8b804d97695",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 0-51560639/51560640",
+        "charged_body_bytes": 51560640,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00001_nrs2_rate.fits&range_offset=0",
+        "requested_range": [
+          0,
+          65535
+        ],
+        "utc": "2026-10-14T04:20:52.511080+00:00",
+        "body_bytes": 65536,
+        "sha256": "e1b516c6acf04bfc46a7f7d5e6ce0d7fdfd11a76cec1926f2cfbdcda302b41fc",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 0-65535/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00003_nrs2_rate.fits&range_offset=0",
+        "requested_range": [
+          0,
+          65535
+        ],
+        "utc": "2026-10-14T04:20:52.800558+00:00",
+        "body_bytes": 65536,
+        "sha256": "fa8e4e0838d67d786f733091572847118ed5c42590066e0f96f7f3ad0300dacf",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 0-65535/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00004_nrs2_rate.fits&range_offset=0",
+        "requested_range": [
+          0,
+          65535
+        ],
+        "utc": "2026-10-14T04:20:52.980571+00:00",
+        "body_bytes": 65536,
+        "sha256": "036123316ffb56c32ffe692629cc3608697b320bc9936b3d40bfd3ec8fa74a3b",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 0-65535/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00002_nrs2_rate.fits&range_offset=0",
+        "requested_range": [
+          0,
+          65535
+        ],
+        "utc": "2026-10-14T04:20:53.449154+00:00",
+        "body_bytes": 65536,
+        "sha256": "c1ef2e8acf0dd6eb96c574f025b4c076b8e7bfc37d26da98cde210da22d1d2b1",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 0-65535/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00001_nrs2_rate.fits&range_offset=10551296",
+        "requested_range": [
+          10551296,
+          10616831
+        ],
+        "utc": "2026-10-14T04:20:59.812010+00:00",
+        "body_bytes": 65536,
+        "sha256": "54d959f28cc3a4fee2672237c37ccae287e7c9894657e86e153e0050f76e103e",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10551296-10616831/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00004_nrs2_rate.fits&range_offset=10551296",
+        "requested_range": [
+          10551296,
+          10616831
+        ],
+        "utc": "2026-10-14T04:20:59.864495+00:00",
+        "body_bytes": 65536,
+        "sha256": "881b41ba7c06f716a9e5608be63bb39cf8f7ea858b0844e91aa0eebeffe3e58e",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10551296-10616831/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00002_nrs2_rate.fits&range_offset=10551296",
+        "requested_range": [
+          10551296,
+          10616831
+        ],
+        "utc": "2026-10-14T04:21:00.037098+00:00",
+        "body_bytes": 65536,
+        "sha256": "79786a2e5dbcef0ecc2d663fe63be97038d1d78ae5c889afc3392fc21785cba9",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10551296-10616831/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00001_nrs2_rate.fits&range_offset=10616832",
+        "requested_range": [
+          10616832,
+          10682367
+        ],
+        "utc": "2026-10-14T04:21:00.125755+00:00",
+        "body_bytes": 65536,
+        "sha256": "029b7657ab42b2ba5fe0684c28f37ed568d412f24fb225c90071ca21cf436d31",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10616832-10682367/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00004_nrs2_rate.fits&range_offset=10616832",
+        "requested_range": [
+          10616832,
+          10682367
+        ],
+        "utc": "2026-10-14T04:21:00.171611+00:00",
+        "body_bytes": 65536,
+        "sha256": "362c3e269b26e13ec47de529b57f4030462bc1becccdea5e2109b38a8c64fe60",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10616832-10682367/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00003_nrs2_rate.fits&range_offset=10551296",
+        "requested_range": [
+          10551296,
+          10616831
+        ],
+        "utc": "2026-10-14T04:21:00.185608+00:00",
+        "body_bytes": 65536,
+        "sha256": "ba8b1e01b20707c532d4202ea60f6a4d5eb82604458e7fdabec9534f93256f3b",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10551296-10616831/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00002_nrs2_rate.fits&range_offset=10616832",
+        "requested_range": [
+          10616832,
+          10682367
+        ],
+        "utc": "2026-10-14T04:21:00.397474+00:00",
+        "body_bytes": 65536,
+        "sha256": "a8bc5165155204409ae9d77cc80c9a3de9acebddbce5958052d698a8a13cb417",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10616832-10682367/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00001_nrs2_rate.fits&range_offset=10682368",
+        "requested_range": [
+          10682368,
+          10747903
+        ],
+        "utc": "2026-10-14T04:21:00.444841+00:00",
+        "body_bytes": 65536,
+        "sha256": "19cdfb03b43c5cd33866510cc1e4d53e3410015b65be2d599b6fcf3d7ac32bde",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10682368-10747903/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00004_nrs2_rate.fits&range_offset=10682368",
+        "requested_range": [
+          10682368,
+          10747903
+        ],
+        "utc": "2026-10-14T04:21:00.452755+00:00",
+        "body_bytes": 65536,
+        "sha256": "6e6cccdf3ec413370983ae5145ed7e5d0be242c783560226e28d3795576e60b2",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10682368-10747903/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00003_nrs2_rate.fits&range_offset=10616832",
+        "requested_range": [
+          10616832,
+          10682367
+        ],
+        "utc": "2026-10-14T04:21:00.472755+00:00",
+        "body_bytes": 65536,
+        "sha256": "e27f6b4e4faceacc139cbf823661ceacccb29c0a4ad1beaa5e5adb44eebd71eb",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10616832-10682367/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00004_nrs2_rate.fits&range_offset=10747904",
+        "requested_range": [
+          10747904,
+          10813439
+        ],
+        "utc": "2026-10-14T04:21:00.707563+00:00",
+        "body_bytes": 65536,
+        "sha256": "6ddc324000da15bcd6444190f6651684923316b6a35492b02a20cbf00fac4c7a",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10747904-10813439/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00002_nrs2_rate.fits&range_offset=10682368",
+        "requested_range": [
+          10682368,
+          10747903
+        ],
+        "utc": "2026-10-14T04:21:00.709139+00:00",
+        "body_bytes": 65536,
+        "sha256": "050b65827532520543040e0ecc238d8f9d2db5ec30eb2137972aa9f8bb639670",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10682368-10747903/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00001_nrs2_rate.fits&range_offset=10747904",
+        "requested_range": [
+          10747904,
+          10813439
+        ],
+        "utc": "2026-10-14T04:21:00.732837+00:00",
+        "body_bytes": 65536,
+        "sha256": "2ef0d1a18622f8757eafba68b98d7cef775a603b0af432ed84badc75f36f8214",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10747904-10813439/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00003_nrs2_rate.fits&range_offset=10682368",
+        "requested_range": [
+          10682368,
+          10747903
+        ],
+        "utc": "2026-10-14T04:21:00.772924+00:00",
+        "body_bytes": 65536,
+        "sha256": "d638cf2b75ae6071aefbd113e01b740a3ad466e59f2d5995ebf55d668f5aed46",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10682368-10747903/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00004_nrs2_rate.fits&range_offset=10813440",
+        "requested_range": [
+          10813440,
+          10878975
+        ],
+        "utc": "2026-10-14T04:21:01.150989+00:00",
+        "body_bytes": 65536,
+        "sha256": "32ce4f2a976f2ccca3c4f37393bfbb6068ac2479e2a53f1fd71ea4e8dc7991ea",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10813440-10878975/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00002_nrs2_rate.fits&range_offset=10747904",
+        "requested_range": [
+          10747904,
+          10813439
+        ],
+        "utc": "2026-10-14T04:21:01.154658+00:00",
+        "body_bytes": 65536,
+        "sha256": "8b1ec00f1fe758b45e89f67f8d929a42110f0c2a775bb44e8e6d88ba8de40fff",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10747904-10813439/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00001_nrs2_rate.fits&range_offset=10813440",
+        "requested_range": [
+          10813440,
+          10878975
+        ],
+        "utc": "2026-10-14T04:21:01.201026+00:00",
+        "body_bytes": 65536,
+        "sha256": "7b97c44494b9dd44e0f906bc3b26160a0251f413bf64c91d845b3dd202518508",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10813440-10878975/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00003_nrs2_rate.fits&range_offset=10747904",
+        "requested_range": [
+          10747904,
+          10813439
+        ],
+        "utc": "2026-10-14T04:21:01.201407+00:00",
+        "body_bytes": 65536,
+        "sha256": "01b7b58eb1f739c35b58871d25a9eea991161adaeab7370031d6f170ad0f0022",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10747904-10813439/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00004_nrs2_rate.fits&range_offset=16777216",
+        "requested_range": [
+          16777216,
+          16842751
+        ],
+        "utc": "2026-10-14T04:21:01.433080+00:00",
+        "body_bytes": 65536,
+        "sha256": "a1a71681dd01963ce7b1494299bce65a0df0f912daf4da2211cf967bd701845f",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 16777216-16842751/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00002_nrs2_rate.fits&range_offset=10813440",
+        "requested_range": [
+          10813440,
+          10878975
+        ],
+        "utc": "2026-10-14T04:21:01.469079+00:00",
+        "body_bytes": 65536,
+        "sha256": "1e9815970ea338d5127c928ad25dd70383ea26d85e33700c7a6c247c8f4d24b0",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10813440-10878975/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00003_nrs2_rate.fits&range_offset=10813440",
+        "requested_range": [
+          10813440,
+          10878975
+        ],
+        "utc": "2026-10-14T04:21:01.588869+00:00",
+        "body_bytes": 65536,
+        "sha256": "92e6a60fb26257445be3ca292a04f14e9887d554b2e7ffafcb585528742e5af6",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10813440-10878975/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00001_nrs2_rate.fits&range_offset=16777216",
+        "requested_range": [
+          16777216,
+          16842751
+        ],
+        "utc": "2026-10-14T04:21:01.596638+00:00",
+        "body_bytes": 65536,
+        "sha256": "a1a71681dd01963ce7b1494299bce65a0df0f912daf4da2211cf967bd701845f",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 16777216-16842751/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00004_nrs2_rate.fits&range_offset=27328512",
+        "requested_range": [
+          27328512,
+          27394047
+        ],
+        "utc": "2026-10-14T04:21:01.690292+00:00",
+        "body_bytes": 65536,
+        "sha256": "56a81f98b13d3e624aad7e1a094f332480513c28d91f6963caa2cd5cd292d0c5",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27328512-27394047/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00002_nrs2_rate.fits&range_offset=16777216",
+        "requested_range": [
+          16777216,
+          16842751
+        ],
+        "utc": "2026-10-14T04:21:01.721759+00:00",
+        "body_bytes": 65536,
+        "sha256": "a1a71681dd01963ce7b1494299bce65a0df0f912daf4da2211cf967bd701845f",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 16777216-16842751/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00003_nrs2_rate.fits&range_offset=16777216",
+        "requested_range": [
+          16777216,
+          16842751
+        ],
+        "utc": "2026-10-14T04:21:01.824979+00:00",
+        "body_bytes": 65536,
+        "sha256": "a1a71681dd01963ce7b1494299bce65a0df0f912daf4da2211cf967bd701845f",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 16777216-16842751/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00001_nrs2_rate.fits&range_offset=27328512",
+        "requested_range": [
+          27328512,
+          27394047
+        ],
+        "utc": "2026-10-14T04:21:01.855655+00:00",
+        "body_bytes": 65536,
+        "sha256": "344904e93ac292dddf6dbde357f36ab19251860d91b7a126fb5acf1ae57d0648",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27328512-27394047/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00004_nrs2_rate.fits&range_offset=27394048",
+        "requested_range": [
+          27394048,
+          27459583
+        ],
+        "utc": "2026-10-14T04:21:01.906751+00:00",
+        "body_bytes": 65536,
+        "sha256": "24d2b7392d38f6cc90b7b9149fe2b25c70b6e92bd564954d4448925ee592b4e7",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27394048-27459583/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00002_nrs2_rate.fits&range_offset=27328512",
+        "requested_range": [
+          27328512,
+          27394047
+        ],
+        "utc": "2026-10-14T04:21:01.992507+00:00",
+        "body_bytes": 65536,
+        "sha256": "48bc9f00eb61e3a83e7db36c51244a270001321940578c90763a6246d399cd4a",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27328512-27394047/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00003_nrs2_rate.fits&range_offset=27328512",
+        "requested_range": [
+          27328512,
+          27394047
+        ],
+        "utc": "2026-10-14T04:21:02.077031+00:00",
+        "body_bytes": 65536,
+        "sha256": "3e76af36e7305addae23c51eb939219118b126a3900c87ddf1a342ccdf942e40",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27328512-27394047/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00001_nrs2_rate.fits&range_offset=27394048",
+        "requested_range": [
+          27394048,
+          27459583
+        ],
+        "utc": "2026-10-14T04:21:02.124714+00:00",
+        "body_bytes": 65536,
+        "sha256": "8ada8e4e7a22da72080468fc2be431babcedb3a85bceb88278a36ef093b3f0e0",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27394048-27459583/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00004_nrs2_rate.fits&range_offset=27459584",
+        "requested_range": [
+          27459584,
+          27525119
+        ],
+        "utc": "2026-10-14T04:21:02.182768+00:00",
+        "body_bytes": 65536,
+        "sha256": "eabf2c1f3542e4d0235b56726846b45d66c5d862dce1aba02bbf08f4061220be",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27459584-27525119/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00002_nrs2_rate.fits&range_offset=27394048",
+        "requested_range": [
+          27394048,
+          27459583
+        ],
+        "utc": "2026-10-14T04:21:02.473279+00:00",
+        "body_bytes": 65536,
+        "sha256": "44a135bc7903f0861507f53bb36c0ad01f04c769d6bcad100e661510d5cc8b08",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27394048-27459583/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00003_nrs2_rate.fits&range_offset=27394048",
+        "requested_range": [
+          27394048,
+          27459583
+        ],
+        "utc": "2026-10-14T04:21:02.478912+00:00",
+        "body_bytes": 65536,
+        "sha256": "794cb1d1b73dfa9cb44960f7311e274aafa084b420f41629d1b13a2ce53aa499",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27394048-27459583/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00001_nrs2_rate.fits&range_offset=27459584",
+        "requested_range": [
+          27459584,
+          27525119
+        ],
+        "utc": "2026-10-14T04:21:02.480726+00:00",
+        "body_bytes": 65536,
+        "sha256": "c97911607a6445c48c3ef33677d52cbe5410c4cc81ab3daedcacab98fd8cb708",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27459584-27525119/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00004_nrs2_rate.fits&range_offset=27525120",
+        "requested_range": [
+          27525120,
+          27590655
+        ],
+        "utc": "2026-10-14T04:21:02.521254+00:00",
+        "body_bytes": 65536,
+        "sha256": "f3359b44c35fdb41f65b22b48403b963b4a07bf9a3535ad0c279d6deb8f1507f",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27525120-27590655/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00002_nrs2_rate.fits&range_offset=27459584",
+        "requested_range": [
+          27459584,
+          27525119
+        ],
+        "utc": "2026-10-14T04:21:02.733090+00:00",
+        "body_bytes": 65536,
+        "sha256": "3c0d06a4c27c42546d7aaebfaa4562b4330912e8caf8d39908849173f74d9455",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27459584-27525119/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00003_nrs2_rate.fits&range_offset=27459584",
+        "requested_range": [
+          27459584,
+          27525119
+        ],
+        "utc": "2026-10-14T04:21:02.744667+00:00",
+        "body_bytes": 65536,
+        "sha256": "98813c859df1fc98bd6850264f4370548639d6e003c8c803254b62539a4720b5",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27459584-27525119/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00004_nrs2_rate.fits&range_offset=27590656",
+        "requested_range": [
+          27590656,
+          27656191
+        ],
+        "utc": "2026-10-14T04:21:02.863578+00:00",
+        "body_bytes": 65536,
+        "sha256": "2954af901a628b6b3cd64683047d1e81f019e051b67c5847ae14f1d27aca39f7",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27590656-27656191/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00001_nrs2_rate.fits&range_offset=27525120",
+        "requested_range": [
+          27525120,
+          27590655
+        ],
+        "utc": "2026-10-14T04:21:02.893596+00:00",
+        "body_bytes": 65536,
+        "sha256": "37038abf1d30711fe7e364a430579b4b9d62b96854954ae4332d5f1118d10772",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27525120-27590655/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00003_nrs2_rate.fits&range_offset=27525120",
+        "requested_range": [
+          27525120,
+          27590655
+        ],
+        "utc": "2026-10-14T04:21:03.000818+00:00",
+        "body_bytes": 65536,
+        "sha256": "dac47a83f7167e402476bc188a7897c12182c86da92808fc4109ad848c343602",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27525120-27590655/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00002_nrs2_rate.fits&range_offset=27525120",
+        "requested_range": [
+          27525120,
+          27590655
+        ],
+        "utc": "2026-10-14T04:21:03.068821+00:00",
+        "body_bytes": 65536,
+        "sha256": "20d10eb72c5c2a0c2f7724db274d778e68df80128c5d2ea8b1757d9c13686c47",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27525120-27590655/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00004_nrs2_rate.fits&range_offset=33554432",
+        "requested_range": [
+          33554432,
+          33619967
+        ],
+        "utc": "2026-10-14T04:21:03.156964+00:00",
+        "body_bytes": 65536,
+        "sha256": "854d8075200a95aaa46733877a1950281f49664df29959ac8df75067786ff3a8",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 33554432-33619967/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00001_nrs2_rate.fits&range_offset=27590656",
+        "requested_range": [
+          27590656,
+          27656191
+        ],
+        "utc": "2026-10-14T04:21:03.172877+00:00",
+        "body_bytes": 65536,
+        "sha256": "7caf005f4daa90a68612c14d0db0c49cc93e03d80da0ce0c2425550abb17acdb",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27590656-27656191/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00003_nrs2_rate.fits&range_offset=27590656",
+        "requested_range": [
+          27590656,
+          27656191
+        ],
+        "utc": "2026-10-14T04:21:03.368856+00:00",
+        "body_bytes": 65536,
+        "sha256": "a76bbfc4a6e574bba2a6dcbcaed43889e26afdd64675729a138183c20f6b81ca",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27590656-27656191/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00002_nrs2_rate.fits&range_offset=27590656",
+        "requested_range": [
+          27590656,
+          27656191
+        ],
+        "utc": "2026-10-14T04:21:03.484780+00:00",
+        "body_bytes": 65536,
+        "sha256": "e4256c4c37f043767ee34403b88c6a0dad4eb10a09098fad92876ae031d2cc2e",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27590656-27656191/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00004_nrs2_rate.fits&range_offset=50331648",
+        "requested_range": [
+          50331648,
+          50397183
+        ],
+        "utc": "2026-10-14T04:21:03.488883+00:00",
+        "body_bytes": 65536,
+        "sha256": "5dd3cd033301f18b40749c18c44eca9eb33e4defe0dda44074313c3940e138d0",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 50331648-50397183/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00001_nrs2_rate.fits&range_offset=33554432",
+        "requested_range": [
+          33554432,
+          33619967
+        ],
+        "utc": "2026-10-14T04:21:03.560900+00:00",
+        "body_bytes": 65536,
+        "sha256": "e859fb2b72a0814212f51b5ca66211c76fecde1e6f2ea7d3150dcd782d180b9d",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 33554432-33619967/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00003_nrs2_rate.fits&range_offset=33554432",
+        "requested_range": [
+          33554432,
+          33619967
+        ],
+        "utc": "2026-10-14T04:21:03.722432+00:00",
+        "body_bytes": 65536,
+        "sha256": "f17e773a7bcf5dd543cf79f9e8b63a67c8ff5f530f464e78e3142853fe976dc4",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 33554432-33619967/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00004_nrs2_rate.fits&range_offset=60948480",
+        "requested_range": [
+          60948480,
+          61014015
+        ],
+        "utc": "2026-10-14T04:21:03.800964+00:00",
+        "body_bytes": 65536,
+        "sha256": "c020ac4b70bd031a2e36ca391357dd02722a74c496423c990aa7226ef7a3fabd",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 60948480-61014015/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00002_nrs2_rate.fits&range_offset=33554432",
+        "requested_range": [
+          33554432,
+          33619967
+        ],
+        "utc": "2026-10-14T04:21:03.844917+00:00",
+        "body_bytes": 65536,
+        "sha256": "81c46c93b1be017eae536ccd933c80bfff635e47e9dc59c82c66cf45e8a5ed8e",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 33554432-33619967/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00001_nrs2_rate.fits&range_offset=50331648",
+        "requested_range": [
+          50331648,
+          50397183
+        ],
+        "utc": "2026-10-14T04:21:03.876022+00:00",
+        "body_bytes": 65536,
+        "sha256": "7c0c4be015aaf3d6642fbb0ba3625b6761cc5e44973302c1ce2e86f7d6b6bc7b",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 50331648-50397183/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00003_nrs2_rate.fits&range_offset=50331648",
+        "requested_range": [
+          50331648,
+          50397183
+        ],
+        "utc": "2026-10-14T04:21:03.969107+00:00",
+        "body_bytes": 65536,
+        "sha256": "8f2b105d7445fd98d5f051be102f84e5c0cf6de0679e5a976a9ee426d2c0f4d0",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 50331648-50397183/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00004_nrs2_rate.fits&range_offset=61014016",
+        "requested_range": [
+          61014016,
+          61079551
+        ],
+        "utc": "2026-10-14T04:21:04.030095+00:00",
+        "body_bytes": 65536,
+        "sha256": "cc8b1e20ab362b20d3edb441dba077020120d84bb56594ec2050984937dc2e59",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 61014016-61079551/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00002_nrs2_rate.fits&range_offset=50331648",
+        "requested_range": [
+          50331648,
+          50397183
+        ],
+        "utc": "2026-10-14T04:21:04.146203+00:00",
+        "body_bytes": 65536,
+        "sha256": "187c4ccd90e6ec0f71d91958e58a86a62d580bae98b8b449aa97f21472506379",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 50331648-50397183/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00001_nrs2_rate.fits&range_offset=60948480",
+        "requested_range": [
+          60948480,
+          61014015
+        ],
+        "utc": "2026-10-14T04:21:04.178152+00:00",
+        "body_bytes": 65536,
+        "sha256": "d6e52290f60e2d9e32c9ebe57083a505a7baec6e15426699d2e6a0692bfe25a7",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 60948480-61014015/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00003_nrs2_rate.fits&range_offset=60948480",
+        "requested_range": [
+          60948480,
+          61014015
+        ],
+        "utc": "2026-10-14T04:21:04.216925+00:00",
+        "body_bytes": 65536,
+        "sha256": "632c9da2f4712e984d43a418b8d07e0fe9385e3162a409d221cc5ad6f2124900",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 60948480-61014015/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00004_nrs2_rate.fits&range_offset=61079552",
+        "requested_range": [
+          61079552,
+          61145087
+        ],
+        "utc": "2026-10-14T04:21:04.319957+00:00",
+        "body_bytes": 65536,
+        "sha256": "68349ac66a2e8fd80859fd8d08dec3af1d8c93dd03c6d3801c4981a8a5bb07ec",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 61079552-61145087/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00002_nrs2_rate.fits&range_offset=60948480",
+        "requested_range": [
+          60948480,
+          61014015
+        ],
+        "utc": "2026-10-14T04:21:04.457733+00:00",
+        "body_bytes": 65536,
+        "sha256": "04083d3c270abeff094c9f14e3f3e14a8737333388ffe4241a9a89f03bb0e8e8",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 60948480-61014015/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00003_nrs2_rate.fits&range_offset=61014016",
+        "requested_range": [
+          61014016,
+          61079551
+        ],
+        "utc": "2026-10-14T04:21:04.537363+00:00",
+        "body_bytes": 65536,
+        "sha256": "352ae9fdf9f63c102e03487785d546c2ccd3ce8ef9572d2aa93d1978dd0b92d9",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 61014016-61079551/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00001_nrs2_rate.fits&range_offset=61014016",
+        "requested_range": [
+          61014016,
+          61079551
+        ],
+        "utc": "2026-10-14T04:21:04.581278+00:00",
+        "body_bytes": 65536,
+        "sha256": "906dc6209e6bdc68f0b888ab896761e4eb91dca706901619a6017ee329548e68",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 61014016-61079551/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00002_nrs2_rate.fits&range_offset=61014016",
+        "requested_range": [
+          61014016,
+          61079551
+        ],
+        "utc": "2026-10-14T04:21:04.668640+00:00",
+        "body_bytes": 65536,
+        "sha256": "fde9eb7109234c59ff48d316652c2bab752ccc147a25dee5962b908b78472191",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 61014016-61079551/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00004_nrs2_rate.fits&range_offset=61145088",
+        "requested_range": [
+          61145088,
+          61210623
+        ],
+        "utc": "2026-10-14T04:21:04.756866+00:00",
+        "body_bytes": 65536,
+        "sha256": "aaa27ee42e42cb32f691927c54e48d6fe5060918446891f7fc9c37b8d3459cba",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 61145088-61210623/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00003_nrs2_rate.fits&range_offset=61079552",
+        "requested_range": [
+          61079552,
+          61145087
+        ],
+        "utc": "2026-10-14T04:21:04.813019+00:00",
+        "body_bytes": 65536,
+        "sha256": "00995be553db2928b35013b0a37d5682b93a879eeca17116660a030c1468b16e",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 61079552-61145087/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00001_nrs2_rate.fits&range_offset=61079552",
+        "requested_range": [
+          61079552,
+          61145087
+        ],
+        "utc": "2026-10-14T04:21:04.841242+00:00",
+        "body_bytes": 65536,
+        "sha256": "af057ed908e888d663e69c7bba1a41dbba3718740278d47846daab531075769b",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 61079552-61145087/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00002_nrs2_rate.fits&range_offset=61079552",
+        "requested_range": [
+          61079552,
+          61145087
+        ],
+        "utc": "2026-10-14T04:21:05.149322+00:00",
+        "body_bytes": 65536,
+        "sha256": "74d9591c22fbedcd8857fd7cdd4ea0946ac6354f07f70a570aad2689b334f572",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 61079552-61145087/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00004_nrs2_rate.fits&range_offset=67108864",
+        "requested_range": [
+          67108864,
+          67174399
+        ],
+        "utc": "2026-10-14T04:21:05.164756+00:00",
+        "body_bytes": 65536,
+        "sha256": "c27e20c148c6d5b0f1a83a7254e4d631d2b6335d925bcfa76640ca56e5d2df91",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 67108864-67174399/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00001_nrs2_rate.fits&range_offset=61145088",
+        "requested_range": [
+          61145088,
+          61210623
+        ],
+        "utc": "2026-10-14T04:21:05.181249+00:00",
+        "body_bytes": 65536,
+        "sha256": "b510f5be0ba42dc3a2713f8a671ef675a96c3abdf6b779d750adfbeb3f1cf73f",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 61145088-61210623/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00003_nrs2_rate.fits&range_offset=61145088",
+        "requested_range": [
+          61145088,
+          61210623
+        ],
+        "utc": "2026-10-14T04:21:05.208877+00:00",
+        "body_bytes": 65536,
+        "sha256": "404b2a5619962c43b9191e2ffd4329d1b3a2c9b61e35d4d617e41780539109ea",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 61145088-61210623/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00002_nrs2_rate.fits&range_offset=61145088",
+        "requested_range": [
+          61145088,
+          61210623
+        ],
+        "utc": "2026-10-14T04:21:05.381026+00:00",
+        "body_bytes": 65536,
+        "sha256": "1625914f273843119f24032b9e9bcc5b7f8bb2a3aa31512ea0fb68f894016951",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 61145088-61210623/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00004_nrs2_rate.fits&range_offset=77725696",
+        "requested_range": [
+          77725696,
+          77791231
+        ],
+        "utc": "2026-10-14T04:21:05.411781+00:00",
+        "body_bytes": 65536,
+        "sha256": "0a101f70f9ce48fa43b5c3c165884e0148fd7878901043632d515e3eb5253a7e",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 77725696-77791231/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00001_nrs2_rate.fits&range_offset=67108864",
+        "requested_range": [
+          67108864,
+          67174399
+        ],
+        "utc": "2026-10-14T04:21:05.497309+00:00",
+        "body_bytes": 65536,
+        "sha256": "be6704846198f7c6163976943ef646c183f36a18dc7a4ed32ccb5083f6b75a78",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 67108864-67174399/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00003_nrs2_rate.fits&range_offset=67108864",
+        "requested_range": [
+          67108864,
+          67174399
+        ],
+        "utc": "2026-10-14T04:21:05.577312+00:00",
+        "body_bytes": 65536,
+        "sha256": "7c8c9d6c4277994f4ae078a8f46b576ef776b0ef4f9107f2462de485c3dacb2d",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 67108864-67174399/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00002_nrs2_rate.fits&range_offset=67108864",
+        "requested_range": [
+          67108864,
+          67174399
+        ],
+        "utc": "2026-10-14T04:21:05.596487+00:00",
+        "body_bytes": 65536,
+        "sha256": "e79959547e976fda9ec4a5411967102ea55115f58981675284af1c741de79f72",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 67108864-67174399/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00004_nrs2_rate.fits&range_offset=77791232",
+        "requested_range": [
+          77791232,
+          77856767
+        ],
+        "utc": "2026-10-14T04:21:05.675650+00:00",
+        "body_bytes": 65536,
+        "sha256": "715471635880ed5c3115499cd797df042fd8ed1112a271f422e0ec33e774a4c2",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 77791232-77856767/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00003_nrs2_rate.fits&range_offset=77725696",
+        "requested_range": [
+          77725696,
+          77791231
+        ],
+        "utc": "2026-10-14T04:21:05.849267+00:00",
+        "body_bytes": 65536,
+        "sha256": "d28552335f7ac47ac3b6c3b5dd515249da644855e5b09a74c5962b6c07073be0",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 77725696-77791231/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00001_nrs2_rate.fits&range_offset=77725696",
+        "requested_range": [
+          77725696,
+          77791231
+        ],
+        "utc": "2026-10-14T04:21:05.852841+00:00",
+        "body_bytes": 65536,
+        "sha256": "e0998248b50b238d3f1b28fef88bab5119860e167840ca2d44c75d6b5e16e68d",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 77725696-77791231/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00002_nrs2_rate.fits&range_offset=77725696",
+        "requested_range": [
+          77725696,
+          77791231
+        ],
+        "utc": "2026-10-14T04:21:05.925507+00:00",
+        "body_bytes": 65536,
+        "sha256": "f896d097169aa5b581b34c30a2cd02d7e7070606a7b2c1c8c3a48b9ab5841af0",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 77725696-77791231/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00004_nrs2_rate.fits&range_offset=77856768",
+        "requested_range": [
+          77856768,
+          77922303
+        ],
+        "utc": "2026-10-14T04:21:06.064867+00:00",
+        "body_bytes": 65536,
+        "sha256": "f03f271f9ea4c30096c0b481b3d60e958af3efea8538c3c92bf2d4f80e04d0ea",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 77856768-77922303/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00003_nrs2_rate.fits&range_offset=77791232",
+        "requested_range": [
+          77791232,
+          77856767
+        ],
+        "utc": "2026-10-14T04:21:06.125248+00:00",
+        "body_bytes": 65536,
+        "sha256": "cb137556ce518535d53c8bb13926054f3d710aea5df32d0b31545eef7dc8442e",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 77791232-77856767/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00001_nrs2_rate.fits&range_offset=77791232",
+        "requested_range": [
+          77791232,
+          77856767
+        ],
+        "utc": "2026-10-14T04:21:06.172081+00:00",
+        "body_bytes": 65536,
+        "sha256": "40b76cbda5da3dc3a638dd2d9c13cdafd1b02115a77a256b527b55dccbf803b2",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 77791232-77856767/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00002_nrs2_rate.fits&range_offset=77791232",
+        "requested_range": [
+          77791232,
+          77856767
+        ],
+        "utc": "2026-10-14T04:21:06.174124+00:00",
+        "body_bytes": 65536,
+        "sha256": "f446527ca9c780e7435c24165b292861ba8cc283bb7d5f616d266710de999ce8",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 77791232-77856767/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00003_nrs2_rate.fits&range_offset=77856768",
+        "requested_range": [
+          77856768,
+          77922303
+        ],
+        "utc": "2026-10-14T04:21:06.349377+00:00",
+        "body_bytes": 65536,
+        "sha256": "36fc47305547c35636c01f39232030101d333ae1b0f0d638c539afd49aae9b06",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 77856768-77922303/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00004_nrs2_rate.fits&range_offset=77922304",
+        "requested_range": [
+          77922304,
+          77987839
+        ],
+        "utc": "2026-10-14T04:21:06.352758+00:00",
+        "body_bytes": 65536,
+        "sha256": "a44b4c119fdb15bdcd4960fa92a292908df17f6e1323221939b3e56c7734be72",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 77922304-77987839/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00001_nrs2_rate.fits&range_offset=77856768",
+        "requested_range": [
+          77856768,
+          77922303
+        ],
+        "utc": "2026-10-14T04:21:06.445228+00:00",
+        "body_bytes": 65536,
+        "sha256": "46149f20d5cae0fac53aaa9de17173a8173205adbba69df0406bbf3be3fcc3f3",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 77856768-77922303/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00002_nrs2_rate.fits&range_offset=77856768",
+        "requested_range": [
+          77856768,
+          77922303
+        ],
+        "utc": "2026-10-14T04:21:06.539382+00:00",
+        "body_bytes": 65536,
+        "sha256": "d41ec62ca8862e0b2f9b4bd4ae842edf1175c25b0f28bb72f6f76f27db23fbcf",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 77856768-77922303/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00003_nrs2_rate.fits&range_offset=77922304",
+        "requested_range": [
+          77922304,
+          77987839
+        ],
+        "utc": "2026-10-14T04:21:06.581435+00:00",
+        "body_bytes": 65536,
+        "sha256": "ac4dc444d89880ee6aa316185a59abea677af689376399051867eb24bf2a3772",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 77922304-77987839/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00004_nrs2_rate.fits&range_offset=44171264",
+        "requested_range": [
+          44171264,
+          44236799
+        ],
+        "utc": "2026-10-14T04:21:06.659121+00:00",
+        "body_bytes": 65536,
+        "sha256": "7753b13aa5f5faec59849190dc962e14829bcd16715fd5489136646e7f532f5b",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 44171264-44236799/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00001_nrs2_rate.fits&range_offset=77922304",
+        "requested_range": [
+          77922304,
+          77987839
+        ],
+        "utc": "2026-10-14T04:21:06.686332+00:00",
+        "body_bytes": 65536,
+        "sha256": "b43ec5cfc9cf7ef7f9bfc3da44d91367878ed84d70e52a56818a3acba1a227f4",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 77922304-77987839/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00002_nrs2_rate.fits&range_offset=77922304",
+        "requested_range": [
+          77922304,
+          77987839
+        ],
+        "utc": "2026-10-14T04:21:06.824309+00:00",
+        "body_bytes": 65536,
+        "sha256": "067da4dba828d40d9d4219db8ebcf4c264111c76b2e3af39b83bff7fbc82a4ca",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 77922304-77987839/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00003_nrs2_rate.fits&range_offset=44171264",
+        "requested_range": [
+          44171264,
+          44236799
+        ],
+        "utc": "2026-10-14T04:21:06.908970+00:00",
+        "body_bytes": 65536,
+        "sha256": "bb39cddb4d64291d8bba38cbd2b43b889fad3c17d51b27ed3b1c2f8deaaed363",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 44171264-44236799/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00004_nrs2_rate.fits&range_offset=44236800",
+        "requested_range": [
+          44236800,
+          44302335
+        ],
+        "utc": "2026-10-14T04:21:06.912637+00:00",
+        "body_bytes": 65536,
+        "sha256": "255a328e9141e822bb4fdab750656f99f619994083be3a587c75b8dd887b1978",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 44236800-44302335/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00001_nrs2_rate.fits&range_offset=44171264",
+        "requested_range": [
+          44171264,
+          44236799
+        ],
+        "utc": "2026-10-14T04:21:07.045209+00:00",
+        "body_bytes": 65536,
+        "sha256": "cbd3742fb15042d973ba7e1dc44429be395dd225df495142700a9fa268523c6b",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 44171264-44236799/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00002_nrs2_rate.fits&range_offset=44171264",
+        "requested_range": [
+          44171264,
+          44236799
+        ],
+        "utc": "2026-10-14T04:21:07.139585+00:00",
+        "body_bytes": 65536,
+        "sha256": "c1406af44088b6cf41fa15b4cf5dd91245992dbe61880b6b5ae5e240af2e6f34",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 44171264-44236799/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00004_nrs2_rate.fits&range_offset=44302336",
+        "requested_range": [
+          44302336,
+          44367871
+        ],
+        "utc": "2026-10-14T04:21:07.173161+00:00",
+        "body_bytes": 65536,
+        "sha256": "66ef7c31c0ffa6f1f5f52ee6d1b6ff50b903f2b635ab2b94db715219cb3e1984",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 44302336-44367871/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00003_nrs2_rate.fits&range_offset=44236800",
+        "requested_range": [
+          44236800,
+          44302335
+        ],
+        "utc": "2026-10-14T04:21:07.213145+00:00",
+        "body_bytes": 65536,
+        "sha256": "e21141a081d492a87943cfdc34ecbe2bafffd8b268bbb57ea6f903c8f5300c4d",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 44236800-44302335/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00001_nrs2_rate.fits&range_offset=44236800",
+        "requested_range": [
+          44236800,
+          44302335
+        ],
+        "utc": "2026-10-14T04:21:07.279137+00:00",
+        "body_bytes": 65536,
+        "sha256": "f901c779f4c053423fcd100590b2919d888c78f875d5cb4541fb7a15cf47a43d",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 44236800-44302335/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00002_nrs2_rate.fits&range_offset=44236800",
+        "requested_range": [
+          44236800,
+          44302335
+        ],
+        "utc": "2026-10-14T04:21:07.408949+00:00",
+        "body_bytes": 65536,
+        "sha256": "91df36c7b9ddc1b3529a556e0ec79d593c926bb38b9036610ae5530407d0738e",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 44236800-44302335/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00004_nrs2_rate.fits&range_offset=44367872",
+        "requested_range": [
+          44367872,
+          44433407
+        ],
+        "utc": "2026-10-14T04:21:07.493437+00:00",
+        "body_bytes": 65536,
+        "sha256": "15fb0192e77a7c80428183575dc092d3e49c684beabcaacf7071bf319ec6c378",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 44367872-44433407/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00003_nrs2_rate.fits&range_offset=44302336",
+        "requested_range": [
+          44302336,
+          44367871
+        ],
+        "utc": "2026-10-14T04:21:07.493850+00:00",
+        "body_bytes": 65536,
+        "sha256": "e267ae5ae2336700048a43d5b08c7c823848d4d161daa803cc30d7b2ed17c3fe",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 44302336-44367871/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00001_nrs2_rate.fits&range_offset=44302336",
+        "requested_range": [
+          44302336,
+          44367871
+        ],
+        "utc": "2026-10-14T04:21:07.643710+00:00",
+        "body_bytes": 65536,
+        "sha256": "dc56fa7af26be268172eb7b04623a37f408795ae05bdf2860f9fbd09f99d8864",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 44302336-44367871/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00002_nrs2_rate.fits&range_offset=44302336",
+        "requested_range": [
+          44302336,
+          44367871
+        ],
+        "utc": "2026-10-14T04:21:07.665140+00:00",
+        "body_bytes": 65536,
+        "sha256": "d803bcf509f074a93d8e21da4ea8a2977b5a888c749e5a4cc679d6626a49604b",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 44302336-44367871/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00002_nrs2_cal.fits&range_offset=0",
+        "requested_range": [
+          0,
+          51575039
+        ],
+        "utc": "2026-10-14T04:21:07.686462+00:00",
+        "body_bytes": 51575040,
+        "sha256": "0078c56d4d50a720b11e5ccb3be84705104c9ae06a3ecd7d8c29f5ffa678f3c5",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 0-51575039/51575040",
+        "charged_body_bytes": 51575040,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00003_nrs2_rate.fits&range_offset=44367872",
+        "requested_range": [
+          44367872,
+          44433407
+        ],
+        "utc": "2026-10-14T04:21:07.793004+00:00",
+        "body_bytes": 65536,
+        "sha256": "09fa79ac7b59c0d95bfc76811899a26301cee461028e99528c0911dffefd10f1",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 44367872-44433407/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00001_nrs2_rate.fits&range_offset=44367872",
+        "requested_range": [
+          44367872,
+          44433407
+        ],
+        "utc": "2026-10-14T04:21:07.888882+00:00",
+        "body_bytes": 65536,
+        "sha256": "bb63a06e1e642c800000bde2c0bf7947d73bbca57b2765bfe87b995e3cde1261",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 44367872-44433407/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_03101_00002_nrs2_rate.fits&range_offset=44367872",
+        "requested_range": [
+          44367872,
+          44433407
+        ],
+        "utc": "2026-10-14T04:21:08.016846+00:00",
+        "body_bytes": 65536,
+        "sha256": "51f926ac1dc19cbd8f386578651fed973b734911e402a6a3e5bf101f1e3028cd",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 44367872-44433407/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00003_nrs2_cal.fits&range_offset=0",
+        "requested_range": [
+          0,
+          51575039
+        ],
+        "utc": "2026-10-14T04:21:08.103950+00:00",
+        "body_bytes": 51575040,
+        "sha256": "b18c997fea94810da565d1044d02a6615862a8f1d9946e47506f9d60b2bccace",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 0-51575039/51575040",
+        "charged_body_bytes": 51575040,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00001_nrs2_cal.fits&range_offset=0",
+        "requested_range": [
+          0,
+          51560639
+        ],
+        "utc": "2026-10-14T04:21:08.244600+00:00",
+        "body_bytes": 51560640,
+        "sha256": "43faf1fe96cff76eab3cc3e33c900864fa42c5bf053a12ddf3107cc191a4c5ea",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 0-51560639/51560640",
+        "charged_body_bytes": 51560640,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00002_nrs2_cal.fits&range_offset=0",
+        "requested_range": [
+          0,
+          51575039
+        ],
+        "utc": "2026-10-14T04:21:08.255778+00:00",
+        "body_bytes": 51575040,
+        "sha256": "5b73760be206eef6891f37b33c3e8d973eef1522ece3b1a90ef4cc6506950a75",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 0-51575039/51575040",
+        "charged_body_bytes": 51575040,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00003_nrs2_rate.fits&range_offset=0",
+        "requested_range": [
+          0,
+          65535
+        ],
+        "utc": "2026-10-14T04:21:28.708737+00:00",
+        "body_bytes": 65536,
+        "sha256": "9498935e60c037b6774f8e2842a14d2d929340fc31963051de5541879f198636",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 0-65535/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00002_nrs2_rate.fits&range_offset=0",
+        "requested_range": [
+          0,
+          65535
+        ],
+        "utc": "2026-10-14T04:21:29.663688+00:00",
+        "body_bytes": 65536,
+        "sha256": "edf24ca50a6c360a61040f203a0bce4ac87dc9002fdc952bb3a783901370b6c3",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 0-65535/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00002_nrs2_rate.fits&range_offset=0",
+        "requested_range": [
+          0,
+          65535
+        ],
+        "utc": "2026-10-14T04:21:29.667605+00:00",
+        "body_bytes": 65536,
+        "sha256": "49e83f0d67ffc86b2ee8138984ff2a97125c84c978c9d49d790ee2bb9aa9bd1c",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 0-65535/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00001_nrs2_rate.fits&range_offset=0",
+        "requested_range": [
+          0,
+          65535
+        ],
+        "utc": "2026-10-14T04:21:30.108259+00:00",
+        "body_bytes": 65536,
+        "sha256": "ebb76f045305fdecfeee1eaebb481c2c18665c36475e5f2a83c104d2db0c218c",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 0-65535/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00003_nrs2_rate.fits&range_offset=10551296",
+        "requested_range": [
+          10551296,
+          10616831
+        ],
+        "utc": "2026-10-14T04:21:37.207794+00:00",
+        "body_bytes": 65536,
+        "sha256": "5558e7708c1095562e09f5f337a0ae9df63ea5fdc743b6e9e2b11cbbdb94ce78",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10551296-10616831/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00002_nrs2_rate.fits&range_offset=10551296",
+        "requested_range": [
+          10551296,
+          10616831
+        ],
+        "utc": "2026-10-14T04:21:37.378019+00:00",
+        "body_bytes": 65536,
+        "sha256": "fb11799c2658bccf259c5edfbbbe67c3c83d2614df2c182eb05d44629b01fdf7",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10551296-10616831/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00002_nrs2_rate.fits&range_offset=10551296",
+        "requested_range": [
+          10551296,
+          10616831
+        ],
+        "utc": "2026-10-14T04:21:37.533530+00:00",
+        "body_bytes": 65536,
+        "sha256": "0fa9971246cd2d2b81061aacaf996b230e79bd08c48deae3d3ad103d43d6660c",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10551296-10616831/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00003_nrs2_rate.fits&range_offset=10616832",
+        "requested_range": [
+          10616832,
+          10682367
+        ],
+        "utc": "2026-10-14T04:21:37.534853+00:00",
+        "body_bytes": 65536,
+        "sha256": "7da358b74e4358e07ffe14d5b4a8bd5f76cf57b392f36d2a554b5216e54b66ae",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10616832-10682367/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00001_nrs2_rate.fits&range_offset=10551296",
+        "requested_range": [
+          10551296,
+          10616831
+        ],
+        "utc": "2026-10-14T04:21:37.661560+00:00",
+        "body_bytes": 65536,
+        "sha256": "54546547e4e3e6a89aec7377658ef6a94e0440b5f6cf6bb4980645ae41a7f41d",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10551296-10616831/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00002_nrs2_rate.fits&range_offset=10616832",
+        "requested_range": [
+          10616832,
+          10682367
+        ],
+        "utc": "2026-10-14T04:21:37.683186+00:00",
+        "body_bytes": 65536,
+        "sha256": "b1553f814f9b29a621e29a9803862f881e3398a14946c930ef1f2b14c2675924",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10616832-10682367/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00003_nrs2_rate.fits&range_offset=10682368",
+        "requested_range": [
+          10682368,
+          10747903
+        ],
+        "utc": "2026-10-14T04:21:37.796831+00:00",
+        "body_bytes": 65536,
+        "sha256": "e6971c6dbafdccfb27f04cdd47bb98a155312de9a26c615edae91560806f59eb",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10682368-10747903/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00002_nrs2_rate.fits&range_offset=10616832",
+        "requested_range": [
+          10616832,
+          10682367
+        ],
+        "utc": "2026-10-14T04:21:37.831393+00:00",
+        "body_bytes": 65536,
+        "sha256": "942a3cf93f51d479203644bb1e52fbf0f22579aa2c4d60ac518842d132dd0a62",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10616832-10682367/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00001_nrs2_rate.fits&range_offset=10616832",
+        "requested_range": [
+          10616832,
+          10682367
+        ],
+        "utc": "2026-10-14T04:21:37.952795+00:00",
+        "body_bytes": 65536,
+        "sha256": "c4ddf778b2e9df5939ecc25e2aff31fc423487b7fa35c00292fd17acb93df442",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10616832-10682367/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00002_nrs2_rate.fits&range_offset=10682368",
+        "requested_range": [
+          10682368,
+          10747903
+        ],
+        "utc": "2026-10-14T04:21:37.964976+00:00",
+        "body_bytes": 65536,
+        "sha256": "8e4d9be5f127cefeaef8c5342c75592ca31b3af57ae47a852473a984f1daea3a",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10682368-10747903/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00003_nrs2_rate.fits&range_offset=10747904",
+        "requested_range": [
+          10747904,
+          10813439
+        ],
+        "utc": "2026-10-14T04:21:38.096903+00:00",
+        "body_bytes": 65536,
+        "sha256": "e63adb9a417dc35b0bf5a1bbc08c7cb54b2f45a56662c298231da5c1bd65336c",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10747904-10813439/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00002_nrs2_rate.fits&range_offset=10682368",
+        "requested_range": [
+          10682368,
+          10747903
+        ],
+        "utc": "2026-10-14T04:21:38.111717+00:00",
+        "body_bytes": 65536,
+        "sha256": "c63ff696c81b149b0a8601bd49e178b01f8ab3bb4be94812d5179b630bb319cd",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10682368-10747903/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00001_nrs2_rate.fits&range_offset=10682368",
+        "requested_range": [
+          10682368,
+          10747903
+        ],
+        "utc": "2026-10-14T04:21:38.232752+00:00",
+        "body_bytes": 65536,
+        "sha256": "d3feeef16b36ef52c136ced020691a748eeaada1fb5aab7731c458ebb47ee937",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10682368-10747903/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00002_nrs2_rate.fits&range_offset=10747904",
+        "requested_range": [
+          10747904,
+          10813439
+        ],
+        "utc": "2026-10-14T04:21:38.263821+00:00",
+        "body_bytes": 65536,
+        "sha256": "522fd47dad2c53a175c91d54efaf4791ab27684bba2af227f47be09c48c651d3",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10747904-10813439/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00003_nrs2_rate.fits&range_offset=10813440",
+        "requested_range": [
+          10813440,
+          10878975
+        ],
+        "utc": "2026-10-14T04:21:38.373169+00:00",
+        "body_bytes": 65536,
+        "sha256": "aed5a76844264a619ec443ce79b2a597ef0300a919f830864764f2be7e82d3d7",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10813440-10878975/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00002_nrs2_rate.fits&range_offset=10747904",
+        "requested_range": [
+          10747904,
+          10813439
+        ],
+        "utc": "2026-10-14T04:21:38.380771+00:00",
+        "body_bytes": 65536,
+        "sha256": "58447060018ed1a868069774c7ca328335f27754193778f30bc9d47265176eea",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10747904-10813439/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00001_nrs2_rate.fits&range_offset=10747904",
+        "requested_range": [
+          10747904,
+          10813439
+        ],
+        "utc": "2026-10-14T04:21:38.493013+00:00",
+        "body_bytes": 65536,
+        "sha256": "7ebd5dda6bb10638f1f2f992632d41946098880898f8914597089c3a4332dfe6",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10747904-10813439/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00002_nrs2_rate.fits&range_offset=10813440",
+        "requested_range": [
+          10813440,
+          10878975
+        ],
+        "utc": "2026-10-14T04:21:38.548892+00:00",
+        "body_bytes": 65536,
+        "sha256": "fc9b021bb3e5924c877d065a85e22a923001a11479194509bb7fdd566c53d705",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10813440-10878975/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00003_nrs2_rate.fits&range_offset=16777216",
+        "requested_range": [
+          16777216,
+          16842751
+        ],
+        "utc": "2026-10-14T04:21:38.617525+00:00",
+        "body_bytes": 65536,
+        "sha256": "a1a71681dd01963ce7b1494299bce65a0df0f912daf4da2211cf967bd701845f",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 16777216-16842751/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00002_nrs2_rate.fits&range_offset=10813440",
+        "requested_range": [
+          10813440,
+          10878975
+        ],
+        "utc": "2026-10-14T04:21:38.658132+00:00",
+        "body_bytes": 65536,
+        "sha256": "efc4045e8131259e9e7aaf666c0d9548c332bfd0f6c685bc238920d659712bc0",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10813440-10878975/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00002_nrs2_rate.fits&range_offset=16777216",
+        "requested_range": [
+          16777216,
+          16842751
+        ],
+        "utc": "2026-10-14T04:21:38.792420+00:00",
+        "body_bytes": 65536,
+        "sha256": "a1a71681dd01963ce7b1494299bce65a0df0f912daf4da2211cf967bd701845f",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 16777216-16842751/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00001_nrs2_rate.fits&range_offset=10813440",
+        "requested_range": [
+          10813440,
+          10878975
+        ],
+        "utc": "2026-10-14T04:21:38.820834+00:00",
+        "body_bytes": 65536,
+        "sha256": "268498073f6673615646743aabbd2b4add4a3a82681d6c29b55bf1695e2ede81",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10813440-10878975/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00003_nrs2_rate.fits&range_offset=27328512",
+        "requested_range": [
+          27328512,
+          27394047
+        ],
+        "utc": "2026-10-14T04:21:38.846575+00:00",
+        "body_bytes": 65536,
+        "sha256": "3ff9aa30adac65a309c33e3dfe131e08afa4da5460c4698fe18bd3ab86547425",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27328512-27394047/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00002_nrs2_rate.fits&range_offset=16777216",
+        "requested_range": [
+          16777216,
+          16842751
+        ],
+        "utc": "2026-10-14T04:21:38.948116+00:00",
+        "body_bytes": 65536,
+        "sha256": "a1a71681dd01963ce7b1494299bce65a0df0f912daf4da2211cf967bd701845f",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 16777216-16842751/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00002_nrs2_rate.fits&range_offset=27328512",
+        "requested_range": [
+          27328512,
+          27394047
+        ],
+        "utc": "2026-10-14T04:21:39.006558+00:00",
+        "body_bytes": 65536,
+        "sha256": "506298c04fa910b73b0b580fd1641da39f318194145428e7d573cc1f625c3adb",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27328512-27394047/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00003_nrs2_rate.fits&range_offset=27394048",
+        "requested_range": [
+          27394048,
+          27459583
+        ],
+        "utc": "2026-10-14T04:21:39.034655+00:00",
+        "body_bytes": 65536,
+        "sha256": "edc41db14ae4c867ca93da4beb6968e76a6a74f06ba8d00305daa58ffcb5545e",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27394048-27459583/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00001_nrs2_rate.fits&range_offset=16777216",
+        "requested_range": [
+          16777216,
+          16842751
+        ],
+        "utc": "2026-10-14T04:21:39.121219+00:00",
+        "body_bytes": 65536,
+        "sha256": "a1a71681dd01963ce7b1494299bce65a0df0f912daf4da2211cf967bd701845f",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 16777216-16842751/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00002_nrs2_rate.fits&range_offset=27328512",
+        "requested_range": [
+          27328512,
+          27394047
+        ],
+        "utc": "2026-10-14T04:21:39.177687+00:00",
+        "body_bytes": 65536,
+        "sha256": "c8125dec477153c111c50625b41cb626406b4b1da22e7701af4d04e68a48a87e",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27328512-27394047/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00002_nrs2_rate.fits&range_offset=27394048",
+        "requested_range": [
+          27394048,
+          27459583
+        ],
+        "utc": "2026-10-14T04:21:39.300686+00:00",
+        "body_bytes": 65536,
+        "sha256": "05a6ac2782907c61a95a8f036affe546fec189833977b12a96ac0b6de8955a20",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27394048-27459583/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00003_nrs2_rate.fits&range_offset=27459584",
+        "requested_range": [
+          27459584,
+          27525119
+        ],
+        "utc": "2026-10-14T04:21:39.343936+00:00",
+        "body_bytes": 65536,
+        "sha256": "e17af851ad92b12d64ed918f5b6c6f7027ad8cabe24d3d7a15bd70a00b1328de",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27459584-27525119/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00001_nrs2_rate.fits&range_offset=27328512",
+        "requested_range": [
+          27328512,
+          27394047
+        ],
+        "utc": "2026-10-14T04:21:39.425345+00:00",
+        "body_bytes": 65536,
+        "sha256": "18776ed4895f44129ddf38a29e6ff506fa0c59fdf5c873adf8f6db45ac13c34d",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27328512-27394047/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00002_nrs2_rate.fits&range_offset=27459584",
+        "requested_range": [
+          27459584,
+          27525119
+        ],
+        "utc": "2026-10-14T04:21:39.514320+00:00",
+        "body_bytes": 65536,
+        "sha256": "ff102841f7483d0af6ad2207e3a575d7d8f85bf0fa17c52bdd9b867fee0824e0",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27459584-27525119/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00002_nrs2_rate.fits&range_offset=27394048",
+        "requested_range": [
+          27394048,
+          27459583
+        ],
+        "utc": "2026-10-14T04:21:39.536612+00:00",
+        "body_bytes": 65536,
+        "sha256": "1106778d929df4269d0e9e107b7549a55b1d18ba543e6be2ecc195df3981a135",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27394048-27459583/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00003_nrs2_rate.fits&range_offset=27525120",
+        "requested_range": [
+          27525120,
+          27590655
+        ],
+        "utc": "2026-10-14T04:21:39.685270+00:00",
+        "body_bytes": 65536,
+        "sha256": "a1bdad571b02ebdceecd2085518fbacfb9e9de4d572ff018cd9ce3f66b815da5",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27525120-27590655/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00002_nrs2_rate.fits&range_offset=27525120",
+        "requested_range": [
+          27525120,
+          27590655
+        ],
+        "utc": "2026-10-14T04:21:39.720227+00:00",
+        "body_bytes": 65536,
+        "sha256": "ce3714aeff0017f84241ea17f5c1dc2667be1a7c377500ece1b66017fdb2cfdf",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27525120-27590655/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00001_nrs2_rate.fits&range_offset=27394048",
+        "requested_range": [
+          27394048,
+          27459583
+        ],
+        "utc": "2026-10-14T04:21:39.728511+00:00",
+        "body_bytes": 65536,
+        "sha256": "fe9515a5dd3fc2d6eab0f878cc25440282889e93833713cea4f12b8dd251e623",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27394048-27459583/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00002_nrs2_rate.fits&range_offset=27459584",
+        "requested_range": [
+          27459584,
+          27525119
+        ],
+        "utc": "2026-10-14T04:21:39.864840+00:00",
+        "body_bytes": 65536,
+        "sha256": "793e1a16940ff7ad76c3d29d56915c85e3d74048a556b248d7dffaf4b7f08466",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27459584-27525119/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00003_nrs2_rate.fits&range_offset=27590656",
+        "requested_range": [
+          27590656,
+          27656191
+        ],
+        "utc": "2026-10-14T04:21:39.937718+00:00",
+        "body_bytes": 65536,
+        "sha256": "fa009fd351f0c549504c29ddb35dc47979fb44277a14079f2f567939df19a10e",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27590656-27656191/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00001_nrs2_rate.fits&range_offset=27459584",
+        "requested_range": [
+          27459584,
+          27525119
+        ],
+        "utc": "2026-10-14T04:21:40.007660+00:00",
+        "body_bytes": 65536,
+        "sha256": "4daac8574688c51def8504b4bb33729de13abb75edba49152ae11150f019e4d7",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27459584-27525119/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00002_nrs2_rate.fits&range_offset=27590656",
+        "requested_range": [
+          27590656,
+          27656191
+        ],
+        "utc": "2026-10-14T04:21:40.041026+00:00",
+        "body_bytes": 65536,
+        "sha256": "8e16347bd3ca92692e8e447afbab08b0fdcad61f4eba4fe06e654948f0d62244",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27590656-27656191/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00002_nrs2_rate.fits&range_offset=27525120",
+        "requested_range": [
+          27525120,
+          27590655
+        ],
+        "utc": "2026-10-14T04:21:40.204928+00:00",
+        "body_bytes": 65536,
+        "sha256": "937d046a2d15ccd1e3a34682d94f8c307cbe30c457d9ad1910367bbb2b5f08a8",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27525120-27590655/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00003_nrs2_rate.fits&range_offset=33554432",
+        "requested_range": [
+          33554432,
+          33619967
+        ],
+        "utc": "2026-10-14T04:21:40.237163+00:00",
+        "body_bytes": 65536,
+        "sha256": "211fa094e81aee2b3f7ad61ba741a052bad690d2d04fd186d210d9093a1f0dd3",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 33554432-33619967/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00002_nrs2_rate.fits&range_offset=33554432",
+        "requested_range": [
+          33554432,
+          33619967
+        ],
+        "utc": "2026-10-14T04:21:40.304303+00:00",
+        "body_bytes": 65536,
+        "sha256": "246ea0e86b29c04820139642e35179694f9a8fad70a838f9ee46c594a8cbcddd",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 33554432-33619967/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00001_nrs2_rate.fits&range_offset=27525120",
+        "requested_range": [
+          27525120,
+          27590655
+        ],
+        "utc": "2026-10-14T04:21:40.392852+00:00",
+        "body_bytes": 65536,
+        "sha256": "47c55e2da4ab0467e688b15e57755734ede1487c8201070621287e950d58e942",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27525120-27590655/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00002_nrs2_rate.fits&range_offset=27590656",
+        "requested_range": [
+          27590656,
+          27656191
+        ],
+        "utc": "2026-10-14T04:21:40.469793+00:00",
+        "body_bytes": 65536,
+        "sha256": "8a1e988b6e63d396d2d4425341758cd45a17aa2c1fb562434f91a3e712d0eeff",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27590656-27656191/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00003_nrs2_rate.fits&range_offset=50331648",
+        "requested_range": [
+          50331648,
+          50397183
+        ],
+        "utc": "2026-10-14T04:21:40.561995+00:00",
+        "body_bytes": 65536,
+        "sha256": "c3d3ee1f4d0b9f9f1b1b2838e394fd758ec46df7da07d129617d000f8ab8203c",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 50331648-50397183/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00002_nrs2_rate.fits&range_offset=50331648",
+        "requested_range": [
+          50331648,
+          50397183
+        ],
+        "utc": "2026-10-14T04:21:40.612522+00:00",
+        "body_bytes": 65536,
+        "sha256": "bd55c8e779395a67b981f566702a46a07e1eda0b45e9a8c1d3c8f6040276f7b1",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 50331648-50397183/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00001_nrs2_rate.fits&range_offset=27590656",
+        "requested_range": [
+          27590656,
+          27656191
+        ],
+        "utc": "2026-10-14T04:21:40.700896+00:00",
+        "body_bytes": 65536,
+        "sha256": "2a147ae4f4e3cb8b17b595f83f81929185326bb3514b18179cccde941c645bac",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27590656-27656191/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00002_nrs2_rate.fits&range_offset=33554432",
+        "requested_range": [
+          33554432,
+          33619967
+        ],
+        "utc": "2026-10-14T04:21:40.793259+00:00",
+        "body_bytes": 65536,
+        "sha256": "c0a78f123b0f2ff184bdbf14bdf7516b5c6fbafc32457003ef4df44f7ee7e665",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 33554432-33619967/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00003_nrs2_rate.fits&range_offset=60948480",
+        "requested_range": [
+          60948480,
+          61014015
+        ],
+        "utc": "2026-10-14T04:21:40.826423+00:00",
+        "body_bytes": 65536,
+        "sha256": "d0fa4334ab14d35994b41d0c60d763e9c5b429416ac09a41616fcd601906c0c0",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 60948480-61014015/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00002_nrs2_rate.fits&range_offset=60948480",
+        "requested_range": [
+          60948480,
+          61014015
+        ],
+        "utc": "2026-10-14T04:21:40.923928+00:00",
+        "body_bytes": 65536,
+        "sha256": "fdcaa41a28f6150fb9a7b8b326f1aeffb1bdd63a5542502f2ab3299cb4b8c996",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 60948480-61014015/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00001_nrs2_rate.fits&range_offset=33554432",
+        "requested_range": [
+          33554432,
+          33619967
+        ],
+        "utc": "2026-10-14T04:21:41.001273+00:00",
+        "body_bytes": 65536,
+        "sha256": "847e381072861429982bf2a92411618d7f7e325ff36e23dd801ac01c83e43c8d",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 33554432-33619967/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00002_nrs2_rate.fits&range_offset=50331648",
+        "requested_range": [
+          50331648,
+          50397183
+        ],
+        "utc": "2026-10-14T04:21:41.097552+00:00",
+        "body_bytes": 65536,
+        "sha256": "8a9bc973d2e11a26d12507ebad892b359b5740ab47b365a3a447a911e92ffa0b",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 50331648-50397183/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00003_nrs2_rate.fits&range_offset=61014016",
+        "requested_range": [
+          61014016,
+          61079551
+        ],
+        "utc": "2026-10-14T04:21:41.149384+00:00",
+        "body_bytes": 65536,
+        "sha256": "02efe323941f15dec92280cefb1d4ef73aa8ff79a7417407e8b48195e985b09c",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 61014016-61079551/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00002_nrs2_rate.fits&range_offset=61014016",
+        "requested_range": [
+          61014016,
+          61079551
+        ],
+        "utc": "2026-10-14T04:21:41.223849+00:00",
+        "body_bytes": 65536,
+        "sha256": "cd02dea01acac742d31ccfa54a7585817023e634680ba574d1eaeee32e64c2ac",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 61014016-61079551/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00001_nrs2_rate.fits&range_offset=50331648",
+        "requested_range": [
+          50331648,
+          50397183
+        ],
+        "utc": "2026-10-14T04:21:41.331322+00:00",
+        "body_bytes": 65536,
+        "sha256": "84ecd3f4c0b0d9703ba8ec716d2eaf8e13d075bea038d89b099957919ef44bd4",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 50331648-50397183/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00003_nrs2_rate.fits&range_offset=61079552",
+        "requested_range": [
+          61079552,
+          61145087
+        ],
+        "utc": "2026-10-14T04:21:41.400812+00:00",
+        "body_bytes": 65536,
+        "sha256": "b51e4b02a2f954c9b6bfc01ea00f2c514c540558b740a299bcce829d89be9a5d",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 61079552-61145087/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00002_nrs2_rate.fits&range_offset=60948480",
+        "requested_range": [
+          60948480,
+          61014015
+        ],
+        "utc": "2026-10-14T04:21:41.453504+00:00",
+        "body_bytes": 65536,
+        "sha256": "6741e44fda89df455c197c4c721ee45883fc50c7aaf76e29073390a478c00f95",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 60948480-61014015/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00002_nrs2_rate.fits&range_offset=61079552",
+        "requested_range": [
+          61079552,
+          61145087
+        ],
+        "utc": "2026-10-14T04:21:41.505210+00:00",
+        "body_bytes": 65536,
+        "sha256": "4f1c13a1d4ce6aa186950744d8bca42d25153e53e7a034bed96ec50e9eeb28a8",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 61079552-61145087/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00001_nrs2_rate.fits&range_offset=60948480",
+        "requested_range": [
+          60948480,
+          61014015
+        ],
+        "utc": "2026-10-14T04:21:41.635591+00:00",
+        "body_bytes": 65536,
+        "sha256": "87235484f92c00040338a977ab4e1c6e4ffb13f4e467c23ce05afb1bb26fb019",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 60948480-61014015/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00003_nrs2_rate.fits&range_offset=61145088",
+        "requested_range": [
+          61145088,
+          61210623
+        ],
+        "utc": "2026-10-14T04:21:41.680011+00:00",
+        "body_bytes": 65536,
+        "sha256": "94183444a942221027f8b4f5d42626f8e30baea0ea78d13e0424b23fa205495e",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 61145088-61210623/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00002_nrs2_rate.fits&range_offset=61014016",
+        "requested_range": [
+          61014016,
+          61079551
+        ],
+        "utc": "2026-10-14T04:21:41.761719+00:00",
+        "body_bytes": 65536,
+        "sha256": "9dc29ccd86608a18e56d700174e898971b96fc4c7125dfacc4a0667aa26322d3",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 61014016-61079551/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00002_nrs2_rate.fits&range_offset=61145088",
+        "requested_range": [
+          61145088,
+          61210623
+        ],
+        "utc": "2026-10-14T04:21:41.852356+00:00",
+        "body_bytes": 65536,
+        "sha256": "ad12b8d4c1b8591160f33f4d542678c8e2e6b4983596581aee6a68d0ab4a1a24",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 61145088-61210623/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00003_nrs2_rate.fits&range_offset=67108864",
+        "requested_range": [
+          67108864,
+          67174399
+        ],
+        "utc": "2026-10-14T04:21:41.949001+00:00",
+        "body_bytes": 65536,
+        "sha256": "ba2736851a69aa70dfeb248a0bc0a230dcbecf1d1fa6df7b9d09a9faa7ad0798",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 67108864-67174399/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00001_nrs2_rate.fits&range_offset=61014016",
+        "requested_range": [
+          61014016,
+          61079551
+        ],
+        "utc": "2026-10-14T04:21:41.958325+00:00",
+        "body_bytes": 65536,
+        "sha256": "37cc5b23a0af8094d9d26db75fe0ad41ecc91ee2ac4db9222751af31576e5ae5",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 61014016-61079551/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00002_nrs2_rate.fits&range_offset=61079552",
+        "requested_range": [
+          61079552,
+          61145087
+        ],
+        "utc": "2026-10-14T04:21:42.124963+00:00",
+        "body_bytes": 65536,
+        "sha256": "88eb261b0550c414a2e348fcbc3dffc2ad45ce0543849c69176500f5076dade7",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 61079552-61145087/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00002_nrs2_rate.fits&range_offset=67108864",
+        "requested_range": [
+          67108864,
+          67174399
+        ],
+        "utc": "2026-10-14T04:21:42.148820+00:00",
+        "body_bytes": 65536,
+        "sha256": "79193d9a0759ef7898aabc71e295d4ba0a0a253cc3bd87ed949b4f2bf2ac6281",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 67108864-67174399/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00003_nrs2_rate.fits&range_offset=77725696",
+        "requested_range": [
+          77725696,
+          77791231
+        ],
+        "utc": "2026-10-14T04:21:42.214833+00:00",
+        "body_bytes": 65536,
+        "sha256": "98ddfa3ae644bbe3b0f0ca176df6aad2c4b7864518fc1f47004f09c0577887dd",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 77725696-77791231/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00001_nrs2_rate.fits&range_offset=61079552",
+        "requested_range": [
+          61079552,
+          61145087
+        ],
+        "utc": "2026-10-14T04:21:42.260981+00:00",
+        "body_bytes": 65536,
+        "sha256": "27b9559aa7cbbe9190218fbecd16b808d3ea2c5015f529f883c6b3c15fee96fb",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 61079552-61145087/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00002_nrs2_rate.fits&range_offset=61145088",
+        "requested_range": [
+          61145088,
+          61210623
+        ],
+        "utc": "2026-10-14T04:21:42.424896+00:00",
+        "body_bytes": 65536,
+        "sha256": "1aff7722f11d5676b336060f73aea11786d858c8ca01a73cf1dcb3bbd09df89d",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 61145088-61210623/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00002_nrs2_rate.fits&range_offset=77725696",
+        "requested_range": [
+          77725696,
+          77791231
+        ],
+        "utc": "2026-10-14T04:21:42.432505+00:00",
+        "body_bytes": 65536,
+        "sha256": "4c37421b32fcac1ebc9c4e78573a686c4e79eb03f7853aca76eb6f253ac635f4",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 77725696-77791231/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00003_nrs2_rate.fits&range_offset=77791232",
+        "requested_range": [
+          77791232,
+          77856767
+        ],
+        "utc": "2026-10-14T04:21:42.435738+00:00",
+        "body_bytes": 65536,
+        "sha256": "6a2342a62621023655e4be419d6263c47227bbc11d524321286c1bae84abdcb5",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 77791232-77856767/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00001_nrs2_rate.fits&range_offset=61145088",
+        "requested_range": [
+          61145088,
+          61210623
+        ],
+        "utc": "2026-10-14T04:21:42.692996+00:00",
+        "body_bytes": 65536,
+        "sha256": "5b5e43f66bf109c92479034c9c445516ee73b47154d71bce9098fbd0fbefdb97",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 61145088-61210623/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00002_nrs2_rate.fits&range_offset=67108864",
+        "requested_range": [
+          67108864,
+          67174399
+        ],
+        "utc": "2026-10-14T04:21:42.725135+00:00",
+        "body_bytes": 65536,
+        "sha256": "c1dc9a5f4e614e642ec7ca14a8472120c88e31458b53c813fd40c6f95545b7ed",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 67108864-67174399/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00003_nrs2_rate.fits&range_offset=77856768",
+        "requested_range": [
+          77856768,
+          77922303
+        ],
+        "utc": "2026-10-14T04:21:42.760070+00:00",
+        "body_bytes": 65536,
+        "sha256": "6809631d99493ad20a6afc172992c724613f14073e4f1ecdc69e0fae029947f3",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 77856768-77922303/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00002_nrs2_rate.fits&range_offset=77791232",
+        "requested_range": [
+          77791232,
+          77856767
+        ],
+        "utc": "2026-10-14T04:21:42.849088+00:00",
+        "body_bytes": 65536,
+        "sha256": "1d78702fa2b0caaca95c9672b04cee13d57223fde84e1e564b14c4cdc6d9985d",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 77791232-77856767/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00001_nrs2_rate.fits&range_offset=67108864",
+        "requested_range": [
+          67108864,
+          67174399
+        ],
+        "utc": "2026-10-14T04:21:42.965893+00:00",
+        "body_bytes": 65536,
+        "sha256": "0a145ffc6964bbded7bba4a7a52fea21bb0082eecc2fbafe62d13544e37f5d24",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 67108864-67174399/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00002_nrs2_rate.fits&range_offset=77725696",
+        "requested_range": [
+          77725696,
+          77791231
+        ],
+        "utc": "2026-10-14T04:21:43.204531+00:00",
+        "body_bytes": 65536,
+        "sha256": "a9e1794851211acddc4c32883d684d412ed9e0b22c2dea7e12d975292ebf65ad",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 77725696-77791231/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00002_nrs2_rate.fits&range_offset=77856768",
+        "requested_range": [
+          77856768,
+          77922303
+        ],
+        "utc": "2026-10-14T04:21:43.205122+00:00",
+        "body_bytes": 65536,
+        "sha256": "f85a5f187834f2d3bc1ef9363978e10e2cb32910b331d55198659ef94bed2aa7",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 77856768-77922303/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00001_nrs2_rate.fits&range_offset=77725696",
+        "requested_range": [
+          77725696,
+          77791231
+        ],
+        "utc": "2026-10-14T04:21:43.242948+00:00",
+        "body_bytes": 65536,
+        "sha256": "484fa81328085fa8bc1785e265c1445c7b9fe1f4376beaa81a372fc2a73059e4",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 77725696-77791231/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00003_nrs2_rate.fits&range_offset=77922304",
+        "requested_range": [
+          77922304,
+          77987839
+        ],
+        "utc": "2026-10-14T04:21:43.244875+00:00",
+        "body_bytes": 65536,
+        "sha256": "e50680ff714581054d28a8e6d5ea48a6fd4ddf2d96cab31e0bb3bc99927eae4c",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 77922304-77987839/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00001_nrs2_rate.fits&range_offset=77791232",
+        "requested_range": [
+          77791232,
+          77856767
+        ],
+        "utc": "2026-10-14T04:21:43.442504+00:00",
+        "body_bytes": 65536,
+        "sha256": "9b3560e53995a5a30cb6d746e00551f944ee70222f37c780d8433b8306a7fc90",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 77791232-77856767/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00002_nrs2_rate.fits&range_offset=77922304",
+        "requested_range": [
+          77922304,
+          77987839
+        ],
+        "utc": "2026-10-14T04:21:43.485008+00:00",
+        "body_bytes": 65536,
+        "sha256": "fe3d9290dda7136b6f7f27527341392218ff59964378e3abb39f82ec3a8b6867",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 77922304-77987839/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00002_nrs2_rate.fits&range_offset=77791232",
+        "requested_range": [
+          77791232,
+          77856767
+        ],
+        "utc": "2026-10-14T04:21:43.501985+00:00",
+        "body_bytes": 65536,
+        "sha256": "e51978f98c4f21a9c655612106d8b73e3011e1b819ab6aef21dc739c7cd87e3e",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 77791232-77856767/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00003_nrs2_rate.fits&range_offset=44171264",
+        "requested_range": [
+          44171264,
+          44236799
+        ],
+        "utc": "2026-10-14T04:21:43.533633+00:00",
+        "body_bytes": 65536,
+        "sha256": "eda816ea170d60acb072feb373db07c20f29d6777394b8e549374e115db4537a",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 44171264-44236799/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00001_nrs2_rate.fits&range_offset=77856768",
+        "requested_range": [
+          77856768,
+          77922303
+        ],
+        "utc": "2026-10-14T04:21:43.675767+00:00",
+        "body_bytes": 65536,
+        "sha256": "5c013bd3ae67c29ac568599ca67c1984d1c72eabb8fc7b24592126cf45df3028",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 77856768-77922303/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00002_nrs2_rate.fits&range_offset=44171264",
+        "requested_range": [
+          44171264,
+          44236799
+        ],
+        "utc": "2026-10-14T04:21:43.709193+00:00",
+        "body_bytes": 65536,
+        "sha256": "a6a14398dd334c656d52b01d1e02694fd69c8130028212ec1a630ef70f0cadc0",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 44171264-44236799/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00002_nrs2_rate.fits&range_offset=77856768",
+        "requested_range": [
+          77856768,
+          77922303
+        ],
+        "utc": "2026-10-14T04:21:43.757592+00:00",
+        "body_bytes": 65536,
+        "sha256": "5c98e548278961bcece20110783f67f100b0f9d0046f94520c28bf4e3ef93a15",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 77856768-77922303/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00003_nrs2_rate.fits&range_offset=44236800",
+        "requested_range": [
+          44236800,
+          44302335
+        ],
+        "utc": "2026-10-14T04:21:43.884588+00:00",
+        "body_bytes": 65536,
+        "sha256": "e8fbd1486885651363a446fde17156c5896a1f7a7bc720b6c13ae1be1225c737",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 44236800-44302335/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00001_nrs2_rate.fits&range_offset=77922304",
+        "requested_range": [
+          77922304,
+          77987839
+        ],
+        "utc": "2026-10-14T04:21:43.940944+00:00",
+        "body_bytes": 65536,
+        "sha256": "722dd9b02e183cf99329ed2f255cf2848f4f911399946a9ed9b8f3a35956c27c",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 77922304-77987839/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00002_nrs2_rate.fits&range_offset=44236800",
+        "requested_range": [
+          44236800,
+          44302335
+        ],
+        "utc": "2026-10-14T04:21:44.024416+00:00",
+        "body_bytes": 65536,
+        "sha256": "f859103d0dd5801c1a903724c58ff9b198d86a9b9849450ce5d73025068ca92c",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 44236800-44302335/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00002_nrs2_rate.fits&range_offset=77922304",
+        "requested_range": [
+          77922304,
+          77987839
+        ],
+        "utc": "2026-10-14T04:21:44.067634+00:00",
+        "body_bytes": 65536,
+        "sha256": "cf2adc09760f0234688cdccf5cfca389b6565315d6cc6dada4d854fa8dab7de9",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 77922304-77987839/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00003_nrs2_rate.fits&range_offset=44302336",
+        "requested_range": [
+          44302336,
+          44367871
+        ],
+        "utc": "2026-10-14T04:21:44.128146+00:00",
+        "body_bytes": 65536,
+        "sha256": "b03d35fb65e1a4fd46b7b284c33464ec8903400e43500b17b12697a6c4c70b0b",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 44302336-44367871/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00001_nrs2_rate.fits&range_offset=44171264",
+        "requested_range": [
+          44171264,
+          44236799
+        ],
+        "utc": "2026-10-14T04:21:44.289245+00:00",
+        "body_bytes": 65536,
+        "sha256": "7aa7e865a20cc088567f3826ed454229af56a058e2dd4ad34623a2fd979385ae",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 44171264-44236799/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00002_nrs2_rate.fits&range_offset=44302336",
+        "requested_range": [
+          44302336,
+          44367871
+        ],
+        "utc": "2026-10-14T04:21:44.345135+00:00",
+        "body_bytes": 65536,
+        "sha256": "2399cf773334f76ee905d63f4999f1ebc458fb00d4eb0eca2c510a56268e614b",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 44302336-44367871/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00003_nrs2_rate.fits&range_offset=44367872",
+        "requested_range": [
+          44367872,
+          44433407
+        ],
+        "utc": "2026-10-14T04:21:44.414828+00:00",
+        "body_bytes": 65536,
+        "sha256": "550787c4ccf6ed1f620955924604cdad707f17c363c519e296f401629f4c0b3d",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 44367872-44433407/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00002_nrs2_rate.fits&range_offset=44171264",
+        "requested_range": [
+          44171264,
+          44236799
+        ],
+        "utc": "2026-10-14T04:21:44.473254+00:00",
+        "body_bytes": 65536,
+        "sha256": "e25d4ecd8e84e2532187b91ff5a80b8a13cee8b13a6a1572dc8908369e864135",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 44171264-44236799/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00002_nrs2_rate.fits&range_offset=44367872",
+        "requested_range": [
+          44367872,
+          44433407
+        ],
+        "utc": "2026-10-14T04:21:44.560713+00:00",
+        "body_bytes": 65536,
+        "sha256": "81908f3eab94c72621e27ac2bf7f9fa2b34110b990ef151bebda9bbb50189d5d",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 44367872-44433407/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00001_nrs2_rate.fits&range_offset=44236800",
+        "requested_range": [
+          44236800,
+          44302335
+        ],
+        "utc": "2026-10-14T04:21:44.587727+00:00",
+        "body_bytes": 65536,
+        "sha256": "13c801a77887c946e2de7d3867e8dbec410b3d3141df9e5093760e99b716bed5",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 44236800-44302335/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00003_nrs2_cal.fits&range_offset=0",
+        "requested_range": [
+          0,
+          51575039
+        ],
+        "utc": "2026-10-14T04:21:44.712478+00:00",
+        "body_bytes": 51575040,
+        "sha256": "b7b3af35080d1ddafcb1184f07733e56c278f936be0fd662643dde46be8b343c",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 0-51575039/51575040",
+        "charged_body_bytes": 51575040,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00002_nrs2_rate.fits&range_offset=44236800",
+        "requested_range": [
+          44236800,
+          44302335
+        ],
+        "utc": "2026-10-14T04:21:44.793261+00:00",
+        "body_bytes": 65536,
+        "sha256": "78dcd07fd68eae266bee2a4127d3f1550b3f248be35274bd0055ac007292b76f",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 44236800-44302335/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00001_nrs2_rate.fits&range_offset=44302336",
+        "requested_range": [
+          44302336,
+          44367871
+        ],
+        "utc": "2026-10-14T04:21:44.873589+00:00",
+        "body_bytes": 65536,
+        "sha256": "38524a84d3c8e21f83533c9e677db4e7704fe48c6a85509a97fcf23219905e36",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 44302336-44367871/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00002_nrs2_rate.fits&range_offset=44302336",
+        "requested_range": [
+          44302336,
+          44367871
+        ],
+        "utc": "2026-10-14T04:21:45.093259+00:00",
+        "body_bytes": 65536,
+        "sha256": "ed6c14078e586a88eda76aff01d461155fe48dfc87183cc7fd581016a51f74e6",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 44302336-44367871/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00001_nrs2_rate.fits&range_offset=44367872",
+        "requested_range": [
+          44367872,
+          44433407
+        ],
+        "utc": "2026-10-14T04:21:45.216906+00:00",
+        "body_bytes": 65536,
+        "sha256": "e0c33884a0a28e91c744ea4dedf3c2fe0e6312e890d544e859cf07d3dbecd7e0",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 44367872-44433407/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_05101_00002_nrs2_rate.fits&range_offset=44367872",
+        "requested_range": [
+          44367872,
+          44433407
+        ],
+        "utc": "2026-10-14T04:21:45.361125+00:00",
+        "body_bytes": 65536,
+        "sha256": "f3c377a6462f5e08a735173ae084789d0fa01e5a4b514bd268c3848a556a9512",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 44367872-44433407/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00003_nrs2_rate.fits&range_offset=0",
+        "requested_range": [
+          0,
+          65535
+        ],
+        "utc": "2026-10-14T04:22:02.209475+00:00",
+        "body_bytes": 65536,
+        "sha256": "5b6cc7976b1a1e1b2f1225667c320e6e5bd898455a38c7fa701680991efb91a5",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 0-65535/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00003_nrs2_rate.fits&range_offset=10551296",
+        "requested_range": [
+          10551296,
+          10616831
+        ],
+        "utc": "2026-10-14T04:22:10.210790+00:00",
+        "body_bytes": 65536,
+        "sha256": "bfddb0c41491043f4fce6f3e4498ee88b0ba5c2065bb2b1525e3c1efa7b0ff2a",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10551296-10616831/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00003_nrs2_rate.fits&range_offset=10616832",
+        "requested_range": [
+          10616832,
+          10682367
+        ],
+        "utc": "2026-10-14T04:22:10.485264+00:00",
+        "body_bytes": 65536,
+        "sha256": "bdf9794cfc094cd7430b6aa098be5a590d17b150bd302d02d06755695413052a",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10616832-10682367/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00003_nrs2_rate.fits&range_offset=10682368",
+        "requested_range": [
+          10682368,
+          10747903
+        ],
+        "utc": "2026-10-14T04:22:10.764919+00:00",
+        "body_bytes": 65536,
+        "sha256": "e2e163c98c3ed79e7dc786e6583830addf6f3f762e8fbe5c9f9ca721fd140475",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10682368-10747903/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00003_nrs2_rate.fits&range_offset=10747904",
+        "requested_range": [
+          10747904,
+          10813439
+        ],
+        "utc": "2026-10-14T04:22:10.965545+00:00",
+        "body_bytes": 65536,
+        "sha256": "44c2242c1685ebb0d73b317377d8313459a02d732b2b4e2593fc44f2f9bef855",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10747904-10813439/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00003_nrs2_rate.fits&range_offset=10813440",
+        "requested_range": [
+          10813440,
+          10878975
+        ],
+        "utc": "2026-10-14T04:22:11.160643+00:00",
+        "body_bytes": 65536,
+        "sha256": "ade6cf7ab6c3aba5faa5f1258a9ce21f36125f62c80387a49fab454acebfd2e3",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 10813440-10878975/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00003_nrs2_rate.fits&range_offset=16777216",
+        "requested_range": [
+          16777216,
+          16842751
+        ],
+        "utc": "2026-10-14T04:22:11.436909+00:00",
+        "body_bytes": 65536,
+        "sha256": "a1a71681dd01963ce7b1494299bce65a0df0f912daf4da2211cf967bd701845f",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 16777216-16842751/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00003_nrs2_rate.fits&range_offset=27328512",
+        "requested_range": [
+          27328512,
+          27394047
+        ],
+        "utc": "2026-10-14T04:22:11.665847+00:00",
+        "body_bytes": 65536,
+        "sha256": "4e967f990f2dc4801bf82ec8b8b824cd994f5591f38c8acaa22fd159ea2b5d02",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27328512-27394047/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00003_nrs2_rate.fits&range_offset=27394048",
+        "requested_range": [
+          27394048,
+          27459583
+        ],
+        "utc": "2026-10-14T04:22:11.862828+00:00",
+        "body_bytes": 65536,
+        "sha256": "f4eac758e32ad28f78d468b7e99261e8047b1058c6280860be5a8624c125aca6",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27394048-27459583/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00003_nrs2_rate.fits&range_offset=27459584",
+        "requested_range": [
+          27459584,
+          27525119
+        ],
+        "utc": "2026-10-14T04:22:12.140950+00:00",
+        "body_bytes": 65536,
+        "sha256": "55c22a89ea43d8475208ef08a1260e63bd19a65e48c335d855c3a20097298711",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27459584-27525119/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00003_nrs2_rate.fits&range_offset=27525120",
+        "requested_range": [
+          27525120,
+          27590655
+        ],
+        "utc": "2026-10-14T04:22:12.377075+00:00",
+        "body_bytes": 65536,
+        "sha256": "6c27f0976c2323968a35cfc6857c148a81098f851dd27417ba251fde77c3b143",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27525120-27590655/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00003_nrs2_rate.fits&range_offset=27590656",
+        "requested_range": [
+          27590656,
+          27656191
+        ],
+        "utc": "2026-10-14T04:22:12.587645+00:00",
+        "body_bytes": 65536,
+        "sha256": "afc6d80c47f7b850eaffcab7dd31f2bfaea9e12238403066fc642b7184203f59",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 27590656-27656191/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00003_nrs2_rate.fits&range_offset=33554432",
+        "requested_range": [
+          33554432,
+          33619967
+        ],
+        "utc": "2026-10-14T04:22:12.984888+00:00",
+        "body_bytes": 65536,
+        "sha256": "4e81bbc1513409ba66eb57994b8892656af6a1f42cbb4df2c9d200212476d18a",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 33554432-33619967/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00003_nrs2_rate.fits&range_offset=50331648",
+        "requested_range": [
+          50331648,
+          50397183
+        ],
+        "utc": "2026-10-14T04:22:13.304258+00:00",
+        "body_bytes": 65536,
+        "sha256": "ec5f76045f702b6421417a6a2aa8852b40fd98989f7f39ce707286145c3be0c8",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 50331648-50397183/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00003_nrs2_rate.fits&range_offset=60948480",
+        "requested_range": [
+          60948480,
+          61014015
+        ],
+        "utc": "2026-10-14T04:22:13.495772+00:00",
+        "body_bytes": 65536,
+        "sha256": "bd9bdba2ad9aadde141617713fb1c510626afe352c0eae0a727eea3f3b3ce6e1",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 60948480-61014015/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00003_nrs2_rate.fits&range_offset=61014016",
+        "requested_range": [
+          61014016,
+          61079551
+        ],
+        "utc": "2026-10-14T04:22:13.683912+00:00",
+        "body_bytes": 65536,
+        "sha256": "5b37c70de62835bd3147acfa2d32f913dfbb19a0666376561b1ddc0a4cd7639b",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 61014016-61079551/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00003_nrs2_rate.fits&range_offset=61079552",
+        "requested_range": [
+          61079552,
+          61145087
+        ],
+        "utc": "2026-10-14T04:22:13.953001+00:00",
+        "body_bytes": 65536,
+        "sha256": "5ddce515403f6bd5c03dcf42bad392e8e9d3612e2a765515f8e512b7346d6d70",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 61079552-61145087/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00003_nrs2_rate.fits&range_offset=61145088",
+        "requested_range": [
+          61145088,
+          61210623
+        ],
+        "utc": "2026-10-14T04:22:14.152894+00:00",
+        "body_bytes": 65536,
+        "sha256": "f35e5fc328b348786318a78986a553298b4af42310b8ef6ae95b87234501c30e",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 61145088-61210623/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00003_nrs2_rate.fits&range_offset=67108864",
+        "requested_range": [
+          67108864,
+          67174399
+        ],
+        "utc": "2026-10-14T04:22:14.345209+00:00",
+        "body_bytes": 65536,
+        "sha256": "cf71055632bd1b14b60691adc372e948b0c37cbd3db2d4a8b4ef2bb528172df3",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 67108864-67174399/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00003_nrs2_rate.fits&range_offset=77725696",
+        "requested_range": [
+          77725696,
+          77791231
+        ],
+        "utc": "2026-10-14T04:22:14.588486+00:00",
+        "body_bytes": 65536,
+        "sha256": "182bee62bbdbc4c0d5a1de668aa35d7d3c61b1472cd3fe0940f5db3ab70a869a",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 77725696-77791231/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00003_nrs2_rate.fits&range_offset=77791232",
+        "requested_range": [
+          77791232,
+          77856767
+        ],
+        "utc": "2026-10-14T04:22:14.904486+00:00",
+        "body_bytes": 65536,
+        "sha256": "70110a5c0bcd52e7dda320ae32d9e63daa491b4c4f8d2d671df0ca9452d23908",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 77791232-77856767/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00003_nrs2_rate.fits&range_offset=77856768",
+        "requested_range": [
+          77856768,
+          77922303
+        ],
+        "utc": "2026-10-14T04:22:15.113409+00:00",
+        "body_bytes": 65536,
+        "sha256": "0073f8802cccc16c5a4b114d3256296d25b9f14d2c63d3323431edccc25c8f93",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 77856768-77922303/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00003_nrs2_rate.fits&range_offset=77922304",
+        "requested_range": [
+          77922304,
+          77987839
+        ],
+        "utc": "2026-10-14T04:22:15.533225+00:00",
+        "body_bytes": 65536,
+        "sha256": "f1ab6d136d03ce331b3c3da8bbf01096da902c92af6b2ad1e62c4d0060731f4e",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 77922304-77987839/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00003_nrs2_rate.fits&range_offset=44171264",
+        "requested_range": [
+          44171264,
+          44236799
+        ],
+        "utc": "2026-10-14T04:22:15.777151+00:00",
+        "body_bytes": 65536,
+        "sha256": "7453f5fc5cc1462161ebdceca011a65b571cdb07a07bec4a6dc2bb8e629cf6da",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 44171264-44236799/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00003_nrs2_rate.fits&range_offset=44236800",
+        "requested_range": [
+          44236800,
+          44302335
+        ],
+        "utc": "2026-10-14T04:22:15.971991+00:00",
+        "body_bytes": 65536,
+        "sha256": "db7a8ed2e4aa19bcc2659398c517cdb732cd2c2e00635c1bdf54fbcd1fd718dc",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 44236800-44302335/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00003_nrs2_rate.fits&range_offset=44302336",
+        "requested_range": [
+          44302336,
+          44367871
+        ],
+        "utc": "2026-10-14T04:22:16.162092+00:00",
+        "body_bytes": 65536,
+        "sha256": "cafed4a87b2acfce3b8ef632e6e70e2d6a291bb0c41e178e0e91e445c61af8e0",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 44302336-44367871/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      },
+      {
+        "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:JWST/product/jw05224004001_07101_00003_nrs2_rate.fits&range_offset=44367872",
+        "requested_range": [
+          44367872,
+          44433407
+        ],
+        "utc": "2026-10-14T04:22:16.445027+00:00",
+        "body_bytes": 65536,
+        "sha256": "2b82db77cdbc68b633de9046f7d4606a60ef40d3a7ef1bd9e97f659ac10032ed",
+        "fullfile_hash_verified": false,
+        "status": 206,
+        "content_range": "bytes 44367872-44433407/83963520",
+        "charged_body_bytes": 65536,
+        "complete_body_accounting": true
+      }
+    ]
+  }
+}

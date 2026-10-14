@@ -1,0 +1,34 @@
+{
+  "request": {
+    "service": "Mast.Caom.Filtered.Position",
+    "format": "json",
+    "params": {
+      "columns": "obsid,obs_id,instrument_name,filters,t_exptime",
+      "filters": [
+        {
+          "paramName": "obs_collection",
+          "values": [
+            "JWST"
+          ]
+        },
+        {
+          "paramName": "proposal_id",
+          "values": [
+            "1210"
+          ]
+        }
+      ],
+      "position": "53.112434, -27.774609, 0.0001"
+    },
+    "pagesize": 100,
+    "page": 1
+  },
+  "started_utc": "2026-10-14T04:18:12.420634+00:00",
+  "bytes": 1110,
+  "freeze_commit": "a44f756",
+  "scope": "Metadata only; no raw detector body",
+  "status": 200,
+  "sha256": "a4b82cd96d3d23284caa7285347a29f0bc6f38f7c40568d894f48e0a87c52f4b",
+  "response": "{\"status\" : \"COMPLETE\",\"msg\" : \"\",\"data\":[{\"obsid\":454216939,\"t_exptime\":24947.001,\"instrument_name\":\"NIRSPEC/MSA\",\"filters\":\"F290LP;G395H\",\"obs_id\":\"jw01210-o001_s000058975_nirspec_f290lp-g395h\"},{\"obsid\":252834822,\"t_exptime\":24947.001,\"instrument_name\":\"NIRSPEC/MSA\",\"filters\":\"F170LP;G235M\",\"obs_id\":\"jw01210-o001_s000058975_nirspec_f170lp-g235m\"},{\"obsid\":252834994,\"t_exptime\":99788.003999999972,\"instrument_name\":\"NIRSPEC/MSA\",\"filters\":\"CLEAR;PRISM\",\"obs_id\":\"jw01210-o001_s000058975_nirspec_clear-prism\"},{\"obsid\":252834878,\"t_exptime\":24947.001,\"instrument_name\":\"NIRSPEC/MSA\",\"filters\":\"F070LP;G140M\",\"obs_id\":\"jw01210-o001_s000058975_nirspec_f070lp-g140m\"},{\"obsid\":252834985,\"t_exptime\":24947.001,\"instrument_name\":\"NIRSPEC/MSA\",\"filters\":\"F290LP;G395M\",\"obs_id\":\"jw01210-o001_s000058975_nirspec_f290lp-g395m\"}],\"fields\":[{\"name\":\"obsid\",\"type\":\"string\"},{\"name\":\"t_exptime\",\"type\":\"float\"},{\"name\":\"instrument_name\",\"type\":\"string\"},{\"name\":\"filters\",\"type\":\"string\"},{\"name\":\"obs_id\",\"type\":\"string\"}],\"paging\":{\"page\":1,\"pageSize\":100,\"pagesFiltered\":1,\"rows\":5,\"rowsFiltered\":5,\"rowsTotal\":5}}",
+  "completed_utc": "2026-10-14T04:18:23.524585+00:00"
+}

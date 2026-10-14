@@ -1,0 +1,245 @@
+{
+  "verdict": {
+    "upper_bound_qualifying_targets": 10,
+    "currently_K_assignable_possible_targets": 4,
+    "unknown_K_target_ids": [
+      "[GC2009] J054624.75-671916.5",
+      "[GC2009] J054442.25-661733.5",
+      "OGLE LMC-ECL-37636",
+      "[GC2009] J054445.26-670856.9",
+      "[GC2009] J054447.39-671631.8",
+      "[WSI2008] 1124"
+    ],
+    "possible_target_ids": [
+      "2MASS J05475106-6629071",
+      "2MASS J05454478-6709283",
+      "2MASS J05463258-6725244",
+      "2MASS J05551099-6806234"
+    ],
+    "fails_necessary_gate": false,
+    "reason": "a day with fewer than eight frames cannot supply eight source channels; missing SIMBAD K is unresolved photometry, not absence of 2MASS coverage"
+  },
+  "targets": [
+    {
+      "identity": {
+        "main_id": "2MASS J19382481+7003455",
+        "otype": "Y*O",
+        "ra": "294.60337733455",
+        "dec": "70.06266127443",
+        "coo_bibcode": "2020yCat.1350....0G",
+        "K": "12.555",
+        "pole_distance": "9.660882856051755"
+      },
+      "necessary_condition_metadata": {
+        "max_frames_in_utc_day": 7,
+        "upper_bound_source_qualified_visits": 0,
+        "frozen_K_matching_available": true,
+        "source_visit_wavelengths_measured": false
+      }
+    },
+    {
+      "identity": {
+        "main_id": "UCAC4 800-028207",
+        "otype": "Y*O",
+        "ra": "295.2537990134042",
+        "dec": "69.8234672206547",
+        "coo_bibcode": "2020yCat.1350....0G",
+        "K": "11.058",
+        "pole_distance": "9.847484198468702"
+      },
+      "necessary_condition_metadata": {
+        "max_frames_in_utc_day": 4,
+        "upper_bound_source_qualified_visits": 0,
+        "frozen_K_matching_available": true,
+        "source_visit_wavelengths_measured": false
+      }
+    },
+    {
+      "identity": {
+        "main_id": "2MASS J19420738+6816508",
+        "otype": "Y*O",
+        "ra": "295.53076110511",
+        "dec": "68.28081386967",
+        "coo_bibcode": "2020yCat.1350....0G",
+        "K": "12.055",
+        "pole_distance": "9.877808038464671"
+      },
+      "necessary_condition_metadata": {
+        "max_frames_in_utc_day": 4,
+        "upper_bound_source_qualified_visits": 0,
+        "frozen_K_matching_available": true,
+        "source_visit_wavelengths_measured": false
+      }
+    },
+    {
+      "identity": {
+        "main_id": "2MASS J05475106-6629071",
+        "otype": "Y*O",
+        "ra": "86.96280156722",
+        "dec": "-66.48532973567",
+        "coo_bibcode": "2020yCat.1350....0G",
+        "K": "14.072",
+        "pole_distance": "1.2121862068348292"
+      },
+      "necessary_condition_metadata": {
+        "max_frames_in_utc_day": 31,
+        "upper_bound_source_qualified_visits": 44,
+        "frozen_K_matching_available": true,
+        "source_visit_wavelengths_measured": false
+      }
+    },
+    {
+      "identity": {
+        "main_id": "2MASS J05454478-6709283",
+        "otype": "Y*O",
+        "ra": "86.43660416666667",
+        "dec": "-67.157875",
+        "coo_bibcode": "2003yCat.2246....0C",
+        "K": "14.124",
+        "pole_distance": "1.5221140937141968"
+      },
+      "necessary_condition_metadata": {
+        "max_frames_in_utc_day": 30,
+        "upper_bound_source_qualified_visits": 42,
+        "frozen_K_matching_available": true,
+        "source_visit_wavelengths_measured": false
+      }
+    },
+    {
+      "identity": {
+        "main_id": "[GC2009] J054624.75-671916.5",
+        "otype": "Y*O",
+        "ra": "86.60325833333333",
+        "dec": "-67.32123888888889",
+        "coo_bibcode": "2008AJ....136...18W",
+        "K": "",
+        "pole_distance": "1.5321764324348972"
+      },
+      "necessary_condition_metadata": {
+        "max_frames_in_utc_day": 30,
+        "upper_bound_source_qualified_visits": 42,
+        "frozen_K_matching_available": false,
+        "source_visit_wavelengths_measured": false
+      }
+    },
+    {
+      "identity": {
+        "main_id": "[GC2009] J054442.25-661733.5",
+        "otype": "Y*O",
+        "ra": "86.17610533442",
+        "dec": "-66.29262557836",
+        "coo_bibcode": "2020yCat.1350....0G",
+        "K": "",
+        "pole_distance": "1.5523234900422638"
+      },
+      "necessary_condition_metadata": {
+        "max_frames_in_utc_day": 29,
+        "upper_bound_source_qualified_visits": 44,
+        "frozen_K_matching_available": false,
+        "source_visit_wavelengths_measured": false
+      }
+    },
+    {
+      "identity": {
+        "main_id": "OGLE LMC-ECL-37636",
+        "otype": "Y*O",
+        "ra": "86.18737955703",
+        "dec": "-66.25030870572",
+        "coo_bibcode": "2020yCat.1350....0G",
+        "K": "",
+        "pole_distance": "1.55702862947566"
+      },
+      "necessary_condition_metadata": {
+        "max_frames_in_utc_day": 29,
+        "upper_bound_source_qualified_visits": 44,
+        "frozen_K_matching_available": false,
+        "source_visit_wavelengths_measured": false
+      }
+    },
+    {
+      "identity": {
+        "main_id": "2MASS J05463258-6725244",
+        "otype": "Y*O",
+        "ra": "86.63580466058",
+        "dec": "-67.42345416054",
+        "coo_bibcode": "2020yCat.1350....0G",
+        "K": "12.202",
+        "pole_distance": "1.5723735861375694"
+      },
+      "necessary_condition_metadata": {
+        "max_frames_in_utc_day": 30,
+        "upper_bound_source_qualified_visits": 42,
+        "frozen_K_matching_available": true,
+        "source_visit_wavelengths_measured": false
+      }
+    },
+    {
+      "identity": {
+        "main_id": "[GC2009] J054445.26-670856.9",
+        "otype": "Y*O",
+        "ra": "86.18858333333334",
+        "dec": "-67.14913888888888",
+        "coo_bibcode": "2009ApJS..184..172G",
+        "K": "",
+        "pole_distance": "1.6092125253812803"
+      },
+      "necessary_condition_metadata": {
+        "max_frames_in_utc_day": 31,
+        "upper_bound_source_qualified_visits": 43,
+        "frozen_K_matching_available": false,
+        "source_visit_wavelengths_measured": false
+      }
+    },
+    {
+      "identity": {
+        "main_id": "2MASS J05551099-6806234",
+        "otype": "Y*O",
+        "ra": "88.79620401255",
+        "dec": "-68.10663934881",
+        "coo_bibcode": "2020yCat.1350....0G",
+        "K": "15.11",
+        "pole_distance": "1.6139584840556862"
+      },
+      "necessary_condition_metadata": {
+        "max_frames_in_utc_day": 27,
+        "upper_bound_source_qualified_visits": 37,
+        "frozen_K_matching_available": true,
+        "source_visit_wavelengths_measured": false
+      }
+    },
+    {
+      "identity": {
+        "main_id": "[GC2009] J054447.39-671631.8",
+        "otype": "Y*O",
+        "ra": "86.19745833333334",
+        "dec": "-67.2755",
+        "coo_bibcode": "2009ApJS..184..172G",
+        "K": "",
+        "pole_distance": "1.6529175912679976"
+      },
+      "necessary_condition_metadata": {
+        "max_frames_in_utc_day": 30,
+        "upper_bound_source_qualified_visits": 44,
+        "frozen_K_matching_available": false,
+        "source_visit_wavelengths_measured": false
+      }
+    },
+    {
+      "identity": {
+        "main_id": "[WSI2008] 1124",
+        "otype": "Y*O",
+        "ra": "86.1817375",
+        "dec": "-67.29075277777778",
+        "coo_bibcode": "2008AJ....136...18W",
+        "K": "",
+        "pole_distance": "1.6646776207707144"
+      },
+      "necessary_condition_metadata": {
+        "max_frames_in_utc_day": 30,
+        "upper_bound_source_qualified_visits": 44,
+        "frozen_K_matching_available": false,
+        "source_visit_wavelengths_measured": false
+      }
+    }
+  ]
+}

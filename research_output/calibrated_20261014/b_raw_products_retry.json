@@ -1,0 +1,17 @@
+{
+  "request": {
+    "service": "Mast.Caom.Products",
+    "format": "json",
+    "params": {
+      "obsid": 252834985
+    },
+    "pagesize": 100,
+    "page": 1
+  },
+  "started_utc": "2026-10-14T04:19:15.216469+00:00",
+  "bytes": 0,
+  "freeze_commit": "a44f756",
+  "scope": "Metadata only; no raw detector body",
+  "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='mast.stsci.edu', port=443): Read timed out. (read timeout=25)\"))",
+  "completed_utc": "2026-10-14T04:19:43.679609+00:00"
+}

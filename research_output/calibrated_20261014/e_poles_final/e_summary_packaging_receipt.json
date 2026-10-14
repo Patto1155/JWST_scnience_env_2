@@ -1,0 +1,11 @@
+{
+  "source_uncompressed_path": "research_output/calibrated_20261014/e_poles_final/e_summary.json",
+  "compressed_path": "research_output/calibrated_20261014/e_poles_final/e_summary.json.gz",
+  "uncompressed_sha256": "a8804c246809d0f1e74ce0f4e9e8290ce3b99f5ac8ac031dbd14b37e747eacbf",
+  "compressed_sha256": "6229a480622adedd0dbfd4f776689cae1bea6f32f7d5b924ef4612066ec21e60",
+  "uncompressed_bytes": 1483922,
+  "compressed_bytes": 74091,
+  "gzip_mtime": 0,
+  "byte_exact_round_trip": true,
+  "acquisition_change": "none; this is repository packaging, not new data access or acquisition bytes"
+}

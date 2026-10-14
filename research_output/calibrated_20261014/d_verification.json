@@ -1,0 +1,106 @@
+{
+  "freeze_commit": "ba11dc147e726ca078a8363e63c34023a19bdfa5",
+  "session_amendment_commit": "35656592eeb56a58419bdbd86cc5579ca10819a5",
+  "freeze_committer_utc": "2026-10-14T06:13:43+02:00",
+  "first_new_array_access_utc": "2026-10-14T04:14:37.845628+00:00",
+  "same_photons_replay": true,
+  "maximum_target_flux_difference_njy": 1.8941454982268624e-07,
+  "maximum_control_flux_difference_njy": 2.1152154658921063e-06,
+  "all_original_null_decisions_equal": true,
+  "acceptance_tolerance_njy": 1e-05,
+  "replay_passed": true,
+  "input_products": [
+    {
+      "filename": "research_output/session_20261014/jw02736001001_02105_00004_nrcalong_i2d_compact.fits",
+      "bytes": 829440,
+      "sha256": "75f7459e8bfda48f6811e571ea5e843d262a1d9b852b9740707037acadb9652f",
+      "extensions": [
+        "PRIMARY",
+        "SCI",
+        "ERR",
+        "WHT"
+      ],
+      "native_dq_present": false
+    },
+    {
+      "filename": "research_output/session_20261014/jw02736001001_02105_00003_nrcalong_i2d_compact.fits",
+      "bytes": 829440,
+      "sha256": "0cfa77a6a58c6c7bbd9e8df80e129296a7d4379ce75b0d3f4b8c8652f790358b",
+      "extensions": [
+        "PRIMARY",
+        "SCI",
+        "ERR",
+        "WHT"
+      ],
+      "native_dq_present": false
+    }
+  ],
+  "injection": {
+    "status": "blocked prerequisite",
+    "planned_flux_njy": [
+      1000,
+      1500,
+      -1000
+    ],
+    "offset_east_north_arcsec": [
+      0,
+      0
+    ],
+    "positions": 279,
+    "images": 2,
+    "planned_image_trials": 1704,
+    "completed_image_trials": 0,
+    "unmet_prerequisites": [
+      "separately identified same-field unsaturated point source",
+      "held-out measured-PSF reduced chi2 <=2"
+    ],
+    "existing_core1030_is": "metadata-selected isolated bright core, not certified star/PSF",
+    "ring_planned_image_trials": 1674,
+    "patch_planned_image_trials": 30,
+    "patch_grid_amendment_commit": "e6c7eadd3d318167b5e046ff3b1d7aba72dac30f",
+    "patch_offset_east_north_arcsec": [
+      [
+        0,
+        0
+      ],
+      [
+        0.05,
+        0
+      ],
+      [
+        -0.05,
+        0
+      ],
+      [
+        0,
+        0.05
+      ],
+      [
+        0,
+        -0.05
+      ]
+    ],
+    "patch_trials_per_flux_offset_image": 1
+  },
+  "other_epoch": "metadata request timed out; no absence inference",
+  "focused_tests": {
+    "command": "python -m pytest -q tests/test_smacs_e2_run.py tests/test_smacs_e2_photometry.py tests/test_smacs_raw_preflight.py tests/test_smacs_raw_gate.py",
+    "passed": 20,
+    "failed": 0
+  },
+  "not_run": [
+    "measured-PSF injection recovery",
+    "other-epoch forced photometry",
+    "full-field astrometry replay",
+    "raw reduction repeat",
+    "astrophysical source identity/redshift",
+    "independent cross-lineage audit"
+  ],
+  "disk_free_after_bytes": 22821339136,
+  "compact_replay_artifact": {
+    "path": "research_output/calibrated_20261014/d_compact_replay.json.gz",
+    "uncompressed_sha256": "8881919bcbaff88283449f19d95dc63eaa3d980242f80b315605c282afdcf534",
+    "uncompressed_bytes": 735329,
+    "compression": "gzip, deterministic mtime=0"
+  }
+}

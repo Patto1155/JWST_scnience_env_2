@@ -1,0 +1,106 @@
+[QUALITY] Whole-tree lint: 0 new diagnostics; 736 recorded legacy occurrences
+[QUALITY] claim-ledger: /tmp/jwst-cal-env/bin/python scripts/lint_ledger.py
+[LEDGER][OK] Grades, evidence paths and promotion controls checked
+[QUALITY][OK] claim-ledger
+[QUALITY] mypy: /tmp/jwst-cal-env/bin/python -m mypy --follow-imports=silent --ignore-missing-imports --no-strict-optional --disable-error-code=import-untyped run_discovery.py discovery/batch_runner.py scripts/smoke_api.py
+Success: no issues found in 3 source files
+[QUALITY][OK] mypy
+[QUALITY] pytest: /tmp/jwst-cal-env/bin/python -m pytest -q --junitxml=/tmp/jwst-quality-udd1a5je/pytest.xml
+.......................................................................s [  8%]
+s....................................................................... [ 17%]
+........................................................................ [ 25%]
+........................................................................ [ 34%]
+.................................................s...................... [ 42%]
+........................................................................ [ 51%]
+........................................................................ [ 59%]
+........................................................................ [ 68%]
+........................................................................ [ 76%]
+........................................................................ [ 85%]
+........................................................................ [ 93%]
+....................................................                     [100%]
+=============================== warnings summary ===============================
+core_api/tests/test_allowed_tools.py: 2 warnings
+core_api/tests/test_api.py: 8 warnings
+core_api/tests/test_strict_run_validation.py: 6 warnings
+core_api/tests/test_tool_registry.py: 1 warning
+  /tmp/jwst-cal-env/lib/python3.12/site-packages/httpx/_client.py:690: DeprecationWarning: The 'app' shortcut is now deprecated. Use the explicit style 'transport=WSGITransport(app=...)' instead.
+    warnings.warn(message, DeprecationWarning)
+
+tests/test_deep_control_recovery.py::test_area_detection_can_fail_real_aperture_signal
+tests/test_deep_control_recovery.py::test_area_detection_can_fail_real_aperture_signal
+  /workspace/scratch/55a7a7ddb451/JWST_scnience_env_2/discovery/deep_control_recovery.py:146: PhotutilsDeprecationWarning: 'npixels' was deprecated in version 3.0 and will be removed in version 4.0. Use argument 'n_pixels' instead.
+    segment = detect_sources(values, threshold=DETECTION_SIGMA * sigma, npixels=npixels, mask=~valid)
+
+tests/test_deep_control_recovery.py::test_area_detection_can_fail_real_aperture_signal
+tests/test_image_photometry_rerun.py::test_detector_photometry_audit_chain_keeps_proposals_separate
+tests/test_observed_template_injections.py::test_min_connected_area_is_different_from_aperture_flux
+tests/test_observed_template_injections.py::test_centroid_shift_gives_nonrecovery_at_high_flux
+  /tmp/jwst-cal-env/lib/python3.12/site-packages/astropy/utils/decorators.py:620: PhotutilsDeprecationWarning: 'npixels' was deprecated in version 3.0 and will be removed in version 4.0. Use argument 'n_pixels' instead.
+    return function(*args, **kwargs)
+
+tests/test_deep_control_recovery.py::test_area_detection_can_fail_real_aperture_signal
+tests/test_empirical_imaging_controls.py::test_blind_mirrored_multiband_screen_finds_injected_negative_excursion
+tests/test_image_photometry_rerun.py::test_detector_photometry_audit_chain_keeps_proposals_separate
+tests/test_observed_template_injections.py::test_min_connected_area_is_different_from_aperture_flux
+tests/test_observed_template_injections.py::test_centroid_shift_gives_nonrecovery_at_high_flux
+  /tmp/jwst-cal-env/lib/python3.12/site-packages/astropy/utils/decorators.py:620: PhotutilsDeprecationWarning: 'progress_bar' was deprecated in version 3.1 and will be removed in version 4.0.
+    return function(*args, **kwargs)
+
+tests/test_deep_control_recovery.py::test_area_detection_can_fail_real_aperture_signal
+  /workspace/scratch/55a7a7ddb451/JWST_scnience_env_2/discovery/deep_control_recovery.py:154: PhotutilsDeprecationWarning: The 'xcentroid' attribute was deprecated in version 3.0. Use 'x_centroid' instead. It will be removed in version 4.0.
+    x, y = float(row.xcentroid), float(row.ycentroid)
+
+tests/test_deep_control_recovery.py::test_area_detection_can_fail_real_aperture_signal
+  /workspace/scratch/55a7a7ddb451/JWST_scnience_env_2/discovery/deep_control_recovery.py:154: PhotutilsDeprecationWarning: The 'ycentroid' attribute was deprecated in version 3.0. Use 'y_centroid' instead. It will be removed in version 4.0.
+    x, y = float(row.xcentroid), float(row.ycentroid)
+
+tests/test_deep_control_recovery.py::test_area_detection_can_fail_real_aperture_signal
+tests/test_observed_template_injections.py::test_min_connected_area_is_different_from_aperture_flux
+  /tmp/jwst-cal-env/lib/python3.12/site-packages/photutils/segmentation/detect.py:454: NoDetectionsWarning: No sources were found. Try lowering the threshold or n_pixels parameters.
+    warnings.warn(msg, NoDetectionsWarning)
+
+tests/test_external_astrometry.py::test_small_reference_sample_has_no_degenerate_confidence_interval
+  /workspace/scratch/55a7a7ddb451/JWST_scnience_env_2/tools/jwst/astrometry.py:39: PhotutilsDeprecationWarning: 'npixels' was deprecated in version 3.0 and will be removed in version 4.0. Use argument 'n_pixels' instead.
+    segments = detect_sources(
+
+tests/test_external_astrometry.py::test_small_reference_sample_has_no_degenerate_confidence_interval
+  /workspace/scratch/55a7a7ddb451/JWST_scnience_env_2/tools/jwst/astrometry.py:45: PhotutilsDeprecationWarning: The 'xcentroid' attribute was deprecated in version 3.0. Use 'x_centroid' instead. It will be removed in version 4.0.
+    points = np.column_stack([catalog.xcentroid, catalog.ycentroid]).astype(float)
+
+tests/test_external_astrometry.py::test_small_reference_sample_has_no_degenerate_confidence_interval
+  /workspace/scratch/55a7a7ddb451/JWST_scnience_env_2/tools/jwst/astrometry.py:45: PhotutilsDeprecationWarning: The 'ycentroid' attribute was deprecated in version 3.0. Use 'y_centroid' instead. It will be removed in version 4.0.
+    points = np.column_stack([catalog.xcentroid, catalog.ycentroid]).astype(float)
+
+tests/test_image_photometry_rerun.py::test_detector_photometry_audit_chain_keeps_proposals_separate
+  /workspace/scratch/55a7a7ddb451/JWST_scnience_env_2/tools/jwst/source_detection.py:99: PhotutilsDeprecationWarning: 'npixels' was deprecated in version 3.0 and will be removed in version 4.0. Use argument 'n_pixels' instead.
+    segmentation = photutils_detect_sources(
+
+tests/test_image_photometry_rerun.py::test_detector_photometry_audit_chain_keeps_proposals_separate
+  /workspace/scratch/55a7a7ddb451/JWST_scnience_env_2/tools/jwst/source_detection.py:181: PhotutilsDeprecationWarning: The 'xcentroid' attribute was deprecated in version 3.0. Use 'x_centroid' instead. It will be removed in version 4.0.
+    x = float(source.xcentroid)
+
+tests/test_image_photometry_rerun.py::test_detector_photometry_audit_chain_keeps_proposals_separate
+  /workspace/scratch/55a7a7ddb451/JWST_scnience_env_2/tools/jwst/source_detection.py:182: PhotutilsDeprecationWarning: The 'ycentroid' attribute was deprecated in version 3.0. Use 'y_centroid' instead. It will be removed in version 4.0.
+    y = float(source.ycentroid)
+
+tests/test_observed_template_injections.py::test_min_connected_area_is_different_from_aperture_flux
+tests/test_observed_template_injections.py::test_centroid_shift_gives_nonrecovery_at_high_flux
+  /workspace/scratch/55a7a7ddb451/JWST_scnience_env_2/discovery/observed_template_injections.py:210: PhotutilsDeprecationWarning: 'npixels' was deprecated in version 3.0 and will be removed in version 4.0. Use argument 'n_pixels' instead.
+    segment = detect_sources(values-median, threshold=5*sigma, npixels=min_pixels)
+
+tests/test_observed_template_injections.py::test_min_connected_area_is_different_from_aperture_flux
+tests/test_observed_template_injections.py::test_centroid_shift_gives_nonrecovery_at_high_flux
+  /workspace/scratch/55a7a7ddb451/JWST_scnience_env_2/discovery/observed_template_injections.py:216: PhotutilsDeprecationWarning: The 'xcentroid' attribute was deprecated in version 3.0. Use 'x_centroid' instead. It will be removed in version 4.0.
+    distances = np.array([np.hypot(float(r.xcentroid)-cx, float(r.ycentroid)-cy)*scale_arcsec for r in catalog])
+
+tests/test_observed_template_injections.py::test_min_connected_area_is_different_from_aperture_flux
+tests/test_observed_template_injections.py::test_centroid_shift_gives_nonrecovery_at_high_flux
+  /workspace/scratch/55a7a7ddb451/JWST_scnience_env_2/discovery/observed_template_injections.py:216: PhotutilsDeprecationWarning: The 'ycentroid' attribute was deprecated in version 3.0. Use 'y_centroid' instead. It will be removed in version 4.0.
+    distances = np.array([np.hypot(float(r.xcentroid)-cx, float(r.ycentroid)-cy)*scale_arcsec for r in catalog])
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+[QUALITY][OK] pytest
+[QUALITY] Pytest totals: 844 tests; 841 PASS; 0 failures; 0 errors; 3 SKIP (not PASS)
+[QUALITY][SKIP; NOT PASS] runner.tests.test_jwst_visual_tools.test_real_jwst_visual_tools_generate_catalog_evidence_and_overview: Local JWST archive not provisioned: /workspace/scratch/55a7a7ddb451/JWST_scnience_env_2/data/jwst/mastDownload/JWST/jw01180026001_03201_00003_nrca1/jw01180026001_03201_00003_nrca1_i2d.fits, /workspace/scratch/55a7a7ddb451/JWST_scnience_env_2/data/jwst/mastDownload/JWST/jw01180025001_07201_00002_nrca1/jw01180025001_07201_00002_nrca1_i2d.fits, /workspace/scratch/55a7a7ddb451/JWST_scnience_env_2/data/jwst/mastDownload/JWST/jw01180026001_09201_00003_nrcalong/jw01180026001_09201_00003_nrcalong_i2d.fits
+[QUALITY][SKIP; NOT PASS] runner.tests.test_jwst_visual_tools.test_build_universe_table_pipeline_returns_source_level_candidate_artifacts: Local JWST archive not provisioned: /workspace/scratch/55a7a7ddb451/JWST_scnience_env_2/data/jwst/mastDownload/JWST/jw01180026001_03201_00003_nrca1/jw01180026001_03201_00003_nrca1_i2d.fits, /workspace/scratch/55a7a7ddb451/JWST_scnience_env_2/data/jwst/mastDownload/JWST/jw01180025001_07201_00002_nrca1/jw01180025001_07201_00002_nrca1_i2d.fits, /workspace/scratch/55a7a7ddb451/JWST_scnience_env_2/data/jwst/mastDownload/JWST/jw01180026001_09201_00003_nrcalong/jw01180026001_09201_00003_nrcalong_i2d.fits
+[QUALITY][SKIP; NOT PASS] tests.test_cue_grid.test_author_numpy_forward_replay_on_actual_pinned_weights: set JWST_CUE_ARCHIVE to independently pinned Cue v0.1 archive

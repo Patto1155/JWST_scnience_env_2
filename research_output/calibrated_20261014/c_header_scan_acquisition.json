@@ -1,0 +1,11 @@
+{
+  "status": "interrupted_before_reduction",
+  "body_bytes": 4501504,
+  "charged_body_bytes": 4513028,
+  "requests_finished": 862,
+  "unresolved_request_reservations": [],
+  "reason": "SIGINT before reduction to coalesce whole CAL ranges within same frozen cap",
+  "first_data_access_utc": "2026-10-14T04:16:32.759966+00:00",
+  "freeze_commit": "43a2b84",
+  "remaining_bytes": 1604550200
+}
