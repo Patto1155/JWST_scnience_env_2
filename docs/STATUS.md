@@ -18,6 +18,16 @@ CI [-0.17879, -0.00811] does not. Field differences are not thereby proved
 to be entirely S/N differences. The frozen fitter is signed, without the
 positivity restriction assumed in the incoming handover.
 
+The 1,000 frozen real-background injections (200 at each true S/N5,7,10,15,25)
+do not follow either frozen control curve. At S/N5 and7 the absolute mean
+recoveries are approximately1.275 and1.088, above unity; the secondary
+baseline-subtracted responses are also upward. Two higher-S/N trials have
+extreme numerical outputs and are retained. This is a stability warning for
+allowed windows, not a calibration pass or evidence for catalogue selection.
+The control fails to reproduce H2's proposed downward response, but cannot
+exclude all fitter/prior mismatch. H1/H2 causal attribution stays unresolved;
+see [the diagnosis](FLUX_DEFICIT_DIAGNOSIS.md).
+
 Both per-row southern holdout predictions were committed before access.
 The first HEAD was rejected by the configured proxy CONNECT tunnel (403),
 as were the independent-line catalogue preflight and G235H metadata query.
