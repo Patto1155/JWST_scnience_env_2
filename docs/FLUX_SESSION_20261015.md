@@ -70,3 +70,25 @@ raw-known-answer chain or fitter repair; calibrated MoM extrapolation;
 independent astrophysical repeat; independent model-family audit. The complete
 C metered acquisition/real-residual runner remains unimplemented. All scientific
 freeze/access clocks are locally asserted, not independently timestamped.
+
+## Integrated validation and history
+
+The integrated quality gate exits0: **850 PASS, 3 exact allow-listed SKIP,
+0 failures/errors**, zero new lint diagnostics, mypy and ledger lint pass.
+The skips are the two absent native visual-runner archives and absent pinned
+Cue weights; they provide no pixel validation. The complete gate log and
+`lead_validation.json` are in `research_output/flux_deficit_20261015/`.
+The final scientific code matches the gated revision; subsequent edits are
+provenance/report artifacts only.
+
+`freeze_history.bundle` preserves all original worker branches and their
+prediction/secondary-amendment commits, alongside integrated history. Its
+prerequisite is PR85 head `685d457`. The bundle verifies and restores in a
+fresh bare repository seeded only with that prerequisite and ancestors.
+Lead checks verify unchanged frozen artifact bytes, strict commit-before-access
+ordering for A primary/secondary and B/C predictions, and unchanged operator
+hash. E has its own checked receipt. The regression replay differs from the
+original system-environment freeze by at most2.7e-15 after research-lock
+alignment. The injection process overlapped dependency alignment, so exact
+loaded injection dependency versions are not attested. The failed edge-window
+results therefore do not certify numerical stability or exact-lock replay.
