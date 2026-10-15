@@ -100,13 +100,32 @@ def run(prediction: Path, output: Path) -> None:
             "mad": float(np.median(abs(y - np.median(y)))),
             "sign_p": float(binomtest(int((y < 0).sum()), len(y)).pvalue),
         }
-        for law in ("inverse_snr", "inverse_snr_squared"):
+        indices = rng.integers(len(y), size=(20000, len(y)))
+        snr = np.array([r["snr"] for r in frozen["rows"]])
+        losses = []
+        for power, law in enumerate(("inverse_snr", "inverse_snr_squared"), start=1):
             residual = y - np.array([r[law] for r in frozen["rows"]])
-            sampled = rng.choice(residual, (20000, len(y)), replace=True).mean(axis=1)
+            sampled = residual[indices].mean(axis=1)
+            design = np.column_stack((np.ones(len(y)), snr ** (-power)))
+            coefficients = np.linalg.lstsq(design, y, rcond=None)[0]
+            bootstrap = np.array([
+                np.linalg.lstsq(design[ix], y[ix], rcond=None)[0] for ix in indices
+            ])
+            losses.append(residual**2)
             report["summary"][law] = {
                 "sse": float(residual @ residual), "residual_mean": float(residual.mean()),
                 "residual_mean_ci": np.quantile(sampled, [.025, .975]).tolist(),
+                "refit_intercept": float(coefficients[0]),
+                "refit_intercept_ci": np.quantile(bootstrap[:, 0], [.025, .975]).tolist(),
             }
+        difference = losses[0] - losses[1]
+        interval = np.quantile(difference[indices].mean(axis=1), [.025, .975])
+        report["summary"]["paired_mean_squared_error_difference"] = float(difference.mean())
+        report["summary"]["paired_difference_ci"] = interval.tolist()
+        report["summary"]["decisive_preference"] = (
+            "inverse_snr_squared" if interval[0] > 0 else
+            "inverse_snr" if interval[1] < 0 else "unresolved"
+        )
     else:
         report["verdict"] = "NOT_EVALUABLE: frozen minimum 15 usable paired log ratios unmet"
     output.write_text(json.dumps(report, indent=2) + "\n")
