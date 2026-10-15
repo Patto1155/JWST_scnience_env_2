@@ -1,0 +1,72 @@
+{
+  "field": {
+    "GN": {
+      "n": 14,
+      "median_ratio": 0.8549375805340902
+    },
+    "GS": {
+      "n": 15,
+      "median_ratio": 0.9218660295386449
+    }
+  },
+  "line": {
+    "HBaB_4861": {
+      "n": 5,
+      "median_ratio": 0.9218660295386449
+    },
+    "HBaG_4340": {
+      "n": 6,
+      "median_ratio": 0.8780632334784978
+    },
+    "O3_5007": {
+      "n": 18,
+      "median_ratio": 0.8889666218832453
+    }
+  },
+  "configuration": {
+    "g140m_f070lp": {
+      "n": 9,
+      "median_ratio": 0.8703650398368596
+    },
+    "g235m_f170lp": {
+      "n": 16,
+      "median_ratio": 0.9044823030325879
+    },
+    "g395m_f290lp": {
+      "n": 4,
+      "median_ratio": 0.9584771746697984
+    }
+  },
+  "fit_error_over_published_error_median": 1.0541486312752353,
+  "inputs_sha256": {
+    "research_output/calibrated_20261014/b_training_00_spectrum.npz": "642346e9d58c1f382d8e86bf4b3532d6f2a046964feae256c8fb276913c4fb48",
+    "research_output/calibrated_20261014/b_training_01_spectrum.npz": "a31e64572ff01df373e85e5b1c89f5f1285eda3092c89dbb65d79041202cfc69",
+    "research_output/calibrated_20261014/b_training_02_spectrum.npz": "796dee8b78bd42cf111c430c603ad56cee346ea075f337f22e124b1681d1f942",
+    "research_output/calibrated_20261014/b_training_03_spectrum.npz": "2f50a1a6d3645f76f1a26d493445235fae78db7b943abe3b45ddf8e7cfaefa2f",
+    "research_output/calibrated_20261014/b_training_04_spectrum.npz": "fc3fadebc33a5ccf7762576c3ef3f48f85468fb64c83455789deefc9990c7d0d",
+    "research_output/calibrated_20261014/b_training_05_spectrum.npz": "a3df4add93707131b3d4291c05ba5adb0c201b50e2adfea1bd575402a907ebb1",
+    "research_output/calibrated_20261014/b_training_06_spectrum.npz": "c9ab1ca269a3948dd5767d8e7bff693e537a9bcaefbf75c672922e10947545a6",
+    "research_output/calibrated_20261014/b_training_07_spectrum.npz": "2bb8a4819d381040544412af543f7ce41ac58bb38d080836a381733395145d74",
+    "research_output/calibrated_20261014/b_training_08_spectrum.npz": "f1483e9bd9847604333e44fc38f312fc891258b3ebbe2c4bb801158c30796ad6",
+    "research_output/calibrated_20261014/b_training_09_spectrum.npz": "e34846df88ebf867bd4d461fc1a3a8d48053b12068d7ec679c5cc7a8e9dee2bb",
+    "research_output/calibrated_20261014/b_training_10_spectrum.npz": "83247064aa0ef2d0384824bffc654b8071fa6899a341a86198d740c724972a30",
+    "research_output/calibrated_20261014/b_training_11_spectrum.npz": "68d8a735c5ec418d41d6aea1628fd9ee67f3af4df02473a49ac0f6bb638f19af",
+    "research_output/calibrated_20261014/b_training_12_spectrum.npz": "168a6ff4438eb0d46b7abc3e77985587718bb32786c4e252ba76da66b73638b2",
+    "research_output/calibrated_20261014/b_training_13_spectrum.npz": "e93348918bf200ec502722cc0aef341cdec9cfe730b77f65493405f4b99cd02e",
+    "research_output/calibrated_20261014/b_training_14_spectrum.npz": "7f3057656ee014f9fb3be708d85fab7a8aac834d1de7b6197c90d6ec9a63413d",
+    "research_output/calibrated_20261014/b_northern_confirmation_00_spectrum.npz": "9c89cc8831f5fac0d870c54bf169a540cb5931fa80488395d01f7010c29be2bf",
+    "research_output/calibrated_20261014/b_northern_confirmation_01_spectrum.npz": "374e8c1f66d6be0f2e431a41b7b128c2952c8af8503a52fafe4e14466906a833",
+    "research_output/calibrated_20261014/b_northern_confirmation_02_spectrum.npz": "651a280440f66b6da8e6970874630dbecbf401dbde175c7922d4834ce6da3dc3",
+    "research_output/calibrated_20261014/b_northern_confirmation_03_spectrum.npz": "9457ef69b1a749d25dfacc16933c2e0e36b49a189f4d631902dd92a8c5cc2024",
+    "research_output/calibrated_20261014/b_northern_confirmation_04_spectrum.npz": "62d362bc5738a8ce7b845c8d4c5127ef45dfd941beeaccfa4adddc6ef6c89e74",
+    "research_output/calibrated_20261014/b_northern_confirmation_05_spectrum.npz": "cdd3163efbe2ae31d7e604aae6739063284f6e0a25af9e107af3be0f67c6d77f",
+    "research_output/calibrated_20261014/b_northern_confirmation_06_spectrum.npz": "14843c78918b78e01e9bf0ddd83c1e29ce5751f96397902ee7beb7758a5a11d0",
+    "research_output/calibrated_20261014/b_northern_confirmation_07_spectrum.npz": "9fbf7ff5610dba03772b9b2f1cb056d0151bcdd5907b1db916162493a9c7bfa0",
+    "research_output/calibrated_20261014/b_northern_confirmation_08_spectrum.npz": "f3e30288155b74f712ef34b3edd61ae82ba97826f263aa24737feeb27fb66f02",
+    "research_output/calibrated_20261014/b_northern_confirmation_09_spectrum.npz": "a48c46b5b7b15e4bf978ad1ec1d423dc9cfa39eefd11c5bd74d0193f2ae9d2c6",
+    "research_output/calibrated_20261014/b_northern_confirmation_10_spectrum.npz": "385cfb72f3a44ae592373fac47d8a25d0e2eb9a556cb9b6539339a80d88d9842",
+    "research_output/calibrated_20261014/b_northern_confirmation_11_spectrum.npz": "54fcdd51189af1a62dbe324ad713caa3dc55db0886877f8bb6bedbcb60ba65cf",
+    "research_output/calibrated_20261014/b_northern_confirmation_12_spectrum.npz": "51279d6423218fcc9201d7dcf5a1bd7a9ba4fff76e13194d6f48f0766bb8c75f",
+    "research_output/calibrated_20261014/b_northern_confirmation_14_spectrum.npz": "fa75d8430384b0d9d271c35c4deea191d54391b24b0dd4a5ec00552fc6736d64"
+  }
+}
