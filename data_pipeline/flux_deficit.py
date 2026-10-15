@@ -115,6 +115,7 @@ def inject() -> None:
         raise RuntimeError('No windows satisfy frozen definition; do not relax')
     rng = np.random.default_rng(SEED)
     trials = []
+    baselines = {}
     start = datetime.now(timezone.utc).isoformat()
     for snr in protocol['bins_true_snr']:
         for _ in range(protocol['trials_per_bin']):
@@ -132,15 +133,22 @@ def inject() -> None:
             err = float(np.sqrt(np.linalg.inv(design.T@design)[2, 2]))
             flux = snr * err
             table['FLUX'] += flux * profile * 1e-20
+            baseline_key = (row['compact'], center)
+            if baseline_key not in baselines:
+                baseline_table = dict(table, FLUX=table['FLUX'] - flux * profile * 1e-20)
+                baselines[baseline_key] = marginal_fit(baseline_table, center*10000, 0)['flux_1e20']
+            baseline = baselines[baseline_key]
             result = marginal_fit(table, center*10000, 0)
             trials.append(dict(unique_id=row['unique_id'], compact=row['compact'],
                                center=center, true_snr=snr, injected=flux,
-                               recovered=result['flux_1e20'], ratio=result['flux_1e20']/flux))
+                               recovered=result['flux_1e20'], ratio=result['flux_1e20']/flux,
+                               baseline=baseline, increment_ratio=(result['flux_1e20']-baseline)/flux))
         print(f'completed {snr}: {len(trials)} trials', flush=True)
     summary = []
     for snr in protocol['bins_true_snr']:
         subset = [t for t in trials if t['true_snr'] == snr]
         summary.append(dict(true_snr=snr, **injection_summary(subset),
+                            increment=injection_summary([dict(t, ratio=t['increment_ratio']) for t in subset]),
                             h2_prediction=float(np.exp(frozen['models']['1']['a']
                                                 + frozen['models']['1']['b']/snr))))
     pooled = injection_summary([t for t in trials if t['true_snr'] in [5, 7]])
@@ -148,6 +156,7 @@ def inject() -> None:
                   frozen_sha256=hashlib.sha256(frozen_path.read_bytes()).hexdigest(),
                   operator_sha256=hashlib.sha256((ROOT / 'data_pipeline/calibrated_population.py')
                                                 .read_bytes()).hexdigest(),
+                  access_note='Baseline and injection outcomes first accessed after a_injection_amendment.json commit',
                   eligible_windows=len(choices), eligible_objects=len({c['row']['unique_id']
                                                                     for c in choices}),
                   bytes_downloaded=0, summary=summary, low_pooled=pooled, trials=trials)
