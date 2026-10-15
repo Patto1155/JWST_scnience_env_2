@@ -1,0 +1,75 @@
+{
+  "scope": "existing committed values only; no new measurements",
+  "units": "1e-20 erg s^-1 cm^-2",
+  "published_source": "data_sources/pilot/mom_z14_published_lines_v2.json",
+  "fresh_source": "research_output/calibrated_20261014/c_completed_receipt.json",
+  "rows": [
+    {
+      "line": "NIV",
+      "published_label": "N IV] 1487",
+      "published_flux": 54.3,
+      "published_error_plus": 16.1,
+      "published_error_minus": 15.5,
+      "published_reported_snr": 3.4,
+      "published_snr_using_average_error": 3.4367088607594933,
+      "fresh_flux": 25.59368504585915,
+      "fresh_error": 12.268431120358287,
+      "fresh_snr": 2.0861416422992245,
+      "fresh_to_published_ratio": 0.47133858279666946
+    },
+    {
+      "line": "CIV",
+      "published_label": "C IV 1548,1551",
+      "published_flux": 44.0,
+      "published_error_plus": 12.8,
+      "published_error_minus": 12.8,
+      "published_reported_snr": 3.4,
+      "published_snr_using_average_error": 3.4375,
+      "fresh_flux": 22.730390367749617,
+      "fresh_error": 10.411140092919945,
+      "fresh_snr": 2.1832758146446736,
+      "fresh_to_published_ratio": 0.5165997810852185
+    },
+    {
+      "line": "HeII_OIII",
+      "published_label": "He II 1640 + O III] 1661,1666",
+      "published_flux": 45.3,
+      "published_error_plus": 15.6,
+      "published_error_minus": 14.8,
+      "published_reported_snr": 3.0,
+      "published_snr_using_average_error": 2.9802631578947367,
+      "fresh_flux": 18.159988940448862,
+      "fresh_error": 11.980012646676311,
+      "fresh_snr": 1.515857242895908,
+      "fresh_to_published_ratio": 0.40088275806730383
+    },
+    {
+      "line": "NIII",
+      "published_label": "N III] 1747-1754",
+      "published_flux": 25.2,
+      "published_error_plus": 9.9,
+      "published_error_minus": 8.9,
+      "published_reported_snr": 2.7,
+      "published_snr_using_average_error": 2.680851063829787,
+      "fresh_flux": 6.225679644300926,
+      "fresh_error": 7.715453354211157,
+      "fresh_snr": 0.8069104119335903,
+      "fresh_to_published_ratio": 0.24705077953575103
+    },
+    {
+      "line": "CIII",
+      "published_label": "C III] 1907,1909",
+      "published_flux": 21.5,
+      "published_error_plus": 7.7,
+      "published_error_minus": 7.6,
+      "published_reported_snr": 2.8,
+      "published_snr_using_average_error": 2.810457516339869,
+      "fresh_flux": 13.179137575904518,
+      "fresh_error": 6.646497950383893,
+      "fresh_snr": 1.982869426017548,
+      "fresh_to_published_ratio": 0.6129831430653264
+    }
+  ],
+  "covariate_warning": "A law uses published flux/error. Fresh fit/error is a distinct SNR. Published asymmetric errors have no unique Gaussian SNR; report quoted SNR and average-error sensitivity. All below training SNR5\u201330. N IV published label1487 versus fresh total-doublet contract also limits exact comparison.",
+  "statistical_warning": "Shared photons and different extraction/model assumptions; no quadrature significance inferred. No A-law correction justified by this table."
+}

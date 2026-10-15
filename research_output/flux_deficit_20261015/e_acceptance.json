@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "checks": [
+    "JSON parse",
+    "response SHA256",
+    "freeze timestamp before sole metadata query",
+    "science bytes zero",
+    "no archive-absence inference",
+    "metadata body cap",
+    "free-disk floor",
+    "two compact SHA256 identities",
+    "five ratio and published-SNR arithmetic checks",
+    "all report evidence links exist after self receipt creation"
+  ],
+  "freeze_committed_utc": "2026-10-15T04:58:32Z",
+  "access_started_utc": "2026-10-15T04:58:48.774362+00:00",
+  "verified_local_compact_bytes": 1658880,
+  "not_run": [
+    "full quality gate",
+    "new science outcomes",
+    "PSF fit/injection",
+    "G235H accession/measurement",
+    "holdout",
+    "independent cross-lineage review"
+  ]
+}
