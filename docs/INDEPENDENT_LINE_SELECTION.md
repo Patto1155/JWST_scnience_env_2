@@ -92,3 +92,45 @@ no alternate hosts, proxy bypass, mirrors or transport retries.
 The committed implementation covers selection, catalog normalization, numerical
 summary and synthetic covariance sensitivity. Acquisition integration and real
 residual-correlation estimation require data and remain unexecuted if blocked.
+
+## Executed disposition
+
+Design commit `17230512a09621acbb0d6d16f546fba6eaa08313` preceded the sole
+new access attempt: canonical catalog HEAD at 2026-10-15T04:58:37.522831 UTC.
+The configured proxy rejected CONNECT with **403 Forbidden**. The receipt is
+`research_output/flux_deficit_20261015/c_access_receipt.json`. No catalog GET,
+spectral HEAD/GET, retries, alternate hosts or proxy bypass occurred. Received
+science/catalog bytes are **0 / 1,073,741,824**; HEAD body bytes are zero.
+Free disk at the attempt was 31,192,768,512 bytes. No raw bodies were created.
+This is an acquisition block, not a null result or a test of H1/H2. It does not
+establish that these public products are unavailable outside this environment.
+
+A's supplied final numerical models are a=-0.042276324615788625,
+b=-0.9613016545191906, SD=0.16600980935009327 for 1/SNR, and
+a=-0.09227421137943417, b=-3.8598149358189695,
+SD=0.16731659952307262 for 1/SNR². These give prospective H1 constant
+ratio exp(a)=0.9586 (first model), conditional on selection covariance and
+population mix. They have not been evaluated against C data.
+
+The executable synthetic grid is saved in `c_synthetic_covariance.json`:
+15 cells with 10,000 simulated objects each. It is a declared sensitivity
+model with independent synthetic refit noise, not a faithful model of the
+shared-photon catalog/refit experiment and not an empirical independence test.
+Five focused selection/summary tests plus four existing population tests pass;
+Ruff passes for the new module/tests. CLI:
+
+```
+python -m data_pipeline.independent_line_selection --synthetic --output /tmp/c_synthetic.json
+python -m data_pipeline.independent_line_selection --catalog GS_catalog.fits --old-draw research_output/calibrated_20261014/b_frozen_draw.json --output /tmp/c_draw.json
+python -m pytest tests/test_independent_line_selection.py tests/test_calibrated_population.py -q
+python -m ruff check data_pipeline/independent_line_selection.py tests/test_independent_line_selection.py
+```
+
+Not run / not verified: fresh 30-row selection, per-row prediction table,
+science acquisition/reduction, spectral identity/units verification, real
+paired measurements, real residual correlation, actual covariance-calibrated
+H1/H2 discrimination, full quality gate, raw calibration or independent audit.
+The source-selection and numerical helper code is tested, but a complete
+metered C acquisition/real-residual runner is not implemented or exercised.
+State files were not modified. Frozen southern spectra and GOODS-N outcome
+inputs were not opened by this arm. No grade change is proposed from a blocked comparison.

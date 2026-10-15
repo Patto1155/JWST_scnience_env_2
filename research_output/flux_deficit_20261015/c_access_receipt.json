@@ -1,0 +1,16 @@
+{
+  "arm": "C",
+  "freeze_commit": "17230512a09621acbb0d6d16f546fba6eaa08313",
+  "started_utc": "2026-10-15T04:58:37.522831+00:00",
+  "method": "HEAD",
+  "url": "https://archive.stsci.edu/hlsps/jades/dr4/goods-s/catalogs/hlsp_jades_jwst_nirspec_goods-s_clear-prism-gratings-line-fluxes_v1.2_catalog.fits",
+  "science_catalog_bytes": 0,
+  "head_body_bytes": 0,
+  "disk_free_bytes": 31192768512,
+  "network_policy_sha256": "30f2ede0cbbeec2304389d374bab11bf356191d6899a460ad332815774b844e2",
+  "error": "HTTPSConnectionPool(host='archive.stsci.edu', port=443): Max retries exceeded with url: /hlsps/jades/dr4/goods-s/catalogs/hlsp_jades_jwst_nirspec_goods-s_clear-prism-gratings-line-fluxes_v1.2_catalog.fits (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+  "disposition": "BLOCKED_NETWORK_ACCESS",
+  "completed_utc": "2026-10-15T04:58:37.543544+00:00",
+  "get_attempts": 0,
+  "raw_bodies_created": false
+}
