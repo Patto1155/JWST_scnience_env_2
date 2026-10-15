@@ -1,0 +1,14 @@
+{
+  "arm": "C",
+  "seed": 20261015,
+  "n": 30,
+  "field": "GS",
+  "selection": "different line SNR 5..30; no target SNR cut",
+  "excluded": "all unique_id values in both b_frozen_draw halves; all GN",
+  "target_spectra_opened": false,
+  "catalogue_url": "https://archive.stsci.edu/hlsps/jades/dr4/goods-s/catalogs/hlsp_jades_jwst_nirspec_goods-s_clear-prism-gratings-line-fluxes_v1.2_catalog.fits",
+  "cap_bytes": 1073741824,
+  "reserve_free_bytes": 5000000000,
+  "A_incorporation": "copy final committed coefficient/scatter artifact verbatim with source SHA and SHA256 before spectral access; no coefficients no spectra",
+  "protocol": "docs/INDEPENDENT_LINE_SELECTION.md"
+}
