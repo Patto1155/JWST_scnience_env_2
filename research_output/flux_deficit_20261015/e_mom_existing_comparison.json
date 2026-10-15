@@ -15,7 +15,19 @@
       "fresh_flux": 25.59368504585915,
       "fresh_error": 12.268431120358287,
       "fresh_snr": 2.0861416422992245,
-      "fresh_to_published_ratio": 0.47133858279666946
+      "fresh_to_published_ratio": 0.47133858279666946,
+      "extrapolated_ratios": {
+        "1": {
+          "using_average_error_snr": 0.7247039216336689,
+          "using_reported_snr": 0.7225186072436506,
+          "observed_logratio_minus_curve": -0.43018649228803724
+        },
+        "2": {
+          "using_average_error_snr": 0.657655907962999,
+          "using_reported_snr": 0.653006473048949,
+          "observed_logratio_minus_curve": -0.33310516311839633
+        }
+      }
     },
     {
       "line": "CIV",
@@ -28,7 +40,19 @@
       "fresh_flux": 22.730390367749617,
       "fresh_error": 10.411140092919945,
       "fresh_snr": 2.1832758146446736,
-      "fresh_to_published_ratio": 0.5165997810852185
+      "fresh_to_published_ratio": 0.5165997810852185,
+      "extrapolated_ratios": {
+        "1": {
+          "using_average_error_snr": 0.7247505770164655,
+          "using_reported_snr": 0.7225186072436506,
+          "observed_logratio_minus_curve": -0.33855910705982273
+        },
+        "2": {
+          "using_average_error_snr": 0.6577548321796042,
+          "using_reported_snr": 0.653006473048949,
+          "observed_logratio_minus_curve": -0.24156380952170836
+        }
+      }
     },
     {
       "line": "HeII_OIII",
@@ -41,7 +65,19 @@
       "fresh_flux": 18.159988940448862,
       "fresh_error": 11.980012646676311,
       "fresh_snr": 1.515857242895908,
-      "fresh_to_published_ratio": 0.40088275806730383
+      "fresh_to_published_ratio": 0.40088275806730383,
+      "extrapolated_ratios": {
+        "1": {
+          "using_average_error_snr": 0.6943130856369613,
+          "using_reported_snr": 0.6957880370803874,
+          "observed_logratio_minus_curve": -0.5492539801590797
+        },
+        "2": {
+          "using_average_error_snr": 0.5904668865106708,
+          "using_reported_snr": 0.5938416737946186,
+          "observed_logratio_minus_curve": -0.3872445463697768
+        }
+      }
     },
     {
       "line": "NIII",
@@ -54,7 +90,19 @@
       "fresh_flux": 6.225679644300926,
       "fresh_error": 7.715453354211157,
       "fresh_snr": 0.8069104119335903,
-      "fresh_to_published_ratio": 0.24705077953575103
+      "fresh_to_published_ratio": 0.24705077953575103,
+      "extrapolated_ratios": {
+        "1": {
+          "using_average_error_snr": 0.6697457605291047,
+          "using_reported_snr": 0.6714511760572819,
+          "observed_logratio_minus_curve": -0.9973042778110421
+        },
+        "2": {
+          "using_average_error_snr": 0.5329476327369242,
+          "using_reported_snr": 0.5370085403593868,
+          "observed_logratio_minus_curve": -0.7688292686512352
+        }
+      }
     },
     {
       "line": "CIII",
@@ -67,9 +115,69 @@
       "fresh_flux": 13.179137575904518,
       "fresh_error": 6.646497950383893,
       "fresh_snr": 1.982869426017548,
-      "fresh_to_published_ratio": 0.6129831430653264
+      "fresh_to_published_ratio": 0.6129831430653264,
+      "extrapolated_ratios": {
+        "1": {
+          "using_average_error_snr": 0.6809129097739693,
+          "using_reported_snr": 0.6800436143716649,
+          "observed_logratio_minus_curve": -0.10509697569662801
+        },
+        "2": {
+          "using_average_error_snr": 0.5593719962207948,
+          "using_reported_snr": 0.5573301169584528,
+          "observed_logratio_minus_curve": 0.09152271735024459
+        }
+      }
     }
   ],
   "covariate_warning": "A law uses published flux/error. Fresh fit/error is a distinct SNR. Published asymmetric errors have no unique Gaussian SNR; report quoted SNR and average-error sensitivity. All below training SNR5\u201330. N IV published label1487 versus fresh total-doublet contract also limits exact comparison.",
-  "statistical_warning": "Shared photons and different extraction/model assumptions; no quadrature significance inferred. No A-law correction justified by this table."
+  "statistical_warning": "Shared photons and different extraction/model assumptions; no quadrature significance inferred. No A-law correction justified by this table.",
+  "extrapolation": {
+    "coefficient_source": "research_output/flux_deficit_20261015/a_frozen.json",
+    "coefficient_source_sha256": "b5d76e006fded5b3e3773afaedc5ae47b6687e0af83ab1a5f22c20cffbd60427",
+    "models": {
+      "1": {
+        "a": -0.042276324615788625,
+        "b": -0.9613016545191906,
+        "ci95": [
+          [
+            -0.17408035065504981,
+            0.089233765279427
+          ],
+          [
+            -2.3556187951989465,
+            0.3382913446653383
+          ]
+        ],
+        "residual_sd": 0.16600980935009327
+      },
+      "2": {
+        "a": -0.09227421137943417,
+        "b": -3.8598149358189695,
+        "ci95": [
+          [
+            -0.17878753105597645,
+            -0.008111615242724409
+          ],
+          [
+            -10.886108087417552,
+            2.251972698446331
+          ]
+        ],
+        "residual_sd": 0.16731659952307262
+      }
+    },
+    "formula": "predicted ratio=exp(a+b/published_SNR**power)",
+    "primary_snr_convention": "published flux / average(error_plus,error_minus)",
+    "sensitivity_snr_convention": "published reported SNR",
+    "training_eligibility_snr": [
+      5,
+      30
+    ],
+    "training_achieved_snr": [
+      5.286385850629637,
+      27.720639287900305
+    ],
+    "interpretation": "Numerical extrapolation only. Neither model is validated at MoM SNR or across its different catalogue selection, source LSF and operator; training scatter is not a transported prediction interval. H1/H2 unresolved without B/C. No published-consistency claim or flux correction."
+  }
 }

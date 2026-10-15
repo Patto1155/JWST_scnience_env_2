@@ -4,8 +4,8 @@ G235H remains paused because current metadata access is blocked; this does not
 establish that public G235H exposures are absent. The SMACS empirical-PSF attempt
 closes with unmet identity, saturation and held-out calibration prerequisites.
 No science data were acquired, no new outcome arrays opened and no state files
-edited. Root owns the raw-known-answer response and MoM S/N-law extrapolation
-once the diagnostic verdict and fitted laws are available.
+edited. The raw-known-answer response remains conditional on root's H1/H2 verdict;
+the numerical MoM extrapolation below does not resolve that verdict.
 
 ## Freeze, access and resources
 
@@ -65,6 +65,33 @@ published NIV1487 label and fresh total-doublet contract also differ. An
 extrapolated curve cannot certify published consistency or justify a correction
 without accounting for scatter, shared photons and different operators/LSFs.
 
+## Numerical MoM extrapolation of both frozen laws
+
+A froze `log ratio = -0.0422763 - 0.961302/SNR` and
+`log ratio = -0.0922742 - 3.859815/SNR²`. Using each line's published
+flux divided by its average asymmetric error gives:
+
+| Line | Existing fresh/published | 1/SNR curve | 1/SNR² curve |
+| --- | ---: | ---: | ---: |
+| NIV | 0.471 | 0.725 | 0.658 |
+| CIV | 0.517 | 0.725 | 0.658 |
+| HeII_OIII | 0.401 | 0.694 | 0.590 |
+| NIII | 0.247 | 0.670 | 0.533 |
+| CIII | 0.613 | 0.681 | 0.559 |
+
+This is arithmetic beyond the trained domain, not a calibrated prediction.
+Using the paper's rounded reported S/N values instead gives ranges0.672–0.722
+for1/SNR and0.537–0.653 for1/SNR²; both conventions are retained per line in the
+comparison JSON, together with coefficients and their source SHA256. The
+fresh ratios are below both curves except CIII under1/SNR². Neither that
+residual pattern nor the training log-scatter≈0.166–0.167 supplies a valid MoM
+consistency test: source selection, S/N range, extraction and LSF transport
+remain unverified. In particular, the curve does not establish that the
+published fluxes are consistent with this fresh fit, identify H1 versus H2 or
+authorize correcting either estimator. B/C remain blocked; raw known-answer
+calibration remains unmet. No fitter repair or raw replay is justified by an
+unresolved diagnosis.
+
 ## SMACS empirical PSF
 
 The retained same-frame inputs are the two compact F444W products from program
@@ -105,5 +132,5 @@ was run by this arm; integration belongs to root.
 Not run: exhaustive current archive inventory; verified G235H programme/product
 accession; new science downloads; G235H measurement; native SMACS DQ checks;
 stellar crossmatch; PSF construction, validation or injection recovery; new-epoch
-photometry; raw known-answer replay/fitter repair; A-law extrapolation; any
+photometry; raw known-answer replay/fitter repair; calibrated A-law transport; any
 holdout access; scientific grade changes or independent cross-lineage audit.
