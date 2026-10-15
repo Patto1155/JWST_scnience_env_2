@@ -1,0 +1,47 @@
+{
+  "chronology_checks": [
+    {
+      "original_commit": "e2bc0c1",
+      "path": "research_output/flux_deficit_20261015/a_frozen.json",
+      "freeze_time": "2026-10-15T04:58:23Z",
+      "access_time": "2026-10-15T04:59:10.095499+00:00",
+      "pass_check": true
+    },
+    {
+      "original_commit": "0584b24",
+      "path": "research_output/flux_deficit_20261015/a_injection_amendment.json",
+      "freeze_time": "2026-10-15T04:59:06Z",
+      "access_time": "2026-10-15T04:59:10.095499+00:00",
+      "pass_check": true
+    },
+    {
+      "original_commit": "de5f430",
+      "path": "research_output/flux_deficit_20261015/b_prediction.json",
+      "freeze_time": "2026-10-15T04:59:12Z",
+      "access_time": "2026-10-15T04:59:22.828768+00:00",
+      "pass_check": true
+    },
+    {
+      "original_commit": "1723051",
+      "path": "research_output/flux_deficit_20261015/c_frozen_design.json",
+      "freeze_time": "2026-10-15T04:58:30Z",
+      "access_time": "2026-10-15T04:58:37.522831+00:00",
+      "pass_check": true
+    }
+  ],
+  "original_agent_branches_preserved_in_bundle": true,
+  "bundle_restored_in_new_bare_repo_with_only_base_prerequisites": true,
+  "operator_unchanged": true,
+  "injection_trials": 1000,
+  "successful_southern_opens": 0,
+  "science_catalog_metadata_body_bytes": 0,
+  "disk_free_bytes": 30222061568,
+  "quality_gate": {
+    "exit_code": 0,
+    "passed": 850,
+    "allowlisted_skips": 3
+  },
+  "quality_log_sha256": "eda2f8d1aa9e5e80d5667b51590a998d1653bbfd009a4730b07d2ccf09791143",
+  "dependency_provenance": "Final gate uses research lock. Injection process overlaps dependency alignment; exact injection loaded package versions not attested. See diagnosis.",
+  "timestamp_limit": "All clocks local and self-asserted."
+}

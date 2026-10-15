@@ -1,6 +1,6 @@
 # Methods note: controls that limited inference in an automated public-data campaign
 
-Draft, 14 October 2026. This note synthesizes existing repository evidence; it
+Draft, 15 October 2026. This note synthesizes existing repository evidence; it
 introduces no new measurements, data access or scientific grade changes. The
 current scientific state is maintained separately in `docs/CLAIM_LEDGER.md`.
 
@@ -11,8 +11,8 @@ using public imaging, spectroscopy and time-series products. No new
 astrophysical discovery survived the repository's verification requirements.
 The recurring failures concerned incomplete selection, unmatched denominators,
 training/validation dependence, unverified measurement coverage and source
-calibration. Controls often invalidated an inference without disproving the
-underlying object's physical existence. We distinguish an acquisition or
+calibration, selection on noisy flux and post-hoc acceptance criteria. Controls
+often invalidated an inference without disproving the underlying object's physical existence. We distinguish an acquisition or
 eligibility stop from a statistical null, numerical reproducibility from
 independent observations, and ionic line constraints from elemental abundances.
 These distinctions preserve useful negative results while preventing software
@@ -35,18 +35,112 @@ rerun results of this note.
 
 ## Interpretation safeguards
 
-**Shared-photon comparisons.** For measurements made from shared photons,
-Var(measured − published) = Var(measured) + Var(published) − 2 Cov(measured,
+**Selection on noisy catalogue flux.** A catalogue-selected comparison is
+conditional on the selection measurement. In
+`data_pipeline/calibrated_population.py`, `select` requires
+5 <= published_flux / published_error <= 30 for the same line whose refit is
+compared to the catalogue. Near the lower cut, positive catalogue noise can
+admit intrinsically fainter lines. A second measurement that does not share all
+that noise can then lie below the selected catalogue flux even if its estimator
+is unbiased before selection. The upper cut also conditions the population.
+This is a possible explanation of an estimator discrepancy, not a demonstrated
+cause of the deficit documented in `docs/AUDIT_20261014.md`. Different extraction,
+prior, calibration or fitting choices remain alternatives. Field comparisons
+also require matched S/N and selection distributions before a field effect can
+be inferred.
+
+Write S = published_flux / published_error and R = refit / published_flux.
+An approximately fixed displacement of k catalogue error units gives
+R approximately 1 - k/S and hence log R approximately -k/S when k/S is small.
+Such a 1/S dependence can arise from selection near a threshold or from an
+estimator displacement; it is not a unique signature of either. In a different
+regime, Gaussian flux noise with fixed variance sigma² and a smooth local
+prior p(F) proportional to F^(-alpha) gives a leading posterior correction
+E[F | f] - f approximately -alpha sigma²/f. The corresponding fractional
+correction scales as 1/S². That expansion need not describe a threshold edge,
+heteroscedastic errors, a different flux distribution or partially correlated
+estimators. A chosen 1/S or 1/S² regression is therefore a descriptive model
+until its assumptions and frozen predictions survive independent controls.
+Because R and S both contain published_flux, plotting them against each other
+also creates mathematical coupling without identifying a physical cause.
+This note has not reproduced or fitted either S/N law.
+
+For other JADES users, record whether selection used the line being compared,
+the cuts, extraction and release versions, and the treatment of failed or
+negative fits. Selection on a different line can reduce the direct
+same-line selection-noise dependence, but intrinsic line correlations, shared
+continuum, calibration and spectral noise need not disappear. Test that
+independence rather than assuming it. Freeze the selection and prediction
+before reading new comparison spectra; retain nondetections and failures.
+Paired log ratios require positive fluxes, so any exclusion or alternative
+signed-flux statistic must also be declared before outcomes. Report source
+counts and use an object-level bootstrap when multiple lines share an object;
+report both SD and MAD and a sign test with its dependence assumptions.
+
+**Shared-photon comparisons, including partial sharing.** For measurements
+made from shared photons,
+Var(measured - published) = Var(measured) + Var(published) - 2 Cov(measured,
 published). Thus a pull normalized by the sum of variances need not follow
-N(0,1), even if both marginal error estimates are correct. A broad pull
-population may indicate underestimated uncertainty, operator mismatch,
-configuration effects or an inappropriate covariance model. Its width alone
-cannot uniquely attribute an error scale factor to the published catalogue.
-A narrow distribution can likewise reflect positive covariance rather than
-conservative errors. A population remeasurement is a valuable consistency
-check; independent-photon controls or validated covariance are required for
-an empirical coverage claim. This algebraic limitation supplements the
-shared-photon warning in `docs/KNOWN_ANSWER_TEST.md`.
+N(0,1), even if both marginal error estimates are correct. The released-1D
+operator and JADES catalogue use different extractions of partly shared
+observations: they are neither independent-photon measurements nor identical
+estimators. The covariance can therefore be intermediate and remains
+unmeasured here. Scatter close to a quadrature estimate would not establish
+zero covariance, since selection, estimator mismatch and calibration can also
+contribute. Do not use the quadrature denominator as an acceptance or coverage
+criterion for this comparison.
+
+A broad pull population may indicate underestimated uncertainty, operator
+mismatch, configuration effects or an inappropriate covariance model. Its
+width alone cannot uniquely attribute an error scale factor to the published
+catalogue. A narrow distribution can likewise reflect positive covariance
+rather than conservative errors. A population remeasurement is a valuable
+consistency check; independent-photon controls or validated covariance are
+required for an empirical coverage claim. Paired differences or ratios and
+object-level empirical scatter describe agreement without pretending that
+unknown covariance is zero. This limitation supplements the warning in
+`docs/KNOWN_ANSWER_TEST.md` and the conditional scope in
+`docs/CALIBRATED_KNOWN_ANSWER.md`.
+
+**Post-hoc acceptance criteria.** The historical known-answer comparison
+illustrates why an arithmetically correct recomputation does not repair a
+criterion chosen after seeing the answer. As recorded in
+`docs/AUDIT_20261014.md`, the combined-error discrepancy of 1.2094 used a
+post-hoc criterion and ignores shared-photon covariance. It supplies no passing
+evidence. Preserve the original design, result and verdict; date and label
+exploratory amendments, then commit a new selection, statistic, null,
+threshold, multiplicity treatment and numerical prediction before an
+independent test. An unused holdout cannot retroactively validate an amended
+interpretation of an already failed frozen test.
+
+**Injection recovery as an operator control.** Inject known fluxes across
+the relevant S/N range into predeclared line-free windows of committed spectra
+and run the unchanged estimator, with a frozen recovery prediction, sampling
+plan and acceptance criterion. Preserve signed recoveries and failed fits;
+record input-flux/S/N definitions, nuisance parameters, window eligibility and
+noise-generation assumptions. This tests the operator conditional on those
+spectra, profiles and noise assumptions. It does not by itself reproduce
+catalogue selection: that requires paired measurements with the appropriate
+noise correlation and the actual eligibility cut, or an independent-selection
+control. Recovery flat at unity would constrain the tested operator bias; it
+would not prove that selection caused the catalogue discrepancy. Biased
+recovery would implicate the tested estimator/background combination without
+uniquely identifying its mechanism.
+
+The current `marginal_fit` in `data_pipeline/calibrated_population.py` uses
+signed unconstrained Gaussian linear flux estimates at each of 41 offset by
+41 width nodes, followed by likelihood-weighted marginalization; it does
+**not** impose positive flux. The existing synthetic negative-line control in
+`tests/test_calibrated_population.py` explicitly checks signed recovery. A
+positivity-induced low-flux explanation therefore has a false premise for
+this operator. Marginalization, finite nuisance priors, continuum mismatch and
+non-Gaussian or correlated noise can still require testing. Injecting only
+the fitted Gaussian profile under the same diagonal Gaussian noise model can
+check numerical recovery while missing real profile, LSF or covariance
+mismatch. Adding lines to released spectra also does not recreate native
+source-Poisson transport, extraction/pathloss calibration or independent
+photons. This note supplies no new injection experiment or verdict between
+catalogue selection and operator bias.
 
 **Spectral and temporal coverage.** The SPHEREx source measurements documented
 in `docs/RESEARCH5_SPHEREX_REVIEW.md` assemble channels observed at different
@@ -75,7 +169,9 @@ not observed source-noise transport.
 Evidence-path existence and the promotion-contract linter were checked for
 this draft. Their success establishes document integrity, not correctness of
 the cited measurements. No new outcome data, raw reduction, catalogue draw,
-noise fit, injection recovery, independent epoch, literature search or GOODS-N
-holdout was accessed. No full quality gate, external-model audit or scientific
+noise fit, injection recovery, independent epoch, literature search or new
+heldout outcome was accessed. Existing narrative evidence, operator source and
+synthetic test source were read; no population JSON outcomes or spectral arrays
+were opened. No full quality gate, external-model audit or scientific
 promotion was performed by this note's author. Previously reported controls
 remain subject to independent review before merge.

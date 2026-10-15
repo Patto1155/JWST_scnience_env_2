@@ -1,0 +1,20 @@
+{
+  "freeze_commit": "c50515ce579b1db8a6b40998266636681066db24",
+  "started_utc": "2026-10-15T04:59:22.828768+00:00",
+  "opening_sessions": 1,
+  "cap_bytes": 322122547,
+  "body_bytes": 0,
+  "rows": [],
+  "receipts": [
+    {
+      "url": "https://archive.stsci.edu/hlsps/jades/dr4/goods-s/spectra/f170lp-g235m/goods-s-mediumjwst/hlsp_jades_jwst_nirspec_goods-s-mediumjwst-00176652_f170lp-g235m_v2.0_x1d.fits",
+      "started_utc": "2026-10-15T04:59:22.829024+00:00",
+      "body_bytes": 0,
+      "error": "HTTPSConnectionPool(host='archive.stsci.edu', port=443): Max retries exceeded with url: /hlsps/jades/dr4/goods-s/spectra/f170lp-g235m/goods-s-mediumjwst/hlsp_jades_jwst_nirspec_goods-s-mediumjwst-00176652_f170lp-g235m_v2.0_x1d.fits (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+      "raw_deleted": true,
+      "completed_utc": "2026-10-15T04:59:22.837032+00:00"
+    }
+  ],
+  "stop": "Access/preflight/measurement failure; no retries or replacements",
+  "verdict": "NOT_EVALUABLE: frozen minimum 15 usable paired log ratios unmet"
+}

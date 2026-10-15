@@ -1,0 +1,8 @@
+{
+  "source": "committed JSON only",
+  "maximum_absolute_numeric_difference": 2.6645352591003757e-15,
+  "rtol": 1e-12,
+  "atol": 1e-12,
+  "pass": true,
+  "note": "Original freeze used system numpy; replay uses repository research lock. No scientific conclusion changes."
+}

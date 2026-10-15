@@ -1,0 +1,36 @@
+{
+  "freeze_commit": "603e91154b862d13b0480748c312133964caac22",
+  "started_utc": "2026-10-15T04:58:48.774362+00:00",
+  "url": "https://mast.stsci.edu/api/v0/invoke?request=%7B%22service%22%3A%22Mast.Caom.Cone%22%2C%22params%22%3A%7B%22ra%22%3A150.0933255%2C%22dec%22%3A2.2731627%2C%22radius%22%3A0.001%7D%2C%22format%22%3A%22json%22%2C%22pagesize%22%3A1000%2C%22page%22%3A1%7D",
+  "request": {
+    "service": "Mast.Caom.Cone",
+    "params": {
+      "ra": 150.0933255,
+      "dec": 2.2731627,
+      "radius": 0.001
+    },
+    "format": "json",
+    "pagesize": 1000,
+    "page": 1
+  },
+  "max_body_bytes": 1000000,
+  "timeout_seconds": 20,
+  "science_bytes": 0,
+  "disk_free_before_bytes": 30888218624,
+  "policy": {
+    "version": 1,
+    "type": "restricted",
+    "mast_listed": false,
+    "vpn_configured": false
+  },
+  "archive_absence_established": false,
+  "error": "URLError: <urlopen error Tunnel connection failed: 403 Forbidden>",
+  "finished_utc": "2026-10-15T04:58:48.794018+00:00",
+  "response_bytes": 0,
+  "response_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_cap_exceeded": false,
+  "disk_free_after_bytes": 30888218624,
+  "response_path": "research_output/flux_deficit_20261015/e_mast_metadata.response",
+  "response_excerpt": "",
+  "status": "metadata_unavailable"
+}
