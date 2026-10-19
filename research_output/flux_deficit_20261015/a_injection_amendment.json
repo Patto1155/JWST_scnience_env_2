@@ -1,0 +1,6 @@
+{
+  "reason": "Lead requested baseline subtraction to distinguish real-background contamination from marginal-operator response before injection outcomes. Window counts only inspected so far; no marginal fits performed.",
+  "primary": "Original absolute recovery and frozen decision unchanged",
+  "secondary": "Also report F(background+line)-F(background), divided by known injected flux, and background flux. This nonlinear difference diagnoses operator response, not an independent noisy remeasurement. No noise is added beyond actual real background.",
+  "freeze_parent": "e2bc0c1"
+}

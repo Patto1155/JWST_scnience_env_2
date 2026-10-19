@@ -1,0 +1,329 @@
+{
+  "models": {
+    "1": {
+      "a": -0.042276324615788625,
+      "b": -0.9613016545191906,
+      "ci95": [
+        [
+          -0.17408035065504981,
+          0.089233765279427
+        ],
+        [
+          -2.3556187951989465,
+          0.3382913446653383
+        ]
+      ],
+      "residual_sd": 0.16600980935009327
+    },
+    "2": {
+      "a": -0.09227421137943417,
+      "b": -3.8598149358189695,
+      "ci95": [
+        [
+          -0.17878753105597645,
+          -0.008111615242724409
+        ],
+        [
+          -10.886108087417552,
+          2.251972698446331
+        ]
+      ],
+      "residual_sd": 0.16731659952307262
+    }
+  },
+  "n": 29,
+  "objects": 29,
+  "bootstrap_repetitions": 10000,
+  "seed": 20261015,
+  "snr_split": 8.099743777305193,
+  "low_median": 0.8359977166757623,
+  "high_median": 0.9105610054981053,
+  "median": 0.8891851614313405,
+  "median_ci95": [
+    0.8359977166757623,
+    0.916616345725675
+  ],
+  "log_sd": 0.17002993991481585,
+  "log_mad": 0.0783474583284144,
+  "sign_test_p": 0.002315700054168701,
+  "negative": 23,
+  "per_row": [
+    {
+      "unique_id": "goods-s-mediumjwst_86986",
+      "field": "GS",
+      "line": "O3_5007",
+      "configuration": "g235m_f170lp",
+      "snr": 17.509712313738646,
+      "ratio": 0.9093135020283405
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_35715",
+      "field": "GS",
+      "line": "O3_5007",
+      "configuration": "g235m_f170lp",
+      "snr": 20.699479620590076,
+      "ratio": 0.7108548802356067
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_10004929",
+      "field": "GS",
+      "line": "O3_5007",
+      "configuration": "g235m_f170lp",
+      "snr": 8.895469059769434,
+      "ratio": 0.9613047402836733
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_41833",
+      "field": "GS",
+      "line": "O3_5007",
+      "configuration": "g235m_f170lp",
+      "snr": 8.099743777305193,
+      "ratio": 0.9401424923156642
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_204125",
+      "field": "GS",
+      "line": "O3_5007",
+      "configuration": "g235m_f170lp",
+      "snr": 5.330573569564082,
+      "ratio": 0.5894099895856655
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_51236",
+      "field": "GS",
+      "line": "O3_5007",
+      "configuration": "g235m_f170lp",
+      "snr": 6.908328439651501,
+      "ratio": 0.5966578657596688
+    },
+    {
+      "unique_id": "goods-s-mediumhst_9569",
+      "field": "GS",
+      "line": "HBaB_4861",
+      "configuration": "g235m_f170lp",
+      "snr": 5.630039416431648,
+      "ratio": 1.0320210752212051
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_20046866",
+      "field": "GS",
+      "line": "O3_5007",
+      "configuration": "g395m_f290lp",
+      "snr": 20.75859351232164,
+      "ratio": 0.8891851614313405
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_187034",
+      "field": "GS",
+      "line": "HBaG_4340",
+      "configuration": "g235m_f170lp",
+      "snr": 7.043443887804354,
+      "ratio": 1.0465090956426335
+    },
+    {
+      "unique_id": "goods-s-mediumhst_12402",
+      "field": "GS",
+      "line": "O3_5007",
+      "configuration": "g235m_f170lp",
+      "snr": 18.851767611840906,
+      "ratio": 1.1014235162852204
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_192368",
+      "field": "GS",
+      "line": "HBaG_4340",
+      "configuration": "g140m_f070lp",
+      "snr": 7.789084994021061,
+      "ratio": 0.8221789203855645
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_41457",
+      "field": "GS",
+      "line": "HBaG_4340",
+      "configuration": "g235m_f170lp",
+      "snr": 7.590715251855264,
+      "ratio": 0.916616345725675
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_188720",
+      "field": "GS",
+      "line": "HBaB_4861",
+      "configuration": "g140m_f070lp",
+      "snr": 17.974403397084213,
+      "ratio": 0.9218660295386449
+    },
+    {
+      "unique_id": "goods-s-mediumhst_15353",
+      "field": "GS",
+      "line": "HBaG_4340",
+      "configuration": "g235m_f170lp",
+      "snr": 5.286385850629637,
+      "ratio": 1.1480491632149168
+    },
+    {
+      "unique_id": "goods-s-ultradeep_201127",
+      "field": "GS",
+      "line": "HBaB_4861",
+      "configuration": "g395m_f290lp",
+      "snr": 17.58747935594798,
+      "ratio": 1.0005511448898512
+    },
+    {
+      "unique_id": "goods-n-mediumjwst_78501",
+      "field": "GN",
+      "line": "HBaB_4861",
+      "configuration": "g140m_f070lp",
+      "snr": 6.8295750646574716,
+      "ratio": 0.6544013423036102
+    },
+    {
+      "unique_id": "goods-n-mediumjwst_53501",
+      "field": "GN",
+      "line": "HBaG_4340",
+      "configuration": "g235m_f170lp",
+      "snr": 8.594870574271383,
+      "ratio": 0.7421165692168643
+    },
+    {
+      "unique_id": "goods-n-mediumhst_33432",
+      "field": "GN",
+      "line": "HBaG_4340",
+      "configuration": "g140m_f070lp",
+      "snr": 5.770011873771379,
+      "ratio": 0.8395101212313206
+    },
+    {
+      "unique_id": "goods-n-mediumjwst_58825",
+      "field": "GN",
+      "line": "O3_5007",
+      "configuration": "g235m_f170lp",
+      "snr": 6.565908051864175,
+      "ratio": 0.7690751481426222
+    },
+    {
+      "unique_id": "goods-n-mediumjwst_28665",
+      "field": "GN",
+      "line": "O3_5007",
+      "configuration": "g140m_f070lp",
+      "snr": 11.557134773586904,
+      "ratio": 0.9118085089678699
+    },
+    {
+      "unique_id": "goods-n-mediumjwst_70366",
+      "field": "GN",
+      "line": "O3_5007",
+      "configuration": "g140m_f070lp",
+      "snr": 17.786313563346763,
+      "ratio": 0.8703650398368596
+    },
+    {
+      "unique_id": "goods-n-mediumhst_31873",
+      "field": "GN",
+      "line": "HBaB_4861",
+      "configuration": "g235m_f170lp",
+      "snr": 5.468304188793632,
+      "ratio": 0.8996511040368353
+    },
+    {
+      "unique_id": "goods-n-mediumjwst_25511",
+      "field": "GN",
+      "line": "O3_5007",
+      "configuration": "g235m_f170lp",
+      "snr": 6.131868270618438,
+      "ratio": 0.661237866591092
+    },
+    {
+      "unique_id": "goods-n-mediumjwst_12474",
+      "field": "GN",
+      "line": "O3_5007",
+      "configuration": "g235m_f170lp",
+      "snr": 6.68448275424367,
+      "ratio": 0.8359977166757623
+    },
+    {
+      "unique_id": "goods-n-mediumhst_24892",
+      "field": "GN",
+      "line": "O3_5007",
+      "configuration": "g140m_f070lp",
+      "snr": 10.141453393953105,
+      "ratio": 0.8889423680941579
+    },
+    {
+      "unique_id": "goods-n-mediumjwst_18473",
+      "field": "GN",
+      "line": "O3_5007",
+      "configuration": "g140m_f070lp",
+      "snr": 6.833758216178247,
+      "ratio": 0.7883278579720905
+    },
+    {
+      "unique_id": "goods-n-mediumjwst_5888",
+      "field": "GN",
+      "line": "O3_5007",
+      "configuration": "g395m_f290lp",
+      "snr": 21.831861183823538,
+      "ratio": 0.9164032044497457
+    },
+    {
+      "unique_id": "goods-n-mediumjwst_14101",
+      "field": "GN",
+      "line": "O3_5007",
+      "configuration": "g140m_f070lp",
+      "snr": 10.828671784529543,
+      "ratio": 0.8889908756723327
+    },
+    {
+      "unique_id": "goods-n-mediumjwst_8541",
+      "field": "GN",
+      "line": "O3_5007",
+      "configuration": "g395m_f290lp",
+      "snr": 27.720639287900305,
+      "ratio": 1.0017392586499698
+    }
+  ],
+  "injection_protocol": {
+    "zero_download_bytes": 0,
+    "seed": 20261015,
+    "bins_true_snr": [
+      5,
+      7,
+      10,
+      15,
+      25
+    ],
+    "trials_per_bin": 200,
+    "operator": "unchanged data_pipeline.calibrated_population.marginal_fit; signed flux",
+    "background": "unmodified real compact FLUX; no added independent noise",
+    "window_rule": "centers every 0.04um from min(w)+0.025 to max(w)-0.025; exclude centers within 0.04um of listed observed rest lines; require >=20 finite positive-error bins within 0.015um; select uniformly over all eligible windows with replacement; no flux cuts",
+    "excluded_rest_angstrom": [
+      1215.67,
+      1549,
+      1640,
+      1663,
+      1909,
+      2799,
+      3727,
+      3869,
+      3889,
+      3970,
+      4102,
+      4341.68,
+      4862.68,
+      4960.3,
+      5008.24,
+      5877,
+      6302,
+      6549,
+      6564.6,
+      6585,
+      6718,
+      6733
+    ],
+    "injected_model": "bin-integrated Gaussian sigma=1 median pixel; center at nominal minus 0.25 pixel (prior center); known integrated flux",
+    "true_snr_definition": "injected flux / fixed-template linear continuum-marginalized flux standard error, using local FLUX_ERR; not observed catalogue SNR",
+    "primary": "mean signed recovered/injected by true SNR; bootstrap over background objects",
+    "null": "flat ratio 1; H2 comparator exp(a+b/true_SNR) from frozen power1 fit",
+    "decision": "H2-like only if low-bin (5,7) pooled mean 95% object-bootstrap CI excludes 1 below and includes frozen H2 comparator; H1-compatible if low-bin CI includes 1 and excludes comparator; otherwise inconclusive. Single primary pooled contrast; per-bin CIs descriptive, no multiplicity promotion.",
+    "caveat": "empirically line-free means outside a declared strong-line mask, not guaranteed absent unknown emission/absorption; trials share backgrounds. Flat injection cannot establish H1 without B/C."
+  }
+}

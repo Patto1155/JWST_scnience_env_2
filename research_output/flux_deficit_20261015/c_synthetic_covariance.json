@@ -1,0 +1,126 @@
+{
+  "scope": "Synthetic sensitivity, not source covariance measurement",
+  "seed": 20261015,
+  "cells": [
+    {
+      "noise_rho": -0.5,
+      "latent_logflux_rho": 0.0,
+      "simulated": 10000,
+      "selected": 6626,
+      "invalid_log_pairs": 36,
+      "median_log_ratio": 0.005053356077775966
+    },
+    {
+      "noise_rho": -0.25,
+      "latent_logflux_rho": 0.0,
+      "simulated": 10000,
+      "selected": 6635,
+      "invalid_log_pairs": 41,
+      "median_log_ratio": 0.0038680536630481405
+    },
+    {
+      "noise_rho": 0.0,
+      "latent_logflux_rho": 0.0,
+      "simulated": 10000,
+      "selected": 6639,
+      "invalid_log_pairs": 48,
+      "median_log_ratio": 0.0013892319944783682
+    },
+    {
+      "noise_rho": 0.25,
+      "latent_logflux_rho": 0.0,
+      "simulated": 10000,
+      "selected": 6723,
+      "invalid_log_pairs": 36,
+      "median_log_ratio": -0.0012143363627049623
+    },
+    {
+      "noise_rho": 0.5,
+      "latent_logflux_rho": 0.0,
+      "simulated": 10000,
+      "selected": 6695,
+      "invalid_log_pairs": 38,
+      "median_log_ratio": -0.0055426327456371965
+    },
+    {
+      "noise_rho": -0.5,
+      "latent_logflux_rho": 0.5,
+      "simulated": 10000,
+      "selected": 6657,
+      "invalid_log_pairs": 20,
+      "median_log_ratio": 0.005916906682421275
+    },
+    {
+      "noise_rho": -0.25,
+      "latent_logflux_rho": 0.5,
+      "simulated": 10000,
+      "selected": 6691,
+      "invalid_log_pairs": 16,
+      "median_log_ratio": 0.0027650024821606225
+    },
+    {
+      "noise_rho": 0.0,
+      "latent_logflux_rho": 0.5,
+      "simulated": 10000,
+      "selected": 6626,
+      "invalid_log_pairs": 19,
+      "median_log_ratio": -0.0017989495943939464
+    },
+    {
+      "noise_rho": 0.25,
+      "latent_logflux_rho": 0.5,
+      "simulated": 10000,
+      "selected": 6693,
+      "invalid_log_pairs": 20,
+      "median_log_ratio": -0.002570804588283597
+    },
+    {
+      "noise_rho": 0.5,
+      "latent_logflux_rho": 0.5,
+      "simulated": 10000,
+      "selected": 6655,
+      "invalid_log_pairs": 17,
+      "median_log_ratio": -0.006378614869586132
+    },
+    {
+      "noise_rho": -0.5,
+      "latent_logflux_rho": 0.9,
+      "simulated": 10000,
+      "selected": 6642,
+      "invalid_log_pairs": 2,
+      "median_log_ratio": 0.010136478718415255
+    },
+    {
+      "noise_rho": -0.25,
+      "latent_logflux_rho": 0.9,
+      "simulated": 10000,
+      "selected": 6737,
+      "invalid_log_pairs": 0,
+      "median_log_ratio": 0.005890911009214676
+    },
+    {
+      "noise_rho": 0.0,
+      "latent_logflux_rho": 0.9,
+      "simulated": 10000,
+      "selected": 6697,
+      "invalid_log_pairs": 1,
+      "median_log_ratio": -0.00025552833662896763
+    },
+    {
+      "noise_rho": 0.25,
+      "latent_logflux_rho": 0.9,
+      "simulated": 10000,
+      "selected": 6590,
+      "invalid_log_pairs": 2,
+      "median_log_ratio": -0.005453917585564747
+    },
+    {
+      "noise_rho": 0.5,
+      "latent_logflux_rho": 0.9,
+      "simulated": 10000,
+      "selected": 6729,
+      "invalid_log_pairs": 0,
+      "median_log_ratio": -0.0034036480336740735
+    }
+  ]
+}

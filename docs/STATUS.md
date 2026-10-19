@@ -7,6 +7,52 @@ preserved, not converted into discoveries. Current grades belong only in
 assumptions. The 2026-10-09 ending correction in `HANDOVER.md` controls its earlier
 artifact/selection interpretations.
 
+## 19 October audit clarification
+
+PR86's cross-lineage audit reports no blocking merge findings. Its independent
+synthetic mechanism check and the committed real-background controls show an
+upward low-S/N response for tested Gaussian profiles, disfavoring the stated
+fitter-reads-low H2 in that scope. Catalogue selection is not thereby established;
+untested profile/LSF mismatch and other measurement effects remain unresolved.
+The improper-amplitude-prior evidence term can contribute to the upward response.
+No operator repair, MoM correction or scientific grade promotion follows. See
+[FLUX_DEFICIT_DIAGNOSIS.md](FLUX_DEFICIT_DIAGNOSIS.md) and the linked audit.
+
+## 15 October flux-deficit diagnosis
+
+No scientific grade changes. The 29 committed comparisons reproduce
+log(fit/published) = -0.04228 - 0.96130/catalogue-SNR; the overall median
+ratio is 0.88919 (object-bootstrap 95% CI [0.83600, 0.91662]). Both the
+inverse-SNR and inverse-square slope intervals include zero. The inverse-SNR
+intercept CI [-0.17408, 0.08923] includes zero; the inverse-square intercept
+CI [-0.17879, -0.00811] does not. Field differences are not thereby proved
+to be entirely S/N differences. The frozen fitter is signed, without the
+positivity restriction assumed in the incoming handover.
+
+The 1,000 frozen real-background injections (200 at each true S/N5,7,10,15,25)
+do not follow either frozen control curve. At S/N5 and7 the absolute mean
+recoveries are approximately1.275 and1.088, above unity; the secondary
+baseline-subtracted responses are also upward. Two higher-S/N trials have
+extreme numerical outputs and are retained. This is a stability warning for
+allowed windows, not a calibration pass or evidence for catalogue selection.
+The control fails to reproduce H2's proposed downward response, but cannot
+exclude all fitter/prior mismatch. H1/H2 causal attribution stays unresolved;
+see [the diagnosis](FLUX_DEFICIT_DIAGNOSIS.md).
+
+Both per-row southern holdout predictions were committed before access.
+The first HEAD was rejected by the configured proxy CONNECT tunnel (403),
+as were the independent-line catalogue preflight and G235H metadata query.
+No new science/catalogue/metadata response bodies were acquired. All 15
+southern outcomes remain unopened; GOODS-N is spent and was not reacquired.
+B/C cannot adjudicate H1 versus H2 or the grey-scale follow-up trigger.
+D spends zero and remains deferred; product/continuum/pathloss/Jacobian causes
+are not excluded. G235H public availability remains unresolved. SMACS closes
+this bounded PSF attempt because retained inputs do not certify unsaturated
+stellar identity and a held-out PSF control. No operator fix, raw-known-answer
+pass or MoM correction follows. See [the holdout receipt](FLUX_HOLDOUT.md),
+[independent selection](INDEPENDENT_LINE_SELECTION.md),
+[other arms](FLUX_OTHER_ARMS.md), and [methods](METHODS_NOTE.md).
+
 ## 14 October calibrated-answers follow-up (awaiting cross-lineage audit)
 
 No grade is promoted. A fresh MoM signed ionic N/C moment-Fieller set is

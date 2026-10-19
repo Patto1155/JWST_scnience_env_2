@@ -1,0 +1,43 @@
+{
+  "scope": "metadata and compact-file hashes only; SCI arrays not opened",
+  "inputs": [
+    {
+      "path": "research_output/session_20261014/jw02736001001_02105_00004_nrcalong_i2d_compact.fits",
+      "bytes": 829440,
+      "sha256": "75f7459e8bfda48f6811e571ea5e843d262a1d9b852b9740707037acadb9652f",
+      "matches_existing_verification": true,
+      "extensions_from_existing_receipt": [
+        "PRIMARY",
+        "SCI",
+        "ERR",
+        "WHT"
+      ],
+      "native_dq_present_from_existing_receipt": false
+    },
+    {
+      "path": "research_output/session_20261014/jw02736001001_02105_00003_nrcalong_i2d_compact.fits",
+      "bytes": 829440,
+      "sha256": "0cfa77a6a58c6c7bbd9e8df80e129296a7d4379ce75b0d3f4b8c8652f790358b",
+      "matches_existing_verification": true,
+      "extensions_from_existing_receipt": [
+        "PRIMARY",
+        "SCI",
+        "ERR",
+        "WHT"
+      ],
+      "native_dq_present_from_existing_receipt": false
+    }
+  ],
+  "relevant_local_fits_inventory": [
+    "research_output/session_20261014/jw02736001001_02105_00003_nrcalong_i2d_compact.fits",
+    "research_output/session_20261014/jw02736001001_02105_00004_nrcalong_i2d_compact.fits"
+  ],
+  "point_source_identity_certified": false,
+  "unsaturation_certified": false,
+  "heldout_measured_psf_control_verified": false,
+  "existing_candidate": "core1030: isolated bright catalogue core, not certified star",
+  "completed_psf_builds": 0,
+  "completed_injection_trials": 0,
+  "science_bytes": 0,
+  "conclusion": "bounded attempt closed: certified same/close-frame unsaturated point source and held-out PSF control unavailable in retained inputs; public acquisition metadata inaccessible"
+}

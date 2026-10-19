@@ -1,0 +1,246 @@
+{
+  "rows": [
+    {
+      "unique_id": "goods-s-mediumjwst_176652",
+      "line": "O3_5007",
+      "rest_a": 5008.24,
+      "z": 3.613826963852948,
+      "configuration": "g235m_f170lp",
+      "published_flux": 998.3534750092168,
+      "published_error": 34.11098782955975,
+      "unit": "10**-20 erg s-1 cm-2",
+      "snr": 29.267797227029238,
+      "inverse_snr": -0.07512135381502794,
+      "inverse_snr_squared": -0.09678016178445017
+    },
+    {
+      "unique_id": "goods-s-deephst_18846",
+      "line": "HBaG_4340",
+      "rest_a": 4341.68,
+      "z": 6.333072075962347,
+      "configuration": "g395m_f290lp",
+      "published_flux": 37.22616619411277,
+      "published_error": 3.3380033209384505,
+      "unit": "10**-20 erg s-1 cm-2",
+      "snr": 11.152225631593128,
+      "inverse_snr": -0.1284745137732892,
+      "inverse_snr_squared": -0.1233086138047782
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_147993",
+      "line": "HBaB_4861",
+      "rest_a": 4862.68,
+      "z": 3.3206771919943217,
+      "configuration": "g235m_f170lp",
+      "published_flux": 66.91731884858504,
+      "published_error": 10.862109437648629,
+      "unit": "10**-20 erg s-1 cm-2",
+      "snr": 6.160619098224713,
+      "inverse_snr": -0.19831610555212437,
+      "inverse_snr_squared": -0.19397346523559678
+    },
+    {
+      "unique_id": "goods-s-ultradeep_99671",
+      "line": "HBaB_4861",
+      "rest_a": 4862.68,
+      "z": 5.921151016214746,
+      "configuration": "g395m_f290lp",
+      "published_flux": 24.536828026712794,
+      "published_error": 1.1017667521415302,
+      "unit": "10**-20 erg s-1 cm-2",
+      "snr": 22.270437893519638,
+      "inverse_snr": -0.08544124391892073,
+      "inverse_snr_squared": -0.10005652931674289
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_132595",
+      "line": "O3_5007",
+      "rest_a": 5008.24,
+      "z": 2.9417734427744415,
+      "configuration": "g235m_f170lp",
+      "published_flux": 543.7527954273243,
+      "published_error": 20.44395676260358,
+      "unit": "10**-20 erg s-1 cm-2",
+      "snr": 26.597238574773634,
+      "inverse_snr": -0.07841923666346808,
+      "inverse_snr_squared": -0.09773045036750426
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_27341",
+      "line": "O3_5007",
+      "rest_a": 5008.24,
+      "z": 2.0468966281378806,
+      "configuration": "g140m_f070lp",
+      "published_flux": 480.07234777438026,
+      "published_error": 32.23694518836708,
+      "unit": "10**-20 erg s-1 cm-2",
+      "snr": 14.89199255603219,
+      "inverse_snr": -0.10682790499713948,
+      "inverse_snr_squared": -0.10967868373160701
+    },
+    {
+      "unique_id": "goods-s-mediumhst_9842",
+      "line": "O3_5007",
+      "rest_a": 5008.24,
+      "z": 5.797118376261354,
+      "configuration": "g395m_f290lp",
+      "published_flux": 232.75883320517335,
+      "published_error": 14.980848320783883,
+      "unit": "10**-20 erg s-1 cm-2",
+      "snr": 15.537092975052168,
+      "inverse_snr": -0.1041477220556281,
+      "inverse_snr_squared": -0.10826341941402348
+    },
+    {
+      "unique_id": "goods-s-deepjwst_9366",
+      "line": "HBaG_4340",
+      "rest_a": 4341.68,
+      "z": 6.473175938772345,
+      "configuration": "g395m_f290lp",
+      "published_flux": 16.999859674569898,
+      "published_error": 2.0850814927600974,
+      "unit": "10**-20 erg s-1 cm-2",
+      "snr": 8.153091250196928,
+      "inverse_snr": -0.16018272661956498,
+      "inverse_snr_squared": -0.15034020690313063
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_10013560",
+      "line": "HBaB_4861",
+      "rest_a": 4862.68,
+      "z": 3.9381440146265967,
+      "configuration": "g235m_f170lp",
+      "published_flux": 63.90456152877018,
+      "published_error": 4.627299099828576,
+      "unit": "10**-20 erg s-1 cm-2",
+      "snr": 13.81033733720338,
+      "inverse_snr": -0.1118837231207882,
+      "inverse_snr_squared": -0.11251176015031787
+    },
+    {
+      "unique_id": "goods-s-deepjwst_24638",
+      "line": "HBaB_4861",
+      "rest_a": 4862.68,
+      "z": 3.6323658953388502,
+      "configuration": "g235m_f170lp",
+      "published_flux": 94.5456348182885,
+      "published_error": 6.007310477491766,
+      "unit": "10**-20 erg s-1 cm-2",
+      "snr": 15.738429896795376,
+      "inverse_snr": -0.10335622018497298,
+      "inverse_snr_squared": -0.10785694599673472
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_191250",
+      "line": "HBaB_4861",
+      "rest_a": 4862.68,
+      "z": 5.387361743140348,
+      "configuration": "g395m_f290lp",
+      "published_flux": 162.74316734916042,
+      "published_error": 16.713758877865303,
+      "unit": "10**-20 erg s-1 cm-2",
+      "snr": 9.737077610033472,
+      "inverse_snr": -0.14100221476671307,
+      "inverse_snr_squared": -0.13298497223668743
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_173246",
+      "line": "HBaB_4861",
+      "rest_a": 4862.68,
+      "z": 3.700023118500885,
+      "configuration": "g235m_f170lp",
+      "published_flux": 185.10378343778885,
+      "published_error": 9.072659993870172,
+      "unit": "10**-20 erg s-1 cm-2",
+      "snr": 20.402371913292452,
+      "inverse_snr": -0.08939347641581478,
+      "inverse_snr_squared": -0.1015468890249712
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_167512",
+      "line": "HBaB_4861",
+      "rest_a": 4862.68,
+      "z": 2.3257153707822105,
+      "configuration": "g140m_f070lp",
+      "published_flux": 363.8352457961397,
+      "published_error": 19.58461347937312,
+      "unit": "10**-20 erg s-1 cm-2",
+      "snr": 18.57760665939809,
+      "inverse_snr": -0.09402150752033056,
+      "inverse_snr_squared": -0.10345794863704257
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_163927",
+      "line": "O3_5007",
+      "rest_a": 5008.24,
+      "z": 1.2646299428896954,
+      "configuration": "g140m_f070lp",
+      "published_flux": 256.03756206923646,
+      "published_error": 42.74813430059883,
+      "unit": "10**-20 erg s-1 cm-2",
+      "snr": 5.989444130328977,
+      "inverse_snr": -0.20277563533669687,
+      "inverse_snr_squared": -0.1998695473512239
+    },
+    {
+      "unique_id": "goods-s-mediumjwst_143405",
+      "line": "HBaB_4861",
+      "rest_a": 4862.68,
+      "z": 2.295684228222661,
+      "configuration": "g140m_f070lp",
+      "published_flux": 175.11682733958096,
+      "published_error": 28.96189872994614,
+      "unit": "10**-20 erg s-1 cm-2",
+      "snr": 6.046455343706902,
+      "inverse_snr": -0.20126230894455818,
+      "inverse_snr_squared": -0.19785010907960476
+    }
+  ],
+  "scatter": {
+    "1": 0.16600980935009327,
+    "2": 0.16731659952307262
+  },
+  "models": {
+    "1": {
+      "a": -0.042276324615788625,
+      "b": -0.9613016545191906,
+      "ci95": [
+        [
+          -0.17408035065504981,
+          0.089233765279427
+        ],
+        [
+          -2.3556187951989465,
+          0.3382913446653383
+        ]
+      ],
+      "residual_sd": 0.16600980935009327
+    },
+    "2": {
+      "a": -0.09227421137943417,
+      "b": -3.8598149358189695,
+      "ci95": [
+        [
+          -0.17878753105597645,
+          -0.008111615242724409
+        ],
+        [
+          -10.886108087417552,
+          2.251972698446331
+        ]
+      ],
+      "residual_sd": 0.16731659952307262
+    }
+  },
+  "criteria": {
+    "minimum": 15,
+    "primary": "Paired-log residual SSE difference, lower SSE preferred descriptively; decisive preference only if 95% object-bootstrap paired squared-error difference excludes zero. No assertion guaranteed distinguishable at n15.",
+    "residual_mean": "20000 object-bootstrap percentile95 CI; consistency with zero iff includes zero.",
+    "intercept": "Refit both powers with object-bootstrap95 intercept CI; report both. No D trigger unless B and C both show intercept below zero.",
+    "negative_fit": "Retain signed estimate; any nonpositive fit makes primary log-ratio confirmation not evaluable, do not omit or replace.",
+    "secondary": "Sign test; median bootstrap over objects; SD and raw MAD; no shared-photon quadrature denominator.",
+    "access": "One opening session, no retries after failure or replacements. Proxy denial stops before GET; zero successful opens preserves holdout.",
+    "budget": 322122547
+  },
+  "scope": "Frozen before new southern spectrum HEAD or GET; catalogue fluxes already known; GOODS-N spent, not revisited."
+}
