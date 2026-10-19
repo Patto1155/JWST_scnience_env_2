@@ -1,0 +1,22 @@
+{
+  "frozen_primary_nodes": 41,
+  "diagnostic_nodes": 81,
+  "replay41_exact_flux_and_ratio": true,
+  "max_abs_flux_difference": 4.194842652793795e-06,
+  "primary_interval": {
+    "type": "bounded",
+    "interval": [
+      0.10154744791795944,
+      13.48042847844
+    ]
+  },
+  "diagnostic_interval": {
+    "type": "bounded",
+    "interval": [
+      0.10154580446901157,
+      13.480437174370891
+    ]
+  },
+  "diagnostic_changes_no_gate": true,
+  "empirical_coverage_validated": false
+}

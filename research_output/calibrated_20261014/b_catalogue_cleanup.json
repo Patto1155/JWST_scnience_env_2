@@ -1,0 +1,12 @@
+[
+  {
+    "path": "/tmp/b_gs_catalog.fits",
+    "bytes_before_delete": 62752320,
+    "deleted_utc": "2026-10-14T04:24:03.850422+00:00"
+  },
+  {
+    "path": "/tmp/b_gn_catalog.fits",
+    "bytes_before_delete": 33471360,
+    "deleted_utc": "2026-10-14T04:24:03.851635+00:00"
+  }
+]

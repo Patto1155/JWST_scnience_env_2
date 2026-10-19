@@ -1,0 +1,190 @@
+{
+  "response_body_bytes": 1351,
+  "controls": [
+    {
+      "receipt_name": "f_south_0_controls_receipt",
+      "rows": [
+        {
+          "main_id": "2MASS J05471325-6619048",
+          "otype": "*",
+          "ra": "86.80519308994",
+          "dec": "-66.31803706176999",
+          "K": "14.096",
+          "control_distance": "0.17879502823029014"
+        },
+        {
+          "main_id": "MACHO  70.11349.23",
+          "otype": "*",
+          "ra": "87.45715620524",
+          "dec": "-66.55432395852",
+          "K": "13.154",
+          "control_distance": "0.20870013611281935"
+        },
+        {
+          "main_id": "MACHO  70.11350.26",
+          "otype": "*",
+          "ra": "87.47883117325",
+          "dec": "-66.44715584296",
+          "K": "14.703",
+          "control_distance": "0.20955086130031045"
+        },
+        {
+          "main_id": "MACHO  70.11348.12",
+          "otype": "*",
+          "ra": "87.47971669684",
+          "dec": "-66.58148672583",
+          "K": "13.428",
+          "control_distance": "0.22719395084842778"
+        },
+        {
+          "main_id": "MACHO  70.11348.13",
+          "otype": "*",
+          "ra": "87.47439972735",
+          "dec": "-66.59836896076",
+          "K": "13.526",
+          "control_distance": "0.2329235884823807"
+        }
+      ]
+    },
+    {
+      "receipt_name": "f_south_1_controls_receipt",
+      "rows": [
+        {
+          "main_id": "SK -67  264",
+          "otype": "*",
+          "ra": "86.36605562935",
+          "dec": "-67.16030780151",
+          "K": "13.947",
+          "control_distance": "0.027492933145765775"
+        },
+        {
+          "main_id": "UCAC2   2367780",
+          "otype": "*",
+          "ra": "86.2299202945",
+          "dec": "-67.17394278598",
+          "K": "14.712",
+          "control_distance": "0.08180013387389434"
+        },
+        {
+          "main_id": "MACHO  67.10494.24",
+          "otype": "*",
+          "ra": "86.25560935498",
+          "dec": "-67.08229173195",
+          "K": "13.246",
+          "control_distance": "0.10327094191667018"
+        },
+        {
+          "main_id": "MACHO  67.10492.81",
+          "otype": "*",
+          "ra": "86.17317099347",
+          "dec": "-67.19224014811",
+          "K": "14.293",
+          "control_distance": "0.10781360297971324"
+        },
+        {
+          "main_id": "MACHO  67.10491.43",
+          "otype": "*",
+          "ra": "86.25766772934",
+          "dec": "-67.27151129366",
+          "K": "14.099",
+          "control_distance": "0.13309935205747492"
+        }
+      ]
+    },
+    {
+      "receipt_name": "f_south_5_controls_receipt",
+      "rows": [
+        {
+          "main_id": "2MASS J05461814-6725519",
+          "otype": "*",
+          "ra": "86.57553366204",
+          "dec": "-67.43112317669",
+          "K": "11.215",
+          "control_distance": "0.024373316953305278"
+        },
+        {
+          "main_id": "PV  1424",
+          "otype": "*",
+          "ra": "86.57683222692",
+          "dec": "-67.4440885712",
+          "K": "11.443",
+          "control_distance": "0.030625626150800327"
+        },
+        {
+          "main_id": "SOI 286",
+          "otype": "*",
+          "ra": "86.54108936487",
+          "dec": "-67.41542736212",
+          "K": "12.7",
+          "control_distance": "0.03724421332857964"
+        },
+        {
+          "main_id": "UCAC4 114-010214",
+          "otype": "*",
+          "ra": "86.553340347865",
+          "dec": "-67.3977051105489",
+          "K": "11.698",
+          "control_distance": "0.040821802525545556"
+        },
+        {
+          "main_id": "UCAC4 114-010298",
+          "otype": "*",
+          "ra": "86.72196954150999",
+          "dec": "-67.37544790197026",
+          "K": "12.537",
+          "control_distance": "0.05831899269955161"
+        }
+      ]
+    }
+  ],
+  "receipts": [
+    {
+      "name": "f_south_0_controls_receipt",
+      "requested_url": "https://simbad.cds.unistra.fr/simbad/sim-tap/sync",
+      "params": {
+        "REQUEST": "doQuery",
+        "LANG": "ADQL",
+        "FORMAT": "csv",
+        "QUERY": "SELECT TOP 5 b.main_id,b.otype,b.ra,b.dec,f.K,DISTANCE(POINT('ICRS',b.ra,b.dec),POINT('ICRS',86.96280156722,-66.48532973567)) AS control_distance FROM basic AS b JOIN allfluxes AS f ON b.oid=f.oidref WHERE b.otype='*' AND 1=CONTAINS(POINT('ICRS',b.ra,b.dec),CIRCLE('ICRS',86.96280156722,-66.48532973567,0.5)) AND f.K BETWEEN 13.072 AND 15.072 ORDER BY control_distance,main_id"
+      },
+      "utc_started": "2026-10-14T04:19:45.131808+00:00",
+      "status": 200,
+      "bytes": 462,
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+TOP+5+b.main_id%2Cb.otype%2Cb.ra%2Cb.dec%2Cf.K%2CDISTANCE%28POINT%28%27ICRS%27%2Cb.ra%2Cb.dec%29%2CPOINT%28%27ICRS%27%2C86.96280156722%2C-66.48532973567%29%29+AS+control_distance+FROM+basic+AS+b+JOIN+allfluxes+AS+f+ON+b.oid%3Df.oidref+WHERE+b.otype%3D%27%2A%27+AND+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cb.ra%2Cb.dec%29%2CCIRCLE%28%27ICRS%27%2C86.96280156722%2C-66.48532973567%2C0.5%29%29+AND+f.K+BETWEEN+13.072+AND+15.072+ORDER+BY+control_distance%2Cmain_id",
+      "sha256_consumed_body": "a3091ee2dc2db371aee30dc16eb3b40bb86b98e1ee1235b7788c745a80a451f0",
+      "elapsed_seconds": 4.669068873001379
+    },
+    {
+      "name": "f_south_1_controls_receipt",
+      "requested_url": "https://simbad.cds.unistra.fr/simbad/sim-tap/sync",
+      "params": {
+        "REQUEST": "doQuery",
+        "LANG": "ADQL",
+        "FORMAT": "csv",
+        "QUERY": "SELECT TOP 5 b.main_id,b.otype,b.ra,b.dec,f.K,DISTANCE(POINT('ICRS',b.ra,b.dec),POINT('ICRS',86.43660416666667,-67.157875)) AS control_distance FROM basic AS b JOIN allfluxes AS f ON b.oid=f.oidref WHERE b.otype='*' AND 1=CONTAINS(POINT('ICRS',b.ra,b.dec),CIRCLE('ICRS',86.43660416666667,-67.157875,0.5)) AND f.K BETWEEN 13.124 AND 15.124 ORDER BY control_distance,main_id"
+      },
+      "utc_started": "2026-10-14T04:19:49.802105+00:00",
+      "status": 200,
+      "bytes": 445,
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+TOP+5+b.main_id%2Cb.otype%2Cb.ra%2Cb.dec%2Cf.K%2CDISTANCE%28POINT%28%27ICRS%27%2Cb.ra%2Cb.dec%29%2CPOINT%28%27ICRS%27%2C86.43660416666667%2C-67.157875%29%29+AS+control_distance+FROM+basic+AS+b+JOIN+allfluxes+AS+f+ON+b.oid%3Df.oidref+WHERE+b.otype%3D%27%2A%27+AND+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cb.ra%2Cb.dec%29%2CCIRCLE%28%27ICRS%27%2C86.43660416666667%2C-67.157875%2C0.5%29%29+AND+f.K+BETWEEN+13.124+AND+15.124+ORDER+BY+control_distance%2Cmain_id",
+      "sha256_consumed_body": "5b0e624fe86f1f76397c8419e970a78a7c940c63e1ee458c5e2bd319777e8e4e",
+      "elapsed_seconds": 4.395113558999583
+    },
+    {
+      "name": "f_south_5_controls_receipt",
+      "requested_url": "https://simbad.cds.unistra.fr/simbad/sim-tap/sync",
+      "params": {
+        "REQUEST": "doQuery",
+        "LANG": "ADQL",
+        "FORMAT": "csv",
+        "QUERY": "SELECT TOP 5 b.main_id,b.otype,b.ra,b.dec,f.K,DISTANCE(POINT('ICRS',b.ra,b.dec),POINT('ICRS',86.63580466058,-67.42345416054)) AS control_distance FROM basic AS b JOIN allfluxes AS f ON b.oid=f.oidref WHERE b.otype='*' AND 1=CONTAINS(POINT('ICRS',b.ra,b.dec),CIRCLE('ICRS',86.63580466058,-67.42345416054,0.5)) AND f.K BETWEEN 11.202 AND 13.202 ORDER BY control_distance,main_id"
+      },
+      "utc_started": "2026-10-14T04:19:54.197806+00:00",
+      "status": 200,
+      "bytes": 444,
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+TOP+5+b.main_id%2Cb.otype%2Cb.ra%2Cb.dec%2Cf.K%2CDISTANCE%28POINT%28%27ICRS%27%2Cb.ra%2Cb.dec%29%2CPOINT%28%27ICRS%27%2C86.63580466058%2C-67.42345416054%29%29+AS+control_distance+FROM+basic+AS+b+JOIN+allfluxes+AS+f+ON+b.oid%3Df.oidref+WHERE+b.otype%3D%27%2A%27+AND+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cb.ra%2Cb.dec%29%2CCIRCLE%28%27ICRS%27%2C86.63580466058%2C-67.42345416054%2C0.5%29%29+AND+f.K+BETWEEN+11.202+AND+13.202+ORDER+BY+control_distance%2Cmain_id",
+      "sha256_consumed_body": "abbe16b72602aaff8288b56dd142f22ba247d0a7d4008e113b10974518d4a40f",
+      "elapsed_seconds": 6.9065908060001675
+    }
+  ]
+}

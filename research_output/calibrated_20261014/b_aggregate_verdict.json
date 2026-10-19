@@ -1,0 +1,88 @@
+{
+  "scope": "Aggregate-only lead receipt; no GN catalogue/flux/compact array access needed",
+  "raw_calibration_verdict": "UNMET_BLOCKED_METADATA_OPERATOR_PRIOR",
+  "GS_training": {
+    "usable": 15,
+    "gate": "DESCRIPTIVE_ONLY",
+    "mean": -0.7110990589254784,
+    "sd": 1.2516935060189613,
+    "ks_d": 0.28344906380060575,
+    "ks_p": 0.14699574588925224,
+    "error_scale_identified": false,
+    "caveat": "Shared photons, unknown covariance, different estimators and S/N selection; SD is not published-error scale"
+  },
+  "GN_confirmation": {
+    "usable": 14,
+    "gate": "DESCRIPTIVE_ONLY",
+    "mean": -0.9709348801298112,
+    "sd": 0.4884300499337061,
+    "ks_d": 0.58296259554939,
+    "ks_p": 4.7514432076660406e-05,
+    "error_scale_identified": false,
+    "caveat": "Shared photons, unknown covariance, different estimators and S/N selection; SD is not published-error scale"
+  },
+  "GN_selected": 15,
+  "GN_usable": 14,
+  "GN_failures": [
+    "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='archive.stsci.edu', port=443): Read timed out. (read timeout=8)\"))"
+  ],
+  "GS_source_groups": 15,
+  "GN_source_groups": 14,
+  "frozen_n15_prediction": {
+    "mean": 0,
+    "sd": 1,
+    "n": 15,
+    "mean_95_interval": [
+      -0.5060698239044358,
+      0.5060698239044358
+    ],
+    "sd_95_interval": [
+      0.6340755984130267,
+      1.365884016333048
+    ]
+  },
+  "actual_n_reference": {
+    "mean_95_interval": [
+      -0.5238320341483518,
+      0.5238320341483518
+    ],
+    "sd_95_interval": [
+      0.6207161194205343,
+      1.3793979981507971
+    ],
+    "rule": "Same frozen formulas evaluated at achieved n; no threshold changed"
+  },
+  "reference_mean_interval_pass": false,
+  "reference_sd_interval_pass": false,
+  "calibration_pass": false,
+  "published_error_scale_identified": false,
+  "population_body_bytes": 113178240,
+  "population_cap_bytes": 300000000,
+  "raw_science_body_bytes": 0,
+  "raw_cap_bytes": 1073741824,
+  "raw_metadata_body_bytes": 1110,
+  "minimum_recorded_disk_free_bytes": 18398101504,
+  "final_disk_free_bytes": 18157772800,
+  "raw_files_remaining": 0,
+  "catalogues_deleted": true,
+  "GS_heldout": "Spectra unopened, unused because GN catalogue exists",
+  "GN_access": "One confirmation by B; no tuning/replacement",
+  "identity_checks": "Successful spectra checked TARGET/FILTER/GRATING; declared units normalized to micron/cgs per Angstrom; original declared strings and RA/DEC were not separately preserved or validated. Product hashes retained.",
+  "prior_scope": "Assumed transported geometric centroid sensitivity; not calibrated centring distribution",
+  "chronology": {
+    "design": "a44f756",
+    "conditional_scope": "9811e4c",
+    "GS_catalogue_GET": "2026-10-14T04:15:58.668829+00:00",
+    "GS_selected": "877a02b",
+    "GS_spectrum_HEAD_before_GET": "2026-10-14T04:17:33.614256+00:00",
+    "GS_result_prediction": "4fbf419",
+    "GN_metadata_HEAD": "2026-10-14T04:21:25.882540+00:00",
+    "GN_design": "e2b7b78",
+    "GN_catalogue_GET": "2026-10-14T04:22:32.562393+00:00",
+    "GN_selected": "e55ce37",
+    "GN_spectrum_HEAD_before_GET": "2026-10-14T04:23:08.085596+00:00",
+    "caveat": "Spectrum timestamps begin at HEAD before GET; commit-before-HEAD proves commit-before-GET; exact GET start not separately logged."
+  },
+  "software_validation": "11 focused tests/Ruff pass; compact replay exact; full gate root-owned",
+  "completed_utc": "2026-10-14T04:27:47.556846+00:00"
+}

@@ -1,0 +1,199 @@
+{
+  "targets": [
+    {
+      "target": {
+        "main_id": "[GC2009] J054624.75-671916.5",
+        "otype": "Y*O",
+        "ra": "86.60325833333333",
+        "dec": "-67.32123888888889",
+        "coo_bibcode": "2008AJ....136...18W",
+        "K": "",
+        "pole_distance": "1.5321764324348972"
+      },
+      "matches": null,
+      "error": "Input \"table\" must be a string (filename or data) or an iterable",
+      "status": "unresolved"
+    },
+    {
+      "target": {
+        "main_id": "[GC2009] J054442.25-661733.5",
+        "otype": "Y*O",
+        "ra": "86.17610533442",
+        "dec": "-66.29262557836",
+        "coo_bibcode": "2020yCat.1350....0G",
+        "K": "",
+        "pole_distance": "1.5523234900422638"
+      },
+      "matches": null,
+      "error": "Input \"table\" must be a string (filename or data) or an iterable",
+      "status": "unresolved"
+    },
+    {
+      "target": {
+        "main_id": "OGLE LMC-ECL-37636",
+        "otype": "Y*O",
+        "ra": "86.18737955703",
+        "dec": "-66.25030870572",
+        "coo_bibcode": "2020yCat.1350....0G",
+        "K": "",
+        "pole_distance": "1.55702862947566"
+      },
+      "matches": null,
+      "error": "Input \"table\" must be a string (filename or data) or an iterable",
+      "status": "unresolved"
+    },
+    {
+      "target": {
+        "main_id": "[GC2009] J054445.26-670856.9",
+        "otype": "Y*O",
+        "ra": "86.18858333333334",
+        "dec": "-67.14913888888888",
+        "coo_bibcode": "2009ApJS..184..172G",
+        "K": "",
+        "pole_distance": "1.6092125253812803"
+      },
+      "matches": null,
+      "error": "Input \"table\" must be a string (filename or data) or an iterable",
+      "status": "unresolved"
+    },
+    {
+      "target": {
+        "main_id": "[GC2009] J054447.39-671631.8",
+        "otype": "Y*O",
+        "ra": "86.19745833333334",
+        "dec": "-67.2755",
+        "coo_bibcode": "2009ApJS..184..172G",
+        "K": "",
+        "pole_distance": "1.6529175912679976"
+      },
+      "matches": null,
+      "error": "Input \"table\" must be a string (filename or data) or an iterable",
+      "status": "unresolved"
+    },
+    {
+      "target": {
+        "main_id": "[WSI2008] 1124",
+        "otype": "Y*O",
+        "ra": "86.1817375",
+        "dec": "-67.29075277777778",
+        "coo_bibcode": "2008AJ....136...18W",
+        "K": "",
+        "pole_distance": "1.6646776207707144"
+      },
+      "matches": null,
+      "error": "Input \"table\" must be a string (filename or data) or an iterable",
+      "status": "unresolved"
+    }
+  ],
+  "response_body_bytes": 31422,
+  "receipts": [
+    {
+      "name": "2mass_gator_5",
+      "requested_url": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query",
+      "params": {
+        "catalog": "fp_psc",
+        "spatial": "Cone",
+        "objstr": "86.60325833333333 -67.32123888888889",
+        "radius": "1",
+        "radunits": "arcsec",
+        "outfmt": "1"
+      },
+      "utc_started": "2026-10-14T04:23:42.477448+00:00",
+      "status": 200,
+      "bytes": 5237,
+      "url": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query?catalog=fp_psc&spatial=Cone&objstr=86.60325833333333+-67.32123888888889&radius=1&radunits=arcsec&outfmt=1",
+      "sha256_consumed_body": "737dfa043207f208774980a6dae06842cea7c4124fbf34c1d86b51b1e4cfe8a3",
+      "elapsed_seconds": 7.475378787999944
+    },
+    {
+      "name": "2mass_gator_6",
+      "requested_url": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query",
+      "params": {
+        "catalog": "fp_psc",
+        "spatial": "Cone",
+        "objstr": "86.17610533442 -66.29262557836",
+        "radius": "1",
+        "radunits": "arcsec",
+        "outfmt": "1"
+      },
+      "utc_started": "2026-10-14T04:23:49.954613+00:00",
+      "status": 200,
+      "bytes": 5237,
+      "url": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query?catalog=fp_psc&spatial=Cone&objstr=86.17610533442+-66.29262557836&radius=1&radunits=arcsec&outfmt=1",
+      "sha256_consumed_body": "a157e5f675eb3163138c1dd90e4e9629621a6b5f438033538c187cec66c8b12a",
+      "elapsed_seconds": 8.785776381999312
+    },
+    {
+      "name": "2mass_gator_7",
+      "requested_url": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query",
+      "params": {
+        "catalog": "fp_psc",
+        "spatial": "Cone",
+        "objstr": "86.18737955703 -66.25030870572",
+        "radius": "1",
+        "radunits": "arcsec",
+        "outfmt": "1"
+      },
+      "utc_started": "2026-10-14T04:23:58.741649+00:00",
+      "status": 200,
+      "bytes": 5237,
+      "url": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query?catalog=fp_psc&spatial=Cone&objstr=86.18737955703+-66.25030870572&radius=1&radunits=arcsec&outfmt=1",
+      "sha256_consumed_body": "037c8f2d3a403495a1ad0d65b54baa7275f6b91c35011f84a8f71e67452b8abc",
+      "elapsed_seconds": 11.495195039002283
+    },
+    {
+      "name": "2mass_gator_9",
+      "requested_url": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query",
+      "params": {
+        "catalog": "fp_psc",
+        "spatial": "Cone",
+        "objstr": "86.18858333333334 -67.14913888888888",
+        "radius": "1",
+        "radunits": "arcsec",
+        "outfmt": "1"
+      },
+      "utc_started": "2026-10-14T04:24:10.238182+00:00",
+      "status": 200,
+      "bytes": 5237,
+      "url": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query?catalog=fp_psc&spatial=Cone&objstr=86.18858333333334+-67.14913888888888&radius=1&radunits=arcsec&outfmt=1",
+      "sha256_consumed_body": "4503c34410de37e380cc3b3ea0dbd6a7ecc58e73ae0c2dca04e0a09883b5ad5b",
+      "elapsed_seconds": 10.81820310799958
+    },
+    {
+      "name": "2mass_gator_11",
+      "requested_url": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query",
+      "params": {
+        "catalog": "fp_psc",
+        "spatial": "Cone",
+        "objstr": "86.19745833333334 -67.2755",
+        "radius": "1",
+        "radunits": "arcsec",
+        "outfmt": "1"
+      },
+      "utc_started": "2026-10-14T04:24:21.057626+00:00",
+      "status": 200,
+      "bytes": 5237,
+      "url": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query?catalog=fp_psc&spatial=Cone&objstr=86.19745833333334+-67.2755&radius=1&radunits=arcsec&outfmt=1",
+      "sha256_consumed_body": "16cbb3a229661b2fee68c8839b9e40dd7bf7fb73583861c1dfcc8fa712ad7869",
+      "elapsed_seconds": 9.602802461002284
+    },
+    {
+      "name": "2mass_gator_12",
+      "requested_url": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query",
+      "params": {
+        "catalog": "fp_psc",
+        "spatial": "Cone",
+        "objstr": "86.1817375 -67.29075277777778",
+        "radius": "1",
+        "radunits": "arcsec",
+        "outfmt": "1"
+      },
+      "utc_started": "2026-10-14T04:24:30.661897+00:00",
+      "status": 200,
+      "bytes": 5237,
+      "url": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query?catalog=fp_psc&spatial=Cone&objstr=86.1817375+-67.29075277777778&radius=1&radunits=arcsec&outfmt=1",
+      "sha256_consumed_body": "17758233a5c92c4d518e08c4733e29358bd7b3843a0a4216b32bafb6f55ce826",
+      "elapsed_seconds": 5.366807824997522
+    }
+  ]
+}

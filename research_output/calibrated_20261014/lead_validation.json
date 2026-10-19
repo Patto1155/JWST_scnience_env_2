@@ -1,0 +1,89 @@
+{
+  "quality_gate_exit_code": 0,
+  "passed": 841,
+  "allowed_skips": 3,
+  "failures": 0,
+  "freeze_checks": [
+    {
+      "arm": "A",
+      "freeze": "efe2f43",
+      "freeze_time": "2026-10-14T06:12:48+02:00",
+      "access_time": "2026-10-14T04:13:54+00:00",
+      "pass": true
+    },
+    {
+      "arm": "B_prior",
+      "freeze": "9811e4c",
+      "freeze_time": "2026-10-14T06:15:49+02:00",
+      "access_time": "2026-10-14T04:15:58.668829+00:00",
+      "pass": true
+    },
+    {
+      "arm": "B_GS_draw",
+      "freeze": "877a02b",
+      "freeze_time": "2026-10-14T06:16:55+02:00",
+      "access_time": "2026-10-14T04:17:33.614256+00:00",
+      "pass": true
+    },
+    {
+      "arm": "B_prediction",
+      "freeze": "4fbf419",
+      "freeze_time": "2026-10-14T06:21:16+02:00",
+      "access_time": "2026-10-14T04:21:25.882540+00:00",
+      "pass": true
+    },
+    {
+      "arm": "B_GN_scope",
+      "freeze": "e2b7b78",
+      "freeze_time": "2026-10-14T06:22:26+02:00",
+      "access_time": "2026-10-14T04:22:32.562393+00:00",
+      "pass": true
+    },
+    {
+      "arm": "B_GN_draw",
+      "freeze": "e55ce37",
+      "freeze_time": "2026-10-14T06:23:03+02:00",
+      "access_time": "2026-10-14T04:23:08.085596+00:00",
+      "pass": true
+    },
+    {
+      "arm": "C",
+      "freeze": "43a2b84",
+      "freeze_time": "2026-10-14T06:14:12+02:00",
+      "access_time": "2026-10-14T04:14:42.622019+00:00",
+      "pass": true
+    },
+    {
+      "arm": "D",
+      "freeze": "ba11dc1",
+      "freeze_time": "2026-10-14T06:13:43+02:00",
+      "access_time": "2026-10-14T04:14:37.845628+00:00",
+      "pass": true
+    },
+    {
+      "arm": "E",
+      "freeze": "264a875",
+      "freeze_time": "2026-10-14T06:14:11+02:00",
+      "access_time": "2026-10-14T04:15:12.038575+00:00",
+      "pass": true
+    },
+    {
+      "arm": "E_association",
+      "freeze": "722803e",
+      "freeze_time": "2026-10-14T06:22:38+02:00",
+      "access_time": "2026-10-14T04:22:38.818690+00:00",
+      "pass": true
+    }
+  ],
+  "original_bundle_restore_verified": true,
+  "bundle_sha256": "29cac1cb9903168e0effadd1c87b87a12a23f61f2c29ffecad50350b929dbbb5",
+  "restored_freeze_refs": 14,
+  "disk_free_bytes": 19992301568,
+  "cross_lineage_audit": "not run; required before merge",
+  "northern_review_scope": "Lead reviewed aggregate only, not northern spectra or catalogue",
+  "limitations": [
+    "B exact spectrum GET start was not separately logged; preceding HEAD timestamp establishes freeze ordering",
+    "Paper/web provider and software transport are outside certified direct scientific-body subtotals",
+    "New compact derived source arrays are reproducibility inputs, not independent observations"
+  ]
+}

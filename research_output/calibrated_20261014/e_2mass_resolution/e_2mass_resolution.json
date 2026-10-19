@@ -1,0 +1,182 @@
+{
+  "targets": [
+    {
+      "target": {
+        "main_id": "[GC2009] J054624.75-671916.5",
+        "otype": "Y*O",
+        "ra": "86.60325833333333",
+        "dec": "-67.32123888888889",
+        "coo_bibcode": "2008AJ....136...18W",
+        "K": "",
+        "pole_distance": "1.5321764324348972"
+      },
+      "matches": null,
+      "status": "unresolved"
+    },
+    {
+      "target": {
+        "main_id": "[GC2009] J054442.25-661733.5",
+        "otype": "Y*O",
+        "ra": "86.17610533442",
+        "dec": "-66.29262557836",
+        "coo_bibcode": "2020yCat.1350....0G",
+        "K": "",
+        "pole_distance": "1.5523234900422638"
+      },
+      "matches": null,
+      "status": "unresolved"
+    },
+    {
+      "target": {
+        "main_id": "OGLE LMC-ECL-37636",
+        "otype": "Y*O",
+        "ra": "86.18737955703",
+        "dec": "-66.25030870572",
+        "coo_bibcode": "2020yCat.1350....0G",
+        "K": "",
+        "pole_distance": "1.55702862947566"
+      },
+      "matches": null,
+      "status": "unresolved"
+    },
+    {
+      "target": {
+        "main_id": "[GC2009] J054445.26-670856.9",
+        "otype": "Y*O",
+        "ra": "86.18858333333334",
+        "dec": "-67.14913888888888",
+        "coo_bibcode": "2009ApJS..184..172G",
+        "K": "",
+        "pole_distance": "1.6092125253812803"
+      },
+      "matches": [],
+      "status": "unresolved"
+    },
+    {
+      "target": {
+        "main_id": "[GC2009] J054447.39-671631.8",
+        "otype": "Y*O",
+        "ra": "86.19745833333334",
+        "dec": "-67.2755",
+        "coo_bibcode": "2009ApJS..184..172G",
+        "K": "",
+        "pole_distance": "1.6529175912679976"
+      },
+      "matches": [],
+      "status": "unresolved"
+    },
+    {
+      "target": {
+        "main_id": "[WSI2008] 1124",
+        "otype": "Y*O",
+        "ra": "86.1817375",
+        "dec": "-67.29075277777778",
+        "coo_bibcode": "2008AJ....136...18W",
+        "K": "",
+        "pole_distance": "1.6646776207707144"
+      },
+      "matches": [],
+      "status": "unresolved"
+    }
+  ],
+  "response_body_bytes": 295,
+  "receipts": [
+    {
+      "name": "2mass_5",
+      "requested_url": "https://irsa.ipac.caltech.edu/TAP/sync",
+      "params": {
+        "REQUEST": "doQuery",
+        "LANG": "ADQL",
+        "FORMAT": "csv",
+        "QUERY": "SELECT designation,ra,dec,k_m,k_cmsig,k_snr,ph_qual FROM fp_psc WHERE 1=CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',86.60325833333333,-67.32123888888889,0.000277778))"
+      },
+      "utc_started": "2026-10-14T04:22:38.818690+00:00",
+      "status": 504,
+      "bytes": 160,
+      "url": "https://irsa.ipac.caltech.edu/TAP/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+designation%2Cra%2Cdec%2Ck_m%2Ck_cmsig%2Ck_snr%2Cph_qual+FROM+fp_psc+WHERE+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C86.60325833333333%2C-67.32123888888889%2C0.000277778%29%29",
+      "error": "HTTP 504",
+      "sha256_consumed_body": "c9c89d274726b86306e1c97d80360f820bce86042c34c9bb2487aac4ada6d606",
+      "elapsed_seconds": 15.57428293799967
+    },
+    {
+      "name": "2mass_6",
+      "requested_url": "https://irsa.ipac.caltech.edu/TAP/sync",
+      "params": {
+        "REQUEST": "doQuery",
+        "LANG": "ADQL",
+        "FORMAT": "csv",
+        "QUERY": "SELECT designation,ra,dec,k_m,k_cmsig,k_snr,ph_qual FROM fp_psc WHERE 1=CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',86.17610533442,-66.29262557836,0.000277778))"
+      },
+      "utc_started": "2026-10-14T04:22:54.393629+00:00",
+      "status": null,
+      "bytes": 0,
+      "error": "HTTPSConnectionPool(host='irsa.ipac.caltech.edu', port=443): Read timed out. (read timeout=12)",
+      "sha256_consumed_body": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "elapsed_seconds": 17.64094826099972
+    },
+    {
+      "name": "2mass_7",
+      "requested_url": "https://irsa.ipac.caltech.edu/TAP/sync",
+      "params": {
+        "REQUEST": "doQuery",
+        "LANG": "ADQL",
+        "FORMAT": "csv",
+        "QUERY": "SELECT designation,ra,dec,k_m,k_cmsig,k_snr,ph_qual FROM fp_psc WHERE 1=CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',86.18737955703,-66.25030870572,0.000277778))"
+      },
+      "utc_started": "2026-10-14T04:23:12.037202+00:00",
+      "status": null,
+      "bytes": 0,
+      "error": "HTTPSConnectionPool(host='irsa.ipac.caltech.edu', port=443): Read timed out. (read timeout=12)",
+      "sha256_consumed_body": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "elapsed_seconds": 17.82310069599771
+    },
+    {
+      "name": "2mass_9",
+      "requested_url": "https://irsa.ipac.caltech.edu/TAP/sync",
+      "params": {
+        "REQUEST": "doQuery",
+        "LANG": "ADQL",
+        "FORMAT": "csv",
+        "QUERY": "SELECT designation,ra,dec,k_m,k_cmsig,k_snr,ph_qual FROM fp_psc WHERE 1=CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',86.18858333333334,-67.14913888888888,0.000277778))"
+      },
+      "utc_started": "2026-10-14T04:23:29.860809+00:00",
+      "status": 200,
+      "bytes": 45,
+      "url": "https://irsa.ipac.caltech.edu/TAP/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+designation%2Cra%2Cdec%2Ck_m%2Ck_cmsig%2Ck_snr%2Cph_qual+FROM+fp_psc+WHERE+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C86.18858333333334%2C-67.14913888888888%2C0.000277778%29%29",
+      "sha256_consumed_body": "064a4e34868066b7bc3c6b79baefc72dd4b5dc09752770cf335250923b6ca278",
+      "elapsed_seconds": 14.412122839003132
+    },
+    {
+      "name": "2mass_11",
+      "requested_url": "https://irsa.ipac.caltech.edu/TAP/sync",
+      "params": {
+        "REQUEST": "doQuery",
+        "LANG": "ADQL",
+        "FORMAT": "csv",
+        "QUERY": "SELECT designation,ra,dec,k_m,k_cmsig,k_snr,ph_qual FROM fp_psc WHERE 1=CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',86.19745833333334,-67.2755,0.000277778))"
+      },
+      "utc_started": "2026-10-14T04:23:44.274216+00:00",
+      "status": 200,
+      "bytes": 45,
+      "url": "https://irsa.ipac.caltech.edu/TAP/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+designation%2Cra%2Cdec%2Ck_m%2Ck_cmsig%2Ck_snr%2Cph_qual+FROM+fp_psc+WHERE+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C86.19745833333334%2C-67.2755%2C0.000277778%29%29",
+      "sha256_consumed_body": "064a4e34868066b7bc3c6b79baefc72dd4b5dc09752770cf335250923b6ca278",
+      "elapsed_seconds": 8.650155887000437
+    },
+    {
+      "name": "2mass_12",
+      "requested_url": "https://irsa.ipac.caltech.edu/TAP/sync",
+      "params": {
+        "REQUEST": "doQuery",
+        "LANG": "ADQL",
+        "FORMAT": "csv",
+        "QUERY": "SELECT designation,ra,dec,k_m,k_cmsig,k_snr,ph_qual FROM fp_psc WHERE 1=CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',86.1817375,-67.29075277777778,0.000277778))"
+      },
+      "utc_started": "2026-10-14T04:23:52.925379+00:00",
+      "status": 200,
+      "bytes": 45,
+      "url": "https://irsa.ipac.caltech.edu/TAP/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+designation%2Cra%2Cdec%2Ck_m%2Ck_cmsig%2Ck_snr%2Cph_qual+FROM+fp_psc+WHERE+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C86.1817375%2C-67.29075277777778%2C0.000277778%29%29",
+      "sha256_consumed_body": "064a4e34868066b7bc3c6b79baefc72dd4b5dc09752770cf335250923b6ca278",
+      "elapsed_seconds": 13.243404351000208
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "freeze_commit": "a44f756",
+  "science_bodies_bytes": 0,
+  "raw_cap_bytes": 1073741824,
+  "population_cap_bytes": 300000000,
+  "science_accessed": false,
+  "receipts": [
+    {
+      "url": "https://archive.stsci.edu/hlsps/jades/dr4/goods-s/catalogs/hlsp_jades_jwst_nirspec_goods-s_clear-prism-gratings-line-fluxes_v1.2_catalog.fits",
+      "method": "HEAD",
+      "started_utc": "2026-10-14T04:14:18.925932+00:00",
+      "disk_free_bytes": 21772578816,
+      "body_bytes": 0,
+      "status": 200,
+      "content_length": "62752320",
+      "elapsed_seconds": 6.346555060001265,
+      "completed_utc": "2026-10-14T04:14:25.272533+00:00"
+    },
+    {
+      "url": "https://mast.stsci.edu/api/v0/invoke",
+      "method": "HEAD",
+      "started_utc": "2026-10-14T04:14:25.272734+00:00",
+      "disk_free_bytes": 22034001920,
+      "body_bytes": 0,
+      "error": "<HTTPError 500: 'Internal Server Error'>",
+      "status": null,
+      "content_length": null,
+      "elapsed_seconds": 7.863199422001344,
+      "completed_utc": "2026-10-14T04:14:33.135957+00:00"
+    }
+  ]
+}

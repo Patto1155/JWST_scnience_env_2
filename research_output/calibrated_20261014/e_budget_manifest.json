@@ -1,0 +1,397 @@
+{
+  "arm": "YSO",
+  "direct_response_body_bytes": 7261777,
+  "metadata_cap_bytes": 30000000,
+  "science_cap_bytes_conditional": 500000000,
+  "science_product_bytes": 0,
+  "freeze_commit": "264a875",
+  "first_direct_access_utc": "2026-10-14T04:15:12.038575+00:00",
+  "receipt_paths": [
+    {
+      "path": "research_output/calibrated_20261014/e_2mass_gator/f_2mass_gator_11_receipt.json",
+      "bytes": 5237,
+      "status": 200,
+      "utc_started": "2026-10-14T04:24:21.057626+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_2mass_gator/f_2mass_gator_12_receipt.json",
+      "bytes": 5237,
+      "status": 200,
+      "utc_started": "2026-10-14T04:24:30.661897+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_2mass_gator/f_2mass_gator_5_receipt.json",
+      "bytes": 5237,
+      "status": 200,
+      "utc_started": "2026-10-14T04:23:42.477448+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_2mass_gator/f_2mass_gator_6_receipt.json",
+      "bytes": 5237,
+      "status": 200,
+      "utc_started": "2026-10-14T04:23:49.954613+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_2mass_gator/f_2mass_gator_7_receipt.json",
+      "bytes": 5237,
+      "status": 200,
+      "utc_started": "2026-10-14T04:23:58.741649+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_2mass_gator/f_2mass_gator_9_receipt.json",
+      "bytes": 5237,
+      "status": 200,
+      "utc_started": "2026-10-14T04:24:10.238182+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_2mass_gator_parse_retry/f_2mass_gator_retry_11_receipt.json",
+      "bytes": 5237,
+      "status": 200,
+      "utc_started": "2026-10-14T04:24:58.067679+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_2mass_gator_parse_retry/f_2mass_gator_retry_12_receipt.json",
+      "bytes": 5237,
+      "status": 200,
+      "utc_started": "2026-10-14T04:25:06.364319+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_2mass_gator_parse_retry/f_2mass_gator_retry_5_receipt.json",
+      "bytes": 5237,
+      "status": 200,
+      "utc_started": "2026-10-14T04:24:28.528228+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_2mass_gator_parse_retry/f_2mass_gator_retry_6_receipt.json",
+      "bytes": 5237,
+      "status": 200,
+      "utc_started": "2026-10-14T04:24:35.880703+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_2mass_gator_parse_retry/f_2mass_gator_retry_7_receipt.json",
+      "bytes": 5237,
+      "status": 200,
+      "utc_started": "2026-10-14T04:24:43.231758+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_2mass_gator_parse_retry/f_2mass_gator_retry_9_receipt.json",
+      "bytes": 5237,
+      "status": 200,
+      "utc_started": "2026-10-14T04:24:50.714777+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_2mass_resolution/f_2mass_11_receipt.json",
+      "bytes": 45,
+      "status": 200,
+      "utc_started": "2026-10-14T04:23:44.274216+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_2mass_resolution/f_2mass_12_receipt.json",
+      "bytes": 45,
+      "status": 200,
+      "utc_started": "2026-10-14T04:23:52.925379+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_2mass_resolution/f_2mass_5_receipt.json",
+      "bytes": 160,
+      "status": 504,
+      "utc_started": "2026-10-14T04:22:38.818690+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_2mass_resolution/f_2mass_6_receipt.json",
+      "bytes": 0,
+      "status": null,
+      "utc_started": "2026-10-14T04:22:54.393629+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_2mass_resolution/f_2mass_7_receipt.json",
+      "bytes": 0,
+      "status": null,
+      "utc_started": "2026-10-14T04:23:12.037202+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_2mass_resolution/f_2mass_9_receipt.json",
+      "bytes": 45,
+      "status": 200,
+      "utc_started": "2026-10-14T04:23:29.860809+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_controls_retry/f_controls_0_receipt.json",
+      "bytes": 40,
+      "status": 200,
+      "utc_started": "2026-10-14T04:17:40.769927+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_controls_retry/f_controls_1_receipt.json",
+      "bytes": 441,
+      "status": 200,
+      "utc_started": "2026-10-14T04:17:45.334063+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_controls_retry/f_controls_2_receipt.json",
+      "bytes": 436,
+      "status": 200,
+      "utc_started": "2026-10-14T04:17:50.633796+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_poles/f_pole_north_identities_receipt.json",
+      "bytes": 862,
+      "status": 400,
+      "utc_started": "2026-10-14T04:15:12.038575+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_poles/f_pole_south_identities_receipt.json",
+      "bytes": 862,
+      "status": 400,
+      "utc_started": "2026-10-14T04:15:19.336962+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_poles_final/f_north_0_controls_receipt.json",
+      "bytes": 837,
+      "status": 400,
+      "utc_started": "2026-10-14T04:16:32.141080+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_poles_final/f_north_0_spherex_qr2_deep_receipt.json",
+      "bytes": 51882,
+      "status": 200,
+      "utc_started": "2026-10-14T04:16:18.442402+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_poles_final/f_north_0_spherex_qr3_deep_receipt.json",
+      "bytes": 641,
+      "status": 200,
+      "utc_started": "2026-10-14T04:16:25.508401+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_poles_final/f_north_1_controls_receipt.json",
+      "bytes": 837,
+      "status": 400,
+      "utc_started": "2026-10-14T04:16:53.297635+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_poles_final/f_north_1_spherex_qr2_deep_receipt.json",
+      "bytes": 25338,
+      "status": 200,
+      "utc_started": "2026-10-14T04:16:39.649599+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_poles_final/f_north_1_spherex_qr3_deep_receipt.json",
+      "bytes": 641,
+      "status": 200,
+      "utc_started": "2026-10-14T04:16:46.549449+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_poles_final/f_north_2_controls_receipt.json",
+      "bytes": 837,
+      "status": 400,
+      "utc_started": "2026-10-14T04:17:13.881241+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_poles_final/f_north_2_spherex_qr2_deep_receipt.json",
+      "bytes": 25337,
+      "status": 200,
+      "utc_started": "2026-10-14T04:17:00.074188+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_poles_final/f_north_2_spherex_qr3_deep_receipt.json",
+      "bytes": 641,
+      "status": 200,
+      "utc_started": "2026-10-14T04:17:07.217640+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_poles_final/f_pole_north_identities_receipt.json",
+      "bytes": 376,
+      "status": 200,
+      "utc_started": "2026-10-14T04:16:11.379748+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_poles_final/f_pole_south_identities_receipt.json",
+      "bytes": 1131,
+      "status": 200,
+      "utc_started": "2026-10-14T04:17:20.748249+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_poles_final/f_south_0_controls_receipt.json",
+      "bytes": 837,
+      "status": 400,
+      "utc_started": "2026-10-14T04:17:44.526445+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_poles_final/f_south_0_spherex_qr2_deep_receipt.json",
+      "bytes": 653534,
+      "status": 200,
+      "utc_started": "2026-10-14T04:17:29.017573+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_poles_final/f_south_0_spherex_qr3_deep_receipt.json",
+      "bytes": 641,
+      "status": 200,
+      "utc_started": "2026-10-14T04:17:37.260567+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_poles_final/f_south_1_controls_receipt.json",
+      "bytes": 837,
+      "status": 400,
+      "utc_started": "2026-10-14T04:18:04.068981+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_poles_final/f_south_1_spherex_qr2_deep_receipt.json",
+      "bytes": 711338,
+      "status": 200,
+      "utc_started": "2026-10-14T04:17:51.689695+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_poles_final/f_south_1_spherex_qr3_deep_receipt.json",
+      "bytes": 641,
+      "status": 200,
+      "utc_started": "2026-10-14T04:17:56.991407+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_poles_final/f_south_2_spherex_qr2_deep_receipt.json",
+      "bytes": 695724,
+      "status": 200,
+      "utc_started": "2026-10-14T04:18:10.691873+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_poles_final/f_south_2_spherex_qr3_deep_receipt.json",
+      "bytes": 641,
+      "status": 200,
+      "utc_started": "2026-10-14T04:18:18.623276+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_poles_final/f_south_3_spherex_qr2_deep_receipt.json",
+      "bytes": 739049,
+      "status": 200,
+      "utc_started": "2026-10-14T04:18:25.471317+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_poles_final/f_south_3_spherex_qr3_deep_receipt.json",
+      "bytes": 641,
+      "status": 200,
+      "utc_started": "2026-10-14T04:18:33.358030+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_poles_final/f_south_4_spherex_qr2_deep_receipt.json",
+      "bytes": 758384,
+      "status": 200,
+      "utc_started": "2026-10-14T04:18:40.178094+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_poles_final/f_south_4_spherex_qr3_deep_receipt.json",
+      "bytes": 641,
+      "status": 200,
+      "utc_started": "2026-10-14T04:18:48.367227+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_poles_final/f_south_5_controls_receipt.json",
+      "bytes": 837,
+      "status": 400,
+      "utc_started": "2026-10-14T04:19:10.907588+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_poles_final/f_south_5_spherex_qr2_deep_receipt.json",
+      "bytes": 696651,
+      "status": 200,
+      "utc_started": "2026-10-14T04:18:55.959878+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_poles_final/f_south_5_spherex_qr3_deep_receipt.json",
+      "bytes": 641,
+      "status": 200,
+      "utc_started": "2026-10-14T04:19:03.434706+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_poles_final/f_south_6_spherex_qr2_deep_receipt.json",
+      "bytes": 726943,
+      "status": 200,
+      "utc_started": "2026-10-14T04:19:17.826093+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_poles_final/f_south_6_spherex_qr3_deep_receipt.json",
+      "bytes": 641,
+      "status": 200,
+      "utc_started": "2026-10-14T04:19:26.539373+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_poles_final/f_south_7_controls_receipt.json",
+      "bytes": 837,
+      "status": 400,
+      "utc_started": "2026-10-14T04:19:48.387062+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_poles_final/f_south_7_spherex_qr2_deep_receipt.json",
+      "bytes": 607549,
+      "status": 200,
+      "utc_started": "2026-10-14T04:19:33.710959+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_poles_final/f_south_7_spherex_qr3_deep_receipt.json",
+      "bytes": 641,
+      "status": 200,
+      "utc_started": "2026-10-14T04:19:41.142732+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_poles_final/f_south_8_spherex_qr2_deep_receipt.json",
+      "bytes": 742562,
+      "status": 200,
+      "utc_started": "2026-10-14T04:19:55.704941+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_poles_final/f_south_8_spherex_qr3_deep_receipt.json",
+      "bytes": 641,
+      "status": 200,
+      "utc_started": "2026-10-14T04:20:00.374377+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_poles_final/f_south_9_spherex_qr2_deep_receipt.json",
+      "bytes": 742562,
+      "status": 200,
+      "utc_started": "2026-10-14T04:20:07.366913+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_poles_final/f_south_9_spherex_qr3_deep_receipt.json",
+      "bytes": 641,
+      "status": 200,
+      "utc_started": "2026-10-14T04:20:14.945300+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_poles_retry/f_pole_north_identities_receipt.json",
+      "bytes": 698,
+      "status": 400,
+      "utc_started": "2026-10-14T04:15:31.507489+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_poles_retry/f_pole_south_identities_receipt.json",
+      "bytes": 698,
+      "status": 400,
+      "utc_started": "2026-10-14T04:15:39.310185+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_south_controls_retry/f_f_south_0_controls_receipt_receipt.json",
+      "bytes": 462,
+      "status": 200,
+      "utc_started": "2026-10-14T04:19:45.131808+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_south_controls_retry/f_f_south_1_controls_receipt_receipt.json",
+      "bytes": 445,
+      "status": 200,
+      "utc_started": "2026-10-14T04:19:49.802105+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_south_controls_retry/f_f_south_5_controls_receipt_receipt.json",
+      "bytes": 444,
+      "status": 200,
+      "utc_started": "2026-10-14T04:19:54.197806+00:00"
+    },
+    {
+      "path": "research_output/calibrated_20261014/e_metadata_error_diagnostic.json",
+      "bytes": 698,
+      "status": 400,
+      "utc_started": "2026-10-14T04:15:52.582512+00:00"
+    }
+  ],
+  "unmetered_metadata": "Web-search/source-document tool retrievals expose no transport-body counts; excluded from certified direct HTTP total. No science data used from these tools.",
+  "last_metadata_receipt_utc": "2026-10-14T04:25:06.364319+00:00"
+}

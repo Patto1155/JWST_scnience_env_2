@@ -7,6 +7,49 @@ preserved, not converted into discoveries. Current grades belong only in
 assumptions. The 2026-10-09 ending correction in `HANDOVER.md` controls its earlier
 artifact/selection interpretations.
 
+## 14 October calibrated-answers follow-up (awaiting cross-lineage audit)
+
+No grade is promoted. A fresh MoM signed ionic N/C moment-Fieller set is
+[0.10155, 13.48043], including ambient 0.25119 and the headline boundary 2.51189.
+The frozen practical noise diagnostics pass, but source coverage, raw known-answer
+calibration and the assumed geometric wavelength-prior distribution remain
+unvalidated. This neither replicates nor refutes elemental enrichment, and the
+cross-lineage audit found the PRISM arm cannot discriminate: the wavelength prior
+decides ambient membership and no PRISM analysis can test the headline boundary.
+**The PRISM arm is paused until G235H data.** See
+[MOM_CALIBRATED_CHALLENGE.md](MOM_CALIBRATED_CHALLENGE.md) and
+[AUDIT_20261014.md](AUDIT_20261014.md).
+
+The amended 1.2094 combined-error comparison is **not passing evidence**: the
+criterion was set after the result was known, and shared-photon covariance makes
+a combined-error pull lean toward passing. Under the original published-error
+criterion it is 1.89σ, in the same direction as the population deficit below. Raw end-to-end recovery remains blocked on contributor/operator/prior
+prerequisites. Released-1D training covers 15 GOODS-S lines; the sole authorized
+GOODS-N confirmation covers 14/15 lines and fails its frozen descriptive N(0,1)
+mean/SD prediction (mean -0.97093, SD 0.48843). Shared photons and operator/prior
+mismatch prevent identifying a published-error scale. What the test does show is a
+replicated systematic deficit: this operator's fluxes are about 8–15% below the
+JADES catalogue in both fields (13/14 GN pulls negative). Finding its cause is
+now the first calibration task. The southern fallback
+spectra remain unopened. Earlier sealed-GOODS-N statements below are historical;
+only B accessed the northern confirmation after committing the GS prediction.
+See [CALIBRATED_KNOWN_ANSWER.md](CALIBRATED_KNOWN_ANSWER.md).
+
+SMACS compact replay preserves the failed null decisions. The measured point-PSF
+prerequisite is absent; all 1,704 frozen injection trials remain unrun. Epoch
+metadata timed out, so absence of another epoch is not established. The claim
+stays Unconfirmed lead; see [SMACS1043_COMPLETION.md](SMACS1043_COMPLETION.md).
+
+The new fixed 13-target pole-field YSO screen closes without science acquisition:
+three northern targets fail the necessary daily-frame bound; southern source
+coverage and controls remain unresolved. Missing catalogue associations are not
+zero infrared flux or a variability null. See [YSO_POLE_FEASIBILITY.md](YSO_POLE_FEASIBILITY.md).
+
+[DATA_BUDGET.md](DATA_BUDGET.md) records every arm's final charge; all are within
+allowances. [METHODS_NOTE.md](METHODS_NOTE.md) preserves six documented inference
+failures. The session report records freeze chronology, validation and not-run
+work. Different-family audit is still required before merging the session PR.
+
 ## 14 October executed calibration and acquisition evidence
 
 The separately frozen current-release JADES known-answer check recovers

@@ -1,0 +1,16 @@
+{
+  "arm": "SMACS",
+  "cap_bytes": 6442450944,
+  "counter": "existing E2 cumulative conservative reservations",
+  "prior_bytes_used": 5826074168,
+  "new_science_response_body_bytes": 0,
+  "cumulative_conservative_bytes_used": 5826074168,
+  "remaining_bytes": 616376776,
+  "new_metadata_response_body_bytes": 0,
+  "metadata_status": "timeout with zero response bytes received; does not establish archive absence",
+  "receipt_paths": [
+    "research_output/calibrated_20261014/d_epoch_metadata.json",
+    "research_output/calibrated_20261014/d_verification.json"
+  ],
+  "software_transfers": "shared environment separately accounted by coordinator"
+}
