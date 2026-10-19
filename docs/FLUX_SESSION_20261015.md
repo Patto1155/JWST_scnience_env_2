@@ -1,6 +1,8 @@
 # Flux-deficit session, 15 October 2026
 
-Awaiting cross-lineage audit. No scientific grade changes.
+Cross-lineage audit completed 15 October 2026 with no blocking merge findings.
+The requested interpretation clarification was incorporated on 19 October.
+No scientific grade changes. See [the audit](https://github.com/Patto1155/JWST_scnience_env_2/pull/86#issuecomment-6186297641).
 
 The handover's numerical pattern reproduces on 29 committed comparisons, but
 its causal interpretations are hypotheses. The field difference is associated
@@ -67,7 +69,7 @@ Not run / not verified: empirical B/C causal discrimination; real holdout law
 preference and intercept; D continuum/product/pathloss/Jacobian tests; exhaustive
 current G235H inventory or acquisition; SMACS empirical PSF/injections;
 raw-known-answer chain or fitter repair; calibrated MoM extrapolation;
-independent astrophysical repeat; independent model-family audit. The complete
+independent astrophysical repeat. The complete
 C metered acquisition/real-residual runner remains unimplemented. All scientific
 freeze/access clocks are locally asserted, not independently timestamped.
 
@@ -92,3 +94,20 @@ original system-environment freeze by at most2.7e-15 after research-lock
 alignment. The injection process overlapped dependency alignment, so exact
 loaded injection dependency versions are not attested. The failed edge-window
 results therefore do not certify numerical stability or exact-lock replay.
+
+## Audit disposition, 19 October 2026
+
+The cross-lineage audit reproduced the regressions and checked the denied
+access/frozen predictions. It separately tested the operator on clean synthetic
+spectra; it did not rerun the 1,000 real-background trials, arm E, the full gate
+or the bundle restore. Those limits remain explicit. Its no-blocker disposition
+does not promote an astrophysical claim. The diagnosis and methods now explain
+why the upward response disfavours the stated downward-bias H2 for tested profiles.
+
+Receipt erratum: b_result.json names c50515c (a same-second docs-only descendant)
+as its freeze commit; the intended prediction commit is de5f430. The original
+hashed receipt is preserved unchanged. Future injection reruns must separately
+freeze valid line-centre coverage and conditioning safeguards before outcomes;
+no historical trial is clipped or retroactively reselected.
+
+PR85 has now been merged. PR86 is retargeted to master for sequential integration.

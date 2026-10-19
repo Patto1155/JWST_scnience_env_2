@@ -85,6 +85,26 @@ The low-S/N secondary increment means are 1.138477 [1.119552, 1.157584] and 1.07
 
 The right panel deliberately labels median ± unscaled MAD (descriptive spread, not confidence intervals), and annotates the explosive primary means. Complete individual trials, primary means, confidence intervals and background fits are preserved in `a_injections.json`. No control was discarded.
 
+### Cross-lineage audit clarification, 19 October 2026
+
+The [15 October audit](https://github.com/Patto1155/JWST_scnience_env_2/pull/86#issuecomment-6186297641)
+found no blocking merge findings. The sign of the measured response narrows the
+interpretation: for the tested Gaussian line family, the operator reads high at
+low S/N. This control therefore disfavours H2 as stated, that this fitter reads
+low at low S/N. It does not establish catalogue-selection bias (H1), rule out
+catalogue-side measurement effects, or exclude fitter mismatch for line shapes,
+LSFs and noise conditions not tested here. No correction is applied to MoM.
+The frozen primary verdict, all trials and historical criteria remain unchanged.
+
+The auditor independently reproduced an upward response on clean synthetic
+Gaussian spectra. Width marginalization and the coefficient-integral evidence
+term with a flat improper amplitude prior both favour wider, less constrained
+templates at low S/N. In those synthetic controls the evidence term contributed
+roughly three percentage points at true S/N 5 for a one-pixel-width line; this is
+a conditional mechanism check, not a universal correction or a new result of
+this session. The audit did not rerun the 1,000 real-background trials, arm E,
+the full quality gate or the freeze-bundle restoration.
+
 ## Chronology, acceptance and limits
 
 Primary freeze commit `e2bc0c1` at 04:58:23 UTC; secondary freeze `0584b24` at 04:59:06 UTC. First baseline/injection access began 2026-10-15T04:59:10.095499+00:00; completion 2026-10-15T05:01:45.506014+00:00. These are local-clock receipts, not externally attested timestamps. The frozen JSON SHA256 is `b5d76e006fded5b3e3773afaedc5ae47b6687e0af83ab1a5f22c20cffbd60427` and unchanged fitter SHA256 is `b51981b1095dd7e14d1a385f9408e2a16b4cb8ecd0d10a5039c8f28f8fba55db`. Actual science transfer: 0 bytes of the 0-byte cap.

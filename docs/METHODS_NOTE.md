@@ -142,6 +142,18 @@ source-Poisson transport, extraction/pathloss calibration or independent
 photons. This note supplies no new injection experiment or verdict between
 catalogue selection and operator bias.
 
+**Improper amplitude priors in nuisance marginalization.** The unchanged
+operator weights nodes using a coefficient-integral evidence term containing
+minus one-half the log determinant of the linear precision matrix. A flat
+improper amplitude prior can favour nodes with less constrained amplitudes,
+including wider line templates. The [15 October cross-lineage audit](https://github.com/Patto1155/JWST_scnience_env_2/pull/86#issuecomment-6186297641)
+found a small additional upward low-S/N response from this term in independent
+synthetic controls. Its size depends on the tested profile and noise assumptions;
+it is not an established correction to real catalogue fluxes. Together with
+width marginalization, it disfavours a fitter-reads-low explanation for the
+Gaussian profiles tested, while leaving other profile/LSF mismatch unresolved.
+No frozen estimator, prior, outcome or scientific grade is changed here.
+
 **Spectral and temporal coverage.** The SPHEREx source measurements documented
 in `docs/RESEARCH5_SPHEREX_REVIEW.md` assemble channels observed at different
 times; they do not establish simultaneous complete 0.75–5 micrometre spectra.

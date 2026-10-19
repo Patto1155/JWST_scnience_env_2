@@ -7,6 +7,17 @@ preserved, not converted into discoveries. Current grades belong only in
 assumptions. The 2026-10-09 ending correction in `HANDOVER.md` controls its earlier
 artifact/selection interpretations.
 
+## 19 October audit clarification
+
+PR86's cross-lineage audit reports no blocking merge findings. Its independent
+synthetic mechanism check and the committed real-background controls show an
+upward low-S/N response for tested Gaussian profiles, disfavoring the stated
+fitter-reads-low H2 in that scope. Catalogue selection is not thereby established;
+untested profile/LSF mismatch and other measurement effects remain unresolved.
+The improper-amplitude-prior evidence term can contribute to the upward response.
+No operator repair, MoM correction or scientific grade promotion follows. See
+[FLUX_DEFICIT_DIAGNOSIS.md](FLUX_DEFICIT_DIAGNOSIS.md) and the linked audit.
+
 ## 15 October flux-deficit diagnosis
 
 No scientific grade changes. The 29 committed comparisons reproduce
